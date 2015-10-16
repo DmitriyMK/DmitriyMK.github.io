@@ -1,0 +1,34 @@
+body {
+background-color: #DCDCDC;
+font-family: Arial, Times New Roman, Times, serif;
+font-size: 14px;
+margin: 30px;
+padding-left: 400px;
+}
+
+header {
+text-align: center;
+padding-left: 15px;	
+}
+	
+section { 
+background-color:#fff; 
+height: 806px; 
+width: 451px;
+padding:40px;
+}
+
+hr {
+width: 430px;
+
+}
+
+ul {
+padding-top: 10px;
+line-height: 1.5;
+}
+ 
+p {
+padding-top: 10px;
+padding-left: 25px;	
+}	
