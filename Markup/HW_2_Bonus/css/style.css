@@ -1,0 +1,51 @@
+body {
+	background: #000 url('../img/background.png') no-repeat;
+	max-width: 955px;
+}
+p, figcaption {
+	font: 14px/1 'Tahoma', sans-serif;
+	color: #FFF;
+	text-align: center;
+}
+.section {
+	padding: 60px 70px 240px 70px;
+}
+/*HEADER*/
+header {
+	padding-bottom: 140px;
+}
+.logo {
+	position: absolute;
+	margin-top: 70px;
+}
+.palm {
+	position: absolute;
+	margin-left: 150px;
+}
+.logo p {
+	padding-top: 2%;
+}
+.contact {
+	float: right;
+	margin-top: 100px;
+}
+.contact p {
+	font-size: 10px;
+}
+/*CONTENT*/
+figure {
+	display: inline-block;
+	vertical-align: top;
+}
+figure img {
+	border: 2px solid #666;
+	-webkit-box-shadow: inset 0px 0px 6px 1px rgba(0,0,0,0.75);
+-moz-box-shadow: inset 0px 0px 6px 1px rgba(0,0,0,0.75);
+box-shadow: inset 0px 0px 6px 1px rgba(0,0,0,0.75);
+    margin-left: 5px;
+    background-color: #565656;
+}
+/*FOOTER*/
+footer p {
+	margin-bottom:30px;
+}
