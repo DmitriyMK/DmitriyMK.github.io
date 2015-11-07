@@ -5,7 +5,7 @@ body {
 	background: #080808 url('../img/background.png') no-repeat;
 	background-position: top center;
 }
-.wrap {
+.wrapper {
 	width: 840px;
 	height: 640px; 
 	padding: 50px;
