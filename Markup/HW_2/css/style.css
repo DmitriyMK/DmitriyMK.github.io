@@ -1,8 +1,6 @@
 body {
-	width: 1366px;
-	min-height: 950px;
 	background-color: #f9f9f9;
-	font: 13px 'Open Sans', sans-serif;
+	font: 13px/29px 'Open Sans',Arial,Tahoma, sans-serif;
 }
 .wrapper { 
 	width: 966px;
@@ -15,15 +13,13 @@ body {
 	box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
 }
 a {
-	display: block;	
 	text-decoration: none; 
 }
 /* HEADER */	
 .menu {
-	margin-top: 40px;
-	margin-bottom: 40px;
+	margin: 40px 0;
 	font size: 15px;
-	line-height: 29px;
+	line-height: 40px;
 	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#7d7e7d+0,0e0e0e+100;Black+3D */
 	background: #7d7e7d; /* Old browsers */
 	background: -moz-linear-gradient(top,  #7d7e7d 0%, #0e0e0e 100%); /* FF3.6+ */
@@ -36,64 +32,85 @@ a {
 }
 .menu li {
 	display: inline-block;
+	padding: 0px 35px;
 }
 .menu li a {
-	padding: 1px 35px;
+	display: block;	
 	color: #eee;
+	border-left: 1px solid transparent; 
+	border-right: 1px solid transparent; 
 } 
+.menu a:active {
+	background: #353535;
+	border-left : 1px solid #3f3f3f;
+	border-right : 1px solid #f3f3f3f;
+}
 .menu a:hover {
 	background: #353535;
-	border-left : 1px solid #f9f9f9;
-	border-right: 1px solid #f9f9f9;
+	border-left : 1px solid #3f3f3f;
+	border-right : 1px solid #3f3f3f;
 }
 /*CONTENT */	
 aside {
 	float: left;
 	width: 240px;
 	line-height: 37px;
+	border: 1px solid #c8c8c8;
 }
 .content {
 	position: relative;
 	overflow: hidden;
 }
-.goods{
+.goods {
 	float:right;
 	width: 680px;
 }
-aside li a{
+.goods-image {
+	border: 1px solid #c8c8c8;
+	padding: 50px 98px;
+	margin-left: 40px;
+}
+.goods-description {
+	margin: 50px 20px 60px 70px;
+	line-height: 21px;
+}	
+aside li a {
+	display: block;	
 	padding: 5px 20px;
 	color: #7a7878;
-	border: 1px solid #e1e1e1;
 }
+li:not(:first-child) {border-top:1px solid #c8c8c8}
+
 aside li a:active {
+	padding-left: 37px;
+	background: #f9f9f9; 
+}
+aside li a:hover {
 	padding-left: 37px;
 	background: #f9f9f9;
 }
-.goods-description p{
-	margin: 40px 25px 80px;
-	line-height: 21px;
-}	
+.goods-description p {
+	margin-bottom: 10px;
+}
 /*FOOTER */	
-.footer {
+footer {
+	line-height: 40px;
 	position: relative;
 	overflow: hidden;
 	background: #e1e1e1;
-	line-height: 29px;
-}
-.footer-menu {
-	float:left;
 }
 .copyright {
-	float:right;
-	margin-right: 25px;
+	float: right;
+	margin-right: 20px;
 }
-.footer li {
+footer li {
 	display: inline-block;
-	padding: 1px 40px;
+	float: left;
+	padding: 0 40px;
 }
-.footer li a{
+footer li a {
 	color: #000;
 }
-.footer a:hover {
+footer a:hover {
 	text-decoration: underline;
 }
