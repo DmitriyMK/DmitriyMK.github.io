@@ -1,52 +1,72 @@
 body {
 	width: 960px;
-	height: 950px;
+	min-height: 950px;
 	margin: 0 auto;
 	background: url('../img/background.png') no-repeat #000 50% 0;	
-	font: 10px/12px 'Tahoma Regular',Arial,Helvetica, sans-serif;
+	font: 15px/18px 'Tahoma Regular',Arial,Helvetica, sans-serif;
 	color: #FFF;
 	text-align: center;
 }
 .wrapper {
-	width: 820px;
-	height: 640px; 
-	padding: 50px 60px 0 60px;
+	margin: 56px 70px; 
+}
+a {
+	color: #FFF;
+	text-decoration: none;
+}
+a:active {
+	text-decoration: underline;
+	cursor: pointer;
+}
+a:hover {
+	text-decoration: underline;
+	cursor: pointer;
 }
 /*HEADER*/
 header {
-	padding-bottom: 140px;
+	position: relative;
 }
 .logo {
-	position: absolute;
-	margin: 70px 10px 0;
-	z-index:1; 
-}
-.palm {
-	position: absolute;
-	margin-left: 150px;
+	width: 260px;
+	height: 150px;
+	display: block;
+	background: url(../img/logo.png) no-repeat;
 }
 .contact {
-	float: right;
-	margin: 90px 20px 0;
+	position: absolute;
 	text-align: left;
+	right: 22px;
+	bottom: 15px;
+	line-height: 20px;
 }
-.phone-mail {
-	margin-top: 5px;
+.logo p {
+	position: absolute;
+	left: 85px;
+	bottom: 16px;
+}
+.logo p, span, footer {
+	font-size: 10px;
+	line-height: 14px;
+}
+.contact p {
 	font-size: 8px;
 	line-height: 10px;
 }
 /*CONTENT*/
+.contries {
+	position: relative;
+	overflow: hidden;
+}
 figure {
-	display: inline-block;
-	vertical-align: top;
-	margin-bottom: 50px;
+	float: left;
+	padding: 0 0 50px 8px;
+}
+figcaption {
 	font-size: 15px;
-	line-height: 17px;
+	line-height: 18px;
 }
 figure img {
-	border: 1px solid #b3b3b3;
-	margin: 10px 0 0 8px; 
-	background-color: #565656;
+	border: 2px groove #979797;
 	-webkit-box-shadow: inset 0px 0px 2px 0px rgba(0,0,0,1);
 	-moz-box-shadow: inset 0px 0px 2px 0px rgba(0,0,0,1);
 	box-shadow: inset 0px 0px 2px 0px rgba(0,0,0,1);
@@ -55,6 +75,6 @@ figure img {
 	box-shadow: 0px 0px 0px 1px rgba(114,114,114,1);
 }
 /*FOOTER*/
-footer p {
-	margin-top:140px;
+footer {
+	padding-top: 120px;
 }
