@@ -60,6 +60,16 @@ a {
 	border-left : 1px solid #838383;
 	border-right : 1px solid #838383;
 }
+.activemenu {
+		/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#4a4a4a+0,303030+100,2b2b2b+100,666666+100,131313+100,4a4a4a+100,1c1c1c+100,2c2c2c+100,111111+100,000000+100,303030+100,2f2f2f+100 */
+	background: #4a4a4a; /* Old browsers */
+	background: -moz-linear-gradient(top,  #4a4a4a 0%, #303030 100%, #2b2b2b 100%, #666666 100%, #131313 100%, #4a4a4a 100%, #1c1c1c 100%, #2c2c2c 100%, #111111 100%, #000000 100%, #303030 100%, #2f2f2f 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  #4a4a4a 0%,#303030 100%,#2b2b2b 100%,#666666 100%,#131313 100%,#4a4a4a 100%,#1c1c1c 100%,#2c2c2c 100%,#111111 100%,#000000 100%,#303030 100%,#2f2f2f 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  #4a4a4a 0%,#303030 100%,#2b2b2b 100%,#666666 100%,#131313 100%,#4a4a4a 100%,#1c1c1c 100%,#2c2c2c 100%,#111111 100%,#000000 100%,#303030 100%,#2f2f2f 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4a4a4a', endColorstr='#2f2f2f',GradientType=0 ); /* IE6-9 */
+	border-left : 1px solid #838383;
+	border-right : 1px solid #838383;
+}
 /*CONTENT */
 .content {
 	position: relative;
@@ -102,7 +112,10 @@ aside li a:hover {
 	padding-left: 37px;
 	background: #f9f9f9;
 }
-
+.activeaside {
+	padding-left: 37px;
+	background: #f9f9f9;
+}
 /*FOOTER */	
 footer {
 	line-height: 40px;
