@@ -15,11 +15,9 @@ a {
 	text-decoration: none;
 }
 a:active {
-	text-decoration: underline;
 	cursor: pointer;
 }
 a:hover {
-	text-decoration: underline;
 	cursor: pointer;
 }
 /*HEADER*/
@@ -29,20 +27,18 @@ header {
 .logo {
 	width: 260px;
 	height: 150px;
-	display: block;
+	float:left;
 	background: url(../img/logo.png) no-repeat;
 }
 .contact {
-	position: absolute;
-	text-align: left;
-	right: 22px;
-	bottom: 15px;
+    float: right;
+    text-align: left;
+    margin: 90px 20px 0 0;
 	line-height: 20px;
 }
 .logo p {
-	position: absolute;
-	left: 85px;
-	bottom: 16px;
+	position: relative;
+	margin-top: 120px;
 }
 .logo p, span, footer {
 	font-size: 10px;
@@ -54,6 +50,7 @@ header {
 }
 /*CONTENT*/
 .contries {
+	clear:both;
 	position: relative;
 	overflow: hidden;
 }
