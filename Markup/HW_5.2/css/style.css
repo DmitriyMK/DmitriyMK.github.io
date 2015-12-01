@@ -1,0 +1,36 @@
+table {
+	margin: 0 auto;
+	border: 6px solid #000;
+	border-collapse: collapse;
+}
+td {
+	width: 40px;
+	height: 40px;
+	padding: 10px;
+	border: 8px solid #000;
+}
+.line2, 
+.line3,
+.line4,
+.line5 {
+	height: 60px;
+}
+.line8 td {
+	height: 20px;
+}
+.box_red {
+	background: #fe5b40;
+	height: 40px;
+}
+.box_yellow {
+	background: #fff156;
+}
+.box_black, .box_black2 {
+	background: #14231e;
+}
+.box_black2 {
+	width: 100px;
+}
+.box_blue {
+	background: #0a4988;
+}
