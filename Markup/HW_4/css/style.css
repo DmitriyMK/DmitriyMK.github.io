@@ -49,9 +49,11 @@ header {
 	text-align: center;
 }
 .photo {
-	height: 235px;
 	border-top: 1px solid #128aa7; 
 	border-bottom: 1px solid #128aa7;
+}
+.photo img {
+	display:block;
 }
 .logo p {
 	position: absolute;
@@ -139,16 +141,26 @@ a:active {
 	text-align: left;
 }
 /*CONTENT*/
+h2 {
+	font-size: 18px;
+	line-height: 30px;
+	color: #000;
+}
 .content {
 	display: table;
 	width: 1000px; 
 	border: 1px solid #c7cacf;
 }
+.leftColumn {
+	border-right: 1px solid #c7cacf;
+}
+.rightColumn {
+	border-left: 1px solid #c7cacf;
+}
 .leftColumn,
 .rightColumn {
 	display: table-cell;
 	width: 210px;
-	border: 1px solid #c7cacf;
 	background: #edeef0;
 	position: relative;
 	overflow: hidden;
@@ -158,11 +170,6 @@ a:active {
 	display: table-cell;
 	width: 580px;
 	background: #FFF;
-}
-.content span {
-	font-size: 18px;
-	line-height: 30px;
-	color: #000;
 }
 /*FOOTER*/
 footer p {
