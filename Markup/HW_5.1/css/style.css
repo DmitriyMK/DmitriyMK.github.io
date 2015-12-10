@@ -24,7 +24,6 @@ a {
 .mainmenu {
 	background: url(../img/background_menu.png) repeat-x;
 	height: 36px;
-	position: relative;
 	overflow: hidden;
 }
 .mainmenu li {
@@ -39,23 +38,24 @@ a {
 	padding: 0 20px;
 }
 .minhas_ofertas {
-	border-left: 2px solid #56a2dc;
+	border-left: 1px solid #56a2dc;
+	margin: 2px 0;
 }
 .minhas_ofertas a {
-	padding: 0 36px;   
+	margin: -2px 0;
+	padding: 0 36px; 
 }
 .minhas_ofertas span {
 	margin-right: -16px;
 }
 .minhas_ofertas a:before {
-  content: '';
-  display: block;
-  position: absolute;
-  top: 4px;
-  right: 120px;
-  height: 26px;
-  width: 25px;
-  background: url(../img/flag.png) no-repeat;
+	content: '';
+	position: absolute;
+	top: 4px;
+	right: 120px;
+	height: 26px;
+	width: 25px;
+	background: url(../img/flag.png) no-repeat;
 }
 .menu-entrar {
 	margin-right: 20px; 
@@ -174,13 +174,3 @@ input[type="password"]:focus {
 	background: linear-gradient(to right, rgba(27,82,136,1) 0%, rgba(30,74,118,1) 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1b5288', endColorstr='#1e4a76', GradientType=1 );
 }
-
-
-
-
-
-
-
-
-
-
