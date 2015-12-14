@@ -1,10 +1,9 @@
 body {
-	min-height: 1028px;
+	min-height: 1024px;
 	background: url(../img/background.jpg) no-repeat;
 	background-size: cover;
 	font: 14px/16px 'Helvetica Neue', Helvetica, sans-serif;
 	color: #fff;
-	position: relative;
 }
 @font-face {
 	font-family: 'Helvetica Neue';
@@ -37,7 +36,6 @@ h1 {
 }
 .mainmenu a {
 	display: inline-block;
-	position: relative;
 	line-height: 36px;
 }
 .menu a {
@@ -76,7 +74,7 @@ h1 {
 	content: '';
 	position: absolute;
 	top: 5px;
-	right: 120px;
+	right: 340px;
 	height: 26px;
 	width: 25px;
 	background: url(../img/flag.png) no-repeat;
@@ -90,13 +88,14 @@ h1 {
 .wrapper {
 	display: table;
 	margin: 0 auto; 
+	height: 100%;
 }
 .form {
-	width: 560px;
-	height: 1000px;
-	display: table-cell; 
+	width: 540px;
+	display: table-cell;
 	text-align: center;
 	vertical-align: middle;
+	position: relative;
 }
 .log_in {
 	margin-top: 2px;
@@ -118,19 +117,19 @@ h1 {
 .ou:before {
 	content: '';
 	position: absolute;
-	left: 484px;
-	top: 415px;
+	left: 300px;
+	top: 175px;
 	height: 4px;
-	width: 130px;
+	width: 110px;
 	background: url(../img/line_ou.png) repeat-x;
 }
 .ou:after {
 	content: '';
 	position: absolute;
-	right: 484px;
-	top: 415px;
+	right: 300px;
+	top: 175px;
 	height: 4px;
-	width: 130px;
+	width: 110px;
 	background: url(../img/line_ou.png) repeat-x;
 }
 .data_field {
