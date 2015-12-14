@@ -20,6 +20,12 @@ a {
 	text-decoration: none; 
 	color: #fff;
 }
+h1 {
+	line-height: 30px;
+	font-size: 24px;
+	padding: 15px 0;
+	background: rgba(0,0,0,0.5);
+}
 /*MENU*/
 .mainmenu {
 	background: url(../img/background_menu.png) repeat-x;
@@ -37,30 +43,10 @@ a {
 .menu a {
 	padding: 0 20px;
 }
-.minhas_ofertas {
-	border-left: 1px solid #56a2dc;
-	margin: 2px 0;
-}
-.minhas_ofertas a {
-	margin: -2px 0;
-	padding: 0 36px; 
-}
-.minhas_ofertas span {
-	margin-right: -16px;
-}
-.minhas_ofertas a:before {
-	content: '';
-	position: absolute;
-	top: 4px;
-	right: 120px;
-	height: 26px;
-	width: 25px;
-	background: url(../img/flag.png) no-repeat;
-}
-.menu-entrar {
+.menu-feedback {
 	margin-right: 20px; 
 }
-.menu-entrar li {
+.signup {
 	padding: 0 16px;
 	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#50afdc+0,2989d8+100,207cca+100,2e7ac4+100 */
 	background: #50afdc; /* Old browsers */
@@ -69,8 +55,31 @@ a {
 	background: linear-gradient(to bottom,  #50afdc 0%,#2989d8 100%,#207cca 100%,#2e7ac4 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#50afdc', endColorstr='#2e7ac4',GradientType=0 ); /* IE6-9 */   
 }
-.menu-entrar a {
+.signup a {
 	text-decoration: underline;
+}
+.signup a:hover {
+	text-decoration: none;
+}
+.my_suggestions {
+	border-left: 1px solid #56a2dc;
+	margin: 2px 0;
+}
+.my_suggestions a {
+	margin: -2px 0;
+	padding: 0 36px; 
+}
+.my_suggestions span {
+	margin-right: -16px;
+}
+.my_suggestions a:before {
+	content: '';
+	position: absolute;
+	top: 5px;
+	right: 120px;
+	height: 26px;
+	width: 25px;
+	background: url(../img/flag.png) no-repeat;
 }
 .mainmenu a:hover,
 .active a {
@@ -78,56 +87,54 @@ a {
 	color: #fff;	
 }
 /*Form*/
+.wrapper {
+	display: table;
+	margin: 0 auto; 
+}
 .form {
 	width: 560px;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);	
+	height: 1000px;
+	display: table-cell; 
 	text-align: center;
-}
-.Cadastre-se {
-	height: 60px;
-	background: rgba(0,0,0,0.5);
-	font-size: 24px;
-	line-height: 60px;
+	vertical-align: middle;
 }
 .log_in {
-	height: 550px;
 	margin-top: 2px;
 	background: rgba(0,0,0,0.5);
 }
 .facebook {
 	display: block;
-	padding: 36px 0;
+	padding: 34px 0;
 }
 .facebook a {
 	display: inline-block;
-	position: relative;
 	width: 276px;
 	height: 34px;
 	background: url(../img/background_facebook.png) no-repeat;
 }
 .ou {
-	padding-bottom: 20px;
+	padding-bottom: 30px;
 }
 .ou:before {
-  content: '';
-  position: absolute;
-  left: 136px;
-  top: 178px;
-  height: 4px;
-  width: 130px;
-  background: url(../img/line_ou.png) repeat-x;
+	content: '';
+	position: absolute;
+	left: 484px;
+	top: 415px;
+	height: 4px;
+	width: 130px;
+	background: url(../img/line_ou.png) repeat-x;
 }
 .ou:after {
-  content: '';
-  position: absolute;
-  right: 136px;
-  top: 178px;
-  height: 4px;
-  width: 130px;
-  background: url(../img/line_ou.png) repeat-x;
+	content: '';
+	position: absolute;
+	right: 484px;
+	top: 415px;
+	height: 4px;
+	width: 130px;
+	background: url(../img/line_ou.png) repeat-x;
+}
+.data_field {
+	padding-bottom: 20px;
 }
 input {
 	border: none;
@@ -136,28 +143,35 @@ input[type="text"],
 input[type="password"]{
 	width: 276px;
 	line-height: 36px;
-	border-bottom: 1px solid #484847;
-	margin-top: 20px;
+	border-bottom: 1px solid #484948;
 	padding-left: 20px;
 	background: #000;
 	color: #f4f3f5;
 }
 input[type="checkbox"]{
-	margin: 20px 0 20px -50px;
+	margin-left: -54px;
+}
+input[type="checkbox"],
+.button {
+	cursor:pointer;
 }
 .button {
-	width: 150px;
 	line-height: 36px;
-	margin-bottom: 20px;
 	-webkit-border-radius: 8px;
 	border-radius: 8px;
 	color: #fefdff;
-	background: url(../img/background_button.png) repeat-x;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#50aedb+0,2e7ac4+100 */
+	background: rgb(80,174,219); /* Old browsers */
+	background: -moz-linear-gradient(top,  rgb(80,174,219) 0%, rgb(46,122,196) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  rgb(80,174,219) 0%,rgb(46,122,196) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  rgb(80,174,219) 0%,rgb(46,122,196) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#50aedb', endColorstr='#2e7ac4',GradientType=0 ); /* IE6-9 */
 }
 .agree {
 	font-size: 11px;
 	line-height: 16px;
 	margin: 0 120px;
+	padding-bottom: 10px;
 }
 input[type="text"]:focus,
 input[type="password"]:focus {
