@@ -4,7 +4,6 @@ body {
 	background-size: cover;
 	font: 14px/16px 'Helvetica Neue', Helvetica, sans-serif;
 	color: #fff;
-	position: relative;
 }
 @font-face {
 	font-family: 'Helvetica Neue';
@@ -87,15 +86,14 @@ h1 {
 }
 /*Form*/
 .wrapper {
-  display: table;
-  width: 540px;
-  margin: auto;
-  position: absolute;
-  top: 0; left: 0; bottom: 0; right: 0;
+	display: table;
+	width: 540px;
+	height: 100%;
+	margin: 0 auto;
+	padding: 200px 0;
 }
 .form {
 	display: table-cell;
-	height: 100%;
 	text-align: center;
 	vertical-align: middle;
 }
@@ -115,12 +113,13 @@ h1 {
 }
 .ou {
 	padding-bottom: 30px;
+    position: relative;			
 }
 .ou:before {
 	content: '';
-	position: absolute;
-	left: 286px;
-	top: 173px;
+    position: absolute;
+	left: 145px;
+	top: 7px;
 	height: 4px;
 	width: 110px;
 	background: url(../img/line_ou.png) repeat-x;
@@ -128,8 +127,8 @@ h1 {
 .ou:after {
 	content: '';
 	position: absolute;
-	right: 286px;
-	top: 173px;
+	right: 145px;
+	top: 7px;
 	height: 4px;
 	width: 110px;
 	background: url(../img/line_ou.png) repeat-x;
