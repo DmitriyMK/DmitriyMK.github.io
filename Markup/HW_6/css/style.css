@@ -1,0 +1,618 @@
+body {
+	background-color: #fff;
+}
+.wrapper {
+	margin: 0 auto;
+	padding-top: 17px;
+	width: 908px;
+	font: 18px/26px "Lucida Sans Unicode Regular", Helvetica, sans-serif; 
+	color: #97a2a6;
+}
+@font-face {
+	font-family: 'lucida_sans_unicode_regular';
+	src: url('fonts/lucida_sans_unicode_regular-webfont.eot');
+	src: url('fonts/lucida_sans_unicode_regular-webfont.eot?#iefix') format('embedded-opentype'),
+	     url('fonts/lucida_sans_unicode_regular-webfont.woff2') format('woff2'),
+	     url('fonts/lucida_sans_unicode_regular-webfont.woff') format('woff'),
+	     url('fonts/lucida_sans_unicode_regular-webfont.ttf') format('truetype'),
+	     url('fonts/lucida_sans_unicode_regular-webfont.svg#lucida_sans_unicoderegular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+a {
+	text-decoration: none;
+}
+img {
+	display:block;
+}
+select {
+	height: 18px;
+}
+/*HEADER*/
+.contact {
+	font: 18px/29px "Arial Regular",Helvetica, sans-serif; 
+	float: left;
+	position: relative;
+	margin: 0 20px 0 30px;	
+	color: #5e696d;
+}
+.contact a{
+	color: #5e696d;
+}
+.contact:before {
+	content: '';
+	position: absolute;
+	left: -22px;
+	top: 2px;
+	height: 22px;
+	width: 20px;
+	background: url(../img/telephone.jpg) no-repeat;
+}	
+.login_password input,
+.signup li,
+.forget_password li,
+.enter-menu
+ {
+	float: left;
+}
+.enter-menu {
+	position: relative;
+	padding-left: 24px;
+	margin-right: 16px;
+	width: 470px;
+	/*gradient*/
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1f6787+0,0d3458+100,7db9e8+100 */
+	background: rgb(31,103,135); /* Old browsers */
+	background: -moz-linear-gradient(top,  rgb(31,103,135) 0%, rgb(13,52,88) 100%, rgb(125,185,232) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  rgb(31,103,135) 0%,rgb(13,52,88) 100%,rgb(125,185,232) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  rgb(31,103,135) 0%,rgb(13,52,88) 100%,rgb(125,185,232) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1f6787', endColorstr='#7db9e8',GradientType=0 ); /* IE6-9 */
+	/*radius*/
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+	/*shadow*/
+	-webkit-box-shadow: 2px 0px 3px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 2px 0px 3px 0px rgba(0,0,0,0.75);
+	box-shadow: 2px 0px 3px 0px rgba(0,0,0,0.75);
+}
+.enter-menu:before {
+	content: '';
+	position: absolute;
+	top: 6px;
+	left: 6px;
+	height: 22px;
+	width: 20px;
+	background: url(../img/profile.png) no-repeat;
+}	
+.enter-menu a {
+	font-size: 11px;
+	color: #fff;
+}
+.enter-menu a:hover,
+.forget_password a {
+	color: #bfbfbf;
+	text-decoration: underline;
+}
+.login_password input {
+	margin-top: 3px;
+	font-size: 11px;
+	width: 110px;
+}
+input[type="text"]{
+	margin-right: 6px;
+}
+:-moz-placeholder {padding-left: 3px;} */ /* Firefox 18- */
+:-ms-input-placeholder {padding-left: 3px;} /* IE 10+ */
+::-webkit-input-placeholder {padding-left: 3px;} /* Safari, Chrome and Opera */
+.signup li:first-child {
+	margin-left: 8px;
+	margin-right: 5px; 
+	padding-right: 7px;
+	border-right: 1px solid #fff;
+}
+.signup li {
+	margin: 5px 0;
+}	
+.signup {
+	line-height: 11px;
+}
+.forget_password {
+	float: right;
+}
+.forget_password a {
+	display: block;
+	letter-spacing: 0.5px;
+	margin-right: 7px;
+	font-size: 12px;
+}
+.right-menu {
+    margin: 1px 8px 0 0;
+	position: relative;
+	overflow: hidden;
+	border: 1px solid;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+} 
+.right-menu li {
+	float: left;
+} 
+.right-menu a {
+	margin: 4px 5px;
+	display: block;
+	width: 12px;
+	height: 12px;
+	-webkit-transition: 0.2s all;
+	-moz-transition: 0.2s all;
+	-ms-transition: 0.2s all;
+	-o-transition: 0.2s all;
+	transition: 0.2s all;
+	background: url(../img/sprite.png) 0 0 no-repeat;
+   } 
+.right-menu .home {
+	background-position: 0 0;	
+}
+.right-menu .home:hover {
+	background-position: 0 -13px;	
+}
+.right-menu .map_site {
+	background-position: -13px 0;
+}
+.right-menu .map_site:hover {
+	background-position: -13px -13px;
+}
+.right-menu .mail {
+	background-position: -26px 0;
+}
+.right-menu .mail:hover {
+	background-position: -26px -13px;
+}
+.photo {
+	clear: both;
+	padding: 10px 0 6px 0;
+}
+/*MENU*/
+.menu {
+	padding-left: 129px;
+	/*gradient*/
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#3a4046+0,030303+100 */
+	background: rgb(58,64,70); /* Old browsers */
+	background: -moz-linear-gradient(top,  rgb(58,64,70) 0%, rgb(3,3,3) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  rgb(58,64,70) 0%,rgb(3,3,3) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  rgb(58,64,70) 0%,rgb(3,3,3) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3a4046', endColorstr='#030303',GradientType=0 ); /* IE6-9 */
+	/*radius*/
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+	/*shadow*/
+	-webkit-box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.75);
+	box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.75);
+}
+.menu li {
+	display: inline-block;
+}
+.menu a {
+	font-size: 13px;
+	line-height: 34px;
+	padding: 6px 14px;
+	color: #b1bcc0;
+}
+.menu li:nth-child(4) {
+	margin-right: -8px;
+}
+.menu a:hover,
+.menu .active a {
+	/*gradient*/
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#25617b+0,0d365a+100 */
+	background: rgb(37,97,123); /* Old browsers */
+	background: -moz-linear-gradient(top,  rgb(37,97,123) 0%, rgb(13,54,90) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  rgb(37,97,123) 0%,rgb(13,54,90) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  rgb(37,97,123) 0%,rgb(13,54,90) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#25617b', endColorstr='#0d365a',GradientType=0 ); /* IE6-9 */
+	/*radius*/
+	-webkit-border-radius: 12px;
+	border-radius: 12px;
+	color: #fff;
+}
+.order {
+	font: 11px "Arial Regular",Helvetica, sans-serif; 
+}
+.order span {
+	padding-right: 14px;
+	font-size: 12px;
+	color: #0d5a8f;
+}
+.menu .cart a {
+	padding-top: 4px;
+	margin-left: 54px;
+	height: 21px;
+	width: 21px;
+	background: url(../img/cart.png) 0 0 no-repeat;
+} 
+/*FORM*/
+.search_by_car {
+	float:left;
+	width: 414px;
+	height: 134px;
+	margin-top: 10px;
+	border: 1px solid;
+	-webkit-border-radius: 20px;
+	border-radius: 20px;
+	font: 10px/10px "Arial Regular",Helvetica, sans-serif;
+	-webkit-box-shadow: 2px 2px 4px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 2px 2px 4px 0px rgba(0,0,0,0.75);
+	box-shadow: 2px 2px 4px 0px rgba(0,0,0,0.75);
+} 
+.search_by_car div{
+	margin-top: 3px;
+}
+.search_by_car p {
+	text-align: center;
+}
+.legend p,
+.legend span,
+legend {
+	font-size: 12px;
+	line-height: 12px;
+	font-family: "Arial",Helvetica, sans-serif;
+	font-weight: bold;
+	display: inline-block;
+	color: #114165;
+}
+.legend p {
+	margin: 0 12px 0 25px;
+	font-size: 10px;
+	line-height: 10px;
+	color: #154468;
+}
+.legend span {
+	font-size: 12px;
+	color: #154467;
+	margin: 0 50px 0 56px;
+	line-height: 12px;
+	letter-spacing:1px
+}
+.disc,
+.tyre {
+	float: left;
+}
+.disc {
+	margin: 0 30px 0 19px;
+}
+label {
+	display: inline-block;
+	vertical-align: top;
+	width: 74px;
+	color: #000;
+}
+label span {
+	font-size: 8px;
+	color: #77858b;
+}
+select {
+	width: 100px;
+	-webkit-box-shadow: -1px -1px 1px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: -1px -1px 1px 0px rgba(0,0,0,0.75);
+	box-shadow: -1px -1px 1px 0px rgba(0,0,0,0.75);
+}
+select[name=year_car] {
+	width: 58px;
+}
+.search_by_car input[type=submit] {
+	margin-left: 336px;
+	font: 12px/14px "Arial Italic", Helvetica, sans-serif;
+	text-decoration: underline;
+	border: none;
+	color: #154467;
+	background: #fff;
+}
+.search_tire {
+	float:left;
+	display: inline-block;
+	width: 194px;
+	height: 134px;	
+	margin: 10px 10px 0 13px;
+	border: 1px solid;
+	-webkit-border-radius: 20px;
+	border-radius: 20px;
+	font: 10px/10px "Arial Regular",Helvetica, sans-serif;
+	-webkit-box-shadow: 2px 2px 4px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 2px 2px 4px 0px rgba(0,0,0,0.75);
+	box-shadow: 2px 2px 4px 0px rgba(0,0,0,0.75);
+}
+.search_tire label {
+	margin-left: -17px;
+	text-align: right;
+	vertical-align: bottom;
+}
+legend {
+	margin: 2px 0 6px 12px;
+	letter-spacing: 1px;
+}
+select[name=size_tire] {
+	width: 52px;
+	height: 18px;
+	margin: 2px 3px;
+}
+select[name=radius] {
+	width: 46px;
+	height: 18px;
+	margin: 2px 3px 2px 3px;
+}
+.search_tire input[type=submit] {
+	margin-left: 120px ;
+	font: 12px/12px "Arial Italic", Helvetica, sans-serif;
+	text-decoration: underline;
+	border: none;
+	color: #154467;
+	background: #fff;
+}
+.search_disc {
+	display: inline-block;
+	width: 268px;
+	height: 134px;
+	margin-top: 10px;
+	border: 1px solid;
+	-webkit-border-radius: 20px;
+	border-radius: 20px;
+	font: 10px/10px "Arial Regular",Helvetica, sans-serif;
+	-webkit-box-shadow: 2px 2px 4px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 2px 2px 4px 0px rgba(0,0,0,0.75);
+	box-shadow: 2px 2px 4px 0px rgba(0,0,0,0.75);
+}
+.search_disc div {
+	margin: 4px 0;
+}
+.search_disc select {
+	width: 56px;
+}
+.search_disc_left {
+	float: left;
+	width: 178px;
+}
+.search_disc input[type=submit] {
+	font: 12px/14px "Arial Italic", Helvetica, sans-serif;
+	text-decoration: underline;
+	border: none;
+	color: #154467;
+	background: #fff;
+}
+/* CONTENT */
+.left_aside,
+.right_aside,
+section {
+	float: left;
+	margin-top: 16px;
+}
+section {
+	width: 528px;
+	margin: 16px 12px 10px 10px;
+	padding-bottom: 20px;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e4e7e8+0,93a7b0+100 */
+	background: rgb(228,231,232); /* Old browsers */
+	background: -moz-linear-gradient(top,  rgb(228,231,232) 0%, rgb(147,167,176) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  rgb(228,231,232) 0%,rgb(147,167,176) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  rgb(228,231,232) 0%,rgb(147,167,176) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e4e7e8', endColorstr='#93a7b0',GradientType=0 ); /* IE6-9 */
+}
+.content li,
+.content span {
+	font-size: 12px;
+	line-height: 25px;
+	color: #465961;	
+}
+aside h2, 
+aside h3 {
+	border: 1px solid #8b979c;
+	-webkit-border-radius: 12px;
+	border-radius: 12px;
+	color: #114165;
+}
+aside h2 {
+	width: 149px;
+	padding-left: 26px;
+	margin-bottom: 10px;
+	font-size: 12px;
+	height: 28px;
+	letter-spacing: 0.8px;
+	-webkit-box-shadow: 1px 2px 2px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 1px 2px 2px 0px rgba(0,0,0,0.75);
+	box-shadow: 1px 2px 2px 0px rgba(0,0,0,0.75);
+}
+aside h3 {
+	width: 117px;
+	padding: 2px 0 0 29px;
+	font-size: 14px;
+	line-height: 26px;
+}
+.left_aside {
+	position: relative;
+	letter-spacing: 0.4px;
+}
+.left_aside li { 
+	margin-left: 46px;
+} 
+.left_aside li:before{
+	content: '';
+	position:absolute ;
+	margin-top: 9px;
+	left: 32px;
+	height: 10px;
+	width: 9px;
+	background: url(../img/aside_li.png) no-repeat;
+} 
+ .left_aside h2:before{
+	content: '';
+	position:absolute ;
+	top: 3px;
+	left: 3px;
+	height: 22px;
+	width: 23px;
+	background: url(../img/h2_aside_menu.png) no-repeat;
+} 
+ .left_aside h3:before{
+	content: '';
+	position:absolute ;
+	margin-top: 1px;
+	left: 5px;
+	height: 23px;
+	width: 23px;
+	background: url(../img/h3_aside_menu.png) no-repeat;
+} 
+.left_aside a:hover,
+.left_aside .active {
+	font: 14px "Arial Regular",Helvetica, sans-serif; 
+	font-weight: bold;
+	color: #0C3256;
+	text-decoration: underline;
+}
+.tyre p {
+	font-size: 15px;
+	line-height: 18px;
+	font-weight: bold;
+	color: #206988;
+	margin-bottom: -8px;
+}
+.tyre figure span {
+	font-weight: bold;
+	letter-spacing: 0.4px;
+	line-height: 18px;
+	color: #1f2528;
+}
+.tyre figure {
+	float: left;
+	text-align: center;
+}
+.tyre figcaption {
+	font: 16px/20px Arial, Helvetica, sans-serif ;
+	margin-left: 18px;
+	letter-spacing: 0.4px;
+	left: 100%;
+	font-weight:bold;
+	font-style: italic;
+	color: #114165;	
+}
+.tyre figure img {
+	border: 1px solid #b0b9bc;
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
+	background-color: #FFF;
+}
+.goodyear {
+	padding: 10px 26px;
+}
+.goodyear img {
+	padding: 4px 30px;
+}
+.nokian {
+	padding: 10px 4px;
+}
+.nokian img {
+	padding: 4px 35px;
+}
+.hankook {
+	padding: 10px 24px;
+}
+.hankook img {
+	padding: 4px 30px;
+}
+.right_aside {
+	position: relative;
+}
+.right_aside h3 {
+	margin-left: 10px;
+	width: 108px;
+}
+.right_aside h2:before {
+	content: '';
+	position:absolute ;
+	top: 3px;
+	left: 3px;
+	height: 22px;
+	width: 23px;
+	background: url(../img/h2_aside_menu.png) no-repeat;
+}
+.right_aside h3:before {
+	content: '';
+	position:absolute ;
+	margin-top: 1px;
+	left: 15px;
+	height: 23px;
+	width: 23px;
+	background: url(../img/h3_aside_menu.png) no-repeat;
+} 
+.right_aside div:nth-child(5){
+	margin-bottom: 7px;
+}
+.right_aside span{
+margin-left: 10px;	
+line-height: 22px;
+}
+.button {
+	font: 11px Arial, Helvetica, sans-serif ;
+	line-height: 22px;
+	margin: 14px 0 28px 22px;
+	padding: 2px 14px;
+	color: #e5e9ea;
+	border: 1px solid;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#286b89+0,0d365a+100 */
+	background: rgb(40,107,137); /* Old browsers */
+	background: -moz-linear-gradient(top,  rgb(40,107,137) 0%, rgb(13,54,90) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  rgb(40,107,137) 0%,rgb(13,54,90) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  rgb(40,107,137) 0%,rgb(13,54,90) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#286b89', endColorstr='#0d365a',GradientType=0 ); /* IE6-9 */
+	-webkit-box-shadow: 1px 3px 2px 0px rgba(229,233,234,1);
+	-moz-box-shadow: 1px 3px 2px 0px rgba(229,233,234,1);
+	box-shadow: 1px 3px 2px 0px rgba(229,233,234,1);
+}
+input[type="checkbox"]{
+	margin-left: 22px;
+}
+input[type="submit"],
+input[type="checkbox"],
+.button {
+	cursor:pointer;
+}
+.brand {
+	clear: both;
+	text-align: center;
+	padding: 26px 0 17px 0;
+}
+.brand li {
+	display: inline-block;
+}
+/*FOOTER*/
+footer {
+	height: 100px;
+	text-align: center;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#213a4d+0,213a4d+100 */
+	background: rgb(33,58,77); /* Old browsers */
+	background: -moz-linear-gradient(top,  rgb(33,58,77) 0%, rgb(33,58,77) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  rgb(33,58,77) 0%,rgb(33,58,77) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  rgb(33,58,77) 0%,rgb(33,58,77) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#213a4d', endColorstr='#213a4d',GradientType=0 ); /* IE6-9 */	
+}
+footer li:not(:last-child) {
+	border-right:1px solid #bec6c9;	
+	line-height: 0;	
+}
+footer li {
+	display: inline-block;
+	padding: 2px 10px;
+}
+footer a {
+	font: 12px/10px Arial, Helvetica, sans-serif;
+	letter-spacing: 0.4px;
+	color: #bec6c9;
+}
+footer li a:hover,
+footer .active a {
+	color: #52abcb;
+}
+footer p {
+	font-size: 10px;
+	line-height: 30px;
+	color: #7f4740;
+}
