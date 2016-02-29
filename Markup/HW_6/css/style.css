@@ -148,9 +148,6 @@ input[type="text"]{
 	transition: 0.2s all;
 	background: url(../img/sprite.png) 0 0 no-repeat;
    } 
-.right-menu .home {
-	background-position: 0 0;	
-}
 .right-menu .home:hover {
 	background-position: 0 -13px;	
 }
@@ -230,18 +227,32 @@ input[type="text"]{
 	background: url(../img/cart.png) 0 0 no-repeat;
 } 
 /*FORM*/
-.search_by_car {
+.search_by_car,
+.search_tire,
+.search_disc {
 	float:left;
-	width: 414px;
-	height: 134px;
+	display: inline-block;
 	margin-top: 10px;
+	height: 134px;
+	font: 10px/10px "Arial Regular",Helvetica, sans-serif;
 	border: 1px solid;
 	-webkit-border-radius: 20px;
 	border-radius: 20px;
-	font: 10px/10px "Arial Regular",Helvetica, sans-serif;
 	-webkit-box-shadow: 2px 2px 4px 0px rgba(0,0,0,0.75);
 	-moz-box-shadow: 2px 2px 4px 0px rgba(0,0,0,0.75);
-	box-shadow: 2px 2px 4px 0px rgba(0,0,0,0.75);
+	box-shadow: 2px 2px 4px 0px rgba(0,0,0,0.75);	
+}
+.search_tire input[type=submit],
+.search_by_car input[type=submit],
+.search_disc input[type=submit] {
+	font: 12px/12px "Arial Italic", Helvetica, sans-serif;
+	text-decoration: underline;
+	border: none;
+	color: #154467;
+	background: #fff;
+}
+.search_by_car {
+	width: 414px;
 } 
 .search_by_car div{
 	margin-top: 3px;
@@ -249,11 +260,16 @@ input[type="text"]{
 .search_by_car p {
 	text-align: center;
 }
+.search_by_car input[type=submit] {
+	margin-left: 336px;
+}
 .legend p,
 .legend span,
 legend {
+    margin: 3px 0 0 12px;
 	font-size: 12px;
 	line-height: 12px;
+    letter-spacing: 0.8px;
 	font-family: "Arial",Helvetica, sans-serif;
 	font-weight: bold;
 	display: inline-block;
@@ -266,10 +282,8 @@ legend {
 	color: #154468;
 }
 .legend span {
-	font-size: 12px;
 	color: #154467;
-	margin: 0 50px 0 56px;
-	line-height: 12px;
+	margin: 0 50px;
 	letter-spacing:1px
 }
 .disc,
@@ -298,67 +312,60 @@ select {
 select[name=year_car] {
 	width: 58px;
 }
-.search_by_car input[type=submit] {
-	margin-left: 336px;
-	font: 12px/14px "Arial Italic", Helvetica, sans-serif;
-	text-decoration: underline;
-	border: none;
-	color: #154467;
-	background: #fff;
-}
 .search_tire {
-	float:left;
-	display: inline-block;
 	width: 194px;
-	height: 134px;	
-	margin: 10px 10px 0 13px;
-	border: 1px solid;
-	-webkit-border-radius: 20px;
-	border-radius: 20px;
-	font: 10px/10px "Arial Regular",Helvetica, sans-serif;
-	-webkit-box-shadow: 2px 2px 4px 0px rgba(0,0,0,0.75);
-	-moz-box-shadow: 2px 2px 4px 0px rgba(0,0,0,0.75);
-	box-shadow: 2px 2px 4px 0px rgba(0,0,0,0.75);
+	margin: 10px 8px 0 15px;
 }
 .search_tire label {
-	margin-left: -17px;
+	margin: 14px -17px 0 0;
 	text-align: right;
 	vertical-align: bottom;
 }
-legend {
-	margin: 2px 0 6px 12px;
-	letter-spacing: 1px;
+.search_tire .name_field_search_tire {
+	font-size: 10px;
+	font-weight: bold;
+	padding-right: 14px;
+	margin-top: 10px;
 }
+.search_tire span {
+	margin-right: 7px;
+	color: #000;
+}
+
+
+.search_tire dt {
+	font: 10px/12px "Lucida Sans Unicode Regular", Helvetica, bold; 
+	margin: 0 0 -9px 17px;
+}
+.search_tire dd {
+	font: 10px/12px "Lucida Sans Unicode Regular", Helvetica, bold; 
+	margin: -5px 0 0 57px;
+}
+.search_tire dt {
+	
+}
+.search_tire dd span{
+	font: 12px/12px bold;
+	
+}
+
+
 select[name=size_tire] {
 	width: 52px;
 	height: 18px;
-	margin: 2px 3px;
 }
 select[name=radius] {
 	width: 46px;
 	height: 18px;
-	margin: 2px 3px 2px 3px;
 }
 .search_tire input[type=submit] {
 	margin-left: 120px ;
-	font: 12px/12px "Arial Italic", Helvetica, sans-serif;
-	text-decoration: underline;
-	border: none;
-	color: #154467;
-	background: #fff;
 }
 .search_disc {
-	display: inline-block;
 	width: 268px;
-	height: 134px;
-	margin-top: 10px;
-	border: 1px solid;
-	-webkit-border-radius: 20px;
-	border-radius: 20px;
-	font: 10px/10px "Arial Regular",Helvetica, sans-serif;
-	-webkit-box-shadow: 2px 2px 4px 0px rgba(0,0,0,0.75);
-	-moz-box-shadow: 2px 2px 4px 0px rgba(0,0,0,0.75);
-	box-shadow: 2px 2px 4px 0px rgba(0,0,0,0.75);
+}
+.search_disc {
+	width: 268px;
 }
 .search_disc div {
 	margin: 4px 0;
@@ -371,12 +378,10 @@ select[name=radius] {
 	width: 178px;
 }
 .search_disc input[type=submit] {
-	font: 12px/14px "Arial Italic", Helvetica, sans-serif;
-	text-decoration: underline;
-	border: none;
-	color: #154467;
-	background: #fff;
+
 }
+
+
 /* CONTENT */
 .left_aside,
 .right_aside,
@@ -567,7 +572,7 @@ line-height: 22px;
 	-moz-box-shadow: 1px 3px 2px 0px rgba(229,233,234,1);
 	box-shadow: 1px 3px 2px 0px rgba(229,233,234,1);
 }
-input[type="checkbox"]{
+aside input[type="checkbox"]{
 	margin-left: 22px;
 }
 input[type="submit"],

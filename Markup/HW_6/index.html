@@ -118,7 +118,7 @@
 			<form action="/">
 				<fieldset>
 					<div>
-						<label for="size_tire">Размер:</label>
+						<label for="size_tire"><span class="name_field_search_tire">Размер:</span></label>
 						<select name="size_tire">
 							<option value="/"></option>
 						</select>
@@ -128,24 +128,17 @@
 						</select>
 					</div>
 					<div>
-						<label for="radius">R</label>
+						<label for="radius"><span class="name_field_search_tire">R</span></label>
 						<select name="radius">
 							<option value="/"></option>
 						</select>
 					</div>
-					<div>
-					<label for="season">Сезон:</label>	
-				    </div>					
-					<div>
-					<input type="checkbox" name="season" value="season"><span>лето</span>	
-					</div>
-					<div>
-						<input type="checkbox" name="season" value="season"><span>зима</span>	
-					</div>
-					<div>
-						<input type="checkbox" name="season" value="season"><span>всесез</span>	
-					</div>
-					
+					<dl>
+						<dt>Сезон:</dt>
+						<dd><input type="checkbox" name="season" value="season"><span>лето</span></dd>
+						<dd><input type="checkbox" name="season" value="season"><span>зима</span></dd>
+						<dd><input type="checkbox" name="season" value="season"><span>всесез</span></dd>
+					</dl>
 					<div>
 						<input type="submit" value="ПОИСК...">
 					</div>
@@ -155,8 +148,8 @@
 		<div class="search_disc">
 			<legend>поиск дисков</legend>
 			<form action="/">
-			<div class="search_disc_left">
-				<fieldset>
+				<div class="search_disc_left">
+					<fieldset>
 					<div>
 						<label for="diameter_disc">Диаметр <span>диска:</span></label>
 						<select name="diameter_disc">
