@@ -51,8 +51,7 @@ select {
 .login_password input,
 .signup li,
 .forget_password li,
-.enter-menu
- {
+.enter-menu {
 	float: left;
 }
 .enter-menu {
@@ -297,6 +296,7 @@ label {
 	vertical-align: top;
 	width: 74px;
 	color: #000;
+	font-weight: bold;
 }
 label span {
 	font-size: 8px;
@@ -350,22 +350,32 @@ select[name=radius] {
 }
 .search_disc {
 	width: 268px;
-}
-.search_disc {
-	width: 268px;
+	line-height: 9px;
 }
 .search_disc select {
 	width: 56px;
 }
 .search_disc_left {
-	margin: 9px 1px;
+	margin: 8px 23px 0 16px;
+	width: 150px;
 	float: left;
-	width: 176px;
+}
+.search_disc_left div:first-child{
+	margin-bottom: 10px;
+}
+.search_disc_left label {
+	width: 89px;
+	letter-spacing: 1px;
 }
 .search_disc_right {
-
 	float: left;
-	width: 90px;
+	width: 70px;
+}
+.search_disc_right .DCO{
+	margin-top: -9px;
+}
+.search_disc_right div{
+	margin-bottom: 10px;
 }
 /* CONTENT */
 .left_aside,
