@@ -17,7 +17,7 @@ body {
 }
 a {
 	text-decoration: none; 
-	color: #fff;
+	color: #60b5ed;
 }
 h1 {
 	line-height: 30px;
@@ -25,6 +25,7 @@ h1 {
 	padding: 15px 0;
 	background: rgba(0,0,0,0.5);
 }
+
 /*MENU*/
 .mainmenu {
 	background: url(../img/background_menu.png) repeat-x;
@@ -54,9 +55,11 @@ h1 {
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#50afdc', endColorstr='#2e7ac4',GradientType=0 ); /* IE6-9 */   
 }
 .signup a {
+	color: #fff;
 	text-decoration: underline;
 }
 .signup a:hover {
+	color: #fff;
 	text-decoration: none;
 }
 .my_suggestions {
@@ -64,6 +67,7 @@ h1 {
 	margin: 2px 0;
 }
 .my_suggestions a {
+	position: relative;
 	margin: -2px 0;
 	padding: 0 36px; 
 }
@@ -74,7 +78,7 @@ h1 {
 	content: '';
 	position: absolute;
 	top: 5px;
-	right: 340px;
+	right: 118px;
 	height: 26px;
 	width: 25px;
 	background: url(../img/flag.png) no-repeat;
@@ -86,16 +90,15 @@ h1 {
 }
 /*Form*/
 .wrapper {
-	display: table;
+	position: relative;
 	width: 540px;
 	height: 100%;
 	margin: 0 auto;
 	padding: 200px 0;
 }
 .form {
-	display: table-cell;
-	text-align: center;
-	vertical-align: middle;
+	position: absolute;
+ 	text-align: center;
 }
 .log_in {
 	margin-top: 2px;
@@ -103,7 +106,7 @@ h1 {
 }
 .facebook {
 	display: block;
-	padding: 34px 0;
+	padding: 30px 0;
 }
 .facebook a {
 	display: inline-block;
@@ -112,51 +115,50 @@ h1 {
 	background: url(../img/background_facebook.png) no-repeat;
 }
 .ou {
-	padding-bottom: 30px;
+	padding-bottom: 27px;
     position: relative;			
 }
-.ou:before {
-	content: '';
-    position: absolute;
-	left: 145px;
-	top: 7px;
-	height: 4px;
-	width: 110px;
-	background: url(../img/line_ou.png) repeat-x;
+.line {
+	display: inline-block;
+	border-bottom: 1px solid #000;
+	border-top: 1px solid #666666;
+	width: 124px;
+	margin: 0 12px;
 }
-.ou:after {
-	content: '';
+.ou span {
 	position: absolute;
-	right: 145px;
-	top: 7px;
-	height: 4px;
-	width: 110px;
-	background: url(../img/line_ou.png) repeat-x;
+	font-size: 12px;
+    left: 260px;
+    top: 4px;
 }
 .data_field {
-	padding-bottom: 20px;
+	padding-bottom: 15px;
 }
 input {
 	border: none;
 }
 input[type="text"],
 input[type="password"]{
-	width: 276px;
+	width: 256px;
 	line-height: 36px;
 	border-bottom: 1px solid #484948;
 	padding-left: 20px;
 	background: #000;
 	color: #f4f3f5;
 }
+
 input[type="checkbox"]{
-	margin-left: -54px;
+	margin-left: -30px;
+	vertical-align: middle;
 }
 input[type="checkbox"],
 .button {
 	cursor:pointer;
 }
 .button {
-	line-height: 36px;
+	padding: 14px 16px;
+	font-weight: bold;
+/* 	line-height: 36px; */
 	-webkit-border-radius: 8px;
 	border-radius: 8px;
 	color: #fefdff;
@@ -188,3 +190,6 @@ input[type="password"]:focus {
 	background: linear-gradient(to right, rgba(27,82,136,1) 0%, rgba(30,74,118,1) 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1b5288', endColorstr='#1e4a76', GradientType=1 );
 }
+::-webkit-scrollbar {
+	width: 0px;
+}  // скроллбар исчезнет, но прокрутка останется как ни в чем не бывало;

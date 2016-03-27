@@ -8,11 +8,15 @@
  	for (var i = 0; i < n; i++) {
  		result = result * x;
  	}
+
  	return result;
  }
 
  var powResult = pow(x, n);
 
-console.log (powResult);
-
+if (n < 0) {
+	console.log( "Вай вай вай, степень не можеть быть меньше чем 0");
+} else {
+	console.log (powResult);
+}
 
