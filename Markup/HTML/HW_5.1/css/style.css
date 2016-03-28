@@ -25,7 +25,6 @@ h1 {
 	padding: 15px 0;
 	background: rgba(0,0,0,0.5);
 }
-
 /*MENU*/
 .mainmenu {
 	background: url(../img/background_menu.png) repeat-x;
@@ -59,8 +58,12 @@ h1 {
 	text-decoration: underline;
 }
 .signup a:hover {
-	color: #fff;
 	text-decoration: none;
+}
+.my_suggestions a:hover, 
+.menu a:hover {
+	color: #fff;
+	background: #4eabda;
 }
 .my_suggestions {
 	border-left: 1px solid #56a2dc;
@@ -83,16 +86,10 @@ h1 {
 	width: 25px;
 	background: url(../img/flag.png) no-repeat;
 }
-.mainmenu a:hover,
-.active a {
-	background: #4eabda;
-	color: #fff;	
-}
 /*Form*/
 .wrapper {
 	position: relative;
 	width: 540px;
-	height: 100%;
 	margin: 0 auto;
 	padding: 200px 0;
 }
@@ -102,34 +99,82 @@ h1 {
 }
 .log_in {
 	margin-top: 2px;
+	padding-top: 36px;
 	background: rgba(0,0,0,0.5);
 }
 .facebook {
-	display: block;
-	padding: 30px 0;
+	margin: 0 auto;
+	width: 270px;
+	height: 34px;
+	line-height: 28px;
+	border-top: 1px solid #778ab5;
+	/* facebook gradient */
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#3d5699+0,2e4378+100 */
+	background: #3d5699; /* Old browsers */
+	background: -moz-linear-gradient(top,  #3d5699 0%, #2e4378 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  #3d5699 0%,#2e4378 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  #3d5699 0%,#2e4378 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3d5699', endColorstr='#2e4378',GradientType=0 ); /* IE6-9 */
+	/* facebook radius */
+	-webkit-border-radius: 6px;
+	border-radius: 4px;
 }
 .facebook a {
-	display: inline-block;
-	width: 276px;
+	display: block;
+}
+.facebook_logo {
+	float: left;
+	width: 34px;
 	height: 34px;
-	background: url(../img/background_facebook.png) no-repeat;
+	margin-left: 5px;
+	border-right: 1px solid #213b6c;
+}
+.facebook_logo img {
+	vertical-align: middle;
+}
+.facebook_login {
+	padding-right: 12px;
+	position: relative;
+}
+.facebook_login:after {
+	content: '';
+	position: absolute;
+	top: 10px;
+	right: 18px;
+	height: 11px;
+	width: 9px;
+	background: url(..//img/facebook_line.png) no-repeat;
+}
+.facebook_login span {
+	color: #fff;
+	font-size: 15px;
+	vertical-align: middle;
+}
+.facebook_login .bold {
+	font-weight: bold;
 }
 .ou {
+	margin-top: 30px;
 	padding-bottom: 27px;
     position: relative;			
 }
-.line {
-	display: inline-block;
+.ou:before {
+	content: '';
+	position: absolute;
+	top: 7px;
+	left: 136px;
 	border-bottom: 1px solid #000;
 	border-top: 1px solid #666666;
-	width: 124px;
-	margin: 0 12px;
+	width: 120px;	
 }
-.ou span {
+.ou:after {
+	content: '';
 	position: absolute;
-	font-size: 12px;
-    left: 260px;
-    top: 4px;
+	top: 7px;
+	right: 136px;
+	border-bottom: 1px solid #000;
+	border-top: 1px solid #666666;
+	width: 120px;	
 }
 .data_field {
 	padding-bottom: 15px;
@@ -146,9 +191,11 @@ input[type="password"]{
 	background: #000;
 	color: #f4f3f5;
 }
-
 input[type="checkbox"]{
 	margin-left: -30px;
+	vertical-align: middle;
+}
+.send_me {
 	vertical-align: middle;
 }
 input[type="checkbox"],
@@ -158,7 +205,6 @@ input[type="checkbox"],
 .button {
 	padding: 14px 16px;
 	font-weight: bold;
-/* 	line-height: 36px; */
 	-webkit-border-radius: 8px;
 	border-radius: 8px;
 	color: #fefdff;
@@ -190,6 +236,3 @@ input[type="password"]:focus {
 	background: linear-gradient(to right, rgba(27,82,136,1) 0%, rgba(30,74,118,1) 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1b5288', endColorstr='#1e4a76', GradientType=1 );
 }
-::-webkit-scrollbar {
-	width: 0px;
-}  // скроллбар исчезнет, но прокрутка останется как ни в чем не бывало;
