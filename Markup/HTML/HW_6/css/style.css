@@ -93,7 +93,7 @@ select {
 	text-decoration: underline;
 }
 .login_password input {
-	margin-top: 3px;
+	margin: 4px 0;
 	font-size: 11px;
 	width: 110px;
 }
@@ -111,10 +111,10 @@ input[type="text"]{
 	border-right: 1px solid #fff;
 }
 .signup li {
-	margin-top: 6px;
+    margin: 5px 0;
 }	
 .signup {
-	line-height: 9px;
+	line-height: 11px;
 }
 .forget_password {
 	float: right;
@@ -126,7 +126,7 @@ input[type="text"]{
 	font-size: 12px;
 }
 .right-menu {
-    margin: 2px 8px 0 0;
+    margin: 4px 8px 0 0;
 	position: relative;
 	overflow: hidden;
 	border: 1px solid;
@@ -382,7 +382,7 @@ select[name=radius] {
 .right_aside,
 section {
 	float: left;
-	margin-top: 18px;
+	margin-top: 20px;
 }
 section {
 	width: 528px;
@@ -394,6 +394,9 @@ section {
 	background: -webkit-linear-gradient(top,  rgb(228,231,232) 0%,rgb(147,167,176) 100%); /* Chrome10-25,Safari5.1-6 */
 	background: linear-gradient(to bottom,  rgb(228,231,232) 0%,rgb(147,167,176) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e4e7e8', endColorstr='#93a7b0',GradientType=0 ); /* IE6-9 */
+	border: 1px solid;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;	
 }
 .content li,
 .content span {
@@ -405,8 +408,8 @@ section {
 aside h2, 
 aside h3 {
 	border: 1px solid #8b979c;
-	-webkit-border-radius: 9px;
-	border-radius: 9px;
+	-webkit-border-radius: 11px;
+	border-radius: 11px;
 	color: #114165;
 }
 aside h2 {
@@ -431,27 +434,30 @@ aside h3 {
 	letter-spacing: 0.4px;
 }
 .left_aside li { 
-	margin-left: 46px;
+	margin-left: 33px;
+	background: url(../img/aside_li.png) left center no-repeat;
 } 
-.left_aside li:before {
-	content: '';
-	position:absolute ;
-	margin-top: 9px;
-	left: 32px;
-	height: 10px;
-	width: 9px;
-	background: url(../img/aside_li.png) no-repeat;
-} 
- .left_aside h2:before{
+.left_aside span {
+	margin-left: 13px;
+}
+.left_aside .active,
+.left_aside li:hover {
+	font: 14px "Arial Regular",Helvetica, sans-serif; 
+	font-weight: bold;
+	color: #0C3256;
+	text-decoration: underline;
+	background: url(../img/aside_li_hover.png) left center no-repeat;
+}
+.left_aside h2:before {
 	content: '';
 	position:absolute ;
 	top: 3px;
-    left: 3px;
+	left: 3px;
 	height: 26px;
 	width: 23px;
-	background: url(../img/h2_aside_menu.png) no-repeat;
+	background: url(../img/h2_aside_menu.png) no-repeat; 
 } 
- .left_aside h3:before{
+.left_aside h3:before {
 	content: '';
 	position:absolute ;
 	margin-top: 1px;
@@ -460,29 +466,29 @@ aside h3 {
 	width: 23px;
 	background: url(../img/h3_aside_menu.png) no-repeat;
 } 
-.left_aside a:hover,
-.left_aside .active {
-	font: 14px "Arial Regular",Helvetica, sans-serif; 
-	font-weight: bold;
-	color: #0C3256;
-	text-decoration: underline;
-}
 .tyre p {
+	margin: 0px -1px -15px 10px;
 	font-size: 15px;
-	line-height: 18px;
 	font-weight: bold;
 	color: #206988;
-	margin-bottom: -8px;
 }
 .tyre figure span {
+	margin-left: 14px;
+	letter-spacing: 0.6px;	
 	font-weight: bold;
-	letter-spacing: 0.4px;
-	line-height: 18px;
 	color: #1f2528;
 }
 .tyre figure {
+    padding: 10px 11px 6px 22px;
 	float: left;
 	text-align: center;
+}
+.tyre figure img {
+	border: 1px solid #b0b9bc;
+	-webkit-border-radius: 8px;
+	border-radius: 8px;
+	background-color: #FFF;
+	padding: 5px 31px;
 }
 .tyre figcaption {
 	font: 16px/20px Arial, Helvetica, sans-serif ;
@@ -493,42 +499,36 @@ aside h3 {
 	font-style: italic;
 	color: #114165;	
 }
-.tyre figure img {
-	border: 1px solid #b0b9bc;
-	-webkit-border-radius: 6px;
-	border-radius: 6px;
-	background-color: #FFF;
-}
-.goodyear {
-	padding: 10px 26px;
+/* .goodyear {
+padding: 10px 26px;
 }
 .goodyear img {
 	padding: 4px 30px;
 }
 .nokian {
-	padding: 10px 4px;
+padding: 10px 4px;
 }
 .nokian img {
-	padding: 4px 35px;
+	padding: 4px 30px;
 }
 .hankook {
-	padding: 10px 24px;
+padding: 10px 24px;
 }
 .hankook img {
 	padding: 4px 30px;
-}
+} */
 .right_aside {
 	position: relative;
 }
 .right_aside h3 {
-	margin-left: 14px;
+	margin-left: 11px;
 	width: 102px;
 }
 .right_aside h2:before {
 	content: '';
 	position:absolute ;
 	top: 3px;
-	left: 3px;
+	left: 5px;
 	height: 22px;
 	width: 23px;
 	background: url(../img/h2_aside_menu.png) no-repeat;
@@ -543,10 +543,11 @@ aside h3 {
 	background: url(../img/h3_aside_menu.png) no-repeat;
 } 
 .right_aside div:nth-child(5){
-	margin-bottom: 7px;
+	margin-bottom: 10px;
 }
 .tyres_brand {
 	margin-left: 18px;
+	margin-bottom: -4px;
 }
 .tyres_brand label {
 	width: 130px;
@@ -555,11 +556,12 @@ aside h3 {
 	width: 120px;
 	margin-left: 10px;
 	letter-spacing: 0.6px;
+	vertical-align: middle;
 }
 .button {
 	font: 11px Arial, Helvetica, sans-serif ;
 	line-height: 22px;
-	margin: 14px 0 28px 22px;
+	margin: 21px 0 0 20px;
 	padding: 2px 14px;
 	color: #e5e9ea;
 	border: 1px solid;
