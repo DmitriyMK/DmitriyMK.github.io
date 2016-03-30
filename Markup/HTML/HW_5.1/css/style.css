@@ -1,5 +1,5 @@
 body {
-	min-height: 1024px;
+	min-height: 100vh;
 	background: url(../img/background.jpg) no-repeat;
 	background-size: cover;
 	font: 14px/16px 'Helvetica Neue', Helvetica, sans-serif;
