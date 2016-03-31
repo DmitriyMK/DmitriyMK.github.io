@@ -1,8 +1,12 @@
- var x = +prompt("Введите число, которое будем возводить в степень","");
- var n = +prompt("Введите степень, в которую будем возводить", "");
+ var x = +prompt("Введите число, которое будем возводить в степень");
+ var n = +prompt("Введите степень, в которую будем возводить");
 
 
- function pow(x, n) {
+ function pow(x,n){
+ 	if (n < 0) {
+ 		return alert ('Введите число большее нуля');
+ 	} else {
+
  	var result = 1;
 
  	for (var i = 0; i < n; i++) {
@@ -11,12 +15,12 @@
 
  	return result;
  }
+ }
 
  var powResult = pow(x, n);
 
-if (n < 0) {
-	console.log( "Вай вай вай, степень не можеть быть меньше чем 0");
-} else {
-	console.log (powResult);
-}
+ console.log (pow(x, n));
+
+
+
 
