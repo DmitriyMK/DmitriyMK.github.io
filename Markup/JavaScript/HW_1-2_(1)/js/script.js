@@ -2,25 +2,31 @@
  var n = +prompt("Введите степень, в которую будем возводить");
 
 
- function pow(x,n){
- 	if (n < 0) {
- 		return alert ('Введите число большее нуля');
- 	} else {
+ function pow(x, n) {
 
  	var result = 1;
+    
+    if (n > 0) {
+    	for (var i = 0; i < n; i++) {
+    		result = result * x;
+    	}
+       	return result;
+    }
 
- 	for (var i = 0; i < n; i++) {
- 		result = result * x;
- 	}
+    if (n < 0) {
+    	for (var j = n; j < -1; j++) {
+    		result = result * x;
+    	}
+        return 1 / result;
+    }
 
- 	return result;
- }
- }
-
- var powResult = pow(x, n);
+    if (n === 0) {
+    	return result;
+    }
+   else {
+     console.log ('Введите пожалуйста целое число');
+   }
+  }
 
  console.log (pow(x, n));
-
-
-
 
