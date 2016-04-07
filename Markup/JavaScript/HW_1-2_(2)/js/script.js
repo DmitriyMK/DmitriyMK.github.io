@@ -1,23 +1,34 @@
-
 (function() {
-	var arr = [];
-	var n = prompt('number of names');
-	var i;
 
-	for ( i = 1; i <= n; i++) {
-		arr.push(prompt('enter the name number '+i));
-	}
+var arr = [];
 
+for (var i = 0; i < 5; i++) {
+	arr[i] = prompt('Введите имя пользователя','Mickey');
+    if (arr[i] === null || undefined);{
+		return false;
+    }
+} 	
+console.log(arr);
 
-	var name = prompt('enter your name');
+var userName = prompt('Введите свое имя');
+var flag = false;
 
+for (var j = 0; j < arr.length; j++) {
+	if (arr[j] === userName){
+		flag = true;
+    }
+	if (arr[j] === null){
+		break;
+    }
 
-	for (i = 0; i < arr.length; i++) {
-		if (arr[i] == name) { 
-			alert(name+', you are welcome');
-			return;
-		}
-	}
-	alert('eror');
-	
+  	console.log(j);
+  		break;
+}
+
+if (flag){
+	alert(userName + ' вы успешно вошли!');
+} else {
+	alert('Такого пользователя не существует!');
+}
+
 }) ();
