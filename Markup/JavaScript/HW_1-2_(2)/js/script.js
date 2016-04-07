@@ -4,25 +4,22 @@ var arr = [];
 
 for (var i = 0; i < 5; i++) {
 	arr[i] = prompt('Введите имя пользователя','Mickey');
-    if (arr[i] === null || undefined);{
-		return false;
+    if (arr[i] == null);{
+		break;
     }
 } 	
-console.log(arr);
+console.log(i);
 
-var userName = prompt('Введите свое имя');
+var userName = prompt('Введите свое имя','Mickey');
 var flag = false;
 
 for (var j = 0; j < arr.length; j++) {
-	if (arr[j] === userName){
+	if (arr[i] === userName){
 		flag = true;
     }
-	if (arr[j] === null){
-		break;
+	if (userName == null){
+		return false;
     }
-
-  	console.log(j);
-  		break;
 }
 
 if (flag){
