@@ -6,7 +6,11 @@ var app = {
 		if (params.inputType) {
 			element.setAttribute('type', params.inputType);
 		}
-
+      
+      	if (params.typeValue) {
+			element.setAttribute('value', params.typeValue);
+		}
+      
 		if (params.className){
 			element.className = params.className;
 		}
@@ -55,7 +59,8 @@ var app = {
 			inputType: 'checkbox'
 			});
 
-			label.insertAdjacentElement('afterBegin', checkbox);
+/*			label.insertAdjacentElement('afterBegin', checkbox);*/
+            li.insertBefore(checkbox, label);
 			}
 		}
 	}
@@ -79,13 +84,11 @@ var form = app.createElement ({
 	parentElement: wrapper
 });
 
-
 app.generateQuestions (3,3);
 
 app.createElement ({
 	tagName: 'input',
 	inputType: 'submit',
-	content: 'Проверить мои результаты',
+	typeValue: 'Проверить мои результаты',
 	parentElement: form
 });
-
