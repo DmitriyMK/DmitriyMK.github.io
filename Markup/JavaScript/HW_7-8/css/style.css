@@ -1,0 +1,61 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+/* TABS */
+body {
+	background: #CFCFCF;
+}
+.tabs {
+	display: inline-block;
+	width: 600px;
+	margin: 10% 0 0 10%;
+    border: 1px solid;
+} 
+.tab-menu {
+	border: 1px solid;
+	background: #40E0D0;
+}
+.tab-menu li {
+    display: inline-block;
+    -webkit-border-radius: 10px 10px;
+    border-radius: 10px 10px;
+    border-right: 2px solid;
+    list-style: none;
+}
+.tab-menu a {
+	display: block;
+	margin: 10px 40px;
+	text-decoration: none;
+	color: #000;
+}
+.tab-menu .active {
+    background: #FF4040;
+}
+.tab-content {
+	display: inline-block;
+	background: #B5B5B5;
+}
+/* END TABS */
+/* TOOLTIPS */
+form {
+	margin: 10% 0 0 10%;
+	width: 600px;
+}
+label {
+	display: inline-block;
+	width: 80px;
+	margin: 10px 0px 15px 40px;
+}
+input[type=submit] {
+	margin-top: 10px;
+	height: 30px;
+	width: 100px;
+	background: #CFCFCF;
+	-webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+span {
+	display: none;
+}
+/* END TOOLTIPS */
