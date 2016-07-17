@@ -1,0 +1,63 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+  font-family: "comic sans ms", serif;
+}
+header {
+  text-align: center;
+}
+
+/* Carousel */
+.carousel {
+  margin: 50px;
+}
+.carousel-arrow-left,
+.carousel-arrow-right {
+  float: left;
+  display: block;
+  padding: 5px;
+  margin-top: 50px;
+  font-size: 50px;
+  background-color: ##ff0000;
+}
+.carousel-arrow-left:hover,
+.carousel-arrow-right:hover {
+  background-color: rgba(255,0,0,1);
+  -webkit-box-shadow: 0px 0px 3px 3px rgba(255,0,0,1);
+  -moz-box-shadow: 0px 0px 3px 3px rgba(255,0,0,1);
+  box-shadow: 0px 0px 3px 3px rgba(255,0,0,1);
+  cursor: pointer;
+}
+.carousel-arrow-left {
+  margin-right: 20px;
+}
+.carousel-arrow-right{
+  margin-left: 20px;
+}
+.carousel-hider {
+  width: 1000px;
+  overflow: hidden;
+  float: left;
+}
+.carousel-list {
+  position: relative;
+  width: 10000px;
+  padding: 0px;
+  list-style: none;
+}
+.carousel-element {
+  display: block;
+  float: left;
+  margin-right: 20px;
+}
+
+/* Content */
+.content {
+  clear: both;
+  text-align: center;
+}
+h1 {
+  margin: 20px 0;
+}
