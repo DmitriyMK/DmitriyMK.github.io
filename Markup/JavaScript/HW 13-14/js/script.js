@@ -53,5 +53,4 @@ $(function() {
     $('.template').append(content);
 
 
-
 });
