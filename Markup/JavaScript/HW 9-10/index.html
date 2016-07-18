@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>HOMEWORK №9-10</title>
+	<link rel="stylesheet" href="css/jcarousel.responsive.css">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="http://code.jquery.com/jquery-1.12.4.js" integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU="crossorigin="anonymous"></script>
+	<script src="js/jquery.customSelect.min.js"></script>
+	<script src="js/jcarousel.responsive.js"></script>
+	<script src="js/jquery.jcarousel.min.js"></script> 
+	<script src="js/jquery.jcarousel-autoscroll.min.js"></script>
+	<script src="js/jquery.checkbox.js"></script>
+	<script src="js/script.js"></script>		
+</head>
+<body>
+	<header>
+		<h1> The funny cats </h1>
+		<h2> This is the coolest cats in the world</h2>
+	</header>
+	<nav class="navigation clearfix">
+		<ul class="menu clearfix">
+			<li><a href="#">Cat 1</a></li>
+			<li><a href="#">Cat 2</a></li>
+			<li class="dropdown"><a href="#">Cat 3</a>
+				<ul class="submenu1">
+					<li><a href="#">Cat</a></li>
+					<li><a href="#">Cat</a></li>
+					<li><a href="#">Cat</a></li>
+					<li class="dropright"><a href="#">Cat</a>
+						<ul class="submenu2">
+							<li><a href="#">CatNew1</a></li>
+							<li><a href="#">CatNew2</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Cat</a></li>
+				</ul>
+			</li>
+			<li><a href="#">Cat 4</a></li>
+		</ul>
+	</nav>
+	<div class="jcarousel_wrapper">
+		<div class="jcarousel">
+			<ul>
+				<li><img src="img/1.jpg" alt=""></li>
+				<li><img src="img/2.jpg" alt=""></li>
+				<li><img src="img/3.jpg" alt=""></li>
+				<li><img src="img/4.jpg" alt=""></li>
+				<li><img src="img/5.jpg" alt=""></li>
+				<li><img src="img/6.jpg" alt=""></li>
+			</ul>
+		</div>
+	<!-- 	Controls -->
+		<a href="#" class="jcarousel-control-prev">&lsaquo;</a>
+		<a href="#" class="jcarousel-control-next">&rsaquo;</a>
+	<!-- 	Pagination -->
+		<div class="jcarousel-pagination"></div>
+	</div>
+	<!-- SelectBox -->
+	<div class="select--styled">
+		<label><h3>The best cat in the world:</h3></label> 
+		<div class="styled">  
+			<select class="customSelect" id="someSelectBox">
+				<option value="1" class="simon">SIMON</option>
+				<option value="2" class="garfield">GARFIELD</option>
+				<option value="3" class="tom">TOM</option>
+				<option value="4" class="kitty">HELLO KITTY</option>
+			</select>
+		</div> 
+	</div>
+	<div class="checkbox_js">
+		<div>
+			<label for="ch1">SIMON</label>
+			<input type="checkbox" class="niceCheck" id="ch1" tabindex="1" value="1" /> 
+		</div>
+		<div>
+			<label for="ch2">GARFIELD</label>
+			<input type="checkbox" class="niceCheck" checked="checked" id="ch2" tabindex="2" value="2" />
+		</div>
+		<div>
+			<label for="ch2">TOM</label>
+			<input type="checkbox" class="niceCheck" id="ch3" tabindex="3" value="3" />
+		</div>
+		<div>
+			<label for="ch2">HELLO KITTY</label>
+			<input type="checkbox" class="niceCheck" id="ch4" tabindex="4" value="4" />
+		</div>
+	</div>
+	<div class="checkbox_css">
+		<div>
+			<input type="checkbox" class="checkbox" id="checkbox1" />
+			<label for="checkbox1">SIMON</label>
+		</div>
+		<div>
+			<input type="checkbox" class="checkbox" id="checkbox2" />
+			<label for="checkbox2">GARFIELD</label>
+		</div>
+		<div>
+			<input type="checkbox" class="checkbox" id="checkbox3" />
+			<label for="checkbox3">TOM</label>
+		</div>
+		<div>
+			<input type="checkbox" class="checkbox" id="checkbox4" />
+			<label for="checkbox4">HELLO KITTY</label>
+		</div>
+	</div>
+</body>
+</html>
