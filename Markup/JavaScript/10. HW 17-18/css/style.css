@@ -1,0 +1,28 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+.wrapper {
+	margin: 10% 40%;
+	font-family:  "comic sans ms", serif;
+}
+h1 {
+	font-size: 66px;
+	letter-spacing: 6px;
+	color: blue;
+	text-align: center;
+}
+
+.form {
+
+}
+input[type="search"] {
+	width: 600px;
+	height: 30px;
+	margin-left: -140px;
+}
+input[type="submit"] {
+	width: 125px;
+	height: 30px;
+	margin: 10px 0 0 50px;
+}

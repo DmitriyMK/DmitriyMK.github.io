@@ -449,10 +449,10 @@ footer {
 @media (max-width: 1919px) {
 /* SLIDER 1920 */
  .slider__left-arrow {
-    margin-left: 280px ;
+    margin-left: 100px ;
 }
 .slider__right-arrow {
-    margin-right: 280px;
+    margin-right: 100px;
 } 
 }
 /* END SLIDER 1920*/
