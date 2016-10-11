@@ -273,6 +273,7 @@ header {
 	-webkit-transition: 0.5s; 
     transition: 0.5s;
 }
+
 /* SECTION ACTIVITY IDEAS */
 .activity {
 	margin-top: -30px; 
@@ -465,17 +466,33 @@ header {
 	letter-spacing: 0.2px;
 }
 /* SECTION ACTIVITY IDEAS */
+
 .activity {
-	margin-top: 5px;
+	margin-top: -30px; 
+	height: 1860px; 
 }
+ .grid-item {
+ 	padding-bottom: 4px;
+ 	float: left;
+ 	border: 2px solid #fff;
+ 	border-radius: 5px;
+ }
  .grid-item--image {
- 	width: 240px;
- 	height: 310px;
+ 	width: 236px;
+ 	height: 310px;	
  }
  .grid-item--image2 {
- 	width: 500px;
+ 	width: 492px;
  	height: 310px;
  }
+
+
+
+
+
+
+
+
 
 /* SECTION DISCOVER IDEAS */
 .discover-ideas {
