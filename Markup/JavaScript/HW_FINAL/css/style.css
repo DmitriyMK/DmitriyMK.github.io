@@ -310,24 +310,25 @@ header {
 	float: left;
 	border: 2px solid #fff;
 	border-radius: 5px;
-/* 	background-size: cover;
-background-repeat: no-repeat; */
-
+	background-size: cover;
 }
  .grid-item--width2 {
 	width: 620px;
 	height: 320px;
 } 
- 
+
+  
+
 .pic1 {
 	background-image: url(../img/activity.jpg);
-/* 	background-position: 44% 0; */
+/*  	background-position: -82px 0;  */
 }
 .pic2 {
 	background-image: url(../img/activity2.jpg);
 }
 .pic3 {
 	background-image: url(../img/activity3.jpg);
+/* 	background-position: -260px 0px;  */
 }
 .pic4 {
 	background-image: url(../img/activity4.jpg);
@@ -340,6 +341,7 @@ background-repeat: no-repeat; */
 }
 .pic7 {
 	background-image: url(../img/activity7.jpg);
+/* 	background-position: -260px 0px;  */
 }
 
 /* SECTION DISCOVER IDEAS */

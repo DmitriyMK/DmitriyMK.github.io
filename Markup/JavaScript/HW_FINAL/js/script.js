@@ -24,9 +24,12 @@
 
 
 $('.grid').masonry({
-    // options
-    columnWidth: '.grid-sizer',
-    gutter: 20
+  // options
+  columnWidth: '.grid-sizer',
+  gutter: 20
 });
 
-
+// jQuery
+$('wrapper').imagesLoaded( { background: 'item' }, function() {
+  console.log('all .item background images loaded');
+});
