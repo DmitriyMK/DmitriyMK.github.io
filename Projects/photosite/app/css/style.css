@@ -1,0 +1,92 @@
+body {
+	font: 28px/30px "Indie Flower", Tahoma, sans-serif;
+	background-color: #FBF7C4; 
+}
+a {
+	text-decoration: none;
+	cursor: pointer;
+	color: #000;
+}
+.wrapper {
+	width: 1200px;
+	margin: 0 auto;
+}
+.clearfix:after {
+	content: " ";
+	display: table; 
+	clear: both;
+}
+/* HEADER*/
+header  {
+	height: 92px;
+	margin-top: 40px;
+}
+.header__logo {
+	display: inline-block;
+    text-align: center;
+    margin-left: 33%;
+    font-size: 40px;
+    line-height: 40px;
+}
+.header__social-networks {
+	float: right; 
+	margin-right: 96px;
+}
+.social-networks__item {
+	float: left;
+	margin-top: 28px;
+}
+.social-networks__link{
+	font-size: 120%;
+}
+.social-networks__link:hover{
+	color: #40E0D0;
+	-webkit-transition: 0.5s;
+	-o-transition: 0.5s;
+	transition: 0.5s; 	
+}
+/* ASIDE */
+aside  {
+	font: 28px/30px "Indie Flower", Tahoma, sans-serif;
+	width: 13%;
+	float: left;
+	padding-right: 10px; 
+	text-align: center;
+}
+.menu-container {
+	padding-top: 40px;
+	display: block;
+}
+.menu {
+	display: none;
+}
+.menu-container__item {
+	padding: 15px 0;
+}
+.menu-container__item--link {
+	margin: 0 16px;
+}
+.menu-container__item--link:hover {
+	color: #40E0D0;
+	-webkit-transition: 0.5s;
+	-o-transition: 0.5s;
+	transition: 0.5s; 	
+}
+
+/* 	SECTION - GALLERY */
+.gallery {
+	padding-top: 40px;
+	width: 85%;
+	float: left;
+}
+.grid-item {
+    margin-bottom: 10px;
+	float: left;
+ 	width: 300px; 
+ 	height: auto; 
+}
+.grid-item img{
+	max-width: 100%;
+	height: auto;
+	display: block;
+}
