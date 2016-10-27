@@ -16,6 +16,32 @@ a {
 	display: table; 
 	clear: both;
 }
+
+/* PRELOADER */
+
+#page-preloader {
+	position: fixed;
+	background: #fff;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	z-index: 9999;
+}
+#page-preloader .loader {
+	background: url("../img/preloader.gif") 50% 50% no-repeat;
+	background-size: cover;
+	height: 80px;
+	width: 80px;
+	margin-top: -30px;
+	margin-left: -30px;
+	left: 50%;
+	top: 50%;
+	position: absolute;
+}
+
 /* HEADER*/
 header  {
 	height: 92px;
@@ -83,10 +109,52 @@ aside  {
     margin-bottom: 10px;
 	float: left;
  	width: 300px; 
- 	height: auto; 
 }
 .grid-item img{
 	max-width: 100%;
 	height: auto;
 	display: block;
 }
+.image-source-link {
+	color: #98C3D1;
+}
+
+.image-source-link {
+	color: #98C3D1;
+}
+
+/* ====== Zoom effect ====== */
+
+====== Zoom effect ======
+
+*/
+.mfp-zoom-in {
+  /* start state */
+  /* animate in */
+  /* animate out */
+}
+.mfp-zoom-in .mfp-with-anim {
+  opacity: 0;
+  transition: all 0.2s ease-in-out;
+  transform: scale(0.8);
+}
+.mfp-zoom-in.mfp-bg {
+  opacity: 0;
+  transition: all 0.3s ease-out;
+}
+.mfp-zoom-in.mfp-ready .mfp-with-anim {
+  opacity: 1;
+  transform: scale(1);
+}
+.mfp-zoom-in.mfp-ready.mfp-bg {
+  opacity: 0.8;
+}
+.mfp-zoom-in.mfp-removing .mfp-with-anim {
+  transform: scale(0.8);
+  opacity: 0;
+}
+.mfp-zoom-in.mfp-removing.mfp-bg {
+  opacity: 0;
+}
+
+/* 
