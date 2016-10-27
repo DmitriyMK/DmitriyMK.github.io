@@ -9,16 +9,6 @@ $(window).on('load', function () {
 });
 
 
-
-
-/* NICESCROLL*/
-
-$("body").niceScroll({
-	horizrailenabled: false,
-	"verge": "500"
-});
-
-
 /*TOGGLE EFFECT MENU IN MOBILE DEKSTOP*/
 $(function() {
 	$('.menu').click(function() {
