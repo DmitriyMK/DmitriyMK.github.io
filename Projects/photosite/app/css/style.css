@@ -50,7 +50,7 @@ header  {
 .header__logo {
 	display: inline-block;
     text-align: center;
-    margin-left: 33%;
+    margin-left: 40%;
     font-size: 40px;
     line-height: 40px;
 }
@@ -157,4 +157,25 @@ aside  {
   opacity: 0;
 }
 
-/* 
+/* ABOUT ME */
+.about {
+	text-align: center;
+}
+.about__photo {
+	width: 200px;
+	height: auto;
+	border: solid 4px #fff;
+	border-radius: 50%;
+	box-sizing: border-box;
+}
+
+.about__name {
+	line-height: 50px;
+	font-weight: bold;
+}
+.about__description{
+	font-weight: bold;
+}
+.about__text {
+	padding-top: 20px;
+}

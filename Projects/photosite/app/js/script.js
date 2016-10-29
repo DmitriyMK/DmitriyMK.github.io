@@ -5,7 +5,7 @@ $(window).on('load', function () {
     var $preloader = $('#page-preloader'),
         $loader   = $preloader.find('.loader');
     $loader.fadeOut();
-    $preloader.delay(350).fadeOut('slow');
+    $preloader.delay(250).fadeOut('slow');
 });
 
 
@@ -25,8 +25,18 @@ $('.grid').masonry({
 	gutter: 10
 });
 
-/*POPUP GALLERY*/
 
+/*POPUP GALLERY*/
+$(function(){
+	
+	// Initialize the gallery
+	$('.thumbs a').touchTouch();
+
+});
+
+
+/*POPUP GALLERY*/
+/*
 $(document).ready(function() {
 			$('.popup-gallery').magnificPopup({
 						delegate: 'a',
@@ -61,4 +71,4 @@ $(document).ready(function() {
 						},
 	});
 });
-
+*/
