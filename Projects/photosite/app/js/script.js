@@ -18,7 +18,6 @@ $(function() {
 
 
 /*MASONRY PLUGIN*/
-
 $('.grid').masonry({
 	// options
 	columnWidth: '.grid-item',
@@ -27,14 +26,28 @@ $('.grid').masonry({
 
 
 /*POPUP GALLERY*/
-$(function(){
-	
+$(function() {
+
 	// Initialize the gallery
 	$('.thumbs a').touchTouch();
 
 });
 
+//Аякс отправка форм
+//Документация: http://api.jquery.com/jquery.ajax/
+$("#callback").submit(function() {
+	$.ajax({
+		type: "POST",
+		url: "mail.php",
+		data: $(this).serialize()
+	}).done(function() {
+		alert("Спасибо за заявку!");
+		setTimeout(function() {
 
+		}, 1000);
+	});
+	return false;
+});
 /*POPUP GALLERY*/
 /*
 $(document).ready(function() {

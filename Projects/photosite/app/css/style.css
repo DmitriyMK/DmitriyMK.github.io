@@ -125,6 +125,23 @@ aside  {
 figcaption {
 	text-align: center;
 }
+
+/* FOOTER */
+footer {
+	margin: 0 auto;
+}
+
+footer p, 
+footer a {
+	display: inline;
+	padding-right: 30px;
+	font: 12px/60px; 
+}
+ .icon-copyright {
+	float: right;
+}
+ 
+
 /* ABOUT ME */
 .about {
 	text-align: center;
@@ -146,4 +163,41 @@ figcaption {
 }
 .about__text {
 	padding-top: 20px;
+}
+
+/* CONTACT */
+.contact {
+	margin-top: 10px;
+	margin-left: 40px;
+}
+.contact__data {
+	float: left;
+	width: 50%;
+}
+.icon-mobile,
+.icon-location {
+	padding-bottom: 30px;
+}
+.contact__callback {
+	float: right;
+	width: 50%;
+}
+.title_section {
+	font-weight: bold;
+}
+
+ .contact__callback input, 
+ .contact__callback textarea {
+	font: 28px/30px Tahoma, sans-serif;
+	background-color: #FBF7C4;
+	border: 2px solid grey;  
+	width: 333px;
+}
+.contact__callback--message {
+	padding-top: 20px;
+}
+.contact__callback button {
+	background: red;
+	font: 28px/36px "Indie Flower", Tahoma, sans-serif;
+	margin-left: 16%;
 }
