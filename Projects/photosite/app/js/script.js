@@ -1,21 +1,21 @@
 
 /*PRELOADER*/
 
-$(window).on('load', function () {
-    var $preloader = $('#page-preloader'),
-        $loader   = $preloader.find('.loader');
-    $loader.fadeOut();
-    $preloader.delay(250).fadeOut('slow');
+$(window).on('load', function() {
+	var $preloader = $('#page-preloader'),
+		$loader = $preloader.find('.loader');
+	$loader.fadeOut();
+	$preloader.delay(250).fadeOut('slow');
 });
 
-$(window).on('load', function () {
+$(window).on('load', function() {
 	/*MASONRY PLUGIN*/
 	$('.grid').masonry({
-	// options
-	columnWidth: '.grid-item',
-	gutter: 10
+		// options
+		columnWidth: '.grid-item',
+		gutter: 10
+	});
 });
-});	
 
 $(document).ready(function() {
 	/*MASONRY PLUGIN*/

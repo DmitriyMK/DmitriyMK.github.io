@@ -129,6 +129,7 @@ figcaption {
 
 /* FOOTER */
 footer {
+	
 	font: 20px/26px "Indie Flower", Tahoma, sans-serif;
 }
 footer .social-networks-list {
@@ -202,8 +203,8 @@ footer .social-networks__link {
 }
 .contact__callback button {
 	background: red;
--webkit-border-radius: 10px 10px 10px 10px;
-border-radius: 10px 10px 10px 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
 	font: 28px/36px "Indie Flower", Tahoma, sans-serif;
 	margin-left: 16%;
 }
