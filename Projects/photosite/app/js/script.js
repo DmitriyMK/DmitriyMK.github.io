@@ -8,6 +8,14 @@ $(window).on('load', function () {
     $preloader.delay(250).fadeOut('slow');
 });
 
+$(window).on('load', function () {
+	/*MASONRY PLUGIN*/
+	$('.grid').masonry({
+	// options
+	columnWidth: '.grid-item',
+	gutter: 10
+});
+});	
 
 $(document).ready(function() {
 	/*MASONRY PLUGIN*/
@@ -16,6 +24,7 @@ $(document).ready(function() {
 	columnWidth: '.grid-item',
 	gutter: 10
 });
+
 /*TOGGLE EFFECT MENU IN MOBILE DEKSTOP*/
 	$('.menu').click(function() {
 		$(".menu-container__list").slideToggle('5000');
