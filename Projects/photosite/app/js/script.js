@@ -9,28 +9,24 @@ $(window).on('load', function () {
 });
 
 
+$(document).ready(function() {
+	/*MASONRY PLUGIN*/
+	$('.grid').masonry({
+	// options
+	columnWidth: '.grid-item',
+	gutter: 10
+});
 /*TOGGLE EFFECT MENU IN MOBILE DEKSTOP*/
-$(function() {
 	$('.menu').click(function() {
 		$(".menu-container__list").slideToggle('5000');
 	});
 });
 
 
-/*MASONRY PLUGIN*/
-$('.grid').masonry({
-	// options
-	columnWidth: '.grid-item',
-	gutter: 10
-});
-
-
 /*POPUP GALLERY*/
-$(function() {
-
+	$(function() {
 	// Initialize the gallery
 	$('.thumbs a').touchTouch();
-
 });
 
 //Аякс отправка форм

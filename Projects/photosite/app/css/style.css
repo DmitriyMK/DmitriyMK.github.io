@@ -50,7 +50,7 @@ header  {
 .header__logo {
 	display: inline-block;
     text-align: center;
-    margin-left: 40%;
+    margin-left: 33%;
     font-size: 40px;
     line-height: 40px;
 }
@@ -126,25 +126,29 @@ figcaption {
 	text-align: center;
 }
 
+
 /* FOOTER */
 footer {
-	margin: 0 auto;
+	font: 20px/26px "Indie Flower", Tahoma, sans-serif;
 }
-
-footer p, 
-footer a {
-	display: inline;
-	padding-right: 30px;
-	font: 12px/60px; 
+footer .social-networks-list {
+	text-align:center;
+	padding-left: 30%;
 }
- .icon-copyright {
-	float: right;
+footer .social-networks__link {
+	margin-right: 10px;
 }
- 
+.icon-copyright {
+	clear:both;
+	text-align:center;
+	font: 14px/18px "Indie Flower", Tahoma, sans-serif;
+}
 
 /* ABOUT ME */
 .about {
+	width: 80%;
 	text-align: center;
+	padding-right: 10%;
 }
 .about__photo {
 	width: 200px;
@@ -163,6 +167,7 @@ footer a {
 }
 .about__text {
 	padding-top: 20px;
+	padding-bottom: 40px;
 }
 
 /* CONTACT */
@@ -185,7 +190,6 @@ footer a {
 .title_section {
 	font-weight: bold;
 }
-
  .contact__callback input, 
  .contact__callback textarea {
 	font: 28px/30px Tahoma, sans-serif;
@@ -198,6 +202,8 @@ footer a {
 }
 .contact__callback button {
 	background: red;
+-webkit-border-radius: 10px 10px 10px 10px;
+border-radius: 10px 10px 10px 10px;
 	font: 28px/36px "Indie Flower", Tahoma, sans-serif;
 	margin-left: 16%;
 }
