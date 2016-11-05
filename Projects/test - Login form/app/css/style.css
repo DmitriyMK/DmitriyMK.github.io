@@ -42,6 +42,13 @@ button[type="submit"] {
 	border-radius: 10px;
 	font: 22px/20px Tahoma,Verdana, sans-serif;
 }
+button[type="submit"]:hover {
+	color: #fff;
+	-webkit-box-shadow: inset 0px 0px 2px 2px #fff;
+	-moz-box-shadow: inset 0px 0px 2px 2px #fff;
+	box-shadow: inset 0px 0px 2px 2px #fff;
+	cursor: pointer;
+}
 
 input[type="text"]:focus {
 	background-color: #CDCDC1;
@@ -73,4 +80,89 @@ input[type="text"]:focus {
 #greeting {
 	padding: 4% 0;
 	text-align: center;
+}
+
+
+
+#content-slider {
+	width: 320px;
+	margin: 0 auto;
+	margin-top: 5%;
+}
+#content {
+	overflow: hidden;
+	width: 320px;
+	height: 180px;
+	-webkit-box-shadow: 0px 0px 50px 10px #c9c9c9;
+	-moz-box-shadow: 0px 0px 50px 10px #c9c9c9;
+	box-shadow: 0px 0px 50px 10px #c9c9c9;
+}
+#content-inner {
+	width:10000px;
+}
+.page {
+	width: 320px;
+	height: 180px;
+	float: left;
+}
+#slider__navigation {
+	padding: 4% 24%;
+}
+.button {
+	float: left;
+	background: tomato;
+	width: 16px;
+	height: 16px;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+.button:hover {
+	-webkit-box-shadow: inset 0px 0px 2px 2px #fff;
+	-moz-box-shadow: inset 0px 0px 2px 2px #fff;
+	box-shadow: inset 0px 0px 2px 2px #fff;
+}
+
+.button a {
+	display: block;
+	width: 16px;
+	height: 16px;
+}
+
+#content-inner-1:target #content-inner {
+	-webkit-transition: all 400ms ease;
+	-moz-transition: all 400ms ease;
+	-o-transition: all 400ms ease;
+	transition: all 400ms ease;
+	margin-left: 0px;
+}
+#content-inner-2:target #content-inner {
+	-webkit-transition: all 400ms ease;
+	-moz-transition: all 400ms ease;
+	-o-transition: all 400ms ease;
+	transition: all 400ms ease;
+	margin-left: -320px;
+}
+#content-inner-3:target #content-inner {
+	-webkit-transition: all 400ms ease;
+	-moz-transition: all 400ms ease;
+	-o-transition: all 400ms ease;
+	transition: all 400ms ease;
+	margin-left: -640px;
+}
+#content-inner-4:target #content-inner {
+	-webkit-transition: all 400ms ease;
+	-moz-transition: all 400ms ease;
+	-o-transition: all 400ms ease;
+	transition: all 400ms ease;
+	margin-left: -960px;
+}
+#content-inner-5:target #content-inner {
+	-webkit-transition: all 400ms ease;
+	-moz-transition: all 400ms ease;
+	-o-transition: all 400ms ease;
+	transition: all 400ms ease;
+	margin-left: -1280px;
 }
