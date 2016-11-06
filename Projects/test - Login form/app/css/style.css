@@ -55,7 +55,6 @@ input[type="text"]:focus {
 	-webkit-box-shadow: 1px 1px 5px 0px rgba(205,205,193,1);
 	-moz-box-shadow: 1px 1px 5px 0px rgba(205,205,193,1);
 	box-shadow: 1px 1px 5px 0px rgba(205,205,193,1);
-
 } 
 
 #error__name {
@@ -78,11 +77,13 @@ input[type="text"]:focus {
 	font-weight: bold;
 }
 #greeting {
+	font-style: 30px;
+	line-height: 36px;
 	padding: 4% 0;
 	text-align: center;
 }
 
-
+/* PURE CSS SLIDER */
 
 #content-slider {
 	width: 320px;
@@ -166,3 +167,4 @@ input[type="text"]:focus {
 	transition: all 400ms ease;
 	margin-left: -1280px;
 }
+
