@@ -13,18 +13,16 @@ a {
 	display: table; 
 	clear: both;
 }
-
 /* HEADER */
 header {
-	background: url(../img/header_background.jpg) 50% 50%  no-repeat; 
-	/* 	background-size: cover;
-	position: relative; */
+	background: url(../img/header_background.jpg) 50% 50%  no-repeat;  
+	background-size: cover; 
+	position: relative; 
 	height: 680px;
 	min-width: 100vw;
 }
 .header__wrapper{ 
 	margin: 0 auto;
- 	width: 940px; 
 }
 .header-top {
 	padding-top: 20px;
@@ -89,8 +87,6 @@ header {
 	background: #ff4e30;
 	border: 1px solid #ff4e30;
 }
-
-
 /* SECTION HOW IT WORKS */
 .section-title {
 	padding-top: 96px;
@@ -313,14 +309,16 @@ header {
 	border-radius: 5px;
 	background-size: cover;
 }
+
 .grid-item:before {
 	position: absolute;
     display: block;
     content: "";
     height: 100%;
     width: 100%;
-    background: rgba(192, 192, 192, 0.4);
 }
+
+
 .grid-item h3 {
 	position: absolute;
 	width: 240px;
@@ -448,13 +446,6 @@ footer {
 	text-transform: uppercase;
 	word-spacing: 6px;
 }
-
-
-
-
-
-
-
 /* FROM 480 TO 939 */
 @media only screen and (max-width: 939px) {
 
@@ -465,14 +456,11 @@ footer {
 	/* HEADER */
 	header {
 		height: 700px;
-	}
-	.header__wrapper{
-		width: 660px;
+		min-width: 100%;
 	}
 	.header-top {
 		padding-top: 20px;
 	}
-
 	.header-top__logo {
 		float: left;
 		font-size: 20px;
