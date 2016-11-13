@@ -4,7 +4,6 @@ function validateForm() {
 
   var name = document.forms["form"].username.value;
   var pass = document.forms["form"].password.value;
-
   var username = document.getElementById("username");
   var password = document.getElementById("password");
 
@@ -19,10 +18,10 @@ function validateForm() {
     password.focus();
     return false;
   }
-
-    document.location.href = "http://www.google.com";
+  else {
+    document.location.href = 'https://www.facebook.com';
+  }
 }
-
 
 
 
