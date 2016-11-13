@@ -7,7 +7,7 @@ function validateForm() {
   var username = document.getElementById("username");
   var password = document.getElementById("password");
 
-  if (name === "" || name === null) {
+    if (name === "" || name === null) {
     document.getElementById('error__name').innerHTML = (" *Please enter your name ");
     username.focus();
     return false;
@@ -17,18 +17,15 @@ function validateForm() {
     document.getElementById('error__password').innerHTML = (" *Please enter your password ");
     password.focus();
     return false;
-  }
-  else {
-    document.location.href = 'https://www.facebook.com';
-  }
 }
+  setTimeout(function() {
+    document.location.href = "main.html";
+
+    document.getElementById("username").value = localStorage.getItem("userName");
+    document.getElementById("greeting").innerHTML = ("hi" + userName);
+
+  });
+
+};
 
 
-
-/*document.getElementById('greeting').innerHTML = ('hi' + name);*/
-
-
-/* localStorage.setItem("username");
-console.log(localStorage.getItem("username"));
-// → marijn
-localStorage.removeItem("username");  */
