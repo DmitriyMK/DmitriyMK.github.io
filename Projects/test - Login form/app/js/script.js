@@ -1,36 +1,35 @@
-function ValidateForm() {
+"use strict";
 
-  valid = true;
+function validateForm() {
 
-  if (username.value == 0) {
+  var name = document.forms["form"].username.value;
+  var pass = document.forms["form"].password.value;
+
+  var username = document.getElementById("username");
+  var password = document.getElementById("password");
+
+  if (name === "" || name === null) {
     document.getElementById('error__name').innerHTML = (" *Please enter your name ");
     username.focus();
     return false;
   }
 
-  if (password.value == 0) {
+  if (pass === "" || pass === null) {
     document.getElementById('error__password').innerHTML = (" *Please enter your password ");
     password.focus();
     return false;
   }
 
-  setTimeout(function() {
-    document.location.href = "main.html";
-  })
-
-  return valid;
+    document.location.href = "http://www.google.com";
 }
 
 
 
-function LogOut() {
-  function checkCookie() {
-    var name = document.username.value;
-    document.getElementById('greeting').innerHTML = ('hi' + name);
-  }
+
+/*document.getElementById('greeting').innerHTML = ('hi' + name);*/
 
 
-  setTimeout(function() {
-    document.location.href = "index.html"
-  });
-}
+/* localStorage.setItem("username");
+console.log(localStorage.getItem("username"));
+// → marijn
+localStorage.removeItem("username");  */
