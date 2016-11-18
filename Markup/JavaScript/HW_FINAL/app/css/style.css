@@ -26,12 +26,14 @@ header {
 }
 .header-top {
 	padding-top: 20px;
+	padding-right: 10%;
 }
 .header-top a {
 	color: #fff;
 }
 .header-top__logo {
 	float: left;
+	padding-left: 10%;
 	font-size: 20px;
 	font-weight: bold;
 }
@@ -307,7 +309,8 @@ header {
 	float: left;
 	border: 2px solid #fff;
 	border-radius: 5px;
-	background-size: cover;
+	filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0); /* данная строчка работает в IE6, IE7, и IE8 */
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(opacity=40)"; /* данная строчка работает только в IE8 */
 }
 
 .grid-item:before {
@@ -339,13 +342,7 @@ header {
  }
 .pic1 {
 	background: url(../img/activity.jpg) -82px -10px;
-/* 	opacity: 0.6;
--webkit-transition: 0.5s;
-transition: 0.5s;  */
 }
-/* .pic1:hover {
-	opacity: 1;
-} */
 .pic2 {
 	background: url(../img/activity2.jpg);
 }
@@ -670,6 +667,15 @@ footer {
 	.jcarousel:nth-child(n+3){
 		margin-left: 0;
 	}
+
+	.step2 {
+		background: url(../img/how_works_2.jpg) 0 -120px;
+	}
+	.step3 {
+		background: url(../img/how_works_3.jpg) 0 -75px;
+	}
+
+
 	.how-it-works__step{
 		margin: 0 0 8px 0;
 		width: 300px;
@@ -699,7 +705,9 @@ footer {
 	.step2 .step-number {
 		margin: 98px 0 0 22px;
 	}
-/* 	SECTION MEET A PARTNER */
+
+
+	/* 	SECTION MEET A PARTNER */
 	.meet-partner{
 		margin: 0 auto;
 		width: 300px;
@@ -740,7 +748,6 @@ footer {
 	.grid-item {
 		width: 300px;
 		height: 120px;	
-		background: contain;
 	}
 	.grid-item h3 {
 		width: 216px;
@@ -754,10 +761,38 @@ footer {
 	.grid-item--width2 h3{
 		width: 216px;
 	}
+	.pic1 {
+ 		background: url(../img/activity.jpg) 0 0; 
+		background-size: 300px;
+	}
+	.pic2 {
+		background: url(../img/activity2.jpg)0 -112px;
+		background-size: 300px;
+	}
+	.pic3 {
+		background: url(../img/activity3.jpg);
+		background-size: 300px;
+	}
+	.pic4 {
+		background: url(../img/activity4.jpg);
+		background-size: 300px;
+	}
+	.pic5 {
+		background: url(../img/activity5.jpg);
+		background-size: 300px;
+	}
+	.pic6 {
+		background: url(../img/activity6.jpg);
+		background-size: 300px;
+	}
+	.pic7 {
+		background: url(../img/activity7.jpg);
+		background-size: 300px;
+	}
 
 /* 	SECTION DISCOVER IDEAS */
 	.discover-ideas {
-		padding-top: 73px;
+		padding-top: 0px;
 		padding-bottom: 37px;
 		text-align: center;
 	}
