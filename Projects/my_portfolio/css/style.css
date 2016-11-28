@@ -99,8 +99,8 @@ h1 {
 .grid-item figcaption p {
 	display: table-cell;
 	position: relative;
- 	width: 210px;
- 	height: 250px; 
+	width: 210px;
+ 	height: 250px;
  	font-size: 0.7em;
 	vertical-align: middle;	
 }
