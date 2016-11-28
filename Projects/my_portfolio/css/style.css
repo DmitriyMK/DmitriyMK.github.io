@@ -88,7 +88,6 @@ h1 {
 .grid-item figcaption {
 	background: rgba(0,0,0,0.6);
 	color: white;
-	display: table;
 	height: 100%;
 	left: 0;
 	opacity: 0;
@@ -100,7 +99,8 @@ h1 {
 .grid-item figcaption p {
 	display: table-cell;
 	position: relative;
- 	width: 210px; 
+ 	width: 210px;
+ 	height: 250px; 
  	font-size: 0.7em;
 	vertical-align: middle;	
 }
