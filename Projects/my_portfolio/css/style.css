@@ -97,12 +97,10 @@ h1 {
 	z-index: 100;	
 }
 .grid-item figcaption p {
-	display: table-cell;
-	position: relative;
-	width: 210px;
- 	height: 250px;
- 	font-size: 0.7em;
-	vertical-align: middle;	
+    width: 210px;
+    height: 250px;
+    font-size: 0.7em;
+    line-height: 250px
 }
 .grid-item:hover figcaption {
 	opacity: 1;
