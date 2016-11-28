@@ -10,7 +10,9 @@
 }
 .grid-item figcaption p {
  	width: 150px; 
+ 	height: 200px;
 }
+
 }
 
 
@@ -36,6 +38,7 @@
 	}
 	.grid-item figcaption p {
 		width: 300px; 
+		height: 350px;
 	}
 
 
