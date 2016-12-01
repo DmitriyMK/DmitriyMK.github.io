@@ -9,9 +9,12 @@ $(document).ready(function() {
 		}, 1500);
 	});
 
-
-
 	$('.bxslider').bxSlider();
+
+
+		$(".about_us h3, about_us .p").animated("fadeInLeft");
+
+
 
 
 

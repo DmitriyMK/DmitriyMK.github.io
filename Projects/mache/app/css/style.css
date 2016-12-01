@@ -1,9 +1,12 @@
 body {
 	font: 15px/30px 'Lato', 'Tahoma', sans-serif;
 	background-color: #f4f4f4;
+	min-width: 320px;
 }
 a, 
-a:hover {
+a:hover,
+a:focus,
+a:active {
 	text-decoration: none;
 	color: #fff;
 }
