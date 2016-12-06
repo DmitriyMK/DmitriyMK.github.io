@@ -1,4 +1,11 @@
 
+
+$(window).load(function() {
+  $('#preloader').find('i').fadeOut().end().delay(400).fadeOut('slow');
+});
+
+
+
 $(document).ready(function() {
 
 	$("#menu").on("click", "a", function(event) {
@@ -12,16 +19,6 @@ $(document).ready(function() {
 
 	$('.bxslider').bxSlider();
 
-
-
-});
-
-
-$(window).on('load', function () {
-    var $preloader = $('#p_prldr'),
-        $svg_anm   = $preloader.find('.svg_anm');
-    $svg_anm.fadeOut();
-    $preloader.delay(500).fadeOut('slow');
 });
 
 new WOW().init();
