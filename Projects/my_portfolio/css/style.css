@@ -7,6 +7,26 @@ a {
 	text-decoration: none;
 	color: #000;
 }
+
+#preloader {
+  position: fixed; 
+  left: 0; 
+  top: 0; 
+  right: 0; 
+  bottom: 0; 
+  background: #fff; 
+  z-index: 1001;
+}
+#preloader i {
+    width: 70px; 
+    height: 70px; 
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    background: url('..//img/loader/Misterious mist.gif') no-repeat 50% 50%; 
+    margin: -35px 0 0 -35px;
+}
+
 /* MENU */
 nav {
 	padding: 2% 0;
