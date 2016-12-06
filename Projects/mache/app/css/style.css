@@ -18,11 +18,11 @@ a:active {
 	transition: all 1s ease;
 }
 .fadeInRight {
-  animation-duration: 2s;
+  animation-duration: 1s;
   animation-delay: 0.5s;
 }
 .fadeIn {
-  animation-duration: 1.5s;
+  animation-duration: 1s;
   animation-delay: 0.5s;
 }
  .zoomInDown {
@@ -36,6 +36,7 @@ left: 0;
 top: 0;
 right:0;
 bottom:0;
+background: red;
 z-index: 30;
 }
  
