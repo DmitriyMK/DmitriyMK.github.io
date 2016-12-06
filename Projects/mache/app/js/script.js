@@ -12,11 +12,7 @@ $(document).ready(function() {
 	$('.bxslider').bxSlider();
 
 
-		$(".about_us h3, about_us .p").animated("fadeInLeft");
-
-
-
-
 
 });
 
+new WOW().init();

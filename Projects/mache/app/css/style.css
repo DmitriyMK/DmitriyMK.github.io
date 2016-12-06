@@ -17,7 +17,18 @@ a:active {
 	-o-transition: all 1s ease;
 	transition: all 1s ease;
 }
-
+.fadeInRight {
+  animation-duration: 2s;
+  animation-delay: 0.5s;
+}
+.fadeIn {
+  animation-duration: 1.5s;
+  animation-delay: 0.5s;
+}
+ .zoomInDown {
+  animation-duration: 1s;
+  animation-delay: 0.5s;	
+} 
 /* HEADER */
 
 .header__background {
@@ -349,6 +360,12 @@ a:active {
 .update__images:hover .update__images__details {
 	visibility: visible;
 	opacity: 0.8;
+	background: #ed145b;
+	-webkit-transition: all 0.45s ease-in-out;
+	-moz-transition: all 0.45s ease-in-out;
+	-ms-transition: all 0.45s ease-in-out;
+	-o-transition: all 0.45s ease-in-out;
+	transition: all 0.45s ease-in-out;
 }
 .update__images__details img {
 	width: auto;
