@@ -8,12 +8,10 @@
 }
 .wrapper, section {
 	width: 1170px;
-}
-} */
+}*/
 
-.wrapper, section {
-	margin: 0 auto;
-}
+} 
+
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
@@ -35,12 +33,6 @@
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
 
-/* 	.container {
-	width: 750px;
-}
-.wrapper, section {
-	width: 768px;
-	} */
 	.macbook {
 		position: absolute;
 		right: 0%;
