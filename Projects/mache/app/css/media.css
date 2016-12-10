@@ -3,23 +3,27 @@
 /* Large Devices, Wide Screens */
 
 @media only screen and (max-width : 1200px) {
-	.container {
-		width: 1170px;
-	}
-	.wrapper, section {
-		width: 1170px;
-	}
+/* 	.container {
+	width: 1170px;
+}
+.wrapper, section {
+	width: 1170px;
+}
+} */
+
+.wrapper, section {
+	margin: 0 auto;
 }
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
 
-	.container {
-		width: 970px;
-	}
-	.wrapper, section {
-		width: 992px;
-	}
+/* 	.container {
+	width: 970px;
+}
+.wrapper, section {
+	width: 992px;
+	} */
 
 	.invite h3 {
 		font-size: 30px;
@@ -31,12 +35,12 @@
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
 
-	.container {
-		width: 750px;
-	}
-	.wrapper, section {
-		width: 768px;
-	}
+/* 	.container {
+	width: 750px;
+}
+.wrapper, section {
+	width: 768px;
+	} */
 	.macbook {
 		position: absolute;
 		right: 0%;
@@ -52,8 +56,11 @@
 	.bx-wrapper .bx-next {
 		right: 0;
 	}
+	.updates__title--text {
+		width: 300px;
+	}
 	.bxslider--text {
-		width: 600px;
+		width: 300px;
 	}
 	.advantages {
 		margin-left: 0; 
@@ -67,6 +74,9 @@
 		height: 50px;
 		font-size: 15px;
 		line-height: 50px;
+	}
+	.prefooter__title--text {
+		width: 320px;
 	}
 }
 
@@ -82,12 +92,6 @@
 		float: none;
 		text-align: center;
 	}
-/* 	.container {
-	width: 480px;
-}
-.wrapper, section {
-	width: 100%;
-} */
 
 }
 
