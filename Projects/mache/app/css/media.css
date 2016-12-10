@@ -82,12 +82,17 @@
 		float: none;
 		text-align: center;
 	}
-
+/* 	.container {
+	width: 480px;
+}
+.wrapper, section {
+	width: 100%;
+} */
 
 }
 
 /* Custom, iPhone Retina */
-@media only screen and (max-width : 320px) {
+@media only screen (min-width: 320px) and (max-width: 479px) {
 
 
 }
