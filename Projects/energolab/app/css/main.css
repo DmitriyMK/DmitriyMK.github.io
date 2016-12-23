@@ -30,7 +30,7 @@ section img {
 
 /* 	HEADER */
 header {
-	background: #7FFFD4;
+	background: #556B2F;
 }
 .header__logo {
 	text-align: center;
@@ -40,7 +40,7 @@ header {
 	max-width: 100%;
 }
 .menu__wrapper {
-	background: #CDC9C9;
+	background: #2F4F4F;
 }
 .menu {
 	text-align: center;
@@ -53,13 +53,44 @@ header {
 	padding: 15px;
 	font-size: 22px;
 	line-height: 30px;
+	color: #fff;	
 }
 .menu__item-link:hover,
 .menu__item-link:active {
-	background: #7FFFD4;
-	color: tomato;
-	text-shadow: 0 0 1px tomato;
+	background: #556B2F;
+	color: #fff;
+	text-shadow: 0 0 3px #fff;
 }
+
+
+
+.menu__wrapper2 {
+	background: #363636;
+}
+.menu2 {
+	text-align: center;
+}
+.menu__item2 {
+	display: inline;
+}
+.menu__item-link2 {
+	display: inline-block;
+	padding: 15px;
+	font-size: 22px;
+	line-height: 30px;
+	color: #fff;	
+}
+.menu__item-link2:hover,
+.menu__item-link2:active {
+	background: #556B2F;
+	color: #fff;
+	text-shadow: 0 0 3px #fff;
+}
+
+
+
+
+
 
 /* ABOUT US */
 main {
