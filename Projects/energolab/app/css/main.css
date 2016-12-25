@@ -110,6 +110,7 @@ main {
 	position: relative;
 }
 .about_us__solutions__title--text {
+	height: 40px;
 	padding-bottom: 10px;
 	font-size: 1.4rem;
 	font-weight: bold;
@@ -137,7 +138,7 @@ main {
 	width: 60px;
 } 
 .img2:after {
- 	background: url(../img/Home-128.png);
+ 	background: url(../img/House-128.png);
  	position: absolute;
  	content: '';
  	top: -6px;
@@ -190,6 +191,7 @@ main {
 	transform: scale(1.1);
 }
 .our__project--text {
+	height: 60px;
 	font-size: 1.4rem;
 	padding-top: 10px;
 	padding-bottom: 30px;
@@ -199,7 +201,9 @@ main {
 
 .article__title {
 	margin: 10px; 
+	font-size: 1.4rem;
 	font-weight: bold;
+	color: #669936;	
 }
 .article__title:hover, 
 .article__title:focus {
@@ -212,7 +216,10 @@ main {
 .news--text {
 	display: block;
 	margin: 10px;
-	padding-bottom: 40px;
+	padding-bottom: 30px;
+}
+.news--article {
+	display: block;
 }
 .news--article:hover {
 	text-decoration: underline;
