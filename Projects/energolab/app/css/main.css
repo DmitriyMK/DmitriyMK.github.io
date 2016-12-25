@@ -32,7 +32,7 @@ section img {
 /* 	HEADER */
 header {
 	padding: 20px 0;
-	background: #FFD800;
+	background: #e4e24f;
 }
 .header__logo {
 	text-align: center;
@@ -71,7 +71,7 @@ header {
 .menu__item-link:hover,
 .menu__item-link:active,
 .menu__item .active {
-	background: #FFD800;
+	background: #e4e24f;
 	color: #fff;
 	text-shadow: 0 0 3px #fff;
 }
@@ -103,7 +103,7 @@ main {
 /* ABOUT US */
 .about_us__solutions {
 	position: relative;
-	background: #FFD800;
+	background: #e4e24f;
 	padding: 20px 10px 10px 10px;
 }
 .about_us__solutions--top {
@@ -177,7 +177,7 @@ main {
 	padding-bottom: 30px; 	
 }
 .our__services {
-	background: #FFD800;
+	background: #e4e24f;
 }
 
 .our__project--img img{
