@@ -1,12 +1,13 @@
 body {
-	font-family: 'PT Sans', sans-serif;
-	font-size: 1.2em;
-	line-height: 1.7em;
-	box-sizing: content-box;
+	font-family: 'Trebuchet MS', sans-serif;
+	font-size: 1.2rem;
+	line-height: 1.7rem;
+	box-sizing: border-box;
+	color: #666;
 }
 a {
 	text-decoration: none;
-	color: #000;
+	color: #666;
 }
 a:focus,
 a:hover,
@@ -30,17 +31,29 @@ section img {
 
 /* 	HEADER */
 header {
-	background: #556B2F;
+	padding: 20px 0;
+	background: #FFD800;
 }
 .header__logo {
 	text-align: center;
+	vertical-align: middle;
 }
-.header__logo-pic {
-	height: 150px;
+.header__logo-img {
+	float: left;
+	height: 10rem;
 	max-width: 100%;
 }
+.header__logo-text {
+	font-size: 5rem;
+	font-weight: bold;
+	letter-spacing: 2px;
+}
+.header__logo-text span {
+	color: #669936;
+}
 .menu__wrapper {
-	background: #2F4F4F;
+	clear: both;
+	background: #ccc;
 }
 .menu {
 	text-align: center;
@@ -51,47 +64,17 @@ header {
 .menu__item-link {
 	display: inline-block;
 	padding: 15px;
-	font-size: 22px;
-	line-height: 30px;
-	color: #fff;	
+	margin: 0 -2px;
+	font-size: 1.6em;
+	line-height: 2em;
 }
 .menu__item-link:hover,
-.menu__item-link:active {
-	background: #556B2F;
+.menu__item-link:active,
+.menu__item .active {
+	background: #FFD800;
 	color: #fff;
 	text-shadow: 0 0 3px #fff;
 }
-
-
-
-.menu__wrapper2 {
-	background: #363636;
-}
-.menu2 {
-	text-align: center;
-}
-.menu__item2 {
-	display: inline;
-}
-.menu__item-link2 {
-	display: inline-block;
-	padding: 15px;
-	font-size: 22px;
-	line-height: 30px;
-	color: #fff;	
-}
-.menu__item-link2:hover,
-.menu__item-link2:active {
-	background: #556B2F;
-	color: #fff;
-	text-shadow: 0 0 3px #fff;
-}
-
-
-
-
-
-
 /* ABOUT US */
 main {
 	text-align: center;
@@ -99,44 +82,110 @@ main {
 }
 .section__title {
 	margin: 40px 0 10px 0;
-	font-size: 30px;
-	line-height: 36px;
+	font-size: 2.4rem;
+	line-height: 2.7rem;
 	font-weight: bold;
 	text-transform: uppercase;
+	color: #ccc;
 }
 .section__title-underline {
 	display: inline-block;
 	width: 300px;
-	height: 2px;
+	height: 3px;
 	background-color: #CDC9C9;
 }
 .section__title-text {
-	margin: 20px 100px;
+	margin: 2% 10%;
+	font-size: 1.4rem;
+	line-height: 2rem;
 }
-.about_us--img img {
-	text-align: center;
+
+/* ABOUT US */
+.about_us__solutions {
+	position: relative;
+	background: #FFD800;
+	padding: 20px 10px 10px 10px;
+}
+.about_us__solutions--top {
+	position: relative;
+}
+.about_us__solutions__title--text {
+	padding-bottom: 10px;
+	font-size: 1.4em;
+	font-weight: bold;
+	color: #669936;
+}
+.about_us__solutions__title--img {
+	position: absolute;
 	height: 60px;
-	max-width: 100%;
-	background-color: #7FFFD4;
+    width: 60px;
+ 	top: -15px;
+ 	left: -35px;
+    border: solid 4px #fff;
+    border-radius: 50%;
+    box-sizing: border-box;
+    background-color: #669936;
+}
+ .about_us__solutions__title--img:after{
+ 	position: absolute;
+ 	content: '';
+ 	top: -6px;
+ 	left: -2px;
+ 	background: url(../img/City-128-1.png);
+ 	background-size: cover;
+	height: 60px;
+	width: 60px;
+} 
+.about_us__solutions--underline {
+	display: inline-block;
+	width: 200px;
+	height: 2px;
+	background-color: #669936;
+}
+.about_us__solutions--text {
+	margin: 20px 0;
+	height: 80px;
+	overflow: hidden;
+}
+.about_us__solutions a {
+	color: #669936;
 }
 
 /* OUR PROJECTS */
+
+.our__project .row {
+	padding-bottom: 30px; 	
+}
+.our__services {
+
+	background: #FFD800;
+}
+
 .our__project--img img{
 	text-align: center;
-	height: 150px;
-	max-width: 100%;
+	width: 100%;
+}
+.our__project--img img a:hover {
+-webkit-transition-duration: 0.5s;
+    -moz-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;	
+}
+
+
+.our__project--text {
+	padding-top: 10px;
+	padding-bottom: 30px;
 }
 
 /* NEWS */
 
 .article__title {
 	margin: 10px; 
-	color: #7FFFD4;
 	font-weight: bold;
 }
 .article__title:hover, 
 .article__title:focus {
-	color: tomato;
+
 }
 .news--img img {
 	height: 150px;
