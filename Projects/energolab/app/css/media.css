@@ -4,10 +4,10 @@
 
 @media only screen and (max-width : 1200px) {
 /* 	.container {
-	width: 1170px;
+width: 1170px;
 }
 .wrapper, section {
-	width: 1170px;
+width: 1170px;
 }*/
 
 } 
@@ -17,11 +17,11 @@
 @media only screen and (max-width : 992px) {
 
 /* 	.container {
-	width: 970px;
+width: 970px;
 }
 .wrapper, section {
-	width: 992px;
-	} */
+width: 992px;
+} */
 
 
 
@@ -30,9 +30,9 @@
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
 
-.about_us__solutions__title--text {
-	margin-left: 20px;
-}
+	.about_us__solutions__title--text {
+		margin-left: 20px;
+	}
 
 
 }
@@ -40,15 +40,44 @@
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
-
-
+	.header__logo-img {
+		float: none;
+	}
+	.header__logo-text {
+		font-size: 4em;
+	}
+	.section__title-text {
+		margin: 4% 10%;
+		font-size: 1rem;
+	}
+	.about_us__solutions {
+		margin-bottom: 40px;
+	}
+	.about_us__solutions--top {
+		padding-top: 60px;
+		position: relative;
+	}
+	.about_us__solutions__title--text {
+		margin-left: 0;
+	}
+	.about_us__solutions__title--img {
+		left: 200px;
+	}	
+	.section__title-underline {
+	width: 200px;
 
 }
+	.our__services {
+		margin-bottom: 40px
+	}
 
-/* Custom, iPhone Retina */
-@media only screen (min-width: 320px) and (max-width: 479px) {
+	/* Custom, iPhone Retina */
+	@media only screen (min-width: 320px) and (max-width: 479px) {
+	
+	.about_us__solutions__title--img {
+		left: -100px;
+	}	
 
-
-}
+	}
 
 

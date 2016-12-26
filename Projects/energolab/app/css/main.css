@@ -1,7 +1,7 @@
 body {
 	font-family: 'Trebuchet MS', sans-serif;
-	font-size: 1.2rem;
-	line-height: 1.7rem;
+	font-size: 0.8125em;
+	line-height: 1.5em;
 	box-sizing: border-box;
 	color: #666;
 }
@@ -44,7 +44,7 @@ header {
 	max-width: 100%;
 }
 .header__logo-text {
-	font-size: 6rem;
+	font-size: 8em;
 	font-weight: bold;
 	letter-spacing: 5px;
 }
@@ -65,8 +65,8 @@ header {
 	display: inline-block;
 	padding: 15px;
 	margin: 0 -2px;
-	font-size: 1.6em;
-	line-height: 2em;
+	font-size: 15px;
+	line-height: 30px;
 }
 .menu__item-link:hover,
 .menu__item-link:active,
@@ -82,8 +82,8 @@ main {
 }
 .section__title {
 	margin: 40px 0 10px 0;
-	font-size: 2.4rem;
-	line-height: 2.7rem;
+	font-size: 3em;
+	line-height: 3.7rem;
 	font-weight: bold;
 	text-transform: uppercase;
 	color: #ccc;
@@ -110,9 +110,8 @@ main {
 	position: relative;
 }
 .about_us__solutions__title--text {
-	height: 40px;
 	padding-bottom: 10px;
-	font-size: 1.4rem;
+	font-size: 2em;
 	font-weight: bold;
 	color: #669936;
 }
@@ -131,7 +130,7 @@ main {
  	position: absolute;
  	content: '';
  	top: -6px;
- 	left: -2px;
+ 	left: -4px;
  	background: url(../img/City-128-1.png);
  	background-size: cover;
 	height: 60px;
@@ -142,7 +141,7 @@ main {
  	position: absolute;
  	content: '';
  	top: -6px;
- 	left: -2px;
+ 	left: -4px;
  	background-size: cover;
 	height: 60px;
 	width: 60px;
@@ -152,20 +151,20 @@ main {
  	position: absolute;
  	content: '';
  	top: -6px;
- 	left: -2px;
+ 	left: -4px;
  	background-size: cover;
 	height: 60px;
 	width: 60px;
 }
 .about_us__solutions--underline {
 	display: inline-block;
-	width: 200px;
+	width: 150px;
 	height: 2px;
 	background-color: #669936;
 }
 .about_us__solutions--text {
 	margin: 20px 0;
-	height: 80px;
+	height: 40px;
 	overflow: hidden;
 }
 .about_us__solutions a {
