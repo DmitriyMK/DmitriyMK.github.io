@@ -152,9 +152,9 @@ main {
 	height: 200px;
 	overflow: hidden;
 	color: rgb(102, 102, 102);
-	font-weight: bold;	
-	font-size: 1.4em;
-	line-height: 1.6em;
+	font-style: italic;	
+	font-size: 1.6em;
+	line-height: 1.7em;
 }
 .about_us__solutions a {
 	color: #669936;
@@ -209,8 +209,8 @@ main {
 
 }
 .news--article {
-	font-size: 1.4em;
-	line-height: 1.6em;	
+	font-size: 1.6em;
+	line-height: 1.7em;	
 }
 .news--img img {
 	height: 250px;
