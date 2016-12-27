@@ -61,7 +61,7 @@ width: 992px;
 		margin-left: 0;
 	}
 	.about_us__solutions__title--img {
-		left: 200px;
+		left: 100px;
 	}	
 	.section__title-underline {
 	width: 200px;
@@ -75,7 +75,7 @@ width: 992px;
 	@media only screen (min-width: 320px) and (max-width: 479px) {
 	
 	.about_us__solutions__title--img {
-		left: -100px;
+		left: 100px;
 	}	
 
 	}
