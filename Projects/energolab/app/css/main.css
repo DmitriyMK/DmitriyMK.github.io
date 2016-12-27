@@ -165,7 +165,7 @@ main {
 }
 .about_us__solutions--text {
 	margin: 20px 0;
-	height: 100px;
+	height: 200px;
 	overflow: hidden;
 	color: rgb(102, 102, 102);
 	font-weight: bold;	
@@ -212,7 +212,7 @@ main {
 
 .article__title {
 	margin: 10px; 
-	font-size: 1.4rem;
+	font-size: 2em;
 	height: 30px;
 	font-weight: bold;
 	color: #669936;	
@@ -232,7 +232,7 @@ main {
 .news--text {
 	display: block;
 	margin: 10px;
-	padding-bottom: 30px;
+	padding-bottom: 100px;
 }
 .news--article {
 	display: block;
