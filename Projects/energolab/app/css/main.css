@@ -83,6 +83,7 @@ main {
 	background: #FFFFF0;
 }
 .section__title {
+	position: relative;
 	margin: 40px 0 10px 0;
 	font-size: 3em;
 	line-height: 3.7rem;
@@ -98,8 +99,8 @@ main {
 }
 .section__title-text {
 	margin: 2% 10%;
-	font-size: 1.4rem;
-	line-height: 2rem;
+	font-size: 2em;
+	line-height: 1em;
 }
 
 /* ABOUT US */
@@ -107,55 +108,38 @@ main {
 	background: #e4e24f;
 	padding: 20px 10px 10px 10px;
 }
-.about_us__solutions--top {
-	position: relative;
-}
+
 .about_us__solutions__title--text {
-	padding-bottom: 10px;
+	padding: 10px 0;
 	font-size: 2em;
 	font-weight: bold;
 	color: #669936;
 }
+
 .about_us__solutions__title--img {
-	position: absolute;
-	height: 60px;
-	width: 60px;
-	top: -15px;
-	left: -35px;
+	width: 70px;
+	height: 70px;
+	display: inline-block;
+	margin-right: 3px; 
+	position: relative;
 	border: solid 4px #fff;
 	border-radius: 50%;
-	box-sizing: border-box;
 	background-color: #669936;
 }
-.about_us__solutions__title--img:after{
-	position: absolute;
-	content: '';
-	top: -6px;
-	left: -4px;
-	background: url(../img/City-128-1.png);
-	background-size: cover;
-	height: 60px;
-	width: 60px;
-} 
-.img2:after {
-	background: url(../img/House-128.png);
-	position: absolute;
-	content: '';
-	top: -6px;
-	left: -4px;
-	background-size: cover;
-	height: 60px;
-	width: 60px;
+.city-house {
+	background: url(../img/City-128-1.png);	
+	background-size: cover; 
+	background-color: #669936;
 }
-.img3:after {
-	background: url(../img/Factory-128-1.png);
-	position: absolute;
-	content: '';
-	top: -6px;
-	left: -4px;
-	background-size: cover;
-	height: 60px;
-	width: 60px;
+.house {
+	background: url(../img/House-128.png);	
+	background-size: cover; 
+	background-color: #669936;
+}
+.factory {
+	background: url(../img/Factory-128-1.png);	
+	background-size: cover; 
+	background-color: #669936;
 }
 .about_us__solutions--underline {
 	display: inline-block;
@@ -184,10 +168,11 @@ main {
 .our__services {
 	background: #2F292B;
 	color: #fff;
+	margin-bottom: 30px; 		
 }
 .our__project--img img{
 	text-align: center;
-	height: 250px;
+	height: auto;
 	max-width: 100%;
 }
 .our__project__link .our__project--img:hover{
@@ -199,11 +184,12 @@ main {
 	display: inline-block;
 	width: 200px;
 	height: 2px;
+	margin-top: 20px;
 	background: #fff;
 }
 .our__project--text {
 	height: 60px;
-	font-size: 1.4rem;
+	font-size: 2em;
 	font-weight: bold;
 	padding-top: 10px;
 	padding-bottom: 30px;

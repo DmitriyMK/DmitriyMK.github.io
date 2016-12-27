@@ -29,12 +29,28 @@ width: 992px;
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
-
-	.about_us__solutions__title--text {
-		margin-left: 20px;
+	
+	.header__logo-img {
+		height: 8rem;
+	}
+	.header__logo-text {
+		font-size: 6.5em;
+		letter-spacing: 3px;
 	}
 
 
+	.about_us__solutions {
+		margin-bottom: 40px;
+	}
+	.about_us__solutions__title--text {
+		margin-left: 20px;
+	}
+	.about_us__solutions--text {
+		height: 100px;
+	}
+	.our__project--text {
+		margin-bottom: 30px;
+	}
 }
 
 
@@ -48,35 +64,25 @@ width: 992px;
 	}
 	.section__title-text {
 		margin: 4% 10%;
-		font-size: 1rem;
 	}
-	.about_us__solutions {
-		margin-bottom: 40px;
-	}
+
 	.about_us__solutions--top {
-		padding-top: 60px;
 		position: relative;
 	}
 	.about_us__solutions__title--text {
 		margin-left: 0;
 	}
-	.about_us__solutions__title--img {
-		left: 100px;
-	}	
 	.section__title-underline {
-	width: 200px;
-
-}
+		width: 200px;
+	}
 	.our__services {
 		margin-bottom: 40px
 	}
 
 	/* Custom, iPhone Retina */
 	@media only screen (min-width: 320px) and (max-width: 479px) {
-	
-	.about_us__solutions__title--img {
-		left: 100px;
-	}	
+
+
 
 	}
 
