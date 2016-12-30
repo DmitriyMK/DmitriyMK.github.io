@@ -1,6 +1,6 @@
 body {
 	font-family: 'Trebuchet MS', sans-serif;
-	font-size: 0.8125em;
+	font-size: 0.8em;
 	line-height: 1.5em;
 	box-sizing: border-box;
 	color: #666;
@@ -57,17 +57,20 @@ header {
 .menu {
 	text-align: center;
 }
+.menu-trigger {
+	text-align: center;
+	display: none;
+}
 .menu__item {
-	display: inline;
-
+	display: inline-block;
 }
 .menu__item-link {
-	display: inline-block;
-	padding: 15px;
-	margin: 0 -2px;
-	font-size: 15px;
+	display: block;
+	padding: 10px;
+	margin-right: -2px;
+	font-size: 20px;
 	font-weight: bold;
-	line-height: 30px;
+	line-height: 36px;
 	color: #000;
 }
 .menu__item-link:hover,
@@ -75,7 +78,6 @@ header {
 .menu__item .active {
 	background: rgb(228, 226, 79);;
 	color: #000;
-	text-shadow: 0 0 2px #000;
 }
 /* ABOUT US */
 main {
@@ -105,17 +107,25 @@ main {
 
 /* ABOUT US */
 .about_us__solutions {
+	position: relative;
 	background: #e4e24f;
 	padding: 20px 10px 10px 10px;
 }
-
+.about_us__solutions:after {
+    content: "";
+    position: absolute;
+    border-style: solid;
+    border-color: orange white;
+    border-width: 20px 20px 0 0;
+    bottom: 0;
+    right: 0;
+}
 .about_us__solutions__title--text {
 	padding: 10px 0;
 	font-size: 2em;
 	font-weight: bold;
 	color: #669936;
 }
-
 .about_us__solutions__title--img {
 	width: 70px;
 	height: 70px;

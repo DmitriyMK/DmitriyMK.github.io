@@ -29,16 +29,35 @@ width: 992px;
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
-	
+	.menu__wrapper .container {
+		padding: 0;
+	} 
 	.header__logo-img {
-		height: 8rem;
+		height: 8em;
 	}
 	.header__logo-text {
-		font-size: 6.5em;
-		letter-spacing: 3px;
+		font-size: 6em;
+		letter-spacing: 2px;
 	}
-
-
+	.menu-trigger {
+		display: block;
+		padding: 10px;
+		font-size: 20px;
+		font-weight: bold;
+		line-height: 36px;
+		color: #000;		
+	}
+	.menu {
+		display: none;
+	}	
+	.menu__item {
+		display: block;
+		text-align: center;
+	}
+	.menu__item-link {
+		border-bottom: 1px solid #009900;
+		min-width: 100%;
+	}
 	.about_us__solutions {
 		margin-bottom: 40px;
 	}
