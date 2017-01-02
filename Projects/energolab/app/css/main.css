@@ -104,10 +104,26 @@ main {
 /* ABOUT US */
 .about_us__solutions {
 	position: relative;
-	background: rgb(255, 216, 21);
 	padding: 20px 10px 10px 10px;
+	background: #ffd815; 
+	background: linear-gradient(-150deg, transparent 1.5em, #ffd815 0);
+	border-radius: .5em;
 }
-.about_us__solutions:after {
+.about_us__solutions:before {
+	content: '';
+	position: absolute;
+	top: 0; right: 0;
+	width: 1.73em; height: 3em;
+	background: linear-gradient(to left bottom, transparent 50%, rgba(0,0,0,.2) 0, rgba(0,0,0,.4)) 100% 0 no-repeat;
+	transform: translateY(-1.3em) rotate(-30deg);
+	transform-origin: bottom right;
+	border-bottom-left-radius: .5em;
+	box-shadow: -.2em .2em .3em -.1em rgba(0,0,0,.15)	
+}
+
+
+
+/* .about_us__solutions:after {
 	content: "";
 	position: absolute;
 	border-style: solid;
@@ -115,8 +131,7 @@ main {
 	border-width: 40px 40px 0 0;
 	bottom: 0;
 	right: 0;
-
-}
+} */
 .about_us__solutions__title--text {
 	padding: 10px 0;
 	height: 100px;
