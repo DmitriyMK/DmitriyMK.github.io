@@ -7,9 +7,10 @@
 	<title>Energy lab</title>
 	<link rel="stylesheet" href="css/libs/reset.css">
 	<link rel="stylesheet" href="css/libs/bootstrap.min.css">
-	<link href="https://fonts.googleapis.com/css?family=Handlee" rel="stylesheet">
+	<link rel="stylesheet" href="css/">
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/media.css">
+	<link href="https://fonts.googleapis.com/css?family=Handlee" rel="stylesheet">	
 </head>
 <body>
 	<div id="preloader">
@@ -25,39 +26,26 @@
 			</div>		
 		</div>
 	</header>	
-	<!-- menu-trigger -->
-<!-- 						<div class="burger-menu">
-	<div class="burger"></div>
-	<ul class="menu">
-		<li class="menu__item"><a class="menu__item-link active" href="#">Главная</a></li>
-		<li class="menu__item"><a class="menu__item-link" href="#">О компании</a></li>
-		<li class="menu__item"><a class="menu__item-link" href="#">Решения</a></li>
-		<li class="menu__item"><a class="menu__item-link" href="#">Услуги</a></li>
-		<li class="menu__item"><a class="menu__item-link" href="#">Контакты</a></li>
-	</ul>
-</nav>	 
-</div> -->
-
 <div class="menu__wrapper">
 	<div class="container ">
 		<div class="row">
 			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-				<nav>
-<!-- 						<a href="#" class="menu-trigger">menu</a>  -->
-					<ul class="menu">
-						<li class="menu__item"><a class="menu__item-link active" href="#">Главная</a></li>
+				<nav class="nav-bar">
+				<div class="nav-container">
+					<a id="nav-menu" class="nav-menu ">&#9776;</a>
+				</div>
+					<ul class="menu nav-list" id="nav">
+						<li class="menu__item"><a class="menu__item-link active" href="index.html">Главная</a></li>
 						<li class="menu__item"><a class="menu__item-link" href="#">О компании</a></li>
-						<li class="menu__item"><a class="menu__item-link" href="#">Решения</a></li>
+						<li class="menu__item"><a class="menu__item-link" href="solutions.html">Решения</a></li>
 						<li class="menu__item"><a class="menu__item-link" href="#">Услуги</a></li>
 						<li class="menu__item"><a class="menu__item-link" href="#">Контакты</a></li>
 					</ul>
-				</nav>	 
-			</div>
+				</nav>		
+			</div> 
 		</div>
-	</div> 
-</div>
-
-
+	</div>
+</div> 
 <main>
 	<section class="about_us" id="about_us">
 		<div class="container">
@@ -90,7 +78,7 @@
 						</div>
 						<p class="about_us__solutions--underline"></p>
 						<p class="about_us__solutions--text">Современная система отопления на базе тепловых насосов и автоматизированных твердотопливных котлов, энергоэффективная вентиляция, погодозависимое регулирование.
-						<a href="#">Читать далее...</a>
+							<a href="#">Читать далее...</a>
 						</p>						
 					</article>
 				</div>
@@ -102,7 +90,7 @@
 						</div>
 						<p class="about_us__solutions--underline"></p>
 						<p class="about_us__solutions--text">В Украине энергозатраты на единицу выпускаемой продукции в среднем в три четыре раза выше чем в европе. Снижение энергозатрат повышает конкурентную способность продукции на рынке.
-						<a href="#">Читать далее...</a>
+							<a href="#">Читать далее...</a>
 						</p>
 					</article>
 				</div>
@@ -120,9 +108,9 @@
 			</div>
 			<div class="row">
 				<a href="#" class="our__project__link">
-					<div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+					<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
 						<article class="our__services">
-							<figure class="our__project--img"><img src="img/news/2.jpg" alt="">
+							<figure class="our__project--img"><img src="img/services__1.png" height="641" width="1024" alt="">
 								<p class="our__project--underline"></p>
 								<figcaption class="our__project--text">Энергетический аудит</figcaption>
 							</figure>
@@ -130,9 +118,9 @@
 					</div>
 				</a>
 				<a href="#" class="our__project__link">
-					<div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+					<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
 						<article class="our__services">
-							<figure class="our__project--img"><img src="img/news/2.jpg" alt="">
+							<figure class="our__project--img"><img src="img/services__2.jpg" alt="">
 								<p class="our__project--underline"></p>
 								<figcaption class="our__project--text">Проектирование</figcaption>
 							</figure>
@@ -140,9 +128,9 @@
 					</div>
 				</a>
 				<a href="#" class="our__project__link">
-					<div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+					<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
 						<article class="our__services">
-							<figure class="our__project--img"><img src="img/news/2.jpg" alt="">
+							<figure class="our__project--img"><img src="img/services__3.JPG" alt="">
 								<p class="our__project--underline"></p>
 								<figcaption class="our__project--text">Монтаж инженерных систем</figcaption>
 							</figure>
@@ -150,9 +138,9 @@
 					</div>
 				</a>
 				<a href="#" class="our__project__link">
-					<div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+					<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
 						<article class="our__services">
-							<figure class="our__project--img"><img src="img/news/2.jpg" alt="">
+							<figure class="our__project--img"><img src="img/services__4.jpg" alt="">
 								<p class="our__project--underline"></p>
 								<figcaption class="our__project--text">Инструментальные обследования</figcaption>
 							</figure>
@@ -233,6 +221,7 @@
 <script src="js/libs/html5shiv-printshiv.min.js"></script>
 <script src="js/libs/html5shiv.min.js"></script>
 <script src="js/libs/jquery-1.10.1.min.js"></script>
+
 <script src="js/script.js"></script>		
 </body>
 </html>
