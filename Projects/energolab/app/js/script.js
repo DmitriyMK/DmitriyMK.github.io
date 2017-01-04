@@ -1,11 +1,14 @@
+$(document).ready(function() {
 
 	$(document).ready(function() {
-
-		$('#nav-menu').click(function() {
-			$('ul.nav-list').addClass('nav-open').slideToggle('300');
+		$('#nav').burgerMenu({
+			buttonBg: 'none',
+			lineColor: 'green',
+			menuBackground: 'blacknone',
+			linkBackground: 'black',
+			linkColor: 'white',
+			linkBorderBottom: 'none'
 		});
-
-
 	});
 
-
+});

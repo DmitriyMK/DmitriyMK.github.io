@@ -7,7 +7,7 @@ body {
 }
 a {
 	text-decoration: none;
-	color: #666;
+	color: #fff;
 	cursor: pointer;
 }
 a:focus,
@@ -208,7 +208,6 @@ main {
 		margin-bottom: 30px; 
 		background: #2F292B;
 		color: #fff;
-		
 	}
 	.our__project--img img{
 		text-align: center;
@@ -242,7 +241,7 @@ main {
 		margin: 10px; 
 		font-size: 3em;
 		line-height: 1em;
-		height: 50px;
+		height: 70px;
 		font-weight: bold;
 		color: #669936;	
 	}
@@ -252,7 +251,8 @@ main {
 	}
 	.news--article {
 		font-size: 2em;
-		line-height: 1em;	
+		line-height: 1em;
+		color: #000;	
 	}
 	.news--img img {
 		height: 250px;
