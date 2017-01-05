@@ -4,7 +4,7 @@ $(document).ready(function() {
 		$('#nav').burgerMenu({
 			buttonBg: 'none',
 			lineColor: 'green',
-			menuBackground: 'blacknone',
+			menuBackground: 'transparent',
 			linkBackground: 'black',
 			linkColor: 'white',
 			linkBorderBottom: 'none'
