@@ -307,14 +307,13 @@ main {
 		margin: 0 auto;
 		padding-top: 40px;
 		width: 90%;
+
 	}
 	#accordion h3 {
-		background: #ffd815; 
+/* 		background: #ffd815;
+border: 1px solid #ffd815;  */
 		font-size: 2.5em;
 		text-transform: uppercase;
-	}
-	#accordion div {
-		font-size: 2em;
 	}
 	#accordion div span {
 		font-weight: bold;
@@ -324,8 +323,23 @@ main {
 	#accordion ul li {
 		list-style-type: disc; 
 	}
+	.solutions__home__details {
+		padding-top: 40px;
+	}
+	.solutions__house--text {
+		font-size: 2em;
+	}
+	.solutions__home__details,
+	.solutions--text, 
+	.solutions--link {
+		font-size: 12px;
+	}
+	.solutions--link:hover {
+		color:  #669936;	
+	}
 
-
+/* 		background: #ffd815;  */
+		
 /* 	.accordion__header {
 	display: block;
 	height: 40px;
