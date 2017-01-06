@@ -19,11 +19,9 @@
 
 		/*accordion*/
 
-		$(function() {
-			$("#accordion").accordion({
-				collapsible: true
-			});
-		});
+         $(function() {
+            $( "#accordion" ).accordion();
+         });
 
 		/*	$('.accordion__header').click(function(e) {
 
