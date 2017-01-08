@@ -23,15 +23,18 @@
             $( "#accordion" ).accordion();
          });
 
-		/*	$('.accordion__header').click(function(e) {
+         /*Ajax popup*/
+         
+         $('.simple-ajax-popup-align-top').magnificPopup({
+		type: 'ajax',
+		alignTop: true,
+		overflowY: 'scroll' // as we know that popup content is tall we set scroll overflow by default to avoid jump
+	});
 
-				e.preventDefault();
+	$('.simple-ajax-popup').magnificPopup({
+		type: 'ajax'
+	});
 
-				$(this).siblings('.accordion-body').slideToggle()
-					.parent().toggleClass('active')
-					.siblings().removeClass('active')
-					.children('.accordion-body').slideUp();
-			});*/
 
 
 	}); /*ready(function()*/
