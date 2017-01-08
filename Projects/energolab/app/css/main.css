@@ -300,14 +300,11 @@ main {
 		font-weight: bold;
 		text-align: center;
 	}
-
-
 	/* Solution pages */
 	#accordion {
 		margin: 0 auto;
 		padding-top: 40px;
 		width: 90%;
-
 	}
 	#accordion h3 {
 		background: #ffd815;
@@ -345,15 +342,46 @@ main {
 	}
 	.solutions--link:after {
 		position: absolute;
-
 	}	
 	.solutions--link:hover {
 		color: #ffd815;
 	}
 
+	/* 	offer sections */
+	.offer {
+		margin: 25px; 
+		font-size: 2em;
+		line-height: 1.5em;	
+	}
+	.offer__title {
+		margin: 1em 0;
+		font-size: 3em;
+		line-height: 1.5em;
+		font-weight: bold;	
+		text-align: center;	
+		text-transform: uppercase;
+	}
+	.offer__text {
+		margin-top: 10px;
+	}
+	.offer__attention {
+		margin: 0.5em 0;		
+		font-size: 2em;
+		line-height: 1.5em;
+		color: red;
+		text-align: center;
+		text-transform: uppercase;					
+	}
+	.offer a{
+		color: inherit;
+		text-decoration: underline;
+	}	
+	.offer ul {
+		margin: 15px;	
+		list-style-type: disc; 
 
-
-
-
-
-
+	}
+	.error {
+		color: red;
+		font-weight: bold;
+	}
