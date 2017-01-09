@@ -7,7 +7,7 @@ $(window).load(function() {
 		itemSelector: '.grid-item',
 		percentPosition: true,
 		columnWidth: '.grid-item',
-		gutter: 5
+		gutter: 10
 	});
 /*	// layout Isotope after each image loads
 	$grid.imagesLoaded().progress(function() {
