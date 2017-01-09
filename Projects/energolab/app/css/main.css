@@ -386,6 +386,9 @@ main {
 		height: auto;
 		opacity: 0.5;
 	}
+	.energoaudit img {
+		height: 300px;
+	}
 	.error {
 		color: red;
 		font-weight: bold;
