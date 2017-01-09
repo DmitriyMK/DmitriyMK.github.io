@@ -1,15 +1,7 @@
 /*PRELOADER*/
 
 $(window).load(function() {
-	$('#preloader').find('i').fadeOut().end().delay(300).fadeOut('slow');
-
-
-});
-
-
-
-$(document).ready(function() {
-
+	$('#preloader').find('i').fadeOut().end().delay(200).fadeOut('slow');
 
 	var $grid = $('.grid').masonry({
 		itemSelector: '.grid-item',
@@ -21,6 +13,11 @@ $(document).ready(function() {
 	$grid.imagesLoaded().progress(function() {
 		$grid.masonry();
 	});
+});
+
+
+
+$(document).ready(function() {
 
 	$(function() {
 		// Initialize the gallery
