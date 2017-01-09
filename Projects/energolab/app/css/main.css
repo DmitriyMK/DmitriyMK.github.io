@@ -375,7 +375,8 @@ main {
 		font-size: 2em;
 		line-height: 1.5em;
 		text-align: center;
-		text-transform: uppercase;					
+		text-transform: uppercase;	
+		color: #306fb4;						
 	}
 	.offer a{
 		color: inherit;
