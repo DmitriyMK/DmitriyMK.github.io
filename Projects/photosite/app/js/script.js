@@ -2,6 +2,14 @@
 
 $(window).load(function() {
 	$('#preloader').find('i').fadeOut().end().delay(300).fadeOut('slow');
+
+	var $grid = $('.grid').masonry({
+		itemSelector: '.grid-item',
+		percentPosition: true,
+		columnWidth: '.grid-item',
+		gutter: 5
+	});
+		
 });
 
 
@@ -15,15 +23,7 @@ $(document).ready(function() {
 
 	/*MASONRY PLUGIN*/
 
-	// external js: masonry.pkgd.js, imagesloaded.pkgd.js
 
-	// init Masonry
-	var $grid = $('.grid').masonry({
-		itemSelector: '.grid-item',
-		percentPosition: true,
-		columnWidth: '.grid-item',
-		gutter: 5
-	});
 
 
 
