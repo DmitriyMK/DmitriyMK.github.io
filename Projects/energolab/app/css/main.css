@@ -359,14 +359,16 @@ main {
 		font-size: 3em;
 		line-height: 1.5em;
 		color: #306fb4;
-		font-weight: bold;	
+		font-weight: bold;
+		font-style: italic;
 		text-align: center;	
 		text-transform: uppercase;
 	}
 	.offer__text {
 		margin-top: 10px;
-		font-size: 22px;
-		line-height: 26px;		
+		font-size: 1.3em;
+		line-height: 1.3em;
+		color: #666;			
 	}
 	.offer__attention {
 		margin: 0.5em 0;		
