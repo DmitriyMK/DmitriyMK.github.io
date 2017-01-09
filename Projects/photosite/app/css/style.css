@@ -137,19 +137,18 @@ header {
 .grid {
 	margin: 0 auto;
 }
-
 .grid-item {
   width: 33.333%;
 }
-
 .grid-item {
     margin-bottom: 10px;
 	float: left;
  	width: 250px; 
 }
-
 .grid-item img{
 	max-width: 100%;
 	height: auto;
 	display: block;
 }
+
+
