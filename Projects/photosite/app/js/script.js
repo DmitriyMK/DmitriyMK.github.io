@@ -1,58 +1,52 @@
-
 /*PRELOADER*/
 
-$(window).on('load', function() {
-	var $preloader = $('#page-preloader'),
-		$loader = $preloader.find('.loader');
-	$loader.fadeOut();
-	$preloader.delay(250).fadeOut('slow');
+$(window).load(function() {
+	$('#preloader').find('i').fadeOut().end().delay(300).fadeOut('slow');
 });
 
-$(window).on('load', function() {
+
+
+$(document).ready(function() {
+
+	/*TOGGLE EFFECT MENU IN MOBILE DEKSTOP*/
+	$('.menu__toggle').click(function() {
+		$(".menu").slideToggle('500');
+	});
+
 	/*MASONRY PLUGIN*/
-	$('.grid').masonry({
+
+	// external js: masonry.pkgd.js, imagesloaded.pkgd.js
+
+	// init Masonry
+	var $grid = $('.grid').masonry({
+		itemSelector: '.grid-item',
+		percentPosition: true,
+		columnWidth: '.grid-item',
+		gutter: 5
+	});
+
+
+
+
+
+	/*	$('.grid').masonry({
 		// options
 		columnWidth: '.grid-item',
 		gutter: 10
 	});
-});
+	*/
 
-$(document).ready(function() {
-	/*MASONRY PLUGIN*/
-	$('.grid').masonry({
-	// options
-	columnWidth: '.grid-item',
-	gutter: 10
-});
 
-/*TOGGLE EFFECT MENU IN MOBILE DEKSTOP*/
-	$('.menu').click(function() {
-		$(".menu-container__list").slideToggle('5000');
-	});
 });
 
 
 /*POPUP GALLERY*/
-	$(function() {
+$(function() {
 	// Initialize the gallery
 	$('.thumbs a').touchTouch();
 });
 
-//Аякс отправка форм
-//Документация: http://api.jquery.com/jquery.ajax/
-$("#callback").submit(function() {
-	$.ajax({
-		type: "POST",
-		url: "mail.php",
-		data: $(this).serialize()
-	}).done(function() {
-		alert("Спасибо за заявку!");
-		setTimeout(function() {
 
-		}, 1000);
-	});
-	return false;
-});
 /*POPUP GALLERY*/
 /*
 $(document).ready(function() {

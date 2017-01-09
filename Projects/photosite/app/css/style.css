@@ -1,210 +1,153 @@
 body {
-	font: 28px/30px "Indie Flower", Tahoma, sans-serif;
-	background-color: #FBF7C4; 
+	font: 20px/30px Helvetica, sans-serif;
+	background: #f4f4f4; 
 }
 a {
 	text-decoration: none;
-	cursor: pointer;
 	color: #000;
+	cursor: pointer;
 }
-.wrapper {
-	width: 1200px;
-	margin: 0 auto;
+a:focus,
+a:hover,
+a:active {
+	text-decoration: none;
+	color: tomato;
+}
+*:hover {
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
 }
 .clearfix:after {
 	content: " ";
 	display: table; 
 	clear: both;
 }
-
 /* PRELOADER */
 
-#page-preloader {
-	position: fixed;
-	background: #fff;
-	width: 100%;
-	height: 100%;
-	left: 0;
-	right: 0;
-	top: 0;
-	bottom: 0;
-	z-index: 9999;
+#preloader {
+	position: fixed; 
+	left: 0; 
+	top: 0; 
+	right: 0; 
+	bottom: 0; 
+	background: #fff; 
+	z-index: 1001;
 }
-#page-preloader .loader {
-	background: url("../img/preloader.gif") 50% 50% no-repeat;
-	background-size: cover;
-	height: 80px;
-	width: 80px;
-	margin-top: -30px;
-	margin-left: -30px;
+#preloader i {
+	width: 70px; 
+	height: 70px; 
+	position: absolute;
 	left: 50%;
 	top: 50%;
-	position: absolute;
+	background: url('../img/preloader.gif') no-repeat 50% 50%; 
+	margin: -35px 0 0 -35px;
 }
 
-/* HEADER*/
-header  {
-	height: 92px;
-	margin-top: 40px;
+/* HEADER */
+
+header {
+	padding-top: 20px;
+	max-height: 400px;
+	margin: 0 auto;
+	font-size: 30px;
+	line-height: 34px;
+	font-weight: bold;
+	text-align: center;
+	text-transform: uppercase;
 }
 .header__logo {
-	display: inline-block;
-    text-align: center;
-    margin-left: 33%;
-    font-size: 40px;
-    line-height: 40px;
+	margin: 0 auto;
+	width: 50%;
 }
-.header__social-networks {
-	float: right; 
-	margin-right: 96px;
+.header__logo img {
+    vertical-align: top;
 }
-.social-networks__item {
-	float: left;
-	margin-top: 28px;
+.logo__text--top {
+	margin-top: 30px;
 }
-.social-networks__link{
-	font-size: 120%;
-}
-.social-networks__link:hover{
-	color: #40E0D0;
-	-webkit-transition: 0.5s;
-	-o-transition: 0.5s;
-	transition: 0.5s; 	
-}
-/* ASIDE */
-aside  {
-	font: 28px/30px "Indie Flower", Tahoma, sans-serif;
-	width: 13%;
-	float: left;
-	padding-right: 10px; 
-	text-align: center;
-}
-.menu-container {
-	padding-top: 40px;
-	display: block;
-}
-.menu {
-	display: none;
-}
-.menu-container__item {
-	padding: 15px 0;
-}
-.menu-container__item--link {
-	margin: 0 16px;
-}
-.menu-container__item--link:hover {
-	color: #40E0D0;
-	-webkit-transition: 0.5s;
-	-o-transition: 0.5s;
-	transition: 0.5s; 	
+.logo__text--bottom {
+	font-size: 26px;
+	line-height: 30px;	
 }
 
-/* 	SECTION - GALLERY */
-.gallery {
-	padding-top: 40px;
-	width: 85%;
-	float: left;
+.social-networks-list {
+	float: right;
 }
+.social-networks__item {
+	display: inline-block;
+}
+.facebook:hover {
+	color:#3b5998; 
+}
+.instagram:hover {
+	color:#bc2a8d;
+}
+.fotopoisk:hover {
+	color:#666; 
+}
+.phone:hover {
+	color:#8f5db7; 
+}
+.mail:hover {
+	color:#dd4b39; 
+}
+
+
+/* CAROUSEL */
+			
+/* MENU */
+.menu__wrapper {
+	margin: 20px 0; 
+	background-color: #000;
+}
+.menu {
+	width: 100%;
+	font-size: 24px;
+	line-height: 50px;
+	text-align: center;
+	text-transform: uppercase;
+	color: #fff;
+}
+.menu__toggle {
+	display: none;
+	text-align: center;
+	color: tomato;
+}
+.menu__item {
+	display: inline-block;
+	padding-right: 20px;
+} 
+.menu__item-link {
+	color: #fff;
+}
+.menu__item-link:hover {
+	color: tomato;
+}
+
+/* gallery */
+.gallery {
+	width: 100%;
+	margin-left: 10px;
+}
+.grid {
+	margin: 0 auto;
+}
+
+.grid-item {
+  width: 33.333%;
+}
+
 .grid-item {
     margin-bottom: 10px;
 	float: left;
- 	width: 300px; 
+ 	width: 250px; 
 }
+
 .grid-item img{
 	max-width: 100%;
 	height: auto;
 	display: block;
-}
-.image-source-link {
-	color: #98C3D1;
-}
-
-.image-source-link {
-	color: #98C3D1;
-}
-figcaption {
-	text-align: center;
-}
-
-
-/* FOOTER */
-footer {
-	
-	font: 20px/26px "Indie Flower", Tahoma, sans-serif;
-}
-footer .social-networks-list {
-	text-align:center;
-	padding-left: 30%;
-}
-footer .social-networks__link {
-	margin-right: 10px;
-}
-.icon-copyright {
-	clear:both;
-	text-align:center;
-	font: 14px/18px "Indie Flower", Tahoma, sans-serif;
-}
-
-/* ABOUT ME */
-.about {
-	width: 80%;
-	text-align: center;
-	padding-right: 10%;
-}
-.about__photo {
-	width: 200px;
-	height: auto;
-	border: solid 4px #fff;
-	border-radius: 50%;
-	box-sizing: border-box;
-}
-
-.about__name {
-	line-height: 50px;
-	font-weight: bold;
-}
-.about__description{
-	font-weight: bold;
-}
-.about__text {
-	padding-top: 20px;
-	padding-bottom: 40px;
-}
-
-/* CONTACT */
-.contact {
-	margin-top: 10px;
-	margin-left: 40px;
-}
-.contact__data {
-	float: left;
-	width: 50%;
-}
-.icon-mobile,
-.icon-location {
-	padding-bottom: 30px;
-}
-.contact__callback {
-	float: right;
-	width: 50%;
-}
-.title_section {
-	font-weight: bold;
-}
- .contact__callback input, 
- .contact__callback textarea {
-	font: 28px/30px Tahoma, sans-serif;
-	background-color: #FBF7C4;
-	border: 2px solid grey;  
-	width: 333px;
-}
-.contact__callback--message {
-	padding-top: 20px;
-}
-.contact__callback button {
-	background: red;
-	-webkit-border-radius: 10px;
-	border-radius: 10px;
-	font: 28px/36px "Indie Flower", Tahoma, sans-serif;
-	margin-left: 16%;
 }
