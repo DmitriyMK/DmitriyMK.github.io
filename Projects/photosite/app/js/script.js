@@ -9,10 +9,10 @@ $(window).load(function() {
 		columnWidth: '.grid-item',
 		gutter: 5
 	});
-	// layout Isotope after each image loads
+/*	// layout Isotope after each image loads
 	$grid.imagesLoaded().progress(function() {
 		$grid.masonry();
-	});
+	});*/
 });
 
 
