@@ -351,7 +351,8 @@ main {
 	.offer {
 		margin: 25px; 
 		font-size: 2em;
-		line-height: 1.5em;	
+		line-height: 1.5em;
+		color: #000;	
 	}
 	.offer__title {
 		margin: 1em 0;
@@ -379,7 +380,10 @@ main {
 	.offer ul {
 		margin: 15px;	
 		list-style-type: disc; 
-
+	}
+	.offer img {
+		width: 100%;
+		height: auto;
 	}
 	.error {
 		color: red;
