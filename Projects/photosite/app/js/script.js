@@ -3,6 +3,14 @@
 $(window).load(function() {
 	$('#preloader').find('i').fadeOut().end().delay(300).fadeOut('slow');
 
+
+});
+
+
+
+$(document).ready(function() {
+
+
 	var $grid = $('.grid').masonry({
 		itemSelector: '.grid-item',
 		percentPosition: true,
@@ -13,11 +21,6 @@ $(window).load(function() {
 	$grid.imagesLoaded().progress(function() {
 		$grid.masonry();
 	});
-});
-
-
-
-$(document).ready(function() {
 
 	$(function() {
 		// Initialize the gallery
