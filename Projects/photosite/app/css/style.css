@@ -1,6 +1,8 @@
 body {
 	font: 20px/30px Helvetica, sans-serif;
 	background: #f4f4f4; 
+	word-wrap: break-word;	
+    box-sizing: border-box;	
 }
 a {
 	text-decoration: none;
