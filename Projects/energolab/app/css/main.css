@@ -365,6 +365,8 @@ main {
 	}
 	.offer__text {
 		margin-top: 10px;
+		font-size: 22px;
+		line-height: 26px;		
 	}
 	.offer__attention {
 		margin: 0.5em 0;		
