@@ -9,22 +9,25 @@ $(window).load(function() {
 		columnWidth: '.grid-item',
 		gutter: 5
 	});
-
-	/*TOGGLE EFFECT MENU IN MOBILE DEKSTOP*/
-	$('.menu__toggle').click(function() {
-		$(".menu").slideToggle('500');
+	// layout Isotope after each image loads
+	$grid.imagesLoaded().progress(function() {
+		$grid.masonry();
 	});
-
 });
 
 
 
 $(document).ready(function() {
 
-$(function() {
-	// Initialize the gallery
-	$('.thumbs a').touchTouch();
-});
+	$(function() {
+		// Initialize the gallery
+		$('.thumbs a').touchTouch();
+	});
+
+	/*TOGGLE EFFECT MENU IN MOBILE DEKSTOP*/
+	$('.menu__toggle').click(function() {
+		$(".menu").slideToggle('500');
+	});
 
 });
 
