@@ -9,42 +9,28 @@ $(window).load(function() {
 		columnWidth: '.grid-item',
 		gutter: 5
 	});
-		
-});
-
-
-
-$(document).ready(function() {
 
 	/*TOGGLE EFFECT MENU IN MOBILE DEKSTOP*/
 	$('.menu__toggle').click(function() {
 		$(".menu").slideToggle('500');
 	});
 
-	/*MASONRY PLUGIN*/
+});
 
 
 
+$(document).ready(function() {
 
-
-
-
-	/*	$('.grid').masonry({
-		// options
-		columnWidth: '.grid-item',
-		gutter: 10
-	});
-	*/
-
+$(function() {
+	// Initialize the gallery
+	$('.thumbs a').touchTouch();
+});
 
 });
 
 
 /*POPUP GALLERY*/
-$(function() {
-	// Initialize the gallery
-	$('.thumbs a').touchTouch();
-});
+
 
 
 /*POPUP GALLERY*/
