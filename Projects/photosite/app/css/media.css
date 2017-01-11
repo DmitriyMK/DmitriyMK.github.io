@@ -14,17 +14,12 @@
 		width: 970px;
 	}
 	.menu {
-		font-size: 20px;
-		text-align: left;
+		text-align: left; 
 	}	
 	.menu__item {
 		padding-left: 20px;
-		padding-right: 0;
 	} 
-	.grid-sizer,
-	.grid-item {
-		width: 25%; 
-	}		
+
 }
 
 /* Small Devices, Tablets */
@@ -32,37 +27,21 @@
 	.container {
 		width: 	750px;
 	}
-	.header__social-networks-block {
-		display: none;
-	}
-	.logo__text--top {
-		font-size: 24px;
-		line-height: 26px;
-	}
-	.logo__text--bottom {
-		font-size: 20px;
-		line-height: 26px;	
-	}
-	.menu__wrapper .container {
-		width: 300px;
-	}
-	.menu__toggle {
-		display: block;	
-	}
-	.menu {
-		display: none; 
-		text-align: center;
-		width: 100%;
-	}	
-	.menu__item {
-		display: block;
-		text-align: center;	
-		padding-left: 0;
-		padding-right: 0;
-	}
+  .icon {
+     display:block; 
+  }
+   .items {
+    display:none;   
+  }
+  .items li {
+    display:table;
+    padding:10px 0;
+  }
+
+
 	.grid-sizer,
 	.grid-item {
-		width: 33.3333333%;
+		width: 32.333333%;
 	}		
 }
 
@@ -71,18 +50,9 @@
 	.container {
 		width: auto;
 	}
-
-	.logo__text--top {
-		font-size: 22px;
-		line-height: 26px;
-	}
-	.logo__text--bottom {
-		font-size: 18px;
-		line-height: 26px;	
-	}
 	.grid-sizer,
 	.grid-item {
-		width: 50%;
+		width: 49.5%;
 	}	
 }
 /* Custom, iPhone Retina */
