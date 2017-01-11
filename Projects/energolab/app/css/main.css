@@ -352,7 +352,8 @@ main {
 		margin: 25px; 
 		font-size: 2em;
 		line-height: 1.5em;
-		color: #000;	
+		color: #000;
+		text-align: center;	
 	}
 	.offer__title {
 		margin: 1em 0;
@@ -365,10 +366,9 @@ main {
 		text-transform: uppercase;
 	}
 	.offer__text {
-		margin-top: 10px;
 		font-size: 1.3em;
 		line-height: 1.3em;
-		color: #666;			
+		color: rgb(140, 140, 140);			
 	}
 	.offer__attention {
 		margin: 0.5em 0;		
@@ -395,7 +395,31 @@ main {
 		height: auto;
 		padding: 20px 0;
 	}
+	.energoaudit-steps {
+		
+
+	}
+	.energoaudit-step-text {
+		margin-bottom: 40px;
+		background: rgba(170, 220, 190, 0.2);
+		position: relative;
+	}
 	.error {
 		color: red;
 		font-weight: bold;
 	}
+	.button {
+		border: 1px solid black;
+		border-radius: 20px;
+		padding: 10px 20px;
+		text-decoration: none;
+	}
+	.button_exel {
+		background-color: red;
+				text-decoration: none;
+	}
+	.button_callback {
+		font-size: 1em;
+		background-color: green;
+				text-decoration: none;
+	}	

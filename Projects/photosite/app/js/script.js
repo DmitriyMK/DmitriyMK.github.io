@@ -6,13 +6,13 @@ $(window).load(function() {
 	var $grid = $('.grid').masonry({
 		itemSelector: '.grid-item',
 		percentPosition: true,
-		columnWidth: '.grid-item',
-		gutter: 10
+		columnWidth: '.grid-sizer'
+
 	});
-/*	// layout Isotope after each image loads
+	// layout Isotope after each image loads
 	$grid.imagesLoaded().progress(function() {
-		$grid.masonry();
-	});*/
+		$grid.masonry('layout');
+	});
 });
 
 /*CAROUSEL*/
