@@ -323,6 +323,11 @@ main {
 	.solutions__house__details {
 		padding-top: 40px;
 	}
+	.solutions__home__details img,
+	.solutions__house__details img {
+		width: 32px;
+		height: 32px;
+	}	
 	.solutions__house--text {
 		font-size: 2em;
 	}

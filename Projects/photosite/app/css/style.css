@@ -156,6 +156,7 @@ h3 {
 }
 /* gallery */
 .grid {
+	padding-top:10px;
 	max-width: 100%;
 } 
 .grid-sizer,
