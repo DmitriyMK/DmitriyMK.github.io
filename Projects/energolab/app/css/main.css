@@ -385,7 +385,6 @@ main {
 	}
 	.offer a{
 		color: inherit;
-		text-decoration: underline;
 	}	
 	.offer ul {
 		margin: 15px;	
@@ -401,30 +400,52 @@ main {
 		padding: 20px 0;
 	}
 	.energoaudit-steps {
-		
-
 	}
 	.energoaudit-step-text {
 		margin-bottom: 40px;
 		background: rgba(170, 220, 190, 0.2);
 		position: relative;
 	}
-	.error {
-		color: red;
-		font-weight: bold;
+	.button__wrapper {
+		margin: 0 auto;
+		width: 90%;
+		padding: 0 20%;
+		-webkit-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+		-moz-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+		box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
 	}
 	.button {
 		border: 1px solid black;
 		border-radius: 20px;
 		padding: 10px 20px;
-		text-decoration: none;
 	}
 	.button_exel {
-		background-color: red;
-				text-decoration: none;
+		background-color: rgba(66, 255, 41, 1); 
+		float: left;
+		width: 40%;
+		-webkit-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+		-moz-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+		box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+		margin-bottom: 100px;
 	}
 	.button_callback {
 		font-size: 1em;
-		background-color: green;
-				text-decoration: none;
-	}	
+		background-color: rgba(255, 0, 0, 1); 
+		float: right;
+		width: 40%;
+		-webkit-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+		-moz-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+		box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+	}
+	.button_callback:hover {
+		background-color: rgba(255, 0, 0, 0.5); 
+		-webkit-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
+		-moz-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
+		box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.75);		
+	}			
+	.button_exel:hover {
+		background-color: rgba(66, 255, 41, 0.5);
+		-webkit-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
+		-moz-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
+		box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.75);			 
+	}			
