@@ -361,6 +361,7 @@ main {
 		text-align: center;	
 	}
 	.offer__title {
+		position: relative;
 		margin: 1em 0;
 		font-size: 3em;
 		line-height: 1.5em;
@@ -369,6 +370,16 @@ main {
 		font-style: italic;
 		text-align: center;	
 		text-transform: uppercase;
+	}
+	.energoaudit .offer__title:before {
+		content: '';
+		position: absolute;
+		top: 10px;
+		left: 120px;
+		height: 52px;
+		width: 52px;
+		background: url(../img/icons/solutions_for_house1.png);
+		background-size: cover; 
 	}
 	.offer__text {
 		font-size: 1.3em;
@@ -399,53 +410,36 @@ main {
 		height: auto;
 		padding: 20px 0;
 	}
-	.energoaudit-steps {
-	}
-	.energoaudit-step-text {
-		margin-bottom: 40px;
-		background: rgba(170, 220, 190, 0.2);
-		position: relative;
+	.offer .footer {
+		padding: 30px;
+		background: #ccc;
+		color: #000;
+		min-height: 200px;
 	}
 	.button__wrapper {
+		margin-top: 20px; 
+	}
+	.callback {
 		margin: 0 auto;
-		width: 90%;
-		padding: 0 20%;
-		-webkit-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
-		-moz-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
-		box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
-	}
-	.button {
-		border: 1px solid black;
-		border-radius: 20px;
-		padding: 10px 20px;
-	}
-	.button_exel {
-		background-color: rgba(66, 255, 41, 1); 
-		float: left;
-		width: 40%;
-		-webkit-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
-		-moz-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
-		box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
-		margin-bottom: 100px;
-	}
-	.button_callback {
+		padding: 10px;
+		width: 50%;
+		height: auto;
 		font-size: 1em;
-		background-color: rgba(255, 0, 0, 1); 
-		float: right;
-		width: 40%;
+		line-height: 1.9em;
+		font-weight: bold;
+		color: #669933;
+		-webkit-border-radius: 5px;
+		border-radius: 5px;
+		background-color: #ffcc00; 
 		-webkit-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
 		-moz-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
 		box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
 	}
-	.button_callback:hover {
-		background-color: rgba(255, 0, 0, 0.5); 
+	.callback:hover {
+		background-color: #ffcc60; 
+		text-decoration: underline;
 		-webkit-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
 		-moz-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
 		box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.75);		
 	}			
-	.button_exel:hover {
-		background-color: rgba(66, 255, 41, 0.5);
-		-webkit-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
-		-moz-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
-		box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.75);			 
-	}			
+	
