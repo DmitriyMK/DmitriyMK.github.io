@@ -19,8 +19,6 @@ width: 1170px;
 	height: 80px;
 }
 } 
-
-
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
 	.menu {
@@ -33,7 +31,7 @@ width: 1170px;
 	.about_us__solutions--text {
 		font-size: 2em;
 		line-height: 1.5em;
-		height: 320px;
+		max-height: 300px
 	}
 	.our__project--text {
 		font-size: 2em;
@@ -46,10 +44,8 @@ width: 1170px;
 		padding-bottom: 50px;
 	}
 }
-
 /* Small Devices, Tablets */
 @media only screen and (max-width : 767px) {
-
 	.menu__wrapper .container {
 		padding: 0;
 	} 
@@ -120,13 +116,9 @@ width: 1170px;
 	.news--text {
 		padding-bottom: 10px;
 	}	
-
 }
-
-
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
-
 	.header__logo-img {
 		float: none;
 	}
@@ -163,7 +155,6 @@ width: 1170px;
 }
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 479px) {
-
 	.menu__item {
 		margin-left: 0;
 	}

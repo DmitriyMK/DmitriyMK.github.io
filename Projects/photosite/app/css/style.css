@@ -93,10 +93,15 @@ header {
 	color:#dd4b39; 
 }
 /* CAROUSEL */
+.carousel-caption--text {
+	background-color: rgba(24, 27, 31, 0.4);
+	background: #B9121B;
+}
 h3 {
 	display: inline-block;
 	padding: 10px;
-	background: #B9121B;
+	font: 20px/30px 'Indie Flower', Helvetica, sans-serif;
+	opacity: 0.8;
 	border-top-left-radius: 10px;
 	border-top-right-radius: 10px;
 }
@@ -129,7 +134,7 @@ h3 {
 #menu a:hover {
 	color: #000;
 }
- #menu ul {
+#menu ul {
 	padding:0;
 	margin:0;
 } 
@@ -161,11 +166,12 @@ h3 {
 } 
 .grid-sizer,
 .grid-item {
-	width: 24.44555%; 
+	width: 25%; 
 }
 .grid-item {
 	float: left; 
 	margin-bottom: 10px;
+
 }
 .grid-item img{
 	max-width: 100%;

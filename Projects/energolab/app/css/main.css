@@ -1,9 +1,9 @@
 body {
-	font-family: 'Trebuchet MS', sans-serif;
+	font-family: 'Trebuchet MS', Helvetica, sans-serif;
 	font-size: 0.8em;
 	line-height: 1.5em;
 	box-sizing: border-box;
-	color: #666;
+	color: rgb(102, 102, 102);
 }
 #preloader {
 	position: fixed; 
@@ -98,7 +98,7 @@ header {
 .menu__item-link:active,
 .menu__item .active {
 	background: #fff;
-	color: #000;
+	color: rgb(102, 102, 102);;
 }
 /* ABOUT US */
 main {
@@ -206,18 +206,19 @@ main {
 		line-height: 1.7em;
 		text-align: left;
 	}
-	.about_us__solutions a {
+	.about_us__solutions--link {
 		display: inline-block;
 		position: absolute;
 		bottom: 20px;
-		left: 20px;
-		font-size: 1em;
+		right: 20px;
+		font-size: 2.5em;
 		line-height: 1.7em;
 		color: #669936;
 	}
-
+	.about_us__solutions--link:hover {
+		color: #fff;
+	}
 	/* OUR PROJECTS */
-
 	.our__project .row {
 		padding-bottom: 30px; 	
 	}
@@ -270,7 +271,7 @@ main {
 	.news--article {
 		font-size: 2em;
 		line-height: 1em;
-		color: #000;	
+		color: #666;	
 	}
 	.news--img img {
 		height: 250px;
@@ -357,7 +358,7 @@ main {
 		margin: 25px; 
 		font-size: 2em;
 		line-height: 1.5em;
-		color: #000;
+		color: rgb(102, 102, 102);
 		text-align: center;	
 	}
 	.offer__title {
@@ -413,7 +414,7 @@ main {
 	.offer .footer {
 		padding: 30px;
 		background: #ccc;
-		color: #000;
+		color: rgb(102, 102, 102);
 		min-height: 200px;
 	}
 	.button__wrapper {

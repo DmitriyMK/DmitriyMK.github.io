@@ -6,8 +6,8 @@ $(window).load(function() {
 	var $grid = $('.grid').masonry({
 		itemSelector: '.grid-item',
 		percentPosition: true,
-		columnWidth: '.grid-sizer',
-		gutter: 5
+		columnWidth: '.grid-sizer'
+/*		gutter: 1%*/
 
 	});
 	// layout Isotope after each image loads

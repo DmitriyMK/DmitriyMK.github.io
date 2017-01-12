@@ -10,49 +10,52 @@
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
-	.container {
-		width: 970px;
-	}
+/* 	.container {
+	width: 970px;
+	} */
 	.menu {
 		text-align: left; 
 	}	
-	.menu__item {
-		padding-left: 20px;
-	} 
 
 }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
-	.container {
-		width: 	750px;
+/* 	.container {
+	width: 	750px;
+} */
+	.icon {
+		display:block; 
 	}
-  .icon {
-     display:block; 
-  }
-   .items {
-    display:none;   
-  }
-  .items li {
-    display:table;
-    padding:10px 0;
-  }
+	.items {
+		display:none;   
+	}
+	.items li {
+		display:table;
+		padding:10px 0;
+	}
 
 
 	.grid-sizer,
 	.grid-item {
-		width: 32.333333%;
+		width: 33.333333%;
 	}		
 }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
-	.container {
-		width: auto;
+/* 	.container {
+	width: auto;
+} */
+	header {
+		padding: 0;
+	}
+	.social-networks__item {
+		line-height: 80px;	
 	}
 	.grid-sizer,
 	.grid-item {
-		width: 49.5%;
+		width: 50%;
 	}	
 }
 /* Custom, iPhone Retina */
