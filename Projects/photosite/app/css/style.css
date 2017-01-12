@@ -1,6 +1,5 @@
 body {
 	font: 24px/36px 'Indie Flower', Helvetica, sans-serif;
-	background: #f4f4f4; 
 	word-wrap: break-word;	
 	box-sizing: border-box;	
 }
@@ -57,7 +56,7 @@ header {
 	font-weight: bold;
 	text-align: center;
 	text-transform: uppercase;
-	background: #94c8d6;	
+	background: #FCDE9D;	
 }
 .header__logo--link img {
 	width: 100px;
@@ -122,10 +121,11 @@ header {
 }			
 /* MENU */
 .menu__wrapper {
-	background: #B9121B;
+	background: #FCDE9D;
 }
 .menu__item-link {
-	color: #fff;
+	color: #000;
+    font-weight: 600;
 }
 #menu {
 	margin:0;
@@ -135,10 +135,10 @@ header {
 	line-height: 32px;
 	text-align: center;
 	text-transform: uppercase;
-	color: #fff;
+	color: #000;
 }
 #menu a:hover {
-	color: #000;
+	color: #5F9CBA;
 }
 #menu ul {
 	padding:0;
@@ -151,7 +151,7 @@ header {
 	margin: 0 auto;
 }
 .icon {
-	color: #fff;
+	color: #000;
 	cursor: pointer;
 	display: none;
 	font-size:24px;
@@ -167,7 +167,7 @@ header {
 }
 /* gallery */
 .grid {
-	padding-top:10px;
+	padding-bottom:10px;
 	max-width: 100%;
 } 
 .grid-sizer,
@@ -177,7 +177,6 @@ header {
 .grid-item {
 	float: left; 
 	margin-bottom: 10px;
-
 }
 .grid-item img{
 	max-width: 100%;
