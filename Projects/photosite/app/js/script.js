@@ -40,7 +40,7 @@ $(window).on('resize', function (){
 });
 
 $('.carousel').carousel({
-  interval: 6000,
+  interval: 8000,
   pause: "false"
 });
 
