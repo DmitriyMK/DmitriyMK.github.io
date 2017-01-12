@@ -93,15 +93,19 @@ header {
 	color:#dd4b39; 
 }
 /* CAROUSEL */
-.carousel-caption--text {
+.carousel-caption {
 	background-color: rgba(24, 27, 31, 0.4);
-	background: #B9121B;
+	font-size: 22px;
+	line-height: 26px;
 }
-h3 {
+.carousel-caption span {
+    font-size: 1.4em;
+    color: red;
+    font-style: italic;
+}
+ h3 {
 	display: inline-block;
 	padding: 10px;
-	font: 20px/30px 'Indie Flower', Helvetica, sans-serif;
-	opacity: 0.8;
 	border-top-left-radius: 10px;
 	border-top-right-radius: 10px;
 }
