@@ -145,7 +145,7 @@ button::-moz-focus-inner {
     top: 1px; }
 
 .mfp-close-btn-in .mfp-close {
-  background-color: tomato;
+  background-color: rgb(102, 153, 54);
   font-size: 4em;
 }
 
