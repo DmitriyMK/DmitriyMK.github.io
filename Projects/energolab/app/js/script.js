@@ -1,4 +1,3 @@
-	
 	/*LOADER*/
 	$(window).load(function() {
 		$('#preloader').find('i').fadeOut().end().delay(400).fadeOut('slow');
@@ -19,21 +18,40 @@
 
 		/*accordion*/
 
-         $(function() {
-            $( "#accordion" ).accordion();
-         });
+		$(function() {
 
-         /*Ajax popup*/
-         
-         $('.simple-ajax-popup-align-top').magnificPopup({
-		type: 'ajax',
-		alignTop: true,
-		overflowY: 'scroll' // as we know that popup content is tall we set scroll overflow by default to avoid jump
-	});
+			$('.accordion__header').click(function(e) {
 
-	$('.simple-ajax-popup').magnificPopup({
-		type: 'ajax'
-	});
+				e.preventDefault();
+
+				$(this).siblings('.accordion-body').slideToggle()
+					.parent().toggleClass('active')
+					.siblings().removeClass('active')
+					.children('.accordion-body').slideUp();
+
+			});
+
+		});
+
+		/*PREVIOUS VERSUS*/
+		/*		
+		         $(function() {
+		            $( "#accordion" ).accordion();
+		         });*/
+
+
+
+		/*Ajax popup*/
+
+		$('.simple-ajax-popup-align-top').magnificPopup({
+			type: 'ajax',
+			alignTop: true,
+			overflowY: 'scroll' // as we know that popup content is tall we set scroll overflow by default to avoid jump
+		});
+
+		$('.simple-ajax-popup').magnificPopup({
+			type: 'ajax'
+		});
 
 
 
