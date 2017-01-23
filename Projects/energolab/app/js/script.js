@@ -18,7 +18,7 @@
 
 		/*accordion*/
 
-		$(function() {
+/*		$(function() {
 
 			$('.accordion__header').click(function(e) {
 
@@ -31,13 +31,12 @@
 
 			});
 
-		});
+		});*/
 
-		/*PREVIOUS VERSUS*/
-		/*		
+
 		         $(function() {
 		            $( "#accordion" ).accordion();
-		         });*/
+		         });
 
 
 
