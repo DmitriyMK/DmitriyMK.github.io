@@ -10,8 +10,8 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/media.css">    
     <link href="https://fonts.googleapis.com/css?family=GFS+Didot|Lato|Playfair+Display" rel="stylesheet"> 
-    <script src="js/jquery-1.12.1.min.js"></script>        
-    <script src="js/jquery.mixitup.min.js"></script>    
+    <script src="js/jquery-1.12.1.min.js"></script>
+    <script src="js/isotope.pkgd.min.js"></script>               
     <script src="js/script.js"></script>
 </head>
 <body> 
@@ -74,16 +74,16 @@
         <section class="catalog clearfix">
             <h2 class="catalog__title">Catalog</h2>
             <ul class="catalog__list">
-                <li class="catalog__list-item active"><a class="catalog__list-link" href="#" data-filter=".shirts, .sweaters, .shorts, .jaskets, .accessoires" tabindex="-1">all</a></li>
-                <li class="catalog__list-item"><a class="catalog__list-link" href="#" data-filter=".shirts" tabindex="-1">t-shirts</a></li>
-                <li class="catalog__list-item"><a class="catalog__list-link" href="#" data-filter=".sweaters" tabindex="-1">sweaters</a></li>
-                <li class="catalog__list-item"><a class="catalog__list-link" href="#" data-filter=".shorts" tabindex="-1">shorts</a></li>
-                <li class="catalog__list-item"><a class="catalog__list-link" href="#" data-filter=".jaskets" tabindex="-1">jaskets</a></li>
-                <li class="catalog__list-item"><a class="catalog__list-link" href="#" data-filter=".accessoires" tabindex="-1">accessoires</a></li>
+                <li class="catalog__list-item active"><a class="catalog__list-link is-checked" href="#" data-filter="*">all</a></li>
+                <li class="catalog__list-item"><a class="catalog__list-link" href="#" data-filter="shirts" >t-shirts</a></li>
+                <li class="catalog__list-item"><a class="catalog__list-link" href="#" data-filter="sweaters">sweaters</a></li>
+                <li class="catalog__list-item"><a class="catalog__list-link" href="#" data-filter="shorts">shorts</a></li>
+                <li class="catalog__list-item"><a class="catalog__list-link" href="#" data-filter="jaskets">jaskets</a></li>
+                <li class="catalog__list-item"><a class="catalog__list-link" href="#" data-filter="accessoires">accessoires</a></li>
             </ul>
         </section>
-        <div class="catalog__products clearfix" id="catalog__products">
-            <figure class="product shorts" data-cat="shorts">
+        <div class=" grid catalog__products clearfix" id="catalog__products">
+            <figure class="product shorts" data-category="shorts">
                 <a class="product-link" href="#">
                     <img src="img/product1.jpg" alt="">
                 </a>  
@@ -93,7 +93,7 @@
                     </a>    
                 </figcaption>
             </figure>
-            <figure class="product shorts" data-cat="shorts">
+            <figure class="product shorts" data-category="shorts">
                 <a class="product-link" href="#">
                     <img src="img/product2.jpg" alt="">
                 </a>  
@@ -104,7 +104,7 @@
                     </a>    
                 </figcaption>
             </figure>
-            <figure class="product accessoires" data-cat="accessoires">
+            <figure class="product accessoires" data-category="accessoires">
                 <a class="product-link" href="#">
                     <img src="img/product3.jpg" alt="">
                     <span class="new-product">new</span>
@@ -115,7 +115,7 @@
                     </a>    
                 </figcaption>
             </figure>
-            <figure class="product accessoires" data-cat="accessoires">
+            <figure class="product accessoires" data-category="accessoires">
                 <a class="product-link" href="#">
                     <img src="img/product4.jpg" alt="">
                 </a>  
@@ -125,7 +125,7 @@
                     </a>    
                 </figcaption>
             </figure>
-            <figure class="product shirts" data-cat="shirts">
+            <figure class="product shirts" data-category="shirts">
                 <a class="product-link" href="#">
                     <img src="img/product5.jpg" alt="">
                 </a>  
@@ -135,7 +135,7 @@
                     </a>    
                 </figcaption>
             </figure>
-            <figure class="product shorts" data-cat="shorts">
+            <figure class="product shorts" data-category="shorts">
                 <a class="product-link" href="#">
                     <img src="img/product6.jpg" alt="">
                 </a>  
@@ -145,7 +145,7 @@
                     </a>    
                 </figcaption>
             </figure> 
-            <figure class="product shorts" data-cat="shorts">
+            <figure class="product shorts" data-category="shorts">
                 <a class="product-link" href="#">
                     <img src="img/product7.jpg" alt="">
                 </a>  
@@ -155,7 +155,7 @@
                     </a>    
                 </figcaption>
             </figure>
-            <figure class="product shorts" data-cat="shorts">
+            <figure class="product shorts" data-category="shorts">
                 <a class="product-link" href="#">
                     <img src="img/product8.jpg" alt="">
                 </a>  
@@ -173,7 +173,7 @@
         <h3 class="subsribe_title">subsribe</h3>
         <p class="subsribe_text">Stay updated on news</p>
         <form action="index.html" method="post" class="subscribe-form">
-            <input type="email" name="email" class="subscribe-input" placeholder="Your Email Address" autofocus>
+            <input type="email" name="email" class="subscribe-input" placeholder="Your Email Address">
             <button type="submit" class="subscribe-submit"><i class="icon-right-open"></i></button>
         </form>
     </section>
@@ -193,28 +193,6 @@
            <span class="footer__copyright">©2010 - 2016 All rights reserved</span>  
        </div> <!-- wrapper -->
    </footer>
-
-
-<!-- <section>
-  <a href="#" data-filter="all" tabindex="-1">ALL</a> 
-  <a href="#" data-filter="red" tabindex="-1">RED</a>
-  <a href="#" data-filter="green" tabindex="-1">GREEN</a>
-  <a href="#" data-filter="blue" tabindex="-1">BLUE</a>
-
-<div data-filter="red"></div>
-<div data-filter="blue"></div>
-<div data-filter="red"></div>
-<div data-filter="blue"></div>
-<div data-filter="green"></div>
-<div data-filter="red"></div>
-<div data-filter="red"></div>
-<div data-filter="red"></div>
-<div data-filter="blue"></div>
-<div data-filter="green"></div>
-<div data-filter="blue"></div>
-<div data-filter="green"></div>
-<div data-filter="green"></div>
-</section>   -->
 
 
 </body>

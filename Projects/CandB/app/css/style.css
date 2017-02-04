@@ -12,7 +12,7 @@ a {
   color: inherit;  
   cursor: pointer; 
 }
-a:focus[data-filter]{
+a:focus[data-group]{
   opacity:.8;
   outline:none;
 }
@@ -165,6 +165,7 @@ a:focus[data-filter]{
  position: relative;
  text-decoration: none;
 }
+/* HOVER UNDERLINE WITH ANIMATION */
 .catalog__list-link::before{
  display: block;
  position: absolute;
@@ -194,13 +195,9 @@ a:focus[data-filter]{
 .catalog__list-link:hover::after{
  width: 50%;
 }
-.catalog__products {
-
-}
 .product {
   position: relative;
   display: inline-block;
-  height: auto;
 }
 .product-text {
   padding: 20px 0;
@@ -265,7 +262,6 @@ a:focus[data-filter]{
  color: #fff; 
 }
 /* FORM */
-
 .subscribe-input,
 .subscribe-submit {
   padding: 15px; 
