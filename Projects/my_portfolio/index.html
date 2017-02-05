@@ -1,84 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>My portfolio</title>
-  <link rel="stylesheet" href="css/reset.css">
-  <link rel="stylesheet" href="css/fontello-embedded.css">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/media.css">
-  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
-  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<title>My portfolio</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/fontello-embedded.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/media.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
       <![endif]-->
-    </head>
-    <body>
-      <div id="preloader">
-        <i class="loader"></i>
-      </div>
-      <nav>
-        <ul class="menu">
-          <li class="menu__item"><a href="#"><h1>Dmitriy Moskvichov</h1></a></li>
-            <!--<li class="menu__item"><a href="#portfolio">Portfolio</a></li>
-            <li class="menu__item"><a href="#contact">Contact</li> -->
-          </ul>
-          <ul class="social">
-            <li class="social__item"><a href="https://www.facebook.com/profile.php?id=100009929681094" class="social__link icon-facebook-squared"></a></li>  <!-- фейс -->
-            <li class="social__item"><a href="https://goo.gl/q2kvAv" class="social__link icon-linkedin-squared" ></a></li>  <!-- линкедин -->
-            <li class="social__item"><a href="https://goo.gl/bK3y57" class="social__link icon-github-circled"></a></li>  <!-- гитхаб -->
-          </ul>
-        </nav>
-        <section id="portfolio">
-          <h2 class="portfolio__title">Portfolio</h2>
-          <div class="grid portfolio__gallery">
-            <a href="http://dmitriymk.github.io/Projects/mache/app/index.html"> 
-              <figure class="grid-item">
-                <img src="img/portfolio_4.jpg" alt="">            
-                <figcaption><p>HTML/CSS/JQuery/Responsive</p></figcaption>
-              </figure>
-            </a>         
+  	<script src='js/libs/jquery-1.12.1.min.js'></script>
+  	<script src='js/libs/masonry.pkgd.min.js'></script>      
+  </head>
+  <body>
+  	<div id="preloader">
+  		<i class="loader"></i>
+  	</div>
+  	<header class="header">
+  		<nav class="navigation clearfix">
+  			<div class="wrapper">
+  				<ul class="navigation_menu">
+  					<li class="navigation_menu-item"><a class="navigation_menu-link" href="#"><h1 class="logo">Dmitriy Moskvichov</h1></a></li>
+  				</ul>
+  				<ul class="navigation_social">
+  					<li class="navigation_social-item"><a href="https://goo.gl/q2kvAv" class="navigation_social-link icon-linkedin-squared" ></a></li> 
+  					<li class="navigation_social-item"><a href="https://goo.gl/bK3y57" class="navigation_social-link icon-github-circled"></a></li>  
+  					<li class="navigation_social-item"><a href="https://www.facebook.com/profile.php?id=100009929681094" class="navigation_social-link icon-facebook-squared"></a></li>  
+  				</ul>
+  			</div><!-- wrapper -->
+  		</nav>
+  	</header>  	
+  	<section id="portfolio clearfix">
+  		<div class="wrapper">
 
-            <a href="https://goo.gl/4hsI4a"> 
-              <figure class="grid-item">
-                <img src="img/portfolio_3.jpg" alt="">            
-                <figcaption><p>HTML/CSS/JQuery/Responsive</p></figcaption>
-              </figure>
-            </a>  
+  			<h2 class="portfolio__title">Portfolio</h2>
+  			<div class="grid">
+  			<div class="grid-sizer"></div>
+  			
+  				<figure class="portifolio_grid grid__item">  
+  					<a class="portifolio_grid-link" href="http://dmitriymk.github.io/Projects/CandB/app/index.html"><img src="img/portfolio_5.jpg" alt="C&B
+">
+  						<div class="portifolio_content">
+  							<div class="blur"></div> 
+  							<figcaption class="portifolio_text">
+  								<h2 class="portifolio_text-logo">C&B</h2>
+  								<p class="portifolio_text-text">HTML/CSS Development </p>
+  							</figcaption>
+  						</div>
+  					</a>
+  				</figure>  
 
-            <a href="https://goo.gl/CkVUgv"> 
-              <figure class="grid-item">
-                <img src="img/portfolio_2.jpg" alt="">
-                <figcaption><p>HTML/CSS/JQuery</p></figcaption>
-              </figure>
-            </a>  
 
-            <a href="https://goo.gl/WrrDAp"> 
-              <figure class="grid-item">
-                <img src="img/portfolio_1.jpg" alt="">
-                <figcaption><p>HTML/CSS/Responsive</p></figcaption>
-              </figure>
-            </a> 
-            
-          </div>
-        </section>
-<!--         <section id="contact">
-  <ul class="contact__list">
-    <li class="contact__list__item"><a href="tel:+380669011963" class="icon-mobile" >066 901 19 63</a></li>
-    <li class="contact__list__item"><a href="mailto:moskvichovdmitriy@gmail.com" class="icon-mail-alt">moskvichovdmitriy@gmail.com</a></li>
-    <li class="contact__list__item"><a href="https://www.facebook.com/profile.php?id=100009929681094" class="icon-facebook-squared"></a></li>
-    <li class="contact__list__item"><a href="https://www.linkedin.com/in/dmitriy-moskvichov-105066110?trk=nav_responsive_tab_profile" class="icon-linkedin-squared"></a></li>  
-  </ul> -->
-</section> 
-</div>
-<script src='js/libs/jquery-1.10.1.min.js'></script>
-<script src='js/libs/masonry.pkgd.min.js'></script>
-<script src='js/script.js'></script>
-</body>
-</html>
+  				<figure class="portifolio_grid grid__item">  
+  					<a class="portifolio_grid-link" href="http://dmitriymk.github.io/Projects/mache/app/index.html"><img src="img/portfolio_4.jpg" alt="mache theme">
+  						<div class="portifolio_content">
+  							<div class="blur"></div> 
+  							<figcaption class="portifolio_text">
+  								<h2 class="portifolio_text-logo">mache theme</h2>
+  								<p class="portifolio_text-text">HTML/CSS Development</p>
+  							</figcaption>
+  						</div>
+  					</a>
+  				</figure>  
+
+  				<figure class="portifolio_grid grid__item">  
+  					<a class="portifolio_grid-link" href="https://goo.gl/4hsI4a"><img src="img/portfolio_3.jpg" alt="URLAUBSGLÜCK">
+  						<div class="portifolio_content">
+  							<div class="blur"></div> 
+  							<figcaption class="portifolio_text">
+  								<h2 class="portifolio_text-logo">URLAUBSGLÜCK</h2>
+  								<p class="portifolio_text-text">HTML/CSS Development</p>
+  							</figcaption>
+  						</div>
+  					</a>
+  				</figure>  	
+
+
+  				<figure class="portifolio_grid grid__item">  
+  					<a class="portifolio_grid-link" href="https://goo.gl/CkVUgv"><img src="img/portfolio_2.jpg" alt="industrial theme">
+  						<div class="portifolio_content">
+  							<div class="blur"></div> 
+  							<figcaption class="portifolio_text">
+  								<h2 class="portifolio_text-logo">industrial theme</h2>
+  								<p class="portifolio_text-text">HTML/CSS Development</p>
+  							</figcaption>
+  						</div>
+  					</a>
+  				</figure>  		
+
+  				<figure class="portifolio_grid grid__item">  
+  					<a class="portifolio_grid-link" href="https://goo.gl/WrrDAp"><img src="img/portfolio_1.jpg" alt="pingbuller">
+  						<div class="portifolio_content">
+  							<div class="blur"></div> 
+  							<figcaption class="portifolio_text">
+  								<h2 class="portifolio_text-logo">pingbuller</h2>
+  								<p class="portifolio_text-text">HTML/CSS Development</p>
+  							</figcaption>
+  						</div>
+  					</a>
+  				</figure>
+
+
+  			</div> <!-- grid -->
+  		</div><!-- wrapper -->
+  	</section>
+
+  		<!-- <div class="grid portfolio__gallery">
+  			<a href="http://dmitriymk.github.io/Projects/mache/app/index.html"> 
+  				<figure class="grid-item">
+  					<img src="img/portfolio_5.jpg" alt="">            
+  					<figcaption><p>HTML/CSS/JQuery/Responsive</p></figcaption>
+  				</figure>
+  			</a>    
+  		
+  			<a href="http://dmitriymk.github.io/Projects/mache/app/index.html"> 
+  				<figure class="grid-item">
+  					<img src="img/portfolio_4.jpg" alt="">            
+  					<figcaption><p>HTML/CSS/JQuery/Responsive</p></figcaption>
+  				</figure>
+  			</a>         
+  		
+  			<a href="https://goo.gl/4hsI4a"> 
+  				<figure class="grid-item">
+  					<img src="img/portfolio_3.jpg" alt="">            
+  					<figcaption><p>HTML/CSS/JQuery/Responsive</p></figcaption>
+  				</figure>
+  			</a>  
+  		
+  			<a href="https://goo.gl/CkVUgv"> 
+  				<figure class="grid-item">
+  					<img src="img/portfolio_2.jpg" alt="">
+  					<figcaption><p>HTML/CSS/JQuery</p></figcaption>
+  				</figure>
+  			</a>  
+  		
+  			<a href="https://goo.gl/WrrDAp"> 
+  				<figure class="grid-item">
+  					<img src="img/portfolio_1.jpg" alt="">
+  					<figcaption><p>HTML/CSS/Responsive</p></figcaption>
+  				</figure>
+  			</a> 
+  			
+  		</div>
+  		  	
+  	</div> -->
+
+
+
+
+
+  	<script src='js/script.js'></script>
+  </body>
+  </html>

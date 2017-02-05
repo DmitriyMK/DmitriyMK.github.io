@@ -1,12 +1,11 @@
-	
 
-	$(window).load(function() {
-		$('#preloader').find('i').fadeOut().end().delay(400).fadeOut('slow');
-	});
+$(window).load(function() {
+	$('#preloader').find('i').fadeOut().end().delay(200).fadeOut('slow');
 
-	/*MASONRY PLUGIN*/
-	$('.grid').masonry({
-		// options
-		columnWidth: '.grid-item',
-		gutter: 20
+	var $grid = $('.grid').masonry({
+		itemSelector: '.grid-item',
+		percentPosition: true,
+		columnWidth: '.grid-sizer'
 	});
+});
+
