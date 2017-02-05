@@ -20,40 +20,47 @@ document.addEventListener('click', function(event) {
 });
 
 
-// external js: isotope.pkgd.js
+/*  FILTER */
+document.addEventListener('click', function (e) {
 
-// external js: isotope.pkgd.js
+  var button = e.target;
+  if (button.getAttribute('data-reset') === 'true') {
 
-// init Isotope
-var $grid = $('.grid').isotope({
-  itemSelector: 'figure',
-  layoutMode: 'fitRows'
-});
-// filter functions
-var filterFns = {
-  // show if number is greater than 50
-  numberGreaterThan50: function() {
-    var number = $(this).find('.number').text();
-    return parseInt( number, 10 ) > 50;
-  },
-  // show if name ends with -ium
-  ium: function() {
-    var name = $(this).find('.name').text();
-    return name.match( /ium$/ );
+    // Reset the filters
+    var filter = button.getAttribute('data-filter');
+    resetFilter(filter);
+  } else {
+
+    // Filter the tag
+    var filter = button.getAttribute('data-filter');
+    var tag    = button.getAttribute('data-filter-tag');
+    resetFilter(filter);
+    filterTag(filter, tag);
   }
-};
-// bind filter button click
-$('.filters-button-group').on( 'click', 'button', function() {
-  var filterValue = $( this ).attr('data-filter');
-  // use filterFn if matches value
-  filterValue = filterFns[ filterValue ] || filterValue;
-  $grid.isotope({ filter: filterValue });
 });
-// change is-checked class on buttons
-$('.button-group').each( function( i, buttonGroup ) {
-  var $buttonGroup = $( buttonGroup );
-  $buttonGroup.on( 'click', 'button', function() {
-    $buttonGroup.find('.is-checked').removeClass('is-checked');
-    $( this ).addClass('is-checked');
-  });
-});
+
+// Filter tag
+function filterTag (filter, tag) {
+
+  var items = document.querySelectorAll('.' + filter + ' > figure');
+
+  for (var i = 0; i < items.length; i++) {
+    var itemTags = items[i].getAttribute('data-tags');
+
+    // Catch case with no tags
+    if (itemTags != null) {
+      if (itemTags.indexOf(tag) < 0) {
+        items[i].setAttribute('data-toggle', 'off');
+      }
+    }
+  }
+}
+
+// Reset filters
+function resetFilter (filter) {
+  var items = document.querySelectorAll('.' + filter + ' > figure');
+
+  for (var i = 0; i < items.length; i++) {
+    items[i].setAttribute('data-toggle', 'on');
+  }
+}

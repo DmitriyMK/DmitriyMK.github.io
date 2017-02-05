@@ -5,11 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1"> 
     <title>TEST - C&B</title>
+    <meta name="description" content="Template shop online" />
+    <meta name="keywords" content="c&b, shorts, sunglasses..." />
+    <meta name="author" content="alchimic" />
     <link rel="stylesheet" href="css/reset.css">   
     <link rel="stylesheet" href="css/fontello-embedded.css">     
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/media.css">    
-    <link href="https://fonts.googleapis.com/css?family=GFS+Didot|Lato|Playfair+Display" rel="stylesheet">          
+    <link href="https://fonts.googleapis.com/css?family=GFS+Didot|Lato|Playfair+Display" rel="stylesheet">    
+    <script src="js/jquery-2.1.3.min.js"></script>          
     <script src="js/script.js"></script>
 </head>
 <body> 
@@ -72,16 +76,16 @@
         <section class="catalog clearfix">
             <h2 class="catalog__title">Catalog</h2>
             <ul class="catalog__list">
-                <li class="catalog__list-item active"><a class="catalog__list-link is-checked" href="#" data-filter="*">all</a></li>
-                <li class="catalog__list-item"><a class="catalog__list-link" href="#" data-filter="shirts" >t-shirts</a></li>
-                <li class="catalog__list-item"><a class="catalog__list-link" href="#" data-filter="sweaters">sweaters</a></li>
-                <li class="catalog__list-item"><a class="catalog__list-link" href="#" data-filter="shorts">shorts</a></li>
-                <li class="catalog__list-item"><a class="catalog__list-link" href="#" data-filter="jaskets">jaskets</a></li>
-                <li class="catalog__list-item"><a class="catalog__list-link" href="#" data-filter="accessoires">accessoires</a></li>
+                <li class="catalog__list-item active"><a class="catalog__list-link is-checked" href="#" data-filter="grid" data-reset="true">all</a></li>
+                <li class="catalog__list-item"><a class="catalog__list-link" href="#" data-filter="grid" data-filter-tag="shirts" >t-shirts</a></li>
+                <li class="catalog__list-item"><a class="catalog__list-link" href="#" data-filter="grid" data-filter-tag="sweaters">sweaters</a></li>
+                <li class="catalog__list-item"><a class="catalog__list-link" href="#" data-filter="grid" data-filter-tag="shorts">shorts</a></li>
+                <li class="catalog__list-item"><a class="catalog__list-link" href="#" data-filter="grid" data-filter-tag="jaskets">jaskets</a></li>
+                <li class="catalog__list-item"><a class="catalog__list-link" href="#" data-filter="grid" data-filter-tag="accessoires">accessoires</a></li>
             </ul>
         </section>
-        <div class=" grid catalog__products clearfix" id="catalog__products">
-            <figure class="product shorts" data-category="shorts">
+        <div class="grid catalog__products clearfix" id="catalog__products">
+            <figure class="product shorts" data-tags="shorts">
                 <a class="product-link" href="#">
                     <img src="img/product1.jpg" alt="">
                 </a>  
@@ -91,7 +95,7 @@
                     </a>    
                 </figcaption>
             </figure>
-            <figure class="product shorts" data-category="shorts">
+            <figure class="product shorts" data-tags="shorts">
                 <a class="product-link" href="#">
                     <img src="img/product2.jpg" alt="">
                 </a>  
@@ -102,7 +106,7 @@
                     </a>    
                 </figcaption>
             </figure>
-            <figure class="product accessoires" data-category="accessoires">
+            <figure class="product accessoires" data-tags="accessoires">
                 <a class="product-link" href="#">
                     <img src="img/product3.jpg" alt="">
                     <span class="new-product">new</span>
@@ -113,7 +117,7 @@
                     </a>    
                 </figcaption>
             </figure>
-            <figure class="product accessoires" data-category="accessoires">
+            <figure class="product accessoires" data-tags="accessoires">
                 <a class="product-link" href="#">
                     <img src="img/product4.jpg" alt="">
                 </a>  
@@ -123,7 +127,7 @@
                     </a>    
                 </figcaption>
             </figure>
-            <figure class="product shirts" data-category="shirts">
+            <figure class="product shirts" data-tags="shirts">
                 <a class="product-link" href="#">
                     <img src="img/product5.jpg" alt="">
                 </a>  
@@ -133,7 +137,7 @@
                     </a>    
                 </figcaption>
             </figure>
-            <figure class="product shorts" data-category="shorts">
+            <figure class="product shorts" data-tags="shorts">
                 <a class="product-link" href="#">
                     <img src="img/product6.jpg" alt="">
                 </a>  
@@ -143,7 +147,7 @@
                     </a>    
                 </figcaption>
             </figure> 
-            <figure class="product shorts" data-category="shorts">
+            <figure class="product shorts" data-tags="shorts">
                 <a class="product-link" href="#">
                     <img src="img/product7.jpg" alt="">
                 </a>  
@@ -153,18 +157,18 @@
                     </a>    
                 </figcaption>
             </figure>
-            <figure class="product shorts" data-category="shorts">
+            <figure class="product shorts" data-tags="shirts">
                 <a class="product-link" href="#">
                     <img src="img/product8.jpg" alt="">
                 </a>  
                 <figcaption class="product-text">
-                    <a class="move-to-cart" href="#"><p class="product-name">Jogging bermuda shorts</p>
+                    <a class="move-to-cart" href="#"><p class="product-name">T-shirt with lower panel</p>
                         <span class="product-price old-price">$32</span>
                         <span class="product-price new-price">$12</span>
                     </a>    
                 </figcaption>
             </figure>
-            <a class="product_more" href="#">load more...</a>    
+            <a href="#" class="product_more" id="loadMore">load more...</a> 
         </div> <!-- catalog__products -->
     </div> <!-- wrapper -->
     <section class="subsribe clearfix">

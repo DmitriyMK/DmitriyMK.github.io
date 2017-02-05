@@ -12,7 +12,7 @@ a {
   color: inherit;  
   cursor: pointer; 
 }
-a:focus[data-group]{
+a:focus[data-filter-tag]{
   opacity:.8;
   outline:none;
 }
@@ -165,6 +165,7 @@ a:focus[data-group]{
  position: relative;
  text-decoration: none;
 }
+
 /* HOVER UNDERLINE WITH ANIMATION */
 .catalog__list-link::before{
  display: block;
@@ -197,7 +198,7 @@ a:focus[data-group]{
 }
 .product {
   position: relative;
-  display: inline-block;
+  display: inline-block; 
 }
 .product-text {
   padding: 20px 0;
@@ -243,6 +244,15 @@ a:focus[data-group]{
   color: #1274d3;
   font-weight: bold; 
 }
+
+/* search by filter js */
+[data-toggle='on'] {
+  display:inline-block;
+}
+[data-toggle='off'] {
+  display:none;
+}
+
 /* SECTION - SUBSCRIBE */
 .subsribe {
   background: url(../img/texture.jpg); 
@@ -323,13 +333,13 @@ input:focus::-webkit-input-placeholder {
 }
 
 
+
+
 /* 
 ретина экран
-переключатели
 
 подгрузка новых елементов?
 
 минификация
-продакшен 
 */
 
