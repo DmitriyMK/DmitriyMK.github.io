@@ -100,7 +100,11 @@ a:active {
 }
 .grid__item:hover .portifolio_content{
 	opacity: 1;
+	-webkit-transform: scale(1.1);
+	-moz-transform: scale(1.1);
+	transform: scale(1.1);
 }
+
 .grid__item img{
 	float: left;
 	z-index: 4;
@@ -125,7 +129,7 @@ a:active {
 	z-index: 10;
 	color: #fff;
 	position: absolute;
-	min-width: 250px; 
+	min-width: 200px; 
  	min-height: 330px; 
 	text-align: center;
 	top: 100px;
