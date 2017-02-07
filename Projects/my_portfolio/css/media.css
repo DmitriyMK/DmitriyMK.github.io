@@ -19,6 +19,14 @@
 	.wrapper{
 		max-width: 	750px;
 	} 
+	.navigation_menu {
+		display: inline;
+		float: none;
+	}
+	.navigation_social-item {
+		float: none;
+		display: inline;	
+	}	
 	.grid__item, 
 	.grid-sizer {
 		width: 33.333333%; 
@@ -26,8 +34,16 @@
 
 	/* Extra Small Devices, Phones */
 	@media only screen and (max-width : 480px) {
-		.container {
-			width: auto;
+		.navigation_menu, 
+		.navigation_social {
+			float: none;
+			text-align: center;
+		}
+		.navigation_menu-item {
+			padding-right: 0;
+		}
+		.navigation_social-item {
+			float: none;
 		}
 		.grid__item, 
 		.grid-sizer {

@@ -29,10 +29,10 @@ $('.grid').masonry({
   gutter: 20
 });
 
-
+/*
 $('wrapper').imagesLoaded( { background: 'item' }, function() {
   console.log('all .item background images loaded');
-});
+});*/
 
 
 
