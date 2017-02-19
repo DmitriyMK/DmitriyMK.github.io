@@ -10,20 +10,26 @@
     <meta name="author" content="alchimic" />
     <link rel="stylesheet" href="css/libs/reset.css">
     <link rel="stylesheet" href="css/libs/owl.carousel.css">     
-    <link rel="stylesheet" href="css/font.css"> 
-    <link rel="stylesheet" href="css/style-dist.css">  
-    <link rel="stylesheet" href="css/media-dist.css"> 
+    <link rel="stylesheet" href="css/libs/rangeslider.css"> 
+    <link rel="stylesheet" href="css/font.css">          
+    <link rel="stylesheet" href="css/style.css">  
+    <link rel="stylesheet" href="css/media.css"> 
 
     <script src="js/libs/jquery-1.12.1.min.js"></script>
     <script src="js/libs/owl.carousel.min.js"></script>
-    <script src="js/script-dist.js"></script>
+    <script src="js/libs/rangeslider.min.js"></script>    
+    <script src="js/script.js"></script>
 </head>
 <body> 
     <header class="header">
         <div class="wrapper">
             <div class="top-header">
                 <a class="top-header__logo" href="#"><img src="img/logo.png" alt="A+"></a>
+
                 <nav class="top-header__navigation">
+                    <a href="#" class="burger">
+                        <i></i>
+                    </a>
                     <ul class="top-header__navigation-list">
                         <li class="top-header__navigation-item"><a class="top-header__navigation-link" href="#">О нас</a></li>
                         <li class="top-header__navigation-item"><a class="top-header__navigation-link" href="#">О нас</a></li>
@@ -35,7 +41,8 @@
                 <div class="top-header__right">
                     <p class="top-header__right-phone"><a href="tel:+380733766523"> +38 073 376 65 23</a></p>
                     <a class="top-header__right-callback" id="callback">Перезвоните мне</a>
-                </div>
+                    <a href="tel:+380733766523"><i></i></a>
+                </div>         
             </div><!-- top-header -->
             <div class="center-header__title">
                 <h2 class="center-header__title-top">Продвижение</h2>
@@ -93,67 +100,44 @@
         <section class="cases">
             <h3 class="cases__title section__title">Наши кейсы</h3>
             <div class="cases__content case1">
-
                 <div class="owl-carousel carousel2">
-
                     <div class="owl-item carousel2__owl-item">
                         <h4 class="carousel2__owl-item__title owl-item__title">01</h4>
-                        <div class="owl-item text__left">
-                            <p>Компания:</p>
-                            <p>Площадка:</p>
-                            <p>Цель:</p>                    
-                            <p>Результат:</p>                            
-                        </div>
-                        <div class="owl-item text__right">
-                            <p>Ragel</p>
-                            <p>VK</p>
-                            <p>Лиды</p>                              
-                            <p>122 заявки в месяц</p>
+                        <div class="owl-item">
+                            <div><span class="text__left">Компания:</span><span class="text__right">&nbsp;Ragel</span></div>
+                            <div><span class="text__left">Площадка:</span><span class="text__right">&nbsp;VK</span></div>
+                            <div><span class="text__left">Цель: </span><span class="text__right">&nbsp;Лиды</span></div>
+                            <div><span class="text__left">Результат:</span><span class="text__right">&nbsp;122 заявки в месяц</span></div>             
                         </div>
                         <div class="owl-item__button-wrapper">
                             <a href="#" class="owl-item__button">Хочу так же</a>
                         </div>
                     </div>
-
                     <div class="owl-item carousel2__owl-item">
                         <h4 class="carousel2__owl-item__title owl-item__title">01</h4>
-                        <div class="owl-item text__left">
-                            <p>Компания:</p>
-                            <p>Площадка:</p>
-                            <p>Цель:</p>                    
-                            <p>Результат:</p>                            
-                        </div>
-                        <div class="owl-item text__right">
-                            <p>Ragel</p>
-                            <p>VK</p>
-                            <p>Лиды</p>                              
-                            <p>122 заявки в месяц</p>
+                        <div class="owl-item">
+                            <div><span class="text__left">Компания:</span><span class="text__right">&nbsp;Ragel</span></div>
+                            <div><span class="text__left">Площадка:</span><span class="text__right">&nbsp;VK</span></div>
+                            <div><span class="text__left">Цель: </span><span class="text__right">&nbsp;Лиды</span></div>
+                            <div><span class="text__left">Результат:</span><span class="text__right">&nbsp;122 заявки в месяц</span></div>             
                         </div>
                         <div class="owl-item__button-wrapper">
                             <a href="#" class="owl-item__button">Хочу так же</a>
                         </div>
                     </div>
-
                     <div class="owl-item carousel2__owl-item">
                         <h4 class="carousel2__owl-item__title owl-item__title">01</h4>
-                        <div class="owl-item text__left">
-                            <p>Компания:</p>
-                            <p>Площадка:</p>
-                            <p>Цель:</p>                    
-                            <p>Результат:</p>                            
-                        </div>
-                        <div class="owl-item text__right">
-                            <p>Ragel</p>
-                            <p>VK</p>
-                            <p>Лиды</p>                              
-                            <p>122 заявки в месяц</p>
+                        <div class="owl-item">
+                            <div><span class="text__left">Компания:</span><span class="text__right">&nbsp;Ragel</span></div>
+                            <div><span class="text__left">Площадка:</span><span class="text__right">&nbsp;VK</span></div>
+                            <div><span class="text__left">Цель: </span><span class="text__right">&nbsp;Лиды</span></div>
+                            <div><span class="text__left">Результат:</span><span class="text__right">&nbsp;122 заявки в месяц</span></div>             
                         </div>
                         <div class="owl-item__button-wrapper">
                             <a href="#" class="owl-item__button">Хочу так же</a>
                         </div>
                     </div><!--owl-item carousel2__owl-item-->          
                 </div> <!-- owl-carousel carousel2  -->  
-
                 <div class="owl-controls">
                     <div class="owl-nav">
                         <div class="casePrev1 owl-prev">Пред.</div>
@@ -165,17 +149,11 @@
                 <div class="owl-carousel carousel3">
                     <div class="owl-item carousel3__owl-item">
                         <h4 class="carousel3__owl-item__title owl-item__title">02</h4>
-                        <div class="owl-item text__left">
-                            <p>Компания:</p>
-                            <p>Площадка:</p>
-                            <p>Цель:</p>                    
-                            <p>Результат:</p>                            
-                        </div>
-                        <div class="owl-item text__right">
-                            <p>Nike</p>
-                            <p>Facebook</p>
-                            <p>1370 кликов по цене 2,8</p>         
-                            <p>2510 кликов по цене 0,78</p>
+                        <div class="owl-item">
+                            <div><span class="text__left">Компания:</span><span class="text__right">&nbsp;Nike</span></div>
+                            <div><span class="text__left">Площадка:</span><span class="text__right">&nbsp;Facebook</span></div>
+                            <div><span class="text__left">Цель: </span><span class="text__right">&nbsp;1370 кликов по цене 2,8</span></div>
+                            <div><span class="text__left">Результат:</span><span class="text__right">&nbsp;2510 кликов по цене 0,78</span></div>    
                         </div>
                         <div class="owl-item__button-wrapper">
                             <a href="#" class="owl-item__button">Хочу так же</a>
@@ -183,17 +161,11 @@
                     </div>
                     <div class="owl-item carousel3__owl-item">
                         <h4 class="carousel3__owl-item__title owl-item__title">02</h4>
-                        <div class="owl-item text__left">
-                            <p>Компания:</p>
-                            <p>Площадка:</p>
-                            <p>Цель:</p>                    
-                            <p>Результат:</p>                            
-                        </div>
-                        <div class="owl-item text__right">
-                            <p>Nike</p>
-                            <p>Facebook</p>
-                            <p>1370 кликов по цене 2,8</p>         
-                            <p>2510 кликов по цене 0,78</p>
+                        <div class="owl-item">
+                            <div><span class="text__left">Компания:</span><span class="text__right">&nbsp;Nike</span></div>
+                            <div><span class="text__left">Площадка:</span><span class="text__right">&nbsp;Facebook</span></div>
+                            <div><span class="text__left">Цель: </span><span class="text__right">&nbsp;1370 кликов по цене 2,8</span></div>
+                            <div><span class="text__left">Результат:</span><span class="text__right">&nbsp;2510 кликов по цене 0,78</span></div>        
                         </div>
                         <div class="owl-item__button-wrapper">
                             <a href="#" class="owl-item__button">Хочу так же</a>
@@ -201,17 +173,11 @@
                     </div>
                     <div class="owl-item carousel3__owl-item">
                         <h4 class="carousel3__owl-item__title owl-item__title">02</h4>
-                        <div class="owl-item text__left">
-                            <p>Компания:</p>
-                            <p>Площадка:</p>
-                            <p>Цель:</p>                    
-                            <p>Результат:</p>                            
-                        </div>
-                        <div class="owl-item text__right">
-                            <p>Nike</p>
-                            <p>Facebook</p>
-                            <p>1370 кликов по цене 2,8</p>         
-                            <p>2510 кликов по цене 0,78</p>
+                        <div class="owl-item">
+                            <div><span class="text__left">Компания:</span><span class="text__right">&nbsp;Nike</span></div>
+                            <div><span class="text__left">Площадка:</span><span class="text__right">&nbsp;Facebook</span></div>
+                            <div><span class="text__left">Цель: </span><span class="text__right">&nbsp;1370 кликов по цене 2,8</span></div>
+                            <div><span class="text__left">Результат:</span><span class="text__right">&nbsp;2510 кликов по цене 0,78</span></div>         
                         </div>
                         <div class="owl-item__button-wrapper">
                             <a href="#" class="owl-item__button">Хочу так же</a>
@@ -229,17 +195,11 @@
                 <div class="owl-carousel carousel4">
                     <div class="owl-item carousel4__owl-item">
                         <h4 class="carousel4__owl-item__title owl-item__title">03</h4>
-                        <div class="owl-item text__left">
-                            <p>Компания:</p>
-                            <p>Площадка:</p>
-                            <p>Цель:</p>                    
-                            <p>Результат:</p>                            
-                        </div>
-                        <div class="owl-item text__right">
-                            <p>Novus</p>
-                            <p>Vk, Facebook, Instagram</p>
-                            <p>800 подписчиков по всем площадкам</p>
-                            <p>810 подписчиков по всем площадкам</p>
+                        <div class="owl-item">
+                            <div><span class="text__left">Компания:</span><span class="text__right">&nbsp;Novus</span></div>
+                            <div><span class="text__left">Площадка:</span><span class="text__right">&nbsp;Vk, Facebook, Instagram</span></div>
+                            <div><span class="text__left">Цель: </span><span class="text__right">&nbsp;800 подписчиков по всем площадкам</span></div>
+                            <div><span class="text__left">Результат:</span><span class="text__right">&nbsp;810 подписчиков по всем площадкам</span></div>
                         </div>
                         <div class="owl-item__button-wrapper">
                             <a href="#" class="owl-item__button">Хочу так же</a>
@@ -247,17 +207,11 @@
                     </div>
                     <div class="owl-item carousel4__owl-item">
                         <h4 class="carousel4__owl-item__title owl-item__title">03</h4>
-                        <div class="owl-item text__left">
-                            <p>Компания:</p>
-                            <p>Площадка:</p>
-                            <p>Цель:</p>                    
-                            <p>Результат:</p>                            
-                        </div>
-                        <div class="owl-item text__right">
-                            <p>Novus</p>
-                            <p>Vk, Facebook, Instagram</p>
-                            <p>800 подписчиков по всем площадкам</p>
-                            <p>810 подписчиков по всем площадкам</p>
+                        <div class="owl-item">
+                            <div><span class="text__left">Компания:</span><span class="text__right">&nbsp;Novus</span></div>
+                            <div><span class="text__left">Площадка:</span><span class="text__right">&nbsp;Vk, Facebook, Instagram</span></div>
+                            <div><span class="text__left">Цель: </span><span class="text__right">&nbsp;800 подписчиков по всем площадкам</span></div>
+                            <div><span class="text__left">Результат:</span><span class="text__right">&nbsp;810 подписчиков по всем площадкам</span></div>
                         </div>
                         <div class="owl-item__button-wrapper">
                             <a href="#" class="owl-item__button">Хочу так же</a>
@@ -265,17 +219,11 @@
                     </div>
                     <div class="owl-item carousel4__owl-item">
                         <h4 class="carousel4__owl-item__title owl-item__title">03</h4>
-                        <div class="owl-item text__left">
-                            <p>Компания:</p>
-                            <p>Площадка:</p>
-                            <p>Цель:</p>                    
-                            <p>Результат:</p>                            
-                        </div>
-                        <div class="owl-item text__right">
-                            <p>Novus</p>
-                            <p>Vk, Facebook, Instagram</p>
-                            <p>800 подписчиков по всем площадкам</p>
-                            <p>810 подписчиков по всем площадкам</p>
+                        <div class="owl-item">
+                            <div><span class="text__left">Компания:</span><span class="text__right">&nbsp;Novus</span></div>
+                            <div><span class="text__left">Площадка:</span><span class="text__right">&nbsp;Vk, Facebook, Instagram</span></div>
+                            <div><span class="text__left">Цель: </span><span class="text__right">&nbsp;800 подписчиков по всем площадкам</span></div>
+                            <div><span class="text__left">Результат:</span><span class="text__right">&nbsp;810 подписчиков по всем площадкам</span></div>
                         </div>
                         <div class="owl-item__button-wrapper">
                             <a href="#" class="owl-item__button">Хочу так же</a>
@@ -293,17 +241,11 @@
                 <div class="owl-carousel carousel5">
                     <div class="owl-item carousel5__owl-item">
                         <h4 class="carousel5__owl-item__title owl-item__title">04</h4>
-                        <div class="owl-item text__left">
-                            <p>Компания:</p>
-                            <p>Площадка:</p>
-                            <p>Цель:</p>                    
-                            <p>Результат:</p>                            
-                        </div>
-                        <div class="owl-item text__right">
-                            <p>Artmall</p>
-                            <p>Vk, Facebook, Instagram</p>
-                            <p>500 подписчиков по всем площадкам</p>
-                            <p>530 подписчиков по всем площадкам</p>
+                        <div class="owl-item">
+                            <div><span class="text__left">Компания:</span><span class="text__right">&nbsp;Artmall</span></div>
+                            <div><span class="text__left">Площадка:</span><span class="text__right">&nbsp;Vk, Facebook, Instagram</span></div>
+                            <div><span class="text__left">Цель:</span><span class="text__right">&nbsp;500 подписчиков по всем площадкам</span></div>
+                            <div><span class="text__left">Результат:</span><span class="text__right">&nbsp;530 подписчиков по всем площадкам</span></div>  
                         </div>
                         <div class="owl-item__button-wrapper">
                             <a href="#" class="owl-item__button">Хочу так же</a>
@@ -311,17 +253,11 @@
                     </div>
                     <div class="owl-item carousel5__owl-item">
                         <h4 class="carousel5__owl-item__title owl-item__title">04</h4>
-                        <div class="owl-item text__left">
-                            <p>Компания:</p>
-                            <p>Площадка:</p>
-                            <p>Цель:</p>                    
-                            <p>Результат:</p>                            
-                        </div>
-                        <div class="owl-item text__right">
-                            <p>Artmall</p>
-                            <p>Vk, Facebook, Instagram</p>
-                            <p>500 подписчиков по всем площадкам</p>
-                            <p>530 подписчиков по всем площадкам</p>
+                        <div class="owl-item">
+                            <div><span class="text__left">Компания:</span><span class="text__right">&nbsp;Artmall</span></div>
+                            <div><span class="text__left">Площадка:</span><span class="text__right">&nbsp;Vk, Facebook, Instagram</span></div>
+                            <div><span class="text__left">Цель: </span><span class="text__right">&nbsp;500 подписчиков по всем площадкам</span></div>
+                            <div><span class="text__left">Результат:</span><span class="text__right">&nbsp;530 подписчиков по всем площадкам</span></div>
                         </div>
                         <div class="owl-item__button-wrapper">
                             <a href="#" class="owl-item__button">Хочу так же</a>
@@ -329,17 +265,11 @@
                     </div>
                     <div class="owl-item carousel5__owl-item">
                         <h4 class="carousel5__owl-item__title owl-item__title">04</h4>
-                        <div class="owl-item text__left">
-                            <p>Компания:</p>
-                            <p>Площадка:</p>
-                            <p>Цель:</p>                    
-                            <p>Результат:</p>                            
-                        </div>
-                        <div class="owl-item text__right">
-                            <p>Artmall</p>
-                            <p>Vk, Facebook, Instagram</p>
-                            <p>500 подписчиков по всем площадкам</p>
-                            <p>530 подписчиков по всем площадкам</p>
+                        <div class="owl-item">
+                            <div><span class="text__left">Компания:</span><span class="text__right">&nbsp;Artmall</span></div>
+                            <div><span class="text__left">Площадка:</span><span class="text__right">&nbsp;Vk, Facebook, Instagram</span></div>
+                            <div><span class="text__left">Цель:</span><span class="text__right">&nbsp;500 подписчиков по всем площадкам</span></div>
+                            <div><span class="text__left">Результат:</span><span class="text__right">&nbsp;530 подписчиков по всем площадкам</span></div>
                         </div>
                         <div class="owl-item__button-wrapper">
                             <a href="#" class="owl-item__button">Хочу так же</a>
@@ -358,18 +288,17 @@
     <section class="promotion">
         <div class="wrapper">
             <h3 class="promotion__title section__title">Как мы делаем вас популярными</h3>
-            <div class="promotion__list">
-                <p class="promotion__list-text"><span class="promotion__list-number"><span class="promotion__list-number-left">(</span><span class="promotion__list-number-right">)</span>1</span><span class="promotion__list-dash"></span>Общаемся, заполняем бриф, узнаем больше о вашем бизнесе</p>
-                <p class="promotion__list-text"><span class="promotion__list-number"><span class="promotion__list-number-left">(</span><span class="promotion__list-number-right">)</span>2</span><span class="promotion__list-dash"></span>Анализируем рынок, конкурентов и целевую аудиторию и составляем подробный отчет</p>
-                <p class="promotion__list-text"><span class="promotion__list-number"><span class="promotion__list-number-left">(</span><span class="promotion__list-number-right">)</span>3</span><span class="promotion__list-dash"></span>Разрабатываем SMM-стратегию для продвижения</p>
-                <p class="promotion__list-text"><span class="promotion__list-number"><span class="promotion__list-number-left">(</span><span class="promotion__list-number-right">)</span>4</span><span class="promotion__list-dash"></span>Создаем контент-план с учетом всех особенностей рынка и целевой аудитории</p>
-                <p class="promotion__list-text"><span class="promotion__list-number"><span class="promotion__list-number-left">(</span><span class="promotion__list-number-right">)</span>5</span><span class="promotion__list-dash"></span>Оформляем страницу и начинаем продвижение</p>
-                <p class="promotion__list-text"><span class="promotion__list-number"><span class="promotion__list-number-left">(</span><span class="promotion__list-number-right">)</span>6</span><span class="promotion__list-dash"></span>Проводим анализ и составляем подробный отчет</p>
-            </div><!-- promotion__list -->
+            <ol class="promotion__list">
+                <li class="promotion__list-text"><div><span></span>Общаемся, заполняем бриф, узнаем больше о вашем бизнесе</div></li>
+                <li class="promotion__list-text"><div><span></span>Анализируем рынок, конкурентов и целевую аудиторию и составляем подробный отчет</div></li>
+                <li class="promotion__list-text"><div><span></span>Разрабатываем SMM-стратегию для продвижения</div></li>
+                <li class="promotion__list-text"><div><span></span>Создаем контент-план с учетом всех особенностей рынка и целевой аудитории</div></li>
+                <li class="promotion__list-text"><div><span></span>Оформляем страницу и начинаем продвижение</div></li>
+                <li class="promotion__list-text"><div><span></span>Проводим анализ и составляем подробный отчет</div></li>
+            </ol>
             <div class="promotion__button-wrapper button-wrapper">
                 <a href="#" class="promotion__button-link button-link">Начать продвижение</a>
             </div>                                        
-
         </div> <!-- wrapper -->            
     </section> <!-- promotion -->
     <section class="subscriber">
@@ -417,24 +346,22 @@
             </div> <!-- wrapper__attention -->         
         </div><!-- wrapper -->
     </section><!-- attention -->
-
-    <section class="question">
-        <div class="wrapper">
-            <h3 class="question__title section__title">Сколько людей узнают о вашем бизнесе</h3>
-
-
-
-
-            <div class="question__button-wrapper button-wrapper">
-                <a href="#" class="question__button-link button-link">Хочу, чтобы о нас узнали</a>
+    <section class="advertisingСost">
+        <div class="wrapper advertisingСost__wrapper">
+            <h3 class="advertisingСost__title section__title">Сколько людей узнают о вашем бизнесе</h3>
+            <h4 class="advertisingСost__title-range">Рекламный бюджет</h4>
+            <input class="advertisingСost__range" type="range" min="1000" max="100000" step="1000" value="20000">
+            <p class="range__result"></p>
+            <span class="range__result-text">О вас узнают </span><output class="range__output">400000</output><span class="range__result-text"> человек</span>
+            <div class="advertisingСost__button-wrapper button-wrapper">
+                <a href="#" class="advertisingСost__button-link button-link">Хочу, чтобы о нас узнали</a>
             </div>    
         </div><!-- wrapper -->
     </section><!-- question -->
-
     <section class="socialLink">
         <div class="wrapper">
             <h3 class="socialLink__title section__title">С какими соцсетями мы работаем</h3>
-            <ul class="socialLink__list clearfix">
+            <ul class="socialLink__list">
                 <li class="socialLink-item socialLink__list-item1"><a href="#" class="socialLink-text">VK</a></li>
                 <li class="socialLink-item socialLink__list-item2"><p class="socialLink-text">Instagram</p></li>
                 <li class="socialLink-item socialLink__list-item3"><p class="socialLink-text">Facebook</p></li>
@@ -605,53 +532,57 @@
     <section class="faq">
         <div class="wrapper">
             <h3 class="ourTeam__title section__title">Часто задаваемые вопросы</h3>
-            <div class="accordions">   
+            <div class="accordions">
                 <div class="accordion">
-                    <a href="#" class="accordion__header">
-                        <div class="accordion__pointer"></div>
-                        <h4 class="accordion__link" >Что такое SMM?</h4>
-                    </a>
-                    <div class="accordion-body">
-                        <p class="accordion-body__article">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius corrupti, totam quasi esse recusandae excepturi dignissimos mollitia cupiditate, eaque sequi necessitatibus. Repellat et commodi aut amet sit, sunt magnam ut! </p>
+                    <div class="accordion">
+                        <a href="#" class="accordion__header">
+                            <div class="accordion__pointer"></div>
+                            <h4 class="accordion__link" > Что такое SMM?</h4>
+                        </a>
+                        <div class="accordion-body">
+                            <p class="accordion-body__article">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis soluta aliquid animi, pariatur reprehenderit. Laborum adipisci animi, optio, sequi quaerat quis hic assumenda ipsa, eveniet laboriosam nostrum sunt magni blanditiis! </p>
+                        </div>
                     </div>
-                </div>
-                <div class="accordion">
-                    <a href="#" class="accordion__header">
-                        <div class="accordion__pointer"></div>
-                        <h4 class="accordion__link" > SMM увеличивает продажи?</h4>
-                    </a>
-                    <div class="accordion-body">
-                        <p class="accordion-body__article">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis soluta aliquid animi, pariatur reprehenderit. Laborum adipisci animi, optio, sequi quaerat quis hic assumenda ipsa, eveniet laboriosam nostrum sunt magni blanditiis! </p>
+                    <div class="accordion">
+                        <a href="#" class="accordion__header">
+                            <div class="accordion__pointer"></div>
+                            <h4 class="accordion__link" > SMM увеличивает продажи?</h4>
+                        </a>
+                        <div class="accordion-body">
+                            <p class="accordion-body__article">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis soluta aliquid animi, pariatur reprehenderit. Laborum adipisci animi, optio, sequi quaerat quis hic assumenda ipsa, eveniet laboriosam nostrum sunt magni blanditiis! </p>
+                        </div>
                     </div>
-                </div>
-                <div class="accordion active">
-                  <a href="#" class="accordion__header">
-                      <div class="accordion__pointer"></div>
-                      <h4 class="accordion__link" >Какими инструментами вы будете привлекать людей в наше сообщество?</h4>
-                  </a>
-                  <div class="accordion-body">
-                      <p class="accordion-body__article">Качественное продвижение в социальных сетях это кропотливый и в тоже время рутинный труд множества узконаправленных специалистов, потому что качественный результат это система из множества слаженно работающих составляющих и для того чтобы добиться успеха необходимы лучшие специалисты в каждом из звенний. Поэтому мы не экономим на оплате труда самых лучших специалистов чтобы все наши клиенты были довольны.</p>
+                    <div class="accordion active">
+                        <a href="#" class="accordion__header">
+                            <div class="accordion__pointer"></div>
+                            <h4 class="accordion__link" >Какими инструментами вы будете привлекать людей в наше сообщество?</h4>
+                        </a>
+                        <div class="accordion-body">
+                            <p class="accordion-body__article">Качественное продвижение в социальных сетях это кропотливый и в тоже время рутинный труд множества узконаправленных специалистов, потому что качественный результат это система из множества слаженно работающих составляющих и для того чтобы добиться успеха необходимы лучшие специалисты в каждом из звенний. Поэтому мы не экономим на оплате труда самых лучших специалистов чтобы все наши клиенты были довольны.</p>
+                        </div>
+                    </div> 
+                    <div class="accordion">
+                      <a href="#" class="accordion__header">
+                          <div class="accordion__pointer"></div>
+                          <h4 class="accordion__link" >Зачем мне обращаться к вам если я и сам(а) могу продвигать сообщество?</h4>
+                      </a>
+                      <div class="accordion-body">
+                          <p class="accordion-body__article">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et quasi voluptas eius facere fugiat, vero harum nam aspernatur officia, debitis laboriosam repudiandae sapiente voluptatum in, quia odit totam. Fugit, reiciendis.</p>
+                      </div>
                   </div>
-              </div> 
-              <div class="accordion">
-                <a href="#" class="accordion__header">
-                    <div class="accordion__pointer"></div>
-                    <h4 class="accordion__link" >Зачем мне обращаться к вам если я и сам(а) могу продвигать сообщество?</h4>
-                </a>
-                <div class="accordion-body">
-                    <p class="accordion-body__article">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et quasi voluptas eius facere fugiat, vero harum nam aspernatur officia, debitis laboriosam repudiandae sapiente voluptatum in, quia odit totam. Fugit, reiciendis.</p>
-                </div>
-            </div><!-- accordions -->
-        </div><!-- wrapper -->
-    </section><!-- faq -->
-    <section class="findUs">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.8047499568534!2d30.488757315303584!3d50.444737395658194!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce8cba3de9b3%3A0xc48c2230bb6e5e68!2z0LLRg9C70LjRhtGPINCh0YLQsNGA0L7QstC-0LrQt9Cw0LvRjNC90LAsIDE4LCDQmtC40ZfQsg!5e0!3m2!1sru!2sua!4v1487117197357" width="100%" height="460" frameborder="0" style="border:0" allowfullscreen></iframe>
-        <div class="wrapper">
+              </div><!-- accordions -->
+          </div><!-- wrapper -->
+      </section><!-- faq -->
+
+
+      <section class="findUs">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.8047499568534!2d30.488757315303584!3d50.444737395658194!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce8cba3de9b3%3A0xc48c2230bb6e5e68!2z0LLRg9C70LjRhtGPINCh0YLQsNGA0L7QstC-0LrQt9Cw0LvRjNC90LAsIDE4LCDQmtC40ZfQsg!5e0!3m2!1sru!2sua!4v1487117197357" allowfullscreen></iframe>
+          <div class="wrapper">
             <div class="findUs__window">
                 <h3 class="findUs__title section__title">Остались вопросы?</h3>
                 <p>Задайте их нашему менеджеру</p>    
                 <div class="findUs__button-wrapper button-wrapper">
-                <a href="#" class="findUs__button-link button-link">Задать вопрос</a>
+                    <a href="#" class="findUs__button-link button-link">Задать вопрос</a>
                 </div>                          
             </div>
         </div>
@@ -669,7 +600,10 @@
             </nav>
             <div class="top-footer__right">
                 <p class="top-footer__right-phone"><a href="tel:+380733766523"> +38 073 376 65 23</a></p>
-                <a class="top-footer__right-callback" id="callback">Перезвоните мне</a>
+                <div class="top-footer__button-wrapper button-wrapper">
+                    <a class="top-footer__right-callback" id="callback2">Перезвоните мне</a>
+                </div>  
+
             </div>
         </div><!-- top-header -->         
     </div>
