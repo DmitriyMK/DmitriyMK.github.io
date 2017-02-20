@@ -15,6 +15,8 @@ $(window).resize(function() {
 })
 
 
+
+
 /*CAROUSEL*/
     $(".owl-carousel").owlCarousel({
 
@@ -23,10 +25,10 @@ $(window).resize(function() {
         loop: true,
         margin: 60,
         responsive: {
-            600: {
+            480: {
                 items: 2
             },
-            300: {
+            320: {
                 items: 1
             }
         }

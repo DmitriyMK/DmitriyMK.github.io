@@ -50,7 +50,8 @@ a {
 .header {
 	position: relative;
 	height: 620px;
-	width: 100vw;
+	width: 100%;
+	max-width: 100%;
 	background: url(../img/header_background.jpg) 50% 50%;		
 	background-size: cover; 
 	color: #fff;
@@ -376,11 +377,11 @@ a {
 .carousel3__owl-item:after {
 	position: absolute;
 	content: '';
-	background: url(../img/carousel3.png) no-repeat;
+	background: url(../img/carousel3_1.png) no-repeat;
 	width: 360px;
 	height: 350px;
-	top: -40px;
-	right: -66px;
+	top: -70px;
+	right: -76px;
 } 
 .carousel3__owl-item:before {
 	position: absolute;
@@ -594,7 +595,7 @@ a {
 	content: "";
 	position: absolute;
 	top: 100px;
-	right: -660px;
+	right: -860px;
 	background: url(../img/roboto.png)  no-repeat;
 	background-position: 260px 0;		
 	width: 150%;
