@@ -400,8 +400,8 @@ a {
 	background: url(../img/carousel4.png) no-repeat;
 	width: 360px;
 	height: 380px;
-	top: -40px;
-	right: -66px;
+	top: -20px;
+	right: -60px;
 } 
 .carousel4__owl-item:before {
 	position: absolute;
@@ -419,8 +419,8 @@ a {
 	background: url(../img/carousel5.png) no-repeat;
 	width: 364px;
 	height: 404px;
-	top: -32px;
-	right: -166px;
+	top: -40px;
+	right: -190px;
 } 
 .carousel5__owl-item:before {
 	position: absolute;
@@ -989,7 +989,6 @@ a {
 .faq {
 	background: url(../img/section5_background.jpg) no-repeat;
 	color: #fff;
-	padding-bottom: 146px;
 }
 /* ACCORDION */
 .accordions {
@@ -1048,7 +1047,7 @@ a {
 	display: none; 
 }
 .accordion-body__article {
-	margin: 30px 0 30px 80px;
+	margin: 30px 0 0 80px;
 	color: #fff;
 	line-height: 24px;
 }

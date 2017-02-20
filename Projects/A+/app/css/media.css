@@ -610,9 +610,9 @@
 	.accordion-body__article {
 		margin: 20px 0 0 0;
 	}
-	.faq {
-		padding-bottom: 60px;
-	}	
+/* 	.faq {
+	padding-bottom: 60px;
+}	 */
 	.findUs__window {
 		top: 302px;
 		left: 0;
@@ -652,16 +652,16 @@ html {
 
 }
 body {
-overflow-x: hidden;
+    overflow-x: hidden;
+    width: 100%;
+    height: 100%;
+}
 }
 .wrapper {
-	margin: 0 auto;
-	min-width: 320px;
-
-
+	width: 100vw;
 }
 .header {
-	width: 100%;
+
 }	
 .top-header__navigation-link {
 	padding: 8px 20px;

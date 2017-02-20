@@ -23,13 +23,15 @@ $(window).resize(function() {
         center: true,
         items: 2,
         loop: true,
-        margin: 60,
+        margin: 50,
         responsive: {
             480: {
-                items: 2
+                items: 2,
+                margin: 40
             },
             320: {
-                items: 1
+                items: 1,
+                margin: 0
             }
         }
     });
