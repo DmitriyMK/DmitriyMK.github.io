@@ -120,9 +120,9 @@
 	.team__members-item {
 		padding-bottom: 50px;
 	}
-.wrapper__attention:before {
-	right: -560px;
-}
+	.wrapper__attention:before {
+		right: -560px;
+	}
 	.price__column {
 		width: 31.33%;
 	}
@@ -162,6 +162,7 @@
 	.top-footer__logo {
 		margin-right: 0;	
 	}
+
 }
 
 
@@ -612,7 +613,7 @@
 	}
 /* 	.faq {
 	padding-bottom: 60px;
-}	 */
+	}	 */
 	.findUs__window {
 		top: 302px;
 		left: 0;
@@ -647,22 +648,10 @@
 /* Extra Small Devices, Phones */
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
 
-html {
-	-webkit-text-size-adjust: none;
+	html {
+		-webkit-text-size-adjust: none;
+	}
 
-}
-body {
-    overflow-x: hidden;
-    width: 100%;
-    height: 100%;
-}
-}
-.wrapper {
-	width: 100vw;
-}
-.header {
-
-}	
 .top-header__navigation-link {
 	padding: 8px 20px;
 }
@@ -825,7 +814,7 @@ body {
 	border: none;
 }
 .ourTeam__button-link {
-    padding: 10px 0px;
+	padding: 10px 0px;
 }
 .top-footer__button-wrapper {
 	padding: 0;
