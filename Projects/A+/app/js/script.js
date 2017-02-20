@@ -25,6 +25,9 @@ $(window).resize(function() {
         responsive: {
             600: {
                 items: 2
+            },
+            300: {
+                items: 1
             }
         }
     });

@@ -209,7 +209,7 @@ a {
 	letter-spacing: 1.4px;
 }
 .powerSMM__title-text {
-	width: 60%;
+	width: 80%;
 	margin: 0 auto;
 	padding: 40px 0 20px 0;
 	text-align: center;
@@ -652,9 +652,6 @@ a {
 .advertisingСost__button-link {
 	padding: 10px 80px;
 }
-
-
-
 /* section socialLink */
 
 .socialLink {
@@ -675,6 +672,8 @@ a {
 	justify-content: space-around;	
 }
 .socialLink-item {
+	width: 50px;
+	height: 80px;
 	display: inline;
 	position: relative;
 	line-height: 24px; 
@@ -684,8 +683,8 @@ a {
 	display: -ms-flexbox;
 	display: -webkit-flex;
 	display: flex;
-	-webkit-flex-flow: row wrap;
-	justify-content: space-around;
+
+
 }
 .socialLink-item:before {
 	position: absolute;
