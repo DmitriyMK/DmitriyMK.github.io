@@ -254,7 +254,6 @@ main {
 	}
 
 	/* NEWS */
-
 	.article__title {
 		margin: 10px; 
 		font-size: 3em;
@@ -262,10 +261,6 @@ main {
 		height: 70px;
 		font-weight: bold;
 		color: #669936;	
-	}
-	.article__title:hover, 
-	.article__title:focus {
-
 	}
 	.news--article {
 		font-size: 2em;
@@ -291,77 +286,153 @@ main {
 	.news--article:hover {
 		text-decoration: underline;
 	}
-	footer {
-		clear: both;
-		padding: 40px;
-		background: #708090;
-		color: #FF4500;
-		font-size: 20px;
-		line-height: 26px;
-		font-weight: bold;
+
+	/* ////////////////// PAGE - SOLUTIONS ////////////////// */
+
+	.solutions__title {
 		text-align: center;
+		position: relative;
+		margin: 40px 0 10px 0;
+		font-size: 4em;
+		letter-spacing: 0.28em;
+		line-height: 1.5em;
+		font-weight: bold;
+		text-transform: uppercase;
+		color: rgb(102, 102, 102);	
+	}
+	.solutions__title-underline {
+		display: block;
+		margin: auto;
+		width: 60%;
+		height: 3px;		
+		margin-bottom: 3%;
+		text-align: center;
+
+		background-color: rgb(102, 102, 102);
+	}
+
+	.item__title {
+		font-size: 3em;
+		word-wrap: break-word;
+		line-height: 1em;	
+		text-align: center;
+		position: relative;
+	}
+	.item__title:before {
+		position: absolute;
+		content: ''; 
+		width: 70px;
+		height: 70px;
+		top: -90px;
+		left: 40px; 
+		background: url(../img/icons/sprites__icons.png) 0 0 no-repeat;
+		background-size: cover;
+	}
+	.icon2:before {
+
+	}
+	.icon3:before {
+
+	}
+	.icon4:before {
+
+	}
+	.icon5:before {
+
+	}	
+
+
+
+.1, .5, .2, .10, .4, 
+.9, .3, .8, .7, .6
+{ display: inline-block; background: url('png.png') no-repeat; overflow: hidden; text-indent: -9999px; text-align: left; }
+ 
+.1 { background-position: -20px -0px; width: 177px; height: 151px; }
+.5 { background-position: -20px -171px; width: 145px; height: 145px; }
+.2 { background-position: -20px -336px; width: 142px; height: 142px; }
+.10 { background-position: -20px -498px; width: 128px; height: 134px; }
+.4 { background-position: -20px -652px; width: 116px; height: 116px; }
+.9 { background-position: -20px -788px; width: 115px; height: 93px; }
+.3 { background-position: -20px -901px; width: 112px; height: 112px; }
+.8 { background-position: -20px -1033px; width: 100px; height: 100px; }
+.7 { background-position: -20px -1153px; width: 99px; height: 99px; }
+.6 { background-position: -20px -1272px; width: 98px; height: 97px; }
+
+
+
+
+	.solutions__link {
+		color: #000;
+	}
+	.solutions__house-item {
+		position: relative;
+		padding-top: 10%;
+		margin: 0 10px;
+		height: 300px;
+		background: red;
 	}
 
 
 
+
+
+
+
 	/* Solution pages */
+/* 
+	#accordion {
+		margin: 0 auto;
+		padding-top: 40px;
+		width: 90%;
+	}
+	#accordion h3 {
+		background: #ffd815;
+		font-size: 2.5em;
+		text-transform: uppercase;
+	}
+	#accordion div span {
+		font-weight: bold;
+		display: inline-block;
+		margin-bottom: 10px;
+	}
+	#accordion ul li {
+		list-style-type: disc; 
+	}
+	.solutions__home__details,
+	.solutions__house__details {
+		padding-top: 40px;
+	}
+	.solutions__home__details img,
+	.solutions__house__details img {
+		width: 32px;
+		height: 32px;
+	}	
+	.solutions__house--text {
+		font-size: 2em;
+	}
+	.solutions--text {
+		font-weight: bold;
+	}
+	.solutions--text, 
+	.solutions--link {
+		font-size: 0.8em;
+		text-transform: uppercase;		
+	}
+	.solutions--link {
+		position: relative;
+		display: block;
+		padding: 15px 0;
+		color:  #669936;	
+	}
+	.solutions--link:after {
+		position: absolute;
+	}	
+	.solutions--link:hover {
+		color: #ffd815;
+		} */
 
- 	#accordion {
-	margin: 0 auto;
-	padding-top: 40px;
-	width: 90%;
-}
-#accordion h3 {
-	background: #ffd815;
-	font-size: 2.5em;
-	text-transform: uppercase;
-}
-#accordion div span {
-	font-weight: bold;
-	display: inline-block;
-	margin-bottom: 10px;
-}
-#accordion ul li {
-	list-style-type: disc; 
-}
-.solutions__home__details,
-.solutions__house__details {
-	padding-top: 40px;
-}
-.solutions__home__details img,
-.solutions__house__details img {
-	width: 32px;
-	height: 32px;
-}	
-.solutions__house--text {
-	font-size: 2em;
-}
-.solutions--text {
-	font-weight: bold;
-}
-.solutions--text, 
-.solutions--link {
-	font-size: 0.8em;
-	text-transform: uppercase;		
-}
-.solutions--link {
-	position: relative;
-	display: block;
-	padding: 15px 0;
-	color:  #669936;	
-}
-.solutions--link:after {
-	position: absolute;
-}	
-.solutions--link:hover {
-	color: #ffd815;
-}
- */
-
-
-
-	/* 	offer sections */
-	.offer {
+		/* 	offer sections */
+	/* .offer {
 		margin: 25px; 
 		font-size: 2em;
 		line-height: 1.5em;
@@ -450,4 +521,4 @@ main {
 		-moz-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
 		box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.75);		
 	}			
-	
+	 */
