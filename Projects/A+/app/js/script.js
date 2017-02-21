@@ -23,7 +23,7 @@ $(window).resize(function() {
         center: true,
         items: 2,
         loop: true,
-        margin: 50,
+        margin: 60,
         responsive: {
             480: {
                 items: 2,

@@ -611,9 +611,6 @@
 	.accordion-body__article {
 		margin: 20px 0 0 0;
 	}
-/* 	.faq {
-	padding-bottom: 60px;
-	}	 */
 	.findUs__window {
 		top: 302px;
 		left: 0;
@@ -639,6 +636,7 @@
 	.top-footer__button-wrapper {
 		padding-top: 10px;
 	}
+	
 }
 
 
