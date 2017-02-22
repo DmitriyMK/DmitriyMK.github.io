@@ -848,7 +848,7 @@ a {
 	box-shadow: 3px 1px 17px -2px rgba(0,0,0,0.75);
 }
 .setting__content-wrapper {
-	padding: 40px 0 0 50px;
+	padding: 40px 0 0 20px;
 }
 .setting__left {
 	float: left;
@@ -857,11 +857,12 @@ a {
 .setting__left:after {
 	position: absolute;
 	content: '';
-	width: 291px;
-	height: 172px;
+	width: 290px;
+	height: 170px;
 	top: 24px;
-	right: -36px;
+	right: -10px;
 	background: url(../img/macbook1.png);
+	background-size: cover;
 }
 .setting__right {
 	float: right;
@@ -870,11 +871,12 @@ a {
 .setting__right:after {
 	position: absolute;
 	content: '';
-	width: 291px;
-	height: 172px;
+	width: 290px;
+	height: 170px;
 	top: 24px;
-	right: -36px;
+	right: -10px;
 	background: url(../img/macbook2.png);
+	background-size: cover;	
 }
 .setting__text1 {
 	font: 16px/16px 'GothamProBlack', sans-serif;	
@@ -885,6 +887,9 @@ a {
 .setting__text-price {
 	font: 30px/40px 'GothamProBlack', sans-serif;
 	padding-bottom: 20px;		
+}
+.setting__text-price2{
+	font: 14px/16px 'GothamPro', sans-serif;
 }
 .setting__link {
 	display: inline-block;

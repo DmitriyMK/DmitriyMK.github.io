@@ -343,21 +343,6 @@ main {
 
 
 
-.1, .5, .2, .10, .4, 
-.9, .3, .8, .7, .6
-{ display: inline-block; background: url('png.png') no-repeat; overflow: hidden; text-indent: -9999px; text-align: left; }
- 
-.1 { background-position: -20px -0px; width: 177px; height: 151px; }
-.5 { background-position: -20px -171px; width: 145px; height: 145px; }
-.2 { background-position: -20px -336px; width: 142px; height: 142px; }
-.10 { background-position: -20px -498px; width: 128px; height: 134px; }
-.4 { background-position: -20px -652px; width: 116px; height: 116px; }
-.9 { background-position: -20px -788px; width: 115px; height: 93px; }
-.3 { background-position: -20px -901px; width: 112px; height: 112px; }
-.8 { background-position: -20px -1033px; width: 100px; height: 100px; }
-.7 { background-position: -20px -1153px; width: 99px; height: 99px; }
-.6 { background-position: -20px -1272px; width: 98px; height: 97px; }
-
 
 
 
