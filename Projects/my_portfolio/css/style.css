@@ -87,6 +87,8 @@ a:active {
 }
 .grid img {
 	max-width: 100%;
+	width: 100%;
+	height: auto;
 }
 .grid__item {
 	float: left;
