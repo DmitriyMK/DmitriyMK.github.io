@@ -32,6 +32,7 @@ a:focus,
 a:hover,
 a:active {
 	text-decoration: none;
+	color: #fff;
 }
 *:hover {
 	-webkit-transition: all 0.4s;
@@ -47,6 +48,11 @@ section img {
 	-moz-box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.75);
 	box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.75);
 }
+.clearfix:after {
+	content: " ";
+	display: table; 
+	clear: both;
+}	
 /* 	HEADER */
 header {
 	padding: 20px 0;
@@ -276,6 +282,7 @@ main {
 }
 .news--article:hover {
 	text-decoration: underline;
+	color: #000;
 }
 
 /* ////////////////// PAGE - SOLUTIONS ////////////////// */
@@ -392,15 +399,18 @@ main {
 	color: rgb(102, 153, 54); 
 }
 .offer .list__title {
-    font-weight: bold;
-    padding: 2% 0;
+	font-weight: bold;
+	padding: 2% 0;
 }
-.offer li {
-    list-style: square;
+.offer ul {
+	list-style: square;
 }
 .offer__text {
 	position: relative;
-    text-align: left;
+	text-indent: 1.5em; 
+	padding: 10px 0;
+	/*     text-align: justify;  */	
+	text-align: left; 
 	font-size: 3em;
 	line-height: 1.2em;
 }
@@ -417,8 +427,6 @@ main {
 	width: 100%;
 	height: auto;
 }
-
-
 .offer__list-item {
 	position: relative;
 	font-size: 3em;
@@ -459,7 +467,7 @@ main {
 }
 .offer__footer .offer__text {
 	padding-bottom: 2%;
-    text-align: center;
+	text-align: center;
 }
 .button__wrapper {
 	margin: auto;
@@ -470,7 +478,7 @@ main {
 	box-shadow: 6px 5px 14px 0px rgba(0,0,0,0.75);	
 }
 .button_callback {
-	font-size: 5em;
+	font-size: 4em;
 	line-height: 2em;
 	color: rgb(102, 153, 54);	
 }
@@ -483,13 +491,50 @@ main {
 .button__wrapper:hover .button_callback{
 	color: #fff;
 }
+.reconstruction .offer__list {
+	padding-bottom: 15px; 
+}
 .reconstruction img {
-    margin-top: -150px;
+	margin-top: -150px;
 }
 .commitee {
-    height: 500px;
-    padding: 2% 10%;
+	padding: 2% 6%;
 }
-.accounting .offer__text:last-child {
-    padding-bottom: 40px;
+.projectCH img {
+	padding-bottom: 40px;
+}
+.accounting .offer__text:last-child,
+.effectiveness .offer__text:last-child,
+.energy__project .offer__text:last-child,
+.serviceCH .offer__text:last-child,
+.services__energoaudit .offer__text:last-child,
+.services__montage .offer__text:last-child{
+	padding-bottom: 40px;
+}
+.offer__text span {
+	font-weight: bold;
+
+}
+.solution_for_house{
+	margin-bottom: -30px;
+}
+.services__energoaudit-text {
+	padding: 4% 0;
+}
+.services__energoaudit-wrapper {
+	padding-top: 1%;
+	padding-right: 2%;
+	float: left;
+	width: 400px;
+	height: auto;
+}
+/* .services__montage-pic {
+	max-width: 400px;
+	height: auto;
+} */
+.services__montage-list {
+	padding: 2% 0;
+}
+.services__instrumental img {
+	margin-top: -120px;
 }
