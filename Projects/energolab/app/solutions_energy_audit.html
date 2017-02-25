@@ -11,6 +11,7 @@
 	<link rel="stylesheet" href="css/libs/reset.css">
 	<link rel="stylesheet" href="css/fontello-embedded.css">  
 	<link rel="stylesheet" href="css/libs/bootstrap.min.css">
+	<link rel="stylesheet" href="css/libs/chartist.css">
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/media.css">
 	<link href="https://fonts.googleapis.com/css?family=Handlee" rel="stylesheet">
@@ -52,25 +53,52 @@
 			</div>
 		</div>
 	</div>
-		
+
 	<article class="offer energoaudit">
 		<h2 class="offer__title">Комплексный энергетический аудит</h2>
 		<p class="offer__text">Специалисты нашей компании помогут Вам определить степень эффективности использования энергоресурсов и разработать перечень мероприятий направленных на снижение их потребления.</p>
 		<p class="offer__text">При проведении энергоаудита будут учтены все особенности Вашего здания, при необходимости выполнены инструментальные обследования с помощью современного оборудования.</p>
 		<h3 class="offer__attention">Основные этапы энергетического аудита</h3>
-		<img src="img/energoaudit__schedule.jpg" alt="Основные этапы энергетического аудита">
-		<img src="img/energoaudit__steps.jpg" alt="Комплексный энергетический аудит"> 
-		<p class="offer__text">За последние три года доля затрат на отопление в бюджете средней городской семьи увеличилась втрое – поэтому уменьшение расходов на теплоснабжение очень актуально для жилых домов Наша компания предлагает комплексный подход к внедрению  энергосберегающих мероприятий для многоквартирных жилых домов и общественных зданий, включая сопровождение ОСББ при  участии в программах экономической поддержки или софинансирования.</p>
-		<h3 class="offer__attention">Затраты среднестатистической семьи на отопление,  после проведения энергоаудита</h3>
-		<img src="img/energoaudit__scehdule2-1.jpg" alt="Затраты среднестатистической семьи на отопление,  после проведения энергоаудита">
-		<div class="offer__text footer"><span>Проконсультироваться со специалистом и получить технико-коммерческое предложение для Вашего дома Вы можете отправив Ваш запрос по почте.</span>
-			<div class="button__wrapper"> 
-				<div class="callback">
-					<a class="button button_callback" href="#">Заказать энероаудит</a>
-				</div>
-			</div>
+
+<!-- 		<svg width="600" height="70">
+	<line x1="1" y1="50" x2="500" y2="6" stroke="#b4241b" stroke-width="3" />
+</svg> -->
+
+
+<div class="ct-chart ct-chart1 ct-golden-section" id="chart1"></div>
+
+
+<img src="img/energoaudit__schedule.jpg" alt="Основные этапы энергетического аудита">
+<div class="offer__list">
+	<div class="offer__list-item"><span class="offer__list-text">Збір вихідних даних (опрацювання опитувальних листів, аналіз існуючих договорів на енергопостачання, наявної проектної документації)</span>
+	</div>
+	<i class="offer__list-icon icon-angle-down"></i>
+	<div class="offer__list-item"><span class="offer__list-text">Натурне обстеження будинку (інструментальні виміри, обмірні креслення, термографічне обстеження (за можливості))</span>
+	</div>
+	<i class="offer__list-icon icon-angle-down"></i>	
+	<div class="offer__list-item"><span class="offer__list-text">Аналіз існуючого стану енергоспоживання в порівнянні з нормативними показниками, оцінка потенціалу енергозбереження</span>
+	</div>
+	<i class="offer__list-icon icon-angle-down"></i>	
+	<div class="offer__list-item"><span class="offer__list-text">Розробка переліку енергоефективних заходів та оцінка економічного ефекту від їх впровадження. На підставі конкретних пропозицій постачальників або узагальнених даних, щодо ринкової вартості заходів.</span>
+	</div>
+	<i class="offer__list-icon icon-angle-down"></i>
+	<div class="offer__list-item"><span class="offer__list-text">Передача та презентація звіту Замовнику. Доопрацювання за побажаннями Замовника (наприклад розрахунок економічного eфекту з урахуванням обраної моделі фінансування)</span>
+	</div>
+</div>
+<p class="offer__text">За последние три года доля затрат на отопление в бюджете средней городской семьи увеличилась втрое – поэтому уменьшение расходов на теплоснабжение очень актуально для жилых домов Наша компания предлагает комплексный подход к внедрению  энергосберегающих мероприятий для многоквартирных жилых домов и общественных зданий, включая сопровождение ОСББ при  участии в программах экономической поддержки или софинансирования.</p>
+<h3 class="offer__attention">Затраты среднестатистической семьи на отопление,  после проведения энергоаудита</h3>
+<div class="ct-chart ct-chart2 ct-golden-section" id="chart2"></div>
+<div class="ct-chart ct-chart3 ct-golden-section" id="chart3"></div>
+
+<img src="img/energoaudit__scehdule2-1.jpg" alt="Затраты среднестатистической семьи на отопление,  после проведения энергоаудита">
+<div class="offer__text footer"><span>Проконсультироваться со специалистом и получить технико-коммерческое предложение для Вашего дома Вы можете отправив Ваш запрос по почте.</span>
+	<div class="button__wrapper"> 
+		<div class="callback">
+			<a class="button button_callback" href="#">Заказать энероаудит</a>
 		</div>
-	</article>
+	</div>
+</div>
+</article>
 
 
 
@@ -84,12 +112,13 @@
 
 
 
-	<script src="js/libs/es5-shim.min.js"></script>
-	<script src="js/libs/html5shiv-printshiv.min.js"></script>
-	<script src="js/libs/html5shiv.min.js"></script>
-	<script src="js/libs/jquery-1.12.1.min.js"></script>
-	<script src="js/libs/jquery.ultimate-burger-menu.js"></script>
-	<script src="js/script.js"></script>
+<script src="js/libs/es5-shim.min.js"></script>
+<script src="js/libs/html5shiv-printshiv.min.js"></script>
+<script src="js/libs/html5shiv.min.js"></script>
+<script src="js/libs/jquery-1.12.1.min.js"></script>
+<script src="js/libs/chartist.min.js"></script>	
+<script src="js/libs/jquery.ultimate-burger-menu.js"></script>
+<script src="js/script.js"></script>
 </body>
 
 </html>

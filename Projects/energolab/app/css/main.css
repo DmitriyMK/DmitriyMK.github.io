@@ -310,7 +310,7 @@ main {
 .solutions__house-item {
 	text-align: center;
 	padding: 0;
-	height: 320px;
+	height: 330px;
 	-webkit-transition: margin-top 0.4s;
 	-moz-transition: margin-top 0.4s;
 	transition: margin-top 0.4s;	
@@ -368,16 +368,16 @@ main {
 }
 .solutions__link:hover .item__title:before {
 	background: #fff;
-	margin-top: 72px;
+	margin-top: 80px;
 }
 
 
 .icon-comissions {
-    background: url(../img/icons/Inventory-128.png) red no-repeat;
-    height: 132px;
-    width: 132px;
-    position: absolute;
-    top: 23px;
+	background: url(../img/icons/Inventory-128.png) red no-repeat;
+	height: 132px;
+	width: 132px;
+	position: absolute;
+	top: 23px;
 }
 
 
@@ -385,6 +385,7 @@ main {
 .offer {
 	text-align: center;
 	color: rgb(102, 102, 102);		
+	margin: 0 30px;
 }
 .offer__title {
 	color: rgb(102, 153, 54); 
@@ -402,4 +403,40 @@ main {
 	letter-spacing: 0.28em;	
 	text-transform: uppercase;
 	color: rgb(102, 153, 54); 	
+}
+.energoaudit img {
+	width: 100%;
+	height: auto;
+}
+.offer__list-item {
+	position: relative;
+	font-size: 3em;
+	line-height: 1.5em;
+	background: #b9cde9;
+	padding: 2%;
+	-webkit-box-shadow: 6px 5px 14px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 6px 5px 14px 0px rgba(0,0,0,0.75);
+	box-shadow: 6px 5px 14px 0px rgba(0,0,0,0.75);
+}
+.offer__list {
+	padding-bottom: 30px;
+}
+.offer__list-text {
+	color: #376092;
+	font-weight: bold;
+	font-size: 1.3em;
+	line-height: 1em;
+	text-shadow: 1px 2px 7px #fff;
+}
+.offer__list-icon {
+	padding: 10px 0 30px 0;
+	font-size: 8em; 
+}
+
+.energoaudit .ct-horizontal{
+	font-size: 2em;
+	text-align: center;
+}
+.energoaudit .ct-vertical {
+	
 }
