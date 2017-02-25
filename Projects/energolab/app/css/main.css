@@ -387,11 +387,20 @@ main {
 	color: rgb(102, 102, 102);		
 	margin: 0 30px;
 }
+
 .offer__title {
 	color: rgb(102, 153, 54); 
 }
+.offer .list__title {
+    font-weight: bold;
+    padding: 2% 0;
+}
+.offer li {
+    list-style: square;
+}
 .offer__text {
 	position: relative;
+    text-align: left;
 	font-size: 3em;
 	line-height: 1.2em;
 }
@@ -404,10 +413,12 @@ main {
 	text-transform: uppercase;
 	color: rgb(102, 153, 54); 	
 }
-.energoaudit img {
+.offer img {
 	width: 100%;
 	height: auto;
 }
+
+
 .offer__list-item {
 	position: relative;
 	font-size: 3em;
@@ -418,7 +429,7 @@ main {
 	-moz-box-shadow: 6px 5px 14px 0px rgba(0,0,0,0.75);
 	box-shadow: 6px 5px 14px 0px rgba(0,0,0,0.75);
 }
-.offer__list {
+.energoaudit .offer__list {
 	padding-bottom: 30px;
 }
 .offer__list-text {
@@ -432,11 +443,53 @@ main {
 	padding: 10px 0 30px 0;
 	font-size: 8em; 
 }
-
 .energoaudit .ct-horizontal{
 	font-size: 2em;
 	text-align: center;
 }
 .energoaudit .ct-vertical {
 	
+}
+.offer__footer {
+	padding: 3%;
+	font-size: 1em;
+	text-align: center;
+	color: #000;
+	background: #ccc;
+}
+.offer__footer .offer__text {
+	padding-bottom: 2%;
+    text-align: center;
+}
+.button__wrapper {
+	margin: auto;
+	width: 70%;
+	background: #ffd815; 
+	-webkit-box-shadow: 6px 5px 14px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 6px 5px 14px 0px rgba(0,0,0,0.75);
+	box-shadow: 6px 5px 14px 0px rgba(0,0,0,0.75);	
+}
+.button_callback {
+	font-size: 5em;
+	line-height: 2em;
+	color: rgb(102, 153, 54);	
+}
+.button__wrapper:hover {
+	background: #ccc;
+	-webkit-box-shadow: 6px 5px 14px 0px rgba(0,0,0,0);
+	-moz-box-shadow: 6px 5px 14px 0px rgba(0,0,0,0);
+	box-shadow: 6px 5px 14px 0px rgba(0,0,0,0);	
+}
+.button__wrapper:hover .button_callback{
+	color: #fff;
+}
+.reconstruction img {
+    margin-top: -150px;
+}
+.commitee {
+    height: 500px;
+    padding: 2% 10%;
+}
+.accounting .offer__text:last-child {
+    padding-bottom: 40px;
 }
