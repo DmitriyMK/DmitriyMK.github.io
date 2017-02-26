@@ -410,7 +410,7 @@ main {
 .offer {
 	text-align: center;
 	color: rgb(102, 102, 102);		
-	margin: 0 20px;
+	margin: 0 30px;
 }
 
 .offer__title {
@@ -430,9 +430,9 @@ main {
 	text-align: left; 
 	font-size: 3em;
 	line-height: 1.2em;
-    -moz-hyphens: auto;
-    -webkit-hyphens: auto;
-    -ms-hyphens: auto;
+	-moz-hyphens: auto;
+	-webkit-hyphens: auto;
+	-ms-hyphens: auto;
 }
 .offer__attention {
 	margin: 2% 0;
@@ -475,9 +475,6 @@ main {
 	font-size: 2em;
 	text-align: center;
 }
-.energoaudit .ct-vertical {
-	
-}
 .offer__footer {
 	padding: 3%;
 	font-size: 1em;
@@ -501,6 +498,7 @@ main {
 	display: block;
 	font-size: 3em;
 	line-height: 1.4em;
+	padding: 10px 0;
 	color: rgb(102, 153, 54);	
 }
 .button__wrapper:hover {
@@ -521,7 +519,7 @@ main {
 .commitee {
 	padding: 2% 6%;
 }
-.projectCH img {
+.project img, .energy__project img {
 	padding-bottom: 40px;
 }
 .accounting .offer__text:last-child,
@@ -534,7 +532,6 @@ main {
 }
 .offer__text span {
 	font-weight: bold;
-
 }
 .solution_for_house{
 	margin-bottom: -30px;
@@ -549,13 +546,29 @@ main {
 	width: 280px;
 	height: auto;
 }
-/* .services__montage-pic {
-	max-width: 400px;
-	height: auto;
-} */
 .services__montage-list {
 	padding: 2% 0;
 }
 .services__instrumental img {
 	margin-top: -120px;
+}
+.projectCH__wrapper {
+	padding-right: 10px;
+	float: left;
+	width: 200px;
+	height: auto;
+}
+.projectCH2 {
+	padding: 10px 0; 
+	float: right;	
+	width: 50%;
+}
+.solution__energyProjectCH3-pic {
+	margin-bottom: 20px;
+}
+.effectiveness__wrapper {
+	padding: 10px 10px 10px 0;
+	float: left;
+	width: 50%;
+	height: auto;
 }
