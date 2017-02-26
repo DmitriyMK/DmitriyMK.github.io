@@ -21,6 +21,10 @@ width: 1170px;
 } 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
+	.header__logo-text {
+		font-size: 90px;
+		letter-spacing: 3px;
+	}
 	.menu {
 		margin-left: 5%; 
 	}
@@ -42,6 +46,13 @@ width: 1170px;
 	}
 	.news--text {
 		padding-bottom: 50px;
+	}
+	.footer {
+		text-align: center;
+		margin: 0 auto;
+	}
+	.footer .row div {
+		margin-bottom: 25px;
 	}
 }
 /* Small Devices, Tablets */
@@ -73,7 +84,6 @@ width: 1170px;
 	.burger-menu {
 		text-align: center;
 		font-size: 3em;
-/* 		top: 120px !important; */
 	}
 	.burger-menu a {
 		background: rgba(102, 153, 54, 0.5) !important;
@@ -116,7 +126,30 @@ width: 1170px;
 	.news--text {
 		padding-bottom: 10px;
 	}	
+	.solutions__title, .offer__title {
+		margin: 40px 0 10px 0;
+		font-size: 3em;
+		letter-spacing: 0;
+		line-height: 1.6em;
+	}
+	.offer__title {
+		font-size: 3.5em;	
+	}
+	.offer__text {
+		font-size: 2.5em;
+		line-height: 1.2em;
+	}
+	.offer__list-text {
+		font-size: 0.9em;
+	}
+	.services__instrumental img,
+	.reconstruction img {
+		margin-top: -60px;
+	}	
+
 }
+
+
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
 	.header__logo-img {
@@ -140,6 +173,15 @@ width: 1170px;
 	.about_us__solutions__title--text {
 		margin-left: 0;
 	}
+	.item__title {
+		margin-top: 40px;
+		font-size: 2em;
+	}
+	.item__title:before {
+		width: 100px;
+		left: 50%;	
+		margin: -20px 0 0 -50px;		
+	}
 	.section__title-underline {
 		width: 200px;
 	}
@@ -152,6 +194,43 @@ width: 1170px;
 	.news--img img {
 		height: 300px;
 	}
+	.solutions__house-item {
+		max-height: 240px;
+	}	
+	.solutions__house-icon {
+		font-size: 10em;
+	}	
+	.solutions__link:hover .item__title:before {
+		margin-top: 70px;
+	}	
+	.solutions__link:hover .item__title {
+		-webkit-transform: translateY(-40px);
+		-moz-transform: translateY(-40px);
+		-ms-transform: translateY(-40px);
+		transform: translateY(-40px);
+	}	
+
+	.offer__title {
+		font-size: 3em;	
+	}
+	.offer__attention {
+		font-size: 3em;	
+	}
+	.offer__list-text {
+		font-size: 0.8em;
+	}
+	.offer__text {
+		font-size: 2em;
+		line-height: 1.2em;
+	}
+	.accounting .offer__text:last-child,
+	.effectiveness .offer__text:last-child,
+	.energy__project .offer__text:last-child,
+	.serviceCH .offer__text:last-child,
+	.services__energoaudit .offer__text:last-child,
+	.services__montage .offer__text:last-child{
+		padding-bottom: 20px;
+	}
 }
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 479px) {
@@ -161,7 +240,7 @@ width: 1170px;
 	.section__title {
 		font-size: 2.5em;
 	}
-	.section__title-text {
+	.section__title-text, .about_us__solutions--link {
 		font-size: 1.5em;
 	}	
 	.about_us__solutions__title--text {
@@ -184,5 +263,45 @@ width: 1170px;
 	}
 	.news--img img {
 		height: 200px;
+	}
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+
+	html {
+		-webkit-text-size-adjust: none;
+	}
+	.section__title {
+		font-size: 2.5em;
+	}
+	.section__title-text {
+		font-size: 1.5em;
+	}	
+	.about_us__solutions__title--text {
+		font-size: 1.5em;
+		height: 60px;
+	}
+	.about_us__solutions--text {
+		height: 130px;
+		font-size: 1.5em;
+		line-height: 1.4em;
+	}
+	.news--article {
+		font-size: 1.5em;
+	}	
+	.our__project--text {
+		font-size: 1.5em;
+	}
+	.our__project--img img{
+		height: 200px;
+	}	
+	.article__title {
+		font-size: 2em;
+	}
+	.solutions__title, .offer__title {
+		margin: 0;
+	}
+	.button_callback {
+		font-size: 2em;
 	}
 }
