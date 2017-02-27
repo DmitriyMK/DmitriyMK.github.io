@@ -266,8 +266,8 @@ main {
 }
 
 .news--img img {
-	max-height: 200px;
-	max-width: 300px;
+	max-height: 150px;
+	max-width: 250px;
 }
 .news--text {
 	display: block;
@@ -572,4 +572,13 @@ main {
 	float: left;
 	width: 50%;
 	height: auto;
+}
+.services {
+	text-align: center;
+}
+.our__project--img:hover img {
+	-webkit-box-shadow: 4px 4px 22px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 4px 4px 22px 0px rgba(0,0,0,0.75);
+	box-shadow: 4px 4px 22px 0px rgba(0,0,0,0.75);
+
 }
