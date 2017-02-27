@@ -129,6 +129,7 @@ main {
 }
 .section__title-text {
 	margin: 2% 5%;
+	text-align: justify;
 	font-size: 3em;
 	line-height: 1em;
 }
@@ -221,13 +222,11 @@ main {
 .our__services {
 	padding-top: 20px;
 	margin-bottom: 30px; 
-	background: #2F292B;
-	color: #fff;
+	color: #000;
 }
-.our__project--img img{
-	text-align: center;
-	height: 200px;
-	max-width: 90%;
+.our__services-wrapper img{
+	max-height: 150px;
+	max-width: 250px;
 }
 .our__project__link .our__project--img:hover{
 	-webkit-transform: scale(1.1);
@@ -237,9 +236,9 @@ main {
 .our__project--underline {
 	display: inline-block;
 	width: 70%;
-	height: 4px;
+	height: 2px;
 	margin-top: 20px;
-	background: #fff;
+	background: rgb(102, 153, 54);
 }
 .our__project--text {
 	height: 100px;
@@ -248,12 +247,13 @@ main {
 	font-size: 3em;
 	font-weight: bold;
 	padding-top: 10px;
+	color: rgb(102, 153, 54);
 }
 
 /* NEWS */
 .article__title {
 	margin: 10px; 
-	font-size: 3em;
+	font-size: 2.5em;
 	line-height: 1em;
 	height: 70px;
 	font-weight: bold;
@@ -264,10 +264,10 @@ main {
 	line-height: 1em;
 	color: #666;	
 }
+
 .news--img img {
-	height: 250px;
-	max-width: 100%;
-	margin: 20px 0;
+	max-height: 200px;
+	max-width: 300px;
 }
 .news--text {
 	display: block;
@@ -327,10 +327,11 @@ main {
 	padding-top: 20px;
 	position: relative;
 	display: block;	
+	text-align: center;
 	color: rgb(102, 153, 54); 
 }
 .solutions__house-item {
-	text-align: center;
+	text-align: left;
 	padding: 0;
 	height: 330px;
 	-webkit-transition: margin-top 0.4s;
@@ -427,7 +428,7 @@ main {
 	position: relative;
 	text-indent: 15px; 
 	padding: 10px 0;
-	text-align: left; 
+	text-align: justify;
 	font-size: 3em;
 	line-height: 1.2em;
 	-moz-hyphens: auto;
@@ -439,7 +440,7 @@ main {
 	font-size: 3em;
 	line-height: 1.2em;
 	font-weight: bold;
-	letter-spacing: 0.28em;	
+	letter-spacing: 0em;	
 	text-transform: uppercase;
 	color: rgb(102, 153, 54); 	
 }
