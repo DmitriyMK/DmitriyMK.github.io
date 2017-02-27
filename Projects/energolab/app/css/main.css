@@ -576,7 +576,7 @@ main {
 .services {
 	text-align: center;
 }
-.our__project--img:hover img {
+.services .our__project--img:hover img {
 	-webkit-box-shadow: 4px 4px 22px 0px rgba(0,0,0,0.75);
 	-moz-box-shadow: 4px 4px 22px 0px rgba(0,0,0,0.75);
 	box-shadow: 4px 4px 22px 0px rgba(0,0,0,0.75);
