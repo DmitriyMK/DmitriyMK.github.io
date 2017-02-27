@@ -577,9 +577,9 @@ main {
 	text-align: center;
 }
 .services .our__project--img:hover img {
--webkit-box-shadow: 6px 14px 26px 7px rgba(0,0,0,0.75);
--moz-box-shadow: 6px 14px 26px 7px rgba(0,0,0,0.75);
-box-shadow: 6px 14px 26px 7px rgba(0,0,0,0.75);
+-webkit-box-shadow: 0px 37px 17px 10px rgba(102,102,102,1);
+-moz-box-shadow: 0px 37px 17px 10px rgba(102,102,102,1);
+box-shadow: 0px 37px 17px 10px rgba(102,102,102,1);
 
 }
 
