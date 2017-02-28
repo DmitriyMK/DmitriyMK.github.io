@@ -511,7 +511,7 @@ main {
 	box-shadow: 6px 5px 14px 0px rgba(0,0,0,0);	
 }
 .button__wrapper:hover .button_callback{
-	color: #fff;
+	color: rgb(102, 153, 54);
 }
 .reconstruction .offer__list {
 	padding-bottom: 15px; 
@@ -588,7 +588,7 @@ main {
 .contact {
 	padding: 15px;
 }
-.contact .icon {
+.contact__list-item p {
     margin-left: -1.4em;
 }
 .contact a {
@@ -620,7 +620,7 @@ main {
 	max-width: 100%;
 	font-size: 15px;
 }
-.button {
+.button__contact {
 	background: rgb(102, 153, 54);
 	color: #fff;
 	border: medium none;
@@ -632,7 +632,7 @@ main {
 	text-transform: uppercase;
 	font-weight: bold;
 }
-.button:hover {
+.button__contact:hover {
 	color:  red;
 	background-color: #fff;	
 	-webkit-box-shadow: 6px 5px 14px 0px rgba(0,0,0,0);

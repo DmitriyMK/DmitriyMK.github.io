@@ -114,7 +114,7 @@ width: 1170px;
 	}	
 /* 	.our__project--img img{
 	height: 300px;
-} */
+	} */
 	.our__project--text {
 		height: 60px;
 		margin-bottom: 30px;
@@ -149,7 +149,7 @@ width: 1170px;
 	.reconstruction img {
 		margin-top: -60px;
 	}	
-		.contact .section__title {
+	.contact .section__title {
 		text-align: center;
 	}
 
@@ -202,7 +202,7 @@ width: 1170px;
 	}
 /* 	.our__project--img img {
 	height: 300px;
-} */
+	} */
 	.news--img img {
 		height: 300px;
 	}
@@ -290,7 +290,7 @@ width: 1170px;
 	.solutions__title, .offer__title {
 		margin: 0;
 	}
-	.button_callback, button {
+	.button_callback, .button__contact {
 		font-size: 2em;
 	}
 
