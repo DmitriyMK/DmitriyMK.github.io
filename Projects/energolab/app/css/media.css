@@ -54,6 +54,9 @@ width: 1170px;
 	.footer .row div {
 		margin-bottom: 25px;
 	}
+	.contact .section__title {
+		text-align: center;
+	}
 }
 /* Small Devices, Tablets */
 @media only screen and (max-width : 767px) {
@@ -149,9 +152,7 @@ width: 1170px;
 	.reconstruction img {
 		margin-top: -60px;
 	}	
-	.contact .section__title {
-		text-align: center;
-	}
+
 
 }
 
@@ -293,16 +294,15 @@ width: 1170px;
 	.button_callback, .button__contact {
 		font-size: 2em;
 	}
-
 }
-
 
 /* Custom, iPhone Retina */
-/* @media only screen and (max-width: 479px) {
-}
-*/
-/* @media only screen and (min-width: 320px) and (max-width: 479px) {
+
+ @media only screen and (min-width: 320px) and (max-width: 479px) {
 	html {
 		-webkit-text-size-adjust: none;
 	}
-} */
+	.services__instrumental img, .reconstruction img {
+    margin-top: 0;
+}
+} 
