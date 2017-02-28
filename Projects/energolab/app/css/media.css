@@ -149,12 +149,18 @@ width: 1170px;
 	.reconstruction img {
 		margin-top: -60px;
 	}	
+		.contact .section__title {
+		text-align: center;
+	}
 
 }
 
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
+	.container {
+		padding: 0;
+	}
 	.header__logo-img {
 		float: none;
 	}
@@ -287,6 +293,7 @@ width: 1170px;
 	.button_callback {
 		font-size: 2em;
 	}
+
 }
 
 
