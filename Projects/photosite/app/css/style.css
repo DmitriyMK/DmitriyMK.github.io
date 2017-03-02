@@ -167,7 +167,7 @@ header {
 }
 /* gallery */
 .grid {
-	padding-bottom:10px;
+/* 	padding-bottom:10px; */
 	max-width: 100%;
 } 
 .grid-sizer,
