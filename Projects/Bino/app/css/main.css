@@ -2693,8 +2693,6 @@ a {
     top: -40px;
     right: 47.6%; }
 
-/* ------------END HEADER ------------ */
-/* ------------ ADVANTAGES ------------ */
 .advantages {
   padding: 150px 0 200px 0; }
 
@@ -2747,8 +2745,6 @@ a {
   .columnAdvantage .icons4 {
     background: url(../img/icons/header__icon4.png) no-repeat 50% 50%; }
 
-/* ------------ END ADVANTAGES ------------ */
-/* ------------ HISTORY ------------ */
 #history {
   padding-top: 100px; }
 
@@ -2783,8 +2779,6 @@ a {
       -webkit-transition: all 0.6s ease;
       transition: all 0.6s ease; }
 
-/* ------------ END HISTORY ------------ */
-/* ------------ SERVICES ------------ */
 .services {
   background: #202020;
   margin-bottom: 120px; }
@@ -2852,8 +2846,6 @@ a {
     .services .services__list .icon3 {
       background: url(../img/icons/our__services__icon3.png) no-repeat; }
 
-/* ------------ END SERVICES ------------ */
-/* ------------ PORTFOLIO ------------ */
 .portfolio {
   text-align: center; }
   .portfolio .portfolio__description {
@@ -2912,8 +2904,6 @@ a {
       display: block;
       font-family: "OpenSansRegular"; }
 
-/* ------------ END PORTFOLIO ------------ */
-/* ------------ CASE ------------ */
 .case {
   padding-top: 140px;
   background: #f4f5f9;
@@ -3030,8 +3020,6 @@ a {
       .activity .activity__list .activity__list-item .activity__list-text {
         font-size: 1.125rem; }
 
-/* ------------ END CASE ------------ */
-/* ------------ PRICE ------------ */
 .price {
   text-align: center; }
   .price .price__description {
@@ -3100,8 +3088,6 @@ a {
       -webkit-transition: all 0.6s ease;
       transition: all 0.6s ease; }
 
-/* ------------ END PRICE ------------ */
-/* ------------ TEAM ------------ */
 .team {
   position: relative;
   display: block;
@@ -3178,8 +3164,6 @@ a {
       transition: all 0.6s ease;
       opacity: 1; }
 
-/* ------------ END TEAM ------------ */
-/* ------------ CLIENT ------------ */
 .client {
   padding: 140px 0;
   background: #f4f5f9;
@@ -3206,7 +3190,6 @@ a {
       -webkit-transition: all 0.6s ease;
       transition: all 0.6s ease; }
 
-/* ------------ END CLIENT ------------ */
 .blog {
   background: #f4f5f9;
   text-align: center;
@@ -3277,7 +3260,6 @@ a {
     border-right: 30px solid #e74c3c;
     border-bottom: 30px solid transparent; }
 
-/* ------------ FEEDBACK ------------ */
 .feedback {
   background: #f4f5f9;
   text-align: center; }
@@ -3376,7 +3358,6 @@ a {
         -webkit-transition: all 0.6s ease;
         transition: all 0.6s ease; }
 
-/* ------------ END FEEDBACK ------------ */
 .prefooter {
   background: url(../img/footer__background.jpg) no-repeat 50% 50%;
   background-size: cover;
@@ -3435,4 +3416,23 @@ a {
     text-align: right;
     line-height: 60px; }
 
-/* @import "_media.sass" */
+.scrollToTop {
+  position: fixed;
+  width: 2rem;
+  height: 2rem;
+  opacity: .3;
+  bottom: 20px;
+  right: 20px;
+  color: #fff;
+  background-color: #999;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  z-index: 100;
+  text-align: center; }
+  .scrollToTop:hover {
+    opacity: 1;
+    background-color: #e74c3c; }
+  .scrollToTop .fa-arrow-up {
+    font-size: 2rem; }
+
+/* @import "_media.scss"; */

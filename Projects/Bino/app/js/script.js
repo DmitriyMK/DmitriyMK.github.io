@@ -1,11 +1,11 @@
 $(document).ready(function() {
 
+  /*CAROUSEL*/
   $(".owl-carousel").owlCarousel({
     center: true,
     items: 1,
     loop: true
   });
-
   var owl = $('.owl-carousel');
   owl.owlCarousel();
   $('.owl-next').click(function() {
@@ -16,49 +16,31 @@ $(document).ready(function() {
     // Parameters has to be in square bracket '[]'
     owl.trigger('prev.owl.carousel', [700]);
   });
+
 });
 
-/*  FILTER */
-document.addEventListener('click', function (e) {
-
-  var button = e.target;
-  if (button.getAttribute('data-reset') === 'true') {
-
-    // Reset the filters
-    var filter = button.getAttribute('data-filter');
-    resetFilter(filter);
-  } else {
-
-    // Filter the tag
-    var filter = button.getAttribute('data-filter');
-    var tag    = button.getAttribute('data-filter-tag');
-    resetFilter(filter);
-    filterTag(filter, tag);
-  }
-});
-
-// Filter tag
-function filterTag (filter, tag) {
-
-  var items = document.querySelectorAll('.' + filter + ' > figure');
-
-  for (var i = 0; i < items.length; i++) {
-    var itemTags = items[i].getAttribute('data-tags');
-
-    // Catch case with no tags
-    if (itemTags != null) {
-      if (itemTags.indexOf(tag) < 0) {
-        items[i].setAttribute('data-toggle', 'off');
-      }
+// ===== Scroll to Top ==== 
+$(window).scroll(function() {
+    if ($(this).scrollTop() >= 400) {        
+        $('#scrollToTop').fadeIn(200);    
+    } else {
+        $('#scrollToTop').fadeOut(200);   
     }
-  }
-}
+});
+$('#scrollToTop').click(function() {      
+    $('body,html').animate({
+        scrollTop : 0                       
+    }, 500);
+});
 
-// Reset filters
-function resetFilter (filter) {
-  var items = document.querySelectorAll('.' + filter + ' > figure');
 
-  for (var i = 0; i < items.length; i++) {
-    items[i].setAttribute('data-toggle', 'on');
-  }
-}
+/*STICKY MENU*/
+var num = 52; //number of pixels before modifying styles
+
+$(window).bind('scroll', function () {
+    if ($(window).scrollTop() > num) {
+        $('.navigation__list').addClass('fixed');
+    } else {
+        $('.navigation__list').removeClass('fixed');
+    }
+});

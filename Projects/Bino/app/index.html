@@ -5,7 +5,8 @@
     <title>Bino - the coolest free theme in web</title>    
     <meta name="description" content="Bino - the coolest free theme in web" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">    
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
     <meta name="keywords" content="" />
     <meta name="author" content="alchimic" />
 
@@ -13,7 +14,7 @@
     <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
 </head>
 <body>
-    <header class="header">
+    <header class="header" id="header">
         <div class="container">
             <div class="row header__top">
                 <div class="logo">
@@ -22,18 +23,18 @@
                     </a>
                 </div>
                 <nav class="navigation">
-                    <ul class="navigation__list">
-                        <li class="navigation__list-item"><a class="navigation__list-link" href="index.html">home</a></li>
+                    <ul class="navigation__list" id="navigation__list">
+                        <li class="navigation__list-item"><a class="navigation__list-link" href="#header">home</a></li>
                         <li class="navigation__list-item"><a class="navigation__list-link" href="#history">about us</a></li>
                         <li class="navigation__list-item"><a class="navigation__list-link" href="#portfolio">portfolio</a></li>
                         <li class="navigation__list-item"><a class="navigation__list-link" href="#price">pricing</a></li>
                         <li class="navigation__list-item"><a class="navigation__list-link" href="#team">team</a></li>
                         <li class="navigation__list-item"><a class="navigation__list-link" href="#blog">blog</a></li>
-                        <li class="navigation__list-item"><a class="navigation__list-link" href="#feedback">contact</a></li>            
+                        <li class="navigation__list-item"><a class="navigation__list-link" href="#feedback">contact</a></li>           
                     </ul>
                 </nav>
             </div> <!-- header-top -->
-            <div class="header__center">
+            <div class="header__center" id="header__center">
                 <div class="owl-carousel">
                     <div class="owl-item">
                         <h3 class="header__slogan">Our Clients Are Our First Priority</h3>
@@ -126,7 +127,7 @@
 
     <section class="history" id="history">
         <div class="container">
-            <div class="row">
+            <div class="row-fluid">
                 <div class="col-lg-6 col-md-6 col-sm-6 no-padding">
                     <div class="history__wrapper-img">
                         <img class="history__img" src="img/our__history-monitor.png" alt="mac">
@@ -499,14 +500,14 @@
                 <div class="client__underline section__underline"></div>
             </div> 
             <div class="row client__row">
-                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6 client__row-item"><img class="client__row-img" src="img/our__integration.png" alt="client"></div>
-                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6 client__row-item"><img class="client__row-img" src="img/our__integration.png" alt="client"></div>
-                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6 client__row-item"><img class="client__row-img" src="img/our__integration.png" alt="client"></div>
-                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6 client__row-item"><img class="client__row-img" src="img/our__integration.png" alt="client"></div>
-                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6 client__row-item"><img class="client__row-img" src="img/our__integration.png" alt="client"></div>
-                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6 client__row-item"><img class="client__row-img" src="img/our__integration.png" alt="client"></div>
-                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6 client__row-item"><img class="client__row-img" src="img/our__integration.png" alt="client"></div>
-                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6 client__row-item"><img class="client__row-img" src="img/our__integration.png" alt="client"></div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 client__row-item"><img class="client__row-img" src="img/our__integration.png" alt="client"></div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 client__row-item"><img class="client__row-img" src="img/our__integration.png" alt="client"></div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 client__row-item"><img class="client__row-img" src="img/our__integration.png" alt="client"></div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 client__row-item"><img class="client__row-img" src="img/our__integration.png" alt="client"></div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 client__row-item"><img class="client__row-img" src="img/our__integration.png" alt="client"></div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 client__row-item"><img class="client__row-img" src="img/our__integration.png" alt="client"></div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 client__row-item"><img class="client__row-img" src="img/our__integration.png" alt="client"></div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 client__row-item"><img class="client__row-img" src="img/our__integration.png" alt="client"></div>
             </div>
         </div>
     </section>
@@ -641,16 +642,16 @@
     <footer class="footer">
         <div class="col-lg-8 col-md-8 col-sm-6">
             <div class="socials">
-            <ul class="social__link">
-                <li class="social__link-item"><a href="#" class="social__link-link"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                <li class="social__link-item"><a href="#" class="social__link-link"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                <li class="social__link-item"><a href="#" class="social__link-link"><i class="fa fa-rss" aria-hidden="true"></i></a></li>
-                <li class="social__link-item"><a href="#" class="social__link-link"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
-                <li class="social__link-item"><a href="#" class="social__link-link"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                <li class="social__link-item"><a href="#" class="social__link-link"><i class="fa fa-skype" aria-hidden="true"></i></a></li>
-                <li class="social__link-item"><a href="#" class="social__link-link"><i class="fa fa-vimeo" aria-hidden="true"></i></a></li>
-                <li class="social__link-item"><a href="#" class="social__link-link"><i class="fa fa-telegram" aria-hidden="true"></i></a></li>                
-            </ul>
+                <ul class="social__link">
+                    <li class="social__link-item"><a href="#" class="social__link-link"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                    <li class="social__link-item"><a href="#" class="social__link-link"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                    <li class="social__link-item"><a href="#" class="social__link-link"><i class="fa fa-rss" aria-hidden="true"></i></a></li>
+                    <li class="social__link-item"><a href="#" class="social__link-link"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+                    <li class="social__link-item"><a href="#" class="social__link-link"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                    <li class="social__link-item"><a href="#" class="social__link-link"><i class="fa fa-skype" aria-hidden="true"></i></a></li>
+                    <li class="social__link-item"><a href="#" class="social__link-link"><i class="fa fa-vimeo" aria-hidden="true"></i></a></li>
+                    <li class="social__link-item"><a href="#" class="social__link-link"><i class="fa fa-telegram" aria-hidden="true"></i></a></li>                
+                </ul>
             </div>
         </div>
         <div class="col-lg-4 col-md-4 col-sm-6">
@@ -660,17 +661,17 @@
         </div> 
     </footer>
 
+    <div class="scrollToTop" id="scrollToTop">
+        <a href="#header"><i class="fa fa-arrow-up" aria-hidden="true"></i></a>
+    </div>
     <!-- <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">  -->
     <!-- figure*12>a[href=img/photo/$.jpg]>img[src=img/photo/$.jpg][alt='photo'] -->
 
-<!--             <div class="row">
-    <h2 class="team__title section__title">OUR TEAM</h2>
-    <p class="team__description">Meet the craziest team. Share your thoughts with them.</p>
-    <div class="team__underline section__underline"></div>
-</div> -->
 
 <link rel="stylesheet" href="css/font-awesome.min.css">
 <link rel="stylesheet" href="css/main.css">
-<script src="js/script.min.js"></script>  
+<link rel="stylesheet" href="css/media.css">
+<script src="js/script.min.js"></script> 
+<script src="js/script.js"></script>  
 </body>
 </html>

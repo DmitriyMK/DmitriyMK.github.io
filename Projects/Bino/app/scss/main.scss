@@ -267,8 +267,6 @@ a {
 		right: 47.6%;
 	}
 }
-/* ------------END HEADER ------------ */
-/* ------------ ADVANTAGES ------------ */
 .advantages {
 	padding: 150px 0 200px 0;
 }
@@ -325,8 +323,6 @@ a {
 		background: url(../img/icons/header__icon4.png) no-repeat 50% 50%;
 	}		
 }
-/* ------------ END ADVANTAGES ------------ */
-/* ------------ HISTORY ------------ */
 #history{
 	padding-top: 100px;
 }
@@ -368,8 +364,6 @@ a {
 		}
 	}
 }
-/* ------------ END HISTORY ------------ */
-/* ------------ SERVICES ------------ */
 .services {
 	background: #202020;
 	margin-bottom: 120px;
@@ -449,8 +443,6 @@ a {
 		}		
 	}
 }
-/* ------------ END SERVICES ------------ */
-/* ------------ PORTFOLIO ------------ */
 .portfolio {
 	text-align: center;
 	.portfolio__description {
@@ -518,8 +510,6 @@ a {
 		}
 	}
 }
-/* ------------ END PORTFOLIO ------------ */
-/* ------------ CASE ------------ */
 .case {
 	padding-top: 140px;
 	background: #f4f5f9;
@@ -648,8 +638,6 @@ a {
 		}			
 	}
 }
-/* ------------ END CASE ------------ */
-/* ------------ PRICE ------------ */
 .price {
 	text-align: center;	
 	.price__description {
@@ -724,8 +712,6 @@ a {
 		}
 	}
 }
-/* ------------ END PRICE ------------ */
-/* ------------ TEAM ------------ */
 .team {
 	position: relative;
 	display: block;
@@ -813,8 +799,6 @@ a {
 		}
 	}
 }
-/* ------------ END TEAM ------------ */
-/* ------------ CLIENT ------------ */
 .client {
 	padding: 140px 0;
 	background: #f4f5f9;
@@ -846,7 +830,6 @@ a {
 		}
 	}
 }
-/* ------------ END CLIENT ------------ */
 .blog {
 	background: #f4f5f9;
 	text-align: center;
@@ -928,7 +911,6 @@ a {
 		border-bottom: 30px solid transparent;
 	}
 }
-/* ------------ FEEDBACK ------------ */
 .feedback {
 	background: #f4f5f9;
 	text-align: center;
@@ -1043,7 +1025,6 @@ a {
 		} 
 	}
 }
-/* ------------ END FEEDBACK ------------ */
 .prefooter {
 	background: url(../img/footer__background.jpg) no-repeat 50% 50%;
 	background-size: cover;
@@ -1108,8 +1089,27 @@ a {
 		line-height: 60px;
 	}
 }
-
+.scrollToTop {
+	position: fixed;
+	width: 2rem;
+    height: 2rem;
+    opacity: .3;
+    bottom: 20px;
+    right: 20px;
+    color: $white;
+    background-color: $gray;
+    @include transition(all 0.4s ease);
+    z-index: 100;
+    text-align: center;
+    &:hover {
+    	opacity: 1;
+    	background-color: $red;   	
+    }
+    .fa-arrow-up {
+    	font-size: 2rem;
+    }
+}
 
 
 //ALWAYS END
-/* @import "_media.sass" */
+/* @import "_media.scss"; */
