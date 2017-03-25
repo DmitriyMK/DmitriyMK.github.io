@@ -155,7 +155,16 @@
 
 @media only screen and (max-width: 767px) {
   .price .ratePlan__rate {
-    left: 40%; } }
+    left: 40%; }
+  .activity .activity__list .activity__list-item {
+    line-height: 20px; }
+    .activity .activity__list .activity__list-item .activity__icons {
+      padding: 20px; }
+    .activity .activity__list .activity__list-item .activity__list-counter {
+      padding-top: 30px;
+      font-size: 1.25rem; }
+    .activity .activity__list .activity__list-item .activity__list-text {
+      font-size: 1rem; } }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
@@ -191,16 +200,24 @@
   .activity {
     margin-bottom: 100px; }
     .activity .activity__list {
-      -webkit-flex-flow: row no wrap;
+      -webkit-flex-wrap: wrap;
+          -ms-flex-wrap: wrap;
+              flex-wrap: wrap;
       -webkit-box-align: center;
       -webkit-align-items: center;
           -ms-flex-align: center;
-              align-items: center;
-      -webkit-justify-content: space-around;
-          -ms-flex-pack: distribute;
-              justify-content: space-around; }
-      .activity .activity__list .activity__list-item .activity__icons {
-        margin: 0 15px; }
+              align-items: center; }
+      .activity .activity__list .activity__list-item {
+        line-height: 20px; }
+        .activity .activity__list .activity__list-item .activity__icons {
+          margin: 0 10px;
+          line-height: 18px;
+          padding: 20px; }
+        .activity .activity__list .activity__list-item .activity__list-counter {
+          padding-top: 30px;
+          font-size: 1.125rem; }
+        .activity .activity__list .activity__list-item .activity__list-text {
+          font-size: 1rem; }
   .price .ratePlan {
     padding-bottom: 40px; }
   .price .ratePlan__rate {
@@ -288,21 +305,27 @@
   .case .case__column-right {
     min-height: auto; }
   .activity .activity__list {
-    min-height: 500px; }
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: column wrap;
+    -webkit-box-align: stretch;
+    -webkit-align-items: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+    min-height: 500px;
+    padding-top: 20px; }
     .activity .activity__list .activity__list-item {
-      color: #f4f5f9;
-      font-family: "SourceSansProRegular";
-      line-height: 20px; }
+      line-height: 20px;
+      padding-bottom: 25px; }
       .activity .activity__list .activity__list-item .activity__icons {
-        padding: 25px;
-        border: 2px solid #f4f5f9;
-        -webkit-border-radius: 50%;
-                border-radius: 50%; }
+        padding: 20px; }
       .activity .activity__list .activity__list-item .activity__list-counter {
-        padding-top: 40px;
-        font-size: 1.5rem; }
+        padding-top: 20px;
+        font-size: 1.25rem; }
       .activity .activity__list .activity__list-item .activity__list-text {
-        font-size: 1.125rem; }
+        font-size: 1rem; }
   .team {
     min-height: 600px; }
     .team .team___list-item {

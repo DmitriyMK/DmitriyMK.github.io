@@ -228,6 +228,24 @@
 		.price .ratePlan__rate {
 			left: 40%;
 		}
+		.activity {
+			.activity__list {
+				.activity__list-item {
+					line-height: 20px;
+					.activity__icons {
+						padding: 20px;
+					}					
+					.activity__list-counter {
+						padding-top: 30px;
+						font-size: rem(20);
+					}
+					.activity__list-text {
+						font-size: rem(16);						
+					}
+				}			
+			}
+		}
+
 	} 
 
 	/* Extra Small Devices, Phones */
@@ -280,12 +298,21 @@
 		.activity {
 			margin-bottom: 100px;
 			.activity__list {
-				-webkit-flex-flow: row no wrap;
-				align-items: center;		
-				justify-content: space-around;
+				flex-wrap: wrap;
+				align-items: center;
 				.activity__list-item {
+					line-height: 20px;
 					.activity__icons {
-						margin: 0 15px;
+						margin: 0 10px;
+						line-height: 18px;
+						padding: 20px
+					}
+					.activity__list-counter {
+						padding-top: 30px;
+						font-size: rem(18);
+					}
+					.activity__list-text {
+						font-size: rem(16);						
 					}					
 				}			
 			}
@@ -424,22 +451,27 @@
 		}
 		.activity {
 			.activity__list {
+				display: -webkit-box;
+				display: -moz-box;
+				display: -ms-flexbox;
+				display: -webkit-flex;
+				display: flex;
+				-webkit-flex-flow: column wrap;
+				align-items: stretch;
 				min-height: 500px;
+				padding-top: 20px;
 				.activity__list-item {
-					color: #f4f5f9;	
-					font-family: $fontFamily;			
 					line-height: 20px;
+					padding-bottom: 25px;
 					.activity__icons {
-						padding: 25px;
-						border: 2px solid #f4f5f9;
-						border-radius: 50%;
+						padding: 20px;
 					}					
 					.activity__list-counter {
-						padding-top: 40px;
-						font-size: rem(24);
+						padding-top: 20px;
+						font-size: rem(20);
 					}
 					.activity__list-text {
-						font-size: rem(18);						
+						font-size: rem(16);				
 					}
 				}			
 			}
