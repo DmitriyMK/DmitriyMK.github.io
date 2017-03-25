@@ -14,27 +14,35 @@
     <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
 </head>
 <body>
+    <div id="preloader">
+        <i class="loader"></i>
+    </div>
     <header class="header" id="header">
-        <div class="container-fluid">
-            <div class="row header__top">
-                <div class="logo">
-                    <a class="logo__link" href="index.html">
-                        <img src="img/logo.png" alt="Bino">
-                    </a>
-                </div>
-                <nav class="navigation" id="navigation">
-                    <ul class="navigation__list" id="navigation__list">
-                        <li class="navigation__list-item"><a class="navigation__list-link" href="#header">home</a></li>
-                        <li class="navigation__list-item"><a class="navigation__list-link" href="#history">about us</a></li>
-                        <li class="navigation__list-item"><a class="navigation__list-link" href="#portfolio">portfolio</a></li>
-                        <li class="navigation__list-item"><a class="navigation__list-link" href="#price">pricing</a></li>
-                        <li class="navigation__list-item"><a class="navigation__list-link" href="#team">team</a></li>
-                        <li class="navigation__list-item"><a class="navigation__list-link" href="#blog">blog</a></li>
-                        <li class="navigation__list-item"><a class="navigation__list-link" href="#feedback">contact</a></li>           
-                    </ul>
-                </nav>
-            </div> <!-- header-top -->
-            <div class="header__center" id="header__center">
+        <div class="container">
+            <div class="fixedTopMenu" id="fixedTopMenu">
+                <div class="row header__top">
+                    <div class="logo">
+                        <a class="logo__link" href="index.html">
+                            <img src="img/logo.png" alt="Bino">
+                        </a>
+                    </div>
+                    <nav class="navigation" id="navigation">
+                        <a href="#" class="burger">
+                            <i></i>
+                        </a>
+                        <ul class="navigation__list" id="navigation__list">
+                            <li class="navigation__list-item"><a class="navigation__list-link" href="#header">home</a></li>
+                            <li class="navigation__list-item"><a class="navigation__list-link" href="#history">about us</a></li>
+                            <li class="navigation__list-item"><a class="navigation__list-link" href="#portfolio">portfolio</a></li>
+                            <li class="navigation__list-item"><a class="navigation__list-link" href="#price">pricing</a></li>
+                            <li class="navigation__list-item"><a class="navigation__list-link" href="#team">team</a></li>
+                            <li class="navigation__list-item"><a class="navigation__list-link" href="#blog">blog</a></li>
+                            <li class="navigation__list-item"><a class="navigation__list-link" href="#feedback">contact</a></li>           
+                        </ul>
+                    </nav>
+                </div> <!-- header-top -->
+            </div>
+            <div class="header__center wow lightSpeedIn" id="header__center">
                 <div class="owl-carousel">
                     <div class="owl-item">
                         <h3 class="header__slogan">Our Clients Are Our First Priority</h3>
@@ -82,7 +90,7 @@
         </div><!-- container -->
     </header> 
 
-    <section class="advantages" id="advantages">
+    <section class="advantages wow flipInX" id="advantages">
         <div class="container">
             <div class="row">
                 <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6"> 
@@ -125,7 +133,7 @@
         </div>
     </section>
 
-    <section class="history" id="history">
+    <section class="history wow slideInLeft" id="history">
         <div class="container">
             <div class="row-fluid">
                 <div class="col-lg-6 col-md-6 col-sm-6 no-padding">
@@ -143,7 +151,7 @@
         </div>
     </section> <!-- history -->
 
-    <section class="services" id="services">
+    <section class="services wow slideInRight" id="services">
         <div class="container-fluid">
 
             <div class="col-lg-6 col-md-6 services__col">
@@ -174,7 +182,7 @@
         </div>
     </section>
 
-    <section class="portfolio" id="portfolio">
+    <section class="portfolio wow zoomIn" id="portfolio">
         <div class="container-fluid">
             <div class="row">
                 <h2 class="portfolio__title section__title">RECENT WORKS</h2>
@@ -285,7 +293,7 @@
         </div>
     </section>
 
-    <section class="case" id="case">
+    <section class="case wow fadeIn" id="case">
         <div class="container">
             <h2 class="section__title">CASE STUDY</h2>
             <p class="case__description">A brief story about how this process works, keep an eye till the end.</p>
@@ -351,7 +359,7 @@
         </div>
     </section> <!-- CASE -->
 
-    <section class="price" id="price">
+    <section class="price wow fadeIn" id="price">
         <div class="container">
             <div class="row">
                 <h2 class="price__title section__title">OUR PRICING</h2>
@@ -421,14 +429,14 @@
 
     <section class="team" id="team">
         <div class="container">
-            <div class="row">
+            <div class="row  wow slideInLeft">
                 <h2 class="team__title section__title">OUR TEAM</h2>
                 <p class="team__description">Meet the craziest team. Share your thoughts with them.</p>
                 <div class="team__underline section__underline"></div>
             </div>
             <div class="row">
                 <ul class="team__list">
-                    <li class="team___list-item">
+                    <li class="team___list-item wow slideInLeft">
                         <div class="team___list-pic">
                             <img src="img/our__team__pic1.jpg" alt="team">
                         </div>
@@ -437,7 +445,7 @@
                             <p class="team___list-job">UI/UX Designer</p>
                         </div>
                     </li>
-                    <li class="team___list-item">
+                    <li class="team___list-item wow slideInLeft">
                         <div class="team___list-pic">
                             <img src="img/our__team__pic3.jpg" alt="team">
                         </div>
@@ -446,7 +454,7 @@
                             <p class="team___list-job">UI/UX Designer</p>
                         </div>
                     </li>
-                    <li class="team___list-item">
+                    <li class="team___list-item wow slideInLeft">
                         <div class="team___list-pic">
                             <img src="img/our__team__pic3.jpg" alt="team">
                         </div>
@@ -455,7 +463,7 @@
                             <p class="team___list-job">UI/UX Designer</p>
                         </div>
                     </li>
-                    <li class="team___list-item">
+                    <li class="team___list-item wow slideInLeft">
                         <div class="team___list-pic">
                             <img src="img/our__team__pic4.jpg" alt="team">
                         </div>
@@ -464,7 +472,7 @@
                             <p class="team___list-job">UI/UX Designer</p>
                         </div>
                     </li>
-                    <li class="team___list-item">
+                    <li class="team___list-item wow slideInRight">
                         <div class="team___list-pic">
                             <img src="img/our__team__pic5.jpg" alt="team">
                         </div>
@@ -478,7 +486,7 @@
         </div>
     </section>
 
-    <section class="client" id="client">
+    <section class="client wow zoomIn" id="client">
         <div class="container">
             <div class="row">
                 <h2 class="client__title section__title">Great Integrations with Others</h2>
@@ -498,7 +506,7 @@
         </div>
     </section>
 
-    <section class="blog" id="blog">
+    <section class="blog wow zoomIn" id="blog">
         <div class="container-fluid">
             <h2 class="blog__title section__title">OUR BLOG</h2>
             <p class="blog__description">Suspendisse sed eros mollis, tincidunt felis eget, interdum eratullam sit amet odio.</p>
@@ -579,7 +587,7 @@
         </div>
     </section>
 
-    <section class="feedback" id="feedback">
+    <section class="feedback wow zoomIn" id="feedback">
         <div class="container">
             <div class="row">
                 <h2 class="feedback__title section__title">KEEP IN TOUCH</h2>
@@ -615,7 +623,7 @@
         </div>
     </section>
 
-    <section class="prefooter" id="prefooter">
+    <section class="prefooter wow zoomIn" id="prefooter">
         <div class="container-fluid">
             <div class="row">
                 <h4 class="prefooter__title">Let's Get Started Now. <span class="prefooter__title-mark">It's FREE!</span></h4>
@@ -648,17 +656,17 @@
     </footer>
 
     <div class="scrollToTop" id="scrollToTop">
-        <a href="#header"><i class="fa fa-arrow-up" aria-hidden="true"></i></a>
-    </div>
-    <!-- <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">  -->
-    <!-- figure*12>a[href=img/photo/$.jpg]>img[src=img/photo/$.jpg][alt='photo'] -->
 
-
-    <link rel="stylesheet" href="css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/media.css">
-    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>  
-    <script src="js/script.min.js"></script> 
-    <script src="js/script.js"></script>  
-</body>
-</html>
+        <a href="#header">
+            <svg class="icon icon-arrow-up2">
+                <use xlink:href="#icon-arrow-up2"></use>
+                <symbol id="icon-arrow-up2" viewBox="0 0 32 32">
+                    <path d="M27.414 12.586l-10-10c-0.781-0.781-2.047-0.781-2.828 0l-10 10c-0.781 0.781-0.781 2.047 0 2.828s2.047 0.781 2.828 0l6.586-6.586v19.172c0 1.105 0.895 2 2 2s2-0.895 2-2v-19.172l6.586 6.586c0.39 0.39 0.902 0.586 1.414 0.586s1.024-0.195 1.414-0.586c0.781-0.781 0.781-2.047 0-2.828z"></path>
+                </symbol>
+            </svg>
+        </a>
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/main.min.css">
+        <script src="js/script.min.js"></script> 
+    </body>
+    </html>
