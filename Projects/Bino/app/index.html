@@ -15,14 +15,14 @@
 </head>
 <body>
     <header class="header" id="header">
-        <div class="container">
+        <div class="container-fluid">
             <div class="row header__top">
                 <div class="logo">
                     <a class="logo__link" href="index.html">
                         <img src="img/logo.png" alt="Bino">
                     </a>
                 </div>
-                <nav class="navigation">
+                <nav class="navigation" id="navigation">
                     <ul class="navigation__list" id="navigation__list">
                         <li class="navigation__list-item"><a class="navigation__list-link" href="#header">home</a></li>
                         <li class="navigation__list-item"><a class="navigation__list-link" href="#history">about us</a></li>
@@ -190,110 +190,96 @@
                     <li class="portfolio__list-item"><a href="#" class="portfolio__list-link" data-filter="grid" data-filter-tag="VIDEO">VIDEO</a></li>
                 </ul>
                 <div class="grid portfolio__products" id="catalog__products">
-                    <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6 portfolio__items">
-                        <figure class="portfolio__grid grid__item" >
-                            <div class="portfolio__grid-wrapper">
-                                <img src="img/portfolio__1.jpg" alt="recent work" class="portfolio__grid-pic">
-                                <a class="portfolio__grid-link" href="#">
-                                    <div class="portfolio__content">
-                                        <h3 class="portfolio__text-work">T-SHIRT DESIGN</h3>
-                                        <p class="portfolio__text-category">art / t-shirt</p>
-                                    </div>
-                                </a>
-                            </div>
-                        </figure>
-                    </div>
-                    <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6 portfolio__items">
-                        <figure class="portfolio__grid grid__item" data-tags="ANIMATION">
-                            <div class="portfolio__grid-wrapper">
-                                <img src="img/portfolio__2.jpg" alt="recent work" class="portfolio__grid-pic">
-                                <a class="portfolio__grid-link" href="#">
-                                    <div class="portfolio__content">
-                                        <h3 class="portfolio__text-work">T-SHIRT DESIGN</h3>
-                                        <p class="portfolio__text-category">art / t-shirt</p>
-                                    </div>
-                                </a>
-                            </div>
-                        </figure>
-                    </div>
-                    <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6 portfolio__items">
-                        <figure class="portfolio__grid grid__item" data-tags="VIDEO">
-                            <div class="portfolio__grid-wrapper">
-                                <img src="img/portfolio__3.jpg" alt="recent work" class="portfolio__grid-pic">
-                                <a class="portfolio__grid-link" href="#">
-                                    <div class="portfolio__content">
-                                        <h3 class="portfolio__text-work">T-SHIRT DESIGN</h3>
-                                        <p class="portfolio__text-category">art / t-shirt</p>
-                                    </div>
-                                </a>
-                            </div>
-                        </figure>
-                    </div>
-                    <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6 portfolio__items">
-                        <figure class="portfolio__grid grid__item" data-tags="WEB DESIGN">
-                            <div class="portfolio__grid-wrapper">
-                                <img src="img/portfolio__4.jpg" alt="recent work" class="portfolio__grid-pic">
-                                <a class="portfolio__grid-link" href="#">
-                                    <div class="portfolio__content">
-                                        <h3 class="portfolio__text-work">T-SHIRT DESIGN</h3>
-                                        <p class="portfolio__text-category">art / t-shirt</p>
-                                    </div>
-                                </a>
-                            </div>
-                        </figure>
-                    </div>
-                    <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6 portfolio__items">
-                        <figure class="portfolio__grid grid__item" data-tags="PHOTOGRAPHY">
-                            <div class="portfolio__grid-wrapper">
-                                <img src="img/portfolio__5.jpg" alt="recent work" class="portfolio__grid-pic">
-                                <a class="portfolio__grid-link" href="#">
-                                    <div class="portfolio__content">
-                                        <h3 class="portfolio__text-work">T-SHIRT DESIGN</h3>
-                                        <p class="portfolio__text-category">art / t-shirt</p>
-                                    </div>
-                                </a>
-                            </div>
-                        </figure>
-                    </div>
-                    <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6 portfolio__items">
-                        <figure class="portfolio__grid grid__item" data-tags="ART">
-                            <div class="portfolio__grid-wrapper">
-                                <img src="img/portfolio__6.jpg" alt="recent work" class="portfolio__grid-pic">
-                                <a class="portfolio__grid-link" href="#">
-                                    <div class="portfolio__content">
-                                        <h3 class="portfolio__text-work">T-SHIRT DESIGN</h3>
-                                        <p class="portfolio__text-category">art / t-shirt</p>
-                                    </div>
-                                </a>
-                            </div>
-                        </figure>
-                    </div>
-                    <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6 portfolio__items">
-                        <figure class="portfolio__grid grid__item" data-tags="ANIMATION">
-                            <div class="portfolio__grid-wrapper">
-                                <img src="img/portfolio__7.jpg" alt="recent work" class="portfolio__grid-pic">
-                                <a class="portfolio__grid-link" href="#">
-                                    <div class="portfolio__content">
-                                        <h3 class="portfolio__text-work">T-SHIRT DESIGN</h3>
-                                        <p class="portfolio__text-category">art / t-shirt</p>
-                                    </div>
-                                </a>
-                            </div>
-                        </figure>
-                    </div> 
-                    <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6 portfolio__items">
-                        <figure class="portfolio__grid grid__item" data-tags="PRINT_DESIGN">
-                            <div class="portfolio__grid-wrapper">
-                                <img src="img/portfolio__8.jpg" alt="recent work" class="portfolio__grid-pic">
-                                <a class="portfolio__grid-link" href="#">
-                                    <div class="portfolio__content">
-                                        <h3 class="portfolio__text-work">T-SHIRT DESIGN</h3>
-                                        <p class="portfolio__text-category">art / t-shirt</p>
-                                    </div>
-                                </a>
-                            </div>
-                        </figure>
-                    </div>                                               
+
+                    <figure class="col-lg-3 col-md-3 col-sm-4 col-xs-6 portfolio__items" data-tags="ANIMATION">
+                        <div class="portfolio__grid-wrapper">
+                            <img src="img/portfolio__1.jpg" alt="recent work" class="portfolio__grid-pic">
+                            <a class="portfolio__grid-link" href="#">
+                                <div class="portfolio__content">
+                                    <h3 class="portfolio__text-work">T-SHIRT DESIGN</h3>
+                                    <p class="portfolio__text-category">art / t-shirt</p>
+                                </div>
+                            </a>
+                        </div>
+                    </figure>
+
+                    <figure class="col-lg-3 col-md-3 col-sm-4 col-xs-6 portfolio__items" data-tags="ANIMATION">
+                        <div class="portfolio__grid-wrapper">
+                            <img src="img/portfolio__2.jpg" alt="recent work" class="portfolio__grid-pic">
+                            <a class="portfolio__grid-link" href="#">
+                                <div class="portfolio__content">
+                                    <h3 class="portfolio__text-work">T-SHIRT DESIGN</h3>
+                                    <p class="portfolio__text-category">art / t-shirt</p>
+                                </div>
+                            </a>
+                        </div>
+                    </figure>
+                    <figure class="col-lg-3 col-md-3 col-sm-4 col-xs-6 portfolio__items" data-tags="VIDEO">
+                        <div class="portfolio__grid-wrapper">
+                            <img src="img/portfolio__3.jpg" alt="recent work" class="portfolio__grid-pic">
+                            <a class="portfolio__grid-link" href="#">
+                                <div class="portfolio__content">
+                                    <h3 class="portfolio__text-work">T-SHIRT DESIGN</h3>
+                                    <p class="portfolio__text-category">art / t-shirt</p>
+                                </div>
+                            </a>
+                        </div>
+                    </figure>
+                    <figure class="col-lg-3 col-md-3 col-sm-4 col-xs-6 portfolio__items" data-tags="WEB DESIGN">
+                        <div class="portfolio__grid-wrapper">
+                            <img src="img/portfolio__4.jpg" alt="recent work" class="portfolio__grid-pic">
+                            <a class="portfolio__grid-link" href="#">
+                                <div class="portfolio__content">
+                                    <h3 class="portfolio__text-work">T-SHIRT DESIGN</h3>
+                                    <p class="portfolio__text-category">art / t-shirt</p>
+                                </div>
+                            </a>
+                        </div>
+                    </figure>
+                    <figure class="col-lg-3 col-md-3 col-sm-4 col-xs-6 portfolio__items" data-tags="PHOTOGRAPHY">
+                        <div class="portfolio__grid-wrapper">
+                            <img src="img/portfolio__5.jpg" alt="recent work" class="portfolio__grid-pic">
+                            <a class="portfolio__grid-link" href="#">
+                                <div class="portfolio__content">
+                                    <h3 class="portfolio__text-work">T-SHIRT DESIGN</h3>
+                                    <p class="portfolio__text-category">art / t-shirt</p>
+                                </div>
+                            </a>
+                        </div>
+                    </figure>
+                    <figure class="col-lg-3 col-md-3 col-sm-4 col-xs-6 portfolio__items" data-tags="ART">
+                        <div class="portfolio__grid-wrapper">
+                            <img src="img/portfolio__6.jpg" alt="recent work" class="portfolio__grid-pic">
+                            <a class="portfolio__grid-link" href="#">
+                                <div class="portfolio__content">
+                                    <h3 class="portfolio__text-work">T-SHIRT DESIGN</h3>
+                                    <p class="portfolio__text-category">art / t-shirt</p>
+                                </div>
+                            </a>
+                        </div>
+                    </figure>
+                    <figure class="col-lg-3 col-md-3 col-sm-4 col-xs-6 portfolio__items" data-tags="ANIMATION">
+                        <div class="portfolio__grid-wrapper">
+                            <img src="img/portfolio__7.jpg" alt="recent work" class="portfolio__grid-pic">
+                            <a class="portfolio__grid-link" href="#">
+                                <div class="portfolio__content">
+                                    <h3 class="portfolio__text-work">T-SHIRT DESIGN</h3>
+                                    <p class="portfolio__text-category">art / t-shirt</p>
+                                </div>
+                            </a>
+                        </div>
+                    </figure> 
+                    <figure class="col-lg-3 col-md-3 col-sm-4 col-xs-6 portfolio__items" data-tags="PRINT_DESIGN">
+                        <div class="portfolio__grid-wrapper">
+                            <img src="img/portfolio__8.jpg" alt="recent work" class="portfolio__grid-pic">
+                            <a class="portfolio__grid-link" href="#">
+                                <div class="portfolio__content">
+                                    <h3 class="portfolio__text-work">T-SHIRT DESIGN</h3>
+                                    <p class="portfolio__text-category">art / t-shirt</p>
+                                </div>
+                            </a>
+                        </div>
+                    </figure>                                               
                 </div>
             </div>
         </div>
@@ -668,10 +654,11 @@
     <!-- figure*12>a[href=img/photo/$.jpg]>img[src=img/photo/$.jpg][alt='photo'] -->
 
 
-<link rel="stylesheet" href="css/font-awesome.min.css">
-<link rel="stylesheet" href="css/main.css">
-<link rel="stylesheet" href="css/media.css">
-<script src="js/script.min.js"></script> 
-<script src="js/script.js"></script>  
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/media.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>  
+    <script src="js/script.min.js"></script> 
+    <script src="js/script.js"></script>  
 </body>
 </html>

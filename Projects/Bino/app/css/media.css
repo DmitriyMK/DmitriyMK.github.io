@@ -20,7 +20,9 @@
     border-top: 1px dotted #fff;
     border-bottom: 1px dotted #fff; }
   .services .services__container-left {
-    padding-right: 90px; }
+    padding-right: 90px; } }
+
+@media only screen and (max-width: 980px) {
   .price .ratePlan__rate {
     left: 17%; } }
 
@@ -37,7 +39,7 @@
     margin: auto;
     padding-bottom: 20px; }
   .price .ratePlan__rate {
-    left: 20%;
+    left: 19%;
     top: 60%;
     height: 125px;
     width: 125px; }
@@ -58,6 +60,10 @@
     text-align: center; }
     .footer .copyright__text {
       text-align: center; } }
+
+@media only screen and (max-width: 767px) {
+  .price .ratePlan__rate {
+    left: 40%; } }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
