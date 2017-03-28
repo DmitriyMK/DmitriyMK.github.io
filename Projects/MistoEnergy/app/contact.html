@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Mysto Energy</title>
+	<meta name="description" content=""/>
+	<meta name="keywords" content=""/>
+	<meta name="author" content="alchimic" />		
+	<link rel="shortcut icon" href="img/favicon.ico">	
+	<link rel="stylesheet" href="css/main.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Handlee" rel="stylesheet">
+</head>
+<body>
+	<div id="preloader">
+		<i></i>
+	</div>
+	<header>
+		<div class="container">
+			<div class="row header__logo">
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+					<a href="index.html"><img src="img/logo.png" class="header__logo-img" title="Misto Energy" alt="Misto Energy"></a>	
+					<h1 class="header__logo-text"><span>Misto </span> Energy</h1>
+				</div>
+			</div>		
+		</div>
+	</header>	
+	<div class="menu__wrapper">
+		<div class="container ">
+			<div class="row">
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+					<nav class="nav-bar" id="nav">
+						<ul class="menu">
+							<li class="menu__item"><a class="menu__item-link" href="index.html">Главная</a></li>
+							<li class="menu__item"><a class="menu__item-link" href="company.html">О компании</a></li>
+							<li class="menu__item"><a class="menu__item-link" href="solutions.html">Решения</a></li>
+							<li class="menu__item"><a class="menu__item-link" href="services.html">Услуги</a></li>
+							<li class="menu__item"><a class="menu__item-link active" href="contact.html">Контакты</a></li>
+						</ul>
+					</nav>		
+				</div> 
+			</div>
+		</div>
+	</div> 
+
+	<div class="contact">
+		<div class="container">
+			<div class="row">
+				<h3 class="section__title">наши контакты:</h3>
+				<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+					<h3 class="form__title">СВЯЖИТЕСЬ С НАШИМ КОНСУЛЬТАНТОМ:</h3>
+					<ul class="contact__list">
+						<li class="contact__list-item offer__text"><p class="icon-mobile"><a href="tel:+380955667968" >+38(095)566-79-68</a></p></li>
+						<li class="contact__list-item offer__text"><p class="icon-skype"><a href="#">SKYPE</a></p></li>
+						<li class="contact__list-item offer__text"><p class="icon-facebook-rect-1"><a href="#">Група шо надо</a></p></li>
+						<li class="contact__list-item offer__text"><p class="icon-mail"><a href="mailto:energylab@ukr.net">support@mistoenergy.com.ua</a></p></li>
+					</ul>
+				</div>
+				<div class="col-lg-8 col-md-6 col-sm-12 col-xs-12 googleMapWrapper">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2539.011727393535!2d30.438111315304898!3d50.478125393252!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cdba702553f1%3A0xbf53daa144bdfdae!2z0LLRg9C70LjRhtGPINCa0L7RgtC-0LLRgdGM0LrQvtCz0L4sIDExLCDQmtC40ZfQsg!5e0!3m2!1sru!2sua!4v1488236084281" allowfullscreen></iframe>
+				</div>				
+			</div>
+
+			<form id="feedback-form" class="callme">
+				<h3 class="form__title">ОТПРАВЬТЕ НАМ СВОЙ ВОПРОС И НАШИ СПЕЦИАЛИСТЫ ОТВЕТЯТ ВАМ В КРАТЧАЙШИЕ СРОКИ:</h3>
+				<input class="feedback__form-line" type="text" name="name" placeholder="Ваше имя" required>
+				<input class="feedback__form-line" type="email" name="email" id="email" placeholder="Ваш Email" required>
+				<textarea class="textarea__group" name="message" id="message" cols="5" rows="5">Ваш вопрос</textarea>
+				<button class="button__contact" type="submit">Отправить вопрос</button>
+			</form>
+
+			<script>
+				document.getElementById('feedback-form').addEventListener('submit', function(evt){
+					var http = new XMLHttpRequest(), f = this;
+					evt.preventDefault();
+					http.open("POST", "js/mail.php", true);
+					http.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+					http.send("name=" + f.name.value + "&email=" + f.email.value + "&message=" + f.message.value);
+					http.onreadystatechange = function() {
+						if (http.readyState == 4 && http.status == 200) {
+							alert(http.responseText + ', Ваше сообщение получено.\nНаши специалисты ответят Вам в близжайшее время.\nБлагодарим за интерес к нашей фирме!');    
+							f.message.removeAttribute('value'); 
+							f.message.value='';
+						}
+						
+						http.onerror = function() {
+							alert('Извините, данные не были переданы');
+						}
+					}, false);
+				</script>
+			</div>
+		</div>
+		<footer class="footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+						<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+							<a href="index.html"><img src="img/logo.png" class="footer__logo-img" title="Misto Energy" alt="Misto Energy"></a>			
+						</div>				
+						<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+							<p class="icon-mobile"><a href="tel:+380955667968" >+38(095)566-79-68</a></p>				
+						</div>
+						<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+							<p class="icon-mail"><a href="mailto:energylab@ukr.net">energylab@ukr.net</a></p>			
+						</div>	
+						<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+							<address class="icon-location">м. Київ, 04060, вул. Котовского,11</address>			
+						</div>									
+					</div>
+				</div>
+			</div>
+		</footer>
+		<script src="js/script.min.js"></script>		
+	</body>
+	</html>
