@@ -5824,14 +5824,14 @@ a {
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
   z-index: 100; }
-  .scrollToTop .icon {
+  .scrollToTop .icon-arrow-up2:before {
     display: inline-block;
     width: 2rem;
     height: 2rem;
     stroke-width: 0;
     stroke: red;
     fill: #645d58; }
-    .scrollToTop .icon:hover {
+    .scrollToTop .icon-arrow-up2:before:hover {
       fill: #fff;
       -webkit-transition: all 0.4s ease;
       transition: all 0.4s ease;

@@ -1137,7 +1137,7 @@ a {
 	background: rgba(112,105,100, 0.4);
 	@include transition(all 0.4s ease);
 	z-index: 100;
-	.icon {
+	.icon-arrow-up2:before {
 		display: inline-block;
 		width: 2rem;
 		height: 2rem;
