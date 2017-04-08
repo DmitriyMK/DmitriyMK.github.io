@@ -23,6 +23,7 @@ a:focus,
 a:hover,
 a:active {
 	text-decoration: none;
+	outline: none;
 }
 *:hover {
 	-webkit-transition: all 0.3s;
@@ -100,6 +101,11 @@ a:active {
 			overflow: hidden;
 			.nav__icon {
 				display: none;
+				.icon-menu {
+					width: 1em;
+					height: 1em;
+					fill: $orange;
+				}
 			}
 			.nav__list-item {
 				float: left;
