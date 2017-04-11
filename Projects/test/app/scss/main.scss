@@ -1,4 +1,5 @@
 @import "_reset.scss";
+@import "_fonts.scss";
 @import "_vars.scss";
 @import "_carousel.scss";
 @import "bourbon";
@@ -189,7 +190,7 @@ a:active {
 	text-transform: uppercase;
 	.question__text {
 		width: 70%;
-		font-family: 'Lato Bold';
+		font-family:'LatoBold';
 		font-size: em(30);
 		line-height: 30px;
 		font-weight: bold;
@@ -215,13 +216,13 @@ a:active {
 	.expectation__title {
 		font-size: em(72);
 		.expectation__title-attention {
-			font-family:"Open Sans Extrabold";
+			font-family:"OpenSansExtraBold";
 		}
 	}
 	.expectation__text {
 		padding-top: 30px;
 		width: 70%;
-		font-family: "Open Sans Light";
+		font-family: "OpenSansLight";
 		font-size: em(22);
 	}
 
@@ -246,17 +247,17 @@ a:active {
 				font-size: em(30);
 				line-height: em(30);
 				color: #03a9f4;
-				font-family:"Open Sans Extrabold";
+				font-family:"OpenSansExtraBold";
 			}
 			.grid__item-title2 {
 				font-size: em(18);
 				line-height: em(24);
 				font-weight: bold;
-				font-family:"Open Sans Bold";
+				font-family:"OpenSansBold";
 			}
 			.grid__item-text {
 				font-size: em(14);
-				font-family:"Open Sans Light";		
+				font-family:"OpenSansLight";		
 			}
 			.grid__item-link {
 				display: inline-block;
@@ -264,7 +265,7 @@ a:active {
 				padding: 10px 20px;
 				font-size: em(15);
 				line-height: 21px;
-				font-family:"Open Sans Regular";	
+				font-family:"OpenSansRegular";	
 				text-transform: uppercase;
 				background: $orange;
 				border: 2px solid $orange;		
