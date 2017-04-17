@@ -55,12 +55,12 @@ a {
 	font-size: rem(36);
 	font-weight: bold;
 }
-/* search by filter js */
 [data-toggle='on'] {
-	display:inline-block;
+  display:grid;
 }
+
 [data-toggle='off'] {
-	display:none;
+  display:none;
 }
 .link {
 	display: inline-block;

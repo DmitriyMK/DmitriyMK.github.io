@@ -1,0 +1,112 @@
+@import "_vars.scss";
+@import "bourbon";
+
+/*==========  Desktop First  ==========*/
+@media only screen and (min-width : 1200px) {
+	.grid-sizer,
+	.grid-item {
+		width: 18%;
+	}
+} 
+/* Large Devices, Wide Screens */
+/* @media only screen and (max-width : 1200px) {
+
+}  */
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 1018px) {
+	.button__container {
+		top: 7%;
+	}
+	.logo__text--top {	
+		font-size: 30px;
+		line-height: 30px;
+	}
+	.logo__text--bottom {
+		font-size: 20px;
+	}
+}
+
+/* @media only screen and (max-width : 993px) {
+
+	.socialNetworks__list {
+		text-align: center;
+	}
+
+}  */
+@media only screen and (max-width : 992px) {
+	.top-header {
+		display: inline-block;
+		text-align: center;
+		line-height: 0;
+	}
+	.header__logo--link {
+		float: none;
+		text-align: center;
+	}
+	.header__logo--pic {
+		width: 80px;
+		height: 80px;
+	}
+	.socialNetworks__list {
+		margin-top: 10px;
+		text-align: center;
+	}
+
+} 
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+	.portfolio__list-btn{
+		font-size: 20px;
+	}
+	.grid-sizer,
+	.grid-item {
+		width: 31%;
+	}
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px) {
+	.logo__text--top {	
+		font-size: 26px;
+	}
+	.logo__text--bottom {
+		font-size: 18px;
+	}
+.socialNetworks__list {
+	.socialNetworks__list-item {
+		.icons {
+			width: 40px;
+			height: 40px;
+		}
+	}
+}
+.portfolio__list-btn {
+    font-size: 18px;
+	}
+	.grid-sizer,
+	.grid-item {
+		width: 48%;
+	}
+
+}
+
+@media only screen and (max-width: 480px) {
+	.carousel {
+		display: none;
+	}
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width: 320px)  {
+	html {
+		-webkit-text-size-adjust: none;
+	}
+	.grid-sizer,
+	.grid-item {
+		width: 100%;
+		margin-left: 0%;
+		margin-right: 0%;
+		margin-bottom: 2%;
+	}
+}
