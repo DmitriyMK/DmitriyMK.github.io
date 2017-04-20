@@ -2,7 +2,6 @@
 @import "_bootstrap-grid.min.scss";
 @import "_carousel.scss";
 @import "_vars.scss";
-@import "_animate.scss";
 @import "lightcase.scss";
 @import "bourbon";
 //Custom Styles Here//
@@ -309,9 +308,9 @@ a:active {
 	padding: 0;
 	background-color: rgba(24, 27, 31, 0.4);
 }
-.carousel-caption span {
-	font-size: 1.4rem;
-	color: red;
+.carousel-caption--text {
+	font-size: 1.3rem;
+	letter-spacing: 1.8px;
 }
 .carousel-caption--name {
 	display: inline-block;

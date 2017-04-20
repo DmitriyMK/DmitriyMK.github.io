@@ -19,9 +19,11 @@ $(window).on('resize', function() {
 });
 
 $('.carousel').carousel({
-  interval: 10000,
+  interval: 100000,
   pause: "false"
 });
+
+
 
 /*MENU*/
 $('#toggle').click(function() {
@@ -44,6 +46,7 @@ $(function() {
   });
 });
 
+/*POPUP SLIDER-GALLERY*/
 $('a[data-rel^=lightcase]').lightcase({
   swipe: true
 });
