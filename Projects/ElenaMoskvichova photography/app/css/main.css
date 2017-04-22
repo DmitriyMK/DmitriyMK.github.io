@@ -2838,8 +2838,8 @@ body {
   min-width: 320px;
   position: relative;
   overflow-x: hidden;
-  font-family: "SourceSansProRegular";
-  font-size: 0.875rem;
+  font-family: "HattoriHanzoLight";
+  font-size: 1rem;
   line-height: normal;
   color: #999;
   word-wrap: break-word;
@@ -3278,6 +3278,20 @@ a:active {
   transform: translateY(0px);
   -webkit-transition-delay: 0.3s;
   transition-delay: 0.3s; }
+
+.aboutME__article {
+  text-align: justify;
+  line-height: 22px;
+  font-size: 1.125rem; }
+  .aboutME__article .aboutME__article-text {
+    padding: 5px 0; }
+  .aboutME__article .aboutME__listTitle {
+    font-weight: bold;
+    text-transform: uppercase; }
+  .aboutME__article .aboutMe__list {
+    padding: 5px 0;
+    list-style: square;
+    padding-left: 20px; }
 
 /* ALWAYS END */
 /* @import "media.scss";  */

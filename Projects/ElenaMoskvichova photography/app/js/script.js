@@ -47,8 +47,8 @@ $(function() {
 });
 
 /*POPUP SLIDER-GALLERY*/
-$('a[data-rel^=lightcase]').lightcase({
-  swipe: true
+jQuery(document).ready(function($) {
+  $('a[data-rel^=lightcase]').lightcase();
 });
 
 /*PRELOADER*/

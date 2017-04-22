@@ -473,5 +473,23 @@ a:active {
 	transition-delay: 0.3s;
 }
 
+.aboutME__article {
+	text-align: justify;
+	line-height: 22px;
+	font-size: rem(18);
+	.aboutME__article-text {
+		padding: 5px 0;
+	}
+	.aboutME__listTitle {
+		font-weight: bold;
+		text-transform: uppercase;
+	}
+	.aboutMe__list {
+		padding: 5px 0;
+		list-style: square;
+		padding-left: 20px;
+	}
+}
+
 /* ALWAYS END */
 /* @import "media.scss";  */
