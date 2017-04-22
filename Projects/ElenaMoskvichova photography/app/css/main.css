@@ -3486,6 +3486,10 @@ a:active {
   .aboutME__article .aboutME__article-picture {
     float: left;
     padding-right: 1%; }
+    .aboutME__article .aboutME__article-picture::after {
+      clear: both;
+      content: "";
+      display: table; }
     .aboutME__article .aboutME__article-picture img {
       width: 500px; }
   .aboutME__article .aboutME__article-text {
@@ -3494,7 +3498,7 @@ a:active {
     font-weight: bold;
     text-transform: uppercase; }
   .aboutME__article .aboutMe__list {
-    padding: 5px;
+    padding: 15px;
     list-style: square;
     padding-left: 20px; }
 
