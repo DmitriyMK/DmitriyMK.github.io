@@ -6,7 +6,7 @@
 	.grid-sizer,
 	.grid-item {
 		width: 18%;
-	}
+	} 
 } 
 /* Large Devices, Wide Screens */
 /* @media only screen and (max-width : 1200px) {
@@ -15,6 +15,9 @@
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 1018px) {
+	body {
+		font-size: rem(14);
+	}
 	.button__container {
 		top: 7%;
 	}
@@ -36,6 +39,7 @@
 }  */
 @media only screen and (max-width : 992px) {
 	.top-header {
+		padding-top: 20px;
 		display: inline-block;
 		text-align: center;
 		line-height: 0;
@@ -52,6 +56,9 @@
 		margin-top: 10px;
 		text-align: center;
 	}
+	.hovereffect .info {
+		margin: 30px 0 30px 0;
+	}
 
 } 
 /* Small Devices, Tablets */
@@ -63,6 +70,13 @@
 	.grid-item {
 		width: 31%;
 	}
+	.aboutME__article {
+		.aboutME__article-picture {
+			img {
+				width: 400px;
+			}
+		}
+	}
 }
 
 /* Extra Small Devices, Phones */
@@ -73,20 +87,28 @@
 	.logo__text--bottom {
 		font-size: 18px;
 	}
-.socialNetworks__list {
-	.socialNetworks__list-item {
-		.icons {
-			width: 40px;
-			height: 40px;
+	.socialNetworks__list {
+		.socialNetworks__list-item {
+			.icons {
+				width: 40px;
+				height: 40px;
+			}
 		}
 	}
-}
-.portfolio__list-btn {
-    font-size: 18px;
+	.portfolio__list-btn {
+		font-size: 18px;
 	}
 	.grid-sizer,
 	.grid-item {
 		width: 48%;
+	}
+	.aboutME__article {
+		.aboutME__article-picture {
+			float: none;
+			img {
+				width: 100%;
+			}
+		}
 	}
 
 }
