@@ -30,13 +30,6 @@
 	}
 }
 
-/* @media only screen and (max-width : 993px) {
-
-	.socialNetworks__list {
-		text-align: center;
-	}
-
-}  */
 @media only screen and (max-width : 992px) {
 	.top-header {
 		padding-top: 20px;
@@ -58,6 +51,13 @@
 	}
 	.hovereffect .info {
 		margin: 30px 0 30px 0;
+	}
+
+} 
+
+@media only screen and (max-width : 840px) {
+	.hovereffect .info {
+		margin: 15px 0 30px 0;
 	}
 
 } 
@@ -101,6 +101,10 @@
 	.grid-sizer,
 	.grid-item {
 		width: 48%;
+	}
+	.hovereffect .info {
+		padding: 3px 10px;
+		margin: 10px 0 30px 0;
 	}
 	.aboutME__article {
 		.aboutME__article-picture {

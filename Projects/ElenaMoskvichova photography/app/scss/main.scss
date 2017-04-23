@@ -363,6 +363,9 @@ a:active {
 		color: $red;
 	}
 }
+.scale-anm {
+  transform: scale(1);
+}
 .grid {
 	max-width: 100%;
 } 
@@ -461,7 +464,6 @@ a:active {
 	-ms-transform: translate(0px, 0px);
 	transform: translate(0px, 0px);
 }
-
 .hovereffect:hover .carousel-caption--name {
 	-webkit-transform: translateY(0px);
 	-ms-transform: translateY(0px);
@@ -469,7 +471,6 @@ a:active {
 	-webkit-transition-delay: 0.5s;
 	transition-delay: 0.5s;
 }
-
 .hovereffect:hover .info {
 	-webkit-transform: translateY(0px);
 	-ms-transform: translateY(0px);
@@ -489,8 +490,6 @@ a:active {
 		}
 	}
 }
-
-
 .aboutME__article {
 	padding: 10px;
 	text-align: justify;

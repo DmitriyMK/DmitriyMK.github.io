@@ -3358,6 +3358,11 @@ a:active {
   .portfolio__list-btn:hover {
     color: #FF5252; }
 
+.scale-anm {
+  -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+          transform: scale(1); }
+
 .grid {
   max-width: 100%; }
 
