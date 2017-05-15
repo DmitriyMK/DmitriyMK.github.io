@@ -3024,14 +3024,14 @@ body {
   min-width: 320px;
   position: relative;
   overflow-x: hidden;
-  font-family: "HattoriHanzoLight";
+  font-family: "HattoriHanzoLight", serif;
   font-size: 0.875rem;
   line-height: normal;
   color: #999;
   word-wrap: break-word;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  background: url(../img/subtle_white_feathers.png); }
+  background: url(../img/subtle_white_feathers.jpg); }
 
 a {
   color: inherit;

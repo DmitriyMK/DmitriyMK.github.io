@@ -54,25 +54,6 @@ $(function() {
 });
 
 
-
-
-
-/*$(function() {
-  var selectedClass = "";
-  $(".fil-cat").click(function() {
-    selectedClass = $(this).attr("data-rel");
-    $("#grid").fadeTo(100, 0.1);
-    $("#grid figure").not("." + selectedClass).fadeOut().removeClass('scale-anm');
-    setTimeout(function() {
-      $("." + selectedClass).fadeIn().addClass('scale-anm');
-      $("#grid").fadeTo(100, 1);
-    }, 300);
-
-  });
-});*/
-
-
-
 /*POPUP SLIDER-GALLERY*/
 jQuery(document).ready(function($) {
   $('a[data-rel^=lightcase]').lightcase();
