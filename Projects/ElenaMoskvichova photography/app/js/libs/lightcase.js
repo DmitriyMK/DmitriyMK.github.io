@@ -57,8 +57,10 @@
 				speedOut: 250,
 				width: null,
 				height: null,
-				maxWidth: 800,
-				maxHeight: 500,
+/*				maxWidth: 800,
+				maxHeight: 500,*/
+				maxWidth: 1200,
+				maxHeight: 720,
 				forceWidth: false,
 				forceHeight: false,
 				liveResize: true,
@@ -94,8 +96,10 @@
 					data: {}
 				},
 				iframe: {
-					width: 800,
-					height: 500,
+/*					width: 800,
+					height: 500,*/
+					width: 1200,
+					height: 720,					
 					frameborder: 0
 				},
 				flash: {

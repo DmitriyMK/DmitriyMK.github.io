@@ -23,8 +23,6 @@ $('.carousel').carousel({
 	pause: "false"
 });
 
-
-
 /*MENU*/
 $('#toggle').click(function() {
 	$(this).toggleClass('active');
@@ -52,7 +50,6 @@ $(function() {
 
 	});
 });
-
 
 /*POPUP SLIDER-GALLERY*/
 jQuery(document).ready(function($) {

@@ -61,6 +61,8 @@
   .socialNetworks__list .socialNetworks__list-item .icons {
     width: 40px;
     height: 40px; }
+  .carousel {
+    display: none; }
   .portfolio__list-btn {
     font-size: 18px; }
   .grid-sizer,
@@ -73,10 +75,6 @@
     float: none; }
     .aboutME__article .aboutME__article-picture img {
       width: 100%; } }
-
-@media only screen and (max-width: 480px) {
-  .carousel {
-    display: none; } }
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 320px) {

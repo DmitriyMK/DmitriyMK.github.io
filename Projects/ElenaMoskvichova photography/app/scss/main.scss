@@ -478,6 +478,11 @@ a:active {
 	-webkit-transition-delay: 0.3s;
 	transition-delay: 0.3s;
 }
+.lightcase-contentInner,  .lightcase-contentInner img {
+	max-width: 1200px;
+	max-height: 100%;
+}
+
 .footer {
 	background: rgba(0, 0, 0, 0.03);
 	padding: 15px 0;

@@ -95,6 +95,9 @@
 			}
 		}
 	}
+	.carousel {
+		display: none;
+	}
 	.portfolio__list-btn {
 		font-size: 18px;
 	}
@@ -115,12 +118,6 @@
 		}
 	}
 
-}
-
-@media only screen and (max-width: 480px) {
-	.carousel {
-		display: none;
-	}
 }
 
 /* Custom, iPhone Retina */
