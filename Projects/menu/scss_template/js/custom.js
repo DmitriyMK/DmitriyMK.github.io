@@ -121,7 +121,18 @@ $('.slider').slick({
 $(function() {
     $('.sub-item').hover(function() {
         $('.infoblock__sublist', this).slideDown(500);
-    }, function() {
+    }, function() {infoblock__cart
         $('.infoblock__sublist', this).slideUp(500);
     });
 });
+
+if($(window).innerWidth() <= 767) {
+
+$( ".head__search" ).insertAfter( ".infoblock__list");
+$( ".infoblock__home" ).insertAfter( ".infoblock__list");
+$( ".head__contact" ).insertAfter( ".head__search");
+$( ".infoblock__cart" ).insertAfter( ".head__contact");
+
+
+} 
+
