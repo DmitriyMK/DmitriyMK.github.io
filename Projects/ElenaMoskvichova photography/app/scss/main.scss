@@ -1,9 +1,11 @@
-@import "_reset.scss";
-@import "_bootstrap-grid.min.scss";
-@import "_carousel.scss";
-@import "_vars.scss";
-@import "_fontello.scss";
-@import "lightcase.scss";
+@import "_reset";
+@import "_fonts";
+@import "_bootstrap-grid.min";
+@import "_carousel";
+@import "_vars";
+@import "_fontello";
+@import "_lightcase";
+@import "_media";
 @import "bourbon";
 //Custom Styles Here//
 
@@ -79,6 +81,7 @@ a:active {
 	height: 100px;
 }
 .Logo__text {
+	font-family: "P";
 	margin: 0;
 }
 .logo__text--top {	
@@ -87,6 +90,7 @@ a:active {
 }
 .logo__text--bottom {
 	font-size: 24px;
+	line-height: 10px;
 	color: #987744;
 }
 .socialNetworks__list {
@@ -311,6 +315,7 @@ a:active {
 }
 .carousel-caption--text {
 	font-size: 1.3rem;
+	font-family: "GunnyRewrittenRegular";
 	letter-spacing: 1.8px;
 }
 .carousel-caption--name {
@@ -351,6 +356,7 @@ a:active {
 	text-align: center;
 }
 .portfolio__list-btn{
+	font-family: $fontFamily;
 	display: inline-block;
 	background: transparent;
 	border: none;
@@ -451,6 +457,9 @@ a:active {
 	transform: translateY(-100px);
 	-webkit-transition: all 0.2s ease-in-out;
 	transition: all 0.2s ease-in-out;
+}
+.hovereffect .heightBig .info {
+	margin: 50% 0;
 }
 .hovereffect a.info:hover {
 	box-shadow: 0 0 5px #fff;
