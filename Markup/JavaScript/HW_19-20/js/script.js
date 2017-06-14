@@ -24,6 +24,8 @@
 
 })(jQuery);
 
+
+
 $(function () {
 
     $('.accordion__header').click(function (e) {

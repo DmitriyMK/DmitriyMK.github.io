@@ -1,30 +1,26 @@
 @font-face {
     font-family: "GunnyRewrittenRegular";
-    src: url('../fonts/GunnyRewrittenRegular/gunny-rewritten.regular-webfont.woff2') format('woff2'),
-         url('../fonts/GunnyRewrittenRegular/gunny-rewritten.regular-webfont.woff') format('woff'),
-         url('../fonts/GunnyRewrittenRegular/gunny-rewritten.regular-webfont.ttf') format('truetype'),
-         url('../fonts/GunnyRewrittenRegular/gunny-rewritten.regular-webfont.svg#gunny_rewrittenregular') format('svg');
+    src: url('../fonts/GunnyRewrittenRegular/GunnyRewrittenRegular.woff') format('woff'),
+         url('../fonts/GunnyRewrittenRegular/GunnyRewrittenRegular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
+
 @font-face {
     font-family: "HattoriHanzoLight";
-    src: url('../fonts/HattoriHanzoLight/Hattori_Hanzo-webfont.eot');
-    src: url('../fonts/HattoriHanzoLight/Hattori_Hanzo-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/HattoriHanzoLight/Hattori_Hanzo-webfont.woff') format('woff'),
-         url('../fonts/HattoriHanzoLight/Hattori_Hanzo-webfont.ttf') format('truetype'),
-         url('../fonts/HattoriHanzoLight/Hattori_Hanzo-webfont.svg#hattori_hanzolight') format('svg');
+    src: url('../fonts/HattoriHanzoLight/HattoriHanzoLight.eot');
+    src: url('../fonts/HattoriHanzoLight/HattoriHanzoLight.woff') format('woff'),
+         url('../fonts/HattoriHanzoLight/HattoriHanzoLight.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "HattoriHanzoLightItalic";
-    src: url('../fonts/HattoriHanzoLightItalic/Hattori_Hanzo_Italic-webfont.eot');
-    src: url('../fonts/HattoriHanzoLightItalic/Hattori_Hanzo_Italic-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/HattoriHanzoLightItalic/Hattori_Hanzo_Italic-webfont.woff') format('woff'),
-         url('../fonts/HattoriHanzoLightItalic/Hattori_Hanzo_Italic-webfont.svg#hattori_hanzolight_italic') format('svg');
+    src: url('../fonts/HattoriHanzoLightItalic/HattoriHanzoLightItalic.eot');
+    src: url('../fonts/HattoriHanzoLightItalic/HattoriHanzoLightItalic.woff') format('woff'),
+         url('../fonts/HattoriHanzoLightItalic/HattoriHanzoLightItalic.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
