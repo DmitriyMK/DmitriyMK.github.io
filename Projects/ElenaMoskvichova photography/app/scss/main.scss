@@ -680,13 +680,14 @@ a:active {
 /* END Price SECTIONS */
 /*  PAGES CONTACTS */
 
-.section__title {
-	padding: 40px 0;
-	&:before, &:after  {
-		display: none;
-	}
-}
+
 .feedback {
+	.section__title {
+		padding: 40px 0;
+		&:before, &:after  {
+			display: none;
+		}
+	}
 	.feedback__col {
 		padding-bottom: 100px;
 		&-title {

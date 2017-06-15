@@ -3861,9 +3861,9 @@ a:active {
 
 /* END Price SECTIONS */
 /*  PAGES CONTACTS */
-.section__title {
+.feedback .section__title {
   padding: 40px 0; }
-  .section__title:before, .section__title:after {
+  .feedback .section__title:before, .feedback .section__title:after {
     display: none; }
 
 .feedback .feedback__col {
