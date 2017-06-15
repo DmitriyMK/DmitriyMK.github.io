@@ -3746,33 +3746,34 @@ a:active {
     font-size: 1.25rem;
     padding: 6px 0;
     color: #000; }
-  .price .section__title {
-    position: relative;
-    font-size: 1.5rem;
-    font-weight: bold;
-    text-align: center;
-    text-transform: uppercase;
-    z-index: 2; }
-    .price .section__title:before {
-      position: absolute;
-      top: 10px;
-      right: 30%;
-      bottom: 4px;
-      height: 2px;
-      width: 10%;
-      background: gray;
-      content: "";
-      display: inline-block; }
-    .price .section__title:after {
-      position: absolute;
-      top: 10px;
-      left: 30%;
-      bottom: 4px;
-      height: 2px;
-      width: 10%;
-      background: gray;
-      content: "";
-      display: inline-block; }
+
+.section__title {
+  position: relative;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  z-index: 2; }
+  .section__title:before {
+    position: absolute;
+    top: 10px;
+    right: 30%;
+    bottom: 4px;
+    height: 2px;
+    width: 10%;
+    background: gray;
+    content: "";
+    display: inline-block; }
+  .section__title:after {
+    position: absolute;
+    top: 10px;
+    left: 30%;
+    bottom: 4px;
+    height: 2px;
+    width: 10%;
+    background: gray;
+    content: "";
+    display: inline-block; }
 
 /* ACCORDION */
 .accordions {
@@ -3782,7 +3783,7 @@ a:active {
   display: block;
   transition: 0.5s;
   -webkit-transition: 0.5s;
-  background: #f4b60d; }
+  background: rgba(244, 182, 13, 0.3); }
 
 .accordion__pointer {
   float: left;
@@ -3837,12 +3838,13 @@ a:active {
   font-size: 1.125rem;
   line-height: 1.5;
   color: #000;
-  background: #f4b60d; }
+  background: rgba(244, 182, 13, 0.3); }
   .accordion-body__article-text {
     padding: 6px 0; }
   .accordion-body__article .list {
     padding-bottom: 0;
-    padding-left: 0; }
+    padding-left: 0;
+    background: transparent; }
     .accordion-body__article .list-item:before {
       font-family: 'fontello';
       content: '\e818';
@@ -3858,6 +3860,111 @@ a:active {
   display: block; }
 
 /* END Price SECTIONS */
+/*  PAGES CONTACTS */
+.section__title {
+  padding: 40px 0; }
+  .section__title:before, .section__title:after {
+    display: none; }
+
+.feedback .feedback__col {
+  padding-bottom: 100px;
+  /* Firefox 19+ */ }
+  .feedback .feedback__col-title {
+    padding-bottom: 30px;
+    font-family: "HattoriHanzoLight", serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #00beca;
+    text-transform: uppercase; }
+  .feedback .feedback__col .feedback__col-contact {
+    padding: 15%;
+    height: 600px;
+    text-align: left;
+    background: rgba(255, 255, 255, 0.4);
+    -webkit-transition: all 0.6s ease;
+    transition: all 0.6s ease;
+    -webkit-box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.75); }
+    .feedback .feedback__col .feedback__col-contact:hover {
+      -webkit-box-shadow: none;
+      box-shadow: none; }
+    .feedback .feedback__col .feedback__col-contact .contact__list-item {
+      font-size: 1.25rem;
+      line-height: 1.5;
+      padding-top: 5%;
+      -webkit-transition: all 0.3s ease;
+      transition: all 0.3s ease; }
+      .feedback .feedback__col .feedback__col-contact .contact__list-item:hover {
+        color: #00beca;
+        -webkit-transition: all 0.3s ease;
+        transition: all 0.3s ease; }
+  .feedback .feedback__col .feedback__form {
+    padding-top: 13%;
+    height: 600px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.4);
+    -webkit-transition: all 0.6s ease;
+    transition: all 0.6s ease;
+    -webkit-box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.75); }
+    .feedback .feedback__col .feedback__form:hover {
+      -webkit-box-shadow: none;
+      box-shadow: none; }
+  .feedback .feedback__col .feedback__form-line {
+    display: inline-block;
+    margin: 0 auto;
+    width: 70%;
+    border: none;
+    border-bottom: 1px solid #999;
+    height: 50px;
+    outline: none;
+    background: transparent;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease; }
+    .feedback .feedback__col .feedback__form-line:hover {
+      border-bottom: 1px solid #FF5252; }
+  .feedback .feedback__col .textarea__group {
+    display: block;
+    margin: 0 auto;
+    width: 70%;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    line-height: 24px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #999;
+    background: transparent;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease; }
+    .feedback .feedback__col .textarea__group:hover {
+      border-bottom: 1px solid #FF5252; }
+  .feedback .feedback__col ::-webkit-input-placeholder {
+    font-size: 1.25rem;
+    line-height: 1.5;
+    color: #999; }
+  .feedback .feedback__col ::-moz-placeholder {
+    font-size: 1.25rem;
+    line-height: 1.5;
+    color: #999; }
+  .feedback .feedback__col .feedback__form-button {
+    display: inline-block;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 40px;
+    width: 150px;
+    background: #FF5252;
+    color: #fff;
+    -webkit-border-radius: 5px;
+            border-radius: 5px;
+    -webkit-box-shadow: 1px 1px 6px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 1px 1px 6px 0px rgba(0, 0, 0, 0.75);
+    text-transform: uppercase; }
+    .feedback .feedback__col .feedback__form-button:hover {
+      -webkit-box-shadow: none;
+      box-shadow: none; }
+
 /* ALWAYS END */
 /*==========  Desktop First  ==========*/
 /* Medium Devices, Desktops */
@@ -3941,7 +4048,13 @@ a:active {
 
 @media only screen and (max-width: 400px) {
   .hovereffect .carousel-caption--name {
-    display: none; } }
+    display: none; }
+  .feedback .feedback__col .feedback__col-contact {
+    padding: 3%;
+    height: 500px; }
+  .feedback .feedback__col .feedback__form {
+    padding-top: 13%;
+    height: 500px; } }
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 320px) {

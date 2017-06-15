@@ -128,8 +128,19 @@
 	.hovereffect .carousel-caption--name {
 		display: none;
 	}
+	.feedback {
+		.feedback__col {
+			.feedback__col-contact {
+				padding: 3%;
+				height: 500px;
+			}
+			.feedback__form {
+				padding-top: 13%;
+				height: 500px;
+			}
+		}
+	}
 }
-
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 320px)  {
 	html {
