@@ -29,8 +29,6 @@ $(document).ready(function() {
 		owl.trigger('next.owl.carousel');
 	})
 	$('.owl-prev').click(function() {
-		// With optional speed parameter
-		// Parameters has to be in square bracket '[]'
 		owl.trigger('prev.owl.carousel', [700]);
 	});
 
