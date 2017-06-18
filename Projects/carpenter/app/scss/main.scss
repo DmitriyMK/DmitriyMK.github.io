@@ -1,0 +1,154 @@
+@import "_reset";
+@import "bootstrap.min";
+@import "_fonts";
+@import "_vars";
+
+
+body {
+
+	min-width: 320px;
+	margin: 0 auto;
+	font-family: $fontFamily;
+	font-size: $fontSize;
+	line-height: 1.75;
+	overflow-x: hidden;
+	box-sizing: border-box;	
+}
+
+*::-webkit-input-placeholder{
+	color: #666;
+	opacity: 1;
+}
+*:-moz-placeholder{
+	color: #666;
+	opacity: 1;
+}
+*::-moz-placeholder{
+	color: #666;
+	opacity: 1;
+}
+*:-ms-input-placeholder{
+	color: #666;
+	opacity: 1;
+}
+body input:focus:required:invalid,
+body textarea:focus:required:invalid {
+	color: #666;
+}
+body input:required:valid,
+body textarea:required:valid{
+	color: #666;
+}
+
+.section__title {
+	margin: 40px 0;
+	font-size: 24px;
+	font-weight: bold;
+	letter-spacing: 1.5px;
+	text-transform: uppercase;
+}
+/* HEADER  */
+
+.header {
+	position: relative;
+	min-height: 660px;
+	max-width: 100%;
+	background-size: cover;
+	background-position: center;
+	color: #fff;
+	&:before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;	
+		background-color: rgba(#000, .6);
+	}
+}
+.header__top {
+	padding-top: 20px;
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	.logo {
+		flex: 1;
+	}
+	h1 {
+		color: $yellow;
+		font-size: 40px;
+		font-weight: bold;
+	}
+}
+.navigation__list {
+	&-item {
+		display: inline-block;
+		padding-left: 10px;
+		list-style-type: none;
+	}
+	&-link {
+		color: $yellow;
+		text-transform: uppercase;
+		@include transition(color .3s ease);	
+		&:hover {
+			color: #fff;
+		}
+	}
+}
+.header__text {
+	padding-top: 20%;
+	position: relative;
+	text-align: right;
+	font-size: 36px;
+	color: $yellow;
+	text-transform: uppercase;
+}
+.header__button, .button {
+	position: relative;
+	float: right;
+	margin-top: 15px;
+	padding: 6px 25px;
+	border: 1px solid $lightGreen;
+	background: $lightGreen;
+	font-weight: bold;
+	text-transform: uppercase;
+	@include transition(background-color .3s ease);	
+	&:hover {
+		background: transparent;
+	}
+}
+/* END HEADER */
+/* ADVANTAGES*/
+.advantages {
+
+	&__list {
+		-webkit-column-count:2;  
+		-moz-column-count:2;  
+		column-count:2; 
+		column-gap: 30px;  
+		list-style-type: none;
+	}
+	&__item {
+		position: relative;
+		padding-left: 30px;
+		&:before {
+			position: absolute;
+			content: '';
+			top: 4px;
+			left: 0;
+			width: 24px;
+			height: 20px;
+			background: url(../img/icons.png);
+		}
+	}
+	&__button {
+		margin-top: 40px;
+		float: left;
+	}
+}
+/*END ADVANTAGES*/
+
+
+
+/* @import "media.scss"; */
