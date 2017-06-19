@@ -2,10 +2,9 @@
 @import "bootstrap.min";
 @import "_fonts";
 @import "_vars";
-
+@import "_fotorama";
 
 body {
-
 	min-width: 320px;
 	margin: 0 auto;
 	font-family: $fontFamily;
@@ -39,18 +38,25 @@ body input:required:valid,
 body textarea:required:valid{
 	color: #666;
 }
-
+section {
+	padding: 40px 0 60px 0;
+	border: 1px solid $green;
+}
 .section__title {
-	margin: 40px 0;
-	font-size: 24px;
+	display: inline-block;
+	margin-top: 40px;
+	margin-bottom: 20px;
+	font-size: 1.5rem;
 	font-weight: bold;
-	letter-spacing: 1.5px;
+	letter-spacing: 2px;
 	text-transform: uppercase;
+
 }
 /* HEADER  */
 
 .header {
 	position: relative;
+	height: 100vh;
 	min-height: 660px;
 	max-width: 100%;
 	background-size: cover;
@@ -77,7 +83,7 @@ body textarea:required:valid{
 	}
 	h1 {
 		color: $yellow;
-		font-size: 40px;
+		font-size: 2.5rem;
 		font-weight: bold;
 	}
 }
@@ -100,7 +106,7 @@ body textarea:required:valid{
 	padding-top: 20%;
 	position: relative;
 	text-align: right;
-	font-size: 36px;
+	font-size: 2rem;
 	color: $yellow;
 	text-transform: uppercase;
 }
@@ -118,18 +124,17 @@ body textarea:required:valid{
 		background: transparent;
 	}
 }
-/* END HEADER */
-/* ADVANTAGES*/
 .advantages {
-
+	background: #fafaf6;
 	&__list {
-		-webkit-column-count:2;  
-		-moz-column-count:2;  
-		column-count:2; 
-		column-gap: 30px;  
+/* 		-webkit-column-count:2;  
+-moz-column-count:2;  
+column-count:2; 
+column-gap: 2em;   */
 		list-style-type: none;
 	}
 	&__item {
+
 		position: relative;
 		padding-left: 30px;
 		&:before {
@@ -147,7 +152,142 @@ body textarea:required:valid{
 		float: left;
 	}
 }
-/*END ADVANTAGES*/
+.portfolio {
+	background: #f6f6f6;
+}
+.portfolio__text {
+	font-size: 1.1rem;
+	padding-top: 10px;
+}
+.school {
+	background-size: cover;
+	background-position: left;
+	min-height: 660px;
+	color: $yellow;
+	position: relative;
+	&:before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;	
+		background-color: rgba(#000, .6);
+	}
+}
+
+.feedback {
+	text-align: center;
+	.section__title {
+		padding: 40px 0;
+		&:before, &:after  {
+			display: none;
+		}
+	}
+	.feedback__col {
+		padding-bottom: 100px;
+		&-title {
+			padding-bottom: 30px;
+			font-size: rem(24);
+			font-weight: bold;
+
+			text-transform: uppercase;
+		}
+		.feedback__col-contact {
+			padding: 15%;
+			height: 600px;
+			text-align: left;
+			background: rgba(255,255,255, .4);
+			@include transition(all 0.6s ease);	
+			-webkit-box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.75);
+			-moz-box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.75);
+			box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.75); 
+			.contact__list-item {
+				font-size: rem(20);
+				line-height: 1.5;
+				padding-top: 5%;
+				@include transition(all 0.3s ease);	
+				&:hover {
+					color: $green;
+					@include transition(all 0.3s ease);	
+				}
+			}
+		}
+		.feedback__form {
+			padding-top: 13%;
+			height: 600px;
+			text-align: center;	
+			background: rgba(255,255,255, .4);
+			@include transition(all 0.6s ease);	
+			-webkit-box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.75);
+			-moz-box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.75);
+			box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.75); 
+
+		} 
+		.feedback__form-line {
+			display: inline-block;
+			margin: 0 auto;
+			width: 70%;
+			border: none;
+			border-bottom: 1px solid $green;
+			height: 50px;
+			outline: none;
+			background: transparent;
+			@include transition(all 0.2s ease);		
+			&:hover {
+				border-bottom: 1px solid $red;	
+			}
+		}
+		.textarea__group {
+			display: block;
+			margin: 0 auto;
+			width: 70%;
+			margin-top: 20px;
+			margin-bottom: 50px;
+			line-height: 24px;
+			outline: none ;  
+			border: none;
+			border-bottom: 1px solid $green;
+			background: transparent;
+			font-size: rem(20);
+			line-height: 1.5;
+			@include transition(all 0.2s ease);
+			&:hover {
+				border-bottom: 1px solid $red;	
+			}
+		}
+		::-webkit-input-placeholder {
+			font-size: rem(20);
+			line-height: 1.5;
+			color: $green;	
+		}
+		::-moz-placeholder {
+			font-size: rem(20);
+			line-height: 1.5;
+			color: $green;	
+		} /* Firefox 19+ */
+
+		.feedback__form-button {
+			display: inline-block;
+			padding-top: 10px;
+			padding-bottom: 10px;
+			margin-bottom: 40px;
+			width: 150px;			
+			background: $red;
+			color: #fff;
+			border-radius: 5px;
+			-webkit-box-shadow: 1px 1px 6px 0px rgba(0,0,0,0.75);
+			-moz-box-shadow: 1px 1px 6px 0px rgba(0,0,0,0.75);
+			box-shadow: 1px 1px 6px 0px rgba(0,0,0,0.75);
+			text-transform: uppercase;
+			&:hover {
+				-webkit-box-shadow: none;
+				-moz-box-shadow: none;
+				box-shadow: none;				
+			}
+		} 
+	}
+}
 
 
 
