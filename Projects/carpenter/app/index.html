@@ -9,15 +9,19 @@
 	<meta name="keywords" content=""/>
 	<link rel="shortcut icon" href="img/favicon.ico">
 	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/media.css">
 </head>
 <body>
-	<header class="header" style="background-image: url(img/background.jpg);">
-		<div class="container">
+    <div id="preloader">
+        <i class="loader"></i>
+    </div>
+	<header class="header" id="header" style="background-image: url(img/background.jpg);">
+		<div class="container-fluid">
 			<div class="fixedTopMenu" id="fixedTopMenu">
 				<div class="row header__top">
 					<div class="logo">
 						<a class="logo__link" href="index.html">
-							<h1>Мастерская N</h1>
+							<h1>Мастерская</h1>
 						</a>
 					</div>
 					<nav class="navigation" id="navigation">
@@ -33,8 +37,8 @@
 					</nav>
 				</div> <!-- header-top -->
 			</div>
-			<h2 class="header__text">Двери, окна, столы, лестницы<br>под персональный проект<br> по лучшим ценам</h2>
-			<a class="header__button button" href="#advantage">узнать больше</a>
+				<h2 class="header__text">Двери, окна, лестницы<br>под персональный проект<br> по лучшим ценам</h2>
+				<a class="header__button button" href="#advantage">узнать больше</a>
 		</div><!-- container -->
 	</header>
 
@@ -46,12 +50,12 @@
 					<ul class="advantages__list">
 						<li class="advantages__item">Окажем грамотную консультацию;</li>
 						<li class="advantages__item">Произведем расчеты;</li>
-						<li class="advantages__item">Доставим.. ???;</li>
+						<li class="advantages__item">Доставим;</li>
 						<li class="advantages__item">Удивим скоростью и качеством работы;</li>
 						<li class="advantages__item">Гибкая система цен;</li>
 						<li class="advantages__item">Гарантируем качество;</li>
 					</ul>
-					<a class="advantages__button button" href="#">Оставить номер</a>
+					<a class="advantages__button button" href="#">Заказать сейчас</a>
 				</div>
 				<div class="col-lg-6">
 
@@ -63,13 +67,13 @@
 	<section class="portfolio" id="portfolio">
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-6">
+				<div class="col-lg-6 col-md-6">
 					<h3 class="portfolio__title section__title">наша мастерская:</h3>
 					<p class="portfolio__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto iste illum, provident debitis odio culpa ducimus doloribus facilis rem non, accusantium ea vitae voluptates, amet dolor ipsa doloremque nam quos.</p>
 					<p class="portfolio__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto iste illum, provident debitis odio culpa ducimus doloribus facilis rem non, accusantium ea vitae voluptates, amet dolor ipsa doloremque nam quos.</p>
 					<p class="portfolio__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto iste illum, provident debitis odio culpa ducimus doloribus facilis rem non, accusantium ea vitae voluptates, amet dolor ipsa doloremque nam quos.</p>
 				</div>
-				<div class="col-lg-6">
+				<div class="col-lg-6 col-md-6">
 					<div class="portfolio__gallery fotorama" data-nav="thumbs" data-thumbwidth="60" data-thumbheight="60" data-thumbmargin="5" data-thumbborderwidth="4">
 						<a href="img/photo/photo1.jpg"><img src="img/photo/thumb/photo1_sm.jpg"></a>
 						<a href="img/photo/photo2.jpg"><img src="img/photo/thumb/photo2_sm.JPG"></a>
@@ -84,15 +88,6 @@
 						<a href="img/photo/photo11.jpg"><img src="img/photo/thumb/photo11_sm.jpg"></a>
 						<a href="img/photo/photo12.JPG"><img src="img/photo/thumb/photo12_sm.JPG"></a>
 						<a href="img/photo/photo13.JPG"><img src="img/photo/thumb/photo13_sm.JPG"></a>
-						<a href="img/photo/photo14.JPG"><img src="img/photo/thumb/photo14_sm.JPG"></a>
-						<a href="img/photo/photo15.JPG"><img src="img/photo/thumb/photo15_sm.JPG"></a>
-						<a href="img/photo/photo16.JPG"><img src="img/photo/thumb/photo16_sm.JPG"></a>
-						<a href="img/photo/photo17.JPG"><img src="img/photo/thumb/photo17_sm.JPG"></a>
-						<a href="img/photo/photo18.JPG"><img src="img/photo/thumb/photo18_sm.JPG"></a>
-						<a href="img/photo/photo19.JPG"><img src="img/photo/thumb/photo19_sm.JPG"></a>
-						<a href="img/photo/photo20.jpg"><img src="img/photo/thumb/photo20_sm.jpg"></a>
-						<a href="img/photo/photo21.JPG"><img src="img/photo/thumb/photo21_sm.JPG"></a>
-						<a href="img/photo/photo22.JPG"><img src="img/photo/thumb/photo22_sm.JPG"></a>
 					</div>
 				</div>
 
@@ -108,8 +103,11 @@
 				</div>
 				<div class="col-lg-6">
 					<h3 class="school__title section__title">Набор учеников<br> в нашу мастерскую</h3>
-					<p>Мастерская оборудована верстаками собственного производства и позволяет комфортно заниматься 10-ти ученикам. Стены мастерской оформлены обучающими плакатами и дополнены собранием старинных инструментов. Формируется учебная библиотека. Преподаватели нашей столярной школы - опытные мастера совмещающие обучение с практикой. В перерывах между обучением – чай, кофе, на это отведён специальный уголок.</p>
-					<p></p>
+					<p>Хочешь научиться столярному делу?<br>
+					Любишь создавать качественные изделия из дерева? </p>
+					<p>В таком случае обращайтесь в нашу мастерскую. Мы предлагаем нашым ученикам возможности профессионального развития, оказываем всяческую всесторонную поддержку для того чтобы стать настоящими мастерами своего дела.</p>
+					<p>Детали по телефону: __________</p>	
+					
 				</div>
 			</div>
 		</div>
@@ -125,12 +123,12 @@
 					<div class="feedback__col-contact">
 						<h5 class="feedback__col-title">Как нас найти:</h5>
 						<ul class="feedback__col-list contact__list">
-							<li class="contact__list-item offer__text"><p class="icon-phone"><a href="tel:+380669011963" >nomero</a></p></li>
-							<li class="contact__list-item offer__text"><p class="icon-phone"><a href="tel:+380669011963" >nomero</a></p></li>
-							<li class="contact__list-item offer__text"><p class="icon-phone"><a href="tel:+380669011963" >nomero</a></p></li>
-							<li class="contact__list-item offer__text"><p class="icon-phone"><a href="tel:+380669011963" >nomero</a></p></li>
-							<li class="contact__list-item offer__text"><p class="icon-phone"><a href="tel:+380669011963" >nomero</a></p></li>
-							<li class="contact__list-item offer__text"><p class="icon-mail"><a href="mailto:camilla-89@i.ua">email</a></p></li>
+							<li class="contact__list-item offer__text"><p class="icon-phone"><a href="tel:+380506407039" >8 (050) 640 70 39</a></p></li>
+							<li class="contact__list-item offer__text"><p class="icon-phone"><a href="tel:+380962848240" >8 (096) 284 82 40</a></p></li>
+							<li class="contact__list-item offer__text"><p class="icon-phone"><a href="tel:+380660012901" >8 (066) 001 29 01</a></p></li>
+							<li class="contact__list-item offer__text"><p class="icon-phone"><a href="tel:+380979706694" >8 (097) 970 66 94</a></p></li>
+							<li class="contact__list-item offer__text"><p class="icon-phone"><a href="tel:+380506407930">8 (050) 640 79 30</a></p></li>
+							<li class="contact__list-item offer__text"><p class="icon-mail"><a href="mailto:tatyanak2006@ukr.ne">tatyanak2006@ukr.net</a></p></li>
 						</ul>
 					</div>
 				</div>
@@ -140,7 +138,7 @@
 						<form action="" method="" id="post">
 							<input class="feedback__form-line" type="text" name="name" placeholder="Имя" required>
 							<input class="feedback__form-line" type="email" name="email" placeholder="Email" required>
-							<textarea class="textarea__group" name="message" id="message" cols="5" rows="5">Ваше сообщение</textarea>
+							<textarea class="textarea__group" name="message" id="message" cols="5" rows="5"></textarea>
 							<input type="submit" class="feedback__form-button" value="Отправить">
 						</form>
 					</div>
@@ -151,15 +149,20 @@
 			</div>
 		</div>
 	</section>
+
 	<footer class="footer">
 		<div class="container">
 			<div class="row">
-			<p>FINAL LINES - END SITE</p>
+				<p>FINAL LINES - END SITE</p>
 			</div>
 		</div>
 	</footer>
 
-
+    <div class="scrollToTop" id="scrollToTop">
+        <a href="#header">
+        <i class="icon-up icon"></i>
+        </a>
+    </div>
 	
 	<script src="js/script.min.js"></script> 
 	<script src="js/script.js"></script> 
