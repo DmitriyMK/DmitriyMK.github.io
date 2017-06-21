@@ -42,12 +42,8 @@ $(document).ready(function(){
 	});
 });
 
-$(document).ready(function(){
-  $('.fotorama').fotorama();
-});
-
-
 
 $(window).on('load', function() {
 	$('#preloader').delay(1000).fadeOut('slow');
+	$('.fotorama').fotorama();
 });
