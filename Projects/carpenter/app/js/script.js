@@ -1,8 +1,3 @@
-$(window).load(function() {
-	$('#preloader').find('i').fadeOut().end().delay(100).fadeOut('slow');
-});
-
-
 $(document).ready(function() {
 	/*RESPONSIVER BURGER MENU*/
 	$(".burger").click(function() {
@@ -45,4 +40,14 @@ $(document).ready(function(){
 		var d = $(this).attr('data-href') ? $(this).attr('data-href') : $(this).attr('href');
 		$('html,body').stop().animate({ scrollTop: $(d).offset().top }, t);
 	});
+});
+
+$(document).ready(function(){
+  $('.fotorama').fotorama();
+});
+
+
+
+$(window).on('load', function() {
+	$('#preloader').delay(1000).fadeOut('slow');
 });
