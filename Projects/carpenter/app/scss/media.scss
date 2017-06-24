@@ -6,9 +6,24 @@
 	body {
 		font-size: 17px;
 	}
+	.advantages {
+		&__item {
+			width: 70%;
+			margin-left: 70px;
+			&:nth-child(2n) {
+				margin-left: 70px;
+			}
+			&:before {
+				padding: 0 20px;
+				top: -8px;
+				left: -45px;
+				font-size: 50px;
+				transform: skewX(-30deg);
+			}
+		}
+	}  
 
-}  
-
+}
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
 
@@ -18,6 +33,7 @@
 	.header {
 		padding-top: 0;
 	}
+
 	/* BURGER */
 	.navigation {
 		float: none;
@@ -135,43 +151,98 @@
 		top: 0;
 	}
 
-.header__text {
-	padding-top: 25vh;
-	padding-bottom: 1%;
-	margin-right: 0;
-	text-align: center;
-	font-size: 1.8rem;
-	color: $yellow;
-	text-transform: uppercase;
-}
-.header__button {
-	display: block;
-	width: 50%;
-	margin: 0 auto;
-	text-align: center;
-	position: relative;
-	float: none;
-	margin-right: auto;
-}
+	.header__text {
+		padding-top: 25vh;
+		padding-bottom: 1%;
+		margin-right: 0;
+		text-align: center;
+		font-size: 1.8rem;
+		color: $yellow;
+		text-transform: uppercase;
+	}
+	.header__button {
+		display: block;
+		width: 50%;
+		margin: 0 auto;
+		text-align: center;
+		position: relative;
+		float: none;
+		margin-right: auto;
+	}
+	.advantages {
+		&__item {
+			width: 90%;
+			margin-left: 20px;
+			transform: skewX(0);
+			&:nth-child(2n) {
+				margin-left: 20px;
+			}
+			&:before {
+				padding: 0;
+				top: 40px;
+				left: -15px;
+				border-radius: 0;
+				font-size: 2.5rem;
+				transform: skewX(0);
+			}
+			&-text {
+				div {
+					transform: skewX(0);
+				}	
+				&:before {
+					-webkit-transform: skew(0deg);
+					-moz-transform: skew(0deg);
+					-o-transform: skew(0deg);
+				}
 
+				.advantages__item-detail {
+					transform: skewX(0);
+					p {
+						transform: skewX(0);	
+					}
+				}
+			}
+
+		}
+	}
 }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
 
-.header__text {
-	font-size: 1.5rem;
-}
-.logo {
-	margin-left: 15px;
-	&__link {
+	.header__text {
 		font-size: 1.5rem;
-		line-height: 50px;
 	}
-}
-.header__button {
-	width: 70%;
-}
+	.logo {
+		margin-left: 15px;
+		&__link {
+			font-size: 1.5rem;
+			line-height: 50px;
+		}
+	}
+	.header__button {
+		width: 70%;
+	}
+	.advantages {
+		&__item {
+			&-text {
+				&:before {
+					display: none;
+				}
+				.advantages__item-title {
+					margin-left: 15%;
+					font-size: 1.3rem;
+				}
+				.advantages__item-detail {
+					p {
+						margin-left: 15%;
+					}
+				}
+			}
+		}
+	}
+
+
 }
 
 

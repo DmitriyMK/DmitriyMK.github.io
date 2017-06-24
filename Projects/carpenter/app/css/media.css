@@ -2,7 +2,20 @@
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px) {
   body {
-    font-size: 17px; } }
+    font-size: 17px; }
+  .advantages__item {
+    width: 70%;
+    margin-left: 70px; }
+    .advantages__item:nth-child(2n) {
+      margin-left: 70px; }
+    .advantages__item:before {
+      padding: 0 20px;
+      top: -8px;
+      left: -45px;
+      font-size: 50px;
+      -webkit-transform: skewX(-30deg);
+          -ms-transform: skewX(-30deg);
+              transform: skewX(-30deg); } }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
@@ -116,7 +129,41 @@
     text-align: center;
     position: relative;
     float: none;
-    margin-right: auto; } }
+    margin-right: auto; }
+  .advantages__item {
+    width: 90%;
+    margin-left: 20px;
+    -webkit-transform: skewX(0);
+        -ms-transform: skewX(0);
+            transform: skewX(0); }
+    .advantages__item:nth-child(2n) {
+      margin-left: 20px; }
+    .advantages__item:before {
+      padding: 0;
+      top: 40px;
+      left: -15px;
+      -webkit-border-radius: 0;
+              border-radius: 0;
+      font-size: 2.5rem;
+      -webkit-transform: skewX(0);
+          -ms-transform: skewX(0);
+              transform: skewX(0); }
+    .advantages__item-text div {
+      -webkit-transform: skewX(0);
+          -ms-transform: skewX(0);
+              transform: skewX(0); }
+    .advantages__item-text:before {
+      -webkit-transform: skew(0deg);
+      -moz-transform: skew(0deg);
+      -o-transform: skew(0deg); }
+    .advantages__item-text .advantages__item-detail {
+      -webkit-transform: skewX(0);
+          -ms-transform: skewX(0);
+              transform: skewX(0); }
+      .advantages__item-text .advantages__item-detail p {
+        -webkit-transform: skewX(0);
+            -ms-transform: skewX(0);
+                transform: skewX(0); } }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
@@ -128,6 +175,13 @@
       font-size: 1.5rem;
       line-height: 50px; }
   .header__button {
-    width: 70%; } }
+    width: 70%; }
+  .advantages__item-text:before {
+    display: none; }
+  .advantages__item-text .advantages__item-title {
+    margin-left: 15%;
+    font-size: 1.3rem; }
+  .advantages__item-text .advantages__item-detail p {
+    margin-left: 15%; } }
 
 /* Custom, iPhone Retina */
