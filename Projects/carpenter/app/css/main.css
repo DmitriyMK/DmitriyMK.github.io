@@ -1833,6 +1833,7 @@ section {
 
 /* PORTFOLIO */
 .portfolio {
+  padding-bottom: 40px;
   background: #f6f6f6;
   text-align: center; }
 
@@ -1840,6 +1841,12 @@ section {
   position: relative;
   padding-top: 40px;
   margin: 0 auto; }
+  .grid .col-lg-4,
+  .grid .col-md-4,
+  .grid .col-sm-6,
+  .grid .col-xs-12,
+  .grid figure {
+    padding: 0 !important; }
 
 .portfolio__effect {
   position: relative;
@@ -1852,7 +1859,8 @@ section {
   max-height: 360px;
   background: #000;
   text-align: center;
-  cursor: pointer; }
+  cursor: pointer;
+  margin: 0 auto; }
 
 .portfolio__effect img {
   position: relative;
@@ -2286,6 +2294,7 @@ section {
                 transform: skewX(0); }
   .portfolio__effect {
     float: none;
+    display: inline-block;
     margin: 0 auto;
     margin-bottom: 20px; } }
 
