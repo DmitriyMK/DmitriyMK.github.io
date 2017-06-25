@@ -18,7 +18,10 @@
 		padding-bottom: 30px;
 	}
 }
-
+img {
+	width: 100%;
+	height: auto;
+}
 .fotorama {
 	display: inline-block;
 	width: 100%;
@@ -50,16 +53,16 @@
 	right: -1px;
 }
 .fotorama__arr--next::before, .fotorama__arr--prev::before {
-	font-family: fontawesome;
-	font-size: 4rem;
+	font-family: "fontello";
+	font-size: 3rem;
 	color: $orange;
 }
 .fotorama__arr--next::before {
-	content: "\f105";
+	content: "\e801";
 }
 .fotorama__arr--prev {
 	left: 25px;
 }
 .fotorama__arr--prev::before {
-	content: "\f104";
+	content: "\e800";
 }
