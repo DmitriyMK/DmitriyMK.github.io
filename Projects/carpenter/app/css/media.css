@@ -116,11 +116,11 @@
     top: 0; }
   .header__text {
     padding-top: 25vh;
-    padding-bottom: 1%;
+    padding-bottom: 2%;
     margin-right: 0;
     text-align: center;
     font-size: 1.8rem;
-    color: #eb9309;
+    letter-spacing: 0;
     text-transform: uppercase; }
   .header__button {
     display: block;
