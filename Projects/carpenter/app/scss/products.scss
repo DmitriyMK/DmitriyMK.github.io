@@ -21,13 +21,10 @@
 
 .fotorama {
 	display: inline-block;
+	width: 100%;
 	margin: 0 auto;
 	padding-top: 15px;
 	background-color: transparent;
-	img {
-		max-width: 100%;
-		height: auto;
-	}
 }
 
 .fotorama__nav-wrap {
