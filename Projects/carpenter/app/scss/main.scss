@@ -141,7 +141,7 @@ section {
 		color: $white;
 		padding-bottom: 20px;
 		&:hover{
-			color: $lightGreen;
+			color: $orange;
 		}
 		&:before { 
 			display: block;
@@ -149,7 +149,7 @@ section {
 			content: "";
 			height: 2px;
 			width: 0;
-			background-color: $lightGreen;
+			background-color: $orange;
 			@include transition(all 0.4s ease);
 			left: 50%;
 			bottom: 0;
@@ -164,7 +164,7 @@ section {
 			content: "";
 			height: 2px;
 			width: 0;
-			background-color: $lightGreen;
+			background-color: $orange;
 			@include transition(all 0.4s ease);
 			left: 50%;
 			bottom: 0;			
@@ -337,44 +337,46 @@ section {
 
 .grid {
 	position: relative;
+	padding-top: 40px;
 	margin: 0 auto;
-
 }
 
 /* Common style */
-.grid figure {
+.portfolio__effect {
 	position: relative;
 	float: left;
 	overflow: hidden;
 	margin: 10px 0;
+	padding: 0;
 	min-width: 320px;
 	max-width: 480px;
 	max-height: 360px;
-	background: #f6f6f6;
+	background: #000;
 	text-align: center;
 	cursor: pointer;
 }
-
-.grid figure img {
+.portfolio__effect img {
 	position: relative;
 	display: block;
 	min-height: 100%;
 	max-width: 100%;
-	opacity: 0.5;
+	opacity: 0.4;
+	height: 390px;
 }
 
-.grid figure figcaption {
+.portfolio__effect figcaption {
 	padding: 2em;
 	color: #fff;
 	text-transform: uppercase;
 	font-size: 1.5rem;
+	font-weight: bold;
 	-webkit-backface-visibility: hidden;
 	backface-visibility: hidden;
 }
 
 
-.grid figure figcaption,
-.grid figure figcaption > a {
+.portfolio__effect figcaption,
+.portfolio__effect figcaption > a {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -384,7 +386,7 @@ section {
 
 /* Anchor will cover the whole item by default */
 /* For some effects it will show as a button */
-.grid figure figcaption > a {
+.portfolio__effect figcaption > a {
 	z-index: 1000;
 	text-indent: 200%;
 	white-space: nowrap;
@@ -392,34 +394,19 @@ section {
 	opacity: 0;
 }
 
-.grid figure p {
+.portfolio__effect p {
 	font-size: 1.2rem;
 }
 
-/*---------------*/
-/***** Layla *****/
-/*---------------*/
 
-figure.effect-layla {
-	background: #000;
-}
-
-figure.effect-layla img {
-	height: 390px;
-}
-
-figure.effect-layla figcaption {
-	padding: 3em;
-}
-
-figure.effect-layla figcaption::before,
-figure.effect-layla figcaption::after {
+.portfolio__effect figcaption::before,
+.portfolio__effect figcaption::after {
 	position: absolute;
 	content: '';
 	opacity: 0;
 }
 
-figure.effect-layla figcaption::before {
+.portfolio__effect figcaption::before {
 	top: 50px;
 	right: 30px;
 	bottom: 50px;
@@ -432,7 +419,7 @@ figure.effect-layla figcaption::before {
 	transform-origin: 0 0;
 }
 
-figure.effect-layla figcaption::after {
+.portfolio__effect figcaption::after {
 	top: 30px;
 	right: 50px;
 	bottom: 30px;
@@ -445,13 +432,13 @@ figure.effect-layla figcaption::after {
 	transform-origin: 100% 0;
 }
 
-figure.effect-layla h2 {
+.portfolio__effect h2 {
 	padding-top: 26%;
 	-webkit-transition: -webkit-transform 0.35s;
 	transition: transform 0.35s;
 }
 
-figure.effect-layla p {
+.portfolio__effect p {
 	padding: 0.5em 2em;
 	text-transform: none;
 	opacity: 0;
@@ -459,44 +446,44 @@ figure.effect-layla p {
 	transform: translate3d(0,-10px,0);
 }
 
-figure.effect-layla img,
-figure.effect-layla h2 {
+.portfolio__effect img,
+.portfolio__effect h2 {
 	-webkit-transform: translate3d(0,-30px,0);
 	transform: translate3d(0,-30px,0);
 }
 
-figure.effect-layla img,
-figure.effect-layla figcaption::before,
-figure.effect-layla figcaption::after,
-figure.effect-layla p {
+.portfolio__effect img,
+.portfolio__effect figcaption::before,
+.portfolio__effect figcaption::after,
+.portfolio__effect p {
 	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
 	transition: opacity 0.35s, transform 0.35s;
 }
 
-figure.effect-layla:hover img {
-	opacity: 0.9;
+.portfolio__effect:hover img {
+	opacity: 0.65;
 	-webkit-transform: translate3d(0,0,0);
 	transform: translate3d(0,0,0);
 }
 
-figure.effect-layla:hover figcaption::before,
-figure.effect-layla:hover figcaption::after {
+.portfolio__effect:hover figcaption::before,
+.portfolio__effect:hover figcaption::after {
 	opacity: 1;
 	-webkit-transform: scale(1);
 	transform: scale(1);
 }
 
-figure.effect-layla:hover h2,
-figure.effect-layla:hover p {
+.portfolio__effect:hover h2,
+.portfolio__effect:hover p {
 	opacity: 1;
 	-webkit-transform: translate3d(0,0,0);
 	transform: translate3d(0,0,0);
 }
 
-figure.effect-layla:hover figcaption::after,
-figure.effect-layla:hover h2,
-figure.effect-layla:hover p,
-figure.effect-layla:hover img {
+.portfolio__effect:hover figcaption::after,
+.portfolio__effect:hover h2,
+.portfolio__effect:hover p,
+.portfolio__effect:hover img {
 	-webkit-transition-delay: 0.15s;
 	transition-delay: 0.15s;
 }
@@ -636,7 +623,7 @@ figure.effect-layla:hover img {
 		padding-bottom: 10px;
 		margin-bottom: 40px;
 		width: 150px;			
-		background: $red;
+		background: $orange;
 		color: #fff;
 		border-radius: 5px;
 		-webkit-box-shadow: 1px 1px 6px 0px rgba(0,0,0,0.75);
