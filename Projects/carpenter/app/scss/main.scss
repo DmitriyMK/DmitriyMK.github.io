@@ -319,29 +319,17 @@ section {
 		}
 	}
 }
-
-
+/* PORTFOLIO */
 .portfolio {
 	background: #f6f6f6;
 	text-align: center;
 }
-
-
-
-
-
-
-
-
-
-
 .grid {
 	position: relative;
 	padding-top: 40px;
 	margin: 0 auto;
 }
 
-/* Common style */
 .portfolio__effect {
 	position: relative;
 	float: left;
@@ -363,7 +351,6 @@ section {
 	opacity: 0.4;
 	height: 390px;
 }
-
 .portfolio__effect figcaption {
 	padding: 2em;
 	color: #fff;
@@ -373,8 +360,6 @@ section {
 	-webkit-backface-visibility: hidden;
 	backface-visibility: hidden;
 }
-
-
 .portfolio__effect figcaption,
 .portfolio__effect figcaption > a {
 	position: absolute;
@@ -383,7 +368,6 @@ section {
 	width: 100%;
 	height: 100%;
 }
-
 /* Anchor will cover the whole item by default */
 /* For some effects it will show as a button */
 .portfolio__effect figcaption > a {
@@ -393,19 +377,15 @@ section {
 	font-size: 0;
 	opacity: 0;
 }
-
 .portfolio__effect p {
 	font-size: 1.2rem;
 }
-
-
 .portfolio__effect figcaption::before,
 .portfolio__effect figcaption::after {
 	position: absolute;
 	content: '';
 	opacity: 0;
 }
-
 .portfolio__effect figcaption::before {
 	top: 50px;
 	right: 30px;
@@ -418,7 +398,6 @@ section {
 	-webkit-transform-origin: 0 0;
 	transform-origin: 0 0;
 }
-
 .portfolio__effect figcaption::after {
 	top: 30px;
 	right: 50px;
@@ -431,13 +410,11 @@ section {
 	-webkit-transform-origin: 100% 0;
 	transform-origin: 100% 0;
 }
-
 .portfolio__effect h2 {
 	padding-top: 26%;
 	-webkit-transition: -webkit-transform 0.35s;
 	transition: transform 0.35s;
 }
-
 .portfolio__effect p {
 	padding: 0.5em 2em;
 	text-transform: none;
@@ -445,13 +422,11 @@ section {
 	-webkit-transform: translate3d(0,-10px,0);
 	transform: translate3d(0,-10px,0);
 }
-
 .portfolio__effect img,
 .portfolio__effect h2 {
 	-webkit-transform: translate3d(0,-30px,0);
 	transform: translate3d(0,-30px,0);
 }
-
 .portfolio__effect img,
 .portfolio__effect figcaption::before,
 .portfolio__effect figcaption::after,
@@ -459,27 +434,23 @@ section {
 	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
 	transition: opacity 0.35s, transform 0.35s;
 }
-
 .portfolio__effect:hover img {
 	opacity: 0.65;
 	-webkit-transform: translate3d(0,0,0);
 	transform: translate3d(0,0,0);
 }
-
 .portfolio__effect:hover figcaption::before,
 .portfolio__effect:hover figcaption::after {
 	opacity: 1;
 	-webkit-transform: scale(1);
 	transform: scale(1);
 }
-
 .portfolio__effect:hover h2,
 .portfolio__effect:hover p {
 	opacity: 1;
 	-webkit-transform: translate3d(0,0,0);
 	transform: translate3d(0,0,0);
 }
-
 .portfolio__effect:hover figcaption::after,
 .portfolio__effect:hover h2,
 .portfolio__effect:hover p,
@@ -487,29 +458,14 @@ section {
 	-webkit-transition-delay: 0.15s;
 	transition-delay: 0.15s;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* END PORTFOLIO */
+/* CAREER */
 .school {
 	background-size: cover;
-	background-position: right;
+	background-position: 40% 20%;
 	min-height: 660px;
-	color: $white;
 	position: relative;
+	color: #fff;
 	&:before {
 		content: '';
 		position: absolute;
@@ -517,7 +473,7 @@ section {
 		left: 0;
 		width: 100%;
 		height: 100%;	
-		background-color: rgba(#000, .8);
+		background-color: rgba(#000, .7);
 	}
 	&__text {
 		font-size: 1.2rem;
@@ -528,7 +484,7 @@ section {
 		font-weight: bold;
 	}
 }
-
+/* END CAREER */
 .feedback {
 	text-align: center;
 	.section__title {

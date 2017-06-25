@@ -163,7 +163,11 @@
       .advantages__item-text .advantages__item-detail p {
         -webkit-transform: skewX(0);
             -ms-transform: skewX(0);
-                transform: skewX(0); } }
+                transform: skewX(0); }
+  .portfolio__effect {
+    float: none;
+    margin: 0 auto;
+    margin-bottom: 20px; } }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
