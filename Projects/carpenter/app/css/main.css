@@ -2016,8 +2016,15 @@ img {
   height: auto; }
 
 .fotorama {
-  display: inline-block;
-  width: auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
   height: auto;
   margin: 0 auto;
   padding-top: 15px;
