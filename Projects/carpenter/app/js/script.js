@@ -1,7 +1,5 @@
 $(document).ready(function() {
 
-	$('.fotorama').fotorama();
-
 	/*RESPONSIVER BURGER MENU*/
 	$(".burger").click(function() {
 		$(this).toggleClass('active');
@@ -47,7 +45,62 @@ $(document).ready(function(){
 });
 
 
+/*CAROUSEL*/
+$(document).ready(function() {
+
+	$(".owl-carousel").owlCarousel({
+		loop: true,
+		items: 3,
+		margin: 60,
+		center: true,
+		responsive: {
+			992: {
+				items: 2,
+				margin: 40
+			},
+			480: {
+				items: 1,
+				margin: 0
+			}
+		}
+	});
+
+	var owl = $('.owl-carousel');
+	owl.owlCarousel();
+
+	$('.owl-next').click(function() {
+		owl.trigger('next.owl.carousel');
+	})
+
+	$('.owl-prev').click(function() {
+		owl.trigger('prev.owl.carousel');
+	});
+
+
+});
+
+
+
+/*    $(".owl-carousel").owlCarousel({
+
+        center: true,
+        items: 2,
+
+        margin: 60,
+        responsive: {
+            480: {
+                items: 2,
+                margin: 40
+            },
+            320: {
+                items: 1,
+                margin: 0
+            }
+        }
+    });
+
+});*/
+
 $(window).on('load', function() {
 	$('#preloader').delay(100).fadeOut('slow');
-	$('.fotorama').fotorama();
 });
