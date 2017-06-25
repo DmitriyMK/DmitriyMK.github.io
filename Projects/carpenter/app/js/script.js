@@ -56,6 +56,9 @@ $(document).ready(function() {
 			992: {
 				items: 2
 			},
+			768: {
+				items: 1
+			},			
 			480: {
 				items: 1
 			},

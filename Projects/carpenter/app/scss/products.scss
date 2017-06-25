@@ -17,10 +17,15 @@
 .product__undertitle {
 	margin-bottom: 30px;
 }
+img {
+	max-width: 100%;
+	height: auto;
+}
 .owl-carousel {
 	position: relative;
 	.owl-item {
 		img {
+			max-width: 100%;
 			height: 600px;
 		}
 	}
