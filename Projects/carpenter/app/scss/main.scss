@@ -2,7 +2,6 @@
 @import "bootstrap.min";
 @import "_fonts";
 @import "_vars";
-@import "_fotorama";
 
 body {
 	min-width: 320px;
@@ -141,7 +140,7 @@ section {
 		color: $white;
 		padding-bottom: 20px;
 		&:hover{
-			color: $lightGreen;
+			color: $yellow;
 		}
 		&:before { 
 			display: block;
@@ -149,7 +148,7 @@ section {
 			content: "";
 			height: 2px;
 			width: 0;
-			background-color: $lightGreen;
+			background-color: $yellow;
 			@include transition(all 0.4s ease);
 			left: 50%;
 			bottom: 0;
@@ -164,7 +163,7 @@ section {
 			content: "";
 			height: 2px;
 			width: 0;
-			background-color: $lightGreen;
+			background-color: $yellow;
 			@include transition(all 0.4s ease);
 			left: 50%;
 			bottom: 0;			
@@ -330,7 +329,6 @@ section {
 	padding-top: 40px;
 	margin: 0 auto;
 }
-
 .portfolio__effect {
 	position: relative;
 	float: left;

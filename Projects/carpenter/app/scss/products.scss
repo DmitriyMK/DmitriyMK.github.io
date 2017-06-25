@@ -1,0 +1,25 @@
+@import "_reset";
+@import "bootstrap.min";
+@import "_fonts";
+@import "_vars";
+@import "_fotorama";
+
+.product__pages {
+	color: #fff;
+}
+.header__top {
+	background: rgba(112,105,100, 0.8);
+}
+.product {
+	text-align: center;
+	.fotorama {
+		display: inline-block;
+		margin: 0 auto;
+		padding-top: 15px;
+	}
+}
+.window {
+	.product__underttle {
+		padding-bottom: 30px;
+	}
+}
