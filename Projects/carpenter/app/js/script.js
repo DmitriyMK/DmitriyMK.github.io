@@ -1,4 +1,9 @@
 $(document).ready(function() {
+
+	$(function() {
+		$('.fotorama').fotorama();
+	});
+
 	/*RESPONSIVER BURGER MENU*/
 	$(".burger").click(function() {
 		$(this).toggleClass('active');
@@ -46,5 +51,5 @@ $(document).ready(function(){
 
 $(window).on('load', function() {
 	$('#preloader').delay(100).fadeOut('slow');
-/*	$('.fotorama').fotorama();*/
+
 });
