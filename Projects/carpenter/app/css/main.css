@@ -2306,6 +2306,10 @@ section {
     margin-left: 15%;
     font-size: 1.3rem; }
   .advantages__item-text .advantages__item-detail p {
-    margin-left: 15%; } }
+    margin-left: 15%; }
+  .owl-carousel .owl-item img {
+    height: auto; }
+  .owl-controls {
+    display: none; } }
 
 /* Custom, iPhone Retina */
