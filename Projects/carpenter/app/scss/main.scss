@@ -3,6 +3,7 @@
 @import "_fonts";
 @import "_vars";
 @import "_fotorama";
+@import "_products";
 
 body {
 	min-width: 320px;
@@ -609,4 +610,4 @@ section {
 }
 
 
-/* @import "media.scss"; */
+@import "media.scss"; 
