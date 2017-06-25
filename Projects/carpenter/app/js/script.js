@@ -25,6 +25,7 @@ jQuery(function($) {
 });
 
 /*BACK TO TOP SCROLL FOR MENU*/
+
 jQuery(function(f){
 	var element = f('#scrollToTop');
 	f(window).scroll(function(){
@@ -44,6 +45,6 @@ $(document).ready(function(){
 
 
 $(window).on('load', function() {
-	$('#preloader').delay(1000).fadeOut('slow');
+	$('#preloader').delay(100).fadeOut('slow');
 	$('.fotorama').fotorama();
 });
