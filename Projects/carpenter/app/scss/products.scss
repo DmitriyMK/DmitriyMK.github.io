@@ -19,12 +19,13 @@
 	}
 }
 img {
-	width: 100%;
+	max-width: 100%;
 	height: auto;
 }
 .fotorama {
 	display: inline-block;
-	width: 100%;
+	width: auto;
+	height: auto;
 	margin: 0 auto;
 	padding-top: 15px;
 	background-color: transparent;
