@@ -38,119 +38,123 @@ Large Devices, Wide Screens  */
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
+  .wrapper {
+    max-width: 768px;
+    overflow-x: hidden; }
   .header {
     padding: 10px;
+    padding-top: 20px;
     position: relative;
     height: 16%; }
-  #menuToggle input {
+  /* RESPONSIVE MENU */
+  .burger {
+    width: 52px;
+    height: 52px;
+    display: block;
+    -webkit-transition: all 0.6s ease-in-out;
+    -o-transition: all 0.6s ease-in-out;
+    transition: all 0.6s ease-in-out;
+    position: absolute;
+    top: 20px;
+    right: 0;
+    -webkit-transform: translate(-50%, 0);
+        -ms-transform: translate(-50%, 0);
+            transform: translate(-50%, 0); }
+  .burger i {
     display: block;
     width: 40px;
-    height: 32px;
-    position: absolute;
-    top: -7px;
-    left: -5px;
-    cursor: pointer;
-    opacity: 0;
-    /* hide this */
-    z-index: 2;
-    /* and place it over the hamburger */
-    -webkit-touch-callout: none; }
-  /*
- * Just a quick hamburger
- */
-  #menuToggle span {
-    display: block;
-    width: 33px;
-    height: 4px;
-    margin-bottom: 5px;
-    position: relative;
+    height: 2px;
     background: #be3136;
-    -webkit-border-radius: 3px;
-            border-radius: 3px;
-    z-index: 1;
-    -webkit-transform-origin: 4px 0px;
-        -ms-transform-origin: 4px 0px;
-            transform-origin: 4px 0px;
-    -webkit-transition: background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease, -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
-    transition: background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease, -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
-    -o-transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
-    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
-    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease, -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1); }
-  #menuToggle span:first-child {
-    -webkit-transform-origin: 0% 0%;
-        -ms-transform-origin: 0% 0%;
-            transform-origin: 0% 0%; }
-  #menuToggle span:nth-last-child(2) {
-    -webkit-transform-origin: 0% 100%;
-        -ms-transform-origin: 0% 100%;
-            transform-origin: 0% 100%; }
-  /* 
- * Transform all the slices of hamburger
- * into a crossmark.
- */
-  #menuToggle input:checked ~ span {
-    opacity: 1;
-    -webkit-transform: rotate(45deg) translate(-2px, -1px);
-        -ms-transform: rotate(45deg) translate(-2px, -1px);
-            transform: rotate(45deg) translate(-2px, -1px);
-    background: #be3136; }
-  #menuToggle input:checked ~ span:nth-last-child(3) {
-    opacity: 0;
-    -webkit-transform: rotate(0deg) scale(0.2, 0.2);
-        -ms-transform: rotate(0deg) scale(0.2, 0.2);
-            transform: rotate(0deg) scale(0.2, 0.2); }
-  /*
- * Ohyeah and the last one should go the other direction
- */
-  #menuToggle input:checked ~ span:nth-last-child(2) {
-    opacity: 1;
-    -webkit-transform: rotate(-45deg) translate(0, -1px);
-        -ms-transform: rotate(-45deg) translate(0, -1px);
-            transform: rotate(-45deg) translate(0, -1px); }
-  /*
- * Make this absolute positioned
- * at the top left of the screen
- */
-  #menuToggle {
-    display: inline-block;
-    position: relative;
-    top: 10px;
-    left: 0;
-    z-index: 1;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-     -ms-user-select: none;
-         user-select: none; }
-  #menu {
-    opacity: 0;
-    display: inline-block;
     position: absolute;
-    width: 200px;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    -webkit-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out; }
+  .burger i:before, .burger i:after {
+    content: '';
+    position: absolute;
+    height: 2px;
+    background: #be3136;
+    width: 40px;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    -webkit-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out; }
+  .burger i:before {
+    margin-top: -12px; }
+  .burger i:after {
+    margin-top: 12px; }
+  .burger:hover i:before {
+    margin-top: -14px; }
+  .burger:hover i:after {
+    margin-top: 14px; }
+  .burger.active i {
+    background: transparent; }
+  .burger.active i:before, .burger.active i:after {
+    left: -5px;
+    width: 50px; }
+  .burger.active i:before {
+    -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+    top: 12px; }
+  .burger.active i:after {
+    -webkit-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    top: -12px; }
+  .burger.active:hover i:before, .burger.active:hover i:after {
+    width: 60px;
     margin: 0;
-    padding-top: 105px;
-    background: gray;
-    -webkit-transform-origin: 0% 0%;
-        -ms-transform-origin: 0% 0%;
-            transform-origin: 0% 0%;
-    -webkit-transform: translate(200%, 0);
-        -ms-transform: translate(200%, 0);
-            transform: translate(200%, 0);
-    -webkit-transition: -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
-    transition: -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
-    -o-transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
-    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
-    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1); }
-  #menu li {
-    height: 20vh;
-    color: #ff332a; }
-  /*
- * And let's fade it in from the left
- */
-  #menuToggle input:checked ~ ul {
-    -webkit-transform: scale(1, 1);
-        -ms-transform: scale(1, 1);
-            transform: scale(1, 1);
-    opacity: 1; }
+    left: -10px;
+    top: 0; }
+  .nav__list {
+    position: absolute;
+    top: 80px;
+    left: 0px;
+    -webkit-transform: translate(100%, 0);
+        -ms-transform: translate(100%, 0);
+            transform: translate(100%, 0);
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    -webkit-transition-duration: 500ms;
+         -o-transition-duration: 500ms;
+            transition-duration: 500ms;
+    -webkit-transition-property: all;
+    -o-transition-property: all;
+    transition-property: all;
+    z-index: 2;
+    overflow-x: hidden; }
+  .nav__list-item {
+    overflow-x: hidden;
+    text-align: center;
+    background-color: #fff;
+    border-top: 2px solid #be3136;
+    padding: 15px;
+    border: none; }
+  .nav__listOn {
+    -webkit-transform: translate(0, 0);
+        -ms-transform: translate(0, 0);
+            transform: translate(0, 0); }
+  .nav__list-link {
+    color: #be3136;
+    width: 50%; }
   .logo {
     -webkit-box-ordinal-group: 1;
     -webkit-order: 0;
@@ -209,6 +213,8 @@ Large Devices, Wide Screens  */
     .box .content-hover {
       text-align: left; }
       .box .content-hover .box-content {
-        padding: 0; } }
+        padding: 0; }
+    .box .nav__list-link {
+      margin-top: 0; } }
 
 /* Custom, iPhone Retina */

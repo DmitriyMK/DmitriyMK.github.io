@@ -5,11 +5,12 @@
 
 body {
 	min-width: 320px;
+	margin: 0 auto;
 	position: relative;
 	font-family: $fontFamily;
 	font-size: $fontSize;
 	line-height: 1.75;
-	overflow: hidden;
+	overflow-x: hidden;
 	opacity: 1;
 }
 html, body {
@@ -92,6 +93,7 @@ ul {
 .header__language {
 	padding: 5px 0 5px 10px ;
 	border: 2px solid #fff;
+	z-index: 3;
 }
 .dropLanguage {
 	img {
@@ -127,7 +129,7 @@ ul {
 	align-content: center;
 	flex-direction: column;
 	width: 20%;
-	@include transition(all 0.2s ease);	
+	@include transition(all 0.7s ease);	
 	text-align: center;
 	&:hover {
 		width: 50%;
@@ -162,6 +164,7 @@ ul {
 		margin: 0 auto;
 		font-size: 17px;
 		font-family: 'Helvetica';
+		width: 90%;
 	}
 	&-list {
 		list-style-type: none;
@@ -201,4 +204,4 @@ ul {
 }
 
 
-/* @import "media.scss"; */
+@import "media.scss"; 
