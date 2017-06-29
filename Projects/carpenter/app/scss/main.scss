@@ -3,6 +3,7 @@
 @import "_fonts";
 @import "_vars";
 @import "_carousel";
+@import "_animate.min";
 
 body {
 	min-width: 320px;
@@ -86,7 +87,7 @@ section {
 	max-width: 100%;
 	background-size: cover;
 	background-position: center;
-	color: #fff;
+	color: $yellow;
 	&:before {
 		content: '';
 		position: absolute;
@@ -94,7 +95,7 @@ section {
 		left: 0;
 		width: 100%;
 		height: 100%;	
-		background-color: rgba(#000, .6);
+		background-color: rgba(#000, .65);
 	}
 }
 #fixedTopMenu.fixed {
@@ -138,10 +139,10 @@ section {
 	&-link {
 		position: relative;	
 		text-transform: uppercase;
-		color: $white;
+		color: $yellow;
 		padding-bottom: 20px;
 		&:hover{
-			color: $yellow;
+			color: $lightGreen;
 		}
 		&:before { 
 			display: block;
@@ -149,7 +150,7 @@ section {
 			content: "";
 			height: 2px;
 			width: 0;
-			background-color: $yellow;
+			background-color: $lightGreen;
 			@include transition(all 0.4s ease);
 			left: 50%;
 			bottom: 0;
@@ -164,7 +165,7 @@ section {
 			content: "";
 			height: 2px;
 			width: 0;
-			background-color: $yellow;
+			background-color: $lightGreen;
 			@include transition(all 0.4s ease);
 			left: 50%;
 			bottom: 0;			
@@ -182,7 +183,7 @@ section {
 	position: relative;
 	font-size: 2rem;
 	letter-spacing: 3px;
-	color: #fff;
+	color: $yellow;
 	text-transform: uppercase;
 }
 .header__button, .button {
@@ -194,6 +195,7 @@ section {
 	background: $lightGreen;
 	font-weight: bold;
 	text-transform: uppercase;
+	color: $white;
 	@include transition(background-color .3s ease);	
 	&:hover {
 		background: transparent;
@@ -569,6 +571,7 @@ section {
 			border: none;
 			border-bottom: 1px solid $green;
 			background: transparent;
+			font-size: 1.3rem;
 			@include transition(all 0.2s ease);
 			&:hover {
 				border-bottom: 1px solid $lightGreen;	

@@ -27,20 +27,22 @@ jQuery(function($) {
 
 /*BACK TO TOP SCROLL FOR MENU*/
 
-jQuery(function(f){
+jQuery(function(f) {
 	var element = f('#scrollToTop');
-	f(window).scroll(function(){
-		element['fade'+ (f(this).scrollTop() > 300 ? 'In': 'Out')](400);           
+	f(window).scroll(function() {
+		element['fade' + (f(this).scrollTop() > 300 ? 'In' : 'Out')](400);
 	});
 });
 
 /*MENU SCROLLING*/
-$(document).ready(function(){
-	$('a[href^="#"], *[data-href^="#"]').on('click', function(e){
+$(document).ready(function() {
+	$('a[href^="#"], *[data-href^="#"]').on('click', function(e) {
 		e.preventDefault();
 		var t = 1000;
 		var d = $(this).attr('data-href') ? $(this).attr('data-href') : $(this).attr('href');
-		$('html,body').stop().animate({ scrollTop: $(d).offset().top }, t);
+		$('html,body').stop().animate({
+			scrollTop: $(d).offset().top
+		}, t);
 	});
 });
 
@@ -58,7 +60,7 @@ $(document).ready(function() {
 			},
 			768: {
 				items: 1
-			},			
+			},
 			480: {
 				items: 1
 			},
@@ -79,30 +81,11 @@ $(document).ready(function() {
 		owl.trigger('prev.owl.carousel');
 	});
 
+	/*ANIMATION PLUGUN*/
+	new WOW().init();
 
 });
 
-
-
-/*    $(".owl-carousel").owlCarousel({
-
-        center: true,
-        items: 2,
-
-        margin: 60,
-        responsive: {
-            480: {
-                items: 2,
-                margin: 40
-            },
-            320: {
-                items: 1,
-                margin: 0
-            }
-        }
-    });
-
-});*/
 
 $(window).on('load', function() {
 	$('#preloader').delay(100).fadeOut('slow');
