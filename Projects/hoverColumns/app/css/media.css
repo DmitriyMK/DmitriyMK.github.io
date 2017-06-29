@@ -42,16 +42,6 @@ Large Devices, Wide Screens  */
     padding: 10px;
     position: relative;
     height: 16%; }
-  #menuToggle {
-    display: block;
-    position: relative;
-    top: 6px;
-    right: -40px;
-    z-index: 1;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-     -ms-user-select: none;
-         user-select: none; }
   #menuToggle input {
     display: block;
     width: 40px;
@@ -61,8 +51,13 @@ Large Devices, Wide Screens  */
     left: -5px;
     cursor: pointer;
     opacity: 0;
+    /* hide this */
     z-index: 2;
+    /* and place it over the hamburger */
     -webkit-touch-callout: none; }
+  /*
+ * Just a quick hamburger
+ */
   #menuToggle span {
     display: block;
     width: 33px;
@@ -70,6 +65,8 @@ Large Devices, Wide Screens  */
     margin-bottom: 5px;
     position: relative;
     background: #be3136;
+    -webkit-border-radius: 3px;
+            border-radius: 3px;
     z-index: 1;
     -webkit-transform-origin: 4px 0px;
         -ms-transform-origin: 4px 0px;
@@ -87,6 +84,10 @@ Large Devices, Wide Screens  */
     -webkit-transform-origin: 0% 100%;
         -ms-transform-origin: 0% 100%;
             transform-origin: 0% 100%; }
+  /* 
+ * Transform all the slices of hamburger
+ * into a crossmark.
+ */
   #menuToggle input:checked ~ span {
     opacity: 1;
     -webkit-transform: rotate(45deg) translate(-2px, -1px);
@@ -98,28 +99,53 @@ Large Devices, Wide Screens  */
     -webkit-transform: rotate(0deg) scale(0.2, 0.2);
         -ms-transform: rotate(0deg) scale(0.2, 0.2);
             transform: rotate(0deg) scale(0.2, 0.2); }
+  /*
+ * Ohyeah and the last one should go the other direction
+ */
   #menuToggle input:checked ~ span:nth-last-child(2) {
     opacity: 1;
     -webkit-transform: rotate(-45deg) translate(0, -1px);
         -ms-transform: rotate(-45deg) translate(0, -1px);
             transform: rotate(-45deg) translate(0, -1px); }
+  /*
+ * Make this absolute positioned
+ * at the top left of the screen
+ */
+  #menuToggle {
+    display: inline-block;
+    position: relative;
+    top: 10px;
+    left: 0;
+    z-index: 1;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+     -ms-user-select: none;
+         user-select: none; }
   #menu {
-    display: inherit;
+    opacity: 0;
+    display: inline-block;
     position: absolute;
-    -webkit-font-smoothing: antialiased;
+    width: 200px;
+    margin: 0;
+    padding-top: 105px;
+    background: gray;
     -webkit-transform-origin: 0% 0%;
         -ms-transform-origin: 0% 0%;
             transform-origin: 0% 0%;
-    -webkit-transform: translate(-100%, 0);
-        -ms-transform: translate(-100%, 0);
-            transform: translate(-100%, 0);
+    -webkit-transform: translate(200%, 0);
+        -ms-transform: translate(200%, 0);
+            transform: translate(200%, 0);
     -webkit-transition: -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
     transition: -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
     -o-transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
     transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
     transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1); }
   #menu li {
-    padding: 10px 0; }
+    height: 20vh;
+    color: #ff332a; }
+  /*
+ * And let's fade it in from the left
+ */
   #menuToggle input:checked ~ ul {
     -webkit-transform: scale(1, 1);
         -ms-transform: scale(1, 1);
@@ -173,4 +199,16 @@ Large Devices, Wide Screens  */
         padding: 10px; } }
 
 /* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px) {
+  .box {
+    padding-left: 20px;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+        -ms-flex-align: start;
+            align-items: flex-start; }
+    .box .content-hover {
+      text-align: left; }
+      .box .content-hover .box-content {
+        padding: 0; } }
+
 /* Custom, iPhone Retina */
