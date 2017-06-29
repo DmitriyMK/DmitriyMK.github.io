@@ -1,3 +1,0 @@
-User-agent: *
-Disallow: /js/mail.php
-Disallow: /images/modals/mail.php
