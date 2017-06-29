@@ -217,6 +217,9 @@ Large Devices, Wide Screens  */
 	.box {
 		padding-left: 20px;
 		align-items: flex-start;
+		&:hover {
+			height: 60%;
+		}
 		.content-hover {
 			text-align: left;
 			.box-content {

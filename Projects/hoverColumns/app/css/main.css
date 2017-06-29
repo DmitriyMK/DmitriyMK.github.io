@@ -843,6 +843,8 @@ Large Devices, Wide Screens  */
     -webkit-align-items: flex-start;
         -ms-flex-align: start;
             align-items: flex-start; }
+    .box:hover {
+      height: 60%; }
     .box .content-hover {
       text-align: left; }
       .box .content-hover .box-content {
