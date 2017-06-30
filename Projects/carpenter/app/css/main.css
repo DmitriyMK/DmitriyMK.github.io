@@ -4001,7 +4001,7 @@ section {
   -webkit-background-size: cover;
           background-size: cover;
   background-position: center;
-  color: #eb9309; }
+  color: #fff; }
   .header:before {
     content: '';
     position: absolute;
@@ -4034,7 +4034,7 @@ section {
   margin-left: 10px; }
   .logo__link {
     text-transform: uppercase;
-    font-size: 2rem; }
+    font-size: 2.5rem; }
 
 .navigation {
   float: right;

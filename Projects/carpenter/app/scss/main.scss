@@ -87,7 +87,7 @@ section {
 	max-width: 100%;
 	background-size: cover;
 	background-position: center;
-	color: $yellow;
+	color: #fff;
 	&:before {
 		content: '';
 		position: absolute;
@@ -119,7 +119,7 @@ section {
 	margin-left: 10px;
 	&__link {
 		text-transform: uppercase;
-		font-size: 2rem;
+		font-size: 2.5rem;
 	}
 }
 .navigation {
