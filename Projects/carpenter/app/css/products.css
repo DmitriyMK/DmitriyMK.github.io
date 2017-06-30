@@ -1555,7 +1555,9 @@ img {
   position: relative; }
   .owl-carousel .owl-item img {
     max-width: 100%;
-    height: 600px; }
+    height: auto;
+    -webkit-box-shadow: 2px 2px 20px 0px rgba(0, 0, 0, 0.75);
+            box-shadow: 2px 2px 20px 0px rgba(0, 0, 0, 0.75); }
 
 .owl-nav {
   color: #ff621f;

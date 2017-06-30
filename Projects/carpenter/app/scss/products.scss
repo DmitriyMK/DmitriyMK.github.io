@@ -13,6 +13,7 @@
 .product {
 	position: relative;
 	text-align: center;
+
 }
 .product__undertitle {
 	margin-bottom: 30px;
@@ -26,7 +27,8 @@ img {
 	.owl-item {
 		img {
 			max-width: 100%;
-			height: 600px;
+			height: auto;
+			box-shadow: 2px 2px 20px 0px rgba(0,0,0,0.75); 
 		}
 	}
 }
