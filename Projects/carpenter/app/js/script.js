@@ -52,8 +52,8 @@ $(document).ready(function() {
 
 	$(".owl-carousel").owlCarousel({
 		loop: true,
-		margin: 40,
-		items: 2,
+		margin: 10,
+		items: 3,
 		responsive: {
 			992: {
 				items: 2
