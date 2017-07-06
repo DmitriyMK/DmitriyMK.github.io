@@ -1569,6 +1569,7 @@ img {
 .icon-angle-right {
   position: absolute;
   content: '';
+  padding: 100px 0;
   top: 50%;
   right: 5%;
   z-index: 10; }
@@ -1576,6 +1577,7 @@ img {
 .icon-angle-left {
   position: absolute;
   content: '';
+  padding: 100px 0;
   top: 50%;
   left: 5%;
   z-index: 10; }

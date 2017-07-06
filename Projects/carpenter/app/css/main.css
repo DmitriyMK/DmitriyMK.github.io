@@ -3996,8 +3996,11 @@ section {
   padding-top: 60px;
   position: relative;
   height: 100vh;
-  min-height: 660px;
+  min-height: 680px;
   max-width: 100%;
+  -webkit-background-size: cover;
+          background-size: cover;
+  background-position: bottom;
   color: #fff; }
   .header:before {
     content: '';
@@ -4006,7 +4009,7 @@ section {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.6); }
+    background-color: rgba(0, 0, 0, 0.8); }
 
 #fixedTopMenu.fixed {
   position: fixed;
@@ -4219,6 +4222,8 @@ section {
   padding-bottom: 40px;
   background: #f6f6f6;
   text-align: center; }
+  .portfolio__undertitle {
+    font-size: 1.2rem; }
 
 .grid {
   position: relative;
