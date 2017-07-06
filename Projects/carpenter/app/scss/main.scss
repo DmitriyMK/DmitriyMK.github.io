@@ -86,7 +86,6 @@ section {
 	min-height: 680px;
 	max-width: 100%;
 	background-size: cover;
-	background-position: center;
 	color: #fff;
 	&:before {
 		content: '';
@@ -183,8 +182,9 @@ section {
 	text-align: right;
 	position: relative;
 	font-size: 2.2rem;
+	font-weight: bold;
 	letter-spacing: 3px;
-	color: $white;
+	color: $orange;
 	text-transform: uppercase;
 }
 .header__button, .button {
