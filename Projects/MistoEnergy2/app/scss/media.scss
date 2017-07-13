@@ -260,7 +260,7 @@
 }
 
 
-@media only screen and (max-width: 416px) {
+@media only screen and (max-width: 420px) {
 
 	.services {
 		&__col {
@@ -270,12 +270,3 @@
 
 }
 
-@media only screen and (max-width: 400px) {
-
-	.services {
-		&__col {
-			width: 100%;
-		}
-	}
-
-}
