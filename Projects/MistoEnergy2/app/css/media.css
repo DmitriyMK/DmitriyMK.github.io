@@ -9,7 +9,13 @@
   .offer__form .right {
     float: none; }
   .counters .row {
-    padding: 0 15px; } }
+    padding: 0 15px; }
+  .counters__content-left:before {
+    display: none; }
+  .counters__content-right:before {
+    display: none; }
+  .counters__wrapper {
+    border: 1px solid #fff; } }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
@@ -109,16 +115,46 @@
     margin: 0;
     left: -10px;
     top: 0; }
-  .counters__content-left:before {
-    display: none; }
-  .counters__content-right:before {
-    display: none; } }
+  .counters .row {
+    padding: 15px 0; }
+  .counters__text {
+    padding: 15px; }
+  .counters .counters__form-line {
+    width: 45%; } }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
+  section {
+    padding-top: 30px;
+    padding-bottom: 30px; }
+  .section__title {
+    font-size: 1.6rem;
+    letter-spacing: 0; }
+  .header__text {
+    font-size: rem(30); }
+  .services__items {
+    padding-bottom: 25px; }
+  .services__title {
+    width: 100%;
+    padding-bottom: 0px; }
+  .counters__text-accent {
+    padding: 0 15px; }
+  .counters__list {
+    padding-left: 15px; }
   .counters .counters__form {
     width: 90%; }
   .counters .counters__content-flat {
-    height: 500px; } }
+    height: 500px; }
+  .counters__wrapper img {
+    max-width: 320px; }
+  .partners__img {
+    max-width: 140px;
+    max-height: 57px; } }
 
-/* Custom, iPhone Retina */
+@media only screen and (max-width: 420px) {
+  .services__col {
+    width: 100%; } }
+
+@media only screen and (max-width: 400px) {
+  .services__col {
+    width: 100%; } }

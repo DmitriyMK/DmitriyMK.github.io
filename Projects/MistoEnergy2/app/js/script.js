@@ -12,3 +12,10 @@ $(document).ready(function() {
 		}
 	})
 });
+
+/*if($(window).innerWidth() < 768) {
+
+$('.reorder__bottom').appendTo( $('.counters__col2') );
+$('.reorder__top').appendTo( $('.counters__col1') );
+
+} */

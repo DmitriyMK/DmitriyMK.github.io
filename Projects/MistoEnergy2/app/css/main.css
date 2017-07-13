@@ -1108,16 +1108,7 @@ section {
     list-style-type: none; }
   .offer__item {
     position: relative;
-    padding-left: 40px;
     padding-bottom: 20px; }
-    .offer__item:before {
-      font-family: 'fontello';
-      position: absolute;
-      content: '\e809';
-      top: 0;
-      left: 0;
-      font-size: 1.25rem;
-      color: #34a880; }
   .offer__link {
     display: inline-block;
     color: #34a880;
@@ -1127,9 +1118,13 @@ section {
     -webkit-transition: all 0.3s ease;
     -o-transition: all 0.3s ease;
     transition: all 0.3s ease; }
+    .offer__link:before {
+      font-family: 'fontello';
+      content: '\e809';
+      margin-right: 15px;
+      font-size: 1.25rem; }
     .offer__link:hover {
-      background: #34a880;
-      color: #fff; }
+      color: #ff4b00; }
   .offer__text {
     text-align: center;
     font-size: 1.25rem; }
@@ -1242,9 +1237,11 @@ section {
   .counters__col {
     padding: 0;
     margin: 0; }
+  .counters__wrapper {
+    overflow-x: hidden; }
   .counters__wrapper-pic {
     display: block;
-    margin: auto;
+    margin: 0 auto;
     height: 285px; }
   .counters__content {
     padding: 5px 10px 5px 15px;
@@ -1304,7 +1301,6 @@ section {
     stroke-width: 0;
     fill: #34a880; }
   .counters .counters__form {
-    width: 70%;
     margin: 0 auto;
     text-align: center;
     font-size: 1.125rem;
@@ -1318,9 +1314,8 @@ section {
       position: relative;
       clear: both;
       margin: 0 auto;
-      margin-bottom: 20px;
-      margin-right: 20px;
-      padding-left: 20px;
+      width: 30%;
+      margin-right: 2%;
       height: 50px;
       border: 1px solid #feb800;
       -webkit-border-radius: 10px;
@@ -1383,6 +1378,9 @@ section {
       opacity: 0.5;
       -webkit-filter: blur(10px);
               filter: blur(10px); }
+  .counters .counters__wrapper-flat img {
+    display: block;
+    margin: 0 auto; }
   .counters .counters__content-flat {
     height: 350px;
     text-align: center;
@@ -1401,10 +1399,11 @@ section {
 
 .partners__item {
   text-align: center;
-  padding-bottom: 50px; }
+  padding-bottom: 50px;
+  overflow-x: hidden; }
 
 .partners__img {
-  width: 170px;
+  max-width: 100%;
   height: 57px; }
 
 /* @import "media.scss"; */
