@@ -15,19 +15,20 @@ $(document).ready(function() {
 			$('.navigation__list').removeAttr('style');
 		}
 	})
-
-
-
 });
 
-	$("lazy").lazyload({
-		effect: "fadeIn"
+/*MENU SCROLLING*/
+$(document).ready(function() {
+	$('a[href^="#"], *[data-href^="#"]').on('click', function(e) {
+		e.preventDefault();
+		var t = 1000;
+		var d = $(this).attr('data-href') ? $(this).attr('data-href') : $(this).attr('href');
+		$('html,body').stop().animate({
+			scrollTop: $(d).offset().top
+		}, t);
 	});
+});
 
-
-/*if($(window).innerWidth() < 768) {
-
-$('.reorder__bottom').appendTo( $('.counters__col2') );
-$('.reorder__top').appendTo( $('.counters__col1') );
-
-} */
+$("lazy").lazyload({
+	effect: "fadeIn"
+});
