@@ -1232,8 +1232,6 @@ section {
       content: '-';
       top: 0;
       left: 0; }
-  .counters__row {
-    overflow: hidden; }
   .counters__col {
     padding: 0;
     margin: 0; }
@@ -1296,12 +1294,13 @@ section {
       border-bottom: 30px solid transparent; }
   .counters svg {
     display: inline-block;
-    width: 5rem;
-    height: 5rem;
+    width: 6rem;
+    height: 6rem;
     stroke-width: 0;
     fill: #34a880; }
   .counters .counters__form {
     margin: 0 auto;
+    margin-top: 50px;
     text-align: center;
     font-size: 1.125rem;
     padding: 20px 0;
@@ -1380,12 +1379,18 @@ section {
               filter: blur(10px); }
   .counters .counters__wrapper-flat img {
     display: block;
-    margin: 0 auto; }
+    margin: 0 auto;
+    max-width: 100%;
+    height: 450px; }
   .counters .counters__content-flat {
-    height: 350px;
+    margin-top: 20px;
+    padding-top: 50px;
+    width: 100%;
+    height: auto;
     text-align: center;
-    background: #fff;
-    color: #000; }
+    background: transparent;
+    color: #000;
+    z-index: 10; }
   .counters .counters__content-link-flat {
     display: inline-block;
     margin-top: 5px;

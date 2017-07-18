@@ -6,12 +6,24 @@ $(document).ready(function() {
 		$(".navigation__list").slideToggle('fast');
 	})
 
+	$('.burger').on('click', function() {
+		$('.overlay').toggleClass('open').show;
+	});
+
 	$(window).resize(function() {
 		if ($(window).width() > 768) {
 			$('.navigation__list').removeAttr('style');
 		}
 	})
+
+
+
 });
+
+	$("lazy").lazyload({
+		effect: "fadeIn"
+	});
+
 
 /*if($(window).innerWidth() < 768) {
 
