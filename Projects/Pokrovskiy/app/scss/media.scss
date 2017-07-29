@@ -1,0 +1,292 @@
+@import "_vars.scss";
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+
+	.owl-carousel {
+		.owl-carousel-content {
+			padding: 40px 20px;
+			left: 0;
+			width: 51%;
+		}
+	}
+	.reserv {
+		&__content {
+			width: 80%;
+		}
+	}
+
+
+	.callback {
+		padding-top: 50px;	
+	}
+
+	.radio__wrap {
+		display: flex;
+		margin: 0 auto;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		padding-bottom: 50px;
+	}
+
+	.jq-radio.checked .jq-radio__div {
+		margin-top: 50px;
+		width: 8px;
+		height: 8px;
+		background: #3c3c3c;
+		border-color: #3c3c3c; 
+	}
+	.placeholder__wrap {
+		display: flex;
+		justify-content: center;
+	}
+	.offer__form-line {
+		width: 70%;
+		height: 50px;
+		padding-left: 50px;
+		text-transform: uppercase;
+		background: #e8e8e8;
+		border: none;
+	}
+	.offer__form-button {
+		width: 150px;
+		border: none;
+		background: $yellow;
+		text-transform: uppercase;
+		@include transition(background 0.2s ease);	
+		&:hover {
+			background: #dbcf2e;
+		}
+	}
+}
+@media only screen and (max-width : 830px) {
+	.header {
+		&__logo {
+			width: 100%;
+			text-align: center;
+		}
+		&__nav{
+			width: 100%;
+
+			.navigation {
+				&__item {
+					margin-left: 5px;
+				}
+			}
+		}
+
+		&__text {
+			padding-left: 0;
+			text-align: center;
+			.headline {
+				text-align: center;
+				padding-bottom: 50px;
+				font-size: rem(60);
+				line-height: 50px;
+			}
+			.content {
+				width: 80%;
+				margin: auto;
+			}
+		}
+	}	
+	.advantages {
+		&__list {
+			padding: 0;
+		}
+		.radio__wrap {
+			label {
+				width: 30%;
+			}
+		}
+	}
+	.footer {
+		&__menu {
+			display: inline;
+			text-align: left;
+		}
+		&__item {
+			padding-left: 25px;
+		}
+	}
+}  
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 600px) {
+
+	.header {
+		.headline {
+			font-size: rem(40);
+			line-height: 40px;
+			padding-bottom: 30px;
+		}
+	}
+
+	/* BURGER */
+	.overlay {
+		position: fixed;
+		width: 250px;
+		height: 100vh;
+		top: 0;
+		right: -302px;
+		background: rgba(52, 168, 128, .8);
+		z-index: 10;
+	}
+	.navigation {
+		&__list {
+			display: block !important;
+			list-style: none;
+			padding-top: 40%;
+		}
+		&__item{
+			display: inherit;
+			margin-right: 0;
+
+		}
+		&__link {
+			display: inline-block;
+			width: 100%;
+			text-transform: uppercase;
+			text-decoration: none;
+			padding-bottom: 1rem;
+			color: $yellow;
+		}
+	}
+	.overlay {
+		transform: translateX(300px);
+		transform: translateZ(0);
+		backface-visibility: hidden;
+		transition-property: transform;
+		transition-duration: 0.5s;
+	}
+	.open {
+		transform: translateX(-300px);
+		transition-duration: 0.5s;
+	}
+	.burger {
+		width: 52px;
+		height: 52px;
+		display: block;
+		transition: all 0.6s ease-in-out;
+		position: fixed;
+		top: 50px;
+		right: 0;
+		transform: translate(-50%, 0);
+		z-index: 100;
+	}
+	.burger i {
+		display: block;
+		width: 40px;
+		height: 2px;
+		background: $orange;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		transition: all 0.2s ease-in-out;
+	}
+	.burger i:before, .burger i:after {
+		content: '';
+		position: absolute;
+		height: 2px;
+		background: $orange;
+		width: 40px;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		transition: all 0.2s ease-in-out;
+	}
+	.burger i:before {
+		margin-top: -12px;
+	}
+	.burger i:after {
+		margin-top: 12px;
+	}
+	.burger:hover i:before {
+		margin-top: -14px;
+	}
+	.burger:hover i:after {
+		margin-top: 14px;
+	}
+	.burger.active i {
+		background: transparent;
+	}
+	.burger.active i:before, .burger.active i:after {
+		left: -5px;
+		width: 50px;
+	}
+	.burger.active i:before {
+		transform: rotate(45deg);
+		top: 12px;
+	}
+	.burger.active i:after {
+		transform: rotate(-45deg);
+		top: -12px;
+	}
+	.burger.active:hover i:before, .burger.active:hover i:after {
+		width: 60px;
+		margin: 0;
+		left: -10px;
+		top: 0;
+	}
+
+	.owl-carousel {
+		.owl-carousel-text {
+			display: none;
+		}
+		.owl-carousel-content {
+			padding: 20px;
+		}
+	}
+	.reserv {
+		&__content {
+			margin: auto;
+			width: 100%;
+			padding: 0;
+			text-align: center;
+		}
+	}
+	.placeholder__wrap {
+		width: 100%;
+	}
+	.countdownHolder{
+		display: none;
+	}
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px) {
+
+	.owl-carousel {
+		.owl-carousel-text {
+			display: none;
+		}
+		.owl-carousel-content {
+			position: absolute;
+			bottom: 250px;
+			left: 10%;
+			background: rgba(255, 255, 255, .7);
+			width: 50%;
+		} 
+	}
+	.owl-nav {
+		display: none;
+	}
+	.advantages {
+		&__item {
+			padding: 0 15px;
+		}
+	}
+
+
+
+
+}
+
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width: 320px)  {
+
+}
