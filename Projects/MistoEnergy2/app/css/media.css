@@ -1,5 +1,19 @@
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
+@media only screen and (max-width: 1200px) {
+  .counters .counters__items {
+    min-height: 370px; }
+  .counters .counters__content {
+    padding-top: 100%; }
+    .counters .counters__content .counters__text-work:before {
+      width: 30%;
+      bottom: 38%;
+      left: 35%; } }
+
+@media only screen and (max-width: 991px) {
+  .counters .counters__wrapper-flat img {
+    display: none; } }
+
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px) {
   .services__title {
@@ -16,6 +30,14 @@
     display: none; }
   .counters__wrapper {
     border: 1px solid #fff; }
+  .counters .counters__items {
+    min-height: 370px; }
+  .counters .counters__content {
+    padding-top: 68%; }
+    .counters .counters__content .counters__text-work:before {
+      width: 30%;
+      bottom: 32%;
+      left: 35%; }
   .counters .counters__content-flat {
     margin-top: 0;
     padding-top: 0; } }
@@ -158,7 +180,13 @@
   .counters__text {
     padding: 15px; }
   .counters .counters__form-line {
-    width: 45%; } }
+    width: 45%; }
+  .counters .counters__content {
+    padding-top: 270px; }
+    .counters .counters__content .counters__text-work:before {
+      width: 30%;
+      bottom: 30%;
+      left: 35%; } }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
