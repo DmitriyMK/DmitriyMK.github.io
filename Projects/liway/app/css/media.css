@@ -1,5 +1,28 @@
 /*==========  Desktop First  ==========*/
 /* Medium Devices, Desktops */
+@media only screen and (max-width: 992px) {
+  .greeting__content, .footer__content {
+    width: 100%;
+    text-align: center; } }
+
 /* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
+  .header__text, .prefooter__text {
+    font-size: 2rem; }
+  .icon-play {
+    position: absolute;
+    bottom: -50%;
+    left: 40%; }
+  .form-line {
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+    text-align: center;
+    padding-left: 0;
+    font-size: 1.25rem; }
+  .form-button {
+    margin-top: 30px;
+    font-size: 1.25rem; } }
+
 /* Extra Small Devices, Phones */
 /* Custom, iPhone Retina */

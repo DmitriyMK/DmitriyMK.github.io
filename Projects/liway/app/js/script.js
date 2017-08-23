@@ -1,31 +1,43 @@
 
 $('.video').magnificPopup({
+  items: {
+	     src: 'https://www.youtube.com/watch?v=bqOQG0IquaM'
+
+     },
   type: 'iframe',
-  
-  
   iframe: {
-    patterns: {
-      dailymotion: {
-       
-        index: 'dailymotion.com',
-        
-        id: function(url) {        
-            var m = url.match(/^.+dailymotion.com\/(video|hub)\/([^_]+)[^#]*(#video=([^_&]+))?/);
-            if (m !== null) {
-                if(m[4] !== undefined) {
-                  
-                    return m[4];
-                }
-                return m[2];
+	    	markup: '<div class="mfp-iframe-scaler">'+
+            		'<div class="mfp-close"></div>'+
+            		'<iframe class="mfp-iframe" frameborder="0" allowfullscreen></iframe>'+
+            		'</div>', 
+        patterns: {
+            youtube: {
+	              index: 'youtube.com/', 
+	              id: 'v=', 
+	              src: '//www.youtube.com/embed/%id%?autoplay=1' 
+		        }
+		     },
+		     srcAction: 'iframe_src', 
+     }
+});
+
+$('.video-prev').magnificPopup({
+  items: {
+       src: 'https://www.youtube.com/watch?v=f6HGmOCQGSg'
+     },
+  type: 'iframe',
+  iframe: {
+        markup: '<div class="mfp-iframe-scaler">'+
+                '<div class="mfp-close"></div>'+
+                '<iframe class="mfp-iframe" frameborder="0" allowfullscreen></iframe>'+
+                '</div>', 
+        patterns: {
+            youtube: {
+                index: 'youtube.com/', 
+                id: 'v=', 
+                src: '//www.youtube.com/embed/%id%?autoplay=1' 
             }
-            return null;
-        },
-        
-        src: 'http://www.dailymotion.com/embed/video/%id%'
-        
-      }
-    }
-  }
-  
-  
+         },
+         srcAction: 'iframe_src', 
+     }
 });
