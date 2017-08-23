@@ -1,0 +1,52 @@
+@import "_reset";
+@import "_fonts";
+@import "_vars";
+@import "_mixin and function";
+@import "_magnific-popup";
+
+body {
+	min-width: 320px;
+	position: relative;
+	font-family: $fontFamily;
+	font-size: $fontSize;
+	line-height: 1.75;
+}
+
+.header {
+	min-height: 680px;
+	height: 100vh;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	&:before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100vh;	
+		/* background-color: rgba(#2d6e70, .9); */	
+
+
+	}
+	.wrapper {
+		position: relative;
+	}
+	&__wrapper {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		padding-top: 10%;
+		font-family: "GothamProBold", serif;
+	}
+	&__text {
+		color: #fff;
+		font-size: rem(45);
+		line-height: 71px;
+	}
+}
+
+
+
+/* @import "media.scss"; */
