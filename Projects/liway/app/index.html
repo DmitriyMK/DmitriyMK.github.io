@@ -13,6 +13,9 @@
 	<link rel="stylesheet" href="css/media.css">
 </head>
 <body>
+	<div id="preloader">
+		<i></i>
+	</div>
 	<header class="header" style="background-image: url(img/background.jpg);">
 		<div class="wrapper">
 			<div class="header__wrapper">
@@ -90,81 +93,81 @@
 			<div class="news__content">
 <!-- 				<div class="news__content-left">
 </div> -->
-				<div class="news__content-right">
-					<ul class="news__list">
-						<li class="news__item"><a class="news__link" href="#">Как проходили съемки клипа</a></li>
-						<li class="news__item"><a class="news__link" href="#">Подробности отгремевшого концерта</a></li>
-						<li class="news__item"><a class="news__link" href="#">Как я в Одессу сездил</a></li>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</section>
+<div class="news__content-right">
+	<ul class="news__list">
+		<li class="news__item"><a class="news__link" href="#">Как проходили съемки клипа</a></li>
+		<li class="news__item"><a class="news__link" href="#">Подробности отгремевшого концерта</a></li>
+		<li class="news__item"><a class="news__link" href="#">Как я в Одессу сездил</a></li>
+	</ul>
+</div>
+</div>
+</div>
+</section>
 
-	<section class="concert" style="background-image: url(img/background2.jpg);">
+<section class="concert" style="background-image: url(img/background2.jpg);">
+	<div class="wrapper">
+		<h3 class="section__title concert__title">Концерты</h3>
+		<ul class="concert__list">
+			<li class="concert__item"><a href="#" class="concert__link">14.08 - Киев</a></li>
+			<li class="concert__item"><a href="#" class="concert__link">15.08 - Одесса</a></li>
+			<li class="concert__item"><a href="#" class="concert__link">14.08 - Житомир</a></li>
+			<li class="concert__item"><a href="#" class="concert__link">14.08 - Харьков</a></li>
+		</ul>
+	</div>
+</section>	
+
+<section class="prefooter" style="background-image: url(img/background3.jpg);">
+	<div class="wrapper">
+		<div class="prefooter__wrapper">
+			<h3 class="prefooter__text">Предыдущий клип на хитовую песню</h3>
+			<h3 class="prefooter__text">«Ты Мое Чудо»</h3>
+		</div>
+		<a class="video-prev icon-play" href="https://youtu.be/bqOQG0IquaM"></a>
+	</div>
+</section>
+
+<footer class="footer">
+	<div class="footer__content">
 		<div class="wrapper">
-			<h3 class="section__title concert__title">Концерты</h3>
-			<ul class="concert__list">
-				<li class="concert__item"><a href="#" class="concert__link">14.08 - Киев</a></li>
-				<li class="concert__item"><a href="#" class="concert__link">15.08 - Одесса</a></li>
-				<li class="concert__item"><a href="#" class="concert__link">14.08 - Житомир</a></li>
-				<li class="concert__item"><a href="#" class="concert__link">14.08 - Харьков</a></li>
+			
+			<p class="footer__text">Хочешь получить новую песню или клип первым (-ой)?</p>
+			<p class="footer__text">А попасть на концер с огромной скидкой на билет? </p>
+			<p class="footer__text">Тогда введи свое имя и нажми «Далее» чтобы узнать подробности!</p> 
+
+			<div class="form">
+				<form class="callback" action="" method="" id="post" autocomplete="off">
+					<div class="success"><span>Ваша заявка прийнята</span></div>
+					<!-- Hidden Required Fields -->
+					<input type="hidden" name="project_name" value="">
+					<input type="hidden" name="admin_email" value="">
+					<input type="hidden" name="form_subject" value="">
+					<!-- END Hidden Required Fields -->
+					<input type="hidden" name="Страница" value="">
+					<input class="form-line" type="text" name="name" placeholder="Введите свое имя" required>
+					<input type="submit" class="form-button" value="Далее">
+				</form>
+			</div>
+
+
+			<div class="row"><img src="img/line.png" alt=""></div>
+			<ul class="footer__list">
+				<li class="footer__item"><a href="#" class="footer__link">Концерты</a></li>
+				<li class="footer__item"><a href="#" class="footer__link">Контакты</a></li>
 			</ul>
-		</div>
-	</section>	
 
-	<section class="prefooter" style="background-image: url(img/background3.jpg);">
-		<div class="wrapper">
-			<div class="prefooter__wrapper">
-				<h3 class="prefooter__text">Предыдущий клип на хитовую песню</h3>
-				<h3 class="prefooter__text">«Ты Мое Чудо»</h3>
-			</div>
-			<a class="video-prev icon-play" href="https://youtu.be/bqOQG0IquaM"></a>
-		</div>
-	</section>
-
-	<footer class="footer">
-		<div class="footer__content">
-			<div class="wrapper">
-				
-				<p class="footer__text">Хочешь получить новую песню или клип первым (-ой)?</p>
-				<p class="footer__text">А попасть на концер с огромной скидкой на билет? </p>
-				<p class="footer__text">Тогда введи свое имя и нажми «Далее» чтобы узнать подробности!</p> 
-
-				<div class="form">
-					<form class="callback" action="" method="" id="post" autocomplete="off">
-						<div class="success"><span>Ваша заявка прийнята</span></div>
-						<!-- Hidden Required Fields -->
-						<input type="hidden" name="project_name" value="">
-						<input type="hidden" name="admin_email" value="">
-						<input type="hidden" name="form_subject" value="">
-						<!-- END Hidden Required Fields -->
-						<input type="hidden" name="Страница" value="">
-						<input class="form-line" type="text" name="name" placeholder="Введите свое имя" required>
-						<input type="submit" class="form-button" value="Далее">
-					</form>
-				</div>
-
-
-				<div class="row"><img src="img/line.png" alt=""></div>
-				<ul class="footer__list">
-					<li class="footer__item"><a href="#" class="footer__link">Концерты</a></li>
-					<li class="footer__item"><a href="#" class="footer__link">Контакты</a></li>
-				</ul>
-
-				<div class="seo-text">
-					<p>Политика конфиденциальности • Наш адресс - ул. Владимирская 49а </p>
-					<p>Для Вас мы разработаем лендинг пейдж под ключ по нашей концепции, что удерживает конверсию от 14%</p>
-					<p>Мы дадим вам рекомендации по запуску рекламы в соц. сетях, чтобы ваш лендинг приносил заявки и деньги!</p>
-				</div>
+			<div class="seo-text">
+				<p>Политика конфиденциальности • Наш адресс - ул. Владимирская 49а </p>
+				<p>Для Вас мы разработаем лендинг пейдж под ключ по нашей концепции, что удерживает конверсию от 14%</p>
+				<p>Мы дадим вам рекомендации по запуску рекламы в соц. сетях, чтобы ваш лендинг приносил заявки и деньги!</p>
 			</div>
 		</div>
-	</footer>
+	</div>
+</footer>
 
 
 
-	<script src="js/script.min.js"></script> 
-	<script src="js/script.js"></script> 
+<script src="js/script.min.js"></script> 
+<script src="js/script.js"></script> 
 
 </body>
 </html>

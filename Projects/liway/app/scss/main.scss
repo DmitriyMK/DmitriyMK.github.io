@@ -12,11 +12,11 @@ body {
 	line-height: 1.75;
 	overflow-x: hidden;
 	box-sizing: border-box;
-
 }
 ul {
 	list-style-type: none;
 }
+
 .wrapper {
 	position: relative;
 	max-width: 1200px;
@@ -130,6 +130,27 @@ ul {
 	}
 }
 
+/* ------------	LOADER ------------*/
+#preloader {
+	position: fixed; 
+	left: 0; 
+	top: 0; 
+	right: 0; 
+	bottom: 0; 
+	background: #fff; 
+	z-index: 1001;
+}
+#preloader i {
+	width: 70px; 
+	height: 70px; 
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	background: url('..//img/preloader.gif') no-repeat 50% 50%; 
+	margin: -35px 0 0 -35px;
+}
+
+/* ------------	HEADER------------*/
 
 .header {
 	position: relative;
