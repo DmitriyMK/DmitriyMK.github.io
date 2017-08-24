@@ -60,6 +60,6 @@ $("form.callback").submit(function() {
 
 /*PRELOADER*/
 $(window).load(function() {
-  $('#preloader').delay(1000).fadeOut('slow');
+  $('#preloader').delay(100).fadeOut('slow');
 
 });

@@ -18,6 +18,19 @@
 	}
 }  
 
+.music-box {
+		top: -30px;
+		left: 5%;
+		padding: 0 50px;
+		width: 90%;
+		.player-box {
+			display: flex;
+			justify-content: space-around;
+			padding-bottom: 40px;
+		}
+
+	}
+
 }
 
 /* Small Devices, Tablets */
@@ -53,6 +66,16 @@
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
 
+.media {
+	&__list {
+		padding: 0;
+		flex-direction: column;
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+
+	}
+}
 
 }
 		
