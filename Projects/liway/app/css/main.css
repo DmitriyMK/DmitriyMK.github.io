@@ -1099,7 +1099,19 @@ ul {
     color: #fff; }
 
 .booking {
-  background: #f3f3f3; }
+  background: #f3f3f3;
+  /* ::-webkit-input-placeholder { 
+	text-align: center;
+}
+::-moz-placeholder { 
+	text-align: center;
+}
+:-ms-input-placeholder { 
+	text-align: center;
+}
+:-moz-placeholder { 
+	text-align: center;
+} */ }
   .booking .form-line {
     position: relative;
     -webkit-flex-basis: 400px;
@@ -1153,6 +1165,18 @@ ul {
       padding: 0; }
   .booking input[type=submit] {
     color: #fff; }
+  .booking select {
+    background: #f8f8f8;
+    color: #888;
+    border: none;
+    outline: none;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    cursor: pointer;
+    /* 		text-indent: 35%; */ }
+  .booking .hidden {
+    display: none; }
 
 .support__list {
   padding: 50px 0;

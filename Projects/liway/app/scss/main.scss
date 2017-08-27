@@ -564,6 +564,7 @@ ul {
 .booking {
 	background: #f3f3f3;
 	.form {
+
 		&-line {
 			position: relative;
 			flex-basis: 400px;
@@ -614,6 +615,33 @@ ul {
 	input[type=submit] {
 		color: #fff;
 	}
+	select {
+		background: #f8f8f8;
+		color:#888;
+		border:none;
+		outline:none;
+		appearance:none;
+		cursor:pointer;
+/* 		text-indent: 35%; */
+}
+.hidden {
+	display: none;
+}
+
+/* ::-webkit-input-placeholder { 
+	text-align: center;
+}
+::-moz-placeholder { 
+	text-align: center;
+}
+:-ms-input-placeholder { 
+	text-align: center;
+}
+:-moz-placeholder { 
+	text-align: center;
+} */
+
+
 
 }
 
@@ -634,6 +662,8 @@ ul {
 .contact {
 	background: #f3f3f3;
 }
+
+
 
 
 /* @import "media.scss"; */
