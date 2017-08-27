@@ -564,11 +564,6 @@ ul {
 .booking {
 	background: #f3f3f3;
 	.form {
-		margin-bottom: 100px;
-		font-size: rem(20);
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: center;
 		&-line {
 			position: relative;
 			flex-basis: 400px;
@@ -598,6 +593,7 @@ ul {
 		align-self: basis;
 		padding: 0;
 		background: #fff;
+		border: none;
 		text-align: center;
 		div {
 			display: inline-block;
