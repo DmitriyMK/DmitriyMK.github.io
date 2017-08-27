@@ -10,6 +10,7 @@
 	<meta name="keywords" content=""/>
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/media.css">
+
 </head>
 <body>
 	<div id="preloader">
@@ -35,7 +36,6 @@
 
 	<article class="interview__article" id="interview">
 		<div class="wrapper">
-
 			<ul class="list">
 				<li class="list__item">
 					<p class="questions">- Вопрос 1</p>
@@ -94,17 +94,36 @@
 						<input type="hidden" name="form_subject" value="">
 						<!-- END Hidden Required Fields -->
 						<input type="hidden" name="Страница" value="">
-						<input class="form-line" type="email" name="name" placeholder="Просто введи свой email" required>
-						<select class="form-line">
-							<option>Выбрать город</option>
-							<option>Киев</option>
-							<option>Одесcа</option>
-							<option>Львов</option>
-							<option>Полтава</option>
-						</select>
-						<p class="form-line">tick tack toe</p>
+						<div class="form__wrapper">
+							<input class="form-line" type="email" name="name" placeholder="Просто введи свой email" required>
+							
+							
+							<select class="form-line slct" id="slct">
+								<option value="hide">Выбрать город</option>
+								<option>Киев</option>
+								<option>Одесcа</option>
+								<option>Львов</option>
+								<option>Полтава</option>
+							</select>
+							
 
-						<input type="submit" class="form-button" value="Забронировать">
+							<div class="clock form-line">
+								<span class="afss_day_bv"></span>
+								<div>
+									<p class="afss_hours_bv num">0</p>
+									<p class="text zero">Часов</p>
+								</div>
+								<div>
+									<p class="afss_mins_bv num">:15</p>
+									<p class="text">Минут</p>
+								</div>
+								<div>
+									<p class="afss_secs_bv num">:00</p>
+									<p class="text">Секунд</p>
+								</div>	
+							</div>
+							<input type="submit" class="form-line form-submit" value="Забронировать">
+						</div>
 					</form>
 				</div>
 
@@ -112,7 +131,22 @@
 		</div>		
 	</section>
 
+	<section class="support">
+		<div class="wrapper">
+			<h3 class="section__title">При поддержке</h3>
+			<ul class="support__list">
+				<li class="support__item"><img src="img/media_7.png" alt=""></li>
+				<li class="support__item m1"><img src="img/media_8.png" alt=""></li>
+				<li class="support__item"><img src="img/media_9.png" alt=""></li>
+			</ul>
+		</div>
+	</section>
 
+	<section class="contact">
+		<div class="wrapper">
+			<h3 class="section__title">Контакты</h3>
+		</div>
+	</section>
 
 	<footer class="footer">
 		<div class="footer__content">
@@ -129,7 +163,44 @@
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 	<script src="js/script.min.js"></script> 
-	<script src="js/script.js"></script> 
+	<script src="js/script.js"></script>
+
+
+	<script type="text/javascript">
+		var remain_bv   = 900;
+		function parseTime_bv(timestamp){
+			if (timestamp < 0) timestamp = 0;
+
+			var day = Math.floor( (timestamp/60/60) / 24);
+			var hour = Math.floor(timestamp/60/60);
+			var mins = Math.floor((timestamp - hour*60*60)/60);
+			var secs = Math.floor(timestamp - hour*60*60 - mins*60); 
+			var left_hour = Math.floor( (timestamp - day*24*60*60) / 60 / 60 );
+
+			/* $('span.afss_day_bv').text(day);*/
+			$('.afss_hours_bv').text(left_hour);
+
+			if(String(mins).length > 1)
+				$('.afss_mins_bv').text(":" + mins);
+			else
+				$('.afss_mins_bv').text("0" + mins);
+			if(String(secs).length > 1)
+				$('.afss_secs_bv').text(":" + secs);
+			else
+				$('.afss_secs_bv').text("0" + secs);
+
+		}
+
+		$(document).ready(function(){
+			setInterval(function(){
+				remain_bv = remain_bv - 1;
+				parseTime_bv(remain_bv);
+				if(remain_bv <= 0){
+					/*alert('Hello');*/
+				}
+			}, 1000);
+		}); /*TIMER*/
+	</script>
 
 </body>
 </html>

@@ -30,6 +30,27 @@
 		}
 
 	}
+	.booking {
+		.form {
+			&-line {
+				flex-basis: 300px;
+			}
+		}
+	}
+
+	.support {
+		&__list {
+			flex-direction: column;
+			align-items: center;
+		}
+		&__item {
+			margin: 20px 0;
+		}
+		.m1 {
+			order: -1;
+		}
+	}
+
 
 }
 
@@ -106,6 +127,13 @@
 		&__ask {
 			padding: 50px 0;
 			font-size: rem(26);
+		}
+	}
+	.booking {
+		.form {
+			&-line {
+				flex-basis: 400px;
+			}
 		}
 	}
 
