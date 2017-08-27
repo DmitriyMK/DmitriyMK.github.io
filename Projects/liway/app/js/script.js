@@ -41,6 +41,7 @@ $('.video-prev').magnificPopup({
   }
 });
 
+
 //E-mail Ajax Send
 $("form.callback").submit(function() {
   var th = $(this);
@@ -57,6 +58,20 @@ $("form.callback").submit(function() {
   });
   return false;
 });
+
+
+/*MENU SCROLLING*/
+$(document).ready(function(){
+  $('a[href^="#"], *[data-href^="#"]').on('click', function(e){
+    e.preventDefault();
+    var t = 1000;
+    var d = $(this).attr('data-href') ? $(this).attr('data-href') : $(this).attr('href');
+    $('html,body').stop().animate({ scrollTop: $(d).offset().top }, t);
+  });
+});
+
+
+
 
 /*PRELOADER*/
 $(window).load(function() {

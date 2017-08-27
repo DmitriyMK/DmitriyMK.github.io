@@ -21,6 +21,8 @@
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
+  .header {
+    background-position: 70%; }
   .header__text, .prefooter__text {
     font-size: 2rem; }
   .icon-play {
@@ -36,10 +38,59 @@
     font-size: 1.25rem; }
   .form-button {
     margin-top: 30px;
-    font-size: 1.25rem; } }
+    font-size: 1.25rem; }
+  .interview__header {
+    background: url(../img/background__2.jpg) no-repeat 40% 50%; }
+    .interview__header .interview__text {
+      font-size: 2.75rem; }
+  .interview__article {
+    font-size: 1.25rem; }
+    .interview__article .questions {
+      padding: 20px 0; }
+    .interview__article .answer {
+      padding: 10px 20px; }
+  .invite__title {
+    font-size: 1.5rem; }
+  .invite__list {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    padding-top: 40px;
+    padding-bottom: 80px; }
+    .invite__list img {
+      display: block;
+      margin: 0 auto;
+      max-width: 100%;
+      max-height: 100%; }
+  .invite__item {
+    padding-bottom: 20px; }
+  .invite__text {
+    font-size: 1.125rem; }
+  .invite__ask {
+    padding: 50px 0;
+    font-size: 1.625rem; } }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
+  .header {
+    background-position: 80%; }
+  .header__text, .prefooter__text {
+    font-size: 1.75rem; }
   .media__list {
     padding: 0;
     -webkit-box-orient: vertical;
@@ -57,6 +108,57 @@
     -webkit-box-align: center;
     -webkit-align-items: center;
         -ms-flex-align: center;
-            align-items: center; } }
+            align-items: center; }
+  .media .item__hidden {
+    display: none; }
+  .media .media__item {
+    padding-top: 25px; }
+  .media .media__item:nth-child(5) {
+    padding-bottom: 50px; }
+  .interview__header {
+    background: url(../img/background__2.jpg) no-repeat 40% 50%; }
+    .interview__header .interview__text {
+      font-size: 1.875rem;
+      padding-top: 10vh; }
+  .interview__article {
+    font-size: 1.25rem;
+    padding: 0; }
+    .interview__article .questions {
+      padding: 0; }
+  .invite__title {
+    font-size: 1.1875rem; }
+  .invite__list {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    padding-top: 40px;
+    padding-bottom: 80px; }
+    .invite__list img {
+      display: block;
+      margin: 0 auto;
+      max-width: 100%;
+      max-height: 100%; }
+  .invite__item {
+    padding-bottom: 20px; }
+  .invite__text {
+    font-size: 1.125rem; }
+  .invite__ask {
+    padding: 50px 0;
+    font-size: 1.625rem; } }
 
 /* Custom, iPhone Retina */

@@ -3,22 +3,22 @@
 /*==========  Desktop First  ==========*/
 
 
- @media only screen and (max-width : 1200px) {
+@media only screen and (max-width : 1200px) {
 
 }  
 
 /* Medium Devices, Desktops */
 
- @media only screen and (max-width : 992px) {
+@media only screen and (max-width : 992px) {
 
-.greeting, .footer {
-	&__content {
-		width: 100%;
-		text-align: center;
-	}
-}  
+	.greeting, .footer {
+		&__content {
+			width: 100%;
+			text-align: center;
+		}
+	}  
 
-.music-box {
+	.music-box {
 		top: -30px;
 		left: 5%;
 		padding: 0 50px;
@@ -35,50 +35,160 @@
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
+	.header {
+		background-position: 70%;
+	}
+	.header, .prefooter {
+		&__text {
+			font-size: rem(32);
+		}
+	}
+	.icon-play {
+		position: absolute;
+		bottom: -50%;
+		left: 40%;
+	}
+	.form {
+		&-line {
+			display: block;
+			margin: 0 auto;
+			width: 80%;
+			text-align: center;
+			padding-left: 0;
+			font-size: rem(20);
+		}
+		&-button {
+			margin-top: 30px;
+			font-size: rem(20);
+		} 
+	}
 
-.header, .prefooter {
-	&__text {
-		font-size: rem(32);
+	.interview__header {
+		background: url(../img/background__2.jpg) no-repeat 40% 50%;
+		.interview__text {
+			font-size: rem(44);
+		}
 	}
-}
-.icon-play {
-	position: absolute;
-	bottom: -50%;
-	left: 40%;
-}
-.form {
-	&-line {
-		display: block;
-		margin: 0 auto;
-		width: 80%;
-		text-align: center;
-		padding-left: 0;
+	.interview__article {
 		font-size: rem(20);
+		.questions {
+			padding: 20px 0;
+		}
+		.answer {
+			padding: 10px 20px;
+		}
 	}
-	&-button {
-		margin-top: 30px;
-		font-size: rem(20);
-	} 
-}
+	.invite {
+		&__title {
+			font-size: rem(24);
+		}
+		&__list {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			width: 100%;
+			padding-top: 40px;
+			padding-bottom: 80px;
+			img {
+				display: block;
+				margin: 0 auto;
+				max-width: 100%;
+				max-height: 100%;
+			}
+		}
+		&__item {
+			padding-bottom: 20px;
+		}
+		&__text {
+			font-size: rem(18);
+		}
+		&__ask {
+			padding: 50px 0;
+			font-size: rem(26);
+		}
+	}
 
 }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
 
-.media {
-	&__list {
-		padding: 0;
-		flex-direction: column;
-		display: flex;
-		justify-content: space-around;
-		align-items: center;
-
+	.header {
+		background-position: 80%;
 	}
-}
+	.header, .prefooter {
+		&__text {
+			font-size: rem(28);
+		}
+	}
+
+	.media {
+		&__list {
+			padding: 0;
+			flex-direction: column;
+			display: flex;
+			justify-content: space-around;
+			align-items: center;
+		}
+		.item__hidden {
+			display: none;
+		}
+		.media__item {
+			padding-top: 25px;
+		}
+		.media__item:nth-child(5) {
+			padding-bottom: 50px;
+		}
+	}
+
+	.interview__header {
+		background: url(../img/background__2.jpg) no-repeat 40% 50%;
+		.interview__text {
+			font-size: rem(30);
+			padding-top: 10vh;
+		}
+	}
+	.interview__article {
+		font-size: rem(20);
+		padding: 0;
+		.questions {
+			padding: 0;
+		}
+	}
+	.invite {
+		&__title {
+			font-size: rem(19);
+		}
+		&__list {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			width: 100%;
+			padding-top: 40px;
+			padding-bottom: 80px;
+			img {
+				display: block;
+				margin: 0 auto;
+				max-width: 100%;
+				max-height: 100%;
+			}
+		}
+		&__item {
+			padding-bottom: 20px;
+		}
+		&__text {
+			font-size: rem(18);
+		}
+		&__ask {
+			padding: 50px 0;
+			font-size: rem(26);
+		}
+	}
 
 }
-		
+
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 320px)  {
