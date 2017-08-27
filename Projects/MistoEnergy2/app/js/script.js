@@ -20,8 +20,13 @@ $(document).ready(function() {
 
 
 $(document).ready(function() {
-$("img").lazyload({
-	threshold: 200,
-	effect: "fadeIn"
+	$("img").lazyload({
+		threshold: 200,
+		effect: "fadeIn"
+	});
+
 });
-});
+
+
+
+$('[data-remodal-id=modal]').remodal(options);

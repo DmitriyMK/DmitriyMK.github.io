@@ -3,6 +3,8 @@
 @import "_fonts";
 @import "_mixin and function";
 @import "_vars";
+@import "_remodal";
+@import "_remodal-default-theme";
 
 body {
 	min-width: 320px;
@@ -509,6 +511,61 @@ background: #fefefe;
 		}
 	}
 }
+/* POPUPS */
+.mfp-zoom-in {
+  
+  /* start state */
+  .mfp-with-anim {
+    opacity: 0;
+    transition: all 0.2s ease-in-out; 
+    transform: scale(0.8); 
+  }
+  
+  &.mfp-bg {
+    opacity: 0;
+	  transition: all 0.3s ease-out;
+  }
+  
+  /* animate in */
+  &.mfp-ready {
+    .mfp-with-anim {
+      opacity: 1;
+      transform: scale(1); 
+    }
+    &.mfp-bg {
+      opacity: 0.8;
+    }
+  }
+  
+  /* animate out */
+  &.mfp-removing {
+    
+    .mfp-with-anim {
+      transform: scale(0.8); 
+      opacity: 0;
+    }
+    &.mfp-bg {
+      opacity: 0;
+    }
+    
+  }
+}
+
+
+
+
+.counters-popup {
+
+  position: relative;
+  background: gray;
+  padding: 20px;
+  width:auto;
+  max-width: 500px;
+  margin: 20px auto;
+  font-size: rem(36);
+  color: #fff;
+
+}
 /* PARTNERS */
 
 .partners {
@@ -536,82 +593,3 @@ background: #fefefe;
 
 
 /* @import "media.scss"; */
-
-
-/*   position: absolute;
-top: 50%;
-left: 50%;
-transform: translate(-50%, -50%); */
-
-/* 	&__col {
-	padding: 0;
-	margin: 0;
-}
-&__wrapper {
-	overflow-x: hidden;
-} 
-&__wrapper-pic {
-	display: block;
-	margin: 0 auto;
-	height: 285px;
-} */
-
-/* 	&__content {
-	padding: 5px 10px 5px 15px; 		
-	background: $green;
-	color: #fff;
-	text-align: left;
-	overflow: hidden; 
-	height: 285px;
-	&-category {
-		font-size: rem(24);
-		font-weight: 700;
-		letter-spacing: 2px;
-	}
-	&-title {
-		position: relative;
-		font-size: rem(20);
-		font-weight: 700;
-		letter-spacing: 2px;
-		&:before {
-			display: inline-block;
-			position: absolute;
-			content: "";	
-			height: 2px;
-			width: 100%;		
-			bottom: -6px;
-			left: 0;
-			background: #fff;	
-		}
-	}
-	&-text {
-		padding: 10px 0 5px 0;
-		font-size: rem(18);
-	}
-	&-link {
-		color: #fff;
-	}
-	&-left:before{
-		position: absolute;
-		right: -8%;
-		top: 35%;
-		content: "";
-		z-index: 9;
-		width: 0;
-		height: 0;
-		border-top: 30px solid transparent;
-		border-left: 30px solid $green;
-		border-bottom: 30px solid transparent;
-	}
-	&-right:before{
-		position: absolute;
-		content: "";			
-		left: -8%;
-		top: 35%;
-		width: 0;
-		height: 0;
-		border-top: 30px solid transparent;
-		border-right: 30px solid $green;
-		border-bottom: 30px solid transparent;
-	}
-} */
