@@ -660,12 +660,54 @@ ul {
 	background: -webkit-linear-gradient(top, #8e3d89 0%,#8b3e8c 18%,#883e8b 18%,#863f8d 26%,#873f91 28%,#843f90 29%,#834090 32%,#844093 37%,#804192 41%,#7c4297 59%,#78439b 65%,#7245a0 99%,#70469c 99%,#cfaaed 100%,#cfabeb 100%); 
 	background: linear-gradient(to bottom, #8e3d89 0%,#8b3e8c 18%,#883e8b 18%,#863f8d 26%,#873f91 28%,#843f90 29%,#834090 32%,#844093 37%,#804192 41%,#7c4297 59%,#78439b 65%,#7245a0 99%,#70469c 99%,#cfaaed 100%,#cfabeb 100%); 
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8e3d89', endColorstr='#cfabeb',GradientType=0 );
-	z-index: 1; 
+	z-index: 10;
+	&:before {
+		position: absolute;
+		content: '';
+		top: -20px;
+		left: -20px;
+		border-bottom: 220px solid #865bcb;
+		border-left: 0 solid transparent;
+		border-right: 130px solid transparent;
+		height: 0;
+		width: 250px;
+		transform: rotate(4deg);
+		background: #865bcb;
+		background: -moz-linear-gradient(-45deg, #865bcb 0%, #6f4ca7 100%);
+		background: -webkit-linear-gradient(-45deg, #865bcb 0%,#6f4ca7 100%);
+		background: linear-gradient(135deg, #865bcb 0%,#6f4ca7 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#865bcb', endColorstr='#6f4ca7',GradientType=1 );
+		z-index: 1;
+	} 
+		&:after {
+		position: absolute;
+		content: '';
+		top: -20px;
+		right: -20px;
+		border-bottom: 220px solid #865bcb;
+		border-left: 130px solid transparent;
+		border-right: 0 solid transparent;
+		height: 0;
+		width: 250px;
+		transform: rotate(-4deg);
+		background: #865bcb;
+		background: -moz-linear-gradient(-45deg, #865bcb 0%, #6f4ca7 100%);
+		background: -webkit-linear-gradient(-45deg, #865bcb 0%,#6f4ca7 100%);
+		background: linear-gradient(135deg, #865bcb 0%,#6f4ca7 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#865bcb', endColorstr='#6f4ca7',GradientType=1 );
+		z-index: 1;
+	} 
 	&-text{
+		width: 80%;
+		margin: auto;
+		padding: 15px 0;
+		position: relative;
 		text-align: center;
 		color: #fff;
 		font-size: rem(55);
+		line-height: 1;
 		font-family: "GothamProLight";
+		z-index: 10;
 	}
 	.action__wrapper {
 	}

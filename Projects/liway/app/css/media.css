@@ -1,4 +1,10 @@
 /*==========  Desktop First  ==========*/
+@media only screen and (max-width: 1024px) {
+  .action__header:before, .action__header:after {
+    display: none; }
+  .action__header-text {
+    font-size: 3.125rem; } }
+
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px) {
   .greeting__content, .footer__content {

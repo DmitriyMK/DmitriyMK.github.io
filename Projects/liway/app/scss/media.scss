@@ -2,11 +2,16 @@
 @import "_vars";
 /*==========  Desktop First  ==========*/
 
-
-@media only screen and (max-width : 1200px) {
-
-}  
-
+@media only screen and (max-width : 1024px) {
+	.action__header {
+		&:before, &:after {
+			display: none;
+		}
+		&-text{
+			font-size: rem(50);
+		}
+	}
+}
 /* Medium Devices, Desktops */
 
 @media only screen and (max-width : 992px) {
@@ -50,8 +55,6 @@
 			order: -1;
 		}
 	}
-
-
 	.causes {
 		&__wrapper {
 			flex-direction: column;
