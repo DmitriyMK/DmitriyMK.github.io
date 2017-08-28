@@ -266,32 +266,38 @@ ul {
 		display: none!important;
 	}
 	.svp-player-panel{
-		bottom: 11px!important;
-		background: transparent;
-		
+		bottom: 10px!important;
+		border: transparent;
 	}
 	.svp-player-video-frame-border{
 		height: 27px!important;
 		width: 95%!important;
+
 	}
 	.svp-player-control-layer {
-
+		background: transparent;
+		opacity: 0;
 		
 	}
 	.svp-player-panel-duration {
-
+		margin-top: 6px;
+		height: 4px;
+		background: #666;
 	}
 	.svp-player-panel-current {
 		background: #a7a7a6;
 		box-shadow: 0px 0px 50px 0px rgba(255,255,255,1);
 		height: 4px;
-		margin-top: 10px;
+
 	}
 	.fade{
 		opacity: 1!important;
 	}
 	.svp-player-panel-play div:hover{
 		cursor: pointer;
+	}
+	.svp-player-video-frame-border {
+		background: transparent;
 	}
 
 	.play-cont {
@@ -679,7 +685,7 @@ ul {
 		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#865bcb', endColorstr='#6f4ca7',GradientType=1 );
 		z-index: 1;
 	} 
-		&:after {
+	&:after {
 		position: absolute;
 		content: '';
 		top: -20px;

@@ -811,21 +811,29 @@ ul {
   .music-box .svp-player-control-playbutton {
     display: none !important; }
   .music-box .svp-player-panel {
-    bottom: 11px !important;
-    background: transparent; }
+    bottom: 10px !important;
+    border: transparent; }
   .music-box .svp-player-video-frame-border {
     height: 27px !important;
     width: 95% !important; }
+  .music-box .svp-player-control-layer {
+    background: transparent;
+    opacity: 0; }
+  .music-box .svp-player-panel-duration {
+    margin-top: 6px;
+    height: 4px;
+    background: #666; }
   .music-box .svp-player-panel-current {
     background: #a7a7a6;
     -webkit-box-shadow: 0px 0px 50px 0px white;
             box-shadow: 0px 0px 50px 0px white;
-    height: 4px;
-    margin-top: 10px; }
+    height: 4px; }
   .music-box .fade {
     opacity: 1 !important; }
   .music-box .svp-player-panel-play div:hover {
     cursor: pointer; }
+  .music-box .svp-player-video-frame-border {
+    background: transparent; }
   .music-box .play-cont {
     display: -webkit-box;
     display: -webkit-flex;

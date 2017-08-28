@@ -162,7 +162,8 @@
         -ms-flex-preferred-size: 400px;
             flex-basis: 400px; }
   .action__header-text {
-    font-size: 2.1875rem; }
+    font-size: 2.1875rem;
+    width: 100%; }
   .causes .icon-play {
     bottom: 20%; } }
 
