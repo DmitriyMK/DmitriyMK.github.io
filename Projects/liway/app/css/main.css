@@ -758,112 +758,209 @@ ul {
   top: -30px;
   left: 20%;
   padding: 0 50px;
-  background: url(../img/player__back.jpg);
-  -webkit-background-size: cover;
-          background-size: cover;
-  width: 75%;
-  margin: auto; }
-  .music-box .box__title {
-    color: #fff;
-    text-align: center;
-    padding: 20px 0 30px 0;
-    font-size: 0.9375rem;
-    font-family: "GothamProLight", serif; }
-  .music-box .player-box {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-justify-content: space-around;
-        -ms-flex-pack: distribute;
-            justify-content: space-around;
-    padding-bottom: 40px; }
-  .music-box .player-box img {
-    display: block;
-    margin-top: 20px;
-    height: 100px;
-    width: 100px; }
-  .music-box .play-cont {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-        -ms-flex-align: center;
-            align-items: center;
-    height: 50px; }
-  .music-box .right-side {
-    width: 100%;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
-        -ms-flex-pack: justify;
-            justify-content: space-between; }
-  .music-box .svp-player-control-playbutton {
-    display: none !important; }
-  .music-box .svp-player-panel {
-    bottom: 10px !important;
-    border: transparent; }
-  .music-box .svp-player-video-frame-border {
-    height: 27px !important;
-    width: 95% !important; }
-  .music-box .svp-player-control-layer {
-    background: transparent;
-    opacity: 0; }
-  .music-box .svp-player-panel-duration {
-    margin-top: 6px;
-    height: 4px;
-    background: #666; }
-  .music-box .svp-player-panel-current {
-    background: #a7a7a6;
-    -webkit-box-shadow: 0px 0px 50px 0px white;
-            box-shadow: 0px 0px 50px 0px white;
-    height: 4px; }
-  .music-box .fade {
-    opacity: 1 !important; }
-  .music-box .svp-player-panel-play div:hover {
-    cursor: pointer; }
-  .music-box .svp-player-video-frame-border {
-    background: transparent; }
-  .music-box .play-cont {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-justify-content: space-around;
-        -ms-flex-pack: distribute;
-            justify-content: space-around;
-    color: #a7a7a6;
-    font-family: "GothamProLightItalic"; }
-    .music-box .play-cont a {
-      display: block;
-      margin-left: 20px;
-      color: #a7a7a6; }
-    .music-box .play-cont svg {
-      width: 1.1rem;
-      height: 1.1rem;
-      stroke-width: 0;
-      fill: #a7a7a6; }
-    .music-box .play-cont .track-name {
-      font-size: 0.9375rem; }
-    .music-box .play-cont .border__link {
-      height: 30px;
-      padding: 0 20px;
-      border: 1px solid #a7a7a6;
-      -webkit-border-radius: 12px;
-              border-radius: 12px; }
-    .music-box .play-cont span {
-      padding-right: 10px;
-      margin-bottom: 10px; }
+  width: 80%;
+  max-width: 800px;
+  background: #250b54;
+  background: -webkit-linear-gradient(-45deg, #250b54 0%, #270d56 1%, #260c55 2%, #270e52 2%, #291052 3%, #2c1354 8%, #2f1657 8%, #2f1657 8%, #2c1752 9%, #2c1752 9%, #2e1954 9%, #2e1952 12%, #311c55 13%, #331f54 15%, #331f50 17%, #352152 18%, #342051 18%, #372354 19%, #362253 20%, #362752 20%, #392751 22%, #362750 23%, #382952 23%, #372851 24%, #3a2b54 24%, #3a2b52 27%, #3b2d50 27%, #3c2e51 29%, #3c3151 29%, #3e3051 31%, #3f324e 31%, #3c324d 32%, #3f3550 35%, #413750 35%, #423850 39%, #403c4d 40%, #3f3b4c 41%, #413d4e 42%, #403c4b 42%, #423e4d 42%, #413d4c 44%, #433f4d 44%, #44404e 46%, #44404e 48%, #44414a 48%, #46434a 55%, #464447 56%, #454545 64%, #444442 64%, #424240 70%, #3f423b 70%, #3f423b 71%, #40403e 72%, #3e403d 74%, #3d4039 74%, #3d3e38 76%, #3a3d36 76%, #383933 80%, #343730 80%, #353630 82%, #32352e 82%, #32352e 83%, #30332c 83%, #2e312a 86%, #2c2d27 87%, #2b2c26 89%, #292a24 89%, #242720 91%, #242720 93%, #23241e 93%, #20211b 94%, #1e201d 96%, #1c1f18 96%, #1b1c16 98%, #181816 98%, #161815 100%);
+  background: -webkit-linear-gradient(315deg, #250b54 0%, #270d56 1%, #260c55 2%, #270e52 2%, #291052 3%, #2c1354 8%, #2f1657 8%, #2f1657 8%, #2c1752 9%, #2c1752 9%, #2e1954 9%, #2e1952 12%, #311c55 13%, #331f54 15%, #331f50 17%, #352152 18%, #342051 18%, #372354 19%, #362253 20%, #362752 20%, #392751 22%, #362750 23%, #382952 23%, #372851 24%, #3a2b54 24%, #3a2b52 27%, #3b2d50 27%, #3c2e51 29%, #3c3151 29%, #3e3051 31%, #3f324e 31%, #3c324d 32%, #3f3550 35%, #413750 35%, #423850 39%, #403c4d 40%, #3f3b4c 41%, #413d4e 42%, #403c4b 42%, #423e4d 42%, #413d4c 44%, #433f4d 44%, #44404e 46%, #44404e 48%, #44414a 48%, #46434a 55%, #464447 56%, #454545 64%, #444442 64%, #424240 70%, #3f423b 70%, #3f423b 71%, #40403e 72%, #3e403d 74%, #3d4039 74%, #3d3e38 76%, #3a3d36 76%, #383933 80%, #343730 80%, #353630 82%, #32352e 82%, #32352e 83%, #30332c 83%, #2e312a 86%, #2c2d27 87%, #2b2c26 89%, #292a24 89%, #242720 91%, #242720 93%, #23241e 93%, #20211b 94%, #1e201d 96%, #1c1f18 96%, #1b1c16 98%, #181816 98%, #161815 100%);
+  background: -o-linear-gradient(315deg, #250b54 0%, #270d56 1%, #260c55 2%, #270e52 2%, #291052 3%, #2c1354 8%, #2f1657 8%, #2f1657 8%, #2c1752 9%, #2c1752 9%, #2e1954 9%, #2e1952 12%, #311c55 13%, #331f54 15%, #331f50 17%, #352152 18%, #342051 18%, #372354 19%, #362253 20%, #362752 20%, #392751 22%, #362750 23%, #382952 23%, #372851 24%, #3a2b54 24%, #3a2b52 27%, #3b2d50 27%, #3c2e51 29%, #3c3151 29%, #3e3051 31%, #3f324e 31%, #3c324d 32%, #3f3550 35%, #413750 35%, #423850 39%, #403c4d 40%, #3f3b4c 41%, #413d4e 42%, #403c4b 42%, #423e4d 42%, #413d4c 44%, #433f4d 44%, #44404e 46%, #44404e 48%, #44414a 48%, #46434a 55%, #464447 56%, #454545 64%, #444442 64%, #424240 70%, #3f423b 70%, #3f423b 71%, #40403e 72%, #3e403d 74%, #3d4039 74%, #3d3e38 76%, #3a3d36 76%, #383933 80%, #343730 80%, #353630 82%, #32352e 82%, #32352e 83%, #30332c 83%, #2e312a 86%, #2c2d27 87%, #2b2c26 89%, #292a24 89%, #242720 91%, #242720 93%, #23241e 93%, #20211b 94%, #1e201d 96%, #1c1f18 96%, #1b1c16 98%, #181816 98%, #161815 100%);
+  background: linear-gradient(135deg, #250b54 0%, #270d56 1%, #260c55 2%, #270e52 2%, #291052 3%, #2c1354 8%, #2f1657 8%, #2f1657 8%, #2c1752 9%, #2c1752 9%, #2e1954 9%, #2e1952 12%, #311c55 13%, #331f54 15%, #331f50 17%, #352152 18%, #342051 18%, #372354 19%, #362253 20%, #362752 20%, #392751 22%, #362750 23%, #382952 23%, #372851 24%, #3a2b54 24%, #3a2b52 27%, #3b2d50 27%, #3c2e51 29%, #3c3151 29%, #3e3051 31%, #3f324e 31%, #3c324d 32%, #3f3550 35%, #413750 35%, #423850 39%, #403c4d 40%, #3f3b4c 41%, #413d4e 42%, #403c4b 42%, #423e4d 42%, #413d4c 44%, #433f4d 44%, #44404e 46%, #44404e 48%, #44414a 48%, #46434a 55%, #464447 56%, #454545 64%, #444442 64%, #424240 70%, #3f423b 70%, #3f423b 71%, #40403e 72%, #3e403d 74%, #3d4039 74%, #3d3e38 76%, #3a3d36 76%, #383933 80%, #343730 80%, #353630 82%, #32352e 82%, #32352e 83%, #30332c 83%, #2e312a 86%, #2c2d27 87%, #2b2c26 89%, #292a24 89%, #242720 91%, #242720 93%, #23241e 93%, #20211b 94%, #1e201d 96%, #1c1f18 96%, #1b1c16 98%, #181816 98%, #161815 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#250b54', endColorstr='#161815',GradientType=1 ); }
+
+.text-box-1 p {
+  padding: 20px 0;
+  text-align: center;
+  font-size: 0.9375rem;
+  font-family: "GothamProLight", serif;
+  color: #fff; }
+
+.player-box {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 15px 0;
+  padding: 5px; }
+
+.play-cont {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 20px;
+  height: 50px; }
+
+.track-name {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -webkit-align-self: center;
+      -ms-flex-item-align: center;
+          align-self: center;
+  font-family: "GothamProItalic", serif;
+  font-size: 0.625rem;
+  color: #b6b6b6; }
+
+.track-download {
+  padding: 0 15px;
+  border: 1px solid #b6b6b6;
+  -webkit-border-radius: 15px;
+          border-radius: 15px;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease; }
+  .track-download:hover {
+    border: 1px solid #250b54; }
+    .track-download:hover svg {
+      fill: #250b54; }
+    .track-download:hover .track-icons {
+      color: #250b54; }
+
+.track-icons {
+  padding-right: 10px;
+  font-family: "GothamProItalic", serif;
+  font-size: 1rem;
+  color: #b6b6b6; }
+
+.player-box img.logo {
+  margin-top: 20px;
+  width: 100px;
+  height: 100px; }
+
+svg {
+  margin-left: 10px;
+  width: 1.1rem;
+  height: 1.1rem;
+  stroke-width: 0;
+  fill: #a7a7a6;
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease; }
+  svg:hover {
+    fill: #250b54; }
+
+.right-side {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.play-btn,
+.pause-btn {
+  color: tomato;
+  border: 1px solid tomato;
+  background-color: #efefef;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 40px;
+  height: 40px;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  margin-left: 15px;
+  margin-right: 20px;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease; }
+
+.play-btn i {
+  margin-left: 3px; }
+
+.play-btn:focus,
+.pause-btn:focus {
+  outline: none; }
+
+.play-btn:hover,
+.pause-btn:hover {
+  color: white;
+  background-color: tomato;
+  cursor: pointer; }
+
+.svp-player-panel {
+  background: transparent !important; }
+
+.video-stream {
+  background: none !important; }
+
+.svp-player-panel-play div {
+  position: absolute;
+  width: 12px;
+  height: 15px; }
+
+.track-img img {
+  width: 80%;
+  margin: auto;
+  display: block;
+  margin-bottom: 10px;
+  margin-right: 25px; }
+
+.svp-player-control-playbutton {
+  display: none !important;
+  background: transparent !important; }
+
+.svp-player-panel {
+  bottom: 11px !important;
+  border: none !important; }
+
+.svp-player-video-frame-border {
+  height: 27px !important;
+  width: 95% !important;
+  -webkit-border-radius: 5px;
+          border-radius: 5px; }
+
+.fade {
+  opacity: 1 !important;
+  background-image: none !important; }
+
+.svp-player-panel-play div:hover {
+  cursor: pointer; }
+
+.svp-player-panel-duration {
+  border: none !important;
+  background: none !important;
+  cursor: pointer;
+  height: 5px !important;
+  top: 10px !important;
+  background: #666 !important; }
+
+.svp-player-panel-current {
+  background: #a7a7a6 !important;
+  -webkit-box-shadow: 0px 0px 50px 0px white !important;
+          box-shadow: 0px 0px 50px 0px white !important;
+  height: 4px !important; }
+
+.svp-info {
+  position: absolute;
+  top: 40px;
+  left: 20px; }
 
 .media {
   background: #cdcdcd; }
