@@ -6,6 +6,10 @@
 @import "_remodal";
 @import "_remodal-default-theme";
 
+html,body,{
+	overflow: auto !important;
+}
+
 body {
 	min-width: 320px;
 	position: relative;
@@ -137,7 +141,7 @@ background: #fefefe;
 }
 
 .header {
-	height: 100vh;
+	height: 100%;
 	background: url(../img/background.jpg) no-repeat;
 	background-size: cover;
 }
@@ -434,7 +438,7 @@ background: #fefefe;
 		background: $green;
 		color: #fff;
 	}
-		.wrapper__form {
+	.wrapper__form {
 		box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.42);
 	}
 	.counters__form {
@@ -513,41 +517,41 @@ background: #fefefe;
 }
 /* POPUPS */
 .mfp-zoom-in {
-  
+
   /* start state */
   .mfp-with-anim {
-    opacity: 0;
-    transition: all 0.2s ease-in-out; 
-    transform: scale(0.8); 
+  	opacity: 0;
+  	transition: all 0.2s ease-in-out; 
+  	transform: scale(0.8); 
   }
   
   &.mfp-bg {
-    opacity: 0;
-	  transition: all 0.3s ease-out;
+  	opacity: 0;
+  	transition: all 0.3s ease-out;
   }
   
   /* animate in */
   &.mfp-ready {
-    .mfp-with-anim {
-      opacity: 1;
-      transform: scale(1); 
-    }
-    &.mfp-bg {
-      opacity: 0.8;
-    }
+  	.mfp-with-anim {
+  		opacity: 1;
+  		transform: scale(1); 
+  	}
+  	&.mfp-bg {
+  		opacity: 0.8;
+  	}
   }
   
   /* animate out */
   &.mfp-removing {
-    
-    .mfp-with-anim {
-      transform: scale(0.8); 
-      opacity: 0;
-    }
-    &.mfp-bg {
-      opacity: 0;
-    }
-    
+
+  	.mfp-with-anim {
+  		transform: scale(0.8); 
+  		opacity: 0;
+  	}
+  	&.mfp-bg {
+  		opacity: 0;
+  	}
+
   }
 }
 
@@ -556,14 +560,14 @@ background: #fefefe;
 
 .counters-popup {
 
-  position: relative;
-  background: gray;
-  padding: 20px;
-  width:auto;
-  max-width: 500px;
-  margin: 20px auto;
-  font-size: rem(36);
-  color: #fff;
+	position: relative;
+	background: gray;
+	padding: 20px;
+	width:auto;
+	max-width: 500px;
+	margin: 20px auto;
+	font-size: rem(36);
+	color: #fff;
 
 }
 /* PARTNERS */
@@ -583,9 +587,92 @@ background: #fefefe;
 	}
 }
 
+.remodal {
+
+	.remodal__content {
+		text-align: left;
+	}
+	.remodal__title {
+		font-size: 2rem;
+		font-weight: 700;
+		text-transform: uppercase;
+		text-align: left;
+	}
+	.remodal__text {
+		text-align: justify;
+		padding-bottom: 10px;
+	}
+
+	.section {
+		display: none;
+		padding: 20px 0 0;
+		border-top: 1px solid #ddd;
+	}
+
+	input {
+		display: none;
+	}
+
+	label {
+		display: inline-block;
+		margin: 0 0 -1px;
+		padding: 15px 25px;
+		font-weight: 600;
+		text-align: center;
+		color: #bbb;
+		border: 1px solid transparent;
+	}
+
+/* 	label:before {
+	font-family: fontawesome;
+	font-weight: normal;
+	margin-right: 10px;
+} */
+
+/* 	label[for*='1']:before { content: '\f1cb'; }
+label[for*='2']:before { content: '\f17d'; }
+label[for*='3']:before { content: '\f16b'; }
+label[for*='4']:before { content: '\f1a9'; } */
+
+label:hover {
+	color: #888;
+	cursor: pointer;
+}
+
+input:checked + label {
+	color: #555;
+	border: 1px solid #ddd;
+	border-top: 2px solid $yellow;
+	border-bottom: 1px solid #fff;
+}
+
+#tab1:checked ~ #content1,
+#tab2:checked ~ #content2,
+#tab3:checked ~ #content3,
+#tab4:checked ~ #content4 {
+	display: block;
+}
+th {
+	border: 1px solid #bbb;
+	text-align: center;
+}
+td {
+	padding: 0 10px; 
+	border: 1px solid #bbb;
+}
+.left {
+	font-weight: bold;
+}
+.right {
+	text-align: center;
+}
+.size {
+	text-align: center;
+}
 
 
 
+}
 
 
 

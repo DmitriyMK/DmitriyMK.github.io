@@ -1082,7 +1082,7 @@ html.remodal-is-locked {
 .remodal-close {
   position: absolute;
   top: 0;
-  left: 0;
+  right: 0;
   display: block;
   overflow: visible;
   width: 35px;
@@ -1245,6 +1245,9 @@ html.remodal-is-locked {
 .lt-ie9 .remodal {
   width: 700px; }
 
+html, body {
+  overflow: auto !important; }
+
 body {
   min-width: 320px;
   position: relative;
@@ -1372,7 +1375,7 @@ section {
             box-shadow: none; }
 
 .header {
-  height: 100vh;
+  height: 100%;
   background: url(../img/background.jpg) no-repeat;
   -webkit-background-size: cover;
           background-size: cover; }
@@ -1778,5 +1781,65 @@ section {
 .partners__img {
   max-width: 100%;
   height: 57px; }
+
+.remodal {
+  /* 	label:before {
+	font-family: fontawesome;
+	font-weight: normal;
+	margin-right: 10px;
+} */
+  /* 	label[for*='1']:before { content: '\f1cb'; }
+label[for*='2']:before { content: '\f17d'; }
+label[for*='3']:before { content: '\f16b'; }
+label[for*='4']:before { content: '\f1a9'; } */ }
+  .remodal .remodal__content {
+    text-align: left; }
+  .remodal .remodal__title {
+    font-size: 2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: left; }
+  .remodal .remodal__text {
+    text-align: justify;
+    padding-bottom: 10px; }
+  .remodal .section {
+    display: none;
+    padding: 20px 0 0;
+    border-top: 1px solid #ddd; }
+  .remodal input {
+    display: none; }
+  .remodal label {
+    display: inline-block;
+    margin: 0 0 -1px;
+    padding: 15px 25px;
+    font-weight: 600;
+    text-align: center;
+    color: #bbb;
+    border: 1px solid transparent; }
+  .remodal label:hover {
+    color: #888;
+    cursor: pointer; }
+  .remodal input:checked + label {
+    color: #555;
+    border: 1px solid #ddd;
+    border-top: 2px solid #feb800;
+    border-bottom: 1px solid #fff; }
+  .remodal #tab1:checked ~ #content1,
+  .remodal #tab2:checked ~ #content2,
+  .remodal #tab3:checked ~ #content3,
+  .remodal #tab4:checked ~ #content4 {
+    display: block; }
+  .remodal th {
+    border: 1px solid #bbb;
+    text-align: center; }
+  .remodal td {
+    padding: 0 10px;
+    border: 1px solid #bbb; }
+  .remodal .left {
+    font-weight: bold; }
+  .remodal .right {
+    text-align: center; }
+  .remodal .size {
+    text-align: center; }
 
 /* @import "media.scss"; */

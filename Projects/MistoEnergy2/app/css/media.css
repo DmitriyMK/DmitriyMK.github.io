@@ -186,7 +186,11 @@
     .counters .counters__content .counters__text-work:before {
       width: 30%;
       bottom: 30%;
-      left: 35%; } }
+      left: 35%; }
+  .remodal {
+    padding: 15px; }
+    .remodal label {
+      padding: 10px; } }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {

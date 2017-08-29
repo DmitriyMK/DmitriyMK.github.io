@@ -29,4 +29,4 @@ $(document).ready(function() {
 
 
 
-$('[data-remodal-id=modal]').remodal(options);
+
