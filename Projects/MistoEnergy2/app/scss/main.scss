@@ -611,6 +611,7 @@ background: #fefefe;
 
 	input {
 		display: none;
+
 	}
 
 	label {
@@ -621,6 +622,7 @@ background: #fefefe;
 		text-align: center;
 		color: #888;
 		border: 1px solid transparent;
+		word-break: break-all;
 		@include transition(color .3s ease); 
 	}
 
@@ -661,9 +663,7 @@ td {
 	padding: 0 10px; 
 	border: 1px solid #bbb;
 }
-.left {
-	font-weight: bold;
-}
+
 .right {
 	text-align: center;
 }

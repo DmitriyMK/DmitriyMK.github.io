@@ -1816,6 +1816,7 @@ label[for*='4']:before { content: '\f1a9'; } */ }
     text-align: center;
     color: #888;
     border: 1px solid transparent;
+    word-break: break-all;
     -webkit-transition: color 0.3s ease;
     -o-transition: color 0.3s ease;
     transition: color 0.3s ease; }
@@ -1838,8 +1839,6 @@ label[for*='4']:before { content: '\f1a9'; } */ }
   .remodal td {
     padding: 0 10px;
     border: 1px solid #bbb; }
-  .remodal .left {
-    font-weight: bold; }
   .remodal .right {
     text-align: center; }
   .remodal .size {
