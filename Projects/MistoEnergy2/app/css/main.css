@@ -1814,10 +1814,13 @@ label[for*='4']:before { content: '\f1a9'; } */ }
     padding: 15px 25px;
     font-weight: 600;
     text-align: center;
-    color: #bbb;
-    border: 1px solid transparent; }
-  .remodal label:hover {
     color: #888;
+    border: 1px solid transparent;
+    -webkit-transition: color 0.3s ease;
+    -o-transition: color 0.3s ease;
+    transition: color 0.3s ease; }
+  .remodal label:hover {
+    color: #feb800;
     cursor: pointer; }
   .remodal input:checked + label {
     color: #555;

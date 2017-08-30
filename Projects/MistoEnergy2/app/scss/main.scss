@@ -619,8 +619,9 @@ background: #fefefe;
 		padding: 15px 25px;
 		font-weight: 600;
 		text-align: center;
-		color: #bbb;
+		color: #888;
 		border: 1px solid transparent;
+		@include transition(color .3s ease); 
 	}
 
 /* 	label:before {
@@ -635,7 +636,7 @@ label[for*='3']:before { content: '\f16b'; }
 label[for*='4']:before { content: '\f1a9'; } */
 
 label:hover {
-	color: #888;
+	color: $yellow;
 	cursor: pointer;
 }
 
