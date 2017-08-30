@@ -18,6 +18,7 @@
 
 	.greeting, .footer {
 		&__content {
+			padding-left: 0;
 			width: 100%;
 			text-align: center;
 		}
