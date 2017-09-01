@@ -1,0 +1,34 @@
+@import "_reset";
+@import "_fonts";
+@import "_vars";
+@import "_mixin and function";
+@import "_carousel";
+@import "_magnific-popup";
+
+body {
+	min-width: 320px;
+	position: relative;
+	font-family: $fontFamily;
+	font-size: $fontSize;
+	line-height: 1.75;
+	overflow-x: hidden;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+ul {
+	list-style-type: none;
+}
+.wrapper {
+	position: relative;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+/* HEADER  */
+
+
+
+
+
+/* @import "media.scss"; */
