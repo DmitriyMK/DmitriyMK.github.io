@@ -10,10 +10,13 @@
 	<meta name="keywords" content=""/>
 
 	<link rel="shortcut icon" href="img/favicon.ico">
-	<!-- 	<link rel="stylesheet" href="css/main.css"> -->
 	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/media.css">
 </head>
 <body>
+	<div id="preloader">
+		<i></i>
+	</div>
 	<header class="header">
 		<h1 class="logo"><a href="#"><img src="img/logo.png" alt="здесь и сейчас"></a></h1>
 		<div class="wrapper">
@@ -74,107 +77,114 @@
 					<a class="purpose__link button" href="#">Да, я с Вами!</a>
 				</div>
 			</div>
-		</section>
+		</div>
+	</section>
 
-		<section class="publication">
-			<div class="wrapper">
-				<h3 class="section__title publication__title">Наши публикации в журналах</h3>
-				<ul class="publication__list">
-					<li class="publication__item">
-						<a class="publication__link" href="#">
-							<img class="publication__img" src="img/publication1.jpg" alt="">
-						</a>
-					</li>
-					<li class="publication__item">
-						<a class="publication__link" href="#">
-							<img class="publication__img" src="img/publication2.jpg" alt="">
-						</a>
-					</li>
-					<li class="publication__item">
-						<a class="publication__link" href="#">
-							<img class="publication__img" src="img/publication3.jpg" alt="">
-						</a>
-					</li>
-				</ul>
-
-				<div class="owl-carousel publication__carousel">
-					<div class="owl-item">
-						<h4 class="owl-item-title">Заголовок публикации</h4>
-						<p class="owl-item-text">You can choose from hundreds of predefined stencils and icons, upload your own images or create custom templates by combining any of these resources.You can choose from hundreds of predefined stencils and icons, upload your own images or create custom templates by combining any of these resources.</p>
-						<a class="owl-item-link" href="#">Прочесть полностью...</a>
-					</div>
-					<div class="owl-item">
-						<h4 class="owl-item-title">Заголовок публикации</h4>
-						<p class="owl-item-text">You can choose from hundreds of predefined stencils and icons, upload your own images or create custom templates by combining any of these resources.You can choose from hundreds of predefined stencils and icons, upload your own images or create custom templates by combining any of these resources.</p>
-						<a class="owl-item-link" href="#">Прочесть полностью...</a>
-					</div>
-					<div class="owl-item">
-						<h4 class="owl-item-title">Заголовок публикации</h4>
-						<p class="owl-item-text">You can choose from hundreds of predefined stencils and icons, upload your own images or create custom templates by combining any of these resources.You can choose from hundreds of predefined stencils and icons, upload your own images or create custom templates by combining any of these resources.</p>
-						<a class="owl-item-link" href="#">Прочесть полностью...</a>
-					</div>
-				</div>
-
-				<div class="owl-controls publication__controls">
-					<div class="owl-nav">
-						<div class="owl-prev">
-							<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="45" height="84" viewBox="0 0 45 84"><image xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC0AAABUCAQAAAC8PnYYAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfhCB8VFjeXDh/MAAABnklEQVRYw+XZL0hDURQG8G+Kggtb0AcyXnDwwhg8QQwrYrCIxaKsWDTOoE2Wlodg1mBVMBhcMIhMDAsDQWSsrQhrC2JZ8A/XMuSe++p3wuO+9sovnvud7wDsL8AdPtBBmQ0vogcDA4NXLhxiMIENvrVggycteICQBS8JuM+DIwwtuIfAX7gk4BceHGNkwV3k/YVXBPzMgyv4tOA2sv7CawK+58EbGFtwC7P+wpsCvuHB2/iy4CtM+wvvCPiSB+/h14LPkfEXPhDwGQ+uWaxBk8WmET4WcIMH1wVc9xluCPiIBzcFXEsBfKIFA+8WvM+EpzC2/kpMGtgVM+6UN+MAxcmsjlfF80rGZSi44L3dSZyYONTxLREbybgMu9e8TJrEiUlaHV8X6xAZrzg4bddK4sQNUR1fFWs+GY8dPKeHE5sPdbws6isyHjn4gh5ObPTU8aKoZcl46OAFPZzYVKvjhf9zgwIeOHhRDx8iSg0+j64enndw6oFK4iPEqcFzaOvhWQdf1sPfmLTEqUdBAJhDa0I/UqM5gB/cYgYZPODwD/g8LfBW7wdmAAAAAElFTkSuQmCC"/></image>
-							</svg> 
+	<section class="publication">
+		<div class="wrapper">
+			<h3 class="section__title publication__title">Наши публикации в журналах</h3>
+			<ul class="publication__list">
+				<li class="publication__item">
+					<a class="publication__link" href="#">
+						<img class="publication__img" src="img/publication1.jpg" alt="">
+						<div class="overlay">
+							<i class="overlay__icon icon-emo-thumbsup"></i>
 						</div>
-						<div class="owl-next">
-							<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="45" height="84" viewBox="0 0 45 84">
-								<image xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC0AAABUCAQAAAC8PnYYAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfhCB8VFyuaFHLCAAABnElEQVRYw+3ZIUhDQRzH8e98MHDBIToQMThYkIGCGCzDYBERLIrFolGD1iXzEMwarA6MLmgRxWAYDESGbUVYckFWNlTkGd4Ydy//7oFw/3blwz8dv/sdFHnmkxtyyOeFkJCQJlNq+mdAh7SY0dKPQ1qOz9Byib9Z+KwSz9E08DYFj0d4w8LnlHiWuoF3mPd4hD9Z+KISz/Bg4F2WPR7htxZeUuJpagbeY9XjEX5t4WtKPODKwL/Z9HiEX1r4lhJPcW7gv+x6PMLPLHxfiUPFwEMOPB7NiYUfa/GyhZc9Hs2RhZ9o8QMLrzjGAxnd4ION4alEX7v5nrH3+4iUNsN+T8emOLXuw20d7OgWTwj+ZkcFB1y4CRHO0klCcI91FZym6iYcO0vdCcFdVlRwJgbLHn3OXpMJwR2WVPBYDJaVGc5akoTgNkUVPBmDZSWds/YvIbhFXgVPx2BZ+eys1U4IbjKtgvMxWPapUqD9r+E6Eyq4GIOzKniezr+GHxhTwQsxOKOC4dUVbH4KimG4H8A1RrVwwB3j9KlyyJeW/gPQ/CtDSVt7tQAAAABJRU5ErkJggg=="/>
-							</svg>
+					</a>
+				</li>
+				<li class="publication__item">
+					<a class="publication__link" href="#">
+						<img class="publication__img" src="img/publication2.jpg" alt="">
+						<div class="overlay">
+							<i class="overlay__icon icon-search"></i>
 						</div>
-					</div>
-				</div>
+					</a>
+				</li>
+				<li class="publication__item">
+					<a class="publication__link" href="#">
+						<img class="publication__img" src="img/publication3.jpg" alt="">
+						<div class="overlay">
+							<i class="overlay__icon icon-search"></i>
+						</div>
+					</a>
+				</li>
+			</ul>
 
+			<div class="owl-carousel publication__carousel">
+				<div class="owl-item">
+					<h4 class="owl-item-title">Заголовок публикации</h4>
+					<p class="owl-item-text">You can choose from hundreds of predefined stencils and icons, upload your own images or create custom templates by combining any of these resources.You can choose from hundreds of predefined stencils and icons, upload your own images or create custom templates by combining any of these resources.</p>
+					<a class="owl-item-link" href="#">Прочесть полностью...</a>
+				</div>
+				<div class="owl-item">
+					<h4 class="owl-item-title">Заголовок публикации</h4>
+					<p class="owl-item-text">You can choose from hundreds of predefined stencils and icons, upload your own images or create custom templates by combining any of these resources.You can choose from hundreds of predefined stencils and icons, upload your own images or create custom templates by combining any of these resources.</p>
+					<a class="owl-item-link" href="#">Прочесть полностью...</a>
+				</div>
+				<div class="owl-item">
+					<h4 class="owl-item-title">Заголовок публикации</h4>
+					<p class="owl-item-text">You can choose from hundreds of predefined stencils and icons, upload your own images or create custom templates by combining any of these resources.You can choose from hundreds of predefined stencils and icons, upload your own images or create custom templates by combining any of these resources.</p>
+					<a class="owl-item-link" href="#">Прочесть полностью...</a>
+				</div>
 			</div>
-		</section>
 
-		<div class="quote">
-			<div class="wrapper">
-				<p class="quote__text">Крутая и мотивирующая цитата.Мы сами придумываем себе проблемы, преграды, комплексы и рамки, освободи себя - вдохни жизнь и пойми, что ты можешь все.</p>
+			<div class="owl-controls publication__controls">
+				<div class="owl-nav">
+					<div class="owl-prev">
+						<i class="icon icon-left-open-big"></i>
+					</div>
+					<div class="owl-next">
+						<i class="icon icon-right-open-big"></i>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</section>
+
+	<div class="quote">
+		<div class="wrapper">
+			<p class="quote__text">Крутая и мотивирующая цитата. Мы сами придумываем себе проблемы, преграды, комплексы и рамки, освободи себя - вдохни жизнь и пойми, что ты можешь все.</p>
+		</div>
+	</div>
+
+	<section class="action" >
+		<div class="wrapper action__wrapper">
+			<h3 class="section__title action__title">Проснись! Начни прокачивать себя и докажи, что ты достоин стать еще лучше.</h3>
+			<p class="action__text">Напиши как тебя зовут и открой для себя легендарную жизнь, которую ты заслуживаешь!
+			</p>
+			<div class="form">
+				<form class="callback" action="" method="" autocomplete="off">
+					<!-- <div class="success"><span>Ваша заявка прийнята</span></div> -->
+					<!-- Hidden Required Fields -->
+					<input type="hidden" name="project_name" value="">
+					<input type="hidden" name="admin_email" value="">
+					<input type="hidden" name="form_subject" value="">
+					<!-- END Hidden Required Fields -->
+					<input type="hidden" name="Страница" value="">
+					<input class="form-line" type="text" name="name" placeholder="Введи свое имя" required>
+					<input type="submit" class="form-button" value="Продолжить">
+				</form>
 			</div>
 		</div>
+	</section>
 
-		<section class="action" >
-			<div class="wrapper action__wrapper">
-				<h3 class="section__title action__title">Проснись! Начни прокачивать себя и докажи, что ты достоин стать еще лучше.</h3>
-				<p class="action__text">Напиши как тебя зовут и открой для себя легендарную жизнь, которую ты заслуживаешь!
-				</p>
-				<div class="form">
-					<form class="callback" action="" method="" autocomplete="off">
-						<!-- <div class="success"><span>Ваша заявка прийнята</span></div> -->
-						<!-- Hidden Required Fields -->
-						<input type="hidden" name="project_name" value="">
-						<input type="hidden" name="admin_email" value="">
-						<input type="hidden" name="form_subject" value="">
-						<!-- END Hidden Required Fields -->
-						<input type="hidden" name="Страница" value="">
-						<input class="form-line" type="text" name="name" placeholder="Введи свое имя" required>
-						<input type="submit" class="form-button" value="Продолжить">
-					</form>
-				</div>
+	<footer class="footer">
+		<div class="wrapper">
+			<ul class="footer__list">
+				<li class="footer__item"><a class="footer__link" href="#">Адрес /</a></li>
+				<li class="footer__item"><a class="footer__link" href="#">Телефон  /</a></li>
+				<li class="footer__item"><a class="footer__link" href="#"> Политика конфиденциальности / </a></li>
+				<li class="footer__item"><a class="footer__link" href="#">О нас </a></li>
+			</ul>
+			<div class="seo-text">
+				<p>Для Вас мы разработаем лендинг пейдж под ключ по нашей концепции, что удерживает конверсию от 14%</p>
+				<p>Мы дадим вам рекомендации по запуску рекламы в соц. сетях, чтобы ваш лендинг приносил заявки и деньги!</p>
 			</div>
-		</section>
+		</div>
+	</footer>
 
-		<footer class="footer">
-			<div class="wrapper">
-				<ul class="footer__list">
-					<li class="footer__item"><a class="footer__link" href="#">Адрес /</a></li>
-					<li class="footer__item"><a class="footer__link" href="#">Телефон  /</a></li>
-					<li class="footer__item"><a class="footer__link" href="#"> Политика конфиденциальности / </a></li>
-					<li class="footer__item"><a class="footer__link" href="#">О нас </a></li>
-				</ul>
-				<div class="seo-text">
-					<p>Для Вас мы разработаем лендинг пейдж под ключ по нашей концепции, что удерживает конверсию от 14%</p>
-					<p>Мы дадим вам рекомендации по запуску рекламы в соц. сетях, чтобы ваш лендинг приносил заявки и деньги!</p>
-				</div>
-			</div>
-		</footer>
-
-		<script src="js/script.min.js"></script>
-		v<script src="js/script.js"></script>
-	</body>
-	</html>
+	<script src="js/script.min.js"></script>
+	<script src="js/script.js"></script>
+</body>
+</html>

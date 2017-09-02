@@ -1,5 +1,244 @@
-/*==========  Desktop First  ==========*/
 /* Medium Devices, Desktops */
 /* Small Devices, Tablets */
+@media only screen and (max-width: 810px) {
+  .button {
+    font-size: 1.375rem; }
+  ::-webkit-input-placeholder {
+    font-size: 1.375rem; }
+  ::-moz-placeholder {
+    font-size: 1.375rem; }
+  :-ms-input-placeholder {
+    font-size: 1.375rem; }
+  :-moz-placeholder {
+    font-size: 1.375rem; }
+  .header {
+    background: url(../img/background.jpg) 70% 50% no-repeat; }
+    .header__text {
+      width: 100%;
+      padding-left: 5%;
+      padding-right: 5%;
+      padding-top: 30vh;
+      font-size: 2.375rem;
+      line-height: 1.4; }
+  .about__list {
+    padding: 60px; }
+  .about__item {
+    -webkit-align-self: center;
+        -ms-flex-item-align: center;
+            align-self: center;
+    margin: auto;
+    width: 100%;
+    margin-bottom: 60px; }
+    .about__item-text {
+      -webkit-align-self: center;
+          -ms-flex-item-align: center;
+              align-self: center; }
+  .purpose__list {
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 5%; }
+  .purpose__item {
+    padding-left: 100px;
+    padding-bottom: 40px;
+    position: relative;
+    counter-increment: li;
+    font-size: 1.375rem; }
+  .purpose .button__wrap {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 60px; }
+  .publication__list {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; }
+  .publication__item {
+    margin: auto;
+    margin-bottom: 40px;
+    -webkit-flex-basis: auto;
+        -ms-flex-preferred-size: auto;
+            flex-basis: auto;
+    z-index: 1; }
+  .publication__carousel {
+    width: 100%;
+    margin-bottom: 90px; }
+    .publication__carousel .owl-item-title {
+      font-size: 1.5rem; }
+    .publication__carousel .owl-item-text {
+      position: relative;
+      padding: 10px 0;
+      width: 100%;
+      font-size: 1.375rem;
+      line-height: 1.4; }
+  .publication .icon {
+    font-size: 6.25rem;
+    z-index: 10; }
+  .publication .owl-prev i {
+    left: 5px; }
+  .publication .owl-next i {
+    right: 5px; }
+  .action {
+    background: url(../img/background4.jpg) 70% no-repeat; }
+    .action .action__title {
+      font-size: 2.25rem; }
+    .action .form-line {
+      width: 40%;
+      font-size: 1.375rem; }
+    .action .form-button {
+      width: 40%;
+      font-size: 1.375rem; } }
+
 /* Extra Small Devices, Phones */
+@media only screen and (max-width: 590px) {
+  ::-webkit-input-placeholder {
+    text-align: center; }
+  ::-moz-placeholder {
+    text-align: center; }
+  :-ms-input-placeholder {
+    text-align: center; }
+  :-moz-placeholder {
+    text-align: center; }
+  .header__text {
+    padding-left: 0;
+    padding-right: 0;
+    font-size: 2.25rem; }
+  .header .contact {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    .header .contact__item {
+      -webkit-box-flex: 0;
+      -webkit-flex: 0 100px;
+          -ms-flex: 0 100px;
+              flex: 0 100px; }
+    .header .contact__text {
+      display: none; }
+  .about__list {
+    padding: 15px 0; }
+  .action .action__wrapper {
+    padding: 15px; }
+  .action .action__text {
+    padding: 60px 0;
+    width: 100%; }
+  .action .form-line {
+    width: 100%;
+    margin-bottom: 20px;
+    margin-right: 0;
+    padding-left: 0;
+    text-align: center; }
+  .action .form-button {
+    padding: 15px 0;
+    width: 100%;
+    border: none;
+    -webkit-border-radius: 30px;
+            border-radius: 30px;
+    background: #168fdc;
+    color: #fff;
+    font-family: "GothamProLight";
+    font-size: 1.5625rem;
+    margin-bottom: 100px;
+    -webkit-transition: transform 0.5s ease;
+    -o-transition: transform 0.5s ease;
+    -webkit-transition: -webkit-transform 0.5s ease;
+    transition: -webkit-transform 0.5s ease;
+    transition: transform 0.5s ease;
+    transition: transform 0.5s ease, -webkit-transform 0.5s ease; }
+    .action .form-button:hover {
+      -webkit-transform: scale(1.1);
+          -ms-transform: scale(1.1);
+              transform: scale(1.1); }
+  .publication .icon {
+    bottom: 180px; } }
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px) {
+  .section__title {
+    padding-top: 10%;
+    font-size: 1.625rem; }
+  .button {
+    font-size: 1.125rem; }
+  ::-webkit-input-placeholder {
+    font-size: 1.125rem; }
+  ::-moz-placeholder {
+    font-size: 1.125rem; }
+  :-ms-input-placeholder {
+    font-size: 1.125rem; }
+  :-moz-placeholder {
+    font-size: 1.125rem; }
+  .header {
+    background: url(../img/background.jpg) 70% 0% no-repeat; }
+    .header__text {
+      font-size: 2rem; }
+  .contact {
+    margin: 50px 0; }
+  .about .wrapper {
+    padding: 0; }
+  .about__item {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 20px; }
+    .about__item-text {
+      display: block;
+      padding: 0 10px;
+      text-align: center; }
+  .purpose {
+    background: url(../img/background2.jpg) 80% 50% no-repeat;
+    -webkit-background-size: cover;
+            background-size: cover; }
+    .purpose__list {
+      width: 100%; }
+    .purpose__item {
+      text-align: center;
+      padding-left: 0;
+      padding-bottom: 25px;
+      font-size: 1.25rem; }
+      .purpose__item:before {
+        display: none; }
+    .purpose__link {
+      padding: 10px 40px; }
+  .publication .wrapper {
+    padding: 0; }
+  .publication .icon {
+    bottom: 200px; }
+  .quote__text {
+    padding: 50px 30px;
+    font-size: 1.375rem; }
+    .quote__text:before {
+      font-size: 1.5rem;
+      top: 10px; }
+    .quote__text:after {
+      font-size: 1.5rem;
+      bottom: 10px; }
+  .action {
+    -webkit-background-size: cover;
+            background-size: cover; }
+    .action .action__title {
+      font-size: 1.625rem;
+      padding-bottom: 16px; }
+      .action .action__title:before {
+        height: 6px; }
+    .action .action__text {
+      padding: 60px 0;
+      width: 100%;
+      font-size: 1.375rem;
+      line-height: 1.2;
+      font-family: "GothamProMedium"; } }
+
+@media only screen and (max-width: 450px) {
+  .publication__carousel {
+    padding: 15px; }
+  .publication__controls {
+    display: none; } }
+
 /* Custom, iPhone Retina */

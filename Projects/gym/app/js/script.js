@@ -3,7 +3,8 @@ $(document).ready(function() {
 
 	$(".owl-carousel").owlCarousel({
 		loop: true,
-		items: 1,
+		center: true,
+		items:1,
 	});
 
 	var owl = $('.owl-carousel');
@@ -17,4 +18,9 @@ $(document).ready(function() {
 		owl.trigger('prev.owl.carousel');
 	});
 
+});
+
+/*PRELOADER*/
+$(window).load(function() {
+	$('#preloader').delay(100).fadeOut('slow');
 });

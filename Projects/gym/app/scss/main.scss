@@ -36,34 +36,60 @@ a {
 }
 .button {
 	display: inline-block;
-	padding: 10px 25px;
+	padding: 10px 15px;
 	margin-bottom: 10px;
 	border: 3px solid $orange;
 	border-radius: 50px;
 	font-size: rem(25);
 	font-family: "GothamProLight";
+	outline: none;
 }
 ::-webkit-input-placeholder { 
-	font-size: rem(25);
+	font-size: rem(24);
+	font-family: "GothamProLight";
 	color: #b9b9b9
 }
 ::-moz-placeholder { 
-	font-size: rem(25);
+	font-size: rem(24);
+	font-family: "GothamProLight";
 	color: #b9b9b9
 }
 :-ms-input-placeholder { 
-	font-size: rem(25);
+	font-size: rem(24);
+	font-family: "GothamProLight";
 	color: #b9b9b9
 }
 :-moz-placeholder {
-	font-size: rem(25);
+	font-size: rem(24);
+	font-family: "GothamProLight";
 	color: #b9b9b9
 }
+
+/* ------------	LOADER ------------*/
+#preloader {
+	position: fixed; 
+	left: 0; 
+	top: 0; 
+	right: 0; 
+	bottom: 0; 
+	background: #fff; 
+	z-index: 1001;
+}
+#preloader i {
+	width: 70px; 
+	height: 70px; 
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	background: url('../img/preloader.gif') no-repeat 50% 50%; 
+	margin: -35px 0 0 -35px;
+}
+
 /* HEADER  */
 .header {
 	min-height: 100vh;
 	position: relative;
-	background: url(../img/background.jpg) 50% 50% no-repeat;
+	background: url(../img/background.jpg) center right no-repeat;
 	background-size: cover;
 	text-align: center;
 	color: #fff;
@@ -76,7 +102,6 @@ a {
 			height: 100px;
 			width: 100px;
 		}
-		
 	}
 	&__text {
 		width: 80%;
@@ -106,8 +131,6 @@ a {
 			text-align: right;
 		}
 	}
-	&__link {	
-	}
 	&__text {
 		display: inline-block;
 		padding: 0 10px;
@@ -125,7 +148,8 @@ a {
 			height: 2px;
 			background: $orange;
 			bottom: 4px;
-			left: 44%;
+			left: 50%;
+			transform: translate(-50%, -50%);
 		} 
 	}
 	&__list {
@@ -137,11 +161,11 @@ a {
 	&__item {
 		display: inline-flex;
 		align-self: center;
-		flex-basis: 500px;
+		width: 48%;
 		justify-content: space-between;
 		margin-bottom: 60px;
 		&-img {
-			margin-right: 50px;
+			margin-right: 5%;
 			border: 6px solid $orange;
 			border-radius: 50%;
 		}
@@ -155,7 +179,7 @@ a {
 
 .purpose {
 	min-height: 100vh;
-	background: url(../img/background2.jpg) 50% no-repeat;
+	background: url(../img/background2.jpg)  right no-repeat;
 	background-size: cover;
 	color: #fff;
 	&__title {
@@ -180,7 +204,7 @@ a {
 	}
 	&__item {
 		padding-left: 100px; 
-		padding-bottom: 60px;
+		padding-bottom: 40px;
 		position: relative;
 		counter-increment: li;
 		font-size: rem(25);
@@ -208,7 +232,6 @@ a {
 		justify-content: center;
 		margin-bottom: 60px;
 	}
-
 }
 
 /* SECTION 4 - PUBLICATION */
@@ -232,17 +255,41 @@ a {
 		padding: 60px 0;
 	}
 	&__item {
+		position: relative;
 		flex-basis: 360px;
 		border-bottom: 10px solid $orange;
-	}
-	&__link {
-
+		&:hover {
+			.overlay {
+				opacity: 1;
+			}
+		}
 	}
 	&__img {
 		display: block;
 		max-width: 100%;
 		height: 286px;
 	}
+	.overlay {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		width: 100%;
+		height: 100%;
+		opacity: 0;
+		background: rgba($orange, .7);
+		@include transition (all .5s ease);
+		&__icon {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			color: #fff;
+			font-size: 2rem;
+		}
+	}
+
 	&__carousel {
 		position: relative;
 		display: inline-block;
@@ -251,6 +298,9 @@ a {
 		margin-bottom: 90px;
 		padding: 20px 80px;
 		background: #e6e6e6;
+		.owl-item {
+			position: relative;
+		}
 		.owl-item-title {
 			position: relative;
 			font-family: "GothamProBold";
@@ -273,22 +323,30 @@ a {
 		.owl-item-link {
 			font-family: "GothamProLightItalic";
 			color: $orange;
+			@include transition(color .3s ease);
+			&:hover {
+				color: #000;
+			}
 		}
 	}
-	.owl-prev svg {
-		position: absolute;
-		left: 0;
-		bottom: 180px;
-		cursor: pointer;
+	.icon {
+		padding: 5% 0;
+		position: absolute;	
+		display: block;
+		font-size: rem(100);
+		bottom: 100px;	
+		color: $orange;
+		@include transition(color .3s ease);
 		&:hover {
-			fill: red;
+			color: #000;
+			cursor: pointer;
 		}
 	}
-	.owl-next svg {
-		position: absolute;
+	.owl-prev i {	
+		left: 0;
+	}
+	.owl-next i {
 		right: 0;
-		bottom: 180px;
-		cursor: pointer;
 	}
 }
 
@@ -296,27 +354,29 @@ a {
 /* SECTION 5 - QUOTE */
 
 .quote {
-	background: url(../img/background3.jpg);
+	background: url(../img/background3.jpg) center center no-repeat;
 	background-size: cover;
 	&__text {
 		position: relative;
-		padding: 90px 10px;
+		padding: 90px 40px;
 		font-size: rem(30);
 		line-height: 1.2;
 		font-family: "GothamProMedium";
 		color: #fff;
 		&:before {
-			content: '"';
+			font-family: "fontello";
+			content: '\e803';
 			position: absolute;
-			font-size: rem(110);
+			font-size: rem(30);
 			top: 40px;
-			left: -50px;
+			left: 0;
 		}
 		&:after{
-			content: '"';
+			font-family: "fontello";
+			content: '\e804';
 			position: absolute;
-			font-size: rem(110);
-			bottom: 0;
+			font-size: rem(30);
+			bottom: 60px;
 			right: 0;
 		}
 	}
@@ -325,7 +385,7 @@ a {
 /* SECTION 6 - ACTION */
 
 .action {
-	background: url(../img/background4.jpg) 50% no-repeat;
+	background: url(../img/background4.jpg) center right no-repeat;
 	background-size: cover;
 
 	.action__wrapper {
@@ -335,8 +395,8 @@ a {
 	.action__title {
 		text-align: left;
 		font-size: rem(40);
-		text-align: 1.2;
-		padding-bottom: 10px;
+		line-height: 1.2;
+		padding-bottom: 20px;
 		&:before {
 			content: '';
 			position: absolute;
@@ -358,15 +418,16 @@ a {
 		width: 40%;
 		padding: 15px 0;
 		margin-right: 10%;
-		padding-left: 15px;
+		padding-left: 25px;
 		background: #fff;
 		border: none;
 		border-radius: 30px;
+		font-size: rem(24);
 		
 	}
 	.form-button {
-		padding: 10px 0;
-		width: 25%;
+		padding: 15px 0;
+		width: 30%;
 		border: none;
 		border-radius: 30px;
 		background: #168fdc;
@@ -383,16 +444,22 @@ a {
 
 
 .footer {
-	padding: 40px 0;
-	background: #dc7316;
+	padding: 40px 0 20px 0;
+	background: #000;
+	opacity: .7;
 	text-align: center;
 	font-size: rem(18);
 	color: #fff;
 	&__list{
 		display: flex;
+		flex-wrap: wrap;
 		justify-content: center;
 	}
 	&__item {
 		margin-left: 10px;
+	}
+	.seo-text {
+		padding-top: 15px;
+		font-size: rem(10);
 	}
 }
