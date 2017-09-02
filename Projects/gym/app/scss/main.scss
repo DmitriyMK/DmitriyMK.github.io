@@ -89,7 +89,7 @@ a {
 .header {
 	min-height: 100vh;
 	position: relative;
-	background: url(../img/background.jpg) center right no-repeat;
+	background: center right no-repeat;
 	background-size: cover;
 	text-align: center;
 	color: #fff;
@@ -179,7 +179,7 @@ a {
 
 .purpose {
 	min-height: 100vh;
-	background: url(../img/background2.jpg)  right no-repeat;
+	background: right no-repeat;
 	background-size: cover;
 	color: #fff;
 	&__title {
@@ -354,7 +354,7 @@ a {
 /* SECTION 5 - QUOTE */
 
 .quote {
-	background: url(../img/background3.jpg) center center no-repeat;
+	background: center center no-repeat;
 	background-size: cover;
 	&__text {
 		position: relative;
@@ -385,7 +385,7 @@ a {
 /* SECTION 6 - ACTION */
 
 .action {
-	background: url(../img/background4.jpg) center right no-repeat;
+	background: center right no-repeat;
 	background-size: cover;
 
 	.action__wrapper {

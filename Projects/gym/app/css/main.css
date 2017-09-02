@@ -815,7 +815,7 @@ a {
 .header {
   min-height: 100vh;
   position: relative;
-  background: url(../img/background.jpg) center right no-repeat;
+  background: center right no-repeat;
   -webkit-background-size: cover;
           background-size: cover;
   text-align: center;
@@ -913,7 +913,7 @@ a {
 /* SECTION 3 - PURPOSE */
 .purpose {
   min-height: 100vh;
-  background: url(../img/background2.jpg) right no-repeat;
+  background: right no-repeat;
   -webkit-background-size: cover;
           background-size: cover;
   color: #fff; }
@@ -1095,7 +1095,7 @@ a {
 
 /* SECTION 5 - QUOTE */
 .quote {
-  background: url(../img/background3.jpg) center center no-repeat;
+  background: center center no-repeat;
   -webkit-background-size: cover;
           background-size: cover; }
   .quote__text {
@@ -1122,7 +1122,7 @@ a {
 
 /* SECTION 6 - ACTION */
 .action {
-  background: url(../img/background4.jpg) center right no-repeat;
+  background: center right no-repeat;
   -webkit-background-size: cover;
           background-size: cover; }
   .action .action__wrapper {

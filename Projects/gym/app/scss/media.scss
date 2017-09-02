@@ -1,13 +1,6 @@
 @import "_vars";
 @import "_mixin and function";
 
-/* Medium Devices, Desktops */
-
-@media only screen and (max-width : 992px) {
-
-
-}  
-
 /* Small Devices, Tablets */
 @media only screen and (max-width : 810px) {
 	.button {
@@ -26,7 +19,7 @@
 		font-size: rem(22);
 	}
 	.header {
-		background: url(../img/background.jpg) 70% 50% no-repeat;
+		background: 70% 50% no-repeat;
 		&__text {
 			width:100%;
 			padding-left: 5%;
@@ -96,9 +89,6 @@
 		.icon {
 			font-size: rem(100);
 			z-index: 10;
-
-
-
 		}
 		.owl-prev i {	
 			left: 5px;
@@ -108,7 +98,7 @@
 		}
 	}
 	.action {
-		background: url(../img/background4.jpg) 70% no-repeat;
+		background: 70% no-repeat;
 		.action__title {
 			font-size: rem(36);
 		}
@@ -221,7 +211,7 @@
 	}
 
 	.header {
-		background: url(../img/background.jpg) 70% 0% no-repeat;
+		background: 70% 0% no-repeat;
 		&__text {
 			font-size: rem(32);
 		}
@@ -245,7 +235,7 @@
 		}
 	}
 	.purpose {
-		background: url(../img/background2.jpg) 80% 50% no-repeat;
+		background: 80% 50% no-repeat;
 		background-size: cover;
 		&__list{
 			width: 100%;
@@ -308,7 +298,6 @@
 	.publication {
 		&__carousel {
 			padding: 15px;
-
 		}
 	}
 	.publication__controls {

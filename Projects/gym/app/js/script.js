@@ -18,10 +18,9 @@ $(document).ready(function() {
 		owl.trigger('prev.owl.carousel');
 	});
 
-	var bLazy = new Blazy({
-        // Options
+	$(function() {
+        $('.lazy').Lazy();
     });
-	
 
 });
 
