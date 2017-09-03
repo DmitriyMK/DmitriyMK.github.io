@@ -4,7 +4,7 @@ $(document).ready(function() {
 	$(".owl-carousel").owlCarousel({
 		loop: true,
 		center: true,
-		items:1,
+		items: 1,
 	});
 
 	var owl = $('.owl-carousel');
@@ -19,8 +19,16 @@ $(document).ready(function() {
 	});
 
 	$(function() {
-        $('.lazy').Lazy();
-    });
+		$('.lazy').Lazy({
+			// your configuration goes here
+			scrollDirection: 'vertical',
+			effect: 'fadeIn',
+			visibleOnly: true,
+			onError: function(element) {
+				console.log('error loading ' + element.data('src'));
+			}
+		});
+	});
 
 });
 
