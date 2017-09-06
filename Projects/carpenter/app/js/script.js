@@ -83,21 +83,20 @@ $(document).ready(function() {
 
 	/*ANIMATION PLUGUN*/
 	new WOW().init();
-
-	$(function() {
-		$('.lazy').Lazy({
-			// your configuration goes here
-			scrollDirection: 'vertical',
-			effect: 'fadeIn',
-			visibleOnly: true,
-			onError: function(element) {
-				console.log('error loading ' + element.data('src'));
-			}
-		});
-	});
-
 });
 
+
+$(function() {
+	$('.lazy').Lazy({
+		// your configuration goes here
+		scrollDirection: 'vertical',
+		effect: 'fadeIn',
+		visibleOnly: true,
+		onError: function(element) {
+			console.log('error loading ' + element.data('src'));
+		}
+	});
+});
 
 $(window).on('load', function() {
 	$('#preloader').delay(100).fadeOut('slow');
