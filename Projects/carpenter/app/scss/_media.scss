@@ -211,6 +211,10 @@
 		margin: 0 auto;
 		margin-bottom: 20px;
 	}
+	.owl-thumbs {
+		display: none;
+	}
+
 }
 
 /* Extra Small Devices, Phones */
@@ -237,7 +241,7 @@
 				}
 				.advantages__item-title {
 					margin-left: 15%;
-					font-size: 1.3rem;
+					font-size: 1.2rem;
 				}
 				.advantages__item-detail {
 					p {

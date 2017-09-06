@@ -13,7 +13,7 @@
 .product {
 	position: relative;
 	text-align: center;
-
+	padding-bottom: 40px;
 }
 .product__undertitle {
 	margin-bottom: 30px;
@@ -22,9 +22,24 @@ img {
 	max-width: 100%;
 	height: auto;
 }
+
+.owl-thumb-item img { 
+	border:  4px solid #bababa;
+	margin-bottom: 15px;
+	@include transition(all .5s ease);
+	&:focus {
+		border: 4px solid $red;
+	}
+	&:hover {
+		border: 4px solid $green;
+	}
+}
+
 .owl-carousel {
 	position: relative;
 	.owl-item {
+		display: inline-block;
+		margin: auto;
 		img {
 			max-width: 100%;
 			height: auto;
@@ -56,3 +71,4 @@ img {
 	left: 5%;
 	z-index: 10;
 } 
+

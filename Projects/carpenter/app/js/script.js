@@ -52,20 +52,20 @@ $(document).ready(function() {
 
 	$(".owl-carousel").owlCarousel({
 		loop: true,
+		thumbs: true,
+		thumbsPrerendered: true,
 		margin: 10,
-		items: 3,
 		responsive: {
 			992: {
-				items: 2
+				items: 3,
+				margin: 10
 			},
 			768: {
-				items: 1
-			},
-			480: {
-				items: 1
+				items: 2
 			},
 			320: {
-				items: 1
+				items: 1,
+				center: true
 			}
 		}
 	});
@@ -83,6 +83,18 @@ $(document).ready(function() {
 
 	/*ANIMATION PLUGUN*/
 	new WOW().init();
+
+	$(function() {
+		$('.lazy').Lazy({
+			// your configuration goes here
+			scrollDirection: 'vertical',
+			effect: 'fadeIn',
+			visibleOnly: true,
+			onError: function(element) {
+				console.log('error loading ' + element.data('src'));
+			}
+		});
+	});
 
 });
 

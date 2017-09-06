@@ -1093,33 +1093,26 @@ table th[class*="col-"] {
 
 @font-face {
   font-family: 'PT Sans';
-  src: url("../fonts/PTSansItalic/PTS56F-webfont.eot");
-  src: url("../fonts/PTSansItalic/PTS56F-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/PTSansItalic/PTS56F-webfont.woff") format("woff"), url("../fonts/PTSansItalic/PTS56F-webfont.ttf") format("truetype"), url("../fonts/PTSansItalic/PTS56F-webfont.svg#pt_sansitalic") format("svg");
+  src: url("../fonts/PTSansItalic/PTS56F-webfont.woff") format("woff");
   font-weight: 300;
-  font-style: normal;
-  font-stretch: normal; }
+  font-style: normal; }
 
 @font-face {
   font-family: 'PT Sans';
-  src: url("../fonts/PTSansBold/PTS75F-webfont.eot");
-  src: url("../fonts/PTSansBold/PTS75F-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/PTSansBold/PTS75F-webfont.woff") format("woff"), url("../fonts/PTSansBold/PTS75F-webfont.ttf") format("truetype"), url("../fonts/PTSansBold/PTS75F-webfont.svg#pt_sansbold") format("svg");
+  src: url("../fonts/PTSansBold/PTS75F-webfont.woff") format("woff");
   font-weight: 700;
-  font-style: normal;
-  font-stretch: normal; }
+  font-style: normal; }
 
 @font-face {
   font-family: 'PT Sans';
-  src: url("../fonts/PTSansRegular/PTS55F-webfont.eot");
-  src: url("../fonts/PTSansRegular/PTS55F-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/PTSansRegular/PTS55F-webfont.woff") format("woff"), url("../fonts/PTSansRegular/PTS55F-webfont.ttf") format("truetype"), url("../fonts/PTSansRegular/PTS55F-webfont.svg#pt_sansregular") format("svg");
+  src: url("../fonts/PTSansRegular/PTS55F-webfont.woff") format("woff");
   font-weight: 400;
-  font-style: normal;
-  font-stretch: normal; }
+  font-style: normal; }
 
 /* ICONS FONTELLO */
 @font-face {
   font-family: 'fontello';
-  src: url("../fonts/Icons-Fontello/fontello.eot");
-  src: url("../fonts/Icons-Fontello/fontello.eot#iefix") format("embedded-opentype"), url("../fonts/Icons-Fontello/fontello.woff2") format("woff2"), url("../fonts/Icons-Fontello/fontello.woff") format("woff"), url("../fonts/Icons-Fontello/fontello.ttf") format("truetype"), url("../fonts/Icons-Fontello/fontello.svg#fontello") format("svg");
+  src: url("../fonts/Icons-Fontello/fontello.woff2") format("woff2"), url("../fonts/Icons-Fontello/fontello.woff") format("woff"), url("../fonts/Icons-Fontello/fontello.svg#fontello") format("svg");
   font-weight: normal;
   font-style: normal; }
 
@@ -4235,14 +4228,11 @@ section {
   position: relative;
   padding-top: 40px;
   margin: 0 auto; }
-  .grid .col-lg-4,
-  .grid .col-md-4,
-  .grid .col-sm-6,
-  .grid .col-xs-12,
-  .grid figure {
-    padding: 0 !important; }
 
 .portfolio__effect {
+  display: inline-block;
+  margin: auto;
+  text-align: center;
   position: relative;
   float: left;
   overflow: hidden;
@@ -4432,7 +4422,7 @@ section {
       -o-transition: all 0.6s ease;
       transition: all 0.6s ease;
       -webkit-box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.75);
-      box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.75); }
+              box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.75); }
       .feedback .feedback__col .feedback__col-contact .contact__list-item {
         padding-top: 5%;
         list-style-type: none;
@@ -4453,7 +4443,7 @@ section {
       -o-transition: all 0.6s ease;
       transition: all 0.6s ease;
       -webkit-box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.75);
-      box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.75); }
+              box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.75); }
     .feedback .feedback__col .feedback__form-line {
       display: inline-block;
       margin: 0 auto;
@@ -4503,11 +4493,15 @@ section {
       -webkit-border-radius: 5px;
               border-radius: 5px;
       -webkit-box-shadow: 1px 1px 6px 0px rgba(0, 0, 0, 0.75);
-      box-shadow: 1px 1px 6px 0px rgba(0, 0, 0, 0.75);
-      text-transform: uppercase; }
+              box-shadow: 1px 1px 6px 0px rgba(0, 0, 0, 0.75);
+      text-transform: uppercase;
+      border: none;
+      -webkit-transition: all 0.3s ease;
+      -o-transition: all 0.3s ease;
+      transition: all 0.3s ease; }
       .feedback .feedback__col .feedback__form-button:hover {
         -webkit-box-shadow: none;
-        box-shadow: none; }
+                box-shadow: none; }
 
 .scrollToTop {
   position: fixed;
@@ -4520,6 +4514,12 @@ section {
   display: none; }
   .scrollToTop .icon {
     font-size: 2em; }
+
+.footer {
+  background: rgba(0, 0, 0, 0.03);
+  padding: 15px 0;
+  text-align: center;
+  font-size: 10px; }
 
 /*==========  Desktop First  ==========*/
 /* Medium Devices, Desktops */
@@ -4691,7 +4691,9 @@ section {
     float: none;
     display: inline-block;
     margin: 0 auto;
-    margin-bottom: 20px; } }
+    margin-bottom: 20px; }
+  .owl-thumbs {
+    display: none; } }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
@@ -4708,7 +4710,7 @@ section {
     display: none; }
   .advantages__item-text .advantages__item-title {
     margin-left: 15%;
-    font-size: 1.3rem; }
+    font-size: 1.2rem; }
   .advantages__item-text .advantages__item-detail p {
     margin-left: 15%; }
   .owl-carousel .owl-item img {
