@@ -1,6 +1,27 @@
 @import "_vars";
 @import "_mixin and function";
 
+@media only screen and (max-width : 1024px) {
+	.inside {
+		iframe {
+			width: 750px;
+			height: 460px;
+		} 
+	}
+}
+
+@media only screen and (max-width : 830px) {
+	.causes {
+		&__item {
+			padding: 5vh 2% 0 2%;
+			flex-basis: auto;
+		}
+		&__pic {
+			opacity: .1;
+		}
+	}
+}
+
 /* Small Devices, Tablets */
 @media only screen and (max-width : 810px) {
 	.button {
@@ -111,6 +132,35 @@
 			font-size: rem(22);
 		}
 	}
+
+	.header-causes {
+		.flex__wrapper {
+			padding-top: 15px;
+		}
+		.header-title {
+			padding: 15px 0;
+			width: 100%;
+			font-size: rem(40)
+		}
+	}
+
+	.inside {
+		iframe {
+			width: 550px;
+			height: 360px;
+		} 
+	}
+}
+
+@media only screen and (max-width : 650px) {
+	.trainer {
+		&__list {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			padding: 40px 0;
+		}
+	}
 }
 
 
@@ -184,6 +234,15 @@
 		.icon {
 			bottom: 180px;	
 		}
+	}
+
+	.inside {
+		background: top;
+		iframe {
+			padding: 10px;
+			width: 450px;
+			height: 300px;
+		} 
 	}
 }
 
@@ -292,6 +351,24 @@
 			font-family: "GothamProMedium";
 		}
 	}
+	.header-causes {
+		background: top;
+		.logo-causes img {
+			width: 120px;
+			height: 120px;
+		}
+		.header-title {
+			padding-bottom: 20px;
+			font-size: rem(36)
+		}
+	}
+
+	.inside {
+		iframe {
+			width: 300px;
+			height: 200px;
+		} 
+	}
 }
 
 @media only screen and (max-width: 450px) {
@@ -302,6 +379,9 @@
 	}
 	.publication__controls {
 		display: none;
+	}
+	.footer {
+		font-size: rem(16);
 	}
 }
 

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Syper GYM</title>
+	
+	<meta name="description" content=""/>
+	<meta name="keywords" content=""/>
+
+	<link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+	<link rel="manifest" href="img/favicon/manifest.json">
+	<link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/causes.css">
+	<link rel="stylesheet" href="css/media.css">
+</head>
+<body>
+	<div id="preloader">
+		<i></i>
+	</div>
+	<header class="header-causes header" style="background-image: url(img/background5.jpg);">
+		<div class="wrapper">
+			<div class="flex__wrapper">
+				<h1 class="logo-causes"><a href="#"><img class="lazy" data-src="img/logo2.png" alt="здесь и сейчас"></a></h1>
+				<h2 class="header-title">5 главных преимуществ спортазала "Здесь и Сейчас"</h2>
+				<p><a class="header__link-causes button" href="#order">Забронировать карту</a></p>
+			</div>
+		</div>
+	</header>
+
+	<div class="causes">
+		<div class="wrapper">
+			<ul class="causes__list">
+				<li class="causes__item">
+					<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="53" height="57" viewBox="0 0 53 57"><image id="arm" width="53" height="57" xlink:href="data:img/png;base64,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"/>
+					</svg>
+					<p class="item__title">Надежность</p>
+					<p class="item__text">Такой текст также называется как заполнитель. Это очень удобный инструмент для моделей (макетов). Он помогает выделить визуальные элементы в документе или презентации, например текст, шрифт или разметка.</p>
+				</li>
+				<li class="causes__item">
+					<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="39" height="57" viewBox="0 0 39 57"><image id="waist" width="39" height="57" xlink:href="data:img/png;base64,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"/>
+					</svg>
+					<p class="item__title">Результат</p>
+					<p class="item__text">В профессиональной сфере часто случается так, что личные или корпоративные клиенты заказывают, чтобы публикация была сделана и представлена еще тогда..</p>
+				</li>
+
+				<li class="causes__item">
+					<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="35" height="57" viewBox="0 0 35 57"><image id="blender" width="35" height="57" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACMAAAA5CAMAAACLSmKWAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAACPVBMVEXoZBv////oZBvoZBvoZBvoZBvoZBvoZBvoZBvoZBvoZBvoZBvoZBvoZBvoZBvoZBvoZBvoZBvoZBvoZBvoZBvoZBvoZBvoZBvoZBvoZBvoZBvoZBvoZBvoZBvoZBvoZBvoZBvoZBvoZBvoZBvoZBvoZBvoZBvoZBvoZBvoZBvoZBvoZBvoZBvoZBvoZBvoZBvoZBvoZBvoZBvoZBvoZBvoZBvoZBvoZBvoZBvoZBvoZBvoZBvoZBvoZBvoZBvoZBvoZBvoZBvoZBvoZBvoZBvoZBvoZBvoZBvoZBvoZBvoZBvoZBvoZBvoZBvoZBvoZBvoZBvoZBvoZBvoZBvoZBvoZBvoZBvoZBvoZBvoZBvoZBvoZBvoZBvoZBvoZBvoZBvoZBvoZBvoZBvoZBvoZBvoZBvoZBvoZBvoZBvoZBvoZBvoZBvoZBvoZBvoZBvoZBvoZBvoZBvoZBvoZBvoZBvoZBvoZBvoZBvoZBvoZBvoZBvoZBvoZBvoZBvoZBvoZBvoZBvoZBvoZBvoZBvoZBvoZBvoZBvoZBvoZBvoZBvoZBvoZBvoZBvoZBvoZBvoZBvoZBvoZBvoZBvoZBvoZBvoZBvoZBvoZBvoZBvoZBvoZBvoZBvoZBvoZBvoZBvoZBvoZBvoZBvoZBvoZBvoZBvoZBvoZBvoZBvoZBvoZBvoZBvoZBvoZBvoZBvoZBvoZBvoZBvoZBvoZBvoZBvoZBvoZBvoZBvoZBvoZBvoZBvoZBvoZBvoZBvoZBsAAADicM4nAAAAvXRSTlMAAFHf8udSqbYXvvV5fYiDe4bwpMD8ftifwqx8S96bwZHhsNzqxr/N29W8oMfJj93jstJirgEGXQuX6JgvPKjX1h6h2ZOekoqikDsxuaeqqyUhJM70r4CUjcsdYI5mEGt2yivi6Z0S/XKlWjVqGtP5CU7Fw9qV0OW0lnpZTFYRNgfIFh8E8U80LaZNPxmaZCMycYxpV9F1XDDrcEA9PkF4o/gzgmwoi3RtGL2t+u/+OETUSFhJVTfgZ8/38+78LeDrAAAAAWJLR0S+pNyDwwAAAAlwSFlzAAALEgAACxIB0t1+/AAAAAd0SU1FB+EJCAANGpGkry4AAALKSURBVEjHhdXpP1RRGAfwZ4xQNLJMhFH2dUyWBqXdGlo0SNZoIaKSUk2kVJqK9iLtikr7vvz+t85dhnvP3BnPi7nPufP9nDnrM+Sl93Ybi3yIdDod+cJD+Elm8RLAP2CpgYvAZUGGYIRIhigUxuWkFWEIdxpaAUTw30eGRZEJ0XOGVgKrOBODWIpDfEJigGwoCcmcSWFdJ4vjTpVNGtI5Y0YGWbA6MwvIlt7kIFUJ1hBZc/PYePKJ1mKd01gKnGD9ho0xm0I2s8yELURbUeg0QJGUFsvLV0KkR6kAy+YNzNuIyisAY2XQdtbcsTOLM6ml7LXeJNBd7EXVbpbZOFNNNUbxN2rlYe0RGmpTR7S3vqGssWpuck3NwZxJ4NanZV8rmxIzFucWuJo2cS9E47afOqRJZj8M7owZB0Rz8BDaPZsOOgx0ejbRlIU2nWfTdQRoX8BkdqPn6AKGxTHnOazGcQ0jnMMy53mmWPS6mCI6AfTNnXl2EU9yJomtzSn0z98LKkSPVW30OE1GnFGYs4Bdbc75DtiBQYU57+9yeYj8YSGFoWaweagjls1bZWgI6LigEBf72YkmtRnuBi4FXb7SOjIy0jro09ADJBJnaPgqV3v6yMUQOSoUIucaaRm6DtzIHh0dzU4D8kjbDABjYnITsGqbzlvAbbvD4bDXAnfKNczde9yYzVG8ua9RVR+ozUNgfOLR5GMW0seTpzagSmWe4fkYtxcvwEqZ0lhQKXc48XLqlZT2igdv3rThtfgMFAcyLeYdQqFQGBOKhYdBHu2M0IgQL4LSCFXvDVCXjresPjWx1jtNM4PZpnxMsz3xcmtK8J78WL0BptyaXHwo6EPLR+CTW5MHxIfh8zhmrW4N1cvz+kLuDX21MJHyjTwZosnvP+TM1dQQH+Gc+YnQxi51/PqNIZX5o/m3HKcyGcHeNttfZdhs3v8iJfMf/h6deUuWrkAAAAAASUVORK5CYII="/>
+					</svg>
+					<p class="item__title">Питание</p>
+					<p class="item__text">Lorem ipsum по большей части является элементом латинского текста классического автора и философа Цицерона.Слова и буквы были заменены.</p>
+				</li>
+
+				<li class="causes__item">
+					<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="55" height="57" viewBox="0 0 55 57"> <image id="fresh-juice" width="55" height="57" xlink:href="data:img/png;base64,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"/>
+					</svg>
+					<p class="item__title">Программа</p>
+					<p class="item__text">Такой текст также называется как заполнитель. Это очень удобный инструмент для моделей (макетов). Он помогает выделить визуальные элементы в документе или презентации, например текст, шрифт или разметка.</p>
+				</li>
+
+				<li class="causes__item">
+					<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="49" height="57" viewBox="0 0 49 57"><image id="scales" width="49" height="57" xlink:href="data:img/png;base64,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"/>
+					</svg>
+					<p class="item__title">Контроль веса</p>
+					<p class="item__text">Хотя Lorem ipsum напоминает классическийлатинский, вы не найдете никакого смысла в сказанном. Поскольку текст Цицерона не содержит буквы K, W, или Z, что чуждо для латинского, эти буквы, а также многие другие часто вставлены в случайном порядке.</p>
+				</li>
+			</ul>
+			<img class="lazy causes__pic" data-src="img/logo3.png" alt="Здесь и Сейчас">
+		</div>
+	</div>
+
+	<section class="inside" style="background-image: url(img/background6.jpg);">
+		<div class="wrapper">
+			<h3 class="section__title inside__title">Наш зал изнутри</h3>
+			<iframe src="https://player.vimeo.com/video/56438186?title=0&byline=0&portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+		</div>
+	</section> 
+
+	<section class="trainer">
+		<div class="wrapper">
+			<h3 class="section__title inside__title trainer__title">Наши тренажеры</h3>
+			<ul class="trainer__list">
+				<li class="trainer__item">
+					<a class="trainer__link" href="#">
+						<img class="trainer__img lazy" data-src="img/trainer1.jpg"  alt="trainer"> 
+						<div class="overlay">
+							<i class="overlay__icon icon-search"></i>
+						</div>
+					</a>
+				</li>
+				<li class="trainer__item">
+					<a class="trainer__link" href="#">
+						<img class="trainer__img lazy" data-src="img/trainer2.jpg"  alt="trainer"> 
+						<div class="overlay">
+							<i class="overlay__icon icon-search"></i>
+						</div>
+					</a>
+				</li>
+				<li class="trainer__item">
+					<a class="trainer__link" href="#">
+						<img class="trainer__img lazy" data-src="img/trainer3.jpg"  alt="trainer"> 
+						<div class="overlay">
+							<i class="overlay__icon icon-search"></i>
+						</div>
+					</a>
+				</li>
+				<li class="trainer__item">
+					<a class="trainer__link" href="#">
+						<img class="trainer__img lazy" data-src="img/trainer1.jpg"  alt="trainer"> 
+						<div class="overlay">
+							<i class="overlay__icon icon-search"></i>
+						</div>
+					</a>
+				</li>
+				<li class="trainer__item">
+					<a class="trainer__link" href="#">
+						<img class="trainer__img lazy" data-src="img/trainer2.jpg"  alt="trainer"> 
+						<div class="overlay">
+							<i class="overlay__icon icon-search"></i>
+						</div>
+					</a>
+				</li>
+				<li class="trainer__item">
+					<a class="trainer__link" href="#">
+						<img class="trainer__img lazy" data-src="img/trainer3.jpg"  alt="trainer"> 
+						<div class="overlay">
+							<i class="overlay__icon icon-search"></i>
+						</div>
+					</a>
+				</li>				
+			</ul>
+		</div>
+	</section> 
+
+
+
+	<section class="order" id="order" style="background-image: url(img/background7.jpg);" >
+		<div class="wrapper order__wrapper">
+			<h3 class="section__title order__title">Выбери себе подходящую карту и <span class="text-accent">активируй свою скидку 15%</span><br> на 1-ый месяц,<br> и атакуй!</h3>
+			<p class="order__text">Такой текст также называется как  заполнитель.<br> Это очень удобны такой текст также называется как  заполнитель. </p>
+			<div class="form">
+
+
+				<form class="action" autocomplete="off">
+
+				</form>
+			</div>
+		</div>
+	</section> 
+
+	<footer class="footer">
+		<div class="wrapper">
+			<ul class="footer__list">
+				<li class="footer__item"><a class="footer__link" href="#">Адрес /</a></li>
+				<li class="footer__item"><a class="footer__link" href="#">Телефон  /</a></li>
+				<li class="footer__item"><a class="footer__link" href="#"> Политика конфиденциальности / </a></li>
+				<li class="footer__item"><a class="footer__link" href="#">О нас </a></li>
+			</ul>
+			<div class="seo-text">
+				<p>Для Вас мы разработаем лендинг пейдж под ключ по нашей концепции, что удерживает конверсию от 14%</p>
+				<p>Мы дадим вам рекомендации по запуску рекламы в соц. сетях, чтобы ваш лендинг приносил заявки и деньги!</p>
+			</div>
+		</div>
+	</footer>
+
+	<script src="js/script.min.js"></script>
+	<script src="js/script.js"></script>
+</body>
+</html>

@@ -719,6 +719,7 @@ img.mfp-img {
   100% {
     opacity: 0; } }
 
+/* @import "causes"; */
 body {
   min-width: 320px;
   position: relative;
@@ -740,7 +741,7 @@ a {
   padding-top: 60px;
   padding-bottom: 10px;
   font-size: 1.875rem;
-  font-family: "GothamProBold";
+  font-family: "GothamProBlack";
   text-align: center; }
 
 .wrapper {
@@ -779,6 +780,29 @@ a {
   font-size: 1.5rem;
   font-family: "GothamProLight";
   color: #b9b9b9; }
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  background: rgba(232, 100, 27, 0.7);
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease; }
+  .overlay__icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 2rem; }
 
 /* ------------	LOADER ------------*/
 #preloader {
@@ -1003,29 +1027,6 @@ a {
   max-width: 100%;
   height: 286px; }
 
-.publication .overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  width: 100%;
-  height: 100%;
-  opacity: 0;
-  background: rgba(232, 100, 27, 0.7);
-  -webkit-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  transition: all 0.5s ease; }
-  .publication .overlay__icon {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
-    color: #fff;
-    font-size: 2rem; }
-
 .publication__carousel {
   position: relative;
   display: inline-block;
@@ -1169,8 +1170,7 @@ a {
 
 .footer {
   padding: 40px 0 20px 0;
-  background: #000;
-  opacity: .7;
+  background: #212121;
   text-align: center;
   font-size: 1.125rem;
   color: #fff; }
