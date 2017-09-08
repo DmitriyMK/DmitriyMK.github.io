@@ -1,4 +1,3 @@
-
 $(window).load(function() {
 	$('#preloader').find('i').fadeOut().end().delay(200).fadeOut('slow');
 
@@ -9,3 +8,14 @@ $(window).load(function() {
 	});
 });
 
+$(function() {
+	$('.lazy').Lazy({
+		// your configuration goes here
+		scrollDirection: 'vertical',
+		effect: 'fadeIn',
+		visibleOnly: true,
+		onError: function(element) {
+			console.log('error loading ' + element.data('src'));
+		}
+	});
+});
