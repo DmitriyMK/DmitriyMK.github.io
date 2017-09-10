@@ -8,6 +8,30 @@
 			height: 460px;
 		} 
 	}
+	.form__email {
+		padding: 30px;
+		text-align: center;
+		.form__email-sale {
+			padding: 0;
+			width: 100%;
+			padding-bottom: 20px;
+		}
+		.text {
+			display: inline-block;
+			width: 100%;
+			text-align: center;
+		}
+		.timer {
+			margin-top: 10px;
+			width: 100%;
+			text-align: center;
+		}
+		.line-email {
+			display: inline-block;
+			max-width: 100%;
+		}
+	}
+
 }
 
 @media only screen and (max-width : 830px) {
@@ -159,6 +183,24 @@
 			flex-wrap: wrap;
 			justify-content: center;
 			padding: 40px 0;
+		}
+	}
+
+	.form__select {
+		.form__answer {
+			display: inline-block;
+			width: 100%;
+			padding: auto;
+		}
+	}
+	.form__email {
+		.line-email {
+			text-align: center;
+			width: 100%;
+		}
+		.form-button {
+			margin-top: 10px;
+			width: 100%;
 		}
 	}
 }
@@ -382,6 +424,10 @@
 	}
 	.footer {
 		font-size: rem(16);
+	}
+	.form__email {
+		padding: 30px 3%;
+
 	}
 }
 
