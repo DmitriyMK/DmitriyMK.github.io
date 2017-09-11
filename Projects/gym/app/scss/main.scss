@@ -4,7 +4,11 @@
 @import "_mixin and function";
 @import "_magnific-popup";
 @import "_carousel";
-/* @import "causes"; */
+/* @import "_causes";  */
+
+/* html,body,{
+	overflow: auto !important;
+} */
 
 body {
 	min-width: 320px;
@@ -464,3 +468,5 @@ a {
 		font-size: rem(10);
 	}
 }
+
+/* @import "_media";  */

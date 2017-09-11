@@ -149,8 +149,7 @@
     padding: 40px 0; }
   .form__select .form__answer {
     display: inline-block;
-    width: 100%;
-    padding: auto; }
+    width: 100%; }
   .form__email .line-email {
     text-align: center;
     width: 100%; }

@@ -139,6 +139,7 @@
     width: 80%;
     text-align: left;
     font-size: 2.5rem;
+    line-height: 1.4;
     font-family: "GothamProBold"; }
     .order__title:before {
       content: '';

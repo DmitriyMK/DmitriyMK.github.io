@@ -17,20 +17,10 @@ $(document).ready(function() {
 	$('.owl-prev').click(function() {
 		owl.trigger('prev.owl.carousel');
 	});
+});
 
-	$(function() {
-		$('.lazy').Lazy({
-			// your configuration goes here
-			scrollDirection: 'vertical',
-			effect: 'fadeIn',
-			visibleOnly: true,
-			onError: function(element) {
-				console.log('error loading ' + element.data('src'));
-			}
-		});
-	});
-
-	/*MENU SCROLLING*/
+/*MENU SCROLLING*/
+$(document).ready(function() {
 	$('a[href^="#"], *[data-href^="#"]').on('click', function(e) {
 		e.preventDefault();
 		var t = 1000;
@@ -41,7 +31,31 @@ $(document).ready(function() {
 	});
 });
 
+$(function() {
+	$('.lazy').Lazy({
+		// your configuration goes here
+		scrollDirection: 'vertical',
+		effect: 'fadeIn',
+		visibleOnly: true,
+		onError: function(element) {
+			console.log('error loading ' + element.data('src'));
+		}
+	});
+});
 
+$(document).ready(function() {
+	$('.popup-gallery').magnificPopup({
+		delegate: '.trainer__link',
+		type: 'image',
+		tLoading: 'Loading image #%curr%...',
+		mainClass: 'mfp-img-mobile',
+		gallery: {
+			enabled: true,
+			navigateByImgClick: true,
+			preload: [0,1] // Will preload 0 - before current, and 1 after the current image
+		}
+	});
+});
 
 /*PRELOADER*/
 $(window).load(function() {
