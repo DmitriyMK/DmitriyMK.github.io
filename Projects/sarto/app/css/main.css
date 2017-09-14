@@ -951,7 +951,7 @@ section {
   .comment .comments__controls i {
     position: absolute;
     display: block;
-    bottom: -30px;
+    bottom: -20px;
     z-index: 100;
     background: #333;
     -webkit-border-radius: 50%;
@@ -1103,6 +1103,7 @@ section {
   padding: 7px 5px 5px 10px; }
 
 .callback {
+  padding-bottom: 20%;
   color: #333; }
   .callback__text {
     font-family: "GothamProMedium";
@@ -1151,8 +1152,9 @@ section {
               box-shadow: 0 2px 3px 0px rgba(0, 0, 0, 0.1); }
 
 .footer {
-  padding: 20% 0 2% 0;
-  text-align: center; }
+  padding: 2% 0 2% 0;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.05); }
   .footer__list {
     display: -webkit-box;
     display: -webkit-flex;

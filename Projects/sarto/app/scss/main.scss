@@ -192,7 +192,7 @@ section {
 		i {
 			position: absolute;	
 			display: block;
-			bottom: -30px;
+			bottom: -20px;
 			z-index: 100;
 			background: #333;
 			border-radius: 50%;
@@ -333,6 +333,7 @@ section {
 }
 
 .callback {
+	padding-bottom: 20%;
 	color: #333;
 	&__text {
 		font-family: "GothamProMedium";
@@ -376,8 +377,9 @@ section {
 }
 
 .footer {
-	padding: 20% 0 2% 0;
+	padding: 2% 0 2% 0;
 	text-align: center;
+	background: rgba(#000, .05);
 	&__list{
 		display: flex;
 		flex-wrap: wrap;
