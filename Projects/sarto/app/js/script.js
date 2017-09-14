@@ -27,7 +27,7 @@ $(document).ready(function() {
 	$(".owl-carousel").owlCarousel({
 		loop: true,
 		center: true,
-		items: 1,
+		items: 1
 	});
 
 	var owl = $('.owl-carousel');
