@@ -79,15 +79,6 @@ $(document).ready(function() {
 });*/
 
 
-
-/*$(document).ready(function() {
-
-
-});
-*/
-
-
-
 /*PRELOADER*/
 $(window).load(function() {
 	$('#preloader').delay(100).fadeOut('slow');
