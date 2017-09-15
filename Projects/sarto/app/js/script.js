@@ -27,7 +27,8 @@ $(document).ready(function() {
 	$(".owl-carousel").owlCarousel({
 		loop: true,
 		center: true,
-		items: 1
+		items: 1,
+		smartSpeed:900
 	});
 
 	var owl = $('.owl-carousel');
@@ -46,6 +47,7 @@ $(document).ready(function() {
 		loop: true,
 		center: true,
 		items: 1,
+		smartSpeed:700
 	});
 
 	var owl = $('.owl-carousel');

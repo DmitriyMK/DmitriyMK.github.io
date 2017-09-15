@@ -239,6 +239,9 @@ section {
 			font-size: rem(72);
 			color: #fefefe;
 		}
+		&:first-child:before{
+			padding: 10px 50px;
+		}
 	} 
 	&__btn {
 		position: relative;
@@ -353,7 +356,7 @@ section {
 		border: none;
 		border-radius: 20px;
 		padding: 20px 20px;
-		box-shadow: 0 2px 3px 0px rgba(0,0,0,0.4);
+		box-shadow: 3px 3px 6px 0px rgba(0,0,0,0.2);
 		font-size: rem(20);
 		color: #a9a8a8;
 	}
@@ -388,7 +391,7 @@ section {
 	&__item {
 		margin-left: 5px;
 		padding-right: 10px;
-		border-right: 2px solid #000;
+		border-right: 1px solid #000;
 		line-height: 14px;
 		&:last-child {
 			border-right: none;
@@ -402,6 +405,11 @@ section {
 
 /* ------------	PAGE 2------------*/
 
+.header-order {
+	background-position: center;
+	background-size: cover;
+}
+
 .section__title-order {
 	padding: 0;
 }
@@ -411,6 +419,9 @@ section {
 	height: 100vh;
 	min-height: 785px;	
 	color: #fff;
+	.logo-order img{
+		padding-top: 70px;
+	}
 	.slogan-order {
 		padding-top: 3%;
 		text-align: center;
@@ -419,7 +430,7 @@ section {
 	}
 	iframe {
 		display: block;
-		margin: 30px auto 80px auto;
+		margin: 30px auto 40px auto;
 		width: 640px;
 		height: 360px;
 	}
@@ -463,6 +474,9 @@ section {
 			font-size: rem(52);
 			color: #fefefe;
 		}
+		&:first-child:before{
+			padding: 10px 40px;
+		}
 	}
 	&__item:nth-child(2n) {
 		padding-top: 50px;
@@ -499,8 +513,96 @@ section {
 		padding: 15px 0;
 		font-family: "GothamProLight";
 	}
+	.brand {
+		padding-right: 10px;
+	}
 }
 
+.picture {
+	position: relative;
+	height: 620px;
+	background-size: cover;
+	background-position: center;
+	&__text {
+		padding: 20% 10%;
+		text-align: center;
+		font-size: rem(50);
+		font-family: "GothamProMedium";
+		color: #fff;
+	}
+}
+
+.gallery {
+	text-align: center;
+	&__content{
+		padding: 50px 10%;
+		text-align: left;
+		font-size: rem(20);
+	}
+	&__text {
+		padding-bottom: 30px;
+	}
+	&__list {
+		display: flex;
+		justify-content: space-between;
+		padding: 0 15px;
+	}
+	&__item {
+		position: relative;
+		flex-basis: 330px;
+		box-shadow: 2px 1px 3px 1px rgba(0,0,0,0.4);
+		color: #fff;
+		@include transition (all .5s ease);
+		&:hover {
+			cursor: pointer;
+			.overlay {
+				opacity: 1;
+			}
+			.select {
+				opacity: 0;
+			}
+			.products {
+				transform: translateY(50px);
+			}
+			.consist {
+				transform: translateY(70px);
+			}
+
+		}
+	} 
+	.products, .consist {
+		@include transition (all .5s ease);
+	}
+
+	.select {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		background: #ce3b3b;
+		padding: 5px 10px;
+		@include transition (all .5s ease);
+	}
+	.overlay {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		width: 100%;
+		height: 100%;
+		opacity: 0;
+		background: rgba($blue, .5);
+		@include transition (all .5s ease);
+		&__icon {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			color: #fff;
+			font-size: 2rem;
+		}
+	}
+}
 
 
 

@@ -1010,6 +1010,8 @@ section {
               border-radius: 50%;
       font-size: 4.5rem;
       color: #fefefe; }
+    .mission__item:first-child:before {
+      padding: 10px 50px; }
   .mission__btn {
     position: relative;
     display: inline-block;
@@ -1125,8 +1127,8 @@ section {
     -webkit-border-radius: 20px;
             border-radius: 20px;
     padding: 20px 20px;
-    -webkit-box-shadow: 0 2px 3px 0px rgba(0, 0, 0, 0.4);
-            box-shadow: 0 2px 3px 0px rgba(0, 0, 0, 0.4);
+    -webkit-box-shadow: 3px 3px 6px 0px rgba(0, 0, 0, 0.2);
+            box-shadow: 3px 3px 6px 0px rgba(0, 0, 0, 0.2);
     font-size: 1.25rem;
     color: #a9a8a8; }
   .callback .form-button {
@@ -1171,7 +1173,7 @@ section {
   .footer__item {
     margin-left: 5px;
     padding-right: 10px;
-    border-right: 2px solid #000;
+    border-right: 1px solid #000;
     line-height: 14px; }
     .footer__item:last-child {
       border-right: none; }
@@ -1180,6 +1182,11 @@ section {
     font-size: 0.625rem; }
 
 /* ------------	PAGE 2------------*/
+.header-order {
+  background-position: center;
+  -webkit-background-size: cover;
+          background-size: cover; }
+
 .section__title-order {
   padding: 0; }
 
@@ -1190,6 +1197,8 @@ section {
   height: 100vh;
   min-height: 785px;
   color: #fff; }
+  .header-order .logo-order img {
+    padding-top: 70px; }
   .header-order .slogan-order {
     padding-top: 3%;
     text-align: center;
@@ -1197,7 +1206,7 @@ section {
     font-family: "GothamProMedium"; }
   .header-order iframe {
     display: block;
-    margin: 30px auto 80px auto;
+    margin: 30px auto 40px auto;
     width: 640px;
     height: 360px; }
   .header-order .contact {
@@ -1259,6 +1268,8 @@ section {
             border-radius: 50%;
     font-size: 3.25rem;
     color: #fefefe; }
+  .question__item:first-child:before {
+    padding: 10px 40px; }
 
 .question__item:nth-child(2n) {
   padding-top: 50px; }
@@ -1298,5 +1309,99 @@ section {
   .choice__text {
     padding: 15px 0;
     font-family: "GothamProLight"; }
+  .choice .brand {
+    padding-right: 10px; }
+
+.picture {
+  position: relative;
+  height: 620px;
+  -webkit-background-size: cover;
+          background-size: cover;
+  background-position: center; }
+  .picture__text {
+    padding: 20% 10%;
+    text-align: center;
+    font-size: 3.125rem;
+    font-family: "GothamProMedium";
+    color: #fff; }
+
+.gallery {
+  text-align: center; }
+  .gallery__content {
+    padding: 50px 10%;
+    text-align: left;
+    font-size: 1.25rem; }
+  .gallery__text {
+    padding-bottom: 30px; }
+  .gallery__list {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 0 15px; }
+  .gallery__item {
+    position: relative;
+    -webkit-flex-basis: 330px;
+        -ms-flex-preferred-size: 330px;
+            flex-basis: 330px;
+    -webkit-box-shadow: 2px 1px 3px 1px rgba(0, 0, 0, 0.4);
+            box-shadow: 2px 1px 3px 1px rgba(0, 0, 0, 0.4);
+    color: #fff;
+    -webkit-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease; }
+    .gallery__item:hover {
+      cursor: pointer; }
+      .gallery__item:hover .overlay {
+        opacity: 1; }
+      .gallery__item:hover .select {
+        opacity: 0; }
+      .gallery__item:hover .products {
+        -webkit-transform: translateY(50px);
+            -ms-transform: translateY(50px);
+                transform: translateY(50px); }
+      .gallery__item:hover .consist {
+        -webkit-transform: translateY(70px);
+            -ms-transform: translateY(70px);
+                transform: translateY(70px); }
+  .gallery .products, .gallery .consist {
+    -webkit-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease; }
+  .gallery .select {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: #ce3b3b;
+    padding: 5px 10px;
+    -webkit-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease; }
+  .gallery .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background: rgba(42, 153, 246, 0.5);
+    -webkit-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease; }
+    .gallery .overlay__icon {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+          -ms-transform: translate(-50%, -50%);
+              transform: translate(-50%, -50%);
+      color: #fff;
+      font-size: 2rem; }
 
 /* @import "media.scss"; */
