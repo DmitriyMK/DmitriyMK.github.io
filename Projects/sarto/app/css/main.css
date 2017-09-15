@@ -784,9 +784,13 @@ section {
   color: #333; }
 
 .responsive {
-  display: block;
-  max-width: 100%;
-  max-height: 100%; }
+  display: inline-block;
+  width: 100%;
+  height: 100%; }
+
+.line {
+  width: 522px;
+  height: 3px; }
 
 /* ------------	LOADER ------------*/
 #preloader {
@@ -1048,10 +1052,6 @@ section {
   .publication .owl-item {
     position: relative; }
   .publication__img {
-    margin: auto;
-    width: 80%;
-    height: 350px;
-    background: url(../img/publication.jpg);
     -webkit-box-shadow: 2px 2px 16px 0px rgba(0, 0, 0, 0.7);
             box-shadow: 2px 2px 16px 0px rgba(0, 0, 0, 0.7); }
   .publication__content {
@@ -1194,8 +1194,7 @@ section {
   padding-top: 15px;
   -webkit-background-size: cover;
           background-size: cover;
-  height: 100vh;
-  min-height: 785px;
+  min-height: 800px;
   color: #fff; }
   .header-order .logo-order img {
     padding-top: 70px; }
@@ -1338,6 +1337,9 @@ section {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
     -webkit-box-pack: justify;
     -webkit-justify-content: space-between;
         -ms-flex-pack: justify;
@@ -1345,9 +1347,10 @@ section {
     padding: 0 15px; }
   .gallery__item {
     position: relative;
-    -webkit-flex-basis: 330px;
-        -ms-flex-preferred-size: 330px;
-            flex-basis: 330px;
+    margin-bottom: 50px;
+    -webkit-flex-basis: 360px;
+        -ms-flex-preferred-size: 360px;
+            flex-basis: 360px;
     -webkit-box-shadow: 2px 1px 3px 1px rgba(0, 0, 0, 0.4);
             box-shadow: 2px 1px 3px 1px rgba(0, 0, 0, 0.4);
     color: #fff;
@@ -1358,26 +1361,19 @@ section {
       cursor: pointer; }
       .gallery__item:hover .overlay {
         opacity: 1; }
-      .gallery__item:hover .select {
-        opacity: 0; }
       .gallery__item:hover .products {
-        -webkit-transform: translateY(50px);
-            -ms-transform: translateY(50px);
-                transform: translateY(50px); }
+        -webkit-transform: translateY(-60px);
+            -ms-transform: translateY(-60px);
+                transform: translateY(-60px); }
       .gallery__item:hover .consist {
-        -webkit-transform: translateY(70px);
-            -ms-transform: translateY(70px);
-                transform: translateY(70px); }
+        -webkit-transform: translateY(-20px);
+            -ms-transform: translateY(-20px);
+                transform: translateY(-20px); }
   .gallery .products, .gallery .consist {
-    -webkit-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
-    transition: all 0.5s ease; }
-  .gallery .select {
+    padding: 0 10px;
     position: absolute;
     bottom: 0;
-    right: 0;
-    background: #ce3b3b;
-    padding: 5px 10px;
+    text-align: left;
     -webkit-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
     transition: all 0.5s ease; }
@@ -1403,5 +1399,61 @@ section {
               transform: translate(-50%, -50%);
       color: #fff;
       font-size: 2rem; }
+
+.order {
+  background: #f3f2f2;
+  text-align: center;
+  padding: 70px 15% 10px 15%; }
+  .order__text {
+    font-size: 2.1875rem;
+    font-family: "GothamProMedium";
+    text-align: left; }
+  .order__bonus {
+    padding: 15px 0 50px 0;
+    width: 38%;
+    font-size: 1.25rem;
+    font-family: "GothamProItalic";
+    text-align: left; }
+  .order form {
+    text-align: left; }
+    .order form .form-line {
+      width: 40%;
+      padding: 15px 25px;
+      margin-right: 20px;
+      border: 2px solid #cdcdcd;
+      font-size: 1.25rem; }
+    .order form .form-button {
+      padding: 15px 60px;
+      border: none;
+      background: #2a99f6;
+      color: #fff;
+      text-transform: uppercase;
+      font-size: 1.25rem;
+      -webkit-transition: background-color 0.5s ease;
+      -o-transition: background-color 0.5s ease;
+      transition: background-color 0.5s ease; }
+      .order form .form-button:hover {
+        background: #0a80e3; }
+  .order .timer {
+    text-align: left; }
+    .order .timer__content {
+      margin: 20px 0 60px 0;
+      padding: 10px 20px;
+      display: inline-block;
+      background: #fff;
+      -webkit-border-radius: 10px;
+              border-radius: 10px; }
+    .order .timer .remain {
+      display: inline-block;
+      width: 40%;
+      font-size: 0.9375rem; }
+    .order .timer .num {
+      font-size: 1.875rem;
+      font-family: "GothamProMedium"; }
+    .order .timer p {
+      display: inline-block; }
+
+.footer-order {
+  background: #dadada; }
 
 /* @import "media.scss"; */

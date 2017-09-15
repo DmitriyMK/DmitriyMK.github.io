@@ -1,5 +1,163 @@
 /*==========  Desktop First  ==========*/
+@media only screen and (max-width: 1200px) {
+  .about .flex__wrap {
+    -webkit-flex-wrap: nowrap;
+        -ms-flex-wrap: nowrap;
+            flex-wrap: nowrap; }
+  .about__content {
+    padding: 10% 0 10% 20px;
+    text-align: left;
+    width: 100%; } }
+
 /* Medium Devices, Desktops */
+@media only screen and (max-width: 775px) {
+  .header {
+    padding-top: 0; }
+    .header .wrapper {
+      background: url(../img/header.png) top left; }
+    .header .slogan {
+      width: 50%; }
+    .header .contact {
+      -webkit-flex-wrap: wrap;
+          -ms-flex-wrap: wrap;
+              flex-wrap: wrap; }
+      .header .contact__btn {
+        -webkit-box-ordinal-group: 4;
+        -webkit-order: 3;
+            -ms-flex-order: 3;
+                order: 3;
+        margin: auto; }
+      .header .contact__link {
+        padding-bottom: 30px; }
+  .about img {
+    display: block;
+    width: 100%;
+    height: 100%; }
+  .about .flex__wrap {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; }
+  .about__content {
+    padding: 10% 0;
+    width: 100%;
+    text-align: center; }
+  .about svg {
+    width: 300px; }
+  .comment .owl-item {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; }
+  .comment .owl__img {
+    padding: 0 15px;
+    height: 350px;
+    width: 300px; }
+  .comment .owl__content {
+    padding: 0 10px; }
+  .comment .comments__controls .owl-prev i {
+    right: 50%; }
+  .comment .comments__controls .owl-next i {
+    right: 30%; }
+  .publication {
+    padding: 0;
+    background-image: -webkit-linear-gradient(#fff 50%, #f2f2f2 50%); }
+    .publication__carousel {
+      padding: 60px 0; }
+    .publication__content {
+      width: 100%; }
+    .publication .publication__controls .owl-prev2 i {
+      right: 25%; }
+    .publication .publication__controls .owl-next2 i {
+      right: 5%; }
+  .line {
+    width: 300px; } }
+
 /* Small Devices, Tablets */
+@media only screen and (max-width: 550px) {
+  .header .slogan {
+    width: 80%;
+    font-size: 1.875rem; }
+  .header .contact {
+    padding-top: 20vh; }
+    .header .contact__link {
+      -webkit-flex-basis: 300px;
+          -ms-flex-preferred-size: 300px;
+              flex-basis: 300px;
+      width: 100%;
+      margin: auto; }
+  .mission__list {
+    padding-top: 50px;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+  .mission__item {
+    -webkit-flex-basis: 130px;
+        -ms-flex-preferred-size: 130px;
+            flex-basis: 130px;
+    position: relative; }
+    .mission__item:before {
+      top: 20px;
+      left: 50%;
+      background: rgba(0, 0, 0, 0.1);
+      -webkit-border-radius: 50%;
+              border-radius: 50%;
+      font-size: 3.25rem; }
+    .mission__item span {
+      position: relative; }
+  .mission__btn {
+    margin: 0;
+    padding: 15px 40px; }
+  .mission svg {
+    bottom: 15%; }
+  .callback {
+    padding-bottom: 10%;
+    color: #333; }
+    .callback__text {
+      font-family: "GothamProMedium";
+      font-size: 1.875rem; }
+    .callback__ask {
+      padding-top: 50px;
+      width: 100%; }
+    .callback__text {
+      font-size: 1.5rem; }
+    .callback form {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column; }
+    .callback .form-line {
+      display: inherit;
+      width: 100%;
+      margin-bottom: 25px;
+      text-align: center; }
+    .callback .form-button {
+      display: inline-block;
+      width: 100%;
+      padding: 20px 50px;
+      -webkit-box-shadow: 0 2px 3px 0px rgba(0, 0, 0, 0.4);
+              box-shadow: 0 2px 3px 0px rgba(0, 0, 0, 0.4); } }
+
 /* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px) {
+  .header .logo {
+    margin: 0 auto;
+    padding-bottom: 10vh; }
+  .header .slogan {
+    width: 100%;
+    text-align: center;
+    font-size: 1.625rem; } }
+
 /* Custom, iPhone Retina */
