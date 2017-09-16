@@ -325,7 +325,7 @@
     .header .header__wrap:before {
       background-color: rgba(0, 0, 0, 0.5); }
     .header .header__wrap .contact {
-      padding-top: 10vh; }
+      padding-top: 5vh; }
   .header-order .logo {
     margin: 0 auto;
     padding-bottom: 10vh; }
@@ -346,4 +346,8 @@
 
 @media only screen and (max-width: 400px) {
   .order .timer__content {
-    display: block; } }
+    display: block; }
+  .header .header__wrap {
+    -webkit-background-size: cover;
+            background-size: cover;
+    background-position: center; } }

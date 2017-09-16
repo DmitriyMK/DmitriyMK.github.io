@@ -385,7 +385,7 @@
 				background-color: rgba(#000, .5);	
 			}
 			.contact {
-				padding-top: 10vh;
+				padding-top: 5vh;
 			}
 		}
 	}
@@ -429,5 +429,10 @@
 			}
 		}
 	}
-
+	.header {
+		.header__wrap {
+			background-size: cover;
+			background-position: center; 
+		}
+	}
 }
