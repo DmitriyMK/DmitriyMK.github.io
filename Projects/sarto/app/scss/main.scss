@@ -619,7 +619,9 @@ section {
 .order {
 	background: #f3f2f2;
 	text-align: center;
-	padding: 70px 15% 10px 15%;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	padding-left: 350px;
 	&__text {
 		font-size: rem(35);
 		font-family: "GothamProMedium";
