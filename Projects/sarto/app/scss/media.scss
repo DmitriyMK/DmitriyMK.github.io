@@ -78,9 +78,14 @@
 			&__btn {
 				margin: auto;
 				margin-bottom: 30px;
+				order: 3;
 			}
 			&__link {
 				padding-bottom: 30px;
+			}
+			&__link {
+				text-align: center;
+				margin: 0 auto;
 			}
 		}
 	}

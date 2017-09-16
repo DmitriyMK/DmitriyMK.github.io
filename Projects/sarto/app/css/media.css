@@ -61,9 +61,16 @@
               flex-wrap: wrap; }
       .header .contact__btn {
         margin: auto;
-        margin-bottom: 30px; }
+        margin-bottom: 30px;
+        -webkit-box-ordinal-group: 4;
+        -webkit-order: 3;
+            -ms-flex-order: 3;
+                order: 3; }
       .header .contact__link {
         padding-bottom: 30px; }
+      .header .contact__link {
+        text-align: center;
+        margin: 0 auto; }
   .about img {
     display: block;
     width: 100%;

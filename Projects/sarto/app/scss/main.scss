@@ -766,6 +766,16 @@ section {
 .mfp-fade.mfp-wrap.mfp-removing .mfp-content {
 	opacity: 0;
 }
-
+.white-popup {
+  position: relative;
+  background: #FFF;
+  padding: 20px;
+  width: auto;
+  max-width: 500px;
+  margin: 20px auto;
+}
+.popup-modal-dismiss {
+	background: $red;
+}
 
 /* @import "media.scss"; */

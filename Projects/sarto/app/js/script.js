@@ -1,7 +1,7 @@
 $(document).ready(function() {
 
 	/*MENU SCROLLING*/
-	$('a[href^="#"], *[data-href^="#"]').on('click', function(e) {
+	$('a[href^="#callback"], *[data-href^="#callback"]').on('click', function(e) {
 		e.preventDefault();
 		var t = 1000;
 		var d = $(this).attr('data-href') ? $(this).attr('data-href') : $(this).attr('href');
@@ -65,7 +65,7 @@ $(document).ready(function() {
 		gallery: {
 			enabled: true,
 			navigateByImgClick: true,
-			preload: [0,1] // Will preload 0 - before current, and 1 after the current image
+			preload: [0, 1] // Will preload 0 - before current, and 1 after the current image
 		},
 		image: {
 			tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
@@ -81,10 +81,34 @@ $(document).ready(function() {
 		mainClass: 'mfp-fade',
 		removalDelay: 160,
 		preloader: false,
+		fixedContentPos: false,
+		iframe: {
+			markup: '<div class="mfp-iframe-scaler">' +
+				'<div class="mfp-close"></div>' +
+				'<iframe class="mfp-iframe" frameborder="0" allowfullscreen></iframe>' +
+				'</div>', // HTML markup of popup, `mfp-close` will be replaced by the close button
 
-		fixedContentPos: false
+			patterns: {
+				gmaps: {
+					index: '//maps.google.',
+					src: '%id%&output=embed'
+				}
+			},
+			srcAction: 'iframe_src', // Templating object key. First part defines CSS selector, second attribute. "iframe_src" means: find "iframe" and set attribute "src".
+		}
 	});
-	
+
+	$('.publication__link, .politics__link').magnificPopup({
+		type: 'inline',
+		preloader: false,
+		focus: '#username',
+	});
+
+	$(document).on('click', '.popup-modal-dismiss', function(e) {
+		e.preventDefault();
+		$.magnificPopup.close();
+	});
+
 });
 
 
