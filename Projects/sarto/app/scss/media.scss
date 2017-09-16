@@ -64,8 +64,8 @@
 @media only screen and (max-width : 775px) {
 	.header {
 		padding-top: 0;
-		.wrapper {
-			background: url(../img/header.png) top left;
+		&__wrap {
+			background-position: 100%;
 		}
 		.slogan {
 			width: 50%;
@@ -73,8 +73,8 @@
 		.contact {
 			flex-wrap: wrap;
 			&__btn {
-				order: 3;
 				margin: auto;
+				margin-bottom: 30px;
 			}
 			&__link {
 				padding-bottom: 30px;
@@ -106,8 +106,8 @@
 		}
 		.owl__img {
 			padding: 0 15px;
-			height: 350px;
-			width: 300px;
+			max-height: 350px;
+			max-width: 300px;
 		}
 		.owl__content {
 			padding: 0 10px;
@@ -230,14 +230,11 @@
 			flex-direction: column;
 		}
 		&__item {
-			flex-basis: 130px;
+			flex-basis: auto;
 			position: relative;
+			padding-bottom: 20px;
 			&:before {
-				top: 20px;
-				left: 50%;
-				background: rgba(#000, .1);
-				border-radius: 50%;
-				font-size: rem(52);
+				display: none;
 			}
 			span {
 				position:relative;
@@ -248,7 +245,7 @@
 			padding: 15px 40px;
 		}
 		svg {
-			bottom: 15%;
+			display: none;
 		}
 	}
 	.callback {
@@ -356,6 +353,7 @@
 	.header {
 		.logo {
 			margin: 0 auto;
+			padding-top: 200px;
 			padding-bottom: 10vh;
 		}
 		.slogan {
@@ -363,7 +361,20 @@
 			text-align: center;
 			font-size: rem(26);
 		}
+		.wrapper {
+			padding: 0;
+		}
+		.header__wrap {
+			background-size: cover; 
+			&:before {
+				background-color: rgba(#000, .5);	
+			}
+			.contact {
+				padding-top: 10vh;
+			}
+		}
 	}
+
 	.header-order {
 		.logo {
 			margin: 0 auto;
@@ -403,4 +414,5 @@
 			}
 		}
 	}
+
 }

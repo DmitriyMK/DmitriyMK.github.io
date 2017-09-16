@@ -49,8 +49,8 @@
 @media only screen and (max-width: 775px) {
   .header {
     padding-top: 0; }
-    .header .wrapper {
-      background: url(../img/header.png) top left; }
+    .header__wrap {
+      background-position: 100%; }
     .header .slogan {
       width: 50%; }
     .header .contact {
@@ -58,11 +58,8 @@
           -ms-flex-wrap: wrap;
               flex-wrap: wrap; }
       .header .contact__btn {
-        -webkit-box-ordinal-group: 4;
-        -webkit-order: 3;
-            -ms-flex-order: 3;
-                order: 3;
-        margin: auto; }
+        margin: auto;
+        margin-bottom: 30px; }
       .header .contact__link {
         padding-bottom: 30px; }
   .about img {
@@ -89,8 +86,8 @@
             flex-wrap: wrap; }
   .comment .owl__img {
     padding: 0 15px;
-    height: 350px;
-    width: 300px; }
+    max-height: 350px;
+    max-width: 300px; }
   .comment .owl__content {
     padding: 0 10px; }
   .comment .comments__controls .owl-prev i {
@@ -184,24 +181,20 @@
         -ms-flex-direction: column;
             flex-direction: column; }
   .mission__item {
-    -webkit-flex-basis: 130px;
-        -ms-flex-preferred-size: 130px;
-            flex-basis: 130px;
-    position: relative; }
+    -webkit-flex-basis: auto;
+        -ms-flex-preferred-size: auto;
+            flex-basis: auto;
+    position: relative;
+    padding-bottom: 20px; }
     .mission__item:before {
-      top: 20px;
-      left: 50%;
-      background: rgba(0, 0, 0, 0.1);
-      -webkit-border-radius: 50%;
-              border-radius: 50%;
-      font-size: 3.25rem; }
+      display: none; }
     .mission__item span {
       position: relative; }
   .mission__btn {
     margin: 0;
     padding: 15px 40px; }
   .mission svg {
-    bottom: 15%; }
+    display: none; }
   .callback {
     padding-bottom: 10%;
     color: #333; }
@@ -305,11 +298,21 @@
 @media only screen and (max-width: 480px) {
   .header .logo {
     margin: 0 auto;
+    padding-top: 200px;
     padding-bottom: 10vh; }
   .header .slogan {
     width: 100%;
     text-align: center;
     font-size: 1.625rem; }
+  .header .wrapper {
+    padding: 0; }
+  .header .header__wrap {
+    -webkit-background-size: cover;
+            background-size: cover; }
+    .header .header__wrap:before {
+      background-color: rgba(0, 0, 0, 0.5); }
+    .header .header__wrap .contact {
+      padding-top: 10vh; }
   .header-order .logo {
     margin: 0 auto;
     padding-bottom: 10vh; }

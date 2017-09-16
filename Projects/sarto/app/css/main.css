@@ -818,16 +818,6 @@ section {
   background-color: #000;
   color: #fff;
   overflow: hidden; }
-  .header .wrapper {
-    background: url(../img/header.png) no-repeat top right; }
-    .header .wrapper:before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: rgba(0, 0, 0, 0.2); }
   .header__wrap {
     position: relative;
     display: -webkit-box;
@@ -846,44 +836,75 @@ section {
     -webkit-box-align: stretch;
     -webkit-align-items: stretch;
         -ms-flex-align: stretch;
-            align-items: stretch; }
-  .header .slogan {
-    width: 40%;
-    font-size: 2.25rem; }
-    .header .slogan-accent {
-      font-family: "GothamProBold"; }
-  .header .logo {
-    padding-top: 30px;
-    padding-bottom: 15vh; }
-  .header .contact {
-    padding-top: 25vh;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
-        -ms-flex-pack: justify;
-            justify-content: space-between; }
-    .header .contact__btn {
-      padding: 20px 50px;
-      background: #2a99f6;
-      -webkit-border-radius: 50px;
-              border-radius: 50px;
-      font-family: "GothamProMedium";
-      -webkit-transition: all 0.5s ease;
-      -o-transition: all 0.5s ease;
-      transition: all 0.5s ease; }
-      .header .contact__btn:hover {
-        background-color: #0a80e3;
-        -webkit-transform: scale(1.1);
-            -ms-transform: scale(1.1);
-                transform: scale(1.1); }
-    .header .contact__link {
+            align-items: stretch;
+    -webkit-background-size: contain;
+            background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right; }
+    .header__wrap:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 750px;
+      background-color: rgba(0, 0, 0, 0.2); }
+    .header__wrap .slogan {
+      position: relative;
+      width: 40%;
+      font-size: 2.25rem; }
+      .header__wrap .slogan-accent {
+        font-family: "GothamProBold"; }
+      .header__wrap .slogan [data-tooltip] {
+        position: relative;
+        z-index: 2;
+        cursor: pointer; }
+      .header__wrap .slogan [data-tooltip]:before,
+      .header__wrap .slogan [data-tooltip]:after {
+        visibility: hidden;
+        opacity: 0;
+        pointer-events: none; }
+      .header__wrap .slogan [data-tooltip]:before {
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        margin-top: 13px;
+        margin-left: -80px;
+        padding: 7px;
+        width: 200px;
+        -webkit-border-radius: 3px;
+                border-radius: 3px;
+        background-color: #000;
+        background-color: rgba(51, 51, 51, 0.9);
+        content: attr(data-tooltip);
+        font-size: 14px;
+        -webkit-transition: all 0.5s ease;
+        -o-transition: all 0.5s ease;
+        transition: all 0.5s ease; }
+      .header__wrap .slogan [data-tooltip]:after {
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        margin-left: 5px;
+        width: 0;
+        border-top: 10px solid #fff;
+        border-top: 10px solid rgba(51, 51, 51, 0.9);
+        border-right: 10px solid transparent;
+        border-left: 10px solid transparent;
+        content: " ";
+        font-size: 0;
+        line-height: 0; }
+      .header__wrap .slogan [data-tooltip]:hover:before,
+      .header__wrap .slogan [data-tooltip]:hover:after {
+        visibility: visible;
+        opacity: 1; }
+    .header__wrap .logo {
+      position: relative;
+      padding-top: 30px;
+      padding-bottom: 10vh; }
+    .header__wrap .contact {
+      position: relative;
+      padding-top: 25vh;
       display: -webkit-box;
       display: -webkit-flex;
       display: -ms-flexbox;
@@ -891,20 +912,45 @@ section {
       -webkit-box-align: center;
       -webkit-align-items: center;
           -ms-flex-align: center;
-              align-items: center; }
-    .header .contact__text {
-      padding-left: 20px; }
-      .header .contact__text-accent {
-        font-family: "GothamProBold"; }
+              align-items: center;
+      -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
+          -ms-flex-pack: justify;
+              justify-content: space-between; }
+      .header__wrap .contact__btn {
+        padding: 20px 50px;
+        background: #2a99f6;
+        -webkit-border-radius: 50px;
+                border-radius: 50px;
+        font-family: "GothamProMedium";
+        -webkit-transition: all 0.5s ease;
+        -o-transition: all 0.5s ease;
+        transition: all 0.5s ease; }
+        .header__wrap .contact__btn:hover {
+          background-color: #0a80e3;
+          -webkit-transform: scale(1.1);
+              -ms-transform: scale(1.1);
+                  transform: scale(1.1); }
+      .header__wrap .contact__link {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+            -ms-flex-align: center;
+                align-items: center; }
+      .header__wrap .contact__text {
+        padding-left: 20px; }
+        .header__wrap .contact__text-accent {
+          font-family: "GothamProBold"; }
 
-.about svg {
-  padding-bottom: 50px; }
-
-.about img {
+.about .about__img {
   -webkit-box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.5);
           box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.5); }
 
 .about .flex__wrap {
+  padding-top: 40px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1047,6 +1093,12 @@ section {
 .publication {
   padding: 0 20%;
   background-image: -webkit-linear-gradient(#fff 50%, #f2f2f2 50%); }
+  .publication svg {
+    fill: #2a99f6;
+    stroke: #2a99f6;
+    display: inline-block;
+    width: 100%;
+    height: 3px; }
   .publication__carousel {
     padding: 60px 0; }
   .publication .owl-item {
@@ -1072,7 +1124,12 @@ section {
     font-family: "GothamProMedium";
     color: #000;
     padding-bottom: 4px;
-    border-bottom: 1.5px dashed #000; }
+    border-bottom: 1.5px dashed #000;
+    -webkit-transition: color 0.5s ease;
+    -o-transition: color 0.5s ease;
+    transition: color 0.5s ease; }
+    .publication__link:hover {
+      color: #2a99f6; }
 
 .publication__controls i {
   position: absolute;

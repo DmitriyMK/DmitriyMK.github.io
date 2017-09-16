@@ -28,10 +28,11 @@ $(document).ready(function() {
 		loop: true,
 		center: true,
 		items: 1,
-		smartSpeed:900
+		smartSpeed: 400
 	});
 
-	var owl = $('.owl-carousel');
+	/*CAROUSEL #1 COMMENT*/
+	var owl = $('.comment__carousel');
 	owl.owlCarousel();
 
 	$('.owl-next').click(function() {
@@ -42,26 +43,20 @@ $(document).ready(function() {
 		owl.trigger('prev.owl.carousel');
 	});
 
-	/*CAROUSEL #2*/
-	$(".owl-carousel").owlCarousel({
-		loop: true,
-		center: true,
-		items: 1,
-		smartSpeed:700,
-	});
+	/*CAROUSEL #2 PUBLICATION*/
 
-	var owl = $('.owl-carousel');
-	owl.owlCarousel();
+	var owlPublic = $('.publication__carousel');
+	owlPublic.owlCarousel();
 
 	$('.owl-next2').click(function() {
-		owl.trigger('next.owl.carousel');
+		owlPublic.trigger('next.owl.carousel');
 	})
 
 	$('.owl-prev2').click(function() {
-		owl.trigger('prev.owl.carousel');
+		owlPublic.trigger('prev.owl.carousel');
 	});
 
-
+	/*PHOTOGALLERY*/
 	$('.popup-gallery').magnificPopup({
 		delegate: 'a',
 		type: 'image',
@@ -75,10 +70,11 @@ $(document).ready(function() {
 		image: {
 			tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
 			titleSrc: function(item) {
-				return item.el.attr('title') + '<small>by SARTO VIKTOR</small>';
+				return item.el.attr('title') + '<small>SARTO VIKTOR</small>';
 			}
 		}
 	});
+	
 });
 
 
