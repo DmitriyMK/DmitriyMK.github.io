@@ -24,6 +24,41 @@
 	}
 }  
 
+
+@media only screen and (max-width : 1050px) {
+	.header-invite {
+		min-height: 160vh;
+		&:before {
+			height: 160vh;
+		}
+	}
+	.bonus {
+		padding: 8vh;
+		.wrapper {
+			display: flex;	
+			flex-wrap: wrap;
+			justify-content: center;	
+		}
+		iframe {
+			width: 500px;
+			height: 281.5px;
+		}
+		&__text {
+			flex-basis: 500px;
+			padding: 38px;
+		}
+	}
+
+	.bonus__thank {
+		.iframe__wrap {
+			padding-bottom: 40px;
+		}
+		.bonus__list {
+			padding-top: 0;
+		}
+	}
+}
+
 /* Medium Devices, Desktops */
 
 @media only screen and (max-width : 960px) {
@@ -61,6 +96,29 @@
 	}
 	.callback {
 		padding-left: 100px;
+	}
+	.header-invite {
+		min-height: 180vh;
+		&:before {
+			height: 180vh;
+		}
+	}
+	.form__invite {
+		form {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-around;
+			flex-direction: column;
+		}
+		.form-line, .form-button {
+			width: 82%;
+			margin: auto;
+			flex-basis: auto;
+			text-align: center;
+		}
+		.form-line {
+			margin-bottom: 25px;
+		}
 	}
 }
 
@@ -151,8 +209,6 @@
 		padding-bottom: 10%;
 		padding-left: 0;
 	}
-
-
 	.line {
 		width: 300px;
 	}
@@ -217,6 +273,15 @@
 			.form-button {
 				width: 100%;
 			}
+		}
+	}
+	.header-thank {
+		.invite__title {
+			padding: 8vh 0;
+		}
+		height: 30vh;
+		&:before {
+			height: 30vh;
 		}
 	}
 }  
@@ -359,6 +424,21 @@
 			width: 100%;
 		}
 	}
+	.bonus {
+		iframe {
+			width: 400px;
+			height: 225px;
+		}
+		&__text {
+			flex-basis: 400px;
+			margin-top: 25px;
+			padding: 30px 10px;
+			p:first-child{
+				padding-bottom: 30px;
+			}
+		}
+	}
+
 }
 
 /* Extra Small Devices, Phones */
@@ -417,6 +497,53 @@
 			font-size: rem(30);
 		}
 	}
+	.header-invite {
+		.firstName {
+			display: inline-block;
+			width: 100%;
+		}
+		.invite__title {
+			padding: 5vh 0;
+			font-size: rem(30);
+		}
+	}
+	.header-invite {
+		min-height: 166vh;
+		&:before {
+			height: 166vh;
+		}
+	}
+	.bonus {
+		padding: 6vh 0;
+		iframe {
+			width: 375px;
+			height: 210.9375px;
+		}
+		&__text {
+			flex-basis: autox;
+			margin-top: 25px;
+			padding: 5px;
+			font-size: rem(18);
+			p:first-child{
+				padding-bottom: 20px;
+			}
+		}
+	}
+	.bonus__thank {
+		.bonus__list {
+			display: flex;
+			justify-content: space-around;
+			flex-wrap: wrap;
+			padding-top: 20px;
+		}
+		.bonus__item {
+			margin-left: 0;
+			margin-bottom: 40px;
+			text-align: center;
+			flex-basis: 150px;
+
+		}
+	}
 }
 
 
@@ -433,6 +560,15 @@
 		.header__wrap {
 			background-size: cover;
 			background-position: center; 
+		}
+	}
+}
+
+@media only screen and (max-width: 375px)  {
+	.bonus {
+		iframe {
+			width: 300px;
+			height: 168.75px;
 		}
 	}
 }
