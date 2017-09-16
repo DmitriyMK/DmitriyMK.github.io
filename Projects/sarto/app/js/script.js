@@ -76,26 +76,12 @@ $(document).ready(function() {
 	});
 
 	$('.popup-gmaps').magnificPopup({
-		disableOn: 700,
+		disableOn: 319,
 		type: 'iframe',
 		mainClass: 'mfp-fade',
 		removalDelay: 160,
 		preloader: false,
 		fixedContentPos: false,
-		iframe: {
-			markup: '<div class="mfp-iframe-scaler">' +
-				'<div class="mfp-close"></div>' +
-				'<iframe class="mfp-iframe" frameborder="0" allowfullscreen></iframe>' +
-				'</div>', // HTML markup of popup, `mfp-close` will be replaced by the close button
-
-			patterns: {
-				gmaps: {
-					index: '//maps.google.',
-					src: '%id%&output=embed'
-				}
-			},
-			srcAction: 'iframe_src', // Templating object key. First part defines CSS selector, second attribute. "iframe_src" means: find "iframe" and set attribute "src".
-		}
 	});
 
 	$('.publication__link, .politics__link').magnificPopup({
