@@ -381,7 +381,6 @@ section {
 .footer {
 	padding: 2% 0 2% 0;
 	text-align: center;
-	background: rgba(#000, .05);
 	&__list{
 		display: flex;
 		flex-wrap: wrap;
@@ -407,16 +406,22 @@ section {
 
 .section__title-order {
 	padding: 0;
+	font-size: rem(30);
 }
-.header-order {
+.header-order{
 	padding-top: 15px;
 	background-position: center;
 	background-size: cover;
 	min-height: 800px;	
 	color: #fff;
-	.logo-order img{
-		padding-top: 70px;
+	.logo-order {
+		display: block;
+		margin-top: 50px;
 	}
+	.logo-order img{
+		width: 165px;
+		height: 50px;
+	} 
 	.slogan-order {
 		padding-top: 3%;
 		text-align: center;
@@ -451,7 +456,7 @@ section {
 	padding: 50px 0;
 	background-image: -webkit-linear-gradient(85deg, #f2f2f2 55%, #fff 45% );
 	&__list {
-		padding-top: 60px;
+		padding: 40px 0 50px 0;
 		display: flex;
 		justify-content: space-around;
 		flex-wrap: wrap;
@@ -459,34 +464,45 @@ section {
 	}
 	&__item {
 		position: relative;
-		padding-bottom: 40px;
-		padding-left: 100px;
-		flex-basis: 450px;
+		padding-bottom: 36px;
+		padding-left: 70px;
+		flex-basis: 460px;
 		counter-increment: li;
 		&:before {
 			content: '' counter(li);
 			position: absolute;
-			top: 0;
-			left: -10px;
-			padding: 10px 30px;
+			top: 10px;
+			left: -50px;
+			padding: 8px 26px;
 			background: #333;
 			border-radius: 50%;
 			font-size: rem(52);
 			color: #fefefe;
 		}
 		&:first-child:before{
-			padding: 10px 40px;
+			top: 0;
+			padding: 8px 33px;
 		}
 	}
 	&__item:nth-child(2n) {
 		padding-top: 50px;
+		padding-left: 130px;
 		&:before {
-			top: 50px;
+			left: 20px;
+			top: 54px;
 		}
+	}
+	.item__title {
+		font-size: rem(25);
+	}
+	.item__text {
+		padding-top: 10px;
+		font-family: "GothamProLight";
+		font-size: rem(18);
 	}
 }
 .section__title-choice {
-	padding-top: 40px;
+	padding-top: 20px;
 }
 .choice {
 	padding-top: 40px;
@@ -661,10 +677,5 @@ section {
 		}
 	}
 }
-
-.footer-order {
-	background: #dadada;
-}
-
 
 /* @import "media.scss"; */
