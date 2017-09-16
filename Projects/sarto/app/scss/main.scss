@@ -335,7 +335,7 @@ section {
 }
 
 .callback {
-	padding-bottom: 20%;
+	padding-bottom: 10%;
 	color: #333;
 	&__text {
 		font-family: "GothamProMedium";
@@ -392,6 +392,7 @@ section {
 		padding-right: 10px;
 		border-right: 1px solid #000;
 		line-height: 14px;
+		margin-bottom: 10px;
 		&:last-child {
 			border-right: none;
 		}
@@ -404,16 +405,12 @@ section {
 
 /* ------------	PAGE 2------------*/
 
-.header-order {
-	background-position: center;
-	background-size: cover;
-}
-
 .section__title-order {
 	padding: 0;
 }
 .header-order {
 	padding-top: 15px;
+	background-position: center;
 	background-size: cover;
 	min-height: 800px;	
 	color: #fff;
@@ -448,7 +445,11 @@ section {
 		}
 	}
 }
+
 .question {
+	margin: 0;
+	padding: 50px 0;
+	background-image: -webkit-linear-gradient(85deg, #f2f2f2 55%, #fff 45% );
 	&__list {
 		padding-top: 60px;
 		display: flex;
@@ -458,14 +459,15 @@ section {
 	}
 	&__item {
 		position: relative;
-		padding-bottom: 5%;
-		flex-basis: 400px;
+		padding-bottom: 40px;
+		padding-left: 100px;
+		flex-basis: 450px;
 		counter-increment: li;
 		&:before {
 			content: '' counter(li);
 			position: absolute;
 			top: 0;
-			left: -120px;
+			left: -10px;
 			padding: 10px 30px;
 			background: #333;
 			border-radius: 50%;
@@ -483,9 +485,11 @@ section {
 		}
 	}
 }
-
+.section__title-choice {
+	padding-top: 40px;
+}
 .choice {
-	padding-top: 60px;
+	padding-top: 40px;
 	display: flex;
 	justify-content: space-around;
 	flex-wrap: wrap;
@@ -543,13 +547,13 @@ section {
 	&__list {
 		display: flex;
 		flex-wrap: wrap;
-		justify-content: space-between;
+		justify-content: space-around;
 		padding: 0 15px;
 	}
 	&__item {
 		position: relative;
 		margin-bottom: 50px;
-		flex-basis: 360px;
+		flex-basis: 340px;
 		box-shadow: 2px 1px 3px 1px rgba(0,0,0,0.4);
 		color: #fff;
 		@include transition (all .5s ease);

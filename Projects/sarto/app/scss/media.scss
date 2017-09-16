@@ -1,7 +1,6 @@
 @import "_vars";
 @import "_mixin and function";
 
-
 /*==========  Desktop First  ==========*/
 @media only screen and (max-width : 1200px) {
 
@@ -18,6 +17,37 @@
 }  
 
 /* Medium Devices, Desktops */
+
+@media only screen and (max-width : 960px) {
+	.question {
+		&__item {
+			flex-basis: 600px;
+		}
+		&__item:nth-child(2n) {
+			padding-top: 0;
+			&:before {
+				top: 0;
+			}
+		}
+	}
+	.choice {
+		padding-top: 40px;
+		&__item {
+			display: flex;
+			flex-basis: 600px;
+			padding-bottom: 40px;
+			svg {
+				width: 90px;
+			}
+		}
+		&__item:nth-child(2n) {
+			padding-top: 0;
+		}
+	}
+	.order {
+		padding: 50px 20px 20px 20px;
+	}
+}
 
 @media only screen and (max-width : 775px) {
 	.header {
@@ -100,11 +130,74 @@
 	.line {
 		width: 300px;
 	}
+	.header-order {
+		padding-top: 0;
+		iframe {
+			width: 440px;
+			height: 247.5px;
+		}
+		.contact {
+			text-align: center;
+			flex-wrap: wrap;
+			justify-content: center;
+			margin: 0 auto;
+			&__text {
+				padding-left: 10px;
+				text-align: left;
+			}
+			&__link {
+				padding-bottom: 30px;
+			}
+		}
+	}
+	.picture {
+		height: auto;
+		&__text {
+			padding: 20% 15px;
+			font-size: rem(40);
+		}
+	}
+	.gallery {
+		&__content{
+			padding: 30px 0;
+			font-size: rem(20);
+		}
+		&__text {
+			padding-bottom: 20px;
+		}
+		&__list {
+			padding: 0;
+		}
+		&__item {
+			margin-bottom: 30px;
+			flex-basis: 300px;
+		}
+	}
+	.order {
+		padding: 50px 20px 20px 20px;
+		&__text {
+			font-size: rem(30);
+		}
+		&__bonus {
+			padding: 15px 0 50px 0;
+			width: 70%;
+		}
+		form {
+			.form-line {
+				width: 100%;
+				text-align: center;
+				margin-right: 0;
+				margin-bottom: 25px;
+			}
+			.form-button {
+				width: 100%;
+			}
+		}
+	}
 }  
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 550px) {
-
 	.header {
 		.slogan {
 			width: 80%;
@@ -178,6 +271,62 @@
 			box-shadow: 0 2px 3px 0px rgba(0,0,0,0.4);
 		}
 	}
+	.header-order {
+		min-height: 600px;	
+		iframe {
+			width: 400px;
+			height: 225px;
+		}
+		.contact {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			&__link {
+				display: flex;
+				align-items: center;
+				flex-wrap: wrap;
+				margin: auto;
+			}
+		}
+	}
+	.section__title-order {
+		padding: 0;
+		font-size: rem(30);
+	}
+	.section__title-choice {
+		padding-top: 80px;
+	}
+	.question {
+		background-image: -webkit-linear-gradient(84deg, #f2f2f2 58%, #fff 45% );
+		&__list {
+			padding-top: 40px;
+		}
+		&__item {
+			padding-left: 50px;
+			padding-bottom: 20px;
+			flex-basis: auto;
+			&:before {
+				left: -40px;
+				padding: inherit;
+				background: none;
+				color: #000;
+			}
+			&:first-child:before{
+				left: -20px;
+			}
+		}
+	}
+	.picture {
+		&__text {
+			padding: 15% 0;
+			font-size: rem(40);
+		}
+	}
+	.order {
+		&__bonus {
+			width: 100%;
+		}
+	}
 }
 
 /* Extra Small Devices, Phones */
@@ -194,6 +343,21 @@
 			font-size: rem(26);
 		}
 	}
+	.header-order {
+		.logo {
+			margin: 0 auto;
+			padding-bottom: 10vh;
+		}
+		.slogan-order {
+			width: 100%;
+			font-size: rem(26);
+		}
+		iframe {
+			width: 300px;
+			height: 168.75px;
+		}
+	}
+
 }
 
 

@@ -1106,7 +1106,7 @@ section {
   padding: 7px 5px 5px 10px; }
 
 .callback {
-  padding-bottom: 20%;
+  padding-bottom: 10%;
   color: #333; }
   .callback__text {
     font-family: "GothamProMedium";
@@ -1174,7 +1174,8 @@ section {
     margin-left: 5px;
     padding-right: 10px;
     border-right: 1px solid #000;
-    line-height: 14px; }
+    line-height: 14px;
+    margin-bottom: 10px; }
     .footer__item:last-child {
       border-right: none; }
   .footer .seo-text {
@@ -1182,16 +1183,12 @@ section {
     font-size: 0.625rem; }
 
 /* ------------	PAGE 2------------*/
-.header-order {
-  background-position: center;
-  -webkit-background-size: cover;
-          background-size: cover; }
-
 .section__title-order {
   padding: 0; }
 
 .header-order {
   padding-top: 15px;
+  background-position: center;
   -webkit-background-size: cover;
           background-size: cover;
   min-height: 800px;
@@ -1235,48 +1232,54 @@ section {
       .header-order .contact__text-accent {
         font-family: "GothamProBold"; }
 
-.question__list {
-  padding-top: 60px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-justify-content: space-around;
-      -ms-flex-pack: distribute;
-          justify-content: space-around;
-  -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
-  text-align: left; }
+.question {
+  margin: 0;
+  padding: 50px 0;
+  background-image: -webkit-linear-gradient(85deg, #f2f2f2 55%, #fff 45%); }
+  .question__list {
+    padding-top: 60px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    text-align: left; }
+  .question__item {
+    position: relative;
+    padding-bottom: 40px;
+    padding-left: 100px;
+    -webkit-flex-basis: 450px;
+        -ms-flex-preferred-size: 450px;
+            flex-basis: 450px;
+    counter-increment: li; }
+    .question__item:before {
+      content: "" counter(li);
+      position: absolute;
+      top: 0;
+      left: -10px;
+      padding: 10px 30px;
+      background: #333;
+      -webkit-border-radius: 50%;
+              border-radius: 50%;
+      font-size: 3.25rem;
+      color: #fefefe; }
+    .question__item:first-child:before {
+      padding: 10px 40px; }
+  .question__item:nth-child(2n) {
+    padding-top: 50px; }
+    .question__item:nth-child(2n):before {
+      top: 50px; }
 
-.question__item {
-  position: relative;
-  padding-bottom: 5%;
-  -webkit-flex-basis: 400px;
-      -ms-flex-preferred-size: 400px;
-          flex-basis: 400px;
-  counter-increment: li; }
-  .question__item:before {
-    content: "" counter(li);
-    position: absolute;
-    top: 0;
-    left: -120px;
-    padding: 10px 30px;
-    background: #333;
-    -webkit-border-radius: 50%;
-            border-radius: 50%;
-    font-size: 3.25rem;
-    color: #fefefe; }
-  .question__item:first-child:before {
-    padding: 10px 40px; }
-
-.question__item:nth-child(2n) {
-  padding-top: 50px; }
-  .question__item:nth-child(2n):before {
-    top: 50px; }
+.section__title-choice {
+  padding-top: 40px; }
 
 .choice {
-  padding-top: 60px;
+  padding-top: 40px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1340,17 +1343,16 @@ section {
     -webkit-flex-wrap: wrap;
         -ms-flex-wrap: wrap;
             flex-wrap: wrap;
-    -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
     padding: 0 15px; }
   .gallery__item {
     position: relative;
     margin-bottom: 50px;
-    -webkit-flex-basis: 360px;
-        -ms-flex-preferred-size: 360px;
-            flex-basis: 360px;
+    -webkit-flex-basis: 340px;
+        -ms-flex-preferred-size: 340px;
+            flex-basis: 340px;
     -webkit-box-shadow: 2px 1px 3px 1px rgba(0, 0, 0, 0.4);
             box-shadow: 2px 1px 3px 1px rgba(0, 0, 0, 0.4);
     color: #fff;
