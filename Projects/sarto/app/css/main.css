@@ -854,7 +854,11 @@ section {
       width: 40%;
       font-size: 2.25rem; }
       .header__wrap .slogan-accent {
-        font-family: "GothamProBold"; }
+        font-family: "GothamProBold";
+        -webkit-text-decoration: underline dashed;
+                text-decoration: underline dashed;
+        -webkit-text-decoration-color: rgba(255, 255, 255, 0.3);
+                text-decoration-color: rgba(255, 255, 255, 0.3); }
       .header__wrap .slogan [data-tooltip] {
         position: relative;
         z-index: 2;
@@ -1164,6 +1168,7 @@ section {
 
 .callback {
   padding-bottom: 10%;
+  padding-left: 160px;
   color: #333; }
   .callback__text {
     font-family: "GothamProMedium";
@@ -1526,5 +1531,32 @@ section {
       font-family: "GothamProMedium"; }
     .order .timer p {
       display: inline-block; }
+
+/**
+ * Simple fade transition,
+ */
+.mfp-fade.mfp-bg {
+  opacity: 0;
+  -webkit-transition: all 0.15s ease-out;
+  -o-transition: all 0.15s ease-out;
+  transition: all 0.15s ease-out; }
+
+.mfp-fade.mfp-bg.mfp-ready {
+  opacity: 0.8; }
+
+.mfp-fade.mfp-bg.mfp-removing {
+  opacity: 0; }
+
+.mfp-fade.mfp-wrap .mfp-content {
+  opacity: 0;
+  -webkit-transition: all 0.15s ease-out;
+  -o-transition: all 0.15s ease-out;
+  transition: all 0.15s ease-out; }
+
+.mfp-fade.mfp-wrap.mfp-ready .mfp-content {
+  opacity: 1; }
+
+.mfp-fade.mfp-wrap.mfp-removing .mfp-content {
+  opacity: 0; }
 
 /* @import "media.scss"; */

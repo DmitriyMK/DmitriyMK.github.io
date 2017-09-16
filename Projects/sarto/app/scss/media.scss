@@ -59,6 +59,9 @@
 	.order {
 		padding-left: 0;
 	}
+	.callback {
+		padding-left: 100px;
+	}
 }
 
 @media only screen and (max-width : 775px) {
@@ -139,6 +142,12 @@
 			}
 		}
 	}
+	.callback {
+		padding-bottom: 10%;
+		padding-left: 0;
+	}
+
+
 	.line {
 		width: 300px;
 	}

@@ -99,6 +99,8 @@ section {
 			font-size: rem(36);
 			&-accent {
 				font-family: "GothamProBold";
+				text-decoration: underline dashed;
+				text-decoration-color: rgba(#fff, .3);
 			}
 			[data-tooltip] {
 				position: relative;
@@ -395,6 +397,7 @@ section {
 
 .callback {
 	padding-bottom: 10%;
+	padding-left: 160px;
 	color: #333;
 	&__text {
 		font-family: "GothamProMedium";
@@ -739,6 +742,30 @@ section {
 	}
 }
 
+/**
+ * Simple fade transition,
+ */
+.mfp-fade.mfp-bg {
+	opacity: 0;
+	transition: all 0.15s ease-out;
+}
+.mfp-fade.mfp-bg.mfp-ready {
+	opacity: 0.8;
+}
+.mfp-fade.mfp-bg.mfp-removing {
+	opacity: 0;
+}
+
+.mfp-fade.mfp-wrap .mfp-content {
+	opacity: 0;
+	transition: all 0.15s ease-out;
+}
+.mfp-fade.mfp-wrap.mfp-ready .mfp-content {
+	opacity: 1;
+}
+.mfp-fade.mfp-wrap.mfp-removing .mfp-content {
+	opacity: 0;
+}
 
 
 /* @import "media.scss"; */

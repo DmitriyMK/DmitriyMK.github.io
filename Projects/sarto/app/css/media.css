@@ -44,7 +44,9 @@
     .choice__item:nth-child(2n) {
       padding-top: 0; }
   .order {
-    padding-left: 0; } }
+    padding-left: 0; }
+  .callback {
+    padding-left: 100px; } }
 
 @media only screen and (max-width: 775px) {
   .header {
@@ -105,6 +107,9 @@
       right: 25%; }
     .publication .publication__controls .owl-next2 i {
       right: 5%; }
+  .callback {
+    padding-bottom: 10%;
+    padding-left: 0; }
   .line {
     width: 300px; }
   .header-order {
