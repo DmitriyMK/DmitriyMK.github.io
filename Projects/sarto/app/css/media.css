@@ -320,7 +320,8 @@
     padding: 0; }
   .header .header__wrap {
     -webkit-background-size: cover;
-            background-size: cover; }
+            background-size: cover;
+    background-position: right; }
     .header .header__wrap:before {
       background-color: rgba(0, 0, 0, 0.5); }
     .header .header__wrap .contact {
