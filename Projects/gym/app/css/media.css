@@ -328,9 +328,9 @@
 
 @media only screen and (max-width: 1050px) {
   .header-invite {
-    min-height: 180vh; }
+    min-height: 150vh; }
     .header-invite:before {
-      height: 180vh; }
+      height: 150vh; }
   .bonus {
     padding: 8vh; }
     .bonus .wrapper {
@@ -362,9 +362,9 @@
 
 @media only screen and (max-width: 960px) {
   .header-invite {
-    min-height: 210vh; }
+    min-height: 180vh; }
     .header-invite:before {
-      height: 210vh; }
+      height: 180vh; }
   .form__invite form {
     display: -webkit-box;
     display: -webkit-flex;
@@ -392,6 +392,10 @@
     margin-bottom: 25px; } }
 
 @media only screen and (max-width: 775px) {
+  .header-invite {
+    min-height: 190vh; }
+    .header-invite:before {
+      height: 190vh; }
   .header-thank {
     height: 30vh; }
     .header-thank .invite__title {
@@ -402,9 +406,9 @@
 /* Small Devices, Tablets */
 @media only screen and (max-width: 550px) {
   .header-invite {
-    min-height: 220vh; }
+    min-height: 187vh; }
     .header-invite:before {
-      height: 220vh; }
+      height: 187vh; }
   .bonus iframe {
     width: 400px;
     height: 225px; }
@@ -423,9 +427,9 @@
     padding: 5vh 0;
     font-size: 1.875rem; }
   .header-invite {
-    min-height: 190vh; }
+    min-height: 170vh; }
     .header-invite:before {
-      height: 190vh; }
+      height: 170vh; }
   .bonus {
     padding: 6vh 0; }
     .bonus iframe {
