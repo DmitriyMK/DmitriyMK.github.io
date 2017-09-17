@@ -490,7 +490,6 @@ section {
 		padding-top: 3%;
 		text-align: center;
 		font-size: rem(25);
-		font-family: "GothamProMedium";
 	}
 	iframe {
 		display: block;
@@ -580,6 +579,11 @@ section {
 		padding-bottom: 5%;
 		svg {
 			width: 90px;
+		}
+		.partners {
+			display: inline-block;
+			padding-bottom: 10px;
+			color: $red;
 		}
 	}
 	&__item:nth-child(2n) {

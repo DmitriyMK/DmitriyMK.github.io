@@ -62,6 +62,17 @@
 /* Medium Devices, Desktops */
 
 @media only screen and (max-width : 960px) {
+	
+	.comment {
+		&__carousel {
+			padding: 40px 0;
+		}
+		.owl__content {
+			padding-left: 25px;
+			padding-right: 0;
+		}
+	}
+
 	.question {
 		background-image: -webkit-linear-gradient(85deg, #f2f2f2 50%, #fff 50% );
 		&__item {
@@ -120,7 +131,7 @@
 			margin-bottom: 25px;
 		}
 	}
-		.header-invite {
+	.header-invite {
 		min-height: 190vh;
 		&:before {
 			height: 190vh;
@@ -177,12 +188,9 @@
 			flex-wrap: wrap;
 		}
 		.owl__img {
-			padding: 0 15px;
+			margin: auto;
 			max-height: 350px;
 			max-width: 300px;
-		}
-		.owl__content {
-			padding: 0 10px;
 		}
 		.comments__controls {
 			.owl-prev i {	
@@ -322,8 +330,15 @@
 			flex-basis: auto;
 			position: relative;
 			padding-bottom: 20px;
+			padding-left: 40px;
+			text-align: left;
 			&:before {
-				display: none;
+				font-size: rem(42);
+				background: none;
+				color: #000;
+				top: 20px;
+				left: 10px;
+				padding: 10px 40px;
 			}
 			span {
 				position:relative;
@@ -456,9 +471,12 @@
 
 	.header {
 		.logo {
-			margin: 0 auto;
-			padding-top: 200px;
-			padding-bottom: 10vh;
+			padding-top: 20px;
+			padding-left: 20px;
+			padding-bottom: 220px;
+			img {
+				width: 150px;
+			}
 		}
 		.slogan {
 			width: 100%;
@@ -470,7 +488,7 @@
 		}
 		.header__wrap {
 			background-size: cover;
-			background-position: right; 
+			background-position: 40% 20%; 
 			&:before {
 				background-color: rgba(#000, .5);	
 			}
@@ -495,6 +513,13 @@
 	}
 	.question {
 		background-image: -webkit-linear-gradient(90deg, #f2f2f2 58%, #fff 45% );
+	}
+	.picture {
+		&__text {
+			font-size: rem(42);
+			font-family: "GothamProMedium";
+			color: #fff;
+		}
 	}
 	.order {
 		.firstName {
@@ -558,6 +583,15 @@
 
 @media only screen and (max-width: 400px)  {
 
+	.section__title-order {
+		font-size: rem(28);
+	}
+	.question {
+		background-image: -webkit-linear-gradient(90deg, #f2f2f2 54%, #fff 50% );
+	}
+	.section__title-choice {
+		padding-top: 0;
+	}
 	.order {
 		.timer {
 			&__content { 
@@ -574,6 +608,7 @@
 	.header__wrap-order {
 		text-align: center;
 	}
+
 }
 
 @media only screen and (max-width: 375px)  {

@@ -1307,8 +1307,7 @@ section {
   .header-order .slogan-order {
     padding-top: 3%;
     text-align: center;
-    font-size: 1.5625rem;
-    font-family: "GothamProMedium"; }
+    font-size: 1.5625rem; }
   .header-order iframe {
     display: block;
     margin: 30px auto 40px auto;
@@ -1420,6 +1419,10 @@ section {
     padding-bottom: 5%; }
     .choice__item svg {
       width: 90px; }
+    .choice__item .partners {
+      display: inline-block;
+      padding-bottom: 10px;
+      color: #ff332a; }
   .choice__item:nth-child(2n) {
     padding-top: 50px; }
   .choice__content {

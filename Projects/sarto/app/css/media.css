@@ -47,6 +47,11 @@
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 960px) {
+  .comment__carousel {
+    padding: 40px 0; }
+  .comment .owl__content {
+    padding-left: 25px;
+    padding-right: 0; }
   .question {
     background-image: -webkit-linear-gradient(85deg, #f2f2f2 50%, #fff 50%); }
     .question__item {
@@ -159,11 +164,9 @@
         -ms-flex-wrap: wrap;
             flex-wrap: wrap; }
   .comment .owl__img {
-    padding: 0 15px;
+    margin: auto;
     max-height: 350px;
     max-width: 300px; }
-  .comment .owl__content {
-    padding: 0 10px; }
   .comment .comments__controls .owl-prev i {
     right: 50%; }
   .comment .comments__controls .owl-next i {
@@ -270,9 +273,16 @@
         -ms-flex-preferred-size: auto;
             flex-basis: auto;
     position: relative;
-    padding-bottom: 20px; }
+    padding-bottom: 20px;
+    padding-left: 40px;
+    text-align: left; }
     .mission__item:before {
-      display: none; }
+      font-size: 2.625rem;
+      background: none;
+      color: #000;
+      top: 20px;
+      left: 10px;
+      padding: 10px 40px; }
     .mission__item span {
       position: relative; }
   .mission__btn {
@@ -393,9 +403,11 @@
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
   .header .logo {
-    margin: 0 auto;
-    padding-top: 200px;
-    padding-bottom: 10vh; }
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-bottom: 220px; }
+    .header .logo img {
+      width: 150px; }
   .header .slogan {
     width: 100%;
     text-align: center;
@@ -405,7 +417,7 @@
   .header .header__wrap {
     -webkit-background-size: cover;
             background-size: cover;
-    background-position: right; }
+    background-position: 40% 20%; }
     .header .header__wrap:before {
       background-color: rgba(0, 0, 0, 0.5); }
     .header .header__wrap .contact {
@@ -421,6 +433,10 @@
     height: 168.75px; }
   .question {
     background-image: -webkit-linear-gradient(90deg, #f2f2f2 58%, #fff 45%); }
+  .picture__text {
+    font-size: 2.625rem;
+    font-family: "GothamProMedium";
+    color: #fff; }
   .order .firstName {
     display: block;
     text-align: center; }
@@ -472,6 +488,12 @@
             flex-basis: 150px; } }
 
 @media only screen and (max-width: 400px) {
+  .section__title-order {
+    font-size: 1.75rem; }
+  .question {
+    background-image: -webkit-linear-gradient(90deg, #f2f2f2 54%, #fff 50%); }
+  .section__title-choice {
+    padding-top: 0; }
   .order .timer__content {
     display: block; }
   .header .header__wrap {
