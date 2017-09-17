@@ -935,6 +935,7 @@ a {
         -ms-flex-wrap: wrap;
             flex-wrap: wrap; }
   .advantages__item {
+    color: #303030;
     width: 50%;
     margin-bottom: 60px; }
   .advantages span {
@@ -943,12 +944,7 @@ a {
     width: 400px; }
 
 .about {
-  background: #e6703a;
-  background: -webkit-linear-gradient(left, #e6703a 0%, #e05957 53%, #de4f65 100%);
-  background: -webkit-gradient(linear, left top, right top, from(#e6703a), color-stop(53%, #e05957), to(#de4f65));
-  background: -o-linear-gradient(left, #e6703a 0%, #e05957 53%, #de4f65 100%);
-  background: linear-gradient(to right, #e6703a 0%, #e05957 53%, #de4f65 100%);
-  color: #fff;
+  background: #f3f3f3;
   text-align: center; }
   .about__title {
     padding-top: 40px;
@@ -966,7 +962,11 @@ a {
       -webkit-transform: translateX(-50%);
           -ms-transform: translateX(-50%);
               transform: translateX(-50%);
-      background: #fff; }
+      background: #e97c2c;
+      background: -webkit-linear-gradient(left, #e97c2c 0%, #de5065 100%);
+      background: -webkit-gradient(linear, left top, right top, from(#e97c2c), to(#de5065));
+      background: -o-linear-gradient(left, #e97c2c 0%, #de5065 100%);
+      background: linear-gradient(to right, #e97c2c 0%, #de5065 100%); }
   .about .flex-wrap {
     display: -webkit-box;
     display: -webkit-flex;
@@ -977,49 +977,85 @@ a {
             flex-wrap: wrap; }
   .about .info {
     margin: auto;
-    width: 80%;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    -webkit-justify-content: space-around;
-        -ms-flex-pack: distribute;
-            justify-content: space-around;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     padding-top: 80px;
-    padding-bottom: 140px;
+    padding-bottom: 80px;
     text-align: left; }
     .about .info-term {
-      -webkit-flex-basis: 250px;
-          -ms-flex-preferred-size: 250px;
-              flex-basis: 250px; }
+      padding: 0 50px;
+      -webkit-flex-basis: 400px;
+          -ms-flex-preferred-size: 400px;
+              flex-basis: 400px; }
     .about .info-text {
-      -webkit-flex-basis: 250px;
-          -ms-flex-preferred-size: 250px;
-              flex-basis: 250px; }
+      padding: 0 50px;
+      -webkit-flex-basis: 400px;
+          -ms-flex-preferred-size: 400px;
+              flex-basis: 400px; }
     .about .info-list {
-      list-style-type: disc;
-      -webkit-flex-basis: 250px;
-          -ms-flex-preferred-size: 250px;
-              flex-basis: 250px; }
-  .about .photo {
+      padding-top: 40px;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      margin: 0 auto;
+      -webkit-flex-basis: auto;
+          -ms-flex-preferred-size: auto;
+              flex-basis: auto; }
+    .about .info__item {
+      margin: auto; }
+      .about .info__item object {
+        display: block;
+        margin: auto; }
+      .about .info__item span {
+        display: block;
+        margin: auto;
+        padding-top: 10px;
+        width: 72%; }
+
+.photoText {
+  color: #fff;
+  background: #e6703a;
+  background: -webkit-linear-gradient(left, #e6703a 0%, #e05957 53%, #de4f65 100%);
+  background: -webkit-gradient(linear, left top, right top, from(#e6703a), color-stop(53%, #e05957), to(#de4f65));
+  background: -o-linear-gradient(left, #e6703a 0%, #e05957 53%, #de4f65 100%);
+  background: linear-gradient(to right, #e6703a 0%, #e05957 53%, #de4f65 100%); }
+  .photoText .wrapper {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; }
+  .photoText .photo {
     width: 50%;
-    min-height: 550px;
     background: no-repeat 50% 40%;
     -webkit-background-size: cover;
             background-size: cover; }
-  .about .text {
+  .photoText .text {
     width: 50%;
     text-align: left;
-    padding: 0 6%; }
-    .about .text__title {
+    padding: 40px 40px 0 6%; }
+    .photoText .text__title {
       position: relative;
-      font-size: 1.875rem;
+      font-size: 1.845rem;
       font-family: "GothamProMedium"; }
-    .about .text__name {
+    .photoText .text__name {
       padding-top: 6%;
       padding-bottom: 4%;
       font-size: 1.5375rem; }
-    .about .text__text {
+    .photoText .text__text {
       padding-bottom: 10px;
       font-size: 1.1875rem;
       font-family: "GothamProLight"; }

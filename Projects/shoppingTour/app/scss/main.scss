@@ -273,6 +273,7 @@ a {
 		flex-wrap: wrap;
 	} 
 	&__item {
+		color: #303030;
 		width: 50%;
 		margin-bottom: 60px;
 	} 
@@ -284,11 +285,7 @@ a {
 }
 
 .about {
-	background: rgb(230,112,58);
-	background: -moz-linear-gradient(left, rgba(230,112,58,1) 0%, rgba(224,89,87,1) 53%, rgba(222,79,101,1) 100%);
-	background: -webkit-linear-gradient(left, rgba(230,112,58,1) 0%,rgba(224,89,87,1) 53%,rgba(222,79,101,1) 100%);
-	background: linear-gradient(to right, rgba(230,112,58,1) 0%,rgba(224,89,87,1) 53%,rgba(222,79,101,1) 100%);
-	color: #fff;
+	background: #f3f3f3;
 	text-align: center;
 	&__title {
 		padding-top: 40px;
@@ -304,7 +301,10 @@ a {
 			height: 2px;
 			width: 20%;
 			transform: translateX(-50%);
-			background: #fff;
+			background: rgb(233,124,44);
+			background: -moz-linear-gradient(left, rgba(233,124,44,1) 0%, rgba(222,80,101,1) 100%);
+			background: -webkit-linear-gradient(left, rgba(233,124,44,1) 0%,rgba(222,80,101,1) 100%);
+			background: linear-gradient(to right, rgba(233,124,44,1) 0%,rgba(222,80,101,1) 100%);
 		}
 	}
 	.flex-wrap {
@@ -313,36 +313,64 @@ a {
 	}
 	.info {
 		margin: auto;
-		width: 80%;
 		display: flex;
-		justify-content: space-around;
+		flex-wrap: wrap;
+		justify-content: center;
 		padding-top: 80px;
-		padding-bottom: 140px;
+		padding-bottom: 80px;
 		text-align: left;
 		&-term {
-			flex-basis: 250px;
+			padding: 0 50px;
+			flex-basis: 400px;
 		}
 		&-text {
-			flex-basis: 250px;
+			padding: 0 50px;
+			flex-basis: 400px;
 		}
 		&-list {
-			list-style-type: disc;
-			flex-basis: 250px;
-		}	
+			padding-top: 40px;
+			display: flex;
+			justify-content: center;
+			margin: 0 auto;
+			flex-basis: auto;
+		}
+		&__item	{
+			margin: auto;
+			object {
+				display: block;
+				margin: auto;
+			}
+			span {
+				display: block;
+				margin: auto;
+				padding-top: 10px;
+				width: 72%;
+			}
+		}
+	}
+}
+
+.photoText {
+	color: #fff;
+	background: rgb(230,112,58);
+	background: -moz-linear-gradient(left, rgba(230,112,58,1) 0%, rgba(224,89,87,1) 53%, rgba(222,79,101,1) 100%);
+	background: -webkit-linear-gradient(left, rgba(230,112,58,1) 0%,rgba(224,89,87,1) 53%,rgba(222,79,101,1) 100%);
+	background: linear-gradient(to right, rgba(230,112,58,1) 0%,rgba(224,89,87,1) 53%,rgba(222,79,101,1) 100%);	
+	.wrapper {
+		display: flex;
 	}
 	.photo {
 		width: 50%;
-		min-height: 550px;
 		background: no-repeat 50% 40%;
 		background-size: cover;
 	}
 	.text {
 		width: 50%;
 		text-align: left;
-		padding: 0 6%;
+		padding: 40px 40px 0 6%;
 		&__title {
 			position: relative;
-			font-size: rem(30);
+			font-size: rem(29.52);
 			font-family: "GothamProMedium";
 		}
 		&__name {
