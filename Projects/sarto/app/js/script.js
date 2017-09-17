@@ -95,8 +95,9 @@ $(document).ready(function() {
 		$.magnificPopup.close();
 	});
 
-});
 
+
+});
 
 
 /*PRELOADER*/

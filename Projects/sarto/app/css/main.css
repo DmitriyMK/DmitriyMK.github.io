@@ -804,7 +804,7 @@ body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
 
-ul {
+ul, li {
   list-style-type: none; }
 
 a {
@@ -1293,15 +1293,14 @@ section {
   font-size: 1.875rem; }
 
 .header-order {
-  padding-top: 15px;
+  padding-top: 25px;
   background-position: center;
   -webkit-background-size: cover;
           background-size: cover;
   min-height: 800px;
   color: #fff; }
   .header-order .logo-order {
-    display: block;
-    margin-top: 50px; }
+    display: block; }
   .header-order .logo-order img {
     width: 165px;
     height: 50px; }
@@ -1614,6 +1613,12 @@ section {
 .popup-modal-dismiss {
   background: #ff332a; }
 
+.paraxify {
+  background-attachment: fixed;
+  background-position: center center;
+  -webkit-background-size: cover;
+          background-size: cover; }
+
 /* ------------	PAGE 3 ------------*/
 .header-invite {
   max-height: 1300px;
@@ -1768,5 +1773,9 @@ section {
   .bonus__thank .bonus__item .insta {
     background-color: #6a453b;
     padding: 16px 14px; }
+
+.about__box div {
+  height: 100vh;
+  background: no-repeat; }
 
 /* @import "media.scss"; */

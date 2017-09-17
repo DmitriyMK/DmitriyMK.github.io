@@ -120,6 +120,12 @@
 			margin-bottom: 25px;
 		}
 	}
+		.header-invite {
+		min-height: 190vh;
+		&:before {
+			height: 190vh;
+		}
+	}
 }
 
 @media only screen and (max-width : 775px) {
@@ -232,6 +238,10 @@
 			}
 		}
 	}
+	.header__wrap-order {
+		padding-top: 25px;
+	}
+
 	.picture {
 		height: auto;
 		&__text {
@@ -469,7 +479,6 @@
 			}
 		}
 	}
-
 	.header-order {
 		.logo {
 			margin: 0 auto;
@@ -562,6 +571,9 @@
 			background-position: center; 
 		}
 	}
+	.header__wrap-order {
+		text-align: center;
+	}
 }
 
 @media only screen and (max-width: 375px)  {
@@ -571,4 +583,10 @@
 			height: 168.75px;
 		}
 	}
+	.header-thank {
+		.invite__title {
+			padding: 3vh 0;
+		}
+	}
+
 }

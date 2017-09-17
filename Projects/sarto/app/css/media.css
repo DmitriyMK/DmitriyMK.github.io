@@ -107,7 +107,11 @@
             flex-basis: auto;
     text-align: center; }
   .form__invite .form-line {
-    margin-bottom: 25px; } }
+    margin-bottom: 25px; }
+  .header-invite {
+    min-height: 190vh; }
+    .header-invite:before {
+      height: 190vh; } }
 
 @media only screen and (max-width: 775px) {
   .header {
@@ -200,6 +204,8 @@
         text-align: left; }
       .header-order .contact__link {
         padding-bottom: 30px; }
+  .header__wrap-order {
+    padding-top: 25px; }
   .picture {
     height: auto; }
     .picture__text {
@@ -471,9 +477,13 @@
   .header .header__wrap {
     -webkit-background-size: cover;
             background-size: cover;
-    background-position: center; } }
+    background-position: center; }
+  .header__wrap-order {
+    text-align: center; } }
 
 @media only screen and (max-width: 375px) {
   .bonus iframe {
     width: 300px;
-    height: 168.75px; } }
+    height: 168.75px; }
+  .header-thank .invite__title {
+    padding: 3vh 0; } }
