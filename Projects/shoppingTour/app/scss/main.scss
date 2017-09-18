@@ -903,8 +903,11 @@ a {
 .form {
 	.flex__wrap {
 		display: flex;
+		align-content: flex-start;
+		justify-content: center;
 	}
 	&__item {
+		text-align: left;
 		&-title {
 			font-size: rem(24);
 			font-family: "GothamProMedium";
@@ -914,11 +917,18 @@ a {
 			font-size: rem(16);
 			font-family: "GothamProItalic";
 		}
+		&-attention {
+			padding: 10px 0;
+			font-size: rem(16);
+			font-family: "GothamProItalic";
+		}
 	}
 	&__list {
 		list-style-type: decimal;
 		li {
 			margin-left: 21px;
+			margin-top: 10px;
+			margin-bottom: 10px;
 			font-size: rem(16);
 			font-family: "GothamProMedium";
 		}
@@ -937,10 +947,10 @@ a {
 		color: #333;
 		text-decoration: line-through;
 	}
-
 	.form__answer {
 		padding: 25px 3%;
 		text-align: center;	
+		flex-basis: 360px;
 		input[type="radio"] {
 			width: 20px;
 			height: 20px;
@@ -963,6 +973,56 @@ a {
 				background: linear-gradient(to right, rgba(233,124,44,1) 0%,rgba(222,80,101,1) 100%);
 			}
 		}
+	}
+	.form__email {
+		padding-top: 60px;
+		background: #e8e8e8;
+		p {
+			font-family: "GothamProMedium";
+			text-align: center;
+			font-size: rem(30);
+			color: #333;
+		}
+		.flex__wrap {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			margin: 50px auto;
+		}
+		.form-line {
+			margin-left: 2%;
+			padding: 10px 20px;
+			flex-basis: 300px;
+			border: none;
+			font-size: rem(14);
+			box-shadow: 3px 3px 14px 0px rgba(0,0,0,0.2);
+		}
+		.form-button {
+			flex-basis: auto;
+			font-family: "GothamProMedium";
+			font-size: rem(14);
+			line-height: 36px;
+			width: 200px;
+			margin: 30px 0;
+			border: none;
+			text-transform: uppercase;
+			color: #fff;
+			background: rgb(232,121,47);
+			background: -moz-linear-gradient(left, rgba(232,121,47,1) 1%, rgba(222,79,101,1) 100%);
+			background: -webkit-linear-gradient(left, rgba(232,121,47,1) 1%,rgba(222,79,101,1) 100%);
+			background: linear-gradient(to right, rgba(232,121,47,1) 1%,rgba(222,79,101,1) 100%);
+			box-shadow: 0px 2px 15px 0px rgba(0,0,0,0.3);
+			@include transition(all .3s ease);
+			&:hover {
+				box-shadow: 0px 2px 15px 0px rgba(0,0,0,0.1);
+			}
+		}
+	}
+	.doIt {
+		margin-top: 20px;
+		font-size: rem(18);
+		line-height: 70px;
+		padding-left: 10px;
 	}
 }
 

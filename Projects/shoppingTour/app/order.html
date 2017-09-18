@@ -126,62 +126,64 @@
 											<li>Пиарим вас в просторах интернета;</li>
 											<li>Аудитория до 15 000 человек</li>	
 										</ul>
-										<p class="form__item-ask">Обратите внимание:<br> Только экскурсия, без покупок в моменте!</p>
+										<p class="form__item-attention">Обратите внимание:<br> Только экскурсия, без покупок в моменте!</p>
 										<p class="price"><span class="newPrice">18 900 руб</span><span class="oldPrice"> 22 000 руб</span>
 										</p>
 									</div>
+									<input type="radio" name="proposal" id="proposal1" value="proposal 1"><span class="doIt">Выбрать</span>
 								</label>
-								<input type="radio" name="proposal" id="proposal1" value="proposal 1">
+								
 							</div>
 
 							<div class="form__answer">
 								<label for="proposal2">
 									<div class="form__item">
-									<p class="form__item-title">Продажи сразу же</p>
+										<p class="form__item-title">Продажи сразу же</p>
 										<p class="form__item-ask">Единственный формат рекламы в РФ, от которой вы увидите не только клиентов, но и продажи!</p>
 										<ul class="form__list">
 											<li>Прописываем сценарий продаж;</li>
 											<li>Предоставляем фотоотчет;</li>
 											<li>Пиарим вас в просторах интернета до 30 000 человек.</li>
 										</ul>
-										<p class="form__item-ask">Обратите внимание:<br>Приводим 10 клиентов, которые покупают, записываются на процедуры, тратят деньги у вас!</p>
+										<p class="form__item-attention">Обратите внимание:<br>Приводим 10 клиентов, которые покупают, записываются на процедуры, тратят деньги у вас!</p>
 										<p class="price"><span class="newPrice">24 990 руб</span><span class="oldPrice"> 27 000 руб</span>
 										</p>
 									</div>
 								</label>
-								<input type="radio" name="proposal" id="proposal2" value="proposal 2" checked>
+								<input type="radio" name="proposal" id="proposal2" value="proposal 2" checked><span class="doIt">Выбрать</span>
 							</div>	
 
 							<div class="form__answer">
 								<label for="proposal3">
 									<div class="form__item">
-										<p class="form__item-title">Главный формат</p>
+										<div><p class="form__item-title">Главный формат</p>
 										<p class="form__item-ask">Для тех предпринимателей, которым интересно все и сразу!</p>
 										<ul class="form__list">
 											<li>Приводим до 10 покупателей;</li>
 											<li>Прописываем сценарий продаж;</li>
 											<li>Аудитория до 350 000 человек.</li>
 										</ul>
-										<p class="form__item-ask">Обратите внимание:<br>Кроме продаж мы пиарим вас в просторах интернета, в глянцевом изданиии на ТВ.</p>
+										<p class="form__item-attention">Обратите внимание:<br>Кроме продаж мы пиарим вас в просторах интернета, в глянцевом изданиии на ТВ.</p>
 										<p class="price"><span class="newPrice">44 900 руб</span><span class="oldPrice"> 55 000 руб</span>
 										</p>
 									</div>
 								</label>
-								<input type="radio" name="proposal" id="proposal3" value="proposal 3" >
+								<input type="radio" name="proposal" id="proposal3" value="proposal 3"> <span class="doIt">Выбрать</span>
 							</div>	
 
 						</div>
 					</fieldset>
-
-
-
 					<fieldset class="form__email">
-						<input class="form-line" type="text" name="name" placeholder="Ваше имя" required>
-						<input class="form-line" type="phone" name="phone" placeholder="Ваш телефон" required>
-						<input class="form-line" type="email" name="email" placeholder="Email" required>
-						<input type="submit" class="form-button" value="Я с вами">
+						<p>Выберите подходящее для вас предложение <br>
+							И просто напишите ваш номер телефона
+						</p>
+						<div class="flex__wrap">
+							<input class="form-line" type="text" name="name" placeholder="Ваше имя" required>
+							<input class="form-line" type="phone" name="phone" placeholder="Ваш телефон" required>
+							<input class="form-line" type="email" name="email" placeholder="Email" required>
+							<input type="submit" class="form-button" value="Я в деле">
+						</div>
 					</fieldset>
-					
 				</form>
 			</div>
 		</div>
@@ -214,6 +216,7 @@
 
 
 	<script src="js/script.min.js"></script> 
+	<script src="js/libs/jquery.equalheights.min.js"></script> 
 	<script src="js/script.js"></script> 
 
 </body>
