@@ -96,35 +96,52 @@ $(document).ready(function() {
 	});
 
 
-$(function() {
-  $("form[name='registration']").validate({
-    rules: {
-/*      firstname: "required",
-      lastname: "required",*/
-      email: {
-        required: true,
-        email: true
-      }
-    },
-    messages: {
-/*      firstname: "Please enter your firstname",
-      lastname: "Please enter your lastname",*/
-/*      password: {
-        required: "Please provide a password",
-        minlength: "Your password must be at least 5 characters long"
-      },*/
-      email: "Сначала введите ваш email"
-    },
-    submitHandler: function(form) {
-      form.submit();
-    }
-  });
-});
+	$(function() {
+		$("form[name='registration']").validate({
+			rules: {
+				/*      firstname: "required",
+				      lastname: "required",*/
+				email: {
+					required: true,
+					email: true
+				}
+			},
+			messages: {
+				/*      firstname: "Please enter your firstname",
+				      lastname: "Please enter your lastname",*/
+				/*      password: {
+				        required: "Please provide a password",
+				        minlength: "Your password must be at least 5 characters long"
+				      },*/
+				email: "Сначала введите ваш email"
+			},
+			submitHandler: function(form) {
+				form.submit();
+			}
+		});
+	});
 });
 
-/*$('#gallery').imagesLoaded( function() {
-  // images have loaded
-});*/
+
+
+$(function() {
+	$(".gallery__item").slice(0, 6).show();
+	$("#loadMore").on('click', function(e) {
+		e.preventDefault();
+		$(".gallery__item:hidden").slice(0, 6).slideDown();
+		if ($("gallery__item:hidden").length == 0) {
+			$("#load").fadeOut('slow');
+		}
+		$('html,body').animate({
+			scrollTop: $(this).offset().top
+		}, 1500);
+		if ($("gallery__item:last").css('display') == 'block') {
+			$('#loadMore').hide();
+			$('.totop').show()
+		}
+	});
+});
+
 
 
 /*PRELOADER*/
