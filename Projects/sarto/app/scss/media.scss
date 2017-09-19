@@ -149,18 +149,19 @@
 			width: 50%;
 		}
 		.contact {
-			flex-wrap: wrap;
+			padding-top: 15%;
+			flex-direction: column;
+			justify-content: center;
+			margin: auto;
 			&__btn {
 				margin: auto;
 				margin-bottom: 30px;
-				order: 3;
-			}
-			&__link {
-				padding-bottom: 30px;
+				order: 0;
 			}
 			&__link {
 				text-align: center;
-				margin: 0 auto;
+				margin: auto;
+				padding-bottom: 30px;
 			}
 		}
 	}
@@ -189,6 +190,7 @@
 		}
 		.owl__img {
 			margin: auto;
+			margin-bottom: 30px;
 			max-height: 350px;
 			max-width: 300px;
 		}
@@ -314,7 +316,6 @@
 		.contact {
 			padding-top: 20vh;
 			&__link {
-				flex-basis: 300px;
 				width: 100%;
 				margin: auto;
 			}
@@ -524,11 +525,11 @@
 	.order {
 		.firstName {
 			display: block;
-			text-align: center;
+			text-align: left;
 		}
 		&__text {
-			text-align: justify;
-			font-size: rem(30);
+			text-align: left;
+			font-size: rem(26);
 		}
 	}
 	.header-invite {

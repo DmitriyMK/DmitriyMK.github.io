@@ -952,7 +952,7 @@ section {
       padding-bottom: 10vh; }
     .header__wrap .contact {
       position: relative;
-      padding-top: 25vh;
+      padding-top: 20%;
       display: -webkit-box;
       display: -webkit-flex;
       display: -ms-flexbox;
@@ -1525,10 +1525,10 @@ section {
 
 .order {
   background: #f3f2f2;
-  text-align: center;
+  text-align: left;
   padding-top: 50px;
   padding-bottom: 50px;
-  padding-left: 350px; }
+  padding-left: 150px; }
   .order__text {
     font-size: 2.1875rem;
     font-family: "GothamProMedium";
@@ -1537,18 +1537,28 @@ section {
     padding: 15px 0 50px 0;
     width: 38%;
     font-size: 1.25rem;
-    font-family: "GothamProItalic";
     text-align: left; }
   .order form {
+    position: relative;
     text-align: left; }
+    .order form #email-error {
+      position: absolute;
+      left: 24px;
+      top: -32px;
+      color: #ff332a;
+      font-family: "GothamProBold"; }
     .order form .form-line {
       width: 40%;
       padding: 15px 25px;
       margin-right: 20px;
-      border: 2px solid #cdcdcd;
+      border: none;
+      -webkit-border-radius: 50px;
+              border-radius: 50px;
       font-size: 1.25rem; }
     .order form .form-button {
       padding: 15px 60px;
+      -webkit-border-radius: 50px;
+              border-radius: 50px;
       border: none;
       background: #2a99f6;
       color: #fff;
@@ -1577,6 +1587,9 @@ section {
       font-family: "GothamProMedium"; }
     .order .timer p {
       display: inline-block; }
+
+.footer-order {
+  background: #f3f2f2; }
 
 /**
  * Simple fade transition,
@@ -1693,6 +1706,8 @@ section {
       -ms-flex-preferred-size: 300px;
           flex-basis: 300px;
   border: none;
+  -webkit-border-radius: 50px;
+          border-radius: 50px;
   font-size: 1.125rem;
   color: #919191; }
 
@@ -1703,6 +1718,8 @@ section {
   margin-top: 25px;
   padding: 15px 0;
   border: none;
+  -webkit-border-radius: 50px;
+          border-radius: 50px;
   background: #2a99f6;
   color: #fff;
   font-size: 1rem;
@@ -1729,7 +1746,6 @@ section {
     padding: 5vh 0;
     text-align: center;
     font-size: 2.1875rem;
-    font-family: "GothamProBold";
     color: #fff; }
   .header-thank .wrapper {
     position: relative; }
@@ -1755,27 +1771,32 @@ section {
 .bonus__thank .bonus__item {
   margin-left: 10px; }
   .bonus__thank .bonus__item .icons {
-    -webkit-border-radius: 50%;
-            border-radius: 50%;
     font-size: 3rem;
     color: #fff;
+    z-index: 10;
+    display: block;
+    width: 90px;
+    height: 90px;
+    -webkit-border-radius: 50%;
+            border-radius: 50%;
+    text-align: center;
+    padding-top: 12px;
     -webkit-transition: opacity 0.5s ease;
     -o-transition: opacity 0.5s ease;
     transition: opacity 0.5s ease; }
     .bonus__thank .bonus__item .icons:hover {
       opacity: .7; }
   .bonus__thank .bonus__item .vk {
-    background-color: #4d76a1;
-    padding: 16px 8px; }
+    background-color: #4d76a1; }
   .bonus__thank .bonus__item .fb {
     background-color: #3b5998;
-    padding: 16px 26px; }
+    /* padding: 16px 26px; */ }
   .bonus__thank .bonus__item .tw {
     background-color: #55acee;
-    padding: 16px 14px; }
+    /* padding: 16px 14px; */ }
   .bonus__thank .bonus__item .insta {
     background-color: #6a453b;
-    padding: 16px 14px; }
+    /* padding: 16px 14px; */ }
 
 .about__box div {
   height: 100vh;

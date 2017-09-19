@@ -96,8 +96,35 @@ $(document).ready(function() {
 	});
 
 
-
+$(function() {
+  $("form[name='registration']").validate({
+    rules: {
+/*      firstname: "required",
+      lastname: "required",*/
+      email: {
+        required: true,
+        email: true
+      }
+    },
+    messages: {
+/*      firstname: "Please enter your firstname",
+      lastname: "Please enter your lastname",*/
+/*      password: {
+        required: "Please provide a password",
+        minlength: "Your password must be at least 5 characters long"
+      },*/
+      email: "Сначала введите ваш email"
+    },
+    submitHandler: function(form) {
+      form.submit();
+    }
+  });
 });
+});
+
+/*$('#gallery').imagesLoaded( function() {
+  // images have loaded
+});*/
 
 
 /*PRELOADER*/

@@ -156,7 +156,7 @@ section {
 		}
 		.contact {
 			position: relative;
-			padding-top: 25vh;
+			padding-top: 20%;
 			display: flex;
 			align-items: center;
 			justify-content: space-between;
@@ -686,10 +686,10 @@ section {
 
 .order {
 	background: #f3f2f2;
-	text-align: center;
+	text-align: left;
 	padding-top: 50px;
 	padding-bottom: 50px;
-	padding-left: 350px;
+	padding-left: 150px;
 	&__text {
 		font-size: rem(35);
 		font-family: "GothamProMedium";
@@ -699,20 +699,29 @@ section {
 		padding: 15px 0 50px 0;
 		width: 38%;
 		font-size: rem(20);
-		font-family: "GothamProItalic";
 		text-align: left;
 	}
 	form {
+		position: relative;
 		text-align: left;
+		#email-error {
+			position: absolute;
+			left: 24px;
+			top: -32px;
+			color: $red;
+			font-family: "GothamProBold";
+		}
 		.form-line {
 			width: 40%;
 			padding: 15px 25px;
 			margin-right: 20px;
-			border: 2px solid #cdcdcd;
+			border: none;
+			border-radius: 50px;
 			font-size: rem(20);
 		}
 		.form-button {
 			padding: 15px 60px;
+			border-radius: 50px;
 			border: none;
 			background: $blue;
 			color: #fff;
@@ -746,6 +755,10 @@ section {
 			display: inline-block;
 		}
 	}
+}
+
+.footer-order {
+	background: #f3f2f2;
 }
 
 /**
@@ -785,11 +798,11 @@ section {
  }
 
 
-.paraxify {
-  background-attachment: fixed;
-  background-position: center center;
-  background-size: cover;
-}
+ .paraxify {
+ 	background-attachment: fixed;
+ 	background-position: center center;
+ 	background-size: cover;
+ }
 
 /* ------------	PAGE 3 ------------*/
 
@@ -853,6 +866,7 @@ section {
 		padding: 15px 20px;
 		flex-basis: 300px;
 		border: none;
+		border-radius: 50px;
 		font-size: rem(18);
 		color: #919191;
 	}
@@ -861,6 +875,7 @@ section {
 		margin-top: 25px;
 		padding: 15px 0;
 		border: none;
+		border-radius: 50px;
 		background: $blue;
 		color: #fff;
 		font-size: rem(16);
@@ -880,7 +895,6 @@ section {
 		padding: 5vh 0;
 		text-align: center;
 		font-size: rem(35);
-		font-family: "GothamProBold";
 		color: #fff;
 	}
 	.wrapper {
@@ -908,29 +922,35 @@ section {
 	.bonus__item {
 		margin-left: 10px;
 		.icons {
-			border-radius: 50%;
 			font-size: 3rem;
 			color: #fff;
+			z-index: 10;
+			display: block;
+			width: 90px;
+			height: 90px;
+			border-radius: 50%;
+			text-align: center;
+			padding-top: 12px;
 			@include transition (opacity .5s ease);
 			&:hover {
 				opacity: .7
 			}
+
 		}
 		.vk {
 			background-color: #4d76a1;
-			padding: 16px 8px;
 		}
 		.fb {
 			background-color: #3b5998;
-			padding: 16px 26px;
+			/* padding: 16px 26px; */
 		}
 		.tw {
 			background-color: #55acee;
-			padding: 16px 14px;
+			/* padding: 16px 14px; */
 		}
 		.insta {
 			background-color: #6a453b;
-			padding: 16px 14px;
+			/* padding: 16px 14px; */
 		}
 	}
 }

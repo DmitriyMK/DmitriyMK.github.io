@@ -126,21 +126,28 @@
     .header .slogan {
       width: 50%; }
     .header .contact {
-      -webkit-flex-wrap: wrap;
-          -ms-flex-wrap: wrap;
-              flex-wrap: wrap; }
+      padding-top: 15%;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      margin: auto; }
       .header .contact__btn {
         margin: auto;
         margin-bottom: 30px;
-        -webkit-box-ordinal-group: 4;
-        -webkit-order: 3;
-            -ms-flex-order: 3;
-                order: 3; }
-      .header .contact__link {
-        padding-bottom: 30px; }
+        -webkit-box-ordinal-group: 1;
+        -webkit-order: 0;
+            -ms-flex-order: 0;
+                order: 0; }
       .header .contact__link {
         text-align: center;
-        margin: 0 auto; }
+        margin: auto;
+        padding-bottom: 30px; }
   .about img {
     display: block;
     width: 100%;
@@ -165,6 +172,7 @@
             flex-wrap: wrap; }
   .comment .owl__img {
     margin: auto;
+    margin-bottom: 30px;
     max-height: 350px;
     max-width: 300px; }
   .comment .comments__controls .owl-prev i {
@@ -253,9 +261,6 @@
   .header .contact {
     padding-top: 20vh; }
     .header .contact__link {
-      -webkit-flex-basis: 300px;
-          -ms-flex-preferred-size: 300px;
-              flex-basis: 300px;
       width: 100%;
       margin: auto; }
   .mission__list {
@@ -439,10 +444,10 @@
     color: #fff; }
   .order .firstName {
     display: block;
-    text-align: center; }
+    text-align: left; }
   .order__text {
-    text-align: justify;
-    font-size: 1.875rem; }
+    text-align: left;
+    font-size: 1.625rem; }
   .header-invite .firstName {
     display: inline-block;
     width: 100%; }

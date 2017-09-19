@@ -153,7 +153,7 @@
 				<p class="gallery__text">Я хочу, чтобы Вы чувствовали себя безупречно. </p>
 			</div>
 			<div class="gallery__portfolio">
-				<ul class="gallery__list popup-gallery">
+				<ul class="gallery__list popup-gallery" id="gallery">
 					
 					<li class="gallery__item">
 						<a href="img/photo/MG_4681.jpg" class="gallery__link" title="Пиджак однобортный легкий на две пуговицы. Ткань льон 100%. Guabello. Брюки хлопок 100%.">
@@ -221,7 +221,8 @@
 						</a>
 					</li>
 				</ul>
-			
+				<button id="add">Add images</button>
+
 			</div>
 		</div>
 	</section>
@@ -233,7 +234,7 @@
 				<image width="160" height="3" xlink:href="data:img/png;base64,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"/>
 			</svg>
 			<p class="order__bonus">Вы также бесплатно получите каталог тканей и моделей.</p>
-			<form autocomplete="off">
+			<form name="registration" autocomplete="off">
 				<input class="form-line" type="email" name="email" placeholder="Введите свой email" required>
 				<input type="submit" class="form-button" value="Продолжить">
 			</form>
@@ -262,7 +263,8 @@
 	</footer>
 
 
-	<script src="js/script.min.js"></script> 
+	<script src="js/script.min.js"></script>
+	<script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
 	<script src="js/script.js"></script> 
 	<script type="text/javascript">
 		var remain_bv   = 600;
