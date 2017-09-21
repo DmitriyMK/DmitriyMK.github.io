@@ -45,7 +45,25 @@ $(document).ready(function() {
 	});
 });
 
+/*ANIMATION LET GO*/
 new WOW().init();
+
+/*EQUAL HEIGHT IN SELECT*/
+$(document).ready(function(){
+
+    var highestBox = 0;
+        $('.list').each(function(){  
+                if($(this).height() > highestBox){  
+                highestBox = $(this).height();  
+        }
+    });    
+    $('.list, .form__attention, .form-ask').height(highestBox);
+
+});
+
+
+
+
 
 
 /*PRELOADER*/
