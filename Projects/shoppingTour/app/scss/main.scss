@@ -1050,13 +1050,15 @@ color: #fff;
 		background: -webkit-linear-gradient(left, rgba(233,124,44,1) 0%,rgba(222,80,101,1) 100%);
 		background: linear-gradient(to right, rgba(233,124,44,1) 0%,rgba(222,80,101,1) 100%);
 		transform: scale(1.05);
+		color: #fff;
 	}	
 	&__item {
 		width: 32%;
 		padding: 15px;
+		margin-bottom: 25px;
 		background: #efefef;
 		text-align: center;
-		transition: all 0.7s ease-in-out;
+		@include transition(all .5s ease);
 		&-title {
 			font-size: rem(24);
 			font-family: "GothamProMedium";
