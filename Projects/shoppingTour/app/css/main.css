@@ -4266,8 +4266,7 @@ a {
 
 .form__item {
   width: 32%;
-  margin: 20px;
-  padding: 20px;
+  padding: 15px;
   background: #efefef;
   text-align: center;
   -webkit-transition: all 0.7s ease-in-out;
@@ -4290,7 +4289,7 @@ a {
 
 .form__list {
   list-style-type: decimal;
-  margin-top: -70px; }
+  margin-top: -90px; }
   .form__list li {
     text-align: left;
     margin-left: 21px;
