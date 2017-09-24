@@ -5,7 +5,7 @@
 @import "_magnific-popup";
 @import "_carousel";
 @import "_animate.min";
-
+@import "_tipso";
 
 /* ------------	GENERAL ------------*/
 body {
@@ -23,7 +23,12 @@ ul {
 a {
 	color: inherit;
 }
-
+.responsive {
+	display: block;
+	max-width: 100%;
+	width: 100%;
+	max-height: auto;
+}
 .wrapper {
 	position: relative;
 	max-width: 1200px;
@@ -67,65 +72,69 @@ a {
 /* ------------	MAIN ------------*/
 
 .header {
-	padding-top: 20px;
-	padding-left: 5px;
-	background: url(../img/background.jpg) center;
-	background-size: cover;
-	color: #fff;
-	.flex__wrap {
-		display: flex;
-		flex-direction: column;
-		align-content: center;
-		align-items: center;
-	}
-	&__top {
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-	}
-	&__nav {
-		width: 60%;
-	}
-	&__list {
-		display: flex;
-		justify-content: space-around;
-	}
-	&__item {
-		font-size: rem(20);
-	}
-	&__contact {
-		.mobile {
-			font-size: rem(23);
-			font-family: "GothamProMedium";
-		}
-		.mail {
-			text-align: right;
-		}
-	}
-	&__center {
-		padding-top: 100px;
-		text-align: center;
-		font-size: rem(45);
-		line-height: 1.2;
-		font-family: "GothamProBold";
-	}
-	&__end {
-		margin: 80px 0;
-		text-align: center;
-		font-size: rem(25);
+/* 	padding-top: 20px; */
+/* 	padding-left: 5px; */
+/* 	background: url(../img/background.jpg) center; */
+background-size: cover;
+color: #fff;
+.flex__wrap {
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	align-items: center;
+}
+&__top {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+&__nav {
+	width: 60%;
+}
+&__list {
+	display: flex;
+	justify-content: space-around;
+}
+&__item {
+	font-size: rem(20);
+}
+&__contact {
+	.mobile {
+		font-size: rem(23);
 		font-family: "GothamProMedium";
-		.header__end-link{
-			display: inline-flex;
-			padding: 10px 40px;
-			border: 2px solid #fff;
-			border-radius: 25px;
-			@include transition (transform .5s ease);
-			&:hover {
-				transform: scale(1.1);
-			}
+	}
+	.mail {
+		text-align: right;
+	}
+}
+&__center {
+	padding-top: 100px;
+	text-align: center;
+	font-size: rem(45);
+	line-height: 1.2;
+	font-family: "GothamProBold";
+}
+&__end {
+	margin: 80px 0;
+	text-align: center;
+	font-size: rem(25);
+	font-family: "GothamProMedium";
+	.header__end-link{
+		display: inline-flex;
+		padding: 10px 40px;
+		border: 2px solid #fff;
+		border-radius: 25px;
+		@include transition (transform .5s ease);
+		&:hover {
+			transform: scale(1.1);
 		}
 	}
 }
+}
+
+
+
+
 
 .typeAd {
 	padding-top: 40px;
@@ -167,6 +176,8 @@ a {
 	&__item {
 		position: relative;
 		counter-increment: li;
+		cursor: help;
+		position: relative;
 		&:before {
 			content: '' counter(li);
 			position: absolute;
@@ -186,6 +197,51 @@ a {
 			transform: translateX(-50%); 
 			box-shadow: 0px 1px 30px 0px rgba(0,0,0,0.2);
 		}	
+		&:hover {
+			.tooltip {
+				opacity: 1;
+				pointer-events: auto;
+
+			}
+		}
+		span {
+			background: #1496bb;
+			text-align: center;
+			color: #fff;
+			display: block;
+			left: -120px;
+			bottom: 90px;
+			margin-bottom: 15px;
+			opacity: 0;
+			padding: 10px;
+			pointer-events: none;
+			position: absolute;
+			min-width: 200px;
+			transform: rotate(-20deg);
+			@include transition(all .5s ease-out);
+			box-shadow: 0px 1px 30px 0px rgba(0,0,0,0.2);
+			&:before {
+				bottom: -20px;
+				content: " ";
+				display: block;
+				height: 20px;
+				left: 0;
+				position: absolute;
+				width: 100%;
+			}
+			&:after {
+				border-left: solid transparent 10px;
+				border-right: solid transparent 10px;
+				border-top: solid #1496bb 10px;
+				bottom: -10px;
+				content: " ";
+				height: 0;
+				left: 50%;
+				margin-left: 30px;
+				position: absolute;
+				width: 0;
+			}
+		}
 	}
 }
 
@@ -319,6 +375,12 @@ a {
 		padding-top: 80px;
 		padding-bottom: 80px;
 		text-align: left;
+		.accent {
+			font-family: "GothamProBold";
+		}
+		.italic {
+			font-family: "GothamProItalic";
+		}
 		&-term {
 			padding: 0 50px;
 			flex-basis: 400px;
@@ -374,7 +436,7 @@ a {
 			font-family: "GothamProMedium";
 		}
 		&__name {
-			padding-top: 6%;
+			padding-top: 4%;
 			padding-bottom: 4%;
 			font-size: rem(24.6);
 		}
@@ -415,7 +477,6 @@ a {
 }
 
 .media {
-	padding-bottom: 80px;
 	.media__box {
 		display: flex;
 		flex-wrap: wrap;
@@ -428,10 +489,14 @@ a {
 		width: 60%;
 	}
 	.media__box-person {
-		padding-top: 90px;
 		.box__title {
-			font-size: rem(25);
-			padding-bottom: 25px;
+			position: relative;
+			font-size: rem(30);
+			font-family: "GothamProMedium";
+		}
+		.box__description {
+			padding: 20px 0;
+			font-size: rem(16);
 		}
 		.list__wrap {
 			background: rgb(230,112,58);
@@ -496,7 +561,28 @@ a {
 			font-size: rem(30);
 			font-family: "GothamProMedium";
 		}
-	}
+		.media__box-tv__wrap{
+			display: flex;
+			flex-wrap: wrap;
+		}
+		.media__box-tv__video {
+			position: relative;
+			margin: 20px 2%;
+			width: 300px;
+			height: 150px;
+			background-size: cover;
+			&:before {
+				content: '';
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				background-color: rgba(0, 0, 0, .5);
+				@include transition(background-color .5s ease);
+			}
+		}
+	}	
 }
 
 .review {
@@ -530,10 +616,60 @@ a {
 		}
 	}
 	&__video {
+		margin: auto;
 		padding-top: 30px;
+		position: relative;
+		display: flex;
+		justify-content: space-around;
+		flex-wrap: wrap;
+	}
+	.box__video {
+		position: relative;
+		margin: 20px 2%;
+		width: 46%;
+		height: 330px;
+		background-size: cover;
+		&:before {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background-color: rgba(0, 0, 0, .5);
+			@include transition(background-color .5s ease);
+		}
 	}
 }
 
+.icon-play {
+	position: absolute;
+	width: 100px;
+	height: 60px;
+	left: 50%;
+	top: 50%;
+	background: $red;
+	transform: translate(-50%, -50%);
+	@include transition(background-color .3s ease); 
+	&:before {
+		content: "";
+		display: block;
+		width: 0;
+		height: 0;
+		border-left: 2em solid #fff;
+		border-top: 1em solid transparent;
+		border-bottom: 1em solid transparent;
+		margin: auto;
+		position: relative;
+		top: 50%;
+		left: 25%;
+		margin: auto;
+		transform: translate(-50%, -50%);
+	}
+	&:hover {
+		background-color: darken($red, 10%)
+	}
+}
 .question {
 	padding-bottom: 30px;
 	&__title {
@@ -574,8 +710,9 @@ a {
 		}
 		object {
 			display: block;
-			width: 100%;
-			height: 80px;
+			margin: auto;
+			max-width: 100%;
+			height: 60px;
 		}
 	} 
 	&__contact {
@@ -693,6 +830,7 @@ a {
 
 
 /* ------------	PAGE 2 ------------*/
+
 
 .header-order {
 	background: url(../img/background_order.jpg) no-repeat 40% 12%;
@@ -906,21 +1044,27 @@ a {
 		display: flex;
 		justify-content: space-between;
 	}
+	.active { //style for active  radio-column
+		background: rgb(233,124,44);
+		background: -moz-linear-gradient(left, rgba(233,124,44,1) 0%, rgba(222,80,101,1) 100%);
+		background: -webkit-linear-gradient(left, rgba(233,124,44,1) 0%,rgba(222,80,101,1) 100%);
+		background: linear-gradient(to right, rgba(233,124,44,1) 0%,rgba(222,80,101,1) 100%);
+		transform: scale(1.05);
+	}	
 	&__item {
 		width: 32%;
 		margin: 20px;
 		padding: 20px;
-		
 		background: #efefef;
 		text-align: center;
+		transition: all 0.7s ease-in-out;
 		&-title {
 			font-size: rem(24);
 			font-family: "GothamProMedium";
 			text-align: left;
 		}
 		&-ask {
-			align-self: stretch;
-			padding: 10px 0;
+			padding: 5px 0;
 			font-size: rem(16);
 			font-family: "GothamProItalic";
 			text-align: left;
@@ -934,7 +1078,7 @@ a {
 	}
 	&__list {
 		list-style-type: decimal;
-		margin-top: -50px;
+		margin-top: -70px;
 		li {
 			text-align: left;
 			margin-left: 21px;
@@ -947,7 +1091,6 @@ a {
 	.price {
 		display: flex;
 		justify-content: space-between;
-
 	}
 	.newPrice {
 		align-self: center;
@@ -962,7 +1105,7 @@ a {
 		text-decoration: line-through;
 	}
 	.form__select {
-		padding: 25px 3%;
+		padding: 15px 3%;
 		text-align: center;	
 		margin: auto;
 		input[type="radio"] {
@@ -978,17 +1121,9 @@ a {
 		}
 		input[type="radio"]:active  {
 			background-color: $orange;
-			
 		}
 		input[type="radio"]:checked {
 			background-color: $orange;
-		}
-		input[type="radio"]:checked {
-			background-color: $orange;
-			background: rgb(233,124,44);
-			background: -moz-linear-gradient(left, rgba(233,124,44,1) 0%, rgba(222,80,101,1) 100%);
-			background: -webkit-linear-gradient(left, rgba(233,124,44,1) 0%,rgba(222,80,101,1) 100%);
-			background: linear-gradient(to right, rgba(233,124,44,1) 0%,rgba(222,80,101,1) 100%);
 		}
 	}
 
@@ -1084,66 +1219,96 @@ a {
 	}
 }
 
-
-/* .arrow-vibe { 
-    animation: 0.1s tremor ease-out infinite; 
-    &:hover {
-    	animation: stop;
-    }    
-}
-@-webkit-keyframes tremor {
-    0%, 25% {
-        left: -1px;
-        top:-1px;
-        transform: translateX(-4%);
-    }
-    50%, 100% {
-        left: 1px;
-        top: 1px;
-        transform: translateX(4%);
-    }
-}
-@-moz-keyframes tremor {
-    0%, 25% {
-        left: -1px;
-        transform: translateX(-4%);
-    }
-    50%, 100% {
-        left: 1px;
-        transform: translateX(4%);
-    }
-}
-@-ms-keyframes tremor {
-    0%, 25% {
-        left: -1px;
-        transform: translateX(-4%);
-    }
-    50%, 100% {
-        left: 1px;
-        transform: translateX(4%);
-    }
-}
-@-o-keyframes tremor {
-    0%, 25% {
-        left: -1px;
-        transform: translateX(-4%);
-    }
-    50%, 100% {
-        left: 1px;
-        transform: translateX(4%);
-    }
-}
-@keyframes tremor {
-    0%, 25% {
-        left: -1px;
-        transform: translateX(-4%);
-    }
-    50%, 100% {
-        left: 1px;
-        transform: translateX(4%);
-    }
-}
+/**
+ * Simple fade transition,
  */
+ .mfp-fade.mfp-bg {
+ 	opacity: 0;
+ 	-webkit-transition: all 0.15s ease-out; 
+ 	-moz-transition: all 0.15s ease-out; 
+ 	transition: all 0.15s ease-out;
+ }
+ .mfp-fade.mfp-bg.mfp-ready {
+ 	opacity: 0.8;
+ }
+ .mfp-fade.mfp-bg.mfp-removing {
+ 	opacity: 0;
+ }
 
+ .mfp-fade.mfp-wrap .mfp-content {
+ 	opacity: 0;
+ 	-webkit-transition: all 0.15s ease-out; 
+ 	-moz-transition: all 0.15s ease-out; 
+ 	transition: all 0.15s ease-out;
+ }
+ .mfp-fade.mfp-wrap.mfp-ready .mfp-content {
+ 	opacity: 1;
+ }
+ .mfp-fade.mfp-wrap.mfp-removing .mfp-content {
+ 	opacity: 0;
+ }
+
+
+/* 
+ @import "bourbon"; */
+
+/* STYLE FOR VIDEO-BACKGROUND FROM YOUTUBE */
+
+.cover {
+	position: absolute;
+	margin: auto;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 100;
+	width: 100%;
+}
+
+/* This is the SCSS you'll need */
+
+.video-wrapper {
+	position: relative;
+	width: 100%;
+	margin: rem-calc(0 0 54.5);
+	min-height: 100vh;
+	overflow: hidden;
+}
+.video-overlay {
+	height: 100%;
+	width: 100%;
+	opacity: .8;
+	position: absolute;
+	z-index: 2;
+}
+.video-expand {
+	display: none;
+	&:hover {
+		@include transition(all 400ms ease-in-out);
+	}
+}
+.tv {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	.screen {
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		z-index: 1;
+		margin: auto;
+		opacity: 0;
+		transition: opacity .5s;
+		&.active {
+			opacity: 1;
+		}
+	}
+}
 
 /* @import "media.scss"; */
