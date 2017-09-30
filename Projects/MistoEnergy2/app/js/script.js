@@ -15,17 +15,18 @@ $(document).ready(function() {
 			$('.navigation__list').removeAttr('style');
 		}
 	})
-});
 
-
-
-$(document).ready(function() {
 	$("img").lazyload({
 		threshold: 200,
 		effect: "fadeIn"
 	});
-});
 
+	$('.ajax-popup-link').magnificPopup({
+		type: 'ajax',
+        overflowY: 'scroll' // as we know that popup content is tall we set scroll overflow by default to avoid jump
+	});
+	
+});
 
 
 
