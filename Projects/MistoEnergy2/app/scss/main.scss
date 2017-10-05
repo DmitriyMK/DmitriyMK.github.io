@@ -70,6 +70,26 @@ section {
 	clear: both;
 }
 
+/* 	LOADER */
+#preloader {
+	position: fixed; 
+	left: 0; 
+	top: 0; 
+	right: 0; 
+	bottom: 0; 
+	background: #fff; 
+	z-index: 1001;
+}
+#preloader i {
+	width: 70px; 
+	height: 70px; 
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	background: url('../img/preloader.gif') no-repeat 50% 50%; 
+	margin: -35px 0 0 -35px;
+}
+
 
 /* HEADER */
 .menu-wrapper {
@@ -213,8 +233,8 @@ background: #fefefe;
 		}
 	}
 	&__text {
-		text-align: center;
 		font-size: rem(20);
+		padding: 10px 15px;
 	}
 	&__text-accent {
 		padding-top: 30px;
@@ -297,12 +317,11 @@ background: #fefefe;
 
 /* COUNTERS */
 .counters {
+	font-size: rem(20);
 	position: relative;
 	&__subtitle {
 		padding-top: 40px;
 	}
-	text-align: justify;
-	font-size: rem(20);
 	&__text {
 		padding-top: 10px;
 	}
@@ -421,10 +440,8 @@ background: #fefefe;
 	}
 	.billing__item {
 		position: relative;
-		text-transform: uppercase;
 		font-size: rem(16);
 		font-weight: 700;
-		margin-bottom: 10px;
 	}
 	.counters__accent {
 		text-align: center;
@@ -641,7 +658,7 @@ background: #fefefe;
  }
  .white-popup {
  	position: relative;
- 	background: #FFF;
+ 	background: #fff;
  	padding: 20px;
  	width: auto;
  	max-width: 500px;

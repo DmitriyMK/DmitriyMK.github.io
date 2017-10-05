@@ -23,10 +23,21 @@ $(document).ready(function() {
 
 	$('.ajax-popup-link').magnificPopup({
 		type: 'ajax',
-        overflowY: 'scroll' // as we know that popup content is tall we set scroll overflow by default to avoid jump
+		overflowY: 'scroll' // as we know that popup content is tall we set scroll overflow by default to avoid jump
 	});
-	
+
+	/*MENU SCROLLING*/
+	$('a[href^="#"], *[data-href^="#"]').on('click', function(e) {
+		e.preventDefault();
+		var t = 1000;
+		var d = $(this).attr('data-href') ? $(this).attr('data-href') : $(this).attr('href');
+		$('html,body').stop().animate({
+			scrollTop: $(d).offset().top
+		}, t);
+	});
+
 });
 
-
-
+$(window).on('load', function() {
+	$('#preloader').delay(100).fadeOut('slow');
+});

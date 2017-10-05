@@ -190,81 +190,127 @@
         </div>
     </div>
 
-    <style>
-        .remodal {
-            background: #fff !important;
-            margin: auto; 
-            display: block;
-            padding: 20px 50px;
-        }
-        .remodal .remodal__content {
-            text-align: left; 
-        }
-        .remodal .remodal__title {
-            font-size: 2rem;
-            font-weight: 700;
-            text-transform: uppercase;
-            text-align: left; 
-        }
-        .remodal .remodal__text {
-            text-align: justify;
-            padding-bottom: 10px; 
-        }
-        .remodal .section {
-            display: none;
-            padding: 20px 0 0;
-            border-top: 1px solid #ddd; 
-        }
-        .remodal input {
-            display: none; 
-        }
-        .remodal label {
-            display: inline-block;
-            margin: 0 0 -1px;
-            padding: 15px 25px;
-            font-weight: 600;
-            text-align: center;
-            color: #888;
-            border: 1px solid transparent;
-            word-break: break-all;
-            -webkit-transition: color 0.3s ease;
-            -o-transition: color 0.3s ease;
-            transition: color 0.3s ease; 
-        }
-        .remodal label:hover {
-            color: #feb800;
-            cursor: pointer; 
-        }
-        .remodal input:checked + label {
-            color: #555;
-            border: 1px solid #ddd;
-            border-top: 2px solid #feb800;
-            border-bottom: 1px solid #fff; 
-        }
-        .remodal #tab1:checked ~ #content1,
-        .remodal #tab2:checked ~ #content2,
-        .remodal #tab3:checked ~ #content3,
-        .remodal #tab4:checked ~ #content4 {
-            display: block; 
-        }
-        .remodal th {
-            border: 1px solid #bbb;
-            text-align: center; 
-        }
-        .remodal td {
-            padding: 0 10px;
-            border: 1px solid #bbb; 
-        }
-        .remodal th {
-            padding: 0 10px;
-        }
-        .remodal .right {
-            text-align: center; 
-        }
-        .remodal .size {
-            text-align: center; 
-        }
-        sup {
-            font-size: 10px;
-        }
-    </style>
+<style>
+    .remodal {
+        background: #fff !important;
+        margin: auto; 
+        display: block;
+        padding: 20px 50px;
+    }
+    .remodal .remodal__content {
+        text-align: left; 
+    }
+    .remodal .remodal__title {
+        font-size: 2rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        text-align: left; 
+    }
+    .remodal .remodal__text {
+        text-align: justify;
+        padding-bottom: 10px; 
+    }
+    .remodal .section {
+        display: none;
+        padding: 20px 0 0;
+        border-top: 1px solid #ddd; 
+    }
+    .remodal input {
+        display: none; 
+    }
+    .remodal label {
+        display: inline-block;
+        margin: 0 0 -1px;
+        padding: 15px 25px;
+        font-weight: 600;
+        text-align: center;
+        color: #888;
+        border: 1px solid transparent;
+        word-break: break-all;
+        -webkit-transition: color 0.3s ease;
+        -o-transition: color 0.3s ease;
+        transition: color 0.3s ease; 
+    }
+    .remodal label:hover {
+        color: #feb800;
+        cursor: pointer; 
+    }
+    .remodal input:checked + label {
+        color: #555;
+        border: 1px solid #ddd;
+        border-top: 2px solid #feb800;
+        border-bottom: 1px solid #fff; 
+    }
+    .remodal #tab1:checked ~ #content1,
+    .remodal #tab2:checked ~ #content2,
+    .remodal #tab3:checked ~ #content3,
+    .remodal #tab4:checked ~ #content4 {
+        display: block; 
+    }
+    .remodal th {
+        border: 1px solid #bbb;
+        text-align: center; 
+    }
+    .remodal td {
+        padding: 0 10px;
+        border: 1px solid #bbb; 
+    }
+    .remodal th {
+        padding: 0 10px;
+    }
+    .remodal .right {
+        text-align: center; 
+    }
+    .remodal .size {
+        text-align: center; 
+    }
+    sup {
+        font-size: 10px;
+    }
+
+@media only screen and (max-width: 768px) {
+  .remodal {
+    padding: 15px; }
+    .remodal label {
+      padding: 10px 5px; } }
+
+@media only screen and (max-width: 480px) {
+  .remodal .remodal__title {
+    font-size: 1.2rem;
+    padding-bottom: 20px;
+    text-align: center; }
+  .remodal .remodal__text {
+    text-align: left;
+    font-size: 1.2rem;
+    word-break: break-all; }
+  .remodal label {
+    padding: 0;
+    font-weight: 300;
+    font-size: 1rem;
+    text-align: left; }
+  .remodal .right {
+    text-align: left; }
+  .remodal td {
+    font-size: 1rem;
+    padding: 0 10px; }
+    .remodal th {
+    font-size: 1rem;}
+  .remodal .size {
+    word-break: break-all; } }
+
+@media only screen and (max-width: 420px) {
+  .remodal .remodal__title {
+    font-size: 1rem; }
+  .remodal .remodal__text {
+    font-size: 1rem; }
+  .remodal label {
+    padding: 0;
+    font-weight: 300;
+    text-align: left; }
+  .remodal td {
+    font-size: .78rem; }
+  .remodal .size {
+    word-break: break-all; } }
+
+
+</style>

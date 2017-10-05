@@ -234,9 +234,6 @@
 		.row {
 			padding: 15px;
 		}
-		&__text {
-			padding: 5px;
-		}
 		.counters__form {
 			&-line {
 				width: 45%;
@@ -264,6 +261,10 @@
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
+	body {
+		font-size: 14px;
+	}
+
 	section {
 		padding-top: 30px;
 		padding-bottom: 30px;
@@ -328,9 +329,12 @@
 		}
 	}
 	.counters {
+		.row {
+			padding: 0 15px;
+		}
 		&__text-accent  {
 			padding: 0 15px;
-			padding-left: 15px;
+			padding-left: 0;
 		}
 		&__list {
 			padding-left: 15px;
@@ -342,6 +346,7 @@
 			max-width: 320px;
 		}
 		.counters__form {
+			font-size: 1rem;
 			&-line {
 				display: inherit;
 				width: 90%;
@@ -351,9 +356,18 @@
 				border-radius: 0;
 			}
 		}
+		.accent {
+			font-size: rem(18);
+		}
+		.counters__content-flat {
+			font-size: 1rem;
+		}
+		svg {
+			width: 5rem;
+			height: 5rem;
+		}
 	}
 	.partners {
-
 		&__img {
 			max-width: 140px;
 			max-height: 57px;
@@ -432,13 +446,12 @@
 		&__list {
 			padding-left: 15px;
 		}
-		.counters__form {
-			width: 90%;
-		}
 		&__wrapper img {
 			max-width: 320px;
 		}
 		.counters__form {
+			width: 90%;
+			font-size: 1rem;
 			&-line {
 				display: inherit;
 				width: 90%;

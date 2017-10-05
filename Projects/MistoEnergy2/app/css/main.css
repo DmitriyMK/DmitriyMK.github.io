@@ -1378,6 +1378,25 @@ section {
   display: table;
   clear: both; }
 
+/* 	LOADER */
+#preloader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: #fff;
+  z-index: 1001; }
+
+#preloader i {
+  width: 70px;
+  height: 70px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  background: url("../img/preloader.gif") no-repeat 50% 50%;
+  margin: -35px 0 0 -35px; }
+
 /* HEADER */
 .menu-wrapper {
   /* 	position: fixed; */
@@ -1512,8 +1531,8 @@ section {
     .offer__link:hover {
       color: #ff4b00; }
   .offer__text {
-    text-align: center;
-    font-size: 1.25rem; }
+    font-size: 1.25rem;
+    padding: 10px 15px; }
   .offer__text-accent {
     padding-top: 30px;
     font-weight: 700;
@@ -1599,9 +1618,8 @@ section {
 
 /* COUNTERS */
 .counters {
-  position: relative;
-  text-align: justify;
-  font-size: 1.25rem; }
+  font-size: 1.25rem;
+  position: relative; }
   .counters__subtitle {
     padding-top: 40px; }
   .counters__text {
@@ -1702,10 +1720,8 @@ section {
     list-style-type: circle; }
   .counters .billing__item {
     position: relative;
-    text-transform: uppercase;
     font-size: 1rem;
-    font-weight: 700;
-    margin-bottom: 10px; }
+    font-weight: 700; }
   .counters .counters__accent {
     text-align: center; }
   .counters .counters__link {
@@ -1899,7 +1915,7 @@ section {
 
 .white-popup {
   position: relative;
-  background: #FFF;
+  background: #fff;
   padding: 20px;
   width: auto;
   max-width: 500px;
