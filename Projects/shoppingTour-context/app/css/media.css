@@ -388,10 +388,13 @@
     font-size: 1.25rem; }
   .typeAd__title-end {
     font-size: 1.25rem; }
+  .typeAd span {
+    left: 15%; }
   .formInfo {
     padding: 0; }
     .formInfo__title {
-      font-size: 1.375rem; }
+      font-size: 1.25rem;
+      width: 95%; }
     .formInfo .formInfo__proposal .arrow {
       display: none; }
     .formInfo .formInfo__form {
