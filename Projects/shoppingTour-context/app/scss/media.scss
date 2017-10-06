@@ -355,14 +355,28 @@
 	.video-wrapper {
 		min-height: 730px;
 	}
+	.video-overlay {
+		display: none;
+	}
 	.header {
-		background: url(../img/background_order.jpg) no-repeat 45% 0%;
+		background: url(../img/background.jpg) no-repeat 45% 0%;
+		.wrapper {
+			padding: 5px;
+		}
+		&__list {
+			flex-wrap: wrap;
+		}
 		&__item {
 			font-size: rem(18);
+			&:last-child{
+				width: 100%;
+				text-align: center;
+			}
 		}
 		&__contact {
 			.mobile {
-				font-size: rem(20);
+				text-align: right;
+				font-size: rem(16);
 			}
 		}
 		&__center {
@@ -383,8 +397,8 @@
 			}
 		}
 		span {
-				left: 15%;
-			}
+			left: 15%;
+		}
 	}
 	.formInfo {
 		padding: 0;

@@ -373,12 +373,24 @@
     display: none; }
   .video-wrapper {
     min-height: 730px; }
+  .video-overlay {
+    display: none; }
   .header {
-    background: url(../img/background_order.jpg) no-repeat 45% 0%; }
+    background: url(../img/background.jpg) no-repeat 45% 0%; }
+    .header .wrapper {
+      padding: 5px; }
+    .header__list {
+      -webkit-flex-wrap: wrap;
+          -ms-flex-wrap: wrap;
+              flex-wrap: wrap; }
     .header__item {
       font-size: 1.125rem; }
+      .header__item:last-child {
+        width: 100%;
+        text-align: center; }
     .header__contact .mobile {
-      font-size: 1.25rem; }
+      text-align: right;
+      font-size: 1rem; }
     .header__center {
       padding-top: 120px;
       font-size: 1.625rem; }
