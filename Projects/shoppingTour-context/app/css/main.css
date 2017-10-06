@@ -4806,7 +4806,7 @@ a {
   position: relative;
   width: 100%;
   margin: rem-calc(0 0 54.5);
-  min-height: 100vh;
+  min-height: 680px;
   overflow: hidden; }
 
 .video-overlay {
