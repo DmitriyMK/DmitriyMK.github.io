@@ -5,10 +5,10 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>ShoppingTour</title>
-	
+
 	<meta name="description" content=""/>
 	<meta name="keywords" content=""/>
-	
+
 	<link rel="apple-touch-icon" sizes="120x120" href="img/favicons/apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
 	<link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">
@@ -24,378 +24,254 @@
 		<i></i>
 	</div>
 
-	<header class="header">
-		<div class="cover">
-			<div class="wrapper">
-				<div class="flex-wrap">
-					<div class="header__top">
-						<a class="header__logo" href="#"><img src="img/logo/logo.png" alt="шопинг тур"></a>
-						<nav class="header__nav">
-							<ul class="header__list">
-								<li class="header__item">
-									<a class="header__link" href="#about">Шопинг тур это</a>
-								</li>
-								<li class="header__item">
-									<a class="header__link" href="#review">Отзывы</a>
-								</li>
-								<li class="header__item">
-									<a class="header__link" href="#photoText">О нас</a>
-								</li>
-								<li class="header__item">
-									<a class="header__link" href="#proposal">Заказать</a>
-								</li>
-							</ul>
-						</nav>
-						<ul class="header__contact">
-							<li class="contact__item mobile"><a class="contact__link" href="tel:+79221285221">+7 (922)128 52 21</a></li>
-							<li class="contact__item mail"><a class="contact__link" href="mailto:ikrevolution@yandex.ru">ikrevolution@yandex.ru</a></li>
-						</ul>
-					</div>
-					<div class="header__center">
-						<p>Нестандартный подход к привлечению большого потока новых клиентов в Екатеринбурге</p>
-					</div>
-					<div class="header__end">
-						<a class="header__end-link" href="#callback">Подробнее</a>
-					</div>
+	<header class="header-order">
+		<div class="wrapper">
+			<div class="flexWrap-content">
+				<p class="header__text-order">
+					<span class="firstName">First_name</span>,<br>
+					узнайте о наших возможностях<br>
+					и приятных ценах
+				</p>
+				<div class="header__video-order">
+					<iframe src="https://www.youtube.com/embed/7wtfhZwyrcc" frameborder="0" allowfullscreen></iframe>
 				</div>
-			</div>
-		</div>
 
-		<div class="video-wrapper" data-video-id="pNI0BC_1Fvo" data-video-youtube-link="y" data-video-start="5" data-video-end="1000" data-video-width-add="100" data-video-height-add="80">
-			<div class="video-overlay" style="background-color: #000; opacity: .70"></div>
-			<div class="tv">
-				<!-- 1. The <iframe> (and video player) will replace this <div> tag. -->
-				<div id="player" class="screen"></div>
+			</div>
+			<div class="flexWrap-form">
+				<form class="registration" name="registration" autocomplete="off">
+					<img src="img/logo/logo2.png" alt="">
+					<p class="registration__text">Запишитесь на консультацию</p>
+					<input class="form-line" type="text" name="name" placeholder="Ваше имя" required>
+					<input class="form-line" type="email" name="email" placeholder="Email" required>
+					<input class="form-line" type="phone" name="phone" placeholder="Ваш телефон" required>
+					<input type="submit" class="form-button" value="Я с вами">
+				</form>
 			</div>
 		</div>
 	</header>
 
-	
-	<div class="typeAd">
+	<div class="mission">
 		<div class="wrapper">
-			<div class="typeAd__title">
-				<p class="typeAd__title-top wow fadeInDown" data-wow-delay="1s">5 ТИПОВ РЕКЛАМЫ</p>
-				<p class="typeAd__title-cente wow fadeInDown" data-wow-delay="1.5s">ЧТО УЖЕ МАЛО ЭФФЕКТИВНЫ</p>
-				<p class="typeAd__title-end wow fadeInDown" data-wow-delay="2s">И ТРАТЯТ ВАШИ ДЕНЬГИ ВПУСТУЮ!</p>
-			</div>
-			<ul class="typeAd__list">
-				<li class="typeAd__item wow fadeInLeft" data-wow-delay="1s">
-					<a class="typeAd__link" href="#">бигборды</a>
-					<span class="tooltip">от 80 0000 руб</span>
-				</li>
-				<li class="typeAd__item wow fadeInLeft" data-wow-delay="1.5s">
-					<a class="typeAd__link" href="#">соц. сети</a>
-					<span class="tooltip">от 20 0000 руб</span>
-				</li>
-				<li class="typeAd__item wow fadeInLeft" data-wow-delay="2s">
-					<a class="typeAd__link" href="#">директ</a>
-					<span class="tooltip">от 40 0000 руб</span>
-				</li>
-				<li class="typeAd__item wow fadeInLeft" data-wow-delay="2.5s">
-					<a class="typeAd__link" href="#">журналы</a>
-					<span class="tooltip">от 20 0000 руб</span>
-				</li>
-				<li class="typeAd__item wow fadeInLeft" data-wow-delay="3s">
-					<a class="typeAd__link" href="#">ТВ</a>
-					<span class="tooltip">от 100 0000 руб</span>
-				</li>
-			</ul>	
+			<p class="mission__title">Наши цели</p>
+			<ul class="mission__list">
+				<li class="mission__item">Приложить максимум усилий, чтобы Вы и Ваши клиенты были довольны на <span class='numscroller' data-min='1' data-max='1000' data-delay='15' data-increment='10'>1000</span>%</li>
+				<li class="mission__item">Создавать эмоциональную связь клиентов с вашим бизнесом за счет, так называемого, шопинг-квеста!</li>
+				<li class="mission__item">Окупить сразу все ваши затраты на шопинг-тур и выгодно проинвестировать их рекламную компанию. Вы с нами?</li>
+			</ul>
 		</div>
 	</div>
 
-	<div class="formInfo">
+	<div class="details">
 		<div class="wrapper">
-			<p class="formInfo__title">Реклама - это штраф, который вы платите за свою неосведомленность. <br> Мы предлагаем новое решение 5 в 1</p>
-			<form class="formInfo__form" autocomplete="off">
-				<input class="form-line" type="text" name="name" placeholder="Введите ваше имя" required>
-				<input class="form-line" type="email" name="email" placeholder="Введите ваш email" required>
-				<input type="submit" class="form-button" value="Узнать мгновенно">
-			</form>
-			<div class="formInfo__proposal">
-				<p class="formInfo__title wow zoomIn" data-wow-delay="1s">Наш способ в 10 раз эффективнее других <br> видов рекламы и дешевле!</p>
-				<object class="arrow" type="image/svg+xml" data="img/icons/arrow.svg">
-				</object>
-			</div>	
-		</div>
-	</div>
-
-	<section class="advantages">
-		<div class="wrapper">
-			<h2 class="advantages__title section__title">Почему обращаются именно к нам?</h2>
-			<ul class="advantages__list">
-				<li class="advantages__item wow fadeInLeft" data-wow-delay="1.5s">
-					<div>
-						<object class="arrow" type="image/svg+xml" data="img/icons/growth.svg"></object>
-					</div>
-					<span>Вы давно хотели найти что-то, что позволит вам выйти на <strong>новый уровень</strong> количества клиентов. И это это происходит прямо сейчас.
-					</span>
+			<p class="details__title">Как происходит процесс шопинг тура</p>
+			<ul class="details__list">
+				<li class="details__item item1 top wow fadeIn" >
+					<p class="details__item-text"><span class="tipso top-left tipso_style "  data-tipso-title="Лимузин" data-tipso="тут идет какой-то текст">Лимузин</span></p>
+					<p class="details__item-img step1"></p>
 				</li>
-				<li class="advantages__item wow fadeInRight" data-wow-delay="1.5s">
-					<div>
-						<object class="arrow" type="image/svg+xml" data="img/icons/stop.svg">
-						</object>
-					</div>
-					<span>Пора <strong>прекратить</strong> постоянно вкладывать деньги в рекламу, и надеется, что это увеличит продажи.
-					</span>
+				<li class="details__item  top wow fadeIn" data-wow-delay="1s">
+					<p class="details__item-text item2"><span class="tipso top tipso_style " data-tipso-title="Бутик одежды" data-tipso="Вы отлично выглядите! Теперь пора посетить бутик модной одежды, в которой вы будете смотреться блестяще!">Бутик<br>одежды</span></p>
+					<p class="details__item-img step2"></p>
 				</li>
-				<li class="advantages__item wow fadeInLeft" data-wow-delay="1.5s">
-					<div>
-						<object class="arrow" type="image/svg+xml" data="img/icons/rich.svg">
-						</object>
-					</div>
-					<span>Некоторые точки продаж в <strong>Екатеринбурге</strong> работают только на аренду и зарплату сотрудников....</span>
+				<li class="details__item top wow fadeIn" data-wow-delay="1.5s">
+					<p class="details__item-text item3 "><span class="tipso top-left tipso_style " data-tipso-title="Бутик аксессуаров" data-tipso="Стильные аксессуары дополнят и подчеркнут ваш стиль, облик и вашу индивидуальность!">Бутик<br>аксессуаров</span></p>
+					<p class="details__item-img step3"></p>
 				</li>
-				<li class="advantages__item wow fadeInRight" data-wow-delay="1.5s">
-					<div>
-						<object class="arrow" type="image/svg+xml" data="img/icons/growth.svg">
-						</object>
-					</div>
-					<span>
-						Рынок не останавливается, он каждую минуту движется вперед, меняя все правила! Выигрывает тот, кто <strong>быстро приспосабливатся</strong>.
-					</span>
+				<li class="details__item center wow fadeIn" data-wow-delay="2s">
+					<p class="details__item-text item4 "><span class="tipso top-left tipso_style " data-tipso-title="Салон красоты" data-tipso="Квест начинается с посещения салона красоты. Лучшие стилисты, парикмахеры, визажисты города будут работать с вами!">Салон<br> красоты</span></p>
+					<p class="details__item-img step4"></p>
+				</li>
+				<li class="details__item center wow fadeIn" data-wow-delay="2.5s">
+					<p class="details__item-text item5 "><span class="tipso top-left tipso_style " data-tipso-title="Бутик верхней одежды" data-tipso="Следующим пунктом нашего квеста идет посещение бутика верхней одежды. Здесь вы найдете все чего только ваша душа пожелает">Бутик<br>верхней одежды</span></p>
+					<p class="details__item-img step5"></p>
+				</li>
+				<li class="details__item  end wow fadeIn" data-wow-delay="3s">
+					<p class="details__item-text item6 "><span class="tipso top-left tipso_style " data-tipso-title="Ресторан" data-tipso="Завершает наш квест поход в ресторан. Лучшие повара, изысканные блюда! Вы останетесь довольными!">Ресторан</span></p>
+					<p class="details__item-img step6"></p>
 				</li>
 			</ul>
 		</div>
+	</div>
+
+	<section class="partners">
+		<div class="wrapper">
+			<h3 class="partners__title">Наши партнеры</h3>
+			<ul class="partners__list">
+				<li class="partners__item"><img class="partners__img lazy" data-src="img/logo/partners/1.png" alt=""></li>
+				<li class="partners__item"><img class="partners__img lazy" data-src="img/logo/partners/2.png" alt=""></li>
+				<li class="partners__item"><img class="partners__img lazy" data-src="img/logo/partners/3.jpg" alt=""></li>
+				<li class="partners__item"><img class="partners__img lazy" data-src="img/logo/partners/4.jpg" alt=""></li>
+				<li class="partners__item"><img class="partners__img lazy" data-src="img/logo/partners/5.jpg" alt=""></li>
+				<li class="partners__item"><img class="partners__img lazy" data-src="img/logo/partners/6.png" alt=""></li>
+				<li class="partners__item"><img class="partners__img lazy" data-src="img/logo/partners/7.jpg" alt=""></li>
+				<li class="partners__item"><img class="partners__img lazy" data-src="img/logo/partners/8.jpg" alt=""></li>
+				<li class="partners__item hidden"><img class="partners__img lazy" data-src="img/logo/partners/9.jpg" alt=""></li>
+				<li class="partners__item hidden"><img class="partners__img lazy" data-src="img/logo/partners/10.jpg" alt=""></li>
+				<li class="partners__item hidden"><img class="partners__img lazy" data-src="img/logo/partners/11.jpg" alt=""></li>
+				<li class="partners__item hidden"><img class="partners__img lazy" data-src="img/logo/partners/12.jpg" alt=""></li>
+				<li class="partners__item hidden"><img class="partners__img lazy" data-src="img/logo/partners/13.jpg" alt=""></li>
+				<li class="partners__item hidden"><img class="partners__img lazy" data-src="img/logo/partners/14.png" alt=""></li>
+				<li class="partners__item hidden"><img class="partners__img lazy" data-src="img/logo/partners/15.gif" alt=""></li>
+				<li class="partners__item hidden"><img class="partners__img lazy" data-src="img/logo/partners/16.jpg" alt=""></li>
+				<li class="partners__item hidden"><img class="partners__img lazy" data-src="img/logo/partners/17.jpg" alt=""></li>
+				<li class="partners__item hidden"><img class="partners__img lazy" data-src="img/logo/partners/19.jpg" alt=""></li>
+				<li class="partners__item hidden"><img class="partners__img lazy" data-src="img/logo/partners/20.jpg" alt=""></li>
+				<li class="partners__item hidden"><img class="partners__img lazy" data-src="img/logo/partners/21.png" alt=""></li>
+			</ul>
+			<a class="loadMore" href="#" id="loadMore">Показать еще</a>
+		</div>
 	</section>
 
-	<section class="about" id="about">
+	<section class="comment">
 		<div class="wrapper">
-			<h2 class="about__title section__title">Что такое шопинг-тур?</h2>
-			<div class="flex-wrap">
-				<div class="info">
-					<p class="info-term"><span class="accent">Шопинг-тур</span> - это новый формат рекламы, который  <strong>в 10 раз дешевле и эффективнее</strong> и позволяет вам лично общаться с клиентами.</p>
-					<p class="info-text">Хотели ли бы Вы получить аудиторию готовую купить ваш продукт, вместе с <span class="accent">активной рекламной кампанией</span> под ключ?</p>
-					<ul class="info-list">
-						<li class="info__item wow fadeInUp delay30">
-							<div>
-								<object type="image/svg+xml" data="img/icons/conversation.svg"></object>
-							</div>
-							<span><i class="italic">Большой поток клиентов</i> к себе на точку продаж;</span>
-						</li>
-						<li class="info__item wow fadeInUp delay40">
-							<div>
-								<object type="image/svg+xml" data="img/icons/people.svg"></object>
-							</div>
-							<span><i class="italic">Очередь из клиентов</i>, которые хотят купить у вас.</span>
-						</li>
-						<li class="info__item wow fadeInUp delay50">
-							<div>
-								<object type="image/svg+xml" data="img/icons/profits.svg"></object>
-							</div>
-							<span><i class="italic">Эффективный способ</i> рекламы продукта;</span>
-						</li>
-					</ul>
+			<p class="comment__title details__title">Отзывы</p>
+			<div class="flex__wrap">
+				<div class="comment__items">
+					<div class="iframe">
+						<iframe src="https://www.youtube.com/embed/fKopy74weus" frameborder="0" allowfullscreen></iframe>
+					</div>
+					<p>Отзыв руководителя vip отдела Альфа банка</p>
+				</div>
+				<div class="comment__items">
+					<div class="iframe">
+						<iframe src="https://www.youtube.com/embed/fKopy74weus" frameborder="0" allowfullscreen></iframe>
+					</div>
+					<p>Отзыв финансового директора работы</p>
 				</div>
 			</div>
 		</div>
 	</section>
 
-	<div class="photoText" id="photoText">
+	<section class="choiceUS">
 		<div class="wrapper">
-			<div class="photo" style="background-image: url(img/photo.jpg);">
-				
-			</div>
-			<div class="text">
-				<p class="text__title">Немного о нас</p>
-				<p class="text__name">Меня зовут Галина Башкирова</p>
-				<p class="text__text">Я куратор проекта "Шопинг тур". На протяжении 5 лет, я и моя команда занимаемся маркетингом и рекламой. <br> Вы, скорее всего заметили, что рынок изменился. Клиенты стали более требовательны, их сбивает огромный информационный поток предложений на рынке. То, что работало и приносило деньги раньше – сейчас не работает! <br>
-					Но многие предприниматели все равно вкладывают рекламные бюджеты в порой очень неэффективное привлечение. <br>
-					Наше предложение - это <b>шопинг-тур</b>. Эксклюзивный вид продвижения вашего заведения 5 в 1 и мощный приток новых клиентов на вашу площадку.<br>
-					<i>Подробнее о том, как узнать больше информации о моем предложении смотрите в самом низу этой страницы.</i>
-				</p>
-			</div>
+			<h3 class="choiceUS__title">Выберите лучшее предложение для Вас</h3>
 		</div>
-	</div>
+		<div class="form">
+			<form class="selectPlan" autocomplete="off">
+				<fieldset class="form__select">
+					<div class="wrapper">
+						<div class="flex__wrap">	
+							<div class="form__item wow fadeInLeft">
+								<label for="proposal1">
+									<div class="form__item-title">
+										<p class="form-title">Вхождение в контакт</p>
+									</div>
+									<div class="form-ask">
+										<p class="form__item-ask">Вы  тратите  деньги на привлечение клиентов, а их все нет?</p>
+									</div>
+									<div class="list">
+										<ul class="form__list">
+											<li class="list__item">Мы приведем и познакомим 10 клиентов с вашей точкой;</li>
+											<li class="list__item">С вас личный контакт и презентация; Предоставляем фотоотчет;</li>
+											<li class="list__item">Пиарим вас в просторах интернета;</li>
+											<li class="list__item">Аудитория до 15 000 человек</li>	
+										</ul>
+									</div>
+									<div class="form__attention">
+										<p class="form__item-attention">Обратите внимание:<br> Только экскурсия, без покупок в моменте!</p>
+									</div>
+									<div class="price__box">
+										<p class="price"><span class="newPrice">18 900 руб</span><span class="oldPrice"> 22 000 руб</span></p>
+									</div>
+								</label>
+								<input type="radio" name="proposal" id="proposal1" value="proposal 1"> <span class="doIt">Выбрать</span>
+							</div>
 
-	<div class="promise">
-		<div class="wrapper">
-			<p class="promise__text">Шопинг-тур приведет в ваше заведение аудиторию, готовую покупать.</p>
-			<a class="promise__link wow bounceIn" href="#callback">Да, хочу клиентов!</a>
-		</div>
-	</div>
+							<div class="form__item wow bounceIn delay40">
+								<label for="proposal2">
+									<div class="form__item-title">
+										<p class="form-title">Продажи сразу же</p>
+									</div>
+									<div class="form-ask">
+										<p class="form__item-ask">Единственный формат рекламы в РФ, от которой вы увидите не только клиентов, но и продажи!</p>
+									</div>
+									<div class="list">
+										<ul class="form__list">
+											<li class="list__item">Прописываем сценарий продаж;</li>
+											<li class="list__item">Предоставляем фотоотчет;</li>
+											<li class="list__item">Пиарим вас в просторах интернета;</li>
+											<li class="list__item">Пиарим вас в просторах интернета до 30 000 человек.</li>	
+										</ul>
+									</div>
+									<div class="form__attention">
+										<p class="form__item-attention">Обратите внимание:<br>Приводим 10 клиентов, которые покупают, записываются на процедуры, тратят деньги у вас!</p>
+									</div>
+									<div class="price__box">
+										<p class="price"><span class="newPrice">24 990 руб</span><span class="oldPrice"> 27 000 руб</span>
+										</p>
+									</div>
+								</label>
+								<input type="radio" name="proposal" id="proposal2" value="proposal 2"> <span class="doIt">Выбрать</span>
+							</div>
 
-	<div class="media">
-		<div class="wrapper">
-			<div class="media__box">
-				<div class="box__left">
-					<div class="media__box-person">
-						<p class="box__title">Мы работаем <br> с крупными холдингами </p>
-						<p class="box__description">Директора отправляют своих сотрудников на шопинг, устраивают им выходной праздничный день, вносят некоторый депозит, который им необходимо потратить.</p>
-						<div class="list__wrap">
-							<ul class="person__list">
-								<li class="person__item"><img src="img/logo/logo1.jpg" alt="rerson1"></li>
-								<li class="person__item"><img src="img/logo/logo2.jpg" alt="rerson2"></li>
-								<li class="person__item"><img src="img/logo/logo3.jpg" alt="rerson3"></li>
-								<li class="person__item"><img src="img/logo/logo4.jpg" alt="rerson1"></li>
-								<li class="person__item"><img src="img/logo/logo1.jpg" alt="rerson2"></li>
-								<li class="person__item"><img src="img/logo/logo2.jpg" alt="rerson3"></li>
-								<li class="person__item"><img src="img/logo/logo3.jpg" alt="rerson3"></li>
-								<li class="person__item"><img src="img/logo/logo4.jpg" alt="rerson1"></li>
-							</ul>
+							<div class="form__item wow fadeInRight">
+								<label  for="proposal3">
+									<div class="form__item-title">
+										<p class="form-title">Главный формат</p>
+									</div>
+									<div class="form-ask">
+										<p class="form__item-ask">Для тех предпринимателей, которым интересно все и сразу!
+										</p>
+									</div>
+									<div class="list">
+										<ul class="form__list">
+											<li class="list__item">Приводим до 10 покупателей;</li>
+											<li class="list__item">Прописываем сценарий продаж;</li>
+											<li class="list__item">Аудитория до 350 000 человек;</li>
+										</ul>
+									</div>
+									<div class="form__attention">
+										<p class="form__item-attention">Обратите внимание:<br> Только экскурсия, без покупок в моменте!</p>
+									</div>
+									<div class="price__box">
+										<p class="price"><span class="newPrice">44 900 руб</span><span class="oldPrice"> 55 000 руб</span>
+										</p>
+									</div>
+								</label>
+								<input type="radio" name="proposal" id="proposal3" value="proposal 3"> <span class="doIt">Выбрать</span>
+							</div>
 						</div>
 					</div>
-				</div>
-				<div class="box__right">
-					<div class="media__box-press">
-						<p class="box__title">СМИ о нас</p>
-						<ul class="list__wrap popup-gallery owl-carousel">
-							<li class="list__item owl-item"><a href="img/media__big.jpg"><img src="img/media.jpg" alt=""></a></li>
-							<li class="list__item owl-item"><a href="img/media2__big.jpg"><img src="img/media2.jpg" alt=""></a></li>
-						</ul>
-                        <div class="owl-controls press__controls">
-                            <div class="owl-nav">
-                                <div class="owl-prev">
-                                    <i class="icon-left-open-big"></i>
-                                </div>
-                                <div class="owl-next">
-                                    <i class="icon-right-open-big"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="media__box-empty">
-                    </div>
-                    <div class="media__box-tv">
-                      <p class="box__title">Телевидение о нас</p>
-                      <div class="media__box-tv__wrap">
-                         <div class="media__box-tv__video" style="background-image: url(img/video1.jpg);">
-                            <a class="video5 icon-play" href="https://youtu.be/AEbuuKZ6SlA">
-                            </a>
-                        </div>
-                        <div class="media__box-tv__video" style="background-image: url(img/video1.jpg);">
-                            <a class="video6 icon-play" href="https://youtu.be/AEbuuKZ6SlA">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+				</fieldset>
 
-<div class="review" id="review">
-  <div class="wrapper">
-     <h2 class="review__title section__title">Отзывы</h2>
-     <p class="review__text">Наши клиенты увеличили узнаваемость своего бренда,<br> получили поток новых клиентов, окупили часть рекламы, и конечно же, <br>получили некоторую <span class="accent">прибыль в моменте!</span>
-     </p>
-     <div class="review__video">
-        <div class="box__video" style="background-image: url(img/video__review1.jpg);">
-           <a class="video1 icon-play" href="https://youtu.be/XVFzBQTJTTM">
-           </a>
-       </div>
-       <div class="box__video" style="background-image: url(img/video__review2.jpg);">
-           <a class="video2 icon-play" href="https://youtu.be/r3m8cV74EJY">
-           </a>
-       </div>
-       <div class="box__video" style="background-image: url(img/video__review3.jpg);">
-           <a class="video3 icon-play" href="https://youtu.be/lsMek8AOlK0">
-           </a>
-       </div>
-       <div class="box__video" style="background-image: url(img/video__review4.jpg);">
-           <a class="video4 icon-play" href="https://youtu.be/Fpw5T46NoDE">
-           </a>
-       </div>
-   </div>
-</div>
-</div>
-
-<div class="question">
-  <div class="wrapper">
-     <h2 class="question__title section__title">Почему предприниматели доверяют нам?</h2>
-     <ul class="question__list">
-        <li class="question__item wow zoomIn" data-wow-delay=".5s">
-           <div>
-              <object type="image/svg+xml" data="img/icons/team.svg"></object>
-          </div>
-          <span>Более <strong>100 компаний</strong> уже приняли участие шопинг туре</span>
-      </li>
-      <li class="question__item wow zoomIn" data-wow-delay="1s" >
-       <div>
-          <object class="arrow" type="image/svg+xml" data="img/icons/analitics.svg">
-          </object>
-      </div>
-      <span>Более <strong>2 000 000 RUB</strong> было потраченно гостями</span>
-  </li>
-  <li class="question__item wow zoomIn" data-wow-delay="1.5s">
-   <div>
-      <object class="arrow" type="image/svg+xml" data="img/icons/target.svg">
-      </object>
-  </div>
-  <span>Более <strong>200</strong> счастливых покупателей нашли то, что хотели</span>
-</li>
-</ul>
-<div class="question__contact">
-    <a class="contact__link" href="tel:+79221285221">
-       <div>
-          <object class="arrow wow jello" data-wow-delay="1.5s"  type="image/svg+xml" data="img/icons/mobile.svg">
-          </object>
-      </div>
-      <div>
-          <p>Консультация</p> 
-          <p>+7-922-128-52-21</p>
-      </div>
-  </a>
-  <a class="contact__link" href="#">
-   <div>
-      <object class="arrow" type="image/svg+xml" data="img/icons/location.svg">
-      </object>
-  </div>
-  <div>
-      <p>г. Екатеринбург</p>
-      <p>Ул. Гагарина 43/3</p>
-  </div>
-</a>
-</div>
-</div>
-</div>
-
-<div class="proposal" id="proposal">
-  <div class="wrapper">
-     <div class="proposal__form">
-        <form class="callback" id="callback" autocomplete="off">
-           <img src="img/logo/logo.png" alt="">
-           <input class="form-line" type="text" name="name" placeholder="Введите ваше имя" required>
-           <input class="form-line" type="email" name="email" placeholder="Введите ваш email" required>
-           <input type="submit" class="form-button" value="Узнать больше">
-       </form>
-   </div> 
-   <div class="proposal__content">
-    <p class="proposal__title">Узнайте подробнее о нашем предложении!</p>
-    <p class="proposal__text">Прямо сейчас, не потеряйте возможность  <span class="accent">мгновенно</span>, узнать о нашем предложении и с диапазоном цен всего от 19 до 35 тыс руб!</p>
-</div>
-</div>
-</div>
+				<fieldset class="form__email">
+					<div class="wrapper">
+						<p>Выберите подходящее для вас предложение <br>
+							И просто напишите ваш номер телефона
+						</p>
+						<div class="flex__wrap">
+							<input class="form-line" type="text" name="name" placeholder="Ваше имя" required>
+							<input class="form-line" type="phone" name="phone" placeholder="Ваш телефон" required>
+							<input class="form-line" type="email" name="email" placeholder="Email" required>
+							<input type="submit" class="form-button" value="Я в деле">
+						</div>
+					</div>
+				</fieldset>
+			</form>
+		</div>
+	</div>
+</section>
 
 
 <footer class="footer">
-  <div class="wrapper">
-     <ul class="footer__list">
-        <li class="footer__item"><a class="footer__link contact__link popup-gmaps" href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2182.4185045400145!2d60.58909431597294!3d56.838764980857746!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x43c16e5f8d678117%3A0xeafb8ea8d455cae!2z0YPQuy4g0JDQvdGC0L7QvdCwINCS0LDQu9C10LrQsCwgMTUsINCV0LrQsNGC0LXRgNC40L3QsdGD0YDQsywg0KHQstC10YDQtNC70L7QstGB0LrQsNGPINC-0LHQuy4sINCg0L7RgdGB0LjRjywgNjIwMDE0!5e0!3m2!1sru!2sua!4v1506585702813">Екатеринбург, ул. Антона Валека, 15</a></li>
-        <li class="footer__item"><a class="footer__link" href="tel:+79221285221">+7(922)128-52-21</a></li>
-        <li class="footer__item"><a class="footer__link politics__link" href="#politics"> Политика конфиденциальности</a></li>
-    </ul>
-    <div id="politics" class="white-popup mfp-hide">
-        <p>Какие данные собираются на сайте? <br>
-           Имя, email и ссылка на страницу — для того, чтобы мы смогли вас правильно индифицировать и обращаться к вам. С какой целью собираются эти данные? Имя используется для обращения лично к вам, а ваш e-mail для отправки вам писем образовательного характера. Ваши имя и e-mail не передаются третьим лицам, ни при каких условиях кроме случаев, связанных с исполнением требований законодательства. Вы можете отказаться от получения писем рассылки и удалить из базы данных свои контактные данные в любой момент, кликнув на ссылку для отписки, присутствующую в каждом письме. <br>
-           Как эти данные используются? <br>
-           При помощи этих данных собирается информация о действиях посетителей на сайте с целью улучшения его содержания, улучшения функциональных возможностей сайта и, как следствие, создания качественного сайта и описаний для посетителей. Вы можете в любой момент изменить настройки своего браузера так, чтобы браузер блокировал все файлы cookie или оповещал об отправке этих файлов. Учтите при этом, что некоторые функции и сервисы не смогут работать должным образом. <br>
-           Как эти данные защищаются? <br>
-           Для защиты Вашей личной информации мы используем разнообразные административные, управленческие и технические меры безопасности. Наша Компания придерживается различных международных стандартов контроля, направленных на операции с личной информацией, которые включают определенные меры контроля по защите информации, собранной в Интернете. Наших сотрудников обучают понимать и выполнять эти меры контроля, они ознакомлены с нашим Уведомлением о конфиденциальности, нормами и инструкциями. Тем не менее, несмотря на то, что мы стремимся обезопасить Вашу личную информацию, Вы тоже должны принимать меры, чтобы защитить ее. Мы настоятельно рекомендуем Вам принимать все возможные меры предосторожности во время пребывания в Интернете. Организованные нами услуги и веб-сайты предусматривают меры по защите от утечки, несанкционированного использования и изменения информации, которую мы контролируем. Несмотря на то, что мы делаем все возможное, чтобы обеспечить целостность и безопасность своей сети и систем, мы не можем гарантировать, что наши меры безопасности предотвратят незаконный доступ к этой информации хакеров сторонних организаций. В случае изменения данной политики конфиденциальности вы сможете прочитать об этих изменениях на этой странице или, в особых случаях, получить уведомление на свой e-mail. <br> 
-           Для связи с администратором сайта по любым вопросам вы можете написать письмо на e-mail: ikrevolution@yandex.ru</p>
-       </div>
-       <div class="seo-text">
-           <p>Для Вас мы разработаем лендинг пейдж под ключ по нашей концепции, что удерживает конверсию от 14%</p>
-           <p>Мы дадим вам рекомендации по запуску рекламы в соц. сетях, чтобы ваш лендинг приносил заявки и деньги!</p>
-       </div>
-   </div>
+	<div class="wrapper">
+		<ul class="footer__list">
+			<li class="footer__item"><a class="footer__link contact__link popup-gmaps" href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2541.4634865371995!2d30.54233831573071!3d50.43246697947283!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cf0972408a61%3A0x7d817c74d6a982d8!2z0LLRg9C70LjRhtGPINCc0L7RgdC60L7QstGB0YzQutCwLCA0Ni8yLCDQmtC40ZfQsg!5e0!3m2!1sru!2sua!4v1505577283891">Екатеринбург, ул. Антона Валека, 15</a></li>
+			<li class="footer__item"><a class="footer__link" href="tel:+79221285221">+7(922)128-52-21</a></li>
+			<li class="footer__item"><a class="footer__link politics__link" href="#politics"> Политика конфиденциальности</a></li>
+		</ul>
+		<div id="politics" class="white-popup mfp-hide">
+			<p>Тут будет политика конфеденциальности. А могла быть Ваша реклама</p>
+		</div>
+		<div class="seo-text">
+			<p>Для Вас мы разработаем лендинг пейдж под ключ по нашей концепции, что удерживает конверсию от 14%</p>
+			<p>Мы дадим вам рекомендации по запуску рекламы в соц. сетях, чтобы ваш лендинг приносил заявки и деньги!</p>
+		</div>
+	</div>
 </footer>
 
-
 <script src="js/script.min.js"></script> 
-<script src="https://www.youtube.com/player_api"></script>
 <script src="js/script.js"></script> 
-
-
 
 </body>
 </html>

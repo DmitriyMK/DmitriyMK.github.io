@@ -4209,7 +4209,7 @@ a {
 
 /* ------------	PAGE 2 ------------*/
 .header-order {
-  background: url(../img/background_order.jpg) no-repeat 40% 12%; }
+  background: url(../img/background_order.jpg) no-repeat 50% 12%; }
   .header-order .wrapper {
     display: -webkit-box;
     display: -webkit-flex;
@@ -4220,7 +4220,7 @@ a {
         -ms-flex-pack: justify;
             justify-content: space-between; }
   .header-order .header__text-order {
-    padding-top: 150px;
+    padding-top: 125px;
     margin-bottom: 20px;
     color: #333;
     font-size: 1.875rem;
@@ -4235,6 +4235,7 @@ a {
       width: auto;
       height: auto; }
   .header-order .registration {
+    margin-left: 15px;
     padding-top: 10px;
     padding-bottom: 40px;
     display: -webkit-box;
@@ -4421,7 +4422,8 @@ a {
     -webkit-flex-basis: 200px;
         -ms-flex-preferred-size: 200px;
             flex-basis: 200px;
-    margin: 25px 0; }
+    margin: 25px 0;
+    margin: 25px auto; }
   .partners__img {
     display: block;
     max-width: 100%;
@@ -4576,7 +4578,10 @@ a {
   text-align: left;
   font-size: 1.125rem;
   color: #333;
-  text-decoration: line-through; }
+  text-decoration: line-through;
+  -webkit-align-self: center;
+      -ms-flex-item-align: center;
+          align-self: center; }
 
 .form .form__select {
   padding: 15px 3%;

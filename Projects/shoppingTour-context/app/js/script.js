@@ -188,7 +188,7 @@ jQuery('.tipso').tipso({
 	background: '#de3ebe',
 	color: '#fff',
 	width: '300px',
-	position: "left",
+	position: "bottom",
 });
 
 
@@ -328,7 +328,7 @@ $(function() {
 });
 
 /*MENU SCROLLING*/
-$('a[href^="#"], *[data-href^="#"]').on('click', function(e) {
+$('.header__link').on('click', function(e) {
 	e.preventDefault();
 	var t = 1000;
 	var d = $(this).attr('data-href') ? $(this).attr('data-href') : $(this).attr('href');
@@ -337,6 +337,7 @@ $('a[href^="#"], *[data-href^="#"]').on('click', function(e) {
 	}, t);
 });
 
+/*LOAD MORE*/
 $(function() {
 	$(".partners__item").slice(0, 6).show();
 	$("#loadMore").on('click', function(e) {
@@ -350,7 +351,7 @@ $(function() {
 		}, 1500);
 		if ($("partners__item:last").css('display') == 'block') {
 			$('#loadMore').hide();
-			/*			$('.totop').show()*/
+/*			$('.totop').show()*/
 		}
 	});
 });
@@ -384,16 +385,6 @@ $('.owl-next').click(function() {
 $('.owl-prev').click(function() {
 	owl.trigger('prev.owl.carousel');
 });
-
-//E-mail Ajax Send
-/*$("form.callback").submit(function() {
-	var th = $(this);
-	$.ajax({
-		type: "POST",
-		url: "../js/mail.php",
-		data: th.serialize()
-	});
-});*/
 
 
 /*PRELOADER*/
