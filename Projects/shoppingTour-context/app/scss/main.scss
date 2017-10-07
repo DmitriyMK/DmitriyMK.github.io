@@ -511,6 +511,10 @@ a {
 		}
 		.list__wrap {
 			display: flex;
+			position: relative;
+		}
+		.list__item {
+			width: 100%;
 		}
 		.press {
 			margin-right: 15px; 
@@ -535,7 +539,27 @@ a {
 			display: block;
 			max-width: 100%;
 			max-height: 100%;
-			height: auto;
+			margin: 0 auto;
+		}
+		.press__controls {
+			display: none;
+			i {
+				position: absolute;	
+				display: block;
+				top: 50%;
+				z-index: 100;
+				color: #000;
+				font-size: rem(56);
+				&:hover {
+					cursor: pointer;
+				}
+			}
+			.owl-prev i {	
+				left: 0;
+			}
+			.owl-next i {
+				right: 0;
+			}
 		}
 	}
 	.media__box-tv {

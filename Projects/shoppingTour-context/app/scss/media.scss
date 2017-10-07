@@ -472,6 +472,9 @@
 			.box__title {
 				font-size: rem(28);
 			}
+			.box__description {
+				width: 80%;
+			}
 		}
 		.media__box-press {
 			.box__title {
@@ -482,6 +485,26 @@
 			}
 			.list__item {
 				margin-bottom: 25px;
+			}
+			.press__controls {
+				display: inherit;
+				i {
+					position: absolute;	
+					display: block;
+					top: 50%;
+					z-index: 100;
+					color: #333;
+					font-size: rem(56);
+					&:hover {
+						cursor: pointer;
+					}
+				}
+				.owl-prev i {	
+					left: 0;
+				}
+				.owl-next i {
+					right: 0;
+				}
 			}
 		}
 		.media__box-tv {

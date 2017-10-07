@@ -459,6 +459,8 @@
     font-size: 1.75rem; }
   .media .media__box-person .box__title {
     font-size: 1.75rem; }
+  .media .media__box-person .box__description {
+    width: 80%; }
   .media .media__box-press .box__title {
     font-size: 1.75rem; }
   .media .media__box-press .list__wrap {
@@ -467,6 +469,21 @@
             flex-wrap: wrap; }
   .media .media__box-press .list__item {
     margin-bottom: 25px; }
+  .media .media__box-press .press__controls {
+    display: inherit; }
+    .media .media__box-press .press__controls i {
+      position: absolute;
+      display: block;
+      top: 50%;
+      z-index: 100;
+      color: #333;
+      font-size: 3.5rem; }
+      .media .media__box-press .press__controls i:hover {
+        cursor: pointer; }
+    .media .media__box-press .press__controls .owl-prev i {
+      left: 0; }
+    .media .media__box-press .press__controls .owl-next i {
+      right: 0; }
   .media .media__box-tv {
     padding-top: 40px;
     margin-left: 0; }

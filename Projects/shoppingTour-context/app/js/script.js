@@ -29,9 +29,9 @@ $(document).ready(function() {
 		type: 'iframe',
 		iframe: {
 			markup: '<div class="mfp-iframe-scaler">' +
-				'<div class="mfp-close"></div>' +
-				'<iframe class="mfp-iframe" frameborder="0" allowfullscreen></iframe>' +
-				'</div>',
+			'<div class="mfp-close"></div>' +
+			'<iframe class="mfp-iframe" frameborder="0" allowfullscreen></iframe>' +
+			'</div>',
 			patterns: {
 				youtube: {
 					index: 'youtube.com/',
@@ -50,9 +50,9 @@ $(document).ready(function() {
 		type: 'iframe',
 		iframe: {
 			markup: '<div class="mfp-iframe-scaler">' +
-				'<div class="mfp-close"></div>' +
-				'<iframe class="mfp-iframe" frameborder="0" allowfullscreen></iframe>' +
-				'</div>',
+			'<div class="mfp-close"></div>' +
+			'<iframe class="mfp-iframe" frameborder="0" allowfullscreen></iframe>' +
+			'</div>',
 			patterns: {
 				youtube: {
 					index: 'youtube.com/',
@@ -71,9 +71,9 @@ $(document).ready(function() {
 		type: 'iframe',
 		iframe: {
 			markup: '<div class="mfp-iframe-scaler">' +
-				'<div class="mfp-close"></div>' +
-				'<iframe class="mfp-iframe" frameborder="0" allowfullscreen></iframe>' +
-				'</div>',
+			'<div class="mfp-close"></div>' +
+			'<iframe class="mfp-iframe" frameborder="0" allowfullscreen></iframe>' +
+			'</div>',
 			patterns: {
 				youtube: {
 					index: 'youtube.com/',
@@ -92,9 +92,9 @@ $(document).ready(function() {
 		type: 'iframe',
 		iframe: {
 			markup: '<div class="mfp-iframe-scaler">' +
-				'<div class="mfp-close"></div>' +
-				'<iframe class="mfp-iframe" frameborder="0" allowfullscreen></iframe>' +
-				'</div>',
+			'<div class="mfp-close"></div>' +
+			'<iframe class="mfp-iframe" frameborder="0" allowfullscreen></iframe>' +
+			'</div>',
 			patterns: {
 				youtube: {
 					index: 'youtube.com/',
@@ -113,9 +113,9 @@ $(document).ready(function() {
 		type: 'iframe',
 		iframe: {
 			markup: '<div class="mfp-iframe-scaler">' +
-				'<div class="mfp-close"></div>' +
-				'<iframe class="mfp-iframe" frameborder="0" allowfullscreen></iframe>' +
-				'</div>',
+			'<div class="mfp-close"></div>' +
+			'<iframe class="mfp-iframe" frameborder="0" allowfullscreen></iframe>' +
+			'</div>',
 			patterns: {
 				youtube: {
 					index: 'youtube.com/',
@@ -134,9 +134,9 @@ $(document).ready(function() {
 		type: 'iframe',
 		iframe: {
 			markup: '<div class="mfp-iframe-scaler">' +
-				'<div class="mfp-close"></div>' +
-				'<iframe class="mfp-iframe" frameborder="0" allowfullscreen></iframe>' +
-				'</div>',
+			'<div class="mfp-close"></div>' +
+			'<iframe class="mfp-iframe" frameborder="0" allowfullscreen></iframe>' +
+			'</div>',
 			patterns: {
 				youtube: {
 					index: 'youtube.com/',
@@ -270,7 +270,7 @@ function onPlayerStateChange(e) {
 function vidRescale() {
 	console.log('video reloaded');
 	var w = $(window).width() + videoWidthAdd,
-		h = $(window).height() + videoHeightAdd;
+	h = $(window).height() + videoHeightAdd;
 	if (w / h > 16 / 9) {
 		player.setSize(w, w / 16 * 9);
 		$('.tv .screen').css({
@@ -328,14 +328,14 @@ $(function() {
 });
 
 /*MENU SCROLLING*/
-	$('a[href^="#"], *[data-href^="#"]').on('click', function(e) {
-		e.preventDefault();
-		var t = 1000;
-		var d = $(this).attr('data-href') ? $(this).attr('data-href') : $(this).attr('href');
-		$('html,body').stop().animate({
-			scrollTop: $(d).offset().top
-		}, t);
-	});
+$('a[href^="#"], *[data-href^="#"]').on('click', function(e) {
+	e.preventDefault();
+	var t = 1000;
+	var d = $(this).attr('data-href') ? $(this).attr('data-href') : $(this).attr('href');
+	$('html,body').stop().animate({
+		scrollTop: $(d).offset().top
+	}, t);
+});
 
 $(function() {
 	$(".partners__item").slice(0, 6).show();
@@ -356,15 +356,44 @@ $(function() {
 });
 
 
+/*CAROUSEL*/
+$(".owl-carousel").owlCarousel({
+	loop: true,
+	items: 2,
+	smartSpeed: 400,
+	margin: 10,
+	responsive:{
+        320:{
+            items:1,
+            center: true,
+        },
+        481:{
+            items:2,
+        },
+    }
+});
+
+/*CAROUSEL #1 PRESS*/
+var owl = $('.owl-carousel');
+owl.owlCarousel();
+
+$('.owl-next').click(function() {
+	owl.trigger('next.owl.carousel');
+})
+
+$('.owl-prev').click(function() {
+	owl.trigger('prev.owl.carousel');
+});
+
 //E-mail Ajax Send
-	$("form.callback").submit(function() {
-		var th = $(this);
-		$.ajax({
-			type: "POST",
-			url: "../js/mail.php",
-			data: th.serialize()
-		});
+/*$("form.callback").submit(function() {
+	var th = $(this);
+	$.ajax({
+		type: "POST",
+		url: "../js/mail.php",
+		data: th.serialize()
 	});
+});*/
 
 
 /*PRELOADER*/
