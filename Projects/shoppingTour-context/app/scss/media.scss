@@ -548,6 +548,17 @@
 			}
 		}
 	}
+	.bonus__thank {
+		display: flex;
+		justify-content: center;
+		.bonus__list {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			padding: 10% 0;
+			border: none;
+		}
+	}
 
 }
 
@@ -769,6 +780,7 @@
 		}
 	}
 	.header-order {
+		background: none;
 		.wrapper {
 			justify-content: center;
 		}
@@ -859,11 +871,14 @@
 			}
 		}
 	}
-
-}
-
-
-/* Custom, iPhone Retina */
-@media only screen and (max-width: 320px)  {
-
+	.header-thank {
+		.invite__title {
+			padding: 35px 0;
+			font-size: rem(30);
+		}
+		height: 180px;
+		&:before {
+			height: 180px;
+		}
+	}
 }

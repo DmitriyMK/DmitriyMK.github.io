@@ -536,7 +536,30 @@
     margin: 15px auto;
     margin-bottom: 0; }
   .form .form__email p {
-    font-size: 1.5rem; } }
+    font-size: 1.5rem; }
+  .bonus__thank {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    .bonus__thank .bonus__list {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-flex-wrap: wrap;
+          -ms-flex-wrap: wrap;
+              flex-wrap: wrap;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      padding: 10% 0;
+      border: none; } }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
@@ -692,27 +715,29 @@
       padding-right: 0; }
   .footer__item {
     line-height: 20px; }
-  .header-order .wrapper {
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-        -ms-flex-pack: center;
-            justify-content: center; }
-  .header-order .header__text-order {
-    padding-top: 80px;
-    margin-bottom: 20px;
-    text-align: center; }
-  .header-order .registration {
-    width: 100%; }
-    .header-order .registration img {
-      width: 80px; }
-    .header-order .registration__text {
+  .header-order {
+    background: none; }
+    .header-order .wrapper {
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center; }
+    .header-order .header__text-order {
+      padding-top: 80px;
+      margin-bottom: 20px;
       text-align: center; }
-    .header-order .registration .form-line {
-      text-align: center;
-      padding: 8px 0;
-      width: 300px; }
-    .header-order .registration .form-button {
-      width: 300px; }
+    .header-order .registration {
+      width: 100%; }
+      .header-order .registration img {
+        width: 80px; }
+      .header-order .registration__text {
+        text-align: center; }
+      .header-order .registration .form-line {
+        text-align: center;
+        padding: 8px 0;
+        width: 300px; }
+      .header-order .registration .form-button {
+        width: 300px; }
   .details__title {
     padding: 40px 0;
     font-size: 1.375rem; }
@@ -754,6 +779,11 @@
   .form .form__email .form-button {
     width: 95%; }
   .form .form__email p {
-    font-size: 1.375rem; } }
-
-/* Custom, iPhone Retina */
+    font-size: 1.375rem; }
+  .header-thank {
+    height: 180px; }
+    .header-thank .invite__title {
+      padding: 35px 0;
+      font-size: 1.875rem; }
+    .header-thank:before {
+      height: 180px; } }
