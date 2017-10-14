@@ -60,9 +60,20 @@ $('.popup-gallery').magnificPopup({
 	}
 });
 
+$('.grid').masonry({
+	temSelector: '.grid-item',
+	percentPosition: true,
+	columnWidth: '.grid-sizer',
+});
 
 
 /*PRELOADER*/
 $(window).load(function() {
 	$('#preloader').delay(100).fadeOut('slow');
+
+	$('.grid').masonry({
+		itemSelector: '.grid-item',
+		percentPosition: true,
+		columnWidth: '.grid-sizer',
+	});
 });

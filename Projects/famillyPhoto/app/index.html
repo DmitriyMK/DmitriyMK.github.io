@@ -11,6 +11,7 @@
 	
 	<link href="http://vjs.zencdn.net/6.2.8/video-js.css" rel="stylesheet">
 	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/media.css">
 
 
 </head>
@@ -95,12 +96,12 @@
 							</video>
 						</div>
 						<!-- popup video from link -->
-						<div id="video3" class="mfp-hide mfp-close-btn-in video-popup">
+						<div id="video4" class="mfp-hide mfp-close-btn-in video-popup">
 							<video class="video-js" controls preload="auto" data-setup="{}"><source src="video/MainVideo.mp4" type='video/mp4'><p class="vjs-no-js"><a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a></p>
 							</video>
 						</div>
 						<!-- popup video from link -->
-						<div id="video3" class="mfp-hide mfp-close-btn-in video-popup">
+						<div id="video5" class="mfp-hide mfp-close-btn-in video-popup">
 							<video class="video-js" controls preload="auto" data-setup="{}"><source src="video/MainVideo.mp4" type='video/mp4'><p class="vjs-no-js"><a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a></p>
 							</video>
 						</div>
@@ -189,7 +190,7 @@
 							</a>
 						</li>
 						<li>
-							<a class="video__link" href="#video16">
+							<a class="video__link last__link" href="#video16">
 								<img class="responsive" src="img/smallPhoto2.jpg" alt="">
 								<div class="overlay__small">
 									<i class="overlay__icon__small icon-play-2"></i>
@@ -197,7 +198,7 @@
 							</a>
 						</li>
 						<li>
-							<a class="video__link" href="#video17">
+							<a class="video__link last__link" href="#video17">
 								<img class="responsive" src="img/smallPhoto3.jpg" alt="">
 								<div class="overlay__small">
 									<i class="overlay__icon__small icon-play-2"></i>
@@ -260,28 +261,61 @@
 
 		<div class="photoBox">
 			<div class="wrapper">
-				<div class="photoBox__carousel owl-carousel popup-gallery photoBox__carousel">
-					<ul>
-						<li class="owl-item item1"><a href="img/sliderPhoto1.jpg"><img class="lazy" src="img/sliderPhoto1.jpg" alt=""></a></li>
-						<li class="owl-item item2"><a href="img/sliderPhoto2.jpg"><img class="lazy" src="img/sliderPhoto2.jpg" alt=""></a></li>
-						<li class="owl-item item3"><a href="img/sliderPhoto3.jpg"><img class="lazy" src="img/sliderPhoto3.jpg" alt=""></a></li>
-						<li class="owl-item item4"><a href="img/sliderPhoto4.jpg"><img class="lazy" src="img/sliderPhoto4.jpg" alt=""></a></li>
-					</ul>
-					<ul>
-						<li class="owl-item item1"><a href="img/sliderPhoto1.jpg"><img class="lazy" src="img/sliderPhoto1.jpg" alt=""></a></li>
-						<li class="owl-item item2"><a href="img/sliderPhoto2.jpg"><img class="lazy" src="img/sliderPhoto2.jpg" alt=""></a></li>
-						<li class="owl-item item3"><a href="img/sliderPhoto3.jpg"><img class="lazy" src="img/sliderPhoto3.jpg" alt=""></a></li>
-						<li class="owl-item item4"><a href="img/sliderPhoto4.jpg"><img class="lazy" src="img/sliderPhoto4.jpg" alt=""></a></li>
-					</ul>
+				<div class="photoBox__carousel owl-carousel  gallery">
+					<div class="owl-item grid popup-gallery">
+						<div class="grid-sizer"></div> 
+						<figure class="grid-item grid-item1">
+							<a href="img/sliderPhoto1.jpg"><img class="lazy" src="img/sliderPhoto1.jpg" alt=""></a>
+						</figure>
+						<figure class="grid-item grid-item2">
+							<a href="img/sliderPhoto2.jpg"><img class="lazy" src="img/sliderPhoto2.jpg" alt=""></a>
+						</figure>
+						<figure class="grid-item grid-item3">
+							<a href="img/sliderPhoto3.jpg"><img class="lazy" src="img/sliderPhoto3.jpg" alt=""></a>
+						</figure>
+						<figure class="grid-item owl-item grid-item4">
+							<a href="img/sliderPhoto4.jpg"><img class="lazy" src="img/sliderPhoto4.jpg" alt=""></a>
+						</figure>
+					</div>
+					<div class="owl-item grid popup-gallery">
+						<div class="grid-sizer"></div> 
+						<figure class="grid-item grid-item1">
+							<a href="img/sliderPhoto1.jpg"><img class="lazy" src="img/sliderPhoto1.jpg" alt=""></a>
+						</figure>
+						<figure class="grid-item grid-item2">
+							<a href="img/sliderPhoto2.jpg"><img class="lazy" src="img/sliderPhoto2.jpg" alt=""></a>
+						</figure>
+						<figure class="grid-item grid-item3">
+							<a href="img/sliderPhoto3.jpg"><img class="lazy" src="img/sliderPhoto3.jpg" alt=""></a>
+						</figure>
+						<figure class="grid-item owl-item grid-item4">
+							<a href="img/sliderPhoto4.jpg"><img class="lazy" src="img/sliderPhoto4.jpg" alt=""></a>
+						</figure>
+					</div>
+					<div class="owl-item grid popup-gallery">
+						<div class="grid-sizer"></div> 
+						<figure class="grid-item grid-item1">
+							<a href="img/sliderPhoto1.jpg"><img class="lazy" src="img/sliderPhoto1.jpg" alt=""></a>
+						</figure>
+						<figure class="grid-item grid-item2">
+							<a href="img/sliderPhoto2.jpg"><img class="lazy" src="img/sliderPhoto2.jpg" alt=""></a>
+						</figure>
+						<figure class="grid-item grid-item3">
+							<a href="img/sliderPhoto3.jpg"><img class="lazy" src="img/sliderPhoto3.jpg" alt=""></a>
+						</figure>
+						<figure class="grid-item owl-item grid-item4">
+							<a href="img/sliderPhoto4.jpg"><img class="lazy" src="img/sliderPhoto4.jpg" alt=""></a>
+						</figure>
+					</div>
 				</div>
 
 				<div class="owl-controls photoBox__controls">
 					<div class="owl-nav">
 						<div class="owl-prev">
-							<i class="icon-left"></i>
+							<a><span>предыдущие</span></a>
 						</div>
 						<div class="owl-next">
-							<i class="icon-right"></i>
+							<a><span>следующие</span></a>
 						</div>
 					</div>
 				</div>

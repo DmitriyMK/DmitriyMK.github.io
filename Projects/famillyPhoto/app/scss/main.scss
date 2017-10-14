@@ -5,15 +5,11 @@
 @import "_magnific-popup";
 @import "_carousel";
 
-html,body,{
-	overflow: auto !important;
-} 
-
 body {
 	min-width: 320px;
 	position: relative;
-	font-family: $fontFamily;
 	font-size: $fontSize;
+	font-family: $fontFamily;
 	overflow-x: hidden;
 	box-sizing: border-box;
 }
@@ -22,6 +18,9 @@ ul {
 }
 a {
 	color: inherit;
+}
+video {
+	position: relative;
 }
 
 .wrapper {
@@ -45,7 +44,7 @@ a {
 	left: 0;
 	right: 0;
 	width: 100%;
-	height: 468px;
+	height: 100%;
 	opacity: 0.6;
 	background: rgba(0,0,0,.2);
 	@include transition(all .3s ease);
@@ -96,10 +95,9 @@ a {
 	}
 	&__text {
 		padding-top: 230px;
-		letter-spacing: 4px;
 		font-size: rem(50);
 		line-height: 65px;
-		font-weight: 700;
+		font-family: "RobotoSlabBold";
 		color: #fff;
 	}
 	.icon-play-2 {
@@ -144,13 +142,23 @@ a {
 .videoBox {
 	padding-top: 84px;
 	padding-left: 30px;
-	background: #212121;
+	background: #212121; 
 	color: #fff;
+	position: relative;
+	&:before {
+		position: absolute;
+		content: '';
+		height: 100%;
+		width: 100%;
+		top: 0;
+		left: 0;
+		background: url(../img/background.png);
+		background-size: cover;
+	}
 	&__title {
 		font-size: rem(27);
 		line-height: 36px;
-		letter-spacing: 3px;
-		font-weight: 700;
+		font-family: "RobotoSlabBold";
 	}
 	.date {
 		padding: 10px 0 30px 0;
@@ -161,7 +169,8 @@ a {
 	justify-content: space-between;
 	.bigVideo {
 		position: relative;
-		width: 60%;
+		width: 65%;
+		height: 100%;
 		.video__link {
 			.overlay__icon {
 				font-size: 5rem;
@@ -174,14 +183,14 @@ a {
 		}
 	}
 	.smallVideo {
-		width: 34%;
+		width: auto;
 		padding-left: 15px;
 		position: relative;
 		&__subtitle {
 			padding-top: 140px;
 			padding-bottom: 30px;
 			padding-left: 15px;
-			font-weight: 700;
+			font-family: "RobotoSlabBold";
 			font-size: rem(18);
 			line-height: 29px;
 		}
@@ -192,8 +201,9 @@ a {
 		}
 		li {
 			position: relative;
-			padding-bottom: 30px;
+			padding-bottom: 0;
 			margin-left: 15px;
+			height: auto;
 			&:hover {
 				.overlay__small {
 					opacity: .2;
@@ -206,12 +216,13 @@ a {
 			bottom: 0;
 			left: 0;
 			right: 0;
-			width: 165px;
-			height: 110px;
+			width: 100%;
+			height: 100%;
 			opacity: 0.6;
 			background: rgba(0,0,0,.2);
 			@include transition(all .3s ease);
 			z-index: 10;
+
 		}
 		.overlay__icon__small {
 			position: absolute;
@@ -223,7 +234,6 @@ a {
 		}
 	}
 }
-
 .centralVideo {
 	padding-top: 30px;
 	position: relative;
@@ -233,9 +243,12 @@ a {
 		justify-content: space-between;
 	}
 	li {
+		display: inline-block;
 		position: relative;
-		padding-bottom: 30px;
+		padding-bottom: 0;
 		margin-left: 15px;
+		margin-bottom: 15px;
+		overflow: hidden;
 		&:hover {
 			.overlay__small {
 				opacity: .2;
@@ -248,12 +261,13 @@ a {
 		bottom: 0;
 		left: 0;
 		right: 0;
-		width: 165px;
-		height: 110px;
+		width: 100%;
+		height: 100%;
 		opacity: 0.6;
 		background: rgba(0,0,0,.2);
 		@include transition(all .3s ease);
 		z-index: 10;
+		overflow: hidden;
 	}
 	.overlay__icon__small {
 		position: absolute;
@@ -264,63 +278,86 @@ a {
 		font-size: 2rem;
 	}
 }
-
 .photoBox {
+	position: relative;
 	padding: 80px 0;
-	&__carousel {
-		position: relative;
-		margin: auto;
-		ul {
-			display: flex-inline;
-			flex-wrap: wrap;
-			justify-content: space-between;
-		}
-		li {
-			margin: 20px;
-		}
-		.item1 {
-			padding-top: 20px;
-			flex-basis: 360px;
-		}
-		.item2 {
-			flex-basis: 300px;
-		}
-		.item3 {
-			padding-top: 20px;
-			flex-basis: 260px;
-		}
-		.item4 {
-			padding-left: 30px;
-			flex-basis: 670px;
-		}
+	&:before {
+		position: absolute;
+		content: '';
+		height: 100%;
+		width: 100%;
+		top: 0;
+		left: 0;
+		background: url(../img/background2.png);
+		background-size: cover;
 	}
-	.owl-controls {
-		i {
-			position: absolute;	
-			display: block;
-			bottom: -40px;
-			z-index: 100;
-			color: #000;
-			font-size: rem(36);
-			@include transition (box-shadow .3s ease);
-			&:hover {
-				cursor: pointer;
-			}
-		}
-		.owl-prev i {	
-			left: 10%;
-		}
-		.owl-next i {
-			right: 10%;
-		}
-		span {
-			font-size: rem(25);
-			line-height: 40px;
-			font-weight: 400;
-		}
+	.grid {
+		width: 100%;
+		margin: 0 auto;
+		padding: 50px 0;
+	}
+	.grid-sizer,
+	.grid-item {
+		width: 20%;
+	}
+	.grid-item1{
+		margin-top: 2%;
+		margin-left: 50px;
+		width: 30%;
+	}
+	.grid-item2 {
+		width: 25%;
+		margin-left: 2%;
+	}
+	.grid-item3 {
+		margin-top: 2%;
+		margin-left: -5%;
+	}
+	.grid-item4 {
+		margin-top: 5%;
+		margin-left: 5%;
+		width: 50%;
 	}
 }
-
+.owl-controls {
+	&:hover {
+		cursor: pointer;
+	}
+	.owl-prev {	
+		position: absolute;
+		left: 25%;
+		&:before {
+			content: '';
+			position: absolute;
+			display: block;
+			background: url(../img/prev.png);
+			width: 71px;
+			height: 55px;
+			left: -90px;
+			top: -6px;
+		}
+	}
+	.owl-next {
+		position: absolute;
+		right: 25%;
+		&:before {
+			content: '';
+			position: absolute;
+			display: block;
+			background: url(../img/next.png);
+			width: 71px;
+			height: 55px;
+			right: -90px;
+			top: -6px;
+		}
+	}
+	span {
+		position: relative;
+		font-size: rem(25);
+		line-height: 40px;
+		font-family: "RobotoSlabRegular";
+	}
+}
 
 
 
