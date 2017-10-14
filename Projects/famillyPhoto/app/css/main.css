@@ -1008,18 +1008,18 @@ video {
           justify-content: space-between; }
   .videoContent .bigVideo {
     position: relative;
-    width: 65%;
+    width: 60%;
     height: 100%; }
     .videoContent .bigVideo .video__link .overlay__icon {
       font-size: 5rem; }
     .videoContent .bigVideo .video__link:hover .overlay {
       opacity: .2; }
   .videoContent .smallVideo {
-    width: auto;
+    width: 400px;
     padding-left: 15px;
     position: relative; }
     .videoContent .smallVideo__subtitle {
-      padding-top: 140px;
+      padding-top: 174px;
       padding-bottom: 30px;
       padding-left: 15px;
       font-family: "RobotoSlabBold";
@@ -1041,6 +1041,7 @@ video {
       position: relative;
       padding-bottom: 0;
       margin-left: 15px;
+      margin-bottom: 15px;
       height: auto; }
       .videoContent .smallVideo li:hover .overlay__small {
         opacity: .2; }

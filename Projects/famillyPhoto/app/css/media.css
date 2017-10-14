@@ -20,17 +20,7 @@
     .videoContent .smallVideo__subtitle {
       padding-top: 0; }
   .centralVideo li {
-    margin-left: 0; }
-  .photoBox__carousel li {
-    margin: 10px; }
-  .photoBox__carousel .item1 {
-    max-width: 300px; }
-  .photoBox__carousel .item2 {
-    max-width: 280px; }
-  .photoBox__carousel .item3 {
-    max-width: 200px; }
-  .photoBox__carousel .item4 {
-    max-width: 600px; } }
+    margin-left: 0; } }
 
 @media only screen and (max-width: 992px) {
   .header {

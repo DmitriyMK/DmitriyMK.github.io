@@ -169,7 +169,7 @@ video {
 	justify-content: space-between;
 	.bigVideo {
 		position: relative;
-		width: 65%;
+		width: 60%;
 		height: 100%;
 		.video__link {
 			.overlay__icon {
@@ -183,11 +183,11 @@ video {
 		}
 	}
 	.smallVideo {
-		width: auto;
+		width: 400px;
 		padding-left: 15px;
 		position: relative;
 		&__subtitle {
-			padding-top: 140px;
+			padding-top: 174px;
 			padding-bottom: 30px;
 			padding-left: 15px;
 			font-family: "RobotoSlabBold";
@@ -203,6 +203,7 @@ video {
 			position: relative;
 			padding-bottom: 0;
 			margin-left: 15px;
+			margin-bottom: 15px;
 			height: auto;
 			&:hover {
 				.overlay__small {
