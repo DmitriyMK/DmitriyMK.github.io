@@ -40,7 +40,10 @@
       left: 35%; }
   .counters .counters__content-flat {
     margin-top: 0;
-    padding-top: 0; } }
+    padding-top: 0; }
+  .mfp-close {
+    top: 15px;
+    right: 25px; } }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
@@ -57,8 +60,17 @@
     width: 60%;
     padding-top: 0; }
   .header__text {
+    padding-top: 20%;
     text-align: center;
     width: 100%; }
+  .header__text-slogan {
+    padding-top: 30px;
+    text-align: center;
+    font-size: 2.125rem; }
+  .header__text-slogan2 {
+    font-size: 1.875rem; }
+  .header__text-slogan3 {
+    font-size: 2.125rem; }
   /* BURGER */
   .overlay {
     position: fixed;
@@ -188,7 +200,10 @@
   .remodal {
     padding: 15px; }
     .remodal label {
-      padding: 10px 5px; } }
+      padding: 10px 5px; }
+  .mfp-close {
+    top: 15px;
+    right: 15px; } }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
@@ -260,7 +275,7 @@
       -webkit-border-radius: 0;
               border-radius: 0; }
   .counters .accent {
-    font-size: rem(18); }
+    font-size: 1.125rem; }
   .counters .counters__content-flat {
     font-size: 1rem; }
   .counters svg {
@@ -288,7 +303,10 @@
     font-size: 1.2rem;
     padding: 0; }
   .remodal .size {
-    word-break: break-all; } }
+    word-break: break-all; }
+  .mfp-close {
+    top: 12px;
+    right: 5px; } }
 
 @media only screen and (max-width: 420px) {
   body {
@@ -325,6 +343,8 @@
       margin-top: 20px;
       -webkit-border-radius: 0;
               border-radius: 0; }
+  .counters__col {
+    padding: 0; }
   .partners__img {
     max-width: 140px;
     max-height: 57px; }
@@ -339,4 +359,7 @@
   .remodal td {
     font-size: .78rem; }
   .remodal .size {
-    word-break: break-all; } }
+    word-break: break-all; }
+  .mfp-close {
+    top: 15px;
+    right: 10px; } }
