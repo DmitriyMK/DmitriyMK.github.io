@@ -1,8 +1,6 @@
 @import "_vars";
 @import "_mixin and function";
 
-/* Medium Devices, Desktops */
-
 @media only screen and (max-width : 1024px) {
 
 	.formInfo {
@@ -40,7 +38,6 @@
 			margin: 10px auto;
 		}
 	}
-
 	.media {
 		.media__box {
 			display: flex;
@@ -193,7 +190,6 @@
 			display: inline-block;
 		}
 	}
-
 	.header-order {
 		background: url(../img/background_order.jpg) no-repeat 23% 0%;
 		.wrapper {

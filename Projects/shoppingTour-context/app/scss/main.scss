@@ -1426,9 +1426,8 @@ a {
 .video-wrapper {
 	position: relative;
 	width: 100%;
-	margin: rem-calc(0 0 54.5);
-	min-height: 680px;
-	overflow: hidden;
+	min-height: 720px;
+	overflow-y: hidden;
 }
 .video-overlay {
 	height: 100%;
@@ -1436,6 +1435,8 @@ a {
 	opacity: .8;
 	position: absolute;
 	z-index: 2;
+	min-height: 750px;
+	margin-top: -30px;
 }
 .video-expand {
 	display: none;
