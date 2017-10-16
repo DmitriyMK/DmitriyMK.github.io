@@ -4125,7 +4125,8 @@ section {
     position: relative;
     font-size: 1.125rem;
     font-family: 'PTSansBold';
-    font-weight: 700; }
+    font-weight: 700;
+    text-transform: uppercase; }
     .counters .billing__item:before {
       position: absolute;
       content: '\e81e';
