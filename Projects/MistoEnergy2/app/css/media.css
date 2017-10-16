@@ -2,13 +2,7 @@
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1200px) {
   .counters .counters__items {
-    min-height: 370px; }
-  .counters .counters__content {
-    padding-top: 100%; }
-    .counters .counters__content .counters__text-work:before {
-      width: 30%;
-      bottom: 38%;
-      left: 35%; } }
+    min-height: 370px; } }
 
 @media only screen and (max-width: 991px) {
   .counters .counters__wrapper-flat img {
@@ -34,12 +28,15 @@
     min-height: 370px; }
   .counters .counters__content {
     padding-top: 68%; }
-    .counters .counters__content .counters__text-work:before {
-      width: 30%;
-      bottom: 35%;
-      left: 35%; }
   .counters .counters__content-flat {
     margin-top: 0;
+    padding-top: 0; }
+  .partners {
+    padding-top: 0;
+    padding-bottom: 0; }
+    .partners__title {
+      padding-bottom: 1px; }
+  .contact {
     padding-top: 0; }
   .mfp-close {
     top: 15px;
@@ -83,7 +80,7 @@
     height: 100vh;
     top: 0;
     right: -302px;
-    background: rgba(52, 168, 128, 0.6);
+    background: rgba(52, 168, 128, 0.9);
     z-index: 10; }
   .navigation__list {
     display: block !important;
@@ -198,10 +195,6 @@
     width: 45%; }
   .counters .counters__content {
     padding-top: 250px; }
-    .counters .counters__content .counters__text-work:before {
-      width: 30%;
-      bottom: 35%;
-      left: 35%; }
   .remodal {
     padding: 15px; }
     .remodal label {

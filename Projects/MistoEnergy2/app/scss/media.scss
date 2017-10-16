@@ -11,16 +11,7 @@
 		.counters__items {
 			min-height: 370px;
 		}
-		.counters__content {
-			padding-top: 100%;
-			.counters__text-work {
-				&:before {
-					width: 30%;
-					bottom: 38%;
-					left: 35%;
-				}
-			}
-		}
+
 	}
 
 
@@ -76,18 +67,21 @@
 		}
 		.counters__content {
 			padding-top: 68%;
-			.counters__text-work {
-				&:before {
-					width: 30%;
-					bottom: 35%;
-					left: 35%;
-				}
-			}
 		}
 		.counters__content-flat {
 			margin-top: 0;
 			padding-top: 0;
 		}
+	}
+	.partners {
+		padding-top: 0;
+		padding-bottom: 0;
+		&__title {
+			padding-bottom: 1px;
+		}
+	}
+	.contact {
+		padding-top: 0;
 	}
 	.mfp-close {
 		top: 15px;
@@ -148,7 +142,7 @@ and (max-device-width : 1024px)  {
 		height: 100vh;
 		top: 0;
 		right: -302px;
-		background: rgba(52, 168, 128, .6);
+		background: rgba(52, 168, 128, .9);
 		z-index: 10;
 	}
 	.navigation {
@@ -259,13 +253,6 @@ and (max-device-width : 1024px)  {
 		}
 		.counters__content {
 			padding-top: 250px;
-			.counters__text-work {
-				&:before {
-					width: 30%;
-					bottom: 35%;
-					left: 35%;
-				}
-			}
 		}
 	}
 

@@ -27,7 +27,7 @@ $(document).ready(function() {
 	});
 
 	/*MENU SCROLLING*/
-	$('.navigation__link[href^="#"], *[data-href^="#"]').on('click', function(e) {
+	$('.navigation__link[href^="#"], .offer__link[href^="#"], *[data-href^="#"]').on('click', function(e) {
 		e.preventDefault();
 		var t = 1000;
 		var d = $(this).attr('data-href') ? $(this).attr('data-href') : $(this).attr('href');
@@ -35,8 +35,10 @@ $(document).ready(function() {
 			scrollTop: $(d).offset().top
 		}, t);
 	});
-
 });
+
+/*ANIMATION LET GO*/
+new WOW().init();
 
 $(window).on('load', function() {
 	$('#preloader').delay(100).fadeOut('slow');

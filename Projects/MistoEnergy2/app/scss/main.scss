@@ -4,10 +4,7 @@
 @import "_mixin and function";
 @import "_vars";
 @import "_magnific-popup";
-
-html,body,{
-	overflow: auto !important;
-} 
+@import "_animate.min";
 
 body {
 	min-width: 320px;
@@ -253,6 +250,7 @@ section {
 		font-size: rem(20);
 		font-weight: 700;
 		text-transform: uppercase;
+		color: #666;
 		@include transition(all .3s ease); 
 		&:before {
 			font-family: 'fontello';
@@ -262,7 +260,7 @@ section {
 			font-size: rem(20);
 		}
 		&:hover {
-			color: $orange;
+			color: $green;
 		}
 	}
 	&__text {
@@ -416,6 +414,8 @@ section {
 				color: #fff;
 				&:before {
 					background: #fff;
+					bottom: 30px;
+					@include transition(all 0.3s ease);
 				}
 			}
 		} 
@@ -425,27 +425,28 @@ section {
 			line-height: 24px;
 			letter-spacing: 3px;
 			color: #666;
+		}
+		.accent-flat {
+			position: relative;
+			color: #666;
+			font-size: rem(24);
+			line-height: 30px;	
 			&:before {
 				display: inline-block;
 				position: absolute;
 				content: "";
 				height: 2px;
 				width: 30%;
-				bottom: 40%;
+				bottom: 0;
 				left: 35%;
 				background: #666;
-			}
-		}
-		.accent-flat {
-			color: #666;
-			font-size: rem(24);
-			line-height: 30px;		
+			}	
 		}
 	}
 	svg {
 		display: inline-block;
-		width: 6rem;
-		height: 6rem;
+		width: 4rem;
+		height: 4rem;
 		stroke-width: 0;
 		fill: $green;
 	}
@@ -456,6 +457,7 @@ section {
 			margin: 0 auto;
 			max-width: 100%;
 			height: auto;
+			padding-bottom: 100px;
 		}
 	}
 	.counters__content-flat {
@@ -498,9 +500,6 @@ section {
 	.billing__list {
 		text-align: left;
 		list-style-type: none;
-	}
-	.billing__title {
-		text-align: left;
 	}
 	.billing__item {
 		padding-left: 32px;
