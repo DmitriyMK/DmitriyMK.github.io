@@ -790,6 +790,18 @@ button {
   content: '\e821'; }
 
 /* '' */
+.icon-phone:before {
+  content: '\e822'; }
+
+/* '' */
+.icon-phone-1:before {
+  content: '\e823'; }
+
+/* '' */
+.icon-mobile-2:before {
+  content: '\e824'; }
+
+/* '' */
 .icon-down-open-1:before {
   content: '\f004'; }
 

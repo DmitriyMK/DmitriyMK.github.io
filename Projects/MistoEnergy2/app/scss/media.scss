@@ -95,6 +95,14 @@
 	}
 }  
 
+/* ipad styles */
+@media only screen and (min-device-width : 768px) 
+and (max-device-width : 1024px)  { 
+	.header {
+		height: 700px;
+	}
+}
+
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
 	
@@ -429,7 +437,9 @@
 		font-size: 1.2rem;
 		letter-spacing: 0;
 	}
-
+	.header {
+		min-height: 650px;
+	}
 	.header__text {
 		font-size: 1.6rem;
 	}
