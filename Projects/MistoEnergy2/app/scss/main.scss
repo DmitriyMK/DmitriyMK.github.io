@@ -497,6 +497,9 @@ section {
 		background: $green;
 		color: #fff;
 	}
+	.billing__title {
+		font-size: rem(20);
+	}
 	.billing__list {
 		text-align: left;
 		list-style-type: none;
@@ -785,9 +788,10 @@ section {
  	right: 250px;
  	color: $orange!important;
  }
-
-
-
-
-
+ .specialFonts {
+ 	font-family: 'PTSansRegular';
+ }
+ .specialFonts__title {
+ 	font-family: 'PTSansBold';
+ }
  /* @import "media.scss"; */ 
