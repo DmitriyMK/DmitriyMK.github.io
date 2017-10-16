@@ -23,13 +23,11 @@
     margin-left: 0; } }
 
 @media only screen and (max-width: 992px) {
-  .header {
-    min-height: 600px; }
-    .header__text {
-      font-size: 2.875rem;
-      line-height: 50px; }
-    .header .icon-play-2 {
-      bottom: -50%; }
+  .header__text {
+    font-size: 2.875rem;
+    line-height: 50px; }
+  .header .header__link {
+    bottom: -100%; }
   .video-popup {
     max-width: 680px; }
   .video-js {
@@ -115,12 +113,11 @@
   .header {
     background-position: 60% 10% !important; }
     .header__text {
-      padding-top: 290px;
+      padding-top: 310px;
       font-size: 1.875rem;
       line-height: 36px; }
-    .header .icon-play-2 {
-      bottom: -20%;
-      font-size: 2.5em; }
+    .header .header__link {
+      bottom: -60%; }
   .video-popup {
     max-width: 400px; }
   .videoContent .smallVideo__subtitle {
