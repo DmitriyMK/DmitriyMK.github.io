@@ -11,7 +11,7 @@ $(document).ready(function() {
 	});
 
 
-	$(function(){
+	$(function() {
 		var $gallery = $('.gallery a').simpleLightbox();
 
 	});
@@ -23,7 +23,7 @@ $(document).ready(function() {
 
 		callbacks: {
 			beforeOpen: function() {
-				if($(window).width() < 700) {
+				if ($(window).width() < 700) {
 					this.st.focus = false;
 				} else {
 					this.st.focus = '#name';
@@ -37,7 +37,11 @@ $(document).ready(function() {
 		preloader: false,
 		focus: '#username',
 	});
-	
+
+	$('.phone-mask').mask('+7 00-000-00-00');
+
+	$('.notSpam, .form-line-num').styler();
+
 });
 
 
