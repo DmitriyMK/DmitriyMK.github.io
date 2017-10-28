@@ -2352,6 +2352,9 @@ a {
     -webkit-box-shadow: 0px 0px 8px 0px #0077ed;
             box-shadow: 0px 0px 8px 0px #0077ed; }
 
+.politics-box p {
+  margin-top: 40px; }
+
 .mfp-close-btn-in .mfp-close {
   color: #6c70e4;
   width: 100%;

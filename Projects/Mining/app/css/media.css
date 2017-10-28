@@ -1,5 +1,24 @@
-/*==========  Desktop First  ==========*/
+@media only screen and (max-width: 1100px) {
+  .product__info {
+    padding-left: 3%; }
+  .product .old__price {
+    padding-left: 5px; }
+  .product__link {
+    padding: 14px 40px; }
+  .product__right .product__info {
+    padding-right: 3%; } }
+
 /* Medium Devices, Desktops */
 /* Small Devices, Tablets */
 /* Extra Small Devices, Phones */
 /* Custom, iPhone Retina */
+/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+/* Portrait and Landscape */
+/* Portrait */
+/* Landscape */
+/* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
+/* Portrait and Landscape */
+/* Portrait */
+/* Landscape */
+/* ----------- iPhone 4 and 4S ----------- */
+/* Landscape */

@@ -493,6 +493,7 @@ a {
 		opacity: .4;
 		font-family: "GothamProLightItalic", sans-serif;
 	}
+	
 }
 
 .white-popup {
@@ -552,7 +553,9 @@ a {
 		box-shadow: 0px 0px 8px 0px rgba(0,119,237,1);
 	}
 }
-
+.politics-box p{
+	margin-top: 40px;
+}
 .mfp-close-btn-in .mfp-close {
 	color: #6c70e4; 
 	width: 100%;
@@ -569,7 +572,7 @@ a {
 .jq-number__spin.plus:before {
 	position: absolute;
 	top: -2px;
-    left: -24px;
+	left: -24px;
 	content: '\e808';
 	font-family: 'Fontello';
 	border: none;
@@ -580,7 +583,7 @@ a {
 .jq-number__spin.minus:after {
 	position: absolute;
 	bottom: -2px;
-    left: -24px;
+	left: -24px;
 	content: '\e807';
 	font-family: 'Fontello';
 	border: none;
