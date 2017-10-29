@@ -62,7 +62,6 @@ a {
 .header {
 	position: relative;
 	width: 100%;
-	height: 100vh;
 	min-height: 720px;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -72,7 +71,6 @@ a {
 		top: 0;
 		left: 0;
 		width: 100%;
-		height: 100vh;
 		min-height: 720px;
 		opacity: 0.93;
 		background-image: linear-gradient(111deg, #122d88, #7f1b64);
@@ -92,8 +90,10 @@ a {
 		}
 		.wrapper {
 			display: flex;
+			flex-wrap: wrap;
 			align-items: center;
 			justify-content: space-between;
+			max-width: 100%;
 		}
 	}
 	.logo {
@@ -128,7 +128,7 @@ a {
 		}
 	}
 	.center__header {
-		padding-top: 10%;
+		padding-top: 13%;
 	}
 	.header__text {
 		padding-bottom: 90px;
@@ -172,23 +172,18 @@ a {
 	&__img-wrap {
 		position: relative;
 		z-index: 1;
-		&:before {
-			content: '';
-			position: absolute;
-			top: -5px;
-			left: 0;
-			width: 190px;
-			height: 190px;
-			box-shadow: 
-			0 0 0 8px #fff,
-			0 0 0 10px #6567a1,
-			0 0 0 18px #fff,
-			0 0 0 20px #e0e1ec;
-			border-radius: 50%;
-			z-index: -1;
-			opacity: 0.93;
-			background-image: linear-gradient(111deg, #122d88, #7f1b64);
-		}
+		margin: auto;
+		width: 190px;
+		height: 190px;
+		box-shadow: 
+		0 0 0 8px #fff,
+		0 0 0 10px #6567a1,
+		0 0 0 18px #fff,
+		0 0 0 20px #e0e1ec;
+		border-radius: 50%;
+		z-index: -1;
+		opacity: 0.93;
+		background-image: linear-gradient(111deg, #122d88, #7f1b64);
 	}
 	&__img {
 		max-width: 250px;
@@ -444,7 +439,6 @@ a {
 		padding-left: 25px;
 	}
 }
-
 .selectVideoCard {
 	.img-wrap-right {
 		&:before {
@@ -453,7 +447,6 @@ a {
 		}
 	}
 }
-
 .footer {
 	position: relative;
 	padding: 40px 0;
@@ -493,7 +486,6 @@ a {
 		opacity: .4;
 		font-family: "GothamProLightItalic", sans-serif;
 	}
-	
 }
 
 .white-popup {
@@ -510,6 +502,10 @@ a {
 		font-size: rem(15);
 		line-height: 18px;
 		color: #1c1c1c;
+	}
+	.form__text2 {
+		padding-top: 10px;
+		text-align: center;
 	}
 	.form-line {
 		padding: 10px 15px;
@@ -553,6 +549,31 @@ a {
 		box-shadow: 0px 0px 8px 0px rgba(0,119,237,1);
 	}
 }
+.success {
+	position: absolute;
+	top: -40%;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	text-transform: uppercase;
+	font-size: 2rem;
+	font-weight: bold;
+	color: #00beca;
+	display: flex;
+	z-index: 10;
+	display: none;
+}
+.success span {
+	margin: auto;
+}
+.success ~ * {
+	transition: all 0.5s ease;
+}
+.success.active ~ * {
+	opacity: 0.5;
+	filter: blur(10px);
+} 
+
 .politics-box p{
 	margin-top: 40px;
 }

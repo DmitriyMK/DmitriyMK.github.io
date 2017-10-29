@@ -42,6 +42,24 @@ $(document).ready(function() {
 
 	$('.notSpam, .form-line-num').styler();
 
+	//E-mail Ajax Send
+	$("form.white-popup").submit(function() {
+		var th = $(this);
+		$.ajax({
+			type: "POST",
+			url: "mail.php",
+			data: th.serialize()
+		}).done(function() {
+			$(th).find('.success').addClass('active').css("display", "flex").hide().fadeIn();
+			setTimeout(function() {
+				$(th).find('.success').removeClass('active').fadeOut();
+				th.trigger("reset");
+			}, 5000);
+		});
+		return false;
+	});
+
+	
 });
 
 

@@ -29,22 +29,22 @@
 	<header class="header" style="background-image: url(img/background.jpg);">
 		<div class="top__header">
 			<div class="wrapper">
-				<a href="#"><h1 class="logo">Topmining</h1></a>
-				<nav class="navigation">
+				<div class="logo__flex"><a href="#"><h1 class="logo">Topmining</h1></a></div>
+				<div class="navigation__flex"><nav class="navigation">
 					<ul class="navigation__list">
 						<li class="navigation__item"><a class="navigation__link scroll__link" href="#topVideoCard">ТОП видео карты</a></li>
 						<li class="navigation__item"><a class="navigation__link scroll__link" href="#guarantees">Оплата и гарантии</a></li>
 					</ul>
-				</nav>
-				<ul class="contacts__list">
+				</nav></div>
+				<div class="contacts__flex"><ul class="contacts__list">
 					<li class="contacts__item"><a class="contacts__link" href="tel:89632997779"><i class="icon icon-phone"></i>+89632997779</a></li>
 					<li class="contacts__item"><a class="contacts__link" href="tg://resolve?domain=имя"><i class="icon icon-telegram"></i>+89632997779</a></li>
-				</ul>
+				</ul></div>
 			</div>
 		</div> <!-- top__header -->
 		<div class="center__header">
 			<div class="wrapper">
-				<p class="header__text">Станьте профессионалом по добычи <br> криптовалюты вместе с нами.</p>
+				<p class="header__text">Станьте профессионалом по добычи <br> криптовалюты вместе с нами</p>
 				<a class="header__link scroll__link" href="#topVideoCard">Подробнее</a>
 			</div>
 		</div> <!-- center__header -->
@@ -113,16 +113,26 @@
 						<a class="product__link popup-with-form" href="#formL3">Заказать</a>
 						<!-- form itself -->
 						<form id="formL3" class="mfp-hide white-popup open-popup-link" name="Order L3+">
+						<div class="success"><span>Ваш вопрос принят!</span></div>
+						<!-- Hidden Required Fields -->
+                            <input type="hidden" name="project_name" value="откуда заявка">
+                            <input type="hidden" name="admin_email" value="тут емейл">
+                            <input type="hidden" name="form_subject" value="Заявка на видеокарту">
+                        <!-- END Hidden Required Fields -->
+
 							<p class="form__text">Чтобы узнать актуальную цену введите Ваше имя и телефон.</p>
-							<input class="form-line phone-mask" type="text" name="name" placeholder="+7  __   ___   __   __" required>
-							<input class="form-line" type="tel" name="name" placeholder="Введите ваше имя" required>
-							<input class="form-line-num" type="number" placeholder="Выберите кол-во" required>
+							<input class="form-line phone-mask" type="text" name="name" placeholder="+7  __   ___   __   __">
+							<input class="form-line" type="tel" name="name" placeholder="Введите ваше имя">
+							<input class="form-line-num" type="number" min="1" placeholder="Выберите кол-во">
 							<div class="button-wrap">
 							<input class="notSpam" type="radio" name="notSpam" id="notSpam" value="notSpam"> 
 							<label for="notSpam">
 								<span>Мы не будем слать спам, инфа 100%</span>
 							</label>
 							</div>
+							<input type="submit" class="form-line form-link" value="Подтвердить">
+							<p class="form__text form__text2">Или введите ваш телеграм ник</p>
+							<input class="form-line-num" type="number" min="1" placeholder="Выберите кол-во">
 							<input type="submit" class="form-line form-link" value="Подтвердить">
 						</form>
 					</div>
@@ -159,15 +169,18 @@
 						<!-- form itself -->
 						<form id="formS9" class="mfp-hide white-popup open-popup-link" name="Order S9">
 							<p class="form__text">Чтобы узнать актуальную цену введите Ваше имя и телефон.</p>
-							<input class="form-line phone-mask" type="text" name="name" placeholder="+7  __   ___   __   __" required>
-							<input class="form-line" type="tel" name="name" placeholder="Введите ваше имя" required>
-							<input class="form-line-num" type="number" placeholder="Выберите кол-во" required>
+							<input class="form-line phone-mask" type="text" name="name" placeholder="+7  __   ___   __   __">
+							<input class="form-line" type="tel" name="name" placeholder="Введите ваше имя">
+							<input class="form-line-num" type="number" min="1" placeholder="Выберите кол-во">
 							<div class="button-wrap">
-							<input class="notSpam" type="radio" name="notSpam" id="notSpam" value="notSpam"> 
-							<label for="notSpam">
+							<input class="notSpam" type="radio" name="notSpam2" id="notSpam2" value="notSpam2"> 
+							<label for="notSpam2">
 								<span>Мы не будем слать спам, инфа 100%</span>
 							</label>
 							</div>
+							<input type="submit" class="form-line form-link" value="Подтвердить">
+							<p class="form__text form__text2">Или введите ваш телеграм ник</p>
+							<input class="form-line-num" type="number" min="1" placeholder="Выберите кол-во">
 							<input type="submit" class="form-line form-link" value="Подтвердить">
 						</form>
 					</div>
@@ -204,15 +217,18 @@
 						<!-- form itself -->
 						<form id="formD3" class="mfp-hide white-popup open-popup-link" name="Order D3">
 							<p class="form__text">Чтобы узнать актуальную цену введите Ваше имя и телефон.</p>
-							<input class="form-line phone-mask" type="text" name="name" placeholder="+7  __   ___   __   __" required>
-							<input class="form-line" type="tel" name="name" placeholder="Введите ваше имя" required>
-							<input class="form-line-num" type="number" placeholder="Выберите кол-во" required>
+							<input class="form-line phone-mask" type="text" name="name" placeholder="+7  __   ___   __   __">
+							<input class="form-line" type="tel" name="name" placeholder="Введите ваше имя">
+							<input class="form-line-num" type="number" min="1" placeholder="Выберите кол-во">
 							<div class="button-wrap">
-							<input class="notSpam" type="radio" name="notSpam" id="notSpam" value="notSpam"> 
-							<label for="notSpam">
+							<input class="notSpam" type="radio" name="notSpam3" id="notSpam3" value="notSpam3"> 
+							<label for="notSpam3">
 								<span>Мы не будем слать спам, инфа 100%</span>
 							</label>
 							</div>
+							<input type="submit" class="form-line form-link" value="Подтвердить">
+							<p class="form__text form__text2">Или введите ваш телеграм ник</p>
+							<input class="form-line-num" type="number" min="1" placeholder="Выберите кол-во">
 							<input type="submit" class="form-line form-link" value="Подтвердить">
 						</form>
 					</div>
@@ -357,15 +373,15 @@
 		</div>
 	</div>
 
-	<footer class="footer" style="background-image: url(img/background-footer.jpg)";>
-		<div class="wrapper">
+	<footer class="footer" style="background-image: url(img/background-footer.jpg);">
+	<div class="wrapper">
 			<div class="flex-wrap">
 				<a href="#"><p class="logo">Topmining</p></a>
 				<ul class="contacts__list">
 					<li class="contacts__item"><a class="contacts__link" href="tel:89632997779"><i class="icon icon-phone"></i>+89632997779</a></li>
 					<li class="contacts__item"><a class="contacts__link" href="tg://resolve?domain=имя"><i class="icon icon-telegram"></i>+89632997779</a></li>
 				</ul>
-				<a href="#"><span class="location">Mingle East Street No.28 Bao'an <br> Shenzhen <br> Guangdong China</span></a>
+				<a href="#"><span class="location">Mingle East Street No.28 Bao'an <br><span class="location-left"> Shenzhen</span> <br><span class="location-left"> Guangdong China</span></a>
 			</div>
 			<ul class="law__list">
 				<li class="law__item"><a class="law__link politics__link" href="#return"> Условия возврата</a></li>
@@ -385,12 +401,3 @@
 
 </body>
 </html>
-
-
-	<!-- 		<ul class="footer__list">
-		<li class="footer__item"><a class="footer__link contact__link popup-gmaps" href="#">
-			Mingle East Street No.28 Bao'an <br> Shenzhen <br> Guangdong China -->
-				<!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3684.1422695108263!2d113.87358691456396!3d22.57378168518211!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3403ec13f0b0f533%3A0xfe784b30894a8256!2zTWluZyBMZSBEb25nIEppZSwgWGlYaWFuZywgQmFvYW4gUXUsIFNoZW56aGVuIFNoaSwgR3Vhbmdkb25nIFNoZW5nLCDQmtC40YLQsNC5LCA1MTgxMDI!5e0!3m2!1sru!2sua!4v150 9201337354" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-
-	
-
