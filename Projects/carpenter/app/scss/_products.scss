@@ -1,0 +1,74 @@
+@import "_reset";
+@import "_bootstrap.min";
+@import "_fonts";
+@import "_vars";
+@import "_carousel";
+
+.product__pages {
+	color: #fff;
+	.header__top {
+		background: rgba(111, 176, 72, .8);
+	}
+}
+.product {
+	position: relative;
+	text-align: center;
+	padding-bottom: 40px;
+}
+.product__undertitle {
+	margin-bottom: 30px;
+}
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+.owl-thumb-item img { 
+	border:  4px solid #bababa;
+	margin-bottom: 15px;
+	@include transition(all .5s ease);
+	&:focus {
+		border: 4px solid $red;
+	}
+	&:hover {
+		border: 4px solid $green;
+	}
+}
+
+.owl-carousel {
+	position: relative;
+	.owl-item {
+		display: inline-block;
+		margin: auto;
+		img {
+			max-width: 100%;
+			height: auto;
+			box-shadow: 2px 2px 20px 0px rgba(0,0,0,0.75); 
+		}
+	}
+}
+.owl-nav {
+	color: $orange;
+	font-weight: bold;
+	font-size: 60px;
+	&:hover {
+		cursor: pointer;
+	}
+}
+.icon-angle-right {
+	position: absolute;
+	content: '';
+	padding: 100px 0;
+	top: 50%;
+	right: 5%;
+	z-index: 10;
+}
+.icon-angle-left {
+	position: absolute;
+	content: '';
+	padding: 100px 0;
+	top: 50%;
+	left: 5%;
+	z-index: 10;
+} 
+

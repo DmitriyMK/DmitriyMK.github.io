@@ -1,0 +1,18 @@
+$fontFamily: "PtSans", serif;
+$fontSize: 18px;
+
+$orange: #ff621f;
+$red: #ff332a;
+$yellow: #eb9309;
+$green: #83a7a5;
+$darkGreen: #0f5f5c;
+$lightGreen: #6fb048;
+$white: #fff;
+
+@mixin transition($args...) {
+  -webkit-transition: $args;
+  -moz-transition: $args;
+  -ms-transition: $args;
+  -o-transition: $args;
+  transition: $args;
+}
