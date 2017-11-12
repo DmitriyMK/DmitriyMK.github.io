@@ -1812,25 +1812,6 @@ a {
 .burger {
   display: none; }
 
-/* ------------	LOADER ------------*/
-#preloader {
-  position: fixed;
-  left: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  background: #fff;
-  z-index: 1001; }
-
-#preloader i {
-  width: 70px;
-  height: 70px;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  background: url("../img/preloader.gif") no-repeat 50% 50%;
-  margin: -35px 0 0 -35px; }
-
 /* ------------	MAIN STYLE ------------*/
 .header {
   background: url(../img/background__header.jpg) no-repeat;
@@ -2385,6 +2366,9 @@ a {
     .page .aside .date {
       color: #333; }
 
+.header__pages {
+  min-height: 200px; }
+
 /* PAGE 2 - SERVICES */
 .services {
   position: relative;
@@ -2410,13 +2394,10 @@ a {
     line-height: 24px;
     padding-bottom: 20px; }
   .services__title {
-    padding-top: 30px;
     padding-bottom: 30px;
     font-size: 1.5625rem;
     font-family: "GothamProBold";
     color: #333; }
-  .services .services-wrap {
-    padding-bottom: 50px; }
   .services .box-news {
     padding-top: 40px;
     position: relative;
@@ -2441,7 +2422,8 @@ a {
       padding-top: 20px;
       padding-bottom: 20px;
       font-size: 1.375rem;
-      font-family: "GothamProBold"; }
+      font-family: "GothamProBold";
+      position: relative; }
     .services .box-news .text {
       font-size: 0.875rem;
       line-height: 18px;
@@ -2451,6 +2433,7 @@ a {
   .services .news-link {
     float: right;
     margin-right: 100px;
+    margin-bottom: 50px;
     padding: 10px 50px;
     background-image: -webkit-linear-gradient(-15deg, #87e094 0%, #55b0eb 100%);
     background-image: -ms-linear-gradient(-15deg, #87e094 0%, #55b0eb 100%);
@@ -2522,7 +2505,7 @@ a {
         -ms-flex-align: center;
             align-items: center;
     padding: 5px 15px;
-    margin-right: 60px;
+    margin-right: 40px;
     border: 2px solid #0c59cf; }
   .action .remain {
     display: block;

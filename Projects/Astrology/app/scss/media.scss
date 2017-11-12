@@ -15,9 +15,6 @@
 
 	.header {
 		background-position: 68%;
-		.top__header {
-			padding-top: 20px;
-		}
 	}
 	.center__header {
 		&-text {
@@ -71,6 +68,37 @@
 		}
 	}
 
+	.crumbs {
+		margin: 30px 0;
+	}
+	
+	.action {
+		padding: 60px 0;
+		.flex-wrap {
+			padding-top: 20px;
+			display: flex;
+			flex-wrap: wrap;
+		}
+		.mail {
+			top: 230px;
+		}
+		.messenger {
+			top: 230px;
+		}
+
+		.timer__content {
+			margin: auto;
+			width: 300px;
+			display: flex;
+		}
+		.btn-link {
+			margin: auto;
+			margin-top: 20px;
+			width: 300px;
+			text-align: center;
+		}
+	}
+
 
 }  
 
@@ -81,7 +109,7 @@
 		min-height: 600px;
 		background: url(../img/background__header1.jpg) no-repeat center/cover;
 		.top__header {
-			padding-top: 20px;
+			padding-top: 30px;
 		}
 	}
 	.center__header {
@@ -99,8 +127,6 @@
 		}
 	}
 	
-
-	/* MENU - STYLE*/
 	.nav {
 		&__link {
 			&:before {
@@ -172,13 +198,16 @@
 		height: 50px;
 		transition: all 0.6s ease-in-out;
 		position: fixed;
-		top: 20px;
+		top: 30px;
 		right: 20px;
 		z-index: 10000;
 		background: transparent;
 		border: none;
 		outline: none;
 		display: block;
+		&:hover {
+			cursor: pointer;
+		}
 	}
 	.burger i {
 		display: block;
@@ -288,6 +317,69 @@
 			}
 		}
 	}
+	.header__pages {
+		min-height: 150px;
+	}
+
+
+	.services {
+		&:before {
+			top: -55%;
+			height: 110%;	
+		}
+		.box-news {
+			margin: 0 auto;
+			flex-wrap: wrap;
+			position: relative;
+			&-img {
+				width: 100%;
+			}
+			img {
+				margin: auto;
+			}
+			&-text {
+				width: 90%;
+				margin: 0 auto;
+			}
+			.articles__title{
+				text-align: center;
+			}
+		}
+		.news-link {
+			float: none;
+			display: block;
+			width: 250px;
+			text-align: center;
+			padding: 10px 0;
+			margin: 20px auto;
+		}
+	}
+
+	.action {
+		.wrapper {
+			display: flex;
+			justify-content: center;
+			flex-wrap:wrap;
+		}
+		&-title {
+			text-align: center;
+		}
+		&-img {
+			margin-right: 0;
+		}
+		&-text {
+			width: 80%;
+			margin: auto;
+		}
+		.flex-wrap {
+			flex-direction: column;
+			align-items: center;
+		}
+	}
+
+
+
+
 }
 
 
@@ -302,9 +394,8 @@
 	._2p3a {
 		width: 300px!important;
 	}
-	.main .wrapper {
+	.main-page .wrapper {
 		padding: 0;
-
 	}
 	.center__header {
 		&-text {
@@ -356,6 +447,7 @@
 		margin-left: 0;
 		text-align: center;
 	}
+
 	.footer {
 		padding-top: 60px;
 		.flex__wrap-left {
@@ -382,6 +474,54 @@
 			margin-right: 5px;
 		}
 	}
+
+	.header__pages {
+		min-height: 100px;
+	}
+
+	.services {
+		&:before {
+			display: none;
+		}
+		.box-news {
+			&-text {
+				width: 100%;
+				margin-left: 5%;
+			}
+		}
+	}
+
+	.action {
+		padding-top: 0;
+		&-img {
+			padding-top: 30px;
+			margin-right: 0;
+			position: relative;
+			max-width: 300px;
+		}
+		.img {
+			display: block;
+			margin: 0 auto;
+			max-width: 100%;
+		}
+		.mail {
+			top: 180px;
+		}
+		.messenger {
+			top: 180px;
+		}
+		&-title {
+			padding-top: 30px;
+			font-size: rem(22);
+		}
+		&-text {
+			width: 100%;
+		}
+		.flex-wrap {
+			padding-top: 30px;
+		}
+	}
+
 
 }
 
