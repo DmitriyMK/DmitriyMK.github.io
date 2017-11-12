@@ -1,0 +1,390 @@
+@import "_vars";
+@import "_mixin and function";
+
+
+/*==========  Desktop First  ==========*/
+
+
+@media only screen and (max-width : 1200px) {
+
+}  
+
+/* Medium Devices, Desktops */
+
+@media only screen and (max-width : 992px) {
+
+	.header {
+		background-position: 68%;
+		.top__header {
+			padding-top: 20px;
+		}
+	}
+	.center__header {
+		&-text {
+			width: 70%;
+			font-size: rem(34);
+			line-height: 36px;
+		}
+		&-form {
+			margin-top: 30px;
+			.line-name {
+				width: 60%;
+			}
+			.btn {
+				margin-top: 30px;
+			}
+		}
+	}
+	.nav {
+		&__item {
+			margin-left: 15px;
+		}
+		&__link {
+			font-size: rem(16);
+		}
+	}
+	.footer {
+		padding-bottom: 40px;
+		&-flex {
+			display: flex;
+			justify-content: center;
+			flex-wrap: wrap;
+		}
+		.flex__wrap-left {
+			display: flex;
+			flex-basis: 100%;
+			margin: auto;
+			margin-left: 0;
+		}
+		.flex__wrap-right {
+			flex-basis: 100%;
+			margin: auto;
+			text-align: center;
+		}
+		.politics__list {
+			padding-bottom: 0;
+		}
+		.link__studio {
+			position: relative;
+			top: inherit;
+			right: inherit;
+		}
+	}
+
+
+}  
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+
+	.header {
+		min-height: 600px;
+		background: url(../img/background__header1.jpg) no-repeat center/cover;
+		.top__header {
+			padding-top: 20px;
+		}
+	}
+	.center__header {
+		display: table;
+		&-text {
+			width: 100%;
+			font-size: rem(30);
+			line-height: 34px;
+		}
+		&-form {
+			margin-top: 50px;
+		}
+		.arrow {
+			display: none;
+		}
+	}
+	
+
+	/* MENU - STYLE*/
+	.nav {
+		&__link {
+			&:before {
+				width: 0;
+				background-color: none;
+			}
+			&:after{
+				width: 0;
+				background-color: none;
+			}
+			&:hover {
+				&:before {
+					width: 0;
+					left: 0;
+				}
+				&:after {
+					width: 0;
+				}
+			}
+		}
+		.active {
+			position: inherit;
+			&:before {
+				width: 0;
+				background-color: none;
+			}
+			&:after{
+				width: 0;
+				background-color: none;
+			}
+		}
+	}
+	.overlay {
+		position: absolute;
+		width: 200px;
+		height: 1000px;
+		top: 0;
+		right: -305px;
+		background-image: -moz-linear-gradient( -15deg, rgba(135,224,148, .8) 0%, rgba(85,176,235, .8) 100%);
+		background-image: -webkit-linear-gradient( -15deg, rgba(135,224,148, .8) 0%, rgba(85,176,235, .8) 100%);
+		background-image: -ms-linear-gradient( -15deg, rgba(135,224,148, .8) 0%, rgba(85,176,235, .8) 100%);
+		z-index: 1000;
+	}
+	.nav {
+		position: fixed;
+		z-index: 1000;
+		&__list {
+			display: block !important;
+			padding-top: 50%;
+		}
+		&__item{
+			margin-right: 0;
+			margin-left: 0;
+			text-align: center;
+		}
+		&__link {
+			display: block;
+			text-transform: uppercase;
+			padding-bottom: 1rem;
+		}
+	}
+	.open {
+		transform: translateX(-300px);
+		transition-duration: 0.5s;
+		position: fixed;
+	}
+	.burger {
+		width: 50px;
+		height: 50px;
+		transition: all 0.6s ease-in-out;
+		position: fixed;
+		top: 20px;
+		right: 20px;
+		z-index: 10000;
+		background: transparent;
+		border: none;
+		outline: none;
+		display: block;
+	}
+	.burger i {
+		display: block;
+		width: 40px;
+		height: 2px;
+		background: $blue;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		transition: all 0.2s ease-in-out;
+	}
+	.burger i:before, .burger i:after {
+		content: '';
+		position: absolute;
+		height: 2px;
+		background: $blue;
+		width: 40px;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		transition: all 0.2s ease-in-out;
+	}
+	.burger i:before {
+		margin-top: -12px;
+	}
+	.burger i:after {
+		margin-top: 12px;
+	}
+	.burger:hover i:before {
+		margin-top: -14px;
+	}
+	.burger:hover i:after {
+		margin-top: 14px;
+	}
+	.burger.active i {
+		background: transparent;
+	}
+	.burger.active i:before, .burger.active i:after {
+		left: -5px;
+		width: 50px;
+	}
+	.burger.active i:before {
+		transform: rotate(45deg);
+		top: 12px;
+	}
+	.burger.active i:after {
+		transform: rotate(-45deg);
+		top: -12px;
+	}
+	.burger.active:hover i:before, .burger.active:hover i:after {
+		width: 60px;
+		margin: 0;
+		left: -10px;
+		top: 0;
+	}
+
+	.main-flex {
+		flex-wrap: wrap;
+	}
+	.content {
+		width: 100%;
+		.calendar {
+			margin-bottom: -60px;
+			.btn__wrap {
+				width: 220px;
+				font-size: rem(12);
+			}
+		}
+		.articles__title {
+			margin-top: 0;
+			text-align: center;
+		}
+		.box-news {
+			justify-content: center;
+			flex-wrap: wrap;
+			margin-bottom: 60px;
+			&-img {
+				width: 90%;
+				img {
+					display: block;
+					margin: auto;
+				}
+			}
+			&-text {
+				width: 90%;
+			}
+			.articles__title{
+				text-align: left;
+			}
+		}
+		.review {
+			margin-bottom: 80px;
+		}
+		.mission {
+			&__list {
+				flex-direction: column;
+			}
+			&__item {
+				position: relative;
+				margin: auto;
+				width: 70%;
+			}
+			&__text {
+				padding-top: 20px;
+				padding-bottom: 20px;
+			}
+		}
+	}
+}
+
+
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px) {
+
+	._2p3a iframe {
+		width: 300px!important;
+	}
+	._2p3a {
+		width: 300px!important;
+	}
+	.main .wrapper {
+		padding: 0;
+	}
+	.center__header {
+		&-text {
+			width: 100%;
+			font-size: rem(26);
+			line-height: 36px;
+		}
+		&-form {
+			margin-top: 40px;
+			.line-name {
+				width: 95%;
+				padding-left: 20px;
+				font-size: rem(18);
+				line-height: 20px;
+				font-family: "GothamProRegular";
+			}
+			.btn {
+				width: 95%;
+				display: block;
+				margin-top: 20px;
+				line-height: 20px;
+			}
+		}
+	}
+	.content {
+		.calendar {
+			justify-content: center;
+			.btn__wrap {
+				margin: auto;
+				margin-bottom: 30px;
+			}
+			.calendar__iframe {
+				text-align: center;
+			}
+		}
+		.btn__article {
+			padding: 10px 30px;
+		}
+		.mission {
+			&__item {
+				width: 95%;
+			}
+		}
+	}
+	.aside {
+		padding-top: 0;
+		padding-bottom: 30px;
+		margin-left: 0;
+		text-align: center;
+	}
+	.footer {
+		padding-top: 60px;
+		.flex__wrap-left {
+			flex-wrap: wrap;
+			text-align: center;
+		}
+		.img-wrap {
+			margin: auto;
+		}
+		&-contact {
+			display: flex;
+			justify-content: center;
+		}
+
+		.politics__list {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			padding-top: 10px;
+			padding-bottom: 10px;
+		}
+		.politics__item {
+			margin-left: 5px;
+			margin-right: 5px;
+		}
+	}
+
+}
+
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width: 320px)  {
+
+}
