@@ -106,9 +106,3 @@ $("form.open-popup-link").submit(function() {
 	});
 	return false;
 });
-
-/*PRELOADER*/
-$(window).load(function() {
-	$('#preloader').delay(100).fadeOut('slow');
-
-});
