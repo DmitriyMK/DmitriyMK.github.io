@@ -26,6 +26,19 @@ $(document).ready(function() {
 		}
 	})
 
+	/*LAZY LOAD*/
+	$(function() {
+		$('.lazy').Lazy({
+		// your configuration goes here
+		scrollDirection: 'vertical',
+		effect: 'fadeIn',
+		visibleOnly: true,
+		onError: function(element) {
+			console.log('error loading ' + element.data('src'));
+		}
+	});
+	});
+
 
 	/*	$(function() {
 			var $gallery = $('.galleryl a').simpleLightbox();
@@ -86,7 +99,7 @@ $(document).ready(function() {
 	});
 
 $(function() {
-  $('.select-line').selectize({});
+	$('.select-line').selectize({});
 });
 
 
