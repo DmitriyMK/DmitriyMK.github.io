@@ -1,15 +1,44 @@
 @import "_vars";
 @import "_mixin and function";
 
-
-/*==========  Desktop First  ==========*/
-
+/* Medium Devices, Desktops */
 
 @media only screen and (max-width : 1200px) {
 
-}  
+	.review__page {
+		&:before {
+			top: -60%;
+			left: 0%;
+			width: 5000px;
+			height: 3000px;	
+		}
+		.review__container {
+			justify-content: center;
+			flex-direction: column;
+			align-items: center;
+		}
+		.review-content {
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			max-width: 520px;
+		}
+		.review-name {
+			font-size: rem(18);
+		}
+		.review-video {
+			max-width: 520px;
+			height: 600px;
+			margin:  50px auto;
+			iframe {
+				display: block;
+				width: 100%;
+				height: 100%;
+			}
+		}
+	}
 
-/* Medium Devices, Desktops */
+}
 
 @media only screen and (max-width : 992px) {
 
@@ -96,6 +125,58 @@
 			margin-top: 20px;
 			width: 300px;
 			text-align: center;
+		}
+	}
+
+	.action__page {
+		&:before {
+			top: -120%;
+		}
+		.page__flex {
+			display: flex;
+			justify-content: center;
+			flex-wrap: wrap;
+		}
+		.img-wrap {
+			margin-bottom: 40px;
+		}
+		.aside {
+			width: 100%;
+			padding-top: 0;
+			padding-bottom: 30px;
+			margin-left: 0;
+			text-align: center;
+		}
+	}
+
+	.about {
+		.box-img {
+			max-width: 360px;
+		}
+	}
+
+	.blog__page {
+		&:before {
+			top: -70%;
+			width: 3000px;
+			height: 4000px;	
+		}
+		.blog-wrap {
+			margin: auto;
+			padding: 0 15px;
+			background: #fff;
+			z-index: 9;
+		}
+		.social-list {
+			display: flex;
+		}
+		.content {
+			width: 100%;
+		}
+		.aside {
+			position: relative;
+			margin-top: 25px;
+			z-index: 100;
 		}
 	}
 
@@ -264,7 +345,6 @@
 		left: -10px;
 		top: 0;
 	}
-
 	.main-flex {
 		flex-wrap: wrap;
 	}
@@ -320,8 +400,6 @@
 	.header__pages {
 		min-height: 150px;
 	}
-
-
 	.services {
 		&:before {
 			top: -55%;
@@ -354,7 +432,6 @@
 			margin: 20px auto;
 		}
 	}
-
 	.action {
 		.wrapper {
 			display: flex;
@@ -376,9 +453,252 @@
 			align-items: center;
 		}
 	}
-
-
-
+	.review__page {
+		&:before {
+			top: -60%;
+			left: 0%;
+			width: 5000px;
+			height: 3000px;	
+		}
+		.page__flex {
+			flex-wrap: wrap;
+		}
+		.aside {
+			width: 100%;
+			padding-top: 0;
+			padding-bottom: 30px;
+			margin-left: 0;
+			text-align: center;
+		}
+	}
+	.consult-page {
+		.consult__list {
+			align-items: center;
+			justify-content: center;
+			flex-direction: column;
+		}
+		.consult__item {
+			width: 80%;
+		}
+	}
+	.consult__about {
+		.flex-wrap {
+			display: flex;
+			justify-content: center;
+			flex-wrap: wrap;
+		}
+		.flex-wrap-bottom {
+			padding: 30px 0 0 0;
+		}
+		.img-box {
+			width: 100%;
+			margin: auto;
+			height: auto;
+			img {
+				margin: auto;
+			}
+		}
+		.text-box {
+			margin: auto;
+			width: 100%;
+			margin-left: 0;
+		}
+		.consult__about-title {
+			padding-top: 10px;
+			text-align: center;
+		}
+		.consult__about-text {
+			width: 80%;
+			margin: auto;
+		}
+		.consult__about-link {
+			display: block;
+			padding-top: 15px;
+			padding-left: 10%;
+		}
+		.list {
+			text-align: center;
+			width: 100%;
+		}
+		.btn-orange {
+			display: block;
+			width: 300px;
+			margin-top: 20px;
+			padding: 10px 0;
+			text-align: center;
+			margin-right: 0;
+		}
+	}
+	.consult__theme {
+		.consult__theme-title {
+			font-size: rem(22);
+		}
+		button {
+			padding: 10px;
+			font-size: 15px;
+			outline: none;
+			word-break: break-all;
+		}
+		.tabcontent {
+			padding:  25px 15px;
+		}
+		.btn-tab {
+			margin: 15px auto;
+		}
+	}
+	.consult__review {
+		.consult__theme-title {
+			font-size: rem(22);
+		}
+		.review__container {
+			display: flex;
+			justify-content: space-between;
+			flex-wrap: wrap;
+			flex-direction: column;
+		}
+		.review__box {
+			flex: auto;
+			margin-bottom: 15px;
+			width: 80%;
+			margin: auto;
+			&:nth-child(2) {
+				margin: 15px auto;
+				margin-bottom: 15px;
+			}
+		}
+	}
+	.consult__form {
+		padding: 50px 0;
+		.flex-wrap {
+			display: flex;
+			justify-content: center;
+			flex-wrap: wrap;
+			margin: auto;
+		}
+		.box-content {
+			width: 100%;
+			margin: auto;
+			margin-right: 0;
+		}
+		.title {
+			font-size: rem(22);
+		}
+		.text {
+			padding-top: 15px;
+			padding-bottom: 15px;
+		}
+		.box__list {
+			padding-left: 50px;
+			margin-bottom: 0;
+		}
+		.box-form {
+			width: 100%;
+			margin: 20px auto;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			align-content: center;
+			justify-content: center;
+			text-align: center;
+		}
+		.form-line, {
+			border: none;
+			width: 300px;
+			padding: 10px;
+			margin-bottom: 10px;
+			text-align: center;
+		}
+		.select-line {
+			border: none;
+			width: 300px;
+			padding: 0;
+			margin: 0 auto;
+			margin-bottom: 10px;
+		}
+		.form-link {
+			margin: auto;
+			color: #fff;
+		}
+	}
+	.about {
+		&:before {
+			top: -90%;
+		}
+		&__text {
+			width: 100%;
+		}
+		.box-text-marg {
+			width: 100%;
+			margin: 60px 0 20px 0;
+		}
+		.box-img {
+			display: table;
+			max-width: 100%;
+			margin: 15px auto;
+		}
+	}
+	.about__video {
+		margin: auto;
+		padding-left: 0;
+		padding-bottom: 0;
+		width: 100%;
+		&-text {
+			width: 100%;
+			margin: 20px 0;
+		}
+		&-video{
+			margin-top: 20px;
+			margin-bottom: 40px;
+			max-width: 700px;
+		}
+	}
+	.contact__page {
+		&:before {
+			top: -120%;
+		}
+		.box-form-form {
+			margin-top: 15px;
+			text-align: center;
+		}
+		.flex-wrap {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			flex-wrap: wrap;
+			.form-line {
+				width: 300px;
+				text-align: center;
+			} 
+		}
+		.form-line {
+			width: 300px;
+			text-align: center;
+		}
+		input, option {
+			width: 300px;
+		}
+		.form-line-text {
+			width: 300px;
+			text-align: center;
+		}
+		.select-line {
+			margin: auto;
+			padding: 0;
+			width: 300px;
+		}
+		.form-link {
+			margin: auto;
+		}
+		.aside {
+			width: 100%;
+			padding-top: 0;
+			padding-bottom: 30px;
+			margin-top: 20px;
+			margin-left: 0;
+			text-align: center;
+		}
+	}
 
 }
 
@@ -521,8 +841,49 @@
 			padding-top: 30px;
 		}
 	}
-
-
+	.review__page {
+		&:before {
+			display: none;
+		}
+	}
+	.consult__about {
+		.list__item {
+			margin: 0 5px;
+		}
+	}
+	.consult__theme {
+		button {
+			font-size: 13px;
+		}
+	}
+	.consult__review {
+		.review__box {
+			width: 100%;
+		}
+	}
+	.about {
+		&:before {
+			display: none;
+		}
+		&-info {
+			display: flex;
+			flex-direction: column;
+		}
+		.box-left-cv {
+			padding-left: 0;
+			text-align: center;
+			&:after {
+				display: none;
+			}
+		}
+		.box-right-cv {
+			text-align: center;
+			padding-right: 0;
+		}
+		.box-title {
+			padding: 10px 0;
+		}
+	}
 }
 
 

@@ -2538,6 +2538,12 @@ a {
       opacity: 1; }
 
 /* PAGE 3 */
+.action__page:before {
+  top: -220%;
+  left: 5%;
+  width: 5000px;
+  height: 3000px; }
+
 .action__page .page__flex {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2548,11 +2554,14 @@ a {
       -ms-flex-pack: justify;
           justify-content: space-between; }
 
+.action__page .img-wrap {
+  margin-bottom: 140px; }
+
 /* PAGE 4 */
 .review__page:before {
   top: -120%;
   left: 0%;
-  width: 4500px;
+  width: 5000px;
   height: 3000px; }
 
 .review__page .page__flex {
@@ -2705,8 +2714,8 @@ a {
             transform: skewX(-80deg);
     content: '';
     position: absolute;
-    top: -110%;
-    left: -12%;
+    top: -120%;
+    left: 0;
     width: 4500px;
     height: 2700px; }
   .consult-page .btn-order {
@@ -2790,13 +2799,14 @@ a {
   .consult__about .flex-wrap-bottom {
     padding: 50px 0; }
   .consult__about .img-box {
-    width: 30%;
-    margin-left: 5%;
+    width: 40%;
     height: 200px; }
   .consult__about .text-box {
-    width: 65%; }
+    width: 60%;
+    margin-left: 20px; }
   .consult__about .consult__about-title {
-    font-size: 1.5625rem;
+    font-size: 1.5rem;
+    line-height: 1.3;
     font-family: "GothamProBold"; }
   .consult__about .consult__about-text {
     width: 85%;
@@ -2828,7 +2838,7 @@ a {
     color: #323232;
     border-bottom: none; }
   .consult__about .btn-orange {
-    padding: 6px 50px 0 50px;
+    padding: 6px 40px 0 40px;
     margin-right: 15%;
     -webkit-border-radius: 4px;
             border-radius: 4px;
@@ -3026,6 +3036,8 @@ a {
     color: #323232; }
 
 .consult__form {
+  -webkit-background-size: cover;
+          background-size: cover;
   color: #fff;
   padding: 100px 0; }
   .consult__form .flex-wrap {
@@ -3145,6 +3157,10 @@ a {
   display: inline-block;
   max-width: 420px; }
 
+.about__background {
+  background: url(../img/about__background.jpg) no-repeat center/cover;
+  height: 350px; }
+
 .about__video {
   padding-left: 60px;
   padding-bottom: 60px;
@@ -3178,7 +3194,7 @@ a {
             transform: skewX(-80deg);
     content: '';
     position: absolute;
-    top: -101%;
+    top: -106%;
     left: 0%;
     width: 5000px;
     height: 5000px;
@@ -3188,11 +3204,9 @@ a {
     z-index: 100; }
   .blog__page .blog__img {
     max-width: 700px;
-    padding-right: 60px;
-    padding-bottom: 60px;
     height: auto;
     position: relative;
-    z-index: 100; }
+    z-index: 1000; }
   .blog__page .blog-wrap {
     margin: auto;
     padding: 60px;
