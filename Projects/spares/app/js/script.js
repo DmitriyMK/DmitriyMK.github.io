@@ -23,8 +23,9 @@ $(document).ready(function() {
 
 	});
 
-	$(function() {
-		$('.select-line').selectize({});
+	$('.select-line').selectize({
+		create: true,
+		sortField: 'text'
 	});
 
 
@@ -62,6 +63,12 @@ $(document).ready(function() {
 		focus: '#username',
 	});
 
+	$('.fullBackground').fullClip({
+		images: ['../img/photo/carBig2.jpg', '../img/photo/carBig3.jpg'],
+		transitionTime: 1000,
+		wait: 5000
+	});
+
 
 	new WOW().init();
 
@@ -85,6 +92,8 @@ $("form.open-popup-link").submit(function() {
 	});
 	return false;
 });
+
+
 
 /*PRELOADER*/
 $(window).load(function() {

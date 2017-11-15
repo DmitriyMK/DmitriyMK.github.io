@@ -94,7 +94,6 @@
 			}
 		}
 	}
-
 }  
 
 /* Small Devices, Tablets */
@@ -184,12 +183,36 @@
 			margin-bottom: 15px;
 		}
 	}
-
-
 }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
+
+	.top__header {
+		justify-content: flex-start;
+		.logo {
+			text-align: left;
+			&__text {
+				text-align: left;
+			}
+		}
+		.nav__list {
+			display: flex;
+			justify-content: flex-start;
+			flex-wrap: wrap;
+		}
+		.nav__item {
+			margin: 6px 8px 6px 0;
+		}
+		.nav__item a {
+			font-size: rem(16);
+		}
+		address {
+			text-align: left;
+			font-size: rem(14);
+			margin-top: 6px;
+		}
+	}
 
 	.center__header {
 		.slogan-title {
@@ -203,6 +226,9 @@
 		.slogan-info {
 			font-size: rem(26);
 			line-height: 30px;
+		}
+		[data-tooltip] {
+			display: none;
 		}
 	}
 
@@ -226,10 +252,17 @@
 		.flex-left {
 			width: 100%;
 		}
-		.politics__link {
-			text-align: center;
+		.nav__list {
+			align-items: center;
 		}
+		.nav__item a {
+			align-self: center;
+			font-size: rem(16);
+		}
+
 	}
+
+
 
 	
 

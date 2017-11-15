@@ -129,7 +129,7 @@ a {
 }
 
 .center__header {
-	width: 80%;
+	width: 90%;
 	margin: auto;
 	margin-top: 50px;
 	.slogan-title {
@@ -155,11 +155,60 @@ a {
 		line-height: 55px;
 		font-family: "GothamProBold";
 	}
-	.slogan-list {
-		border-bottom: 1px #fff dashed ;
+	.slogan-accent {
 		font-size: rem(20);
 		font-family: "GothamProMedium";
+		text-decoration: underline dashed;
+		text-decoration-color: rgba(#fff, .3);
 	}
+	[data-tooltip] {
+		position: relative;
+		z-index: 2;
+		cursor: pointer;
+	}
+	[data-tooltip]:before,
+	[data-tooltip]:after {
+		visibility: hidden;
+		opacity: 0;
+		pointer-events: none;
+	}
+	[data-tooltip]:before {
+		position: absolute;
+		top: 100%;
+		left: 50%;
+		margin-top: 13px;
+		margin-left: -80px;
+		padding: 7px;
+		width: 250px;
+		border-radius: 3px;
+		background-color: #000;
+		background-color: hsla(0, 0%, 20%, 0.9);
+		content: attr(data-tooltip);
+		font-size: 17px;
+		line-height: 20px;
+		word-wrap: break-word;
+		@include transition (all .5s ease);
+	}
+	[data-tooltip]:after {
+		position: absolute;
+		top: 100%;
+		left: 50%;
+		margin-left: 5px;
+		width: 0;
+		border-top: 10px solid #fff;
+		border-top: 10px solid hsla(0, 0%, 20%, 0.9);
+		border-right: 10px solid transparent;
+		border-left: 10px solid transparent;
+		content: " ";
+		font-size: 0;
+		line-height: 0;
+	}
+	[data-tooltip]:hover:before,
+	[data-tooltip]:hover:after {
+		visibility: visible;
+		opacity: 1;
+	}
+
 	.flex {
 		position: relative;
 		margin-top: 50px;
@@ -241,6 +290,7 @@ a {
 				background: linear-gradient(to right, rgba(237,46,54,0.4) 0%,rgba(237,46,54,1) 100%);
 			}
 		}
+
 		::-webkit-input-placeholder { 
 			font-size: rem(20);
 			font-family: "GothamProRegular";
@@ -325,6 +375,7 @@ a {
 }
 /* SELECT */
 .selectize-input {
+	display: block;
 	border: 1px solid $gray;
 	padding: 0;
 	padding-left: 15px;
@@ -332,7 +383,6 @@ a {
 	padding-bottom: 10px;
 	width: 94%;
 	border-radius: 5px;
-	font-size: rem(20);
 	color: $gray;
 	background-color: #fff;
 }
@@ -340,23 +390,42 @@ a {
 	background-color: #fff;
 	background-image: none;
 	font-size: rem(20);
-	line-height: 20px;
+	line-height: 40px;
+	padding-left: 15px;
 }
 .selectize-dropdown-content {
 	padding: 0;
 	font-size: rem(20);
-	line-height: 25px;
+	line-height: 20px;
 	color: $gray;
 	background-color: #fff;
 }
 .selectize-input > input {
 	width: 100%!important;
 }
+
+.selectize-dropdown,
+.selectize-input,
+.selectize-input input {
+	display: block;
+	color: $gray;
+	font-family: inherit;
+	padding: 0;
+	font-size: rem(20);
+	line-height: 40px;
+}
+.selectize-input,
+.selectize-control.single .selectize-input.input-active {
+	display: block;
+	font-size: rem(20);
+	line-height: 40px;
+	height: 40px;
+}
 .selectize-control.single .selectize-input:after {
 	content: '\e807';
 	font-family: 'Fontello';
 	position: absolute;
-	top: 10px;
+	top: 0;
 	right: 15px;
 	color: $red;
 }
@@ -365,6 +434,12 @@ a {
 }
 
 /* POP-UP */
+.politics__link {
+	@include transition (all .3s ease);
+	&:hover {
+		color: #fff;
+	}
+}
 .politics-box div{
 	margin-top: 40px;
 	overflow-x: hidden;
@@ -387,26 +462,67 @@ a {
 }
 
 /* Simple fade transition */
- .mfp-fade.mfp-bg {
- 	opacity: 0;
- 	transition: all 0.15s ease-out;
- }
- .mfp-fade.mfp-bg.mfp-ready {
- 	opacity: 0.8;
- }
- .mfp-fade.mfp-bg.mfp-removing {
- 	opacity: 0;
- }
+.mfp-fade.mfp-bg {
+	opacity: 0;
+	transition: all 0.15s ease-out;
+}
+.mfp-fade.mfp-bg.mfp-ready {
+	opacity: 0.8;
+}
+.mfp-fade.mfp-bg.mfp-removing {
+	opacity: 0;
+}
 
- .mfp-fade.mfp-wrap .mfp-content {
- 	opacity: 0;
- 	transition: all 0.15s ease-out;
- }
- .mfp-fade.mfp-wrap.mfp-ready .mfp-content {
- 	opacity: 1;
- }
- .mfp-fade.mfp-wrap.mfp-removing .mfp-content {
- 	opacity: 0;
- }
+.mfp-fade.mfp-wrap .mfp-content {
+	opacity: 0;
+	transition: all 0.15s ease-out;
+}
+.mfp-fade.mfp-wrap.mfp-ready .mfp-content {
+	opacity: 1;
+}
+.mfp-fade.mfp-wrap.mfp-removing .mfp-content {
+	opacity: 0;
+}
+
+.fullBackground {
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  &:before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;	
+		background-color: rgba(#000, .7);	
+	}
+}
+
+.caption {
+  font-size: 30pt;
+  text-transform: uppercase;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.caption:after {
+  content:"\A";
+  width:10px;
+  height:10px;
+  border-radius:50%;
+  background: #00bbeb;
+  display: inline-block;
+  margin: 0 0 -2px;
+}
+
 
 /* @import "media.scss"; */

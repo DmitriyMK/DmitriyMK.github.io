@@ -13,7 +13,7 @@
  *
  * @author Brian Reavis <brian@thirdroute.com>
  */
-.selectize-control.plugin-drag_drop.multi > .selectize-input > div.ui-sortable-placeholder {
+ .selectize-control.plugin-drag_drop.multi > .selectize-input > div.ui-sortable-placeholder {
   visibility: visible !important;
   background: #f2f2f2 !important;
   background: rgba(0, 0, 0, 0.06) !important;
@@ -120,11 +120,11 @@
 .selectize-dropdown,
 .selectize-input,
 .selectize-input input {
-  color: #303030;
-  font-family: inherit;
-  font-size: 13px;
-  line-height: 18px;
-  -webkit-font-smoothing: inherit;
+/*   color: #303030;
+font-family: inherit;
+font-size: 13px;
+line-height: 18px;
+-webkit-font-smoothing: inherit; */
 }
 .selectize-input,
 .selectize-control.single .selectize-input.input-active {
@@ -294,7 +294,7 @@
 }
 .selectize-control.single .selectize-input:after {
   content: ' ';
-/*   display: block; */
+  display: block; 
   position: absolute;
 /*   top: 50%;
 right: 15px;
@@ -306,16 +306,18 @@ border-width: 5px 5px 0 5px;
 border-color: #808080 transparent transparent transparent; */
 }
 .selectize-control.single .selectize-input.dropdown-active:after {
-/*   margin-top: -4px;
+margin-top: -4px;
 border-width: 0 5px 5px 5px;
-border-color: transparent transparent #808080 transparent; */
+border-color: transparent transparent #808080 transparent; 
 }
 .selectize-control.rtl.single .selectize-input:after {
   left: 15px;
   right: auto;
 }
 .selectize-control.rtl .selectize-input > input {
-  margin: 0 4px 0 -2px !important;
+  margin: 0 4px 0 -4px !important;
+  width: 200px;
+  display: block !important;
 }
 .selectize-control .selectize-input.disabled {
   opacity: 0.5;
