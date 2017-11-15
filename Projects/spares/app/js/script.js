@@ -63,18 +63,18 @@ $(document).ready(function() {
 		focus: '#username',
 	});
 
-	$('.fullBackground').fullClip({
-		images: ['../img/photo/carBig2.jpg', '../img/photo/carBig3.jpg'],
-		transitionTime: 1000,
-		wait: 5000
-	});
+	
 
 
 	new WOW().init();
 
 });
 
-
+$('.fullBackground').chocolate({
+		images: ['../img/carBig2.jpg', '../img/carBig3.jpg'],
+		interval: 1000,
+		speed: 3000
+	});
 
 //E-mail Ajax Send
 $("form.open-popup-link").submit(function() {
