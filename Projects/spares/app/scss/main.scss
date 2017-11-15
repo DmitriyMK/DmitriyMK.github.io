@@ -32,19 +32,6 @@ a {
 	padding: 0 15px;
 }
 
-::-webkit-input-placeholder { 
-
-}
-::-moz-placeholder { 
-
-}
-:-ms-input-placeholder { 
-
-}
-:-moz-placeholder {
-
-}
-
 /* ------------	LOADER ------------*/
 #preloader {
 	position: fixed; 
@@ -70,6 +57,15 @@ a {
 	min-height: 780px;
 	padding-top: 30px;
 	color: #fff;
+	&:before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;	
+		background-color: rgba(#000, .5);
+	}
 }
 
 .top__header {
@@ -229,8 +225,10 @@ a {
 }
 
 .info {
+	position: relative;
+	z-index: 1000;
 	padding: 50px 0;
-	background: url(../img/background.png) no-repeat center/cover;
+	background: url(../img/background.png) #fff no-repeat center/cover;
 	&__wrap {
 		width: 80%;
 		margin: auto;
@@ -474,25 +472,6 @@ a {
 	opacity: 0;
 }
 
-.fullBackground, .container {
-  background-position: center center;
-  background-attachment: fixed;
-  background-size: cover;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  &:before {
-		content: '';
-		position: absolute;
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 100%;	
-		background-color: rgba(#000, .7);	
-	}
-}
 
 
 /* @import "media.scss"; */

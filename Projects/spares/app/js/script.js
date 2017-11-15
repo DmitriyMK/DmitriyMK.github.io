@@ -18,6 +18,7 @@ $(document).ready(function() {
 		speed: 500,
 	});
 
+
 	$(function() {
 		var $gallery = $('.slide-gallery').simpleLightbox();
 
@@ -63,18 +64,25 @@ $(document).ready(function() {
 		focus: '#username',
 	});
 
-	
+		$.sublime_slideshow({
+			src: [{
+				url: "img/carBig2.jpg"
+			}, {
+				url: "img/carBig3.jpg"
+			}],
+			duration: 3,
+			fade: 1,
+			scaling: false,
+			rotating: false,
+			overlay: "img/pattern.png"
+		});
 
 
 	new WOW().init();
 
 });
 
-$('.fullBackground').chocolate({
-		images: ['../img/carBig2.jpg', '../img/carBig3.jpg'],
-		interval: 1000,
-		speed: 3000
-	});
+
 
 //E-mail Ajax Send
 $("form.open-popup-link").submit(function() {
