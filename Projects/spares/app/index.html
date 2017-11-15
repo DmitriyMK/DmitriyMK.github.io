@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	
+	<meta name="description" content=""/>
+	<meta name="keywords" content=""/>
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/media.css">
+	
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://example.com/page.html">
+	<meta property="og:title" content="Content Title">
+	<meta property="og:image" content="https://example.com/image.jpg">
+	<meta property="og:description" content="Description Here">
+	<meta property="og:site_name" content="Site Name">
+	<meta property="og:locale" content="en_US">
+
+	
+</head>
+<body>
+	<div id="preloader">
+		<i></i>
+	</div>
+
+	<header class="header" id="head">
+		<div class="wrapper">
+			<div class="top__header">
+				<div class="logo">
+					<img src="img/logo.png" alt="Дмитрий">
+					<p class="logo__text">Дмитрий</p>
+				</div>
+				<div class="right__side">
+					<nav class="navigation">
+						<ul class="nav__list">
+							<li class="nav__item">
+								<a href="whatsapp://send?phone=+89213799600">
+									<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="34" height="34" viewBox="0 0 34 34"><image width="34" height="34" xlink:href="data:img/png;base64,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"/>
+									</svg>
+								</a>
+							</li>
+							<li class="nav__item">
+								<a href="https://telegram.me/">
+									<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="34" height="34" viewBox="0 0 34 34"> <image width="34" height="34" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACIAAAAiCAMAAAANmfvwAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAACUlBMVEUAAAB6pdp6pdp6pdp6pdp6pdp6pdp6pdp6pdp6pdp6pdp6pdp6pdp6pdp6pdp6pdp6pdp6pdp6pdp6pdp6pdp6pdp6pdp6pdp6pdp6pdp6pdp6pdp6pdp6pdp6pdp6pdp6pdp6pdp6pdp6pdp6pdp6pdp6pdp6pdp6pdp6pdp6pdp2otZcirpaiLh6pdpdi7t6pdpgjr96pdpkksN6pdp6pdpolcd6pdpfjb5lk8R6pdpfjb1Zh7dolcd6pdplksR6pdpjkcJ6pdpjkcJ6pdp6pdpZiLdlksR6pdp6pdpgjr5nlMZ6pdp6pdprmMpgjr5mk8V6pdp6pdp6pdp6pdp6pdp6pdp6pdp6pdp6pdqevuSGrd6KsN7R4PL6+/709PTS2N53otd8pdq0zOru8/r////s7OzV1dXL09pdi7uSteDa5vT8/f73+Pnd3+GxwtNXhrV+p9y/1O3z9/z+/v/a4Oa4xM7T1NSGpcWdveTh6/fw8/W7x9K5xM7U1NXW1tdaiLaEq9zK2/D3+v37/P3S2uGuvMm/x8/V2Nufv+Xo8Pnm6u62xM+tvMnEytDGz9nx9fv19/nG0dquvcrIzdGovNCCqdy50Ovm7vj9/f7b4eexv8uwvsrMz9J7nsKhv+X5+/2xv8yyv8vP0dPX2NjT4fPDztevvsvR1NXT19uYueLW3eS0wc3Z2dna2trAzNff5u23w87a3N2ft87Y5PO5xc9ei7iovdHX19dulr3FzdZjjrl8oMLW2NvY2Nmfu9VhjbhcirfFz9lsmMtzmb8AAABf+zaRAAAAWXRSTlMAGmSizu367M2hYRhDuP20QCe8JGP39F0Bi4KNZmAr+PUlwUi/tyAZbKrW7/7+0/Wo2midHP4quedouuj+OVyOgLd/tFfz/oofr+M2OPn74V0RWJbe7pVUD2zvO/8AAAABYktHRACIBR1IAAAACXBIWXMAAAsSAAALEgHS3X78AAAAB3RJTUUH4QsOFBAXVP24nwAAAd1JREFUOMtjYEAARiZmFlY2NnYOTi5uBmyAh5cvEg74+AUwFAgKRaIBXmFUFSKikRhATBxJgYRkJFYghVAiHRlJQI1MJE4gC1EhJ49biYIiWIkSdtmoaLC/QCqUscnHxMbFJySCWKDwUcGQT0pOSU1NS8/IBKlRZWBQQ1eQlZ2Tmpqbl56eXwBSw6fOoIEiX1hUnJqaWlJaVp6eXlEAVsPEoImkoLKqBKggtbqmti49vb6hAKyGmUELJt/Y1AyST21pbWtPB4KOggKwGhYGBYiCzq5UCOju6e0DqUjvL4Co0WaAmjEBomDipN7JU8Aq0qdClBTowJRMmz5jZmrqrNm9c+ZCVKTPgyopYBBDuHb+goW9ixZDVSyBqdBl0EPy0dJly1dAVaSvhCnRZzBAUrJq9Zq166BK1sOUGDIYIYfcho3p6ZsgSjbDlBgzmJgiKdmyNX3ltu07QEp2wpSYMTCYIynp3NWxu6Bgz9709H0wFRagzIFs0/4DIOGDh9IzYEosQQnGClnNYYjEkYNQFdbgVCcshkUNFNjYQhKvXSRONfawLOCAS40jIiM5YVfjjJxhXVwx1bi5o2ZqD090NV7eGGWDj6YvQo2ffwDWEiYwKFgpJDQ0RCUsPAJJGADj62WVAVJE4gAAAABJRU5ErkJggg=="/>
+									</svg>
+								</a>
+							</li>
+							<li class="nav__item">
+								<a href="viber://add?number=89213799600">
+									<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="34" height="34" viewBox="0 0 34 34"><image width="34" height="34" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACIAAAAiCAMAAAANmfvwAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAC7lBMVEUAAABvP6pvP6pvP6pvP6pvP6pvP6pvP6pvP6pvP6pvP6pvP6pvP6pvP6pvP6pvP6pvP6pvP6pvP6pvP6pvP6pvP6pvP6pvP6pvP6pvP6pvP6pvP6pvP6pvP6pvP6pvP6pvP6pvP6pvP6pvP6pvP6pvP6pvP6pvP6pvP6pvP6pvP6pvP6pdNJNvP6pWMIpvP6pZMo5vP6pcNJJvP6pvP6pfNpZvP6pYMY1dNJRvP6pYMY1SLoZfNZZvP6pdNJNvP6pbM5FvP6pbM5FvP6pvP6pTLoZdNJNvP6pvP6pZMo5fNZZvP6pZMo5eNZVvP6pvP6pvP6pvP6pvP6pdNJNaMo9fNpZvP6p4S6+dfcW0nNPItd7Sw+TZzejSxOXHtN53Sq9wQKqvldD49/v////29Pqtkc7Esdzy7/amk8CCaKdqS5ZcOoxSL4WEa6ipl8L08vfm5ubJwdOmiMrj3etlRZJRLYRUMIVgP45yVZrY19nV1dWsmsNwQavu6PX59/toSJRVMoeZhLdlRpJ3W5+/sdHAs9N6YJ/W1tZdNJOBV7XGudjFudbg2elWM4e3qMyxocism8SypsTSztZsT5aZd8OolMLn4u6bhriOd6+dibnQzNbHwNDBuM2VgbGmicuVfLaij7329Pl4XJ9TL4XFvs+xpMOzpsS9tMqwo8KnmLyuk8+KcK1aOIrv7PTg2ulzVpqHcKarnb/LxdOmlrurkM6Lc62ZhLR5Xp6snsCjhMmXgbXEu9Gnl7xSLoSpmr27sclZN4m1qsahkbmQa76yoslTMIbY19jX1dlrTZXJwtGFbab+/v/c0+ejk7qOeqzX1tldO4zWyeeYg7ZbOou0qMXW1dm6sMi1qcXRzdaEXLfv7PHY2Ni3rcdVMYa7ssrX19d1WZuhhMPX19jW1dhTL4SvosK2qsbHwdHTz9eLdauHYLbPxtjJw9LV09nCus2gj7iWgrGHcKhiQo/W1NnIwtHAt8y8sM26r8hSLYUAAADUA3hFAAAAVnRSTlMAGmSizu367M2hYRhDuP20QCe8JGP39F0Bi4KNZmAr+PUlwUi/tyAZbKrW+ffT9ajaaJ4c/iq552i66P46XI6Atn+1V/P+iR+v4zU44VwRWJbe7uHTHeiT8n0AAAABYktHRACIBR1IAAAACXBIWXMAAAsSAAALEgHS3X78AAAAB3RJTUUH4QsOFBEAzjUMGQAAAlJJREFUOMtjYEAARiZmFlY2NnYOTi5uBmyAh5cvDA74+AUwFAgKhaEBXmFUFSKiYRhATBxJgYRkGFYghVAiHRZGQI1MGE4gC1EhJw/lh0dERkXHxMTGRUbEQ4UUFMFKlCC8hMSkZDhISYX5C6RCGcpJS07PyMzKzsnJzsrNyy8ohAqDwkcFwixKLi4pBYKychBZUVlVDRFXZWBQg7BqauvqSxsam0qbW1pzgWra2is7IOGszqABUdKZ3FVa2p3c05vT1z9hIlDNpKrJEDVMDJoQJVOSp5aWTktOnl46Y+as2W2lpXOq5paC1TAzaEGUzEueX1q6IHnhotLFS5YuW15auqJqZSlYDQuDAkTJquTVpaVr1q4DWrF+w8ZNpaWbq5aWgtWwMkD9tiV5K1BkRvI2kH9Kt5eWbqzaUQpWwwZTsjN5F0hkd/uevfv2HwCyDlYdAqvu0GYQgyg5nHwEJHB0dtWxqqrjJ0pLT1adAisp1WHQhcbP6TMQkbNAJVXnSkvPt1+ACOgx6ENtuph8CSJ0+crVa6Wl16tuQLilBgyGUCU3b92+cxcqWtp7r+r+AyjbiMHYBKrm4aOqx6WlT54+2//8xaOqRy9hyk0ZGMxgyefV68rSJ2+qQODRyckwFeagzIFIY2+fvHn3/v2Hj59KEcAClGAs4Uo+f/laigaswKlOWAym5Nt3dBXWNpDEaws3pgNdiR0sC9jjUuOAyEiO2NU4IWdYZxdMNa5uqJna3QNdjacXRtngramNUPPDxxdrCePnH6AUGBQUGBxiF4okDAAY/4yHBQnGaQAAAABJRU5ErkJggg=="/></svg>
+								</a>
+							</li>
+							<li class="nav__item">
+								<a href="tel:+89213799600"><span class="mob">+8 921 379 96 00</span></a>
+							</li>
+							<li class="nav__item insta">
+								<a href="#">
+									<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="34" height="34" viewBox="0 0 34 34"><image width="34" height="34" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACIAAAAiCAMAAAANmfvwAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAACbVBMVEUAAABsJ7NsJ7NsJ7NsJ7NsJ7NsJ7NsJ7NsJ7NsJ7NsJ7NsJ7NsJ7NsJ7NsJ7NsJ7NsJ7NsJ7NsJ7NsJ7NsJ7NsJ7NsJ7NsJ7NsJ7NsJ7NsJ7NsJ7NsJ7NsJ7NsJ7NsJ7NsJ7NsJ7NsJ7NsJ7NsJ7NsJ7NsJ7NsJ7NsJ7NsJ7NsJ7NbH6JSG5hsJ7NVHJtsJ7NYHp5sJ7NbH6FsJ7NsJ7NdIKRsJ7NXHZ1cIKJsJ7NWHZ1RG5ddIKRsJ7NbH6JsJ7NaHqBsJ7NaH6BsJ7NsJ7NbH6JsJ7NsJ7NXHZ1dIKRsJ7NsJ7NXHZ5cIKNsJ7NsJ7NsJ7NsJ7NsJ7NdIKNTG5lVHJxZHp9bH6FdIKRsJ7OESr+5mNvUv+nbyuzby+vW0tvVz9vHtteOXMFtKbS5mdv9/P7////8/PzV1dXEtNZtKbP+/f6/q9mKZbl8U7B9VbGSdLmkjMLOx9fAsdKES8D+/v+IY7dQGpZfL52ljcOAU7S7m9y+qthWIZlZJZtdLJzQztPS0dRhMp7PyNe/stBbH6LWw+pRG5aYeMHi2e7X1dmtmchdLpynkcTRy9jDsNv7+vzMxNZeL5yfhsDV0dn49vuQbrxVIJmum8jW1tarlsfk2++wnMhVIZlcKpxUH5hfL55SHZfh1+2WdsC0o8vW1NmTcb76+Pyae8JaJ5xkNKG2pcumj8S7ptbHvdTVwuqObLvaz+n5+PrW09nQy9jBrtq9r8+CR750S6mykNbHtt6HYreJZLismMfSzdi4qM1tKLOoiM78+/23p8xvOq2jh8jJuN7Kud7RzNi6qs5xRqhcIKJdIKRRGpcAAADrp//LAAAAWXRSTlMAGmSizu367M2hYRhDuP20QCe8JGP39F0Bi4KNZmAr+PUlwUi/tyAZbKrW/f3T9ajaaJwc/iq552e66P45XIyAt3+1V/OIH6/jNTj54VoRWJbe7vf78NKOHvTtk/IAAAABYktHRACIBR1IAAAACXBIWXMAAAsSAAALEgHS3X78AAAAB3RJTUUH4QsOFBEmHDiJ5AAAAiRJREFUOMuF1HdbE0EQBvCVEhtgQVGwIVbsBVHE3ntvp8ZKhtFIQAU2WLBgFEFARYmnYhe7Yi+xl9i/k7c7SW7jhYf3r93Z33Nlb+cYM9MiKjom1mZr2ap1m7YsUuLiE7RQEtq1t4AOHbX/Ep8YLjp11ixJ6qKArslaxKSYpJumNWO6a02mB4mevWi6dt16u92+YaORTZu3UC21tyRpcrI1xwEiuUjZtp3eS4g+5HPAuSPP5XLlFxjZuQtxN9XF/vSVo8IiZzEPxe0uQdwjF/ox1p/wXthHq/tLOT9w8NDhMjzikfs8gA0kchTERY6VH8/FisoTBqnCai5NFEsnYgeXIWoAThqPeuq0m9fiGS5NNBukkHI4W+ctPafjeU5EmBiWqpALUCce5yJWBIlhYplmknpweEX5EuLlIOEem0q84KwX1SuIV0OED2ZJyo2uwXVRvIE3uUmGsKEKaYBbt+/cvafjfYUMY8PVl35A3+ghV8gINpLII8gT88bHT/SnJWJUhc+IjGKjMwJf8TkPSzW+oMEYxjIleemARlVUov5KDsaK5qA7vQZ40+Dz+d7WGnn3HvED2XHiwGRJ8vHTZ/VI6V9IjJenLjGwNV+/1fj9/u8/jJT9/EUiewId3omBHfZwSyYFW2ByU2aK2UhTI5tpasNOn2E12TPDm3rWbDK/Q2LOXMu/YV76fGH+yPW/CxZG/MMsWrwkbemy5StWrlq9Rin/A6//giCVmEVwAAAAAElFTkSuQmCC"/>
+									</svg>
+									<span>autoglobalspb</span>
+								</a>
+							</li>
+							<li class="nav__item">
+								<a href="mailto:auto-global918@mail.ru">
+									<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="33" height="33" viewBox="0 0 33 33"><image width="33" height="33" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACEAAAAhCAMAAABgOjJdAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABNVBMVEUAAABhksVhksVhksVhksVhksVhksVhksVhksVhksVhksVhksVhksVhksVhksVhksVgkMJZe6dYeKJZe6Zafqtbga9YeKNcg7Jaf6xYd6Jcg7FbgK5afKlZeqZcg7Jcg7Fgj8JZeqVhksWTr8+uwdmPq8pgkMORrs+Nq83o7fP////i5+6GnLqNpMOatNL2+PqNrM7p7vPo7PKBl7f19/mWqcNZe6fy9PiNrM3t8fXp7fOEmrny9PdXdZ+OrM7t8PWDmbmRrc6Sr86Em7nV3eiCo8f5+vz29/p8krPQ2eTr7vOJn7zj6fCUsNCOor/f5e2DmrmInbuUr87W3ujv8vbT2+aPo7/u8fX6+/zG0eCuvNHH0d/8/P2Qrc6HnLqFm7mMoL1hkcSQpsOrus9gkMJZeqYAAAB+yI1oAAAAInRSTlMAAkKIwOb8DnjkXeoLqBXK5/7978dz/AS4/RuY4fQWKOj+OXItbQAAAAFiS0dEAIgFHUgAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfhCw4UEiNHfy6oAAABd0lEQVQ4y33UZ1fCMBQG4NAWKJSCyp5qnMSBolCB1jpxD9x7+///gklHuoLvl/Y0z8nJvUkKAE2I44VwBEbCAs+FQDBRMQadxMSoH8Ql6I0U94wnZBiMnHBAMgVZSSXpDGyAiT2LDIdFthYJh8dYblT6R0ikaJG8TU0HMzOLB0TcSdKoufk68mdhcQmTWAhwZIrlxsqqDzTX1lttTDjAGwIpGx0P6PZU1NIw4YFgCqRsKi6gb6kIC0wEELYEUrYdovZ0ZAitPQIitkCdnYYNdgkwhDYKIBVob79vPA8OjxAVmmuO45PTM0L65xeXXZeg69AHKqpfXd/c3umudWhjtJZ7XB5CD49Pzy9GLbol0nY/1IHO6AdOxuqp2usGeqoaImvuy+tbM7gv7x8Y5PLm3n5+fQdDgFawz8fPr8ZMsUTP2BBSdp1TJql4zjqDVGve+xIg1XH/nfORSs1zL+P+iopl5t2nJFcoMf4P5P8xMYl3M53J5p3Pf5bJngZ1eyVPAAAAAElFTkSuQmCC"/>
+									</svg>
+									<span>auto-global918@mail.ru</span>
+								</a>
+							</li>
+						</ul>
+					</nav>
+					<address>Санкт-Петербург, м. Старая деревня</address>
+				</div>	
+			</div>
+			<div class="center__header">
+				<p class="slogan-title wow fadeIn" data-wow-delay="0.2s">Обновите доспехи вашего железного коня</p>
+				<div class="slogan-detail">
+					<div class="slogan-left wow fadeInLeft" data-wow-delay="0.2s"><img src="img/toyota.png" alt="toyota"></div>
+					<div class="slogan-right">
+						<p class="slogan-info wow fadeInLeft">Полный комплект рестайлинга<br>для Toyota Land Cruiser <span class="slogan-list">список моделей</span></p>
+						<div class="flex">
+							<a class="scroll__link btn wow bounceIn" href="#form">ОБНОВИТЬ</a>
+							<ul class="slider wow fadeIn" >
+								<li class="slides wow fadeIn"><a class="slide-gallery" href="img/photo/carBig1.jpg"><img class="responsive" src="img/photo/thumb/car1.jpg" alt="car1" data-wow-delay="0.3s"></a></li>
+								<li class="slides wow fadeIn"><a class="slide-gallery" href="img/photo/carBig1.jpg"><img class="responsive" src="img/photo/thumb/car2.jpg" alt="car2" data-wow-delay="0.6s"></a></li>
+								<li class="slides"><a class="slide-gallery" href="img/photo/carBig1.jpg"><img class="responsive" src="img/photo/thumb/car1.jpg" alt="car2"></a></li>
+								<li class="slides"><a class="slide-gallery" href="img/photo/carBig1.jpg"><img class="responsive" src="img/photo/thumb/car2.jpg" alt="car2"></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<div class="info">
+		<div class="wrapper">
+			<div class="info__wrap">
+				<p class="info__text">Введите Ваше имя и email, и выберите модель авто, <br>чтобы <span class="attention">мгновенно</span> открыть весь комплект <br> нашего рестайлинга!</p>
+				<form class="info__form" id="form" autocomplete="off">
+					<!-- Hidden Required Fields -->
+					<input type="hidden" name="project_name" value="">
+					<input type="hidden" name="admin_email" value="">
+					<input type="hidden" name="form_subject" value="">
+					<!-- END Hidden Required Fields -->
+					<div class="flex-wrap">
+						<div class="flex-left">
+							<input class="form-line line-name" type="text" name="Имя&nbsp;" placeholder="Ваше имя" required>
+							<input class="form-line line-name" type="email" name="Email&nbsp;" placeholder="Ваш email" required>
+							<select class="select-line">
+								<option value="">Выбрать модель</option>
+								<option value="1">Toyota Mini</option>
+								<option value="2">Toyota Bomba</option>
+								<option value="3">Toyota Bimba</option>
+								<option value="4">Toyota WoW</option>
+							</select>	
+						</div>
+						<div class="flex-right"><input type="submit" class="form-link btn" value="Открыть комплект!"> 	</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<footer class="footer">
+		<div class="wrapper">
+			<div class="flex-wrap">
+				<div class="flex-left">SEO текст под запрос купить кузов по частям consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique, tortor mauris molestie elit, et lacinia ipsum quam nec dui. Quisque nec mauris sit amet elit iaculis pretium sit. текст под запрос купить кузов по частям consectetur adipisc SEO текст под запрос купить кузов по частям consectetur adipisc текст под запрос купить кузов по частям consectetur adipisc</div>
+				<div class="flex-right">
+					<ul class="nav__list">
+						<li class="nav__item mb">
+							<a href="whatsapp://send?phone=+89213799600">
+								<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="34" height="34" viewBox="0 0 34 34"><image width="34" height="34" xlink:href="data:img/png;base64,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"/>
+								</svg>
+							</a>
+						</li>
+						<li class="nav__item mb">
+							<a href="https://telegram.me/">
+								<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="34" height="34" viewBox="0 0 34 34"> <image width="34" height="34" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACIAAAAiCAMAAAANmfvwAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAACUlBMVEUAAAB6pdp6pdp6pdp6pdp6pdp6pdp6pdp6pdp6pdp6pdp6pdp6pdp6pdp6pdp6pdp6pdp6pdp6pdp6pdp6pdp6pdp6pdp6pdp6pdp6pdp6pdp6pdp6pdp6pdp6pdp6pdp6pdp6pdp6pdp6pdp6pdp6pdp6pdp6pdp6pdp6pdp6pdp2otZcirpaiLh6pdpdi7t6pdpgjr96pdpkksN6pdp6pdpolcd6pdpfjb5lk8R6pdpfjb1Zh7dolcd6pdplksR6pdpjkcJ6pdpjkcJ6pdp6pdpZiLdlksR6pdp6pdpgjr5nlMZ6pdp6pdprmMpgjr5mk8V6pdp6pdp6pdp6pdp6pdp6pdp6pdp6pdp6pdqevuSGrd6KsN7R4PL6+/709PTS2N53otd8pdq0zOru8/r////s7OzV1dXL09pdi7uSteDa5vT8/f73+Pnd3+GxwtNXhrV+p9y/1O3z9/z+/v/a4Oa4xM7T1NSGpcWdveTh6/fw8/W7x9K5xM7U1NXW1tdaiLaEq9zK2/D3+v37/P3S2uGuvMm/x8/V2Nufv+Xo8Pnm6u62xM+tvMnEytDGz9nx9fv19/nG0dquvcrIzdGovNCCqdy50Ovm7vj9/f7b4eexv8uwvsrMz9J7nsKhv+X5+/2xv8yyv8vP0dPX2NjT4fPDztevvsvR1NXT19uYueLW3eS0wc3Z2dna2trAzNff5u23w87a3N2ft87Y5PO5xc9ei7iovdHX19dulr3FzdZjjrl8oMLW2NvY2Nmfu9VhjbhcirfFz9lsmMtzmb8AAABf+zaRAAAAWXRSTlMAGmSizu367M2hYRhDuP20QCe8JGP39F0Bi4KNZmAr+PUlwUi/tyAZbKrW7/7+0/Wo2midHP4quedouuj+OVyOgLd/tFfz/oofr+M2OPn74V0RWJbe7pVUD2zvO/8AAAABYktHRACIBR1IAAAACXBIWXMAAAsSAAALEgHS3X78AAAAB3RJTUUH4QsOFBAXVP24nwAAAd1JREFUOMtjYEAARiZmFlY2NnYOTi5uBmyAh5cvEg74+AUwFAgKRaIBXmFUFSKikRhATBxJgYRkJFYghVAiHRlJQI1MJE4gC1EhJ49biYIiWIkSdtmoaLC/QCqUscnHxMbFJySCWKDwUcGQT0pOSU1NS8/IBKlRZWBQQ1eQlZ2Tmpqbl56eXwBSw6fOoIEiX1hUnJqaWlJaVp6eXlEAVsPEoImkoLKqBKggtbqmti49vb6hAKyGmUELJt/Y1AyST21pbWtPB4KOggKwGhYGBYiCzq5UCOju6e0DqUjvL4Co0WaAmjEBomDipN7JU8Aq0qdClBTowJRMmz5jZmrqrNm9c+ZCVKTPgyopYBBDuHb+goW9ixZDVSyBqdBl0EPy0dJly1dAVaSvhCnRZzBAUrJq9Zq166BK1sOUGDIYIYfcho3p6ZsgSjbDlBgzmJgiKdmyNX3ltu07QEp2wpSYMTCYIynp3NWxu6Bgz9709H0wFRagzIFs0/4DIOGDh9IzYEosQQnGClnNYYjEkYNQFdbgVCcshkUNFNjYQhKvXSRONfawLOCAS40jIiM5YVfjjJxhXVwx1bi5o2ZqD090NV7eGGWDj6YvQo2ffwDWEiYwKFgpJDQ0RCUsPAJJGADj62WVAVJE4gAAAABJRU5ErkJggg=="/>
+								</svg>
+							</a>
+						</li>
+						<li class="nav__item mb">
+							<a href="viber://add?number=89213799600">
+								<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="34" height="34" viewBox="0 0 34 34"><image width="34" height="34" xlink:href="data:img/png;base64,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"/></svg>
+							</a>
+						</li>
+						<li class="nav__item mb">
+							<a href="tel:+89213799600"><span class="mob">+8 921 379 96 00</span></a>
+						</li>
+						<li class="nav__item mb insta">
+							<a href="#">
+								<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="34" height="34" viewBox="0 0 34 34"><image width="34" height="34" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACIAAAAiCAMAAAANmfvwAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAACbVBMVEUAAABsJ7NsJ7NsJ7NsJ7NsJ7NsJ7NsJ7NsJ7NsJ7NsJ7NsJ7NsJ7NsJ7NsJ7NsJ7NsJ7NsJ7NsJ7NsJ7NsJ7NsJ7NsJ7NsJ7NsJ7NsJ7NsJ7NsJ7NsJ7NsJ7NsJ7NsJ7NsJ7NsJ7NsJ7NsJ7NsJ7NsJ7NsJ7NsJ7NsJ7NsJ7NsJ7NbH6JSG5hsJ7NVHJtsJ7NYHp5sJ7NbH6FsJ7NsJ7NdIKRsJ7NXHZ1cIKJsJ7NWHZ1RG5ddIKRsJ7NbH6JsJ7NaHqBsJ7NaH6BsJ7NsJ7NbH6JsJ7NsJ7NXHZ1dIKRsJ7NsJ7NXHZ5cIKNsJ7NsJ7NsJ7NsJ7NsJ7NdIKNTG5lVHJxZHp9bH6FdIKRsJ7OESr+5mNvUv+nbyuzby+vW0tvVz9vHtteOXMFtKbS5mdv9/P7////8/PzV1dXEtNZtKbP+/f6/q9mKZbl8U7B9VbGSdLmkjMLOx9fAsdKES8D+/v+IY7dQGpZfL52ljcOAU7S7m9y+qthWIZlZJZtdLJzQztPS0dRhMp7PyNe/stBbH6LWw+pRG5aYeMHi2e7X1dmtmchdLpynkcTRy9jDsNv7+vzMxNZeL5yfhsDV0dn49vuQbrxVIJmum8jW1tarlsfk2++wnMhVIZlcKpxUH5hfL55SHZfh1+2WdsC0o8vW1NmTcb76+Pyae8JaJ5xkNKG2pcumj8S7ptbHvdTVwuqObLvaz+n5+PrW09nQy9jBrtq9r8+CR750S6mykNbHtt6HYreJZLismMfSzdi4qM1tKLOoiM78+/23p8xvOq2jh8jJuN7Kud7RzNi6qs5xRqhcIKJdIKRRGpcAAADrp//LAAAAWXRSTlMAGmSizu367M2hYRhDuP20QCe8JGP39F0Bi4KNZmAr+PUlwUi/tyAZbKrW/f3T9ajaaJwc/iq552e66P45XIyAt3+1V/OIH6/jNTj54VoRWJbe7vf78NKOHvTtk/IAAAABYktHRACIBR1IAAAACXBIWXMAAAsSAAALEgHS3X78AAAAB3RJTUUH4QsOFBEmHDiJ5AAAAiRJREFUOMuF1HdbE0EQBvCVEhtgQVGwIVbsBVHE3ntvp8ZKhtFIQAU2WLBgFEFARYmnYhe7Yi+xl9i/k7c7SW7jhYf3r93Z33Nlb+cYM9MiKjom1mZr2ap1m7YsUuLiE7RQEtq1t4AOHbX/Ep8YLjp11ixJ6qKArslaxKSYpJumNWO6a02mB4mevWi6dt16u92+YaORTZu3UC21tyRpcrI1xwEiuUjZtp3eS4g+5HPAuSPP5XLlFxjZuQtxN9XF/vSVo8IiZzEPxe0uQdwjF/ox1p/wXthHq/tLOT9w8NDhMjzikfs8gA0kchTERY6VH8/FisoTBqnCai5NFEsnYgeXIWoAThqPeuq0m9fiGS5NNBukkHI4W+ctPafjeU5EmBiWqpALUCce5yJWBIlhYplmknpweEX5EuLlIOEem0q84KwX1SuIV0OED2ZJyo2uwXVRvIE3uUmGsKEKaYBbt+/cvafjfYUMY8PVl35A3+ghV8gINpLII8gT88bHT/SnJWJUhc+IjGKjMwJf8TkPSzW+oMEYxjIleemARlVUov5KDsaK5qA7vQZ40+Dz+d7WGnn3HvED2XHiwGRJ8vHTZ/VI6V9IjJenLjGwNV+/1fj9/u8/jJT9/EUiewId3omBHfZwSyYFW2ByU2aK2UhTI5tpasNOn2E12TPDm3rWbDK/Q2LOXMu/YV76fGH+yPW/CxZG/MMsWrwkbemy5StWrlq9Rin/A6//giCVmEVwAAAAAElFTkSuQmCC"/>
+								</svg>
+								<span>autoglobalspb</span>
+							</a>
+						</li>
+						<li class="nav__item mb">
+							<a href="mailto:auto-global918@mail.ru">
+								<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="33" height="33" viewBox="0 0 33 33"><image width="33" height="33" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACEAAAAhCAMAAABgOjJdAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABNVBMVEUAAABhksVhksVhksVhksVhksVhksVhksVhksVhksVhksVhksVhksVhksVhksVhksVgkMJZe6dYeKJZe6Zafqtbga9YeKNcg7Jaf6xYd6Jcg7FbgK5afKlZeqZcg7Jcg7Fgj8JZeqVhksWTr8+uwdmPq8pgkMORrs+Nq83o7fP////i5+6GnLqNpMOatNL2+PqNrM7p7vPo7PKBl7f19/mWqcNZe6fy9PiNrM3t8fXp7fOEmrny9PdXdZ+OrM7t8PWDmbmRrc6Sr86Em7nV3eiCo8f5+vz29/p8krPQ2eTr7vOJn7zj6fCUsNCOor/f5e2DmrmInbuUr87W3ujv8vbT2+aPo7/u8fX6+/zG0eCuvNHH0d/8/P2Qrc6HnLqFm7mMoL1hkcSQpsOrus9gkMJZeqYAAAB+yI1oAAAAInRSTlMAAkKIwOb8DnjkXeoLqBXK5/7978dz/AS4/RuY4fQWKOj+OXItbQAAAAFiS0dEAIgFHUgAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfhCw4UEiNHfy6oAAABd0lEQVQ4y33UZ1fCMBQG4NAWKJSCyp5qnMSBolCB1jpxD9x7+///gklHuoLvl/Y0z8nJvUkKAE2I44VwBEbCAs+FQDBRMQadxMSoH8Ql6I0U94wnZBiMnHBAMgVZSSXpDGyAiT2LDIdFthYJh8dYblT6R0ikaJG8TU0HMzOLB0TcSdKoufk68mdhcQmTWAhwZIrlxsqqDzTX1lttTDjAGwIpGx0P6PZU1NIw4YFgCqRsKi6gb6kIC0wEELYEUrYdovZ0ZAitPQIitkCdnYYNdgkwhDYKIBVob79vPA8OjxAVmmuO45PTM0L65xeXXZeg69AHKqpfXd/c3umudWhjtJZ7XB5CD49Pzy9GLbol0nY/1IHO6AdOxuqp2usGeqoaImvuy+tbM7gv7x8Y5PLm3n5+fQdDgFawz8fPr8ZMsUTP2BBSdp1TJql4zjqDVGve+xIg1XH/nfORSs1zL+P+iopl5t2nJFcoMf4P5P8xMYl3M53J5p3Pf5bJngZ1eyVPAAAAAElFTkSuQmCC"/>
+								</svg>
+								<span>auto-global918@mail.ru</span>
+							</a>
+						</li>
+						<li class="nav__item"><a class="law__link politics__link" href="#politics">Политика конфиденциальности</a></li>
+						<li class="nav__item"><a class="law__link politics__link" href="#return">Условия покупки и возврата</a></li>
+					</ul>
+				</div>
+			</div>	
+		</div>	
+		<div id="politics" class="white-popup-politics mfp-hide politics-box">
+			<div>
+				<p class="question">Какие данные собираются на сайте?</p>
+				<p class="answer">Имя, email и ссылка на страницу — для того, чтобы мы смогли вас правильно индифицировать и обращаться к вам.</p> 
+				<p class="question">С какой целью собираются эти данные?</p> 
+				<p class="answer">Имя используется для обращения лично к вам, а ваш e-mail для отправки вам писем образовательного характера. Ваши имя и e-mail не передаются третьим лицам, ни при каких условиях кроме случаев, связанных с исполнением требований законодательства. Вы можете отказаться от получения писем рассылки и удалить из базы данных свои контактные данные в любой момент, кликнув на ссылку для отписки, присутствующую в каждом письме.</p>
+				<p class="question">Как эти данные используются? </p>
+				<p class="answer">При помощи этих данных собирается информация о действиях посетителей на сайте с целью улучшения его содержания, улучшения функциональных возможностей сайта и, как следствие, создания качественного сайта и описаний для посетителей. Вы можете в любой момент изменить настройки своего браузера так, чтобы браузер блокировал все файлы cookie или оповещал об отправке этих файлов. Учтите при этом, что некоторые функции и сервисы не смогут работать должным образом. </p>
+				<p class="question">Как эти данные защищаются? </p>
+				<p class="answer">Для защиты Вашей личной информации мы используем разнообразные административные, управленческие и технические меры безопасности. Наша Компания придерживается различных международных стандартов контроля, направленных на операции с личной информацией, которые включают определенные меры контроля по защите информации, собранной в Интернете. Наших сотрудников обучают понимать и выполнять эти меры контроля, они ознакомлены с нашим Уведомлением о конфиденциальности, нормами и инструкциями. <br> Тем не менее, несмотря на то, что мы стремимся обезопасить Вашу личную информацию, Вы тоже должны принимать меры, чтобы защитить ее. Мы настоятельно рекомендуем Вам принимать все возможные меры предосторожности во время пребывания в Интернете. Организованные нами услуги и веб-сайты предусматривают меры по защите от утечки, несанкционированного использования и изменения информации, которую мы контролируем. Несмотря на то, что мы делаем все возможное, чтобы обеспечить целостность и безопасность своей сети и систем, мы не можем гарантировать, что наши меры безопасности предотвратят незаконный доступ к этой информации хакеров сторонних организаций. <br> В случае изменения данной политики конфиденциальности вы сможете прочитать об этих изменениях на этой странице или, в особых случаях, получить уведомление на свой e-mail. </p>
+				<p class="question">Для связи с администратором сайта по любым вопросам вы можете написать письмо на e-mail: _______</p>
+			</div>
+		</div>
+		<div id="return" class="white-popup-politics mfp-hide politics-box">
+			<div>
+				<p class="answer">Тут будет условия возврата. А могла быть Ваша реклама</p>
+			</div>
+		</div>
+	</footer>
+
+
+
+
+
+	<script src="js/script.min.js"></script> 
+	<script src="js/script.js"></script> 
+</body>
+</html>

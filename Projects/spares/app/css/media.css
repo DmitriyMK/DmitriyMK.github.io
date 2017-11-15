@@ -1,0 +1,232 @@
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 1024px) {
+  .top__header {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; }
+    .top__header .right__side {
+      -webkit-flex-wrap: wrap;
+          -ms-flex-wrap: wrap;
+              flex-wrap: wrap;
+      width: 100%;
+      margin: 0 auto; }
+    .top__header .logo {
+      text-align: center;
+      width: 100%; }
+    .top__header .nav__list {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-flex-wrap: wrap;
+          -ms-flex-wrap: wrap;
+              flex-wrap: wrap; }
+    .top__header .nav__item {
+      margin-right: 8px; }
+    .top__header .nav__item a {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center;
+      font-size: 1.25rem; }
+    .top__header .insta {
+      margin: 0; }
+    .top__header address {
+      text-align: center;
+      margin-top: 0; }
+  .center__header {
+    width: 100%;
+    margin-top: 30px; }
+    .center__header .slogan-title {
+      text-align: center; }
+    .center__header .slogan-detail {
+      margin-top: 30px; }
+    .center__header .slogan-left img {
+      margin: auto;
+      text-align: center; }
+    .center__header .slogan-info {
+      font-size: 2.25rem;
+      line-height: 48px; }
+    .center__header .flex {
+      margin-top: 30px;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-flex-wrap: wrap;
+          -ms-flex-wrap: wrap;
+              flex-wrap: wrap;
+      -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
+          -ms-flex-pack: justify;
+              justify-content: space-between; }
+    .center__header .slider {
+      width: 300px; }
+  .info__wrap {
+    width: 80%;
+    margin-top: 30px; }
+  .info__text {
+    font-size: 1.625rem;
+    line-height: 36px; }
+  .info .attention {
+    width: 160px; }
+  .info .info__form {
+    margin: 40px 0; }
+    .info .info__form .flex-wrap {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
+          -ms-flex-pack: justify;
+              justify-content: space-between; }
+    .info .info__form .form-line {
+      width: 94%; } }
+
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
+  .header {
+    min-height: 900px;
+    padding-top: 15px; }
+  .center__header .slogan-title {
+    font-size: 1.5rem; }
+  .center__header .slogan-detail {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    margin-top: 0; }
+  .center__header .slogan-left {
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 0; }
+    .center__header .slogan-left img {
+      max-width: 130px;
+      display: none; }
+  .center__header .slogan-right {
+    text-align: center;
+    width: 100%;
+    margin-right: 0;
+    margin-top: 15px; }
+  .center__header .slogan-info {
+    font-size: 2rem;
+    line-height: 40px; }
+  .center__header .flex {
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  .center__header .slider {
+    width: 300px;
+    margin: 20px auto; }
+  .info__wrap {
+    width: 80%;
+    margin-top: 30px; }
+  .info .info__form .flex-wrap {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; }
+  .info .form-link {
+    margin-top: 20px; }
+  .footer {
+    padding: 30px 0; }
+    .footer .flex-wrap {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-flex-wrap: wrap;
+          -ms-flex-wrap: wrap;
+              flex-wrap: wrap;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column; }
+    .footer .flex-left {
+      width: 80%;
+      margin: auto; }
+    .footer .flex-right {
+      width: 100%; }
+    .footer .nav__list {
+      margin-top: 25px;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-flex-wrap: wrap;
+          -ms-flex-wrap: wrap;
+              flex-wrap: wrap; }
+    .footer .mb {
+      margin-bottom: 15px; } }
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px) {
+  .center__header .slogan-title {
+    font-size: 1.25rem; }
+  .center__header .slogan-detail {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    margin-top: 0; }
+  .center__header .slogan-info {
+    font-size: 1.625rem;
+    line-height: 30px; }
+  .info__text {
+    font-size: 1.625rem;
+    line-height: 30px; }
+  .info__wrap {
+    width: 100%; }
+  .info .attention {
+    display: inline-block;
+    width: 150px;
+    height: 30px;
+    background: url(../img/text-background.png) no-repeat; }
+  .footer .flex-left {
+    width: 100%; }
+  .footer .politics__link {
+    text-align: center; } }
+
+/* Custom, iPhone Retina */

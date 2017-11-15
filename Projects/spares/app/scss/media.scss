@@ -1,0 +1,245 @@
+@import "_vars";
+@import "_mixin and function";
+
+
+/* Medium Devices, Desktops */
+
+@media only screen and (max-width : 1024px) {
+
+	.top__header {
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+		.right__side {
+			flex-wrap: wrap;
+			width: 100%;
+			margin: 0 auto;
+		}
+		.logo {
+			text-align: center;
+			width: 100%;
+		}
+		.nav__list {
+			display: flex;
+			justify-content: center;
+			flex-wrap: wrap;
+		}
+		.nav__item {
+			margin-right: 8px;
+		}
+		.nav__item a {
+			display: flex;
+			align-items: center;
+			font-size: rem(20);
+		}
+		.insta {
+			margin: 0;
+		}
+		address {
+			text-align: center;
+			margin-top: 0;
+		}
+	}
+
+	.center__header {
+		width: 100%;
+		margin-top: 30px;
+		.slogan-title {
+			text-align: center;
+		}
+		.slogan-detail {
+			margin-top: 30px;
+		}
+		.slogan-left {
+			img {
+				margin: auto;
+				text-align: center;
+			}
+		}
+		.slogan-info {
+			font-size: rem(36);
+			line-height: 48px;
+		}
+		.flex {
+			margin-top: 30px;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+		}
+		.slider {
+			width: 300px;
+		}
+	}
+
+	.info {
+		&__wrap {
+			width: 80%;
+			margin-top: 30px;
+		}
+		&__text {
+			font-size: rem(26);
+			line-height: 36px;
+		}
+		.attention {
+			width: 160px;
+		}
+		.info__form {
+			margin: 40px 0;
+			.flex-wrap {
+				display: flex;
+				justify-content: space-between;
+			}
+			.form-line {
+				width: 94%;
+			}
+		}
+	}
+
+}  
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+
+	.header {
+		min-height: 900px;
+		padding-top: 15px;
+	}
+
+	.center__header {
+		.slogan-title {
+			font-size: rem(24);
+		}
+		.slogan-detail {
+			justify-content: center;
+			flex-wrap: wrap;
+			margin-top: 0;
+		}
+		.slogan-left {
+			width: 100%;
+			margin-top: 15px;
+			margin-bottom: 0;
+			img {
+				max-width: 130px;
+				display: none;
+			}
+		}
+		.slogan-right {
+			text-align: center;
+			width: 100%;
+			margin-right: 0;
+			margin-top: 15px;
+		}
+		.slogan-info {
+			font-size: rem(32);
+			line-height: 40px;
+		}
+		.flex {
+			position: relative;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+		}
+		.slider {
+			width: 300px;
+			margin: 20px auto;
+		}
+	}
+	.info {
+		&__wrap {
+			width: 80%;
+			margin-top: 30px;
+		}
+		.info__form {
+			.flex-wrap {
+				flex-wrap: wrap;
+			}
+		}
+		.form-link {
+			margin-top: 20px;
+		}
+	}
+
+	.footer {
+		padding: 30px 0;
+		.flex-wrap {
+			display: flex;
+			justify-content: center;
+			flex-wrap: wrap;
+			flex-direction: column;
+		}
+		.flex-left {
+			width: 80%;
+			margin: auto;
+		}
+		.flex-right {
+			width: 100%;
+		}
+		.nav__list {
+			margin-top: 25px;
+			display: flex;
+			justify-content:center;
+			flex-wrap: wrap;
+		}
+		.mb {
+			margin-bottom: 15px;
+		}
+	}
+
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px) {
+
+	.center__header {
+		.slogan-title {
+			font-size: rem(20);
+		}
+		.slogan-detail {
+			justify-content: center;
+			flex-wrap: wrap;
+			margin-top: 0;
+		}
+		.slogan-info {
+			font-size: rem(26);
+			line-height: 30px;
+		}
+	}
+
+	.info {
+		&__text {
+			font-size: rem(26);
+			line-height: 30px;
+		}
+		&__wrap {
+			width: 100%;
+		}
+		.attention {
+			display: inline-block;
+			width: 150px;
+			height: 30px;
+			background: url(../img/text-background.png) no-repeat;
+		}
+	}
+
+	.footer {
+		.flex-left {
+			width: 100%;
+		}
+		.politics__link {
+			text-align: center;
+		}
+	}
+
+	
+
+
+
+
+}
+
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width: 320px)  {
+
+}
