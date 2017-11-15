@@ -4274,9 +4274,7 @@ a {
       background: linear-gradient(to right, rgba(237, 46, 54, 0.4) 0%, #ed2e36 100%); }
 
 .info {
-  position: relative;
-  z-index: 1000;
-  padding: 50px 0;
+  padding: 100px 00;
   background: url(../img/background.png) #fff no-repeat center/cover; }
   .info__wrap {
     width: 80%;
