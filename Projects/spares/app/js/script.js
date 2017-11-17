@@ -20,7 +20,12 @@ $(document).ready(function() {
 
 
 	$(function() {
-		var $gallery = $('.slide-gallery').simpleLightbox();
+		var $gallery1 = $('.slide-gallery').simpleLightbox();
+
+	});
+
+	$(function() {
+		var $gallery2 = $('.set-gallery').simpleLightbox();
 
 	});
 
@@ -64,20 +69,8 @@ $(document).ready(function() {
 		focus: '#username',
 	});
 
-		$.sublime_slideshow({
-			src: [{
-				url: "img/carBig2.jpg"
-			}, {
-				url: "img/carBig3.jpg"
-			}],
-			duration: 3,
-			fade: 1,
-			scaling: false,
-			rotating: false,
-			overlay: "img/pattern.png"
-		});
-
-
+	$('.phone-mask').mask('+7000 000 00 00');
+	
 	new WOW().init();
 
 });
