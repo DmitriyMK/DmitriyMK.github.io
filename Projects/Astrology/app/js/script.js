@@ -111,12 +111,9 @@ $(function() {
 		if ($(".articles:hidden").length == 0) {
 			$("#loadMore").fadeOut('slow');
 		}
-		$('html,body').animate({
-			scrollTop: $(this).offset().top
-		}, 1500);
+		$('html,body').animate({}, 1500);
 		if ($(".articles:last").css('display') == 'block') {
 			$('#loadMore').hide();
-			/*$('.totop').show()*/
 		}
 	});
 });
