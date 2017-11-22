@@ -835,6 +835,20 @@
     text-align: center;
     padding-right: 0; }
   .about .box-title {
-    padding: 10px 0; } }
+    padding: 10px 0; }
+  .formOrder {
+    padding: 10px; }
+    .formOrder__text {
+      padding: 40px 0;
+      font-size: 1.25rem;
+      line-height: 22px; }
+    .formOrder-line {
+      width: 95%; }
+    .formOrder-select {
+      padding-left: 5%; }
+      .formOrder-select label {
+        padding-left: 10%; }
+    .formOrder .agree-text {
+      font-size: 0.8125rem; } }
 
 /* Custom, iPhone Retina */

@@ -695,8 +695,6 @@
 }
 
 
-
-
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
 
@@ -889,6 +887,27 @@
 		}
 		.box-title {
 			padding: 10px 0;
+		}
+	}
+	.formOrder{
+		padding: 10px;
+		&__text {
+			padding: 40px 0;
+			font-size: rem(20);
+			line-height: 22px;
+		}
+		&-line {
+			width: 95%;
+		}
+
+		&-select {
+			padding-left: 5%;
+			label {
+				padding-left: 10%;
+			}
+		}
+		.agree-text {
+			font-size: rem(13);
 		}
 	}
 }
