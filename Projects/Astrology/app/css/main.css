@@ -2241,6 +2241,91 @@ a {
     text-align: center;
     margin-bottom: 80px; }
 
+.formOrder {
+  text-align: center; }
+  .formOrder-wrap {
+    border: 2px dashed #88c99d; }
+  .formOrder__text {
+    padding: 60px 0;
+    text-align: center;
+    font-size: 1.375rem;
+    line-height: 24px;
+    font-family: "GothamProMedium"; }
+  .formOrder-line {
+    display: inline-block;
+    width: 80%;
+    border: none;
+    padding: 15px;
+    margin-bottom: 15px;
+    -webkit-border-radius: 9px;
+            border-radius: 9px;
+    outline: none;
+    font-size: 0.9375rem;
+    color: #666;
+    -webkit-box-shadow: 9.192px 9.192px 16px 0px rgba(14, 14, 14, 0.24);
+            box-shadow: 9.192px 9.192px 16px 0px rgba(14, 14, 14, 0.24); }
+  .formOrder-link {
+    padding: 10px 60px;
+    margin-bottom: 50px;
+    background-image: -webkit-linear-gradient(-15deg, #87e094 0%, #55b0eb 100%);
+    background-image: -ms-linear-gradient(-15deg, #87e094 0%, #55b0eb 100%);
+    -webkit-box-shadow: 9.192px 9.192px 16px 0px rgba(14, 14, 14, 0.24);
+            box-shadow: 9.192px 9.192px 16px 0px rgba(14, 14, 14, 0.24);
+    -webkit-border-radius: 5px;
+            border-radius: 5px;
+    display: inline-block;
+    font-family: "GothamProBold";
+    color: #fff;
+    -webkit-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    opacity: .8;
+    clear: both;
+    font-size: 1.125rem; }
+    .formOrder-link:hover {
+      opacity: 1; }
+  .formOrder-select {
+    padding-left: 10%;
+    text-align: left;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; }
+    .formOrder-select input[type="checkbox"] {
+      display: none; }
+    .formOrder-select label {
+      padding-left: 11%;
+      position: relative;
+      margin: 10px 20px 10px 0; }
+    .formOrder-select input[type="checkbox"] + label:before {
+      content: '';
+      display: block;
+      width: 22px;
+      height: 22px;
+      position: absolute;
+      top: 20px;
+      left: 0;
+      border: 1px solid #666;
+      -webkit-border-radius: 50%;
+              border-radius: 50%;
+      background: #fff; }
+    .formOrder-select input[type="checkbox"]:checked + label:after {
+      content: '';
+      display: block;
+      width: 10px;
+      height: 7px;
+      border-bottom: 3px solid #6ac0f3;
+      border-left: 3px solid #6ac0f3;
+      -webkit-transform: rotate(-45deg);
+          -ms-transform: rotate(-45deg);
+              transform: rotate(-45deg);
+      position: absolute;
+      top: 26px;
+      left: 6px; }
+    .formOrder-select .agree-text {
+      font-size: 0.9375rem;
+      color: #666; }
+
 .aside {
   margin-left: 72px;
   padding-top: 54px; }
@@ -2677,7 +2762,11 @@ a {
             justify-content: space-between;
     -webkit-flex-wrap: wrap;
         -ms-flex-wrap: wrap;
-            flex-wrap: wrap; }
+            flex-wrap: wrap;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+        -ms-flex-align: start;
+            align-items: flex-start; }
   .review__page .review-content {
     position: relative;
     display: -webkit-box;
@@ -2689,17 +2778,13 @@ a {
     -webkit-flex-direction: column;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-        -ms-flex-pack: center;
-            justify-content: center;
     -webkit-box-align: center;
     -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center;
     max-width: 230px;
     margin: 0 auto;
-    padding: 15pxpx;
+    padding: 15px;
     z-index: 10;
     background: #fff;
     -webkit-box-shadow: 9.192px 9.192px 16px 0px rgba(14, 14, 14, 0.24);
@@ -2743,7 +2828,9 @@ a {
     text-align: center;
     font-size: 0.78187rem;
     font-family: "GothamProLightItalic";
-    color: #323232; }
+    color: #323232;
+    max-height: 300px;
+    overflow-y: hidden; }
   .review__page .review-video {
     margin-top: 70px;
     max-width: 230px;
@@ -2846,10 +2933,17 @@ a {
       -webkit-border-radius: 50%;
               border-radius: 50%;
       margin: auto; }
+  .consult-page .consult__text-title {
+    padding-bottom: 10px;
+    font-weight: bold;
+    font-size: 1.125rem;
+    line-height: 18px;
+    color: #323232;
+    text-align: center; }
   .consult-page .consult__text {
     margin: 0 auto;
-    width: 85%;
-    font-size: 1rem;
+    width: 90%;
+    font-size: 0.9375rem;
     line-height: 17px;
     color: #323232; }
 
@@ -3249,7 +3343,6 @@ a {
 
 /* PAGE 7*/
 .blog__page {
-  background: #f2f2f2;
   position: relative; }
   .blog__page .crumbs, .blog__page .page__title {
     position: relative;
@@ -3261,8 +3354,7 @@ a {
     z-index: 1000; }
   .blog__page .blog-wrap {
     margin: auto;
-    padding: 60px;
-    z-index: 9; }
+    padding: 60px; }
   .blog__page .social-list {
     display: -webkit-box;
     display: -webkit-flex;
@@ -3273,13 +3365,15 @@ a {
     font-family: "GothamProMedium"; }
   .blog__page .aside {
     position: relative;
-    z-index: 100; }
+    z-index: 10000; }
 
 /* PAGE 8*/
 .contact__page {
-  position: relative; }
+  position: relative;
+  min-height: 150vh;
+  background-image: #666; }
   .contact__page .box-form-form {
-    margin-top: 50px; }
+    margin: 60px 0; }
   .contact__page .flex-wrap {
     display: -webkit-box;
     display: -webkit-flex;
@@ -3294,10 +3388,10 @@ a {
   .contact__page .form-line {
     border: none;
     width: 47%;
-    padding: 10px;
+    padding: 15px;
     margin-bottom: 15px;
-    -webkit-border-radius: 5px;
-            border-radius: 5px;
+    -webkit-border-radius: 9px;
+            border-radius: 9px;
     outline: none;
     font-size: 0.9375rem;
     color: #666; }
@@ -3311,14 +3405,16 @@ a {
             box-shadow: 9.192px 9.192px 16px 0px rgba(14, 14, 14, 0.24); }
   .contact__page .form-line-text {
     width: 100%;
-    border: none;
+    border: 1px solid #666;
     padding: 10px;
-    margin-bottom: 15px;
-    -webkit-border-radius: 5px;
-            border-radius: 5px;
+    margin-bottom: 20px;
+    -webkit-border-radius: 9px;
+            border-radius: 9px;
     outline: none;
     font-size: 0.9375rem;
-    color: #666; }
+    color: #666;
+    -webkit-box-shadow: 9.192px 9.192px 16px 0px rgba(14, 14, 14, 0.24);
+            box-shadow: 9.192px 9.192px 16px 0px rgba(14, 14, 14, 0.24); }
   .contact__page .select-line {
     border: none;
     width: 300px;
@@ -3350,7 +3446,17 @@ a {
   line-height: 20px;
   padding-left: 10px;
   color: #666;
-  font-family: "GothamProRegular"; }
+  font-family: "GothamProRegular";
+  background: #fff; }
+
+.selectize-control.single .selectize-input {
+  background: #fff !important;
+  outline: none !important;
+  font-size: 0.9375rem !important;
+  color: #666 !important;
+  margin-bottom: 10px;
+  -webkit-box-shadow: 9.192px 9.192px 16px 0px rgba(14, 14, 14, 0.24);
+          box-shadow: 9.192px 9.192px 16px 0px rgba(14, 14, 14, 0.24); }
 
 /* АRROWS */
 .slick-prev:before,
@@ -3371,6 +3477,43 @@ a {
     content: '\e802'; }
 
 /* STYLE POP-UP */
+.white-popup {
+  position: relative;
+  background: #e6e6e6;
+  padding: 20px 30px;
+  max-width: 500px;
+  margin: 20px auto; }
+
+.success {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-transform: uppercase;
+  font-size: 3rem;
+  font-weight: bold;
+  color: #6ac0f3;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  z-index: 10;
+  display: none; }
+
+.success span {
+  margin: auto; }
+
+.success ~ * {
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease; }
+
+.success.active ~ * {
+  opacity: 0.5;
+  -webkit-filter: blur(10px);
+          filter: blur(10px); }
+
 .white-popup-politics {
   position: relative;
   background: #e6e6e6;
@@ -3383,13 +3526,13 @@ a {
     font-size: 0.9375rem; }
 
 .mfp-close-btn-in .mfp-close {
-  color: #666;
+  color: #ff332a;
   width: 100%;
   opacity: 1;
   text-align: right;
-  padding-right: 25px;
-  padding-top: 0;
-  font-size: 2.25rem;
+  padding-right: 40px;
+  padding-top: 15px;
+  font-size: 2.625rem;
   outline: none;
   z-index: 100; }
 

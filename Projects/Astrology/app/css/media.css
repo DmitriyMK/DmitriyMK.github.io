@@ -429,6 +429,7 @@
     width: 100%;
     padding-top: 0;
     padding-bottom: 30px;
+    padding-left: 0;
     margin-left: 0;
     text-align: center; }
   .consult-page .consult__list {
@@ -623,6 +624,8 @@
       margin-top: 20px;
       margin-bottom: 40px;
       max-width: 700px; }
+  .contact__page:before {
+    display: none; }
   .contact__page .box-form-form {
     margin-top: 15px;
     text-align: center; }
@@ -648,15 +651,15 @@
         -ms-flex-wrap: wrap;
             flex-wrap: wrap; }
     .contact__page .flex-wrap .form-line {
-      width: 300px;
+      width: 90%;
       text-align: center; }
   .contact__page .form-line {
-    width: 300px;
+    width: 90%;
     text-align: center; }
   .contact__page input, .contact__page option {
-    width: 300px; }
+    width: 90%; }
   .contact__page .form-line-text {
-    width: 300px;
+    width: 90%;
     text-align: center; }
   .contact__page .select-line {
     margin: auto;
@@ -668,6 +671,7 @@
     width: 100%;
     padding-top: 0;
     padding-bottom: 30px;
+    padding-left: 0;
     margin-top: 20px;
     margin-left: 0;
     text-align: center; } }
@@ -762,6 +766,13 @@
       margin-right: 5px; }
   .header__pages {
     min-height: 100px; }
+  .page {
+    position: relative;
+    overflow-x: hidden; }
+    .page:before {
+      display: none; }
+    .page .aside {
+      padding-left: 0; }
   .services:before {
     display: none; }
   .services .box-news-text {

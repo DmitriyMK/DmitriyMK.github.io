@@ -457,6 +457,7 @@
 			width: 100%;
 			padding-top: 0;
 			padding-bottom: 30px;
+			padding-left: 0;
 			margin-left: 0;
 			text-align: center;
 		}
@@ -643,6 +644,9 @@
 		}
 	}
 	.contact__page {
+		&:before {
+			display: none;
+		}
 		.box-form-form {
 			margin-top: 15px;
 			text-align: center;
@@ -654,19 +658,19 @@
 			align-items: center;
 			flex-wrap: wrap;
 			.form-line {
-				width: 300px;
+				width: 90%;
 				text-align: center;
 			} 
 		}
 		.form-line {
-			width: 300px;
+			width: 90%;
 			text-align: center;
 		}
 		input, option {
-			width: 300px;
+			width: 90%;
 		}
 		.form-line-text {
-			width: 300px;
+			width: 90%;
 			text-align: center;
 		}
 		.select-line {
@@ -681,6 +685,7 @@
 			width: 100%;
 			padding-top: 0;
 			padding-bottom: 30px;
+			padding-left: 0;
 			margin-top: 20px;
 			margin-left: 0;
 			text-align: center;
@@ -782,7 +787,16 @@
 	.header__pages {
 		min-height: 100px;
 	}
-
+	.page {
+		position: relative;
+		overflow-x: hidden;	
+		&:before{
+			display: none;
+		}
+		.aside {
+			padding-left: 0;
+		}
+	}
 	.services {
 		&:before {
 			display: none;

@@ -9,6 +9,7 @@
 @import "_tipso";
 @import "_selectize.default";
 
+
 body {
 	min-width: 320px;
 	position: relative;
@@ -542,7 +543,6 @@ a {
 			font-size: rem(14);
 		}
 	}
-	
 	.btn__wrap-article {
 		width: 50%;
 	}
@@ -561,6 +561,94 @@ a {
 		margin-bottom: 80px;
 	}
 }
+
+.formOrder{
+	text-align: center;
+	&-wrap {
+		border: 2px dashed #88c99d;
+	}
+	&__text {
+		padding: 60px 0;
+		text-align: center;
+		font-size: rem(22);
+		line-height: 24px;
+		font-family: "GothamProMedium";
+	}
+	&-line {
+		display: inline-block;
+		width: 80%;
+		border: none;
+		padding: 15px;
+		margin-bottom: 15px;
+		border-radius: 9px;
+		outline: none;
+		font-size: rem(15);
+		color: $gray;
+		box-shadow: 9.192px 9.192px 16px 0px rgba(14, 14, 14, 0.24);
+	}
+	&-link {
+		padding: 10px 60px;
+		margin-bottom: 50px;
+		background-image: -moz-linear-gradient( -15deg, rgb(135,224,148) 0%, rgb(85,176,235) 100%);
+		background-image: -webkit-linear-gradient( -15deg, rgb(135,224,148) 0%, rgb(85,176,235) 100%);
+		background-image: -ms-linear-gradient( -15deg, rgb(135,224,148) 0%, rgb(85,176,235) 100%);
+		box-shadow: 9.192px 9.192px 16px 0px rgba(14, 14, 14, 0.24);
+		border-radius: 5px;
+		display: inline-block;
+		font-family: "GothamProBold";
+		color: #fff;
+		@include transition(all .5s ease);
+		opacity: .8;
+		clear: both;
+		font-size: rem(18);
+		&:hover {
+			opacity: 1;
+		}
+	}
+	&-select {
+		padding-left: 10%;
+		text-align: left;
+		display: flex;
+		input[type="checkbox"] {
+			display: none;
+		}
+		label {
+			padding-left: 11%;
+			position: relative;
+			margin: 10px 20px 10px 0;
+		}
+		input[type="checkbox"] + label:before {
+			content: '';
+			display: block;
+			width: 22px;
+			height: 22px;
+			position: absolute;
+			top: 20px;
+			left: 0;
+			border: 1px solid #666;
+			border-radius: 50%;
+			background: #fff;
+		}
+
+		input[type="checkbox"]:checked + label:after {
+			content: '';
+			display: block;
+			width: 10px;
+			height: 7px;
+			border-bottom: 3px solid $blue;
+			border-left: 3px solid $blue;
+			transform: rotate(-45deg);
+			position: absolute;
+			top: 26px;
+			left: 6px;
+		}
+		.agree-text {
+			font-size: rem(15);
+			color: $gray;
+		}
+	}
+}
+
 .aside {
 	margin-left: 72px;
 	padding-top: 54px;
@@ -997,16 +1085,16 @@ a {
 		display: flex;
 		justify-content: space-between;
 		flex-wrap: wrap;
+		align-items: flex-start;
 	}
 	.review-content {
 		position: relative;
 		display: flex;
 		flex-direction: column;
-		justify-content: center;
 		align-items: center;
 		max-width: 230px;
 		margin: 0 auto;
-		padding: 15pxpx;
+		padding: 15px;
 		z-index: 10;
 		background: #fff;
 		box-shadow: 9.192px 9.192px 16px 0px rgba(14, 14, 14, 0.24);
@@ -1057,6 +1145,8 @@ a {
 		font-size: rem(12.51);
 		font-family: "GothamProLightItalic";
 		color: #323232;
+		max-height: 300px;
+		overflow-y: hidden;
 	}
 	.review-video {
 		margin-top: 70px;
@@ -1150,10 +1240,18 @@ a {
 		}
 		
 	}
+	.consult__text-title {
+		padding-bottom: 10px;
+		font-weight: bold;
+		font-size: rem(18);
+		line-height: 18px;
+		color: #323232;
+		text-align: center;
+	}
 	.consult__text {
 		margin: 0 auto;
-		width: 85%;
-		font-size: rem(16);
+		width: 90%;
+		font-size: rem(15);
 		line-height: 17px;
 		color: #323232;
 	}
@@ -1547,7 +1645,7 @@ a {
 
 /* PAGE 7*/
 .blog__page {
-	background: #f2f2f2;
+
 	position: relative;
 	.crumbs, .page__title {
 		position: relative;
@@ -1562,7 +1660,6 @@ a {
 	.blog-wrap {
 		margin: auto;
 		padding: 60px;
-		z-index: 9;
 	}
 	.social-list {
 		display: flex;
@@ -1573,7 +1670,7 @@ a {
 	}
 	.aside {
 		position: relative;
-		z-index: 100;
+		z-index: 10000;
 	}
 }
 
@@ -1581,8 +1678,10 @@ a {
 
 .contact__page {
 	position: relative;
+	min-height: 150vh;
+	background-image: $gray;
 	.box-form-form {
-		margin-top: 50px;
+		margin: 60px 0;
 	}
 	.flex-wrap {
 		display: flex;
@@ -1594,9 +1693,9 @@ a {
 	.form-line {
 		border: none;
 		width: 47%;
-		padding: 10px;
+		padding: 15px;
 		margin-bottom: 15px;
-		border-radius: 5px;
+		border-radius: 9px;
 		outline: none;
 		font-size: rem(15);
 		color: $gray;
@@ -1611,13 +1710,14 @@ a {
 	}
 	.form-line-text {
 		width: 100%;
-		border: none;
+		border: 1px solid $gray;
 		padding: 10px;
-		margin-bottom: 15px;
-		border-radius: 5px;
+		margin-bottom: 20px;
+		border-radius: 9px;
 		outline: none;
 		font-size: rem(15);
 		color: $gray;
+		box-shadow: 9.192px 9.192px 16px 0px rgba(14, 14, 14, 0.24);
 	}
 	.select-line {
 		border: none;
@@ -1658,8 +1758,16 @@ a {
 	padding-left: 10px;
 	color: $gray;
 	font-family: "GothamProRegular";
+	background: #fff;
 }
-
+.selectize-control.single .selectize-input {
+	background: #fff!important;
+	outline: none!important;
+	font-size: rem(15)!important;
+	color: $gray!important;
+	margin-bottom: 10px;
+	box-shadow: 9.192px 9.192px 16px 0px rgba(14, 14, 14, 0.24);
+}
 
 /* АRROWS */
 .slick-prev,
@@ -1685,6 +1793,39 @@ a {
 }
 
 /* STYLE POP-UP */
+
+.white-popup {
+	position: relative;
+	background: #e6e6e6;
+	padding: 20px 30px;
+	max-width: 500px;
+	margin: 20px auto;
+}
+.success {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	text-transform: uppercase;
+	font-size: 3rem;
+	font-weight: bold;
+	color: $blue;
+	display: flex;
+	z-index: 10;
+	display: none;
+}
+.success span {
+	margin: auto;
+}
+.success ~ * {
+	transition: all 0.5s ease;
+}
+.success.active ~ * {
+	opacity: 0.5;
+	filter: blur(10px);
+} 
+
 .white-popup-politics {
 	position: relative;
 	background: #e6e6e6;
@@ -1699,13 +1840,13 @@ a {
 }
 
 .mfp-close-btn-in .mfp-close {
-	color: $gray; 
+	color: $red; 
 	width: 100%;
 	opacity: 1;
 	text-align: right;
-	padding-right: 25px;
-	padding-top: 0;
-	font-size: rem(36);
+	padding-right: 40px;
+	padding-top: 15px;
+	font-size: rem(42);
 	outline: none;
 	z-index: 100;
 }

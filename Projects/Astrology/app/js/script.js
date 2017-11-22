@@ -27,7 +27,7 @@ $(document).ready(function() {
 	})
 
 	/*LAZY LOAD*/
-	$(function() {
+/*	$(function() {
 		$('.lazy').Lazy({
 			// your configuration goes here
 			scrollDirection: 'vertical',
@@ -37,7 +37,7 @@ $(document).ready(function() {
 				console.log('error loading ' + element.data('src'));
 			}
 		});
-	});
+	});*/
 
 
 	$('.review__slides').slick({
@@ -78,6 +78,9 @@ $(document).ready(function() {
 		preloader: false,
 		focus: '#username',
 	});
+
+	$('.phone-mask').mask('+3000 000 00 00');
+
 
 
 	/*	new WOW().init();*/
@@ -126,6 +129,19 @@ $(function() {
 	});
 });
 
+
+/*EQUAL HEIGHT IN SELECT*/
+$(document).ready(function() {
+
+	var highestBox = 0;
+	$('.review-content').each(function() {
+		if ($(this).height() > highestBox) {
+			highestBox = $(this).height();
+		}
+	});
+	$('.review-content').height(highestBox);
+
+});
 
 
 //E-mail Ajax Send
