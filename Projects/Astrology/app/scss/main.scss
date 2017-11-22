@@ -81,7 +81,7 @@ a {
 }
 
 .crumbs {
-	margin: 60px 0;
+	margin: 60px 0 30px 0;
 	display: inline-block;
 	font-family: "GothamProMedium";
 	font-size: rem(14);
@@ -611,6 +611,11 @@ a {
 	.social__link {
 		display: block;
 		font-size: rem(50);
+		opacity: .8;
+		@include transition(opacity .5s ease);
+		&:hover {
+			opacity: 1;
+		}
 	}
 }
 
@@ -622,6 +627,7 @@ a {
 	&-flex {
 		display: flex;
 		justify-content: space-between;
+		align-items: basis;
 	}
 	.flex__wrap-left {
 		display: flex;
@@ -738,16 +744,17 @@ a {
 /* PAGE STYLES  */
 .page {
 	position: relative;
-	overflow: hidden;
-	&:before {
+	overflow-x: hidden;	
+	&:before{
 		background-image: linear-gradient(-50deg, rgb(85,176,235) 0%, rgb(135,224,148) 100%);
-		transform: skewX(-80deg);
+		transform: skewX(-82deg);
 		content: '';
 		position: absolute;
-		top: -180%;
+		top: -52%;
 		left: 0%;
-		width: 4500px;
-		height: 3000px;	
+		width: 700vh;
+		height: 100%;
+		overflow-x: hidden;	
 	}
 	&__title {
 		padding-top: 30px;
@@ -766,8 +773,8 @@ a {
 		display: flex;
 	}
 	.aside {
-		margin-left: 60px;
-		padding-top: 34px;
+		padding-top: 55px;
+		padding-left: 55px;
 		&-title {
 			color: #333;
 		}
@@ -778,33 +785,24 @@ a {
 }
 
 .header__pages {
-	min-height: 200px;
+	position: relative;
+	min-height: 250px;
+	z-index: 100;
+	
 }
-
-
 /* PAGE 2 - SERVICES */
 
 .services {
 	position: relative;
-	overflow: hidden;
-	&:before {
-		background-image: linear-gradient(-50deg, rgb(85,176,235) 0%, rgb(135,224,148) 100%);
-		transform: skewX(-80deg);
-		content: '';
-		position: absolute;
-		top: -55%;
-		left: 0%;
-		width: 4000px;
-		height: 100%;	
-	}
 	.wrapper {
 		z-index: 100;
 		position: relative;
 	}
 	&__text {
+		width: 75%;
 		font-size: rem(18);
 		line-height: 24px;
-		padding-bottom: 20px;
+		padding-bottom: 25px;
 	}
 	&__title {
 		padding-bottom: 30px;
@@ -812,11 +810,13 @@ a {
 		font-family: "GothamProBold";
 		color: #333;
 	}
+	.box-news:first-child {
+		padding-top: 120px;
+	}
 	.box-news {
-		padding-top: 40px;
+		padding-top: 10px;
 		position: relative;
 		display: flex;
-		justify-content: space-between;
 		clear: both;
 		&-img {
 			width: 40%;
@@ -825,12 +825,15 @@ a {
 			box-shadow: 10px 10px 16px 0 rgba(14, 14, 14, 0.24);
 		}
 		&-text {
-			width: 60%;
-			margin-left: 5%;
+			padding-left: 5%;
+			width: 50%;
+			text-align: left;
+			font-size: rem(14);
+			line-height: 18px;
 		}
 		.articles__title{
-			padding-top: 20px;
-			padding-bottom: 20px;
+			padding-top: 40px;
+			padding-bottom: 40px;
 			font-size: rem(22);
 			font-family: "GothamProBold";
 			position: relative;
@@ -841,14 +844,19 @@ a {
 			color: $gray;
 		}
 		ol {
-			padding-bottom: 20px;
+			list-style-position:inside;
+			padding: 20px 0;
+			width: 80%;
+		}
+		li {
+			font-size: rem(14);
+			line-height: 18px;
 		}
 	}
 	.news-link {
 		float: right;
-		margin-right: 100px;
-		margin-bottom: 50px;
-		padding: 10px 50px;
+		margin: 50px 50px 50px 0;
+		padding: 15px 60px;
 		background-image: -moz-linear-gradient( -15deg, rgb(135,224,148) 0%, rgb(85,176,235) 100%);
 		background-image: -webkit-linear-gradient( -15deg, rgb(135,224,148) 0%, rgb(85,176,235) 100%);
 		background-image: -ms-linear-gradient( -15deg, rgb(135,224,148) 0%, rgb(85,176,235) 100%);
@@ -860,13 +868,14 @@ a {
 		@include transition(all .5s ease);
 		clear: both;
 		opacity: .8;
+		font-size: rem(20);
 		&:hover {
 			opacity: 1;
 		}
 	}
 }
 .action {
-	padding: 120px 0 80px 0;
+	padding: 90px 0;
 	background: #f2f2f2;
 	.wrapper {
 		display: flex;
@@ -888,14 +897,18 @@ a {
 		right: 20px;
 	}
 	&-title {
-		padding-bottom: 30px;
+		padding-bottom: 40px;
 		font-family: "GothamProBold";
 		font-size: rem(25);
 		line-height: 24px;
 		color: #333;
 	}
+	&-text {
+		font-size: rem(18);
+		line-height: 24px;
+	}
 	.flex-wrap {
-		padding-top: 50px;
+		padding-top: 70px;
 		display: flex;
 	}
 
@@ -904,8 +917,8 @@ a {
 		justify-content: space-between;
 		align-content: center;
 		align-items: center;
-		padding: 5px 15px;
-		margin-right: 40px;
+		padding: 0 5px;
+		margin-right: 70px;
 		border: 2px solid #0c59cf;
 	}
 	.remain {
@@ -923,7 +936,7 @@ a {
 		font-family: "GothamProMedium";
 	}
 	.btn-link {
-		padding: 16px 52px;
+		padding: 10px 60px;
 		background-image: -moz-linear-gradient( -15deg, rgb(135,224,148) 0%, rgb(85,176,235) 100%);
 		background-image: -webkit-linear-gradient( -15deg, rgb(135,224,148) 0%, rgb(85,176,235) 100%);
 		background-image: -ms-linear-gradient( -15deg, rgb(135,224,148) 0%, rgb(85,176,235) 100%);
@@ -935,6 +948,7 @@ a {
 		@include transition(all .5s ease);
 		opacity: .8;
 		clear: both;
+		font-size: rem(18);
 		&:hover {
 			opacity: 1;
 		}
@@ -944,12 +958,7 @@ a {
 /* PAGE 3 */
 
 .action__page {
-	&:before {
-		top: -220%;
-		left: 5%;
-		width: 5000px;
-		height: 3000px;	
-	}
+	position: relative;
 	.page__flex {
 		display: flex;
 		justify-content: space-between;
@@ -963,18 +972,21 @@ a {
 /* PAGE 4 */
 
 .review__page {
-	&:before {
-		top: -120%;
-		left: 0%;
-		width: 5000px;
-		height: 3000px;	
-	}
+	position: relative;
+	z-index: 100;	
 	.page__flex {
 		display: flex;
 		justify-content: space-between;
+		position: relative;
+	}
+	.page__left {
+		width: 100%;
+	}
+	.page__title {
+		padding: 0 0 40px 0;
 	}
 	.review__title {
-		padding: 50px 0;
+		padding-bottom: 40px;
 		text-align: center;
 		color: #323232;
 		font-size: rem(20);
@@ -992,17 +1004,20 @@ a {
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-		max-width: 220px;
+		max-width: 230px;
 		margin: 0 auto;
-		padding: 15px 20px;
+		padding: 15pxpx;
 		z-index: 10;
 		background: #fff;
 		box-shadow: 9.192px 9.192px 16px 0px rgba(14, 14, 14, 0.24);
 	}
 	.img-wrap {
+		padding-top: 20px;
 		position: relative;
 		img {
 			margin: 0 auto;
+			width: 60px;
+			height: auto;
 		}
 		&:before {
 			position: absolute;
@@ -1037,7 +1052,7 @@ a {
 		color: #6f6f6f;
 	}
 	.review-text {
-		padding: 10px 0;
+		padding: 5px 0;
 		text-align: center;
 		font-size: rem(12.51);
 		font-family: "GothamProLightItalic";
@@ -1045,7 +1060,7 @@ a {
 	}
 	.review-video {
 		margin-top: 70px;
-		max-width: 220px;
+		max-width: 230px;
 		max-height: 300px;
 		iframe {
 			display: block;
@@ -1073,7 +1088,11 @@ a {
 		clear: both;
 		&:hover {
 			opacity: 1;
+			cursor: pointer;
 		}
+	}
+	.hideContainer {
+		margin: 50px 0;
 	}
 }
 
@@ -1081,20 +1100,10 @@ a {
 
 .consult-page {
 	position: relative;
-	overflow: hidden;
-	&:before {
-		background-image: linear-gradient(-50deg, rgb(85,176,235) 0%, rgb(135,224,148) 100%);
-		transform: skewX(-80deg);
-		content: '';
-		position: absolute;
-		top: -120%;
-		left: 0;
-		width: 4500px;
-		height: 2700px;	
-	}
 	.btn-order {
 		display: flex;
 		justify-content: center;
+		margin: 60px 0;
 		a {
 			background-image: -moz-linear-gradient( -15deg, rgb(135,224,148) 0%, rgb(85,176,235) 100%);
 			background-image: -webkit-linear-gradient( -15deg, rgb(135,224,148) 0%, rgb(85,176,235) 100%);
@@ -1103,7 +1112,7 @@ a {
 			border-radius: 5px;
 			font-family: "GothamProBold";
 			color: #fff;
-			padding: 10px 50px;
+			padding: 10px 70px;
 			@include transition(all .5s ease);
 			opacity: .8;
 			&:hover {
@@ -1112,7 +1121,7 @@ a {
 		}
 	}
 	.consult-page-title {
-		padding-top: 80px;
+		padding-top: 10px;
 		text-align: center;
 		font-size: rem(25);
 		font-family: "GothamProBold";
@@ -1125,23 +1134,27 @@ a {
 		padding-bottom: 40px;
 	}
 	.consult__item {
-		width: 30%;
+		width: 31%;
 	}
 	.img__wrap {
-		margin: 40px auto;
-		width: 195px;
-		height: 195px;
+		margin: 50px auto;
+		width: 100%;
+		height: auto;
 		img {
+			display: block;
 			box-shadow: 
 			0 0 0 8px #fff,
 			0 0 0 10px $blue;
 			border-radius: 50%;
+			margin: auto;
 		}
 		
 	}
 	.consult__text {
-		text-align: center;
+		margin: 0 auto;
+		width: 85%;
 		font-size: rem(16);
+		line-height: 17px;
 		color: #323232;
 	}
 }
@@ -1156,17 +1169,19 @@ a {
 	.flex-wrap {
 		display: flex;
 		justify-content: space-between;
+		width: 80%;
+		margin: auto;
 	}
 	.flex-wrap-bottom {
-		padding: 50px 0;
+		padding: 70px 0 20px 0;
 	}
 	.img-box {
-		width: 40%;
-		height: 200px;
+		display: block;
+		width: 100%;
+		height: 215px;
 	}
 	.text-box {
-		width: 60%;
-		margin-left: 20px;
+		margin-left: 25px;
 	}
 	.consult__about-title {
 		font-size: rem(24);
@@ -1174,7 +1189,6 @@ a {
 		font-family: "GothamProBold";
 	}
 	.consult__about-text {
-		width: 85%;
 		padding-top: 30px;
 		font-size: rem(16);
 		line-height: 20px;
@@ -1207,8 +1221,8 @@ a {
 		border-bottom: none;
 	}
 	.btn-orange {
-		padding: 6px 40px 0 40px;
-		margin-right: 15%;
+		padding: 6px 50px 0 50px;
+		margin-right: 25px;
 		border-radius: 4px;
 		background-color: #e49627;
 		box-shadow: 9.192px 9.192px 16px 0px rgba(14, 14, 14, 0.24);
@@ -1265,7 +1279,7 @@ a {
 	}
 	.tabcontent {
 		display: none;
-		padding: 50px;
+		padding: 70px 50px;
 		padding-bottom: 20px;
 		border: 1px solid #ccc;
 		border-top: none;
@@ -1277,7 +1291,7 @@ a {
 	.btn-tab {
 		display: block;
 		max-width: 200px;
-		margin: 25px auto;
+		margin: 50px auto 25px auto;
 		padding: 10px 5px;
 		text-align: center;
 		background: -moz-linear-gradient( -15deg, rgb(116,209,130) 0%, rgb(72,162,221) 100%);
@@ -1297,7 +1311,7 @@ a {
 	margin: auto;
 	margin-bottom: 100px;
 	.consult__theme-title {
-		margin: 50px 0;
+		margin: 30px 0;
 		text-align: center;
 		font-family: "GothamProBold";
 		font-size: rem(25);
@@ -1332,7 +1346,7 @@ a {
 		justify-content: center;
 		align-items: center;
 		margin: 0 auto;
-		padding: 15px 20px;
+		padding: 15px;
 		z-index: 10;
 		background: #fff;
 		box-shadow: 9.192px 9.192px 16px 0px rgba(14, 14, 14, 0.24);
@@ -1391,7 +1405,7 @@ a {
 		justify-content: space-around;
 	}
 	.box-content {
-		width: 40%;
+		width: 50%;
 		margin-right: 5%;
 	}
 	.title {
@@ -1407,7 +1421,7 @@ a {
 		padding-left: 50px;
 	}
 	.box-form {
-		width: 40%;
+		width: 50%;
 		display: flex;
 		flex-direction: column;
 	}
@@ -1460,9 +1474,7 @@ a {
 /* PAGE 6*/
 
 .about {
-	&:before {
-		top: -110%;
-	}
+	position: relative;
 	&__text {
 		width: 80%;
 	}
@@ -1537,18 +1549,6 @@ a {
 .blog__page {
 	background: #f2f2f2;
 	position: relative;
-	overflow: hidden;
-	&:before {
-		background-image: linear-gradient(-50deg, rgb(85,176,235) 0%, rgb(135,224,148) 100%);
-		transform: skewX(-80deg);
-		content: '';
-		position: absolute;
-		top: -106%;
-		left: 0%;
-		width: 5000px;
-		height: 5000px;	
-		z-index: 10;
-	}
 	.crumbs, .page__title {
 		position: relative;
 		z-index: 100;
@@ -1562,7 +1562,6 @@ a {
 	.blog-wrap {
 		margin: auto;
 		padding: 60px;
-		background: #fff;
 		z-index: 9;
 	}
 	.social-list {
@@ -1581,17 +1580,7 @@ a {
 /* PAGE 8*/
 
 .contact__page {
-	min-height: 900px;
-	&:before {
-		background-image: linear-gradient(-50deg, rgb(85,176,235) 0%, rgb(135,224,148) 100%);
-		transform: skewX(-80deg);
-		content: '';
-		position: absolute;
-		top: -150%;
-		left: -12%;
-		width: 4700px;
-		height: 2700px;	
-	}
+	position: relative;
 	.box-form-form {
 		margin-top: 50px;
 	}

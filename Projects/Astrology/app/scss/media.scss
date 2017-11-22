@@ -41,7 +41,6 @@
 }
 
 @media only screen and (max-width : 992px) {
-
 	.header {
 		background-position: 68%;
 	}
@@ -96,11 +95,9 @@
 			right: inherit;
 		}
 	}
-
 	.crumbs {
 		margin: 30px 0;
 	}
-	
 	.action {
 		padding: 60px 0;
 		.flex-wrap {
@@ -127,11 +124,7 @@
 			text-align: center;
 		}
 	}
-
 	.action__page {
-		&:before {
-			top: -120%;
-		}
 		.page__flex {
 			display: flex;
 			justify-content: center;
@@ -148,19 +141,12 @@
 			text-align: center;
 		}
 	}
-
 	.about {
 		.box-img {
 			max-width: 360px;
 		}
 	}
-
 	.blog__page {
-		&:before {
-			top: -70%;
-			width: 3000px;
-			height: 4000px;	
-		}
 		.blog-wrap {
 			margin: auto;
 			padding: 0 15px;
@@ -179,8 +165,6 @@
 			z-index: 100;
 		}
 	}
-
-
 }  
 
 /* Small Devices, Tablets */
@@ -208,7 +192,6 @@
 			display: none;
 		}
 	}
-	
 	.nav {
 		&__link {
 			&:before {
@@ -254,7 +237,7 @@
 	}
 	.nav {
 		position: fixed;
-		z-index: 1000;
+		z-index: 10000;
 		&__list {
 			display: block !important;
 			padding-top: 50%;
@@ -280,6 +263,7 @@
 		height: 50px;
 		transition: all 0.6s ease-in-out;
 		position: fixed;
+		z-index: 10000;
 		top: 30px;
 		right: 20px;
 		z-index: 10000;
@@ -409,9 +393,11 @@
 		min-height: 150px;
 	}
 	.services {
-		&:before {
-			top: -55%;
-			height: 110%;	
+		&__text {
+			width: 100%;
+		}
+		.box-news:first-child {
+			padding-top: 60px;
 		}
 		.box-news {
 			margin: 0 auto;
@@ -437,10 +423,12 @@
 			width: 250px;
 			text-align: center;
 			padding: 10px 0;
-			margin: 20px auto;
+			margin: 20px auto 50px auto;
 		}
 	}
 	.action {
+		padding: 0;
+		padding-bottom: 40px;
 		.wrapper {
 			display: flex;
 			justify-content: center;
@@ -462,12 +450,6 @@
 		}
 	}
 	.review__page {
-		&:before {
-			top: -60%;
-			left: 0%;
-			width: 5000px;
-			height: 3000px;	
-		}
 		.page__flex {
 			flex-wrap: wrap;
 		}
@@ -487,9 +469,11 @@
 		}
 		.consult__item {
 			width: 80%;
+			text-align: center;
 		}
 	}
 	.consult__about {
+		padding-top: 30px;
 		.flex-wrap {
 			display: flex;
 			justify-content: center;
@@ -516,7 +500,7 @@
 			text-align: center;
 		}
 		.consult__about-text {
-			width: 80%;
+			width: 100%;
 			margin: auto;
 		}
 		.consult__about-link {
@@ -600,7 +584,7 @@
 			margin-bottom: 0;
 		}
 		.box-form {
-			width: 100%;
+			width: 80%;
 			margin: 20px auto;
 			display: flex;
 			flex-direction: column;
@@ -609,7 +593,8 @@
 			justify-content: center;
 			text-align: center;
 		}
-		.form-line, {
+		.form-line {
+			display: flex-inline;
 			border: none;
 			width: 300px;
 			padding: 10px;
@@ -629,9 +614,6 @@
 		}
 	}
 	.about {
-		&:before {
-			top: -90%;
-		}
 		&__text {
 			width: 100%;
 		}
@@ -661,9 +643,6 @@
 		}
 	}
 	.contact__page {
-		&:before {
-			top: -120%;
-		}
 		.box-form-form {
 			margin-top: 15px;
 			text-align: center;
@@ -852,8 +831,17 @@
 		}
 	}
 	.consult__about {
+		.flex-wrap {
+			width: 100%;
+		}
 		.list__item {
 			margin: 0 5px;
+		}
+		.text-box {
+			margin-left: 0x;
+		}
+		.list {
+			margin-left: 0;
 		}
 	}
 	.consult__theme {

@@ -40,17 +40,10 @@ $(document).ready(function() {
 	});
 
 
-	/*	$(function() {
-			var $gallery = $('.galleryl a').simpleLightbox();
-
-		});*/
-
-
 	$('.review__slides').slick({
 		infinite: true,
 		speed: 500,
 	});
-
 
 
 	/*GMAP POP-UP*/
@@ -113,6 +106,21 @@ $(function() {
 		}
 		$('html,body').animate({}, 1500);
 		if ($(".articles:last").css('display') == 'block') {
+			$('#loadMore').hide();
+		}
+	});
+});
+
+$(function() {
+	$(".review__box").slice(0, 3).show();
+	$("#loadMore").on('click', function(e) {
+		e.preventDefault();
+		$(".review__box:hidden").slice(0, 3).slideDown();
+		if ($(".review__box:hidden").length == 0) {
+			$("#loadMore").fadeOut('slow');
+		}
+		$('html,body').animate({}, 1500);
+		if ($(".review__box:last").css('display') == 'flex') {
 			$('#loadMore').hide();
 		}
 	});
