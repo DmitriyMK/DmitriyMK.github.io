@@ -1717,6 +1717,8 @@ ul {
 
 a {
   color: inherit; }
+  a:hover {
+    cursor: pointer; }
 
 .wrapper {
   position: relative;
@@ -1801,7 +1803,8 @@ a {
     font-family: 'Fontello'; }
 
 .fb {
-  color: #3a559f; }
+  color: #3a559f;
+  font-size: 2.875rem; }
 
 .insta {
   color: #c536a4; }
@@ -1840,6 +1843,7 @@ a {
   .header .title {
     font-size: 1.125rem;
     line-height: 24px;
+    text-shadow: none;
     font-family: "GothamProRegular"; }
 
 .center__header {
@@ -2042,14 +2046,12 @@ a {
     .content .box-news img {
       -webkit-box-shadow: 10px 10px 16px 0 rgba(14, 14, 14, 0.24);
               box-shadow: 10px 10px 16px 0 rgba(14, 14, 14, 0.24);
-      -webkit-filter: grayscale(50%);
-              filter: grayscale(50%);
       -webkit-transition: all 0.3s ease;
       -o-transition: all 0.3s ease;
       transition: all 0.3s ease; }
       .content .box-news img:hover {
-        -webkit-filter: grayscale(0);
-                filter: grayscale(0); }
+        -webkit-filter: contrast(115%);
+                filter: contrast(115%); }
     .content .box-news-text {
       width: 50%;
       margin-left: 35px; }
@@ -2096,7 +2098,8 @@ a {
       padding-bottom: 30px;
       font-size: 0.875rem;
       line-height: 18px;
-      color: #666; }
+      color: #666;
+      display: block; }
     .content .box-news-link {
       color: #0f25aa;
       position: relative;
@@ -2164,7 +2167,6 @@ a {
       position: relative; }
     .content .mission .num__wrap {
       display: inline-block;
-      margin-bottom: 20px;
       background: #fff;
       height: 60px;
       width: 60px;
@@ -2174,8 +2176,6 @@ a {
       font-size: 1.25rem;
       line-height: 60px;
       color: #353131; }
-    .content .mission__title {
-      font-family: "GothamProMedium"; }
     .content .mission__text {
       padding-top: 15px;
       padding-bottom: 50px;
@@ -2199,10 +2199,15 @@ a {
       opacity: 0.35;
       background: #000; }
     .content .review img {
+      width: 150px;
+      height: 150px;
+      -webkit-border-radius: 50%;
+              border-radius: 50%;
       margin: auto; }
     .content .review .container {
       position: relative; }
     .content .review__slides {
+      padding-bottom: 30px;
       width: 100%;
       position: relative; }
     .content .review .slides {
@@ -2220,13 +2225,33 @@ a {
       font-size: 0.8125rem;
       font-family: "GothamProLightItalic"; }
     .content .review .icon {
-      font-size: 1.875rem; }
+      font-size: 1.875rem;
+      -webkit-transition: color 0.5s ease;
+      -o-transition: color 0.5s ease;
+      transition: color 0.5s ease; }
+      .content .review .icon:hover {
+        color: #6ac0f3; }
     .content .review .text {
+      position: relative;
       width: 80%;
       margin: auto;
       padding-bottom: 30px;
       font-family: "GothamProItalic";
       font-size: 0.875rem; }
+      .content .review .text:before {
+        position: absolute;
+        content: '\e803';
+        font-family: "fontello";
+        top: -40px;
+        left: -20px;
+        font-size: 1.625rem; }
+      .content .review .text:after {
+        position: absolute;
+        content: '\e804';
+        font-family: "fontello";
+        bottom: 0;
+        right: -10px;
+        font-size: 1.625rem; }
   .content .btn__wrap-article {
     width: 50%; }
   .content .btn__article {
@@ -2245,17 +2270,27 @@ a {
   text-align: center; }
   .formOrder-wrap {
     border: 2px dashed #88c99d; }
+  .formOrder__title {
+    text-align: left;
+    width: 80%;
+    padding: 20px 0 15px 10%;
+    font-size: 1.25rem;
+    line-height: 22px;
+    font-family: "GothamProBold"; }
   .formOrder__text {
-    padding: 60px 0;
-    text-align: center;
-    font-size: 1.375rem;
-    line-height: 24px;
+    text-align: left;
+    width: 80%;
+    margin: auto;
+    padding-bottom: 15px;
+    font-size: 1rem;
+    line-height: 20px;
+    color: #666;
     font-family: "GothamProMedium"; }
   .formOrder-line {
     display: inline-block;
     width: 80%;
     border: none;
-    padding: 15px;
+    padding: 10px 15px;
     margin-bottom: 15px;
     -webkit-border-radius: 9px;
             border-radius: 9px;
@@ -2264,6 +2299,11 @@ a {
     color: #666;
     -webkit-box-shadow: 9.192px 9.192px 16px 0px rgba(14, 14, 14, 0.24);
             box-shadow: 9.192px 9.192px 16px 0px rgba(14, 14, 14, 0.24); }
+  .formOrder-textarea {
+    display: inline-block;
+    padding: 10px 15px;
+    width: 80%;
+    min-height: 100px; }
   .formOrder-link {
     padding: 10px 60px;
     margin-bottom: 50px;
@@ -2284,47 +2324,6 @@ a {
     font-size: 1.125rem; }
     .formOrder-link:hover {
       opacity: 1; }
-  .formOrder-select {
-    padding-left: 10%;
-    text-align: left;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex; }
-    .formOrder-select input[type="checkbox"] {
-      display: none; }
-    .formOrder-select label {
-      padding-left: 11%;
-      position: relative;
-      margin: 10px 20px 10px 0; }
-    .formOrder-select input[type="checkbox"] + label:before {
-      content: '';
-      display: block;
-      width: 22px;
-      height: 22px;
-      position: absolute;
-      top: 20px;
-      left: 0;
-      border: 1px solid #666;
-      -webkit-border-radius: 50%;
-              border-radius: 50%;
-      background: #fff; }
-    .formOrder-select input[type="checkbox"]:checked + label:after {
-      content: '';
-      display: block;
-      width: 10px;
-      height: 7px;
-      border-bottom: 3px solid #6ac0f3;
-      border-left: 3px solid #6ac0f3;
-      -webkit-transform: rotate(-45deg);
-          -ms-transform: rotate(-45deg);
-              transform: rotate(-45deg);
-      position: absolute;
-      top: 26px;
-      left: 6px; }
-    .formOrder-select .agree-text {
-      font-size: 0.9375rem;
-      color: #666; }
 
 .aside {
   margin-left: 72px;
@@ -2351,10 +2350,14 @@ a {
       color: #6ac0f3; }
   .aside .popular-link {
     font-size: 0.875rem;
-    line-height: 0.875rem;
     font-family: "GothamProBold"; }
   .aside .articles-box {
-    padding-bottom: 16px; }
+    padding-bottom: 16px;
+    -webkit-transition: color 0.5s ease;
+    -o-transition: color 0.5s ease;
+    transition: color 0.5s ease; }
+    .aside .articles-box:hover {
+      color: #6ac0f3; }
   .aside .date {
     font-size: 1rem;
     line-height: 16px;
@@ -3462,7 +3465,7 @@ a {
 .slick-prev:before,
 .slick-next:before {
   font-family: 'Fontello';
-  font-size: 1.625rem; }
+  font-size: 2.25rem; }
 
 .slick-prev {
   left: 25px;

@@ -23,6 +23,9 @@ ul {
 }
 a {
 	color: inherit;
+	&:hover {
+		cursor: pointer;
+	}
 }
 
 .wrapper {
@@ -116,6 +119,7 @@ a {
 }
 .fb {
 	color: #3a559f;
+	font-size: rem(46);
 }
 .insta {
 	color: #c536a4;
@@ -152,6 +156,7 @@ a {
 	.title {
 		font-size: rem(18);
 		line-height: 24px;
+		text-shadow: none;
 		font-family: "GothamProRegular";
 	}
 }
@@ -331,10 +336,9 @@ a {
 		}
 		img {
 			box-shadow: 10px 10px 16px 0 rgba(14, 14, 14, 0.24);
-			filter: grayscale(50%);
 			@include transition(all .3s ease);
 			&:hover {
-				filter: grayscale(0);
+				filter: contrast(115%);
 			}
 		}
 		&-text {
@@ -393,6 +397,7 @@ a {
 			font-size: rem(14);
 			line-height: 18px;
 			color: $gray;
+			display: block;
 		}
 		&-link {
 			color: $violet;
@@ -462,11 +467,9 @@ a {
 		}
 		&__item {
 			position: relative;
-
 		}
 		.num__wrap {
 			display: inline-block;
-			margin-bottom: 20px;
 			background: #fff;
 			height: 60px;
 			width: 60px;
@@ -476,9 +479,6 @@ a {
 			font-size: rem(20);
 			line-height: 60px;
 			color: #353131;			
-		}
-		&__title {
-			font-family: "GothamProMedium";
 		}
 		&__text {
 			padding-top: 15px;
@@ -505,12 +505,16 @@ a {
 			background: #000;
 		}
 		img {
+			width: 150px;
+			height: 150px;
+			border-radius: 50%;
 			margin: auto;
 		}
 		.container {
 			position: relative;
 		}
 		&__slides {
+			padding-bottom: 30px;
 			width: 100%;
 			position: relative;
 		} 
@@ -534,13 +538,34 @@ a {
 		}
 		.icon {
 			font-size: rem(30);
+			@include transition(color .5s ease);
+			&:hover {
+				color: $blue;
+			}
 		}
 		.text {
+			position: relative;
 			width: 80%;
 			margin: auto;
 			padding-bottom: 30px;
 			font-family: "GothamProItalic";
 			font-size: rem(14);
+			&:before {
+				position: absolute;
+				content: '\e803';
+				font-family: "fontello";
+				top: -40px;
+				left: -20px;
+				font-size: rem(26);
+			}
+			&:after {
+				position: absolute;
+				content: '\e804';
+				font-family: "fontello";
+				bottom: 0;
+				right: -10px;
+				font-size: rem(26);
+			}
 		}
 	}
 	.btn__wrap-article {
@@ -567,24 +592,41 @@ a {
 	&-wrap {
 		border: 2px dashed #88c99d;
 	}
+	&__title {
+		text-align: left;
+		width: 80%;
+		padding: 20px 0 15px 10%;
+		font-size: rem(20);
+		line-height: 22px;
+		font-family: "GothamProBold";
+	}
 	&__text {
-		padding: 60px 0;
-		text-align: center;
-		font-size: rem(22);
-		line-height: 24px;
+		text-align: left;
+		width: 80%;
+		margin: auto;
+		padding-bottom: 15px;
+		font-size: rem(16);
+		line-height: 20px;
+		color: #666;
 		font-family: "GothamProMedium";
 	}
 	&-line {
 		display: inline-block;
 		width: 80%;
 		border: none;
-		padding: 15px;
+		padding: 10px 15px;
 		margin-bottom: 15px;
 		border-radius: 9px;
 		outline: none;
 		font-size: rem(15);
 		color: $gray;
 		box-shadow: 9.192px 9.192px 16px 0px rgba(14, 14, 14, 0.24);
+	}
+	&-textarea {
+		display: inline-block;
+		padding: 10px 15px;
+		width: 80%;
+		min-height: 100px;
 	}
 	&-link {
 		padding: 10px 60px;
@@ -603,48 +645,6 @@ a {
 		font-size: rem(18);
 		&:hover {
 			opacity: 1;
-		}
-	}
-	&-select {
-		padding-left: 10%;
-		text-align: left;
-		display: flex;
-		input[type="checkbox"] {
-			display: none;
-		}
-		label {
-			padding-left: 11%;
-			position: relative;
-			margin: 10px 20px 10px 0;
-		}
-		input[type="checkbox"] + label:before {
-			content: '';
-			display: block;
-			width: 22px;
-			height: 22px;
-			position: absolute;
-			top: 20px;
-			left: 0;
-			border: 1px solid #666;
-			border-radius: 50%;
-			background: #fff;
-		}
-
-		input[type="checkbox"]:checked + label:after {
-			content: '';
-			display: block;
-			width: 10px;
-			height: 7px;
-			border-bottom: 3px solid $blue;
-			border-left: 3px solid $blue;
-			transform: rotate(-45deg);
-			position: absolute;
-			top: 26px;
-			left: 6px;
-		}
-		.agree-text {
-			font-size: rem(15);
-			color: $gray;
 		}
 	}
 }
@@ -677,11 +677,14 @@ a {
 	}
 	.popular-link {
 		font-size: rem(14);
-		line-height: rem(14);
 		font-family: "GothamProBold";
 	}
 	.articles-box {
 		padding-bottom: 16px;
+		@include transition(color .5s ease);
+		&:hover {
+			color: $blue;
+		}
 	}
 	.date {
 		font-size: rem(16);
@@ -1774,7 +1777,7 @@ a {
 .slick-next {
 	&:before {
 		font-family: 'Fontello';
-		font-size: rem(26);
+		font-size: rem(36);
 	}
 }
 .slick-prev {
