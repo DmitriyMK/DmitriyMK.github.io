@@ -362,8 +362,9 @@
 				}
 			}
 			&-text {
-				width: 90%;
+				width: 100%;
 				margin-left: 0;
+				padding-left: 0;
 			}
 			.articles__title{
 				margin-top: 15px;
@@ -396,9 +397,6 @@
 		&__text {
 			width: 100%;
 		}
-		.box-news:first-child {
-			padding-top: 60px;
-		}
 		.box-news {
 			margin: 0 auto;
 			flex-wrap: wrap;
@@ -412,6 +410,7 @@
 			&-text {
 				width: 90%;
 				margin: 0 auto;
+				padding-left: 0;
 			}
 			.articles__title{
 				text-align: center;
