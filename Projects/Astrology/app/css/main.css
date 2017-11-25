@@ -1864,6 +1864,8 @@ a {
   font-family: "GothamProMedium"; }
   .language__item:nth-child(2) {
     margin: 0 10px; }
+  .language__item:nth-child(3) {
+    margin-right: 10px; }
 
 .language__link {
   display: block;
@@ -2061,15 +2063,9 @@ a {
       display: -webkit-box;
       display: -webkit-flex;
       display: -ms-flexbox;
-      display: flex;
-      -webkit-box-pack: justify;
-      -webkit-justify-content: space-between;
-          -ms-flex-pack: justify;
-              justify-content: space-between;
-      -webkit-flex-wrap: wrap;
-          -ms-flex-wrap: wrap;
-              flex-wrap: wrap;
-      margin-right: 35px; }
+      display: flex; }
+    .content .calendar .calendar__iframe {
+      width: 50%; }
     .content .calendar .btn__wrap {
       display: -webkit-box;
       display: -webkit-flex;
@@ -2080,6 +2076,8 @@ a {
       -webkit-flex-direction: column;
           -ms-flex-direction: column;
               flex-direction: column;
+      width: 50%;
+      margin-left: 15px;
       width: 260px;
       font-size: 0.875rem; }
       .content .calendar .btn__wrap span {
@@ -2164,11 +2162,7 @@ a {
       padding-right: 1px;
       text-align: left;
       -webkit-background-size: 100% 100%;
-              background-size: 100% 100%;
-      background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0)), color-stop(50%, white), to(white));
-      background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0), white 50%, white);
-      background: -o-linear-gradient(left, rgba(255, 255, 255, 0), white 50%, white);
-      background: linear-gradient(to right, rgba(255, 255, 255, 0), white 50%, white); }
+              background-size: 100% 100%; }
     .content .box-news .articles__title {
       margin-top: -30px;
       line-height: 24px; }
@@ -2351,6 +2345,29 @@ a {
   .content .textMission {
     font-size: 1.25rem;
     padding: 50px 20px; }
+  .content .consult__about {
+    padding-top: 70px;
+    padding-bottom: 40px;
+    background-image: -webkit-linear-gradient(-15deg, #74d182 0%, #48a2dd 100%);
+    background-image: -ms-linear-gradient(-15deg, #74d182 0%, #48a2dd 100%);
+    -webkit-box-shadow: 9.192px 9.192px 16px 0px rgba(14, 14, 14, 0.24);
+            box-shadow: 9.192px 9.192px 16px 0px rgba(14, 14, 14, 0.24);
+    color: #fff; }
+    .content .consult__about .flex-bottom {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      padding: 40px 0; }
+    .content .consult__about .text-box {
+      text-align: left;
+      width: 60%;
+      margin-left: 20px;
+      padding-right: 0; }
 
 .formOrder {
   text-align: center; }
@@ -2618,9 +2635,11 @@ a {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex; }
+  .page .content {
+    width: 70%; }
   .page .aside {
-    padding-top: 55px;
-    padding-left: 55px; }
+    padding-top: 72px;
+    padding-left: 54px; }
     .page .aside-title {
       color: #333; }
     .page .aside .date {
@@ -3040,8 +3059,11 @@ a {
 .consult__about {
   padding-top: 70px;
   padding-bottom: 40px;
-  background-image: -webkit-linear-gradient(-15deg, #74d182 0%, #48a2dd 100%);
-  background-image: -ms-linear-gradient(-15deg, #74d182 0%, #48a2dd 100%);
+  background: #aad8f3;
+  background: -webkit-linear-gradient(left, #aad8f3 50%, #c1eecb 100%);
+  background: -webkit-gradient(linear, left top, right top, color-stop(50%, #aad8f3), to(#c1eecb));
+  background: -o-linear-gradient(left, #aad8f3 50%, #c1eecb 100%);
+  background: linear-gradient(to right, #aad8f3 50%, #c1eecb 100%);
   -webkit-box-shadow: 9.192px 9.192px 16px 0px rgba(14, 14, 14, 0.24);
           box-shadow: 9.192px 9.192px 16px 0px rgba(14, 14, 14, 0.24);
   color: #fff; }
@@ -3456,6 +3478,8 @@ a {
   position: relative;
   background: #f2f2f2;
   z-index: 10; }
+  .blog__page .mt {
+    margin-top: 30px; }
   .blog__page .blog-wrap {
     position: relative;
     margin: auto;
@@ -3479,6 +3503,8 @@ a {
   .blog__page .aside {
     position: relative;
     z-index: 10000; }
+  .blog__page .box-news-text .date {
+    color: #000; }
 
 /* PAGE 8*/
 .contact__page {

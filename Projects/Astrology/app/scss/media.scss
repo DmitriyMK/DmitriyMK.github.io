@@ -68,6 +68,59 @@
 			font-size: rem(16);
 		}
 	}
+	.content {
+		.consult__about {
+			padding-top: 40px;
+			padding-bottom: 40px;
+			margin: 0 auto;
+			.flex-wrap {
+				display: flex;
+				justify-content: center;
+				flex-direction: column;
+				align-items: center;
+				align-content: center;
+				margin: 0 auto;
+			}
+			.flex-bottom {
+				margin: 30px 0;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+				padding: 0px;
+			}
+			.img-box {
+				display: block;
+				width: 100%;
+				height: auto;
+				img {
+					margin: auto;
+					max-width: 100%;
+					height: auto;
+				}
+			}
+			.text-box {
+				width: 100%;
+				margin-left: 0 auto;
+				padding-right: 0;
+			}
+			.consult__about-title {
+				padding-top: 20px;
+			}
+			.consult__about-text {
+				padding-top: 20px;
+			}
+			.consult__about-link {
+				padding-left: 0;
+			}
+			.btn-orange {
+				display: inline-block;
+				margin-top: 30px;
+				width: 300px;
+				margin-right: 0;
+			}
+		}
+	}
 	.footer {
 		padding-bottom: 40px;
 		&-flex {
@@ -336,11 +389,39 @@
 	.content {
 		width: 100%;
 		.calendar {
-			margin-bottom: -60px;
+			.flex {
+				justify-content:center;
+				flex-wrap: wrap;
+			}
+			.calendar__iframe {
+				width: 100%;
+				margin: auto;
+				text-align: center;
+			}
 			.btn__wrap {
-				width: 220px;
-				font-size: rem(12);
-				margin-bottom: 60px;
+				width: 100%;
+				margin-left: 0;
+				width: 260px;
+				font-size: rem(14);
+			}
+			.btn-bottom {
+				padding-top: 25px;
+				text-align: left;
+				font-size: rem(14);
+				font-family: "GothamProMedium";
+			}
+			.brn-calendar {
+				display: flex;
+				img {
+					margin-left: 15px;
+					align-self: center;
+					display: block;
+					width: 32px;
+					height: 32px;
+				}
+				span {
+					margin-left: -70px;
+				}
 			}
 		}
 		.articles__title {
