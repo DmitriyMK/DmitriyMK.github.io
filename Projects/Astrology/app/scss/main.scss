@@ -838,14 +838,13 @@ a {
 	overflow-x: hidden;	
 	&:before{
 		background-image: linear-gradient(-50deg, rgb(85,176,235) 0%, rgb(135,224,148) 100%);
-		transform: skewX(-82deg);
+/* 		transform: skewX(-82deg); */
 		content: '';
 		position: absolute;
-		top: -52%;
+		top: 0%;
 		left: 0%;
-		width: 700vh;
-		height: 100%;
-		overflow-x: hidden;	
+		width: 100%;
+		height: 600px;
 	}
 	&__title {
 		padding-top: 30px;
@@ -902,7 +901,7 @@ a {
 		color: #333;
 	}
 	.box-news:first-child {
-		padding-top: 60px;
+		padding-top: 120px;
 	}
 	.box-news {
 		padding-top: 10px;
@@ -940,16 +939,21 @@ a {
 		ol {
 			list-style-position:inside;
 			padding: 10px 0;
-/* 			width: 80%; */
 		}
 		li {
+			padding: 4px 0;
 			font-size: rem(14);
 			line-height: 18px;
 		}
 	}
+	.link-wrap {
+		margin: auto;
+		text-align: center;
+	}
 	.news-link {
-		float: right;
-		margin: 50px 50px 50px 0;
+		display: block;
+		justify-content:center;
+		margin: 50px auto;
 		padding: 15px 60px;
 		background-image: -moz-linear-gradient( -15deg, rgb(135,224,148) 0%, rgb(85,176,235) 100%);
 		background-image: -webkit-linear-gradient( -15deg, rgb(135,224,148) 0%, rgb(85,176,235) 100%);
@@ -960,7 +964,6 @@ a {
 		font-family: "GothamProBold";
 		color: #fff;
 		@include transition(all .5s ease);
-		clear: both;
 		opacity: .8;
 		font-size: rem(20);
 		&:hover {
@@ -1057,7 +1060,7 @@ a {
 		display: flex;
 		justify-content: space-between;
 	}
-	.img-wrap {
+	.page__wrap {
 		margin-bottom: 140px;
 	}
 }
@@ -1241,10 +1244,11 @@ a {
 			box-shadow: 
 			0 0 0 8px #fff,
 			0 0 0 10px $blue;
+			width: 150px;
+			height: 150px;
 			border-radius: 50%;
 			margin: auto;
 		}
-		
 	}
 	.consult__text-title {
 		padding-bottom: 10px;
@@ -1273,19 +1277,23 @@ a {
 	.flex-wrap {
 		display: flex;
 		justify-content: space-between;
-		width: 80%;
 		margin: auto;
 	}
-	.flex-wrap-bottom {
-		padding: 70px 0 20px 0;
+	.flex-bottom {
+		display: flex;
+		justify-content: space-between;
+		padding: 40px;
 	}
 	.img-box {
 		display: block;
-		width: 100%;
-		height: 215px;
+		width: 40%;
+		height: auto;
 	}
 	.text-box {
+		flex-grow: 2;
+		width: 60%;
 		margin-left: 25px;
+		padding-right: 10%;
 	}
 	.consult__about-title {
 		font-size: rem(24);
@@ -1302,9 +1310,6 @@ a {
 		line-height: 20px;
 		font-style: italic;
 		font-family: "GothamProMedium";
-	}
-	.list {
-		margin-left: 5%;
 	}
 	.list__item {
 		display: inline-block;
@@ -1325,8 +1330,10 @@ a {
 		border-bottom: none;
 	}
 	.btn-orange {
-		padding: 6px 50px 0 50px;
-		margin-right: 25px;
+		display: inline-block;
+		padding: 5px 50px;
+		margin-top: 10px;
+		margin-right: 10%;
 		border-radius: 4px;
 		background-color: #e49627;
 		box-shadow: 9.192px 9.192px 16px 0px rgba(14, 14, 14, 0.24);
@@ -1383,11 +1390,18 @@ a {
 	}
 	.tabcontent {
 		display: none;
-		padding: 70px 50px;
+		padding: 30px 50px;
 		padding-bottom: 20px;
 		border: 1px solid #ccc;
 		border-top: none;
-		p {
+		h3 {
+			padding-bottom: 10px;
+		}
+		ol {
+			padding-bottom: 10px;
+		}
+		p, li {
+			padding: 5px 0;
 			font-size: rem(15);
 			color: #323232;
 		}
@@ -1426,7 +1440,7 @@ a {
 		justify-content: space-between;
 	}
 	.review__title {
-		padding: 50px 0;
+		padding: 30px 0;
 		text-align: center;
 		color: #323232;
 		font-size: rem(20);
@@ -1447,7 +1461,7 @@ a {
 		position: relative;
 		display: flex;
 		flex-direction: column;
-		justify-content: center;
+		justify-content: flex-start;
 		align-items: center;
 		margin: 0 auto;
 		padding: 15px;
@@ -1458,7 +1472,10 @@ a {
 	.img-wrap {
 		position: relative;
 		img {
-			margin: 0 auto;
+			width: 70px;
+			height: 70px;
+			border-radius: 50%;
+			margin: auto;
 		}
 		&:before {
 			position: absolute;
@@ -1549,8 +1566,6 @@ a {
 	.select-line {
 		border: none;
 		width: 300px;
-		padding: 10px 0;
-		margin-bottom: 15px;
 		border-radius: 5px;
 		outline: none;
 	}
@@ -1684,38 +1699,33 @@ a {
 
 .contact__page {
 	position: relative;
-	min-height: 150vh;
 	background-image: $gray;
+	margin: 0 auto;
+	.page__text {
+		padding-top: 50px;
+	}
 	.box-form-form {
-		margin: 60px 0;
+		margin: 50px 0;
 	}
 	.flex-wrap {
+		width: 500px;
 		display: flex;
+		flex-direction: column;
 		justify-content: space-between;
-		.form-line {
-			width: 47%;
-		} 
 	}
 	.form-line {
-		border: none;
-		width: 47%;
-		padding: 15px;
+		border: 1px solid $gray;
+		padding: 10px;
 		margin-bottom: 15px;
 		border-radius: 9px;
 		outline: none;
 		font-size: rem(15);
-		color: $gray;
-	}
-	input, option {
-		font-family: "GothamProRegular";
-		font-size: rem(15);
 		line-height: 20px;
-		padding-left: 10px;
 		color: $gray;
 		box-shadow: 9.192px 9.192px 16px 0px rgba(14, 14, 14, 0.24);
 	}
+
 	.form-line-text {
-		width: 100%;
 		border: 1px solid $gray;
 		padding: 10px;
 		margin-bottom: 20px;
@@ -1725,15 +1735,8 @@ a {
 		color: $gray;
 		box-shadow: 9.192px 9.192px 16px 0px rgba(14, 14, 14, 0.24);
 	}
-	.select-line {
-		border: none;
-		width: 300px;
-		padding: 10px 0;
-		margin-bottom: 15px;
-		border-radius: 5px;
-		outline: none;
-	}
 	.form-link {
+		border: none;
 		color: #fff;
 	}
 	::-webkit-input-placeholder { 

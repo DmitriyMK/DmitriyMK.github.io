@@ -630,51 +630,16 @@
     margin-top: 15px;
     text-align: center; }
   .contact__page .flex-wrap {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-flex-wrap: wrap;
-        -ms-flex-wrap: wrap;
-            flex-wrap: wrap; }
-    .contact__page .flex-wrap .form-line {
-      width: 90%;
-      text-align: center; }
+    width: 90%;
+    margin: auto; }
   .contact__page .form-line {
     width: 90%;
     text-align: center; }
-  .contact__page input, .contact__page option {
-    width: 90%; }
   .contact__page .form-line-text {
-    width: 90%;
-    text-align: center; }
-  .contact__page .select-line {
-    margin: auto;
-    padding: 0;
-    width: 300px; }
+    width: 90%; }
   .contact__page .form-link {
-    margin: auto; }
-  .contact__page .aside {
-    width: 100%;
-    padding-top: 0;
-    padding-bottom: 30px;
-    padding-left: 0;
-    margin-top: 20px;
-    margin-left: 0;
-    text-align: center; } }
+    width: 300px;
+    margin: auto; } }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {

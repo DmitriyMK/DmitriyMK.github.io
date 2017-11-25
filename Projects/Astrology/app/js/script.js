@@ -26,35 +26,10 @@ $(document).ready(function() {
 		}
 	})
 
-	/*LAZY LOAD*/
-/*	$(function() {
-		$('.lazy').Lazy({
-			// your configuration goes here
-			scrollDirection: 'vertical',
-			effect: 'fadeIn',
-			visibleOnly: true,
-			onError: function(element) {
-				console.log('error loading ' + element.data('src'));
-			}
-		});
-	});*/
-
-
 	$('.review__slides').slick({
 		infinite: true,
 		speed: 500,
 	});
-
-
-	/*GMAP POP-UP*/
-	/*	$('.popup-gmaps').magnificPopup({
-			disableOn: 319,
-			type: 'iframe',
-			mainClass: 'mfp-fade',
-			removalDelay: 160,
-			preloader: false,
-			fixedContentPos: false,
-		});*/
 
 	/*FORM POP-UP*/
 	$('.popup-with-form').magnificPopup({
@@ -80,8 +55,6 @@ $(document).ready(function() {
 	});
 
 	$('.phone-mask').mask('+3000 000 00 00');
-
-
 
 	/*	new WOW().init();*/
 

@@ -2511,16 +2511,13 @@ a {
     background-image: -webkit-linear-gradient(140deg, #55b0eb 0%, #87e094 100%);
     background-image: -o-linear-gradient(140deg, #55b0eb 0%, #87e094 100%);
     background-image: linear-gradient(-50deg, #55b0eb 0%, #87e094 100%);
-    -webkit-transform: skewX(-82deg);
-        -ms-transform: skewX(-82deg);
-            transform: skewX(-82deg);
+    /* 		transform: skewX(-82deg); */
     content: '';
     position: absolute;
-    top: -52%;
+    top: 0%;
     left: 0%;
-    width: 700vh;
-    height: 100%;
-    overflow-x: hidden; }
+    width: 100%;
+    height: 600px; }
   .page__title {
     padding-top: 30px;
     padding-bottom: 30px;
@@ -2567,7 +2564,7 @@ a {
     font-family: "GothamProBold";
     color: #333; }
   .services .box-news:first-child {
-    padding-top: 60px; }
+    padding-top: 120px; }
   .services .box-news {
     padding-top: 10px;
     position: relative;
@@ -2601,14 +2598,21 @@ a {
       color: #666; }
     .services .box-news ol {
       list-style-position: inside;
-      padding: 10px 0;
-      /* 			width: 80%; */ }
+      padding: 10px 0; }
     .services .box-news li {
+      padding: 4px 0;
       font-size: 0.875rem;
       line-height: 18px; }
+  .services .link-wrap {
+    margin: auto;
+    text-align: center; }
   .services .news-link {
-    float: right;
-    margin: 50px 50px 50px 0;
+    display: block;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 50px auto;
     padding: 15px 60px;
     background-image: -webkit-linear-gradient(-15deg, #87e094 0%, #55b0eb 100%);
     background-image: -ms-linear-gradient(-15deg, #87e094 0%, #55b0eb 100%);
@@ -2622,7 +2626,6 @@ a {
     -webkit-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
     transition: all 0.5s ease;
-    clear: both;
     opacity: .8;
     font-size: 1.25rem; }
     .services .news-link:hover {
@@ -2729,7 +2732,7 @@ a {
     -webkit-justify-content: space-between;
         -ms-flex-pack: justify;
             justify-content: space-between; }
-  .action__page .img-wrap {
+  .action__page .page__wrap {
     margin-bottom: 140px; }
 
 /* PAGE 4 */
@@ -2935,6 +2938,8 @@ a {
       display: block;
       -webkit-box-shadow: 0 0 0 8px #fff, 0 0 0 10px #6ac0f3;
               box-shadow: 0 0 0 8px #fff, 0 0 0 10px #6ac0f3;
+      width: 150px;
+      height: 150px;
       -webkit-border-radius: 50%;
               border-radius: 50%;
       margin: auto; }
@@ -2969,16 +2974,29 @@ a {
     -webkit-justify-content: space-between;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    width: 80%;
     margin: auto; }
-  .consult__about .flex-wrap-bottom {
-    padding: 70px 0 20px 0; }
+  .consult__about .flex-bottom {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 40px; }
   .consult__about .img-box {
     display: block;
-    width: 100%;
-    height: 215px; }
+    width: 40%;
+    height: auto; }
   .consult__about .text-box {
-    margin-left: 25px; }
+    -webkit-box-flex: 2;
+    -webkit-flex-grow: 2;
+        -ms-flex-positive: 2;
+            flex-grow: 2;
+    width: 60%;
+    margin-left: 25px;
+    padding-right: 10%; }
   .consult__about .consult__about-title {
     font-size: 1.5rem;
     line-height: 1.3;
@@ -2992,8 +3010,6 @@ a {
     line-height: 20px;
     font-style: italic;
     font-family: "GothamProMedium"; }
-  .consult__about .list {
-    margin-left: 5%; }
   .consult__about .list__item {
     display: inline-block;
     margin: 0 10px;
@@ -3012,8 +3028,10 @@ a {
     color: #323232;
     border-bottom: none; }
   .consult__about .btn-orange {
-    padding: 6px 50px 0 50px;
-    margin-right: 25px;
+    display: inline-block;
+    padding: 5px 50px;
+    margin-top: 10px;
+    margin-right: 10%;
     -webkit-border-radius: 4px;
             border-radius: 4px;
     background-color: #e49627;
@@ -3076,11 +3094,16 @@ a {
 
 .consult__theme .tabcontent {
   display: none;
-  padding: 70px 50px;
+  padding: 30px 50px;
   padding-bottom: 20px;
   border: 1px solid #ccc;
   border-top: none; }
-  .consult__theme .tabcontent p {
+  .consult__theme .tabcontent h3 {
+    padding-bottom: 10px; }
+  .consult__theme .tabcontent ol {
+    padding-bottom: 10px; }
+  .consult__theme .tabcontent p, .consult__theme .tabcontent li {
+    padding: 5px 0;
     font-size: 0.9375rem;
     color: #323232; }
 
@@ -3122,7 +3145,7 @@ a {
         -ms-flex-pack: justify;
             justify-content: space-between; }
   .consult__review .review__title {
-    padding: 50px 0;
+    padding: 30px 0;
     text-align: center;
     color: #323232;
     font-size: 1.25rem;
@@ -3157,10 +3180,10 @@ a {
     -webkit-flex-direction: column;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
     -webkit-box-align: center;
     -webkit-align-items: center;
         -ms-flex-align: center;
@@ -3174,7 +3197,11 @@ a {
   .consult__review .img-wrap {
     position: relative; }
     .consult__review .img-wrap img {
-      margin: 0 auto; }
+      width: 70px;
+      height: 70px;
+      -webkit-border-radius: 50%;
+              border-radius: 50%;
+      margin: auto; }
     .consult__review .img-wrap:before {
       position: absolute;
       content: '';
@@ -3264,8 +3291,6 @@ a {
   .consult__form .select-line {
     border: none;
     width: 300px;
-    padding: 10px 0;
-    margin-bottom: 15px;
     -webkit-border-radius: 5px;
             border-radius: 5px;
     outline: none; }
@@ -3375,41 +3400,40 @@ a {
 /* PAGE 8*/
 .contact__page {
   position: relative;
-  min-height: 150vh;
-  background-image: #666; }
+  background-image: #666;
+  margin: 0 auto; }
+  .contact__page .page__text {
+    padding-top: 50px; }
   .contact__page .box-form-form {
-    margin: 60px 0; }
+    margin: 50px 0; }
   .contact__page .flex-wrap {
+    width: 500px;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -webkit-box-pack: justify;
     -webkit-justify-content: space-between;
         -ms-flex-pack: justify;
             justify-content: space-between; }
-    .contact__page .flex-wrap .form-line {
-      width: 47%; }
   .contact__page .form-line {
-    border: none;
-    width: 47%;
-    padding: 15px;
+    border: 1px solid #666;
+    padding: 10px;
     margin-bottom: 15px;
     -webkit-border-radius: 9px;
             border-radius: 9px;
     outline: none;
     font-size: 0.9375rem;
-    color: #666; }
-  .contact__page input, .contact__page option {
-    font-family: "GothamProRegular";
-    font-size: 0.9375rem;
     line-height: 20px;
-    padding-left: 10px;
     color: #666;
     -webkit-box-shadow: 9.192px 9.192px 16px 0px rgba(14, 14, 14, 0.24);
             box-shadow: 9.192px 9.192px 16px 0px rgba(14, 14, 14, 0.24); }
   .contact__page .form-line-text {
-    width: 100%;
     border: 1px solid #666;
     padding: 10px;
     margin-bottom: 20px;
@@ -3420,15 +3444,8 @@ a {
     color: #666;
     -webkit-box-shadow: 9.192px 9.192px 16px 0px rgba(14, 14, 14, 0.24);
             box-shadow: 9.192px 9.192px 16px 0px rgba(14, 14, 14, 0.24); }
-  .contact__page .select-line {
-    border: none;
-    width: 300px;
-    padding: 10px 0;
-    margin-bottom: 15px;
-    -webkit-border-radius: 5px;
-            border-radius: 5px;
-    outline: none; }
   .contact__page .form-link {
+    border: none;
     color: #fff; }
   .contact__page ::-webkit-input-placeholder {
     font-size: 0.9375rem;

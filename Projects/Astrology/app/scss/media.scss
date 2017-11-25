@@ -651,43 +651,19 @@
 			text-align: center;
 		}
 		.flex-wrap {
-			display: flex;
-			flex-direction: column;
-			justify-content: center;
-			align-items: center;
-			flex-wrap: wrap;
-			.form-line {
-				width: 90%;
-				text-align: center;
-			} 
+			width: 90%;
+			margin: auto;
 		}
 		.form-line {
 			width: 90%;
 			text-align: center;
 		}
-		input, option {
-			width: 90%;
-		}
 		.form-line-text {
 			width: 90%;
-			text-align: center;
-		}
-		.select-line {
-			margin: auto;
-			padding: 0;
-			width: 300px;
 		}
 		.form-link {
+			width: 300px;
 			margin: auto;
-		}
-		.aside {
-			width: 100%;
-			padding-top: 0;
-			padding-bottom: 30px;
-			padding-left: 0;
-			margin-top: 20px;
-			margin-left: 0;
-			text-align: center;
 		}
 	}
 
