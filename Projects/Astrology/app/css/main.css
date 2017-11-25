@@ -2342,9 +2342,6 @@ a {
     display: block;
     text-align: center;
     margin-bottom: 80px; }
-  .content .textMission {
-    font-size: 1.25rem;
-    padding: 50px 20px; }
   .content .consult__about {
     padding-top: 70px;
     padding-bottom: 40px;
@@ -3059,11 +3056,8 @@ a {
 .consult__about {
   padding-top: 70px;
   padding-bottom: 40px;
-  background: #aad8f3;
-  background: -webkit-linear-gradient(left, #aad8f3 50%, #c1eecb 100%);
-  background: -webkit-gradient(linear, left top, right top, color-stop(50%, #aad8f3), to(#c1eecb));
-  background: -o-linear-gradient(left, #aad8f3 50%, #c1eecb 100%);
-  background: linear-gradient(to right, #aad8f3 50%, #c1eecb 100%);
+  background-image: -webkit-linear-gradient(-15deg, #74d182 0%, #48a2dd 100%);
+  background-image: -ms-linear-gradient(-15deg, #74d182 0%, #48a2dd 100%);
   -webkit-box-shadow: 9.192px 9.192px 16px 0px rgba(14, 14, 14, 0.24);
           box-shadow: 9.192px 9.192px 16px 0px rgba(14, 14, 14, 0.24);
   color: #fff; }

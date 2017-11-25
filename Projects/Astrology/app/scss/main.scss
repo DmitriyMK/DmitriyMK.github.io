@@ -669,10 +669,6 @@ a {
 		text-align: center;
 		margin-bottom: 80px;
 	}
-	.textMission {
-		font-size: rem(20);
-		padding: 50px 20px;
-	}
 	.consult__about {
 		padding-top: 70px;
 		padding-bottom: 40px;
@@ -1374,10 +1370,9 @@ a {
 .consult__about {
 	padding-top: 70px;
 	padding-bottom: 40px;
-	background: rgb(170,216,243);
-	background: -moz-linear-gradient(left, rgba(170,216,243,1) 50%, rgba(193,238,203,1) 100%);
-	background: -webkit-linear-gradient(left, rgba(170,216,243,1) 50%,rgba(193,238,203,1) 100%);
-	background: linear-gradient(to right, rgba(170,216,243,1) 50%,rgba(193,238,203,1) 100%);
+	background-image: -moz-linear-gradient( -15deg, rgb(116,209,130) 0%, rgb(72,162,221) 100%);
+	background-image: -webkit-linear-gradient( -15deg, rgb(116,209,130) 0%, rgb(72,162,221) 100%);
+	background-image: -ms-linear-gradient( -15deg, rgb(116,209,130) 0%, rgb(72,162,221) 100%);
 	box-shadow: 9.192px 9.192px 16px 0px rgba(14, 14, 14, 0.24);
 	color: #fff;
 	.flex-wrap {
