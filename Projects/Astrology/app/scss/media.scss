@@ -393,6 +393,11 @@
 	.header__pages {
 		min-height: 150px;
 	}
+	.page {
+		.aside {
+			padding-left: 0;
+		}
+	}
 	.services {
 		&__text {
 			width: 100%;

@@ -1846,8 +1846,91 @@ a {
     text-shadow: none;
     font-family: "GothamProRegular"; }
 
+.language__list {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end; }
+
+.language__item {
+  display: block;
+  text-decoration: none;
+  position: relative;
+  font-size: 1rem;
+  font-family: "GothamProMedium"; }
+  .language__item:nth-child(2) {
+    margin: 0 10px; }
+
+.language__link {
+  display: block;
+  position: relative;
+  font-size: 0.875rem;
+  font-family: "GothamProMedium"; }
+  .language__link:before {
+    display: block;
+    position: absolute;
+    content: "";
+    height: 2px;
+    width: 0;
+    background-color: #6ac0f3;
+    -webkit-transition: width .3s ease-in-out, left .3s ease-in-out;
+    -o-transition: width .3s ease-in-out, left .3s ease-in-out;
+    transition: width .3s ease-in-out, left .3s ease-in-out;
+    left: 50%;
+    bottom: 0; }
+  .language__link:after {
+    display: block;
+    position: absolute;
+    content: "";
+    height: 2px;
+    width: 0;
+    background-color: #6ac0f3;
+    -webkit-transition: width .3s ease-in-out;
+    -o-transition: width .3s ease-in-out;
+    transition: width .3s ease-in-out;
+    left: 50%;
+    bottom: 0; }
+  .language__link:hover:before {
+    width: 50%;
+    left: 0; }
+  .language__link:hover:after {
+    width: 50%; }
+
+.language .active {
+  display: block;
+  text-decoration: none;
+  position: relative; }
+  .language .active:before {
+    display: block;
+    position: absolute;
+    content: "";
+    height: 2px;
+    width: 50%;
+    background-color: #6ac0f3;
+    -webkit-transition: width .3s ease-in-out, left .3s ease-in-out;
+    -o-transition: width .3s ease-in-out, left .3s ease-in-out;
+    transition: width .3s ease-in-out, left .3s ease-in-out;
+    left: 50%;
+    bottom: 0; }
+  .language .active:after {
+    display: block;
+    position: absolute;
+    content: "";
+    height: 2px;
+    width: 50%;
+    background-color: #6ac0f3;
+    -webkit-transition: width .3s ease-in-out;
+    -o-transition: width .3s ease-in-out;
+    transition: width .3s ease-in-out;
+    left: 0;
+    bottom: 0; }
+
 .center__header {
-  padding-top: 240px; }
+  padding-top: 180px; }
   .center__header-text {
     font-size: 2.25rem;
     line-height: 40px;
@@ -2265,6 +2348,9 @@ a {
     display: block;
     text-align: center;
     margin-bottom: 80px; }
+  .content .textMission {
+    font-size: 1.25rem;
+    padding: 50px 20px; }
 
 .formOrder {
   text-align: center; }
@@ -2505,13 +2591,11 @@ a {
 
 /* PAGE STYLES  */
 .page {
-  position: relative;
-  overflow-x: hidden; }
+  position: relative; }
   .page:before {
     background-image: -webkit-linear-gradient(140deg, #55b0eb 0%, #87e094 100%);
     background-image: -o-linear-gradient(140deg, #55b0eb 0%, #87e094 100%);
     background-image: linear-gradient(-50deg, #55b0eb 0%, #87e094 100%);
-    /* 		transform: skewX(-82deg); */
     content: '';
     position: absolute;
     top: 0%;
@@ -2827,10 +2911,6 @@ a {
     font-size: 0.9375rem;
     font-family: "GothamProBold";
     color: #323232; }
-  .review__page .review-job {
-    font-size: 0.72188rem;
-    font-family: "GothamProLightItalic";
-    color: #6f6f6f; }
   .review__page .review-text {
     padding: 5px 0;
     text-align: center;
@@ -3373,26 +3453,29 @@ a {
 
 /* PAGE 7*/
 .blog__page {
-  position: relative; }
-  .blog__page .crumbs, .blog__page .page__title {
-    position: relative;
-    z-index: 100; }
-  .blog__page .blog__img {
-    max-width: 700px;
-    height: auto;
-    position: relative;
-    z-index: 1000; }
+  position: relative;
+  background: #f2f2f2;
+  z-index: 10; }
   .blog__page .blog-wrap {
+    position: relative;
     margin: auto;
-    padding: 60px; }
+    padding: 20px;
+    background: #fff; }
   .blog__page .social-list {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex; }
+  .blog__page .blog__img {
+    margin-bottom: 12px; }
   .blog__page .blog__text-title {
+    margin-bottom: 12px;
     font-weight: bold;
     font-family: "GothamProMedium"; }
+  .blog__page .blog__text {
+    font-size: 1.125rem;
+    line-height: 28px;
+    margin-bottom: 12px; }
   .blog__page .aside {
     position: relative;
     z-index: 10000; }

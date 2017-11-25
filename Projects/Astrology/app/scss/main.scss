@@ -127,7 +127,6 @@ a {
 .yt {
 	color: #dc472e;
 }
-
 .burger {
 	display: none;
 }
@@ -160,8 +159,88 @@ a {
 		font-family: "GothamProRegular";
 	}
 }
+.language {
+	&__list {
+		display: flex;
+		justify-content: flex-end;
+	}
+	&__item {
+		display: block;
+		text-decoration: none;
+		position: relative;
+		font-size: rem(16);
+		font-family: "GothamProMedium";
+		&:nth-child(2) {
+			margin: 0 10px;
+		}
+	}
+	&__link {
+		display: block;
+		position: relative;
+		font-size: rem(14);
+		font-family: "GothamProMedium";
+		&:before {
+			display: block;
+			position: absolute;
+			content: "";
+			height: 2px;
+			width: 0;
+			background-color: $blue;
+			transition: width .3s ease-in-out, left .3s ease-in-out;
+			left: 50%;
+			bottom: 0;
+		}
+		&:after{
+			display: block;
+			position: absolute;
+			content: "";
+			height: 2px;
+			width: 0;
+			background-color: $blue;
+			transition: width .3s ease-in-out;
+			left: 50%;
+			bottom: 0;
+		}
+		&:hover {
+			&:before {
+				width: 50%;
+				left: 0;
+			}
+			&:after {
+				width: 50%;
+			}
+		}
+	}
+	.active {
+		display: block;
+		text-decoration: none;
+		position: relative;
+		&:before {
+			display: block;
+			position: absolute;
+			content: "";
+			height: 2px;
+			width: 50%;
+			background-color: $blue;
+			transition: width .3s ease-in-out, left .3s ease-in-out;
+			left: 50%;
+			bottom: 0;
+		}
+		&:after{
+			display: block;
+			position: absolute;
+			content: "";
+			height: 2px;
+			width: 50%;
+			background-color: $blue;
+			transition: width .3s ease-in-out;
+			left: 0;
+			bottom: 0;
+		}
+	}
+}
 .center__header {
-	padding-top: 240px;
+	padding-top: 180px;
 	&-text {
 		font-size: rem(36);
 		line-height: 40px;
@@ -585,6 +664,10 @@ a {
 		text-align: center;
 		margin-bottom: 80px;
 	}
+	.textMission {
+		font-size: rem(20);
+		padding: 50px 20px;
+	}
 }
 
 .formOrder{
@@ -835,10 +918,8 @@ a {
 /* PAGE STYLES  */
 .page {
 	position: relative;
-	overflow-x: hidden;	
 	&:before{
 		background-image: linear-gradient(-50deg, rgb(85,176,235) 0%, rgb(135,224,148) 100%);
-/* 		transform: skewX(-82deg); */
 		content: '';
 		position: absolute;
 		top: 0%;
@@ -1142,11 +1223,6 @@ a {
 		font-size: rem(15);
 		font-family: "GothamProBold";
 		color: #323232;
-	}
-	.review-job {
-		font-size: rem(11.55);
-		font-family: "GothamProLightItalic";
-		color: #6f6f6f;
 	}
 	.review-text {
 		padding: 5px 0;
@@ -1666,28 +1742,30 @@ a {
 
 /* PAGE 7*/
 .blog__page {
-
 	position: relative;
-	.crumbs, .page__title {
-		position: relative;
-		z-index: 100;
-	}
-	.blog__img {
-		max-width: 700px;
-		height: auto;
-		position: relative;
-		z-index: 1000;
-	}
+	background: #f2f2f2;
+	z-index: 10;
 	.blog-wrap {
+		position: relative;
 		margin: auto;
-		padding: 60px;
+		padding: 20px;
+		background: #fff;
 	}
 	.social-list {
 		display: flex;
 	}
+	.blog__img {
+		margin-bottom: 12px;
+	}
 	.blog__text-title {
+		margin-bottom: 12px;
 		font-weight: bold;
 		font-family: "GothamProMedium";
+	}
+	.blog__text {
+		font-size: rem(18);
+		line-height: 28px;
+		margin-bottom: 12px;
 	}
 	.aside {
 		position: relative;

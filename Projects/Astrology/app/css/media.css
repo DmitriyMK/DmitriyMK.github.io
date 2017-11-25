@@ -364,6 +364,8 @@
         padding-bottom: 20px; }
   .header__pages {
     min-height: 150px; }
+  .page .aside {
+    padding-left: 0; }
   .services__text {
     width: 100%; }
   .services .box-news {
