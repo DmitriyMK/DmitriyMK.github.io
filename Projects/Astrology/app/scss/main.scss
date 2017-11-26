@@ -132,6 +132,7 @@ a {
 	display: none;
 }
 
+
 /* ------------	MAIN STYLE ------------*/
 
 .header {
@@ -363,7 +364,6 @@ a {
 		padding-top: 20px;
 		.flex {
 			display: flex;
-
 		}
 		.calendar__iframe {
 			width: 50%;
@@ -756,7 +756,8 @@ a {
 	}
 }
 .aside {
-	margin-left: 72px;
+	width: 30%;
+	margin-left: 52px;
 	padding-top: 54px;
 	&-title {
 		padding-bottom: 26px;
@@ -969,8 +970,9 @@ a {
 		width: 70%; 
 	}
 	.aside {
-		padding-top: 72px;
-		padding-left: 54px;
+		width: 26%;
+		margin-left: 60px;
+		padding-top: 54px;
 		&-title {
 			color: #333;
 		}
@@ -1171,9 +1173,7 @@ a {
 		justify-content: space-between;
 		position: relative;
 	}
-	.page__left {
-		width: 100%;
-	}
+
 	.review__title {
 		padding-bottom: 40px;
 		text-align: center;
@@ -1193,9 +1193,9 @@ a {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		max-width: 230px;
+		max-width: 215px;
 		margin: 0 auto;
-		padding: 15px;
+		padding: 10px;
 		z-index: 10;
 		background: #fff;
 		box-shadow: 9.192px 9.192px 16px 0px rgba(14, 14, 14, 0.24);
@@ -1246,7 +1246,7 @@ a {
 	}
 	.review-video {
 		margin-top: 70px;
-		max-width: 230px;
+		max-width: 215px;
 		max-height: 300px;
 		iframe {
 			display: block;

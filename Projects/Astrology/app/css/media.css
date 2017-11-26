@@ -466,6 +466,8 @@
     min-height: 150px; }
   .page .aside {
     padding-left: 0; }
+  .page .content {
+    width: 100%; }
   .services__text {
     width: 100%; }
   .services .box-news {
