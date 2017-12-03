@@ -18,43 +18,12 @@ $(document).ready(function() {
 	});
 
 
-/*	$('.slider-first').slick({
+	$('.hall__slider').slick({
 		arrows: true,
-		dots: true,
 		infinite: true,
-		fade: true,
 		slidesToShow: 1,
 		speed: 500,
-	});*/
-
-
-
-	/*GMAP POP-UP*/
-/*	$('.popup-gmaps').magnificPopup({
-		disableOn: 319,
-		type: 'iframe',
-		mainClass: 'mfp-fade',
-		removalDelay: 160,
-		preloader: false,
-		fixedContentPos: false,
-	});*/
-	
-	/*FORM POP-UP*/
-/*	$('.popup-with-form').magnificPopup({
-		type: 'inline',
-		preloader: false,
-		focus: '#name',
-
-		callbacks: {
-			beforeOpen: function() {
-				if ($(window).width() < 700) {
-					this.st.focus = false;
-				} else {
-					this.st.focus = '#name';
-				}
-			}
-		}
-	});*/
+	});
 
 	$('.politics__link').magnificPopup({
 		type: 'inline',
@@ -62,29 +31,12 @@ $(document).ready(function() {
 		focus: '#username',
 	});
 
+	$('.phone-mask').mask('+38000 000 00 00');
 
 	/*	new WOW().init();*/
 
 });
 
-
-
-//E-mail Ajax Send
-$("form.open-popup-link").submit(function() {
-	var th = $(this);
-	$.ajax({
-		type: "POST",
-		url: "../js/mail.php",
-		data: th.serialize()
-	}).done(function() {
-		$(th).find('.success').addClass('active').css("display", "flex").hide().fadeIn();
-		setTimeout(function() {
-			$(th).find('.success').removeClass('active').fadeOut();
-			th.trigger("reset");
-		}, 3000);
-	});
-	return false;
-});
 
 /*PRELOADER*/
 $(window).load(function() {
