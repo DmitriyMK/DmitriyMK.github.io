@@ -1354,7 +1354,7 @@ a {
           flex-basis: 30%;
   width: 260px; }
   .logo__img {
-    max-width: 100%;
+    max-width: 260px;
     height: auto; }
   .logo__contact {
     margin-top: 8px;
