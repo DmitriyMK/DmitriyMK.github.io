@@ -1537,3 +1537,48 @@ a {
   .politics-box div .question {
     padding-top: 10px;
     font-family: "GothamProBold"; }
+
+.actionLast {
+  padding: 60px 0;
+  background: url(../img/background_middle.jpg) center/cover; }
+  .actionLast .greeting {
+    text-align: center; }
+  .actionLast .flex {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding-bottom: 100px; }
+    .actionLast .flex__img {
+      -webkit-flex-basis: 50%;
+          -ms-flex-preferred-size: 50%;
+              flex-basis: 50%; }
+    .actionLast .flex__form {
+      -webkit-flex-basis: 40%;
+          -ms-flex-preferred-size: 40%;
+              flex-basis: 40%; }
+  .actionLast .text {
+    padding-top: 0;
+    padding-bottom: 5px; }
+  .actionLast .form-line {
+    margin: 5px 0; }
+  .actionLast ::-webkit-input-placeholder {
+    color: #333;
+    font-size: 16px;
+    font-family: "GothamProRegular"; }
+  .actionLast ::-moz-placeholder {
+    color: #333;
+    font-size: 16px;
+    font-family: "GothamProRegular"; }
+  .actionLast :-ms-input-placeholder {
+    color: #333;
+    font-size: 16px;
+    font-family: "GothamProRegular"; }
+  .actionLast :-moz-placeholder {
+    color: #333;
+    font-size: 16px;
+    font-family: "GothamProRegular"; }
