@@ -1,0 +1,212 @@
+@import "_reset";
+@import "_fonts";
+@import "_vars";
+@import "_mixin and function";
+@import "_magnific-popup";
+@import "_simplelightbox.scss";
+@import "_slick";
+@import "_slick-theme";
+
+
+body {
+	min-width: 320px;
+	position: relative;
+	font-family: $fontFamily;
+	font-size: $fontSize;
+	line-height: 1.75;
+	box-sizing: border-box;
+}
+ul {
+	list-style-type: none;
+}
+a {
+	color: inherit;
+}
+
+.wrapper {
+	position: relative;
+	max-width: 1260px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+::-webkit-input-placeholder { 
+
+}
+::-moz-placeholder { 
+
+}
+:-ms-input-placeholder { 
+
+}
+:-moz-placeholder {
+
+}
+
+/* ------------	LOADER ------------*/
+#preloader {
+	position: fixed; 
+	left: 0; 
+	top: 0; 
+	right: 0; 
+	bottom: 0; 
+	background: #fff; 
+	z-index: 1001;
+}
+#preloader i {
+	width: 70px; 
+	height: 70px; 
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	background: url('../img/preloader.gif') no-repeat 50% 50%; 
+	margin: -35px 0 0 -35px;
+}
+
+.header {
+	padding: 20px 0;
+	.flex {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		color: $black;
+	}
+	&__about-list {
+		padding-top: 15px;
+		margin-left: 20px;
+	}
+	&__contact-list {
+		display: flex;
+		flex-wrap:wrap;
+		justify-content: space-around;
+		flex-basis: 150px;
+		li {
+			width: 33%;
+			text-align: center;
+			
+		}
+		li:last-child {
+			flex-basis: 100%;
+			line-height: 30px;
+			letter-spacing: .7px;
+		}
+	}
+	.logo {
+		flex-basis: 10%;
+	}
+	&__adress-list {
+		font-family: "MyriadProRegular";
+		letter-spacing: 1px;
+		i {
+			font-size: rem(20);
+		}
+		i:before {
+			margin: 0;
+			padding-right: 20px;
+		}
+		span {
+			padding-left: 20px;
+		}
+	}
+	&__social-list {
+		display: flex;
+		font-size: rem(30);
+	}
+	a {
+		padding: 0 5px;
+		@include transition (all .3s ease);
+		&:hover {
+			color: $pink;
+		}
+	}
+}
+
+.first {
+	position: relative;
+	height: 80vh;
+	background: url(../img/background.jpg)no-repeat right/cover;
+	&:before {
+		content: '';
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 100%;
+		height: 80vh;
+		background-color: rgba(18,16,11, .85);
+	}
+	.content {
+		position: relative;
+		display: flex;
+		flex-wrap: wrap;
+		margin: auto;
+		padding-left: 120px;
+		color: #fff;
+		width: 570px;
+	}
+	.title {
+		padding-top: 10vh;
+		padding-bottom: 8vh;
+		font-family: "PlayfairDisplayBold";
+		font-size: rem(30);
+		line-height: 36px;
+	}
+	.sliderText {
+		width: 100%;
+		font-family: "ProximaNovaSemiBold";
+	}
+	.slider__item {
+		width: 260px;
+	}
+	.details {
+		display: table;
+		margin-top: 50px;
+		margin-left: 320px;
+		padding: 15px 90px;
+		background-image: -moz-linear-gradient( 60deg, rgb(166,193,238) 0%, rgb(251,194,235) 100%);
+		background-image: -webkit-linear-gradient( 60deg, rgb(166,193,238) 0%, rgb(251,194,235) 100%);
+		background-image: -ms-linear-gradient( 60deg, rgb(166,193,238) 0%, rgb(251,194,235) 100%);
+		color: $black;
+		@include transition (color .3s ease);
+		&:hover {
+			color: #fff;
+		}
+	}
+}
+
+
+
+.slick-prev,
+.slick-next {
+	right: 0;
+	top: 160%;
+	&:before {
+		font-family: 'Fontello';
+		font-size: rem(34);
+		color: #fff;
+	}
+}
+.slick-prev {
+	left: inherit;
+	right: 96%;
+	z-index: 100;
+	&:before {
+		content: '\f177';
+		border: 2px solid #fff;
+		border-radius: 50%;
+		padding: 8px;
+	}
+}
+.slick-next {
+	right: 76%;
+	z-index: 100;
+	&:before {
+		content: '\f178';
+		border: 2px solid #fff;
+		border-radius: 50%;
+		padding: 5px;
+	}
+}
+
+
+
+/* @import "media.scss"; */
