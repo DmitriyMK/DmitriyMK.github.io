@@ -26,7 +26,8 @@
 		<i></i>
 	</div>
 
-    <header class="header">
+
+    <header class="header" id="header">
         <div class="wrapper">
             <div class="flex">
                 <ul class="header__about-list">
@@ -54,12 +55,31 @@
         </div>
     </header>
 
-    <section class="first">
-        <div class="wrapper">
+    <nav class="menu">
+        <button class="burgerMenu">
+            <h4 class="menu-title"><i class="icon icon-menu"></i><span>Услуги</span></h4>
+        </button>
+        <div class="overlay">
+            <ul class="menu-list">
+                <li><a href="#">Женский зал</a></li>
+                <li><a href="#">Ногтевой сервис</a></li>
+                <li><a href="#">Косметический кабинет</a></li>
+                <li><a href="#">Коррекция фигуры</a></li>
+                <li><a href="#">SPA</a></li>
+                <li><a href="#">Мужская барберия</a></li>
+                <li><a href="#">Магазин</a></li>
+                <li><a href="#">Академия</a></li>
+            </ul>
+        </div>
+    </nav>
 
-            <div class="content">
-                <p class="title">Место с которого девушки <br>
-                    выходят счастливые</p>
+    <div id="fullpage">
+        <section class="first section">
+            <div class="wrapper">
+                <div class="content">
+                    <p class="title">Место с которого девушки <br>
+                        выходят счастливые
+                    </p>
                     <div class="sliderText">
                         <div class="slider__item">
                             Уютная атмосфера, улыбки и разговоры “о женском”. <br>
@@ -85,24 +105,42 @@
                     </div>
                     <a class="details" href="#">Подробнее</a>
                 </div>
-
             </div>
         </section>
 
-
-    <!-- <div class="left-side">
-        <h4 class="left-side-title"><i class="icon icon-menu"></i>Услуги</h4>
-        <ul class="left-side-list">
-            <li>Женский зал</li>
-            <li>Ногтевой сервис</li>
-            <li>Косметический кабинет</li>
-            <li>Коррекция фигуры</li>
-            <li>SPA</li>
-            <li>Мужская барберия</li>
-            <li>Магазин</li>
-            <li>Академия</li>
-        </ul>
-    </div> -->
+        <section class="second section advantages">
+            <div class="wrapper">
+                <div class="content">
+                    <ol class="advantages__list">
+                        <li class="advantages__item">
+                            <h4 class="advantages__title">Подчеркиваем красоту</h4>
+                            <p class="advantages__text">Более 200 услуг, которые сделают вас еще лучше</p>
+                        </li>
+                        <li class="advantages__item">
+                            <h4 class="advantages__title">100% безопасность</h4>
+                            <p class="advantages__text">Строгое соблюдение санитарных стандартов</p>
+                        </li>
+                        <li class="advantages__item">
+                            <h4 class="advantages__title">12 лет в бизнесе</h4>
+                            <p class="advantages__text">Накопленный опыт, которым можно поделиться</p>
+                        </li>
+                        <li class="advantages__item">
+                            <h4 class="advantages__title">Lorem ipsum </h4>
+                            <p class="advantages__text">Lorem ipsum dolor sit amet, consectetur incididunt ut labore et dolore magna aliqua. </p>
+                        </li>
+                        <li class="advantages__item">
+                            <h4 class="advantages__title">Lorem ipsum </h4>
+                            <p class="advantages__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad </p>
+                        </li>
+                        <li class="advantages__item">
+                            <h4 class="advantages__title">Lorem ipsum </h4>
+                            <p class="advantages__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad </p>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+    </div>
 
 
     <script src="js/script.min.js"></script> 
