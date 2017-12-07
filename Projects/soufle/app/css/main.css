@@ -115,16 +115,13 @@ button {
   font-style: normal;
   font-weight: normal; }
 
-/* @font-face {
-	font-family: "ProximaNovaBlack";
-	src: url("../fonts/ProximaNovaBlack/ProximaNovaBlack.eot");
-	src: url("../fonts/ProximaNovaBlack/ProximaNovaBlack.eot?#iefix")format("embedded-opentype"),
-	url("../fonts/ProximaNovaBlack/ProximaNovaBlack.woff") format("woff"),
-	url("../fonts/ProximaNovaBlack/ProximaNovaBlack.ttf") format("truetype");
-	font-style: normal;
-	font-weight: normal;
-}
- */
+@font-face {
+  font-family: "ProximaNovaBlack";
+  src: url("../fonts/ProximaNovaBlack/ProximaNovaBlack.eot");
+  src: url("../fonts/ProximaNovaBlack/ProximaNovaBlack.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNovaBlack/ProximaNovaBlack.woff") format("woff"), url("../fonts/ProximaNovaBlack/ProximaNovaBlack.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+
 @font-face {
   font-family: "MyriadProRegular";
   src: url("../fonts/MyriadProRegular/MyriadProRegular.eot");
@@ -1855,6 +1852,136 @@ a {
 .advantages__title {
   font-size: 1.125rem;
   padding-bottom: 20px; }
+
+.hall .flex {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-align-content: center;
+      -ms-flex-line-pack: center;
+          align-content: center;
+  position: relative;
+  z-index: 10; }
+
+.hall-left {
+  position: relative;
+  background: url(../img/manHall.jpg) no-repeat center/cover;
+  height: 100vh;
+  width: 50%;
+  z-index: -1;
+  font-size: 1rem;
+  color: #4c4c4c; }
+  .hall-left:before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: -webkit-linear-gradient(60deg, #a6c1ee 0%, #fbc2eb 100%);
+    background-image: -ms-linear-gradient(60deg, #a6c1ee 0%, #fbc2eb 100%);
+    opacity: .6; }
+
+.hall-right {
+  position: relative;
+  background: url(../img/womanHall.jpg) no-repeat center/cover;
+  height: 100vh;
+  width: 50%;
+  z-index: -1;
+  font-size: 1rem;
+  color: #4c4c4c; }
+  .hall-right:before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: -webkit-linear-gradient(60deg, #a6c1ee 0%, #fbc2eb 100%);
+    background-image: -ms-linear-gradient(60deg, #a6c1ee 0%, #fbc2eb 100%);
+    opacity: .6; }
+
+.hall a {
+  position: absolute;
+  top: 55vh;
+  -webkit-transition: color 0.3s ease;
+  -o-transition: color 0.3s ease;
+  transition: color 0.3s ease; }
+  .hall a:hover {
+    color: #fff; }
+  .hall a:hover:before {
+    background: #fff; }
+
+.hall .link-left {
+  right: 10vw; }
+  .hall .link-left:before {
+    content: '';
+    position: absolute;
+    top: 14px;
+    right: -70px;
+    width: 40px;
+    height: 2px;
+    background: #4c4c4c;
+    -webkit-transition: background 0.3s ease;
+    -o-transition: background 0.3s ease;
+    transition: background 0.3s ease; }
+
+.hall .link-right {
+  left: 10vw; }
+  .hall .link-right:before {
+    content: '';
+    position: absolute;
+    top: 14px;
+    left: -70px;
+    width: 40px;
+    height: 2px;
+    background: #4c4c4c;
+    -webkit-transition: background 0.3s ease;
+    -o-transition: background 0.3s ease;
+    transition: background 0.3s ease; }
+
+.selectHall .background {
+  content: '';
+  position: absolute;
+  background: url(../img/womanHall2.jpg) no-repeat left/cover;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 50%; }
+  .selectHall .background:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: -webkit-linear-gradient(60deg, #a6c1ee 0%, #fbc2eb 100%);
+    background-image: -ms-linear-gradient(60deg, #a6c1ee 0%, #fbc2eb 100%);
+    opacity: .4; }
+
+.selectHall .content {
+  margin-top: 140px;
+  margin-left: 700px; }
+
+.selectHall li {
+  position: relative;
+  margin-bottom: 25px;
+  display: block;
+  padding-left: 70px;
+  font-size: 1rem; }
+  .selectHall li:before {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 0;
+    width: 40px;
+    height: 2px;
+    background: #4c4c4c; }
 
 .slick-prev,
 .slick-next {
