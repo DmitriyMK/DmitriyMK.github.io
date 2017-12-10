@@ -35,30 +35,23 @@ $(document).ready(function() {
 	});
 
 	$('#fullpage').fullpage({
+		fixedElements: '#header',
 		scrollingSpeed: 700,
-		lazyLoading: true,
+
+		hybrid:true,
+		fitToSection: false,
 
 		//Accessibility
 		keyboardScrolling: true,
-		animateAnchor: true,
-		recordHistory: true,
 
-		//Design
-		fixedElements: '#header',
-/*		parallax: true,
-		parallaxOptions: {
-			type: 'reveal',
-			percentage: 62,
-			property: 'translate'
-		},*/
+		
+
 
 	});
 
 	$('.phone-mask').mask('+7000 000 00 00');
 
-	$('.selectize').selectize({
-
-	});
+	$('.selectize').selectize();
 
 	$('.selectize-input > input').prop('disabled', 'disabled');
 
