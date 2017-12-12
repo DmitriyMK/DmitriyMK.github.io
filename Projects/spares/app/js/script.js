@@ -35,34 +35,6 @@ $(document).ready(function() {
 	});
 
 
-
-	/*GMAP POP-UP*/
-	/*	$('.popup-gmaps').magnificPopup({
-			disableOn: 319,
-			type: 'iframe',
-			mainClass: 'mfp-fade',
-			removalDelay: 160,
-			preloader: false,
-			fixedContentPos: false,
-		});*/
-
-	/*FORM POP-UP*/
-	/*	$('.popup-with-form').magnificPopup({
-			type: 'inline',
-			preloader: false,
-			focus: '#name',
-
-			callbacks: {
-				beforeOpen: function() {
-					if ($(window).width() < 700) {
-						this.st.focus = false;
-					} else {
-						this.st.focus = '#name';
-					}
-				}
-			}
-		});*/
-
 	$('.politics__link').magnificPopup({
 		type: 'inline',
 		preloader: false,
@@ -71,8 +43,6 @@ $(document).ready(function() {
 
 	$('.phone-mask').mask('+7000 000 00 00');
 	
-	new WOW().init();
-
 });
 
 

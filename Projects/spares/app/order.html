@@ -119,9 +119,10 @@
 
 	<div class="info-pg2">
 		<div class="wrapper">
-			<div class="info__wrap">
-				<p class="info__text"><span class="userName">First_name</span>, вам осталось ввести свой номер, год и цвет <br> авто, а дальше обо всем договоримся по телефону</p>
-				<form class="info__form" autocomplete="off">
+			<div class="info__wrap form__wrapper">
+				<p class="info__text form-title"><span class="userName">First_name</span>, вам осталось ввести свой номер, год и цвет <br> авто, а дальше обо всем договоримся по телефону</p>
+				<p class="form-message"></p>
+				<form class="info__form form-element" autocomplete="off" id="form-contact">
 					<!-- Hidden Required Fields -->
 					<input type="hidden" name="project_name" value="">
 					<input type="hidden" name="admin_email" value="">
@@ -138,6 +139,7 @@
 								<input class="form-num form-line line-top" type="text" name="Age" placeholder="Год">
 								<input class="form-text form-line line-top" type="text" name="Color" placeholder="Цвет">	
 							</fieldset>		
+							
 						</div>
 						<div class="flex-click"><input type="submit" class="form-link btn" value="Открыть комплект!"></div>
 					</div>
@@ -214,6 +216,7 @@
 	</footer>
 
 	<script src="js/script.min.js"></script> 
+	<script src="js/libs/telegramform.js"></script>
 	<script src="js/script.js"></script> 
 </body>
 </html>
