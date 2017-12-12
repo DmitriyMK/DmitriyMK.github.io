@@ -42,11 +42,6 @@
     top: 15px;
     right: 25px; } }
 
-/* ipad styles */
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
-  .header {
-    height: 700px; } }
-
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
   .menu__logo {
@@ -363,3 +358,26 @@
   .mfp-close {
     top: 15px;
     right: 10px; } }
+
+/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+/* Portrait and Landscape */
+/* Portrait */
+/* Landscape */
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+  .header__text {
+    font-size: 2.75rem;
+    line-height: 56px; }
+  .header__content {
+    top: 100px; }
+  .header__link {
+    top: 180%;
+    left: 17%;
+    font-size: 4em; }
+    .header__link:before {
+      position: absolute;
+      content: '';
+      top: -80%;
+      left: 50%;
+      width: 2px;
+      height: 80px;
+      background: #fff; } }
