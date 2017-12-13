@@ -42,6 +42,24 @@ $(document).ready(function() {
 	});
 
 	$('.phone-mask').mask('+7000 000 00 00');
+
+	$('.selectize-input > input').prop('disabled', 'disabled');
+
+	/*RESPONSIVER BURGER MENU*/
+	$(".burger").click(function() {
+		$(this).toggleClass('active');
+		$(".nav__list").slideToggle('fast');
+	})
+
+	$('.burger').on('click', function() {
+		$('.overlay').toggleClass('open').show;
+	});
+
+	$(window).resize(function() {
+		if ($(window).width() > 480) {
+			$('.nav__list').removeAttr('style');
+		}
+	})
 	
 });
 

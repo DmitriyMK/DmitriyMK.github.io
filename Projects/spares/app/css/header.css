@@ -60,12 +60,25 @@ a {
     width: 860px; }
   .top__header .logo {
     margin: 0 auto; }
+  .top__header .showMe {
+    border: none;
+    background: inherit;
+    font-size: 1.125rem;
+    font-family: "GothamProMedium";
+    color: #fff;
+    display: none;
+    padding-left: 0; }
+  .top__header .name__hidden {
+    display: none; }
   .top__header .nav__list {
     margin-top: 10px;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
-    display: flex; }
+    display: flex;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; }
   .top__header .nav__item {
     margin-right: 15px; }
   .top__header .nav__item a {
