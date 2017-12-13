@@ -403,6 +403,8 @@
                 order: -1; }
       .top__header .logo__text {
         text-align: left; }
+    .top__header .nav {
+      display: none; }
     .top__header .nav__list {
       display: -webkit-box;
       display: -webkit-flex;

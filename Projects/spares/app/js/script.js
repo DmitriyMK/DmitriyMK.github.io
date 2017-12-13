@@ -48,7 +48,7 @@ $(document).ready(function() {
 	/*RESPONSIVER BURGER MENU*/
 	$(".burger").click(function() {
 		$(this).toggleClass('active');
-		$(".nav__list").slideToggle('fast');
+		$(".nav").slideToggle('fast');
 	})
 
 	$('.burger').on('click', function() {
@@ -57,7 +57,7 @@ $(document).ready(function() {
 
 	$(window).resize(function() {
 		if ($(window).width() > 480) {
-			$('.nav__list').removeAttr('style');
+			$('.nav').removeAttr('style');
 		}
 	})
 	
