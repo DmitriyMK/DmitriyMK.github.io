@@ -1,33 +1,31 @@
 @charset "UTF-8";
 @font-face {
   font-family: "ProximaNovaRegular";
-  src: url("../fonts/ProximaNovaRegular/ProximaNovaRegular.eot"), url("../fonts/ProximaNovaRegular/ProximaNovaRegular.woff") format("woff"), url("../fonts/ProximaNovaRegular/ProximaNovaRegular.ttf") format("truetype");
+  src: url("../fonts/ProximaNovaRegular/ProximaNovaRegular.woff") format("woff");
   font-style: normal;
   font-weight: normal; }
 
 @font-face {
   font-family: "ProximaNovaBold";
-  src: url("../fonts/ProximaNovaBold/ProximaNovaBold.eot"), url("../fonts/ProximaNovaBold/ProximaNovaBold.woff") format("woff"), url("../fonts/ProximaNovaBold/ProximaNovaBold.ttf") format("truetype");
+  src: url("../fonts/ProximaNovaBold/ProximaNovaBold.woff") format("woff");
   font-style: normal;
   font-weight: normal; }
 
 @font-face {
   font-family: "ProximaNovaSemiBold";
-  src: url("../fonts/ProximaNovaSemiBold/ProximaNovaSemibold.eot"), url("../fonts/ProximaNovaSemiBold/ProximaNovaSemibold.woff") format("woff"), url("../fonts/ProximaNovaSemiBold/ProximaNovaSemibold.ttf") format("truetype");
+  src: url("../fonts/ProximaNovaSemiBold/ProximaNovaSemibold.woff") format("woff");
   font-style: normal;
   font-weight: normal; }
 
 @font-face {
   font-family: "ProximaNovaBlack";
-  src: url("../fonts/ProximaNovaBlack/ProximaNovaBlack.eot");
-  src: url("../fonts/ProximaNovaBlack/ProximaNovaBlack.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNovaBlack/ProximaNovaBlack.woff") format("woff"), url("../fonts/ProximaNovaBlack/ProximaNovaBlack.ttf") format("truetype");
+  src: url("../fonts/ProximaNovaBlack/ProximaNovaBlack.woff") format("woff");
   font-style: normal;
   font-weight: normal; }
 
 @font-face {
   font-family: "MyriadProRegular";
-  src: url("../fonts/MyriadProRegular/MyriadProRegular.eot");
-  src: url("../fonts/MyriadProRegular/MyriadProRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/MyriadProRegular/MyriadProRegular.woff") format("woff"), url("../fonts/MyriadProRegular/MyriadProRegular.ttf") format("truetype");
+  src: url("../fonts/MyriadProRegular/MyriadProRegular.woff") format("woff");
   font-style: normal;
   font-weight: normal; }
 
@@ -42,8 +40,7 @@
 } */
 @font-face {
   font-family: "PlayfairDisplayBold";
-  src: url("../fonts/PlayfairDisplayBold/PlayfairDisplayBold.eot");
-  src: url("../fonts/PlayfairDisplayBold/PlayfairDisplayBold.eot?#iefix") format("embedded-opentype"), url("../fonts/PlayfairDisplayBold/PlayfairDisplayBold.woff") format("woff"), url("../fonts/PlayfairDisplayBold/PlayfairDisplayBold.ttf") format("truetype");
+  src: url("../fonts/PlayfairDisplayBold/PlayfairDisplayBold.woff") format("woff");
   font-style: normal;
   font-weight: normal; }
 
@@ -69,8 +66,7 @@
  */
 @font-face {
   font-family: "MyriadProBold";
-  src: url("../fonts/MyriadProBold/MyriadProBold.eot");
-  src: url("../fonts/MyriadProBold/MyriadProBold.eot?#iefix") format("embedded-opentype"), url("../fonts/MyriadProBold/MyriadProBold.woff") format("woff"), url("../fonts/MyriadProBold/MyriadProBold.ttf") format("truetype");
+  src: url("../fonts/MyriadProBold/MyriadProBold.woff") format("woff");
   font-style: normal;
   font-weight: normal; }
 
@@ -4104,9 +4100,7 @@ border-color: #808080 transparent transparent transparent; */ }
 
 .advantages__item {
   position: relative;
-  -webkit-flex-basis: 45%;
-      -ms-flex-preferred-size: 45%;
-          flex-basis: 45%;
+  width: 45%;
   counter-increment: li;
   padding-left: 50px;
   margin-top: 50px; }
@@ -4142,7 +4136,7 @@ border-color: #808080 transparent transparent transparent; */ }
         -ms-flex-line-pack: center;
             align-content: center;
     position: relative;
-    z-index: 10; }
+    z-index: -1; }
   .hall-left {
     position: relative;
     background: url(../img/manHall.jpg) no-repeat center/cover;
@@ -4363,7 +4357,7 @@ border-color: #808080 transparent transparent transparent; */ }
 
 .news__item {
   margin: 0 auto 30px auto;
-  max-width: 230px;
+  width: 230px;
   -webkit-transition: background-color 0.3s ease;
   -o-transition: background-color 0.3s ease;
   transition: background-color 0.3s ease; }
@@ -4371,8 +4365,8 @@ border-color: #808080 transparent transparent transparent; */ }
     background: #f7f7f7; }
 
 .news__img {
-  display: block;
-  margin: auto; }
+  margin: auto;
+  width: 100%; }
 
 .news__content {
   padding: 15px; }
@@ -4393,6 +4387,10 @@ border-color: #808080 transparent transparent transparent; */ }
   color: #4c4c4c; }
 
 .news .loadMore {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   margin: auto;
   margin-bottom: 40px;
   padding: 10px 26px;
@@ -4451,7 +4449,9 @@ border-color: #808080 transparent transparent transparent; */ }
 .slick-prev,
 .slick-next {
   right: 0;
-  top: 160%; }
+  top: 165%;
+  width: 60px;
+  height: 60px; }
   .slick-prev:before,
   .slick-next:before {
     font-family: 'Fontello';
@@ -4460,7 +4460,7 @@ border-color: #808080 transparent transparent transparent; */ }
 
 .slick-prev {
   left: inherit;
-  right: 96%;
+  right: 90%;
   z-index: 100; }
   .slick-prev:before {
     content: '\f177';
@@ -4483,7 +4483,9 @@ border-color: #808080 transparent transparent transparent; */ }
 .selectize-input {
   display: block;
   padding-left: 0px !important;
-  border: none; }
+  border: none;
+  background: #f5f5f5;
+  z-index: -1; }
 
 .selectize-control.single .selectize-input {
   background-image: none; }
@@ -4505,10 +4507,11 @@ border-color: #808080 transparent transparent transparent; */ }
 
 .selectize-dropdown {
   top: 0 !important;
-  left: 0 !important; }
+  left: 0 !important;
+  z-index: 10000; }
 
 .selectize-dropdown-content {
-  padding-top: 40px; }
+  padding-top: 0; }
 
 .selectize-input,
 .selectize-control.single .selectize-input.input-active {

@@ -16,74 +16,78 @@ $(document).ready(function() {
 
 		});*/
 
-		/*RESPONSIVER BURGER MENU*/
-		$(".burgerMenu").click(function() {
-			$(this).toggleClass('active');
-			$(".overlay").fadeToggle(200);
-		})
+	/*RESPONSIVER BURGER MENU*/
+	$(".burgerMenu").click(function() {
+		$(this).toggleClass('active');
+		$(".overlay").fadeToggle(200);
+	})
 
 
-		$('.burgerMenu').on('click', function() {
-			$('.overlay').toggleClass('open').show;
-		});
+	$('.burgerMenu').on('click', function() {
+		$('.overlay').toggleClass('open').show;
+	});
 
-		/*RESPONSIVER BURGER MENU*/
-		$(".menuContact").click(function() {
-			$(this).toggleClass('active');
-			$(".hide").slideToggle('fast');
-		})
+	/*RESPONSIVER BURGER MENU*/
+	$(".menuContact").click(function() {
+		$(this).toggleClass('active');
+		$(".hide").slideToggle('fast');
+	})
 
-		$(window).resize(function() {
-			if ($(window).width() > 992) {
-				$('.hide').removeAttr('style');
+	$(window).resize(function() {
+		if ($(window).width() > 992) {
+			$('.hide').removeAttr('style');
+		}
+	})
+
+	
+
+
+
+	$('.sliderText').slick({
+		arrows: true,
+		infinite: true,
+		slidesToShow: 1,
+		speed: 500,
+		responsive: [{
+			breakpoint: 768,
+			settings: {
+				arrows: false,
 			}
-		})
+		}]
+	});
 
+	$('#fullpage').fullpage({
+		fixedElements: '#header',
+		scrollingSpeed: 700,
 
-
-		$('.sliderText').slick({
-			arrows: true,
-			infinite: true,
-			slidesToShow: 1,
-			speed: 500,
-		});
-
-		$('#fullpage').fullpage({
-			fixedElements: '#header',
-			scrollingSpeed: 700,
-
-			hybrid:true,
-			fitToSection: false,
+		hybrid: true,
+		fitToSection: false,
 
 		//Accessibility
 		keyboardScrolling: true,
-
-		
-
-
 	});
 
-		$('.phone-mask').mask('+7000 000 00 00');
+	$('.phone-mask').mask('+7000 000 00 00');
 
-		$('.selectize').selectize();
+	$('.selectize').selectize();
 
-		$('.selectize-input > input').prop('disabled', 'disabled');
+	$('.selectize-input > input').prop('disabled', 'disabled');
 
-		$('[data-toggle="datepicker"]').datepicker({
-			language: 'ru-RU',
-		});
+	$('[data-toggle="datepicker"]').datepicker({
+		language: 'ru-RU',
+	});
 
-		$('input.timepicker').timepicker({
-			timeFormat: 'H:mm',
-			interval: 30,
-			minTime: '09:00',
-			maxTime: '17:00',
-			defaultTime: '10:00',
-			startTime: '09:00',
-			dynamic: false,
-			dropdown: true,
-			scrollbar: true
-		});
+	$('input.timepicker').timepicker({
+		timeFormat: 'H:mm',
+		interval: 30,
+		minTime: '09:00',
+		maxTime: '17:00',
+		defaultTime: '10:00',
+		startTime: '09:00',
+		dynamic: false,
+		dropdown: true,
+		scrollbar: true
+	});
 
 
 	/*	$('.politics__link').magnificPopup({
@@ -93,7 +97,7 @@ $(document).ready(function() {
 		});*/
 
 
-	});
+});
 
 
 /*PRELOADER*/

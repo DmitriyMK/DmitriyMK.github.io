@@ -79,33 +79,31 @@ button {
 
 @font-face {
   font-family: "ProximaNovaRegular";
-  src: url("../fonts/ProximaNovaRegular/ProximaNovaRegular.eot"), url("../fonts/ProximaNovaRegular/ProximaNovaRegular.woff") format("woff"), url("../fonts/ProximaNovaRegular/ProximaNovaRegular.ttf") format("truetype");
+  src: url("../fonts/ProximaNovaRegular/ProximaNovaRegular.woff") format("woff");
   font-style: normal;
   font-weight: normal; }
 
 @font-face {
   font-family: "ProximaNovaBold";
-  src: url("../fonts/ProximaNovaBold/ProximaNovaBold.eot"), url("../fonts/ProximaNovaBold/ProximaNovaBold.woff") format("woff"), url("../fonts/ProximaNovaBold/ProximaNovaBold.ttf") format("truetype");
+  src: url("../fonts/ProximaNovaBold/ProximaNovaBold.woff") format("woff");
   font-style: normal;
   font-weight: normal; }
 
 @font-face {
   font-family: "ProximaNovaSemiBold";
-  src: url("../fonts/ProximaNovaSemiBold/ProximaNovaSemibold.eot"), url("../fonts/ProximaNovaSemiBold/ProximaNovaSemibold.woff") format("woff"), url("../fonts/ProximaNovaSemiBold/ProximaNovaSemibold.ttf") format("truetype");
+  src: url("../fonts/ProximaNovaSemiBold/ProximaNovaSemibold.woff") format("woff");
   font-style: normal;
   font-weight: normal; }
 
 @font-face {
   font-family: "ProximaNovaBlack";
-  src: url("../fonts/ProximaNovaBlack/ProximaNovaBlack.eot");
-  src: url("../fonts/ProximaNovaBlack/ProximaNovaBlack.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNovaBlack/ProximaNovaBlack.woff") format("woff"), url("../fonts/ProximaNovaBlack/ProximaNovaBlack.ttf") format("truetype");
+  src: url("../fonts/ProximaNovaBlack/ProximaNovaBlack.woff") format("woff");
   font-style: normal;
   font-weight: normal; }
 
 @font-face {
   font-family: "MyriadProRegular";
-  src: url("../fonts/MyriadProRegular/MyriadProRegular.eot");
-  src: url("../fonts/MyriadProRegular/MyriadProRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/MyriadProRegular/MyriadProRegular.woff") format("woff"), url("../fonts/MyriadProRegular/MyriadProRegular.ttf") format("truetype");
+  src: url("../fonts/MyriadProRegular/MyriadProRegular.woff") format("woff");
   font-style: normal;
   font-weight: normal; }
 
@@ -120,8 +118,7 @@ button {
 } */
 @font-face {
   font-family: "PlayfairDisplayBold";
-  src: url("../fonts/PlayfairDisplayBold/PlayfairDisplayBold.eot");
-  src: url("../fonts/PlayfairDisplayBold/PlayfairDisplayBold.eot?#iefix") format("embedded-opentype"), url("../fonts/PlayfairDisplayBold/PlayfairDisplayBold.woff") format("woff"), url("../fonts/PlayfairDisplayBold/PlayfairDisplayBold.ttf") format("truetype");
+  src: url("../fonts/PlayfairDisplayBold/PlayfairDisplayBold.woff") format("woff");
   font-style: normal;
   font-weight: normal; }
 
@@ -147,8 +144,7 @@ button {
  */
 @font-face {
   font-family: "MyriadProBold";
-  src: url("../fonts/MyriadProBold/MyriadProBold.eot");
-  src: url("../fonts/MyriadProBold/MyriadProBold.eot?#iefix") format("embedded-opentype"), url("../fonts/MyriadProBold/MyriadProBold.woff") format("woff"), url("../fonts/MyriadProBold/MyriadProBold.ttf") format("truetype");
+  src: url("../fonts/MyriadProBold/MyriadProBold.woff") format("woff");
   font-style: normal;
   font-weight: normal; }
 
@@ -1037,13 +1033,15 @@ a {
   background: url("../img/preloader.gif") no-repeat 50% 50%;
   margin: -35px 0 0 -35px; }
 
+.section {
+  min-height: 100vh; }
+
 .header {
   position: fixed;
   top: 0;
   width: 100%;
-  padding-top: 20px;
+  padding: 20px 0;
   background: #fff;
-  height: 17vh;
   z-index: 10000; }
   .header .flex {
     position: relative;
@@ -1119,14 +1117,14 @@ a {
 
 .menu {
   position: fixed;
-  top: 17vh;
+  top: 100px;
   left: 0;
   width: 400px;
   height: 100%;
   padding-top: 12vh;
   padding-left: 100px;
   font-size: 1rem;
-  z-index: 100; }
+  z-index: 1; }
   .menu-list {
     display: block;
     padding-top: 24vh;
