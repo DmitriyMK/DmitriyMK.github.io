@@ -16,30 +16,44 @@ $(document).ready(function() {
 
 		});*/
 
-	/*RESPONSIVER BURGER MENU*/
-	$(".burgerMenu").click(function() {
-		$(this).toggleClass('active');
-		$(".overlay").fadeToggle(200);
-	})
+		/*RESPONSIVER BURGER MENU*/
+		$(".burgerMenu").click(function() {
+			$(this).toggleClass('active');
+			$(".overlay").fadeToggle(200);
+		})
 
 
-	$('.burgerMenu').on('click', function() {
-		$('.overlay').toggleClass('open').show;
-	});
+		$('.burgerMenu').on('click', function() {
+			$('.overlay').toggleClass('open').show;
+		});
 
-	$('.sliderText').slick({
-		arrows: true,
-		infinite: true,
-		slidesToShow: 1,
-		speed: 500,
-	});
+		/*RESPONSIVER BURGER MENU*/
+		$(".menuContact").click(function() {
+			$(this).toggleClass('active');
+			$(".hide").slideToggle('fast');
+		})
 
-	$('#fullpage').fullpage({
-		fixedElements: '#header',
-		scrollingSpeed: 700,
+		$(window).resize(function() {
+			if ($(window).width() > 992) {
+				$('.hide').removeAttr('style');
+			}
+		})
 
-		hybrid:true,
-		fitToSection: false,
+
+
+		$('.sliderText').slick({
+			arrows: true,
+			infinite: true,
+			slidesToShow: 1,
+			speed: 500,
+		});
+
+		$('#fullpage').fullpage({
+			fixedElements: '#header',
+			scrollingSpeed: 700,
+
+			hybrid:true,
+			fitToSection: false,
 
 		//Accessibility
 		keyboardScrolling: true,
@@ -49,11 +63,27 @@ $(document).ready(function() {
 
 	});
 
-	$('.phone-mask').mask('+7000 000 00 00');
+		$('.phone-mask').mask('+7000 000 00 00');
 
-	$('.selectize').selectize();
+		$('.selectize').selectize();
 
-	$('.selectize-input > input').prop('disabled', 'disabled');
+		$('.selectize-input > input').prop('disabled', 'disabled');
+
+		$('[data-toggle="datepicker"]').datepicker({
+			language: 'ru-RU',
+		});
+
+		$('input.timepicker').timepicker({
+			timeFormat: 'H:mm',
+			interval: 30,
+			minTime: '09:00',
+			maxTime: '17:00',
+			defaultTime: '10:00',
+			startTime: '09:00',
+			dynamic: false,
+			dropdown: true,
+			scrollbar: true
+		});
 
 
 	/*	$('.politics__link').magnificPopup({
@@ -63,7 +93,7 @@ $(document).ready(function() {
 		});*/
 
 
-});
+	});
 
 
 /*PRELOADER*/

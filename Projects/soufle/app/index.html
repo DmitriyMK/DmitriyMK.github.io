@@ -9,18 +9,15 @@
 	<meta name="description" content=""/>
 	<meta name="keywords" content=""/>
 
-	<link rel="stylesheet" href="css/main.css">
-	<link rel="stylesheet" href="css/media.css">
-	
-	<meta property="og:type" content="website">
-	<meta property="og:url" content="https://example.com/page.html">
-	<meta property="og:title" content="Content Title">
-	<meta property="og:image" content="https://example.com/image.jpg">
-	<meta property="og:description" content="Description Here">
-	<meta property="og:site_name" content="Site Name">
-	<meta property="og:locale" content="en_US">
+    <link rel="stylesheet" href="css/header.css">
 
-	
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://example.com/page.html">
+    <meta property="og:title" content="Content Title">
+    <meta property="og:image" content="https://example.com/image.jpg">
+    <meta property="og:description" content="Description Here">
+    <meta property="og:site_name" content="Site Name">
+    <meta property="og:locale" content="en_US">
 </head>
 <body>
 	<div id="preloader">
@@ -51,6 +48,28 @@
                     <li><a href="#"><i class="icon icon-facebook"></i></a></li>
                     <li><a href="#"><i class="icon icon-instagram"></i></a></li>
                 </ul>
+
+                <div class="hidden">
+                <button class="menuContact icon icon-menu hidden"></button>
+                    <div class="hide">
+                        <ul class="header__social-list-burger">
+                            <li><a href="#"><i class="icon icon-vk"></i></a></li>
+                            <li><a href="#"><i class="icon icon-facebook"></i></a></li>
+                            <li><a href="#"><i class="icon icon-instagram"></i></a></li>
+                        </ul>
+                        <ul class="header__contact-list-burger">
+                            <li><a href="viber://add?number=+79530565501"><img src="img/icons/viber.png" alt="viber"></a></li>
+                            <li><a href="tg://resolve?domain=+79530565501"><img src="img/icons/telegram.png" alt="telegram"></a></li>
+                            <li><a href="whatsapp://send?phone=+79530565501"><img src="img/icons/whatsup.png" alt="whats`up"></a></li>
+                            <li><a href="tel:+79530565501">+7 (953) 056-55-01</a></li>
+                        </ul>
+                        <ul class="header__about-list-burger">
+                            <li><a href="#">О нас</a></li>
+                            <li><a href="#">Привилегии</a></li>
+                        </ul>
+                    </div>
+                </div>
+
             </div>
         </div>
     </header>
@@ -131,7 +150,7 @@
         <div class="third section hall">
             <div class="flex">
                 <div class="hall-left">
-                    <a class="scroll__link link-left" href="#selectHall">Женский зал</a>
+                    <a class="link-left" href="#">Женский зал</a>
                 </div>
                 <div class="hall-right">
                     <a class="scroll__link link-right" href="#selectHall">Мужской зал</a>
@@ -155,7 +174,7 @@
             </div>
         </div>
 
-        <div class="fifth section sectionForm fp-normal-scroll" id="sectionForm">
+        <div class="fifth section sectionForm" id="sectionForm">
             <div class="wrapper">
                 <div class="content">
                     <p class="title">Выберите нужную услугу, <br> дату и время, и после записи получите несколько бонусов на Ваш выбор!</p>
@@ -180,8 +199,9 @@
                             </select>  
                         </div> 
                         <div class="form__bottom">
-                            <input class="pl form-line select-line" type="date" name="Дата" placeholder="Дата" >
-                            <input class="pl form-line select-line" type="time" name="Время" min="10:00" max="20:00" pattern="[0-9]{2}:[0-9]{2}" placeholder="Время">
+                            <input class="pl form-line select-line" name="date" placeholder="Дата" data-toggle="datepicker" >
+                            <input class="pl form-line select-line timepicker" name="time" pattern="[0-9]{2}:[0-9]{2}" placeholder="Время">
+
                             <input class="pl form-line phone-mask" type="phone" name="Телефон" placeholder="+7___ ___ __ __" required>
                         </div>
                         <div class="sendForm">
@@ -198,7 +218,7 @@
                     <div class="news__box">
                         <article class="news__item">
                             <a href="#" class="news__link">
-                                <img class="news__img" src="img/hall.jpg" alt="article">
+                                <img class="news__img responsive" src="img/hall.jpg" alt="article">
                                 <div class="news__content">
                                     <h4 class="article__title">Lorem ipsum</h4>
                                     <p class="date">1 сентября 17' | 780 <i class="icon icon-eye"></i></p>
@@ -208,7 +228,7 @@
                         </article>
                         <article class="news__item">
                             <a href="#" class="news__link">
-                                <img class="news__img" src="img/hall.jpg" alt="article">
+                                <img class="news__img responsive" src="img/hall.jpg" alt="article">
                                 <div class="news__content">
                                     <h4 class="article__title">Lorem ipsum</h4>
                                     <p class="date">1 сентября 17' | 780 <i class="icon icon-eye"></i></p>
@@ -218,7 +238,7 @@
                         </article>
                         <article class="news__item">
                             <a href="#" class="news__link">
-                                <img class="news__img" src="img/hall.jpg" alt="article">
+                                <img class="news__img responsive" src="img/hall.jpg" alt="article">
                                 <div class="news__content">
                                     <h4 class="article__title">Lorem ipsum</h4>
                                     <p class="date">1 сентября 17' | 780 <i class="icon icon-eye"></i></p>
@@ -228,7 +248,7 @@
                         </article>
                         <article class="news__item">
                             <a href="#" class="news__link">
-                                <img class="news__img" src="img/hall.jpg" alt="article">
+                                <img class="news__img responsive" src="img/hall.jpg" alt="article">
                                 <div class="news__content">
                                     <h4 class="article__title">Lorem ipsum</h4>
                                     <p class="date">1 сентября 17' | 780 <i class="icon icon-eye"></i></p>
@@ -238,7 +258,7 @@
                         </article>
                         <article class="news__item">
                             <a href="#" class="news__link">
-                                <img class="news__img" src="img/hall.jpg" alt="article">
+                                <img class="news__img responsive" src="img/hall.jpg" alt="article">
                                 <div class="news__content">
                                     <h4 class="article__title">Lorem ipsum</h4>
                                     <p class="date">1 сентября 17' | 780 <i class="icon icon-eye"></i></p>
@@ -248,7 +268,7 @@
                         </article>
                         <article class="news__item">
                             <a href="#" class="news__link">
-                                <img class="news__img" src="img/hall.jpg" alt="article">
+                                <img class="news__img responsive" src="img/hall.jpg" alt="article">
                                 <div class="news__content">
                                     <h4 class="article__title">Lorem ipsum</h4>
                                     <p class="date">1 сентября 17' | 780 <i class="icon icon-eye"></i></p>
@@ -256,25 +276,33 @@
                                 </div>
                             </a>
                         </article>
+
                         <button class="loadMore" id="loadMore">
                             Посмотреть все статьи
                         </button>
                     </div>
-                    <aside class="aside"></aside>
+                    <aside class="aside">
+                        <ul>
+                            <li><a href="#">Видео</a></li>
+                            <li><a class="active" href="#">Новости</a></li>
+                            <li><a href="#">Обучение</a></li>
+                            <li><a href="#">Полезное</a></li>
+                        </ul>
+                    </aside>
                 </div>    
             </div>
             <div class="footer">
                 <div class="wrapper">
-                <p class="footer__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum </p>
+                    <p class="footer__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum </p>
                 </div>
             </div>
         </div>
     </div>
 
-
-
-
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/media.css">
     <script src="js/script.min.js"></script> 
     <script src="js/script.js"></script> 
+
 </body>
 </html>
