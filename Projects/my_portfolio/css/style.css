@@ -1,6 +1,6 @@
 body {
 	background: #C1CDCD;
-	font: 20px/24px 'Roboto',Helvetica,sans-serif;
+	font: 20px/24px 'Roboto',sans-serif;
 	word-wrap: break-word;  
 	box-sizing: border-box;    
 }
@@ -47,6 +47,7 @@ a:active {
 	background: url('..//img/Misterious mist.gif') no-repeat 50% 50%; 
 	margin: -35px 0 0 -35px;
 }
+
 /* MENU */
 .wrapper {
 	max-width: 960px;
@@ -92,13 +93,15 @@ a:active {
 	transition: all 600ms cubic-bezier(0.645, 0.045, 0.355, 1);			
 }
 .grid__item {
+	margin-left: 1%;
+	margin-right: 1%;
 	float: left;
 	position: relative;	
 	overflow: hidden; 
 }
 .grid__item, 
 .grid-sizer {
-	width: 25%; 
+	width: 31%; 
 }
 .portifolio_grid-wrapper {
 	overflow:hidden;

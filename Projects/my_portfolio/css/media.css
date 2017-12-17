@@ -1,18 +1,4 @@
-/* ==========  Desktop First Method  ========== */
 
-/* Large Devices, Wide Screens  */
-
-@media only screen and (max-width : 1200px) {
-/* .container {
-	width: 1170px;
-	} */
-}
-
-/* Medium Devices, Desktops */
-@media only screen and (max-width : 992px) {
-
-
-}
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
@@ -20,10 +6,6 @@
 		max-width: 	750px;
 		text-align: center;
 	} 
-	.grid__item, 
-	.grid-sizer {
-	width: 33.333333%;
-	}
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
@@ -43,11 +25,11 @@
 	}	
 	.grid__item, 
 	.grid-sizer {
-		width: 50%; 
+		width: 48%; 
 	}
 }
 /* Custom, iPhone Retina */
-@media only screen and (max-width : 319px) {
+@media only screen and (max-width : 320px) {
 	.grid__item, 
 	.grid-sizer {
 		width: 100%; 
