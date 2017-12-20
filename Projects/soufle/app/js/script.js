@@ -63,6 +63,8 @@ $(document).ready(function() {
 		easing: 'easeInOutCubic',
 		easingcss3: 'ease',
 
+		normalScrollElements: '#news',
+
 		hybrid: true,
 		fitToSection: false,
 
