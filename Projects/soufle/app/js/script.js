@@ -60,11 +60,17 @@ $(document).ready(function() {
 		fixedElements: '#header',
 		scrollingSpeed: 700,
 
+		easing: 'easeInOutCubic',
+		easingcss3: 'ease',
+
 		hybrid: true,
 		fitToSection: false,
 
 		//Accessibility
 		keyboardScrolling: true,
+		animateAnchor: true,
+		recordHistory: true,
+
 	});
 
 	$('.phone-mask').mask('+7000 000 00 00');
