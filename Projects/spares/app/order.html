@@ -9,10 +9,7 @@
 	<meta name="description" content=""/>
 	<meta name="keywords" content=""/>
 
-	<link rel="stylesheet" href="css/header.css">
-	<link rel="stylesheet" href="css/main.css">
-	<link rel="stylesheet" href="css/media.css">
-
+	<link rel="stylesheet" href="css/main.min.css">
 	
 	<meta property="og:type" content="website">
 	<meta property="og:url" content="https://example.com/page.html">
@@ -27,14 +24,26 @@
 		<i></i>
 	</div>
 
-	<header class="header__page2">   
+<!-- 	<header class="header__page2">   
+		<div class="center__header-pg2">
+			<p class="title"><span class="userName" id="userName">First_name</span>, вот Вам наш полный <br> боекомплект</p>
+			<p class="text">В нашем каталоге ниже Вы можете заказать весь <br> комплект рестайлинга для <span class="modelName">model_name</span> <br> Цена от 222 тыс руб</p>
+			<a href="#set" class="next scroll__link wow bounceIn"><p>Листайте ниже</p><i class="icon icon-down-open-big"></i></a>
+		</div>
+	</header> -->
+
+	<header class="header header__page2" id="head">   
 		<div class="wrapper">
 			<div class="top__header">
 				<div class="logo">
 					<img src="img/logo.png" alt="Дмитрий">
+					<div class="name__hidden">
+						<p>Дмитрий</p>
+						<button class="burger showMe">Открыть контакты</button>
+					</div>
 				</div>
 				<div class="right__side">
-					<nav class="navigation">
+					<nav class="navigation nav">
 						<ul class="nav__list">
 							<li class="nav__item">
 								<a href="whatsapp://send?phone=+89213799600">
@@ -66,15 +75,20 @@
 									<span>auto-global918@mail.ru</span>
 								</a>
 							</li>
+							<li><address>Санкт-Петербург, м. Старая деревня</address></li>
 						</ul>
 					</nav>
-					<address>Санкт-Петербург, м. Старая деревня</address>
 				</div>	
 			</div>
-			<div class="center__header-pg2">
-				<p class="title"><span class="userName" id="userName">First_name</span>, вот Вам наш полный <br> боекомплект</p>
-				<p class="text">В нашем каталоге ниже Вы можете заказать весь <br> комплект рестайлинга для <span class="modelName">model_name</span> <br> Цена от 222 тыс руб</p>
-				<a href="#set" class="next scroll__link wow bounceIn"><p>Листайте ниже</p><i class="icon icon-down-open-big"></i></a>
+			<div class="center__header">
+				<div class="slogan-detail">
+					<div class="slogan-left wow fadeInLeft" data-wow-delay="0.2s"><img class="responsive" src="img/toyota.png" alt="toyota"></div>
+					<div class="slogan-right">
+						<p class="title"><span class="userName" id="userName">First_name</span>, вот Вам наш полный <br> боекомплект</p>
+						<p class="text">В нашем каталоге ниже Вы можете заказать весь <br> комплект рестайлинга для <span class="modelName">model_name</span> <br> Цена от 222 тыс руб</p>
+						<a href="#set" class="next scroll__link"><p>Листайте ниже</p><i class="icon icon-down-open-big"></i></a>
+					</div>
+				</div>
 			</div>
 		</div>
 	</header>
@@ -88,13 +102,13 @@
 						<li class="gallery__item big"><a class="set-gallery gallery__link" href="img/carBig2.jpg"><img class="responsive" src="img/thumb/set-box.jpg" alt="Toyoooo">
 						</a></li>
 						<li class="gallery__item fluid"><a class="set-gallery gallery__link" href="img/carBig3.jpg">
-						<img class="responsive" src="img/thumb/set-box.jpg" alt="Toyoooo">
+							<img class="responsive" src="img/thumb/set-box.jpg" alt="Toyoooo">
 						</a></li>
 						<li class="gallery__item fluid"><a class="set-gallery gallery__link" href="img/carBig2.jpg">
-						<img class="responsive" src="img/thumb/set-box.jpg" alt="Toyoooo">
+							<img class="responsive" src="img/thumb/set-box.jpg" alt="Toyoooo">
 						</a></li>
 						<li class="gallery__item big"><a class="set-gallery gallery__link" href="img/carBig3.jpg">
-						<img  class="responsive" src="img/thumb/set-box.jpg" alt="Toyoooo">
+							<img  class="responsive" src="img/thumb/set-box.jpg" alt="Toyoooo">
 						</a></li>
 					</ul>
 				</div>

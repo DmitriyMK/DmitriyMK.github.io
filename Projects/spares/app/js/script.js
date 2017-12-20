@@ -43,6 +43,7 @@ $(document).ready(function() {
 
 	$('.phone-mask').mask('+7000 000 00 00');
 
+	$('.selectize').selectize();
 	$('.selectize-input > input').prop('disabled', 'disabled');
 
 	/*RESPONSIVER BURGER MENU*/
