@@ -172,7 +172,6 @@ a:hover, a:focus {
   width: 300px;
   height: 415px;
   margin: 1.5em;
-  color: #fff;
   -webkit-box-flex: 0;
   -webkit-flex: none;
       -ms-flex: none;
@@ -185,7 +184,7 @@ a:hover, a:focus {
 
 .tilter:hover,
 .tilter:focus {
-  color: #fff;
+  color: #000;
   outline: none;
   cursor: pointer; }
 
@@ -250,7 +249,7 @@ a:hover, a:focus {
 
 .tilter__deco--lines {
   fill: none;
-  stroke: #fff;
+  stroke: #00beca;
   stroke-width: 1.5px; }
 
 .tilter__caption {
@@ -258,10 +257,6 @@ a:hover, a:focus {
   bottom: 0;
   width: 100%;
   padding: 4em 1.5em; }
-  .tilter__caption a {
-    position: relative;
-    z-index: 1;
-    display: block; }
 
 .tilter__title {
   margin: 0;
@@ -308,10 +303,10 @@ a:hover, a:focus {
 
 /* Example 4 (caption sliding in) */
 .tilter--4 .tilter__deco--overlay {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(1, 1, 1, 0.7)));
-  background-image: -webkit-linear-gradient(rgba(1, 1, 1, 0.7));
-  background-image: -o-linear-gradient(rgba(1, 1, 1, 0.7));
-  background-image: linear-gradient(rgba(1, 1, 1, 0.7)); }
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.1)));
+  background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0.1));
+  background-image: -o-linear-gradient(rgba(255, 255, 255, 0.1));
+  background-image: linear-gradient(rgba(255, 255, 255, 0.1)); }
 
 @media screen and (min-width: 30em) {
   .tilter--4 .tilter__deco--lines {
