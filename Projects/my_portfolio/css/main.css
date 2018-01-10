@@ -232,11 +232,10 @@ a:hover, a:focus {
   height: 100%;
   overflow: hidden; }
 
-.tilter__deco--overlay {
-  background-image: -webkit-linear-gradient(45deg, rgba(226, 60, 99, 0.4), rgba(145, 58, 252, 0.4), rgba(16, 11, 192, 0.4));
-  background-image: -o-linear-gradient(45deg, rgba(226, 60, 99, 0.4), rgba(145, 58, 252, 0.4), rgba(16, 11, 192, 0.4));
-  background-image: linear-gradient(45deg, rgba(226, 60, 99, 0.4), rgba(145, 58, 252, 0.4), rgba(16, 11, 192, 0.4)); }
-
+/* .tilter__deco--overlay {
+	background-image: linear-gradient(45deg, rgba(226, 60, 99, 0.4), rgba(145, 58, 252, 0.4), rgba(16, 11, 192, 0.4));
+}
+ */
 .tilter__deco--shine div {
   position: absolute;
   width: 200%;
@@ -435,7 +434,6 @@ body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-family: 'Roboto','Helvetica Neue', Helvetica, 'Segoe UI', Arial, sans-serif;
-  color: #463f51;
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
@@ -481,7 +479,7 @@ ul {
 
 .header {
   padding: 4em;
-  min-height: 100vh;
+  min-height: 50vh;
   background: #fcdb00; }
 
 .last-form {
@@ -489,5 +487,9 @@ ul {
   padding: 4em;
   min-height: 50vh;
   color: #fff; }
+
+.section__title {
+  display: block;
+  font: 2rem 'Gloria Hallelujah', cursive; }
 
 /* @import "media.scss"; */

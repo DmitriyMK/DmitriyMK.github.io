@@ -1,37 +1,5 @@
-
-
+/*==========  Desktop First  ==========*/
+/* Medium Devices, Desktops */
 /* Small Devices, Tablets */
-@media only screen and (max-width : 768px) {
-	.wrapper{
-		max-width: 	750px;
-		text-align: center;
-	} 
-
 /* Extra Small Devices, Phones */
-@media only screen and (max-width : 480px) {
-	.navigation_menu {
-		float: none;
-		text-align: center;
-	}
-	.navigation_social {
-		display: inline-block;
-	}
-	.navigation_menu-item {
-		padding-right: 0;
-	}
-	.navigation_social-item {
-		float: none;
-		display: inline-block;
-	}	
-	.grid__item, 
-	.grid-sizer {
-		width: 48%; 
-	}
-}
 /* Custom, iPhone Retina */
-@media only screen and (max-width : 320px) {
-	.grid__item, 
-	.grid-sizer {
-		width: 100%; 
-	}
-}
