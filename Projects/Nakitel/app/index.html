@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Nakitel</title>
+	
+	<meta name="description" content=""/>
+	<meta name="keywords" content=""/>
+
+	<link rel="img/favicons/android-chrome-192x192.png" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="img/favicons/favicon-32x32.png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="img/favicons/favicon-16x16.png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="img/favicons/manifest.json">
+	<link rel="mask-icon" href="img/favicons/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="theme-color" content="#ffffff">
+
+	<link rel="stylesheet" href="css/main.css">
+
+</head>
+<body>
+	<div id="preloader">
+		<i></i>
+	</div>
+
+	<header class="header">
+		<div class="navBox">
+			<div class="wrapper">
+				<nav class="nav">
+					<div class="nav__box">
+						<button class="burger">
+							<span></span>
+							<span></span>
+							<span></span>
+						</button>
+						<ul class="nav__list">
+							<li><a href="#">link</a></li>
+							<li><a href="#">link</a></li>
+							<li><a href="#">link</a></li>
+							<li><a href="#">link</a></li>
+							<li><a href="#">link</a></li>
+						</ul>
+					</div>
+					<div class="cart">
+						<a href="#" class="cart__link">
+							<img src="img/icon/cart.png" alt="cart">
+							<div class="cart__details">
+								<p>Товаров: <span class="numDoors" id="numDoors">3</span></p>
+								<p>Сумма: <span class="priceDoors" id="priceDoors">5 000</span> грн</p>
+							</div>
+						</a>
+					</div>
+					<div class="lang">
+						<button class="changeLang ru" id="langRu">ru</button>
+						<button class="changeLang ua" id="langUa">ua</button>
+					</div>
+					<form action="POST" name="searchForm" id="searchForm" class="searchForm">
+						<div class="formWrap">
+							<input type="text" placeholder="Поиск" class="searchField" id="searchField">
+							<input type="submit" name="searchIcon" class="searchIcon" id="searchIcon"  value="">
+						</div>
+					</form>
+				</nav>
+			</div>
+		</div>
+		<div class="header__content">
+			<div class="wrapper"> 
+				<div class="flexBox">
+					<div class="header__left box-info box">
+						<button id="enter">Войти на сайт</button>
+						<button id="registration">Зарегистрироваться</button>
+						<ul class="social__list">
+							<li class="social__item ">
+								<a href="#" class="tw social__link"></a>
+							</li>
+							<li class="social__item">
+								<a href="#" class="vk social__link"></a>
+							</li>
+							<li class="social__item ">
+								<a href="#" class="fb social__link"></a>
+							</li>
+							<li class="social__item">
+								<a href="#" class="rss  social__link"></a>
+							</li>
+							<li class=" social__item">
+								<a href="#" class="google social__link"></a>
+							</li>
+						</ul>
+						<div class="cart__info">
+							<a href="#" class="cart__link">
+								<img src="img/icon/cart.png" alt="cart">
+								<div class="cart__details">
+									<h3 class="cart__title">Корзина</h3>
+									<p>Товаров: <span class="numDoors" id="numDoors">3</span></p>
+									<p>Сумма: <span class="priceDoors" id="priceDoors">5 000</span> грн</p>
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="header__center box-logo box">
+						<a href="index.html">
+							<img src="img/logo.png" alt="nakitel" title="nakitel">
+						</a>
+					</div>
+					<div class="header__right box-contact box">
+						<p>Телефон горячей линии</p>
+						<a href="tel:+12(034)5678910">+12(034) 567 89 10</a>
+						<p>(пн.- пт. с 9.00 до 18.00)</p>
+						<button>
+							ВЫЗВАТЬ ЗАМЕРЩИКА
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="doors">
+			<div class="wrapper">
+				<ul class="doors__list">
+					<li class="doors__item"><a href="#" class="doors__link"><img src="img/door_shpon.jpg" alt="двери шпонированные"><h2><span>двери</span><br>шпонированные</h2></a>
+					</li>
+					<li class="doors__item"><a href="#" class="doors__link"><img src="img/door_eco.jpg" alt="двери экошпон"><h2><span>двери</span><br>экошпон</h2></a>
+					</li>
+					<li class="doors__item"><a href="#" class="doors__link"><img src="img/door_natural.jpg" alt="двери из массива"><h2><span>двери</span><br>из массива</h2></a>
+					</li>
+					<li class="doors__item"><a href="#" class="doors__link"><img src="img/door_enter.jpg" alt="двери входные"><h2><span>двери</span><br>входные</h2></a>
+					</li>
+					<li class="doors__item"><a href="#" class="doors__link"><img src="img/door_special.jpg" alt="двери спец назначения"><h2><span>двери</span><br>спец назначения</h2></a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</header>
+
+	<main>
+		<div class="wrapper">
+			<div class="carousel">
+				<div class="slide slide1"><p>Дверь на дачу</p></div>
+				<div class="slide slide2"><p>Дверь на дачу</p></div>
+				<div class="slide slide3"><p>Дверь на дачу</p></div>
+			</div>
+
+			<section class="infoBox">
+				<h3 class="infoBox__title">О компании</h3>
+				
+				<div class="flexBox">
+					<div class="infoBox__list">
+						<ul>
+							<li><a href="#">главная</a></li>
+							<li><a href="#">о компании</a></li>
+							<li><a href="#">каталог продукции</a></li>
+							<li><a href="#">оплата / доставка</a></li>
+							<li><a href="#">гарантия</a></li>
+							<li><a href="#">контакты</a></li>
+						</ul>
+					</div>
+					<div class="infoBox__content">
+						<p class="text">Повседневная практика показывает, что постоянный количественный рост и сфера нашей активности позволяет оценить значение существенных финансовых и административных условий. Значимость этих проблем настолько очевидна, что консультация с широким активом представляет собой интересный эксперимент проверки направлений прогрессивного развития.</p>
+
+						<p class="text">Идейные соображения высшего порядка, а также сложившаяся структура организации влечет за собой процесс внедрения и модернизации системы обучения кадров, соответствует насущным потребностям.</p>
+
+						<p class="text">Таким образом сложившаяся структура организации требуют определения и уточнения направлений прогрессивного развития. С другой стороны сложившаяся структура организации способствует подготовки и реализации системы обучения кадров, соответствует насущным потребностям. Значимость этих проблем настолько очевидна, что укрепление и развитие структуры влечет за собой процесс внедрения и модернизации соответствующий условий активизации.</p>
+
+						<p class="text">С другой стороны начало повседневной работы по формированию позиции позволяет оценить значение дальнейших направлений развития. Идейные соображения высшего порядка, а также реализация намеченных плановых заданий влечет за собой процесс внедрения и модернизации позиций, занимаемых участниками в отношении поставленных задач. С другой стороны начало повседневной работы по формированию позиции представляет собой интересный эксперимент проверки новых предложений. Равным образом рамки и место обучения кадров в значительной степени обуславливает создание системы обучения кадров, соответствует насущным потребностям.</p>
+
+						<p class="text">Повседневная практика показывает, что дальнейшее развитие различных форм деятельности в значительной степени обуславливает создание системы обучения кадров, соответствует насущным потребностям. Не следует, однако забывать, что рамки и место обучения кадров обеспечивает широкому кругу (специалистов) участие в формировании модели развития. </p>
+
+						<p class="text">Товарищи! начало повседневной работы по формированию позиции позволяет выполнять важные задания по разработке систем массовогоу частия.</p>
+					</div>
+					<div class="ads">
+						<div class="ads__box box">
+							<p>Телефон горячей линии</p>
+							<a href="tel:+12(034)5678910">+12(034) 567 89 10</a>
+							<p>(пн.- пт. с 9.00 до 18.00)</p>
+							<button>ВЫЗВАТЬ ЗАМЕРЩИКА</button>
+						</div>
+						<div class="banner">
+							<a href="#"><img src="img/banner.jpg" alt="banner"></a>
+						</div>
+						<div class="ads__box box">
+							<p>Телефон горячей линии</p>
+							<a href="tel:+12(034)5678910">+12(034) 567 89 10</a>
+							<p>(пн.- пт. с 9.00 до 18.00)</p>
+							<button>ВЫЗВАТЬ ЗАМЕРЩИКА</button>
+						</div>
+						<div class="banner">
+							<a href="#"><img src="img/banner.jpg" alt="banner"></a>
+						</div>
+					</div>
+				</div>
+
+			</section>
+		</div>
+	</main>
+	<footer>
+		<div class="wrapper">
+		</div>
+	</footer>
+
+	<script src="js/script.min.js"></script> 
+	<script src="js/script.js"></script> 
+</body>
+</html>

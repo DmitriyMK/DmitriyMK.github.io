@@ -1,0 +1,9 @@
+@import "_vars";
+@import "_mixin and function";
+
+@include font-face(BebasNeue, fonts/BebasNeue Bold eot, null, null);
+
+@include font-face(HelveticaLight, fonts/HelveticaNeueCyr-Light eot, null, null);
+@include font-face(HelveticaMedium, fonts/HelveticaNeueCyr-Medium eot, null, null);
+@include font-face(HelveticaMediumItaic, fonts/HelveticaNeueCyr-MediumItaicl eot, null, null);
+@include font-face(HelveticaBold, fonts/HelveticaNeueCyr-Bold eot, null, null);
