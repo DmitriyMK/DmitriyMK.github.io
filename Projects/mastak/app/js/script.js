@@ -18,6 +18,16 @@ $(document).ready(function() {
 		}, t);
 	});
 
+
+
+	/*BACK TO TOP SCROLL FOR MENU*/
+/*	jQuery(function(f){
+		var element = f('#scrollToTop');
+		f(window).scroll(function(){
+			element['fade'+ (f(this).scrollTop() > 300 ? 'In': 'Out')](400);           
+		});
+	});*/
+
 	$('.review__slider').slick({
 		arrows: true,
 		dots: true,
@@ -64,9 +74,20 @@ $(document).ready(function() {
 
 	$('.phone-mask').mask('+38(000)000-00-00');
 
-	/*	new WOW().init();*/
+	new WOW().init();
 
 });
+
+
+/*FIXED SCROLL FOR MENU*/
+
+		$(window).scroll(function() {
+			if ($(this).scrollTop() > 40) {
+				$('#fixedTopMenu').addClass('fixed');
+			} else if ($(this).scrollTop() < 40) {
+				$('#fixedTopMenu').removeClass('fixed');
+			}
+		});
 
 
 //E-mail Ajax Send

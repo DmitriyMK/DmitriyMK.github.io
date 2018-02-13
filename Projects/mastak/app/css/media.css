@@ -453,6 +453,9 @@
 @media only screen and (max-width: 580px) {
   .section__title {
     font-size: 1.625rem; }
+  .wow {
+    -webkit-animation: none;
+            animation: none; }
   .guarantee__title {
     padding-top: 0; }
   .guarantee__box {
@@ -659,7 +662,7 @@
       margin-right: 30px; }
   .request .border-sm {
     margin: 50px auto;
-    padding: 20px 0; }
+    padding: 15px; }
   .request__border {
     margin: auto;
     padding: 20px 0; }

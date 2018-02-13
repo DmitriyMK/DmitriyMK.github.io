@@ -576,6 +576,9 @@
 	.section__title {
 		font-size: rem(26);
 	}
+	.wow {
+		animation: none;
+	}
 	.guarantee {
 		&__title {
 			padding-top: 0;
@@ -830,7 +833,7 @@
 	.request {
 		.border-sm {
 			margin: 50px auto;
-			padding: 20px 0;
+			padding: 15px;
 		}
 		&__border {
 			margin: auto;

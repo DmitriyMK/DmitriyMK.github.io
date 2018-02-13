@@ -6,7 +6,7 @@
 @import "_magnific-popup";
 @import "_slick";
 @import "_slick-theme";
-
+@import "_animate.min";
 
 body {
 	min-width: 320px;
@@ -84,7 +84,9 @@ button {
 	text-transform: uppercase;
 }
 .divider {
+	position: relative;
 	text-align: center;
+	z-index: 10;
 }
 .hide {
 	display: none;
@@ -225,6 +227,15 @@ button {
 	.btn__callback {
 		text-align: center;
 	}
+}
+#fixedTopMenu.fixed{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background: rgba(255,255,255, 0.6);
+	z-index: 100;
+	@include transition(all 0.7s ease);	
 }
 
 /* SECTION 1 - SERVICES */
