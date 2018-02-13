@@ -967,7 +967,12 @@ button {
   font-size: 16px;
   line-height: 51px;
   letter-spacing: 0.4px;
-  outline: none; }
+  outline: none;
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease; }
+  .btn__callback:hover {
+    background: url(../img/btn__hover.png); }
 
 .flexBox {
   display: -webkit-box;
@@ -999,24 +1004,16 @@ button {
   height: auto; }
 
 .section__title {
-  position: relative;
+  padding-bottom: 10px;
   text-align: center;
   font-family: "Intro";
   font-weight: 500;
   font-size: 2.5rem;
   line-height: 1.15;
   text-transform: uppercase; }
-  .section__title:before {
-    content: '';
-    position: absolute;
-    background: url(../img/divider.png);
-    width: 90px;
-    height: 16px;
-    top: 70px;
-    left: 51%;
-    -webkit-transform: translateX(-50%);
-        -ms-transform: translateX(-50%);
-            transform: translateX(-50%); }
+
+.divider {
+  text-align: center; }
 
 .hide {
   display: none; }
@@ -1040,17 +1037,12 @@ button {
   background: url("../img/preloader.gif") no-repeat 50% 50%;
   margin: -35px 0 0 -35px; }
 
-.burger {
-  background: none;
-  border: none;
-  display: none; }
-
 /* HEADER */
 .header {
   min-height: 1100px; }
   .header__content {
     position: absolute;
-    top: 400px;
+    top: 350px;
     padding-left: 10px;
     z-index: 1; }
   .header__title {
@@ -1062,8 +1054,8 @@ button {
     z-index: 1; }
   .header__img {
     position: absolute;
-    top: 25%;
-    right: 0;
+    top: 20%;
+    right: 25px;
     z-index: 0; }
   .header__list {
     padding-top: 115px; }
@@ -1158,13 +1150,9 @@ button {
   margin-top: -176px;
   padding-bottom: 100px;
   min-height: 1200px;
-  background: url(../img/background__top.jpg) no-repeat 48%;
-  -webkit-background-size: cover;
-          background-size: cover; }
+  background: url(../img/background__top.jpg) no-repeat center/cover; }
   .services__title {
     padding-top: 160px; }
-    .services__title:before {
-      top: 246px; }
   .services__box {
     display: -webkit-box;
     display: -webkit-flex;
@@ -1207,7 +1195,8 @@ button {
     background: #fff;
     -webkit-box-shadow: 0px 7px 16.74px 1.26px rgba(69, 67, 99, 0.2);
             box-shadow: 0px 7px 16.74px 1.26px rgba(69, 67, 99, 0.2);
-    position: relative; }
+    position: relative;
+    overflow: hidden; }
   .services__img {
     display: block;
     height: 220px;
@@ -1219,11 +1208,11 @@ button {
             filter: grayscale(0.5); }
     .services__img:hover {
       cursor: pointer;
-      -webkit-transform: scale(1.11);
-          -ms-transform: scale(1.11);
-              transform: scale(1.11);
       -webkit-filter: grayscale(0);
-              filter: grayscale(0); }
+              filter: grayscale(0);
+      -webkit-transform: scale(1.1);
+          -ms-transform: scale(1.1);
+              transform: scale(1.1); }
   .services__details {
     padding: 15px 0;
     font-size: 1.25rem;
@@ -1244,11 +1233,9 @@ button {
 .guarantee {
   padding-bottom: 140px; }
   .guarantee__title {
-    padding-top: 30px;
-    padding-bottom: 96px; }
-    .guarantee__title:before {
-      top: 110px; }
+    padding-top: 30px; }
   .guarantee__box {
+    margin-top: 50px;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -1398,6 +1385,7 @@ button {
     font-size: 1.125rem;
     line-height: 1.66; }
   .callback .btn__callback {
+    margin: auto;
     padding-top: 0;
     border: none;
     color: #fff; }
@@ -1407,12 +1395,12 @@ button {
   padding: 70px;
   background: #fefbef;
   position: relative;
-  z-index: 20; }
+  z-index: 10; }
   .proposal__title {
     font-size: 2.1875rem;
-    letter-spacing: .6px;
-    padding-bottom: 80px; }
+    letter-spacing: .6px; }
   .proposal__item {
+    margin-top: 30px;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -1497,14 +1485,12 @@ button {
 /* SECTION 5 - BELIEVER */
 .believer {
   position: relative;
-  padding: 100px 0;
-  background: url(../img/whiteEffect.png) no-repeat;
-  background-position: -50% 50%;
-  -webkit-background-size: contain;
-          background-size: contain; }
+  padding: 100px 0; }
   .believer__title {
     font-size: 2.1875rem;
-    letter-spacing: 1px; }
+    letter-spacing: 1px;
+    position: relative;
+    z-index: 100; }
   .believer__box {
     display: -webkit-box;
     display: -webkit-flex;
@@ -1517,6 +1503,7 @@ button {
     margin-top: 96px;
     padding: 0 25px; }
   .believer .master__box {
+    position: relative;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -1548,6 +1535,15 @@ button {
       height: 24px; }
   .believer__img {
     padding: 0 30px; }
+  .believer .goodMaster:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: url(../img/whiteEffect.png) no-repeat;
+    background-position: -10px 0%; }
   .believer .goodMaster__title {
     padding-left: 30px; }
   .believer .badMaster__title {
@@ -1562,7 +1558,7 @@ button {
 .formBox {
   background: url(../img/background__bottom.jpg) no-repeat center/cover; }
   .formBox__title {
-    padding-bottom: 90px;
+    padding-bottom: 80px;
     font-family: "Intro";
     font-weight: 500;
     font-size: 1.4375rem;
@@ -1571,7 +1567,7 @@ button {
     text-transform: uppercase;
     color: #fff; }
   .formBox__callback {
-    padding: 120px 0;
+    padding: 80px 0;
     max-width: 69%;
     margin: auto; }
   .formBox__line {
@@ -1672,7 +1668,6 @@ button {
     -webkit-border-radius: 50%;
             border-radius: 50%; }
   .review__content {
-    clear: all;
     margin-top: 30px;
     width: 85%; }
   .review__name {
@@ -1687,12 +1682,12 @@ button {
 
 .slick-dots li button {
   position: absolute;
-  top: 40px;
+  top: 0px;
   left: 20px;
   -webkit-border-radius: 50%;
           border-radius: 50%;
-  height: 15px;
-  width: 15px;
+  height: 16px;
+  width: 16px;
   color: #fff;
   opacity: 1;
   background: transparent;
@@ -1700,7 +1695,8 @@ button {
   -o-transition: all .3s ease;
   transition: all .3s ease;
   -webkit-box-shadow: 1.362px 2.673px 8px 0px rgba(22, 22, 22, 0.22);
-          box-shadow: 1.362px 2.673px 8px 0px rgba(22, 22, 22, 0.22); }
+          box-shadow: 1.362px 2.673px 8px 0px rgba(22, 22, 22, 0.22);
+  z-index: 200; }
   .slick-dots li button:hover, .slick-dots li button:focus {
     border: 2px solid #fff;
     -webkit-box-shadow: 1.362px 2.673px 8px 0px rgba(22, 22, 22, 0.5);
@@ -1718,7 +1714,8 @@ button {
     left: -2px;
     font-size: 1.25rem;
     line-height: 1;
-    opacity: 1; }
+    opacity: 1;
+    z-index: 200; }
 
 .slick-dots li.slick-active button:before {
   color: #fec519;
@@ -1785,14 +1782,10 @@ button {
     right: 50px; }
   .example .slick-prev {
     top: 55%;
-    left: -40px; }
-    [dir="rtl"] .example .slick-prev {
-      right: -40px; }
+    left: 15px; }
   .example .slick-next {
     top: 55%;
-    right: -40px; }
-    [dir="rtl"] .example .slick-next {
-      left: 40px; }
+    right: 15px; }
   .example .slick-dots li button {
     color: #000; }
     .example .slick-dots li button:hover, .example .slick-dots li button:focus {
@@ -1813,4 +1806,7 @@ button {
     opacity: 1; }
 
 /* SECTION 9 - CONTACT */
+.contact {
+  background: #f3f5f7; }
+
 /* @import "media.scss"; */

@@ -31,21 +31,16 @@
 			<div class="wrapper">
 				<div class="flexBox">
 					<div class="logo__box flex">
-						<a href="index.html"><img class="logo__img" src="img/logo.png" alt="Мастак - Услуги мастеров в г.Днепр и области"></a>
+						<a href="index.html"><img class="logo__img" src="img/logo.png" alt="Мастак - Услуги мастеров в г.Днепр и области" title="Мастак - Услуги мастеров в г.Днепр и области"></a>
 						<p class="logo__text">Услуги мастеров <br> в г. Днепр и области</p>
 					</div>
 					<div class="nav__box">
 						<nav class="header__nav">
-							<button class="burger">
-								<i></i>
-							</button>
-							<div class="overlay">
-								<ul class="header__nav-list flex">
-									<li class="header__nav-item"><a class="header__nav-link scoll" href="#">Главная</a></li>
-									<li class="header__nav-item"><a class="header__nav-link scoll" href="#">Наши мастера</a></li>
-									<li class="header__nav-item"><a class="header__nav-link scoll" href="#">Контакты</a></li>
-								</ul>
-							</div>
+							<ul class="header__nav-list flex">
+								<li class="header__nav-item"><a class="header__nav-link scoll" href="#">Главная</a></li>
+								<li class="header__nav-item"><a class="header__nav-link scoll" href="#">Наши мастера</a></li>
+								<li class="header__nav-item"><a class="header__nav-link scoll" href="#">Контакты</a></li>
+							</ul>
 						</nav>
 					</div>
 					<div class="contact__box flex">
@@ -59,6 +54,7 @@
 			</div>
 		</div>
 		<div class="wrapper">
+			<img class="header__img" src="img/house-hand__header.png" alt="Наши мастера выполнят любую ремонтную и бытовую работу">
 			<div class="header__content">
 				<h1 class="header__title">Наши мастера выполнят любую <br> ремонтную и бытовую работу</h1>
 				<ul class="header__list">
@@ -69,7 +65,6 @@
 				</ul>
 			</div>
 		</div>
-		<img class="header__img" src="img/house-hand__header.png" alt="Наши мастера выполнят любую ремонтную и бытовую работу">
 	</header>
 
 	<section class="services" style="background-image: url(img/background__top.jpg);">
@@ -245,7 +240,7 @@
 		<div class="wrapper">
 			<h2 class="believer__title section__title">Почему клиенты доверяют нам?</h2>
 			<div class="believer__box">
-				<div class="goodMaster ">
+				<div class="goodMaster master">
 					<h4 class="believer__list-title goodMaster__title">Наш мастер:</h4>
 					<div class="master__box">
 						<ul class="believer__list">
@@ -258,8 +253,7 @@
 						<img class="believer__img" src="img/masterGood.png" alt="наш мастер">
 					</div>
 				</div>
-				
-				<div class="badMaster">
+				<div class="badMaster master">
 					<h4 class="believer__list-title badMaster__title">Плохой мастер:</h4>
 					<div class="master__box">
 						<img class="believer__img badMaster__img" src="img/masterBad.png" alt="Плохой мастер">
@@ -424,7 +418,7 @@
 	<input type="hidden" name="form_subject" value="Заявка на на обратный звонок">
 	<!-- END Hidden Required Fields -->
 	<p class="form__text">Заполните форму</p>
-	<p class="form__text-next">И наш менеджер свяжется с Вами в течение 5 минут.</p>
+	<p class="form__text-next">и наш менеджер Вам перезвонит в течение 10 минут, чтобы ответить на все вопросы!</p>
 	<input class="form-line" type="text" name="Имя&nbsp;покупателя" placeholder="Ваше имя" required>
 	<input class="form-line phone-mask" type="tel" name="Телефон&nbsp;покупателя" placeholder="Ваш телефон" required>
 	<input type="submit" class="btn__callback" value="Вызвать мастера"> 
@@ -437,7 +431,7 @@
 	<input type="hidden" name="form_subject" value="Заказ услуги электрика">
 	<!-- END Hidden Required Fields -->
 	<p class="form__text">Заполните форму</p>
-	<p class="form__text-next">И наш менеджер свяжется с Вами в течение 5 минут.</p>
+	<p class="form__text-next">и наш менеджер Вам перезвонит в течение 10 минут, чтобы ответить на все вопросы!</p>
 	<input class="form-line" type="text" name="Имя&nbsp;покупателя" placeholder="Ваше имя" required>
 	<input class="form-line phone-mask" type="tel" name="Телефон&nbsp;покупателя" placeholder="Ваш телефон" required>
 	<input type="submit" class="btn__callback" value="Вызвать мастера"> 
@@ -450,7 +444,7 @@
 	<input type="hidden" name="form_subject" value="Заказ услуги сантехника">
 	<!-- END Hidden Required Fields -->
 	<p class="form__text">Заполните форму</p>
-	<p class="form__text-next">И наш менеджер свяжется с Вами в течение 5 минут.</p>
+	<p class="form__text-next">и наш менеджер Вам перезвонит в течение 10 минут, чтобы ответить на все вопросы!</p>
 	<input class="form-line" type="text" name="Имя&nbsp;покупателя" placeholder="Ваше имя" required>
 	<input class="form-line phone-mask" type="tel" name="Телефон&nbsp;покупателя" placeholder="Ваш телефон" required>
 	<input type="submit" class="btn__callback" value="Вызвать мастера"> 
@@ -463,7 +457,7 @@
 	<input type="hidden" name="form_subject" value="Заказ ремонтных услуг">
 	<!-- END Hidden Required Fields -->
 	<p class="form__text">Заполните форму</p>
-	<p class="form__text-next">И наш менеджер свяжется с Вами в течение 5 минут.</p>
+	<p class="form__text-next">и наш менеджер Вам перезвонит в течение 10 минут, чтобы ответить на все вопросы!</p>
 	<input class="form-line" type="text" name="Имя&nbsp;покупателя" placeholder="Ваше имя" required>
 	<input class="form-line phone-mask" type="tel" name="Телефон&nbsp;покупателя" placeholder="Ваш телефон" required>
 	<input type="submit" class="btn__callback" value="Вызвать мастера"> 
@@ -476,7 +470,7 @@
 	<input type="hidden" name="form_subject" value="Заказ услуги Муж на час">
 	<!-- END Hidden Required Fields -->
 	<p class="form__text">Заполните форму</p>
-	<p class="form__text-next">И наш менеджер свяжется с Вами в течение 5 минут.</p>
+	<p class="form__text-next">и наш менеджер Вам перезвонит в течение 10 минут, чтобы ответить на все вопросы!</p>
 	<input class="form-line" type="text" name="Имя&nbsp;покупателя" placeholder="Ваше имя" required>
 	<input class="form-line phone-mask" type="tel" name="Телефон&nbsp;покупателя" placeholder="Ваш телефон" required>
 	<input type="submit" class="btn__callback" value="Вызвать мастера"> 
@@ -489,7 +483,7 @@
 	<input type="hidden" name="form_subject" value="Заказ обслуживания/установки кондиционеров">
 	<!-- END Hidden Required Fields -->
 	<p class="form__text">Заполните форму</p>
-	<p class="form__text-next">И наш менеджер свяжется с Вами в течение 5 минут.</p>
+	<p class="form__text-next">и наш менеджер Вам перезвонит в течение 10 минут, чтобы ответить на все вопросы!</p>
 	<input class="form-line" type="text" name="Имя&nbsp;покупателя" placeholder="Ваше имя" required>
 	<input class="form-line phone-mask" type="tel" name="Телефон&nbsp;покупателя" placeholder="Ваш телефон" required>
 	<input type="submit" class="btn__callback" value="Вызвать мастера"> 
@@ -502,7 +496,7 @@
 	<input type="hidden" name="form_subject" value="Заказ сборки мебели">
 	<!-- END Hidden Required Fields -->
 	<p class="form__text">Заполните форму</p>
-	<p class="form__text-next">И наш менеджер свяжется с Вами в течение 5 минут.</p>
+	<p class="form__text-next">и наш менеджер Вам перезвонит в течение 10 минут, чтобы ответить на все вопросы!</p>
 	<input class="form-line" type="text" name="Имя&nbsp;покупателя" placeholder="Ваше имя" required>
 	<input class="form-line phone-mask" type="tel" name="Телефон&nbsp;покупателя" placeholder="Ваш телефон" required>
 	<input type="submit" class="btn__callback" value="Вызвать мастера"> 
@@ -510,6 +504,7 @@
 
 
 <script src="js/libs/jquery-2.2.4.min.js"></script> 
+<script src="js/libs/jquery.nicescroll.min.js"></script>
 <script src="js/libs/wow.min.js"></script> 
 <script src="js/libs/jquery.magnific-popup.js"></script>
 <script src="js/libs/jquery.mask.min.js"></script>
