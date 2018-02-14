@@ -87,6 +87,7 @@ button {
 	position: relative;
 	text-align: center;
 	z-index: 10;
+	padding: 20px 0;
 }
 .hide {
 	display: none;
@@ -119,7 +120,7 @@ button {
 	min-height: 1100px;
 	&__content {
 		position: absolute;
-		top: 350px;
+		top: 380px;
 		padding-left: 10px;
 		z-index: 1;
 	}
@@ -134,7 +135,7 @@ button {
 	&__img {
 		position: absolute;
 		top: 20%;
-		right: 25px;
+		right: 50px;
 		z-index: 0;
 	}
 	&__list {
@@ -158,7 +159,7 @@ button {
 	}
 }
 .top__header {
-	padding: 10px 0;
+	padding: 5px 0;
 	line-height: 18px;
 	background: #fff;
 	box-shadow: 0px 1px 29.76px 2.24px rgba(24, 29, 41, 0.17);
@@ -228,14 +229,28 @@ button {
 		text-align: center;
 	}
 }
+
+
 #fixedTopMenu.fixed{
 	position: fixed;
 	top: 0;
 	left: 0;
 	width: 100%;
-	background: rgba(255,255,255, 0.6);
-	z-index: 100;
-	@include transition(all 0.7s ease);	
+	background: #fff;
+	z-index: 1000;
+	animation: smoothScroll 1s forwards;
+	.logo__img {
+		max-width: 75px;
+	}
+}
+
+@keyframes smoothScroll {
+	0% {
+		transform: translateY(-40px);
+	}
+	100% {
+		transform: translateY(0px);
+	}
 }
 
 /* SECTION 1 - SERVICES */
@@ -252,7 +267,6 @@ button {
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: space-between;
-		margin-top: 90px;
 		margin-left: 20px;
 		margin-right: 20px;
 	}
@@ -287,7 +301,7 @@ button {
 		}
 	}
 	&__details {
-		padding: 15px 0;
+		padding: 20px 0;
 		font-size: rem(20);
 		font-family: 'Roboto', $fontFamily;
 	}
@@ -315,7 +329,7 @@ button {
 		padding-top: 30px;
 	}
 	&__box {
-		margin-top: 50px;
+		margin-top: 20px;
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: space-between;
@@ -365,13 +379,15 @@ button {
 	padding-top: 110px;
 	padding-bottom: 140px;
 	background: url(../img/background__center.jpg) center/cover;
+	margin-left: -20px;
 	&__border {
 		display: block;
 		position: relative;
 		max-width: 600px;
+		margin-left: 20px;
 		padding: 20px 0 20px 30px;
 		border: 20px solid #fff;
-		box-shadow: -30px 40px 30px 0px rgba(166,144,141,.7);
+		box-shadow: -10px 30px 40px 0px rgba(166,144,141,.6);
 		color: #fff;
 		border-image: url(../img/border.png) 22;
 		&:before {
@@ -381,13 +397,14 @@ button {
 			height: 100%;
 			top: 0;
 			left: 0;
-			background-color: rgba(#4e6386, .73);
 			mix-blend-mode: multiply;
+			background-color: #3d4757;
 		}
 	}
 	.border-sm {
 		position: relative;
 		margin: 50px 0;
+		margin-left: 20px;
 		padding: 30px 0 40px 40px;
 		max-width: 500px;
 	}
@@ -431,15 +448,15 @@ button {
 	}
 	.request__img-master {
 		position: absolute;
-		right: 4%;
+		right: 200px;
 		top: -14%;
 		z-index: 10;
 	}
 }
 .callback {
 	position: absolute;
-	top: 39%;
-	right: 164px;
+	top: 38%;
+	right: 340px;
 	width: 420px;
 	padding: 30px;
 	text-align: center;
@@ -458,7 +475,7 @@ button {
 		letter-spacing: .6px;
 	}
 	&__line {
-		width: 90%;
+		width: 80%;
 		margin-bottom: 16px;
 		padding: 10px;
 		border: none;
@@ -477,7 +494,7 @@ button {
 /* SECTION 4 - PROPOSAL */
 
 .proposal {
-	padding: 70px;
+	padding: 70px 50px;
 	background: #fefbef;
 	position: relative;
 	z-index: 10;
@@ -486,7 +503,8 @@ button {
 		letter-spacing: .6px;
 	}
 	&__item {
-		margin-top: 30px;
+		margin-top: 20px;
+		margin-bottom: 10px;
 		display: flex;
 		justify-content: space-around;
 		align-items: center;
@@ -542,7 +560,6 @@ button {
 		font-size: rem(25);
 		line-height: 1;
 		text-transform: uppercase;
-		letter-spacing: rem(4.6);
 		&:before {
 			content: '';
 			position: absolute;
@@ -576,6 +593,7 @@ button {
 .believer {
 	position: relative;
 	padding: 100px 0;
+	box-shadow: 0px 8px 106px 0px rgba(33, 35, 47, 0.35);
 	&__title {
 		font-size: rem(35);
 		letter-spacing: 1px;
@@ -585,7 +603,7 @@ button {
 	&__box {
 		display: flex;
 		justify-content: space-between;
-		margin-top: 96px;
+		margin-top: 20px;
 		padding: 0 25px;
 	}
 	.master__box {
@@ -600,6 +618,7 @@ button {
 		font-size: rem(30);
 		letter-spacing: .7px;
 		font-weight: 600;
+		position: relative;
 	}
 	&__item {
 		position: relative;
@@ -630,7 +649,7 @@ button {
 			height: 100%;
 			width: 100%;
 			background: url(../img/whiteEffect.png) no-repeat;
-			background-position: -10px 0%;
+			background-position: 0px 0%;
 		}
 	}
 	.goodMaster__title {
@@ -653,6 +672,7 @@ button {
 /* SECTION 5 - FORM CALLBACK */
 
 .formBox {
+	box-shadow: 0px 8px 106px 0px rgba(33, 35, 47, 0.35);
 	background: url(../img/background__bottom.jpg) no-repeat center/cover;
 	&__title {
 		padding-bottom: 80px;
@@ -710,13 +730,15 @@ button {
 	&__list {
 		display: flex;
 		justify-content: space-around;
-		margin-top: 120px;
+		margin-top: 70px;
 	}
 	&__item {
 		position: relative;
-		width: 20%;
+		width: 22%;
 		counter-increment: li;
 		text-align: center;
+		font-weight: 600;
+		line-height: 1.2;
 		&:before {
 			content: "" counter(li);
 			position: absolute;
@@ -727,7 +749,26 @@ button {
 			font-family: $fontFamily;
 			font-weight: 600;
 		}
-
+		&:after {
+			content: '';
+			position: absolute;
+			width: 250px;
+			height: 250px;
+			top: -5px;
+			left: -5px;
+			background: url(../img/elypse1.jpg) no-repeat center/cover;
+			border-radius: 50%;
+			z-index: 0;
+		}
+	}
+	.item2:after {
+		background: url(../img/elypse2.jpg) no-repeat center/cover;
+	}
+	.item3:after {
+		background: url(../img/elypse3.jpg) no-repeat center/cover;
+	}
+	.item4:after {
+		background: url(../img/elypse4.jpg) no-repeat center/cover;
 	}
 	&__img {
 		position: relative;
@@ -736,7 +777,7 @@ button {
 		width: 240px;
 		height: 240px;
 		border: 15px solid #fff ;
-
+		z-index: 2000;
 		border-radius: 50%;
 		box-shadow: 6.101px 13.703px 40.85px 2.15px rgba(71, 89, 116, 0.39);
 		background: url(../img/timeline/timeline1.jpg) no-repeat 90% 0%;
@@ -758,31 +799,57 @@ button {
 /* SECTION 7 - REVIEW */
 
 .review {
-	padding: 100px 0;
+	padding: 100px 0 70px 0;
 	&__title {
 		font-size: rem(35);
 		letter-spacing: 1px;
 	}
 	&__slider {
+		margin-top: -100px;
 		padding-top: 100px;
-		height: 100%;
+		padding-bottom: 30px;
+	}
+	.test {
+		padding-top: 30px;
+		padding-left: 150px;
+		margin-top: -40px;		
 	}
 	&__img {
-		display: block;
-		position: relative;
 		float: left;
-		margin-left: 13%;
-		margin-right: 50px;
-		width: 300px;
-		height: 300px;
-		background-position: center;
-		background-size: cover;
-		border: 15px solid #fff;
-		border-radius: 50%;
+		position: relative;
+		background: no-repeat;
+		width: 40%;
+		height: 383px;
+		&:before {
+			content: '';
+			position: absolute;
+			width: 270px;
+			height: 270px;
+			top: 42px;
+			left: 34px;
+			background: url(../img/reviews/photo4.jpg);
+			background-position: center;
+			background-size: cover;
+			border-radius: 50%;
+		}
+	}
+	.img2:before {
+		background: url(../img/reviews/photo1.jpg) no-repeat center/cover;
+	}
+	.img3:before {
+		background: url(../img/reviews/photo2.jpg) no-repeat center/cover;
+	}
+	.img4:before {
+		background: url(../img/reviews/photo3.jpg) no-repeat center/cover;
+	}
+	.img5:before {
+		background: url(../img/reviews/photo5.jpg) no-repeat center/cover;
 	}
 	&__content {
-		margin-top: 30px;
-		width: 85%;
+		float: left;
+		width: 40%;
+		margin-top: 60px;
+		margin-left: -70px;
 	}
 	&__name {
 		font-family: "Intro";
@@ -797,66 +864,56 @@ button {
 	}
 }
 
-//Change plugin setting 
 .slick-dots {
+	bottom: -15px;
+	border-image: transparent;
 	li {
 		button {
-			position: absolute;
-			top: 0px;
-			left: 20px;
-			border-radius: 50%;
-			height: 16px;
-			width: 16px;
+			border: 4px solid #fff;
+			background: #fff;
+			display: block;
+			height: 20px;
+			width: 20px;
+			font-size: 0px;
 			color: #fff;
-			opacity: 1;
-			background: transparent;
-			transition: all .3s ease;
+			padding: 5px;
 			box-shadow: 1.362px 2.673px 8px 0px rgba(22, 22, 22, 0.22);
-			z-index: 200;
-			&:hover, &:focus {
-				border: 2px solid #fff;
-				box-shadow: 1.362px 2.673px 8px 0px rgba(22, 22, 22, 0.5);
-				transform: scale(1.2);
-				overflow: hidden;
-				&:before {
-					opacity: 1;
-				}
-			}
+			border-radius: 50%;
 			&:before {
-				display: block;
-				position: absolute;
-				top: 0;
-				left: -2px;
-				font-size: rem(20);
-				line-height: 1;
+				font-size: 0;
+				color: #fff;
 				opacity: 1;
-				z-index: 200;
 			}
 		}
 		&.slick-active button:before {
-			color: #fec519;
-			opacity: 0;
+			border: 4px solid #fff;
+			border-radius: 50%;
+			opacity: 1;
+			box-shadow: 1.362px 2.673px 8px 0px rgba(22, 22, 22, 0.5);
+			background: $yellow;
 		}
 	}
 }
 /* SECTION 8 - EXAMPLE WORK */
 
 .example {
-	padding: 100px 0;
+	padding: 50px 0;
 	background: #f3f5f7;
 	&__title {
+		padding-top: 30px;
 		font-size: rem(35);
 	}
 	&__slider {
-		padding-top: 50px;
+		margin-top: -40px;
+		padding: 0 70px;
 	}
 	&__slide {
 		position: relative;
-		width: 400px;
-		height: 280px;
-		margin: 80px 35px;
-		background-position: center;
-		background-size: cover;
+		max-width: 500px;
+		min-height: 250px;
+		margin: 90px auto;
+		background: no-repeat center/cover;
+
 		border: 10px solid #fff;
 		border-radius: 10px;
 		box-shadow: 5px 5px 25px 1px rgba(69, 67, 99, 0.3);
@@ -901,38 +958,42 @@ button {
 	}
 	//change plugin setting - arrow
 	.slick-prev {
-		top: 55%;
-		left: 15px;
+		font-size: 100px;
+		top: 45%;
+		left: 25px;
 	}
 	.slick-next {
-		top: 55%;
-		right: 15px;
+		font-size: 100px;
+		top: 45%;
+		right: 25px;
 	}
 	//Change plugin setting - dots
 	.slick-dots {
+		margin-left: -40px;
 		li {
 			button {
-				color: #000;
-				&:hover, &:focus {
-					border: 2px solid #fff;
-					&:before {
-						opacity: 1;
-					}
-				}
+				border: 4px solid #000;
+				background: #000;
+				display: block;
+				height: 20px;
+				width: 20px;
+				font-size: 0px;
+				color: #fff;
+				padding: 5px;
+				box-shadow: 1.362px 2.673px 8px 0px rgba(22, 22, 22, 0.22);
+				border-radius: 50%;
 				&:before {
-					display: block;
-					position: absolute;
-					top: 0;
-					left: -2px;
-					font-size: rem(20);
-					line-height: 1;
+					font-size: 0;
+					color: #fff;
 					opacity: 1;
-					color: #000;
 				}
 			}
 			&.slick-active button:before {
-				color: #fec519;
+				border: 4px solid #fff;
+				border-radius: 50%;
 				opacity: 1;
+				box-shadow: 1.362px 2.673px 8px 0px rgba(22, 22, 22, 0.5);
+				background: $yellow;
 			}
 		}
 	}
@@ -940,9 +1001,82 @@ button {
 
 /* SECTION 9 - CONTACT */
 
-.contact {
+.contacts {
+	position: relative;
 	background: #f3f5f7;
 }
+.map {
+	position: relative;
+	min-height: 680px;
+}
+iframe {
+	frameborder: 0;
+	border: 0;
+}
+.questions {
+	position: absolute;
+	top: 70px;
+	right: 340px;
+	padding: 50px 90px; 
+	margin:  0 auto;
+	letter-spacing: .3px;
+	background: #fff;
+	&__title {
+		padding-top: 17px;
+		padding-bottom: 8px;
+		font-family: "Intro";
+		font-weight: 500;
+		font-size: rem(23);
+		letter-spacing: 1.6px;
+	}
+	&__adress {
+		line-height: 1.4;
+		font-family: "Intro";
+		font-weight: 500;
+		font-style: normal;
+	}
+	.contact__item {
+		font-family: $fontFamily;
+	}
+	.mail {
+		padding: 4px 0;
+	}
+	.time {
+		line-height: 1.4;
+	}
+	.ask {
+		padding-top: 16px;
+		padding-bottom: 3px;
+		font-family: "Intro";
+		font-size: rem(23);
+	}
+	.text {
+		font-family: $fontFamily;
+		line-height: 1.5;
+	}
+	.btn__callback {
+		margin-top: 40px;
+		text-align: center;
+	}
+}
 
+
+/* SECTION 10 - FOOTER */
+.footer {
+	padding: 5px 0;
+	background: #fff;
+	font-family: 'Roboto', $fontFamily;
+	line-height: 1.2;
+	letter-spacing: .3px;
+	.logo__text {
+		margin-left: 20px;
+	}
+	.logo__img {
+		max-width: 100px;
+	}
+	.agency__box {
+		margin-right: 8px;
+	}
+}
 
 /* @import "media.scss"; */

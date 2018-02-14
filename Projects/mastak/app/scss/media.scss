@@ -1,13 +1,20 @@
 @import "_vars";
 @import "_mixin and function";
 
-@media only screen and (max-width : 1700px) {
 
-}
-.believer {
-	.goodMaster {
-		&:before {
-			background-position: -150px 0%;
+@media only screen and (max-width : 1700px) {
+	.questions {
+		right: 30px;
+	}
+	.request {
+		.request__img-master {
+			right: 3%;
+		}
+	}
+	.callback {
+		right: 190px;
+		.btn__callback {
+			margin: auto;
 		}
 	}
 }
@@ -16,9 +23,6 @@
 	.top__header {
 		.logo__box {
 			width: 30%;
-		}
-		.logo__img {
-			max-width: 100px;
 		}
 		.contact__box {
 			width: 40%;
@@ -47,8 +51,7 @@
 		}
 	}
 	.callback {
-		right: 120px;
-		width: 420px;
+		right: 150px;
 		.btn__callback {
 			margin: auto;
 		}
@@ -60,7 +63,7 @@
 			}
 		}
 	}
-	
+
 }  
 
 @media only screen and (max-width : 1200px) {
@@ -80,7 +83,7 @@
 	.callback {
 		position: absolute;
 		top: 15%;
-		right: 15px;
+		right: 5px;
 		width: 400px;
 		padding: 30px 10px;
 		background: #fff;
@@ -117,6 +120,15 @@
 			margin-top: 30px;
 		}
 		&__img {
+			padding: 0;
+		}
+	}
+	.questions {
+		padding: 35px 50px;
+	}
+	.example {
+		&__slider {
+			margin-top: -40px;
 			padding: 0;
 		}
 	}
@@ -168,7 +180,7 @@
 		.request__img-shelf {
 			position: absolute;
 			right: auto;
-			left: 2%;
+			left: 4%;
 			top: auto;
 			bottom: 37%;
 			z-index: 100;
@@ -177,7 +189,7 @@
 		.request__img-clock {
 			position: absolute;
 			right: auto;
-			left: 3%;
+			left: 6%;
 			top: auto;
 			bottom: 39%;
 			z-index: 100;
@@ -310,6 +322,10 @@
 			width: 50%;
 			margin: auto;
 			margin-bottom: 25px;
+			&:after {
+				background: none;
+				display: none;
+			}
 		}
 		&__img {
 			margin-bottom: 25px;
@@ -331,7 +347,6 @@
 		}
 		.master__box {
 			justify-content: space-around;
-			align-items: center;
 		}
 		&__item {
 			position: relative;
@@ -367,17 +382,24 @@
 			letter-spacing: 0;
 		}
 		&__slider {
-			padding-top: 50px;
+			padding-top: 0;
+			margin: 0 auto;
+		}
+		.test {
+			padding-top: inherit;
+			padding-left: inherit;
+			margin: 0 auto;	
 		}
 		&__img {
-			margin-left: 10%;
-			margin-right: 30px;
-			width: 250px;
-			height: 250px;
+			float: none;
+			clear: both;
+			height: 383px;
+			margin: 0 auto;
 		}
 		&__content {
 			margin: 10px auto;
-			width: 85%;
+			width: 100%;
+			padding: 0 10%;
 		}
 		&__name {
 			font-size: rem(22);
@@ -389,10 +411,6 @@
 		}
 	}
 	.example {
-		&__slide {
-			width: 300px;
-			margin: 50px 15px;
-		}
 		.before {
 			left: 20px;
 		}
@@ -410,44 +428,19 @@
 			left: auto;
 			right: 50px;
 		}
-	//change plugin setting - arrow
-	.slick-prev {
-		top: 55%;
-		left: 15px;
-	}
-	.slick-next {
-		top: 55%;
-		right: 15px;
-	}
-	//Change plugin setting - dots
-	.slick-dots {
-		li {
-			button {
-				color: #000;
-				&:hover, &:focus {
-					border: 2px solid #fff;
-					&:before {
-						opacity: 1;
-					}
-				}
-				&:before {
-					display: block;
-					position: absolute;
-					top: 0;
-					left: -2px;
-					font-size: rem(20);
-					line-height: 1;
-					opacity: 1;
-					color: #000;
-				}
-			}
-			&.slick-active button:before {
-				color: #fec519;
-				opacity: 1;
-			}
+
+		.slick-prev {
+			top: 55%;
+			left: 15px;
+		}
+		.slick-next {
+			top: 55%;
+			right: 15px;
 		}
 	}
-}
+	.questions {
+		right: 0;
+	}
 }  
 
 /* Small Devices, Tablets */
@@ -555,10 +548,19 @@
 	}
 	.review {
 		&__img {
-			float: none;
+			background: none!important;
 			margin: auto;
-			width: 280px;
-			height: 280px;
+			position: relative;
+			text-align: center;
+			height: 260px;
+			&:before {
+				width: 240px;
+				height: 240px;
+				top: auto;
+				left: auto;
+				text-align: center;
+				transform: translateX(-50%);
+			}
 		}
 		&__name {
 			text-align: center;
@@ -569,6 +571,20 @@
 			line-height: 1.1;
 		}
 	}
+	.map {
+		box-shadow: 0px 8px 106px 0px rgba(33, 35, 47, 0.35);
+	}
+	.questions {
+		position: relative;
+		top: auto;
+		right: auto;
+		margin:  auto;
+		text-align: center;
+		.btn__callback {
+			margin: 35px auto;
+		}
+	}
+
 }
 
 /* Extra Small Devices, Phones */
@@ -582,6 +598,7 @@
 	.guarantee {
 		&__title {
 			padding-top: 0;
+			padding-bottom: 0;
 		}
 		&__box {
 			margin-top: 30px;
@@ -607,13 +624,15 @@
 			justify-content: center;
 			flex-wrap: wrap;
 			padding: 0;
-			margin-top: 50px;
+			margin-top: 10px;
 		}
 		&__item {
 			max-width: 100%;
 		}
+		&__list {
+			padding-top: 10px;
+		}
 		.badMaster__title {
-			text-align: left;
 			padding-left: 30px;
 			padding-right: inherit;
 		}
@@ -634,11 +653,17 @@
 		}
 	}
 	.request {
+		margin-left: 0;
+		br {
+			display: none;
+		}
 		&__border {
 			margin: auto;
+			margin-left: 0;
 		}
 		.border-sm {
 			margin: 50px auto;
+			margin-left: 0;
 		}
 		&__item {
 			font-size: rem(22);
@@ -722,6 +747,17 @@
 			width: 80%;
 		}
 	}
+	.slick-dots {
+		margin-left: -10px;
+	}
+	.example {
+		&__slider {
+			margin-top: 0;
+		}
+		.slick-dots {
+			margin-left: -10px;
+		}
+	}
 }
 
 @media only screen and (max-width: 480px) {
@@ -741,6 +777,9 @@
 		.hide {
 			display: block;
 		}
+	}
+	#fixedTopMenu.fixed {
+		position: inherit;
 	}
 	.header {
 		min-height: 650px;
@@ -849,6 +888,7 @@
 		&__text {
 			font-size: rem(20);
 		}
+
 		.request__img-shelf {
 			display: none;
 		}
@@ -856,17 +896,77 @@
 			display: none;
 		}
 	}
-	.callback {
-		width: 100%;
-		&__title {
-			font-size: rem(24);
-			letter-spacing: 0px;
+	.believer {
+		padding: 50px 0;
+		&__box {
+			margin-top: 0;
+			padding: 0;
 		}
 	}
-	.slick-next:before, .slick-prev:before {
-		display: none;
+	.callback {
+		width: 98%;
+		padding: 30px 10px;
+		&__title {
+			font-size: rem(30);
+			line-height: 1.2;
+		}
+		&__text {
+			padding-bottom: 20px;
+		}
+		&__line {
+			width: 90%;
+		}
+	}
+
+	.formBox {
+		text-align: center;
+		br {
+			display: none;
+		}
+	}
+	.review {
+
+		&__img {
+			height: 230px;
+			&:before {
+				width: 220px;
+				height: 220px;
+			}
+		}
+		&__content {
+			padding: 0 15px;
+			width: 100%;
+			text-align: center;
+		}
+	}
+	.slick-next, .slick-prev {
+		top: 110px;	
+	}
+	.slick-prev {
+		left: 0;
+	}
+	.slick-next {
+		right: 10px;
+	}
+	.questions {
+		padding: 30px 10px;
+		.ask {
+			font-size: rem(20);
+		}
+	}
+
+	.footer {
+		.logo__text {
+			display: none;
+		}
+		.agency__box {
+			margin-right: 0;
+			margin: auto;
+		}
 	}
 }
+
+
 
 
 

@@ -1,11 +1,16 @@
-.believer .goodMaster:before {
-  background-position: -150px 0%; }
+@media only screen and (max-width: 1700px) {
+  .questions {
+    right: 30px; }
+  .request .request__img-master {
+    right: 3%; }
+  .callback {
+    right: 190px; }
+    .callback .btn__callback {
+      margin: auto; } }
 
 @media only screen and (max-width: 1300px) {
   .top__header .logo__box {
     width: 30%; }
-  .top__header .logo__img {
-    max-width: 100px; }
   .top__header .contact__box {
     width: 40%;
     -webkit-box-pack: space-evenly;
@@ -27,8 +32,7 @@
   .request .request__img-master {
     right: 1%; }
   .callback {
-    right: 120px;
-    width: 420px; }
+    right: 150px; }
     .callback .btn__callback {
       margin: auto; }
   .believer .goodMaster:before {
@@ -45,7 +49,7 @@
   .callback {
     position: absolute;
     top: 15%;
-    right: 15px;
+    right: 5px;
     width: 400px;
     padding: 30px 10px;
     background: #fff; }
@@ -66,6 +70,11 @@
   .believer__box {
     margin-top: 30px; }
   .believer__img {
+    padding: 0; }
+  .questions {
+    padding: 35px 50px; }
+  .example__slider {
+    margin-top: -40px;
     padding: 0; } }
 
 /* Medium Devices, Desktops */
@@ -101,7 +110,7 @@
   .request .request__img-shelf {
     position: absolute;
     right: auto;
-    left: 2%;
+    left: 4%;
     top: auto;
     bottom: 37%;
     z-index: 100;
@@ -110,7 +119,7 @@
   .request .request__img-clock {
     position: absolute;
     right: auto;
-    left: 3%;
+    left: 6%;
     top: auto;
     bottom: 39%;
     z-index: 100; }
@@ -247,6 +256,9 @@
     width: 50%;
     margin: auto;
     margin-bottom: 25px; }
+    .info__item:after {
+      background: none;
+      display: none; }
   .info__img {
     margin-bottom: 25px; }
   .believer__box {
@@ -263,11 +275,7 @@
   .believer .master__box {
     -webkit-justify-content: space-around;
         -ms-flex-pack: distribute;
-            justify-content: space-around;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-        -ms-flex-align: center;
-            align-items: center; }
+            justify-content: space-around; }
   .believer__item {
     position: relative;
     max-width: 100%; }
@@ -295,24 +303,27 @@
       font-size: 1.875rem;
       letter-spacing: 0; }
     .review__slider {
-      padding-top: 50px; }
+      padding-top: 0;
+      margin: 0 auto; }
+    .review .test {
+      padding-top: inherit;
+      padding-left: inherit;
+      margin: 0 auto; }
     .review__img {
-      margin-left: 10%;
-      margin-right: 30px;
-      width: 250px;
-      height: 250px; }
+      float: none;
+      clear: both;
+      height: 383px;
+      margin: 0 auto; }
     .review__content {
       margin: 10px auto;
-      width: 85%; }
+      width: 100%;
+      padding: 0 10%; }
     .review__name {
       font-size: 1.375rem; }
     .review__text {
       padding-bottom: 20px;
       font-size: 1.0625rem;
       line-height: 1.1; }
-  .example__slide {
-    width: 300px;
-    margin: 50px 15px; }
   .example .before {
     left: 20px; }
   .example .after {
@@ -332,24 +343,8 @@
   .example .slick-next {
     top: 55%;
     right: 15px; }
-  .example .slick-dots li button {
-    color: #000; }
-    .example .slick-dots li button:hover, .example .slick-dots li button:focus {
-      border: 2px solid #fff; }
-      .example .slick-dots li button:hover:before, .example .slick-dots li button:focus:before {
-        opacity: 1; }
-    .example .slick-dots li button:before {
-      display: block;
-      position: absolute;
-      top: 0;
-      left: -2px;
-      font-size: 1.25rem;
-      line-height: 1;
-      opacity: 1;
-      color: #000; }
-  .example .slick-dots li.slick-active button:before {
-    color: #fec519;
-    opacity: 1; } }
+  .questions {
+    right: 0; } }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
@@ -438,16 +433,37 @@
         -ms-flex-item-align: start;
             align-self: flex-start; }
   .review__img {
-    float: none;
+    background: none !important;
     margin: auto;
-    width: 280px;
-    height: 280px; }
+    position: relative;
+    text-align: center;
+    height: 260px; }
+    .review__img:before {
+      width: 240px;
+      height: 240px;
+      top: auto;
+      left: auto;
+      text-align: center;
+      -webkit-transform: translateX(-50%);
+          -ms-transform: translateX(-50%);
+              transform: translateX(-50%); }
   .review__name {
     text-align: center; }
   .review__text {
     padding-bottom: 20px;
     font-size: 1.0625rem;
-    line-height: 1.1; } }
+    line-height: 1.1; }
+  .map {
+    -webkit-box-shadow: 0px 8px 106px 0px rgba(33, 35, 47, 0.35);
+            box-shadow: 0px 8px 106px 0px rgba(33, 35, 47, 0.35); }
+  .questions {
+    position: relative;
+    top: auto;
+    right: auto;
+    margin: auto;
+    text-align: center; }
+    .questions .btn__callback {
+      margin: 35px auto; } }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 580px) {
@@ -457,7 +473,8 @@
     -webkit-animation: none;
             animation: none; }
   .guarantee__title {
-    padding-top: 0; }
+    padding-top: 0;
+    padding-bottom: 0; }
   .guarantee__box {
     margin-top: 30px; }
   .guarantee__item {
@@ -488,11 +505,12 @@
           -ms-flex-wrap: wrap;
               flex-wrap: wrap;
       padding: 0;
-      margin-top: 50px; }
+      margin-top: 10px; }
     .believer__item {
       max-width: 100%; }
+    .believer__list {
+      padding-top: 10px; }
     .believer .badMaster__title {
-      text-align: left;
       padding-left: 30px;
       padding-right: inherit; }
     .believer .master__box {
@@ -504,20 +522,26 @@
       display: none; }
   .services .more {
     margin-bottom: 60px; }
-  .request__border {
-    margin: auto; }
-  .request .border-sm {
-    margin: 50px auto; }
-  .request__item {
-    font-size: 1.375rem; }
-    .request__item:before {
-      top: 22%; }
-  .request__text {
-    font-size: 1.375rem; }
-  .request .request__img-shelf {
-    display: none; }
-  .request .request__img-clock {
-    display: none; }
+  .request {
+    margin-left: 0; }
+    .request br {
+      display: none; }
+    .request__border {
+      margin: auto;
+      margin-left: 0; }
+    .request .border-sm {
+      margin: 50px auto;
+      margin-left: 0; }
+    .request__item {
+      font-size: 1.375rem; }
+      .request__item:before {
+        top: 22%; }
+    .request__text {
+      font-size: 1.375rem; }
+    .request .request__img-shelf {
+      display: none; }
+    .request .request__img-clock {
+      display: none; }
   .proposal__title {
     font-size: 1.625rem; }
   .proposal__item-rtl {
@@ -567,7 +591,13 @@
     -webkit-box-shadow: 0px 8px 106px 0px rgba(33, 35, 47, 0.35);
             box-shadow: 0px 8px 106px 0px rgba(33, 35, 47, 0.35); }
     .info__item {
-      width: 80%; } }
+      width: 80%; }
+  .slick-dots {
+    margin-left: -10px; }
+  .example__slider {
+    margin-top: 0; }
+  .example .slick-dots {
+    margin-left: -10px; } }
 
 @media only screen and (max-width: 480px) {
   .top__header .logo__box {
@@ -587,6 +617,8 @@
     display: none; }
   .top__header .hide {
     display: block; }
+  #fixedTopMenu.fixed {
+    position: inherit; }
   .header {
     min-height: 650px; }
     .header__title {
@@ -677,12 +709,48 @@
     display: none; }
   .request .request__img-clock {
     display: none; }
+  .believer {
+    padding: 50px 0; }
+    .believer__box {
+      margin-top: 0;
+      padding: 0; }
   .callback {
-    width: 100%; }
+    width: 98%;
+    padding: 30px 10px; }
     .callback__title {
-      font-size: 1.5rem;
-      letter-spacing: 0px; }
-  .slick-next:before, .slick-prev:before {
-    display: none; } }
+      font-size: 1.875rem;
+      line-height: 1.2; }
+    .callback__text {
+      padding-bottom: 20px; }
+    .callback__line {
+      width: 90%; }
+  .formBox {
+    text-align: center; }
+    .formBox br {
+      display: none; }
+  .review__img {
+    height: 230px; }
+    .review__img:before {
+      width: 220px;
+      height: 220px; }
+  .review__content {
+    padding: 0 15px;
+    width: 100%;
+    text-align: center; }
+  .slick-next, .slick-prev {
+    top: 110px; }
+  .slick-prev {
+    left: 0; }
+  .slick-next {
+    right: 10px; }
+  .questions {
+    padding: 30px 10px; }
+    .questions .ask {
+      font-size: 1.25rem; }
+  .footer .logo__text {
+    display: none; }
+  .footer .agency__box {
+    margin-right: 0;
+    margin: auto; } }
 
 /* Custom, iPhone Retina */
