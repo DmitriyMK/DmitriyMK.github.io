@@ -324,6 +324,7 @@ button {
 /* SECTION 2 - GUARANTEE */
 
 .guarantee {
+	position: relative;
 	padding-bottom: 140px;
 	&__title {
 		padding-top: 30px;
@@ -370,6 +371,16 @@ button {
 	.ml {
 		margin-left: 30px;
 	}
+}
+.drill {
+	position: absolute;
+	top: -160px;
+	left: 0;
+}
+.screws {
+	position: absolute;
+	bottom: 10%;
+	right: 10%;
 }
 
 /* SECTION 3 - REQUEST */
@@ -586,6 +597,16 @@ button {
 		width: 221px;
 		height: 51px;
 	}
+}
+.chisel {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+.roulette {
+	position: absolute;
+	top: 10%;
+	right: 5%;
 }
 
 /* SECTION 5 - BELIEVER */

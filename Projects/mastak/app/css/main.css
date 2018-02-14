@@ -3657,6 +3657,7 @@ button {
 
 /* SECTION 2 - GUARANTEE */
 .guarantee {
+  position: relative;
   padding-bottom: 140px; }
   .guarantee__title {
     padding-top: 30px; }
@@ -3710,6 +3711,16 @@ button {
     margin-right: 30px; }
   .guarantee .ml {
     margin-left: 30px; }
+
+.drill {
+  position: absolute;
+  top: -160px;
+  left: 0; }
+
+.screws {
+  position: absolute;
+  bottom: 10%;
+  right: 10%; }
 
 /* SECTION 3 - REQUEST */
 .request {
@@ -3910,6 +3921,16 @@ button {
     vertical-align: middle;
     width: 221px;
     height: 51px; }
+
+.chisel {
+  position: absolute;
+  bottom: 0;
+  left: 0; }
+
+.roulette {
+  position: absolute;
+  top: 10%;
+  right: 5%; }
 
 /* SECTION 5 - BELIEVER */
 .believer {

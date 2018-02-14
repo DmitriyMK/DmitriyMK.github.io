@@ -22,6 +22,9 @@ $(document).ready(function() {
         }, t);
     });
 
+    $('.parallax').scrolly({bgParallax: true});
+
+
     /*BACK TO TOP SCROLL FOR MENU*/
     /*  jQuery(function(f){
             var element = f('#scrollToTop');
