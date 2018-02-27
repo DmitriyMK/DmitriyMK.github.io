@@ -3537,17 +3537,21 @@ a:active, a:active:focus {
        }
   .header .hide {
     display: none; }
+    .arrWrap {
+      width: 100%;
+      position: absolute;
+      top: 750px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
     .btn__arrow {
       display: block;
       font-size: 60px;
-      animation: arrow-bounce 4s infinite;   
+      animation: arrow-bounce 3s infinite;   
       color: #000;
-      position: absolute;
-      bottom: 180px;
-      left: 50%;
-      transform: translateX(-50%);
+      text-align: center;
+      width: 100%;
       }
-
     .btn__arrow:hover {
     animation-play-state: paused;}
 

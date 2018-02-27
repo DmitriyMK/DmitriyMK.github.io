@@ -18,9 +18,9 @@
   .header__content {
     position: absolute;
     top: 200px;}
-    .btn__arrow {
-      bottom: 110px;
-      }
+    .arrWrap {
+      top: 600px;
+    }
 
   .questions {
     right: 30px; }
@@ -56,6 +56,9 @@
     display: block; }
   .header {
     min-height: 800px; }
+    .arrWrap {
+      top: 500px;
+    }
     .header__content {
       top: 110px; }
 
@@ -140,9 +143,6 @@
     right: 3%;
     z-index: 0;
     width: 450px; }
-  .btn__arrow {
-      bottom: 90px;
-      }
   .top__header .logo__box {
     width: 10%; }
   .top__header .logo__text {
@@ -435,9 +435,8 @@ right: 3%; fix this */
       top: 150px;
       right: 1%;
     }
-      .btn__arrow {
-        display: none;
-      }
+    .arrWrap {
+      display: none;}
     .header__title {
       font-size: 1.9rem; }
     .header__list {
