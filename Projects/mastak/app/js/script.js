@@ -1,18 +1,18 @@
 /*PRELOADER*/
-$(window).load(function() {
-    $('#preloader').delay(100).fadeOut('slow');
-});
+// $(window).load(function() {
+//     $('#preloader').delay(100).fadeOut('slow');
+// });
 
 $(document).ready(function() {
 
-/*    $("body).niceScroll({
-        cursorcolor:"#fad94d",
-        cursorwidth:"16px",
-        zindex: [200],
-        scrollspeed: 60,
-    });*/
+    /*    $("body).niceScroll({
+            cursorcolor:"#fad94d",
+            cursorwidth:"16px",
+            zindex: [200],
+            scrollspeed: 60,
+        });*/
 
-    /*MENU SCROLLING*/
+
     $('.scrolling__link').on('click', function(e) {
         e.preventDefault();
         var t = 1500;
@@ -22,63 +22,57 @@ $(document).ready(function() {
         }, t);
     });
 
-    $('.parallax').scrolly({bgParallax: true});
+/*    $('.parallax').scrolly({
+        bgParallax: true
+    });*/
 
 
-    /*BACK TO TOP SCROLL FOR MENU*/
-    /*  jQuery(function(f){
-            var element = f('#scrollToTop');
-            f(window).scroll(function(){
-                element['fade'+ (f(this).scrollTop() > 300 ? 'In': 'Out')](400);           
-            });
-        });*/
+    $('.review__slider').slick({
+        arrows: true,
+        dots: true,
+        infinite: true,
+        slidesToShow: 1,
+        speed: 500,
+    });
 
-        $('.review__slider').slick({
-            arrows: true,
-            dots: true,
-            infinite: true,
-            slidesToShow: 1,
-            speed: 500,
-        });
+    $('.example__slider').slick({
+        arrows: true,
+        dots: true,
+        infinite: true,
+        slidesToShow: 2,
+        speed: 500,
 
-        $('.example__slider').slick({
-            arrows: true,
-            dots: true,
-            infinite: true,
-            slidesToShow: 2,
-            speed: 500,
-
-            responsive: [{
-                breakpoint: 768,
-                settings: {
-                    slidesToShow: 1,
-                }
-            }]
-        });
-
-
-        /*FORM POP-UP*/
-        $('.open-popup-link').magnificPopup({
-            type: 'inline',
-            preloader: false,
-            focus: '.name',
-
-            callbacks: {
-                beforeOpen: function() {
-                    if ($(window).width() < 700) {
-                        this.st.focus = false;
-                    } else {
-                        this.st.focus = '.name';
-                    }
-                }
+        responsive: [{
+            breakpoint: 1200,
+            settings: {
+                arrows: false
             }
-        });
+        }, {
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 1,
+                arrows: false
+            }
+        }, ]
+    });
 
-        $('.phone-mask').mask('+38(000)000-00-00');
 
-        new WOW().init();
+    /*FORM POP-UP*/
+    $('.open-popup-link').magnificPopup({
+        type: 'inline',
+        preloader: false
 
     });
+
+    $('.phone-mask').mask('+38(999)999-99-99');
+
+    
+
+});
+if (document.documentElement.clientWidth > 1200) {
+         new WOW().init();
+    
+    };
 
 
 /*FIXED SCROLL FOR MENU*/
@@ -94,20 +88,21 @@ $(window).scroll(function() {
 
 
 //E-mail Ajax Send
-$("form.open-popup-link").submit(function() {
+$(".form__mail, .form__mail-site, .formBox__callback").submit(function() {
     var th = $(this);
     $.ajax({
         type: "POST",
-        url: "../js/mail.php",
+        url: "js/mail.php",
         data: th.serialize()
     }).done(function() {
-        $(th).find('.success').addClass('active').css("display", "flex").hide().fadeIn();
+        $(th).find('.success').addClass('active').css("display", "block").hide().fadeIn();
         setTimeout(function() {
             $(th).find('.success').removeClass('active').fadeOut();
             th.trigger("reset");
         }, 3000);
     });
     return false;
+
 });
 
 
@@ -295,7 +290,6 @@ function initMap() {
         map: map,
         icon: image
             // title: 'Push-k Solutions'
-        });
+    });
 
 };
-
