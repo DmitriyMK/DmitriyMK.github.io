@@ -199,6 +199,44 @@
 } 
 
 
+
+// Large devices (desktops, less than 1366px)
+@media only screen and (max-width: 1366px) { 
+	.header {
+		min-height: 750px;
+		&__image {
+			top: 230px;
+		}
+	}
+
+	.center__header {
+		padding-top: 20px;
+		.list {
+			padding-top: 40px;
+			&:before {
+				top: 68px;
+			}
+			&__item {
+				&:nth-child(4) {
+					top: 48px;
+				}
+			}
+		}
+		.header__title {
+			font-size: 40px;
+			letter-spacing: 2px;
+		}
+		.header__text {
+			padding-top: 15px;
+			font-size: rem(22);
+		}
+	}
+}
+
+
+
+
+
 // Medium devices (tablets, less than 992px)
 @media only screen and (max-width: 991.98px) { 
 
