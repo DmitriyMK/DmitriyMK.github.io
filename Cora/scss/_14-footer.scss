@@ -1,0 +1,54 @@
+@import "_vars"; 
+@import "_mixin and function";
+
+
+.footer {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-size: rem(15);
+	line-height: 1;
+	color: #706f70;
+	overflow: hidden;
+	.box {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	.logo__box {
+		width: 370px;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+	.agency__box {
+		p {
+			color: #1a46a8;
+		}
+	}
+}
+
+
+// Extra small devices (portrait phones, less than 576px)
+@media only screen and (max-width: 575.98px) { 
+
+	.footer {
+		.box {
+			flex-direction: column;
+		}
+		.logo__box {
+			flex-direction: column;
+			text-align: center;
+		}
+		.logo__text {
+			padding-top: 10px;
+			font-weight: 700;
+		}
+		.agency__box {
+			padding: 20px 0;
+			p {
+				font-weight: 700;
+			}
+		}
+	}
+
+}

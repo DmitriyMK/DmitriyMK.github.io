@@ -1,0 +1,25 @@
+.fancybox-title-float-wrap {
+	background: none;
+	bottom: auto;
+	top: 20px;
+}
+.fancybox-title{
+	visibility: hidden;
+	font-family: "Roboto";
+	font-weight: 600;
+	font-size: 15px;
+	text-transform: uppercase;
+	color: #000;
+	background: none;
+	.child {
+		display: initial;
+		font-family: "Roboto";
+		font-weight: 500;
+		font-size: 18px;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+		color: #000;
+		background: none;
+		text-shadow: none;
+	}
+}

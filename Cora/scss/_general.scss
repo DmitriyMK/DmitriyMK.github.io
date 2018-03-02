@@ -1,0 +1,33 @@
+body {
+/* 	min-width: 320px; */
+/* 	position: relative; */
+	font-family: $fontFamily;
+	font-size: $fontSize;
+	font-weight: 500;
+	line-height: 1.2;
+	box-sizing: border-box; 
+}
+ul {
+	list-style-type: none;
+}
+a {
+	color: inherit;
+}
+
+.wrapper {
+	position: relative;
+	max-width: 1030px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+.hide {
+	display: none;
+} 
+
+.section__title {
+	font-family: "Enigmatic";
+	font-weight: 500;
+	font-size: rem(36);
+	text-transform: uppercase;
+	letter-spacing: 2.1px;
+}
