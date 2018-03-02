@@ -126,6 +126,7 @@
 			background: url(../img/shadow__center.png) no-repeat;
 		}
 		&__item {
+			position: relative;
 			text-align: center;
 			width: 100px;
 			margin: 0 20px;
@@ -203,18 +204,22 @@
 // Large devices (desktops, less than 1366px)
 @media only screen and (max-width: 1366px) { 
 	.header {
-		min-height: 750px;
+		min-height: 720px;
 		&__image {
+			width: 1870px;
 			top: 230px;
+			left: -30px;
 		}
 	}
 
 	.center__header {
 		padding-top: 20px;
 		.list {
-			padding-top: 40px;
+			max-width: 960px;
+			padding-top: 50px;
 			&:before {
-				top: 68px;
+				top: 60px;
+				left: 270px;
 			}
 			&__item {
 				&:nth-child(4) {
@@ -279,6 +284,7 @@
 			font-size: rem(22);
 		}
 		.list {
+			max-width: auto;
 			padding-top: 50px;
 			&:before {
 				display: none;

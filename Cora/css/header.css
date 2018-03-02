@@ -127,6 +127,7 @@
       left: 284px;
       background: url(../img/shadow__center.png) no-repeat; }
     .center__header .list__item {
+      position: relative;
       text-align: center;
       width: 100px;
       margin: 0 20px;
@@ -177,15 +178,19 @@
 
 @media only screen and (max-width: 1366px) {
   .header {
-    min-height: 750px; }
+    min-height: 720px; }
     .header__image {
-      top: 230px; }
+      width: 1870px;
+      top: 230px;
+      left: -30px; }
   .center__header {
     padding-top: 20px; }
     .center__header .list {
-      padding-top: 40px; }
+      max-width: 960px;
+      padding-top: 50px; }
       .center__header .list:before {
-        top: 68px; }
+        top: 60px;
+        left: 270px; }
       .center__header .list__item:nth-child(4) {
         top: 48px; }
     .center__header .header__title {
@@ -224,6 +229,7 @@
       padding-top: 20px;
       font-size: 1.375rem; }
     .center__header .list {
+      max-width: auto;
       padding-top: 50px; }
       .center__header .list:before {
         display: none; }

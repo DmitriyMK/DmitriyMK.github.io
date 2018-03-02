@@ -3,8 +3,6 @@
 
 
 .stage {
-	padding-top: 62px;
-	padding-bottom: 70px;
 	&__title {
 		position: relative;
 		text-align: center;
@@ -138,7 +136,6 @@
 @media only screen and (max-width: 991.98px) { 
 
 	.stage {
-		padding: 60px 0;
 		&__title {
 			&:before {
 				display: none;
@@ -194,7 +191,6 @@
 @media only screen and (max-width: 575.98px) { 
 
 	.stage {
-		padding: 30px 0;
 		&__title {
 			font-size: rem(26);
 		}
