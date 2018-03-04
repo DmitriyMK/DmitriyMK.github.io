@@ -150,7 +150,7 @@
 				margin-left: 40px;
 			}
 			&__content {
-				padding-right: 15px;
+				padding-right: 30px;
 			}
 		}
 		/* ARROW STYLE */
@@ -208,20 +208,36 @@
 				position: relative;
 				width: 90%;
 			}
+			&__client {
+				display: block;
+				text-align: center;
+				padding-bottom: 25px;
+			}
+			.client-photo {
+				margin: auto;
+			}
+			.client-info {
+				margin-top: 15px;
+				margin-left: 0;
+			}
+			.review-text {
+				font-size: rem(15);
+				padding: 5px 0;
+			}
 		}
 
 		/* ARROW STYLE */
 		.slick-prev {
-			top: 50%;
-			transform: translateY(-50%);
+			top: 20px;
+			left: 25px;
 		}
 		.slick-next {
-			top: 50%;
-			transform: translateY(-50%); 
+			top: 20px;
+			right: 25px;
 		}
 	}
-
 }
+
 
 // Extra small devices (portrait phones, less than 576px)
 @media only screen and (max-width: 575.98px) { 
@@ -246,14 +262,6 @@
 			}
 		}
 
-		/* ARROW STYLE */
-		.slick-prev {
-			top: 50%;
-			transform: translateY(-50%);
-		}
-		.slick-next {
-			top: 50%;
-			transform: translateY(-50%); 
-		}
+		
 	}
 }

@@ -146,23 +146,18 @@
 		}
 		&__list {
 			display: flex;
-			flex-direction: column;
-			align-items: center;
+			flex-wrap: wrap;
+			justify-content: center;
 			text-align: center;
 			padding-top: 80px;
 		}
+
+
 		&__item {
 			display: flex;
-			flex-wrap: wrap;
 			flex-direction: column;
-			margin-bottom: 35px;
-			width: 400px;
-			&:before {
-				top: 50%;
-				left: -40px;
-				transform: translateY(-50%);
-				font-size: rem(40);
-			}
+			margin: 25px;
+			width: 300px;
 		}
 
 		.stage__item:nth-child(2n) .stage__img {
@@ -198,12 +193,9 @@
 			padding-top: 30px;
 		}
 		&__item {
-			width: 280px;
-			&:before {
-				left: 0;
-				font-size: rem(22);
-			}
+			width: 300px;
 		}
+
 	}
 
 }

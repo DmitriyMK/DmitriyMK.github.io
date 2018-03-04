@@ -105,13 +105,13 @@
 		}
 		&__img {
 			position: absolute;
-			top: 80px;
+			bottom: -110px;
 			left: 360px;
 		}
 		.present {
 			position: absolute;
 			right: -324px;
-			bottom: 80px;
+			bottom: -30px;
 			font-family: "Enigmatic";
 			font-size: rem(18);
 			text-transform: uppercase;
@@ -216,27 +216,31 @@
 
 
 	.formChoice {
-		background: url(../img/choseModel.jpg)no-repeat 20%/cover;
+		background: #f7f7f7;
+		background-image: -moz-linear-gradient( 0deg, rgb(228,225,228) 0%, rgb(242,240,247) 99%);
+		background-image: -webkit-linear-gradient( 0deg, rgb(228,225,228) 0%, rgb(242,240,247) 99%);
+		background-image: -ms-linear-gradient( 0deg, rgb(228,225,228) 0%, rgb(242,240,247) 99%);
 		.wrapper:after {
-			left: 655px;
+			left: 720px;
 		}
 		.wrapper:before {
-			left: 648px;
+			display: none;
 		}
 		.form-box {
 			&__img {
 				position: absolute;
-				top: 120px;
+				bottom: -50px;
 				left: 360px;
 				max-width: 200px;
 			}
 			.present {
 				right: -280px;
-				bottom: 105px;
+				bottom: 0;
 			}
 		}
 		.form-box2 {
 			width: inherit; 
+			background: #1a1c1e;
 			&:before {
 				top: 114px;
 				left: -110px;
@@ -254,21 +258,9 @@
 @media only screen and (max-width: 991.98px) { 
 
 	.formChoice {
-		background: url(../img/choseModel.jpg)no-repeat 30%/cover;
-		.wrapper:before {
-			display: none;
-		}
-		.wrapper:after {
-			content: '';
-			left: 50%;
-
-			top: 0;
-			background: #1a1c1e;
-		}
-		.flex {
-			justify-content: space-around;
-		}
 		.form-box {
+			width: 500px;
+			margin: auto;
 			&:before {
 				display: none;
 			}
@@ -280,6 +272,7 @@
 			}
 			&__proposal {
 				padding-left: 0;
+				position: relative;
 			}
 			&__title-2 {
 				padding-top: 30px;		
@@ -297,14 +290,13 @@
 			}
 			&__img {
 				position: absolute;
-				top: 190px;
-				left: 175px;
-				max-width: 140px;
+				bottom: -50px;
+				left: 270px;
 			}
 			.present {
 				right: auto;
-				left: 238px;
-				bottom: 130px;
+				left: 380px;
+				bottom: 0px;
 				font-size: rem(12);
 				width: 90px;
 				text-align-last: center;
@@ -314,7 +306,7 @@
 			}
 		}
 		.form-box2 {
-			width: 300px; 
+			width: 260px; 
 		}
 		.form-box__form {
 			margin: auto;
@@ -343,20 +335,25 @@
 		}
 		.form-box {
 			width: 100%;
-			min-height: auto;
-			padding-left: 50px;
+			padding-left: 30px;
 			padding-bottom: 50px;
-			background: #edeaf0;
+			background: #f7f7f7;
+			background-image: -moz-linear-gradient( 0deg, rgb(228,225,228) 0%, rgb(242,240,247) 99%);
+			background-image: -webkit-linear-gradient( 0deg, rgb(228,225,228) 0%, rgb(242,240,247) 99%);
+			background-image: -ms-linear-gradient( 0deg, rgb(228,225,228) 0%, rgb(242,240,247) 99%);
 			&__img {
-				top: 100px;
+				bottom: -40px;
 				left: auto;
-				right: 60px;
+				right: 15vw;
 				max-width: 180px;
 			}
 			.present {
-				right: 60px;
+				right: 80px;
 				left: auto;
-				bottom: 80px;
+				bottom: 0px;
+			}
+			&__text {
+				width: 100%;
 			}
 		}
 		.form-box2 {
@@ -384,18 +381,17 @@
 		}
 		.inputWrap {
 			&:before {
-				left: 40px;
+				left: 50px;
 			}
 		}
 		.inputWrap:nth-of-type(2) {
 			&:before {
-				left: 40px;
+				left: 50px;
 			}
 		}
+
+
 	}
-
-
-
 }
 
 // Extra small devices (portrait phones, less than 576px)
@@ -407,12 +403,28 @@
 			padding: 50px 25px;
 			width: 100%;
 			min-height: auto;
-			background: #edeaf0;
+			&__title {
+				font-size: rem(26);
+			}
 			&__img {
-				display: none;
+				position: relative;
+				top: auto;
+				left: auto;
+				right: auto;
+				max-width: 140px;
 			}
 			.present {
+				position: absolute;
+				top: auto;
+				left: 50%;
+				right: auto;
+				bottom: 100px;
+			}
+			br {
 				display: none;
+			}
+			&__proposal-text {
+				padding-top: 50px;
 			}
 		}
 

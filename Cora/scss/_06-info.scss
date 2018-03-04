@@ -89,9 +89,17 @@
 
 	.info {
 		padding-left: 40px;
-		background-position: 40% 50%;
+		background: #fff;
 		.wrapper:before {
 			display: none;
+		}
+		&__title {
+			text-align: center;
+		}
+		&__list {
+			padding-top: 60px;
+			width: 290px;
+			margin: auto;
 		}
 	}
 

@@ -3,7 +3,7 @@
 
 
 .believer {
-	background: url(../img/believer.jpg) no-repeat right center;
+	background: url(../img/believer.jpg) no-repeat center/cover;
 	padding-left: 180px;
 	.wrapper {
 		position: relative;
@@ -22,11 +22,10 @@
 	}
 	&__imgBig {
 		position: absolute;
-		bottom: 0;
+		bottom: -80px;
 		right: 104px;
 	}
 	&__title {
-		padding-top: 90px;
 		padding-bottom: 44px;
 	}
 	&__list {
@@ -60,7 +59,6 @@
 
 .statistics {
 	padding-top: 55px;
-	padding-bottom: 80px;
 	&__item {
 		display: inline-block;
 		margin-right: 80px;
@@ -83,9 +81,7 @@
 @media only screen and (max-width: 1199.98px) { 
 	.believer {
 		padding-left: 80px;
-		.wrapper {
-			overflow: hidden;
-		}
+		overflow: hidden;
 		.wrap-line {
 			&:before {
 				left: -40px;
@@ -93,6 +89,7 @@
 		}
 		&__imgBig {
 			right: 10px;
+
 		}		
 	}
 }
@@ -103,18 +100,19 @@
 @media only screen and (max-width: 991.98px) { 
 	.believer {
 		padding-left: 25px;
+		padding-bottom: 0;
 		.wrap-line {
 			&:before {
 				display: none;
 			}
 		}
 		&__imgBig {
-			max-width: 295px;
-			right: 2%;
+			max-width: 270px;
+			right: 1%;
+			bottom: 0;
 		}
 		&__title {
-			padding-top: 50px;
-			padding-bottom: 30px;
+			padding-bottom: 25px;
 		}
 		&__item {
 			width: 220px;
@@ -134,7 +132,7 @@
 @media only screen and (max-width: 767.98px) { 
 	.believer {
 		padding-left: 0;
-		background-position: 100% 100%;
+
 		&__imgBig {
 			display: none;
 		}
@@ -154,11 +152,13 @@
 		}
 	}
 	.statistics {
-		padding-bottom: 70px;
 		text-align: center;
 		&__item {
 			display: inline-block;
 			margin: 0 40px;
+		}
+		&__text {
+			color: #000;
 		}
 	}
 }
@@ -166,8 +166,6 @@
 // Extra small devices (portrait phones, less than 576px)
 @media only screen and (max-width: 575.98px) { 
 	.believer {
-		background-size: cover;
-
 		&__title {
 			letter-spacing: 1px;
 		}
