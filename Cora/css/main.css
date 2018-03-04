@@ -1215,7 +1215,10 @@ section {
 
 @media only screen and (max-width: 575.98px) {
   section {
-    padding: 30px 0; } }
+    padding: 30px 0; }
+  .section__title {
+    font-size: 1.875rem;
+    letter-spacing: 1px; } }
 
 /* @import "header"; */
 .believer {
@@ -1574,6 +1577,9 @@ section {
 @media only screen and (max-width: 575.98px) {
   .catalog {
     padding-top: 50px; }
+    .catalog__title {
+      font-size: 1.875rem;
+      letter-spacing: 1px; }
     .catalog .box {
       width: 300px; } }
 
@@ -2178,7 +2184,8 @@ section {
 
 @media only screen and (max-width: 575.98px) {
   .crane__title {
-    font-size: 2.25rem; } }
+    font-size: 1.875rem;
+    letter-spacing: 1px; } }
 
 .info {
   position: relative;
@@ -2257,8 +2264,6 @@ section {
 @media only screen and (max-width: 575.98px) {
   .info {
     padding-left: 0; }
-    .info__title {
-      text-align: center; }
     .info__list {
       padding-top: 60px;
       padding-left: 80px; } }
@@ -2272,8 +2277,7 @@ section {
     overflow: hidden; }
   .advantages__title {
     position: relative;
-    text-align: center;
-    font-size: 2.25rem; }
+    text-align: center; }
     .advantages__title:before {
       content: '';
       position: absolute;
@@ -3115,7 +3119,6 @@ section {
   .review__title {
     position: relative;
     text-align: center;
-    font-size: 2.25rem;
     letter-spacing: 1.7px; }
     .review__title:before {
       content: '';

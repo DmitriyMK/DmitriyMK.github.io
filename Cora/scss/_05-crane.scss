@@ -263,7 +263,8 @@
 @media only screen and (max-width: 575.98px) { 
 	.crane {
 		&__title {
-			font-size: rem(36);
+			font-size: rem(30);
+			letter-spacing: 1px;
 		}
 	}
 }

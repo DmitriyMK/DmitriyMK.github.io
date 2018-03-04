@@ -249,6 +249,10 @@
 
 	.catalog {
 		padding-top: 50px;
+		&__title {
+			font-size: rem(30);
+			letter-spacing: 1px;
+		}
 		.box{
 			width: 300px;
 		}

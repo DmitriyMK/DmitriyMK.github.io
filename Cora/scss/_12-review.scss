@@ -6,7 +6,6 @@
 	&__title {
 		position: relative;
 		text-align: center;
-		font-size: rem(36);
 		letter-spacing: 1.7px;
 		&:before {
 			content: '';
@@ -261,7 +260,5 @@
 				width: 100%;
 			}
 		}
-
-		
 	}
 }
