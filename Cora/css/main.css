@@ -1827,10 +1827,10 @@ section {
     .formChoice .form-box__img {
       position: absolute;
       bottom: -50px;
-      left: 270px; }
+      left: 260px; }
     .formChoice .form-box .present {
       right: auto;
-      left: 380px;
+      left: 370px;
       bottom: 0px;
       font-size: 0.75rem;
       width: 90px;
@@ -2171,16 +2171,18 @@ section {
         -ms-transform: scale(1.4);
             transform: scale(1.4); }
 
+@media only screen and (max-width: 1199.98px) {
+  .crane .slick-prev:before,
+  .crane .slick-next:before {
+    display: none; } }
+
 @media only screen and (max-width: 991.98px) {
   .crane__title {
     font-size: 2.25rem; }
     .crane__title:before {
       display: none; }
     .crane__title:after {
-      display: none; }
-  .crane .slick-prev:before,
-  .crane .slick-next:before {
-    display: none; } }
+      display: none; } }
 
 @media only screen and (max-width: 575.98px) {
   .crane__title {
@@ -3018,7 +3020,7 @@ section {
       .delivery .wrapper:before {
         max-width: 650px;
         max-height: 550px;
-        top: 230px;
+        top: 265px;
         left: -300px;
         -webkit-background-size: contain;
                 background-size: contain; }
@@ -3045,7 +3047,7 @@ section {
     .delivery .box__btn {
       margin-bottom: 80px; } }
 
-@media only screen and (max-width: 767.98px) {
+@media only screen and (max-width: 768px) {
   .delivery .wrapper:before {
     max-width: 250px;
     max-height: 350px;

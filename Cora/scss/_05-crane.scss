@@ -237,9 +237,19 @@
 
 // Стилизация стрелок слайдера через файл "_fixed-slickSliderPlugin.scss"  
 
+@media only screen and (max-width: 1199.98px) { 
+
+	.crane {
+		.slick-prev:before,
+		.slick-next:before {
+			display: none;
+		} 
+	}
+
+}
+
 // Medium devices (tablets, less than 992px)
 @media only screen and (max-width: 991.98px) { 
-
 	.crane {
 		&__title {
 			font-size: rem(36);
@@ -250,10 +260,6 @@
 				display: none;
 			}
 		}
-		.slick-prev:before,
-		.slick-next:before {
-			display: none;
-		} 
 	}
 
 }
