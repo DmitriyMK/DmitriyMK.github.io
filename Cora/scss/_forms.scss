@@ -1,0 +1,23 @@
+@import "_fonts";
+@import "_vars";
+
+::-webkit-input-placeholder { 
+	font-family: $fontFamily;
+	font-size: rem(16);
+	font-weight: 500;
+}
+::-moz-placeholder { 
+	font-family: $fontFamily;
+	font-size: rem(16);
+	font-weight: 500;
+}
+:-ms-input-placeholder { 
+	font-family: $fontFamily;
+	font-size: rem(16);
+	font-weight: 500;
+}
+:-moz-placeholder {
+	font-family: $fontFamily;
+	font-size: rem(16);
+	font-weight: 500;
+}

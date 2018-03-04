@@ -1,0 +1,188 @@
+@import "_vars";
+@import "_mixin and function";
+
+
+.believer {
+	background: url(../img/believer.jpg) no-repeat right center;
+	padding-left: 180px;
+	.wrapper {
+		position: relative;
+	}
+	.wrap-line {
+		&:before {
+			content: '';
+			position: absolute;
+			top: 108px;
+			left: -50px;
+			width: 9px;
+			height: 618px;
+			background: url(../img/line_believer.png) no-repeat;
+			z-index: 100;
+		}
+	}
+	&__imgBig {
+		position: absolute;
+		bottom: 0;
+		right: 104px;
+	}
+	&__title {
+		padding-top: 90px;
+		padding-bottom: 44px;
+	}
+	&__list {
+		margin-top: 15px;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		max-width: 490px;
+	}
+	&__item {
+		width: 234px;
+		padding: 30px;
+		margin-bottom: 15px;
+		background: #fff;
+		text-align: center;
+		box-shadow: 2px 3px 15px -4px rgba(0,0,0,0.4);
+		&-title {
+			padding: 14px 0 12px 0;
+			font-family: "Enigmatic";
+			font-weight: 500;
+			font-size: rem(22);
+			letter-spacing: 1px;
+			text-transform: uppercase;
+		}
+		&-text {
+			font-size: rem(15);
+			color: #706f70;
+		}
+	}
+}
+
+.statistics {
+	padding-top: 55px;
+	padding-bottom: 80px;
+	&__item {
+		display: inline-block;
+		margin-right: 80px;
+	}
+	&__title {
+		padding-bottom: 10px;
+		font-family: "Enigmatic";
+		font-weight: 500;
+		font-size: rem(60);
+		text-transform: uppercase;
+	}
+	&__text {
+		font-size: rem(16);
+		color: #706f70;
+	}
+}
+
+
+// Large devices (desktops, less than 1200px)
+@media only screen and (max-width: 1199.98px) { 
+	.believer {
+		padding-left: 80px;
+		.wrapper {
+			overflow: hidden;
+		}
+		.wrap-line {
+			&:before {
+				left: -40px;
+			}
+		}
+		&__imgBig {
+			right: 10px;
+		}		
+	}
+}
+
+
+
+// Medium devices (tablets, less than 992px)
+@media only screen and (max-width: 991.98px) { 
+	.believer {
+		padding-left: 25px;
+		.wrap-line {
+			&:before {
+				display: none;
+			}
+		}
+		&__imgBig {
+			max-width: 295px;
+			right: 2%;
+		}
+		&__title {
+			padding-top: 50px;
+			padding-bottom: 30px;
+		}
+		&__item {
+			width: 220px;
+			padding: 20px;
+		}
+		&__list {
+			max-width: 450px;
+		}
+	}
+	.statistics {
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
+}
+
+// Small devices (landscape phones, less than 768px)
+@media only screen and (max-width: 767.98px) { 
+	.believer {
+		padding-left: 0;
+		background-position: 100% 100%;
+		&__imgBig {
+			display: none;
+		}
+		&__title {
+			padding: 50px 0 30px 0;
+			text-align: center;
+		}
+		&__item {
+			width: 240px;
+			padding: 20px;
+			margin: 10px;
+		}
+		&__list {
+			margin: auto;
+			max-width: 100%;
+			justify-content: center;
+		}
+	}
+	.statistics {
+		padding-bottom: 70px;
+		text-align: center;
+		&__item {
+			display: inline-block;
+			margin: 0 40px;
+		}
+	}
+}
+
+// Extra small devices (portrait phones, less than 576px)
+@media only screen and (max-width: 575.98px) { 
+	.believer {
+		background-size: cover;
+
+		&__title {
+			letter-spacing: 1px;
+		}
+		&__item {
+			width: 280px;
+		}
+		&__list {
+			margin: auto;
+		}
+	}
+	.statistics {
+		&__item:nth-child(1) {
+			display: inline-block;
+			width: 100%;
+			margin: 15px auto;
+		}
+	}
+}
