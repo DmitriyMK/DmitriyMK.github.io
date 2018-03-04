@@ -227,6 +227,7 @@
 @media only screen and (max-width: 575.98px) { 
 
 	.delivery {
+		background-size: cover;
 		.wrapper {
 			&:before {
 				display: none;
@@ -247,6 +248,7 @@
 		}
 		&__list {
 			width: 95%;
+			padding-bottom: 30px;
 		}
 		&__item {
 			padding: 50px 15px 20px 15px;
