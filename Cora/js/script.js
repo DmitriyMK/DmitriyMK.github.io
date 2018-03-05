@@ -100,6 +100,10 @@ $(document).ready(function() {
 });
 
 
+
+
+/*.slick-active*/
+
 //E-mail Ajax Send
 
 /*#form-present

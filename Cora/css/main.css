@@ -393,9 +393,9 @@ button {
   .white-popup .form__text-next {
     padding: 15px 15px 0 15px;
     color: #8388a5;
-    font-size: 1rem; }
+    font-size: 1.125rem; }
   .white-popup .form-line {
-    width: 85%;
+    width: 90%;
     padding: 10px;
     border: none;
     background: #e4ebf6;
@@ -420,7 +420,7 @@ button {
     display: block;
     margin: auto;
     border: none;
-    width: 85%;
+    width: 90%;
     padding: 15px;
     font-size: 0.9375rem;
     line-height: 18px;
