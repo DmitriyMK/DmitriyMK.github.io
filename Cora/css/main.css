@@ -378,6 +378,56 @@ button {
   font-size: 1rem;
   font-weight: 500; }
 
+.white-popup {
+  position: relative;
+  background: #fff;
+  padding: 15px;
+  max-width: 400px;
+  margin: 20px auto;
+  text-align: center; }
+  .white-popup .form__text {
+    padding-top: 15px;
+    font-size: 1.375rem;
+    line-height: 1.5;
+    font-weight: 600; }
+  .white-popup .form__text-next {
+    padding: 15px 15px 0 15px;
+    color: #8388a5;
+    font-size: 1rem; }
+  .white-popup .form-line {
+    width: 85%;
+    padding: 10px;
+    border: none;
+    background: #e4ebf6;
+    font-size: 1.125rem;
+    line-height: 1.66;
+    padding: 15px;
+    margin: 0 auto 25px auto;
+    font-size: 0.9375rem;
+    line-height: 18px;
+    border: none;
+    color: #333;
+    -webkit-box-shadow: -2px 3px 10px 2px rgba(24, 29, 41, 0.17);
+            box-shadow: -2px 3px 10px 2px rgba(24, 29, 41, 0.17); }
+    .white-popup .form-line:focus {
+      -webkit-transition: all 0.3s ease;
+      -o-transition: all 0.3s ease;
+      transition: all 0.3s ease;
+      -webkit-box-shadow: 0px 0px 8px 0px #0077ed;
+              box-shadow: 0px 0px 8px 0px #0077ed; }
+  .white-popup .btn__callback {
+    padding-top: 0;
+    display: block;
+    margin: auto;
+    border: none;
+    width: 85%;
+    padding: 15px;
+    font-size: 0.9375rem;
+    line-height: 18px;
+    background: #1a46a8;
+    color: #fff;
+    text-transform: uppercase; }
+
 /* PLUGINS */
 .fancybox-wrap, .fancybox-skin, .fancybox-outer, .fancybox-inner, .fancybox-image {
   padding: 0;
@@ -619,7 +669,7 @@ button {
             background-size: 24px 24px; } }
 
 html.remodal-is-locked {
-  overflow: hidden;
+  /* overflow:hidden; */
   -ms-touch-action: none;
   touch-action: none; }
 

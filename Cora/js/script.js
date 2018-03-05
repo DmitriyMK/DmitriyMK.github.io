@@ -101,25 +101,37 @@ $(document).ready(function() {
 
 
 //E-mail Ajax Send
-/*$("form.open-popup-link").submit(function() {
-	var th = $(this);
-	$.ajax({
-		type: "POST",
-		url: "../js/mail.php",
-		data: th.serialize()
-	}).done(function() {
-		$(th).find('.success').addClass('active').css("display", "flex").hide().fadeIn();
-		setTimeout(function() {
-			$(th).find('.success').removeClass('active').fadeOut();
-			th.trigger("reset");
-		}, 3000);
-	});
-	return false;
-});*/
+
+/*#form-present
+#form-consult*/
+
+$('.phone-mask').mask('+38(999)999-99-99');
+
+$("#modal-recieve-form-1").validate({
+
+	submitHandler: function() {
+		var th = $(".form-validate");
+		$.ajax({
+			type: "POST",
+			url: "mail.php", //Change
+			data: th.serialize()
+		}).done(function() {
+			var inst = $('[data-remodal-id=modal-thanks]').remodal();
+			inst.open();
+
+			setTimeout(function() {
+				// Done Functions
+				th.trigger("reset");
+			}, 1000);
+		});
+		return false;
+	}
+});
+
 
 
 $(window).on('resize orientationchange', function() {
-  $('.crane__slider').slick('resize');
+	$('.crane__slider').slick('resize');
 });
 
 function initMap() {
@@ -266,6 +278,3 @@ function initMap() {
 	});
 
 };
-
-
-
