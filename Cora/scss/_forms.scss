@@ -35,53 +35,62 @@ label {
 
 .white-popup {
 	position: relative;
-	background: #fff;
+	background: #1a1c1e;
 	padding: 15px;
 	max-width: 400px;
 	margin: 20px auto;
 	text-align: center;
 	.form__text {
-		padding-top: 15px;
-		font-size: rem(22);
-		line-height: 1.5;
-		font-weight: 600;		
+		font-size: rem(29);
+		line-height: 42px;
+		font-family: "Enigmatic";
+		text-transform: uppercase;
+		color: #fff;
 	}
 	.form__text-next {
 		padding: 15px 15px 0 15px;
-		color: #8388a5;
 		font-size: rem(18);
+		color: #5d5e5e;
 	}
 	.form-line {
+		position: relative;
 		width: 90%;
-		padding: 10px;
+		margin-bottom: 25px;
+		padding-left: 20px;
+		height: 48px;
+		line-height: 48px;
+		background: #141618;
 		border: none;
-		background: #e4ebf6;
-		font-size: 1.125rem;
-		line-height: 1.66;
-		padding: 15px;
-		margin: 0 auto 25px auto; 
+		border: 1px solid #343434; 
+		border-left: 4px solid #1a46a8;
+		border-radius: 4px;
+		box-shadow: inset 4px 0px 0px 0px rgba(26, 70, 168, 0.004);
+		color: #5d5e5e;
 		font-size: rem(15);
-		line-height: 18px;
-		border: none;
-		color: #333;
-		box-shadow: -2px 3px 10px 2px rgba(24, 29, 41, 0.17);
-		&:focus {
-			@include transition (all .3s ease);
-			box-shadow: 0px 0px 8px 0px rgba(0,119,237,1);			
-		}
+
+
+
 	}
 	.btn__callback {
-		padding-top: 0;
-		display: block;
-		margin: auto;
-		border: none;
+		margin-top: 13px;
+		padding: 14.5px 0;
 		width: 90%;
-		padding: 15px;
-		font-size: rem(15);
-		line-height: 18px;
-		background: #1a46a8;
 		color: #fff;
+		background: #1a46a8;
+		text-align: center;
 		text-transform: uppercase;
+		border: 2px solid #1a46a8;
+		border-radius: 30px;
+		font-size: rem(13);
+		font-weight: 600;
+		transition: .3s all ease-in-out; 
+		&:hover {
+			background: #fff;
+			color: #1a46a8;
+		}
+	}
+	.remodal-close {
+		color: #fff;
 	}
 }
 
@@ -91,6 +100,7 @@ label {
 	background: #fff;
 	text-align: center;
 	padding: 30px 40px;  
+	max-width: 300px;
 	.remodal-close {
 		color: #000 !important;
 	}
@@ -107,3 +117,5 @@ label {
 		margin-top: 20px;
 	}
 }
+
+

@@ -193,10 +193,11 @@ $(document).ready(function() {
 
 $('.phone-mask').mask('+38(999)999-99-99');
 
+
 $("#modal-recieve-form-1").validate({
 
 	submitHandler: function() {
-		var th = $(".form-validate");
+		var th = $(".main-form-1");
 		$.ajax({
 			type: "POST",
 			url: "mail.php", //Change
@@ -217,7 +218,7 @@ $("#modal-recieve-form-1").validate({
 $("#modal-recieve-form-2").validate({
 
 	submitHandler: function() {
-		var th = $(".form-validate");
+		var th = $(".main-form-2");
 		$.ajax({
 			type: "POST",
 			url: "mail.php", //Change
@@ -238,7 +239,7 @@ $("#modal-recieve-form-2").validate({
 $("#modal-recieve-form-3").validate({
 
 	submitHandler: function() {
-		var th = $(".form-validate");
+		var th = $(".main-form-3");
 		$.ajax({
 			type: "POST",
 			url: "mail.php", //Change
@@ -260,7 +261,7 @@ $("#modal-recieve-form-3").validate({
 $("#modal-recieve-form-4").validate({
 
 	submitHandler: function() {
-		var th = $(".form-validate");
+		var th = $(".main-form-4");
 		$.ajax({
 			type: "POST",
 			url: "mail.php", //Change
@@ -282,7 +283,7 @@ $("#modal-recieve-form-4").validate({
 $("#modal-recieve-form-5").validate({
 
 	submitHandler: function() {
-		var th = $(".form-validate");
+		var th = $(".main-form-5");
 		$.ajax({
 			type: "POST",
 			url: "mail.php", //Change
@@ -304,7 +305,7 @@ $("#modal-recieve-form-5").validate({
 $("#modal-recieve-form-6").validate({
 
 	submitHandler: function() {
-		var th = $(".form-validate");
+		var th = $(".main-form-6");
 		$.ajax({
 			type: "POST",
 			url: "mail.php", //Change
@@ -326,7 +327,7 @@ $("#modal-recieve-form-6").validate({
 $("#modal-recieve-form-7").validate({
 
 	submitHandler: function() {
-		var th = $(".form-validate");
+		var th = $(".main-form-7");
 		$.ajax({
 			type: "POST",
 			url: "mail.php", //Change
@@ -348,7 +349,7 @@ $("#modal-recieve-form-7").validate({
 $("#modal-recieve-form-8").validate({
 
 	submitHandler: function() {
-		var th = $(".form-validate");
+		var th = $(".main-form-8");
 		$.ajax({
 			type: "POST",
 			url: "mail.php", //Change
@@ -370,7 +371,7 @@ $("#modal-recieve-form-8").validate({
 $("#modal-recieve-form-9").validate({
 
 	submitHandler: function() {
-		var th = $(".form-validate");
+		var th = $(".main-form-9");
 		$.ajax({
 			type: "POST",
 			url: "mail.php", //Change
@@ -392,7 +393,7 @@ $("#modal-recieve-form-9").validate({
 $("#modal-recieve-form-10").validate({
 
 	submitHandler: function() {
-		var th = $(".form-validate");
+		var th = $(".main-form-10");
 		$.ajax({
 			type: "POST",
 			url: "mail.php", //Change
@@ -414,7 +415,7 @@ $("#modal-recieve-form-10").validate({
 $("#modal-recieve-form-11").validate({
 
 	submitHandler: function() {
-		var th = $(".form-validate");
+		var th = $(".main-form-11");
 		$.ajax({
 			type: "POST",
 			url: "mail.php", //Change
@@ -436,7 +437,7 @@ $("#modal-recieve-form-11").validate({
 $("#modal-recieve-form-12").validate({
 
 	submitHandler: function() {
-		var th = $(".form-validate");
+		var th = $(".main-form-12");
 		$.ajax({
 			type: "POST",
 			url: "mail.php", //Change
@@ -458,7 +459,7 @@ $("#modal-recieve-form-12").validate({
 $("#modal-recieve-form-13").validate({
 
 	submitHandler: function() {
-		var th = $(".form-validate");
+		var th = $(".main-form-13");
 		$.ajax({
 			type: "POST",
 			url: "mail.php", //Change
@@ -480,7 +481,7 @@ $("#modal-recieve-form-13").validate({
 $("#modal-recieve-form-14").validate({
 
 	submitHandler: function() {
-		var th = $(".form-validate");
+		var th = $(".main-form-14");
 		$.ajax({
 			type: "POST",
 			url: "mail.php", //Change
@@ -502,7 +503,7 @@ $("#modal-recieve-form-14").validate({
 $("#modal-recieve-form-15").validate({
 
 	submitHandler: function() {
-		var th = $(".form-validate");
+		var th = $(".main-form-15");
 		$.ajax({
 			type: "POST",
 			url: "mail.php", //Change
@@ -524,7 +525,7 @@ $("#modal-recieve-form-15").validate({
 $("#modal-recieve-form-16").validate({
 
 	submitHandler: function() {
-		var th = $(".form-validate");
+		var th = $(".main-form-16");
 		$.ajax({
 			type: "POST",
 			url: "mail.php", //Change
@@ -546,7 +547,7 @@ $("#modal-recieve-form-16").validate({
 $("#modal-recieve-form-17").validate({
 
 	submitHandler: function() {
-		var th = $(".form-validate");
+		var th = $(".main-form-17");
 		$.ajax({
 			type: "POST",
 			url: "mail.php", //Change
@@ -568,7 +569,7 @@ $("#modal-recieve-form-17").validate({
 $("#modal-recieve-form-18").validate({
 
 	submitHandler: function() {
-		var th = $(".form-validate");
+		var th = $(".main-form-18");
 		$.ajax({
 			type: "POST",
 			url: "mail.php", //Change
@@ -590,7 +591,7 @@ $("#modal-recieve-form-18").validate({
 $("#modal-recieve-form-19").validate({
 
 	submitHandler: function() {
-		var th = $(".form-validate");
+		var th = $(".main-form-19");
 		$.ajax({
 			type: "POST",
 			url: "mail.php", //Change
@@ -612,7 +613,7 @@ $("#modal-recieve-form-19").validate({
 $("#modal-recieve-form-20").validate({
 
 	submitHandler: function() {
-		var th = $(".form-validate");
+		var th = $(".main-form-20");
 		$.ajax({
 			type: "POST",
 			url: "mail.php", //Change
@@ -634,7 +635,7 @@ $("#modal-recieve-form-20").validate({
 $("#modal-recieve-form-21").validate({
 
 	submitHandler: function() {
-		var th = $(".form-validate");
+		var th = $(".main-form-21");
 		$.ajax({
 			type: "POST",
 			url: "mail.php", //Change
@@ -655,7 +656,7 @@ $("#modal-recieve-form-21").validate({
 $("#modal-recieve-form-22").validate({
 
 	submitHandler: function() {
-		var th = $(".form-validate");
+		var th = $(".main-form-22");
 		$.ajax({
 			type: "POST",
 			url: "mail.php", //Change
@@ -676,7 +677,7 @@ $("#modal-recieve-form-22").validate({
 $("#modal-recieve-form-23").validate({
 
 	submitHandler: function() {
-		var th = $(".form-validate");
+		var th = $(".main-form-23");
 		$.ajax({
 			type: "POST",
 			url: "mail.php", //Change
@@ -697,7 +698,7 @@ $("#modal-recieve-form-23").validate({
 $("#modal-recieve-form-24").validate({
 
 	submitHandler: function() {
-		var th = $(".form-validate");
+		var th = $(".main-form-24");
 		$.ajax({
 			type: "POST",
 			url: "mail.php", //Change
@@ -718,7 +719,7 @@ $("#modal-recieve-form-24").validate({
 $("#modal-recieve-form-25").validate({
 
 	submitHandler: function() {
-		var th = $(".form-validate");
+		var th = $(".main-form-25");
 		$.ajax({
 			type: "POST",
 			url: "mail.php", //Change
@@ -739,7 +740,7 @@ $("#modal-recieve-form-25").validate({
 $("#modal-recieve-form-26").validate({
 
 	submitHandler: function() {
-		var th = $(".form-validate");
+		var th = $(".main-form-26");
 		$.ajax({
 			type: "POST",
 			url: "mail.php", //Change
@@ -760,7 +761,7 @@ $("#modal-recieve-form-26").validate({
 $("#modal-recieve-form-27").validate({
 
 	submitHandler: function() {
-		var th = $(".form-validate");
+		var th = $(".main-form-27");
 		$.ajax({
 			type: "POST",
 			url: "mail.php", //Change
@@ -781,7 +782,7 @@ $("#modal-recieve-form-27").validate({
 $("#modal-recieve-form-28").validate({
 
 	submitHandler: function() {
-		var th = $(".form-validate");
+		var th = $(".main-form-28");
 		$.ajax({
 			type: "POST",
 			url: "mail.php", //Change
@@ -802,7 +803,7 @@ $("#modal-recieve-form-28").validate({
 $("#modal-recieve-form-29").validate({
 
 	submitHandler: function() {
-		var th = $(".form-validate");
+		var th = $(".main-form-29");
 		$.ajax({
 			type: "POST",
 			url: "mail.php", //Change
@@ -823,7 +824,7 @@ $("#modal-recieve-form-29").validate({
 $("#modal-recieve-form-30").validate({
 
 	submitHandler: function() {
-		var th = $(".form-validate");
+		var th = $(".main-form-30");
 		$.ajax({
 			type: "POST",
 			url: "mail.php", //Change
@@ -844,7 +845,7 @@ $("#modal-recieve-form-30").validate({
 $("#form-present").validate({
 
 	submitHandler: function() {
-		var th = $(".form-validate");
+		var th = $(".main-form-present");
 		$.ajax({
 			type: "POST",
 			url: "mail.php", //Change
@@ -865,7 +866,7 @@ $("#form-present").validate({
 $("#form-consult").validate({
 
 	submitHandler: function() {
-		var th = $(".form-validate");
+		var th = $(".main-form-consult");
 		$.ajax({
 			type: "POST",
 			url: "mail.php", //Change
