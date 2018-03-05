@@ -45,14 +45,102 @@ $(document).ready(function() {
 	});
 
 
+
 	$('.slider, .crane__selectSlider').slick({
 		slidesToShow: 1,
 		slidesToScroll: 1,
 		infinite: true,
 		fade: true,
 		dots: true,
-		arrows: false
+		arrows: false,
 	});
+
+
+/*SPECIAL STYLE FOR INITIAL SLIDE*/
+
+	$('.sliderGross').slick({
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		infinite: true,
+		fade: true,
+		dots: true,
+		arrows: false,
+		initialSlide: 1,
+	});
+
+	$('.sliderEris').slick({
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		infinite: true,
+		fade: true,
+		dots: true,
+		arrows: false,
+		initialSlide: 2,
+	});
+
+	$('.sliderAurora').slick({
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		infinite: true,
+		fade: true,
+		dots: true,
+		arrows: false,
+		initialSlide: 4,
+	});
+
+	$('.sliderFortuna').slick({
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		infinite: true,
+		fade: true,
+		dots: true,
+		arrows: false,
+		initialSlide: 5,
+	});
+
+	$('.sliderJuventas').slick({
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		infinite: true,
+		fade: true,
+		dots: true,
+		arrows: false,
+		initialSlide: 6,
+	});
+
+	$('.sliderVenus').slick({
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		infinite: true,
+		fade: true,
+		dots: true,
+		arrows: false,
+		initialSlide: 1,
+	});
+
+	$('.sliderVictory').slick({
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		infinite: true,
+		fade: true,
+		dots: true,
+		arrows: false,
+		initialSlide: 1,
+	});
+
+	$('.sliderSelene').slick({
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		infinite: true,
+		fade: true,
+		dots: true,
+		arrows: false,
+		initialSlide: 6
+	});
+
+
+
+
 
 	$('.crane__slider').slick({
 		infinite: false,
@@ -99,10 +187,6 @@ $(document).ready(function() {
 	});
 });
 
-
-
-
-/*.slick-active*/
 
 //E-mail Ajax Send
 
