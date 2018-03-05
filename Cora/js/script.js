@@ -56,7 +56,7 @@ $(document).ready(function() {
 	});
 
 
-/*SPECIAL STYLE FOR INITIAL SLIDE*/
+/* STYLE FOR INITIAL SLIDE*/
 
 	$('.sliderGross').slick({
 		slidesToShow: 1,
@@ -167,6 +167,7 @@ $(document).ready(function() {
 		]
 	});
 
+
 	$('.review__slider').slick({
 		infinite: true,
 		slidesToShow: 1,
@@ -190,12 +191,678 @@ $(document).ready(function() {
 
 //E-mail Ajax Send
 
-/*#form-present
-#form-consult*/
-
 $('.phone-mask').mask('+38(999)999-99-99');
 
 $("#modal-recieve-form-1").validate({
+
+	submitHandler: function() {
+		var th = $(".form-validate");
+		$.ajax({
+			type: "POST",
+			url: "mail.php", //Change
+			data: th.serialize()
+		}).done(function() {
+			var inst = $('[data-remodal-id=modal-thanks]').remodal();
+			inst.open();
+
+			setTimeout(function() {
+				// Done Functions
+				th.trigger("reset");
+			}, 1000);
+		});
+		return false;
+	}
+});
+
+$("#modal-recieve-form-2").validate({
+
+	submitHandler: function() {
+		var th = $(".form-validate");
+		$.ajax({
+			type: "POST",
+			url: "mail.php", //Change
+			data: th.serialize()
+		}).done(function() {
+			var inst = $('[data-remodal-id=modal-thanks]').remodal();
+			inst.open();
+
+			setTimeout(function() {
+				// Done Functions
+				th.trigger("reset");
+			}, 1000);
+		});
+		return false;
+	}
+});
+
+$("#modal-recieve-form-3").validate({
+
+	submitHandler: function() {
+		var th = $(".form-validate");
+		$.ajax({
+			type: "POST",
+			url: "mail.php", //Change
+			data: th.serialize()
+		}).done(function() {
+			var inst = $('[data-remodal-id=modal-thanks]').remodal();
+			inst.open();
+
+			setTimeout(function() {
+				// Done Functions
+				th.trigger("reset");
+			}, 1000);
+		});
+		return false;
+	}
+});
+
+
+$("#modal-recieve-form-4").validate({
+
+	submitHandler: function() {
+		var th = $(".form-validate");
+		$.ajax({
+			type: "POST",
+			url: "mail.php", //Change
+			data: th.serialize()
+		}).done(function() {
+			var inst = $('[data-remodal-id=modal-thanks]').remodal();
+			inst.open();
+
+			setTimeout(function() {
+				// Done Functions
+				th.trigger("reset");
+			}, 1000);
+		});
+		return false;
+	}
+});
+
+
+$("#modal-recieve-form-5").validate({
+
+	submitHandler: function() {
+		var th = $(".form-validate");
+		$.ajax({
+			type: "POST",
+			url: "mail.php", //Change
+			data: th.serialize()
+		}).done(function() {
+			var inst = $('[data-remodal-id=modal-thanks]').remodal();
+			inst.open();
+
+			setTimeout(function() {
+				// Done Functions
+				th.trigger("reset");
+			}, 1000);
+		});
+		return false;
+	}
+});
+
+
+$("#modal-recieve-form-6").validate({
+
+	submitHandler: function() {
+		var th = $(".form-validate");
+		$.ajax({
+			type: "POST",
+			url: "mail.php", //Change
+			data: th.serialize()
+		}).done(function() {
+			var inst = $('[data-remodal-id=modal-thanks]').remodal();
+			inst.open();
+
+			setTimeout(function() {
+				// Done Functions
+				th.trigger("reset");
+			}, 1000);
+		});
+		return false;
+	}
+});
+
+
+$("#modal-recieve-form-7").validate({
+
+	submitHandler: function() {
+		var th = $(".form-validate");
+		$.ajax({
+			type: "POST",
+			url: "mail.php", //Change
+			data: th.serialize()
+		}).done(function() {
+			var inst = $('[data-remodal-id=modal-thanks]').remodal();
+			inst.open();
+
+			setTimeout(function() {
+				// Done Functions
+				th.trigger("reset");
+			}, 1000);
+		});
+		return false;
+	}
+});
+
+
+$("#modal-recieve-form-8").validate({
+
+	submitHandler: function() {
+		var th = $(".form-validate");
+		$.ajax({
+			type: "POST",
+			url: "mail.php", //Change
+			data: th.serialize()
+		}).done(function() {
+			var inst = $('[data-remodal-id=modal-thanks]').remodal();
+			inst.open();
+
+			setTimeout(function() {
+				// Done Functions
+				th.trigger("reset");
+			}, 1000);
+		});
+		return false;
+	}
+});
+
+
+$("#modal-recieve-form-9").validate({
+
+	submitHandler: function() {
+		var th = $(".form-validate");
+		$.ajax({
+			type: "POST",
+			url: "mail.php", //Change
+			data: th.serialize()
+		}).done(function() {
+			var inst = $('[data-remodal-id=modal-thanks]').remodal();
+			inst.open();
+
+			setTimeout(function() {
+				// Done Functions
+				th.trigger("reset");
+			}, 1000);
+		});
+		return false;
+	}
+});
+
+
+$("#modal-recieve-form-10").validate({
+
+	submitHandler: function() {
+		var th = $(".form-validate");
+		$.ajax({
+			type: "POST",
+			url: "mail.php", //Change
+			data: th.serialize()
+		}).done(function() {
+			var inst = $('[data-remodal-id=modal-thanks]').remodal();
+			inst.open();
+
+			setTimeout(function() {
+				// Done Functions
+				th.trigger("reset");
+			}, 1000);
+		});
+		return false;
+	}
+});
+
+
+$("#modal-recieve-form-11").validate({
+
+	submitHandler: function() {
+		var th = $(".form-validate");
+		$.ajax({
+			type: "POST",
+			url: "mail.php", //Change
+			data: th.serialize()
+		}).done(function() {
+			var inst = $('[data-remodal-id=modal-thanks]').remodal();
+			inst.open();
+
+			setTimeout(function() {
+				// Done Functions
+				th.trigger("reset");
+			}, 1000);
+		});
+		return false;
+	}
+});
+
+
+$("#modal-recieve-form-12").validate({
+
+	submitHandler: function() {
+		var th = $(".form-validate");
+		$.ajax({
+			type: "POST",
+			url: "mail.php", //Change
+			data: th.serialize()
+		}).done(function() {
+			var inst = $('[data-remodal-id=modal-thanks]').remodal();
+			inst.open();
+
+			setTimeout(function() {
+				// Done Functions
+				th.trigger("reset");
+			}, 1000);
+		});
+		return false;
+	}
+});
+
+
+$("#modal-recieve-form-13").validate({
+
+	submitHandler: function() {
+		var th = $(".form-validate");
+		$.ajax({
+			type: "POST",
+			url: "mail.php", //Change
+			data: th.serialize()
+		}).done(function() {
+			var inst = $('[data-remodal-id=modal-thanks]').remodal();
+			inst.open();
+
+			setTimeout(function() {
+				// Done Functions
+				th.trigger("reset");
+			}, 1000);
+		});
+		return false;
+	}
+});
+
+
+$("#modal-recieve-form-14").validate({
+
+	submitHandler: function() {
+		var th = $(".form-validate");
+		$.ajax({
+			type: "POST",
+			url: "mail.php", //Change
+			data: th.serialize()
+		}).done(function() {
+			var inst = $('[data-remodal-id=modal-thanks]').remodal();
+			inst.open();
+
+			setTimeout(function() {
+				// Done Functions
+				th.trigger("reset");
+			}, 1000);
+		});
+		return false;
+	}
+});
+
+
+$("#modal-recieve-form-15").validate({
+
+	submitHandler: function() {
+		var th = $(".form-validate");
+		$.ajax({
+			type: "POST",
+			url: "mail.php", //Change
+			data: th.serialize()
+		}).done(function() {
+			var inst = $('[data-remodal-id=modal-thanks]').remodal();
+			inst.open();
+
+			setTimeout(function() {
+				// Done Functions
+				th.trigger("reset");
+			}, 1000);
+		});
+		return false;
+	}
+});
+
+
+$("#modal-recieve-form-16").validate({
+
+	submitHandler: function() {
+		var th = $(".form-validate");
+		$.ajax({
+			type: "POST",
+			url: "mail.php", //Change
+			data: th.serialize()
+		}).done(function() {
+			var inst = $('[data-remodal-id=modal-thanks]').remodal();
+			inst.open();
+
+			setTimeout(function() {
+				// Done Functions
+				th.trigger("reset");
+			}, 1000);
+		});
+		return false;
+	}
+});
+
+
+$("#modal-recieve-form-17").validate({
+
+	submitHandler: function() {
+		var th = $(".form-validate");
+		$.ajax({
+			type: "POST",
+			url: "mail.php", //Change
+			data: th.serialize()
+		}).done(function() {
+			var inst = $('[data-remodal-id=modal-thanks]').remodal();
+			inst.open();
+
+			setTimeout(function() {
+				// Done Functions
+				th.trigger("reset");
+			}, 1000);
+		});
+		return false;
+	}
+});
+
+
+$("#modal-recieve-form-18").validate({
+
+	submitHandler: function() {
+		var th = $(".form-validate");
+		$.ajax({
+			type: "POST",
+			url: "mail.php", //Change
+			data: th.serialize()
+		}).done(function() {
+			var inst = $('[data-remodal-id=modal-thanks]').remodal();
+			inst.open();
+
+			setTimeout(function() {
+				// Done Functions
+				th.trigger("reset");
+			}, 1000);
+		});
+		return false;
+	}
+});
+
+
+$("#modal-recieve-form-19").validate({
+
+	submitHandler: function() {
+		var th = $(".form-validate");
+		$.ajax({
+			type: "POST",
+			url: "mail.php", //Change
+			data: th.serialize()
+		}).done(function() {
+			var inst = $('[data-remodal-id=modal-thanks]').remodal();
+			inst.open();
+
+			setTimeout(function() {
+				// Done Functions
+				th.trigger("reset");
+			}, 1000);
+		});
+		return false;
+	}
+});
+
+
+$("#modal-recieve-form-20").validate({
+
+	submitHandler: function() {
+		var th = $(".form-validate");
+		$.ajax({
+			type: "POST",
+			url: "mail.php", //Change
+			data: th.serialize()
+		}).done(function() {
+			var inst = $('[data-remodal-id=modal-thanks]').remodal();
+			inst.open();
+
+			setTimeout(function() {
+				// Done Functions
+				th.trigger("reset");
+			}, 1000);
+		});
+		return false;
+	}
+});
+
+
+$("#modal-recieve-form-21").validate({
+
+	submitHandler: function() {
+		var th = $(".form-validate");
+		$.ajax({
+			type: "POST",
+			url: "mail.php", //Change
+			data: th.serialize()
+		}).done(function() {
+			var inst = $('[data-remodal-id=modal-thanks]').remodal();
+			inst.open();
+
+			setTimeout(function() {
+				// Done Functions
+				th.trigger("reset");
+			}, 1000);
+		});
+		return false;
+	}
+});
+
+$("#modal-recieve-form-22").validate({
+
+	submitHandler: function() {
+		var th = $(".form-validate");
+		$.ajax({
+			type: "POST",
+			url: "mail.php", //Change
+			data: th.serialize()
+		}).done(function() {
+			var inst = $('[data-remodal-id=modal-thanks]').remodal();
+			inst.open();
+
+			setTimeout(function() {
+				// Done Functions
+				th.trigger("reset");
+			}, 1000);
+		});
+		return false;
+	}
+});
+
+$("#modal-recieve-form-23").validate({
+
+	submitHandler: function() {
+		var th = $(".form-validate");
+		$.ajax({
+			type: "POST",
+			url: "mail.php", //Change
+			data: th.serialize()
+		}).done(function() {
+			var inst = $('[data-remodal-id=modal-thanks]').remodal();
+			inst.open();
+
+			setTimeout(function() {
+				// Done Functions
+				th.trigger("reset");
+			}, 1000);
+		});
+		return false;
+	}
+});
+
+$("#modal-recieve-form-24").validate({
+
+	submitHandler: function() {
+		var th = $(".form-validate");
+		$.ajax({
+			type: "POST",
+			url: "mail.php", //Change
+			data: th.serialize()
+		}).done(function() {
+			var inst = $('[data-remodal-id=modal-thanks]').remodal();
+			inst.open();
+
+			setTimeout(function() {
+				// Done Functions
+				th.trigger("reset");
+			}, 1000);
+		});
+		return false;
+	}
+});
+
+$("#modal-recieve-form-25").validate({
+
+	submitHandler: function() {
+		var th = $(".form-validate");
+		$.ajax({
+			type: "POST",
+			url: "mail.php", //Change
+			data: th.serialize()
+		}).done(function() {
+			var inst = $('[data-remodal-id=modal-thanks]').remodal();
+			inst.open();
+
+			setTimeout(function() {
+				// Done Functions
+				th.trigger("reset");
+			}, 1000);
+		});
+		return false;
+	}
+});
+
+$("#modal-recieve-form-26").validate({
+
+	submitHandler: function() {
+		var th = $(".form-validate");
+		$.ajax({
+			type: "POST",
+			url: "mail.php", //Change
+			data: th.serialize()
+		}).done(function() {
+			var inst = $('[data-remodal-id=modal-thanks]').remodal();
+			inst.open();
+
+			setTimeout(function() {
+				// Done Functions
+				th.trigger("reset");
+			}, 1000);
+		});
+		return false;
+	}
+});
+
+$("#modal-recieve-form-27").validate({
+
+	submitHandler: function() {
+		var th = $(".form-validate");
+		$.ajax({
+			type: "POST",
+			url: "mail.php", //Change
+			data: th.serialize()
+		}).done(function() {
+			var inst = $('[data-remodal-id=modal-thanks]').remodal();
+			inst.open();
+
+			setTimeout(function() {
+				// Done Functions
+				th.trigger("reset");
+			}, 1000);
+		});
+		return false;
+	}
+});
+
+$("#modal-recieve-form-28").validate({
+
+	submitHandler: function() {
+		var th = $(".form-validate");
+		$.ajax({
+			type: "POST",
+			url: "mail.php", //Change
+			data: th.serialize()
+		}).done(function() {
+			var inst = $('[data-remodal-id=modal-thanks]').remodal();
+			inst.open();
+
+			setTimeout(function() {
+				// Done Functions
+				th.trigger("reset");
+			}, 1000);
+		});
+		return false;
+	}
+});
+
+$("#modal-recieve-form-29").validate({
+
+	submitHandler: function() {
+		var th = $(".form-validate");
+		$.ajax({
+			type: "POST",
+			url: "mail.php", //Change
+			data: th.serialize()
+		}).done(function() {
+			var inst = $('[data-remodal-id=modal-thanks]').remodal();
+			inst.open();
+
+			setTimeout(function() {
+				// Done Functions
+				th.trigger("reset");
+			}, 1000);
+		});
+		return false;
+	}
+});
+
+$("#modal-recieve-form-30").validate({
+
+	submitHandler: function() {
+		var th = $(".form-validate");
+		$.ajax({
+			type: "POST",
+			url: "mail.php", //Change
+			data: th.serialize()
+		}).done(function() {
+			var inst = $('[data-remodal-id=modal-thanks]').remodal();
+			inst.open();
+
+			setTimeout(function() {
+				// Done Functions
+				th.trigger("reset");
+			}, 1000);
+		});
+		return false;
+	}
+});
+
+$("#form-present").validate({
+
+	submitHandler: function() {
+		var th = $(".form-validate");
+		$.ajax({
+			type: "POST",
+			url: "mail.php", //Change
+			data: th.serialize()
+		}).done(function() {
+			var inst = $('[data-remodal-id=modal-thanks]').remodal();
+			inst.open();
+
+			setTimeout(function() {
+				// Done Functions
+				th.trigger("reset");
+			}, 1000);
+		});
+		return false;
+	}
+});
+
+$("#form-consult").validate({
 
 	submitHandler: function() {
 		var th = $(".form-validate");
@@ -221,6 +888,8 @@ $("#modal-recieve-form-1").validate({
 $(window).on('resize orientationchange', function() {
 	$('.crane__slider').slick('resize');
 });
+
+
 
 function initMap() {
 

@@ -61,29 +61,26 @@
 @media only screen and (max-width: 1199.98px) { 
 
 
-.slick-prev:before,
-.slick-next:before {
-	font-size: 80px;
-	opacity: 1;
-} 
-.slick-prev {
-	left: 0px;
-	z-index: 10; 
-}
-[dir="rtl"] .slick-prev {
-	right: 0px;
-	z-index: 10; 
-}
+	.slick-prev:before,
+	.slick-next:before {
+		font-size: 80px;
+		opacity: 1;
+	} 
+	.slick-prev {
+		left: 0px;
+		z-index: 10; 
+	}
+	[dir="rtl"] .slick-prev {
+		right: 0px;
+		z-index: 10; 
+	}
 
-.slick-next {
-	right: 0px;
-	z-index: 10; 
-}
-[dir="rtl"] .slick-next {
-	left: 0px;
-	z-index: 10;
-}
-
-
-
+	.slick-next {
+		right: 0px;
+		z-index: 10; 
+	}
+	[dir="rtl"] .slick-next {
+		left: 0px;
+		z-index: 10;
+	}
 }
