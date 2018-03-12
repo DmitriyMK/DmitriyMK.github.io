@@ -24,15 +24,40 @@ $(document).ready(function() {
 });
 
 
+$('.phone-mask').mask('+38(999)999-99-99');
+
+
+$("#modal-recieve-form-1").validate({
+
+  submitHandler: function() {
+    var th = $(".main-form-1");
+    $.ajax({
+      type: "POST",
+      url: "mail.php", //Change
+      data: th.serialize()
+    }).done(function() {
+      var inst = $('[data-remodal-id=modal-thanks]').remodal();
+      inst.open();
+
+      setTimeout(function() {
+        // Done Functions
+        th.trigger("reset");
+      }, 1000);
+    });
+    return false;
+  }
+});
+
+
 function initMap() {
 
     var latlng = new google.maps.LatLng(50.4301508, 30.4737559);
     var settings = {
-        zoom: 17.2,
+        zoom: 17,
         center: latlng,
         center: {
-            lat: 50.4301508, 
-            lng: 30.47775579
+            lat: 50.430189, 
+            lng: 30.47319999
         },
         mapTypeControl: true,
         mapTypeControlOptions: {
@@ -138,4 +163,6 @@ function initMap() {
     });
 
 };
+
+
 

@@ -15,10 +15,6 @@
 
 
 	<link rel="shortcut icon" href="favicons.png" type="image/x-icon">
-
-
-	
-
 </head>
 
 <body>
@@ -28,76 +24,68 @@
 			<div class="container">
 
 				<div class="row">
-					<div class="col-lg-8"><a href="index.html" title=""><img src="images/logo.png" alt=""></a></div>
-					<div class="col-lg-4">
+					<div class="col-sm-2"><a href="index.html" title="Подключим удобную и понятную CMS к Вашему Landing Page"><img class="logo__img" src="images/logo.png" alt="Подключим удобную и понятную CMS к Вашему Landing Page"></a></div>
+					<div class="col-sm-10">
 						<ul class="top-header__list">
 							<li class="top-header__item"><a class="top-header__link" href="tel:+380442228694">+38 (044) 222 86 94</a></li>
-							<li class="top-header__item"><a class="top-header__link top-header__btn" href="#">Заказать звонок</a></li>
+							<li class="top-header__item"><a class="top-header__link top-header__btn" data-remodal-target="callback-main" href="#callback-main">Заказать звонок</a></li>
 						</ul>
 					</div>	
 				</div>
-				<form action="mail.php" method="post" class="form-box form-validate main-form" name="form-callback">
-					<!-- Hidden Required Fields -->
-					<input type="hidden" name="admin_email" value="dm@push-k.ua">
-					<input type="hidden" name="whatform" value="LPage Editor > Заказ обратного звонка">
-					<!-- End Hidden Required Fields -->
-					<p class="form-box__title">Заполните форму</p>
-					<p class="form-box__text">И наш менеджер свяжется с Вами в течение 10 минут.</p>
-					<input class="line-name form__line" type="text" name="Имя&nbsp;покупателя" placeholder="Ваше имя" required>
-					<input class="line-phone form__line" type="tel" name="Телефон&nbsp;покупателя" placeholder="Ваш телефон" required>
-					<input type="submit" class="btn__callback" value="Заказать звонок"> 
-				</form>
+
+				
+
 			</div>
 		</div>
 
 		<div class="center-header">
 			<div class="container-fluid">
 				<div class="row">
-
-					<div class="col-lg-6">
-						<div class="center__box">
+					<div class="col-md-6 col-sm-4">
+						<div class="center__box img__box">
 							<img class="center-header__img" src="images/astronaut.png" alt="Подключим удобную и понятную CMS к Вашему Landing Page">
 						</div>
 					</div>	
-
-					<div class="col-lg-6">
+					<div class="col-md-6 col-sm-8">
 						<div class="center__box center__box-left">
 							<h1 class="center-header__title">lpage editor</h1>
-							<p class="center-header__slogan">Подключим удобную и понятную CMS <br> к Вашему Landing Page</p>
+							<p class="center-header__slogan">Подключим удобную и понятную CMS к Вашему Landing Page</p>
 						</div>
 					</div>	
-
 				</div>
 			</div>
 		</div>
 	</header>
 
+
+
 	<section class="reasons">
 		<div class="container">
 			<div class="row">
-				<h2 class="reasons__title">4 причины подключить CMS</h2>
-				<div class="col-md-3 col-sm-6">
+				<h2 class="reasons__title reasons__title-hide">4 причины подключить CMS</h2>
+				<div class="glitch" data-text="4 причины подключить CMS">4 причины подключить CMS</div> 
+				<div class="col-lg-3 col-sm-6">
 					<div class="reasons__box">
 						<img class="item__img" src="images/cause1.png" alt="Самостоятельность">
 						<h3 class="item__title">Самостоятельность</h3>
 						<p class="item__text">CMS позволяет владельцу менять информацию на лендинге без привлечения разработчиков</p>
 					</div>
 				</div>
-				<div class="col-md-3 col-sm-6">
+				<div class="col-lg-3 col-sm-6">
 					<div class="reasons__box">
 						<img class="item__img" src="images/cause2.png" alt="Экономия">
 						<h3 class="item__title">Экономия</h3>
 						<p class="item__text">Каждое обращение владельца к разработчикам требует оплаты. CMS избавляет от дополнительных растрат.</p>
 					</div>
 				</div>
-				<div class="col-md-3 col-sm-6">
+				<div class="col-lg-3 col-sm-6">
 					<div class="reasons__box">
 						<img class="item__img" src="images/cause3.png" alt="Скорость">
 						<h3 class="item__title">Скорость</h3>
 						<p class="item__text">Самостоятельное редактирование различной информации на Landing page займет у Вас от 2-х до десяти минут.</p>
 					</div>
 				</div>
-				<div class="col-md-3 col-sm-6">
+				<div class="col-lg-3 col-sm-6">
 					<div class="reasons__box">
 						<img class="item__img" src="images/cause4.png" alt="Многоразовость">
 						<h3 class="item__title">Многоразовость</h3>
@@ -112,7 +100,7 @@
 
 
 	<section class="info">
-		<div class="parallax parallax-1" data-velocity="-.2" data-fit="225" ></div>
+		<div class="parallax parallax-1" data-velocity="-.1" data-fit="100" ></div>
 		<div class="planet-moon"><img src="images/planet-moon.png" alt="moon"></div>
 		<div class="planet-jupiter"><img src="images/planet-jupiter.png" alt="jupiter"></div>
 		<div class="container">
@@ -161,19 +149,15 @@
 				</div>
 			</div>	
 		</div>
-	</section>
-
-
-
-	<section class="go">
-		<div class="container">
-			<div class="row">
-				<div class="go__box">
-					<h2 class="go__title">Вы готовы усовершенствовать свой лендинг?</h2>
-					<p class="go__text">Тогда, вперед!</p>
-					<div class="box">
-						<div class="box-left">
-							<p class="text">Оставляйте заявку <br> и через 2 дня Вы получите 
+		<div class="go">	
+			<div class="container">
+				<div class="row">
+					<div class="go__box">
+						<h2 class="go__title">Вы готовы усовершенствовать свой лендинг?</h2>
+						<p class="go__text">Тогда, вперед!</p>
+						<div class="box">
+							<div class="box-left">
+								<p class="text">Оставляйте заявку <br> и через 2 дня Вы получите 
 								функциональный </p>
 								<span class="accent-color">Landing page!</span>
 							</p>
@@ -195,8 +179,8 @@
 					</div>
 				</div>
 			</div>
+			<div class="parallax parallax-2" data-velocity="-.9" data-fit="900" ></div>
 		</div>
-		<div class="parallax parallax-2" data-velocity="-.7" data-fit="780" ></div>
 	</section>
 
 
@@ -205,7 +189,7 @@
 	<section class="step">
 		<div class="container">
 			<div class="row">
-				<h2 class="step__title hide">Этапы работы</h2>
+				<h2 class="step__title-hide">Этапы работы</h2>
 				<div class="glitch" data-text="Этапы работы">Этапы работы</div> 
 				<ul class="step__list">
 					<li class="step__item">Вы оставляете заявку на сайте, и наш менеджер созванивается с Вами в течение 5 минут.</li>
@@ -235,7 +219,7 @@
 				</ul>
 				<p class="ask">Остались вопросы?</p>
 				<p class="text">Мы Вам перезвоним,<br> и поможем сделать <br> правильный выбор.</p>
-				<a href="#" class="btn__callback">Заказать звонок</a>
+				<a data-remodal-target="callback-last" href="#callback-last" class="btn__callback">Заказать звонок</a>
 			</div>
 		</div> 
 	</div>
@@ -246,19 +230,63 @@
 	<footer class="footer">
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-2">
+				<div class="col-lg-2 col-sm-4">
 					<a href="index.html"><img class="logo__img" src="images/logo-footer.png" alt="Подключение CMS к Landing page" title="Подключение CMS к Landing page"></a>
 				</div>
-				<div class="col-lg-6">
-					<p class="footer__text">Подключение CMS <br> к Landing page</p>
+				<div class="col-lg-6 col-sm-4">
+					<p class="footer__text-slogan">Подключение CMS <br> к Landing page</p>
 				</div>
-				<div class="col-lg-4">
-					<a class="footer__text" href="http://landingpage.push-k.com.ua/">Создание сайтов</a>
-					<p class="footer__text">PUSH-K Solutions</p>
+				<div class="col-lg-4 col-sm-4">
+					<div class="agency">
+						<a class="footer__text" href="http://landingpage.push-k.com.ua/">Создание сайтов</a>
+						<p class="footer__text">PUSH-K Solutions</p>
+					</div>
 				</div>
 			</div>
 		</div>
 	</footer>
+
+
+	<!-- FORMS -->
+
+	<div class="remodal formBox" data-remodal-id="callback-main"> 
+		<button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
+		<form action="mail.php" method="post" class="white-popup form-validate main-form-1" id="modal-recieve-form-1" name="main-form">
+			<!-- Hidden Required Fields -->
+			<input type="hidden" name="admin_email" value="dm@push-k.ua">
+			<input type="hidden" name="whatform" value="LPage Editor > Заказ обратного звонка">
+			<!-- End Hidden Required Fields -->
+			<p class="formBox__title">Заполните форму</p>
+			<p class="formBox__text">И наш менеджер свяжется с Вами в течение 10 минут.</p>
+			<input class="form__line name" type="text" name="Имя&nbsp;покупателя" placeholder="Ваше имя" required>
+			<input class="form__line phone-mask" type="tel" name="Телефон&nbsp;покупателя" placeholder="Ваш телефон" required>
+			<input type="submit" class="btn__callback" value="Заказать звонок"> 
+		</form>
+	</div>
+
+	<div class="remodal formBox" data-remodal-id="callback-last"> 
+		<button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
+		<form action="mail.php" method="post" class="white-popup form-validate main-form-1" id="modal-recieve-form-1" name="main-form">
+			<!-- Hidden Required Fields -->
+			<input type="hidden" name="admin_email" value="dm@push-k.ua">
+			<input type="hidden" name="whatform" value="LPage Editor > Контакты> Заказ обратного звонка">
+			<!-- End Hidden Required Fields -->
+			<p class="formBox__title">Заполните форму</p>
+			<p class="formBox__text">И наш менеджер свяжется с Вами в течение 10 минут.</p>
+			<input class="form__line name" type="text" name="Имя&nbsp;покупателя" placeholder="Ваше имя" required>
+			<input class="form__line phone-mask" type="tel" name="Телефон&nbsp;покупателя" placeholder="Ваш телефон" required>
+			<input type="submit" class="btn__callback" value="Заказать звонок"> 
+		</form>
+	</div>
+
+	<!--  THANKS-->
+	<div class="remodal remodal-common"  data-remodal-id="modal-thanks" >
+		<button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
+		<h3 class="thanks__title">Благодарим Вас!</h3>
+		<p class="thanks__text">Мы свяжемся с Вами <br>в ближайшее время.</p>
+	</div>
+
+
 
 
 
@@ -266,10 +294,10 @@
 
 	<link rel="stylesheet" href="css/remodal.css">
 	<link rel="stylesheet" href="css/remodal-default-theme.css">
-	<link rel="stylesheet" href="fancybox/jquery.fancybox.css" />
+
 	<link rel="stylesheet" href="css/slick.css">
 	<link rel="stylesheet" href="css/slick-theme.css">
-	<link rel="stylesheet" href="css/animate.min.css">
+
 
 	<link rel="stylesheet" href="css/style.css">
 
