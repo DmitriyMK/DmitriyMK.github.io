@@ -1,0 +1,189 @@
+@media @mobile {
+
+}
+@media @tablet {
+
+}
+@media @desktop {
+
+}
+@media @desktop-xl {
+	
+}
+@media @desktop-xl-2 {
+
+}
+@media @desktop-xll {
+	
+}
+
+.header {
+	background: url(../images/header.jpg) no-repeat center/cover; 
+	
+	position: relative;
+	@media @mobile {
+		min-height: 600px;
+	}
+	@media @tablet {
+		min-height: 660px;
+	}
+	@media @desktop-xl {
+		height: 100vh;
+	}
+	@media @desktop-xl-2 {
+
+	}
+	@media @desktop-xll {
+
+	}
+	&-top {
+		color: #fff;
+		font-size: 16px;
+		position: relative;
+		&:after {
+			content: '';
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			height: 2px;
+			width: 100%;
+			background: #fff;
+		}
+	}
+	&__logo {
+		line-height: 70px;
+		float: left;
+		@media @tablet {
+			float: none;
+		}
+	}
+	.logo-link {
+		display: block;
+	}
+	&__list {
+		line-height: 70px;
+		
+	}
+	&__item {
+		display: inline-block;
+		margin-right: 15px;
+		text-transform: uppercase;
+	}
+	&__contact {
+		margin-top: 15px;
+		float: right;
+		@media @tablet {
+			float: none;
+		}
+		&-list {
+			display: inline-block;
+		}
+		&-item {
+			text-align: right;
+		}
+	}
+	&__btn {
+		padding: 0 20px;
+		float: right;
+		display: none;
+		@media @tablet {
+			display: inline-block;
+		}
+	}
+	.hide-mb {
+		display: none;
+		@media @desktop {
+			display: block;
+		}
+	}
+
+
+
+	&-center {
+		text-align: center;
+		@media @mobile {
+			padding-top: 60px;
+		}
+		@media @tablet {
+			padding-top: 80px;
+			text-align: inherit;
+		}
+		@media @desktop {
+			padding-top: 100px;
+			padding-left: 100px;
+
+		}
+		@media @desktop-xl {
+			padding-top: 100px;
+		}
+		@media @desktop-xl-2 {
+			position: absolute;
+			top: 49%;
+			transform: translateY(-50%);
+		}
+		.btn {
+			color: #fff;
+			font-size: 16px;
+			@media @mobile {
+				margin-top: 30px;
+				margin-bottom: 50px;
+			}
+			@media @tablet {
+
+			}
+			@media @desktop {
+				margin-top: 60px;
+			}
+			@media @desktop-xl {
+
+			}
+			@media @desktop-xl-2 {
+
+			}
+			@media @desktop-xll {
+
+			}
+		}
+	}
+	&__title {
+		position: relative;
+		color: #fff;
+		font-weight: 700;
+		letter-spacing: 2.5px;
+		@media @mobile {
+
+		}
+		@media @tablet {
+			padding-bottom: 40px;
+			font-size: 26px;
+			&:before {
+				content: '';
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				height: 1px;
+				width: 270px;
+				background: #fff; 
+			}
+		}
+		@media @desktop {
+			
+		}
+		@media @desktop-xl {
+			padding-bottom: 40px;
+			font-size: 50px;
+		}
+		@media @desktop-xl-2 {
+
+		}
+		@media @desktop-xll {
+
+		}
+	}
+	&__subtitle {
+		padding-top: 10px;
+	}
+
+
+}
+

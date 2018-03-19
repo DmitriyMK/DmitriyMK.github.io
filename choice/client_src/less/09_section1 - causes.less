@@ -1,0 +1,196 @@
+@media @mobile {
+
+}
+@media @tablet {
+
+}
+@media @desktop {
+
+}
+@media @desktop-xl {
+	
+}
+@media @desktop-xl-2 {
+
+}
+@media @desktop-xll {
+	
+}
+
+
+
+.causes {
+	.box {
+		
+		margin: auto;
+		position: relative;
+		@media @mobile {
+
+		}
+		@media @tablet {
+			padding: 0 30px;
+		}
+		@media @desktop {
+
+		}
+		@media @desktop-xl {
+			padding: 0 100px;
+		}
+		@media @desktop-xl-2 {
+
+		}
+		@media @desktop-xll {
+
+		}
+	}
+	.title {
+		position: relative;
+	}
+	.backText {
+		display: none;
+		position: absolute;
+		right: 0;
+		top: -74px;
+		letter-spacing: 5px;
+		font-size: 100px;
+		font-weight: 700;
+		line-height: 0;
+		color: #131313;
+		text-transform: uppercase;
+		opacity: .04;
+		@media @mobile {
+
+		}
+		@media @tablet {
+
+		}
+		@media @desktop {
+			display: block;
+		}
+		@media @desktop-xl {
+
+		}
+		@media @desktop-xl-2 {
+
+		}
+		@media @desktop-xll {
+
+		}
+	}
+	&__list {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		flex-wrap: wrap;
+		margin-top: 96px;
+
+		@media @mobile {
+
+		}
+		@media @tablet {
+			flex-direction: row;
+			align-items: center;
+			justify-content: space-around;
+		}
+		@media @desktop {
+			justify-content: space-between;
+		}
+		@media @desktop-xl {
+			
+		}
+		@media @desktop-xl-2 {
+
+		}
+		@media @desktop-xll {
+
+		}
+
+	}
+	&__item {
+		position: relative;
+		padding: 40px 15px;
+		margin-bottom: 60px;
+		width: 290px; 
+		text-align: center;
+		color: #131313;
+		border: 1px solid #b8b8b8;
+		counter-increment: li;
+		&:before {
+			content: '0' counter(li);
+			position: absolute;
+			top: -30px;
+			left: -10px;
+			padding-right: 10px;
+			font-family: @ff1;
+			font-size: 40px;
+			font-weight: bold;
+			color: @green;
+			background: #fff;
+		}
+		&:after {
+			content: '.';
+			position: absolute;
+			top: -20px;
+			left: 35px;
+			font-family: @ff1;
+			font-size: 30px;
+			font-weight: bold;
+			color: @green;
+		}
+		@media @mobile {
+
+		}
+		@media @tablet {
+			width: 40%;
+			min-height: 220px;
+			&:before {
+				top: -44px;
+				left: -20px;
+				font-size: 60px;
+			}
+			&:after {
+				top: -20px;
+				left: 40px;
+				font-size: 40px;
+			}
+		}
+		@media @desktop {
+			width: 30%;
+			text-align: left;
+		}
+		@media @desktop-xl {
+			width: 270px;
+			margin-bottom: 84px;
+			padding: 40px 30px;
+		}
+		@media @desktop-xl-2 {
+
+		}
+		@media @desktop-xll {
+
+		}
+	}
+	.list__title {
+		font-size: 20px;
+		font-weight: 700;
+		text-transform: uppercase;
+	}
+	.list__text {
+		color: #131313;
+		font-size: 16px;
+		letter-spacing: .5px;
+	}
+
+
+
+	.btn-causes {
+		display: block;
+		margin: 0 auto;
+		color: #fff;
+		&:hover {
+			color: #000;
+		}
+
+	}
+}

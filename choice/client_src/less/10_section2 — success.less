@@ -1,0 +1,189 @@
+@media @mobile {
+
+}
+@media @tablet {
+
+}
+@media @desktop {
+
+}
+@media @desktop-xl {
+	
+}
+@media @desktop-xl-2 {
+
+}
+@media @desktop-xll {
+	
+}
+
+.success {
+	margin-top: 80px;
+	position: relative;
+	background: @green;
+
+	.container {
+		position: relative;
+	}
+	.backText {
+		display: none;
+		position: absolute;
+		right: 0;
+		top: -136px;
+		letter-spacing: 5px;
+		font-size: 100px;
+		font-weight: 700;
+		line-height: 0;
+		color: #131313;
+		text-transform: uppercase;
+		opacity: .04;
+		z-index: -1;
+		@media @mobile {
+
+		}
+		@media @tablet {
+
+		}
+		@media @desktop {
+			display: block;
+		}
+		@media @desktop-xl {
+
+		}
+		@media @desktop-xl-2 {
+
+		}
+		@media @desktop-xll {
+
+		}
+	}
+	&__list {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		padding-top: 80px;
+		padding-bottom: 80px;
+		@media @mobile {
+
+		}
+		@media @tablet {
+
+		}
+		@media @desktop {
+			padding-top: 60px;
+			padding-bottom: 60px;
+			padding-left: 270px;
+		}
+		@media @desktop-xl {
+
+		}
+		@media @desktop-xl-2 {
+
+		}
+		@media @desktop-xll {
+
+		}
+	}
+	&__item {
+		position: relative;
+		text-align: center;
+		margin-bottom: 30px;
+		width: 45%;
+		@media @mobile {
+
+		}
+		@media @tablet {
+			width: 130px;
+		}
+		@media @desktop {
+			margin-bottom: inherit;
+			&:not(:last-child):before {
+				content: '';
+				position: absolute;
+				top: 10px;
+				right: -20px;
+				height: 48px;
+				width: 1px;
+				background: #fff;
+			}
+		}
+		@media @desktop-xl {
+			&:not(:last-child):before {
+				right: -40px;
+			}
+		}
+		@media @desktop-xl-2 {
+
+		}
+		@media @desktop-xll {
+
+		}
+	}
+	.num {
+		padding-bottom: 20px;
+		letter-spacing: .5px;
+		font-size: 30px;
+		font-weight: 700;
+	}
+	.text {
+		width: 130px;
+		margin: auto;
+		font-size: 16px;
+	}
+
+	.accent {
+		position:absolute;
+		top: -50px;
+		left: 0;
+		width: 100%; 
+		height: auto;
+		background: #fff;
+		padding: 30px;
+		box-shadow: 0px 0px 8.55px 0.45px rgba(0, 0, 0, 0.3);
+		br {
+			display: none;
+		}
+		@media @mobile {
+
+		}
+		@media @tablet {
+
+		}
+		@media @desktop {
+			width: 270px; 
+			padding: 65px 30px;
+			br {
+				display: block;
+			}
+		}
+		@media @desktop-xl {
+
+		}
+		@media @desktop-xl-2 {
+
+		}
+		@media @desktop-xll {
+
+		}
+
+		&__text {
+			font-size: 20px;
+			letter-spacing: .5px;
+			font-weight: 700;
+			color: #000;
+			text-transform: uppercase;
+			text-align: center;
+			@media @desktop {
+				padding-bottom: 25px;
+				display: block;
+				text-align: left;
+			}
+		}
+		&__img {
+			display: none;
+			@media @desktop {
+				display: block;
+			}
+		}
+	}
+}
