@@ -4,7 +4,7 @@
 <head>
 
 	<meta charset="utf-8">
-	<title></title>
+	<title>Choice</title>
 
 	<meta name="description" content="">
 
@@ -52,7 +52,7 @@
 								</li>
 							</ul>
 							<div class="header__btn">
-								<button class="btn" data-remodal-target="callback-main" href="#callback-main">Заказать звонок</button>
+								<a class="button btn" data-remodal-target="callback-main" href="#callback-main">Заказать звонок</a>
 							</div>
 						</div>		
 
@@ -284,11 +284,40 @@
 
 	<section class="work">
 		<div class="container">
-			<div class="team__box">
+			<div class="work__box">	
 				<h2 class="section__title work__title">Наш рабочий процесс</h2>
 				<h3 class="backText">процесс</h3>
+				<p class="work__text">Несколько кадров о нашем <br> рабочем процессе</p>
+			</div>
+
+			<div class="slider__big" id="sliderBig">
+				<ul class="slider slider-for">
+					<li class="slider-for-item"><a href="images/work-process/process1.jpg" class="slider-for-link"><img class="slider-for-img" src="images/work-process/process1.jpg" alt="рабочий процесс"></a></li>
+					<li class="slider-for-item"><a href="images/work-process/process2.jpg" class="slider-for-link"><img class="slider-for-img" src="images/work-process/process2.jpg" alt="рабочий процесс"></a></li>
+					<li class="slider-for-item"><a href="images/work-process/process3.jpg" class="slider-for-link"><img class="slider-for-img" src="images/work-process/process3.jpg" alt="рабочий процесс"></a></li>
+					<li class="slider-for-item"><a href="images/work-process/process1.jpg" class="slider-for-link"><img class="slider-for-img" src="images/work-process/process1.jpg" alt="рабочий процесс"></a></li>
+					<li class="slider-for-item"><a href="images/work-process/process2.jpg" class="slider-for-link"><img class="slider-for-img" src="images/work-process/process2.jpg" alt="рабочий процесс"></a></li>
+					<li class="slider-for-item"><a href="images/work-process/process3.jpg" class="slider-for-link"><img class="slider-for-img" src="images/work-process/process3.jpg" alt="рабочий процесс"></a></li>
+				</ul>
+			</div>
+
+			<div class="slider__small">		
+				<ul class="slider slider-nav">
+					<li class="slider-nav-item"><a class="slider-nav-link"><img class="slider-nav-img" src="images/work-process/small/process1-small.jpg" alt="рабочий процесс"></a></li>
+					<li class="slider-nav-item"><a class="slider-nav-link"><img class="slider-nav-img" src="images/work-process/small/process2-small.jpg" alt="рабочий процесс"></a></li>
+					<li class="slider-nav-item"><a class="slider-nav-link"><img class="slider-nav-img" src="images/work-process/small/process3-small.jpg" alt="рабочий процесс"></a></li>
+					<li class="slider-nav-item"><a class="slider-nav-link"><img class="slider-nav-img" src="images/work-process/small/process1-small.jpg" alt="рабочий процесс"></a></li>
+					<li class="slider-nav-item"><a class="slider-nav-link"><img class="slider-nav-img" src="images/work-process/small/process2-small.jpg" alt="рабочий процесс"></a></li>
+					<li class="slider-nav-item"><a class="slider-nav-link"><img class="slider-nav-img" src="images/work-process/small/process3-small.jpg" alt="рабочий процесс"></a></li>
+				</ul>
+			</div>
+
+
 		</div>
 	</section>
+
+
+
 
 
 
@@ -329,6 +358,11 @@
 <link rel="stylesheet" href="css/remodal.css">
 <link rel="stylesheet" href="css/remodal-default-theme.css">
 
+<link rel="stylesheet" href="css/slick-theme.css">
+<link rel="stylesheet" href="css/slick.css">
+
+<link rel="stylesheet" href="touchTouch/touchTouch.css">
+
 <link rel="stylesheet" href="css/style.css">
 
 
@@ -346,12 +380,14 @@
 <script src="libs/jquery.validate.min.js"></script>
 <script src="libs/masked-input.js"></script>
 <script src="libs/jquery.lazy.min.js"></script>
-
+<script src="libs/slick.js"></script>
+<script src="touchTouch/touchTouch.jquery.js"></script>
+<script src="libs/xui.touchSwipe-1.2.4.js"></script>
 
 <script src="libs/all.js"></script>
 
 
-<script async defer src="https://maps.googleapis.com/maps/api/js?callback=initMap&key=AIzaSyDFnsXtzPC77ZP4pkabK8_yVr5qazdPCjc"> </script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?callback=initMap&key=AIzaSyDFnsXtzPC77ZP4pkabK8_yVr5qazdPCjc"></script>
 
 
 

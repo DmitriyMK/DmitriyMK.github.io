@@ -40,14 +40,68 @@ $(document).ready(function() {
 
   $('.phone__mask').mask('+38(999)999-99-99');
 
+
   $('.counter').counterUp({
     delay: 10,
     time: 1000
   });
 
+  $('.slider-for a').touchTouch();
+
+
+  $('.slider-for').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    dots: false,
+    arrow: true,
+    asNavFor: '.slider-nav',
+    fade: true
+  });
+
+
+  $('.slider-nav').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    asNavFor: '.slider-for',
+    arrows: false,
+    dots: false,
+    focusOnSelect: true,
+
+    responsive: [
+
+      {
+        breakpoint: 576,
+        settings: {
+          slidesToShow: 2,
+          dots: true,
+        }
+      }
+
+
+    ]
+
+
+  });
+
 
 });
 
+$(window).on('resize orientationchange', function() {
+  $('.slider').slick('resize');
+});
+
+
+$(function() {
+  $("#sliderBig").swipe( {
+    //Generic swipe handler for all directions
+    swipe:function(event, direction, distance, duration, fingerCount, fingerData) {
+      $(this).text("You swiped " + direction );  
+    }
+  });
+
+  //Set some options later
+  $("#sliderBig").swipe( {fingers:2} );
+});
 
 
 //E-mail Ajax Send
