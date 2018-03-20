@@ -12,10 +12,15 @@
 	background-color:rgba(0,0,0,0.8);
 	overflow:hidden;
 	display:none;
-	
-	-moz-transition:opacity 1s ease;
-	-webkit-transition:opacity 1s ease;
-	transition:opacity 1s ease;
+
+	-moz-transition:opacity .3s ease;
+	-webkit-transition:opacity .3s ease;
+	transition:opacity .3s ease;
+
+/* 	
+-moz-transition:opacity 1s ease;
+-webkit-transition:opacity 1s ease;
+transition:opacity 1s ease; */
 }
 
 /* This class will trigger the animation */

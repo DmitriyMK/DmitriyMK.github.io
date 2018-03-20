@@ -66,7 +66,6 @@ $(document).ready(function() {
     arrows: false,
     dots: false,
     focusOnSelect: true,
-
     responsive: [
 
       {
@@ -79,12 +78,70 @@ $(document).ready(function() {
 
 
     ]
-
-
   });
+});
 
+
+//E-mail Ajax Send
+/*$(".form__mail, .form__mail-site, .formBox__callback").submit(function() {
+    var th = $(this);
+    $.ajax({
+        type: "POST",
+        url: "js/mail.php",
+        data: th.serialize()
+    }).done(function() {
+        $(th).find('.success').addClass('active').css("display", "block").hide().fadeIn();
+        setTimeout(function() {
+            $(th).find('.success').removeClass('active').fadeOut();
+            th.trigger("reset");
+        }, 3000);
+    });
+    return false;
 
 });
+*/
+
+$("#item1").bind("click", function() {
+  $("li").removeClass("activity");
+  $("#item1").addClass("activity");
+  $("#mainVideo").attr("src", "https://www.youtube.com/embed/YNMNs1h8UfE");
+});
+
+
+$("#item2").bind("click", function() {
+  $("li").removeClass("activity");
+  $("#item2").addClass("activity");
+  $("#mainVideo").attr("src", "https://www.youtube.com/embed/AjtV2tJp28M");
+});
+
+
+$("#item3").bind("click", function() {
+  $("li").removeClass("activity");
+  $("#item3").addClass("activity");
+  $("#mainVideo").attr("src", "https://www.youtube.com/embed/gk9gaqNgfhA");
+});
+
+
+$("#item4").bind("click", function() {
+  $("li").removeClass("activity");
+  $("#item4").addClass("activity");
+  $("#mainVideo").attr("src", "https://www.youtube.com/embed/sGD6whmlyGQ");
+});
+
+
+$("#item5").bind("click", function() {
+  $("li").removeClass("activity");
+  $("#item5").addClass("activity");
+  $("#mainVideo").attr("src", "https://www.youtube.com/embed/SLWLwVKGf1o");
+});
+
+
+$("#item6").bind("click", function() {
+  $("li").removeClass("activity");
+  $("#item6").addClass("activity");
+  $("#mainVideo").attr("src", "https://www.youtube.com/embed/gk9gaqNgfhA");
+});
+
 
 $(window).on('resize orientationchange', function() {
   $('.slider').slick('resize');
@@ -92,15 +149,17 @@ $(window).on('resize orientationchange', function() {
 
 
 $(function() {
-  $("#sliderBig").swipe( {
+  $("#sliderBig").swipe({
     //Generic swipe handler for all directions
-    swipe:function(event, direction, distance, duration, fingerCount, fingerData) {
-      $(this).text("You swiped " + direction );  
+    swipe: function(event, direction, distance, duration, fingerCount, fingerData) {
+      $(this).text("You swiped " + direction);
     }
   });
 
   //Set some options later
-  $("#sliderBig").swipe( {fingers:2} );
+  $("#sliderBig").swipe({
+    fingers: 2
+  });
 });
 
 
@@ -126,96 +185,3 @@ $("#modal-recieve-form").validate({
     return false;
   }
 });
-
-
-
-function initMap() {
-
-  var latlng = new google.maps.LatLng(50.4301508, 30.4737559);
-  var settings = {
-    zoom: 17,
-    center: latlng,
-    center: {
-      lat: 50.430189,
-      lng: 30.47319999
-    },
-    mapTypeControl: true,
-    mapTypeControlOptions: {
-      style: google.maps.MapTypeControlStyle.DROPDOWN_MENU
-    },
-    scrollwheel: false,
-    disableDoubleClickZoom: true,
-    navigationControlOptions: {
-      style: google.maps.NavigationControlStyle.SMALL
-    },
-    mapTypeId: google.maps.MapTypeId.ROADMAP,
-    styles:
-
-
-      [{
-      "stylers": [{
-        "saturation": -100
-      }, {
-        "lightness": -25
-      }]
-    }, {
-      "elementType": "geometry.fill",
-      "stylers": [{
-        "lightness": 30
-      }]
-    }, {
-      "featureType": "administrative.land_parcel",
-      "elementType": "labels",
-      "stylers": [{
-        "visibility": "off"
-      }]
-    }, {
-      "featureType": "poi",
-      "elementType": "labels.text",
-      "stylers": [{
-        "visibility": "off"
-      }]
-    }, {
-      "featureType": "road",
-      "stylers": [{
-        "color": "#ffffff"
-      }]
-    }, {
-      "featureType": "road",
-      "elementType": "labels.text",
-      "stylers": [{
-        "color": "#000000"
-      }, {
-        "weight": 0.5
-      }]
-    }, {
-      "featureType": "road.local",
-      "elementType": "labels",
-      "stylers": [{
-        "visibility": "off"
-      }]
-    }]
-
-  };
-  var map = new google.maps.Map(document.getElementById("google-map"), settings);
-  var myLatlng = new google.maps.LatLng(50.4301508, 30.47375579);
-
-  var myOptions = {
-    /*zoom: 10,*/
-    center: myLatlng,
-    scrollwheel: false,
-    disableDoubleClickZoom: true,
-    mapTypeId: google.maps.MapTypeId.ROADMAP
-  }
-  var image = 'images/mark.png';
-  var beachMarker = new google.maps.Marker({
-    position: {
-      lat: 50.4301508,
-      lng: 30.47375579
-    },
-    map: map,
-    icon: image
-      // title: 'Push-k Solutions'
-  });
-
-};
