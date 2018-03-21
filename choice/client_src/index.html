@@ -19,7 +19,7 @@
 
 <body>
 
-	<header class="header">
+	<header class="header" id="header">
 		<div class="container">
 			<div class="header-top">
 				<div class="row">
@@ -31,11 +31,11 @@
 					<div class="hide-mb col-md-6">
 						<nav>
 							<ul class="header__list">
-								<li class="header__item"><a class="header__link srolling__link" href="#">Главная</a></li>
-								<li class="header__item"><a class="header__link srolling__link" href="#">Преимущества</a></li>
-								<li class="header__item"><a class="header__link srolling__link" href="#">О нас</a></li>
-								<li class="header__item"><a class="header__link srolling__link" href="#">Отзывы</a></li>
-								<li class="header__item"><a class="header__link srolling__link" href="#">Контакты</a></li>
+								<li class="header__item"><a class="header__link srolling__link" href="#header">Главная</a></li>
+								<li class="header__item"><a class="header__link srolling__link" href="#advantages">Преимущества</a></li>
+								<li class="header__item"><a class="header__link srolling__link" href="#about">О нас</a></li>
+								<li class="header__item"><a class="header__link srolling__link" href="#review">Отзывы</a></li>
+								<li class="header__item"><a class="header__link srolling__link" href="#contact">Контакты</a></li>
 							</ul>
 						</nav>
 					</div>
@@ -71,7 +71,7 @@
 
 
 
-	<section class="causes">
+	<section class="causes" id="advantages">
 		<div class="container">
 			<div class="row">
 				<div class="box">
@@ -205,7 +205,7 @@
 
 
 
-	<section class="about">
+	<section class="about" id="about">
 		<div class="container">
 			<div class="row">
 				<div class="box">
@@ -320,7 +320,7 @@
 
 
 
-	<section class="partners">
+	<section class="partners" id="review">
 		<div class="container">
 			<div class="partners__box">
 				<h2 class="section__title">Мнения наших партнеров</h2>
@@ -486,26 +486,53 @@
 
 
 
-	<section class="contact">
+	<section class="contact" id="contact">
 		<div class="container">
-			<div class="contact__box">	
-				<h2 class="section__title contact__title">Контакты</h2>
-				<h3 class="backText">Контакты</h3>
+			<h2 class="section__title contact__title">Контакты</h2>
+			<h3 class="backText">Контакты</h3>
 
-				<ul class="contact__list">
-					<li class="contact__item items"><span class="icons"><img src="images/location.png" alt="адрес"></span><address class="contact__adress">г. Киев, Проспект Победы, 67, <br>
-					корпус F, офис 4</address></li>
-					<li class="contact__item"><span class="icons"><img src="images/phone.png" alt="телефон"></span><a class="contact__link" href="tel:+380442061044">+38 (044) 206-10-44</a></li> 
-					<li class="contact__item mail items"><span class="icons"><img src="images/mail.png" alt="email"></span><a class="contact__link" href="mailto:office@choice.ua">office@choice.ua</a></li>
-				</ul>
+			
 
-
+			<div class="map" id="google-map">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2564.821775876137!2d36.286027315715025!3d49.99595077941528!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4127a0a5e0d164b3%3A0x2931a76a6c469e20!2z0YPQuy4g0KLRjtGA0LjQvdGB0LrQsNGPLCA2Niwg0KXQsNGA0YzQutC-0LIsINCl0LDRgNGM0LrQvtCy0YHQutCw0Y8g0L7QsdC70LDRgdGC0YwsIDYxMDAw!5e0!3m2!1sru!2sua!4v1519502331046" allowfullscreen>
+				</iframe>
 			</div>
 
-
+			<div class="contact__box">
+				<ul class="contact__list">
+					<li class="contact__item"><span class="contact-icons"><img src="images/location.png" alt="адрес"></span>г. Киев, Проспект Победы, 67, <br>
+					корпус F, офис 4</li>
+					<li class="contact__item"><span class="contact-icons"><img src="images/phone.png" alt="телефон"></span><a class="contact__link" href="tel:+380442061044">+38 (044) 206-10-44</a></li> 
+					<li class="contact__item mail items"><span class="contact-icons"><img src="images/mail.png" alt="email"></span><a class="contact__link" href="mailto:office@choice.ua">office@choice.ua</a></li>
+				</ul>
+				<p class="contact__ask">Остались вопросы?</p>
+				<p class="contact__text">Мы Вам перезвоним, чтобы <br>ответить на них в течение 5 минут..</p>
+				<button class="btn btn-contact">Присоединиться к нам</button>
+			</div>
 
 		</div>
 	</section>
+
+
+
+
+
+	<footer class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-6">
+					<a class="logo" href="index.html"><img src="images/logo-end.png" alt="Choice"></a>
+				</div>	
+				<div class="col-sm-6 ">
+					<div class="agency">
+						<a href="http://landingpage.push-k.ua/">Создание сайтов</a> 
+						<p>PUSH-K Solutions</p>
+					</div>
+				</div>	
+			</div>
+			<p class="copyright">©2017</p>
+		</div>
+	</footer>
 
 
 
@@ -576,7 +603,8 @@
 <script src="libs/all.js"></script>
 
 
-<!-- <script async defer src="https://maps.googleapis.com/maps/api/js?callback=initMap&key=AIzaSyDFnsXtzPC77ZP4pkabK8_yVr5qazdPCjc"></script> -->
+<script async defer src="https://maps.googleapis.com/maps/api/js?callback=initMap&key=AIzaSyDFnsXtzPC77ZP4pkabK8_yVr5qazdPCjc"></script>
+
 
 
 
