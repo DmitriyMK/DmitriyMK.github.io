@@ -36,6 +36,10 @@
 	@media @desktop-xll {
 
 	}
+	.menuWrap {
+		max-width: 1200px;
+		margin: auto;
+	}
 	&-top {
 		color: #fff;
 		font-size: 16px;
@@ -84,12 +88,12 @@
 			transition: transform 0.1s;
 		}
 
-		&:hover, &:active {
+		&:hover, &:focus {
 			&:before{
 				background: #fff;
 				transform: scale3d(1, 1, 1);
-	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-	transition-duration: 0.3s;
+				transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+				transition-duration: 0.3s;
 			}
 		}
 	}
@@ -107,11 +111,17 @@
 		}
 	}
 	&__btn {
-		padding: 0 20px;
+		padding: 0 15px;
 		float: right;
 		display: none;
 		@media @tablet {
 			display: inline-block;
+		}
+	}
+	.btn-top {
+		padding: 0 10px;
+		@media @desktop-xl {
+			padding: 0 30px;
 		}
 	}
 	.hide-mb {
@@ -211,4 +221,20 @@
 
 
 }
+
+#fixedTopMenu.fixed{
+	position: fixed;
+	padding: 0 15px;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background: #131313;
+	z-index: 3000;
+	animation: smoothScroll 1s forwards;
+	.logo__img {
+		max-width: 75px;
+	}
+}
+
+
 

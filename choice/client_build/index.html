@@ -21,41 +21,43 @@
 
 	<header class="header" id="header">
 		<div class="container">
-			<div class="header-top">
-				<div class="row">
+			<div class="header-top" id="fixedTopMenu">
+				<div class="menuWrap">
+					<div class="row">
 
-					<div class="col-sm-2">
-						<a class="header__logo" href="index.html"><img src="images/logo.png" alt="Choice"></a>
-					</div>
+						<div class="col-sm-2">
+							<a class="header__logo" href="index.html"><img src="images/logo.png" alt="Choice"></a>
+						</div>
 
-					<div class="hide-mb col-md-6">
-						<nav>
-							<ul class="header__list">
-								<li class="header__item"><a class="header__link srolling__link" href="#header">Главная</a></li>
-								<li class="header__item"><a class="header__link srolling__link" href="#advantages">Преимущества</a></li>
-								<li class="header__item"><a class="header__link srolling__link" href="#about">О нас</a></li>
-								<li class="header__item"><a class="header__link srolling__link" href="#review">Отзывы</a></li>
-								<li class="header__item"><a class="header__link srolling__link" href="#contact">Контакты</a></li>
-							</ul>
-						</nav>
-					</div>
+						<div class="hide-mb col-md-6">
+							<nav>
+								<ul class="header__list">
+									<li class="header__item"><a class="header__link srolling__link" href="#header">Главная</a></li>
+									<li class="header__item"><a class="header__link srolling__link" href="#advantages">Преимущества</a></li>
+									<li class="header__item"><a class="header__link srolling__link" href="#about">О нас</a></li>
+									<li class="header__item"><a class="header__link srolling__link" href="#review">Отзывы</a></li>
+									<li class="header__item"><a class="header__link srolling__link" href="#contact">Контакты</a></li>
+								</ul>
+							</nav>
+						</div>
 
-					<div class="col-sm-offset-5 col-sm-6 col-sm-offset-4 col-md-4 col-md-offset-0">
+						<div class="col-sm-offset-5 col-sm-6 col-sm-offset-4 col-md-4 col-md-offset-0">
 
-						<div class="header__contact">
-							<ul class="header__contact-list">
-								<li class="header__contact-item">
-									<a href="tel:+380442061044">+38 (044) 206-10-44</a>
-								</li>
-								<li class="header__contact-item">
-									<a href="mailto:office@choice.ua">office@choice.ua</a>
-								</li>
-							</ul>
-							<div class="header__btn">
-								<a class="button btn" data-remodal-target="callback-main" href="#callback-main">Заказать звонок</a>
-							</div>
-						</div>		
+							<div class="header__contact">
+								<ul class="header__contact-list">
+									<li class="header__contact-item">
+										<a href="tel:+380442061044">+38 (044) 206-10-44</a>
+									</li>
+									<li class="header__contact-item">
+										<a href="mailto:office@choice.ua">office@choice.ua</a>
+									</li>
+								</ul>
+								<div class="header__btn">
+									<a class="btn-top button btn " data-remodal-target="callback-main" href="#callback-main">Заказать звонок</a>
+								</div>
+							</div>		
 
+						</div>
 					</div>
 				</div>
 			</div>
@@ -63,7 +65,7 @@
 			<div class="header-center">
 				<h1 class="header__title">СТАНЬТЕ ПАРТНЕРОМ УСПЕШНОЙ <br>МЛМ КОМПАНИИ</h1>
 				<p class="header__subtitle">60 000 сотрудников уже зарабатывают вместе с нами</p>
-				<button class="btn srolling__link">узнать подробнее</button>
+				<a class="button btn srolling__link" href="#advantages">узнать подробнее</a>
 			</div>
 		</div>
 	</header>
@@ -530,7 +532,6 @@
 					</div>
 				</div>	
 			</div>
-			<p class="copyright">©2017</p>
 		</div>
 	</footer>
 

@@ -2393,6 +2393,11 @@ button:hover,
         height: 100vh;
     }
 }
+.header .menuWrap
+{
+    max-width: 1200px;
+    margin: auto;
+}
 .header-top
 {
     font-size: 16px;
@@ -2468,7 +2473,7 @@ button:hover,
     background: transparent;
 }
 .header__link:hover:before,
-.header__link:active:before
+.header__link:focus:before
 {
     -webkit-transition-timing-function: cubic-bezier(.4, 0, .2, 1);
          -o-transition-timing-function: cubic-bezier(.4, 0, .2, 1);
@@ -2507,13 +2512,24 @@ button:hover,
     display: none;
     float: right;
 
-    padding: 0 20px;
+    padding: 0 15px;
 }
 @media only screen and (min-width: 768px)
 {
     .header__btn
     {
         display: inline-block;
+    }
+}
+.header .btn-top
+{
+    padding: 0 10px;
+}
+@media only screen and (min-width: 1200px)
+{
+    .header .btn-top
+    {
+        padding: 0 30px;
     }
 }
 .header .hide-mb
@@ -2641,6 +2657,25 @@ button:hover,
 .header__subtitle
 {
     padding-top: 10px;
+}
+#fixedTopMenu.fixed
+{
+    position: fixed;
+    z-index: 3000;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    padding: 0 15px;
+
+    -webkit-animation: smoothScroll 1s forwards;
+            animation: smoothScroll 1s forwards;
+
+    background: #131313;
+}
+#fixedTopMenu.fixed .logo__img
+{
+    max-width: 75px;
 }
 .causes .box
 {
@@ -4706,7 +4741,7 @@ button:hover,
 }
 .footer .logo
 {
-    line-height: 50px;
+    line-height: 44px;
 }
 .footer .agency
 {
@@ -4724,12 +4759,6 @@ button:hover,
 
         padding: 0;
     }
-}
-.footer .copyright
-{
-    font-size: 14px;
-
-    text-align: center;
 }
 .remodal-first
 {
@@ -5025,6 +5054,32 @@ label
     {
         -webkit-transform: translateY(-7px);
                 transform: translateY(-7px);
+    }
+}
+@-webkit-keyframes smoothScroll
+{
+    0%
+    {
+        -webkit-transform: translateY(-40px);
+                transform: translateY(-40px);
+    }
+    100%
+    {
+        -webkit-transform: translateY(0px);
+                transform: translateY(0px);
+    }
+}
+@keyframes smoothScroll
+{
+    0%
+    {
+        -webkit-transform: translateY(-40px);
+                transform: translateY(-40px);
+    }
+    100%
+    {
+        -webkit-transform: translateY(0px);
+                transform: translateY(0px);
     }
 }
 
