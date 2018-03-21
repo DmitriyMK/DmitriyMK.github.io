@@ -46,7 +46,9 @@ $(document).ready(function() {
     time: 1000
   });
 
-  $('.slider-for a').touchTouch();
+
+
+  $('.linkTouch').touchTouch();
 
 
   $('.slider-for').slick({
@@ -76,9 +78,41 @@ $(document).ready(function() {
         }
       }
 
+    ]
+  });
+
+
+   $('.slider-for-award').slick({
+    slidesToShow: 1,
+    dots: false,
+    arrow: true,
+    asNavFor: '.slider-nav-award',
+    fade: true
+  });
+
+
+  $('.slider-nav-award').slick({
+    slidesToShow: 4,
+    asNavFor: '.slider-for-award',
+    arrows: false,
+    dots: false,
+    focusOnSelect: true,
+    responsive: [
+
+      {
+        breakpoint: 576,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          dots: true,
+        }
+      }
 
     ]
   });
+
+
+
 });
 
 
@@ -149,7 +183,7 @@ $(window).on('resize orientationchange', function() {
 
 
 $(function() {
-  $("#sliderBig").swipe({
+  $("#sliderBig, #sliderBig-award").swipe({
     //Generic swipe handler for all directions
     swipe: function(event, direction, distance, duration, fingerCount, fingerData) {
       $(this).text("You swiped " + direction);
@@ -157,7 +191,7 @@ $(function() {
   });
 
   //Set some options later
-  $("#sliderBig").swipe({
+  $("#sliderBig, #sliderBig-award").swipe({
     fingers: 2
   });
 });

@@ -26,20 +26,55 @@
 	}
 	.list__box {
 		display: flex;
-		justify-content: space-between;
+		flex-wrap: wrap;
+		justify-content: center;
+		@media @mobile {
+
+		}
+		@media @tablet {
+
+		}
+		@media @desktop {
+			flex-wrap: nowrap;
+			justify-content: space-between;
+		}
+		@media @desktop-xl {
+
+		}
+		@media @desktop-xl-2 {
+
+		}
+		@media @desktop-xll {
+
+		}
 	}
 	&__list {
 		display: flex;
-		flex-direction: column;
+		flex-direction: row;
 		justify-content: space-between;
-		height: 350px;
-		margin-top: 60px;
+		margin-top: 15px;
+		@media @mobile {
+
+		}
+		@media @tablet {
+
+		}
+		@media @desktop {
+			flex-direction: column;
+			margin-top: 60px;
+		}
 	}
 	&__item {
 		display: block;
-		width: 170px;
-		height: 113px; 
 		position: relative;
+		margin-left: 5px;
+		margin-right: 5px;
+		@media @desktop {
+			width: 170px;
+			height: 113px;
+			margin-left: 0;
+			margin-right: 0;
+		}
 		&:hover {
 			cursor: pointer;
 			&:before {
@@ -52,8 +87,8 @@
 		&:before {
 			content: '';
 			position: absolute;
-			width: 170px;
-			height: 113px; 
+			width: 100%;
+			height: 100%; 
 			background: rgba(19, 19, 19, .55);
 			transition: all .3s ease; 
 		}
@@ -62,7 +97,7 @@
 			font-family: "fontello";
 			content: '\e80e';
 			position: absolute;
-			width: 170px;
+			width: 100%;
 			height: auto;
 			top: 50%;
 			transform: translateY(-50%);
@@ -75,33 +110,62 @@
 	}
 	&__img {
 		display: block;
+		max-width: 100%;
+		height: auto;
 	}
 }
 
 .activity:after {
-	opacity: 0!important;
+	opacity: 0;
 }
 .activity:before {
 	border: 2px solid @green;
-	background: rgba(19, 19, 19, 0)!important;
+	background: rgba(19, 19, 19, 0);
 }
 
 
 
 .partners__frame {
-	&__list {
-		margin-top: 60px;
+	order: -1;
+	margin-top: 60px;
+	margin-bottom: 15px;
+	width: 100%;
+	box-shadow: 0 -2px 5px 0px rgba(0,0,0,0.3);
+	@media @desktop {
+		order: inherit;
+		margin-bottom: 0;
+		margin-left: 10px;
+		margin-right: 10px;
 	}
-	&__item {
-		width: 570px;
-		height: 350px;
-		iframe {
-			border: none;
-			width: 100%;
-			height: 100%;
-		}
+	iframe {
+		border: none;
+		width: 100%;
+		height: 100%;
 	}
 }
 
+.btn-partners {
+	display: block;
+	margin: 50px auto;
+	color: #fff;
+	&:hover {
+		color: #000;
+	}
+}
 
+.video-responsive { 
+	position: relative; 
+	padding-bottom: 56.25%; 
+	height: 0; 
+	overflow:hidden; 
+} 
+.video-responsive iframe, 
+.video-responsive object, 
+.video-responsive embed {
+	position: absolute; 
+	top: 0; 
+	left: 0; 
+	width: 100%;
+	height: 100%; 
+}
 
