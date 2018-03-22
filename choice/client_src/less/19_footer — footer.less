@@ -18,14 +18,18 @@
 }
 
 .scrollup {
-    width: 37px;
-    height: 84px;
-    position: fixed;
-    bottom: 50px;
-    right: 100px;
-    display: none;
-    text-indent: -9999px;
-    background: url('../images/arrow-top.png') no-repeat;
+	width: 37px;
+	height: 84px;
+	position: fixed;
+	bottom: 50px;
+	right: 15px;
+	display: none;
+	text-indent: -9999px;
+	background: url('../images/arrow-top.png') no-repeat;
+	z-index: 100;
+	@media @tablet {
+		right: 100px;
+	}
 }
 
 .footer {
