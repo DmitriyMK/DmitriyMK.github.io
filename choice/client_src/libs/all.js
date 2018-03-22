@@ -1,16 +1,11 @@
 /*LAZY LOAD*/
 $(function() {
-  $('.lazy').Lazy({
-    // your configuration goes here
-    scrollDirection: 'vertical',
-    effect: 'fadeIn',
-    visibleOnly: true,
-    onError: function(element) {
-      console.log('error loading ' + element.data('src'));
-    }
+  $('.lazy').lazy({
+    effect: "fadeIn",
+    effectTime: 2000,
+    threshold: 0
   });
 });
-
 
 
 $(document).ready(function() {
@@ -112,13 +107,13 @@ $(document).ready(function() {
     focusOnSelect: true,
     responsive: [
 
-      {
-        breakpoint: 576,
-        settings: {
-          slidesToShow: 2,
-          dots: true,
-        }
+    {
+      breakpoint: 576,
+      settings: {
+        slidesToShow: 2,
+        dots: true,
       }
+    }
 
     ]
   });
@@ -141,14 +136,14 @@ $(document).ready(function() {
     focusOnSelect: true,
     responsive: [
 
-      {
-        breakpoint: 576,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2,
-          dots: true,
-        }
+    {
+      breakpoint: 576,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2,
+        dots: true,
       }
+    }
 
     ]
   });
@@ -287,7 +282,7 @@ function initMap() {
     styles:
 
 
-      [{
+    [{
       "elementType": "geometry",
       "stylers": [{
         "color": "#f5f5f5"
@@ -413,6 +408,6 @@ function initMap() {
     map: map,
     icon: image
       // title: 'Push-k Solutions'
-  });
+    });
 
 };
