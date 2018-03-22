@@ -2455,7 +2455,7 @@ button:hover,
 .header__link:before
 {
     position: absolute;
-    bottom: -25px;
+    bottom: -28px;
     left: 0;
 
     width: 100%;
@@ -2673,9 +2673,9 @@ button:hover,
 
     background: #131313;
 }
-#fixedTopMenu.fixed .logo__img
+#fixedTopMenu.fixed:after
 {
-    max-width: 75px;
+    display: none;
 }
 .causes .box
 {
@@ -4580,6 +4580,7 @@ button:hover,
     z-index: 10;
 
     margin: auto;
+    margin-top: 30px;
 
     background: #fff;
     -webkit-box-shadow: 0 0 7.38px 1.62px rgba(0, 0, 0, .1);
@@ -4616,6 +4617,8 @@ button:hover,
         position: absolute;
         top: 140px;
         left: 0;
+
+        margin-top: inherit;
     }
 }
 @media only screen and (min-width: 1200px)
@@ -4723,6 +4726,21 @@ button:hover,
 
     border: none;
     border: 0;
+}
+.scrollup
+{
+    position: fixed;
+    right: 100px;
+    bottom: 50px;
+
+    display: none;
+
+    width: 37px;
+    height: 84px;
+
+    text-indent: -9999px;
+
+    background: url('../images/arrow-top.png') no-repeat;
 }
 .footer
 {
@@ -4952,58 +4970,67 @@ label
 
     text-align: center;
 
-    background: #1a1c1e;
+    background: #fff;
 }
 .formBox__title
 {
-    font-family: 'Roboto Condensed', sans-serif;
-    font-size: 26px;
+    font-size: 22px;
     font-weight: 700;
 
+    padding-bottom: 15px;
+
     text-transform: uppercase;
+
+    color: #000;
 }
 .formBox__text
 {
-    font-size: 20px;
-    font-weight: 400;
+    font-size: 18px;
 
-    padding: 15px;
+    display: block;
+
+    padding-bottom: 15px;
+    padding-left: 0;
+
+    color: #000;
+}
+.formBox .form__wrap
+{
+    margin: 15px 0;
+
+    border-bottom: 1px solid #888;
 }
 .formBox .form__line
 {
-    font-family: 'Roboto Condensed', sans-serif;
-    font-size: 22px;
-    font-weight: 400;
-    line-height: 1.2;
+    font-size: 18px;
 
-    width: 90%;
-    margin: 10px auto;
-    padding: 15px;
+    width: 100%;
+    padding-bottom: 7px;
+    padding-left: 15px;
 
-    color: #000;
     border: none!important;
-    background: #fff;
+    outline: none;
 }
-.formBox .btn__callback
+.formBox .button
 {
-    font-size: 20px;
-    font-weight: 700;
+    margin: 15px 0 5px 0;
 
-    width: 90%;
-    margin: 10px auto;
-    padding: 10px;
-
-    -webkit-transition: background-color .3s ease;
-         -o-transition: background-color .3s ease;
-            transition: background-color .3s ease;
-    text-transform: uppercase;
+    color: #fff;
+}
+.formBox .button:hover
+{
+    color: #000;
+}
+.video
+{
+    max-width: 780px;
+}
+.video iframe
+{
+    width: 100%;
+    height: 100%;
 
     border: none;
-    background: #89ff00;
-}
-.formBox .btn__callback:hover
-{
-    background: #fff;
 }
 .thanks__title
 {

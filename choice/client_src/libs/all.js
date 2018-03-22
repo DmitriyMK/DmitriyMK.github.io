@@ -36,6 +36,7 @@ $(document).ready(function() {
 
 
 /*FIXED SCROLL FOR MENU*/
+$(document).ready(function() {
 
   $(window).scroll(function() {
     if ($(this).scrollTop() > 600) {
@@ -45,6 +46,28 @@ $(document).ready(function() {
     }
   });
 
+});
+
+/*FIXED SCROLL TO TOP*/
+
+$(document).ready(function() {
+
+  $(window).scroll(function() {
+    if ($(this).scrollTop() > 400) {
+      $('.scrollup').fadeIn();
+    } else {
+      $('.scrollup').fadeOut();
+    }
+  });
+
+  $('.scrollup').click(function() {
+    $("html, body").animate({
+      scrollTop: 0
+    }, 600);
+    return false;
+  });
+
+});
 
 $(document).ready(function() {
 
@@ -56,6 +79,7 @@ $(document).ready(function() {
       scrollTop: $(d).offset().top
     }, t);
   });
+
 
   $('.phone__mask').mask('+38(999)999-99-99');
 
@@ -191,7 +215,7 @@ $(function() {
 
   //Set some options later
   $("#sliderBig, #sliderBig-award").swipe({
-    fingers: 2
+    fingers: 3
   });
 });
 
@@ -380,7 +404,7 @@ function initMap() {
     disableDoubleClickZoom: true,
     mapTypeId: google.maps.MapTypeId.ROADMAP
   }
-  var image = '../images/mark.png';
+  var image = 'images/mark.png';
   var beachMarker = new google.maps.Marker({
     position: {
       lat: 50.45843182,

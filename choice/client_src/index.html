@@ -13,7 +13,11 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<link rel="shortcut icon" href="favicons.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" sizes="76x76" href="images/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+	<link rel="manifest" href="images/favicon/site.webmanifest">
+	<link rel="mask-icon" href="images/favicon/safari-pinned-tab.svg" color="#5bbad5">
 	
 </head>
 
@@ -53,7 +57,7 @@
 									</li>
 								</ul>
 								<div class="header__btn">
-									<a class="btn-top button btn " data-remodal-target="callback-main" href="#callback-main">Заказать звонок</a>
+									<a class="btn-top button btn " data-remodal-target="callback" href="#callback">Заказать звонок</a>
 								</div>
 							</div>		
 
@@ -105,7 +109,7 @@
 							<p class="list__text">Возможность работы удаленно в интернете.</p>	
 						</li>
 					</ul>
-					<button class="btn btn-causes">Присоединиться к нам</button>
+					<button class="btn btn-causes" data-remodal-target="join">Присоединиться к нам</button>
 				</div>
 			</div>
 		</div>
@@ -160,7 +164,7 @@
 					<blockquote>
 						<p class="content__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem nonummy nibh euismod tincidunt ut lacreet dolore magna aliguam erat volutpat. Ut wisis enim ad minim veniam, quis nostrud exerci tution ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
 					</blockquote>
-					<a href="#" class="content__btn">СМОТРЕТЬ ВИДЕО <i class="icons icon-play-2"></i></a>
+					<a href="#" class="content__btn" data-remodal-target="video">СМОТРЕТЬ ВИДЕО <i class="icons icon-play-2"></i></a>
 				</div>
 			</div>
 		</div>
@@ -183,9 +187,10 @@
 				<div class="knowMore__form">
 					<form action="mail.php" method="post" class="form white-popup form-validate" id="modal-recieve-form" name="main-form">
 						<!-- Hidden Required Fields -->
-						<input type="hidden" name="admin_email" value="">
-						<input type="hidden" name="whatform" value=" > ">
-						<!-- End Hidden Required Fields -->
+						<input type="hidden" name="project_name" value="Choice">
+						<input type="hidden" name="admin_email" value="dm@push-k.ua">
+						<input type="hidden" name="form_subject" value="Consult about Choice">
+						<!-- END Hidden Required Fields -->
 						<p class="formBox__title">Заполните форму</p>
 						<p class="formBox__text">И наш менеджер свяжется с Вами в течение 10 минут.</p>
 						<div class="form__wrap">
@@ -276,7 +281,7 @@
 					</li>
 				</ul>
 			</div>
-			<button class="btn btn-team">Присоединиться к нам</button>
+			<button class="btn btn-team" data-remodal-target="join">Присоединиться к нам</button>
 		</div>
 	</section>
 
@@ -294,12 +299,18 @@
 
 			<div class="slider__big" id="sliderBig">
 				<ul class="slider slider-for">
-					<li class="slider-for-item"><a href="images/work-process/original/1.jpg" class="slider-for-link linkTouch"><img class="slider-for-img" src="images/work-process/process1.jpg" alt="рабочий процесс"></a></li>
-					<li class="slider-for-item"><a href="images/work-process/original/2.jpg" class="slider-for-link linkTouch"><img class="slider-for-img" src="images/work-process/process2.jpg" alt="рабочий процесс"></a></li>
-					<li class="slider-for-item"><a href="images/work-process/original/3.jpg" class="slider-for-link linkTouch"><img class="slider-for-img" src="images/work-process/process3.jpg" alt="рабочий процесс"></a></li>
-					<li class="slider-for-item"><a href="images/work-process/original/1.jpg" class="slider-for-link linkTouch"><img class="slider-for-img" src="images/work-process/process1.jpg" alt="рабочий процесс"></a></li>
-					<li class="slider-for-item"><a href="images/work-process/original/2.jpg" class="slider-for-link linkTouch"><img class="slider-for-img" src="images/work-process/process2.jpg" alt="рабочий процесс"></a></li>
-					<li class="slider-for-item"><a href="images/work-process/original/3.jpg" class="slider-for-link linkTouch"><img class="slider-for-img" src="images/work-process/process3.jpg" alt="рабочий процесс"></a></li>
+					<li class="slider-for-item"><a href="images/work-process/original/1.jpg" class="slider-for-link linkTouch"><img class="slider-for-img" src="images/work-process/process1.jpg" alt="рабочий процесс"></a>
+					</li>
+					<li class="slider-for-item"><a href="images/work-process/original/2.jpg" class="slider-for-link linkTouch"><img class="slider-for-img" src="images/work-process/process2.jpg" alt="рабочий процесс"></a>
+					</li>
+					<li class="slider-for-item"><a href="images/work-process/original/3.jpg" class="slider-for-link linkTouch"><img class="slider-for-img" src="images/work-process/process3.jpg" alt="рабочий процесс"></a>
+					</li>
+					<li class="slider-for-item"><a href="images/work-process/original/1.jpg" class="slider-for-link linkTouch"><img class="slider-for-img" src="images/work-process/process1.jpg" alt="рабочий процесс"></a>
+					</li>
+					<li class="slider-for-item"><a href="images/work-process/original/2.jpg" class="slider-for-link linkTouch"><img class="slider-for-img" src="images/work-process/process2.jpg" alt="рабочий процесс"></a>
+					</li>
+					<li class="slider-for-item"><a href="images/work-process/original/3.jpg" class="slider-for-link linkTouch"><img class="slider-for-img" src="images/work-process/process3.jpg" alt="рабочий процесс"></a>
+					</li>
 				</ul>
 			</div>
 
@@ -355,7 +366,7 @@
 
 				</div>	
 			</div>
-			<button class="btn btn-partners">Присоединиться к нам</button>
+			<button class="btn btn-partners" data-remodal-target="join">Присоединиться к нам</button>
 		</div>
 	</section>
 
@@ -509,7 +520,7 @@
 				</ul>
 				<p class="contact__ask">Остались вопросы?</p>
 				<p class="contact__text">Мы Вам перезвоним, чтобы <br>ответить на них в течение 5 минут..</p>
-				<button class="btn btn-contact">Присоединиться к нам</button>
+				<button class="btn btn-contact" data-remodal-target="join">Присоединиться к нам</button>
 			</div>
 
 		</div>
@@ -532,79 +543,112 @@
 					</div>
 				</div>	
 			</div>
+			<a href="#" class="scrollup"></a>
 		</div>
 	</footer>
 
 
 
 
-<!-- 		<div class="remodal formBox" data-remodal-id="callback-last"> 
-	<button data-remodal-action="close" class="remodal-close" aria-label="Clo\\\\\\se"></button>
-	<form action="mail.php" method="post" class="form__mail-3 white-popup form-validate" id="modal-recieve-form-3" name="main-form">
-		Hidden Required Fields
-		<input type="hidden" name="admin_email" value="webproject@push-k.ua">
-		<input type="hidden" name="whatform" value="Вопрос по CMS > CMS">
-		End Hidden Required Fields
-		<p class="formBox__title">Заполните форму</p>
-		<p class="formBox__text">И наш менеджер свяжется с Вами в течение 10 минут.</p>
-		<input class="form__line name" type="text" name="Имя&nbsp;покупателя" placeholder="Ваше имя" required>
-		<input class="form__line phone__mask" type="tel" name="Телефон&nbsp;покупателя" placeholder="Ваш телефон" required>
-		<input type="submit" class="btn__callback" value="Заказать звонок"> 
-	</form>
-</div>
--->
+	<div class="remodal formBox" data-remodal-id="callback"> 
+		<button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
+		<form action="mail.php" method="post" class="form form-validate" id="modal-recieve" name="main-form">
+			<!-- Hidden Required Fields -->
+			<input type="hidden" name="project_name" value="Choice">
+			<input type="hidden" name="admin_email" value="dm@push-k.ua">
+			<input type="hidden" name="form_subject" value="Обратный звонок">
+			<!-- END Hidden Required Fields -->
+			<p class="formBox__title">Заполните форму</p>
+			<p class="formBox__text">И наш менеджер свяжется с Вами в <br> течение 10 минут.</p>
+			<div class="form__wrap">
+				<input class="form__line name" type="text" name="Имя&nbsp;покупателя" placeholder="Ваше имя" required>
+			</div>
+			<div class="form__wrap">
+				<input class="form__line phone__mask" type="tel" name="Телефон&nbsp;покупателя" placeholder="Ваш телефон" required>
+			</div>
+			<input type="submit" class="button" value="Заказать звонок"> 
+		</form>
+	</div>
+
+
+	<div class="remodal formBox" data-remodal-id="join"> 
+		<button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
+		<form action="mail.php" method="post" class="form form-validate" id="modal-recieve" name="main-form">
+			<!-- Hidden Required Fields -->
+			<input type="hidden" name="project_name" value="Choice">
+			<input type="hidden" name="admin_email" value="dm@push-k.ua">
+			<input type="hidden" name="form_subject" value="Присоединиться к нам">
+			<!-- END Hidden Required Fields -->
+			<p class="formBox__title">Заполните форму</p>
+			<p class="formBox__text">И наш менеджер свяжется с Вами в <br> течение 10 минут.</p>
+			<div class="form__wrap">
+				<input class="form__line name" type="text" name="Имя&nbsp;покупателя" placeholder="Ваше имя" required>
+			</div>
+			<div class="form__wrap">
+				<input class="form__line phone__mask" type="tel" name="Телефон&nbsp;покупателя" placeholder="Ваш телефон" required>
+			</div>
+			<input type="submit" class="button" value="Заказать звонок"> 
+		</form>
+	</div>
+
+
+	<div class="remodal video" data-remodal-id="video"> 
+		<button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
+		<div class="video-responsive">
+			<iframe src="https://www.youtube.com/embed/3W2vlAuVhOQ?ecver=1" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+		</div>
+	</div>
+
+
+	<!--  THANKS-->
+	<div class="remodal remodal-common"  data-remodal-id="modal-thanks" >
+		<button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
+		<h3 class="thanks__title">Благодарим Вас!</h3>
+		<p class="thanks__text">Мы свяжемся с Вами <br>в ближайшее время.</p>
+	</div>
 
 
 
-<!--  THANKS-->
-<div class="remodal remodal-common"  data-remodal-id="modal-thanks" >
-	<button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
-	<h3 class="thanks__title">Благодарим Вас!</h3>
-	<p class="thanks__text">Мы свяжемся с Вами <br>в ближайшее время.</p>
-</div>
 
 
 
 
 
 
+	<link rel="stylesheet" href="css/remodal.css">
+	<link rel="stylesheet" href="css/remodal-default-theme.css">
+
+	<link rel="stylesheet" href="css/slick-theme.css">
+	<link rel="stylesheet" href="css/slick.css">
+
+	<link rel="stylesheet" href="touchTouch/touchTouch.css">
+
+	<link rel="stylesheet" href="css/style.css">
 
 
 
-<link rel="stylesheet" href="css/remodal.css">
-<link rel="stylesheet" href="css/remodal-default-theme.css">
+	<!-- Load Scripts -->
+	<script src='https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js?ver=3.9.2'></script>
 
-<link rel="stylesheet" href="css/slick-theme.css">
-<link rel="stylesheet" href="css/slick.css">
+	<script src="libs/jquery.nicescroll.min.js"></script>
 
-<link rel="stylesheet" href="touchTouch/touchTouch.css">
-
-<link rel="stylesheet" href="css/style.css">
+	<script src="libs/waypoints.min.js"></script>
+	<script src="libs/jquery.counterup.min.js"></script>
 
 
+	<script src="libs/remodal.min.js"></script>
+	<script src="libs/jquery.validate.min.js"></script>
+	<script src="libs/masked-input.js"></script>
+	<script src="libs/jquery.lazy.min.js"></script>
+	<script src="libs/slick.js"></script>
+	<script src="touchTouch/touchTouch.jquery.js"></script>
 
-<!-- Load Scripts -->
-<script src='https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js?ver=3.9.2'></script>
+	<script src="libs/xui.touchSwipe-1.2.4.js"></script>
 
-<script src="libs/jquery.nicescroll.min.js"></script>
-
-<script src="libs/waypoints.min.js"></script>
-<script src="libs/jquery.counterup.min.js"></script>
-
-
-<script src="libs/remodal.min.js"></script>
-<script src="libs/jquery.validate.min.js"></script>
-<script src="libs/masked-input.js"></script>
-<script src="libs/jquery.lazy.min.js"></script>
-<script src="libs/slick.js"></script>
-<script src="touchTouch/touchTouch.jquery.js"></script>
-
-<script src="libs/xui.touchSwipe-1.2.4.js"></script>
-
-<script src="libs/all.js"></script>
+	<script src="libs/all.js"></script>
 
 
-<script async defer src="https://maps.googleapis.com/maps/api/js?callback=initMap&key=AIzaSyDFnsXtzPC77ZP4pkabK8_yVr5qazdPCjc"></script>
+	<script async defer src="https://maps.googleapis.com/maps/api/js?callback=initMap&key=AIzaSyDFnsXtzPC77ZP4pkabK8_yVr5qazdPCjc"></script>
 
 
 
