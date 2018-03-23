@@ -1615,6 +1615,11 @@ header, footer {
 	}
 }
 */
+section {
+    background: #fafafa;
+    height: 100vh;
+    color: #000;
+}
 /* .footer {
 	padding: 15px 0 30px 0;
 	text-align: center;
