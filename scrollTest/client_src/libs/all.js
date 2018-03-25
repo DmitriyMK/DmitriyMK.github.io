@@ -20,6 +20,49 @@ $(document).ready(function() {
 });
 
 
+
+// When the DOM is ready
+$(function() {
+  
+  // Init ScrollMagic Controller
+  var scrollMagicController = new ScrollMagic();
+  
+  // Animation will be ignored and replaced by scene value in this example
+  var tween = TweenMax.staggerFromTo('.animation', 0.5,
+    {
+     
+    },
+    {
+
+      scale: 1.2,
+      left: 400,
+      
+/*      rotation: 360*/
+    },
+    0.9
+);
+  
+  // Create the Scene and trigger when visible
+  var scene = new ScrollScene({
+    triggerElement: '#scene',
+    offset: 100, // start scene after scrolling for 100px
+    duration: 500 /* How many pixels to scroll / animate */
+  })
+
+
+
+  .setTween(tween)
+  .addTo(scrollMagicController);
+  
+  // Add debug indicators fixed on right side
+   scene.addIndicators();
+  
+});
+
+
+
+
+
 /*var controller = new ScrollMagic.Controller();
 
 var scene = new ScrollMagic.Scene({
