@@ -712,14 +712,14 @@ button {
     .nav__item:last-child:hover {
       border-right: none; }
   .nav__link {
-    padding: 10px 5px;
+    padding: 15px 5px;
     position: relative;
     display: block;
     width: 100%;
     height: 100%; }
 
 .center-header {
-  height: 83vh;
+  height: 85vh;
   padding-top: 35px;
   background-repeat: no-repeat;
   background-position: center center;
