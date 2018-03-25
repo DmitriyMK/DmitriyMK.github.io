@@ -719,6 +719,8 @@ button {
     height: 100%; }
 
 .center-header {
+  height: 83vh;
+  padding-top: 35px;
   background-repeat: no-repeat;
   background-position: center center;
   -webkit-background-size: cover;
@@ -803,7 +805,9 @@ button {
           -webkit-border-radius: 50%;
                   border-radius: 50%;
           border: 3px solid #7ab13d;
-          z-index: 3; }
+          z-index: 3;
+          -webkit-box-shadow: 2px 3px 4px 0px rgba(0, 0, 0, 0.8);
+                  box-shadow: 2px 3px 4px 0px rgba(0, 0, 0, 0.8); }
     .center-header-box .btn-green {
       position: relative;
       display: block;
