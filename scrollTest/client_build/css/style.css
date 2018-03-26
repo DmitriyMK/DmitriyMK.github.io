@@ -1635,10 +1635,102 @@ main {
 	}
 }
 */
+/* .photo {
+	max-width: 100vw;
+	height: 400vh;
+	background: url(../images/pixelPerfect.jpg)no-repeat center;
+	background-size: contain; 
+} */
 section {
     background: #fafafa;
-    height: 100vh;
     color: #000;
+}
+.wrapper {
+    width: 90%;
+    margin: 0 5%;
+}
+#main {
+    position: relative;
+    background: #fff;
+}
+#intro {
+    height: 100vh;
+    background: -webkit-radial-gradient(circle, #74a6ee 0%, #485cb2 100%);
+    background:      -o-radial-gradient(circle, #74a6ee 0%, #485cb2 100%);
+    background:         radial-gradient(circle, #74a6ee 0%, #485cb2 100%);
+    text-align: center;
+    color: #fff;
+    position: relative;
+}
+#intro .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+}
+.project {
+    text-align: center;
+    padding: 200px 0;
+    border-bottom: 1px #ebebeb solid;
+    opacity: 0;
+    -webkit-transform: translateY(50px);
+        -ms-transform: translateY(50px);
+            transform: translateY(50px);
+    -webkit-transition: all 1s ease-out;
+         -o-transition: all 1s ease-out;
+            transition: all 1s ease-out;
+}
+.project.fade-in {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+        -ms-transform: translateY(0);
+            transform: translateY(0);
+}
+.project img {
+    width: 180px;
+    height: 180px;
+}
+.project p {
+    max-width: 300px;
+    margin: 0 auto;
+    color: #294d67;
+}
+#project01 h2 {
+    color: #3db3ce;
+}
+#project02 h2 {
+    color: #75c695;
+}
+#project03 h2 {
+    color: #f5876f;
+}
+.bcg-parallax {
+    padding: 150px 0;
+    color: #fff;
+    background-color: #000;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+.bcg {
+    background: url(../images/img_background.jpg) no-repeat;
+    background-size: cover;
+    position: absolute;
+    width: 100%;
+    height: 140%;
+    top: 0;
+    z-index: 1;
+    opacity: 0.7;
+}
+.content-wrapper {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1140px;
+    position: relative;
+    z-index: 2;
+    text-transform: uppercase;
 }
 /* .footer {
 	padding: 15px 0 30px 0;
