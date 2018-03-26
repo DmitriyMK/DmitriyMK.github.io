@@ -1,20 +1,7 @@
-$(document).ready(function() {
+/*$(document).ready(function() {
 
   // Init ScrollMagic
-  var controller = new ScrollMagic.Controller();
-
-
-
-  var pinToScene = new ScrollMagic.Scene({
-      triggerElement: '.contentImg',
-      triggerHook: 0,
-      duration: '30%'
-    })
-    .setPin('.contentImg2', {pushFollowers: false})
-    .addTo(controller);
-
-
-  //pin again
+  var controller = new ScrollMagic.Controller();*/
 
 
 
@@ -36,14 +23,16 @@ $(document).ready(function() {
       triggerHook: 0.4
     })
     .setPin('#intro', {pushFollowers: false})
-    .addTo(controller);*/
+    .addTo(controller);
+
+    */
 
 
     //parallax scene
-    var parallaxTl = new TimelineMax();
-  parallaxTl
-      .from('.content-wrapper', 0.4, {autoAlpha: 0, ease:Power0.easeNone}, 0.4)
-      .from('.bcg', 2, {y: '-50%', ease:Power0.easeNone}, 0);
+/*    var parallaxTl = new TimelineMax();
+    parallaxTl
+    .from('.content-wrapper', 0.4, {autoAlpha: 0, ease:Power0.easeNone}, 0.4)
+    .from('.bcg', 2, {y: '-50%', ease:Power0.easeNone}, 0);
 
 
     var slideParallaxScene = new ScrollMagic.Scene({
@@ -54,6 +43,7 @@ $(document).ready(function() {
 
     .setTween(parallaxTl)
     .addTo(controller);
+
 
 
   //build loop for all project
@@ -69,11 +59,11 @@ $(document).ready(function() {
     .setClassToggle(this, 'fade-in') // add class to project01
 
     .addIndicators({
-        name: 'fade scene',
-        colorTrigger: 'black',
-        indent: 200,
-        colorStart: '#75C695',
-        colorEnd: 'red'
+      name: 'fade scene',
+      colorTrigger: 'black',
+      indent: 200,
+      colorStart: '#75C695',
+      colorEnd: 'red'
       }) // this requires a plugin
 
     .addTo(controller);
@@ -82,4 +72,41 @@ $(document).ready(function() {
 
 
 
+});*/
+
+
+// Init ScrollMagic
+var ctrl = new ScrollMagic.Controller({
+  globalSceneOptions: {
+    triggerHook: 'onLeave'
+  }
 });
+
+// Create scene
+$("section").each(function() {
+
+  var name = $(this).attr('id');
+  
+  new ScrollMagic.Scene({
+    triggerElement: this
+  })
+  .setPin(this)
+  .addIndicators({
+    colorStart: "rgba(255,255,255,0.5)",
+    colorEnd: "rgba(255,255,255,0.5)", 
+    colorTrigger : "rgba(255,255,255,1)",
+    name:name
+  })
+  .loglevel(3)
+  .addTo(ctrl);
+ 
+});
+
+// Get window height
+var wh = window.innerHeight;
+ 
+new ScrollMagic.Scene({
+  offset: wh*3
+})
+.setClassToggle(this, 'fade-in')
+.addTo(ctrl);
