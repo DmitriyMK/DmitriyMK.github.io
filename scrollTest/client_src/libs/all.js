@@ -4,8 +4,24 @@ $(document).ready(function() {
   var controller = new ScrollMagic.Controller();
 
 
-  //pin the intro
+
   var pinToScene = new ScrollMagic.Scene({
+      triggerElement: '.contentImg',
+      triggerHook: 0,
+      duration: '30%'
+    })
+    .setPin('.contentImg2', {pushFollowers: false})
+    .addTo(controller);
+
+
+  //pin again
+
+
+
+
+
+  //pin the intro
+/*  var pinToScene = new ScrollMagic.Scene({
       triggerElement: '#intro',
       triggerHook: 0,
       duration: '20%'
@@ -20,7 +36,7 @@ $(document).ready(function() {
       triggerHook: 0.4
     })
     .setPin('#intro', {pushFollowers: false})
-    .addTo(controller);
+    .addTo(controller);*/
 
 
     //parallax scene
