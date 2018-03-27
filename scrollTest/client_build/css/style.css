@@ -1740,48 +1740,81 @@ main {
 }
 
 */
-html, body {
-    height: 100%;
-    margin: 0;
+/* html, body {
+  height: 100%;
+  margin: 0;
 }
+
+
 section {
-    height: 100%;
-    color: white;
-    position: relative;
-    text-align: center;
+  height: 100%;
+  color: white;
+  position: relative;
+  text-align: center;
 }
 section .inner {
-    margin: 0 auto;
-    max-width: 85%;
+  margin: 0 auto;
+  max-width: 85%;
 }
+
 section#one {
-    background: url(../images/1.jpg) no-repeat center / cover;
-    width: 100%;
-    height: 100%;
+  background: url(../images/1.jpg)no-repeat center/cover;
+  width: 100%;
+  height: 100%;
 }
+
 section#two {
-    background: url(../images/2.jpg) no-repeat center / cover;
-    width: 100%;
-    height: 100%;
+ background: url(../images/2.jpg)no-repeat center/cover;
+  width: 100%;
+  height: 100%;
 }
+
 section#three {
-    background: url(../images/3.jpg) no-repeat center / cover;
-    width: 100%;
-    height: 100%;
+  background: url(../images/3.jpg)no-repeat center/cover;
+  width: 100%;
+  height: 100%;
 }
+
+
+
+
 #five {
-    background: url(../images/1.jpg) no-repeat center / cover;
-    width: 100%;
-    height: 100%;
+  background: url(../images/1.jpg)no-repeat center/cover;
+  width: 100%;
+  height: 100%;
 }
+
 #five {
-    background: #fafafa;
-    width: 100%;
-    height: 100%;
+  background: #fafafa;
+  width: 100%;
+  height: 100%;
 }
+
+
+
 div {
     position: relative;
     background: transparent;
+} */
+.container {
+    padding-top: 50px;
+    margin: 0 auto;
+    text-align: center;
+}
+button {
+    margin-left: 15px;
+    background: green;
+}
+.tools img {
+    margin-top: 150px;
+    margin-left: 50px;
+    width: 100px;
+    height: 100px;
+}
+.text {
+    padding-top: 32vh;
+    color: #000;
+    text-align: center;
 }
 /* .footer {
 	padding: 15px 0 30px 0;

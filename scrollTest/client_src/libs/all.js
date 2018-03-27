@@ -76,7 +76,7 @@
 
 
 // Init ScrollMagic
-var ctrl = new ScrollMagic.Controller({
+/*var ctrl = new ScrollMagic.Controller({
   globalSceneOptions: {
     triggerHook: 'onLeave'
   }
@@ -109,4 +109,70 @@ new ScrollMagic.Scene({
   offset: wh*3
 })
 .setClassToggle(this, 'fade-in')
-.addTo(ctrl);
+.addTo(ctrl);*/
+
+
+
+
+
+///////////////////// TWEEN MAX ANIMATION LESSONS2
+
+/*$(document).ready(function() {
+  startTween();
+});
+
+function startTween() {
+
+  TweenLite.to($("#toolBox"), 1.5, {delay: .5, x:500, y:225, rotation: 360, scale: 2, 
+    onComplete:returnToNormal, onCompleteParams: [$("#toolBox")]});
+
+  TweenLite.to($(".text"), 1.5, {color: "red", fontSize: "+=15", 
+    onComplete:returnToTextNormal});
+
+}
+
+function returnToNormal(obj) {
+  if (obj) {
+    TweenLite.to($("#toolBox"), 2, {x:0, y:0, rotation: 0, scale: 1});
+  };
+};
+
+function returnToTextNormal() {
+  TweenLite.to($(".text"), 1, {color: "#000", fontSize: "-=15"});
+}*/
+
+
+$(window).load(function() {
+  init();
+});
+
+function init () {
+  var toolTimeline = new TimelineLite({paused: true});
+  var duration = .5;
+
+  toolTimeline.to("#toolBox1", 1, {
+    duration, y: -100, ease:Back.easeInOut});
+  toolTimeline.to("#toolBox2", 1, {
+    duration, y: -100, ease:Back.easeInOut});
+  toolTimeline.to("#toolBox3", 1, {
+    duration, y: -100, ease:Back.easeInOut});
+
+  $("#start").click(function(){
+    toolTimeline.play();
+  });
+
+  $("#pause").click(function(){
+    toolTimeline.pause();
+  });
+
+  $("#stop").click(function(){
+    toolTimeline.stop();
+  });
+
+  $("#reverse").click(function(){
+    toolTimeline.reverse();
+  });
+
+
+
+}
