@@ -1,0 +1,5 @@
+
+
+$('#flyRight').enllax();  
+
+$('#flyLeft').enllax();  
