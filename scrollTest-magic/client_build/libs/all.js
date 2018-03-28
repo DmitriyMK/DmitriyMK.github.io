@@ -2,4 +2,3 @@
 
 $('#flyRight').enllax();  
 
-$('#flyLeft').enllax();  
