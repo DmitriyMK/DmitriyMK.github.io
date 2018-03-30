@@ -174,5 +174,47 @@ function init () {
   });
 
 
+  var tl = new TimelineMax();
+
+tl
+  .from( $('#w__red'), 2, {
+    y: -30,
+
+  } )
+  .from( $('#h__blue'), 2, {
+    x: "100%",
+  },"-=1.5" )
+  .from( $('#i__white'), 1.5, {
+    y: "100%",
+
+  },"-=1.5" )
+  .from( $('#e__pink'), 1.5, {
+    x: "200%",
+    rotation: 180,
+  },"-=1.5" )
+
+
+
+
+
+  ;
+/*  .from( $('.logo__r'), 2,{
+    rotation: 18,
+    transformOrigin: "100% 50%"
+  },"-=1.5")
+  .from( $('.logo__i'), 2, {
+    y: "100%"
+  },"-=1.5")
+  .from( $('.logo__t-top'), 2, {
+    x: "100%"
+  },"-=1.5")
+  .from( $('.logo__t-bottom'), 2, {
+    y: "-100%"
+  },"-=1.5")
+  .from( $('.logo__y'), 2, {
+    y: "100%"
+  },"-=2");*/
+
+
 
 }
