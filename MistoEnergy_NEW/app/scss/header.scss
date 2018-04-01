@@ -2,27 +2,34 @@
 @import "_vars";
 @import "_mixin and function";
 
-@import "_bootstrap-grid.min";
 
+.header {
+  box-shadow: -0.5px 4px 9px 0px rgba(0, 0, 0, 0.5);
+}
 
 
 .top-header {
 	padding-top: 10px;
 	padding-bottom: 5px;
+	.box {
+		display: flex;
+		justify-content: space-between;
+	}
 	.logo {
+		width: 80%;
 	}
 	.header__list {
-		width: 100%;
+		display: flex;
+
+		flex-wrap: wrap;
 		margin-left: 60px;
 		line-height: 40px;
 	}
-	.wrap {
-		float: right;
-	}
+
 	.header__item {
-		display: inline-block;
+
 		margin-left: 50px;
-		width: 210px;
+		width: 220px;
 	}
 
 	.header__link {
@@ -115,7 +122,8 @@
 
 
 .center-header {
-	height: 85vh;
+	height: 90%;
+	height: 90vh;
 	padding-top: 35px;
 	background-repeat: no-repeat;
 	background-position: center center;
@@ -149,7 +157,7 @@
 
 		.center-list {
 			margin-top: 100px;
-			margin-bottom: 180px;
+			margin-bottom: 160px;
 			display: flex;
 			justify-content: space-between;
 		}
@@ -163,7 +171,7 @@
 				content: '';
 				display: block;
 				position: absolute;
-				bottom: -18px;
+				bottom: -8px;
 				left: 16px;
 				height: 3px;
 				width: 95%;
@@ -275,42 +283,38 @@
 
 
 
-/* mobile */
-
-@media only screen and (min-width: 320px) { 
-
-}
+// Large devices (desktops, less than 1680px) 
+@media only screen and (max-width: 1680px) { 
 
 
-/* @tablet: */
-
-@media only screen and (min-width: 768px) { 
 
 } 
 
 
-/* @desktop */
 
-@media only screen and (min-width: 992px) { 
-
-
-}
-
-/* @desktop-xl */
-
-@media only screen and (min-width: 1200px) { 
-
-}
-
-/* @desktop-xl-2 */
-
-@media only screen and (min-width: 1600px) { 
+// Large devices (desktops, less than 1366px)
+@media only screen and (max-width: 1366px) { 
 
 }
 
 
-/* @desktop-xll: */
+// Large devices (desktops, less than 1200px)
+@media only screen and (max-width: 1199.98px) { 
 
-@media only screen and (min-width: 1920px) { 
+
+}
+
+// Medium devices (tablets, less than 992px)
+@media only screen and (max-width: 991.98px) { 
+
+}
+
+// Small devices (landscape phones, less than 768px)
+@media only screen and (max-width: 767.98px) { 
+
+}
+
+// Extra small devices (portrait phones, less than 576px)
+@media only screen and (max-width: 575.98px) { 
 
 }

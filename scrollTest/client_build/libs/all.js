@@ -75,7 +75,7 @@
 });*/
 
 
-// Init ScrollMagic
+/*// Init ScrollMagic
 var ctrl = new ScrollMagic.Controller({
   globalSceneOptions: {
     triggerHook: 'onLeave'
@@ -108,5 +108,21 @@ var wh = window.innerHeight;
 new ScrollMagic.Scene({
   offset: wh*3
 })
-.setClassToggle(this, 'fade-in')
-.addTo(ctrl);
+.setClassToggle("three", 'fade-in')
+.addTo(ctrl);*/
+
+
+var pinToScene = new ScrollMagic.Scene({
+  triggerElement: '#one',
+  triggerHook: 0,
+  duration: '100%'
+})
+.setPin('.main', {pushFollowers: false})
+.addTo(controller);
+
+var pinToScene = new ScrollMagic.Scene({
+  triggerElement: '#two',
+  triggerHook: 0.4
+})
+.setPin('.main', {pushFollowers: false})
+.addTo(controller);

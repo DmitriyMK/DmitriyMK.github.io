@@ -64,6 +64,8 @@ $(document).ready(function() {
     new WOW().init();
 
   };
+  */
+
 
   $('.srolling__link').on('click', function(e) {
     e.preventDefault();
@@ -72,7 +74,7 @@ $(document).ready(function() {
     $('html,body').stop().animate({
       scrollTop: $(d).offset().top
     }, t);
-  });*/
+  });
 
   /*LAZY LOAD*/
 /*  $('.lazy').lazy({
@@ -87,9 +89,9 @@ $(document).ready(function() {
     }
 
   });
-*/
+  */
 
-/*  $('.phone__mask').mask('+38(999)999-99-99');
+ /* $('.phone__mask').mask('+38(999)999-99-99');
 
 
   $('.counter').counterUp({
@@ -98,47 +100,23 @@ $(document).ready(function() {
   });*/
 
 
-
-
-/*  $('.slider-for').slick({
+  $('.slider').slick({
+    arrows: true,
+    infinite: true,
     slidesToShow: 1,
-    slidesToScroll: 1,
-    dots: false,
-    arrow: true,
-    asNavFor: '.slider-nav',
-    fade: true
+    speed: 500,
+
   });
 
 
-  $('.slider-nav').slick({
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    asNavFor: '.slider-for',
-    arrows: false,
-    dots: false,
-    focusOnSelect: true,
-    responsive: [
-
-      {
-        breakpoint: 576,
-        settings: {
-          slidesToShow: 2,
-          dots: true,
-        }
-      }
-
-    ]
-  });*/
-
-
 });
 
 
 
-/*$(window).on('resize orientationchange', function() {
+$(window).on('resize orientationchange', function() {
   $('.slider').slick('resize');
 });
-*/
+
 
 
 
@@ -160,6 +138,43 @@ $(document).ready(function() {
 //   return false;
 // });
 
+
+
+/*
+(function() {
+
+  'use strict';
+
+  // define variables
+  var items = document.querySelectorAll(".timeline li");
+
+  // check if an element is in viewport
+  // http://stackoverflow.com/questions/123999/how-to-tell-if-a-dom-element-is-visible-in-the-current-viewport
+  function isElementInViewport(el) {
+    var rect = el.getBoundingClientRect();
+    return (
+      rect.top >= 0 &&
+      rect.left >= 0 &&
+      rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+      rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
+  }
+
+  function callbackFunc() {
+    for (var i = 0; i < items.length; i++) {
+      if (isElementInViewport(items[i])) {
+        items[i].classList.add("in-view");
+      }
+    }
+  }
+
+  // listen for events
+  window.addEventListener("load", callbackFunc);
+  window.addEventListener("resize", callbackFunc);
+  window.addEventListener("scroll", callbackFunc);
+
+})();
+*/
 
 
 

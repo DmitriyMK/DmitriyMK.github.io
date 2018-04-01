@@ -15,7 +15,7 @@
 .slick-next:hover:before,
 .slick-next:focus:before {
 	opacity: 1; 
-	color: #1a46a8;
+	color: $green;
 }
 .slick-prev.slick-disabled:before,
 .slick-next.slick-disabled:before {
@@ -37,10 +37,10 @@
 	right: -35px; 
 }
 .slick-prev:before {
-	content: "\f104";
+	content: '\e80a';
 }
 [dir="rtl"] .slick-prev:before {
-	content: "\f105"; 
+	content: "\e809"; 
 }
 
 .slick-next {
@@ -51,10 +51,10 @@
 	right: auto; 
 }
 .slick-next:before {
-	content: "\f105";
+	content: "\e809";
 }
 [dir="rtl"] .slick-next:before {
-	content: "\f104"; 
+	content: '\e80a'; 
 }
 
 
