@@ -75,7 +75,7 @@
 });*/
 
 
-<<<<<<< HEAD
+
 /*// Init ScrollMagic
 var ctrl = new ScrollMagic.Controller({
 =======
@@ -117,7 +117,7 @@ new ScrollMagic.Scene({
 .setClassToggle("three", 'fade-in')
 .addTo(ctrl);*/
 
-
+/*
 var pinToScene = new ScrollMagic.Scene({
   triggerElement: '#one',
   triggerHook: 0,
@@ -132,7 +132,7 @@ var pinToScene = new ScrollMagic.Scene({
 })
 .setPin('.main', {pushFollowers: false})
 .addTo(controller);
-=======
+
 .setClassToggle(this, 'fade-in')
 .addTo(ctrl);*/
 
@@ -218,9 +218,14 @@ tl
     rotation: 180,
   },"-=1.5" )
 
+  ;
 
 
 
+
+
+
+<!-- ¯\_(ツ)_/¯ -->
 
   ;
 /*  .from( $('.logo__r'), 2,{
@@ -243,4 +248,4 @@ tl
 
 
 }
->>>>>>> 8a8e211ec26cee1aa0267b066047b16e1c534241
+
