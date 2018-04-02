@@ -11,7 +11,7 @@
 @import "_remodal-default-theme";
 @import "_slick";
 @import "_slick-theme";
-/* @import "_simplelightbox.scss"; */
+
 
 /* MAIN STYLE */
 @import "_fixed-slickSliderPlugin";
@@ -343,16 +343,17 @@
 	}
 	&__img {
 		display: block;
-		width: 20%;
+		width: 30%;
+		margin: 0 auto;
 		height: 240px;
 		background: no-repeat;
 		float: left;
 	}
 	&__content {
 		float: left;
-		margin-left: 50px;
+		
 		display: block;
-		width: 75%;
+		width: 60%;
 		height: auto;
 		padding: 0 50px;
 	}
@@ -367,6 +368,148 @@
 }
 
 
+
+.contact {
+	position: relative;
+	padding: 0;
+	box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.51);
+	.map {
+		min-height: 700px;
+		width: 100%;
+	}
+	iframe {
+		frameborder: 0;
+		border: 0;
+	}
+	.wrapper {
+		position: relative;
+	}
+
+	&__box {
+		position: absolute;	
+		width: 400px;
+		top: -700px;
+		right: 0;
+		padding: 50px;
+
+		background: #fff;
+	}
+
+	&__title {
+		padding-bottom: 30px;
+		font-size: rem(30);
+		font-weight: 500;
+		text-transform: uppercase;
+	}
+
+	&__adress {
+		font-style: normal;
+	}
+
+	&__item {
+		position: relative;
+		margin-bottom: 40px;
+		font-size: rem(18);
+		&:before {
+			
+			position: absolute;
+			left: -68px;
+			top: 50%;
+			transform: translateY(-50%);
+			padding: 8px 14px;
+
+			background: #fff;
+			box-shadow: 0 0 7px 2px rgba(0, 0, 0, .1);
+			font-size: rem(22);
+			font-family: 'fontello';
+		}
+	}
+
+	&__item:nth-of-type(1) {
+		&:before {
+			content: '\e801';
+		}
+	}
+
+	&__item:nth-of-type(2) {
+		&:before {
+			content: '\e81a';
+		}
+	}
+	&__item:nth-of-type(3) {
+		&:before {
+			content: '\e81a';
+		}
+	}
+	&__item:nth-of-type(4) {
+		&:before {
+			content: '\e81f';
+		}
+	}
+
+	&__messenger {
+		
+	}
+
+	.messenger__box {
+		margin-top: 30px;
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__text {
+		font-size: rem(18);
+	}
+
+	.messenger {
+		width: 140px;
+		padding: 8px 20px;
+		text-align: center;
+		font-size: rem(22);
+		color: #fff;
+		box-shadow: 2px 1px 1px 0px rgba(0, 0, 0, .4);
+		transition: box-shadow .3s ease;
+		&:hover {
+			box-shadow: 2px 1px 1px 0px rgba(0, 0, 0, 0);
+		}
+		&-vb {
+			background: #7d3daf;
+		}
+		&-tg {
+			background: #61a8de;
+		}
+	}
+
+}
+
+
+
+.footer {
+	padding: 20px 0;
+	background-color: rgb(79, 88, 95);
+	font-size: rem(14);
+	color: #fff;
+	&__box {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	.box__left {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		color: #fff;
+		img {
+			margin-right: 30px;
+		}
+	}
+	.name {
+		display: block;
+		margin-top: 5px;
+	}
+	
+
+}
 
 
 
