@@ -16,8 +16,6 @@
 /* MAIN STYLE */
 @import "_fixed-slickSliderPlugin";
 @import "_general";
-/* @import "_02-section1 -.scss"; */
-/* @import "header"; */
 
 
 
@@ -99,13 +97,12 @@
 
 
 
-
-
 .work {
 	&__title:before,  &__title:after{
 		left: 360px;
 	}
 }
+
 
 
 .timeline {
@@ -214,6 +211,7 @@
 }
 
 
+
 .advantages {
 	background: #f8f8f8;
 	&__title:before,  &__title:after{
@@ -276,6 +274,7 @@
 }
 
 
+
 .news {
 	&__box {
 		display: flex;
@@ -332,6 +331,7 @@
 		}
 	}
 }
+
 
 
 .review {
@@ -479,7 +479,6 @@
 			background: #61a8de;
 		}
 	}
-
 }
 
 
@@ -507,8 +506,6 @@
 		display: block;
 		margin-top: 5px;
 	}
-	
-
 }
 
 

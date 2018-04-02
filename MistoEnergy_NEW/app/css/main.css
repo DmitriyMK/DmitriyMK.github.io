@@ -3419,8 +3419,6 @@ section {
   background: url("../img/preloader.gif") no-repeat 50% 50%;
   margin: -35px 0 0 -35px; }
 
-/* @import "_02-section1 -.scss"; */
-/* @import "header"; */
 .services {
   overflow: hidden; }
   .services strong {
