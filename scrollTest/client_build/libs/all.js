@@ -75,8 +75,13 @@
 });*/
 
 
+<<<<<<< HEAD
+/*// Init ScrollMagic
+var ctrl = new ScrollMagic.Controller({
+=======
 // Init ScrollMagic
 /*var ctrl = new ScrollMagic.Controller({
+>>>>>>> 8a8e211ec26cee1aa0267b066047b16e1c534241
   globalSceneOptions: {
     triggerHook: 'onLeave'
   }
@@ -108,6 +113,26 @@ var wh = window.innerHeight;
 new ScrollMagic.Scene({
   offset: wh*3
 })
+<<<<<<< HEAD
+.setClassToggle("three", 'fade-in')
+.addTo(ctrl);*/
+
+
+var pinToScene = new ScrollMagic.Scene({
+  triggerElement: '#one',
+  triggerHook: 0,
+  duration: '100%'
+})
+.setPin('.main', {pushFollowers: false})
+.addTo(controller);
+
+var pinToScene = new ScrollMagic.Scene({
+  triggerElement: '#two',
+  triggerHook: 0.4
+})
+.setPin('.main', {pushFollowers: false})
+.addTo(controller);
+=======
 .setClassToggle(this, 'fade-in')
 .addTo(ctrl);*/
 
@@ -193,10 +218,17 @@ tl
     rotation: 180,
   },"-=1.5" )
 
+  ;
 
 
 
 
+<<<<<<< HEAD
+}
+
+
+<!-- ¯\_(ツ)_/¯ -->
+=======
   ;
 /*  .from( $('.logo__r'), 2,{
     rotation: 18,
@@ -218,3 +250,8 @@ tl
 
 
 }
+>>>>>>> 8a8e211ec26cee1aa0267b066047b16e1c534241
+<<<<<<< HEAD
+>>>>>>> 56f414829b9a6f2e195a0c016fbf3eda063aff85
+=======
+>>>>>>> 56f414829b9a6f2e195a0c016fbf3eda063aff85
