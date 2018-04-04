@@ -16,6 +16,8 @@
 /* MAIN STYLE */
 @import "_fixed-slickSliderPlugin";
 @import "_general";
+@import "_menuResponsiveEffect";
+
 
 
 
@@ -34,6 +36,9 @@
 	&__list {
 		display: flex;
 		justify-content: space-between;
+		@media only screen and (max-width: 991.98px) { 
+			flex-wrap: wrap;
+		}
 	}
 
 	&__item {
@@ -42,17 +47,39 @@
 		background: #588229;
 		color: #fff;
 		box-shadow: -0.5px 4px 9px 0px rgba(0, 0, 0, 0.5);
+		@media only screen and (max-width: 1199.98px) { 
+			text-align: center;
+		}
+		@media only screen and (max-width: 991.98px) { 
+			width: 48%;
+			margin-bottom: 15px;
+		}
+
+		@media only screen and (max-width: 575.98px) { 
+			width: 290px;
+			margin: 20px auto;
+			padding: 25px 0;
+		}
 
 
 		.item {
 			display: flex;
 			align-items: center;
+			@media only screen and (max-width: 1199.98px) { 
+				flex-direction: column;
+			}
 			&__title {
 				margin-left: 10px;
 				font-size: rem(18);
 				font-weight: 500;
 				color: #fff;
 				text-transform: uppercase;
+				@media only screen and (max-width: 1199.98px) { 
+					margin-left: 0;
+					margin-top: 15px;
+					text-align: center;
+					height: 40px;
+				}
 			}
 			&__text {
 				padding-top: 15px;
@@ -77,14 +104,24 @@
 		display: flex;
 		justify-content: space-between;
 		margin-bottom: 50px;
+
+		@media only screen and (max-width: 1199.98px) { 
+			flex-direction: column;
+		}
 	}
 
 	&__ask {
 		width: 30%;
 		font-size: rem(24);
-
+		font-weight: 500;
+		@media only screen and (max-width: 1199.98px) { 
+			width: auto;
+		}
 		span {
 			color: #cbcbcb;
+			@media only screen and (max-width: 1199.98px) { 
+				display: none;
+			}
 		}
 	}
 
@@ -92,6 +129,14 @@
 	&__answer {
 		width: 80%;
 		font-size: rem(18);
+		@media only screen and (max-width: 1199.98px) { 
+			padding-top: 15px;
+			width: 80%;
+		}
+		@media only screen and (max-width: 767.98px) { 
+			width: auto;
+		}
+
 	}
 }
 
@@ -120,6 +165,22 @@
 			width: 50px;
 			height: 50px;
 			z-index: 2;
+			@media only screen and (max-width: 1199.98px) { 
+				
+			}
+
+			@media only screen and (max-width: 991.98px) { 
+
+			}
+
+			@media only screen and (max-width: 767.98px) { 
+
+			}
+
+			@media only screen and (max-width: 575.98px) { 
+
+			}
+
 		}
 		&:after {
 			content: '';
@@ -130,6 +191,21 @@
 			width: 3px;
 			height: 120px;
 			background: $green;
+			@media only screen and (max-width: 1199.98px) { 
+				
+			}
+
+			@media only screen and (max-width: 991.98px) { 
+
+			}
+
+			@media only screen and (max-width: 767.98px) { 
+
+			}
+
+			@media only screen and (max-width: 575.98px) { 
+
+			}
 		}
 	}
 	&__item:nth-of-type(1) {
@@ -168,29 +244,76 @@
 
 	&__content-lt {
 		text-align: right;
+		@media only screen and (max-width: 1199.98px) { 
+			
+		}
+
+		@media only screen and (max-width: 991.98px) { 
+
+		}
+
+		@media only screen and (max-width: 767.98px) { 
+
+		}
+
+		@media only screen and (max-width: 575.98px) { 
+
+		}
 	}
 
 	&__content-rt {
 		display: flex;
 		justify-content: flex-end;
+		@media only screen and (max-width: 1199.98px) { 
+			
+		}
+
+		@media only screen and (max-width: 991.98px) { 
+
+		}
+
+		@media only screen and (max-width: 767.98px) { 
+
+		}
+
+		@media only screen and (max-width: 575.98px) { 
+
+		}
 	}
 	&__img-lt {
 		position: absolute;
 		top: 50%;
 		transform: translateY(-50%);
 		right: -215px;
+		@media only screen and (max-width: 1199.98px) { 
+			display: none;	
+		}
 	}
 	&__img-rt {
 		position: absolute;
 		top: 50%;
 		transform: translateY(-50%);
 		left: -175px;
+		@media only screen and (max-width: 1199.98px) { 
+			display: none;	
+		}
 	}
 	&__text {
 		position: relative;
 		font-size: rem(20);
 		line-height: 1.4;
 		width: 350px;
+		@media only screen and (max-width: 991.98px) { 
+			width: 290px;
+		}
+		@media only screen and (max-width: 767.98px) { 
+			width: 220px;
+		}
+
+		@media only screen and (max-width: 575.98px) { 
+
+		}
+
 		span {
 			position: absolute;
 			top: 50%;
@@ -199,17 +322,44 @@
 			font-weight: 700;
 			color: #dcdcdc;
 			z-index: -1;
+			@media only screen and (max-width: 1199.98px) {
+				top: -20px;
+				font-size: 50px;
+			}
 		}
 		.num-lt {
 			right: -140px;
+			@media only screen and (max-width: 1199.98px) {
+				right: 0;
+			}
 		}
 		.num-rt {
 			left: -140px;
+			@media only screen and (max-width: 1199.98px) {
+				left: 0;
+			}
 		}
 
 	}
 }
 
+
+
+@media only screen and (max-width: 1199.98px) { 
+
+}
+
+@media only screen and (max-width: 991.98px) { 
+
+}
+
+@media only screen and (max-width: 767.98px) { 
+
+}
+
+@media only screen and (max-width: 575.98px) { 
+
+}
 
 
 .advantages {

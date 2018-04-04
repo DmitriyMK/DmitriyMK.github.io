@@ -5,12 +5,12 @@ body {
 	min-width: 320px; 
 /* 	position: relative;  */
 padding-right: 0 !important;
-	font-family: $fontFamily;
-	font-size: $fontSize;
-	font-weight: 400;
-	line-height: 1.2;
-	box-sizing: border-box; 
-	z-index: 1;
+font-family: $fontFamily;
+font-size: $fontSize;
+font-weight: 400;
+line-height: 1.2;
+box-sizing: border-box; 
+z-index: 1;
 }
 
 ul {
@@ -44,6 +44,10 @@ section {
 	font-size: rem(36);
 	font-weight: 500;
 	text-transform: uppercase;
+	@media only screen and (max-width: 575.98px) { 
+			text-align: center;
+			font-size: rem(30);
+		}
 	&:before {
 		content: '';
 		position: absolute;
@@ -52,6 +56,13 @@ section {
 		width: 3000px;
 		height: 3px;
 		background: #dcdedf;
+		@media only screen and (max-width: 575.98px) { 
+			bottom: -20px;
+			top: inherit;
+			left: 50%;
+			transform: translateX(-50%);
+			width: 70%;
+		}
 	}
 	&:after {
 		content: '';
@@ -61,6 +72,9 @@ section {
 		width: 3000px;
 		height: 3px;
 		background: #dcdedf;
+		@media only screen and (max-width: 575.98px) { 
+			display: none;
+		}
 	}
 }
 
@@ -98,6 +112,13 @@ section {
 		color: #000;
 		box-shadow: none;
 	}
+}
+
+.burger {
+	display: none;
+}
+.hidden {
+	display: none;
 }
 
 

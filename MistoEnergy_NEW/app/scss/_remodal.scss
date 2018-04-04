@@ -1,4 +1,4 @@
-html.remodal-is-locked{overflow:hidden;-ms-touch-action:none;touch-action:none;}
+html.remodal-is-locked{/* overflow:hidden; */-ms-touch-action:none;touch-action:none;}
 .remodal,
 [data-remodal-id]{display:none;}
 .remodal-overlay{position:fixed;z-index:7000;top:-5000px;right:-5000px;bottom:-5000px;left:-5000px;display:none;}

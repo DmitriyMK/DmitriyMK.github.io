@@ -27,6 +27,9 @@ $(document).ready(function() {
 /*FIXED SCROLL FOR MENU*/
 /*$(document).ready(function() {
 
+
+
+
   $(window).scroll(function() {
     if ($(this).scrollTop() > 600) {
       $('#fixedTopMenu').addClass('fixed');
@@ -65,6 +68,22 @@ $(document).ready(function() {
 
   };
   */
+ 
+ /*RESPONSIVER BURGER MENU*/
+    $(".burger").click(function() {
+        $(this).toggleClass('active');
+/*        $(".nav__list").slideToggle(700);*/
+    })
+
+    $('.burger').on('click', function() {
+        $('.overlay').toggleClass('open').show;
+    });
+
+    $(window).resize(function() {
+        if ($(window).width() > 768) {
+            $('.nav__list').removeAttr('style');
+        }
+    })
 
 
   $('.srolling__link').on('click', function(e) {
@@ -114,23 +133,23 @@ $(window).on('resize orientationchange', function() {
 
 
 
-// $(".form").submit(function() {
-//   var th = $(this);
-//   $.ajax({
-//     type: "POST",
-//     url: "mail.php",
-//     data: th.serialize()
-//   }).done(function() {
+$(".form").submit(function() {
+  var th = $(this);
+  $.ajax({
+    type: "POST",
+    url: "mail.php",
+    data: th.serialize()
+  }).done(function() {
 
-//     var inst = $('[data-remodal-id=modal-thanks]').remodal();
-//     inst.open();
+    var inst = $('[data-remodal-id=modal-thanks]').remodal();
+    inst.open();
 
-//     setTimeout(function() {
-//       th.trigger("reset");
-//     }, 1000);
-//   });
-//   return false;
-// });
+    setTimeout(function() {
+      th.trigger("reset");
+    }, 1000);
+  });
+  return false;
+});
 
 
 

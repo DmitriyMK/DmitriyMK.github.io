@@ -25,6 +25,7 @@
 
 
 	<!-- 	<link rel="stylesheet" href="css/media.css"> -->
+	
 	<meta property="fb:app_id" content="966242223397117" />
 	<meta property="og:type" content="website"/> 
 	<meta property="og:image" content="img/favicon/og-image.jpg">
@@ -50,10 +51,10 @@
 					<a class="logo" href="index.html"><img src="img/logo.png" alt="Misto Energy" title="Misto Energy"></a>
 					<div class="box__nav">
 						<ul class="header__list">
-							<li class="header__item"><a class="header__link link-address" href="#">Киев, ул. Дегтяревская, 25А<!-- , лит. Г, офис 201 --></a></li>
-							<li class="header__item"><a class="header__link link-phone" href="tel:+380955667968">+38(095)566-79-68</a></li>
-							<li class="header__item"><a class="header__link link-mail" href="mailto:support@mistoenergy.com.ua">support@mistoenergy.com.ua</a></li>
-							<li class="header__item-btn"><a class=" btn-green" href="#">Заказать звонок</a></li>	
+							<li class="header__item hide__mob-sm"><a class="header__link link-address" href="#">Киев, ул. Дегтяревская, 25А<!-- , лит. Г, офис 201 --></a></li>
+							<li class="header__item "><a class="header__link link-phone" href="tel:+380955667968"><i class="icon-phone"></i><span>+38(095)566-79-68</span></a></li>
+							<li class="header__item hide__mob"><a class="header__link link-mail" href="mailto:support@mistoenergy.com.ua">support@mistoenergy.com.ua</a></li>
+							<li class="header__item-btn hide__mob"><a class=" btn-green" data-remodal-target="callback" href="#callback">Заказать звонок</a></li>	
 						</ul>
 					</div>
 				</div>
@@ -61,30 +62,35 @@
 		</div><!-- top-header -->
 
 		<nav class="nav">
-			<div class="wrapper">
-				<ul class="nav__list">
-					<li class="nav__item">
-						<a class="nav__link" href="#">Главная</a>
-					</li>
-					<li class="nav__item">
-						<a class="nav__link" href="#">О компании</a>
-					</li>
-					<li class="nav__item">
-						<a class="nav__link" href="#">Наши услуги</a>
-					</li>
-					<li class="nav__item">
-						<a class="nav__link" href="#">Наши объекты</a>
-					</li>
-					<li class="nav__item">
-						<a class="nav__link" href="#">Новости</a>
-					</li>
-					<li class="nav__item">
-						<a class="nav__link" href="#">Отзывы</a>
-					</li>
-					<li class="nav__item">
-						<a class="nav__link" href="#">Контакты</a>
-					</li>
-				</ul>
+			<button class="burger">
+				<i></i>
+			</button>
+			<div class="overlay">
+				<div class="wrapper">
+					<ul class="nav__list">
+						<li class="nav__item">
+							<a class="nav__link" href="#">Главная</a>
+						</li>
+						<li class="nav__item">
+							<a class="nav__link" href="#">Услуги</a>
+						</li>
+						<li class="nav__item">
+							<a class="nav__link" href="#">Проекты</a>
+						</li>
+						<li class="nav__item">
+							<a class="nav__link" href="#">Цены</a>
+						</li>
+						<li class="nav__item">
+							<a class="nav__link" href="#">Новости</a>
+						</li>
+						<li class="nav__item">
+							<a class="nav__link" href="#">Отзывы</a>
+						</li>
+						<li class="nav__item">
+							<a class="nav__link" href="#">Контакты</a>
+						</li>
+					</ul>
+				</div>
 			</div>
 		</nav>	
 
@@ -114,7 +120,7 @@
 						</li>	
 					</ul>
 
-					<a class="btn-green" href="#">Заказать звонок обратной связи</a>
+					<a class="btn-green" data-remodal-target="callback" href="#callback">Заказать звонок обратной связи</a>
 
 				</div>
 
@@ -126,6 +132,8 @@
 			</div>
 		</div>
 	</header>
+
+
 
 
 	<section class="services">
@@ -145,7 +153,7 @@
 
 				<li class="services__item">
 					<div class="item">
-						<img class="item__img" src="img/icons/setting.png" alt="Проектирование и монтаж">
+						<img class="item__img" src="img/icons/energy.png" alt="Энергоаудит">
 						<h3 class="item__title">Энергоаудит</h3>
 					</div>
 					<p class="item__text">жилых и общественных зданий;</p>
@@ -510,30 +518,25 @@
 
 
 
+	<div class="remodal formBox" data-remodal-id="callback"> 
+		<button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
+		<form class="form form-validate" id="modal-recieve" name="main-form">
 
+			<!-- Hidden Required Fields -->
+			<input type="hidden" name="project_name" value="Misto Energy">
+			<input type="hidden" name="admin_email" value="alchimic@ua.fm">
+			<input type="hidden" name="form_subject" value="Заказ обратного звонка">
+			<!-- END Hidden Required Fields -->
 
+			<p class="formBox__title">Заполните форму</p>
+			<p class="formBox__text">И наш менеджер свяжется с Вами в <br> течение 10 минут.</p>
 
+			<input class="form__line name" type="text" name="Имя&nbsp;покупателя" placeholder="Ваше имя" required>
+			<input class="form__line phone__mask" type="tel" name="Телефон&nbsp;покупателя" placeholder="Ваш телефон" required>
 
-<!-- 	<div class="remodal formBox" data-remodal-id="callback"> 
-<button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
-<form class="form form-validate" id="modal-recieve" name="main-form">
-Hidden Required Fields
-<input type="hidden" name="project_name" value="Choice">
-<input type="hidden" name="admin_email" value="dm@push-k.ua">
-<input type="hidden" name="form_subject" value="Обратный звонок">
-END Hidden Required Fields
-<p class="formBox__title">Заполните форму</p>
-<p class="formBox__text">И наш менеджер свяжется с Вами в <br> течение 10 минут.</p>
-
-
-	<input class="form__line name" type="text" name="Имя&nbsp;покупателя" placeholder="Ваше имя" required>
-
-
-	<input class="form__line phone__mask" type="tel" name="Телефон&nbsp;покупателя" placeholder="Ваш телефон" required>
-
-<input type="submit" class="button" value="Заказать звонок"> 
-</form>
-</div> -->
+			<input type="submit" class="btn-green" value="Заказать звонок"> 
+		</form>
+	</div> 
 
 
 
