@@ -96,6 +96,10 @@
 	overflow: hidden;
 	background: #f8f8f8;
 
+	@media only screen and (max-width: 575.98px) { 
+		text-align: center;
+}
+
 	&__row:first-of-type {
 		margin-top: 70px;
 	}
