@@ -3623,6 +3623,11 @@ section {
   .services__text {
     padding: 50px 15px;
     font-size: 1.125rem; }
+    @media only screen and (max-width: 575.98px) {
+      .services__text {
+        padding-left: 0;
+        padding-right: 0;
+        text-align: center; } }
   .services__list {
     display: -webkit-box;
     display: -webkit-flex;
@@ -3969,6 +3974,7 @@ section {
     font-weight: 400; }
 
 .news__box {
+  margin-top: 60px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
