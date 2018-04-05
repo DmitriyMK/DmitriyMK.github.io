@@ -7,7 +7,7 @@
 
 
 
-  //pin the intro
+//pin the intro
 /*  var pinToScene = new ScrollMagic.Scene({
       triggerElement: '#intro',
       triggerHook: 0,
@@ -28,7 +28,7 @@
     */
 
 
-    //parallax scene
+//parallax scene
 /*    var parallaxTl = new TimelineMax();
     parallaxTl
     .from('.content-wrapper', 0.4, {autoAlpha: 0, ease:Power0.easeNone}, 0.4)
@@ -138,7 +138,7 @@ var pinToScene = new ScrollMagic.Scene({
 
 
 
-
+++
 
 ///////////////////// TWEEN MAX ANIMATION LESSONS2
 
@@ -167,85 +167,94 @@ function returnToTextNormal() {
 }*/
 
 
+
 $(window).load(function() {
-  init();
+    init();
 });
 
-function init () {
-  var toolTimeline = new TimelineLite({paused: true});
-  var duration = .5;
+function init() {
+    var toolTimeline = new TimelineLite({ paused: true });
+    var duration = .5;
 
-  toolTimeline.to("#toolBox1", 1, {
-    duration, y: -100, ease:Back.easeInOut});
-  toolTimeline.to("#toolBox2", 1, {
-    duration, y: -100, ease:Back.easeInOut});
-  toolTimeline.to("#toolBox3", 1, {
-    duration, y: -100, ease:Back.easeInOut});
+    toolTimeline.to("#toolBox1", 1, {
+        duration,
+        y: -100,
+        ease: Back.easeInOut
+    });
+    toolTimeline.to("#toolBox2", 1, {
+        duration,
+        y: -100,
+        ease: Back.easeInOut
+    });
+    toolTimeline.to("#toolBox3", 1, {
+        duration,
+        y: -100,
+        ease: Back.easeInOut
+    });
 
-  $("#start").click(function(){
-    toolTimeline.play();
-  });
+    $("#start").click(function() {
+        toolTimeline.play();
+    });
 
-  $("#pause").click(function(){
-    toolTimeline.pause();
-  });
+    $("#pause").click(function() {
+        toolTimeline.pause();
+    });
 
-  $("#stop").click(function(){
-    toolTimeline.stop();
-  });
+    $("#stop").click(function() {
+        toolTimeline.stop();
+    });
 
-  $("#reverse").click(function(){
-    toolTimeline.reverse();
-  });
-
-
-  var tl = new TimelineMax();
-
-tl
-  .from( $('#w__red'), 2, {
-    y: -30,
-
-  } )
-  .from( $('#h__blue'), 2, {
-    x: "100%",
-  },"-=1.5" )
-  .from( $('#i__white'), 1.5, {
-    y: "100%",
-
-  },"-=1.5" )
-  .from( $('#e__pink'), 1.5, {
-    x: "200%",
-    rotation: 180,
-  },"-=1.5" )
-
-  ;
+    $("#reverse").click(function() {
+        toolTimeline.reverse();
+    });
 
 
+    var tl = new TimelineMax();
+
+    tl
+        .from($('#w__red'), 2, {
+            y: -30,
+
+        })
+        .from($('#h__blue'), 2, {
+            x: "100%",
+        }, "-=1.5")
+        .from($('#i__white'), 1.5, {
+            y: "100%",
+
+        }, "-=1.5")
+        .from($('#e__pink'), 1.5, {
+            x: "200%",
+            rotation: 180,
+        }, "-=1.5")
+
+    ;
 
 
 
 
-<!-- ¯\_(ツ)_/¯ -->
 
-  ;
-/*  .from( $('.logo__r'), 2,{
-    rotation: 18,
-    transformOrigin: "100% 50%"
-  },"-=1.5")
-  .from( $('.logo__i'), 2, {
-    y: "100%"
-  },"-=1.5")
-  .from( $('.logo__t-top'), 2, {
-    x: "100%"
-  },"-=1.5")
-  .from( $('.logo__t-bottom'), 2, {
-    y: "-100%"
-  },"-=1.5")
-  .from( $('.logo__y'), 2, {
-    y: "100%"
-  },"-=2");*/
+
+
+
+    ;
+    /*  .from( $('.logo__r'), 2,{
+        rotation: 18,
+        transformOrigin: "100% 50%"
+      },"-=1.5")
+      .from( $('.logo__i'), 2, {
+        y: "100%"
+      },"-=1.5")
+      .from( $('.logo__t-top'), 2, {
+        x: "100%"
+      },"-=1.5")
+      .from( $('.logo__t-bottom'), 2, {
+        y: "-100%"
+      },"-=1.5")
+      .from( $('.logo__y'), 2, {
+        y: "100%"
+      },"-=2");*/
 
 
 
 }
-
