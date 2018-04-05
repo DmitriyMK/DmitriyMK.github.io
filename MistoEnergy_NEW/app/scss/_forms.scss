@@ -36,14 +36,14 @@
 	margin: 20px auto;
 	text-align: center;
 	&__title {
-		font-size: rem(29);
+		font-size: rem(26);
 		line-height: 42px;
 		font-family: $fontFamily;
 		text-transform: uppercase;
 		color: #000;
 	}
 	&__text {
-		padding: 30px;
+		padding: 30px 15px;
 		font-size: rem(18);
 		color: #5d5e5e;
 	}

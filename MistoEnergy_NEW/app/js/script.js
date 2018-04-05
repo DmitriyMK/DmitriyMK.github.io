@@ -110,7 +110,7 @@ $(document).ready(function() {
   });
   */
 
- /* $('.phone__mask').mask('+38(999)999-99-99'); */
+  $('.phone__mask').mask('+380(99)999-99-99'); 
 
 
   $('.slider').slick({
@@ -157,11 +157,11 @@ function initMap() {
 
   var latlng = new google.maps.LatLng(50.4601337, 30.4527605);
   var settings = {
-    zoom: 17,
+    zoom: 16,
     center: latlng,
     center: {
       lat: 50.461100,
-      lng: 30.4546605
+      lng: 30.4527605
     },
     mapTypeControl: true,
     mapTypeControlOptions: {
