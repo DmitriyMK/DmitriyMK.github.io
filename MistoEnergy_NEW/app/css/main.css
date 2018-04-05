@@ -4059,20 +4059,23 @@ section {
     width: 30%;
     margin: 0 auto;
     height: 240px;
-    background: no-repeat;
+    background-repeat: no-repeat;
+    background-position: center;
     float: left; }
     @media only screen and (max-width: 575.98px) {
       .review__img {
         float: none;
-        width: 90%;
-        margin: auto;
-        background-position: center; } }
+        width: 90%; } }
   .review__content {
     float: left;
     display: block;
     width: 60%;
     height: auto;
     padding: 0 50px; }
+    @media only screen and (max-width: 767.98px) {
+      .review__content {
+        padding: 0;
+        padding-left: 30px; } }
     @media only screen and (max-width: 575.98px) {
       .review__content {
         float: none;
