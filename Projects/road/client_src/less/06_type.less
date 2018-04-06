@@ -1,0 +1,91 @@
+.container {
+    @media @mobile {
+        padding: 0 10px;
+    }
+    @media @tablet {
+        padding: 0;
+    }
+}
+a {
+	outline: none;
+    color: inherit;
+}
+ul {
+    padding: 0;
+    margin: 0;
+}
+li {
+    list-style-type: none;
+}
+
+body {
+    position: relative;
+    z-index: 1;
+    padding-right: 0 !important;
+    font-size: @fs;
+    line-height: @lh;
+    color: #fff;
+    margin: 0;
+    font-weight: 500;
+    font-family: @ff1;
+}
+
+.fancybox-margin {
+    margin-right: 0 !important;
+}
+
+section {
+
+
+}
+
+header, footer {
+    /*     overflow: hidden; */
+}
+
+button, .button {
+
+}
+
+.section__title {
+    padding-top: 40px;
+    padding-bottom: 20px;
+    position: relative;
+    font-size: 35px;
+    font-weight: 700;
+    text-align: center;
+    color: #000;
+
+    &:before {
+        content: '';
+        position: absolute;
+        width: 93px;
+        height: 7px;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        background: @yellow;
+
+    }
+
+
+
+    @media @mobile {
+
+    }
+    @media @tablet {
+
+    }
+    @media @desktop {
+
+    }
+    @media @desktop-xl {
+
+    }
+    @media @desktop-xl-2 {
+
+    }
+    @media @desktop-xll {
+
+    }
+}
