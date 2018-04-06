@@ -108,8 +108,8 @@ section {
 	line-height: 1;
 	transition: all .3s ease;
 	&:hover {
-		background: #fff;
-		color: #000;
+		background: $green;
+		color: #fff;
 		box-shadow: none;
 	}
 }

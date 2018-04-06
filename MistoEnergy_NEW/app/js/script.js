@@ -1,3 +1,5 @@
+$(window).enllax();
+
 $(document).ready(function() {
 
   $("body").niceScroll({
@@ -63,11 +65,10 @@ $(document).ready(function() {
 
 $(document).ready(function() {
 
-/*  if (document.documentElement.clientWidth > 1200) {
+   if (document.documentElement.clientWidth > 1200) {
     new WOW().init();
 
-  };
-  */
+};
  
  /*RESPONSIVER BURGER MENU*/
     $(".burger").click(function() {
