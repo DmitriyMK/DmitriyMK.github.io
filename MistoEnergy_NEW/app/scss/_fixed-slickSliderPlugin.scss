@@ -30,36 +30,31 @@
 }
 
 .slick-prev {
-	left: -35px; 
+	left: -80px; 
 }
-[dir="rtl"] .slick-prev {
-	left: auto;
-	right: -35px; 
-}
+
 .slick-prev:before {
 	content: '\e80a';
 }
-[dir="rtl"] .slick-prev:before {
-	content: "\e809"; 
-}
 
 .slick-next {
-	right: -35px; 
+	right: -80px; 
 }
-[dir="rtl"] .slick-next {
-	left: -35px;
-	right: auto; 
-}
+
 .slick-next:before {
 	content: "\e809";
 }
-[dir="rtl"] .slick-next:before {
-	content: '\e80a'; 
-}
+
 
 
 @media only screen and (max-width: 1199.98px) { 
 
+
+.slick-prev,
+.slick-next {
+	top: inherit;
+	bottom: -80px;
+}
 
 .slick-prev:before,
 .slick-next:before {
@@ -67,23 +62,30 @@
 	opacity: 1;
 } 
 .slick-prev {
-	left: 0px;
-	z-index: 10; 
-}
-[dir="rtl"] .slick-prev {
-	right: 0px;
-	z-index: 10; 
+	left: 5%;
+	z-index: 20;
 }
 
 .slick-next {
-	right: 0px;
-	z-index: 10; 
-}
-[dir="rtl"] .slick-next {
-	left: 0px;
-	z-index: 10;
+	left: 20%;
+	z-index: 20;
 }
 
 
+
+
+}
+
+@media only screen and (max-width: 575.98px) { 
+.slick-prev {
+	left: 20%;
+	bottom: -100px;
+}
+
+.slick-next {
+	left: inherit;
+	right: 20%;
+	bottom: -100px;
+}
 
 }
