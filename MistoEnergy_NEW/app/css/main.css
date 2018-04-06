@@ -3894,6 +3894,136 @@ section {
         .timeline__text .num-rt {
           display: none; } }
 
+.knowMore {
+  position: relative;
+  margin-top: 110px;
+  padding-top: 60px;
+  padding-bottom: 30px;
+  background: url(../img/form__backgrounds.jpg) no-repeat center/cover; }
+  .knowMore:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.75); }
+  .knowMore__box {
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    @media only screen and (max-width: 991.98px) {
+      .knowMore__box {
+        -webkit-justify-content: space-around;
+            -ms-flex-pack: distribute;
+                justify-content: space-around; } }
+    @media only screen and (max-width: 767.98px) {
+      .knowMore__box {
+        -webkit-flex-wrap: wrap;
+            -ms-flex-wrap: wrap;
+                flex-wrap: wrap; } }
+  .knowMore .content__title {
+    padding-bottom: 40px;
+    margin: 0;
+    margin-right: 60px;
+    font-size: 2.25rem;
+    font-weight: 500;
+    color: #fff;
+    text-transform: uppercase; }
+    @media only screen and (max-width: 991.98px) {
+      .knowMore .content__title {
+        margin-right: 0;
+        text-align: center; } }
+    @media only screen and (max-width: 575.98px) {
+      .knowMore .content__title {
+        font-size: 1.875rem; } }
+  .knowMore .content__text {
+    margin-right: 60px;
+    font-size: 16px;
+    line-height: 26px;
+    color: #f1f1f1; }
+    @media only screen and (max-width: 991.98px) {
+      .knowMore .content__text {
+        margin-right: 0;
+        text-align: center; } }
+    .knowMore .content__text-accent {
+      padding-top: 20px;
+      font-weight: 700; }
+  .knowMore__form {
+    margin-top: -40px;
+    padding: 45px 30px;
+    background: #fff;
+    -webkit-box-shadow: 0px 0px 8.55px 0.45px rgba(0, 0, 0, 0.3);
+            box-shadow: 0px 0px 8.55px 0.45px rgba(0, 0, 0, 0.3); }
+    @media only screen and (max-width: 991.98px) {
+      .knowMore__form {
+        margin-right: 15px; } }
+    @media only screen and (max-width: 767.98px) {
+      .knowMore__form {
+        width: 95%;
+        margin-right: 0;
+        margin: 30px auto; } }
+    @media only screen and (max-width: 575.98px) {
+      .knowMore__form {
+        padding-left: 5px;
+        padding-right: 5px; } }
+  .knowMore .form {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 350px; }
+    @media only screen and (max-width: 991.98px) {
+      .knowMore .form {
+        width: 100%;
+        margin: auto; } }
+  .knowMore .formBox__title {
+    font-size: 1.625rem;
+    line-height: 42px;
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    color: #000;
+    text-align: center; }
+  .knowMore .formBox__text {
+    padding: 30px 15px;
+    font-size: 1.125rem;
+    color: #5d5e5e;
+    text-align: center; }
+  .knowMore .form__line {
+    position: relative;
+    width: 90%;
+    margin-bottom: 15px;
+    padding-left: 20px;
+    height: 48px;
+    line-height: 48px;
+    border: none;
+    border-bottom: 1px solid #343434;
+    -webkit-box-shadow: inset 4px 0px 0px 0px rgba(26, 70, 168, 0.004);
+            box-shadow: inset 4px 0px 0px 0px rgba(26, 70, 168, 0.004);
+    color: #000;
+    font-size: 0.9375rem;
+    -webkit-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease; }
+    .knowMore .form__line:focus {
+      border-bottom: 1px solid #58b32c; }
+  .knowMore .form__btn {
+    margin: 20px 0;
+    color: #fff; }
+    .knowMore .form__btn:hover {
+      color: #000; }
+
 .advantages {
   background: #f8f8f8; }
   .advantages__title:before, .advantages__title:after {

@@ -370,6 +370,159 @@
 
 
 
+.knowMore {
+	position: relative;
+	margin-top: 110px;
+	padding-top: 60px;
+	padding-bottom: 30px;
+	background: url(../img/form__backgrounds.jpg)no-repeat center/cover;
+	&:before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: rgba(0,0,0, .75);
+	}
+
+	
+
+	&__box {
+		position: relative;
+		display: flex;
+		justify-content: center;
+
+		@media only screen and (max-width: 991.98px) { 
+			justify-content: space-around;
+		}
+
+		@media only screen and (max-width: 767.98px) { 
+			flex-wrap: wrap;
+		}
+
+		@media only screen and (max-width: 575.98px) { 
+
+		}
+
+	} 
+
+	.content__title {
+		padding-bottom: 40px;
+		margin: 0;
+		margin-right: 60px;
+		font-size: rem(36);
+		font-weight: 500;
+		color: #fff;
+		text-transform: uppercase;
+
+		@media only screen and (max-width: 991.98px) { 
+			margin-right: 0;
+			text-align: center;
+		}
+
+		@media only screen and (max-width: 575.98px) { 
+			font-size: rem(30);
+		}
+	} 
+	.content__text {
+		margin-right: 60px;
+		font-size: 16px;
+		line-height: 26px;
+		color: #f1f1f1;
+
+		@media only screen and (max-width: 991.98px) { 
+			margin-right: 0;
+			text-align: center;
+		}
+
+		&-accent {
+			padding-top: 20px;
+			font-weight: 700;
+		}
+	}
+	&__form {
+		margin-top: -40px;
+		padding: 45px 30px;
+		background: #fff;
+		box-shadow: 0px 0px 8.55px 0.45px rgba(0, 0, 0, 0.3);
+
+		@media only screen and (max-width: 991.98px) { 
+			margin-right: 15px;
+		}
+
+		@media only screen and (max-width: 767.98px) { 
+			width: 95%;
+			margin-right: 0;
+			margin: 30px auto;
+
+		}
+
+		@media only screen and (max-width: 575.98px) { 
+			padding-left: 5px;
+			padding-right: 5px;
+
+		}
+
+		
+	} 
+	.form {
+		display: flex;
+		flex-direction: column;
+		width: 350px;
+
+		@media only screen and (max-width: 991.98px) { 
+			width: 100%;
+			margin: auto;	
+		}
+	} 
+
+	.formBox__title {
+		font-size: rem(26);
+		line-height: 42px;
+		font-family: $fontFamily;
+		text-transform: uppercase;
+		color: #000;
+		text-align: center;
+	}
+	.formBox__text {
+		padding: 30px 15px;
+		font-size: rem(18);
+		color: #5d5e5e;
+		text-align: center;
+	}
+
+	.form__line {
+		position: relative;
+		width: 90%;
+		margin-bottom: 15px;
+		padding-left: 20px;
+		height: 48px;
+		line-height: 48px;
+		border: none;
+		border-bottom: 1px solid #343434; 
+		box-shadow: inset 4px 0px 0px 0px rgba(26, 70, 168, 0.004);
+		color: #000;
+		font-size: rem(15);
+		transition: all .3s ease;
+		&:focus {
+			border-bottom: 1px solid $green; 
+		}
+
+	}
+	.form__btn {
+		margin: 20px 0;
+		color: #fff;
+		&:hover {
+			color: #000;
+		}
+	}
+}
+
+
+
+
+
 
 .advantages {
 	background: #f8f8f8;
