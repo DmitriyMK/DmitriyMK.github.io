@@ -1678,6 +1678,7 @@ header, footer {
     z-index: 120;
 }
 .services__item {
+    display: block;
     position: relative;
     float: left;
     width: 50%;
@@ -1685,10 +1686,9 @@ header, footer {
     overflow: hidden;
 }
 .services__item:hover .services__item-title {
-    background-color: #f0d91a;
     color: #000;
 }
-.services__item:hover .services__item-title:after {
+.services__item:hover .services__item-title:before {
     height: 100%;
 }
 .services__img {
@@ -1696,9 +1696,9 @@ header, footer {
     height: 470px;
     background-size: cover;
     background-position: center;
-    -webkit-transition: all 0.5s linear;
-         -o-transition: all 0.5s linear;
-            transition: all 0.5s linear;
+    -webkit-transition: all 0.3s linear;
+         -o-transition: all 0.3s linear;
+            transition: all 0.3s linear;
 }
 .services__img:hover {
     cursor: pointer;
@@ -1707,6 +1707,7 @@ header, footer {
             transform: scale(1.05);
 }
 .services__item-title {
+    display: block;
     position: absolute;
     top: 0;
     right: 0;
@@ -1718,8 +1719,9 @@ header, footer {
     -webkit-transition: all 0.3s linear;
          -o-transition: all 0.3s linear;
             transition: all 0.3s linear;
+    z-index: 1;
 }
-.services__item-title:after {
+.services__item-title:before {
     content: '';
     position: absolute;
     bottom: 0;
@@ -1727,6 +1729,7 @@ header, footer {
     width: 100%;
     height: 4px;
     background: #f0d91a;
+    z-index: -1;
     -webkit-transition: all 0.3s linear;
          -o-transition: all 0.3s linear;
             transition: all 0.3s linear;
