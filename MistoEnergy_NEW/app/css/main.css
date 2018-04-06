@@ -3500,6 +3500,10 @@ section {
   background: url("../img/preloader.gif") no-repeat 50% 50%;
   margin: -35px 0 0 -35px; }
 
+@media only screen and (max-width: 1679px) {
+  .flyLeft {
+    display: none; } }
+
 @media only screen and (max-width: 767.98px) {
   .nav {
     position: fixed;
@@ -3623,7 +3627,7 @@ section {
     font-weight: normal; }
   .services .flyLeft {
     position: absolute;
-    left: -350px;
+    left: -300px;
     top: 0;
     width: 310px;
     height: 199px;
