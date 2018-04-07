@@ -1,3 +1,4 @@
+@import "_reset";
 @import "_fonts";
 @import "_vars";
 @import "_mixin and function";
@@ -16,7 +17,9 @@
 /* MAIN STYLE */
 @import "_fixed-slickSliderPlugin";
 @import "_general";
+@import "header";
 @import "_menuResponsiveEffect";
+
 
 
 
