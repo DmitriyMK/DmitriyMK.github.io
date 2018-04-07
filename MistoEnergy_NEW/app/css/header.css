@@ -383,6 +383,9 @@ button {
           @media only screen and (max-width: 575.98px) {
             .center-header-box .center-item .img:before {
               top: 50%;
+              -webkit-transform: translateY(-50%);
+                  -ms-transform: translateY(-50%);
+                      transform: translateY(-50%);
               -webkit-border-radius: 0;
                       border-radius: 0; } }
         .center-header-box .center-item .img:after {
