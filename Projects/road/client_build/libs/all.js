@@ -8,7 +8,7 @@ $(document).ready(function() {
     smoothscroll: true,
     cursorwidth: 10,
     cursorborder: 0,
-    cursorcolor: '#55c202',
+    cursorcolor: '#f0d91a',
     cursorborderradius: 2,
     autohidemode: true,
     horizrailenabled: false,

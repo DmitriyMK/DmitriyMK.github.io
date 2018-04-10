@@ -24,15 +24,29 @@
 		padding: 6px 0;
 		position: relative;
 		z-index: 1;
-		overflow: hidden;	
+
 	}
 
 
 	.nav {
 		padding: 20px 0; 
-		&__list {
-			&-submenu {
-				display: none;
+		position: relative;
+		.nav__list-submenu {
+			position: absolute;
+			bottom: -50px;
+			left: 0;
+			background: #fff;
+			opacity: 0;
+			.nav__item {
+				padding: 5px 0 5px 5px;
+				display: block;
+			}
+		}
+
+		.about__link:hover, 
+		.about__link:focus {
+			.nav__list-submenu {
+				opacity: 1;
 			}
 		}
 
@@ -63,7 +77,7 @@
 				transform: scaleX(0);
 				transform-origin: bottom right; //TIP point
 			}
-			&:hover {
+			&:hover, &:focus {
 				transition: all .5s;
 				&:after{
 					-webkit-transform-origin: bottom left; //TIP point
@@ -80,17 +94,24 @@
 		.lang__btn {
 			padding: 6px 12px;
 			margin-right: 5px;
-
-			border: none;
+			border: 2px solid @yellow;
 			border-radius: 5px;
-			background: @yellow;
+			background: #fff;
 			box-shadow: 2.735px 6.444px 4.6px 0.4px rgba(240, 216, 20, 0.21);
-			transition: box-shadow .3s linear;
+			transition: all .3s linear;
 			color: #000;
 			font-size: 16px;
 			&:hover {
-				box-shadow: 2.735px 2px 2px 0.4px rgba(240, 216, 20, 0.21);
+				box-shadow: none;
+				background-color: #fab900;
+				border: 2px solid #fab900;
 			}
+		}
+		.lang__btn-active {
+			background: @yellow;
+			border: 2px solid @yellow;
+			box-shadow: none;
+			transition: all .3s linear;
 		}
 	} 
 
@@ -98,11 +119,8 @@
 	&__center {
 		height: 100%;
 		height: 92vh;
-
 		position: relative;
-		background-size: cover;
-		background-repeat: no-repeat;
-		background-position: center;  
+		background: url(../images/back-hero.jpg) no-repeat center/cover;
 		&:before {
 			content: '';
 			position: absolute;

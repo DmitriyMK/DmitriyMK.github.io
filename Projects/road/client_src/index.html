@@ -18,7 +18,6 @@
 	<meta name="msapplication-TileColor" content="#f4f6f6">
 	<!-- <meta name="theme-color" content="#55c202"> -->
 
-
 </head>
 <body>
 
@@ -28,16 +27,16 @@
 			<div class="container">
 				<div class="row">
 
-					<div class="col-lg-2">
+					<div class="col-md-3 col-lg-2">
 						<a class="logo__link" href="index.html">
 							<img class="logo__img" src="images/logo.png" alt="Дороги України" title="Дороги України">
 						</a>
 					</div>	
 
-					<div class="col-lg-5 col-lg-offset-3">
+					<div class="col-md-8 col-lg-5 col-lg-offset-3">
 						<nav class="nav">
 							<ul class="nav__list">
-								<li class="nav__item">
+								<li class="nav__item about__link">
 									<a class="nav__link" href="#">О компании</a>
 
 									<ul class="nav__list-submenu">
@@ -66,10 +65,10 @@
 						</nav>
 					</div>
 
-					<div class="col-lg-2">
+					<div class="col-md-2 col-lg-2">
 						<div class="lang__box">
 							<button class="lang__btn" id="UA">UA</button>
-							<button class="lang__btn" id="RU">RU</button>
+							<button class="lang__btn lang__btn-active" id="RU">RU</button>
 							<button class="lang__btn" id="EN">EN</button>
 						</div>
 					</div>
@@ -78,7 +77,7 @@
 		</div> <!-- header__top -->
 
 
-		<div class="header__center" style="background-image: url(./images/back-hero.jpg);">
+		<div class="header__center">
 			<div class="container">
 				<div class="row">
 					<div class="center__text">
@@ -114,20 +113,20 @@
 
 
 	<div class="services__list">
-		<a class="services__item">
-			<div class="services__img" style="background-image: url(./images/photo1.jpg);"></div>
+		<a class="services__item" href="#">
+			<img class="services__img" src="images/photo1.jpg" alt="Ремонт дорог">
 			<h3 class="services__item-title">Ремонт дорог</h3>
 		</a>
-		<a class="services__item">
-			<div class="services__img" style="background-image: url(./images/photo2.jpg);"></div>
+		<a class="services__item" href="#">
+			<img class="services__img" src="images/photo2.jpg" alt="Строительство дорог">
 			<h3 class="services__item-title">Строительство дорог</h3>
 		</a>
-		<a class="services__item">
-			<div class="services__img" style="background-image: url(./images/photo3.jpg);"></div>
+		<a class="services__item" href="#">
+			<img class="services__img" src="images/photo3.jpg" alt="Консалтинговые услуги">
 			<h3 class="services__item-title">Консалтинговые услуги</h3>
 		</a>
-		<a class="services__item">
-			<div class="services__img" style="background-image: url(./images/photo4.jpg);"></div>
+		<a class="services__item" href="#">
+			<img class="services__img" src="images/photo4.jpg" alt="Аренда техники">
 			<h3 class="services__item-title">Аренда техники</h3>
 		</a>
 	</div>
@@ -135,6 +134,7 @@
 	
 
 	<section class="advantages">
+		<div class="advantages-wrap"></div>
 		<div class="container">
 			<h2 class="section__title advantages__title">Баланс технических решений <br> и справедливой стоимости</h2>	
 			<div class="advantages__box">
@@ -369,7 +369,7 @@
 
 	<link rel="stylesheet" href="css/remodal.css">
 	<link rel="stylesheet" href="css/remodal-default-theme.css">
-	<link rel="stylesheet" href="css/animate.min.css">
+<!-- 	<link rel="stylesheet" href="css/animate.min.css"> -->
 
 	<link rel="stylesheet" href="css/slick-theme.css">
 	<link rel="stylesheet" href="css/slick.css">
@@ -381,7 +381,7 @@
 	<script src="libs/jquery-2.2.4.min.js"></script>
 
 	<script src="libs/jquery.nicescroll.min.js"></script>
-	<script src="libs/wow.min.js"></script>
+<!-- 	<script src="libs/wow.min.js"></script> -->
 	<script src="libs/jquery.enllax.min.js"></script>
 	<script src="libs/jquery.lazy.min.js"></script>
 

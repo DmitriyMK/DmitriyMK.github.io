@@ -18,12 +18,19 @@
 }
 
 .advantages {
-	padding: 40px 0;
+	padding-bottom: 40px;
 	position: relative; 
 	background: #f4f6f6;
-	
+	overflow: hidden;
 	clear: both;
 
+
+	&-wrap {
+		max-width: 1920px;
+		margin: auto; 
+		box-shadow: 0 0 32px 3px rgba(0, 0, 0, .3);
+
+	}
 	&:before {
 		content: '';
 		position: absolute;
@@ -34,17 +41,9 @@
 		background: url(../images/road-2.png)no-repeat center/cover;
 		background-size: cover; 
 	}
-	&:after {
-		content: '';
-		position: absolute;
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 0;
-		box-shadow: 0 0 32px 3px rgba(0, 0, 0, .6);
-		z-index: 0;
+	&__title {
+		padding-top: 40px;
 	}
-
 	&__box {
 		padding: 40px 100px 10px 100px;
 	}
@@ -53,10 +52,9 @@
 		padding-bottom: 25px;
 		color: #000;
 		text-align: center;
+
 	}
 	&__img {
-
-
 	}
 	&__item-title {
 		padding-top: 0;
