@@ -99,35 +99,36 @@ $(document).ready(function() {
 
 
 
-/*  $('.slider-for').slick({
+ $('.slider-for').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
+    arrows: false,
     dots: false,
-    arrow: true,
     asNavFor: '.slider-nav',
-    fade: true
+    fade: true,
   });
 
 
   $('.slider-nav').slick({
-    slidesToShow: 3,
+    slidesToShow: 4,
     slidesToScroll: 1,
     asNavFor: '.slider-for',
-    arrows: false,
+    arrows: true,
     dots: false,
     focusOnSelect: true,
+
     responsive: [
 
       {
         breakpoint: 576,
-        settings: {
+/*        settings: {
           slidesToShow: 2,
           dots: true,
-        }
+        }*/
       }
 
     ]
-  });*/
+  });
 
 
 });

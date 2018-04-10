@@ -18,55 +18,48 @@
 }
 
 
+.footer {
+	padding: 70px 0 100px 0;
+	background: #1e1e1e;
 
-/* .footer {
-	padding: 15px 0 30px 0;
-	text-align: center;
-	background: @green;
-	@media @mobile {
-
+	.logo__text {
+		font-size: 16px;
+		font-weight: 300;
 	}
-	@media @tablet {
-		text-align: left;
+	.logo__road {
+		position: absolute;
+
+		bottom: -100px;
+		left: -370px;
 	}
-	@media @desktop {
 
-	}
-	@media @desktop-xl {
-
-	}
-	@media @desktop-xl-2 {
-
-	}
-	@media @desktop-xll {
-
-	}
-	.logo {
-		line-height: 44px;
-	}
-	.agency {
-		padding: 15px 0;
-		a {
-			color: #fff;
-		}
-		@media @mobile {
-
-		}
-		@media @tablet {
-			float: right;
-			padding: 0;
-		}
-		@media @desktop {
-
-		}
-		@media @desktop-xl {
-
-		}
-		@media @desktop-xl-2 {
-
-		}
-		@media @desktop-xll {
-
+	.footer__box {
+/* 		border-left: 6px @yellow solid; */
+		padding: 0 20px;
+		position: relative;
+		&:before {
+			content: '';
+			position: absolute;
+			display: block;
+			top: 0;
+			left: 0;
+			width: 6px;
+			min-height: 160px;
+			background: @yellow;
 		}
 	}
-} */
+	.contact__item {
+		font-size: 18.6px;
+		font-weight: 300;
+	}
+	.address, .phone {
+		margin-bottom: 20px;
+	}
+
+	.footer__text {
+		margin: 0;
+		padding-right: 30px;
+		font-size: 18.6px;
+		font-weight: 300;
+	}
+}
