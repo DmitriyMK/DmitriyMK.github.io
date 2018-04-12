@@ -1448,8 +1448,9 @@ header, footer {
          -o-transition: all 0.4s linear;
             transition: all 0.4s linear;
 }
-.btn:hover {
+.btn:hover, .btn:focus {
     background: rgba(255, 64, 90, 0.8);
+    outline: none!important;
 }
 .btn-shdw {
     -webkit-box-shadow: 0 8px 16.15px 0.85px rgba(255, 72, 106, 0.35);
@@ -1470,7 +1471,7 @@ section {
     position: absolute;
     font-size: 116px;
     font-weight: 700;
-    color: #f0f4fb;
+    color: #e4ebf3;
 }
 ::-webkit-input-placeholder {
     font-size: 16px;
@@ -1574,9 +1575,8 @@ section {
     top: -240px;
     right: -370px;
     width: 1920px;
-    height: 1109px;
+    height: 978px;
     background: url(../images/back__hero.png) no-repeat center / cover;
-    background-repeat: repeat-x;
     z-index: 0;
 }
 .header__title {
@@ -1722,37 +1722,28 @@ section {
     -webkit-animation-iteration-count: 5;
             animation-iteration-count: 5;
 }
-/* #fixedTopMenu.fixed{
-	position: fixed;
-	padding: 0 15px;
-	top: 0;
-	left: 0;
-	width: 100%;
-	background: #131313;
-	z-index: 3000;
-	animation: smoothScroll 1s forwards;
-	&:after {
-		display: none;
-	}
-}
-*/
-.advantages {
-    background: #e9eef6;
-    overflow: hidden;
-}
-.advantages .wrapper {
-    position: relative;
-    width: 1920px;
-    margin: auto;
-}
-.advantages .wrapper:before {
-    content: '';
-    position: absolute;
+#fixedTopMenu.fixed {
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
-    background: url(../images/back__advant.png) no-repeat center / cover;
+    background: #131313;
+    z-index: 30;
+    -webkit-animation: smoothScroll 1s linear;
+            animation: smoothScroll 1s linear;
+    -webkit-transition: all 0.3s ease;
+         -o-transition: all 0.3s ease;
+            transition: all 0.3s ease;
+}
+#fixedTopMenu.fixed:after {
+    display: none;
+}
+.advantages {
+    padding-bottom: 100px;
+    height: 776px;
+    background: url(../images/back__advant.png) no-repeat bottom center;
+    background-size: cover;
+    z-index: 10;
 }
 .advantages__box {
     padding-top: 80px;
@@ -1761,10 +1752,321 @@ section {
     padding: 0 5px;
     text-align: center;
 }
+.advantages__item span {
+    background-position: center;
+}
 .advantages__item-title {
     margin-top: -10px;
     font-size: 18px;
     font-weight: 700;
+}
+.models {
+    padding-top: 68px;
+    margin-top: -140px;
+    background-color: #007fe3;
+    background: url(../images/back__models.jpg) no-repeat center / cover;
+}
+.models__title {
+    color: #fff;
+    line-height: 1;
+}
+.models__title .clear-accent {
+    font-size: 35px;
+    font-weight: 400;
+}
+.models__slider {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: 76px 40px 145px 40px;
+    overflow: hidden;
+}
+.models__item {
+    position: relative;
+    display: block;
+    margin: 0 15px;
+    height: 92px;
+    background: #fff;
+    border-radius: 46px;
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-box-shadow: inset -10px 5px 36px 2px rgba(0, 45, 86, 0.2);
+            box-shadow: inset -10px 5px 36px 2px rgba(0, 45, 86, 0.2);
+}
+.models__item:hover, .models__item:focus {
+    outline: none!important;
+}
+.ico_apple, .ico_asus, .ico_samsung, .ico_hp, .ico_lg, .ico_acer, .ico_msi, .ico_sony, .ico_lenovo, .ico_compaque {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    background-image: url(../images/laptop__sprite.png);
+    background-repeat: no-repeat;
+}
+.ico_apple {
+    background-position: 0 0;
+    height: 61px;
+    width: 108px;
+}
+.ico_asus {
+    background-position: -108px 0;
+    height: 61px;
+    width: 108px;
+}
+.ico_samsung {
+    background-position: 0 -61px;
+    height: 61px;
+    width: 108px;
+}
+.ico_hp {
+    background-position: -108px -61px;
+    height: 61px;
+    width: 98px;
+}
+.ico_lg {
+    background-position: 0 -122px;
+    height: 59px;
+    width: 124px;
+}
+.ico_acer {
+    background-position: 0 -181px;
+    height: 33px;
+    width: 138px;
+}
+.ico_msi {
+    background-position: -216px 0;
+    height: 30px;
+    width: 132px;
+}
+.ico_sony {
+    background-position: 0 -214px;
+    height: 29px;
+    width: 162px;
+}
+.ico_lenovo {
+    background-position: -162px -214px;
+    height: 28px;
+    width: 174px;
+}
+.ico_compaque {
+    background-position: 0 -243px;
+    height: 26px;
+    width: 172px;
+}
+.ico_luxoft, .ico_pb, .ico_np, .ico_volya, .ico_plarium, .ico_plus, .ico_mafia {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    background-image: url(../images/partners__sprite.png);
+    background-repeat: no-repeat;
+}
+.ico_luxoft {
+    background-position: 0 0;
+    height: 68px;
+    width: 131px;
+}
+.ico_pb {
+    background-position: -131px 0;
+    height: 66px;
+    width: 95px;
+}
+.ico_np {
+    background-position: 0 -68px;
+    height: 65px;
+    width: 65px;
+}
+.ico_volya {
+    background-position: -65px -68px;
+    height: 64px;
+    width: 88px;
+}
+.ico_plarium {
+    background-position: 0 -133px;
+    height: 62px;
+    width: 83px;
+}
+.ico_plus {
+    background-position: -226px 0;
+    height: 58px;
+    width: 166px;
+}
+.ico_mafia {
+    background-position: -226px -58px;
+    height: 53px;
+    width: 138px;
+}
+.product {
+    padding-top: 25px;
+    margin-top: -50px;
+    height: 1289px;
+    background: url(../images/back__product.png) no-repeat center / cover;
+}
+.product .container {
+    position: relative;
+}
+.product__title {
+    padding-right: 17px;
+    text-align: right;
+}
+.product__back {
+    right: 17px;
+    top: 110px;
+}
+.product__wrapper {
+    padding-top: 100px;
+}
+.product__box {
+    margin: auto 30px;
+    padding-bottom: 15px;
+    background: #fff;
+    border-radius: 15px;
+    -webkit-box-shadow: 0 15px 36px 2px rgba(0, 45, 86, 0.15);
+            box-shadow: 0 15px 36px 2px rgba(0, 45, 86, 0.15);
+    -webkit-transition: all 0.3s linear;
+         -o-transition: all 0.3s linear;
+            transition: all 0.3s linear;
+}
+.product__box:hover .img {
+    -webkit-transform: translate(-50%, -50%) scale(1);
+        -ms-transform: translate(-50%, -50%) scale(1);
+            transform: translate(-50%, -50%) scale(1);
+}
+.product .box-eco:hover {
+    -webkit-box-shadow: 0 15px 36px 2px rgba(62, 215, 255, 0.7);
+            box-shadow: 0 15px 36px 2px rgba(62, 215, 255, 0.7);
+}
+.product .box-pre:hover {
+    -webkit-box-shadow: 0 15px 36px 2px rgba(2, 185, 248, 0.7);
+            box-shadow: 0 15px 36px 2px rgba(2, 185, 248, 0.7);
+}
+.product .box-pro:hover {
+    -webkit-box-shadow: 0 15px 36px 2px rgba(0, 130, 213, 0.7);
+            box-shadow: 0 15px 36px 2px rgba(0, 130, 213, 0.7);
+}
+.product__name {
+    display: block;
+    padding: 22px 0;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    color: #fff;
+}
+.product .name-eco {
+    background: #3ed7ff;
+    background: -webkit-linear-gradient(top, #3ed7ff 0%, #01baf4 100%);
+    background: -webkit-gradient(linear, left top, left bottom, from(#3ed7ff), to(#01baf4));
+    background:      -o-linear-gradient(top, #3ed7ff 0%, #01baf4 100%);
+    background:         linear-gradient(to bottom, #3ed7ff 0%, #01baf4 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#3ed7ff', endColorstr='#01baf4', GradientType=0);
+}
+.product .name-pre {
+    background: #02b9f8;
+    background: -webkit-linear-gradient(top, #02b9f8 0%, #059cea 100%);
+    background: -webkit-gradient(linear, left top, left bottom, from(#02b9f8), to(#059cea));
+    background:      -o-linear-gradient(top, #02b9f8 0%, #059cea 100%);
+    background:         linear-gradient(to bottom, #02b9f8 0%, #059cea 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#02b9f8', endColorstr='#059cea', GradientType=0);
+}
+.product .name-pro {
+    background: #0082d5;
+    background: -webkit-linear-gradient(top, #0082d5 0%, #0072ca 100%);
+    background: -webkit-gradient(linear, left top, left bottom, from(#0082d5), to(#0072ca));
+    background:      -o-linear-gradient(top, #0082d5 0%, #0072ca 100%);
+    background:         linear-gradient(to bottom, #0082d5 0%, #0072ca 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0082d5', endColorstr='#0072ca', GradientType=0);
+}
+.product__img {
+    position: relative;
+    width: 100%;
+    height: 250px;
+    background: #f7f9fc;
+}
+.product .img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 50%;
+    top: 45%;
+    -webkit-transform: translate(-50%, -50%) scale(0.9);
+        -ms-transform: translate(-50%, -50%) scale(0.9);
+            transform: translate(-50%, -50%) scale(0.9);
+    -webkit-transition: all 0.3s linear;
+         -o-transition: all 0.3s linear;
+            transition: all 0.3s linear;
+}
+.product .img-eco {
+    background: url(../images/model1.png) no-repeat center;
+}
+.product .img-pre {
+    background: url(../images/model2.png) no-repeat center;
+}
+.product .img-pro {
+    background: url(../images/model3.png) no-repeat center;
+}
+.product__country {
+    position: absolute;
+    padding: 1px 10px;
+    bottom: 15px;
+    left: 20px;
+    border: 1px solid #272b35;
+    border-radius: 10px;
+}
+.product__accent {
+    position: absolute;
+    right: 0;
+    top: 10px;
+    padding: 5px 10px;
+    font-size: 14px;
+    font-weight: 700;
+    background: #fa5869;
+    color: #fff;
+}
+.product__list {
+    padding-top: 15px;
+}
+.product__item {
+    position: relative;
+    padding-left: 60px;
+    padding-bottom: 10px;
+    letter-spacing: 1px;
+}
+.product__item:before {
+    content: '';
+    position: absolute;
+    left: 20px;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    background: url(../images/icons/flash.png) no-repeat;
+    border-radius: 50%;
+}
+.product__price {
+    margin: 10px 0;
+    letter-spacing: 0.6px;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    color: #266fb3;
+}
+.product .btn {
+    display: block;
+    padding: 0 80px;
+    margin: 25px auto;
+    font-size: 18px;
+    font-weight: 700;
+    color: #fff;
 }
 /* .footer {
 	padding: 15px 0 30px 0;
@@ -2030,22 +2332,22 @@ label {
 }
 @-webkit-keyframes smoothScroll {
     0% {
-        -webkit-transform: translateY(-40px);
-                transform: translateY(-40px);
+        opacity: 0;
+        /* 		transform: translateY(-40px); */
     }
     100% {
-        -webkit-transform: translateY(0px);
-                transform: translateY(0px);
+        opacity: 0.8;
+        /* 		transform: translateY(0px); */
     }
 }
 @keyframes smoothScroll {
     0% {
-        -webkit-transform: translateY(-40px);
-                transform: translateY(-40px);
+        opacity: 0;
+        /* 		transform: translateY(-40px); */
     }
     100% {
-        -webkit-transform: translateY(0px);
-                transform: translateY(0px);
+        opacity: 0.8;
+        /* 		transform: translateY(0px); */
     }
 }
 @-webkit-keyframes light {
