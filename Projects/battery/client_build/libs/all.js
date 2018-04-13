@@ -58,99 +58,114 @@ $(document).ready(function() {
 
 $(document).ready(function() {
 
-/*  if (document.documentElement.clientWidth > 1200) {
+  if (document.documentElement.clientWidth > 1200) {
     new WOW().init();
 
   };
 
-  $('.srolling__link').on('click', function(e) {
-    e.preventDefault();
-    var t = 1500;
-    var d = $(this).attr('data-href') ? $(this).attr('data-href') : $(this).attr('href');
-    $('html,body').stop().animate({
-      scrollTop: $(d).offset().top
-    }, t);
-  });*/
 
-  /*LAZY LOAD*/
-/*  $('.lazy').lazy({
-    effect: "fadeIn",
-    effectTime: 200,
-    threshold: 0,
-    scrollDirection: 'vertical',
-    visibleOnly: true,
-
-    onError: function(element) {
-      console.log('error loading ' + element.data('src'));
-    }
-
-  });
-*/
-
-/*  $('.phone__mask').mask('+38(999)999-99-99');
-
-
-  $('.counter').counterUp({
-    delay: 10,
-    time: 1000
-  });*/
-
-
-
-
- $('.models__slider').slick({
-    slidesToShow: 7,
-    dots: false,
-    arrow: false,
-    autoplay: true,
-    autoplaySpeed: 3000,
-  });
-
-
-
- $('.bar-percentage[data-percentage]').each(function () {
-  var progress = $(this);
-  var percentage = Math.ceil($(this).attr('data-percentage'));
-  $({countNum: 0}).animate({countNum: percentage}, {
-    duration: 2000,
-    easing:'linear',
-    step: function() {
+  $('.bar-percentage[data-percentage]').each(function() {
+    var progress = $(this);
+    var percentage = Math.ceil($(this).attr('data-percentage'));
+    $({
+      countNum: 0
+    }).animate({
+      countNum: percentage
+    }, {
+      duration: 2000,
+      easing: 'linear',
+      step: function() {
       // What todo on every count
       var pct = Math.floor(this.countNum) + '%';
-      progress.text(pct) && progress.siblings().children().css('width',pct);
+      progress.text(pct) && progress.siblings().children().css('width', pct);
     }
   });
-});
+  });
 
 
-/*  $('.slider-nav').slick({
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    asNavFor: '.slider-for',
-    arrows: false,
-    dots: false,
-    focusOnSelect: true,
-    responsive: [
 
-      {
-        breakpoint: 576,
-        settings: {
-          slidesToShow: 2,
-          dots: true,
-        }
+  /*  $('.srolling__link').on('click', function(e) {
+      e.preventDefault();
+      var t = 1500;
+      var d = $(this).attr('data-href') ? $(this).attr('data-href') : $(this).attr('href');
+      $('html,body').stop().animate({
+        scrollTop: $(d).offset().top
+      }, t);
+    });*/
+
+    /*LAZY LOAD*/
+  $('.lazy').lazy({
+      effect: "fadeIn",
+      effectTime: 200,
+      threshold: 0,
+      scrollDirection: 'horizontal',
+      visibleOnly: true,
+    });
+    
+
+ $('.phone__mask').mask('+380(99)999-99-99');
+
+
+    $('.models__slider').slick({
+      slidesToShow: 7,
+      dots: false,
+      arrow: false,
+      autoplay: true,
+      autoplaySpeed: 3000,
+    });
+
+    $('.partners__slider').slick({
+      slidesToShow: 6,
+      dots: false,
+      arrow: false,
+      autoplay: true,
+      autoplaySpeed: 3000,
+    });
+
+
+
+  /* $('.bar-percentage[data-percentage]').each(function () {
+    var progress = $(this);
+    var percentage = Math.ceil($(this).attr('data-percentage'));
+    $({countNum: 0}).animate({countNum: percentage}, {
+      duration: 2000,
+      easing:'linear',
+      step: function() {
+        // What todo on every count
+        var pct = Math.floor(this.countNum) + '%';
+        progress.text(pct) && progress.siblings().children().css('width',pct);
       }
-
-    ]
+    });
   });*/
 
 
-});
+  /*  $('.slider-nav').slick({
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      asNavFor: '.slider-for',
+      arrows: false,
+      dots: false,
+      focusOnSelect: true,
+      responsive: [
+
+        {
+          breakpoint: 576,
+          settings: {
+            slidesToShow: 2,
+            dots: true,
+          }
+        }
+
+      ]
+    });*/
+
+
+  });
 
 
 $(window).on('resize orientationchange', function() {
   $('.slider').slick('resize');
 });
-
 
 
 
@@ -326,3 +341,21 @@ $(window).on('resize orientationchange', function() {
   });
 
 };*/
+
+
+/*$('.bar-percentage[data-percentage]').each(function () {
+  var progress = $(this);
+  var percentage = Math.ceil($(this).attr('data-percentage'));
+  $({countNum: 0}).animate({countNum: percentage}, {
+    duration: 2000,
+    easing:'linear',
+    step: function() {
+      // What todo on every count
+      var pct = Math.floor(this.countNum) + '%';
+      progress.text(pct) && progress.siblings().children().css('width',pct);
+    }
+  });
+});*/
+
+
+
