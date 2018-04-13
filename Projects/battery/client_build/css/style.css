@@ -2068,6 +2068,89 @@ section {
     font-weight: 700;
     color: #fff;
 }
+.product__details {
+    margin: 50px 30px;
+}
+.product__resume {
+    position: relative;
+    padding: 13px;
+    color: #4c5e83;
+    line-height: 1.1;
+}
+.product__resume:before {
+    content: '*';
+    position: absolute;
+    left: 0;
+    top: 13px;
+    font-size: 16px;
+    line-height: 1.33;
+    font-weight: 400;
+    font-family: 'Avanti', fallback, sans-serif;
+    color: #4c5e83;
+}
+/* PERCENTAGE ANIMATION */
+.bar-main-container {
+    margin: 10px auto;
+    width: 100%;
+    color: #fff;
+}
+.wrap {
+    position: relative;
+}
+.bar-percentage {
+    display: block;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+}
+.percentage1 {
+    left: 40%;
+}
+.percentage2 {
+    left: 48%;
+}
+.percentage3 {
+    left: 55%;
+}
+.percentage4 {
+    left: 60%;
+}
+.percentage5 {
+    left: 75%;
+}
+.percentage6 {
+    right: 4%;
+}
+.bar-container {
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #cad7e3;
+    -webkit-box-shadow: inset 2.424px 4.373px 10px 0 rgba(156, 185, 211, 0.19);
+            box-shadow: inset 2.424px 4.373px 10px 0 rgba(156, 185, 211, 0.19);
+}
+.bar {
+    padding-left: 10px;
+    color: #fff;
+    -ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(Opacity=100)';
+        filter: alpha(opacity=100);
+    opacity: 1;
+}
+.bar-text {
+    min-width: 150px;
+    line-height: 1.5;
+}
+/* COLORS */
+.colorPrice {
+    background: #3ed7ff;
+}
+.colorQuality {
+    background: #02b9f8;
+}
+.colorTime {
+    background: #0082d5;
+}
 /* .footer {
 	padding: 15px 0 30px 0;
 	text-align: center;
