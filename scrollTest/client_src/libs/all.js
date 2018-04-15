@@ -81,7 +81,6 @@ var ctrl = new ScrollMagic.Controller({
 =======
 // Init ScrollMagic
 /*var ctrl = new ScrollMagic.Controller({
->>>>>>> 8a8e211ec26cee1aa0267b066047b16e1c534241
   globalSceneOptions: {
     triggerHook: 'onLeave'
   }
@@ -113,7 +112,7 @@ var wh = window.innerHeight;
 new ScrollMagic.Scene({
   offset: wh*3
 })
-<<<<<<< HEAD
+
 .setClassToggle("three", 'fade-in')
 .addTo(ctrl);*/
 
@@ -138,7 +137,6 @@ var pinToScene = new ScrollMagic.Scene({
 
 
 
-++
 
 ///////////////////// TWEEN MAX ANIMATION LESSONS2
 

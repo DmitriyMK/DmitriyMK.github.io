@@ -64,26 +64,6 @@ $(document).ready(function() {
   };
 
 
-  $('.bar-percentage[data-percentage]').each(function() {
-    var progress = $(this);
-    var percentage = Math.ceil($(this).attr('data-percentage'));
-    $({
-      countNum: 0
-    }).animate({
-      countNum: percentage
-    }, {
-      duration: 2000,
-      easing: 'linear',
-      step: function() {
-      // What todo on every count
-      var pct = Math.floor(this.countNum) + '%';
-      progress.text(pct) && progress.siblings().children().css('width', pct);
-    }
-  });
-  });
-
-
-
   /*  $('.srolling__link').on('click', function(e) {
       e.preventDefault();
       var t = 1500;
@@ -93,59 +73,37 @@ $(document).ready(function() {
       }, t);
     });*/
 
-    /*LAZY LOAD*/
-  $('.lazy').lazy({
-      effect: "fadeIn",
-      effectTime: 200,
-      threshold: 0,
-      scrollDirection: 'horizontal',
-      visibleOnly: true,
-    });
-    
-
- $('.phone__mask').mask('+380(99)999-99-99');
-
-
-    $('.models__slider').slick({
-      slidesToShow: 7,
-      dots: false,
-      arrow: false,
-      autoplay: true,
-      autoplaySpeed: 3000,
-    });
-
-    $('.partners__slider').slick({
-      slidesToShow: 6,
-      dots: false,
-      arrow: false,
-      autoplay: true,
-      autoplaySpeed: 3000,
-    });
-
-
-
-  /* $('.bar-percentage[data-percentage]').each(function () {
-    var progress = $(this);
-    var percentage = Math.ceil($(this).attr('data-percentage'));
-    $({countNum: 0}).animate({countNum: percentage}, {
-      duration: 2000,
-      easing:'linear',
-      step: function() {
-        // What todo on every count
-        var pct = Math.floor(this.countNum) + '%';
-        progress.text(pct) && progress.siblings().children().css('width',pct);
-      }
-    });
+  /*LAZY LOAD*/
+  /*$('.lazy').lazy({
+    effect: "fadeIn",
+    effectTime: 200,
+    threshold: 0,
+    scrollDirection: 'horizontal',
+    visibleOnly: true,
   });*/
 
 
-  /*  $('.slider-nav').slick({
-      slidesToShow: 3,
-      slidesToScroll: 1,
-      asNavFor: '.slider-for',
-      arrows: false,
-      dots: false,
-      focusOnSelect: true,
+  $('.phone__mask').mask('+380(99)999-99-99');
+
+
+  $('.models__slider').slick({
+    slidesToShow: 7,
+    dots: false,
+    arrow: false,
+    autoplay: true,
+    autoplaySpeed: 3000,
+  });
+
+  $('.partners__slider').slick({
+    slidesToShow: 6,
+    dots: false,
+    arrow: false,
+    autoplay: true,
+    autoplaySpeed: 3000,
+  });
+
+
+  /*  
       responsive: [
 
         {
@@ -157,35 +115,72 @@ $(document).ready(function() {
         }
 
       ]
-    });*/
+   
+   */
 
 
-  });
+});
 
 
 $(window).on('resize orientationchange', function() {
   $('.slider').slick('resize');
 });
 
+$(window).enllax();
 
 
-// $(".form").submit(function() {
-//   var th = $(this);
-//   $.ajax({
-//     type: "POST",
-//     url: "mail.php",
-//     data: th.serialize()
-//   }).done(function() {
 
-//     var inst = $('[data-remodal-id=modal-thanks]').remodal();
-//     inst.open();
+$(".form").submit(function() {
+  var th = $(this);
+  $.ajax({
+    type: "POST",
+    url: "mail.php",
+    data: th.serialize()
+  }).done(function() {
 
-//     setTimeout(function() {
-//       th.trigger("reset");
-//     }, 1000);
-//   });
-//   return false;
-// });
+    var inst = $('[data-remodal-id=modal-thanks]').remodal();
+    inst.open();
+
+    setTimeout(function() {
+      th.trigger("reset");
+    }, 1000);
+  });
+  return false;
+});
+
+
+
+var bool = 0;
+
+$('#product').mouseover(function() {
+
+  if (bool == 0) {
+
+    $('.bar-percentage[data-percentage]').each(function() {
+      var progress = $(this);
+      var percentage = Math.ceil($(this).attr('data-percentage'));
+      $({
+        countNum: 0
+      }).animate({
+        countNum: percentage
+      }, {
+        duration: 1500,
+        easing: 'linear',
+        step: function() {
+          // What todo on every count
+          var pct = Math.floor(this.countNum) + '%';
+          progress.text(pct) && progress.siblings().children().css('width', pct);
+        }
+      });
+    })
+
+    bool = 1;
+  }
+  /*else {
+     false;
+   }*/
+
+});
 
 
 
@@ -341,21 +336,3 @@ $(window).on('resize orientationchange', function() {
   });
 
 };*/
-
-
-/*$('.bar-percentage[data-percentage]').each(function () {
-  var progress = $(this);
-  var percentage = Math.ceil($(this).attr('data-percentage'));
-  $({countNum: 0}).animate({countNum: percentage}, {
-    duration: 2000,
-    easing:'linear',
-    step: function() {
-      // What todo on every count
-      var pct = Math.floor(this.countNum) + '%';
-      progress.text(pct) && progress.siblings().children().css('width',pct);
-    }
-  });
-});*/
-
-
-

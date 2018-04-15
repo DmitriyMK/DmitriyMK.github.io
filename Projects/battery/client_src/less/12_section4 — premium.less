@@ -25,6 +25,8 @@
 	background-color: @blue;
 	background: url(../images/back__model-pre.jpg)no-repeat center/cover;
 	color: #fff;
+	overflow: hidden;
+	
 	&__title {
 		padding-top: 80px;
 		padding-left: 160px;
@@ -38,6 +40,7 @@
 	}
 	&__box {
 		position: relative;
+
 	}
 	&__list {
 		position: relative;
@@ -99,33 +102,51 @@
 		
 		.img1 {
 			position: absolute;
-			top: -200px;
+			top: -210px;
 			right: 90px;
-
+			width: 592px;
+			height: 354px;
+			z-index: 10;
 		}
 		.img2 {
 			position: absolute;
-			top: 10px;
+			top: 0;
 			right: 100px;
+			width: 569px;
+			height: 298px;
+			z-index: 9;
 		}
 		.img3 {
 			position: absolute;
 			top: 200px;
 			right: 250px;
+			width: 357px;
+			height: 183px;
+			z-index: 8;
 		}
 		.img4 {
 			position: absolute;
-			top: 240px;
+			top: 300px;
 			right: 90px;
+			width: 590px;
+			height: 341px;
+			z-index: 7;
 		}
 		.img5 {
 			position: absolute;
-			top: 320px;
+			top: 350px;
 			right: 90px;
+			width: 628px;
+			height: 380px;
 		}
 	}
 
 
+
+	.flyUp {
+		background: no-repeat;
+		background-size: cover;
+	}
 
 
 }
