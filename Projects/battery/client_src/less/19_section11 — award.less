@@ -72,7 +72,6 @@
 			transform: translateY(-50%);
 			border: 10px solid #fff;
 			box-shadow: 0px 15px 36.1px 1.9px rgba(0, 45, 86, 0.09);
-			/* height: 100%; */
 		}
 	}
 	.slick-prev,
@@ -82,71 +81,91 @@
 		box-sizing: border-box;
 		width: 535px;
 		height: 535px;
-		transition: all .5s linear;
+		transition: all .3s ease;
 	}
 
 	.slick-prev:hover, 
 	.slick-prev:focus {
-		left: -88vh; 
-		width: 680px;
-		height: 680px;
+		transform: translate(0, -50%) scale(1.2);
+		&:after {
+			width: 55px;
+		}
+
 	}
 
 	.slick-next:hover,
 	.slick-next:focus {
-		right: -88vh; 
-		width: 680px;
-		height: 680px;
+		transform: translate(0, -50%) scale(1.2);
+		&:after {
+			width: 55px;
+		}
 	}
 	
 
 	.slick-prev {
-		left: -80vh; 
+		left: -85vh; 
+
+		&:before {
+			top: 50%;
+			left: 45vh;
+			font-family: "Fontello";
+			content: '\e80a';
+			font-size: 40px;
+			line-height: 1;
+			color: #000;
+			opacity: 1;
+			-webkit-font-smoothing: antialiased;
+			-moz-osx-font-smoothing: grayscale;
+		}
+		&:after {
+			background-color: #000;
+			content: "";
+			display: block;
+			height: 1px;
+			left: 47.5vh;
+			position: absolute;
+			top: 53.8%;
+			transform: translate3d(0%,-100%,0);
+			transition: width .35s;
+			width: 0;
+			z-index: 10;
+		}
 
 	}
-
-	.slick-prev:before {
-		top: 50%;
-		left: 40vh;
-		font-family: "Fontello";
-		content: '\e80a';
-		font-size: 40px;
-		line-height: 1;
-		color: #000;
-		opacity: 1;
-		-webkit-font-smoothing: antialiased;
-		-moz-osx-font-smoothing: grayscale;
-	}
-
 
 	.slick-next {
-		right: -80vh;
+		right: -85vh;
+
+		&:before {
+			top: 50%;
+			right: 45vh;
+			font-family: "Fontello";
+			content: '\e809';
+			font-size: 40px;
+			line-height: 1;
+			color: #000;
+			opacity: 1;
+			-webkit-font-smoothing: antialiased;
+			-moz-osx-font-smoothing: grayscale;
+		}
 
 		&:after {
 			background-color: #000;
 			content: "";
 			display: block;
 			height: 1px;
-			left: 43px;
+			right: 47.5vh;
 			position: absolute;
-			top: 50%;
-			transform: translate3d(-100%,-50%,0);
+			top: 53.8%;
+			transform: translate3d(0%,-100%,0);
 			transition: width .35s;
 			width: 0;
-			will-change: width;
 			z-index: 10;
 		}
+		
 	}
 
-	.slick-next:before {
-		display: block;
-		position: absolute;
-		top: -20px;
-		right: -20px;
-		/* 	background: url(../images/icons/arrow_right.png)no-repeat; */
-		width: 65px;
-		height: 114px;
-	}
+
 
 
 	.slick-current, .slick-focus  {
