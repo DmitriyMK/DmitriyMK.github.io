@@ -64,15 +64,6 @@ $(document).ready(function() {
   };
 
 
-  /*  $('.srolling__link').on('click', function(e) {
-      e.preventDefault();
-      var t = 1500;
-      var d = $(this).attr('data-href') ? $(this).attr('data-href') : $(this).attr('href');
-      $('html,body').stop().animate({
-        scrollTop: $(d).offset().top
-      }, t);
-    });*/
-
   /*LAZY LOAD*/
   /*$('.lazy').lazy({
     effect: "fadeIn",
@@ -101,6 +92,23 @@ $(document).ready(function() {
     autoplay: true,
     autoplaySpeed: 3000,
   });
+
+  $('.review__slider').slick({
+    slidesToShow: 1,
+    dots: true,
+    arrow: true,
+  });
+
+  $('.award__slider').slick({
+    slidesToShow: 3,
+    dots: true,
+    arrow: true,
+    focusOnSelect: true,
+    centerMode: true,
+    centerPadding: '20px',
+  });
+
+  
 
 
   /*  
@@ -152,7 +160,7 @@ $(".form").submit(function() {
 
 var bool = 0;
 
-$('#product').mouseover(function() {
+$('.product__details').mouseover(function() {
 
   if (bool == 0) {
 
@@ -183,16 +191,15 @@ $('#product').mouseover(function() {
 });
 
 
+function initMap() {
 
-/*function initMap() {
-
-  var latlng = new google.maps.LatLng(50.45843182, 30.40665988);
+  var latlng = new google.maps.LatLng(49.9915345, 36.2334419);
   var settings = {
-    zoom: 15,
+    zoom: 17,
     center: latlng,
     center: {
-      lat: 50.45843182,
-      lng: 30.40665988
+      lat: 49.9916345,
+      lng: 36.2344419
     },
     mapTypeControl: true,
     mapTypeControlOptions: {
@@ -207,115 +214,219 @@ $('#product').mouseover(function() {
     styles:
 
 
-      [{
-      "elementType": "geometry",
-      "stylers": [{
-        "color": "#f5f5f5"
-      }]
-    }, {
-      "elementType": "labels.icon",
-      "stylers": [{
-        "visibility": "off"
-      }]
-    }, {
-      "elementType": "labels.text.fill",
-      "stylers": [{
-        "color": "#616161"
-      }]
-    }, {
-      "elementType": "labels.text.stroke",
-      "stylers": [{
-        "color": "#f5f5f5"
-      }]
-    }, {
-      "featureType": "administrative.land_parcel",
-      "elementType": "labels.text.fill",
-      "stylers": [{
-        "color": "#bdbdbd"
-      }]
-    }, {
-      "featureType": "poi",
-      "elementType": "geometry",
-      "stylers": [{
-        "color": "#eeeeee"
-      }]
-    }, {
-      "featureType": "poi",
-      "elementType": "labels.text.fill",
-      "stylers": [{
-        "color": "#757575"
-      }]
-    }, {
-      "featureType": "poi.park",
-      "elementType": "geometry",
-      "stylers": [{
-        "color": "#e5e5e5"
-      }]
-    }, {
-      "featureType": "poi.park",
-      "elementType": "labels.text.fill",
-      "stylers": [{
-        "color": "#9e9e9e"
-      }]
-    }, {
-      "featureType": "road",
-      "elementType": "geometry",
-      "stylers": [{
-        "color": "#ffffff"
-      }]
-    }, {
-      "featureType": "road.arterial",
-      "elementType": "labels.text.fill",
-      "stylers": [{
-        "color": "#757575"
-      }]
-    }, {
-      "featureType": "road.highway",
-      "elementType": "geometry",
-      "stylers": [{
-        "color": "#dadada"
-      }]
-    }, {
-      "featureType": "road.highway",
-      "elementType": "labels.text.fill",
-      "stylers": [{
-        "color": "#616161"
-      }]
-    }, {
-      "featureType": "road.local",
-      "elementType": "labels.text.fill",
-      "stylers": [{
-        "color": "#9e9e9e"
-      }]
-    }, {
-      "featureType": "transit.line",
-      "elementType": "geometry",
-      "stylers": [{
-        "color": "#e5e5e5"
-      }]
-    }, {
-      "featureType": "transit.station",
-      "elementType": "geometry",
-      "stylers": [{
-        "color": "#eeeeee"
-      }]
-    }, {
-      "featureType": "water",
-      "elementType": "geometry",
-      "stylers": [{
-        "color": "#c9c9c9"
-      }]
-    }, {
-      "featureType": "water",
-      "elementType": "labels.text.fill",
-      "stylers": [{
-        "color": "#9e9e9e"
-      }]
-    }]
+      [
+    {
+        "featureType": "landscape",
+        "stylers": [
+            {
+                "visibility": "simplified"
+            },
+            {
+                "color": "#9debff"
+            },
+            {
+                "weight": 0.1
+            }
+        ]
+    },
+    {
+        "featureType": "water",
+        "stylers": [
+            {
+                "visibility": "simplified"
+            },
+            {
+                "color": "#ebebeb"
+            }
+        ]
+    },
+    {
+        "featureType": "road.arterial",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "visibility": "on"
+            },
+            {
+                "color": "#51dbff"
+            }
+        ]
+    },
+    {
+        "featureType": "poi.park",
+        "elementType": "geometry.fill",
+        "stylers": [
+            {
+                "visibility": "on"
+            },
+            {
+                "color": "#51dbff"
+            }
+        ]
+    },
+    {
+        "featureType": "poi"
+    },
+    {
+        "featureType": "transit.line",
+        "stylers": [
+            {
+                "color": "#ff4e80"
+            },
+            {
+                "visibility": "off"
+            }
+        ]
+    },
+    {
+        "featureType": "road",
+        "elementType": "geometry.stroke",
+        "stylers": [
+            {
+                "visibility": "on"
+            },
+            {
+                "weight": 1.5
+            },
+            {
+                "color": "#51dbff"
+            }
+        ]
+    },
+    {
+        "featureType": "road.arterial",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "visibility": "simplified"
+            },
+            {
+                "color": "#51dbNaN"
+            }
+        ]
+    },
+    {
+        "featureType": "road.highway",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "visibility": "simplified"
+            },
+            {
+                "color": "#51dbff"
+            }
+        ]
+    },
+    {
+        "featureType": "poi.business",
+        "stylers": [
+            {
+                "color": "#9debff"
+            },
+            {
+                "visibility": "off"
+            }
+        ]
+    },
+    {},
+    {
+        "featureType": "poi.government",
+        "stylers": [
+            {
+                "visibility": "off"
+            }
+        ]
+    },
+    {
+        "featureType": "poi.school",
+        "stylers": [
+            {
+                "visibility": "off"
+            }
+        ]
+    },
+    {
+        "featureType": "administrative",
+        "stylers": [
+            {
+                "visibility": "on"
+            }
+        ]
+    },
+    {
+        "featureType": "poi.medical",
+        "stylers": [
+            {
+                "visibility": "off"
+            }
+        ]
+    },
+    {
+        "featureType": "poi.attraction",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "visibility": "on"
+            },
+            {
+                "color": "#51dbff"
+            }
+        ]
+    },
+    {
+        "featureType": "poi.place_of_worship",
+        "stylers": [
+            {
+                "visibility": "off"
+            }
+        ]
+    },
+    {
+        "featureType": "poi.sports_complex",
+        "stylers": [
+            {
+                "visibility": "off"
+            }
+        ]
+    },
+    {},
+    {
+        "featureType": "road.arterial",
+        "elementType": "labels.text.stroke",
+        "stylers": [
+            {
+                "color": "#000000"
+            },
+            {
+                "visibility": "off"
+            }
+        ]
+    },
+    {
+        "featureType": "road.highway",
+        "elementType": "labels.text",
+        "stylers": [
+            {
+                "visibility": "off"
+            }
+        ]
+    },
+    {
+        "featureType": "road.highway.controlled_access",
+        "stylers": [
+            {
+                "visibility": "off"
+            }
+        ]
+    },
+    {
+        "featureType": "road"
+    }
+    ]
 
   };
   var map = new google.maps.Map(document.getElementById("google-map"), settings);
-  var myLatlng = new google.maps.LatLng(50.45843182, 30.40665988);
+  var myLatlng = new google.maps.LatLng(49.9915345, 36.2334419);
 
   var myOptions = {
     zoom: 10,
@@ -324,15 +435,19 @@ $('#product').mouseover(function() {
     disableDoubleClickZoom: true,
     mapTypeId: google.maps.MapTypeId.ROADMAP
   }
-  var image = 'images/mark.png';
+  var image = '../images/marker.png';
   var beachMarker = new google.maps.Marker({
     position: {
-      lat: 50.45843182,
-      lng: 30.40665988
+      lat: 49.9910345,
+      lng: 36.2334419
+
+/*      lat: 49.9916345,
+      lng: 36.2344419*/
+
     },
     map: map,
     icon: image
       // title: 'Push-k Solutions'
   });
 
-};*/
+};
