@@ -2550,6 +2550,12 @@ section {
     margin: 15px 0;
     font-size: 16px;
 }
+.review .slick-prev:before {
+    background: url(../images/icons/arrow_left.png) no-repeat;
+}
+.review .slick-next:before {
+    background: url(../images/icons/arrow_right.png) no-repeat;
+}
 .award {
     padding-top: 60px;
     padding-bottom: 100px;
@@ -2576,7 +2582,7 @@ section {
     z-index: -1;
 }
 .award__item {
-    padding: 80px 0;
+    padding: 70px 0;
     -webkit-transition: 0.5s ease all;
          -o-transition: 0.5s ease all;
             transition: 0.5s ease all;
@@ -2588,13 +2594,19 @@ section {
     padding: 0;
     width: 280px;
     height: 400px;
+}
+.award__img img {
+    display: block;
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
     border: 10px solid #fff;
-    background-repeat: no-repeat;
-    background-position: top;
-    background-size: cover;
     -webkit-box-shadow: 0 15px 36.1px 1.9px rgba(0, 45, 86, 0.09);
             box-shadow: 0 15px 36.1px 1.9px rgba(0, 45, 86, 0.09);
-    z-index: 1;
+    /* height: 100%; */
 }
 .award .slick-current {
     -webkit-transform: scale(1.2);
@@ -2689,15 +2701,17 @@ section {
 }
 .footer .agency {
     margin-top: 10px;
-    font-size: 12px;
+    font-size: 16px;
     font-weight: 700;
 }
 .footer .agency a {
-    font-size: 10px;
+    font-size: 16px;
     color: #fff;
+    font-weight: 700;
 }
 .footer .agency p {
     margin: 0;
+    font-weight: 700;
 }
 @media only screen and (min-width: 768px) {
     .footer .agency {
@@ -2737,7 +2751,7 @@ color: #1a46a8; */
     position: absolute;
     top: -20px;
     left: 54px;
-    background: url(../images/icons/arrow_left.png) no-repeat;
+    /* 	background: url(../images/icons/arrow_left.png)no-repeat; */
     width: 65px;
     height: 114px;
 }
@@ -2750,7 +2764,7 @@ color: #1a46a8; */
     position: absolute;
     top: -20px;
     right: -20px;
-    background: url(../images/icons/arrow_right.png) no-repeat;
+    /* 	background: url(../images/icons/arrow_right.png)no-repeat; */
     width: 65px;
     height: 114px;
 }
