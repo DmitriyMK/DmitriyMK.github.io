@@ -2254,6 +2254,9 @@ section {
     position: absolute;
     top: 0;
     right: 0;
+    -webkit-transition: all 0.3s linear;
+         -o-transition: all 0.3s linear;
+            transition: all 0.3s linear;
 }
 .premium__inside .img1 {
     position: absolute;
@@ -2294,6 +2297,22 @@ section {
     width: 628px;
     height: 380px;
     z-index: 10;
+}
+.premium .batteryGoUp1 {
+    -webkit-transform: translateY(-20px);
+        -ms-transform: translateY(-20px);
+            transform: translateY(-20px);
+    -webkit-transition: all 0.5s ease;
+         -o-transition: all 0.5s ease;
+            transition: all 0.5s ease;
+}
+.premium .batteryGoUp2 {
+    -webkit-transform: translateY(20px);
+        -ms-transform: translateY(20px);
+            transform: translateY(20px);
+    -webkit-transition: all 0.5s ease;
+         -o-transition: all 0.5s ease;
+            transition: all 0.5s ease;
 }
 .premium .flyUp {
     background: no-repeat;
@@ -2835,7 +2854,7 @@ section {
     padding: 0 60px;
 }
 .footer {
-    padding: 15px 0 30px 0;
+    padding: 15px 0 50px 0;
     text-align: center;
     background: #15181f;
 }

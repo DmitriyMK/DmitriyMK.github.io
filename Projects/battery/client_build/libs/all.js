@@ -36,26 +36,6 @@ $(document).ready(function() {
 });*/
 
 
-/*FIXED SCROLL TO TOP*/
-/*$(document).ready(function() {
-
-  $(window).scroll(function() {
-    if ($(this).scrollTop() > 400) {
-      $('.scrollup').fadeIn();
-    } else {
-      $('.scrollup').fadeOut();
-    }
-  });
-
-  $('.scrollup').click(function() {
-    $("html, body").animate({
-      scrollTop: 0
-    }, 600);
-    return false;
-  });
-
-});*/
-
 $(document).ready(function() {
 
   if (document.documentElement.clientWidth > 1200) {
@@ -64,14 +44,14 @@ $(document).ready(function() {
   };
 
 
+
   /*LAZY LOAD*/
-  /*$('.lazy').lazy({
+  $('.lazy').lazy({
     effect: "fadeIn",
     effectTime: 200,
     threshold: 0,
-    scrollDirection: 'horizontal',
     visibleOnly: true,
-  });*/
+  });
 
 
   $('.phone__mask').mask('+380(99)999-99-99');
@@ -144,7 +124,88 @@ $(window).on('resize orientationchange', function() {
 });
 
 
-$(window).enllax();
+/*$(window).enllax();*/
+
+$(document).ready(function() {
+  
+  //Init ScrollMagic
+  var controller = new ScrollMagic.Controller();
+
+  //build a scene
+  var ourScene = new ScrollMagic.Scene({
+    triggerElement: "#battery1",
+/*    duration: 100*/
+  })
+  .setClassToggle("#battery1", "batteryGoUp1") // add class to project01
+
+  var ourScene = new ScrollMagic.Scene({
+    triggerElement: "#battery2",
+/*    duration: 100*/
+  })
+  .setClassToggle("#battery2", "batteryGoUp2") // add class to project01
+
+
+  .addIndicators ({
+    name: 'start',
+    colorTrigger: 'black',
+    indent: 200,
+    colorStart: "red"
+  })
+  .addTo(controller);
+
+});
+
+
+
+
+/*let canvas = {state:0};
+tl.fromTo(canvas,1,{state: 3},{state:36,delay:0.1,onUpdate: function() {
+  Ex(canvas.state);
+}});
+tl.to('.iphone',1,{scale:0.5,transformOrigin: '50% 50%'},0);
+
+
+let tl1 = new TimelineMax();
+tl1.to('.iphone',1,{y:-50});
+
+var controller = new ScrollMagic.Controller();
+
+var scene = new ScrollMagic.Scene({
+  duration: '1000', // resposive duration in %
+  offset: 0, // offset trigger position by 100px
+  triggerElement: '#trigger', // what will trigger scene
+  triggerHook: 0
+});
+scene.addIndicators({name:'Blah blah'});
+scene.setTween(tl);
+scene.setPin('.animation');
+scene.addTo(controller);
+
+
+var scene0 = new ScrollMagic.Scene({
+  duration: '800', // resposive duration in %
+  offset: '1000', // offset trigger position by 100px
+  triggerElement: '#trigger', // what will trigger scene
+  triggerHook: 0
+});
+scene0.addIndicators({name:'Iphone Flies away'});
+scene0.setTween(tl1);
+scene0.addTo(controller);
+
+
+
+var scene1 = new ScrollMagic.Scene({
+  duration: '0', // resposive duration in %
+  offset: 44, // offset trigger position by 100px
+  triggerElement: '#trigger', // what will trigger scene
+  triggerHook: 0
+});
+scene1.addIndicators({name:'Subheader'});
+scene1.setPin('.subheader');
+scene1.addTo(controller);*/
+
+
+
 
 
 $(".form").submit(function() {
