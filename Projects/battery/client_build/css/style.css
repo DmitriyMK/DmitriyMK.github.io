@@ -2563,6 +2563,7 @@ section {
     height: 943px;
     background: url(../images/back__award.png) no-repeat center / cover;
     z-index: 10;
+    overflow: hidden;
 }
 .award a {
     outline: none!important;
@@ -2581,8 +2582,11 @@ section {
             transform: translate(-50%, -50%);
     z-index: -1;
 }
+.award__slider {
+    position: relative;
+}
 .award__item {
-    padding: 70px 0;
+    padding: 80px 0;
     -webkit-transition: 0.5s ease all;
          -o-transition: 0.5s ease all;
             transition: 0.5s ease all;
@@ -2608,7 +2612,60 @@ section {
             box-shadow: 0 15px 36.1px 1.9px rgba(0, 45, 86, 0.09);
     /* height: 100%; */
 }
-.award .slick-current {
+.award .slick-prev, .award .slick-next {
+    background-color: #fff;
+    border-radius: 50%;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    width: 535px;
+    height: 535px;
+    -webkit-transition: all 0.5s linear;
+         -o-transition: all 0.5s linear;
+            transition: all 0.5s linear;
+}
+.award .slick-prev:hover, .award .slick-prev:focus {
+    left: -840px;
+    width: 680px;
+    height: 680px;
+}
+.award .slick-next:hover, .award .slick-next:focus {
+    right: -840px;
+    width: 680px;
+    height: 680px;
+}
+.award .slick-prev {
+    left: -740px;
+}
+.award .slick-next {
+    right: -740px;
+}
+.award .slick-next:after {
+    background-color: #000;
+    content: '';
+    display: block;
+    height: 1px;
+    left: 43px;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate3d(-100%, -50%, 0);
+            transform: translate3d(-100%, -50%, 0);
+    -webkit-transition: width 0.35s;
+         -o-transition: width 0.35s;
+            transition: width 0.35s;
+    width: 0;
+    will-change: width;
+    z-index: 10;
+}
+.award .slick-next:before {
+    display: block;
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    /* 	background: url(../images/icons/arrow_right.png)no-repeat; */
+    width: 65px;
+    height: 114px;
+}
+.award .slick-current, .award .slick-focus {
     -webkit-transform: scale(1.2);
         -ms-transform: scale(1.2);
             transform: scale(1.2);
