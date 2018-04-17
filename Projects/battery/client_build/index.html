@@ -13,15 +13,12 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-
 	<link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
 	<link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
-	<!-- 	<link rel="manifest" href="/site.webmanifest"> -->
+
 
 	<meta name="msapplication-TileColor" content="red">
 	<meta name="theme-color" content="#007fe3">
-
-	
 
 </head>
 
@@ -337,7 +334,7 @@
 			<h2 class="section__title premium__title">Основные элементы</h2>
 			<p class="title__text">Premium модели</p>
 
-			<div class="premium__box">
+			<div class="premium__box" id="premium__box">
 
 				<ul class="premium__list">
 					<li class="premium__item">
@@ -358,17 +355,12 @@
 
 				<div class="premium__inside">
 
-<!-- 					<div class="img1 flyUp" data-enllax-ratio=".13" data-enllax-type="foreground" data-enllax-direction="vertical" style="background-image: url(images/battery_inside1.png)"></div> 
-<div class="img2 flyUp" data-enllax-ratio="-.13" data-enllax-type="foreground" data-enllax-direction="vertical" style="background-image: url(images/battery_inside2.png)"></div> 
-<div class="img3 flyUp" data-enllax-ratio="-.23" data-enllax-type="foreground" data-enllax-direction="vertical" style="background-image: url(images/battery_inside3.png)"></div> 
-<div class="img4 flyUp" data-enllax-ratio="-.33" data-enllax-type="foreground" data-enllax-direction="vertical" style="background-image: url(images/battery_inside4.png)"></div> 
-<div class="img5 flyUp" data-enllax-ratio="-.23" data-enllax-type="foreground" data-enllax-direction="vertical" style="background-image: url(images/battery_inside4-shadow.png)"></div>  -->
+					<div class="img1 flyUp" data-enllax-ratio=".2" data-enllax-type="foreground" data-enllax-direction="vertical" style="background-image: url(images/battery_inside1.png)"></div> 
+					<div class="img2 flyUp" data-enllax-ratio="-.05" data-enllax-type="foreground" data-enllax-direction="vertical" style="background-image: url(images/battery_inside2.png)"></div> 
+					<div class="img3 flyUp" data-enllax-ratio="-.13" data-enllax-type="foreground" data-enllax-direction="vertical" style="background-image: url(images/battery_inside3.png)"></div> 
+					<div class="img4 flyUp" data-enllax-ratio="-.2" data-enllax-type="foreground" data-enllax-direction="vertical" style="background-image: url(images/battery_inside4.png)"></div> 
+					<div class="img5 flyUp" data-enllax-ratio="-.22" data-enllax-type="foreground" data-enllax-direction="vertical" style="background-image: url(images/battery_inside4-shadow.png)"></div>  
 
-					<div class="inside__img img1 batteryInside1" id="battery1"><img src="images/battery_inside1.png" alt="Корпус"></div>
-					<div class="inside__img img2 batteryInside2" id="battery2"><img src="images/battery_inside2.png" alt="Элемент питания"></div>
-					<div class="inside__img img3 batteryInside3" id="battery3"><img src="images/battery_inside3.png" alt="Контроллер питания"></div>
-					<div class="inside__img img4 batteryInside4" id="battery4"><img src="images/battery_inside4.png" alt="Корпус"></div>
-					<div class="inside__img img5 batteryInside5" id="battery5"><img src="images/battery_inside4-shadow.png" alt="Корпус"></div> 
 				</div>
 			</div>
 
@@ -386,20 +378,26 @@
 				<li class="order__item">
 					<img class="order__img " src="images/order1.png" alt="Оформление заказа">
 					<p class="order__text text-lt">Вы оформляете заказ на сайте и наш менеджер связывается с Вами в течение 10 минут</p>
+					<img class="arr1" src="images/icons/arrow-right1.png" alt="Шаг 1">
 				</li>
 				<li class="order__item">
 					<img class="order__img img-rtl" src="images/order2.png" alt="Ответ на вопросы">
 					<p class="order__text text-rtl">Мы отвечаем на все вопросы о выбранной Вами модели аккумулятора</p>
+					<img class="arr2" src="images/icons/arrow-left1.png" alt="Шаг 2">
 				</li>
 				<li class="order__item mt">
 					<img class="order__img" src="images/order3.png" alt="Оформление заказа">
 					<p class="order__text text-lt">Вы выбираете способ оплаты, после чего мы отправляем заказ на отделение НП</p>
+					<img class="arr3" src="images/icons/arrow-right1.png" alt="Шаг 3">
 				</li>
 				<li class="order__item">
 					<img class="order__img img-rtl" src="images/order4.png" alt="Ответ на вопросы">
 					<p class="order__text text-rtl">Вы забираете аккумулятор и спешите оставить позитивный комментарий о нашем сервисе :)</p>
+					<img class="arr4" src="images/icons/arrow-left2.png" alt="Шаг 4">
 				</li>
-				<li class="order__item mt2"><button class="btn btn-shdw">Оставить заявку</button></li>
+				<li class="order__item mt2">
+					<button class="btn btn-shdw">Оставить заявку</button>
+				</li>
 			</ul>
 		</div>
 	</section>
@@ -668,7 +666,7 @@
 
 
 
-	THANKS
+	<!-- THANKS -->
 	<div class="remodal remodal-common"  data-remodal-id="modal-thanks" >
 		<button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
 		<h3 class="thanks__title">Благодарим Вас!</h3>
@@ -686,10 +684,7 @@
 	<link rel="stylesheet" href="css/remodal.css">
 	<link rel="stylesheet" href="css/remodal-default-theme.css">
 	<link rel="stylesheet" href="css/animate.min.css">
-
 	<link rel="stylesheet" href="css/fancybox.css">
-
-
 	<link rel="stylesheet" href="css/slick-theme.css">
 	<link rel="stylesheet" href="css/slick.css">
 
@@ -698,24 +693,16 @@
 
 	<!-- Load Scripts -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js?ver=3.9.2"></script>
-
 	<script src="libs/jquery.nicescroll.min.js"></script>
 	<script src="libs/wow.min.js"></script>
-
-
 	<script src="libs/remodal.min.js"></script>
 	<script src="libs/jquery.validate.min.js"></script>
 	<script src="libs/masked-input.js"></script>
-	<script src="libs/jquery.lazy.min.js"></script>
-<!-- 	<script src="libs/jquery.enllax.min.js"></script> -->
+	<!-- 	<script src="libs/jquery.lazy.min.js"></script> -->
+	<script src="libs/jquery.enllax.min.js"></script> 
 	<script src="libs/fancybox.js"></script>
-
 	<script src="libs/slick.js"></script>
-	<script src="libs/ScrollMagic.min.js"></script>
-	<script src="libs/debug.addIndicators.js"></script>
-	<script src="libs/jquery.gsap.min.js"></script>
-	<script src="libs/TimelineMax.min.js"></script>
-
+	
 	<script src="libs/all.js"></script>
 
 
