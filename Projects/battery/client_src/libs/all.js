@@ -98,9 +98,7 @@ $(document).ready(function() {
   });
 
 
-  $(window).enllax();
-
-
+ 
 
   /*  
       responsive: [
@@ -116,8 +114,6 @@ $(document).ready(function() {
       ]
    
       */
-
-
 });
 
 
@@ -125,38 +121,7 @@ $(window).on('resize orientationchange', function() {
   $('.slider').slick('resize');
 });
 
-
-/*var bool = 0;
-
-$('.hook').mouseover(function() {
-
-  if (bool == 0) {
-
-    $('.bar-percentage[data-percentage]').each(function() {
-      var progress = $(this);
-      var percentage = Math.ceil($(this).attr('data-percentage'));
-      $({
-        countNum: 0
-      }).animate({
-        countNum: percentage
-      }, {
-        duration: 1500,
-        easing: 'linear',
-        step: function() {
-          // What todo on every count
-          var pct = Math.floor(this.countNum) + '%';
-          progress.text(pct) && progress.siblings().children().css('width', pct);
-        }
-      });
-    })
-
-    bool = 1;
-  }*/
-/*else {
-   false;
- }*/
-
-/*});*/
+ $(window).enllax();
 
 
 
@@ -165,7 +130,7 @@ $(document).ready(function() {
 
   $(window).scroll(function() {
 
-    if ($(this).scrollTop() > 2200) 
+    if ($(this).scrollTop() > 2100) 
       if (bool == 0) {
 
         $('.bar-percentage[data-percentage]').each(function() {
@@ -176,7 +141,7 @@ $(document).ready(function() {
           }).animate({
             countNum: percentage
           }, {
-            duration: 1500,
+            duration: 2000,
             easing: 'linear',
             step: function() {
               // What todo on every count
