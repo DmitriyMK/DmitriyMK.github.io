@@ -2127,22 +2127,22 @@ section {
             transform: translateY(-50%);
 }
 .percentage1 {
-    left: 40%;
+    left: 30%;
 }
 .percentage2 {
-    left: 48%;
+    left: 40%;
 }
 .percentage3 {
-    left: 55%;
+    left: 50%;
 }
 .percentage4 {
-    left: 60%;
+    left: 55%;
 }
 .percentage5 {
-    left: 75%;
+    left: 65%;
 }
 .percentage6 {
-    right: 4%;
+    right: 5%;
 }
 .bar-container {
     border-radius: 10px;
@@ -2257,7 +2257,7 @@ section {
 }
 .premium__inside .img1 {
     position: absolute;
-    top: -250px;
+    top: -50px;
     right: 90px;
     width: 592px;
     height: 354px;
@@ -2266,14 +2266,14 @@ section {
 .premium__inside .img2 {
     position: absolute;
     top: -40px;
-    right: 100px;
+    right: 90px;
     width: 569px;
     height: 298px;
     z-index: 9;
 }
 .premium__inside .img3 {
     position: absolute;
-    top: 170px;
+    top: 70px;
     right: 250px;
     width: 357px;
     height: 183px;
@@ -2281,7 +2281,7 @@ section {
 }
 .premium__inside .img4 {
     position: absolute;
-    top: 230px;
+    top: -30px;
     right: 90px;
     width: 590px;
     height: 341px;
@@ -2289,7 +2289,7 @@ section {
 }
 .premium__inside .img5 {
     position: absolute;
-    top: 220px;
+    top: -40px;
     right: 90px;
     width: 628px;
     height: 380px;

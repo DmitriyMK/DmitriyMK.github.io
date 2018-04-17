@@ -44,15 +44,6 @@ $(document).ready(function() {
   };
 
 
-  /*LAZY LOAD*/
-  /*  $('.lazy').lazy({
-      effect: "fadeIn",
-      effectTime: 200,
-      threshold: 0,
-      visibleOnly: true,
-    });*/
-
-
   $('.phone__mask').mask('+380(99)999-99-99');
 
 
@@ -62,6 +53,22 @@ $(document).ready(function() {
     arrow: false,
     autoplay: true,
     autoplaySpeed: 3000,
+
+     /*  
+      responsive: [
+
+        {
+          breakpoint: 576,
+          settings: {
+            slidesToShow: 2,
+            dots: true,
+          }
+        }
+
+      ]
+   
+      */
+     
   });
 
 
@@ -96,24 +103,7 @@ $(document).ready(function() {
     transitionEffect: "none"
 
   });
-
-
  
-
-  /*  
-      responsive: [
-
-        {
-          breakpoint: 576,
-          settings: {
-            slidesToShow: 2,
-            dots: true,
-          }
-        }
-
-      ]
-   
-      */
 });
 
 
@@ -121,9 +111,8 @@ $(window).on('resize orientationchange', function() {
   $('.slider').slick('resize');
 });
 
- $(window).enllax();
 
-
+/*PERCENTAGE ANIMATION */
 
 $(document).ready(function() {
   var bool = 0;
@@ -159,6 +148,7 @@ $(document).ready(function() {
 });
 
 
+/*FORM SENDING*/
 
 $(".form").submit(function() {
   var th = $(this);
@@ -178,6 +168,8 @@ $(".form").submit(function() {
   return false;
 });
 
+
+/*GOOGLE MAP WITH STYLE*/
 
 function initMap() {
 
