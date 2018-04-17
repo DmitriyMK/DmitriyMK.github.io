@@ -47,6 +47,21 @@ $(document).ready(function() {
   $('.phone__mask').mask('+380(99)999-99-99');
 
 
+  /*LAZY LOAD*/
+  $('.lazy').lazy({
+    effect: "fadeIn",
+    effectTime: 200,
+    threshold: 0,
+    scrollDirection: 'vertical',
+    visibleOnly: true,
+
+    onError: function(element) {
+      console.log('error loading ' + element.data('src'));
+    }
+
+  });
+
+
   $('.models__slider').slick({
     slidesToShow: 7,
     dots: false,
@@ -54,21 +69,21 @@ $(document).ready(function() {
     autoplay: true,
     autoplaySpeed: 3000,
 
-     /*  
-      responsive: [
+    /*  
+     responsive: [
 
-        {
-          breakpoint: 576,
-          settings: {
-            slidesToShow: 2,
-            dots: true,
-          }
-        }
+       {
+         breakpoint: 576,
+         settings: {
+           slidesToShow: 2,
+           dots: true,
+         }
+       }
 
-      ]
+     ]
    
-      */
-     
+     */
+
   });
 
 
@@ -103,13 +118,60 @@ $(document).ready(function() {
     transitionEffect: "none"
 
   });
- 
+
 });
 
 
 $(window).on('resize orientationchange', function() {
   $('.slider').slick('resize');
 });
+
+
+
+$(function() {
+  controller = new ScrollMagic.Controller();
+
+
+  var scene1 = new ScrollMagic.Scene({
+    triggerElement: '#premium__box',
+    duration: 200
+  })
+
+  .setPin('#inside__img2', {
+    pushFollowers: false
+  })
+
+  .addTo(controller)
+  .addIndicators();
+
+
+  var scene2 = new ScrollMagic.Scene({
+      triggerElement: '#premium__box',
+      duration: 400
+    })
+    .setPin('#inside__img3')
+    .addTo(controller)
+    .addIndicators();
+
+
+    var scene2 = new ScrollMagic.Scene({
+      triggerElement: '#premium__box',
+      duration: 500
+    })
+    .setPin('#inside__img4')
+    .addTo(controller)
+    .addIndicators();
+
+    var scene2 = new ScrollMagic.Scene({
+      triggerElement: '#inside__img4',
+      duration: 500
+    })
+    .setPin('#inside__img5')
+    .addTo(controller)
+    .addIndicators();
+
+});
+
 
 
 /*PERCENTAGE ANIMATION */
@@ -119,7 +181,7 @@ $(document).ready(function() {
 
   $(window).scroll(function() {
 
-    if ($(this).scrollTop() > 2020) 
+    if ($(this).scrollTop() > 2020)
       if (bool == 0) {
 
         $('.bar-percentage[data-percentage]').each(function() {
