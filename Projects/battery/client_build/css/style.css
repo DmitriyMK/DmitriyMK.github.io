@@ -1540,15 +1540,19 @@ section {
 }
 ::-webkit-input-placeholder {
     font-size: 16px;
+    color: #000;
 }
 ::-moz-placeholder {
     font-size: 16px;
+    color: #000;
 }
 :-ms-input-placeholder {
     font-size: 16px;
+    color: #000;
 }
 :-moz-placeholder {
     font-size: 16px;
+    color: #000;
 }
 .header {
     overflow: hidden;
@@ -1623,13 +1627,25 @@ section {
 .header .flex .btn {
     padding: 0 58px;
     margin-right: -90px;
+    margin-bottom: 0;
 }
 .header__center {
     position: relative;
-    height: 880px;
-    padding-top: 214px;
     background: #007fe3;
     line-height: 1;
+    height: 100%;
+}
+@media only screen and (min-width: 1200px) {
+    .header__center {
+        height: 760px;
+        padding-top: 70px;
+    }
+}
+@media only screen and (min-width: 1600px) {
+    .header__center {
+        height: 880px;
+        padding-top: 214px;
+    }
 }
 .header__center .container {
     position: relative;
@@ -1674,10 +1690,18 @@ section {
     background: url(../images/icons/flash.png) no-repeat;
     border-radius: 50%;
 }
-.header .laptopImg {
-    top: -38px;
-    right: -110px;
-    position: absolute;
+@media only screen and (min-width: 1200px) {
+    .header .laptopImg {
+        position: absolute;
+        top: -38px;
+        right: -50px;
+    }
+}
+@media only screen and (min-width: 1920px) {
+    .header .laptopImg {
+        top: -38px;
+        right: -110px;
+    }
 }
 .header .wrap {
     top: 10px;
@@ -2257,7 +2281,7 @@ section {
 }
 .premium__inside .img1 {
     position: absolute;
-    top: -220px;
+    top: -180px;
     right: 90px;
     width: 592px;
     height: 354px;
@@ -2265,7 +2289,7 @@ section {
 }
 .premium__inside .img2 {
     position: absolute;
-    top: -205px;
+    top: -165px;
     right: 90px;
     width: 569px;
     height: 298px;
@@ -2273,7 +2297,7 @@ section {
 }
 .premium__inside .img3 {
     position: absolute;
-    top: -160px;
+    top: -120px;
     right: 250px;
     width: 357px;
     height: 183px;
@@ -2281,7 +2305,7 @@ section {
 }
 .premium__inside .img4 {
     position: absolute;
-    top: -200px;
+    top: -160px;
     right: 90px;
     width: 590px;
     height: 341px;
@@ -2289,7 +2313,7 @@ section {
 }
 .premium__inside .img5 {
     position: absolute;
-    top: -210px;
+    top: -170px;
     right: 90px;
     width: 628px;
     height: 380px;
@@ -3109,9 +3133,10 @@ label {
     max-width: 400px;
     margin: 20px auto;
     text-align: center;
+    font-family: 'Avanti', fallback, sans-serif;
 }
 .formBox__title {
-    padding-bottom: 15px;
+    padding-bottom: 10px;
     font-size: 22px;
     font-weight: 700;
     color: #000;
@@ -3119,29 +3144,25 @@ label {
 }
 .formBox__text {
     display: block;
-    padding-bottom: 15px;
+    padding-bottom: 10px;
     padding-left: 0;
     font-size: 18px;
     color: #000;
 }
-.formBox .form__wrap {
-    border-bottom: 1px solid #888;
-    margin: 15px 0;
-}
 .formBox .form__line {
-    width: 100%;
-    padding-left: 15px;
-    padding-bottom: 7px;
-    border: none!important;
-    outline: none;
-    font-size: 18px;
+    margin: auto;
+    margin-top: 0;
+    margin-bottom: 14px;
+    padding: 10px 15px;
+    width: 290px;
+    border: none;
+    background: #ecf1f6;
+    color: #272b35;
 }
-.formBox .button {
-    margin: 15px 0 5px 0;
+.formBox .btn {
+    padding: 0 80px;
+    margin: 15px 0;
     color: #fff;
-}
-.formBox .button:hover {
-    color: #000;
 }
 .video {
     max-width: 780px;

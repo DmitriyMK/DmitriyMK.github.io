@@ -47,21 +47,6 @@ $(document).ready(function() {
   $('.phone__mask').mask('+380(99)999-99-99');
 
 
-  /*LAZY LOAD*/
-/*  $('.lazy').lazy({
-    effect: "fadeIn",
-    effectTime: 200,
-    threshold: 0,
-    scrollDirection: 'vertical',
-    visibleOnly: true,
-
-    onError: function(element) {
-      console.log('error loading ' + element.data('src'));
-    }
-
-  });*/
-
-
   $('.models__slider').slick({
     slidesToShow: 7,
     dots: false,
@@ -134,7 +119,7 @@ $(function() {
 
   var scene1 = new ScrollMagic.Scene({
     triggerElement: '#premium__box',
-    duration: 200
+    duration: 150
   })
 
   .setPin('#inside__img2', {
@@ -146,8 +131,8 @@ $(function() {
 
 
   var scene2 = new ScrollMagic.Scene({
-      triggerElement: '#premium__box',
-      duration: 400
+      triggerElement: '#inside__img2',
+      duration: 320
     })
     .setPin('#inside__img3')
     .addTo(controller)
@@ -155,16 +140,16 @@ $(function() {
 
 
     var scene2 = new ScrollMagic.Scene({
-      triggerElement: '#premium__box',
-      duration: 500
+      triggerElement: '#inside__img2',
+      duration: 400
     })
     .setPin('#inside__img4')
     .addTo(controller)
     .addIndicators();
 
     var scene2 = new ScrollMagic.Scene({
-      triggerElement: '#inside__img4',
-      duration: 500
+      triggerElement: '#inside__img2',
+      duration: 480
     })
     .setPin('#inside__img5')
     .addTo(controller)

@@ -168,6 +168,8 @@ label {
 
 
 
+
+
 .formBox {
     position: relative;
     background: #fff;
@@ -175,8 +177,9 @@ label {
     max-width: 400px;
     margin: 20px auto;
     text-align: center;
+    font-family: @ff1;
     &__title {
-        padding-bottom: 15px;
+        padding-bottom: 10px;
         font-size: 22px;
         font-weight: 700;
         color: #000;
@@ -184,29 +187,27 @@ label {
     }
     &__text {
         display: block;
-        padding-bottom: 15px;
+        padding-bottom: 10px;
         padding-left: 0;
+
         font-size: 18px;
         color: #000;
     }
-    .form__wrap {
-        border-bottom: 1px solid #888;
-        margin: 15px 0;
-    }
+
     .form__line {
-        width: 100%;
-        padding-left: 15px;
-        padding-bottom: 7px;
-        border: none!important;     
-        outline: none;
-        font-size: 18px;
+        margin: auto;
+        margin-top: 0;
+        margin-bottom: 14px;
+        padding: 10px 15px;
+        width: 290px;
+        border: none;
+        background: #ecf1f6;
+        color: @black;
     }
-    .button {
-        margin: 15px 0 5px 0;
+    .btn {
+        padding: 0 80px;
+        margin: 15px 0;
         color: #fff;
-        &:hover {
-            color: #000;
-        }
     } 
 }
 

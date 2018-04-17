@@ -21,7 +21,6 @@
 	<meta name="theme-color" content="#007fe3">
 
 </head>
-
 <body>
 
 	<header class="header" id="header">
@@ -38,7 +37,7 @@
 							<li class="phone__item"><a class="phone__link" href="tel:+380965648235">+38 (096) 564 82 35</a></li>
 							<li class="phone__item"><a class="phone__link" href="tel:+380503337020">+38 (050) 333 70 20</a></li>
 						</ul>
-						<button class="btn">Заказать звонок</button>
+						<button class="btn" data-remodal-target="callback">Заказать звонок</button>
 					</div>	
 				</div>	
 			</div>	
@@ -76,7 +75,7 @@
 				
 				<div class="fork__btn fadeInUp wow" data-wow-delay="1.1s" data-wow-duration="1.6s">
 					<div class="fork">
-						<a class="fork__link" href="#">Подобрать аккумулятор</a>
+						<a class="fork__link" href="#" data-remodal-target="choiсe">Подобрать аккумулятор</a>
 					</div>
 				</div>
 
@@ -182,7 +181,7 @@
 								<li class="product__item">Емкость 4400-5200 mAh</li>
 							</ul>
 							<p class="product__price">от 550 грн</p>
-							<button class="btn btn-shdw">Заказать</button>
+							<button class="btn btn-shdw" data-remodal-target="choiсe-eco">Заказать</button>
 						</div>
 
 						<div class="product__details product-eco">
@@ -235,7 +234,7 @@
 								<li class="product__item">Емкость 5200 mAh</li>
 							</ul>
 							<p class="product__price">от 850 грн</p>
-							<button class="btn btn-shdw">Заказать</button>
+							<button class="btn btn-shdw" data-remodal-target="choiсe-pre">Заказать</button>
 						</div>
 
 						<div class="product__details product-pre">
@@ -287,7 +286,7 @@
 								<li class="product__item">Емкость 5200 mAh</li>
 							</ul>
 							<p class="product__price">от 1110 грн</p>
-							<button class="btn btn-shdw">Заказать</button>
+							<button class="btn btn-shdw" data-remodal-target="choiсe-pro">Заказать</button>
 						</div>
 
 						<div class="product__details product-pro">
@@ -404,7 +403,7 @@
 					<img class="arr4" src="images/icons/arrow-left2.png" alt="Шаг 4">
 				</li>
 				<li class="order__item mt2">
-					<button class="btn btn-shdw">Оставить заявку</button>
+					<button class="btn btn-shdw" data-remodal-target="callback">Оставить заявку</button>
 				</li>
 			</ul>
 		</div>
@@ -657,16 +656,92 @@
 	<div class="remodal formBox" data-remodal-id="callback"> 
 		<button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
 		<form class="form form-validate" id="modal-recieve" name="main-form">
-			Hidden Required Fields
-			<input type="hidden" name="project_name" value="Battery">
+			<!-- Hidden Required Fields -->
+			<input type="hidden" name="project_name" value="Great Power">
 			<input type="hidden" name="admin_email" value="dm@push-k.ua">
 			<input type="hidden" name="form_subject" value="Обратный звонок">
-			END Hidden Required Fields
+			<!-- END Hidden Required Fields -->
 			<p class="formBox__title">Заполните форму</p>
 			<p class="formBox__text">И наш менеджер свяжется с Вами в <br> течение 10 минут.</p>
 			<input class="form__line name" type="text" name="Имя&nbsp;покупателя" placeholder="Ваше имя" required>
 			<input class="form__line phone__mask" type="tel" name="Телефон&nbsp;покупателя" placeholder="Ваш телефон" required>
-			<input type="submit" class="button" value="Заказать звонок"> 
+			<input type="submit" class="btn btn-shdw" value="Заказать звонок"> 
+		</form>
+	</div> 
+
+
+
+	<div class="remodal formBox" data-remodal-id="choiсe"> 
+		<button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
+		<form class="form form-validate" id="modal-recieve" name="choice-form">
+			<!-- Hidden Required Fields -->
+			<input type="hidden" name="project_name" value="Great Power">
+			<input type="hidden" name="admin_email" value="dm@push-k.ua">
+			<input type="hidden" name="form_subject" value="Подбор аккумулятора">
+			<!-- END Hidden Required Fields -->
+			<p class="formBox__title">Заполните форму</p>
+			<p class="formBox__text">И наш менеджер свяжется с Вами в <br> течение 10 минут.</p>
+			<input class="form__line name" type="text" name="Имя&nbsp;покупателя" placeholder="Ваше имя" required>
+			<input class="form__line phone__mask" type="tel" name="Телефон&nbsp;покупателя" placeholder="Ваш телефон" required>
+			<input class="form__line name" type="text" name="Модель&nbsp;ноутбука/батареи" placeholder="Модель ноутбука или батареи">
+			<input type="submit" class="btn btn-shdw" value="Заказать звонок"> 
+		</form>
+	</div> 
+
+
+
+	<div class="remodal formBox" data-remodal-id="choiсe-eco"> 
+		<button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
+		<form class="form form-validate" id="modal-recieve" name="choice-form">
+			<!-- Hidden Required Fields -->
+			<input type="hidden" name="project_name" value="Great Power">
+			<input type="hidden" name="admin_email" value="dm@push-k.ua">
+			<input type="hidden" name="form_subject" value="Подбор аккумулятора Econom">
+			<!-- END Hidden Required Fields -->
+			<p class="formBox__title">Заполните форму</p>
+			<p class="formBox__text">И наш менеджер свяжется с Вами в <br> течение 10 минут.</p>
+			<input class="form__line name" type="text" name="Имя&nbsp;покупателя" placeholder="Ваше имя" required>
+			<input class="form__line phone__mask" type="tel" name="Телефон&nbsp;покупателя" placeholder="Ваш телефон" required>
+			<input class="form__line name" type="text" name="Модель&nbsp;ноутбука/батареи" placeholder="Модель ноутбука или батареи">
+			<input type="submit" class="btn btn-shdw" value="Заказать звонок"> 
+		</form>
+	</div> 
+
+
+
+	<div class="remodal formBox" data-remodal-id="choiсe-pre"> 
+		<button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
+		<form class="form form-validate" id="modal-recieve" name="choice-form">
+			<!-- Hidden Required Fields -->
+			<input type="hidden" name="project_name" value="Great Power">
+			<input type="hidden" name="admin_email" value="dm@push-k.ua">
+			<input type="hidden" name="form_subject" value="Подбор аккумулятора Premium">
+			<!-- END Hidden Required Fields -->
+			<p class="formBox__title">Заполните форму</p>
+			<p class="formBox__text">И наш менеджер свяжется с Вами в <br> течение 10 минут.</p>
+			<input class="form__line name" type="text" name="Имя&nbsp;покупателя" placeholder="Ваше имя" required>
+			<input class="form__line phone__mask" type="tel" name="Телефон&nbsp;покупателя" placeholder="Ваш телефон" required>
+			<input class="form__line name" type="text" name="Модель&nbsp;ноутбука/батареи" placeholder="Модель ноутбука или батареи">
+			<input type="submit" class="btn btn-shdw" value="Заказать звонок"> 
+		</form>
+	</div> 
+
+
+
+	<div class="remodal formBox" data-remodal-id="choiсe-pro"> 
+		<button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
+		<form class="form form-validate" id="modal-recieve" name="choice-form">
+			<!-- Hidden Required Fields -->
+			<input type="hidden" name="project_name" value="Great Power">
+			<input type="hidden" name="admin_email" value="dm@push-k.ua">
+			<input type="hidden" name="form_subject" value="Подбор аккумулятора Professional">
+			<!-- END Hidden Required Fields -->
+			<p class="formBox__title">Заполните форму</p>
+			<p class="formBox__text">И наш менеджер свяжется с Вами в <br> течение 10 минут.</p>
+			<input class="form__line name" type="text" name="Имя&nbsp;покупателя" placeholder="Ваше имя" required>
+			<input class="form__line phone__mask" type="tel" name="Телефон&nbsp;покупателя" placeholder="Ваш телефон" required>
+			<input class="form__line name" type="text" name="Модель&nbsp;ноутбука/батареи" placeholder="Модель ноутбука или батареи">
+			<input type="submit" class="btn btn-shdw" value="Заказать звонок"> 
 		</form>
 	</div> 
 
@@ -680,9 +755,6 @@
 		<h3 class="thanks__title">Благодарим Вас!</h3>
 		<p class="thanks__text">Мы свяжемся с Вами <br>в ближайшее время.</p>
 	</div>
-
-
-
 
 
 
@@ -706,31 +778,14 @@
 	<script src="libs/remodal.min.js"></script>
 	<script src="libs/jquery.validate.min.js"></script>
 	<script src="libs/masked-input.js"></script>
-
 	<script src="libs/ScrollMagic.min.js"></script>
-
-
 	<script src="libs/debug.addIndicators.js"></script>
-<!-- 	<script src="libs/animation.gsap.js"></script>
-<script src="libs/TimelineLite.min.js"></script>
-<script src="libs/TimelineMax.min.js"></script>
-<script src="libs/TweenLite.min.js"></script>
-<script src="libs/TweenMax.min.js"></script> -->
-<!-- 	<script src="libs/jquery.lazy.min.js"></script> -->
-
 	<script src="libs/fancybox.js"></script>
 	<script src="libs/slick.js"></script>
 
 	<script src="libs/all.js"></script>
 
 
-
-
 	<script async defer src="https://maps.googleapis.com/maps/api/js?callback=initMap&key=AIzaSyDFnsXtzPC77ZP4pkabK8_yVr5qazdPCjc"></script> 
-
-
-
-
-
 </body>
 </html>
