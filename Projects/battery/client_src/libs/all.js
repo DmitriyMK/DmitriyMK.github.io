@@ -88,6 +88,7 @@ $(document).ready(function() {
     focusOnSelect: true,
     centerMode: true,
     centerPadding: '20px',
+    lazyLoad: 'ondemand',
   });
 
 
