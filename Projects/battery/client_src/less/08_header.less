@@ -70,18 +70,18 @@
 			}
 		}
 		.btn {
-			padding: 0 58px;
 			
-			margin-bottom: 0;
 
 			@media @mobile {
 
 			}
 			@media @tablet {
-
+				display: none;
 			}
 			@media @desktop {
-
+				display: block;
+				padding: 0 58px;
+				margin-bottom: 0;
 			}
 			@media @desktop-xl {
 
@@ -97,63 +97,41 @@
 
 	&__center {
 		position: relative;
-		background: @blue;
+		
 		line-height: 1;
 		height: 100%;
-		
+		background: url(../images/back__model-pre.jpg)no-repeat center/cover;
 		@media @mobile {
 
 		}
 		@media @tablet {
-
+			padding-top: 70px;
 		}
 		@media @desktop {
-
+			height: 700px;
 		}
 		@media @desktop-xl {
-			height: 760px;
-			padding-top: 70px;
+			height: 740px;
+			background: @blue;
 		}
 		@media @desktop-xl-2 {
 			height: 880px;
 			padding-top: 214px;
 		}
-		@media @desktop-xll {
-
-		}
-
 
 		.container {
 			position: relative;
 			&:before {
-				content: '';
-				position: absolute;
-				top: -240px;
-				right: -370px;
-				width: 1920px;
-				height: 978px;
-				background: url(../images/back__hero.png) no-repeat center/cover;
-				z-index: 0;
-
-				@media @mobile {
-
-				}
-				@media @tablet {
-
-				}
-				@media @desktop {
-
-				}
 				@media @desktop-xl {
-
+					content: '';
+					position: absolute;
+					top: -240px;
+					right: -370px;
+					width: 1920px;
+					height: 978px;
+					background: url(../images/back__hero.png) no-repeat center/cover;
+					z-index: 0;
 				}
-				@media @desktop-xl-2 {
-
-				}
-				@media @desktop-xll {
-
-				}
-
 			}
 		}
 
@@ -162,20 +140,24 @@
 	&__title {
 		position: relative;
 		padding-bottom: 20px;
-		font-size: 42.3px;
 		font-weight: 700;
+		text-align: center;
 
 		@media @mobile {
 
 		}
 		@media @tablet {
-
+			text-align: left;
 		}
 		@media @desktop {
-
+			font-size: 36px;
+			
 		}
 		@media @desktop-xl {
-			
+			font-size: 42.3px;
+			br {
+				display: none;
+			}
 		}
 		@media @desktop-xl-2 {
 
@@ -188,15 +170,15 @@
 		position: relative;
 		font-size: 35px;
 		font-weight: 400;
+		text-align: center;
 
 		@media @mobile {
 
 		}
 		@media @tablet {
-
+			text-align: left;
 		}
 		@media @desktop {
-
 		}
 		@media @desktop-xl {
 			
@@ -209,8 +191,7 @@
 		}
 	}
 	&__content {
-		position: relative;
-		padding-top: 134px;
+		position: relative;		
 
 		@media @mobile {
 
@@ -219,10 +200,10 @@
 
 		}
 		@media @desktop {
-
+			padding-top: 80px;
 		}
 		@media @desktop-xl {
-			
+			padding-top: 134px;
 		}
 		@media @desktop-xl-2 {
 
@@ -230,6 +211,9 @@
 		@media @desktop-xll {
 			
 		}
+	}
+	&__list {
+		padding-top: 50px;
 	}
 	&__item {
 		position: relative;
@@ -267,21 +251,35 @@
 	}
 
 	.laptopImg {
-		
 
 		@media @mobile {
 
 		}
 		@media @tablet {
-
+			.laptop {
+				display: none;
+			}
 		}
 		@media @desktop {
-
+			position: absolute;
+			top: 0;
+			right: -20px;
+			.battery {
+				max-width: 70px;
+			}
+			.laptop {
+				max-width: 350px;
+			}
 		}
 		@media @desktop-xl {
-			position: absolute;
 			top: -38px;
 			right: -50px;
+			.battery {
+				max-width: 100%;
+			}
+			.laptop {
+				max-width: 100%;
+			}
 		}
 		@media @desktop-xl-2 {
 			
@@ -298,7 +296,7 @@
 		top: 10px;
 		left: -8px;
 		display: inline-block;
-		position: relative;
+		position: inherit;
 
 		@media @mobile {
 
@@ -307,7 +305,7 @@
 
 		}
 		@media @desktop {
-
+			position: relative;
 		}
 		@media @desktop-xl {
 			
@@ -321,14 +319,17 @@
 
 
 		&:before {
-			content: '';
-			position: absolute;
-			left: 0;
-			top: -10px;
-			width: 100%;
-			height: 100%;
-			background: url(../images/battery_border.png)no-repeat;
-			opacity: .2;
+			@media @desktop {
+				content: '';
+				position: absolute;
+				left: 0;
+				top: -10px;
+				width: 100%;
+				height: 100%;
+				background: url(../images/battery_border.png)no-repeat;
+				opacity: .2;
+			}
+			
 		}
 	}
 	.wrap2 {
@@ -345,15 +346,34 @@
 	}
 
 
+	.battery1 {
+		position: absolute;
+		top: 0;
+		right: 200px;
+	}
+	.battery2 {
+		position: absolute;
+		top: 0;
+		right: 100px;
+	}
+	.battery3 {
+		position: absolute;
+		top: 0;
+		right: 0;
+	}
+
+
 
 	.fork__btn {
 		position: relative;
 		margin-top: 86px;
+		margin-bottom: 50px;
 		&:after {
 			content: '';
 			position: absolute;
 			top: 10px;
-			left: -30px;
+			left: 50%;
+			transform: translateX(-50%);
 			width: 399px;
 			height: 395px;
 			background: url(../images/fork.png);
@@ -365,7 +385,8 @@
 
 			}
 			@media @desktop {
-
+				left: -30px;
+				margin-bottom: inherit;
 			}
 			@media @desktop-xl {
 
@@ -378,9 +399,10 @@
 			}
 		}
 		.fork {
-			margin-left: 30px;
-			position: relative;
 			
+			position: relative;
+			margin: 0 auto;
+
 			border-radius: 25px;
 			width: 250px;
 			background: #1f232c;
@@ -393,7 +415,7 @@
 
 			}
 			@media @desktop {
-
+				margin-left: 30px;
 			}
 			@media @desktop-xl {
 
@@ -454,28 +476,33 @@
 
 
 	.arrow {
-		position: absolute;
-		left: 50%;
-		bottom: -120px;
-		img {
+		display: none;
+		@media @desktop {
 			display: block;
-			margin: 3px auto;
-			&:nth-of-type(1){
-				animation: arrow-bounce 2.8s;
-				animation-iteration-count: 5;
-			}
-			&:nth-of-type(2){
-				animation: arrow-bounce 2.7s;
-				animation-iteration-count: 5;
-			}
-			&:nth-of-type(3){
-				animation: arrow-bounce 2.6s;
-				animation-iteration-count: 5;
+			position: absolute;
+			left: 50%;
+			bottom: -120px;
+			img {
+				display: block;
+				margin: 3px auto;
+				&:nth-of-type(1){
+					animation: arrow-bounce 2.8s;
+					animation-iteration-count: 5;
+				}
+				&:nth-of-type(2){
+					animation: arrow-bounce 2.7s;
+					animation-iteration-count: 5;
+				}
+				&:nth-of-type(3){
+					animation: arrow-bounce 2.6s;
+					animation-iteration-count: 5;
+				}
 			}
 		}
 	}
-
 }
+
+
 
 
 
