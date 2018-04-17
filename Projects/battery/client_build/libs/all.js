@@ -119,7 +119,7 @@ $(function() {
 
   var scene1 = new ScrollMagic.Scene({
     triggerElement: '#premium__box',
-    duration: 150
+    duration: 180
   })
 
   .setPin('#inside__img2', {
@@ -127,33 +127,33 @@ $(function() {
   })
 
   .addTo(controller)
-  .addIndicators();
+
 
 
   var scene2 = new ScrollMagic.Scene({
       triggerElement: '#inside__img2',
-      duration: 320
+      duration: 330
     })
     .setPin('#inside__img3')
     .addTo(controller)
-    .addIndicators();
+
 
 
     var scene2 = new ScrollMagic.Scene({
       triggerElement: '#inside__img2',
-      duration: 400
+      duration: 350
     })
     .setPin('#inside__img4')
     .addTo(controller)
-    .addIndicators();
+
 
     var scene2 = new ScrollMagic.Scene({
-      triggerElement: '#inside__img2',
-      duration: 480
+      triggerElement: '#inside__img4',
+      duration: 380
     })
     .setPin('#inside__img5')
     .addTo(controller)
-    .addIndicators();
+
 
 });
 

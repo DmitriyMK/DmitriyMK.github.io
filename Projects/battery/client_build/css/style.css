@@ -1626,8 +1626,12 @@ section {
 }
 .header .flex .btn {
     padding: 0 58px;
-    margin-right: -90px;
     margin-bottom: 0;
+}
+@media only screen and (min-width: 1600px) {
+    .header .flex .btn {
+        margin-right: -90px;
+    }
 }
 .header__center {
     position: relative;
