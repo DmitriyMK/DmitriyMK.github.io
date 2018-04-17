@@ -48,7 +48,7 @@ $(document).ready(function() {
 
 
   /*LAZY LOAD*/
-  $('.lazy').lazy({
+/*  $('.lazy').lazy({
     effect: "fadeIn",
     effectTime: 200,
     threshold: 0,
@@ -59,7 +59,7 @@ $(document).ready(function() {
       console.log('error loading ' + element.data('src'));
     }
 
-  });
+  });*/
 
 
   $('.models__slider').slick({
