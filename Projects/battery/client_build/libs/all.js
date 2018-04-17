@@ -6,7 +6,7 @@ $(document).ready(function() {
     smoothscroll: true,
     cursorwidth: 10,
     cursorborder: 0,
-    cursorcolor: '#55c202',
+    cursorcolor: '#272b35',
     cursorborderradius: 2,
     autohidemode: true,
     horizrailenabled: false,
@@ -130,7 +130,7 @@ $(document).ready(function() {
 
   $(window).scroll(function() {
 
-    if ($(this).scrollTop() > 2100) 
+    if ($(this).scrollTop() > 2020) 
       if (bool == 0) {
 
         $('.bar-percentage[data-percentage]').each(function() {
