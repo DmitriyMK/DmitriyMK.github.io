@@ -47,64 +47,96 @@ $(document).ready(function() {
   $('.phone__mask').mask('+380(99)999-99-99');
 
 
-  $('.models__slider').slick({
-    slidesToShow: 7,
-    dots: false,
-    arrow: false,
-    autoplay: true,
-    autoplaySpeed: 3000,
+  /*if (document.documentElement.clientWidth > 1200) {*/
 
-    /*  
-     responsive: [
+    $('.models__slider').slick({
+      slidesToShow: 7,
+      dots: false,
+      arrow: false,
+      autoplay: true,
+      autoplaySpeed: 3000,
 
-       {
-         breakpoint: 576,
-         settings: {
-           slidesToShow: 2,
-           dots: true,
-         }
-       }
+      responsive: [
 
-     ]
-   
-     */
+      {
+        breakpoint: 1600,
+        settings: {
+          slidesToShow: 5,
+        }
+      },
+
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 4,
+        }
+      },
+
+      {
+        breakpoint: 980,
+        settings: {
+          slidesToShow: 3,
+        }
+      },
+
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+        }
+      },
+
+/*      {
+        breakpoint: 767,
+        settings: "unslick",
+      }*/
+
+      ]
+
+    });
+
+    /*};*/
+
+    if (document.documentElement.clientWidth < 768) {
+
+      $('.models__slider').slick('unslick');
+
+    };
+
+
+    $('.partners__slider').slick({
+      slidesToShow: 6,
+      dots: false,
+      arrow: false,
+      autoplay: true,
+      autoplaySpeed: 3000,
+    });
+
+
+    $('.review__slider').slick({
+      slidesToShow: 1,
+      dots: true,
+      arrow: true,
+    });
+
+
+    $('.award__slider').slick({
+      slidesToShow: 3,
+      dots: true,
+      arrow: true,
+      focusOnSelect: true,
+      centerMode: true,
+      centerPadding: '20px',
+      lazyLoad: 'ondemand',
+    });
+
+
+    $("certificates").fancybox({
+      transitionEffect: "none"
+
+    });
 
   });
-
-
-  $('.partners__slider').slick({
-    slidesToShow: 6,
-    dots: false,
-    arrow: false,
-    autoplay: true,
-    autoplaySpeed: 3000,
-  });
-
-
-  $('.review__slider').slick({
-    slidesToShow: 1,
-    dots: true,
-    arrow: true,
-  });
-
-
-  $('.award__slider').slick({
-    slidesToShow: 3,
-    dots: true,
-    arrow: true,
-    focusOnSelect: true,
-    centerMode: true,
-    centerPadding: '20px',
-    lazyLoad: 'ondemand',
-  });
-
-
-  $("certificates").fancybox({
-    transitionEffect: "none"
-
-  });
-
-});
 
 
 $(window).on('resize orientationchange', function() {
@@ -131,28 +163,28 @@ $(function() {
 
 
   var scene2 = new ScrollMagic.Scene({
-      triggerElement: '#inside__img2',
-      duration: 330
-    })
-    .setPin('#inside__img3')
-    .addTo(controller)
+    triggerElement: '#inside__img2',
+    duration: 330
+  })
+  .setPin('#inside__img3')
+  .addTo(controller)
 
 
 
-    var scene2 = new ScrollMagic.Scene({
-      triggerElement: '#inside__img2',
-      duration: 350
-    })
-    .setPin('#inside__img4')
-    .addTo(controller)
+  var scene2 = new ScrollMagic.Scene({
+    triggerElement: '#inside__img2',
+    duration: 430
+  })
+  .setPin('#inside__img4')
+  .addTo(controller)
 
 
-    var scene2 = new ScrollMagic.Scene({
-      triggerElement: '#inside__img4',
-      duration: 380
-    })
-    .setPin('#inside__img5')
-    .addTo(controller)
+  var scene2 = new ScrollMagic.Scene({
+    triggerElement: '#inside__img4',
+    duration: 440
+  })
+  .setPin('#inside__img5')
+  .addTo(controller)
 
 
 });
@@ -190,7 +222,7 @@ $(document).ready(function() {
         bool = 1;
 
       }
-  });
+    });
 
 });
 
@@ -241,7 +273,7 @@ function initMap() {
     styles:
 
 
-      [{
+    [{
       "featureType": "landscape",
       "stylers": [{
         "visibility": "simplified"
@@ -400,6 +432,6 @@ function initMap() {
     map: map,
     icon: image
       // title: 'Push-k Solutions'
-  });
+    });
 
 };

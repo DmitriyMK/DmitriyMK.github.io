@@ -26,6 +26,9 @@
 	background: url(../images/back__award.png)no-repeat center/cover;
 	z-index: 10;
 	overflow: hidden;
+	.container {
+		position: relative;
+	}
 
 
 	a {
@@ -45,7 +48,7 @@
 	}
 
 	&__slider {
-
+		position: relative;
 	}
 
 	&__item {
@@ -103,11 +106,11 @@
 	
 
 	.slick-prev {
-		left: -85vh; 
+		left: -700px; 
 
 		&:before {
 			top: 56.9%;
-			left: 45vh;
+			left: 400px;
 			font-family: "Fontello";
 			content: '\e80a';
 			font-size: 40px;
@@ -118,13 +121,13 @@
 			-moz-osx-font-smoothing: grayscale;
 		}
 		&:after {
+			top: 50%;
+			left: 426px;
 			background-color: #000;
 			content: "";
 			display: block;
 			height: 1px;
-			left: 47.5vh;
 			position: absolute;
-			top: 50%;
 			transform: translate3d(0%,-100%,0);
 			transition: width .35s;
 			width: 0;
@@ -134,11 +137,11 @@
 	}
 
 	.slick-next {
-		right: -85vh;
+		right: -700px;
 
 		&:before {
 			top: 56.9%;
-			right: 45vh;
+			right: 400px;
 			font-family: "Fontello";
 			content: '\e809';
 			font-size: 40px;
@@ -150,13 +153,13 @@
 		}
 
 		&:after {
+			top: 50%;
+			right: 426px;
 			background-color: #000;
 			content: "";
 			display: block;
 			height: 1px;
-			right: 47.8vh;
 			position: absolute;
-			top: 50%;
 			transform: translate3d(0%,-100%,0);
 			transition: width .35s;
 			width: 0;

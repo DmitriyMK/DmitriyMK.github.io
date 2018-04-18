@@ -18,29 +18,51 @@
 }
 
 .product {
-	padding-top: 25px;
-	margin-top: -50px;
-	height: 1289px;
-	background: url(../images/back__product.png)no-repeat center/cover;
-	z-index: 10;
+	background: #ecf4fa;
+
+	@media @desktop-xl {
+		margin-top: -50px;
+		height: 1289px;
+		background: url(../images/back__product.png)no-repeat center/cover;
+		z-index: 10;
+	}
+
 	.container {
 		position: relative;
 	}
+
 	&__title {
-		padding-right: 17px;
-		text-align: right;
+		
+		@media @mobile {
+
+		}
+		@media @tablet {
+
+		}
+		@media @desktop {
+			padding-right: 17px;
+			text-align: right;
+		}
+
 	}
 	&__back {
 		right: 17px;
 		top: 110px;
+
 	}
 
 	&__wrapper {
-		padding-top: 100px;
+		padding-top: 40px;
+		padding-bottom: 80px;
+
+		@media @desktop {
+			padding-top: 100px;
+			padding-bottom: 0;
+		}
 	}
 
 	&__box {
-		margin: auto 30px;
+		margin: auto 15px;
 		padding-bottom: 15px;
 		background: #fff;
 		border-radius: 15px;
@@ -51,6 +73,32 @@
 				transform: translate(-50%, -50%) scale(1);
 			}
 		}
+
+		@media @mobile {
+
+		}
+		@media @tablet {
+
+		}
+		@media @desktop {
+
+		}
+		@media @desktop-xl {
+			margin: auto 30px;
+		}
+		@media @desktop-xl-2 {
+
+		}
+		@media @desktop-xll {
+
+		}
+
+	}
+
+
+	.product__col {
+		max-width: 500px;
+		margin: auto;
 	}
 
 	.box-eco {
@@ -233,20 +281,60 @@
 	transform: translateY(-50%);
 }
 
+@media @mobile {
+
+}
+@media @tablet {
+
+}
+@media @desktop {
+
+}
+@media @desktop-xl {
+	
+}
+@media @desktop-xl-2 {
+
+}
+@media @desktop-xll {
+	
+}
+
 .percentage1{
-	left: 30%;
+	right: 5%;
+	@media @desktop-xl {
+		left: 30%;
+		right: auto;
+	}
+
 }
 .percentage2{
-	left: 40%;
+	right: 5%;
+	@media @desktop-xl {
+		left: 40%;
+		right: auto;
+	}
 }
 .percentage3{
-	left: 50%;
+	right: 5%;
+	@media @desktop-xl {
+		left: 50%;
+		right: auto;
+	}
 }
 .percentage4{
-	left: 55%;
+	right: 5%;
+	@media @desktop-xl {
+		left: 55%;
+		right: auto;
+	}
 }
 .percentage5{
-	left: 65%;
+	right: 5%;
+	@media @desktop-xl {
+		left: 65%;
+		right: auto;
+	}
 }
 .percentage6{
 	right: 5%;

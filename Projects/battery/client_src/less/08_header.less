@@ -17,6 +17,10 @@
 	
 }
 
+@media dekstop15 {
+
+}
+
 .header {
 	overflow: hidden;
 	&__top {
@@ -43,12 +47,19 @@
 			display: flex;
 			align-items: center;
 		}
+		.logo img{
+			max-width: 130px;
+			@media @desktop {
+				max-width: 100%;
+			}
+		}
 		.logo__desc {
 			display: none;
 			@media @desktop {
 				display: block;
 				padding-left: 28px;
 				font-size: 16px;
+				font-weight: 400;
 				color: #fff;
 			}
 		}
@@ -57,7 +68,10 @@
 			align-items: center;
 		}
 		.phone__list {
-			margin-right: 30px;
+			margin-right: 10px;
+			@media @desktop {
+				margin-right: 30px;
+			}
 		}
 		.phone__item {
 			padding: 0;
@@ -74,14 +88,7 @@
 			}
 		}
 		.btn {
-			
-
-			@media @mobile {
-
-			}
-			@media @tablet {
-				display: none;
-			}
+			display: none;
 			@media @desktop {
 				display: block;
 				padding: 0 58px;
@@ -100,14 +107,12 @@
 	}
 
 	&__center {
+		padding-top: 50px;
 		position: relative;
-		
 		line-height: 1;
 		height: 100%;
 		background: url(../images/back__model-pre.jpg)no-repeat center/cover;
-		@media @mobile {
 
-		}
 		@media @tablet {
 			padding-top: 70px;
 		}
@@ -115,9 +120,10 @@
 			height: 700px;
 		}
 		@media @desktop-xl {
-			height: 740px;
+			height: 620px;
 			background: @blue;
 		}
+
 		@media @desktop-xl-2 {
 			height: 880px;
 			padding-top: 214px;
@@ -130,21 +136,24 @@
 					content: '';
 					position: absolute;
 					top: -240px;
-					right: -370px;
+					right: -480px;
 					width: 1920px;
-					height: 978px;
+					height: 840px;
 					background: url(../images/back__hero.png) no-repeat center/cover;
 					z-index: 0;
 				}
+				@media @desktop-xl-2 {
+					right: -370px;
+					height: 978px;
+				}
 			}
 		}
-
 	}
 
 	&__title {
 		position: relative;
 		padding-bottom: 20px;
-
+		font-size: 22px;
 		font-weight: 700;
 		text-align: center;
 
@@ -160,13 +169,14 @@
 			
 		}
 		@media @desktop-xl {
-			font-size: 42.3px;
+			font-size: 34px;
 			br {
 				display: none;
 			}
 		}
 		@media @desktop-xl-2 {
-
+			font-size: 42.3px;
+			
 		}
 		@media @desktop-xll {
 			
@@ -174,7 +184,7 @@
 	}
 	&__slogan {
 		position: relative;
-
+		font-size: 22px;
 		font-weight: 400;
 		text-align: center;
 
@@ -186,13 +196,13 @@
 			text-align: left;
 		}
 		@media @desktop {
-			font-size: 35px;
+			font-size: 32px;
 		}
 		@media @desktop-xl {
 			
 		}
 		@media @desktop-xl-2 {
-
+			font-size: 35px;
 		}
 		@media @desktop-xll {
 			
@@ -211,10 +221,10 @@
 			padding-top: 80px;
 		}
 		@media @desktop-xl {
-			padding-top: 134px;
+			padding-top: 50px;
 		}
 		@media @desktop-xl-2 {
-
+			padding-top: 134px;
 		}
 		@media @desktop-xll {
 			
@@ -225,7 +235,7 @@
 		@media @desktop {
 			padding-top: 30px;	
 		}
-		@media @desktop-xl {
+		@media @desktop-xl-2 {
 			padding-top: 0;	
 		}
 	}
@@ -233,25 +243,6 @@
 		position: relative;
 		padding-left: 34px;
 		padding-bottom: 20px;
-
-		@media @mobile {
-
-		}
-		@media @tablet {
-
-		}
-		@media @desktop {
-
-		}
-		@media @desktop-xl {
-			
-		}
-		@media @desktop-xl-2 {
-
-		}
-		@media @desktop-xll {
-			
-		}
 		&:before {
 			content: '';
 			position: absolute;
@@ -265,13 +256,19 @@
 	}
 
 	.laptopImg {
+		.laptop {
+			display: none;
+		}
+		.battery {
+			display: none;
+		}
 
 		@media @mobile {
 
 		}
 		@media @tablet {
-			.laptop {
-				display: none;
+			.battery {
+				display: inline-block;
 			}
 		}
 		@media @desktop {
@@ -287,6 +284,16 @@
 			}
 		}
 		@media @desktop-xl {
+			top: -20px;
+			right: -50px;
+			.battery {
+				max-width: 130px;
+			}
+			.laptop {
+				max-width: 370px;
+			}
+		}
+		@media @desktop-xl-2 {
 			top: -38px;
 			right: -100px;
 			.battery {
@@ -385,23 +392,29 @@
 
 	.fork__btn {
 		position: relative;
-		margin-top: 86px;
-		margin-bottom: 50px;
+		margin: 10px 0 40px 0;
+		@media @tablet {
+			margin-top: 86px;
+			margin-bottom: 50px;
+		}
+
 		&:after {
 			content: '';
 			position: absolute;
 			top: 10px;
 			left: 50%;
 			transform: translateX(-50%);
-			width: 399px;
-			height: 395px;
-			background: url(../images/fork.png);
+			width: 312px;
+			height: 90px;
+			background: url(../images/fork-small.png)no-repeat;
 
 			@media @mobile {
 
 			}
 			@media @tablet {
-
+				width: 399px;
+				height: 395px;
+				background: url(../images/fork.png);
 			}
 			@media @desktop {
 				left: 170px;
@@ -456,26 +469,6 @@
 			font-size: 16px;
 			font-weight: 700;
 			z-index: 10;
-
-			@media @mobile {
-
-			}
-			@media @tablet {
-
-			}
-			@media @desktop {
-
-			}
-			@media @desktop-xl {
-
-			}
-			@media @desktop-xl-2 {
-
-			}
-			@media @desktop-xll {
-
-			}
-
 			&:before {
 				display: block;
 				content: '';
@@ -500,7 +493,7 @@
 			display: block;
 			position: absolute;
 			left: 50%;
-			bottom: -50px;
+			bottom: 0;
 			img {
 				display: block;
 				margin: 3px auto;
@@ -517,6 +510,9 @@
 					animation-iteration-count: 5;
 				}
 			}
+		}
+		@media @desktop-xl-2 {
+			bottom: -60px;
 		}
 	}
 }

@@ -45,7 +45,7 @@ body {
 
 
 footer {
-   overflow: hidden; 
+ overflow: hidden; 
 }
 
 .btn {
@@ -72,12 +72,12 @@ footer {
 
 
 section {
-
+    padding-bottom: 95px;
     position: relative;
     color: @black;
 
     @media @desktop-xl {
-
+        padding-bottom: inherit;
     }
     @media @desktop-xl-2 {
 
@@ -91,33 +91,37 @@ section {
 .section__title {
     padding-top: 95px;
     position: relative;
-    font-size: 45px;
+
+    font-size:  30px;
     font-weight: 700;
     color: #272b35;
-    @media @mobile {
+    text-align: center;
 
-    }
     @media @tablet {
-
+        font-size: 36px;
     }
     @media @desktop {
-
+        text-align: inherit;
+        font-size: 40px;
     }
     @media @desktop-xl {
-
-    }
-    @media @desktop-xl-2 {
-
-    }
-    @media @desktop-xll {
-
+        font-size: 45px;
     }
 }
 
 .section__back {
-    position: absolute;
+    display: none;
+    @media @desktop {
+     position: absolute;
+     top: 170px;
+     font-size: 86px;
+     font-weight: 700;
+     color: #e4ebf3;
+     display: inline;
+ }
+ @media @desktop-xl {
     font-size: 116px;
-    font-weight: 700;
-    color: #e4ebf3;
+    top: inherit;
+}
 
 }

@@ -19,24 +19,53 @@
 
 
 .premium {
-	padding-top: 68px;
-	padding-bottom: 140px;
-	margin-top: -140px;
 	background-color: @blue;
-	background: url(../images/back__model-pre.jpg)no-repeat top/cover;
 	color: #fff;
 	overflow: hidden;
+
+	@media @desktop-xl {
+		padding-top: 68px;
+		padding-bottom: 140px;
+		margin-top: -140px;
+		background: url(../images/back__model-pre.jpg)no-repeat top/cover;
+	}
+
 	
 	&__title {
-		padding-top: 80px;
-		padding-left: 160px;
-		font-size: 40px;
+		text-align: left;
 		color: #fff;
+
+		@media @mobile {
+
+		}
+		@media @tablet {
+
+		}
+		@media @desktop {
+
+		}
+		@media @desktop-xl {
+			padding-top: 80px;
+			padding-left: 160px;
+			font-size: 40px;
+		}
 	}
 	.title__text {
-		padding-left: 380px;
 		margin: 0;
-		font-size: 30px;
+		font-size: 24px;
+		@media @mobile {
+
+		}
+		@media @tablet {
+
+		}
+		@media @desktop {
+
+		}
+		@media @desktop-xl {
+			padding-left: 380px;
+			font-size: 30px;
+		}
 	}
 	&__box {
 		position: relative;
@@ -44,18 +73,51 @@
 	}
 	&__list {
 		position: relative;
-		margin-top: 110px;
-		padding-left: 100px;
-		text-align: right;
+		margin-top: 40px;
 		overflow: hidden;
+		text-align: right;
+		@media @mobile {
+
+		}
+		@media @tablet {
+
+		}
+		@media @desktop {
+
+		}
+		@media @desktop-xl {
+			margin-top: 110px;
+			padding-left: 100px;
+		}
+
 		&:before {
 			content: '';
 			position: absolute;
-			left: 374px;
+			left: 273px;
 			top: 20px;
 			width: 1px;
-			height: 96%;
+			height: 94%;
 			background: #fff;
+
+			@media @mobile {
+
+			}
+			@media @tablet {
+
+			}
+			@media @desktop {
+
+			}
+			@media @desktop-xl {
+				left: 374px;
+			}
+			@media @desktop-xl-2 {
+
+			}
+			@media @desktop-xll {
+
+			}
+
 		}
 	}
 	&__item {
@@ -63,6 +125,26 @@
 		width: 250px;
 		margin-bottom: 130px;
 		letter-spacing: .6px;
+
+		@media @mobile {
+
+		}
+		@media @tablet {
+
+		}
+		@media @desktop {
+			width: 250px;
+		}
+		@media @desktop-xl {
+
+		}
+		@media @desktop-xl-2 {
+
+		}
+		@media @desktop-xll {
+
+		}
+
 		&:before {
 			content: '';
 			position: absolute;
@@ -98,6 +180,25 @@
 	}
 
 
+	@media @mobile {
+
+	}
+	@media @tablet {
+
+	}
+	@media @desktop {
+
+	}
+	@media @desktop-xl {
+
+	}
+	@media @desktop-xl-2 {
+
+	}
+	@media @desktop-xll {
+
+	}
+
 	&__inside {
 		position: absolute;
 		top: 0;
@@ -110,6 +211,25 @@
 			width: 592px;
 			height: 354px;
 			z-index: 10;
+
+			@media @tablet {
+				top: -100px;
+				right: 0;
+				width: 356px;
+				height: 213px;
+			}
+			@media @desktop {
+				top: -150px;
+				right: 90px;
+				width: 474px;
+				height: 284px;
+			}
+			@media @desktop-xl {
+				top: -180px;
+				width: 592px;
+				height: 354px;
+			}
+
 		}
 		.img2 {
 			position: absolute;
@@ -118,6 +238,23 @@
 			width: 569px;
 			height: 298px;
 			z-index: 9;
+			@media @tablet {
+				top: -96px;
+				right: 0;
+				width: 342px;
+				height: 179px;
+			}
+			@media @desktop {
+				top: -140px;
+				right: 90px;
+				width: 456px;
+				height: 239px;
+			}
+			@media @desktop-xl {
+				top: -165px;
+				width: 569px;
+				height: 298px;
+			}
 		}
 		.img3 {
 			position: absolute;
@@ -126,6 +263,23 @@
 			width: 357px;
 			height: 183px;
 			z-index: 8;
+			@media @tablet {
+				top: -50px;
+				right: 100px;
+				width: 215px;
+				height: 110px;
+			}
+			@media @desktop {
+				top: -90px;
+				right: 250px;
+				width: 286px;
+				height: 147px;
+			}
+			@media @desktop-xl {
+				top: -120px;
+				width: 357px;
+				height: 183px;
+			}
 		}
 		.img4 {
 			position: absolute;
@@ -134,6 +288,23 @@
 			width: 590px;
 			height: 341px;
 			z-index: 7;
+			@media @tablet {
+				top: -80px;
+				right: 0;
+				width: 354px;
+				height: 205px;
+			}
+			@media @desktop {
+				top: -130px;
+				right: 90px;
+				width: 472px;
+				height: 273px;
+			}
+			@media @desktop-xl {
+				top: -160px;
+				width: 590px;
+				height: 341px;
+			}
 		}
 		.img5 {
 			position: absolute;
@@ -142,15 +313,23 @@
 			width: 628px;
 			height: 380px;
 			z-index: 6;
+			@media @tablet {
+				top: -50px;
+				right: 0;
+				width: 377px;
+				height: 228px;
+			}
+			@media @desktop {
+				top: -140px;
+				right: 90px;
+				width: 503px;
+				height: 304px;
+			}
+			@media @desktop-xl {
+				top: -170px;
+				width: 628px;
+				height: 380px;
+			}
 		}
 	}
-
-	.flyUp {
-		background: no-repeat;
-		background-size: cover;
-	}
-
-
 }
-
-
