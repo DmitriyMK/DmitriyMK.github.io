@@ -1992,7 +1992,7 @@ section {
 }
 .header .fork__btn {
     position: relative;
-    margin: 10px 0 40px 0;
+    margin: 40px 0;
 }
 @media only screen and (min-width: 768px) {
     .header .fork__btn {
