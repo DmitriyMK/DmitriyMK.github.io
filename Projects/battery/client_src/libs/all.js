@@ -141,7 +141,7 @@ $(window).on('resize orientationchange', function() {
 });
 
 
-if (document.documentElement.clientWidth > 768) {
+if (document.documentElement.clientWidth > 767) {
 
   $(function() {
     controller = new ScrollMagic.Controller();
