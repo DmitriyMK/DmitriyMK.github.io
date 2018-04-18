@@ -23,7 +23,7 @@ $(document).ready(function() {
 
 /*FIXED SCROLL FOR MENU*/
 
-/*$(document).ready(function() {
+$(document).ready(function() {
 
   $(window).scroll(function() {
     if ($(this).scrollTop() > 780) {
@@ -33,7 +33,7 @@ $(document).ready(function() {
     }
   });
 
-});*/
+});
 
 
 $(document).ready(function() {

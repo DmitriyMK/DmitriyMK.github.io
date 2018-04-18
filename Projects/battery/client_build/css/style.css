@@ -1593,9 +1593,15 @@ section {
     align-items: center;
 }
 .header .flex .logo__desc {
-    padding-left: 28px;
-    font-size: 16px;
-    color: #fff;
+    display: none;
+}
+@media only screen and (min-width: 992px) {
+    .header .flex .logo__desc {
+        display: block;
+        padding-left: 28px;
+        font-size: 16px;
+        color: #fff;
+    }
 }
 .header .flex__right {
     display: -webkit-box;
@@ -1692,12 +1698,13 @@ section {
 }
 @media only screen and (min-width: 768px) {
     .header__title {
+        font-size: 26px;
         text-align: left;
     }
 }
 @media only screen and (min-width: 992px) {
     .header__title {
-        font-size: 36px;
+        font-size: 34px;
     }
 }
 @media only screen and (min-width: 1200px) {
@@ -1710,17 +1717,27 @@ section {
 }
 .header__slogan {
     position: relative;
-    font-size: 35px;
     font-weight: 400;
     text-align: center;
 }
 @media only screen and (min-width: 768px) {
     .header__slogan {
+        font-size: 24px;
         text-align: left;
+    }
+}
+@media only screen and (min-width: 992px) {
+    .header__slogan {
+        font-size: 35px;
     }
 }
 .header__content {
     position: relative;
+}
+@media only screen and (min-width: 768px) {
+    .header__content {
+        padding-top: 20px;
+    }
 }
 @media only screen and (min-width: 992px) {
     .header__content {
@@ -1734,6 +1751,11 @@ section {
 }
 .header__list {
     padding-top: 50px;
+}
+@media only screen and (min-width: 992px) {
+    .header__list {
+        padding-top: 30px;
+    }
 }
 @media only screen and (min-width: 1200px) {
     .header__list {
@@ -1777,7 +1799,7 @@ section {
 @media only screen and (min-width: 1200px) {
     .header .laptopImg {
         top: -38px;
-        right: -50px;
+        right: -100px;
     }
     .header .laptopImg .battery {
         max-width: 100%;
@@ -1803,7 +1825,7 @@ section {
         position: relative;
     }
 }
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1200px) {
     .header .wrap:before {
         content: '';
         position: absolute;
@@ -1832,10 +1854,16 @@ section {
     top: 0;
     right: 200px;
 }
+@media only screen and (min-width: 768px) {
+    .header .battery1 {
+        top: 20px;
+    }
+}
 @media only screen and (min-width: 992px) {
     .header .battery1 {
         position: inherit;
         right: auto;
+        top: 0;
     }
 }
 .header .battery2 {
@@ -1843,10 +1871,16 @@ section {
     top: 0;
     right: 100px;
 }
+@media only screen and (min-width: 768px) {
+    .header .battery2 {
+        top: 20px;
+    }
+}
 @media only screen and (min-width: 992px) {
     .header .battery2 {
         position: inherit;
         right: auto;
+        top: 0;
     }
 }
 .header .battery3 {
@@ -1854,10 +1888,16 @@ section {
     top: 0;
     right: 0;
 }
+@media only screen and (min-width: 768px) {
+    .header .battery3 {
+        top: 20px;
+    }
+}
 @media only screen and (min-width: 992px) {
     .header .battery3 {
         position: inherit;
         right: auto;
+        top: 0;
     }
 }
 .header .fork__btn {
@@ -1931,7 +1971,7 @@ section {
 .header .arrow {
     display: none;
 }
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1200px) {
     .header .arrow {
         display: block;
         position: absolute;

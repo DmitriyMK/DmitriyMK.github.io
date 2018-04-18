@@ -44,9 +44,13 @@
 			align-items: center;
 		}
 		.logo__desc {
-			padding-left: 28px;
-			font-size: 16px;
-			color: #fff;
+			display: none;
+			@media @desktop {
+				display: block;
+				padding-left: 28px;
+				font-size: 16px;
+				color: #fff;
+			}
 		}
 		&__right {
 			display: flex;
@@ -140,6 +144,7 @@
 	&__title {
 		position: relative;
 		padding-bottom: 20px;
+
 		font-weight: 700;
 		text-align: center;
 
@@ -147,10 +152,11 @@
 
 		}
 		@media @tablet {
+			font-size: 26px;
 			text-align: left;
 		}
 		@media @desktop {
-			font-size: 36px;
+			font-size: 34px;
 			
 		}
 		@media @desktop-xl {
@@ -168,7 +174,7 @@
 	}
 	&__slogan {
 		position: relative;
-		font-size: 35px;
+
 		font-weight: 400;
 		text-align: center;
 
@@ -176,9 +182,11 @@
 
 		}
 		@media @tablet {
+			font-size: 24px;
 			text-align: left;
 		}
 		@media @desktop {
+			font-size: 35px;
 		}
 		@media @desktop-xl {
 			
@@ -197,7 +205,7 @@
 
 		}
 		@media @tablet {
-
+			padding-top: 20px;
 		}
 		@media @desktop {
 			padding-top: 80px;
@@ -214,6 +222,9 @@
 	}
 	&__list {
 		padding-top: 50px;
+		@media @desktop {
+			padding-top: 30px;	
+		}
 		@media @desktop-xl {
 			padding-top: 0;	
 		}
@@ -277,7 +288,7 @@
 		}
 		@media @desktop-xl {
 			top: -38px;
-			right: -50px;
+			right: -100px;
 			.battery {
 				max-width: 100%;
 			}
@@ -285,11 +296,7 @@
 				max-width: 100%;
 			}
 		}
-		@media @desktop-xl-2 {
-			
-			
 
-		}
 		@media @desktop-xll {
 			top: -38px;
 			right: -110px;
@@ -302,31 +309,15 @@
 		display: inline-block;
 		position: inherit;
 
-		@media @mobile {
-
-		}
-		@media @tablet {
-
-		}
 		@media @desktop {
 			position: relative;
 		}
-		@media @desktop-xl {
-			
-		}
-		@media @desktop-xl-2 {
-
-		}
-		@media @desktop-xll {
-			
-		}
-
 
 		&:before {
-			@media @desktop {
+			@media @desktop-xl {
 				content: '';
 				position: absolute;
-				left: 0;
+				left: 0px;
 				top: -10px;
 				width: 100%;
 				height: 100%;
@@ -354,27 +345,39 @@
 		position: absolute;
 		top: 0;
 		right: 200px;
+		@media @tablet {
+			top: 20px;
+		}
 		@media @desktop {
 			position: inherit;
 			right: auto;
+			top: 0;
 		}
 	}
 	.battery2 {
 		position: absolute;
 		top: 0;
 		right: 100px;
+		@media @tablet {
+			top: 20px;
+		}
 		@media @desktop {
 			position: inherit;
 			right: auto;
+			top: 0;
 		}
 	}
 	.battery3 {
 		position: absolute;
 		top: 0;
 		right: 0;
+		@media @tablet {
+			top: 20px;
+		}
 		@media @desktop {
 			position: inherit;
 			right: auto;
+			top: 0;
 		}
 	} 
 
@@ -493,7 +496,7 @@
 
 	.arrow {
 		display: none;
-		@media @desktop {
+		@media @desktop-xl {
 			display: block;
 			position: absolute;
 			left: 50%;
