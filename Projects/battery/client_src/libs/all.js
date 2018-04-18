@@ -47,44 +47,42 @@ $(document).ready(function() {
   $('.phone__mask').mask('+380(99)999-99-99');
 
 
-  /*if (document.documentElement.clientWidth > 1200) {*/
+  $('.models__slider').slick({
+    slidesToShow: 7,
+    dots: false,
+    arrow: false,
+    autoplay: true,
+    autoplaySpeed: 3000,
 
-    $('.models__slider').slick({
-      slidesToShow: 7,
-      dots: false,
-      arrow: false,
-      autoplay: true,
-      autoplaySpeed: 3000,
+    responsive: [
 
-      responsive: [
+    {
+      breakpoint: 1600,
+      settings: {
+        slidesToShow: 5,
+      }
+    },
 
-      {
-        breakpoint: 1600,
-        settings: {
-          slidesToShow: 5,
-        }
-      },
+    {
+      breakpoint: 1200,
+      settings: {
+        slidesToShow: 4,
+      }
+    },
 
-      {
-        breakpoint: 1200,
-        settings: {
-          slidesToShow: 4,
-        }
-      },
+    {
+      breakpoint: 980,
+      settings: {
+        slidesToShow: 3,
+      }
+    },
 
-      {
-        breakpoint: 980,
-        settings: {
-          slidesToShow: 3,
-        }
-      },
-
-      {
-        breakpoint: 768,
-        settings: {
-          slidesToShow: 1,
-        }
-      },
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 1,
+      }
+    },
 
 /*      {
         breakpoint: 767,
@@ -95,48 +93,47 @@ $(document).ready(function() {
 
     });
 
-    /*};*/
 
-    if (document.documentElement.clientWidth < 768) {
+  if (document.documentElement.clientWidth < 768) {
 
-      $('.models__slider').slick('unslick');
+    $('.models__slider').slick('unslick');
 
-    };
-
-
-    $('.partners__slider').slick({
-      slidesToShow: 6,
-      dots: false,
-      arrow: false,
-      autoplay: true,
-      autoplaySpeed: 3000,
-    });
+  };
 
 
-    $('.review__slider').slick({
-      slidesToShow: 1,
-      dots: true,
-      arrow: true,
-    });
+  $('.partners__slider').slick({
+    slidesToShow: 6,
+    dots: false,
+    arrow: false,
+    autoplay: true,
+    autoplaySpeed: 3000,
+  });
 
 
-    $('.award__slider').slick({
-      slidesToShow: 3,
-      dots: true,
-      arrow: true,
-      focusOnSelect: true,
-      centerMode: true,
-      centerPadding: '20px',
-      lazyLoad: 'ondemand',
-    });
+  $('.review__slider').slick({
+    slidesToShow: 1,
+    dots: true,
+    arrow: true,
+  });
 
 
-    $("certificates").fancybox({
-      transitionEffect: "none"
+  $('.award__slider').slick({
+    slidesToShow: 3,
+    dots: true,
+    arrow: true,
+    focusOnSelect: true,
+    centerMode: true,
+    centerPadding: '20px',
+    lazyLoad: 'ondemand',
+  });
 
-    });
+
+  $("certificates").fancybox({
+    transitionEffect: "none"
 
   });
+
+});
 
 
 $(window).on('resize orientationchange', function() {
@@ -144,50 +141,54 @@ $(window).on('resize orientationchange', function() {
 });
 
 
+if (document.documentElement.clientWidth > 768) {
 
-$(function() {
-  controller = new ScrollMagic.Controller();
-
-
-  var scene1 = new ScrollMagic.Scene({
-    triggerElement: '#premium__box',
-    duration: 180
-  })
-
-  .setPin('#inside__img2', {
-    pushFollowers: false
-  })
-
-  .addTo(controller)
+  $(function() {
+    controller = new ScrollMagic.Controller();
 
 
+    var scene1 = new ScrollMagic.Scene({
+      triggerElement: '#premium__box',
+      duration: 180
+    })
 
-  var scene2 = new ScrollMagic.Scene({
-    triggerElement: '#inside__img2',
-    duration: 330
-  })
-  .setPin('#inside__img3')
-  .addTo(controller)
+    .setPin('#inside__img2', {
+      pushFollowers: false
+    })
+
+    .addTo(controller)
 
 
 
-  var scene2 = new ScrollMagic.Scene({
-    triggerElement: '#inside__img2',
-    duration: 430
-  })
-  .setPin('#inside__img4')
-  .addTo(controller)
+    var scene2 = new ScrollMagic.Scene({
+      triggerElement: '#inside__img2',
+      duration: 330
+    })
+    .setPin('#inside__img3')
+    .addTo(controller)
 
 
-  var scene2 = new ScrollMagic.Scene({
-    triggerElement: '#inside__img4',
-    duration: 440
-  })
-  .setPin('#inside__img5')
-  .addTo(controller)
+
+    var scene2 = new ScrollMagic.Scene({
+      triggerElement: '#inside__img2',
+      duration: 430
+    })
+    .setPin('#inside__img4')
+    .addTo(controller)
 
 
-});
+    var scene2 = new ScrollMagic.Scene({
+      triggerElement: '#inside__img4',
+      duration: 440
+    })
+    .setPin('#inside__img5')
+    .addTo(controller)
+
+
+  });
+
+
+};
 
 
 

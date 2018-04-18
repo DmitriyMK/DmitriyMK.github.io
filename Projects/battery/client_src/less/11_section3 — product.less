@@ -97,8 +97,11 @@
 
 
 	.product__col {
-		max-width: 500px;
+		max-width: 320px;
 		margin: auto;
+		@media @desktop {
+			max-width: inherit;
+		}
 	}
 
 	.box-eco {
@@ -202,18 +205,24 @@
 
 	&__item {
 		position: relative;
-		padding-left: 60px;
+		padding-left: 50px;
 		padding-bottom: 10px;
 		letter-spacing: 1px;
+		@media @desktop {
+			padding-left: 60px;
+		}
 		&:before {
 			content: '';
 			position: absolute;
-			left: 20px;
+			left: 15px;
 			top: 0;
 			width: 20px;
 			height: 20px;
 			background: url(../images/icons/flash.png)no-repeat;
 			border-radius: 50%;
+			@media @desktop {
+				left: 20px;
+			}
 		}
 	}
 

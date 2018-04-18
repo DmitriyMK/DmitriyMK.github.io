@@ -111,10 +111,13 @@
 		position: relative;
 		line-height: 1;
 		height: 100%;
+		height: 100vh;
+		max-height: 600px;
 		background: url(../images/back__model-pre.jpg)no-repeat center/cover;
 
 		@media @tablet {
 			padding-top: 70px;
+			max-height: inherit;
 		}
 		@media @desktop {
 			height: 700px;
@@ -153,7 +156,7 @@
 	&__title {
 		position: relative;
 		padding-bottom: 20px;
-		font-size: 22px;
+		font-size: 24px;
 		font-weight: 700;
 		text-align: center;
 
@@ -184,7 +187,7 @@
 	}
 	&__slogan {
 		position: relative;
-		font-size: 22px;
+		font-size: 26px;
 		font-weight: 400;
 		text-align: center;
 
@@ -192,7 +195,6 @@
 
 		}
 		@media @tablet {
-			font-size: 24px;
 			text-align: left;
 		}
 		@media @desktop {
@@ -404,8 +406,8 @@
 			top: 10px;
 			left: 50%;
 			transform: translateX(-50%);
-			width: 312px;
-			height: 90px;
+			width: 315px;
+			height: 312px;
 			background: url(../images/fork-small.png)no-repeat;
 
 			@media @mobile {
