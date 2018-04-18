@@ -2710,12 +2710,13 @@ section {
 }
 .premium__list {
     position: relative;
-    margin-top: 40px;
+    margin-top: 120px;
     padding-left: 40px;
     overflow: hidden;
 }
 @media only screen and (min-width: 768px) {
     .premium__list {
+        margin-top: 40px;
         padding-left: 0;
         text-align: right;
     }
@@ -2802,7 +2803,7 @@ section {
 }
 .premium__inside .img1 {
     position: absolute;
-    top: -180px;
+    top: -110px;
     right: 90px;
     width: 178px;
     height: 107px;
@@ -2833,7 +2834,7 @@ section {
 }
 .premium__inside .img2 {
     position: absolute;
-    top: -165px;
+    top: 50px;
     right: 90px;
     width: 171px;
     height: 90px;
@@ -2864,7 +2865,7 @@ section {
 }
 .premium__inside .img3 {
     position: absolute;
-    top: -120px;
+    top: 0;
     right: 250px;
     width: 108px;
     height: 55px;
