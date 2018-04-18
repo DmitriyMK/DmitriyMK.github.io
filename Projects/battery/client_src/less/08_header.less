@@ -214,6 +214,9 @@
 	}
 	&__list {
 		padding-top: 50px;
+		@media @desktop-xl {
+			padding-top: 0;	
+		}
 	}
 	&__item {
 		position: relative;
@@ -268,6 +271,7 @@
 				max-width: 70px;
 			}
 			.laptop {
+				display: inline-block;
 				max-width: 350px;
 			}
 		}
@@ -350,17 +354,29 @@
 		position: absolute;
 		top: 0;
 		right: 200px;
+		@media @desktop {
+			position: inherit;
+			right: auto;
+		}
 	}
 	.battery2 {
 		position: absolute;
 		top: 0;
 		right: 100px;
+		@media @desktop {
+			position: inherit;
+			right: auto;
+		}
 	}
 	.battery3 {
 		position: absolute;
 		top: 0;
 		right: 0;
-	}
+		@media @desktop {
+			position: inherit;
+			right: auto;
+		}
+	} 
 
 
 
@@ -385,7 +401,7 @@
 
 			}
 			@media @desktop {
-				left: -30px;
+				left: 170px;
 				margin-bottom: inherit;
 			}
 			@media @desktop-xl {
@@ -481,7 +497,7 @@
 			display: block;
 			position: absolute;
 			left: 50%;
-			bottom: -120px;
+			bottom: -50px;
 			img {
 				display: block;
 				margin: 3px auto;

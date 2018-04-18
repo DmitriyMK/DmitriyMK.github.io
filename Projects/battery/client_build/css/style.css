@@ -1735,6 +1735,11 @@ section {
 .header__list {
     padding-top: 50px;
 }
+@media only screen and (min-width: 1200px) {
+    .header__list {
+        padding-top: 0;
+    }
+}
 .header__item {
     position: relative;
     padding-left: 34px;
@@ -1765,6 +1770,7 @@ section {
         max-width: 70px;
     }
     .header .laptopImg .laptop {
+        display: inline-block;
         max-width: 350px;
     }
 }
@@ -1826,15 +1832,33 @@ section {
     top: 0;
     right: 200px;
 }
+@media only screen and (min-width: 992px) {
+    .header .battery1 {
+        position: inherit;
+        right: auto;
+    }
+}
 .header .battery2 {
     position: absolute;
     top: 0;
     right: 100px;
 }
+@media only screen and (min-width: 992px) {
+    .header .battery2 {
+        position: inherit;
+        right: auto;
+    }
+}
 .header .battery3 {
     position: absolute;
     top: 0;
     right: 0;
+}
+@media only screen and (min-width: 992px) {
+    .header .battery3 {
+        position: inherit;
+        right: auto;
+    }
 }
 .header .fork__btn {
     position: relative;
@@ -1855,7 +1879,7 @@ section {
 }
 @media only screen and (min-width: 992px) {
     .header .fork__btn:after {
-        left: -30px;
+        left: 170px;
         margin-bottom: inherit;
     }
 }
@@ -1912,7 +1936,7 @@ section {
         display: block;
         position: absolute;
         left: 50%;
-        bottom: -120px;
+        bottom: -50px;
     }
     .header .arrow img {
         display: block;
