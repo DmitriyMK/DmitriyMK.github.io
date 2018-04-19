@@ -40,9 +40,9 @@
 			line-height: 1;
 		}
 	}
-	.container {
-		z-index: 1;
-	}
+
+
+
 	&__slider {
 		margin-top: 40px;
 		@media @desktop-xl {
@@ -54,6 +54,7 @@
 		outline: none!important;
 	}
 	.slide__left {
+		display: block;
 		@media @desktop {
 			padding: 35px;
 			margin-right: 40px;
@@ -63,22 +64,32 @@
 	.slide__img {
 		margin: 20px auto;
 		position: relative;
-		width: 250px;
-		height: 250px;
+		width: 150px;
+		height: 150px;
 		background-repeat: no-repeat;
 		background-position: top;
 		background-size: cover;
 		border-radius: 12px;
+
+		@media @desktop {
+			width: 250px;
+			height: 250px;
+		}
 		&:before {
 			content: '';
 			position: absolute;
-			width: 280px;
-			height: 280px;
+			width: 180px;
+			height: 180px;
 			top: -15px;
 			left: -15px;
 			border: 5px solid #fff;
 			border-radius: 12px;
 			box-shadow: 0px 0px 6px 4px rgba(255, 255, 255, 0.5);
+
+			@media @desktop {
+				width: 280px;
+				height: 280px;
+			}
 		}
 	}
 	.img2 {
@@ -89,6 +100,8 @@
 	}
 
 	.slide__right {
+		padding-right: 15px;
+		padding-left: 15px;
 		padding-top: 15px;
 		color: #fff;
 		text-align: center;
@@ -120,25 +133,27 @@
 
 
 
-	.slick-prev,
-	.slick-next {
-		top: 50%;
-		transform: translateY(-50%);
-
-	}
-
-
-
-
-
 
 
 	.slick-prev:before {
-		background: url(../images/icons/arrow_left.png)no-repeat;
+		background: url(../images/icons/arrow_left-sm.png)no-repeat center;
+		@media @tablet {
+			background: url(../images/icons/arrow_left.png)no-repeat center;
+		}
+		@media @desktop {
+
+		}
 	}
 
 	.slick-next:before {
-		background: url(../images/icons/arrow_right.png)no-repeat;
+		background: url(../images/icons/arrow_right-sm.png)no-repeat center;
+		@media @tablet {
+			background: url(../images/icons/arrow_right.png)no-repeat center;
+		}
+		@media @desktop {
+
+		}
 	}
+
 
 }

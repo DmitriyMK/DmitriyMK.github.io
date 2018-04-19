@@ -23,18 +23,6 @@ $(document).ready(function() {
 
 /*FIXED SCROLL FOR MENU*/
 
-$(document).ready(function() {
-
-  $(window).scroll(function() {
-    if ($(this).scrollTop() > 780) {
-      $('#fixedTopMenu').addClass('fixed');
-    } else if ($(this).scrollTop() < 780) {
-      $('#fixedTopMenu').removeClass('fixed');
-    }
-  });
-
-});
-
 
 $(document).ready(function() {
 
@@ -51,6 +39,14 @@ $(document).ready(function() {
 
 
   if (document.documentElement.clientWidth > 767) {
+
+    $(window).scroll(function() {
+    if ($(this).scrollTop() > 780) {
+      $('#fixedTopMenu').addClass('fixed');
+    } else if ($(this).scrollTop() < 780) {
+      $('#fixedTopMenu').removeClass('fixed');
+    }
+  });
 
     $('.models__slider').slick({
     slidesToShow: 7,
@@ -141,7 +137,6 @@ $(document).ready(function() {
 
 
   $('.review__slider').slick({
-    slidesToShow: 1,
     dots: true,
     arrow: true,
   });

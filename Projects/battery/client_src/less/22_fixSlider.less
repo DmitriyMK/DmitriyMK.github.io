@@ -1,16 +1,21 @@
 .slick-prev,
 .slick-next {
-	width: 60px;
-	height: 60px;
-	top: 50%;
-	transform: translateY(-50%);
+	width: 65px;
+	height: 114px;
+	
 	transition: all .3s linear;
+	z-index: 10;
+
+	top: 10%;
 
 	@media @tablet {
+		width: 30px;
+		height: 53px;
 
 	}
 	@media @desktop {
-
+		top: 50%;
+		transform: translateY(-50%);
 	}
 	@media @desktop-xl {
 
@@ -41,7 +46,6 @@ color: #1a46a8; */
 
 .slick-prev {
 	left: 0; 
-	/* 	background: rgba(0,0,0, .8); */
 
 	@media @tablet {
 
@@ -64,14 +68,19 @@ color: #1a46a8; */
 	display: block;
 	position: absolute;
 
-	top: 315px;
-	left: 100px;
 
-	/* 	background: url(../images/icons/arrow_left.png)no-repeat; */
-	width: 65px;
-	height: 114px;
 	z-index: 10;
+
+	width: 30px;
+	height: 53px;
+
+
+
+
 	@media @tablet {
+
+		width: 65px;
+		height: 114px;
 
 	}
 	@media @desktop {
@@ -94,7 +103,6 @@ color: #1a46a8; */
 
 .slick-next {
 	right: 0; 
-	/* 	background: rgba(0,0,0, .8); */
 
 	@media @tablet {
 
@@ -117,15 +125,17 @@ color: #1a46a8; */
 	display: block;
 	position: absolute;
 
-	top: 315px;
-	right: 100px;
+	
 	z-index: 10;
-	/* 	background: url(../images/icons/arrow_right.png)no-repeat; */
-	width: 65px;
-	height: 114px;
+
+	width: 30px;
+	height: 53px;
+	right: 0;
+	
 
 	@media @tablet {
-
+		width: 65px;
+		height: 114px;
 	}
 	@media @desktop {
 		top: 200px;

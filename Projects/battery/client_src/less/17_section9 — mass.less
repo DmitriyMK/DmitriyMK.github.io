@@ -18,6 +18,7 @@
 }
 
 .mass {
+	background: #ecf4fa;
 	@media @desktop-xl {
 		padding-top: 40px;
 		padding-bottom: 100px;
@@ -126,15 +127,33 @@
 	}
 
 	.form {
-		width: 290px;
+		width: 300px;
+		margin-top: 30px;
+
 		text-align: center;
+		background: #fff;
+		border-radius: 10px;
+		box-shadow: 0px 13px 19.92px 4.08px rgba(0, 45, 86, 0.09);
+		@media @tablet {
+			width: 100%;
+			margin-top: 60px;
+			padding-top: 20px;
+			padding-bottom: 50px;
+			padding-left: 50px;
 
-
-
+			border-radius: none;
+			box-shadow: none;
+			background: url(../images/back__forms-small.png)no-repeat center/contain;
+		}
 		@media @desktop {
 
 		}
 		@media @desktop-xl {
+			margin-top: inherit;
+			padding-top: inherit;
+			padding-bottom: inherit;
+			padding-left: inherit;
+
 
 			position: absolute;
 			top: 72px;
@@ -155,7 +174,7 @@
 	}
 
 	.formBox__title-mass {
-		padding-top: 95px;
+		padding-top: 30px;
 		font-weight: 700;
 		font-size: 26px;
 
@@ -193,6 +212,7 @@
 		width: 250px;
 		border: none;
 		background: #ecf1f6;
+		display: block;
 
 		@media @desktop-xl {
 			margin-bottom: 14px;
