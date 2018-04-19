@@ -4093,6 +4093,7 @@ section {
 @media only screen and (min-width: 992px) {
     .footer {
         padding: 15px 0;
+        text-align: left;
     }
 }
 .footer__logo {
@@ -4100,6 +4101,7 @@ section {
 }
 @media only screen and (min-width: 992px) {
     .footer__logo {
+        margin-top: 10px;
         float: left;
     }
 }
@@ -4110,6 +4112,7 @@ section {
 }
 @media only screen and (min-width: 992px) {
     .footer__title {
+        float: left;
         padding-top: 3px;
     }
 }
@@ -4119,7 +4122,8 @@ section {
 }
 @media only screen and (min-width: 992px) {
     .footer .agency {
-        margin-top: 10px;
+        float: right;
+        margin-top: 0;
     }
 }
 .footer .agency a {
