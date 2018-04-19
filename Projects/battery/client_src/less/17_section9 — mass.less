@@ -18,41 +18,93 @@
 }
 
 .mass {
-	padding-top: 40px;
-	padding-bottom: 100px;
-	margin-top: -60px;
-	height: 624px;
-	background: url(../images/back__form.png)no-repeat center/cover;
-	z-index: 10;
+	
 
+	@media @mobile {
+
+	}
+	@media @tablet {
+
+	}
+	@media @desktop {
+
+	}
+	@media @desktop-xl {
+		padding-top: 40px;
+		padding-bottom: 100px;
+		margin-top: -60px;
+		height: 624px;
+		background: url(../images/back__form.png)no-repeat center/cover;
+		z-index: 10;
+	}
 	p {
 		margin: 0;
 	}
 	.container {
 		position: relative;
+		display: flex;
+		justify-content: center;
+		padding-bottom: 95px;
+		flex-wrap: wrap;
+		@media @tablet {
+			flex-wrap: nowrap;
+			justify-content: space-between;
+		}
+		@media @desktop-xl {
+			display: inherit;
+			padding-bottom: 0;
+		}
 	}
 
 	&__box {
-		position: relative;
-		padding-top: 22px;
-		padding-left: 70px;
+		@media @desktop-xl {
+			position: relative;
+			padding-top: 22px;
+			padding-left: 70px;
+		}
 	}
 
 	&__title {
-		font-size: 40px;
+		text-align: left;
+		font-size: 30px;
+		@media @mobile {
+
+		}
+		@media @tablet {
+
+		}
+		@media @desktop {
+			font-size: 40px;
+		}
+		@media @desktop-xl {
+
+		}
+		@media @desktop-xl-2 {
+
+		}
+		@media @desktop-xll {
+
+		}
 	}
 	&__title-next {
 		margin: 0;
-		padding-top: 12px;
-		font-size: 30px;
+		padding-top: 30px;
+		font-size: 26px;
+		@media @desktop {
+			padding-top: 12px;
+			font-size: 30px;
+		}
 	}
 	&__text {
-		margin-top: 78px;
+		margin-top: 20px;
+
+		@media @desktop-xl {
+			margin-top: 78px;
+		}
 	}
 	&__proposal {
 		position: relative;
 		padding-left: 10px;
-		
 		font-size: 18px;
 		color: #272b35;
 		&:before {
@@ -63,31 +115,75 @@
 			width: 2px;
 			height: 100%;
 			background: #000;
-
 		}
 	}
 	&__accent {
 		padding-left: 5px;
-		padding-top: 38px;
+		padding-top: 25px;
 		font-size: 12px;
+
+		@media @desktop-xl {
+			padding-top: 38px;
+		}
 	}
 
 	.form {
-		position: absolute;
-		top: 72px;
-		right: 48px;
-		width: 467px;
-		height: 100%;
-		padding-left: 130px;
-		background: url(../images/back__forms.png)no-repeat center/cover;
-		background-size: contain;
+		width: 290px;
 		text-align: center;
+
+		@media @mobile {
+
+		}
+		@media @tablet {
+
+		}
+		@media @desktop {
+
+		}
+		@media @desktop-xl {
+
+			position: absolute;
+			top: 72px;
+			right: 48px;
+			width: 467px;
+			height: 100%;
+			padding-left: 130px;
+			background: url(../images/back__forms.png)no-repeat center/cover;
+			background-size: contain;
+			text-align: center;
+		}
+		@media @desktop-xl-2 {
+
+		}
+		@media @desktop-xll {
+
+		}
 	}
 
 	.formBox__title-mass {
-		padding-top: 57px;
+		padding-top: 95px;
 		font-weight: 700;
-		font-size: 20px;
+		font-size: 26px;
+
+		@media @mobile {
+
+		}
+		@media @tablet {
+
+		}
+		@media @desktop {
+
+		}
+		@media @desktop-xl {
+			padding-top: 57px;
+			font-size: 20px;
+		}
+		@media @desktop-xl-2 {
+
+		}
+		@media @desktop-xll {
+
+		}
 	}
 	.formBox__text {
 		padding-top: 12px;
@@ -98,11 +194,16 @@
 
 		margin: auto;
 		margin-top: 0;
-		margin-bottom: 14px;
+		margin-bottom: 25px;
 		padding: 10px 15px;
 		width: 250px;
 		border: none;
 		background: #ecf1f6;
+
+		@media @desktop-xl {
+			margin-bottom: 14px;
+		}
+
 	}
 	.btn {
 		padding: 0 80px;

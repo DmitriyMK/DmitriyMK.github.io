@@ -1696,7 +1696,7 @@ section {
     }
 }
 .header__center {
-    padding-top: 50px;
+    padding-top: 70px;
     position: relative;
     line-height: 1;
     height: 100%;
@@ -1704,7 +1704,6 @@ section {
 }
 @media only screen and (min-width: 768px) {
     .header__center {
-        padding-top: 70px;
         max-height: inherit;
     }
 }
@@ -1748,13 +1747,14 @@ section {
 }
 .header__title {
     position: relative;
-    padding-bottom: 20px;
+    padding-bottom: 40px;
     font-size: 24px;
     font-weight: 700;
     text-align: center;
 }
 @media only screen and (min-width: 768px) {
     .header__title {
+        padding-bottom: 20px;
         font-size: 26px;
         text-align: left;
     }
@@ -3051,9 +3051,14 @@ section {
         padding-top: 70px;
     }
 }
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 992px) {
     .order__list {
         margin-top: 50px;
+        padding-left: 90px;
+    }
+}
+@media only screen and (min-width: 1200px) {
+    .order__list {
         padding-left: 200px;
     }
 }
@@ -3301,35 +3306,80 @@ section {
     height: 36px;
     width: 140px;
 }
-.mass {
-    padding-top: 40px;
-    padding-bottom: 100px;
-    margin-top: -60px;
-    height: 624px;
-    background: url(../images/back__form.png) no-repeat center / cover;
-    z-index: 10;
+@media only screen and (min-width: 1200px) {
+    .mass {
+        padding-top: 40px;
+        padding-bottom: 100px;
+        margin-top: -60px;
+        height: 624px;
+        background: url(../images/back__form.png) no-repeat center / cover;
+        z-index: 10;
+    }
 }
 .mass p {
     margin: 0;
 }
 .mass .container {
     position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding-bottom: 95px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
 }
-.mass__box {
-    position: relative;
-    padding-top: 22px;
-    padding-left: 70px;
+@media only screen and (min-width: 768px) {
+    .mass .container {
+        -ms-flex-wrap: nowrap;
+            flex-wrap: nowrap;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+    }
+}
+@media only screen and (min-width: 1200px) {
+    .mass .container {
+        display: inherit;
+        padding-bottom: 0;
+    }
+}
+@media only screen and (min-width: 1200px) {
+    .mass__box {
+        position: relative;
+        padding-top: 22px;
+        padding-left: 70px;
+    }
 }
 .mass__title {
-    font-size: 40px;
+    text-align: left;
+    font-size: 30px;
+}
+@media only screen and (min-width: 992px) {
+    .mass__title {
+        font-size: 40px;
+    }
 }
 .mass__title-next {
     margin: 0;
-    padding-top: 12px;
-    font-size: 30px;
+    padding-top: 30px;
+    font-size: 26px;
+}
+@media only screen and (min-width: 992px) {
+    .mass__title-next {
+        padding-top: 12px;
+        font-size: 30px;
+    }
 }
 .mass__text {
-    margin-top: 78px;
+    margin-top: 20px;
+}
+@media only screen and (min-width: 1200px) {
+    .mass__text {
+        margin-top: 78px;
+    }
 }
 .mass__proposal {
     position: relative;
@@ -3348,24 +3398,41 @@ section {
 }
 .mass__accent {
     padding-left: 5px;
-    padding-top: 38px;
+    padding-top: 25px;
     font-size: 12px;
 }
+@media only screen and (min-width: 1200px) {
+    .mass__accent {
+        padding-top: 38px;
+    }
+}
 .mass .form {
-    position: absolute;
-    top: 72px;
-    right: 48px;
-    width: 467px;
-    height: 100%;
-    padding-left: 130px;
-    background: url(../images/back__forms.png) no-repeat center / cover;
-    background-size: contain;
+    width: 290px;
     text-align: center;
 }
+@media only screen and (min-width: 1200px) {
+    .mass .form {
+        position: absolute;
+        top: 72px;
+        right: 48px;
+        width: 467px;
+        height: 100%;
+        padding-left: 130px;
+        background: url(../images/back__forms.png) no-repeat center / cover;
+        background-size: contain;
+        text-align: center;
+    }
+}
 .mass .formBox__title-mass {
-    padding-top: 57px;
+    padding-top: 95px;
     font-weight: 700;
-    font-size: 20px;
+    font-size: 26px;
+}
+@media only screen and (min-width: 1200px) {
+    .mass .formBox__title-mass {
+        padding-top: 57px;
+        font-size: 20px;
+    }
 }
 .mass .formBox__text {
     padding-top: 12px;
@@ -3375,11 +3442,16 @@ section {
 .mass .form__line {
     margin: auto;
     margin-top: 0;
-    margin-bottom: 14px;
+    margin-bottom: 25px;
     padding: 10px 15px;
     width: 250px;
     border: none;
     background: #ecf1f6;
+}
+@media only screen and (min-width: 1200px) {
+    .mass .form__line {
+        margin-bottom: 14px;
+    }
 }
 .mass .btn {
     padding: 0 80px;
