@@ -2375,8 +2375,8 @@ section {
     padding-bottom: 15px;
     background: #fff;
     border-radius: 15px;
-    -webkit-box-shadow: 0 21px 36px 2px rgba(0, 45, 86, 0.15);
-            box-shadow: 0 21px 36px 2px rgba(0, 45, 86, 0.15);
+    -webkit-box-shadow: 0 21px 36px 2px rgba(0, 45, 86, 0.15), inset 0 0 36px 2px rgba(0, 45, 86, 0.15);
+            box-shadow: 0 21px 36px 2px rgba(0, 45, 86, 0.15), inset 0 0 36px 2px rgba(0, 45, 86, 0.15);
     -webkit-transition: all 0.3s linear;
          -o-transition: all 0.3s linear;
             transition: all 0.3s linear;
@@ -3647,6 +3647,9 @@ section {
     .review .slick-next:before {
         background: url(../images/icons/arrow_right.png) no-repeat center;
     }
+}
+.award {
+    background: #ecf4fa;
 }
 @media only screen and (min-width: 1600px) {
     .award {
