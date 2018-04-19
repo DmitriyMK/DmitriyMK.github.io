@@ -1463,44 +1463,37 @@ input, textarea {
     -webkit-border-radius: 0;
     -webkit-appearance: none;
 }
-.vertical-container {
-    -webkit-transform-style: preserve-3d;
-            transform-style: preserve-3d;
+.anchor {
+    visibility: hidden;
+    display: block;
+    height: 72px;
+    margin-top: -72px;
 }
-.vertical-inner {
-    position: relative;
-    top: 50% !important;
-    -webkit-transform: translateY(-50%);
-        -ms-transform: translateY(-50%);
-            transform: translateY(-50%);
-    z-index: 99;
+.scrollup {
+    position: fixed;
+    bottom: 50px;
+    right: 15px;
+    display: none;
+    z-index: 100;
+    color: #fff;
+    font-size: 40px;
+    background: #ff405a;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
 }
-/* .scrollup {
-	width: 37px;
-	height: 84px;
-	position: fixed;
-	bottom: 50px;
-	right: 15px;
-	display: none;
-	text-indent: -9999px;
-	background: url('../images/arrow-top.png') no-repeat;
-	z-index: 100;
-	@media @tablet {
-		right: 100px;
-	}
-} */
-.video-responsive {
-    position: relative;
-    padding-bottom: 56.25%;
-    height: 0;
-    overflow: hidden;
-}
-.video-responsive iframe, .video-responsive object, .video-responsive embed {
+.scrollup i {
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+}
+@media only screen and (min-width: 768px) {
+    .scrollup {
+        right: 100px;
+    }
 }
 @media only screen and (min-width: 320px) {
     .container {
@@ -4132,32 +4125,6 @@ section {
 }
 .footer .agency p {
     margin: 0;
-}
-.scrollup {
-    position: fixed;
-    bottom: 50px;
-    right: 15px;
-    display: none;
-    z-index: 100;
-    color: #fff;
-    font-size: 40px;
-    background: #ff405a;
-    width: 55px;
-    height: 55px;
-    border-radius: 50%;
-}
-.scrollup i {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
-}
-@media only screen and (min-width: 768px) {
-    .scrollup {
-        right: 100px;
-    }
 }
 .slick-prev, .slick-next {
     width: 65px;
