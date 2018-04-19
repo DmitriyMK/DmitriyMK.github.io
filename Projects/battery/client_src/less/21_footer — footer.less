@@ -23,37 +23,30 @@
 	padding: 15px 0 15px 0;
 	text-align: center;
 	background: #15181f;
-	@media @mobile {
 
-	}
-	@media @tablet {
-		text-align: left;
-	}
-	@media @desktop {
 
-	}
-	@media @desktop-xl {
-
-	}
-	@media @desktop-xl-2 {
-
-	}
-	@media @desktop-xll {
-
-	}
-	&__logo {
-		float: left;
+	&__logo {	
 		padding-top: 10px;
 		margin-right: 20px;
+
+		@media @desktop {
+			float: left;
+		}
 	}
 	&__title {
-		padding-top: 3px;
+		padding-top: 20px;
 		font-size: 16px;
 		font-weight: 400;
+		@media @desktop {
+			padding-top: 3px;
+		}
 	}
 	.agency {
-		margin-top: 10px;
+		margin: 35px 0;
 		font-size: 16px;
+		@media @desktop {
+			margin-top: 10px;
+		}
 		a {
 			font-size: 16px;
 			color: #fff;
@@ -61,13 +54,31 @@
 		p {
 			margin: 0;
 		}
-		@media @mobile {
 
-		}
-		@media @tablet {
-			float: right;
-			padding: 0;
-			text-align: right;
-		}
 	}
 } 
+
+
+.scrollup {
+
+	position: fixed;
+	bottom: 50px;
+	right: 15px;
+	display: none;
+	z-index: 100;
+	color: #fff;
+	font-size: 40px;
+	background: @red;
+	width: 55px;
+	height: 55px;
+	border-radius: 50%;
+	i {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+	@media @tablet {
+		right: 100px;
+	}
+}

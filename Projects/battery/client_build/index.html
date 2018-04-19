@@ -4,7 +4,7 @@
 <head>
 
 	<meta charset="utf-8">
-	<title></title>
+	<title>Great Power</title>
 
 	<meta name="description" content="">
 
@@ -78,7 +78,7 @@
 				</div>
 
 				<div class="arrow">
-					<a href="#">
+					<a class="srolling__link" href="#advantages">
 						<div>
 							<img src="images/icons/arrow-down-sm.png" alt="смотреть далее">
 							<img src="images/icons/arrow-down-big.png" alt="смотреть далее">
@@ -94,7 +94,7 @@
 
 
 
-	<section class="advantages">
+	<section class="advantages" id="advantages">
 		<div class="container">
 			<h2 class="section__title advantages__title">Преимущества покупки у нас</h2>
 			<h3 class="section__back">Преимущества</h3>
@@ -543,43 +543,43 @@
 
 
 				<li class="award__item">
-					<a class="award__img" data-fancybox="certificates" class="fancybox" href="images/certificat1.jpg">
+					<a class="award__img fancybox" data-fancybox="certificates" href="images/certificat1.jpg">
 						<img data-lazy="images/certificat1.jpg" alt="Сертификат">
 					</a>
 				</li>
 				<li class="award__item">
-					<a class="award__img" data-fancybox="certificates" class="fancybox" href="images/certificat2.jpg">
+					<a class="award__img fancybox" data-fancybox="certificates" href="images/certificat2.jpg">
 						<img data-lazy="images/certificat2.jpg" alt="Сертификат">
 					</a>
 				</li>
 				<li class="award__item">
-					<a class="award__img" data-fancybox="certificates" class="fancybox" href="images/certificat3.jpg">
+					<a class="award__img fancybox" data-fancybox="certificates" href="images/certificat3.jpg">
 						<img data-lazy="images/certificat3.jpg" alt="Сертификат">
 					</a>
 				</li>
 
 				<li class="award__item">
-					<a class="award__img" data-fancybox="certificates" class="fancybox" href="images/certificat4.jpg">
+					<a class="award__img fancybox" data-fancybox="certificates" href="images/certificat4.jpg">
 						<img data-lazy="images/certificat4.jpg" alt="Сертификат">
 					</a>
 				</li>
 				<li class="award__item">
-					<a class="award__img" data-fancybox="certificates" class="fancybox" href="images/certificat5.jpg">
+					<a class="award__img fancybox" data-fancybox="certificates" href="images/certificat5.jpg">
 						<img data-lazy="images/certificat5.jpg" alt="Сертификат">
 					</a>
 				</li>
 				<li class="award__item">
-					<a class="award__img" data-fancybox="certificates" class="fancybox" href="images/certificat6.jpg">
+					<a class="award__img fancybox" data-fancybox="certificates" href="images/certificat6.jpg">
 						<img data-lazy="images/certificat6.jpg" alt="Сертификат">
 					</a>
 				</li>
 				<li class="award__item">
-					<a class="award__img" data-fancybox="certificates" class="fancybox" href="images/certificat7.jpg">
+					<a class="award__img fancybox" data-fancybox="certificates" href="images/certificat7.jpg">
 						<img data-lazy="images/certificat7.jpg" alt="Сертификат">
 					</a>
 				</li>
 				<li class="award__item">
-					<a class="award__img" data-fancybox="certificates" class="fancybox" href="images/certificat8.jpg">
+					<a class="award__img fancybox" data-fancybox="certificates" href="images/certificat8.jpg">
 						<img data-lazy="images/certificat8.jpg" alt="Сертификат">
 					</a>
 				</li>
@@ -612,8 +612,8 @@
 					<li class="contact__item"><a class="contact__link" href="tel:+380442061044">+38(063)627-24-34</a></li>
 					<li class="contact__item"><a class="contact__link" href="tel:+380442061044">+38(096)564-82-35</a></li> 
 					<li class="contact__item mb"><a class="contact__link" href="tel:+380442061044">+38(050)333-70-20</a></li> 
-					<li class="contact__item mail"><a class="contact__link" href="mailto:pochta@my-battery.com.ua">pochta@my-battery.com.ua</a></li>
-					<li class="contact__item accent">mybattershop</li>
+					<li class="contact__item mail"><a class="contact__link" href="mailto:pochta@my-battery.com.ua"><i class="icon icon-mail"></i>pochta@my-battery.com.ua</a></li>
+					<li class="contact__item accent skype"><a href="skype:mybattershop">mybattershop</a></li>
 					<li class="contact__item time">09:00-21:00 | Без выходных</li>
 				</ul>
 				<p class="contact__ask">Остались вопросы?</p>
@@ -627,17 +627,18 @@
 	<footer class="footer">
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-6">
+				<div class="col-md-8">
 					<a class="footer__logo" href="index.html"><img src="images/logo-footer.png" alt="Great Power"></a>
 					<h2 class="footer__title">Продажа аккумуляторов <br> для ноутбуков по Украине</h2>
 				</div>	
-				<div class="col-lg-6 ">
+				<div class="col-md-4 ">
 					<div class="agency">
 						<a href="http://landingpage.push-k.ua/">Создание сайтов</a> 
 						<p>PUSH-K Solutions</p>
 					</div>
 				</div>	
 			</div>
+			<a href="#header" class="scrollup"><i class="icon icon-up-bold"></i></a>
 		</div>
 	</footer> 
 
@@ -645,14 +646,14 @@
 
 	<div class="remodal formBox" data-remodal-id="callback"> 
 		<button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
-		<form class="form form-validate" id="modal-recieve" name="main-form">
+		<form class="form form-validate" name="main-form">
 			<!-- Hidden Required Fields -->
 			<input type="hidden" name="project_name" value="Great Power">
 			<input type="hidden" name="admin_email" value="dm@push-k.ua">
 			<input type="hidden" name="form_subject" value="Обратный звонок">
 			<!-- END Hidden Required Fields -->
 			<p class="formBox__title">Заполните форму</p>
-			<p class="formBox__text">И наш менеджер свяжется с Вами в <br> течение 10 минут.</p>
+			<p class="formBox__text">И наш менеджер свяжется с Вами в <br> чтобы ответить на все вопросы!</p>
 			<input class="form__line name" type="text" name="Имя&nbsp;покупателя" placeholder="Ваше имя" required>
 			<input class="form__line phone__mask" type="tel" name="Телефон&nbsp;покупателя" placeholder="Ваш телефон" required>
 			<input type="submit" class="btn btn-shdw" value="Заказать звонок"> 
@@ -661,14 +662,14 @@
 
 	<div class="remodal formBox" data-remodal-id="choiсe"> 
 		<button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
-		<form class="form form-validate" id="modal-recieve" name="choice-form">
+		<form class="form form-validate" name="choice-form">
 			<!-- Hidden Required Fields -->
 			<input type="hidden" name="project_name" value="Great Power">
 			<input type="hidden" name="admin_email" value="dm@push-k.ua">
 			<input type="hidden" name="form_subject" value="Подбор аккумулятора">
 			<!-- END Hidden Required Fields -->
 			<p class="formBox__title">Заполните форму</p>
-			<p class="formBox__text">И наш менеджер свяжется с Вами в <br> течение 10 минут.</p>
+			<p class="formBox__text">И наш менеджер свяжется с Вами в <br> чтобы ответить на все вопросы!</p>
 			<input class="form__line name" type="text" name="Имя&nbsp;покупателя" placeholder="Ваше имя" required>
 			<input class="form__line phone__mask" type="tel" name="Телефон&nbsp;покупателя" placeholder="Ваш телефон" required>
 			<input class="form__line name" type="text" name="Модель&nbsp;ноутбука/батареи" placeholder="Модель ноутбука или батареи">
@@ -680,14 +681,14 @@
 
 	<div class="remodal formBox" data-remodal-id="choiсe-eco"> 
 		<button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
-		<form class="form form-validate" id="modal-recieve" name="choice-form">
+		<form class="form form-validate" name="choice-form">
 			<!-- Hidden Required Fields -->
 			<input type="hidden" name="project_name" value="Great Power">
 			<input type="hidden" name="admin_email" value="dm@push-k.ua">
 			<input type="hidden" name="form_subject" value="Подбор аккумулятора Econom">
 			<!-- END Hidden Required Fields -->
 			<p class="formBox__title">Заполните форму</p>
-			<p class="formBox__text">И наш менеджер свяжется с Вами в <br> течение 10 минут.</p>
+			<p class="formBox__text">И наш менеджер свяжется с Вами в <br> чтобы ответить на все вопросы!</p>
 			<input class="form__line name" type="text" name="Имя&nbsp;покупателя" placeholder="Ваше имя" required>
 			<input class="form__line phone__mask" type="tel" name="Телефон&nbsp;покупателя" placeholder="Ваш телефон" required>
 			<input class="form__line name" type="text" name="Модель&nbsp;ноутбука/батареи" placeholder="Модель ноутбука или батареи">
@@ -699,14 +700,14 @@
 
 	<div class="remodal formBox" data-remodal-id="choiсe-pre"> 
 		<button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
-		<form class="form form-validate" id="modal-recieve" name="choice-form">
+		<form class="form form-validate" name="choice-form">
 			<!-- Hidden Required Fields -->
 			<input type="hidden" name="project_name" value="Great Power">
 			<input type="hidden" name="admin_email" value="dm@push-k.ua">
 			<input type="hidden" name="form_subject" value="Подбор аккумулятора Premium">
 			<!-- END Hidden Required Fields -->
 			<p class="formBox__title">Заполните форму</p>
-			<p class="formBox__text">И наш менеджер свяжется с Вами в <br> течение 10 минут.</p>
+			<p class="formBox__text">И наш менеджер свяжется с Вами в <br> чтобы ответить на все вопросы!</p>
 			<input class="form__line name" type="text" name="Имя&nbsp;покупателя" placeholder="Ваше имя" required>
 			<input class="form__line phone__mask" type="tel" name="Телефон&nbsp;покупателя" placeholder="Ваш телефон" required>
 			<input class="form__line name" type="text" name="Модель&nbsp;ноутбука/батареи" placeholder="Модель ноутбука или батареи">
@@ -718,14 +719,14 @@
 
 	<div class="remodal formBox" data-remodal-id="choiсe-pro"> 
 		<button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
-		<form class="form form-validate" id="modal-recieve" name="choice-form">
+		<form class="form form-validate" name="choice-form">
 			<!-- Hidden Required Fields -->
 			<input type="hidden" name="project_name" value="Great Power">
 			<input type="hidden" name="admin_email" value="dm@push-k.ua">
 			<input type="hidden" name="form_subject" value="Подбор аккумулятора Professional">
 			<!-- END Hidden Required Fields -->
 			<p class="formBox__title">Заполните форму</p>
-			<p class="formBox__text">И наш менеджер свяжется с Вами в <br> течение 10 минут.</p>
+			<p class="formBox__text">И наш менеджер свяжется с Вами в <br> чтобы ответить на все вопросы!</p>
 			<input class="form__line name" type="text" name="Имя&nbsp;покупателя" placeholder="Ваше имя" required>
 			<input class="form__line phone__mask" type="tel" name="Телефон&nbsp;покупателя" placeholder="Ваш телефон" required>
 			<input class="form__line name" type="text" name="Модель&nbsp;ноутбука/батареи" placeholder="Модель ноутбука или батареи">
@@ -766,6 +767,8 @@
 	<script src="libs/ScrollMagic.min.js"></script>
 	<script src="libs/fancybox.js"></script>
 	<script src="libs/slick.js"></script>
+
+	<a data-config="commands=*;size=22;status=off;theme=logo;language=ru;bgcolor=#2a92f3" id="skaip-buttons" href="http://www.skaip.su/">Skype</a><script src="//apps.skaip.su/buttons/widget/core.min.js" defer="defer"></script>
 
 	<script src="libs/all.js"></script>
 
