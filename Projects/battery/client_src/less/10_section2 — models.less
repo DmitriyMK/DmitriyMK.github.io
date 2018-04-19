@@ -20,9 +20,12 @@
 
 .models {
 	background-color: @blue;
-	background: url(../images/back__models.jpg)no-repeat center/cover;
+	@media @desktop {
+		background: url(../images/back__models.jpg)no-repeat center/cover;
+	}
 
 	@media @desktop-xl {
+
 		padding-top: 55px;
 		margin-top: -100px;
 	}
@@ -79,9 +82,9 @@
 		
 		position: relative;
 		display: block;
-		margin: 40px 5px;
+		margin: 15px 5px;
 
-		width: 180px;
+		width: 220px;
 		height: 92px;
 		background: #fff;
 		border-radius: 46px;
@@ -91,6 +94,10 @@
 
 		&:hover, &:focus {
 			outline: none!important;
+		}
+
+		@media @tablet {
+			margin: 40px 5px;
 		}
 
 	}

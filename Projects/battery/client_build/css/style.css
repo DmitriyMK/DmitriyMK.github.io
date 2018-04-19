@@ -2241,7 +2241,11 @@ section {
 }
 .models {
     background-color: #007fe3;
-    background: url(../images/back__models.jpg) no-repeat center / cover;
+}
+@media only screen and (min-width: 992px) {
+    .models {
+        background: url(../images/back__models.jpg) no-repeat center / cover;
+    }
 }
 @media only screen and (min-width: 1200px) {
     .models {
@@ -2311,8 +2315,8 @@ section {
 .models__item {
     position: relative;
     display: block;
-    margin: 40px 5px;
-    width: 180px;
+    margin: 15px 5px;
+    width: 220px;
     height: 92px;
     background: #fff;
     border-radius: 46px;
@@ -2321,6 +2325,11 @@ section {
 }
 .models__item:hover, .models__item:focus {
     outline: none!important;
+}
+@media only screen and (min-width: 768px) {
+    .models__item {
+        margin: 40px 5px;
+    }
 }
 .ico_apple, .ico_asus, .ico_samsung, .ico_hp, .ico_lg, .ico_acer, .ico_msi, .ico_sony, .ico_lenovo, .ico_compaque {
     position: absolute;
@@ -3243,7 +3252,11 @@ section {
 }
 .partners {
     background-color: #007fe3;
-    background: url(../images/back__models.jpg) no-repeat bottom / cover;
+}
+@media only screen and (min-width: 992px) {
+    .partners {
+        background: url(../images/back__models.jpg) no-repeat center / cover;
+    }
 }
 @media only screen and (min-width: 1200px) {
     .partners {
@@ -3299,8 +3312,8 @@ section {
 .partners__item {
     position: relative;
     display: block;
-    margin: 40px 5px;
-    width: 180px;
+    margin: 15px 5px;
+    width: 220px;
     height: 92px;
     background: #fff;
     border-radius: 46px;
@@ -3309,6 +3322,11 @@ section {
 }
 .partners__item:hover, .partners__item:focus {
     outline: none!important;
+}
+@media only screen and (min-width: 768px) {
+    .partners__item {
+        margin: 40px 5px;
+    }
 }
 .ico_luxoft, .ico_pb, .ico_np, .ico_volya, .ico_plarium, .ico_mafia, .ico_plus {
     position: absolute;
@@ -4068,12 +4086,16 @@ section {
     padding: 0 60px;
 }
 .footer {
-    padding: 15px 0 15px 0;
+    padding: 40px 0 15px 0;
     text-align: center;
     background: #15181f;
 }
+@media only screen and (min-width: 992px) {
+    .footer {
+        padding: 15px 0;
+    }
+}
 .footer__logo {
-    padding-top: 10px;
     margin-right: 20px;
 }
 @media only screen and (min-width: 992px) {
