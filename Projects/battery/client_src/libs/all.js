@@ -47,7 +47,12 @@ $(document).ready(function() {
   $('.phone__mask').mask('+380(99)999-99-99');
 
 
-  $('.models__slider').slick({
+  
+
+
+  if (document.documentElement.clientWidth > 767) {
+
+    $('.models__slider').slick({
     slidesToShow: 7,
     dots: false,
     arrow: false,
@@ -88,17 +93,7 @@ $(document).ready(function() {
 
   });
 
-
-  if (document.documentElement.clientWidth < 768) {
-
-    $('.models__slider').slick('unslick');
-
-    $('.partners__slider').slick('unslick');
-
-  };
-
-
-  $('.partners__slider').slick({
+    $('.partners__slider').slick({
     slidesToShow: 6,
     dots: false,
     arrow: false,
@@ -138,6 +133,11 @@ $(document).ready(function() {
     ]
 
   });
+
+  };
+
+
+  
 
 
   $('.review__slider').slick({

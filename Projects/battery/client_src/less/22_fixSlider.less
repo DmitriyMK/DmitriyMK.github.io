@@ -5,12 +5,28 @@
 	top: 50%;
 	transform: translateY(-50%);
 	transition: all .3s linear;
+
+	@media @tablet {
+
+	}
+	@media @desktop {
+
+	}
+	@media @desktop-xl {
+
+	}
+	@media @desktop-xl-2 {
+
+	}
+	@media @desktop-xll {
+
+	}
 }
 .slick-prev:hover, .slick-prev:focus,
 .slick-next:hover,
 .slick-next:focus {
 	outline: none;
-/* 	background: rgba(0,0,0, .6); */
+	/* 	background: rgba(0,0,0, .6); */
 }
 .slick-prev:hover:before, .slick-prev:focus:before,
 .slick-next:hover:before,
@@ -24,43 +40,120 @@ color: #1a46a8; */
 }
 
 .slick-prev {
-	left: -60px; 
-/* 	background: rgba(0,0,0, .8); */
+	left: 0; 
+	/* 	background: rgba(0,0,0, .8); */
+
+	@media @tablet {
+
+	}
+	@media @desktop {
+
+	}
+	@media @desktop-xl {
+
+	}
+	@media @desktop-xl-2 {
+		left: -60px; 
+	}
+	@media @desktop-xll {
+
+	}
 }
 
 .slick-prev:before {
 	display: block;
 	position: absolute;
-	top: 50%;
-	transform: translateY(-50%);
-	left: 54px;
-/* 	background: url(../images/icons/arrow_left.png)no-repeat; */
+
+	top: 315px;
+	left: 100px;
+
+	/* 	background: url(../images/icons/arrow_left.png)no-repeat; */
 	width: 65px;
 	height: 114px;
+	z-index: 10;
+	@media @tablet {
+
+	}
+	@media @desktop {
+		top: 200px;
+		left: 300px;
+	}
+	@media @desktop-xl {
+		top: 50%;
+		transform: translateY(-50%);
+		left: 54px;
+	}
+	@media @desktop-xl-2 {
+
+	}
+	@media @desktop-xll {
+
+	}
 }
 
 
 .slick-next {
-	right: -60px; 
-/* 	background: rgba(0,0,0, .8); */
+	right: 0; 
+	/* 	background: rgba(0,0,0, .8); */
+
+	@media @tablet {
+
+	}
+	@media @desktop {
+
+	}
+	@media @desktop-xl {
+
+	}
+	@media @desktop-xl-2 {
+		right: -60px; 
+	}
+	@media @desktop-xll {
+
+	}
 }
 
 .slick-next:before {
 	display: block;
 	position: absolute;
-	top: 50%;
-	transform: translateY(-50%);
-	right: -20px;
-/* 	background: url(../images/icons/arrow_right.png)no-repeat; */
+
+	top: 315px;
+	right: 100px;
+	z-index: 10;
+	/* 	background: url(../images/icons/arrow_right.png)no-repeat; */
 	width: 65px;
 	height: 114px;
+
+	@media @tablet {
+
+	}
+	@media @desktop {
+		top: 200px;
+		right: 300px;
+
+	}
+	@media @desktop-xl {
+		top: 50%;
+		transform: translateY(-50%);
+		right: -20px;
+	}
+	@media @desktop-xl-2 {
+
+	}
+	@media @desktop-xll {
+
+	}
 }
 
 
 .slick-dots {
-	bottom: -15px;
+	bottom: -55px;
 	left: 5px;
 	border-image: transparent;
+
+	@media @desktop-xl {
+		bottom: -15px;
+	}
 	li {
 		button {
 			background: #81d4fb;
