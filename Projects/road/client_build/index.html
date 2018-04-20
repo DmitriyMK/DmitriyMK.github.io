@@ -23,74 +23,79 @@
 
 	<header class="header" id="header">
 
-		<div class="header__top">
+		<div class="header__top" id="fixedTopMenu">
 			<div class="container">
 				<div class="row">
 
-					<div class="col-md-4 col-lg-4">
+					<div class="col-sm-6 col-md-3">
 						<a class="logo__link" href="index.html">
 							<img class="logo__img" src="images/logo.png" alt="Дороги України" title="Дороги України">
 						</a>
 					</div>	
 
-					<div class="col-md-8 col-lg-">
+					<div class="col-md-6">
 						<nav class="nav">
-							<ul class="nav__list">
-								<li class="nav__item about__link">
-									<a class="nav__link nav__link" href="#">О компании</a>
+							<button class="burger">
+								<i></i>
+							</button>
+							<div class="overlay">
+								<ul class="nav__list">
+									<li class="nav__item linkForSubMenu">
+										<a class="nav__link nav__link" href="#">О компании</a>
 
-									<ul class="nav__list-submenu">
-										<li class="nav__item-sub nav__item-sub-first">
-											<a class="nav__link-sub" href=#>Мы сегодня</a>
-										</li>
-										<li class="nav__item-sub">
-											<a class="nav__link-sub" href=#>Ценности и миссия</a>
-										</li>
-										<li class="nav__item-sub">
-											<a class="nav__link-sub" href=#>Руководство</a>
-										</li>
-										<li class="nav__item-sub">
-											<a class="nav__link-sub" href=#>Сданные объекты</a>
-										</li>							
+										<ul class="nav__list-submenu">
+											<li class="nav__item-sub nav__item-sub-first">
+												<a class="nav__link-sub" href=#>Мы сегодня</a>
+											</li>
+											<li class="nav__item-sub">
+												<a class="nav__link-sub" href=#>Ценности и миссия</a>
+											</li>
+											<li class="nav__item-sub">
+												<a class="nav__link-sub" href=#>Руководство</a>
+											</li>
+											<li class="nav__item-sub">
+												<a class="nav__link-sub" href=#>Сданные объекты</a>
+											</li>							
 
-									</ul>
-								</li>
+										</ul>
+									</li>
 
-								<li class="nav__item about__link">
-									<a class="nav__link nav__link" href="#">Услуги</a>
+									<li class="nav__item linkForSubMenu">
+										<a class="nav__link nav__link" href="#">Услуги</a>
 
-									<ul class="nav__list-submenu2">
-										<li class="nav__item-sub nav__item-sub-first">
-											<a class="nav__link-sub" href=#>Ремонт дорог</a>
-										</li>
-										<li class="nav__item-sub">
-											<a class="nav__link-sub" href=#>Строительство дорог</a>
-										</li>
-										<li class="nav__item-sub">
-											<a class="nav__link-sub" href=#>Консалтинговые услуги</a>
-										</li>
-										<li class="nav__item-sub">
-											<a class="nav__link-sub" href=#>Аренда техники</a>
-										</li>
-										<li class="nav__item-sub">
-											<a class="nav__link-sub" href=#>Продажа материалов</a>
-										</li>
+										<ul class="nav__list-submenu2">
+											<li class="nav__item-sub nav__item-sub-first">
+												<a class="nav__link-sub" href=#>Ремонт дорог</a>
+											</li>
+											<li class="nav__item-sub">
+												<a class="nav__link-sub" href=#>Строительство дорог</a>
+											</li>
+											<li class="nav__item-sub">
+												<a class="nav__link-sub" href=#>Консалтинговые услуги</a>
+											</li>
+											<li class="nav__item-sub">
+												<a class="nav__link-sub" href=#>Аренда техники</a>
+											</li>
+											<li class="nav__item-sub">
+												<a class="nav__link-sub" href=#>Продажа материалов</a>
+											</li>
 
-									</ul>
-								</li>
+										</ul>
+									</li>
 
-								<li class="nav__item">
-									<a class="nav__link" href="#">Новости</a>
-								</li>
+									<li class="nav__item">
+										<a class="nav__link" href="#">Новости</a>
+									</li>
 
-								<li class="nav__item">
-									<a class="nav__link" href="#">Контакты</a>
-								</li>
-							</ul>
+									<li class="nav__item">
+										<a class="nav__link" href="#">Контакты</a>
+									</li>
+								</ul>
+							</div>
 						</nav>
 					</div>
 
-					<div class="col-md-2 col-lg-2">
+					<div class="col-sm-6 col-md-3">
 						<div class="lang__box">
 							<button class="lang__btn" id="UA">UA</button>
 							<button class="lang__btn lang__btn-active" id="RU">RU</button>
@@ -110,14 +115,14 @@
 						<h2 class="center__text-desc">Выполняем все виды дорожно-строительных работ</h2>
 					</div>
 				</div>
-				<a class="arrow__btn" href="#services"><img src="./images/icons/arrow-down.png" alt="смотреть далее"></a>
+				<a class="arrow__btn scrolling__link" href="#services"><img src="./images/icons/arrow-down.png" alt="смотреть далее"></a>
 			</div>
 		</div>
 	</header>
 
 
 
-	<section class="services">
+	<section class="services" id="services">
 		<div class="services__box container">
 			<div class="row">
 				<h2 class="section__title services__title">Услуги</h2>		
@@ -394,7 +399,7 @@
 
 	<link rel="stylesheet" href="css/remodal.css">
 	<link rel="stylesheet" href="css/remodal-default-theme.css">
-<!-- 	<link rel="stylesheet" href="css/animate.min.css"> -->
+	<!-- 	<link rel="stylesheet" href="css/animate.min.css"> -->
 
 	<link rel="stylesheet" href="css/slick-theme.css">
 	<link rel="stylesheet" href="css/slick.css">
@@ -403,12 +408,12 @@
 
 
 
-	<script src="libs/jquery-2.2.4.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js?ver=3.9.2"></script>
 
 	<script src="libs/jquery.nicescroll.min.js"></script>
-<!-- 	<script src="libs/wow.min.js"></script> -->
+	<!-- 	<script src="libs/wow.min.js"></script> -->
 	<script src="libs/jquery.enllax.min.js"></script>
-	<script src="libs/jquery.lazy.min.js"></script>
+	<!-- <script src="libs/jquery.lazy.min.js"></script> -->
 
 	<script src="libs/slick.js"></script>
 	<script src="libs/all.js"></script>

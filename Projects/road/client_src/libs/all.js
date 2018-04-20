@@ -1,4 +1,6 @@
-$(window).enllax();
+
+
+
 
 $(document).ready(function() {
 
@@ -24,82 +26,60 @@ $(document).ready(function() {
 
 
 /*FIXED SCROLL FOR MENU*/
-/*$(document).ready(function() {
+$(document).ready(function() {
 
   $(window).scroll(function() {
-    if ($(this).scrollTop() > 600) {
+    if ($(this).scrollTop() > 760) {
       $('#fixedTopMenu').addClass('fixed');
-    } else if ($(this).scrollTop() < 600) {
+    } else if ($(this).scrollTop() < 760) {
       $('#fixedTopMenu').removeClass('fixed');
     }
   });
 
-});*/
-
-
-/*FIXED SCROLL TO TOP*/
-/*$(document).ready(function() {
-
-  $(window).scroll(function() {
-    if ($(this).scrollTop() > 400) {
-      $('.scrollup').fadeIn();
-    } else {
-      $('.scrollup').fadeOut();
-    }
-  });
-
-  $('.scrollup').click(function() {
-    $("html, body").animate({
-      scrollTop: 0
-    }, 600);
-    return false;
-  });
-
-});*/
-
-$(document).ready(function() {
-
-/*  if (document.documentElement.clientWidth > 1200) {
-    new WOW().init();
+  if (document.documentElement.clientWidth > 1200) {
+    $(window).enllax();
 
   };
 
-  $('.srolling__link').on('click', function(e) {
+});
+
+
+$(document).ready(function() {
+
+  /*RESPONSIVER BURGER MENU*/
+  $(".burger").click(function() {
+    $(this).toggleClass('active');
+
+  })
+
+  $('.burger').on('click', function() {
+    $('.overlay').toggleClass('open').show;
+  });
+
+  $(window).resize(function() {
+    if ($(window).width() > 992) {
+      $('.nav__list').removeAttr('style');
+    }
+  })
+
+
+
+
+  $('.scrolling__link').on('click', function(e) {
     e.preventDefault();
     var t = 1500;
     var d = $(this).attr('data-href') ? $(this).attr('data-href') : $(this).attr('href');
     $('html,body').stop().animate({
       scrollTop: $(d).offset().top
     }, t);
-  });*/
-
-  /*LAZY LOAD*/
-/*  $('.lazy').lazy({
-    effect: "fadeIn",
-    effectTime: 200,
-    threshold: 0,
-    scrollDirection: 'vertical',
-    visibleOnly: true,
-
-    onError: function(element) {
-      console.log('error loading ' + element.data('src'));
-    }
-
   });
-*/
-
-/*  $('.phone__mask').mask('+38(999)999-99-99');
-
-
-  $('.counter').counterUp({
-    delay: 10,
-    time: 1000
-  });*/
 
 
 
 
- $('.slider-for').slick({
+
+
+  $('.slider-for').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: false,
@@ -119,26 +99,26 @@ $(document).ready(function() {
 
     responsive: [
 
-      {
-        breakpoint: 576,
+    {
+      breakpoint: 576,
 /*        settings: {
           slidesToShow: 2,
           dots: true,
         }*/
       }
 
-    ]
-  });
+      ]
+    });
 
 
 });
 
 
 
-/*$(window).on('resize orientationchange', function() {
+$(window).on('resize orientationchange', function() {
   $('.slider').slick('resize');
 });
-*/
+
 
 
 
@@ -159,158 +139,3 @@ $(document).ready(function() {
 //   });
 //   return false;
 // });
-
-
-
-/*function initMap() {
-
-  var latlng = new google.maps.LatLng(50.45843182, 30.40665988);
-  var settings = {
-    zoom: 15,
-    center: latlng,
-    center: {
-      lat: 50.45843182,
-      lng: 30.40665988
-    },
-    mapTypeControl: true,
-    mapTypeControlOptions: {
-      style: google.maps.MapTypeControlStyle.DROPDOWN_MENU
-    },
-    scrollwheel: false,
-    disableDoubleClickZoom: true,
-    navigationControlOptions: {
-      style: google.maps.NavigationControlStyle.SMALL
-    },
-    mapTypeId: google.maps.MapTypeId.ROADMAP,
-    styles:
-
-
-      [{
-      "elementType": "geometry",
-      "stylers": [{
-        "color": "#f5f5f5"
-      }]
-    }, {
-      "elementType": "labels.icon",
-      "stylers": [{
-        "visibility": "off"
-      }]
-    }, {
-      "elementType": "labels.text.fill",
-      "stylers": [{
-        "color": "#616161"
-      }]
-    }, {
-      "elementType": "labels.text.stroke",
-      "stylers": [{
-        "color": "#f5f5f5"
-      }]
-    }, {
-      "featureType": "administrative.land_parcel",
-      "elementType": "labels.text.fill",
-      "stylers": [{
-        "color": "#bdbdbd"
-      }]
-    }, {
-      "featureType": "poi",
-      "elementType": "geometry",
-      "stylers": [{
-        "color": "#eeeeee"
-      }]
-    }, {
-      "featureType": "poi",
-      "elementType": "labels.text.fill",
-      "stylers": [{
-        "color": "#757575"
-      }]
-    }, {
-      "featureType": "poi.park",
-      "elementType": "geometry",
-      "stylers": [{
-        "color": "#e5e5e5"
-      }]
-    }, {
-      "featureType": "poi.park",
-      "elementType": "labels.text.fill",
-      "stylers": [{
-        "color": "#9e9e9e"
-      }]
-    }, {
-      "featureType": "road",
-      "elementType": "geometry",
-      "stylers": [{
-        "color": "#ffffff"
-      }]
-    }, {
-      "featureType": "road.arterial",
-      "elementType": "labels.text.fill",
-      "stylers": [{
-        "color": "#757575"
-      }]
-    }, {
-      "featureType": "road.highway",
-      "elementType": "geometry",
-      "stylers": [{
-        "color": "#dadada"
-      }]
-    }, {
-      "featureType": "road.highway",
-      "elementType": "labels.text.fill",
-      "stylers": [{
-        "color": "#616161"
-      }]
-    }, {
-      "featureType": "road.local",
-      "elementType": "labels.text.fill",
-      "stylers": [{
-        "color": "#9e9e9e"
-      }]
-    }, {
-      "featureType": "transit.line",
-      "elementType": "geometry",
-      "stylers": [{
-        "color": "#e5e5e5"
-      }]
-    }, {
-      "featureType": "transit.station",
-      "elementType": "geometry",
-      "stylers": [{
-        "color": "#eeeeee"
-      }]
-    }, {
-      "featureType": "water",
-      "elementType": "geometry",
-      "stylers": [{
-        "color": "#c9c9c9"
-      }]
-    }, {
-      "featureType": "water",
-      "elementType": "labels.text.fill",
-      "stylers": [{
-        "color": "#9e9e9e"
-      }]
-    }]
-
-  };
-  var map = new google.maps.Map(document.getElementById("google-map"), settings);
-  var myLatlng = new google.maps.LatLng(50.45843182, 30.40665988);
-
-  var myOptions = {
-    zoom: 10,
-    center: myLatlng,
-    scrollwheel: false,
-    disableDoubleClickZoom: true,
-    mapTypeId: google.maps.MapTypeId.ROADMAP
-  }
-  var image = 'images/mark.png';
-  var beachMarker = new google.maps.Marker({
-    position: {
-      lat: 50.45843182,
-      lng: 30.40665988
-    },
-    map: map,
-    icon: image
-      // title: 'Push-k Solutions'
-  });
-
-};*/
