@@ -24,7 +24,7 @@ $(document).ready(function() {
 $(document).ready(function() {
 
   $(window).scroll(function() {
-    if ($(this).scrollTop() > 780) {
+    if ($(this).scrollTop() > 590) {
       $('.scrollup').fadeIn();
     } else {
       $('.scrollup').fadeOut();
@@ -67,9 +67,9 @@ $(document).ready(function() {
   if (document.documentElement.clientWidth > 767) {
 
     $(window).scroll(function() {
-      if ($(this).scrollTop() > 780) {
+      if ($(this).scrollTop() > 590) {
         $('#fixedTopMenu').addClass('fixed');
-      } else if ($(this).scrollTop() < 780) {
+      } else if ($(this).scrollTop() < 590) {
         $('#fixedTopMenu').removeClass('fixed');
       }
     });

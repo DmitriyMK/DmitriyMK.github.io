@@ -1478,7 +1478,7 @@ header, footer {
 }
 .header .nav .nav__list-submenu {
     position: absolute;
-    bottom: -107px;
+    top: 50px;
     left: 0;
     background: #fff;
     opacity: 0;
@@ -1503,7 +1503,7 @@ header, footer {
 }
 .header .nav .nav__list-submenu2 {
     position: absolute;
-    bottom: -134px;
+    top: 50px;
     left: 100px;
     background: #fff;
     opacity: 0;

@@ -228,7 +228,13 @@
 		}
 	}
 	&__list {
+		margin: auto;
+		max-width: 335px;
 		padding-top: 50px;
+		@media @tablet {
+			margin: inherit;
+			max-width: 100%;
+		}
 		@media @desktop {
 			padding-top: 30px;	
 		}

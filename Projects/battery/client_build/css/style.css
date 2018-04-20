@@ -1859,7 +1859,15 @@ section {
     }
 }
 .header__list {
+    margin: auto;
+    max-width: 335px;
     padding-top: 50px;
+}
+@media only screen and (min-width: 768px) {
+    .header__list {
+        margin: inherit;
+        max-width: 100%;
+    }
 }
 @media only screen and (min-width: 992px) {
     .header__list {
@@ -2629,8 +2637,7 @@ section {
 }
 @media only screen and (min-width: 1200px) {
     .percentage1 {
-        left: 30%;
-        right: auto;
+        right: 55%;
     }
 }
 .percentage2 {
@@ -2638,8 +2645,7 @@ section {
 }
 @media only screen and (min-width: 1200px) {
     .percentage2 {
-        left: 40%;
-        right: auto;
+        right: 45%;
     }
 }
 .percentage3 {
@@ -2647,8 +2653,7 @@ section {
 }
 @media only screen and (min-width: 1200px) {
     .percentage3 {
-        left: 50%;
-        right: auto;
+        right: 35%;
     }
 }
 .percentage4 {
@@ -2656,8 +2661,7 @@ section {
 }
 @media only screen and (min-width: 1200px) {
     .percentage4 {
-        left: 55%;
-        right: auto;
+        right: 30%;
     }
 }
 .percentage5 {
@@ -2665,8 +2669,7 @@ section {
 }
 @media only screen and (min-width: 1200px) {
     .percentage5 {
-        left: 65%;
-        right: auto;
+        right: 15%;
     }
 }
 .percentage6 {
@@ -4116,7 +4119,7 @@ section {
 @media only screen and (min-width: 992px) {
     .footer .agency {
         float: right;
-        margin-top: 0;
+        margin: 0;
     }
 }
 .footer .agency a {
@@ -4189,7 +4192,7 @@ color: #1a46a8; */
 }
 @media only screen and (min-width: 1200px) {
     .slick-prev:before {
-        top: 50%;
+        top: 20%;
         -webkit-transform: translateY(-50%);
             -ms-transform: translateY(-50%);
                 transform: translateY(-50%);
