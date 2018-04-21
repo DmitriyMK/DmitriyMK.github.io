@@ -1,7 +1,3 @@
-
-
-
-
 $(document).ready(function() {
 
   $("body").niceScroll({
@@ -76,9 +72,6 @@ $(document).ready(function() {
 
 
 
-
-
-
   $('.slider-for').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -100,15 +93,32 @@ $(document).ready(function() {
     responsive: [
 
     {
-      breakpoint: 576,
-/*        settings: {
-          slidesToShow: 2,
-          dots: true,
-        }*/
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3,
+        centerMode: true,
+        centerPadding: '50px',
       }
+    },
 
-      ]
-    });
+     {
+      breakpoint: 780,
+      settings: {
+        slidesToShow: 2,
+        centerMode: false,
+
+      }
+    },
+
+    {
+      breakpoint: 550,
+      settings: {
+        slidesToShow: 1,
+      }
+    }
+
+    ]
+  });
 
 
 });

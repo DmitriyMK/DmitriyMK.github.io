@@ -53,7 +53,7 @@ button, .button {
     padding-top: 40px;
     padding-bottom: 20px;
     position: relative;
-    font-size: 35px;
+    font-size: 24px;
     font-weight: 700;
     text-align: center;
     color: #000;
@@ -62,32 +62,21 @@ button, .button {
         content: '';
         position: absolute;
         width: 93px;
-        height: 7px;
+        height: 4px;
         bottom: 0;
         left: 50%;
         transform: translateX(-50%);
         background: @yellow;
 
+        @media @tablet {
+            height: 7px;
+        }
     }
 
-
-
-    @media @mobile {
-
-    }
     @media @tablet {
-
-    }
-    @media @desktop {
-
+        font-size: 30px;
     }
     @media @desktop-xl {
-
-    }
-    @media @desktop-xl-2 {
-
-    }
-    @media @desktop-xll {
-
+        font-size: 35px;
     }
 }

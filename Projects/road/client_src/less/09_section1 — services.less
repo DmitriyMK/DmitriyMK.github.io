@@ -21,9 +21,14 @@
 
 .services {
 	overflow: hidden;
-	padding-bottom: 235px;
+	padding-bottom: 100px;
 	position: relative;
 	background: #f4f6f6;
+
+	@media @tablet {
+		padding-bottom: 235px;
+	}
+
 	&__title {
 		z-index: 11;
 	}
@@ -36,6 +41,22 @@
 		height: 100%;
 		background: url(../images/road.png)no-repeat -200px 80px;
 		background-size: cover; 
+
+		@media @tablet {
+
+		}
+		@media @desktop {
+
+		}
+		@media @desktop-xl {
+
+		}
+		@media @desktop-xl-2 {
+
+		}
+		@media @desktop-xll {
+
+		}
 	}
 	&:after {
 		content: '';
@@ -49,47 +70,114 @@
 
 	.flyLeft {
 		position: absolute;
-		left: -650px;
-		top: 0;
-		width: 702px;
-		height: 458px;
-
-		background: no-repeat;
-		background-size: cover;
+		left: 20px;
+		top: -58px;
+		width: 150px;
+		height: 98px;
+		background: url(../images/specialCar__sm.png)no-repeat center/cover;
 		z-index: 10;
 
+		@media @tablet {
+			left: -30px;
+			top: inherit;
+			bottom: -145px;
+			width: 285px;
+			height: 186px;
+			background: url(../images/specialCar__med.png)no-repeat center/cover;
+		}
+		@media @desktop {
+			left: -220px;
+			bottom: -150px;
+			width: 285px;
+			height: 186px;
+			background: url(../images/specialCar__med.png)no-repeat center/cover;
+		}
+		@media @desktop-xl {
+			bottom: -200px;
+			left: -450px;
+			width: 527px;
+			height: 344px;
+			background: url(../images/specialCar.png)no-repeat center/cover;
+		}
+		@media @desktop-xl-2 {
+			left: -650px;
+			top: 0;
+			width: 702px;
+			height: 458px;
+			background: url(../images/specialCar.png)no-repeat center/cover;
+
+		}
 	}
 
 	&__content {
-		position: relative;
-		float: right;
-		width: 750px;
-		margin-right: -30px;
-		
+		position: relative;	
 		background: #fff;
-		&:before {
-			content: '';
-			position: absolute;
-			right: -45px;
-			bottom: -45px;
-			width: 100%;
-			height: 100%;
-			border: 8px solid @yellow;
-			z-index: 0;
+
+		@media @tablet {
+			width: 680px;
+			margin: auto;
+		}
+		@media @desktop {
+			width: 700px;
+			margin: inherit;
+			margin-right: 20px;
+			float: right;
+		}
+		@media @desktop-xl {
+			width: 750px;
+			margin: inherit;
+			margin-right: 20px;
+			float: right;
+		}
+		@media @desktop-xl-2 {
+			margin-right: -30px;
+
+		}
+		@media @desktop-xll {
+
+		}
+		&:before {	
+			@media @tablet {
+				content: '';
+				position: absolute;
+				right: -30px;
+				bottom: -30px;
+				width: 100%;
+				height: 100%;
+				border: 8px solid @yellow;
+				z-index: 0;
+			}
+			@media @desktop {
+
+			}
+			@media @desktop-xl {
+				right: -25px;
+				bottom: -25px;
+			}
+			@media @desktop-xl-2 {
+				right: -45px;
+				bottom: -45px;
+			}
+			@media @desktop-xll {
+
+			}
 		}
 	}
 	&__content-wrap {
 		position: relative;
-		padding: 26px 20px 26px 50px;
+		margin-top: 80px;
+		padding: 40px 15px;
 		background: #fff;	
-
 		box-shadow: 17.732px 19.015px 26.19px 0.81px rgba(171, 171, 171, 0.18);
 
+		@media @tablet {
+			margin-top: inherit;
+			padding: 26px 20px 26px 50px;
+		}
 	}
 
 	&__list {
 		position: relative;
-
 	}
 
 	&__text {
@@ -97,24 +185,23 @@
 		color: #000;
 		background: #fff;
 		font-size: 16px;
-
 		line-height: 1.305;
 		z-index: 120;
-
-
-
-
-
-
 	}
 
 	&__item {
 		display: block;
 		position: relative;
 		float: left;
-		width: 50%;
-		height: 470px;
+		width: 100%;
+		height: 350px;
 		overflow: hidden;
+
+		@media @desktop {
+			width: 50%;
+			height: 470px;
+		}
+
 		&:hover {
 			.services__img {
 				transform: translate(-50%, -50%) scale(1.05);
@@ -125,8 +212,6 @@
 					height: 100%;
 				}
 			}
-			
-
 		}	
 	}
 
@@ -143,14 +228,36 @@
 		display: block;
 		position: absolute;
 		top: 0;
-		right: 0;
-		padding: 5px 40px;
-		font-size: 49.2px;
+		right: 50%;
+		transform: translateX(50%);
+		width: 100%;
+		padding: 5px 20px;
+		font-size: 30px;
 		font-weight: 700;
 		color: #fff;
 		background-color: rgba(0, 0, 0, .6);
 		transition: all .3s linear;
 		z-index: 1;
+		text-align: center;
+
+		@media @tablet {
+			font-size: 36px;
+		}
+
+		@media @desktop {
+			width: auto;
+			padding: 5px 20px;
+			right: 0;
+			transform: translateX(0);
+			font-size: 40px;
+			text-align: right;
+		}
+
+		@media @desktop-xl {
+			padding: 5px 40px;
+			font-size: 49.2px;
+		}
+
 		&:before {
 			content: '';
 			position: absolute;

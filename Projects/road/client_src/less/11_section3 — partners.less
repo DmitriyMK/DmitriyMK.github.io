@@ -20,13 +20,39 @@
 .partners {
 	position: relative;
 	background: url(../images/back-prefooter.jpg) no-repeat center/cover;
+
+	@media @tablet {
+
+	}
+	@media @desktop {
+
+	}
+	@media @desktop-xl {
+
+	}
+	@media @desktop-xl-2 {
+
+	}
 	&__title {
 		color: #fff;
 	}
 
 	&__box {
-		margin: 0 100px;
+		margin: 0 50px;
 		padding-bottom: 100px;
+
+		@media @tablet {
+
+		}
+		@media @desktop {
+
+		}
+		@media @desktop-xl {
+			margin: 0 100px;
+		}
+		@media @desktop-xl-2 {
+
+		}
 
 	}
 
@@ -44,7 +70,7 @@
 		display: block;
 		width: 160px;
 		height: 160px;
-		margin: 50px;
+		margin: 50px auto;
 		background-color: #fff;
 		position: relative;
 		background-repeat: no-repeat;
@@ -69,11 +95,16 @@
 
 
 		.slide__content {
-			width: 600px;
+
 			margin: auto;
 
 			padding: 20px;
 			background: #fff;
+			text-align: center;
+			@media @tablet {
+				width: 600px;
+				text-align: left;
+			}
 		}
 
 		.slide__img {
@@ -88,8 +119,11 @@
 		}
 		.slide__text {
 			display: inline-block;
-			width: 350px;
+			
 			color: #000;
+			@media @tablet {
+				width: 350px;
+			}
 			p {
 				margin: 0;
 			}
