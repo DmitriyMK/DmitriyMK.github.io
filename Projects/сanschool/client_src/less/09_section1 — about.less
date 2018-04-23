@@ -1,0 +1,109 @@
+@media @mobile {
+
+}
+@media @tablet {
+
+}
+@media @desktop {
+
+}
+@media @desktop-xl {
+	
+}
+@media @desktop-xl-2 {
+
+}
+@media @desktop-xll {
+	
+}
+
+
+.about {
+	position: relative;
+	padding-right: 220px;
+	background: url(../images/back__about.jpg)no-repeat center/cover;
+	color: #000;
+	z-index: 1; //book have z-index: 2;
+
+	&:before {
+		content: '';
+		position: absolute;
+		left: 0;
+	    top: 120px;
+		width: 849px;
+		height: 708px;
+		background: url(../images/hand.png);
+	}
+
+	&__title {
+		text-align: right;
+		&:before {
+			right: 0;
+		}
+	}
+
+	&__box {
+		position: relative;
+		float: right;
+		margin-top: 80px;
+		width: 520px;
+
+		&:before {
+			content: '';
+			position: absolute;
+			top: -330px;
+			left: 50%;
+			transform: translateX(-48%);
+			width: 1317px;
+			height: 1655px;
+			background: url(../images/back__about-circle.png);
+		}
+		
+	}
+
+	&__text {
+		padding-bottom: 42px;
+		font-size: 18px;
+		text-align: right
+	}
+
+	&__link {
+		position: relative;
+		display: block;
+		margin-top: 76px;
+		font-size: 40px;
+		font-weight: 700;
+
+		
+	}
+	&__play {
+		position: relative;
+		padding-left: 50px;
+		color: #fff;
+		font-size: 70px;
+		vertical-align: middle;
+		z-index: 10;
+
+		&:after {
+			content: '';
+			position: absolute;
+			top: -15px;
+			left: 30px;
+			width: 120px;
+			height: 120px;
+			border-radius: 50%;
+			background: #d70633;
+			z-index: -1;
+			box-shadow: 0px 12px 9.6px 0.4px rgba(215, 0, 51, 0.15);
+			transition: box-shadow, background-color .3s linear;
+		}
+		&:hover {
+			&:after {
+				background: #f4001c;
+				box-shadow: 0px 12px 9.6px 0.4px rgba(215, 0, 51, 0);
+			}
+		}
+
+
+	}
+}

@@ -18,12 +18,15 @@
 }
 
 .header {
+	background: url(../images/back__hero.jpg)no-repeat center/cover;
+	min-height: 950px;
 
 	&__top {
 		position: relative;
 		background: #222326;
 		
 		height: 70px;
+		z-index: 10;
 		&-link {
 			position: absolute;
 			left: -15px;
@@ -36,9 +39,20 @@
 			font-weight: 300;
 		}
 		&-mail {
+			margin-right: 70px;
 			font-size: 20px;
 			font-weight: 300;
-			line-height: 70px;
+			line-height: 61px;
+			i {
+				margin-right: 15px;
+				font-size: 25px;
+				transition: color .3s linear;
+			}
+			&:hover {
+				i {
+					color: @red;
+				}
+			}
 		}
 		&-btn {
 		}
@@ -46,7 +60,67 @@
 			float: right;
 		}
 	}
+
+	&__center {
+		position: relative;
+		padding-top: 250px;
+		text-align: center;
+		&-text {
+			padding-top: 45px;
+			font-size: 38px;
+		}
+
+
+		&:before {
+			content: '';
+			position: absolute;
+			right: 0;
+			top: -70px;
+			width: 851px;
+			height: 1102px;
+			background: url(../images/books.png);
+			z-index: 2;
+		}
+	}
+
+	&__end {
+		position: relative;
+		padding-top: 120px;
+		z-index: 10;
+		i, img {
+			width: 80px;
+			display: block;
+			margin: auto;
+			text-align: center;
+		}
+		img {
+			margin-bottom: 5px;
+		}
+		i {
+			margin-top: -5px;
+			animation: arrow-bounce 3s infinite;
+			&:hover {
+				animation-play-state: paused;
+			}
+			&:nth-of-type(1){
+				display: block;
+				animation-delay: 1.5s;
+			}
+			&:nth-of-type(2){
+				display: block;
+				font-size: 24px;
+				animation-delay: 2s;
+			}
+			&:nth-of-type(3){
+				display: block;
+				animation-delay: 2.5s;
+			}
+			
+		}
+	}
 }
+
+
 
 
 

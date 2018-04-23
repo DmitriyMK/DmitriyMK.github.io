@@ -1,0 +1,87 @@
+@media @mobile {
+
+}
+@media @tablet {
+
+}
+@media @desktop {
+
+}
+@media @desktop-xl {
+	
+}
+@media @desktop-xl-2 {
+
+}
+@media @desktop-xll {
+	
+}
+
+
+.details {
+	position: relative;
+	padding-right: 200px;
+	color: #000;
+	background: #e6eaf3;
+	&:before {
+		content: '';
+		position: absolute;
+		top: -640px;
+		left: 0px;
+		width: 1920px;
+		height: 1606px;
+		background: url(../images/books-partner.png);
+
+	}
+	&__title {
+		text-align: right;
+	}
+	&__text {
+		margin-left: 35px;
+		color: #000;
+		font-size: 30px;
+		font-weight: 700;
+	}
+	&__box {
+		position: relative;
+		margin-top: 45px;
+		float: right;
+		width: 500px;
+	}
+
+	&__list {
+		margin-top: 80px;
+	}
+
+	&__item {
+		position: relative;
+		margin-bottom: 70px;
+		counter-increment: li;
+		&:before {
+			content: "" counter(li);
+			position: absolute;
+			top: 50%;
+			left: -114px;
+			transform: translateY(-50%);
+			font-size: 48px;
+			font-weight: 700;
+			z-index: 2;
+			color: #e6eaf3;
+		}
+		&:after {
+			content: '';
+			position: absolute;
+			top: 50%;
+			left: -136px;
+			transform: translateY(-50%);
+			width: 70px;
+			height: 70px;
+			border-radius: 50%;
+			background: #fff;
+			z-index: 1;
+		}
+	}
+	&__item:last-child {
+		margin-bottom: 0;
+	}
+}

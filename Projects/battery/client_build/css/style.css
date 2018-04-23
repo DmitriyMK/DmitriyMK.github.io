@@ -2348,7 +2348,8 @@ section {
     width: 108px;
 }
 .ico_asus {
-    background-position: -108px 0;
+    background-image: url(../images/asus.png);
+    background-position: center;
     height: 61px;
     width: 108px;
 }

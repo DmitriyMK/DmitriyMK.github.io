@@ -35,7 +35,7 @@ body {
 }
 
 section {
-
+    padding: 110px;
 }
 
 header, footer {
@@ -46,7 +46,7 @@ header, footer {
     padding: 0 50px;
 
     font-size: 18px;
-    font-weight: 300;
+    font-weight: 500;
     line-height: 40px;
     text-align: center;
     border: none;
@@ -60,8 +60,37 @@ header, footer {
     }
 }
 
-.section__title {
+.btn-white {
+    padding: 0 50px;
+    color: #000;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 40px;
+    text-align: center;
+    border: none;
+    border-radius: 25px;
+    background-color: #fff;
+    box-shadow: 0.696px 4.951px 11.31px 1.69px rgba(27, 28, 29, 0.36);
+    transition: background-color .3s linear;
+    &:hover {
+        background-color: @red;
+    }
+}
 
+.section__title {
+    position: relative;
+    font-size: 40px;
+    color: #222326;
+
+    &:before {
+        content: '';
+        position: absolute;
+        bottom: -20px;
+
+        height: 5px;
+        width: 130px;
+        background: @red;
+    }
     @media @mobile {
 
     }

@@ -1,0 +1,74 @@
+@media @mobile {
+
+}
+@media @tablet {
+
+}
+@media @desktop {
+
+}
+@media @desktop-xl {
+	
+}
+@media @desktop-xl-2 {
+
+}
+@media @desktop-xll {
+	
+}
+
+
+.step {
+	background: @red;
+	color: #fff;
+	position: relative;
+	z-index: 10;
+	overflow: hidden;
+	&:before {
+		content: '';
+		position: absolute;
+		top: -140px;
+		left: 50%;
+		transform: translateX(-64%);
+		width: 1504px;
+		height: 1926px;
+		background: url(../images/back__step-circle.png);
+	}
+	&__title {
+		color: #fff;
+		&:before {
+			background: #fff;
+		}
+	}
+
+	&__box {
+		padding-top: 100px;
+		position: relative;
+	}
+	&__item {
+		margin: auto;
+		padding: 0 10px;
+		text-align: center;
+	}
+	.img__wrap {
+		height: 272px;
+	}
+
+	&__about {
+		font-size: 20px;
+		font-weight: 700;
+	}
+	&__text {
+		margin-top: 30px;
+		font-size: 17px;
+	}
+
+	.btn-white {
+		margin-top: 84px;
+	}
+}
+
+
+
+
+
