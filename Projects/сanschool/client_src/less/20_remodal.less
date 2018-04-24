@@ -63,7 +63,7 @@
 .remodal-close { 
     top: 12px !important;
     right: 15px !important;
-    color: #fff !important;
+    color: #000 !important;
     font-weight: 900;
     @media @mobile {
        width: 10px !important;
@@ -170,16 +170,19 @@ label {
 
 .formBox {
     position: relative;
-    background: #fff;
+    background: #e6eaf3;
     padding: 30px 15px;
     max-width: 400px;
     margin: 20px auto;
     text-align: center;
+    border-radius: 25px;
     &__title {
-        font-size: 22px;
+        text-align: center;
+        font-size: 25px;
         font-weight: 700;
+        line-height: 1;
         color: #000;
-        text-transform: uppercase;
+
     }
     &__text {
         display: block;
@@ -198,18 +201,22 @@ label {
         border: none;
         font-weight: 300;
         line-height: 34px;
-        color: #696364;
+        color: #000;
         background: transparent;
         border: 1px #d2d2d4 solid!important;
         border-radius: 7px;
     }
     .btn {
         margin: 15px 0 5px 0;
-        color: #fff;
-        &:hover {
-            color: #000;
-        }
     } 
+
+    .attention {
+        padding-left: 50px;
+        text-align: left;
+        font-size: 12px;
+        line-height: 1;
+        color: #000;
+    }
 }
 
 .video {
