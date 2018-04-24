@@ -47,6 +47,20 @@ $(document).ready(function() {
 
   });
 
+  /*LAZY LOAD*/
+/*  $('.lazy').lazy({
+    effect: "fadeIn",
+    effectTime: 200,
+    threshold: 0,
+    scrollDirection: 'vertical',
+    visibleOnly: true,
+
+    onError: function(element) {
+      console.log('error loading ' + element.data('src'));
+    }
+
+  });*/
+
 
   $('.slider').slick({
     slidesToShow: 3,

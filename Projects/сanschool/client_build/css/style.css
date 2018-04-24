@@ -1751,14 +1751,9 @@ section {
     z-index: 1;
     overflow: hidden;
 }
-.about:before {
-    content: '';
+.about .hand__img {
     position: absolute;
     left: 0;
-    top: 120px;
-    width: 849px;
-    height: 708px;
-    background: url(../images/hand.png);
 }
 .about__title {
     position: relative;
@@ -2046,14 +2041,10 @@ section {
     -webkit-box-shadow: 0 12px 56.64px 2.36px rgba(58, 61, 79, 0.51);
             box-shadow: 0 12px 56.64px 2.36px rgba(58, 61, 79, 0.51);
 }
-.franchise:after {
-    content: '';
+.franchise .hand__img {
     position: absolute;
-    bottom: -200px;
     right: 0;
-    width: 473px;
-    height: 627px;
-    background: url(../images/hand-form.png);
+    bottom: -200px;
 }
 .franchise__ask {
     padding-left: 100px;
