@@ -204,17 +204,114 @@
 		<h2 class="section__title franchise__title hidden">Информации об условиях франшизы CanSchool</h2>
 		<div class="container">
 			<div class="row">
-				<div class="col-md-6">
+				<div class="col-md-7">
 					<p class="franchise__ask">Вам интересно узнать больше информации об условиях франшизы CanSchool?</p>
 					<p class="franchise__proposal">Оставляйте свои контакты  <br> и мы ответим Вам на все вопросы.</p>
 				</div>
-				<div class="col-md-6">
-					
+				<div class="col-md-5">
+					<form action="mail.php" method="post" class="form form-validate franchise__form" name="form-franchise">
+						<!-- Hidden Required Fields -->
+						<input type="hidden" name="project_name" value="CanSchool">
+						<input type="hidden" name="admin_email" value="dm@push-k.ua">
+						<input type="hidden" name="form_subject" value="Информации об условиях франшизы CanSchool">
+						<!-- END Hidden Required Fields -->
+						<div class="form__wrap">
+							<p class="formBox__title-mass">Заполните форму</p>
+							<p class="formBox__text">и наш менеджер свяжется с <br> Вами, в ближайшее время.</p>
+
+							<input class="form__line name" type="text" name="name" placeholder="Ваше имя" required>
+							<input class="form__line" type="email" name="email" placeholder="Ваш e-mail" required>
+							<input type="submit" class="btn form__btn" value="Отправить">
+						</div> 
+					</form>
 				</div>
 			</div>
 		</div>
 	</section>
 
+
+
+
+	<section class="gallery">
+		<div class="container">
+			<h2 class="section__title gallery__title">Фотогалерея</h2>
+		</div>
+		<div class="gallery__box">
+
+			<figure class="gallery__item">
+				<a class="gallery__link fancybox" data-fancybox="gallery" href="images/gallery/photo1.jpg">
+					<img class="gallery__img" src="images/gallery/photo1.jpg" alt="Фотогалерея CanSchool">
+				</a>
+			</figure>
+
+			<figure class="gallery__item">
+				<a class="gallery__link fancybox" data-fancybox="gallery" href="images/gallery/photo2.jpg">
+					<img class="gallery__img" src="images/gallery/photo2.jpg" alt="Фотогалерея CanSchool">
+				</a>
+			</figure>
+
+			<figure class="gallery__item">
+				<a class="gallery__link fancybox" data-fancybox="gallery" href="images/gallery/photo3.jpg">
+					<img class="gallery__img" src="images/gallery/photo3.jpg" alt="Фотогалерея CanSchool">
+				</a>
+			</figure>
+
+			<figure class="gallery__item">
+				<a class="gallery__link fancybox" data-fancybox="gallery" href="images/gallery/photo4.jpg">
+					<img class="gallery__img" src="images/gallery/photo4.jpg" alt="Фотогалерея CanSchool">
+				</a>
+			</figure>
+
+			<figure class="gallery__item">
+				<a class="gallery__link fancybox" data-fancybox="gallery" href="images/gallery/photo5.jpg">
+					<img class="gallery__img" src="images/gallery/photo5.jpg" alt="Фотогалерея CanSchool">
+				</a>
+			</figure>
+
+			<figure class="gallery__item">
+				<a class="gallery__link fancybox" data-fancybox="gallery" href="images/gallery/photo6.jpg">
+					<img class="gallery__img" src="images/gallery/photo6.jpg" alt="Фотогалерея CanSchool">
+				</a>
+			</figure>
+
+			<figure class="gallery__item">
+				<a class="gallery__link fancybox" data-fancybox="gallery" href="images/gallery/photo7.jpg">
+					<img class="gallery__img" src="images/gallery/photo7.jpg" alt="Фотогалерея CanSchool">
+				</a>
+			</figure>
+
+			<figure class="gallery__item">
+				<a class="gallery__link fancybox" data-fancybox="gallery" href="images/gallery/photo8.jpg">
+					<img class="gallery__img" src="images/gallery/photo8.jpg" alt="Фотогалерея CanSchool">
+				</a>
+			</figure>
+
+			<figure class="gallery__item">
+				<a class="gallery__link fancybox" data-fancybox="gallery" href="images/gallery/photo9.jpg">
+					<img class="gallery__img" src="images/gallery/photo9.jpg" alt="Фотогалерея CanSchool">
+				</a>
+			</figure>
+
+			<figure class="gallery__item">
+				<a class="gallery__link fancybox" data-fancybox="gallery" href="images/gallery/photo10.jpg">
+					<img class="gallery__img" src="images/gallery/photo10.jpg" alt="Фотогалерея CanSchool">
+				</a>
+			</figure>
+
+			<figure class="gallery__item">
+				<a class="gallery__link fancybox" data-fancybox="gallery" href="images/gallery/photo11.jpg">
+					<img class="gallery__img" src="images/gallery/photo11.jpg" alt="Фотогалерея CanSchool">
+				</a>
+			</figure>
+
+			<figure class="gallery__item">
+				<a class="gallery__link fancybox" data-fancybox="gallery" href="images/gallery/photo12.jpg">
+					<img class="gallery__img" src="images/gallery/photo12.jpg" alt="Фотогалерея CanSchool">
+				</a>
+			</figure>
+
+		</div>
+	</section>
 
 <!-- 	<footer class="footer">
 	<div class="container">
@@ -239,7 +336,7 @@
 	<button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
 	<form class="form form-validate" name="form-callback">
 		<!-- Hidden Required Fields -->
-		<input type="hidden" name="project_name" value="Choice">
+		<input type="hidden" name="project_name" value="CanSchool">
 		<input type="hidden" name="admin_email" value="dm@push-k.ua">
 		<input type="hidden" name="form_subject" value="Обратный звонок">
 		<!-- END Hidden Required Fields -->
@@ -255,7 +352,7 @@
 	<button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
 	<form class="form form-validate" name="form-details">
 		<!-- Hidden Required Fields -->
-		<input type="hidden" name="project_name" value="Choice">
+		<input type="hidden" name="project_name" value="CanSchool">
 		<input type="hidden" name="admin_email" value="dm@push-k.ua">
 		<input type="hidden" name="form_subject" value="Узнать подробнее о CanSchool">
 		<!-- END Hidden Required Fields -->
@@ -271,7 +368,7 @@
 	<button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
 	<form class="form form-validate" name="form-order">
 		<!-- Hidden Required Fields -->
-		<input type="hidden" name="project_name" value="Choice">
+		<input type="hidden" name="project_name" value="CanSchool">
 		<input type="hidden" name="admin_email" value="dm@push-k.ua">
 		<input type="hidden" name="form_subject" value="Заявка на сотрудничество">
 		<!-- END Hidden Required Fields -->
@@ -312,8 +409,10 @@
 
 <link rel="stylesheet" href="css/remodal.css">
 <link rel="stylesheet" href="css/remodal-default-theme.css">
-<link rel="stylesheet" href="css/animate.min.css">
+
 <link rel="stylesheet" href="css/fancybox.css">
+<link rel="stylesheet" href="css/animate.min.css">
+
 <link rel="stylesheet" href="css/slick-theme.css">
 <link rel="stylesheet" href="css/slick.css">
 
@@ -333,6 +432,7 @@
 <script src="libs/remodal.min.js"></script>
 <script src="libs/jquery.validate.min.js"></script>
 <script src="libs/masked-input.js"></script>
+<script src="libs/jquery.lazy.min.js"></script>
 
 <script src="libs/slick.js"></script>
 <script src="libs/all.js"></script>

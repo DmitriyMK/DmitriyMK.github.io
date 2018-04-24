@@ -71,20 +71,19 @@ $(document).ready(function() {
     }, t);
   });
 
-  /*LAZY LOAD*/
-/*  $('.lazy').lazy({
-    effect: "fadeIn",
-    effectTime: 200,
-    threshold: 0,
-    scrollDirection: 'vertical',
-    visibleOnly: true,
 
-    onError: function(element) {
-      console.log('error loading ' + element.data('src'));
-    }
+
+  $("gallery").fancybox({
+    transitionEffect: "none"
 
   });
-*/
+  
+  $("certificates").fancybox({
+    transitionEffect: "none"
+
+  });
+
+
 
  $('.phone__mask').mask('+380(99)999-99-99');
 

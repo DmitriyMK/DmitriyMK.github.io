@@ -19,5 +19,78 @@
 
 
 .franchise {
+	position: relative;
 	background: url(../images/back__forms.jpg)no-repeat center/cover;
+
+	&:after{
+		content: '';
+		position: absolute;
+		bottom: -200px;
+		right: 0;
+		width: 473px;
+		height: 627px;
+		background: url(../images/hand-form.png);
+	}
+
+	&__ask {
+		padding-left: 100px;
+		margin-top: 100px;
+		font-size: 40px;
+		font-weight: 700;
+	}
+	&__proposal {
+		margin-left: 105px;
+		margin-top: 40px;
+		padding-left: 20px;
+		border-left: 3px solid #fff; 
+		font-size: 25px;
+	}
+
+	&__form {
+		position: relative;
+		margin: auto;
+		width: 350px;
+		height: 406px;
+		background: url(../images/note.png)no-repeat center/cover;
+		
+	}
+	.form__wrap {
+		margin: auto;
+		margin-top: 75px;
+		padding: 45px 5px;
+		position: relative;
+		width: 260px;
+	}
+	.formBox__title-mass {
+		text-align: center;
+		font-size: 25px;
+		font-weight: 700;
+		line-height: 1;
+		color: #222326;
+	}
+	.formBox__text {
+		margin: 18px 0 14px 0;
+		text-align: center;
+		color: #000;
+	}
+	.form__line {
+		margin: auto;
+		padding-left: 15px;
+		margin-bottom: 15px;
+		width: 88%;
+		display: block;
+		border: none;
+		font-weight: 300;
+		line-height: 34px;
+		color: #696364;
+		background: transparent;
+		border: 1px #d2d2d4 solid!important;
+		border-radius: 7px;
+	}
+	.btn {
+		display:block;
+		width: 240px;
+		margin: 25px auto;
+	}
+
 }
