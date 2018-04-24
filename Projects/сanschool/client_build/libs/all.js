@@ -72,7 +72,6 @@ $(document).ready(function() {
   });
 
 
-
   $("gallery").fancybox({
     transitionEffect: "none"
 
@@ -85,67 +84,64 @@ $(document).ready(function() {
 
 
 
- $('.phone__mask').mask('+380(99)999-99-99');
+  $('.phone__mask').mask('+380(99)999-99-99');
 
 
 
-
-/*  $('.slider-for').slick({
-    slidesToShow: 1,
-    slidesToScroll: 1,
+  $('.slider').slick({
+    slidesToShow: 3,
     dots: false,
     arrow: true,
-    asNavFor: '.slider-nav',
-    fade: true
-  });
-
-
-  $('.slider-nav').slick({
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    asNavFor: '.slider-for',
-    arrows: false,
-    dots: false,
     focusOnSelect: true,
+    centerMode: true,
+    initialSlide: 1,
+    centerPadding: '20px',
+    lazyLoad: 'ondemand',
+
     responsive: [
 
-      {
-        breakpoint: 576,
-        settings: {
-          slidesToShow: 2,
-          dots: true,
-        }
+    {
+      breakpoint: 1025,
+      settings: {
+        slidesToShow: 2
       }
+    },
+
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 1,
+      }
+    },
 
     ]
-  });*/
 
-
+  });
 });
 
 
 
-/*$(window).on('resize orientationchange', function() {
+$(window).on('resize orientationchange', function() {
   $('.slider').slick('resize');
 });
-*/
 
 
 
-// $(".form").submit(function() {
-//   var th = $(this);
-//   $.ajax({
-//     type: "POST",
-//     url: "mail.php",
-//     data: th.serialize()
-//   }).done(function() {
 
-//     var inst = $('[data-remodal-id=modal-thanks]').remodal();
-//     inst.open();
+$(".form").submit(function() {
+  var th = $(this);
+  $.ajax({
+    type: "POST",
+    url: "mail.php",
+    data: th.serialize()
+  }).done(function() {
 
-//     setTimeout(function() {
-//       th.trigger("reset");
-//     }, 1000);
-//   });
-//   return false;
-// });
+    var inst = $('[data-remodal-id=modal-thanks]').remodal();
+    inst.open();
+
+    setTimeout(function() {
+      th.trigger("reset");
+    }, 1000);
+  });
+  return false;
+});
