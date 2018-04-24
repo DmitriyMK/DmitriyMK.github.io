@@ -6,7 +6,7 @@ $(document).ready(function() {
     smoothscroll: true,
     cursorwidth: 10,
     cursorborder: 0,
-    cursorcolor: '#b11630',
+    cursorcolor: '#fb0035',
     cursorborderradius: 2,
     autohidemode: true,
     horizrailenabled: false,
@@ -22,7 +22,7 @@ $(document).ready(function() {
 
 $(document).ready(function() {
 
- if (document.documentElement.clientWidth > 1200) {
+  if (document.documentElement.clientWidth > 1200) {
     new WOW().init();
 
   };
@@ -41,7 +41,7 @@ $(document).ready(function() {
     transitionEffect: "none"
 
   });
-  
+
   $("certificates").fancybox({
     transitionEffect: "none"
 
@@ -60,19 +60,19 @@ $(document).ready(function() {
 
     responsive: [
 
-    {
-      breakpoint: 1025,
-      settings: {
-        slidesToShow: 2
-      }
-    },
+      {
+        breakpoint: 1025,
+        settings: {
+          slidesToShow: 2
+        }
+      },
 
-    {
-      breakpoint: 768,
-      settings: {
-        slidesToShow: 1,
-      }
-    },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+        }
+      },
 
     ]
 
@@ -84,7 +84,6 @@ $(document).ready(function() {
 $(window).on('resize orientationchange', function() {
   $('.slider').slick('resize');
 });
-
 
 
 
