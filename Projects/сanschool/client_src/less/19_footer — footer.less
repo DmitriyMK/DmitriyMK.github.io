@@ -17,4 +17,118 @@
 	
 }
 
+.footer {
+
+	.prefooter {
+		padding: 50px 0;
+		background: #222326;
+		.container {
+			position: relative;
+		}
+		.footer__logo {
+			position: absolute;
+			top: -68px;
+			left: 0;
+		}
+
+		.contact {
+			position: relative;
+			float: right;
+			padding-right: 45px;
+			&:before {
+				content: '';
+				position: absolute;
+				top: 13px;
+				left: -50px;
+				width: 33px;
+				height: 115px;
+				background: url(../images/line.png);
+			}
+			&__title {
+				margin-bottom: 20px;
+				font-size: 20px;
+				font-weight: 700;
+			}
+			&__item{
+				margin-bottom: 10px;
+			}
+			&__link {
+				font-weight: 700;
+			}
+			.skype__ico {
+				margin-left: -65px;
+				margin-right: 25px;
+			}
+			.skaip-buttons-icon {
+				background: none !important;
+				display: none;
+			}
+			.skaip-buttons-wrapper  {
+				font-weight: 700;
+			}
+		}
+
+		.social {
+
+			width: 110px;
+			display: inline-block;
+			text-align: center;
+			&__title {
+				margin-bottom: 20px;
+				font-size: 20px;
+				font-weight: 700;
+			}
+			&__item {
+				margin-bottom: 15px;
+			}
+			a {
+				display: block;
+				width: 40px;
+				height: 40px;
+				background: #fff;
+				border-radius: 50%;
+				margin: auto;
+				transition: background-color .3s linear;
+				&:hover {
+					background: transparent;
+					i {
+						color: #fff;
+					}
+				}
+			}
+			i {
+				vertical-align: middle;
+				text-align: center;
+				font-size: 25px;
+				line-height: 40px;
+				color: #000;
+				transition: color .3s linear;
+			}
+		}
+
+		.ask {
+			width: 280px;
+			float: right;
+			text-align: right;
+			&__title {
+				margin-bottom: 15px;
+				font-size: 20px;
+				font-weight: 700;
+			}
+			.btn {
+				margin-top: 28px;
+			}
+		}
+		
+	}
+
+	.last__line {
+		background: #15181f;
+	}
+}
+
+
+
+
+
 

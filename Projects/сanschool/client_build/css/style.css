@@ -1554,6 +1554,9 @@ body {
 .fancybox-margin {
     margin-right: 0 !important;
 }
+address {
+    font-style: normal;
+}
 section {
     padding: 110px;
 }
@@ -2155,7 +2158,7 @@ section {
 }
 .award__list {
     position: relative;
-    margin-top: 70px;
+    margin-top: 50px;
 }
 .award__item {
     margin: 40px auto;
@@ -2191,9 +2194,9 @@ section {
             transition:         box-shadow 0.3s linear, -webkit-box-shadow 0.3s linear;
 }
 .award .slick-current, .award .slick-focus {
-    -webkit-transform: scale(1.15);
-        -ms-transform: scale(1.15);
-            transform: scale(1.15);
+    -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+            transform: scale(1.1);
 }
 .award .slick-current img, .award .slick-focus img {
     -webkit-box-shadow: 1px 15px 17px 0.5px rgba(113, 0, 27, 0.41);
@@ -2217,6 +2220,110 @@ section {
 }
 .award .slick-next:before {
     content: '\e806';
+}
+.footer .prefooter {
+    padding: 50px 0;
+    background: #222326;
+}
+.footer .prefooter .container {
+    position: relative;
+}
+.footer .prefooter .footer__logo {
+    position: absolute;
+    top: -68px;
+    left: 0;
+}
+.footer .prefooter .contact {
+    position: relative;
+    float: right;
+    padding-right: 45px;
+}
+.footer .prefooter .contact:before {
+    content: '';
+    position: absolute;
+    top: 13px;
+    left: -50px;
+    width: 33px;
+    height: 115px;
+    background: url(../images/line.png);
+}
+.footer .prefooter .contact__title {
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: 700;
+}
+.footer .prefooter .contact__item {
+    margin-bottom: 10px;
+}
+.footer .prefooter .contact__link {
+    font-weight: 700;
+}
+.footer .prefooter .contact .skype__ico {
+    margin-left: -65px;
+    margin-right: 25px;
+}
+.footer .prefooter .contact .skaip-buttons-icon {
+    background: none !important;
+    display: none;
+}
+.footer .prefooter .contact .skaip-buttons-wrapper {
+    font-weight: 700;
+}
+.footer .prefooter .social {
+    width: 110px;
+    display: inline-block;
+    text-align: center;
+}
+.footer .prefooter .social__title {
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: 700;
+}
+.footer .prefooter .social__item {
+    margin-bottom: 15px;
+}
+.footer .prefooter .social a {
+    display: block;
+    width: 40px;
+    height: 40px;
+    background: #fff;
+    border-radius: 50%;
+    margin: auto;
+    -webkit-transition: background-color 0.3s linear;
+         -o-transition: background-color 0.3s linear;
+            transition: background-color 0.3s linear;
+}
+.footer .prefooter .social a:hover {
+    background: transparent;
+}
+.footer .prefooter .social a:hover i {
+    color: #fff;
+}
+.footer .prefooter .social i {
+    vertical-align: middle;
+    text-align: center;
+    font-size: 25px;
+    line-height: 40px;
+    color: #000;
+    -webkit-transition: color 0.3s linear;
+         -o-transition: color 0.3s linear;
+            transition: color 0.3s linear;
+}
+.footer .prefooter .ask {
+    width: 280px;
+    float: right;
+    text-align: right;
+}
+.footer .prefooter .ask__title {
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-weight: 700;
+}
+.footer .prefooter .ask .btn {
+    margin-top: 28px;
+}
+.footer .last__line {
+    background: #15181f;
 }
 .remodal-first {
     padding-top: 95px;
