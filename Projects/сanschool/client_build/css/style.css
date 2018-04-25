@@ -1632,8 +1632,27 @@ section {
     color: #000;
 }
 .header {
-    background: url(../images/back__hero.jpg) no-repeat center / cover;
-    min-height: 950px;
+    background: url(../images/back__hero-sm.jpg) no-repeat;
+    background-position: 30% 50%;
+    min-height: 640px;
+}
+@media only screen and (min-width: 992px) {
+    .header {
+        background: url(../images/back__hero.jpg) no-repeat;
+        background-position: 30% 50%;
+        min-height: 700px;
+    }
+}
+@media only screen and (min-width: 1200px) {
+    .header {
+        background-position: center;
+        background-size: cover;
+    }
+}
+@media only screen and (min-width: 1600px) {
+    .header {
+        min-height: 950px;
+    }
 }
 .header__top {
     position: relative;
@@ -1642,24 +1661,66 @@ section {
     z-index: 10;
 }
 .header__top-link {
-    position: absolute;
-    left: -15px;
+    float: left;
+}
+@media only screen and (min-width: 768px) {
+    .header__top-link {
+        position: absolute;
+        left: -10px;
+        float: none;
+    }
+}
+@media only screen and (min-width: 1200px) {
+    .header__top-link {
+        left: -15px;
+    }
+}
+.header__top .logo {
+    margin-left: -23px;
+    width: 140px;
+}
+@media only screen and (min-width: 768px) {
+    .header__top .logo {
+        margin-left: inherit;
+        width: auto;
+    }
 }
 .header__top-desc {
-    padding-left: 165px;
-    padding-top: 9px;
-    font-size: 20px;
+    float: left;
+    padding-top: 15px;
+    margin-left: -5px;
+    font-size: 16px;
     line-height: 1.2;
     font-weight: 300;
 }
+@media only screen and (min-width: 768px) {
+    .header__top-desc {
+        float: none;
+        padding-top: 9px;
+        font-size: 20px;
+        padding-left: 165px;
+    }
+}
 .header__top-mail {
-    margin-right: 70px;
-    font-size: 20px;
-    font-weight: 300;
-    line-height: 61px;
+    display: none;
+}
+@media only screen and (min-width: 992px) {
+    .header__top-mail {
+        display: inline-block;
+        margin-right: 15px;
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 61px;
+    }
+}
+@media only screen and (min-width: 1200px) {
+    .header__top-mail {
+        font-size: 20px;
+        margin-right: 70px;
+    }
 }
 .header__top-mail i {
-    margin-right: 15px;
+    margin-right: 5px;
     font-size: 25px;
     -webkit-transition: color 0.3s linear;
          -o-transition: color 0.3s linear;
@@ -1668,32 +1729,126 @@ section {
 .header__top-mail:hover i {
     color: #d50032;
 }
+.header__top-btn {
+    display: none;
+}
+@media only screen and (min-width: 768px) {
+    .header__top-btn {
+        margin-top: 13px;
+        display: inline-block;
+    }
+}
 .header__top .col-right {
     float: right;
 }
 .header__center {
     position: relative;
-    padding-top: 250px;
+    padding-top: 100px;
     text-align: center;
 }
-.header__center-text {
-    padding-top: 45px;
-    font-size: 38px;
+@media only screen and (min-width: 992px) {
+    .header__center {
+        padding-top: 120px;
+    }
 }
-.header__center:before {
-    content: '';
-    position: absolute;
-    right: 0;
-    top: -70px;
-    width: 851px;
-    height: 1102px;
-    background: url(../images/books.png);
-    z-index: 2;
+@media only screen and (min-width: 1200px) {
+    .header__center {
+        padding-top: 150px;
+    }
+}
+@media only screen and (min-width: 1600px) {
+    .header__center {
+        padding-top: 250px;
+    }
+}
+.header__center-img {
+    width: 290px;
+}
+@media only screen and (min-width: 768px) {
+    .header__center-img {
+        width: 60%;
+    }
+}
+@media only screen and (min-width: 1600px) {
+    .header__center-img {
+        width: auto;
+    }
+}
+.header__center-text {
+    padding-top: 15px;
+    font-size: 24px;
+    line-height: 1.5;
+}
+@media only screen and (min-width: 1200px) {
+    .header__center-text {
+        font-size: 32px;
+        line-height: inherit;
+    }
+}
+@media only screen and (min-width: 1600px) {
+    .header__center-text {
+        padding-top: 45px;
+        font-size: 38px;
+    }
+}
+@media only screen and (min-width: 1200px) {
+    .header__center:before {
+        content: '';
+        position: absolute;
+        right: 0;
+        top: 55px;
+        width: 511px;
+        height: 662px;
+        background: url(../images/books.png);
+        background-size: cover;
+        z-index: 2;
+    }
+}
+@media only screen and (min-width: 1600px) {
+    .header__center:before {
+        top: 80px;
+        width: 681px;
+        height: 882px;
+    }
+}
+@media only screen and (min-width: 1920px) {
+    .header__center:before {
+        top: -70px;
+        width: 851px;
+        height: 1102px;
+    }
+}
+.header .hide-dekstop {
+    display: block;
+    margin: auto;
+    margin-top: 60px;
+    margin-bottom: 85px;
+}
+@media only screen and (min-width: 768px) {
+    .header .hide-dekstop {
+        display: none;
+    }
 }
 .header__end {
-    position: relative;
-    padding-top: 120px;
-    z-index: 10;
+    display: none;
+}
+@media only screen and (min-width: 768px) {
+    .header__end {
+        display: block;
+        position: relative;
+        padding-top: 50px;
+        z-index: 10;
+    }
+}
+@media only screen and (min-width: 1200px) {
+    .header__end {
+        padding-top: 50px;
+    }
+}
+@media only screen and (min-width: 1600px) {
+    .header__end {
+        padding-top: 120px;
+    }
 }
 .header__end i, .header__end img {
     width: 80px;
@@ -1729,20 +1884,6 @@ section {
     -webkit-animation-delay: 2.5s;
             animation-delay: 2.5s;
 }
-/* #fixedTopMenu.fixed{
-	position: fixed;
-	padding: 0 15px;
-	top: 0;
-	left: 0;
-	width: 100%;
-	background: #131313;
-	z-index: 3000;
-	animation: smoothScroll 1s forwards;
-	&:after {
-		display: none;
-	}
-}
-*/
 .about {
     position: relative;
     padding-right: 220px;
