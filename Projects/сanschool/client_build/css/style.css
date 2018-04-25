@@ -2861,6 +2861,11 @@ section {
     position: relative;
     margin-top: 50px;
 }
+@media only screen and (min-width: 1200px) {
+    .award__list {
+        padding-bottom: 50px;
+    }
+}
 .award__item {
     margin: 40px auto;
     -webkit-transition: -webkit-transform 0.3s linear;
@@ -2906,18 +2911,53 @@ section {
 .award .slick-prev:before, .award .slick-next:before {
     /* font-family: 'slick'; */
     font-family: 'Fontello';
-    font-size: 120px;
+    font-size: 65px;
     line-height: 1;
     color: #fff;
 }
+@media only screen and (min-width: 1200px) {
+    .award .slick-prev:before, .award .slick-next:before {
+        font-size: 120px;
+    }
+}
 .award .slick-prev {
-    left: -120px;
+    bottom: -35px;
+    left: 10%;
+}
+@media only screen and (min-width: 1200px) {
+    .award .slick-prev {
+        bottom: 30px;
+    }
+}
+@media only screen and (min-width: 1600px) {
+    .award .slick-prev {
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+                transform: translateY(-50%);
+        left: -70px;
+    }
 }
 .award .slick-prev:before {
     content: '\e805';
 }
 .award .slick-next {
-    right: -50px;
+    bottom: -35px;
+    right: 10%;
+}
+@media only screen and (min-width: 1200px) {
+    .award .slick-next {
+        bottom: 30px;
+    }
+}
+@media only screen and (min-width: 1600px) {
+    .award .slick-next {
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+                transform: translateY(-50%);
+        right: -30px;
+    }
 }
 .award .slick-next:before {
     content: '\e806';
@@ -3285,48 +3325,6 @@ label {
                 transform: translateY(0px);
     }
 }
-.slick-prev, .slick-next {
-    width: 65px;
-    height: 114px;
-    -webkit-transition: all 0.3s linear;
-         -o-transition: all 0.3s linear;
-            transition: all 0.3s linear;
-    z-index: 10;
-    top: 10%;
-}
-@media only screen and (min-width: 768px) {
-    .slick-prev, .slick-next {
-        width: 30px;
-        height: 53px;
-    }
-}
-@media only screen and (min-width: 992px) {
-    .slick-prev, .slick-next {
-        top: 50%;
-        -webkit-transform: translateY(-50%);
-            -ms-transform: translateY(-50%);
-                transform: translateY(-50%);
-    }
-}
-.slick-prev:hover, .slick-prev:focus, .slick-next:hover, .slick-next:focus {
-    outline: none;
-    /* 	background: rgba(0,0,0, .6); */
-}
-.slick-prev:hover:before, .slick-prev:focus:before, .slick-next:hover:before, .slick-next:focus:before {
-    /* 	opacity: 1; 
-color: #1a46a8; */
-}
-.slick-prev.slick-disabled:before, .slick-next.slick-disabled:before {
-    /* opacity: 0.25;  */
-}
-.slick-prev {
-    left: 0;
-}
-@media only screen and (min-width: 1600px) {
-    .slick-prev {
-        left: -60px;
-    }
-}
 .slick-prev:before {
     display: block;
     position: absolute;
@@ -3334,63 +3332,10 @@ color: #1a46a8; */
     width: 30px;
     height: 53px;
 }
-@media only screen and (min-width: 768px) {
-    .slick-prev:before {
-        width: 65px;
-        height: 114px;
-    }
-}
-@media only screen and (min-width: 992px) {
-    .slick-prev:before {
-        top: 200px;
-        left: 300px;
-    }
-}
-@media only screen and (min-width: 1200px) {
-    .slick-prev:before {
-        top: 20%;
-        -webkit-transform: translateY(-50%);
-            -ms-transform: translateY(-50%);
-                transform: translateY(-50%);
-        left: 54px;
-    }
-}
-.slick-next {
-    right: 0;
-}
-@media only screen and (min-width: 1600px) {
-    .slick-next {
-        right: -60px;
-    }
-}
 .slick-next:before {
     display: block;
     position: absolute;
     z-index: 10;
-    width: 30px;
-    height: 53px;
-    right: 0;
-}
-@media only screen and (min-width: 768px) {
-    .slick-next:before {
-        width: 65px;
-        height: 114px;
-    }
-}
-@media only screen and (min-width: 992px) {
-    .slick-next:before {
-        top: 200px;
-        right: 300px;
-    }
-}
-@media only screen and (min-width: 1200px) {
-    .slick-next:before {
-        top: 20%;
-        -webkit-transform: translateY(-50%);
-            -ms-transform: translateY(-50%);
-                transform: translateY(-50%);
-        right: -20px;
-    }
 }
 .slick-dots {
     bottom: -55px;
@@ -3405,7 +3350,7 @@ color: #1a46a8; */
     }
 }
 .slick-dots li button {
-    background: #81d4fb;
+    background: #eff2f8;
     display: block;
     height: 20px;
     width: 20px;

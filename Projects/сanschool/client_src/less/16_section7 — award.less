@@ -41,6 +41,10 @@
 	&__list {
 		position: relative;
 		margin-top: 50px;
+		
+		@media @desktop-xl {
+			padding-bottom: 50px;
+		}
 	}
 
 	&__item {
@@ -74,39 +78,76 @@
 		}
 	}
 
-	.slick-prev,
-	.slick-next
-	{
-		
-	}
 
 	.slick-prev:before,
 	.slick-next:before
 	{
 		/* font-family: 'slick'; */
 		font-family: 'Fontello'; 
-		font-size: 120px;
+		font-size: 65px;
 		line-height: 1;
 		color: #fff;
+
+		@media @tablet {
+
+		}
+		@media @desktop {
+
+		}
+		@media @desktop-xl {
+			font-size: 120px;
+		}
+		@media @desktop-xl-2 {
+
+		}
 	}
 
-	.slick-prev
-	{
-		left: -120px;
+	.slick-prev {
+		bottom: -35px;
+		left: 10%;
+
+		@media @tablet {
+
+		}
+		@media @desktop {
+
+		}
+		@media @desktop-xl {
+			bottom: 30px;
+		}
+		@media @desktop-xl-2 {
+			top: 50%;
+			transform: translateY(-50%);
+			left: -70px;
+		}
 	}
 
-	.slick-prev:before
-	{
+	.slick-prev:before {
 		content: '\e805';
 	}
 
-	.slick-next
-	{
-		right: -50px;
+	.slick-next {
+		bottom: -35px;
+		right: 10%;
+		
+
+		@media @tablet {
+
+		}
+		@media @desktop {
+
+		}
+		@media @desktop-xl {
+			bottom: 30px;
+		}
+		@media @desktop-xl-2 {
+			top: 50%;
+			transform: translateY(-50%);
+			right: -30px;
+		}
 	}
 
-	.slick-next:before
-	{
+	.slick-next:before {
 		content: '\e806';
 	}
 

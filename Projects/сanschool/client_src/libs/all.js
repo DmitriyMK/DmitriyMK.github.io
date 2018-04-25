@@ -64,7 +64,7 @@ $(document).ready(function() {
 
   $('.slider').slick({
     slidesToShow: 3,
-    dots: false,
+    dots: true,
     arrow: true,
     focusOnSelect: true,
     centerMode: true,
@@ -75,9 +75,10 @@ $(document).ready(function() {
     responsive: [
 
     {
-      breakpoint: 1025,
+      breakpoint: 1200,
       settings: {
-        slidesToShow: 2
+        slidesToShow: 2,
+
       }
     },
 
