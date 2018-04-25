@@ -20,83 +20,229 @@
 
 .about {
 	position: relative;
-	padding-right: 220px;
 	background: url(../images/back__about.jpg)no-repeat center/cover;
 	color: #000;
 	z-index: 1; //book have z-index: 2;
 
 	overflow: hidden;
 
+	@media @tablet {
+
+	}
+	@media @desktop {
+
+	}
+	@media @desktop-xl {
+
+	}
+	@media @desktop-xl-2 {
+		padding-right: 220px;
+	}
+
 
 	.hand__img {
-		position: absolute;
-		left: 0;
+		display: none;
+
+		@media @desktop {
+			display: inline-block;
+			position: absolute;
+			top: 100px;
+			left: -80px;
+			width: 350px;
+		}
+		@media @desktop-xl {
+			width: 550px;
+		}
+		@media @desktop-xl-2 {
+			width: 700px;
+		}
+		@media @desktop-xll {
+			left: 0;
+			width: auto;
+
+		}
 	}
+
 	&__title {
 		position: relative;
-		text-align: right;
 		z-index: 100;
+
+		@media @desktop-xl {
+			text-align: right;
+		}
+
 		&:before {
-			right: 0;
+			@media @desktop-xl {
+				left: inherit;
+				right: 0;
+				transform: inherit;
+			}
+			
 		}
 	}
 
 	&__box {
 		position: relative;
-		float: right;
 		margin-top: 80px;
-		width: 520px;
 		z-index: 10;
+		width: 100%;
+
+		@media @tablet {
+
+			margin: auto;
+			margin-top: 80px;
+		}
+		@media @desktop {
+			width: 520px;
+		}
+		@media @desktop-xl {
+			float: right;
+		}
+
 		&:before {
-			content: '';
-			position: absolute;
-			top: -330px;
-			left: 50%;
-			transform: translateX(-48%);
-			width: 1317px;
-			height: 1655px;
-			background: url(../images/back__about-circle.png);
-			z-index: -1;
+
+			@media @tablet {
+				content: '';
+				position: absolute;
+				top: -350px;
+				left: 50%;
+				transform: translateX(-48%);
+				width: 1317px;
+				height: 1655px;
+				background: url(../images/back__about-circle.png);
+				z-index: -1;
+			}
+			@media @desktop {
+				top: -270px;
+				left: 50%;
+				transform: translateX(-48.5%);
+			}
+			@media @desktop-xl {
+				top: -330px;
+				left: 50%;
+				transform: translateX(-49%);
+			}
+			@media @desktop-xl-2 {
+
+			}
+			@media @desktop-xll {
+
+			}
 		}
 
 	}
 
 	&__text {
+		padding-left: 10px;
+		padding-right: 10px; 
 		padding-bottom: 42px;
 		font-size: 18px;
-		text-align: right;
+		text-align: center;
 		position: relative;
+
+		@media @desktop-xl {
+			padding-left: 0px;
+			padding-right: 0px; 
+			text-align: right;
+		}
+		@media @desktop-xl-2 {
+
+		}
+		@media @desktop-xll {
+
+		}
 	}
 
 	&__link {
 		position: relative;
 		display: block;
 		margin-top: 76px;
-		font-size: 40px;
+		font-size: 26px;
 		font-weight: 700;
+		text-align: center;
+		@media @tablet {
+			font-size: 40px;
+		}
+		@media @desktop {
+			font-size: 40px;
+		}
+		@media @desktop-xl {
+
+		}
+		@media @desktop-xl-2 {
+
+		}
+		@media @desktop-xll {
+
+		}
 
 
 	}
+
+	.icon-play:before {
+		line-height: 100px;
+		@media @tablet {
+			font-size: 70px;
+			line-height: auto;
+		}
+		
+	}
+
 	&__play {
 		position: relative;
-		padding-left: 50px;
+		padding-left: 30px;
 		color: #fff;
-		font-size: 70px;
+		font-size: 50px;
 		vertical-align: middle;
 		z-index: 10;
+
+		@media @tablet {
+			font-size: 70px;
+		}
+		@media @desktop {
+
+		}
+		@media @desktop-xl {
+
+		}
+		@media @desktop-xl-2 {
+
+		}
+		@media @desktop-xll {
+
+		}
 
 		&:after {
 			content: '';
 			position: absolute;
 			top: -12px;
-			left: 30px;
-			width: 120px;
-			height: 120px;
+			left: 15px;
+			width: 90px;
+			height: 90px;
 			border-radius: 50%;
 			background: #d70633;
 			z-index: -1;
 			box-shadow: 0px 12px 9.6px 0.4px rgba(215, 0, 51, 0.15);
 			transition: box-shadow, background-color .3s linear;
+
+			@media @tablet {
+				top: -12px;
+				left: 10px;
+				width: 120px;
+				height: 120px;
+			}
+			@media @desktop {
+
+			}
+			@media @desktop-xl {
+
+			}
+			@media @desktop-xl-2 {
+
+			}
+			@media @desktop-xll {
+
+			}
 		}
 		&:hover {
 			&:after {

@@ -39,7 +39,13 @@ address {
 }
 
 section {
-    padding: 110px;
+    padding: 110px 0;
+    @media @desktop {
+
+    }
+    @media @desktop-xl-2 {
+        padding: 110px;
+    }
 }
 
 header, footer {
@@ -84,14 +90,15 @@ header, footer {
 
 .section__title {
     position: relative;
-    font-size: 40px;
+    font-size: 26px;
     color: #222326;
-
+    text-align: center;
     &:before {
         content: '';
         position: absolute;
         bottom: -20px;
-
+        left: 50%;
+        transform: translateX(-50%); 
         height: 5px;
         width: 130px;
         background: @red;
@@ -100,7 +107,7 @@ header, footer {
 
     }
     @media @tablet {
-
+        font-size: 40px;
     }
     @media @desktop {
 
