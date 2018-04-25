@@ -2005,11 +2005,11 @@ section {
 }
 @media only screen and (min-width: 1200px) {
     .about__box:before {
-        top: -330px;
+        top: -310px;
         left: 50%;
-        -webkit-transform: translateX(-49%);
-            -ms-transform: translateX(-49%);
-                transform: translateX(-49%);
+        -webkit-transform: translateX(-48.5%);
+            -ms-transform: translateX(-48.5%);
+                transform: translateX(-48.5%);
     }
 }
 .about__text {
@@ -2030,13 +2030,14 @@ section {
 .about__link {
     position: relative;
     display: block;
-    margin-top: 76px;
+    margin-top: 0;
     font-size: 26px;
     font-weight: 700;
     text-align: center;
 }
 @media only screen and (min-width: 768px) {
     .about__link {
+        margin-top: 76px;
         font-size: 40px;
     }
 }
@@ -2046,7 +2047,7 @@ section {
     }
 }
 .about .icon-play:before {
-    line-height: 100px;
+    line-height: 120px;
 }
 @media only screen and (min-width: 768px) {
     .about .icon-play:before {
@@ -2772,7 +2773,7 @@ label {
     margin: auto;
     padding-left: 15px;
     margin-bottom: 15px;
-    width: 285px;
+    width: 260px;
     display: block;
     border: none;
     font-weight: 300;
