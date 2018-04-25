@@ -2120,6 +2120,13 @@ section {
 }
 .advantages__title {
     color: #fff;
+    text-align: left;
+}
+.advantages__title:before {
+    left: 0;
+    -webkit-transform: inherit;
+        -ms-transform: inherit;
+            transform: inherit;
 }
 .advantages__box {
     position: relative;
@@ -2204,6 +2211,12 @@ section {
 }
 .details__title {
     text-align: right;
+}
+.details__title:before {
+    left: 50%;
+    -webkit-transform: translateX(90%);
+        -ms-transform: translateX(90%);
+            transform: translateX(90%);
 }
 .details__text {
     margin-left: 35px;
