@@ -18,31 +18,73 @@
 }
 
 .footer {
-
 	.prefooter {
-		padding: 50px 0;
+		padding-top: 120px;
+		padding-bottom: 50px;
 		background: #222326;
+		@media @tablet {
+			padding: 50px 0 ;
+		}
+
+		&__box {
+			display: flex;
+			justify-content: center;
+			flex-wrap: wrap;
+		}
 		.container {
 			position: relative;
 		}
 		.footer__logo {
 			position: absolute;
-			top: -68px;
-			left: 0;
+			top: -130px;
+			left: 50%;
+			transform: translateX(-50%);
+			max-width: 150px;
+			@media @tablet {
+				transform: inherit;
+				top: -60px;
+				left: -30px;
+			}
+
+			@media @desktop-xl {
+				top: -68px;
+				left: 0;
+				max-width: inherit;
+			}
+
 		}
 
 		.contact {
 			position: relative;
-			float: right;
-			padding-right: 45px;
+			max-width: 200px;
+			address {
+				padding: 10px 0;
+				font-size: 13px;
+			}
+			@media @tablet {
+				max-width: inherit;
+				margin-left: 100px;
+				address {
+					padding: inherit;
+					font-size: inherit;
+				}
+			}
+			@media @desktop {
+				margin-left: 170px;
+			}
+			@media @desktop-xl {
+				margin-left: 380px;
+			}
 			&:before {
-				content: '';
-				position: absolute;
-				top: 13px;
-				left: -50px;
-				width: 33px;
-				height: 115px;
-				background: url(../images/line.png);
+				@media @desktop {
+					content: '';
+					position: absolute;
+					top: 13px;
+					left: -50px;
+					width: 33px;
+					height: 115px;
+					background: url(../images/line.png)no-repeat;
+				}
 			}
 			&__title {
 				margin-bottom: 20px;
@@ -50,14 +92,22 @@
 				font-weight: 700;
 			}
 			&__item{
-				margin-bottom: 10px;
+				margin-bottom: 16px;
+				@media @tablet {
+					margin-bottom: 10px;
+				}
 			}
 			&__link {
 				font-weight: 700;
 			}
 			.skype__ico {
-				margin-left: -65px;
+				margin-top: 10px;
 				margin-right: 25px;
+
+				@media @desktop {
+					margin-top: inherit;
+					margin-left: -65px;
+				}
 			}
 			.skaip-buttons-icon {
 				background: none !important;
@@ -69,9 +119,10 @@
 		}
 
 		.social {
-			width: 110px;
+			width: 100px;
 			display: inline-block;
 			text-align: center;
+
 			&__title {
 				margin-bottom: 20px;
 				font-size: 20px;
@@ -106,9 +157,13 @@
 		}
 
 		.ask {
+			margin-top: 30px;
 			width: 280px;
-			float: right;
-			text-align: right;
+			text-align: center;
+			@media @tablet {
+				margin-top: inherit;
+				text-align: right;
+			}
 			&__title {
 				margin-bottom: 15px;
 				font-size: 20px;
@@ -124,6 +179,10 @@
 	.last__line {
 		padding: 20px 0;
 		background: #15181f;
+		text-align: center;
+		@media @tablet {
+				text-align: inherit;
+			}
 		.copyright {
 			display: inline-block;
 			vertical-align: middle;
@@ -131,9 +190,13 @@
 			line-height: 40px;
 		}
 		.agency {
-			float: right;
+			margin-top: 10px;
 			font-size: 12px;
 			line-height: 20px;
+			@media @tablet {
+				margin-top: inherit;
+				float: right;
+			}
 		}
 	}
 }

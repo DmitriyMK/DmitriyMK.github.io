@@ -19,8 +19,12 @@
 
 
 .award {
-	background: url(../images/back__award.jpg)no-repeat center/cover;
-
+	background: url(../images/back__award.jpg)no-repeat;
+	background-position: 60% 50%;
+	@media @tablet {
+		background-position: center;
+		background-size: cover;
+	}
 	&__title {
 		
 		color: #fff;
@@ -79,6 +83,14 @@
 	}
 
 
+	.slick-prev,
+	.slick-next {
+		&:hover {
+			cursor: pointer;
+			z-index: 100;
+		}
+	}
+
 	.slick-prev:before,
 	.slick-next:before
 	{
@@ -103,14 +115,14 @@
 	}
 
 	.slick-prev {
-		bottom: -35px;
+		bottom: 0;
 		left: 10%;
 
 		@media @tablet {
 
 		}
 		@media @desktop {
-
+			bottom: -35px;
 		}
 		@media @desktop-xl {
 			bottom: 30px;
@@ -127,7 +139,7 @@
 	}
 
 	.slick-next {
-		bottom: -35px;
+		bottom: 0;
 		right: 10%;
 		
 
@@ -135,7 +147,7 @@
 
 		}
 		@media @desktop {
-
+			bottom: -35px;
 		}
 		@media @desktop-xl {
 			bottom: 30px;
