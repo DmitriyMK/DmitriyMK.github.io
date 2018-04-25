@@ -20,71 +20,165 @@
 
 .details {
 	position: relative;
-	padding-right: 200px;
+	
 	color: #000;
 	background: #e6eaf3;
 	overflow: hidden;
+	@media @tablet {
+
+	}
+	@media @desktop {
+
+	}
+	@media @desktop-xl {
+		padding-right: 200px;
+	}
+	@media @desktop-xl-2 {
+
+	}
+	@media @desktop-xll {
+
+	}
 	&:before {
-		content: '';
-		position: absolute;
-		top: -640px;
-		left: 0px;
-		width: 1920px;
-		height: 1606px;
-		background: url(../images/books-partner.png);
+		
+		@media @tablet {
+			content: '';
+			position: absolute;
+			top: -640px;
+			left: -700px;
+			width: 1920px;
+			height: 1606px;
+			background: url(../images/books-partner.png);
+
+		}
+		@media @desktop {
+			left: -510px;
+		}
+		@media @desktop-xl {
+			left: -310px;
+		}
+		@media @desktop-xl-2 {
+			left: 0px;
+		}
+		@media @desktop-xll {
+
+		}
 
 	}
 	&__title {
-		text-align: right;
-		&:before {
-			left: 50%;
-			transform: translateX(90%); 
+		@media @desktop {
+			text-align: right;
+			&:before {
+				left: 50%;
+				transform: translateX(90%); 
+			}
 		}
 	}
 	&__text {
+		margin-top: 80px;
+		padding-bottom: 0px;
 		margin-left: 35px;
 		color: #000;
-		font-size: 30px;
+		font-size: 26px;
 		font-weight: 700;
+		@media @tablet {
+padding-bottom: inherit;
+		}
+		@media @desktop {
+			font-size: 30px;
+			margin-top: inherit;
+
+		}
+		@media @desktop-xl {
+
+		}
+		@media @desktop-xl-2 {
+
+		}
+		@media @desktop-xll {
+
+		}
 	}
 	&__box {
 		position: relative;
-		margin-top: 45px;
-		float: right;
-		width: 500px;
+		max-width: 300px;
+		margin: auto;
+		@media @tablet {
+			max-width: 400px
+		}
+		@media @desktop {
+			max-width: inherit;
+			margin: inherit;
+			margin-top: 45px;
+			float: right;
+			width: 500px;
+		}
+		@media @desktop-xl {
+
+		}
+		@media @desktop-xl-2 {
+
+		}
+		@media @desktop-xll {
+
+		}
 	}
 
 	&__list {
-		margin-top: 80px;
+		padding: 0;
+		margin-top: 60px;
+		@media @tablet {
+			padding: inherit;
+		}
+		@media @desktop-xl {
+			margin-top: 80px;
+		}
 	}
 
 	&__item {
 		position: relative;
-		margin-bottom: 70px;
+		margin-top: 120px;
+		margin-bottom: 80px;
 		counter-increment: li;
+		text-align: center;
+		@media @tablet {
+			text-align: inherit;
+		}
 		&:before {
 			content: "" counter(li);
 			position: absolute;
-			top: 50%;
-			left: -114px;
-			transform: translateY(-50%);
+			top: -80px;
+			left: 50%;
+			transform: translateX(-50%);
 			font-size: 48px;
 			font-weight: 700;
 			z-index: 2;
 			color: #e6eaf3;
+			@media @tablet {
+				top: 50%;
+				left: -114px;
+				transform: inherit;
+				transform: translateY(-50%);
+			}
 		}
 		&:after {
 			content: '';
 			position: absolute;
-			top: 50%;
-			left: -136px;
-			transform: translateY(-50%);
+			top: -85px;
+			left: 50%;
+			transform: translateX(-50%);
 			width: 70px;
 			height: 70px;
 			border-radius: 50%;
 			background: #fff;
 			z-index: 1;
 			box-shadow: 0px 12px 10.6px 0.4px rgba(162, 172, 184, 0.18);
+			@media @tablet {
+				top: 50%;
+				left: -136px;
+				transform: inherit;
+				transform: translateY(-50%);
+			}
 
 		}
 	}
