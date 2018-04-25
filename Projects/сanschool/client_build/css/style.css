@@ -1609,7 +1609,7 @@ section {
 }
 .section__title {
     position: relative;
-    font-size: 26px;
+    font-size: 25px;
     color: #222326;
     text-align: center;
 }
@@ -2394,13 +2394,15 @@ section {
 .details__text {
     margin-top: 80px;
     padding-bottom: 0;
-    margin-left: 35px;
+    text-align: center;
     color: #000;
-    font-size: 26px;
+    font-size: 25px;
     font-weight: 700;
 }
 @media only screen and (min-width: 768px) {
     .details__text {
+        text-align: left;
+        margin-left: 35px;
         padding-bottom: inherit;
     }
 }
