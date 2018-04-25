@@ -1558,7 +1558,7 @@ address {
     font-style: normal;
 }
 section {
-    padding: 110px 0;
+    padding: 80px 0;
 }
 @media only screen and (min-width: 1600px) {
     section {
@@ -1983,7 +1983,7 @@ section {
     .about__box:before {
         content: '';
         position: absolute;
-        top: -350px;
+        top: -340px;
         left: 50%;
         -webkit-transform: translateX(-48%);
             -ms-transform: translateX(-48%);
@@ -2109,7 +2109,7 @@ section {
     .advantages:before {
         content: '';
         position: absolute;
-        top: 450px;
+        top: 430px;
         left: 50%;
         -webkit-transform: translateX(-61%);
             -ms-transform: translateX(-61%);
@@ -2528,11 +2528,11 @@ section {
     .step:before {
         content: '';
         position: absolute;
-        top: 160px;
+        top: 155px;
         left: 50%;
-        -webkit-transform: translateX(-49%);
-            -ms-transform: translateX(-49%);
-                transform: translateX(-49%);
+        -webkit-transform: translateX(-33%);
+            -ms-transform: translateX(-33%);
+                transform: translateX(-33%);
         width: 1504px;
         height: 1926px;
         background: url(../images/back__step-circle.png);
@@ -2540,7 +2540,7 @@ section {
 }
 @media only screen and (min-width: 992px) {
     .step:before {
-        top: -160px;
+        top: -190px;
         left: 50%;
         -webkit-transform: translateX(-56%);
             -ms-transform: translateX(-56%);
@@ -2623,7 +2623,8 @@ section {
 }
 @media only screen and (min-width: 992px) {
     .step .btn-white {
-        margin: auto;
+        display: inherit;
+        margin: inherit;
         margin-top: 84px;
     }
 }
@@ -2634,54 +2635,119 @@ section {
             box-shadow: 0 12px 56.64px 2.36px rgba(58, 61, 79, 0.51);
 }
 .franchise .hand__img {
-    position: absolute;
-    right: 0;
-    bottom: -200px;
+    display: none;
+}
+@media only screen and (min-width: 1600px) {
+    .franchise .hand__img {
+        display: block;
+        position: absolute;
+        right: 0;
+        max-width: 300px;
+        bottom: -30px;
+    }
+}
+@media only screen and (min-width: 1920px) {
+    .franchise .hand__img {
+        max-width: inherit;
+        bottom: -200px;
+    }
 }
 .franchise__ask {
-    padding-left: 100px;
-    margin-top: 100px;
-    font-size: 40px;
+    max-width: 300px;
+    margin: auto;
+    font-size: 23px;
     font-weight: 700;
 }
+@media only screen and (min-width: 768px) {
+    .franchise__ask {
+        max-width: inherit;
+        margin: inherit;
+        margin-top: 100px;
+        font-size: 32px;
+    }
+}
+@media only screen and (min-width: 1200px) {
+    .franchise__ask {
+        padding-left: 100px;
+        font-size: 40px;
+    }
+}
 .franchise__proposal {
-    margin-left: 105px;
+    max-width: 300px;
+    margin: auto;
     margin-top: 40px;
     padding-left: 20px;
     border-left: 3px solid #fff;
-    font-size: 25px;
+    font-size: 21px;
+}
+@media only screen and (min-width: 768px) {
+    .franchise__proposal {
+        max-width: inherit;
+        margin: inherit;
+        font-size: 25px;
+    }
+}
+@media only screen and (min-width: 1200px) {
+    .franchise__proposal {
+        margin-left: 105px;
+    }
 }
 .franchise__form {
     position: relative;
     margin: auto;
-    width: 350px;
-    height: 406px;
-    background: url(../images/note.png) no-repeat center / cover;
+    width: 286px;
+    height: 371px;
+    background: url(../images/note-small.png) no-repeat center / cover;
+}
+@media only screen and (min-width: 768px) {
+    .franchise__form {
+        width: 350px;
+        height: 406px;
+        background: url(../images/note.png) no-repeat center / cover;
+    }
 }
 .franchise .form__wrap {
-    margin: auto;
-    margin-top: 75px;
+    margin-left: 40px;
+    margin-top: 50px;
     padding: 45px 5px;
     position: relative;
-    width: 260px;
+    width: 225px;
+}
+@media only screen and (min-width: 768px) {
+    .franchise .form__wrap {
+        margin: auto;
+        margin-top: 75px;
+        width: 260px;
+    }
 }
 .franchise .formBox__title-mass {
     text-align: center;
-    font-size: 25px;
+    font-size: 22px;
     font-weight: 700;
     line-height: 1;
     color: #222326;
+}
+@media only screen and (min-width: 768px) {
+    .franchise .formBox__title-mass {
+        font-size: 25px;
+    }
 }
 .franchise .formBox__text {
     margin: 18px 0 14px 0;
     text-align: center;
     color: #000;
+    font-size: 16px;
+}
+@media only screen and (min-width: 768px) {
+    .franchise .formBox__text {
+        font-size: 18px;
+    }
 }
 .franchise .form__line {
     margin: auto;
     padding-left: 15px;
     margin-bottom: 15px;
-    width: 88%;
+    width: 100%;
     display: block;
     border: none;
     font-weight: 300;
@@ -2691,16 +2757,33 @@ section {
     border: 1px #d2d2d4 solid!important;
     border-radius: 7px;
 }
+@media only screen and (min-width: 768px) {
+    .franchise .form__line {
+        width: 88%;
+    }
+}
 .franchise .btn {
     display: block;
-    width: 240px;
+    width: 100%;
     margin: 25px auto;
+}
+@media only screen and (min-width: 768px) {
+    .franchise .btn {
+        width: 240px;
+    }
 }
 .gallery {
     background: url(../images/back__gallery.jpg) no-repeat center / cover;
 }
 .gallery__title {
     margin-left: 170px;
+    text-align: left;
+}
+.gallery__title:before {
+    left: 0;
+    -webkit-transform: inherit;
+        -ms-transform: inherit;
+            transform: inherit;
 }
 .gallery__box {
     max-width: 1920px;
@@ -2755,6 +2838,10 @@ section {
 }
 .award__title:before {
     right: 0;
+    left: inherit;
+    -webkit-transform: inherit;
+        -ms-transform: inherit;
+            transform: inherit;
     background: #fff;
 }
 .award__list {
