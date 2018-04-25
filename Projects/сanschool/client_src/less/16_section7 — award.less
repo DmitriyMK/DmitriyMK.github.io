@@ -22,14 +22,20 @@
 	background: url(../images/back__award.jpg)no-repeat center/cover;
 
 	&__title {
-		margin-right: 70px;
-		text-align: right;
+		
 		color: #fff;
+		@media @desktop {
+			margin-right: 70px;
+			text-align: right;
+		}
 		&:before {
-			right: 0;
-			left: inherit;
-			transform: inherit;
+			
 			background: #fff;
+			@media @desktop {
+				right: 0;
+				left: inherit;
+				transform: inherit;
+			}
 		}
 	}
 	&__list {

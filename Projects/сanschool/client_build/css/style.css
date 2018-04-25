@@ -2149,11 +2149,7 @@ section {
     position: relative;
     z-index: 10;
     margin: auto;
-}
-@media only screen and (min-width: 768px) {
-    .advantages__box {
-        margin-top: 40px;
-    }
+    margin-top: 40px;
 }
 @media only screen and (min-width: 992px) {
     .advantages__box {
@@ -2773,17 +2769,26 @@ section {
     }
 }
 .gallery {
-    background: url(../images/back__gallery.jpg) no-repeat center / cover;
+    background: #eff2f8;
 }
-.gallery__title {
-    margin-left: 170px;
-    text-align: left;
+@media only screen and (min-width: 768px) {
+    .gallery {
+        background: url(../images/back__gallery.jpg) no-repeat center / cover;
+    }
 }
-.gallery__title:before {
-    left: 0;
-    -webkit-transform: inherit;
-        -ms-transform: inherit;
-            transform: inherit;
+@media only screen and (min-width: 992px) {
+    .gallery__title {
+        margin-left: 170px;
+        text-align: left;
+    }
+}
+@media only screen and (min-width: 992px) {
+    .gallery__title:before {
+        left: 0;
+        -webkit-transform: inherit;
+            -ms-transform: inherit;
+                transform: inherit;
+    }
 }
 .gallery__box {
     max-width: 1920px;
@@ -2832,17 +2837,25 @@ section {
     background: url(../images/back__award.jpg) no-repeat center / cover;
 }
 .award__title {
-    margin-right: 70px;
-    text-align: right;
     color: #fff;
 }
+@media only screen and (min-width: 992px) {
+    .award__title {
+        margin-right: 70px;
+        text-align: right;
+    }
+}
 .award__title:before {
-    right: 0;
-    left: inherit;
-    -webkit-transform: inherit;
-        -ms-transform: inherit;
-            transform: inherit;
     background: #fff;
+}
+@media only screen and (min-width: 992px) {
+    .award__title:before {
+        right: 0;
+        left: inherit;
+        -webkit-transform: inherit;
+            -ms-transform: inherit;
+                transform: inherit;
+    }
 }
 .award__list {
     position: relative;

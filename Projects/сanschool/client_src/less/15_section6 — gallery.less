@@ -19,13 +19,21 @@
 
 
 .gallery {
-	background: url(../images/back__gallery.jpg)no-repeat center/cover;
+	background: #eff2f8;
+	@media @tablet {
+		background: url(../images/back__gallery.jpg)no-repeat center/cover;
+	}
 	&__title {
-		margin-left: 170px;
-		text-align: left;
+		@media @desktop {
+			margin-left: 170px;
+			text-align: left;
+		}
+		
 		&:before {
-			left: 0;
-			transform: inherit;
+			@media @desktop {
+				left: 0;
+				transform: inherit;
+			}
 		}
 	}
 	&__box {
