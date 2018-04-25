@@ -27,46 +27,140 @@
 
 	box-shadow: 3.139px 44.89px 48.96px 2.04px rgba(20, 23, 30, 0.36);
 	&:before {
-		content: '';
-		position: absolute;
-		top: -160px;
-		left: 50%;
-		transform: translateX(-64%);
-		width: 1504px;
-		height: 1926px;
-		background: url(../images/back__step-circle.png);
+		
+		@media @tablet {
+			content: '';
+			position: absolute;
+			top: 160px;
+			left: 50%;
+			transform: translateX(-49%);
+			width: 1504px;
+			height: 1926px;
+			background: url(../images/back__step-circle.png);
+		}
+		@media @desktop {
+			top: -160px;
+			left: 50%;
+			transform: translateX(-56%);
+		}
+		@media @desktop-xl {
+			top: -160px;
+			left: 50%;
+			transform: translateX(-64%);
+		}
 	}
 	&__title {
 		color: #fff;
+		@media @desktop {
+			text-align: left;
+		}
 		&:before {
 			background: #fff;
+			@media @desktop {
+				left: 0;
+				transform: inherit;
+			}
 		}
 	}
 
 	&__box {
 		padding-top: 100px;
 		position: relative;
+
+		@media @tablet {
+
+		}
+		@media @desktop {
+
+		}
+		@media @desktop-xl {
+
+		}
+		@media @desktop-xl-2 {
+
+		}
+		@media @desktop-xll {
+
+		}
 	}
 	&__item {
 		margin: auto;
+		margin-bottom: 30px;
 		padding: 0 10px;
 		text-align: center;
+		@media @desktop {
+			margin-bottom: inherit;
+		}
 	}
+
+	&__img {
+		max-width: 230px;
+		@media @tablet {
+
+		}
+		@media @desktop {
+		}
+		@media @desktop-xl {
+			max-width: inherit;
+		}
+	}
+
 	.img__wrap {
-		height: 272px;
+		height: 240px;
+
+		@media @tablet {
+
+		}
+		@media @desktop {
+
+		}
+		@media @desktop-xl {
+			height: 272px;
+		}
+		@media @desktop-xl-2 {
+
+		}
+		@media @desktop-xll {
+
+		}
 	}
 
 	&__about {
 		font-size: 20px;
+		height: 30px;
 		font-weight: 700;
 	}
 	&__text {
+		margin: auto;
 		margin-top: 30px;
 		font-size: 17px;
+		max-width: 290px;
+		@media @tablet {
+
+		}
+		@media @desktop {
+
+		}
+		@media @desktop-xl {
+
+		}
+		@media @desktop-xl-2 {
+
+		}
+		@media @desktop-xll {
+
+		}
 	}
 
+	
+
 	.btn-white {
-		margin-top: 84px;
+		display: block;
+		margin: 30px auto;
+		@media @desktop {
+			margin: auto;
+			margin-top: 84px;
+		}
 	}
 }
 

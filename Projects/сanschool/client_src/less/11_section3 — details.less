@@ -20,16 +20,10 @@
 
 .details {
 	position: relative;
-	
 	color: #000;
 	background: #e6eaf3;
 	overflow: hidden;
-	@media @tablet {
 
-	}
-	@media @desktop {
-
-	}
 	@media @desktop-xl {
 		padding-right: 200px;
 	}
@@ -40,7 +34,6 @@
 
 	}
 	&:before {
-		
 		@media @tablet {
 			content: '';
 			position: absolute;
@@ -49,7 +42,6 @@
 			width: 1920px;
 			height: 1606px;
 			background: url(../images/books-partner.png);
-
 		}
 		@media @desktop {
 			left: -510px;
@@ -91,15 +83,6 @@
 			margin-top: inherit;
 
 		}
-		@media @desktop-xl {
-
-		}
-		@media @desktop-xl-2 {
-
-		}
-		@media @desktop-xll {
-
-		}
 	}
 	&__box {
 		position: relative;
@@ -115,15 +98,6 @@
 			float: right;
 			width: 500px;
 		}
-		@media @desktop-xl {
-
-		}
-		@media @desktop-xl-2 {
-
-		}
-		@media @desktop-xll {
-
-		}
 	}
 
 	&__list {
@@ -133,7 +107,7 @@
 			padding: inherit;
 		}
 		@media @desktop-xl {
-			margin-top: 80px;
+			margin-top: 50px;
 		}
 	}
 
@@ -144,6 +118,8 @@
 		counter-increment: li;
 		text-align: center;
 		@media @tablet {
+			margin-top: inherit;
+			margin-bottom: 60px;
 			text-align: inherit;
 		}
 		&:before {
