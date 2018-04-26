@@ -1153,7 +1153,7 @@ hr {
         display: none !important;
     }
 }
-@media (min-width: 1250px) {
+@media (min-width: 1200px) {
     .hidden-lg {
         display: none !important;
     }
@@ -1486,9 +1486,15 @@ header, footer {
     position: relative;
     overflow: hidden;
     min-height: 680px;
+    min-height: 100vh;
     background: url(../images/back-hero-sm.jpg) no-repeat 75% 50%;
     /* RESPONSIVE MENU TO 992px*/
     /* END RESPONSIVE MENU TO 992px*/
+}
+@media only screen and (min-width: 768px) {
+    .header {
+        min-height: 680px;
+    }
 }
 @media only screen and (min-width: 992px) {
     .header {
@@ -1824,6 +1830,7 @@ header, footer {
 }
 .header .center__text {
     margin-top: 100px;
+    margin-bottom: 100px;
     padding: 6px 15px;
     border-left: 10px solid #f0d91a;
     background: rgba(0, 0, 0, 0.6);
@@ -2094,23 +2101,22 @@ header, footer {
     z-index: 120;
 }
 .services__item {
-    display: block;
     position: relative;
     float: left;
     width: 100%;
-    height: 350px;
+    max-height: 470px;
     overflow: hidden;
 }
 @media only screen and (min-width: 992px) {
     .services__item {
         width: 50%;
-        height: 470px;
+        /* height: 470px; */
     }
 }
 .services__item:hover .services__img {
-    -webkit-transform: translate(-50%, -50%) scale(1.05);
-        -ms-transform: translate(-50%, -50%) scale(1.05);
-            transform: translate(-50%, -50%) scale(1.05);
+    -webkit-transform: scale(1.05);
+        -ms-transform: scale(1.05);
+            transform: scale(1.05);
 }
 .services__item:hover .services__item-title {
     color: #000;
@@ -2120,12 +2126,8 @@ header, footer {
 }
 .services__img {
     display: block;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
-    position: absolute;
+    width: 100%;
+    height: auto;
     -webkit-transition: all 0.3s linear;
          -o-transition: all 0.3s linear;
             transition: all 0.3s linear;

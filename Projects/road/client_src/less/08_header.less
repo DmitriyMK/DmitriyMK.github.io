@@ -22,10 +22,11 @@
 	position: relative;
 	overflow: hidden;
 	min-height: 680px;
+	min-height: 100vh;
 	background: url(../images/back-hero-sm.jpg) no-repeat 75% 50%;
 
 	@media @tablet {
-
+		min-height: 680px;
 	}
 	@media @desktop {
 		background: url(../images/back-hero.jpg) no-repeat center/cover;
@@ -331,6 +332,7 @@
 
 	.center__text {	
 		margin-top: 100px;
+		margin-bottom: 100px;
 		padding: 6px 15px;
 		border-left: 10px solid @yellow;
 		background: rgba(0,0,0, .6);
