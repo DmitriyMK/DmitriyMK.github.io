@@ -1997,23 +1997,14 @@ header, footer {
 }
 @media only screen and (min-width: 992px) {
     .services .flyLeft {
-        left: -220px;
-        bottom: -150px;
-        width: 285px;
-        height: 186px;
-        background: url(../images/specialCar__med.png) no-repeat center / cover;
-    }
-}
-@media only screen and (min-width: 1200px) {
-    .services .flyLeft {
-        bottom: -200px;
-        left: -450px;
-        width: 527px;
-        height: 344px;
+        left: -460px;
+        top: 30px;
+        width: 492px;
+        height: 321px;
         background: url(../images/specialCar.png) no-repeat center / cover;
     }
 }
-@media only screen and (min-width: 1600px) {
+@media only screen and (min-width: 1200px) {
     .services .flyLeft {
         left: -650px;
         top: 0;
