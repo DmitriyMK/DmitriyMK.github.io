@@ -1939,6 +1939,10 @@ header, footer {
         padding: 5px 0;
     }
 }
+#fixedTopMenu.fixed .nav__list-submenu, #fixedTopMenu.fixed .nav__list-submenu2 {
+    position: absolute;
+    top: 42px;
+}
 .services {
     overflow: hidden;
     padding-bottom: 100px;
