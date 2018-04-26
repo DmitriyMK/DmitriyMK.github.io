@@ -47,22 +47,6 @@
 		height: 70px;
 		z-index: 10;
 
-		@media @tablet {
-
-		}
-		@media @desktop {
-
-		}
-		@media @desktop-xl {
-
-		}
-		@media @desktop-xl-2 {
-
-		}
-		@media @desktop-xll {
-
-		}
-
 		&-link {
 			float: left;
 			@media @tablet {
@@ -97,9 +81,6 @@
 				font-size: 20px;
 				padding-left: 165px;
 			}
-			@media @desktop {
-
-			}
 		}
 		&-mail {
 			display: none;
@@ -114,12 +95,6 @@
 			@media @desktop-xl {
 				font-size: 20px;
 				margin-right: 70px;
-			}
-			@media @desktop-xl-2 {
-
-			}
-			@media @desktop-xll {
-
 			}
 			i {
 				margin-right: 5px;
@@ -233,6 +208,7 @@
 	&__end {
 		display: none;
 
+
 		@media @tablet {
 			display: block;
 			position: relative;
@@ -243,17 +219,24 @@
 
 		}
 		@media @desktop-xl {
-			padding-top: 50px;
+			padding-top: 30px;
 		}
 		@media @desktop-xl-2 {
 			padding-top: 120px;
 		}
 
 		i, img {
-			width: 80px;
+			width: 50px;
 			display: block;
 			margin: auto;
 			text-align: center;
+
+			@media @desktop-xl-2 {
+				width: 80px;
+			}
+			@media @desktop-xll {
+
+			}
 		}
 		img {
 			margin-bottom: 5px;

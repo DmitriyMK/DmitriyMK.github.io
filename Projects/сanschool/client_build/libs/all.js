@@ -20,6 +20,8 @@ $(document).ready(function() {
 });
 
 
+
+
 $(document).ready(function() {
 
   if (document.documentElement.clientWidth > 1200) {
@@ -35,6 +37,25 @@ $(document).ready(function() {
       scrollTop: $(d).offset().top
     }, t);
   });
+
+  /*FIXED SCROLL TO TOP*/
+
+
+  $(window).scroll(function() {
+    if ($(this).scrollTop() > 400) {
+      $('.scrollup').fadeIn();
+    } else {
+      $('.scrollup').fadeOut();
+    }
+  });
+
+  $('.scrollup').click(function() {
+    $("html, body").animate({
+      scrollTop: 0
+    }, 600);
+    return false;
+  });
+
 
 
   $("gallery").fancybox({
