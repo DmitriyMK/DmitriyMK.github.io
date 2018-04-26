@@ -30,6 +30,9 @@
 			display: flex;
 			justify-content: center;
 			flex-wrap: wrap;
+			@media @desktop-xl {
+				justify-content: space-around;
+			}
 		}
 		.container {
 			position: relative;
@@ -73,7 +76,7 @@
 				margin-left: 170px;
 			}
 			@media @desktop-xl {
-				margin-left: 380px;
+				margin-left: 350px;
 			}
 			&:before {
 				@media @desktop {
@@ -181,8 +184,8 @@
 		background: #15181f;
 		text-align: center;
 		@media @tablet {
-				text-align: inherit;
-			}
+			text-align: inherit;
+		}
 		.copyright {
 			display: inline-block;
 			vertical-align: middle;

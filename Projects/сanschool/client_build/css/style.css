@@ -1985,9 +1985,9 @@ section {
         position: absolute;
         top: -340px;
         left: 50%;
-        -webkit-transform: translateX(-48%);
-            -ms-transform: translateX(-48%);
-                transform: translateX(-48%);
+        -webkit-transform: translateX(-48.5%);
+            -ms-transform: translateX(-48.5%);
+                transform: translateX(-48.5%);
         width: 1317px;
         height: 1655px;
         background: url(../images/back__about-circle.png);
@@ -1997,19 +1997,11 @@ section {
 @media only screen and (min-width: 992px) {
     .about__box:before {
         top: -270px;
-        left: 50%;
-        -webkit-transform: translateX(-48.5%);
-            -ms-transform: translateX(-48.5%);
-                transform: translateX(-48.5%);
     }
 }
 @media only screen and (min-width: 1200px) {
     .about__box:before {
         top: -310px;
-        left: 50%;
-        -webkit-transform: translateX(-48.5%);
-            -ms-transform: translateX(-48.5%);
-                transform: translateX(-48.5%);
     }
 }
 .about__text {
@@ -2122,11 +2114,16 @@ section {
 }
 @media only screen and (min-width: 1200px) {
     .advantages:before {
-        top: 380px;
+        top: 350px;
         left: 50%;
         -webkit-transform: translateX(-49%);
             -ms-transform: translateX(-49%);
                 transform: translateX(-49%);
+    }
+}
+@media only screen and (min-width: 1600px) {
+    .advantages:before {
+        top: 380px;
     }
 }
 .advantages__title {
@@ -2545,11 +2542,15 @@ section {
 }
 @media only screen and (min-width: 1200px) {
     .step:before {
-        top: -160px;
-        left: 50%;
+        top: -180px;
         -webkit-transform: translateX(-64%);
             -ms-transform: translateX(-64%);
                 transform: translateX(-64%);
+    }
+}
+@media only screen and (min-width: 1600px) {
+    .step:before {
+        top: -150px;
     }
 }
 .step__title {
@@ -2679,7 +2680,6 @@ section {
 @media only screen and (min-width: 768px) {
     .franchise__proposal {
         max-width: inherit;
-        margin: inherit;
         font-size: 25px;
     }
 }
@@ -2933,7 +2933,12 @@ section {
 }
 .award .slick-prev {
     bottom: 0;
-    left: 10%;
+    left: 8%;
+}
+@media only screen and (min-width: 768px) {
+    .award .slick-prev {
+        bottom: -35px;
+    }
 }
 @media only screen and (min-width: 992px) {
     .award .slick-prev {
@@ -2960,6 +2965,11 @@ section {
 .award .slick-next {
     bottom: 0;
     right: 10%;
+}
+@media only screen and (min-width: 768px) {
+    .award .slick-next {
+        bottom: -35px;
+    }
 }
 @media only screen and (min-width: 992px) {
     .award .slick-next {
@@ -3002,6 +3012,12 @@ section {
     justify-content: center;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+}
+@media only screen and (min-width: 1200px) {
+    .footer .prefooter__box {
+        -ms-flex-pack: distribute;
+        justify-content: space-around;
+    }
 }
 .footer .prefooter .container {
     position: relative;
@@ -3056,7 +3072,7 @@ section {
 }
 @media only screen and (min-width: 1200px) {
     .footer .prefooter .contact {
-        margin-left: 380px;
+        margin-left: 350px;
     }
 }
 @media only screen and (min-width: 992px) {
@@ -3358,7 +3374,8 @@ label {
     margin: 15px 0 5px 0;
 }
 .formBox .attention {
-    padding-left: 50px;
+    width: 260px;
+    margin: auto;
     text-align: left;
     font-size: 12px;
     line-height: 1;
