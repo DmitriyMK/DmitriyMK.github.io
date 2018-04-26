@@ -68,6 +68,35 @@ $(document).ready(function() {
 
   });
 
+  $(".js-video-button").modalVideo({
+        youtube:{
+        autoplay: 1,
+        nocookie: true,
+        cc_load_policy: 1,
+        color: null,
+        controls: 1,
+        disablekb: 0,
+        enablejsapi: 0,
+        end: null,
+        fs: 1,
+        h1: null,
+        iv_load_policy: 1,
+        list: null,
+        listType: null,
+        loop: 0,
+        modestbranding: null,
+        origin: null,
+        playlist: null,
+        playsinline: null,
+        rel: 0,
+        showinfo: 1,
+        start: 0,
+        wmode: 'transparent',
+        theme: 'dark'
+
+    }
+});
+
 
   $('.slider').slick({
     slidesToShow: 3,
