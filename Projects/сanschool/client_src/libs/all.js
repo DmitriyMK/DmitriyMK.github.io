@@ -94,7 +94,6 @@ $(document).ready(function() {
       settings: {
         slidesToShow: 1,
         centerMode: false,
-        dots: false,
       }
     },
 
