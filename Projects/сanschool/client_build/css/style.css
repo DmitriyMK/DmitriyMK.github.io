@@ -2050,6 +2050,9 @@ section {
     text-align: center;
     outline: none!important;
 }
+.about__link span {
+    display: block;
+}
 .about__link:hover {
     cursor: pointer;
 }
@@ -2057,6 +2060,9 @@ section {
     .about__link {
         margin-top: 76px;
         font-size: 40px;
+    }
+    .about__link span {
+        display: inline-block;
     }
 }
 @media only screen and (min-width: 992px) {
