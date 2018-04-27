@@ -2712,13 +2712,16 @@ color: #1a46a8; */
     }
 }
 .overlay {
-    position: absolute;
+    position: fixed;
     width: 220px;
     background: #f4f6f6;
     height: 100vh;
     top: 0;
     right: -220px;
     overflow-y: scroll;
+    -webkit-transition: all 0.3s linear;
+         -o-transition: all 0.3s linear;
+            transition: all 0.3s linear;
 }
 @media only screen and (min-width: 992px) {
     .overlay {
