@@ -1652,6 +1652,7 @@ header, footer {
 }
 @media only screen and (min-width: 992px) {
     .header .nav .nav__list-submenu, .header .nav .nav__list-submenu2 {
+        display: inherit;
         position: absolute;
         top: 33px;
         visibility: hidden;
