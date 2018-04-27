@@ -34,11 +34,12 @@
 
 	&__top {
 		padding: 8px 0;
-		position: relative;
+		position: fixed; 
+		width: 100%;
 		z-index: 1000;
 		background: #f4f6f6;
-
-		&:before {
+		@media @desktop {
+			&:before {
 			content: '';
 			position: absolute;
 			bottom: 10px;
@@ -47,18 +48,24 @@
 			height: 0;
 			box-shadow: 4.298px 10.126px 32.2px 2.8px rgba(0, 0, 0, 0.4);
 		}
+		}
+
+		
+
+		@media @desktop {
+			position: relative;
+		}
 	}
 
 	.header__top-box {
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
-
 		@media @desktop {
-
+			
 		}
 		.box-logo {
-			order: 2;
+			order: 1;
 			@media @desktop {
 
 			}
@@ -66,21 +73,18 @@
 
 		.logo__img {
 			max-width: 130px;
-			@media @tablet {
+			@media @desktop {
 				max-width: inherit;
 			}
 		}
 
 		.nav {
-			order: 3;
+			order: 2;
 			@media @desktop {
 				order: 2;
 			}
 			&__list {
-				padding-left:  30px;
-				padding-right: 30px;
-				padding-top: 70px;
-				padding-bottom: 30px;
+				padding: 35px;
 				@media @desktop {
 					padding: 20px 0; 
 				}
@@ -221,7 +225,7 @@
 
 		.lang__box {
 
-			order: 1;
+			order: 0;
 
 			@media @desktop {
 				order: 3;
@@ -237,7 +241,7 @@
 				color: #000;
 				font-size: 14px;
 
-				@media @tablet {
+				@media @desktop {
 					margin-right: 5px;
 					padding: 6px 12px;
 					box-shadow: 2.735px 6.444px 4.6px 0.4px rgba(240, 216, 20, 0.21);
