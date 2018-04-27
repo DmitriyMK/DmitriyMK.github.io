@@ -1,6 +1,3 @@
-@media @mobile {
-
-}
 @media @tablet {
 
 }
@@ -22,7 +19,6 @@
 	position: relative;
 	overflow: hidden;
 	min-height: 680px;
-	min-height: 100vh;
 	background: url(../images/back-hero-sm.jpg) no-repeat 75% 50%;
 
 	@media @tablet {
@@ -39,7 +35,7 @@
 	&__top {
 		padding: 8px 0;
 		position: relative;
-		z-index: 1;
+		z-index: 1000;
 		background: #f4f6f6;
 
 		&:before {
@@ -58,7 +54,6 @@
 		margin-left: 50px;
 		max-width: 130px;
 		@media @tablet {
-			/* 	margin-top: 20px; */
 			max-width: inherit;
 		}
 		@media @desktop {
@@ -69,8 +64,8 @@
 
 	.nav {
 		&__list {
-			float: right;
-			padding-right: 80px;
+			padding-left:  70px;
+			padding-right: 20px;
 			padding-top: 70px;
 			@media @desktop {
 				padding: 20px 0; 
@@ -79,12 +74,26 @@
 
 		.nav__list-submenu,
 		.nav__list-submenu2 {
-			position: absolute;
-			top: 52px;
-			background: #fff;
-			visibility: hidden;
-			opacity: 0;
-			transition: all .3s linear;
+			display: none;
+			@media @tablet {
+
+			}
+			@media @desktop {
+				position: absolute;
+				top: 33px;
+				visibility: hidden;
+				opacity: 0;
+				background: #fff;
+			}
+			@media @desktop-xl {
+
+			}
+			@media @desktop-xl-2 {
+
+			}
+			@media @desktop-xll {
+
+			}
 			
 			.nav__item {
 				padding: 5px 0 5px 5px;	
@@ -96,15 +105,17 @@
 				color: #000;
 				transition: all .3s ease;
 				border-bottom: 2px solid #f4f6f6;
+
 			}
 			.nav__item-sub-first{
 				border-bottom: 1px solid #f4f6f6;
 			}
 		}
 
-		.nav__list-submenu2 {
-			/* left: 220px; */
-		}
+
+
+
+
 
 		&__item{
 			@media @desktop {
@@ -149,35 +160,64 @@
 			}
 		}
 
-		.linkForSubMenu:hover {
-			.nav__link {
-				&:after {
-					content: '';
-					position: absolute;
 
-					bottom: 0;
-					left: 0;
-					width: 100%;
-					height: 2px;
 
-					background-color: @yellow;
-					transition: transform .3s  linear;		
-					transform: scaleX(1);
-					transform-origin: bottom left; //TIP point
+		.linkForSubMenu {
+			position: relative;
+			cursor: pointer;
+			&:before {
+				content: '\e80a';
+				position: absolute;
+				right: 0;
+
+				color: #000;
+				font-size: 18px;
+				font-family: 'Fontello';
+				@media @desktop {
+					display: none;
 				}
 			}
-			.nav__list-submenu, 
-			.nav__list-submenu2 {
-				visibility: visible;
-				opacity: 1;
-			}
-			.nav__link-sub {
-				&:hover {
-					background: #f4f6f6;
-					border-bottom: 2px solid @yellow;
+
+
+			&:hover {
+				.nav__link {
+					&:after {
+						content: '';
+						position: absolute;
+
+						bottom: 0;
+						left: 0;
+						width: 100%;
+						height: 2px;
+
+						background-color: @yellow;
+						transition: transform .3s  linear;		
+						transform: scaleX(1);
+						transform-origin: bottom left; 
+					}
+				}
+				.nav__list-submenu, 
+				.nav__list-submenu2 {
+					@media @desktop {
+						visibility: visible;
+						opacity: 1;
+					}
+				}
+				.nav__link-sub {
+					&:hover {
+						background: #f4f6f6;
+						border-bottom: 2px solid @yellow;
+					}
 				}
 			}
 		}
+
+		.linkForSubMenu.active {
+			&:before {
+				content: '\e80f';
+			}
+		}
+
 	}
 
 
@@ -186,26 +226,47 @@
 
 	.overlay {
 		position: absolute;
-		width: 250px;
+		width: 300px;
 
 		background: #f4f6f6;
-		height: 110vh; 
-		top: -10px;
+		height: 100%; 
+		top: 0;
 		left: -450px;
-
-
+		overflow-y: scroll;
 
 		@media @desktop {
 			position: inherit;
 			width: inherit;
 			height: inherit;
+			background: inherit;
+			overflow-y: inherit;
 		}
 	}
+
+	.overlay::-webkit-scrollbar-track {
+		border-radius: 10px;
+		background-color: transparent;
+	}
+
+	.overlay::-webkit-scrollbar {
+		width: 6px;
+		background-color: transparent;
+	}
+
+	.overlay::-webkit-scrollbar-thumb {
+		border-radius: 10px;
+		-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+		background-color: #11569d;
+		background-color: @yellow;
+	}
+
+
+
 	.open {
 		transform: translateX(400px);
 		transition-duration: 0.5s; 
 		position: fixed;  
-		z-index: 10;
+		z-index: 100;
 		@media @desktop {
 			display: none;
 		}
@@ -216,11 +277,11 @@
 		width: 50px;
 		height: 50px;
 		transition: all 0.6s ease-in-out;
-		position: absolute;
-		z-index: 10000;
-		top: -3px;
-		left: 0;
+		position: fixed;
 		z-index: 100;
+		top: 6px;
+		left: 6px;
+		z-index: 1000;
 		background: transparent;
 		border: none;
 		outline: none;
@@ -229,7 +290,7 @@
 			cursor: pointer;
 		}
 		@media @tablet {
-			top: 10px;
+			top: 15px;
 		}
 		@media @desktop {
 			display: none;
@@ -308,7 +369,7 @@
 			transition: all .3s linear;
 			color: #000;
 			font-size: 14px;
-			
+
 			@media @tablet {
 				margin-right: 5px;
 				padding: 6px 12px;
@@ -370,7 +431,7 @@
 			font-size: 24px;
 			padding-bottom: 20px;			
 			letter-spacing: .2px;
-			
+
 			font-weight: 500;
 
 			@media @tablet {
@@ -413,57 +474,57 @@
 
 
 #fixedTopMenu.fixed{
-	padding: 5px 0;
-	position: fixed;
-	top: 0;
-	left: 0;
-	width: 100%;
 
-	background: #f4f6f6;
-	z-index: 3000;
-	animation: smoothScroll 1s forwards;
+	@media @desktop {
+		padding: 5px 0;
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
 
-	.logo__img {
-		padding-top: 0px;
-		width: 130px;
+		background: #f4f6f6;
+		z-index: 3000;
+		animation: smoothScroll 1s forwards;
 
-		@media @tablet {
-			padding-top: 5px;
+		.logo__img {
+			padding-top: 0px;
+			width: 130px;
+
+			@media @tablet {
+				padding-top: 5px;
+			}
 		}
-	}
 
-	.burger {
-		@media @tablet {
-			top: 2px;
+
+		/* HIDE SHADOW */
+		&:before {
+			display: none;
 		}
-	}
 
-	/* HIDE SHADOW */
-	&:before {
-		display: none;
-	}
-
-	.nav {
-		&__list {
-			@media @desktop {
+		.nav {
+			&__list {
 				margin-top: 5px;
 				padding: 5px 0;
 			}
 		}
+
+		
+
+		.nav__list-submenu,
+		.nav__list-submenu2 {
+			position: absolute;
+			top: 32px;
+		}
+
 	}
 
-	.lang__box {
-		@media @tablet {
+	@media @tablet {
+		.lang__box {
 			margin-top: 0;
 			padding: 5px 0;
 		}
 	} 
-
-	.nav__list-submenu,
-	.nav__list-submenu2 {
-		position: absolute;
-		top: 42px;
-	}
+	
 }
 
 
