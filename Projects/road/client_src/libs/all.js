@@ -20,6 +20,11 @@ $(document).ready(function() {
 });
 
 
+if (document.documentElement.clientWidth > 1200) {
+  $(window).enllax();
+
+};
+
 
 /*FIXED SCROLL FOR MENU*/
 $(document).ready(function() {
@@ -32,31 +37,38 @@ $(document).ready(function() {
     }
   });
 
-  if (document.documentElement.clientWidth > 1200) {
-    $(window).enllax();
-
-  };
-
 });
 
 
 $(document).ready(function() {
 
   /*RESPONSIVER BURGER MENU*/
-  $(".burger").click(function() {
+
+  var $menu = $('.menu');
+
+  $('.burger').click(function () {
     $(this).toggleClass('active');
-
-  })
-
-  $('.burger').on('click', function() {
     $('.overlay').toggleClass('open').show;
+    /*$menu.toggle();*/
   });
 
-  $(window).resize(function() {
-    if ($(window).width() > 992) {
-      $('.nav__list').removeAttr('style');
-    }
-  })
+  $(document).mouseup(function (e) {
+   if (!$menu.is(e.target) // if the target of the click isn't the container...
+   && $menu.has(e.target).length === 0) // ... nor a descendant of the container
+   {
+     /*$menu.hide();*/
+     $('.overlay').removeClass('open');
+     $(".burger").removeClass('active');
+   }
+
+   $('.burger').click(function () {
+    $(this).toggleClass('active');
+    $('.overlay').toggleClass('open').show;
+    /*$menu.toggle();*/
+  });
+
+ });
+  
 
 
 
@@ -64,15 +76,16 @@ $(document).ready(function() {
 
     $(this).toggleClass('active');
     $(".nav__list-submenu").slideToggle(300);
-    
+
   });
 
   $(".linkForSubMenu2").click(function() {
 
     $(this).toggleClass('active');
     $(".nav__list-submenu2").slideToggle(300);
-    
+
   });
+
 
 
   $('.scrolling__link').on('click', function(e) {

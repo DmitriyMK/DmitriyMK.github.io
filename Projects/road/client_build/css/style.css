@@ -1660,6 +1660,7 @@ header, footer {
     padding-left: 30px;
     padding-right: 30px;
     padding-top: 70px;
+    padding-bottom: 30px;
 }
 @media only screen and (min-width: 992px) {
     .header .header__top-box .nav__list {
@@ -1801,11 +1802,6 @@ header, footer {
     -webkit-box-ordinal-group: 2;
     -ms-flex-order: 1;
     order: 1;
-}
-@media only screen and (min-width: 768px) {
-    .header .header__top-box .lang__box {
-        padding: 6px 0;
-    }
 }
 @media only screen and (min-width: 992px) {
     .header .header__top-box .lang__box {
@@ -2701,9 +2697,9 @@ color: #1a46a8; */
 }
 /* RESPONSIVE MENU TO 992px*/
 .open {
-    -webkit-transform: translateX(-300px);
-        -ms-transform: translateX(-300px);
-            transform: translateX(-300px);
+    -webkit-transform: translateX(-220px);
+        -ms-transform: translateX(-220px);
+            transform: translateX(-220px);
     -webkit-transition-duration: 0.5s;
          -o-transition-duration: 0.5s;
             transition-duration: 0.5s;
@@ -2716,12 +2712,12 @@ color: #1a46a8; */
     }
 }
 .overlay {
-    position: fixed;
-    width: 300px;
+    position: absolute;
+    width: 220px;
     background: #f4f6f6;
-    height: 100%;
+    height: 100vh;
     top: 0;
-    right: -300px;
+    right: -220px;
     overflow-y: scroll;
 }
 @media only screen and (min-width: 992px) {
@@ -2762,11 +2758,6 @@ color: #1a46a8; */
 }
 .burger:hover {
     cursor: pointer;
-}
-@media only screen and (min-width: 768px) {
-    .burger {
-        top: 15px;
-    }
 }
 @media only screen and (min-width: 992px) {
     .burger {

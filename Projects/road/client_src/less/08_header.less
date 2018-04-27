@@ -54,6 +54,9 @@
 		align-items: center;
 		justify-content: space-between;
 
+		@media @desktop {
+
+		}
 		.box-logo {
 			order: 2;
 			@media @desktop {
@@ -77,6 +80,7 @@
 				padding-left:  30px;
 				padding-right: 30px;
 				padding-top: 70px;
+				padding-bottom: 30px;
 				@media @desktop {
 					padding: 20px 0; 
 				}
@@ -216,10 +220,9 @@
 
 
 		.lang__box {
+
 			order: 1;
-			@media @tablet {
-				padding: 6px 0; 
-			}
+
 			@media @desktop {
 				order: 3;
 				width: 180px;
@@ -252,149 +255,143 @@
 				box-shadow: none;
 				transition: all .3s linear;
 			}
-			}}
+		}
+	} 
+	
+	.center__text {	
+		margin-top: 100px;
+		margin-bottom: 100px;
+		padding: 6px 15px;
+		border-left: 10px solid @yellow;
+		background: rgba(0,0,0, .6);
 
 
-
-
-
-
-			.center__text {	
-				margin-top: 100px;
-				margin-bottom: 100px;
-				padding: 6px 15px;
-				border-left: 10px solid @yellow;
-				background: rgba(0,0,0, .6);
-
-
-				@media @tablet {
-					text-align: left;
-				}
-				@media @desktop {
-					padding: 6px 50px;
-					margin-top: 100px;
-					width: 900px;
-				}
-				@media @desktop-xl {
-
-				}
-				@media @desktop-xl-2 {
-					margin-top: 310px;
-				}
-
-
-				&-main {
-					font-size: 26px;
-					font-weight: 700;
-
-					@media @desktop {
-						font-size: 30px;
-					}
-					@media @desktop-xl {
-						font-size: 42px;
-						line-height: 1.1;
-					}
-				}
-				&-desc {
-					font-size: 24px;
-					padding-bottom: 20px;			
-					letter-spacing: .2px;
-
-					font-weight: 500;
-
-					@media @tablet {
-
-					}
-					@media @desktop {
-						font-size: 28px;
-					}
-					@media @desktop-xl {
-						font-size: 28px;
-						line-height: 1.1;
-					}
-					@media @desktop-xl-2 {
-
-					}
-					@media @desktop-xll {
-
-					}
-				}
-			}
-
-
-			.arrow__btn {
-				display: none;
-				@media @desktop {
-					display: block;
-					position: absolute;
-					bottom: 50px;
-					left: 50%;
-					transform: translateX(-50%);
-					animation: arrow-bounce 5s infinite;
-					&:hover {
-						animation-play-state: paused;
-					}
-				}
-			}
-
-		} 
-
-
-
-		#fixedTopMenu.fixed{
-
-			@media @desktop {
-				padding: 5px 0;
-				position: fixed;
-				top: 0;
-				left: 0;
-				width: 100%;
-
-				background: #f4f6f6;
-				z-index: 3000;
-				animation: smoothScroll 1s forwards;
-
-				.logo__img {
-					padding-top: 0px;
-					width: 130px;
-
-					@media @tablet {
-						padding-top: 5px;
-					}
-				}
-
-
-				/* HIDE SHADOW */
-				&:before {
-					display: none;
-				}
-
-				.nav {
-					&__list {
-						margin-top: 5px;
-						padding: 5px 0;
-					}
-				}
-
-
-
-				.nav__list-submenu,
-				.nav__list-submenu2 {
-					position: absolute;
-					top: 32px;
-				}
-
-			}
-
-			@media @tablet {
-				.lang__box {
-					margin-top: 0;
-					padding: 5px 0;
-				}
-			} 
-
+		@media @tablet {
+			text-align: left;
+		}
+		@media @desktop {
+			padding: 6px 50px;
+			margin-top: 100px;
+			width: 900px;
+		}
+		@media @desktop-xl {
 
 		}
+		@media @desktop-xl-2 {
+			margin-top: 310px;
+		}
+
+
+		&-main {
+			font-size: 26px;
+			font-weight: 700;
+
+			@media @desktop {
+				font-size: 30px;
+			}
+			@media @desktop-xl {
+				font-size: 42px;
+				line-height: 1.1;
+			}
+		}
+		&-desc {
+			font-size: 24px;
+			padding-bottom: 20px;			
+			letter-spacing: .2px;
+
+			font-weight: 500;
+
+			@media @tablet {
+
+			}
+			@media @desktop {
+				font-size: 28px;
+			}
+			@media @desktop-xl {
+				font-size: 28px;
+				line-height: 1.1;
+			}
+			@media @desktop-xl-2 {
+
+			}
+			@media @desktop-xll {
+
+			}
+		}
+	}
+
+
+	.arrow__btn {
+		display: none;
+		@media @desktop {
+			display: block;
+			position: absolute;
+			bottom: 50px;
+			left: 50%;
+			transform: translateX(-50%);
+			animation: arrow-bounce 5s infinite;
+			&:hover {
+				animation-play-state: paused;
+			}
+		}
+	}
+}
+
+
+#fixedTopMenu.fixed{
+
+	@media @desktop {
+		padding: 5px 0;
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+
+		background: #f4f6f6;
+		z-index: 3000;
+		animation: smoothScroll 1s forwards;
+
+		.logo__img {
+			padding-top: 0px;
+			width: 130px;
+
+			@media @tablet {
+				padding-top: 5px;
+			}
+		}
+
+
+		/* HIDE SHADOW */
+		&:before {
+			display: none;
+		}
+
+		.nav {
+			&__list {
+				margin-top: 5px;
+				padding: 5px 0;
+			}
+		}
+
+
+
+		.nav__list-submenu,
+		.nav__list-submenu2 {
+			position: absolute;
+			top: 32px;
+		}
+
+	}
+
+	@media @tablet {
+		.lang__box {
+			margin-top: 0;
+			padding: 5px 0;
+		}
+	} 
+
+
+}
 
 
 
