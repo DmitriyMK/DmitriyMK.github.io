@@ -70,10 +70,10 @@
 
 	.flyLeft {
 		position: absolute;
-		left: 20px;
-		top: -58px;
-		width: 150px;
-		height: 98px;
+		left: 0px;
+		top: -65px;
+		width: 180px;
+		height: 117px;
 		background: url(../images/specialCar__sm.png)no-repeat center/cover;
 		z-index: 10;
 
@@ -213,13 +213,14 @@
 
 	&__img{
 		display: block;
-width: 100%;
-    height: auto;
+		width: 100%;
+		height: auto;
 
 		transition: all .3s linear;
 	}
 
 	&__item-title {
+		margin: 0;
 		display: block;
 		position: absolute;
 		top: 0;
@@ -227,7 +228,7 @@ width: 100%;
 		transform: translateX(50%);
 		width: 100%;
 		padding: 5px 20px;
-		font-size: 30px;
+		font-size: 24px;
 		font-weight: 700;
 		color: #fff;
 		background-color: rgba(0, 0, 0, .6);
@@ -236,6 +237,7 @@ width: 100%;
 		text-align: center;
 
 		@media @tablet {
+			margin: 36px 0;
 			font-size: 36px;
 		}
 
