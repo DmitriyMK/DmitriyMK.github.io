@@ -25,9 +25,9 @@ $(document).ready(function() {
 $(document).ready(function() {
 
   $(window).scroll(function() {
-    if ($(this).scrollTop() > 760) {
+    if ($(this).scrollTop() > 30) {
       $('#fixedTopMenu').addClass('fixed');
-    } else if ($(this).scrollTop() < 760) {
+    } else if ($(this).scrollTop() < 30) {
       $('#fixedTopMenu').removeClass('fixed');
     }
   });

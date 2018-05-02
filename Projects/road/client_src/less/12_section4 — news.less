@@ -19,7 +19,7 @@
 
 .header__news {
 	min-height: auto;
-	
+	height: auto;
 	background: #fff;
 	overflow: visible;
 
@@ -30,14 +30,20 @@
 }
 
 .news {
-	background: url(../images/road__news.png)no-repeat center/cover;
+	background: url(../images/road__news.png)no-repeat bottom;
 	color: #000;
 	&__title {
-		text-align: left;
-		&:before {
-			left: 0;
-			transform: none;
+		padding-top: 80px;
+
+		@media @desktop {
+			padding-top: 40px;
+			text-align: left;
+			&:before {
+				left: 0;
+				transform: none;
+			}
 		}
+		
 	}
 
 	&__box {
@@ -45,28 +51,39 @@
 	}
 
 	.post {
+		width: 300px;
+		margin: auto;
 		margin-bottom: 30px;
 		background: #fff;
 		box-shadow: 17.732px 19.015px 26.19px 0.81px rgba(171, 171, 171, 0.25);
 		overflow: hidden;
+		transition: box-shadow .3s linear;
+		&:hover {
+			box-shadow: 17.732px 19.015px 26.19px 0.81px rgba(171, 171, 171, 0);
+		}
+		@media @tablet {
+			width: inherit;
+		}
 
 		.img__wrap {
 			display: block;
+			max-height: 245px;
 		}
 		&__img {
 			display: block;
-			margin: auto;
 			max-width: 100%;
-			height: auto;
 		}
 		&__wrap {
-			padding: 10px 30px;
+			padding: 10px 25px;
 
 		}
 		&__title {
 			margin: 5px 0;
-			font-size: 24px;
+			font-size: 21px;
 			font-weight: 700;
+			@media @desktop {
+				font-size: 24px;
+			}
 		}
 		&__time {
 			font-size: 18px;
@@ -87,10 +104,10 @@
 		&__text {
 			margin: 0;
 		}
-	
+
 		&__btn {
 			display: block;
-			margin-top: 5px;
+			margin: 15px 0;
 			padding: 5px 15px;
 			width: 156px;
 			height: 28px;
@@ -107,3 +124,125 @@
 	}
 }
 
+.newsInfo {
+	background: url(../images/road-post.png)no-repeat bottom;
+}
+
+.postInfo {
+	max-width: 1130px;
+	margin: auto;
+	position: relative;
+	&:before {	
+		@media @tablet {
+			content: '';
+			position: absolute;
+			right: 30px;
+			bottom: -30px;
+			width: 100%;
+			height: 100%;
+			border: 8px solid @yellow;
+			z-index: 1;
+		}
+		@media @desktop {
+			right: 40px;
+			bottom: -40px;
+		}
+	}
+	.wrap {
+		position: relative;
+		margin-top: 40px;
+		margin-bottom: 100px;
+		padding: 30px 15px;
+		z-index: 10;
+		background: #fff;
+		box-shadow: 7.625px 11.741px 29.2px 10.8px rgba(65, 77, 86, 0.09);
+
+		@media @tablet {
+			margin-top: 60px;
+		}
+		@media @desktop {
+			padding: 40px;
+		}
+		@media @desktop-xl {
+			padding: 55px 100px;
+		}
+		@media @desktop-xl-2 {
+
+		}
+	}
+
+
+	&__title {
+		margin: 10px 0;
+		font-size: 22px;
+
+		@media @tablet {
+
+		}
+		@media @desktop {
+			font-size: 28px;
+		}
+	}
+	&__subtitle {
+		margin-bottom: 1em;
+		font-size: 20px;
+		font-weight: 700;
+	}
+	time {
+		font-weight: 400;
+	}
+	&__img {
+		display: block;
+		margin: auto;
+		margin-bottom: 40px;
+		width: 100%;
+	}
+
+	&__text {
+		font-size: 20px;
+	}
+
+	.hare {
+		padding-top: 10px;
+		font-weight: 700;
+	}
+
+	.icon {
+		font-size: 36px;
+		opacity: .4;
+		transition: opacity .3s linear;
+		&:hover, &:focus {
+			opacity: 1;
+		}
+	}
+}
+
+
+.pagination {
+	margin-bottom: 40px;
+	text-align: center;
+	@media @desktop {
+		text-align: left;
+	}
+	.page-numbers {
+		position: relative;
+		display: inline-block;
+		width: 45px;
+		height: 36px;
+		font-size: 18px;
+		line-height: 36px;
+		text-align: center;
+		box-shadow: 4.774px 5.119px 15.52px 0.48px rgba(171, 171, 171, 0.39);
+		transition: all .3s linear;
+		z-index: 1;
+		&:hover, &:focus {
+			box-shadow: 4.774px 5.119px 15.52px 0.48px rgba(171, 171, 171, 0);
+		}
+		@media @desktop {
+			width: 71px;
+			height: 44px;
+			font-size: 20px;
+			line-height: 44px;
+		}
+	}
+}
