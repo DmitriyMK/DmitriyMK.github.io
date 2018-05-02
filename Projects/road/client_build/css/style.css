@@ -127,6 +127,22 @@
     content: '\f167';
 }
 /* '' */
+.icon-twitter:before {
+    content: '\f309';
+}
+/* '' */
+.icon-twitter-circled:before {
+    content: '\f30a';
+}
+/* '' */
+.icon-gplus:before {
+    content: '\f30f';
+}
+/* '' */
+.icon-gplus-circled:before {
+    content: '\f310';
+}
+/* '' */
 /* .placeholder(@ff: @ff; @fs: @fs; @fw: 400; @color: @text-color) {
 	input::-webkit-input-placeholder, textarea::-webkit-input-placeholder      {
 		font-family: @ff2;
@@ -1616,7 +1632,7 @@ header, footer {
         content: '';
         position: absolute;
         bottom: 10px;
-        left: 0;
+        left: -4px;
         width: 100%;
         height: 0;
         -webkit-box-shadow: 4.298px 10.126px 32.2px 2.8px rgba(0, 0, 0, 0.4);
@@ -1746,6 +1762,19 @@ header, footer {
             transition: all 0.5s;
 }
 .header .header__top-box .nav__link:hover:after, .header .header__top-box .nav__link:focus:after {
+    -webkit-transform-origin: bottom left;
+        -ms-transform-origin: bottom left;
+            transform-origin: bottom left;
+    -webkit-transform: scaleX(1);
+        -ms-transform: scaleX(1);
+            transform: scaleX(1);
+}
+.header .header__top-box .nav .link-active {
+    -webkit-transition: all 0.5s;
+         -o-transition: all 0.5s;
+            transition: all 0.5s;
+}
+.header .header__top-box .nav .link-active:after {
     -webkit-transform-origin: bottom left;
         -ms-transform-origin: bottom left;
             transform-origin: bottom left;
@@ -1998,8 +2027,8 @@ header, footer {
     left: 0;
     width: 100%;
     height: 0;
-    -webkit-box-shadow: 4.298px 10.126px 32.2px 2.8px rgba(0, 0, 0, 0.4);
-            box-shadow: 4.298px 10.126px 32.2px 2.8px rgba(0, 0, 0, 0.4);
+    -webkit-box-shadow: 4.3px 10.1px 32.2px 2.8px rgba(0, 0, 0, 0.22);
+            box-shadow: 4.3px 10.1px 32.2px 2.8px rgba(0, 0, 0, 0.22);
 }
 .services .flyLeft {
     position: absolute;
@@ -2366,6 +2395,93 @@ header, footer {
 }
 .slick-current .partners-img:after {
     opacity: 1;
+}
+.header__news {
+    min-height: auto;
+    background: #fff;
+    overflow: visible;
+}
+.header__news .header__top {
+    background: #fff;
+}
+.news {
+    background: url(../images/road__news.png) no-repeat center / cover;
+    color: #000;
+}
+.news__title {
+    text-align: left;
+}
+.news__title:before {
+    left: 0;
+    -webkit-transform: none;
+        -ms-transform: none;
+            transform: none;
+}
+.news__box {
+    padding: 30px 0;
+}
+.news .post {
+    margin-bottom: 30px;
+    background: #fff;
+    -webkit-box-shadow: 17.732px 19.015px 26.19px 0.81px rgba(171, 171, 171, 0.25);
+            box-shadow: 17.732px 19.015px 26.19px 0.81px rgba(171, 171, 171, 0.25);
+    overflow: hidden;
+}
+.news .post .img__wrap {
+    display: block;
+}
+.news .post__img {
+    display: block;
+    margin: auto;
+    max-width: 100%;
+    height: auto;
+}
+.news .post__wrap {
+    padding: 10px 30px;
+}
+.news .post__title {
+    margin: 5px 0;
+    font-size: 24px;
+    font-weight: 700;
+}
+.news .post__time {
+    font-size: 18px;
+}
+.news .post__content {
+    margin-top: 20px;
+    position: relative;
+}
+.news .post__content:before {
+    content: '';
+    position: absolute;
+    top: -8px;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background-color: #f0d91a;
+}
+.news .post__text {
+    margin: 0;
+}
+.news .post__btn {
+    display: block;
+    margin-top: 5px;
+    padding: 5px 15px;
+    width: 156px;
+    height: 28px;
+    border-radius: 6px;
+    background-color: #f0d91a;
+    -webkit-box-shadow: 1.172px 2.762px 4.6px 0.4px rgba(240, 216, 20, 0.21);
+            box-shadow: 1.172px 2.762px 4.6px 0.4px rgba(240, 216, 20, 0.21);
+    text-align: center;
+    -webkit-transition: all 0.3s linear;
+         -o-transition: all 0.3s linear;
+            transition: all 0.3s linear;
+}
+.news .post__btn:hover {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    background-color: #fab900;
 }
 .footer {
     padding: 70px 0 100px 0;

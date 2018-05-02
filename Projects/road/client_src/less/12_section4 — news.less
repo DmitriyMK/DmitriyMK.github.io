@@ -1,0 +1,109 @@
+@media @mobile {
+
+}
+@media @tablet {
+
+}
+@media @desktop {
+
+}
+@media @desktop-xl {
+	
+}
+@media @desktop-xl-2 {
+
+}
+@media @desktop-xll {
+	
+}
+
+.header__news {
+	min-height: auto;
+	
+	background: #fff;
+	overflow: visible;
+
+	.header__top {
+		background: #fff;
+	}
+
+}
+
+.news {
+	background: url(../images/road__news.png)no-repeat center/cover;
+	color: #000;
+	&__title {
+		text-align: left;
+		&:before {
+			left: 0;
+			transform: none;
+		}
+	}
+
+	&__box {
+		padding: 30px 0;
+	}
+
+	.post {
+		margin-bottom: 30px;
+		background: #fff;
+		box-shadow: 17.732px 19.015px 26.19px 0.81px rgba(171, 171, 171, 0.25);
+		overflow: hidden;
+
+		.img__wrap {
+			display: block;
+		}
+		&__img {
+			display: block;
+			margin: auto;
+			max-width: 100%;
+			height: auto;
+		}
+		&__wrap {
+			padding: 10px 30px;
+
+		}
+		&__title {
+			margin: 5px 0;
+			font-size: 24px;
+			font-weight: 700;
+		}
+		&__time {
+			font-size: 18px;
+		}
+		&__content {
+			margin-top: 20px;
+			position: relative;
+			&:before {
+				content: '';
+				position: absolute;
+				top: -8px;
+				left : 0;
+				height: 2px;
+				width: 100%;
+				background-color: @yellow;
+			}
+		}
+		&__text {
+			margin: 0;
+		}
+	
+		&__btn {
+			display: block;
+			margin-top: 5px;
+			padding: 5px 15px;
+			width: 156px;
+			height: 28px;
+			border-radius: 6px;
+			background-color: @yellow;
+			box-shadow: 1.172px 2.762px 4.6px 0.4px rgba(240, 216, 20, 0.21);	
+			text-align: center;
+			transition: all .3s linear;
+			&:hover {
+				box-shadow: none;
+				background-color: #fab900;
+			}
+		}
+	}
+}
+

@@ -40,14 +40,14 @@
 		background: #f4f6f6;
 		@media @desktop {
 			&:before {
-			content: '';
-			position: absolute;
-			bottom: 10px;
-			left: 0;
-			width: 100%;
-			height: 0;
-			box-shadow: 4.298px 10.126px 32.2px 2.8px rgba(0, 0, 0, 0.4);
-		}
+				content: '';
+				position: absolute;
+				bottom: 10px;
+				left: -4px;
+				width: 100%;
+				height: 0;
+				box-shadow: 4.298px 10.126px 32.2px 2.8px rgba(0, 0, 0, 0.4);
+			}
 		}
 
 		
@@ -162,6 +162,15 @@
 						transform-origin: bottom left;
 						transform: scaleX(1);
 					}
+				}
+			}
+			.link-active {
+				transition: all .5s;
+				&:after{
+					-webkit-transform-origin: bottom left; 
+					-ms-transform-origin: bottom left;
+					transform-origin: bottom left;
+					transform: scaleX(1);
 				}
 			}
 
