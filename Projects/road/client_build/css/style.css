@@ -2525,6 +2525,7 @@ header, footer {
 }
 .newsInfo {
     background: url(../images/road-post.png) no-repeat bottom;
+    background-attachment: fixed;
 }
 .postInfo {
     max-width: 1130px;
