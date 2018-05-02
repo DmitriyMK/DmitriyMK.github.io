@@ -1615,6 +1615,8 @@ header, footer {
     overflow: hidden;
     min-height: 680px;
     background: url(../images/back-hero-sm.jpg) no-repeat 75% 50%;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
 }
 @media only screen and (min-width: 768px) {
     .header {
@@ -1975,10 +1977,13 @@ header, footer {
         top: 0;
         left: 0;
         width: 100%;
-        background: #f4f6f6;
+        background: #fff;
         z-index: 3000;
         -webkit-animation: smoothScroll 1s forwards;
                 animation: smoothScroll 1s forwards;
+        -webkit-transition-duration: 1s;
+             -o-transition-duration: 1s;
+                transition-duration: 1s;
         /* HIDE SHADOW */
     }
     #fixedTopMenu.fixed .logo__img {

@@ -30,12 +30,12 @@ if (document.documentElement.clientWidth > 1200) {
 $(document).ready(function() {
 
   $(window).scroll(function() {
-    if ($(this).scrollTop() > 760) {
-      $('#fixedTopMenu').addClass('fixed');
-    } else if ($(this).scrollTop() < 760) {
-      $('#fixedTopMenu').removeClass('fixed');
-    }
-  });
+     if ($(this).scrollTop() > 760) {
+       $('#fixedTopMenu').addClass('fixed');
+     } else if ($(this).scrollTop() < 760) {
+       $('#fixedTopMenu').removeClass('fixed');
+     }
+   });
 
 });
 
@@ -46,29 +46,29 @@ $(document).ready(function() {
 
   var $menu = $('.menu');
 
-  $('.burger').click(function () {
+  $('.burger').click(function() {
     $(this).toggleClass('active');
     $('.overlay').toggleClass('open').show;
     /*$menu.toggle();*/
   });
 
-  $(document).mouseup(function (e) {
-   if (!$menu.is(e.target) // if the target of the click isn't the container...
-   && $menu.has(e.target).length === 0) // ... nor a descendant of the container
-   {
-     /*$menu.hide();*/
-     $('.overlay').removeClass('open');
-     $(".burger").removeClass('active');
-   }
+  $(document).mouseup(function(e) {
+    if (!$menu.is(e.target) // if the target of the click isn't the container...
+      &&
+      $menu.has(e.target).length === 0) // ... nor a descendant of the container
+    {
+      /*$menu.hide();*/
+      $('.overlay').removeClass('open');
+      $(".burger").removeClass('active');
+    }
 
-   $('.burger').click(function () {
-    $(this).toggleClass('active');
-    $('.overlay').toggleClass('open').show;
-    /*$menu.toggle();*/
+    $('.burger').click(function() {
+      $(this).toggleClass('active');
+      $('.overlay').toggleClass('open').show;
+      /*$menu.toggle();*/
+    });
+
   });
-
- });
-  
 
 
 
@@ -119,26 +119,26 @@ $(document).ready(function() {
 
     responsive: [
 
-    {
-      breakpoint: 1024,
-      settings: {
-        slidesToShow: 3,
-      }
-    },
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+        }
+      },
 
-    {
-      breakpoint: 700,
-      settings: {
-        slidesToShow: 2,
-      }
-    },
+      {
+        breakpoint: 700,
+        settings: {
+          slidesToShow: 2,
+        }
+      },
 
-    {
-      breakpoint: 500,
-      settings: {
-        slidesToShow: 1,
+      {
+        breakpoint: 500,
+        settings: {
+          slidesToShow: 1,
+        }
       }
-    }
 
     ]
   });

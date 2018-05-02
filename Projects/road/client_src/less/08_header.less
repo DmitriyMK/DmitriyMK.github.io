@@ -20,6 +20,7 @@
 	overflow: hidden;
 	min-height: 680px;
 	background: url(../images/back-hero-sm.jpg) no-repeat 75% 50%;
+	animation-duration: 1s;
 
 	@media @tablet {
 		min-height: 680px;
@@ -354,10 +355,12 @@
 		left: 0;
 		width: 100%;
 
-		background: #f4f6f6;
+		background: #fff;
 		z-index: 3000;
 		animation: smoothScroll 1s forwards;
+		transition-duration: 1s;
 
+		
 		.logo__img {
 			padding-top: 0px;
 			width: 130px;
@@ -396,9 +399,5 @@
 			padding: 5px 0;
 		}
 	} 
-
-
 }
-
-
 
