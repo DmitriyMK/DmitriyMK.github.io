@@ -27,19 +27,19 @@ var scrolled = false;
 
 $(window).scroll(function () {
 
-  if (450< $(window).scrollTop() && !scrolled) {
+  if (750< $(window).scrollTop() && !scrolled) {
     nav.addClass('fixed').animate({ top: '0px' });
     scrolled = true;
   }
 
 
-  if (450 > $(window).scrollTop() && scrolled) {
+  if (750 > $(window).scrollTop() && scrolled) {
        //animates it out of view
        nav.animate({ top: '0px' });  
        //sets it back to default style
        setTimeout(function(){
          nav.removeClass('fixed');
-       },100);
+       },600);
        scrolled = false;      
      }
    });

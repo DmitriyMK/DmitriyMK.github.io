@@ -1978,8 +1978,8 @@ header, footer {
         top: 0;
         left: 0;
         width: 100%;
-        -webkit-animation: smoothScroll 0.3s linear;
-                animation: smoothScroll 0.3s linear;
+        -webkit-animation: smoothScroll 0.2s linear;
+                animation: smoothScroll 0.2s linear;
         background: #fff;
         z-index: 3000;
         /* HIDE SHADOW */
