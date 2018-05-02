@@ -22,18 +22,27 @@ $(document).ready(function() {
 
 
 /*FIXED SCROLL FOR MENU*/
-$(document).ready(function() {
+var nav = $('#fixedTopMenu');
+var scrolled = false;
 
-  $(window).scroll(function() {
-    if ($(this).scrollTop() > 30) {
-      $('#fixedTopMenu').addClass('fixed');
-    } else if ($(this).scrollTop() < 30) {
-      $('#fixedTopMenu').removeClass('fixed');
-    }
-  });
+$(window).scroll(function () {
 
-});
+  if (250< $(window).scrollTop() && !scrolled) {
+    nav.addClass('fixed').animate({ top: '0px' });
+    scrolled = true;
+  }
 
+
+  if (250 > $(window).scrollTop() && scrolled) {
+       //animates it out of view
+       nav.animate({ top: '0px' });  
+       //sets it back to default style
+       setTimeout(function(){
+         nav.removeClass('fixed');
+       },100);
+       scrolled = false;      
+     }
+   });
 
 $(document).ready(function() {
 

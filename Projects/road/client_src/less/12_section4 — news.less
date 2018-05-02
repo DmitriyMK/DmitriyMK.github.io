@@ -32,6 +32,7 @@
 .news {
 	background: url(../images/road__news.png)no-repeat bottom;
 	color: #000;
+	background-attachment: fixed; 
 	&__title {
 		padding-top: 80px;
 
@@ -57,10 +58,7 @@
 		background: #fff;
 		box-shadow: 17.732px 19.015px 26.19px 0.81px rgba(171, 171, 171, 0.25);
 		overflow: hidden;
-		transition: box-shadow .3s linear;
-		&:hover {
-			box-shadow: 17.732px 19.015px 26.19px 0.81px rgba(171, 171, 171, 0);
-		}
+
 		@media @tablet {
 			width: inherit;
 		}
@@ -126,6 +124,7 @@
 
 .newsInfo {
 	background: url(../images/road-post.png)no-repeat bottom;
+
 }
 
 .postInfo {
@@ -233,10 +232,10 @@
 		line-height: 36px;
 		text-align: center;
 		box-shadow: 4.774px 5.119px 15.52px 0.48px rgba(171, 171, 171, 0.39);
-		transition: all .3s linear;
+		transition: background-color .3s linear;
 		z-index: 1;
 		&:hover, &:focus {
-			box-shadow: 4.774px 5.119px 15.52px 0.48px rgba(171, 171, 171, 0);
+			background-color: @yellow;
 		}
 		@media @desktop {
 			width: 71px;

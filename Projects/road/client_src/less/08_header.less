@@ -20,7 +20,6 @@
 	overflow: hidden;
 	min-height: 680px;
 	background: url(../images/back-hero-sm.jpg) no-repeat 75% 50%;
-	animation-duration: 1s;
 
 	@media @tablet {
 		min-height: 680px;
@@ -39,7 +38,9 @@
 		width: 100%;
 		z-index: 1000;
 		background: #f4f6f6;
+
 		@media @desktop {
+			
 			&:before {
 				content: '';
 				position: absolute;
@@ -74,6 +75,7 @@
 
 		.logo__img {
 			max-width: 130px;
+			transition: all .3s linear;
 			@media @desktop {
 				max-width: inherit;
 			}
@@ -354,17 +356,16 @@
 		top: 0;
 		left: 0;
 		width: 100%;
-
+		animation: smoothScroll .3s linear;
 		background: #fff;
 		z-index: 3000;
-		animation: smoothScroll 1s forwards;
-		transition-duration: 1s;
+		
 
 		
 		.logo__img {
 			padding-top: 0px;
 			width: 130px;
-
+			transition: all .3s linear;
 			@media @tablet {
 				padding-top: 5px;
 			}
@@ -380,6 +381,7 @@
 			&__list {
 				margin-top: 5px;
 				padding: 5px 0;
+				transition: all .3s linear;
 			}
 		}
 
@@ -400,4 +402,3 @@
 		}
 	} 
 }
-
