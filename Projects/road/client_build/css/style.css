@@ -1615,8 +1615,6 @@ header, footer {
     overflow: hidden;
     min-height: 680px;
     background: url(../images/back-hero-sm.jpg) no-repeat 75% 50%;
-    -webkit-animation-duration: 1s;
-            animation-duration: 1s;
 }
 @media only screen and (min-width: 768px) {
     .header {
@@ -1676,6 +1674,9 @@ header, footer {
 }
 .header .header__top-box .logo__img {
     max-width: 130px;
+    -webkit-transition: all 0.3s linear;
+         -o-transition: all 0.3s linear;
+            transition: all 0.3s linear;
 }
 @media only screen and (min-width: 992px) {
     .header .header__top-box .logo__img {
@@ -1977,18 +1978,18 @@ header, footer {
         top: 0;
         left: 0;
         width: 100%;
+        -webkit-animation: smoothScroll 0.2s linear;
+                animation: smoothScroll 0.2s linear;
         background: #fff;
         z-index: 3000;
-        -webkit-animation: smoothScroll 1s forwards;
-                animation: smoothScroll 1s forwards;
-        -webkit-transition-duration: 1s;
-             -o-transition-duration: 1s;
-                transition-duration: 1s;
         /* HIDE SHADOW */
     }
     #fixedTopMenu.fixed .logo__img {
         padding-top: 0;
         width: 130px;
+        -webkit-transition: all 0.3s linear;
+             -o-transition: all 0.3s linear;
+                transition: all 0.3s linear;
     }
     #fixedTopMenu.fixed:before {
         display: none;
@@ -1996,6 +1997,9 @@ header, footer {
     #fixedTopMenu.fixed .nav__list {
         margin-top: 5px;
         padding: 5px 0;
+        -webkit-transition: all 0.3s linear;
+             -o-transition: all 0.3s linear;
+                transition: all 0.3s linear;
     }
     #fixedTopMenu.fixed .nav__list-submenu, #fixedTopMenu.fixed .nav__list-submenu2 {
         position: absolute;
@@ -2425,6 +2429,7 @@ header, footer {
 .news {
     background: url(../images/road__news.png) no-repeat bottom;
     color: #000;
+    background-attachment: fixed;
 }
 .news__title {
     padding-top: 80px;
@@ -2452,15 +2457,6 @@ header, footer {
     -webkit-box-shadow: 17.732px 19.015px 26.19px 0.81px rgba(171, 171, 171, 0.25);
             box-shadow: 17.732px 19.015px 26.19px 0.81px rgba(171, 171, 171, 0.25);
     overflow: hidden;
-    -webkit-transition: -webkit-box-shadow 0.3s linear;
-            transition: -webkit-box-shadow 0.3s linear;
-         -o-transition:         box-shadow 0.3s linear;
-            transition:         box-shadow 0.3s linear;
-            transition:         box-shadow 0.3s linear, -webkit-box-shadow 0.3s linear;
-}
-.news .post:hover {
-    -webkit-box-shadow: 17.732px 19.015px 26.19px 0.81px rgba(171, 171, 171, 0);
-            box-shadow: 17.732px 19.015px 26.19px 0.81px rgba(171, 171, 171, 0);
 }
 @media only screen and (min-width: 768px) {
     .news .post {
@@ -2529,6 +2525,7 @@ header, footer {
 }
 .newsInfo {
     background: url(../images/road-post.png) no-repeat bottom;
+    background-attachment: fixed;
 }
 .postInfo {
     max-width: 1130px;
@@ -2637,14 +2634,13 @@ header, footer {
     text-align: center;
     -webkit-box-shadow: 4.774px 5.119px 15.52px 0.48px rgba(171, 171, 171, 0.39);
             box-shadow: 4.774px 5.119px 15.52px 0.48px rgba(171, 171, 171, 0.39);
-    -webkit-transition: all 0.3s linear;
-         -o-transition: all 0.3s linear;
-            transition: all 0.3s linear;
+    -webkit-transition: background-color 0.3s linear;
+         -o-transition: background-color 0.3s linear;
+            transition: background-color 0.3s linear;
     z-index: 1;
 }
 .pagination .page-numbers:hover, .pagination .page-numbers:focus {
-    -webkit-box-shadow: 4.774px 5.119px 15.52px 0.48px rgba(171, 171, 171, 0);
-            box-shadow: 4.774px 5.119px 15.52px 0.48px rgba(171, 171, 171, 0);
+    background-color: #f0d91a;
 }
 @media only screen and (min-width: 992px) {
     .pagination .page-numbers {
@@ -2924,9 +2920,13 @@ label {
         -webkit-transform: translateY(-40px);
                 transform: translateY(-40px);
     }
+    50% {
+        -webkit-transform: translateY(-20px);
+                transform: translateY(-20px);
+    }
     100% {
-        -webkit-transform: translateY(0px);
-                transform: translateY(0px);
+        -webkit-transform: translateY(0);
+                transform: translateY(0);
     }
 }
 @keyframes smoothScroll {
@@ -2934,9 +2934,13 @@ label {
         -webkit-transform: translateY(-40px);
                 transform: translateY(-40px);
     }
+    50% {
+        -webkit-transform: translateY(-20px);
+                transform: translateY(-20px);
+    }
     100% {
-        -webkit-transform: translateY(0px);
-                transform: translateY(0px);
+        -webkit-transform: translateY(0);
+                transform: translateY(0);
     }
 }
 .slick-prev, .slick-next {

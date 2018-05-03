@@ -27,17 +27,40 @@ if (document.documentElement.clientWidth > 1200) {
 
 
 /*FIXED SCROLL FOR MENU*/
-$(document).ready(function() {
 
-  $(window).scroll(function() {
-     if ($(this).scrollTop() > 760) {
-       $('#fixedTopMenu').addClass('fixed');
-     } else if ($(this).scrollTop() < 760) {
-       $('#fixedTopMenu').removeClass('fixed');
+/*$(window).scroll(function() {
+  if ($(this).scrollTop() > 760) {
+    $('#fixedTopMenu').addClass('fixed');
+  } else {
+    $('#fixedTopMenu').removeClass('fixed');
+  }
+});*/
+
+
+
+var nav = $('#fixedTopMenu');
+var scrolled = false;
+
+$(window).scroll(function () {
+
+  if (760 < $(window).scrollTop() && !scrolled) {
+    nav.addClass('fixed').animate({ top: '0px' });
+    scrolled = true;
+  }
+
+
+  if (760 > $(window).scrollTop() && scrolled) {
+       //animates it out of view
+       nav.animate({ top: '0px' });  
+       //sets it back to default style
+       setTimeout(function(){
+         nav.removeClass('fixed');
+       },300);
+       scrolled = false;      
      }
    });
 
-});
+
 
 
 $(document).ready(function() {
@@ -119,26 +142,26 @@ $(document).ready(function() {
 
     responsive: [
 
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 3,
-        }
-      },
-
-      {
-        breakpoint: 700,
-        settings: {
-          slidesToShow: 2,
-        }
-      },
-
-      {
-        breakpoint: 500,
-        settings: {
-          slidesToShow: 1,
-        }
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3,
       }
+    },
+
+    {
+      breakpoint: 700,
+      settings: {
+        slidesToShow: 2,
+      }
+    },
+
+    {
+      breakpoint: 500,
+      settings: {
+        slidesToShow: 1,
+      }
+    }
 
     ]
   });
