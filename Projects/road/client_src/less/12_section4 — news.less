@@ -30,14 +30,14 @@
 }
 
 .news {
-	background: url(../images/road__news.png)no-repeat bottom;
+	background: url(../images/road-2.png)no-repeat bottom;
 	color: #000;
 	background-attachment: fixed; 
 	&__title {
-		padding-top: 80px;
+		padding-top: 60px;
 
 		@media @desktop {
-			padding-top: 40px;
+			padding-top: 140px;
 			text-align: left;
 			&:before {
 				left: 0;
@@ -59,6 +59,12 @@
 		box-shadow: 17.732px 19.015px 26.19px 0.81px rgba(171, 171, 171, 0.25);
 		overflow: hidden;
 
+		&:hover {
+			.post__img {
+				filter: sepia(0);
+			}
+		}
+
 		@media @tablet {
 			width: inherit;
 		}
@@ -70,6 +76,8 @@
 		&__img {
 			display: block;
 			max-width: 100%;
+			filter: sepia(0.5);
+			transition: filter .3s linear; 
 		}
 		&__wrap {
 			padding: 10px 25px;
@@ -123,7 +131,7 @@
 }
 
 .newsInfo {
-	background: url(../images/road-post.png)no-repeat bottom;
+	background: url(../images/road-2.png)no-repeat bottom;
 	background-attachment: fixed; 
 }
 

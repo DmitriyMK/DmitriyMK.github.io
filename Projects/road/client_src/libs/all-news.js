@@ -22,27 +22,28 @@ $(document).ready(function() {
 
 
 /*FIXED SCROLL FOR MENU*/
-var nav = $('#fixedTopMenu');
-var scrolled = false;
+$(document).ready(function() {
 
-$(window).scroll(function () {
+  var $menu = $("#fixedTopMenu");
 
-  if (750< $(window).scrollTop() && !scrolled) {
-    nav.addClass('fixed').animate({ top: '0px' });
-    scrolled = true;
-  }
+  $(window).scroll(function() {
+    if ($(this).scrollTop() > 35 && $menu.hasClass("default")) {
+      $menu.fadeOut(100, function() {
+        $(this).removeClass("default")
+          .addClass("fixed")
+          .fadeIn(100);
+      });
+    } else if ($(this).scrollTop() < 35 && $menu.hasClass("fixed")) {
+      $menu.fadeOut(150, function() {
+        $(this).removeClass("fixed")
+          .addClass("default")
+          .fadeIn(100);
+      });
+    }
+  });
 
+});
 
-  if (750 > $(window).scrollTop() && scrolled) {
-       //animates it out of view
-       nav.animate({ top: '0px' });  
-       //sets it back to default style
-       setTimeout(function(){
-         nav.removeClass('fixed');
-       },600);
-       scrolled = false;      
-     }
-   });
 
 $(document).ready(function() {
 

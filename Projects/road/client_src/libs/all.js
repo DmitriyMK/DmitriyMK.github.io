@@ -28,72 +28,55 @@ if (document.documentElement.clientWidth > 1200) {
 
 /*FIXED SCROLL FOR MENU*/
 
-/*$(window).scroll(function() {
-  if ($(this).scrollTop() > 760) {
-    $('#fixedTopMenu').addClass('fixed');
-  } else {
-    $('#fixedTopMenu').removeClass('fixed');
-  }
-});*/
-
-
-
-var nav = $('#fixedTopMenu');
-var scrolled = false;
-
-$(window).scroll(function () {
-
-  if (760 < $(window).scrollTop() && !scrolled) {
-    nav.addClass('fixed').animate({ top: '0px' });
-    scrolled = true;
-  }
-
-
-  if (760 > $(window).scrollTop() && scrolled) {
-       //animates it out of view
-       nav.animate({ top: '0px' });  
-       //sets it back to default style
-       setTimeout(function(){
-         nav.removeClass('fixed');
-       },300);
-       scrolled = false;      
-     }
-   });
-
-
-
-
 $(document).ready(function() {
+
+  var $menu = $("#fixedTopMenu");
+
+  $(window).scroll(function() {
+    if ($(this).scrollTop() > 35 && $menu.hasClass("default")) {
+      $menu.fadeOut(100, function() {
+        $(this).removeClass("default")
+          .addClass("fixed")
+          .fadeIn(100);
+      });
+    } else if ($(this).scrollTop() < 35 && $menu.hasClass("fixed")) {
+      $menu.fadeOut(150, function() {
+        $(this).removeClass("fixed")
+          .addClass("default")
+          .fadeIn(100);
+      });
+    }
+  });
+
+});
+
+
+
+
 
   /*RESPONSIVER BURGER MENU*/
 
-  var $menu = $('.menu');
+  var $menu = $('.nav');
 
   $('.burger').click(function() {
     $(this).toggleClass('active');
     $('.overlay').toggleClass('open').show;
-    /*$menu.toggle();*/
   });
 
-  $(document).mouseup(function(e) {
+
+ $(document).mouseup(function(e) {
     if (!$menu.is(e.target) // if the target of the click isn't the container...
       &&
       $menu.has(e.target).length === 0) // ... nor a descendant of the container
     {
-      /*$menu.hide();*/
+
       $('.overlay').removeClass('open');
       $(".burger").removeClass('active');
     }
-
-    $('.burger').click(function() {
-      $(this).toggleClass('active');
-      $('.overlay').toggleClass('open').show;
-      /*$menu.toggle();*/
-    });
-
   });
 
 
+$(document).ready(function() {
 
   $(".linkForSubMenu1").click(function() {
 
@@ -142,26 +125,26 @@ $(document).ready(function() {
 
     responsive: [
 
-    {
-      breakpoint: 1024,
-      settings: {
-        slidesToShow: 3,
-      }
-    },
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+        }
+      },
 
-    {
-      breakpoint: 700,
-      settings: {
-        slidesToShow: 2,
-      }
-    },
+      {
+        breakpoint: 700,
+        settings: {
+          slidesToShow: 2,
+        }
+      },
 
-    {
-      breakpoint: 500,
-      settings: {
-        slidesToShow: 1,
+      {
+        breakpoint: 500,
+        settings: {
+          slidesToShow: 1,
+        }
       }
-    }
 
     ]
   });

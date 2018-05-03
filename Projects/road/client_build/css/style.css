@@ -1651,11 +1651,6 @@ header, footer {
                 box-shadow: 4.298px 10.126px 32.2px 2.8px rgba(0, 0, 0, 0.4);
     }
 }
-@media only screen and (min-width: 992px) {
-    .header__top {
-        position: relative;
-    }
-}
 .header .header__top-box {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1741,6 +1736,7 @@ header, footer {
 .header .header__top-box .nav__link {
     display: block;
     padding-bottom: 10px;
+    margin-bottom: 10px;
     position: relative;
     color: #000;
     font-size: 18px;
@@ -1750,10 +1746,16 @@ header, footer {
             transition: all 0.5s;
     text-decoration: none;
 }
+@media only screen and (min-width: 992px) {
+    .header .header__top-box .nav__link {
+        padding-bottom: 10px;
+        margin-bottom: inherit;
+    }
+}
 .header .header__top-box .nav__link:after {
     content: '';
     position: absolute;
-    bottom: 0;
+    bottom: 8px;
     left: 0;
     width: 100%;
     height: 2px;
@@ -1770,6 +1772,11 @@ header, footer {
         -ms-transform-origin: bottom right;
             transform-origin: bottom right;
     z-index: 10;
+}
+@media only screen and (min-width: 992px) {
+    .header .header__top-box .nav__link:after {
+        bottom: 0;
+    }
 }
 .header .header__top-box .nav__link:hover, .header .header__top-box .nav__link:focus {
     -webkit-transition: all 0.5s;
@@ -1975,11 +1982,7 @@ header, footer {
     #fixedTopMenu.fixed {
         padding: 5px 0;
         position: fixed;
-        top: 0;
-        left: 0;
         width: 100%;
-        -webkit-animation: smoothScroll 0.2s linear;
-                animation: smoothScroll 0.2s linear;
         background: #fff;
         z-index: 3000;
         /* HIDE SHADOW */
@@ -1987,9 +1990,6 @@ header, footer {
     #fixedTopMenu.fixed .logo__img {
         padding-top: 0;
         width: 130px;
-        -webkit-transition: all 0.3s linear;
-             -o-transition: all 0.3s linear;
-                transition: all 0.3s linear;
     }
     #fixedTopMenu.fixed:before {
         display: none;
@@ -2427,16 +2427,16 @@ header, footer {
     background: #fff;
 }
 .news {
-    background: url(../images/road__news.png) no-repeat bottom;
+    background: url(../images/road-2.png) no-repeat bottom;
     color: #000;
     background-attachment: fixed;
 }
 .news__title {
-    padding-top: 80px;
+    padding-top: 60px;
 }
 @media only screen and (min-width: 992px) {
     .news__title {
-        padding-top: 40px;
+        padding-top: 140px;
         text-align: left;
     }
     .news__title:before {
@@ -2458,6 +2458,10 @@ header, footer {
             box-shadow: 17.732px 19.015px 26.19px 0.81px rgba(171, 171, 171, 0.25);
     overflow: hidden;
 }
+.news .post:hover .post__img {
+    -webkit-filter: sepia(0);
+            filter: sepia(0);
+}
 @media only screen and (min-width: 768px) {
     .news .post {
         width: inherit;
@@ -2470,6 +2474,13 @@ header, footer {
 .news .post__img {
     display: block;
     max-width: 100%;
+    -webkit-filter: sepia(0.5);
+            filter: sepia(0.5);
+    -webkit-transition: -webkit-filter 0.3s linear;
+            transition: -webkit-filter 0.3s linear;
+         -o-transition:         filter 0.3s linear;
+            transition:         filter 0.3s linear;
+            transition:         filter 0.3s linear, -webkit-filter 0.3s linear;
 }
 .news .post__wrap {
     padding: 10px 25px;
@@ -2524,7 +2535,7 @@ header, footer {
     background-color: #fab900;
 }
 .newsInfo {
-    background: url(../images/road-post.png) no-repeat bottom;
+    background: url(../images/road-2.png) no-repeat bottom;
     background-attachment: fixed;
 }
 .postInfo {
@@ -3060,6 +3071,7 @@ color: #1a46a8; */
     border: none;
     outline: none;
     display: block;
+    z-index: 100;
 }
 .burger:hover {
     cursor: pointer;

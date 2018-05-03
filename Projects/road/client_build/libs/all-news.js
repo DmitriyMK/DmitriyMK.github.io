@@ -22,75 +22,63 @@ $(document).ready(function() {
 
 
 /*FIXED SCROLL FOR MENU*/
-var nav = $('#fixedTopMenu');
-var scrolled = false;
-
-$(window).scroll(function () {
-
-  if (750< $(window).scrollTop() && !scrolled) {
-    nav.addClass('fixed').animate({ top: '0px' });
-    scrolled = true;
-  }
-
-
-  if (750 > $(window).scrollTop() && scrolled) {
-       //animates it out of view
-       nav.animate({ top: '0px' });  
-       //sets it back to default style
-       setTimeout(function(){
-         nav.removeClass('fixed');
-       },600);
-       scrolled = false;      
-     }
-   });
-
 $(document).ready(function() {
 
-  /*RESPONSIVER BURGER MENU*/
+  var $menu = $("#fixedTopMenu");
 
-  var $menu = $('.menu');
-
-  $('.burger').click(function () {
-    $(this).toggleClass('active');
-    $('.overlay').toggleClass('open').show;
-    /*$menu.toggle();*/
+  $(window).scroll(function() {
+    if ($(this).scrollTop() > 35 && $menu.hasClass("default")) {
+      $menu.fadeOut(100, function() {
+        $(this).removeClass("default")
+          .addClass("fixed")
+          .fadeIn(100);
+      });
+    } else if ($(this).scrollTop() < 35 && $menu.hasClass("fixed")) {
+      $menu.fadeOut(150, function() {
+        $(this).removeClass("fixed")
+          .addClass("default")
+          .fadeIn(100);
+      });
+    }
   });
-
-  $(document).mouseup(function (e) {
-   if (!$menu.is(e.target) // if the target of the click isn't the container...
-   && $menu.has(e.target).length === 0) // ... nor a descendant of the container
-   {
-     /*$menu.hide();*/
-     $('.overlay').removeClass('open');
-     $(".burger").removeClass('active');
-   }
-
-   $('.burger').click(function () {
-    $(this).toggleClass('active');
-    $('.overlay').toggleClass('open').show;
-    /*$menu.toggle();*/
-  });
-
- });
-  
+});
 
 
+/*RESPONSIVER BURGER MENU*/
+var $menu = $('.nav');
+
+$('.burger').click(function() {
+  $(this).toggleClass('active');
+  $('.overlay').toggleClass('open').show;
+});
+
+
+$(document).mouseup(function(e) {
+  if (!$menu.is(e.target) // if the target of the click isn't the container...
+    &&
+    $menu.has(e.target).length === 0) // ... nor a descendant of the container
+  {
+
+    $('.overlay').removeClass('open');
+    $(".burger").removeClass('active');
+  }
+});
+
+
+
+$(document).ready(function() {
 
   $(".linkForSubMenu1").click(function() {
 
     $(this).toggleClass('active');
     $(".nav__list-submenu").slideToggle(300);
-
   });
 
   $(".linkForSubMenu2").click(function() {
 
     $(this).toggleClass('active');
     $(".nav__list-submenu2").slideToggle(300);
-
   });
-
-
 
   $('.scrolling__link').on('click', function(e) {
     e.preventDefault();
@@ -101,28 +89,4 @@ $(document).ready(function() {
     }, t);
   });
 
-
-
 });
-
-
-
-
-
-// $(".form").submit(function() {
-//   var th = $(this);
-//   $.ajax({
-//     type: "POST",
-//     url: "mail.php",
-//     data: th.serialize()
-//   }).done(function() {
-
-//     var inst = $('[data-remodal-id=modal-thanks]').remodal();
-//     inst.open();
-
-//     setTimeout(function() {
-//       th.trigger("reset");
-//     }, 1000);
-//   });
-//   return false;
-// });
