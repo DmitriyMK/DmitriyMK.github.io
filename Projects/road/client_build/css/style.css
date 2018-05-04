@@ -2491,6 +2491,12 @@ header, footer {
     .news .post .img__wrap {
         width: 400px;
         height: 245px;
+        margin: inherit;
+    }
+}
+@media only screen and (min-width: 1200px) {
+    .news .post .img__wrap {
+        width: 444px;
     }
 }
 .news .post__img {
