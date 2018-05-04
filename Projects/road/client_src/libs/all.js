@@ -30,50 +30,53 @@ if (document.documentElement.clientWidth > 1200) {
 
 $(document).ready(function() {
 
-  var $menu = $("#fixedTopMenu");
+  if (document.documentElement.clientWidth > 992) {
+    var $menu = $("#fixedTopMenu");
 
-  $(window).scroll(function() {
-    if ($(this).scrollTop() > 35 && $menu.hasClass("default")) {
-      $menu.fadeOut(100, function() {
-        $(this).removeClass("default")
-          .addClass("fixed")
-          .fadeIn(100);
-      });
-    } else if ($(this).scrollTop() < 35 && $menu.hasClass("fixed")) {
-      $menu.fadeOut(150, function() {
-        $(this).removeClass("fixed")
-          .addClass("default")
-          .fadeIn(100);
-      });
-    }
-  });
+    $(window).scroll(function() {
+      if ($(this).scrollTop() > 35 && $menu.hasClass("default")) {
+        $menu.fadeOut(100, function() {
+          $(this).removeClass("default")
+            .addClass("fixed")
+            .fadeIn(100);
+        });
+      } else if ($(this).scrollTop() < 35 && $menu.hasClass("fixed")) {
+        $menu.fadeOut(150, function() {
+          $(this).removeClass("fixed")
+            .addClass("default")
+            .fadeIn(100);
+        });
+      }
+    });
+
+  };
+
+
 
 });
 
 
 
+/*RESPONSIVER BURGER MENU*/
+
+var $menu = $('.nav');
+
+$('.burger').click(function() {
+  $(this).toggleClass('active');
+  $('.overlay').toggleClass('open').show;
+});
 
 
-  /*RESPONSIVER BURGER MENU*/
+$(document).mouseup(function(e) {
+  if (!$menu.is(e.target) // if the target of the click isn't the container...
+    &&
+    $menu.has(e.target).length === 0) // ... nor a descendant of the container
+  {
 
-  var $menu = $('.nav');
-
-  $('.burger').click(function() {
-    $(this).toggleClass('active');
-    $('.overlay').toggleClass('open').show;
-  });
-
-
- $(document).mouseup(function(e) {
-    if (!$menu.is(e.target) // if the target of the click isn't the container...
-      &&
-      $menu.has(e.target).length === 0) // ... nor a descendant of the container
-    {
-
-      $('.overlay').removeClass('open');
-      $(".burger").removeClass('active');
-    }
-  });
+    $('.overlay').removeClass('open');
+    $(".burger").removeClass('active');
+  }
+});
 
 
 $(document).ready(function() {
@@ -157,23 +160,3 @@ $(document).ready(function() {
 $(window).on('resize orientationchange', function() {
   $('.slider').slick('resize');
 });
-
-
-
-// $(".form").submit(function() {
-//   var th = $(this);
-//   $.ajax({
-//     type: "POST",
-//     url: "mail.php",
-//     data: th.serialize()
-//   }).done(function() {
-
-//     var inst = $('[data-remodal-id=modal-thanks]').remodal();
-//     inst.open();
-
-//     setTimeout(function() {
-//       th.trigger("reset");
-//     }, 1000);
-//   });
-//   return false;
-// });

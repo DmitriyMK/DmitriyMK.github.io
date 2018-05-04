@@ -19,32 +19,62 @@
 
 
 .footer {
-	padding: 70px 0;
+	padding: 40px 0;
 	background: #1e1e1e;
 	overflow: hidden;
+	text-align: center;
+	@media @desktop {
+		padding: 70px 0;
+		text-align: inherit;
+	}
+	.logo__img {
+		display: block;
+		@media @desktop {
+			display: inherit;
+		}
+	}
 	.logo__text {
+		display: inline-block;
+		vertical-align: middle;
 		font-size: 16px;
 		font-weight: 300;
+		@media @desktop {
+			display: inherit;
+		}
 	}
 	.logo__road {
-		position: absolute;
+		display: none;
+		@media @desktop {
+			display: block;
+			position: absolute;
+			bottom: -100px;
+			left: -370px;
+		}
+	}
 
-		bottom: -100px;
-		left: -370px;
+	.footer__contact {
+		margin: 25px 0;
+		@media @desktop {
+			margin: inherit;
+		}
 	}
 
 	.footer__box {
 		padding: 0 20px;
 		position: relative;
+		margin: auto;
 		&:before {
-			content: '';
-			position: absolute;
-			display: block;
-			top: 0;
-			left: 0;
-			width: 6px;
-			min-height: 100%;
-			background: @yellow;
+			@media @desktop {
+				content: '';
+				position: absolute;
+				display: block;
+				top: 0;
+				left: 0;
+				width: 6px;
+				min-height: 100%;
+				background: @yellow;
+			}
+			
 			@media @desktop-xl {
 				min-height: 160px;
 			}
@@ -60,8 +90,11 @@
 
 	.footer__text {
 		margin: 0;
-		padding-right: 30px;
+		
 		font-size: 18.6px;
 		font-weight: 300;
+		@media @desktop {
+			padding-right: 30px;
+		}
 	}
 }

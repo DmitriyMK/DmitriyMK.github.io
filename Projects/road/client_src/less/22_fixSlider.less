@@ -24,8 +24,11 @@ color: #1a46a8; */
 }
 
 .slick-prev {
-	left: -60px; 
+	left: 0; 
 	background: rgba(0,0,0, .8);
+	@media @tablet {
+		left: -60px; 
+	}
 }
 
 .slick-prev:before {
@@ -41,8 +44,11 @@ color: #1a46a8; */
 
 
 .slick-next {
-	right: -60px; 
+	right: 0; 
 	background: rgba(0,0,0, .8);
+	@media @tablet {
+		right: -60px;  
+	}
 }
 
 .slick-next:before {

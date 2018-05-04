@@ -56,14 +56,8 @@
 		margin: auto;
 		margin-bottom: 30px;
 		background: #fff;
-		box-shadow: 17.732px 19.015px 26.19px 0.81px rgba(171, 171, 171, 0.25);
+		box-shadow: 17px 19px 26px 0.8px rgba(171, 171, 171, 0.25);
 		overflow: hidden;
-
-		&:hover {
-			.post__img {
-				filter: sepia(0);
-			}
-		}
 
 		@media @tablet {
 			width: inherit;
@@ -72,12 +66,11 @@
 		.img__wrap {
 			display: block;
 			max-height: 245px;
+			transition: transform .3s linear;
 		}
 		&__img {
 			display: block;
 			max-width: 100%;
-			filter: sepia(0.5);
-			transition: filter .3s linear; 
 		}
 		&__wrap {
 			padding: 10px 25px;
@@ -87,10 +80,6 @@
 			margin: 5px 0;
 			font-size: 21px;
 			font-weight: 700;
-			transition: color .3s linear;
-			&:hover {
-				color: #999;
-			}
 			@media @desktop {
 				font-size: 24px;
 			}

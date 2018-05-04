@@ -53,10 +53,14 @@ button, .button {
     padding-top: 40px;
     padding-bottom: 20px;
     position: relative;
-    font-size: 24px;
+    font-size: 25px;
     font-weight: 700;
     text-align: center;
     color: #000;
+
+    br {
+        display: none;
+    }
 
     &:before {
         content: '';
@@ -75,6 +79,9 @@ button, .button {
 
     @media @tablet {
         font-size: 30px;
+        br {
+            display: inline;
+        }
     }
     @media @desktop-xl {
         font-size: 35px;
