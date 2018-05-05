@@ -1553,9 +1553,6 @@ body {
 .fancybox-margin {
     margin-right: 0 !important;
 }
-header, footer {
-    /*     overflow: hidden; */
-}
 .section__title {
     padding-top: 40px;
     padding-bottom: 20px;
@@ -2921,6 +2918,24 @@ header, footer {
 }
 .roads__item:last-of-type {
     padding-bottom: 10px;
+}
+.roads .btn {
+    margin: 40px 0;
+    display: inline-block;
+    padding: 5px 15px;
+    font-size: 21px;
+    border-radius: 6px;
+    background: #f0d91a;
+    -webkit-box-shadow: 1.172px 2.762px 4.6px 0.4px rgba(240, 216, 20, 0.21);
+            box-shadow: 1.172px 2.762px 4.6px 0.4px rgba(240, 216, 20, 0.21);
+    -webkit-transition: all 0.3s linear;
+         -o-transition: all 0.3s linear;
+            transition: all 0.3s linear;
+}
+.roads .btn:hover {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    background-color: #fab900;
 }
 .footer {
     padding: 40px 0;

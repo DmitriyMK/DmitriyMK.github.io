@@ -221,11 +221,14 @@
 		bottom: 0;
 		left: 0;
 	}
+
 	&__content {
 		padding-top: 15px;
 	}
+
 	&__list {
 	}
+
 	&__item {
 		position: relative;
 		padding: 2px 5px 2px 30px;
@@ -247,5 +250,21 @@
 		&:last-of-type{
 			padding-bottom: 10px;
 		}
+	}
+
+	.btn {
+		margin: 40px 0; 
+		display: inline-block;
+		padding: 5px 15px;
+
+		font-size: 21px;
+		border-radius: 6px;
+		background: @yellow;
+		box-shadow: 1.172px 2.762px 4.6px 0.4px rgba(240, 216, 20, 0.21);
+		transition: all .3s linear;
+		&:hover {
+			box-shadow: none;
+			background-color: #fab900;
+		}	
 	}
 }
