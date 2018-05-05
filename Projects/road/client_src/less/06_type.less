@@ -87,3 +87,27 @@ button, .button {
         font-size: 35px;
     }
 }
+
+.page-inner {
+    background: url(../images/road-2.png)no-repeat bottom;
+    background-attachment: fixed; 
+    color: #000;
+    &__title {
+        padding-top: 80px;
+        @media @desktop {
+            padding-top: 140px;
+            text-align: left;
+            &:before {
+                left: 0;
+                transform: none;
+            }
+        }
+    }
+    &__box {
+        padding: 10px 0;
+
+        @media @desktop {
+            padding: 30px 0
+        }
+    }
+}
