@@ -98,10 +98,17 @@
 
 		h3  {
 			margin: 0;
+			margin-bottom: 15px;
 			position: relative;
-			font-size: 19px;
+			font-size: 18px;
 			font-weight: 700;
 			color: #000;
+			text-align: center;
+
+			@media @tablet {
+				margin-bottom: 0;
+				text-align: inherit;
+			}
 		}
 
 		&__lines {
@@ -136,12 +143,12 @@
 
 		&__text{
 			position: relative;
-			padding: 25px;
+			padding: 25px 15px;
 			background: #fff;
 			z-index: 100;	
 			box-shadow: 17px 19px 26px 0.81px rgba(171, 171, 171, 0.18);
 			@media @tablet {
-
+				padding: 25px 20px;
 			}
 			@media @desktop {
 				padding: 10px 20px;
