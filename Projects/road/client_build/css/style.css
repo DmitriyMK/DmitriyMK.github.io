@@ -3288,7 +3288,11 @@ body {
 .services-inner .contents p {
     margin: 5px 0;
     font-size: 17px;
-    line-height: 1.2;
+}
+@media only screen and (min-width: 992px) {
+    .services-inner .contents p {
+        line-height: 1.2;
+    }
 }
 @media only screen and (min-width: 992px) {
     .services-inner__info:nth-of-type(even) .contents__lines {
