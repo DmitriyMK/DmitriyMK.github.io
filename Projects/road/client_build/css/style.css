@@ -3155,9 +3155,6 @@ body {
     position: relative;
     margin-bottom: 60px;
 }
-.services-inner__info:nth-last-of-type {
-    margin-bottom: 0;
-}
 @media only screen and (min-width: 992px) {
     .services-inner__info {
         margin-bottom: 60px;
