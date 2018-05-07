@@ -293,6 +293,7 @@
 
 		margin-bottom: 30px;
 		box-shadow: 17px 19px 26px 0.81px rgba(171, 171, 171, 0.2);
+		min-width: 300px;
 		@media @desktop {
 			margin-bottom: inherit;
 		}
@@ -343,6 +344,11 @@
 		display: block;
 		bottom: 0;
 		left: 0;
+		transition: transform .3s linear;
+		
+		&:hover {
+			transform: scale(1.05);
+		}
 	}
 
 	&__content {

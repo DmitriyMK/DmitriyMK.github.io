@@ -150,6 +150,21 @@ $(document).ready(function() {
     ]
   });
 
+  $('[data-fancybox]').fancybox({
+    loop: true,
+
+    animationEffect: "zoom",
+    transitionEffect: "fade",
+
+
+    transitionDuration: 366,
+
+    clickOutside: "close",
+
+
+
+
+  });
 
 });
 
