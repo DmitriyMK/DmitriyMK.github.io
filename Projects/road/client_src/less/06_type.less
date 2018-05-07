@@ -94,22 +94,26 @@ body {
     &__subtitle {
         font-size: 18px;
         text-align: center;
-        @media @tablet {
+        @media @desktop {
             text-align: left;
             font-size: 22px;
         }
     }
 
     &__desc {
-        font-size: 18px;
-        text-align: center;
+        font-size: 20px;
+        padding: 15px;
         @media @tablet {
-            text-align: left;
-            font-size: 20px;
+            padding: 0 15px;
+        }
+        @media @desktop {
+            padding: inherit;
         }
     }
-
     &__box {
-
+        padding-top: 25px;
+        @media @desktop {
+            padding-top: inherit;
+        }
     }
 }
