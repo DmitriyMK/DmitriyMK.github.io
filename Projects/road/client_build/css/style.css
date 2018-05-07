@@ -2721,7 +2721,6 @@ body {
         line-height: 44px;
     }
 }
-/* <!-- ¯\_(ツ)_/¯ --> 05/05/2018*/
 .about__box {
     margin-top: 60px;
 }
@@ -2995,7 +2994,12 @@ body {
     }
 }
 .roads__title {
-    padding-top: 15px;
+    padding-top: 0;
+}
+@media only screen and (min-width: 768px) {
+    .roads__title {
+        padding-top: 15px;
+    }
 }
 .roads__box {
     display: -webkit-box;
@@ -3021,14 +3025,20 @@ body {
     }
 }
 .roads__items {
+    min-width: 300px;
     margin-bottom: 30px;
     -webkit-box-shadow: 17px 19px 26px 0.81px rgba(171, 171, 171, 0.2);
             box-shadow: 17px 19px 26px 0.81px rgba(171, 171, 171, 0.2);
-    min-width: 300px;
+}
+@media only screen and (min-width: 768px) {
+    .roads__items {
+        min-width: 360px;
+    }
 }
 @media only screen and (min-width: 992px) {
     .roads__items {
         margin-bottom: inherit;
+        min-width: inherit;
     }
 }
 .roads__items-title {
@@ -3144,6 +3154,9 @@ body {
         flex-direction: column;
     position: relative;
     margin-bottom: 60px;
+}
+.services-inner__info:nth-last-of-type {
+    margin-bottom: 0;
 }
 @media only screen and (min-width: 992px) {
     .services-inner__info {
