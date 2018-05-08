@@ -339,7 +339,7 @@ function initMap() {
     disableDoubleClickZoom: true,
     mapTypeId: google.maps.MapTypeId.ROADMAP
   }
-  var image = '../images/icons/marker.png';
+  var image = 'images/icons/marker.png';
   var beachMarker = new google.maps.Marker({
     position: {
       lat: 50.4563181,
