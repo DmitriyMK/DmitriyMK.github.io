@@ -30,7 +30,6 @@
 	<link rel="stylesheet" href="./css/style.css">
 	
 </head>
-
 <body>
 
 	<header class="header__top header__top-white default " id="fixedTopMenu">
@@ -64,7 +63,7 @@
 									</li>
 									<li class="nav__item-sub">
 										<a class="nav__link-sub" href="./about.html#roads">Сданные объекты</a>
-									</li>		
+									</li>	
 								</ul>
 							</li>
 
@@ -94,11 +93,11 @@
 							</li>
 
 							<li class="nav__item">
-								<a class="nav__link link-active" href="./news.html">Новости</a>
+								<a class="nav__link" href="./news.html">Новости</a>
 							</li>
 
 							<li class="nav__item">
-								<a class="nav__link" href="./contact.html">Контакты</a>
+								<a class="nav__link link-active" href="./contact.html">Контакты</a>
 							</li>
 						</ul>
 					</div>
@@ -115,45 +114,91 @@
 
 
 
-	<section class="newsInfo news page-inner">
+	<section class="services-inner page-inner">
 		<div class="container">
+			<h1 class="section__title page-inner__title">Контакты</h1>		
+			<p class="page-inner__desc">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+		</div>
 
-			<article class="postInfo">
-				<div class="wrap">
-					<h1>В Украине построят новый автобан</h1>
-					<p class="postInfo__subtitle"><span class="name">Оксана Босович</span> / <time datetime="2018-04-12" class="post__time">12.04.2018</time></p>
+		<div class="map" id="google-map">
+			<div class="container-fluid">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.116866357084!2d30.514949475781048!3d50.457548422909824!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce449ccd116d%3A0xbf5b96fd6a79df24!2z0LLRg9C70LjRhtGPINCS0L7Qu9C-0LTQuNC80LjRgNGB0YzQutCwLCA0LCDQmtC40ZfQsiwgMDIwMDA!5e0!3m2!1sru!2sua!4v1525765343358" allowfullscreen></iframe>
+			</div>
+		</div>
 
-					<div class="postInfo__wrap">
-						<img class="postInfo__img" src="images/news_photo1.jpg" alt="В Украине построят новый автобан">
-					</div>	
-					<div class="postInfo__content">
-						<p>Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo. Nemo enim ipsam voluptatem, quia voluptas sit, aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos </p>
-						<p>Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo. Nemo enim ipsam voluptatem, quia voluptas sit, aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos </p>
-						<p>Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo. Nemo enim ipsam voluptatem, quia voluptas sit, aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos </p>
-						<p>Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo. Nemo enim ipsam voluptatem, quia voluptas sit, aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos </p>
-						<p>Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo. Nemo enim ipsam voluptatem, quia voluptas sit, aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos </p>
+		
+		<div class="feedback">
+			<div class="container">
 
-						<div class="hare">
-							<p>Поделиться ссылкой:</p>
-							<!-- AddToAny BEGIN -->
-							<div class="a2a_kit a2a_kit_size_32 a2a_default_style">
-								<a class="a2a_button_facebook"><i class="icon icon-facebook-circled"></i></a>
-								<a class="a2a_button_twitter"><i class="icon icon-twitter-circled"></i></a>
-								<a class="a2a_button_google_plus"><i class="icon icon-gplus-circled"></i></a>
+				<div class="feedback__box">
+
+					<div class="feedback__form">
+						<form action="mail.php" method="post" class="form form-validate" name="contact-form">
+							<!-- Hidden Required Fields -->
+							<input type="hidden" name="project_name" value="Дороги України">
+							<input type="hidden" name="admin_email" value="dm@push-k.ua">
+							<input type="hidden" name="form_subject" value="Обратная связь">
+							<!-- END Hidden Required Fields -->
+
+							<div class="row__top">
+								<input class="form__line name" type="text" name="name" placeholder="Имя" required tabindex="1">
+								<input class="form__line" type="mail" name="email" placeholder="Email" required tabindex="2">
 							</div>
-							<script>
-								var a2a_config = a2a_config || {};
-								a2a_config.locale = "ru";
-							</script>
-							<script async src="https://static.addtoany.com/menu/page.js"></script>
-						</div>
+
+							<div class="form__row">
+								<textarea class="form__line" rows="7" name="text" placeholder="Сообщение" tabindex="3"></textarea>
+							</div>
+
+							<input type="submit" class="btn" value="Отправить"> 
+						</form>
 					</div>
+
+					<div class="feedback__info">
+						<h2 class="feedback__title">Обратная связь</h2>
+						<ul class="feedback__list">
+							<li class="feedback__item">
+								<address>
+									Украина, Киев, 01025, ул. Владимирская, 4, оф. 19-20
+								</address>
+							</li>
+							<li class="feedback__item">
+								<a href="tel+380443639075">+38 (044) 363-90-75</a>
+								<p><span>Многоканальный телефон:</span> <a href="tel+380443639062">+38 (044) 363-90-62</a></p>
+								<p><span>Факс:</span> <a href="tel+380443639081">+38 (044) 363-90-81</a></p>
+							</li>
+							<li class="feedback__item">
+								<p>
+									<span>Ресепшн:</span> 
+									<a href="mailto:info@ieg.com.ua">info@ieg.com.ua</a>,
+									<a href="mailto:office@ieg.com.ua">office@ieg.com.ua</a>
+								</p>
+
+								<p>
+									<span>Отдел маркетинга:</span> 
+									<a href="mailto:marketing@ieg.com.ua">info@ieg.com.ua</a>
+								</p>
+
+								<p>
+									<span>Отдел продаж:</span> 
+									<a href="Отдел продаж">sales@ieg.com.ua</a>
+								</p>
+
+								<p>
+									<span>Отдел снабжения:</span> 
+									<a href="mailto:info@ieg.com.ua">supply@ieg.com.ua</a>
+								</p>
+							</li>
+						</ul>
+					</div>
+
 				</div>
-			</article>
+
+			</div>
 		</div>
 	</section>
 
 	
+
 	<footer class="footer">
 		<div class="container">
 			<div class="row">
@@ -201,6 +246,8 @@
 
 	<script src="./libs/slick.js"></script>
 	<script src="./libs/all.js"></script>
+
+	<script async defer src="https://maps.googleapis.com/maps/api/js?callback=initMap&key=AIzaSyDFnsXtzPC77ZP4pkabK8_yVr5qazdPCjc"></script> 
 
 </body>
 </html>
