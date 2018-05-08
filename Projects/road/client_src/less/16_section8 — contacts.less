@@ -18,15 +18,16 @@
 }
 
 .map {
-	margin: 30px 0;
+	margin: 30px 0 0 0;
 	width: 100%;
-	height: 450px; 
+	height: 400px; 
 	border-top: 5px solid @yellow;
 	border-bottom: 5px solid @yellow;
 
-	@media @desktop {
-		height: 740px; 
+	@media @desktop-xl-2 {
+		height: 500px; 
 	}
+
 }
 iframe {
 	display: block;
@@ -44,7 +45,7 @@ iframe {
 	span {
 		display: block;
 		margin: 5px 0;
-
+		font-weight: 700;
 		@media @tablet {
 			display: inline;
 			margin: inherit;
@@ -58,7 +59,7 @@ iframe {
 	a {
 		transition: color .3s linear;
 		&:hover {
-			color: @yellow;
+			color: #0082d7;
 		}
 	}
 
@@ -140,13 +141,6 @@ iframe {
 			font-size: 18px;
 			font-family: 'Fontello';
 			color: @yellow;
-			@media @tablet {
-
-			}
-			@media @desktop {
-
-			}
-
 		}
 		&:nth-of-type(1){
 			&:before {

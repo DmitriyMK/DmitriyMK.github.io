@@ -4,7 +4,7 @@ $(document).ready(function() {
     scrollspeed: 60,
     mousescrollstep: 60,
     smoothscroll: true,
-    cursorwidth: 10,
+    cursorwidth: 7,
     cursorborder: 0,
     cursorcolor: '#f0d91a',
     cursorborderradius: 2,
@@ -26,58 +26,18 @@ if (document.documentElement.clientWidth > 1200) {
 };
 
 
-/*FIXED SCROLL FOR MENU*/
+if (document.documentElement.clientWidth > 991) {
 
-$(document).ready(function() {
+  $(window).scroll(function() {
+    if ($(this).scrollTop() > 30) {
+      $('#fixedTopMenu').addClass('fixed');
+    } else if ($(this).scrollTop() < 30) {
+      $('#fixedTopMenu').removeClass('fixed');
+    }
+  });
+};
 
-  if (document.documentElement.clientWidth > 992) {
-    var $menu = $("#fixedTopMenu");
-
-    $(window).scroll(function() {
-      if ($(this).scrollTop() > 35 && $menu.hasClass("default")) {
-        $menu.fadeOut(100, function() {
-          $(this).removeClass("default")
-            .addClass("fixed")
-            .fadeIn(100);
-        });
-      } else if ($(this).scrollTop() < 35 && $menu.hasClass("fixed")) {
-        $menu.fadeOut(150, function() {
-          $(this).removeClass("fixed")
-            .addClass("default")
-            .fadeIn(100);
-        });
-      }
-    });
-
-  };
-
-});
-
-
-
-/*RESPONSIVER BURGER MENU*/
-
-var $menu = $('.nav');
-
-$('.burger').click(function() {
-  $(this).toggleClass('active');
-  $('.overlay').toggleClass('open').show;
-});
-
-
-$(document).mouseup(function(e) {
-  if (!$menu.is(e.target) // if the target of the click isn't the container...
-    &&
-    $menu.has(e.target).length === 0) // ... nor a descendant of the container
-  {
-
-    $('.overlay').removeClass('open');
-    $(".burger").removeClass('active');
-  }
-});
-
-
-$(document).ready(function() {
+if (document.documentElement.clientWidth < 992) {
 
   $(".linkForSubMenu1").click(function() {
 
@@ -93,6 +53,33 @@ $(document).ready(function() {
 
   });
 
+}
+
+
+
+
+$(document).ready(function() {
+
+ /*RESPONSIVER BURGER MENU*/
+
+  var $menu = $('.nav');
+
+  $('.burger').click(function() {
+    $(this).toggleClass('active');
+    $('.overlay').toggleClass('open').show;
+  });
+
+
+  $(document).mouseup(function(e) {
+    if (!$menu.is(e.target) // if the target of the click isn't the container...
+      &&
+      $menu.has(e.target).length === 0) // ... nor a descendant of the container
+    {
+
+      $('.overlay').removeClass('open');
+      $(".burger").removeClass('active');
+    }
+  });
 
 
   $('.scrolling__link').on('click', function(e) {
@@ -244,7 +231,7 @@ function initMap() {
       "featureType": "poi.park",
       "elementType": "geometry",
       "stylers": [{
-        "color": "#e5e5e5"
+        "color": "#C0ECAE"
       }]
     }, {
       "featureType": "poi.park",
@@ -262,7 +249,7 @@ function initMap() {
       "featureType": "road.arterial",
       "elementType": "geometry.fill",
       "stylers": [{
-        "color": "#ffeb3b"
+        "color": "#f3e999"
       }]
     }, {
       "featureType": "road.arterial",
@@ -274,7 +261,7 @@ function initMap() {
       "featureType": "road.highway",
       "elementType": "geometry",
       "stylers": [{
-        "color": "#dadada"
+        "color": "#f3e999"
       }]
     }, {
       "featureType": "road.highway",
@@ -286,13 +273,13 @@ function initMap() {
       "featureType": "road.local",
       "elementType": "geometry.fill",
       "stylers": [{
-        "color": "#ffeb3b"
+        "color": "#f3e999"
       }]
     }, {
       "featureType": "road.local",
       "elementType": "geometry.stroke",
       "stylers": [{
-        "color": "#f0d91a"
+        "color": "#f3e999"
       }]
     }, {
       "featureType": "road.local",
@@ -316,7 +303,7 @@ function initMap() {
       "featureType": "water",
       "elementType": "geometry",
       "stylers": [{
-        "color": "#c9c9c9"
+        "color": "#0082d7;"
       }]
     }, {
       "featureType": "water",
