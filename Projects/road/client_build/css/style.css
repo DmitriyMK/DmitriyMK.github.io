@@ -1888,15 +1888,16 @@ textarea {
 }
 .header__top-box .lang__box .lang__btn {
     position: relative;
-    padding: 2px;
+    padding: 0 2px;
     border: none;
     background: none;
     -webkit-transition: all 0.3s linear;
          -o-transition: all 0.3s linear;
             transition: all 0.3s linear;
     color: #000;
-    font-size: 14px;
+    font-size: 10px;
     outline: none!important;
+    border: 1px solid transparent;
 }
 @media only screen and (min-width: 992px) {
     .header__top-box .lang__box .lang__btn {
@@ -2232,7 +2233,7 @@ textarea {
 @media only screen and (min-width: 992px) {
     .services__item {
         width: 50%;
-        max-height: 340px;
+        max-height: 320px;
     }
 }
 @media only screen and (min-width: 1600px) {
@@ -2258,6 +2259,16 @@ textarea {
     -webkit-transition: all 0.3s linear;
          -o-transition: all 0.3s linear;
             transition: all 0.3s linear;
+}
+@media only screen and (min-width: 1200px) {
+    .services__img {
+        margin-top: -15px;
+    }
+}
+@media only screen and (min-width: 1600px) {
+    .services__img {
+        margin-top: inherit;
+    }
 }
 .services__item-title {
     margin: 0;
