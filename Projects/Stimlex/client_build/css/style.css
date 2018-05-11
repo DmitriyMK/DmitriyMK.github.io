@@ -1859,6 +1859,7 @@ section {
     color: #272b35;
 }
 .details__box {
+    position: relative;
     margin-top: 116px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1870,11 +1871,63 @@ section {
 .details .box__left {
     text-align: right;
 }
+.details .box__left .details__item:before {
+    right: -150px;
+}
+.details .box__left .details__item:after {
+    right: -150px;
+}
+.details .box__right .details__item:before {
+    left: -150px;
+}
+.details .box__right .details__item:after {
+    left: -150px;
+}
+.details .box__right .last__item:before {
+    content: '';
+    position: absolute;
+    top: 47px;
+    width: 50px;
+    left: -50px;
+    height: 1px;
+    background: #bdbdbd;
+}
+.details .box__right .last__item:after {
+    content: '';
+    position: absolute;
+    top: 42px;
+    width: 20px;
+    left: -68px;
+    height: 1px;
+    background: #bdbdbd;
+    -webkit-transform: rotate(30deg);
+        -ms-transform: rotate(30deg);
+            transform: rotate(30deg);
+}
 .details__item {
     min-height: 150px;
-    margin-bottom: 35px;
+    margin-bottom: 32px;
+    position: relative;
+}
+.details__item:before {
+    content: '';
+    position: absolute;
+    top: 47px;
+    width: 150px;
+    height: 1px;
+    background: #bdbdbd;
+}
+.details__item:after {
+    content: '';
+    position: absolute;
+    top: 42px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #bdbdbd;
 }
 .details .content {
+    position: relative;
     width: 300px;
 }
 .details .content__title {
@@ -1886,6 +1939,38 @@ section {
 .details .content__text {
     font-weight: 300;
     color: #272b35;
+}
+.details .barbecue {
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    -webkit-transform: translate(-50%);
+        -ms-transform: translate(-50%);
+            transform: translate(-50%);
+}
+.details .details1 {
+    position: absolute;
+    top: 0;
+    right: -220px;
+    z-index: 10;
+}
+.details .details2 {
+    position: absolute;
+    top: -20px;
+    right: -200px;
+    z-index: 10;
+}
+.details .details3 {
+    position: absolute;
+    top: -20px;
+    left: -200px;
+    z-index: 10;
+}
+.details .details4 {
+    position: absolute;
+    top: -30px;
+    left: -122px;
+    z-index: 10;
 }
 .remodal-first {
     padding-top: 95px;

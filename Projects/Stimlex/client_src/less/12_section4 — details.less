@@ -18,12 +18,14 @@
 }
 
 .details {
+	
 	background: #E7F5FA;
 	&__title {
 		color: #272b35;
 	}
 
 	&__box {
+		position: relative;
 		margin-top: 116px;
 		display: flex;
 		justify-content: space-between;
@@ -31,15 +33,79 @@
 
 	.box__left {
 		text-align: right;
+
+		.details__item {
+			&:before {
+				right: -150px;
+			}
+			&:after {
+				right: -150px;
+			}
+		}
+	}
+
+	.box__right {
+
+		.details__item {
+			&:before {
+				left: -150px;
+			}
+			&:after {
+				left: -150px;
+			}
+		}
+
+		.last__item {
+			&:before {
+				content: '';
+				position: absolute;
+				top: 47px;
+				width: 50px;
+				left: -50px;
+				height: 1px;
+				background: #bdbdbd;
+			}
+			&:after {
+				content: '';
+				position: absolute;
+				top: 42px;
+				width: 20px;
+				left: -68px;
+				height: 1px;
+				background: #bdbdbd;
+				transform: rotate(30deg);
+			}
+		}
 	}
 
 	&__item {
 		min-height: 150px;
-		margin-bottom: 35px;
+		margin-bottom: 32px;
+		position: relative;
+		&:before {
+			content: '';
+			position: absolute;
+			top: 47px;
+			width: 150px;
+			height: 1px;
+			background: #bdbdbd;
+		}
+		&:after {
+			content: '';
+			position: absolute;
+			top: 42px;
+			width: 10px;
+			height: 10px;
+			border-radius: 50%;
+			background: #bdbdbd;
+		}
 	}
+
+	
 
 
 	.content {
+		position: relative;
 		width: 300px;
 		&__title {
 			padding: 14px 0;
@@ -52,6 +118,38 @@
 			font-weight: 300;
 			color: #272b35;
 		}
+	}
+
+	.barbecue {
+		position: absolute;
+		top: -20px;
+		left: 50%;
+		transform: translate(-50%);
+	}
+
+	.details1 {
+		position: absolute;
+		top: 0;
+		right: -220px;
+		z-index: 10;
+	}
+	.details2 {
+		position: absolute;
+		top: -20px;
+		right: -200px;
+		z-index: 10;
+	}
+	.details3 {
+		position: absolute;
+		top: -20px;
+		left: -200px;
+		z-index: 10;
+	}
+	.details4 {
+		position: absolute;
+		top: -30px;
+		left: -122px;
+		z-index: 10;
 	}
 }
 
