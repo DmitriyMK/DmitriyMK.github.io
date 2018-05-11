@@ -1724,6 +1724,40 @@ section {
         -ms-transform: translateX(-120%);
             transform: translateX(-120%);
 }
+.reasons {
+    background: url(../images/back__reason.jpg) no-repeat center / cover;
+}
+.reasons .list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin: 65px 0;
+}
+.reasons .list__item {
+    width: 24%;
+    text-align: center;
+    color: #000;
+}
+.reasons .list__img {
+    position: relative;
+    display: block;
+    margin: 15px auto;
+    height: 227px;
+    border-radius: 50%;
+    -webkit-box-shadow: 0 24px 12px 0.52px rgba(39, 34, 35, 0.07);
+            box-shadow: 0 24px 12px 0.52px rgba(39, 34, 35, 0.07);
+}
+.reasons .list__title {
+    padding: 23px 0;
+    font-size: 18px;
+    font-weight: 700;
+}
 .remodal-first {
     padding-top: 95px;
     text-align: center;
