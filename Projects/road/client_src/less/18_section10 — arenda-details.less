@@ -1,0 +1,316 @@
+@media @mobile {
+
+}
+@media @tablet {
+
+}
+@media @desktop {
+
+}
+@media @desktop-xl {
+	
+}
+@media @desktop-xl-2 {
+
+}
+@media @desktop-xll {
+	
+}
+
+.technics__info {
+	margin-bottom: 40px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-direction: column;
+	
+
+
+	@media @desktop {
+		margin: 40px 0;
+		flex-direction: row;
+		align-items: inherit;
+	}
+
+	li {
+		outline: none!important
+	}
+
+	.technics__slider {
+		overflow: hidden;
+		max-width: 310px;
+
+		@media @tablet {
+			max-width: 500px;
+		}
+		@media @desktop {
+			max-width: inherit;
+			width: 56%;
+		}
+		@media @desktop-xl {
+			width: 50%
+		}
+
+	}
+	.slider-for-technics {
+		li {
+			width: 630px;
+			max-height: 380px;
+
+			@media @tablet {
+
+			}
+			@media @desktop {
+
+			}
+			@media @desktop-xl {
+
+			}
+		}
+		img {
+			display: block;
+			width: 100%;
+			height: auto;
+		}
+	}
+	.slider-nav-technics {
+		margin: 0 -4px;
+		li {
+			width: 100%;
+			height: 100px;
+			margin: 0 4px;
+			cursor: pointer;
+
+			@media @tablet {
+
+			}
+			@media @desktop {
+				height: 90px;
+			}
+			@media @desktop-xl {
+				height: 70px;
+			}
+		}
+		img {
+			display: block;
+			width: 100%;
+			height: auto;
+			border: 4px solid transparent;
+		}
+
+		.slick-current { 
+			img {
+				border: 4px solid @yellow;
+			}
+		}
+	}
+}
+
+.technics__details {
+	width: 100%;
+	margin-top: 30px;
+	box-shadow: 17px 19px 25px 0.81px rgba(171, 171, 171, 0.18);
+	@media @tablet {
+
+	}
+	@media @desktop {
+		width: 44%;
+		margin-top: 0;
+	}
+	@media @desktop-xl {
+		width: 50%;
+	}
+	> div {
+		padding: 13px 7px;
+		background: #fff!important;
+		border-bottom: 4px solid @yellow;
+		text-align: center;
+
+		@media @tablet {
+
+		}
+		@media @desktop {
+			padding: 7px 18px;
+			text-align: left;
+		}
+		@media @desktop-xl {
+			padding: 17px;
+		}
+	}
+	h3 {
+		margin: 0;
+		font-size: 18px;
+		font-weight: 700;
+		@media @tablet {
+			font-size: 20px;
+		}
+		@media @desktop {
+			font-size: 26px;
+		}
+	}
+
+
+	table {
+		border-collapse:collapse;
+		border-spacing:0;
+		width: 100%;
+	}
+
+	tr:nth-of-type(odd){
+		background: #ebf5fa;
+	}
+	tr:nth-of-type(even){
+		background: #fff;
+	}
+	td {
+		padding: 6.5px;
+		font-size: 16px;
+		font-weight: 300;
+		@media @tablet {
+			font-size: 17px;
+		}
+		@media @desktop {
+
+		}
+		@media @desktop-xl {
+			font-size: 18px;
+		}
+	}
+	td:nth-of-type(odd) {
+		padding-left: 10px;
+		@media @tablet {
+			padding-left: 20px;
+		}
+	}
+	td:nth-of-type(even) {
+		
+		@media @tablet {
+			padding-right: 20px;
+			text-align: right;
+		}
+	}
+}
+
+
+.technics-more  {
+	padding: 15px 0;
+	h4 {
+		font-size: 22px;
+		font-weight: 700;
+		margin: 0;
+		text-align: center;
+		@media @desktop {
+			text-align: left;
+			font-size: 25px;
+		}
+	}
+	
+}
+
+.technics-inner {
+	padding: 25px 0;
+	display: flex;
+	
+	
+	align-items: center;
+	flex-direction: column;
+	@media @desktop  {
+		flex-direction: row;
+		justify-content: space-between;
+		flex-wrap: wrap;
+	}
+
+	
+	&__items {
+		position: relative;
+
+		min-width: 300px;
+		margin-bottom: 30px;
+		box-shadow: 17px 19px 26px 0.81px rgba(171, 171, 171, 0.2);
+		overflow: hidden;
+		@media @desktop {
+			width: 48%;
+			min-width: inherit;
+		}
+		
+		&-title {
+			padding: 10px 20px;
+			position: absolute;
+			bottom: -20px;
+			transform: translateY(0);
+			left: 0;
+			width: 100%;
+			background: rgba(0, 0, 0, .5);
+			color: #fff;
+			font-size: 20px;
+			font-weight: 700;
+			&:before {
+				content: '';
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				height: 4px;
+				width: 100%;
+				background: @yellow;
+			}
+		}
+	}
+
+	&__img-wrap {
+		position: relative;
+		height: 200px;
+		max-width: 100%;
+		width: 100%;
+		box-shadow: 17px 19px 26px 0.81px rgba(171, 171, 171, 0.18);
+		overflow: hidden;
+		@media @tablet {
+
+		}
+		@media @desktop {
+			width: 300px;
+		}
+		@media @desktop-xl {
+			width: 100%;
+		}
+	}
+
+	&__img {
+		position: absolute;
+		display: block;
+		bottom: 0;
+		left: 0;
+		transition: transform .3s linear;
+		
+		&:hover {
+			transform: scale(1.05);
+		}
+	}
+
+	&__content {
+		padding-top: 15px;
+	}
+
+	ul {
+		background: #fff;
+		padding: 10px 0;
+		width: 100%;
+	}
+
+	li {
+		position: relative;
+		padding: 2px 5px 2px 30px;
+		width: 100%;
+		&:before {
+			content: '';
+			position: absolute;
+			top: 7px;
+			left: 10px;
+			width: 11px;
+			height: 11px;
+			background: url(../images/icons/vehicle.png);
+		}
+	}
+	span {
+		float: right;
+	}
+}

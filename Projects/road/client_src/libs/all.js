@@ -20,6 +20,7 @@ $(document).ready(function() {
 });
 
 
+
 if (document.documentElement.clientWidth > 1200) {
   $(window).enllax();
 
@@ -37,7 +38,13 @@ if (document.documentElement.clientWidth > 991) {
   });
 };
 
-if (document.documentElement.clientWidth < 992) {
+
+
+
+
+
+
+$(document).ready(function() {
 
   $(".linkForSubMenu1").click(function() {
 
@@ -53,14 +60,8 @@ if (document.documentElement.clientWidth < 992) {
 
   });
 
-}
 
-
-
-
-$(document).ready(function() {
-
- /*RESPONSIVER BURGER MENU*/
+  /*RESPONSIVER BURGER MENU*/
 
   var $menu = $('.nav');
 
@@ -113,26 +114,80 @@ $(document).ready(function() {
 
     responsive: [
 
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 3,
-        }
-      },
-
-      {
-        breakpoint: 700,
-        settings: {
-          slidesToShow: 2,
-        }
-      },
-
-      {
-        breakpoint: 500,
-        settings: {
-          slidesToShow: 1,
-        }
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3,
       }
+    },
+
+    {
+      breakpoint: 700,
+      settings: {
+        slidesToShow: 2,
+      }
+    },
+
+    {
+      breakpoint: 500,
+      settings: {
+        slidesToShow: 1,
+      }
+    }
+
+    ]
+  });
+
+
+  $('.slider-for-technics').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    dots: false,
+    asNavFor: '.slider-nav-technics',
+    fade: true,
+  });
+
+
+  $('.slider-nav-technics').slick({
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    asNavFor: '.slider-for-technics',
+    arrows: false,
+    dots: false,
+    focusOnSelect: true,
+/*    centerMode: true,*/
+
+    responsive: [
+
+    {
+      breakpoint: 1200,
+      settings: {
+        slidesToShow: 4,
+      }
+    },
+
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3,
+        centerMode: true,
+      }
+    },
+
+    {
+      breakpoint: 500,
+      settings: {
+        slidesToShow: 2,
+      }
+    },
+
+/*    {
+      breakpoint: 500,
+      settings: {
+        slidesToShow: 1,
+      }
+    }*/
 
     ]
   });
@@ -181,7 +236,7 @@ function initMap() {
     styles:
 
 
-      [{
+    [{
       "stylers": [{
         "saturation": -100
       }, {
@@ -336,6 +391,6 @@ function initMap() {
     map: map,
     icon: image
       // title: 'Push-k Solutions'
-  });
+    });
 
 };
