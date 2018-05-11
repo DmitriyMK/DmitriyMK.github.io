@@ -64,9 +64,9 @@ $(document).ready(function() {
 
 */
 
-  $('.srolling__link').on('click', function(e) {
+  $('.scrolling__link').on('click', function(e) {
     e.preventDefault();
-    var t = 1000;
+    var t = 1500;
     var d = $(this).attr('data-href') ? $(this).attr('data-href') : $(this).attr('href');
     $('html,body').stop().animate({
       scrollTop: $(d).offset().top
@@ -88,13 +88,13 @@ $(document).ready(function() {
   });
 */
 
-/*  $('.phone__mask').mask('+38(999)999-99-99');
+  $('.phone__mask').mask('+380(99)999-99-99');
 
 
   $('.counter').counterUp({
     delay: 10,
     time: 1000
-  });*/
+  });
 
 
 

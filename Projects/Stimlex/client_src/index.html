@@ -17,8 +17,7 @@
 
 <body>
 
-	<header class="header" id="header">
-		
+	<header class="header" id="header">	
 		<div class="header__top">
 			<div class="container">
 
@@ -54,13 +53,12 @@
 				<img class="img-plate" src="images/plateFood1.png" alt="Барбекю Stimlex">
 			</div>
 		</div>
-
 	</header>
 
 
 
 
-	<section class="reasons">
+	<section class="reasons" id="reasons">
 		<div class="container">
 			<h2 class="reasons__title section__title">4 причины приобрести барбекю Stimlex</h2>
 			<ul class="reasons__list list">
@@ -90,6 +88,102 @@
 
 
 
+
+	<section class="assortment">
+		<div class="container">
+			<h2 class="assortment__title section__title">Наш ассортимент</h2>
+		</div>
+	</section>
+
+
+
+
+	<section class="consult">
+		<div class="container">
+
+			<div class="consult__box">
+
+				<div class="consult__ask">
+					<h2 class="consult__title">Хотите заказать подробную консультацию?</h2>
+					<p class="consult__text">Оставляйте заявку, <br> и наш менеджер ответит на все <br> Ваши вопросы</p>
+				</div>
+
+				<div class="consult__form">
+					<form action="mail.php" method="post" class="form white-popup form-validate" name="Need Consultation">
+						<!-- Hidden Required Fields -->
+						<input type="hidden" name="project_name" value="Stimlex">
+						<input type="hidden" name="admin_email" value="dm@push-k.ua">
+						<input type="hidden" name="form_subject" value="Заказ подробной консультации">
+						<!-- END Hidden Required Fields -->
+						<p class="formBox__title">Заполните форму</p>
+						<p class="formBox__text">И наш менеджер свяжется с Вами в ближайшее время</p>
+
+						<input class="form__line name" type="text" name="Имя&nbsp;покупателя" placeholder="Ваше имя" required>
+						<input class="form__line phone__mask" type="tel" name="Телефон&nbsp;покупателя" placeholder="Ваш телефон" required>
+						<input type="submit" class="btn btn-shdw form__btn pulse wow" value="Отправить" data-wow-delay="2s"> 
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+
+
+	<section class="details">
+		<div class="container">
+			<h2 class="details__title section__title">Детали барбекю Stimlex</h2>
+
+			<div class="details__box">
+				
+				<div class="box__left">
+					<ul class="details">
+						<li class="details__item">
+							<div class="content">
+								<h4 class="content__title">Нержавеющая вытяжка</h4>
+								<p class="content__text">Выполнена из высококачественной, кислотноустойчивой нержавейки. Эксплуатируется на улице и не требует дополнительных защитных навесов</p>
+							</div>
+						</li>
+						<li class="details__item">
+							<div class="content">
+								<h4 class="content__title">Жаровня из чугуна</h4>
+								<p class="content__text">Весь модельный ряд укомплектован чугунной жаровней,  которая позволяет использовать  любой вид топлива: уголь, дрова и т.д.</p>
+							</div>
+						</li>
+						<li class="details__item">
+							<div class="content">
+								<h4 class="content__title">Основная конструкция</h4>
+								<p class="content__text">Каркас барбекю - это высококачественный, армированный бетон. Благодаря гидрообработке позволяет повысить срок использования на более чем 20 лет.</p>
+							</div>
+						</li>
+					</ul>
+				</div>
+
+				<div class="box__right">
+					<ul class="details">
+						<li class="details__item">
+							<div class="content">
+								<h4 class="content__title">Простая сборка</h4>
+								<p class="content__text">Вам не придется тратить много времени на сборку барбекю Stimlex, так как оно состоит из 6 блоков, которые легко скрепляются между собой.</p>
+							</div>
+						</li>
+						<li class="details__item">
+							<div class="content">
+								<h4 class="content__title">Подставка в жаровню</h4>
+								<p class="content__text">Железная рамка с деревянными ручками не подвергает руки температурному воздействию, а специальное покрытие не даст сильно загрязняться при эксплуатации.</p>
+							</div>
+						</li>
+						<li class="details__item">
+							<div class="content">
+								<h4 class="content__title">Гранитная столещница</h4>
+								<p class="content__text">Данный материал устойчив к механическим царапинам а, главное - он практически не впитывает жир. Покрытие барбекю выглядит всегда идеально! </p>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
 
 
 <!-- 	<div class="map" id="google-map">
