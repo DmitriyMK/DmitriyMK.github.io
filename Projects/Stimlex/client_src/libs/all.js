@@ -1,8 +1,8 @@
 $(document).ready(function() {
 
   $("body").niceScroll({
-    scrollspeed: 160,
-    mousescrollstep: 160,
+    scrollspeed: 60,
+    mousescrollstep: 60,
     smoothscroll: true,
     cursorwidth: 8,
     cursorborder: 0,
@@ -127,6 +127,7 @@ $(document).ready(function() {
     dots: false,
     asNavFor: '.slider-nav-recipe',
     fade: true,
+    draggable: false
   });
 
 
@@ -137,6 +138,7 @@ $(document).ready(function() {
     arrows: false,
     dots: false,
     focusOnSelect: true,
+    infinite: true,
 /*    initialSlide: 2,*/
 
     responsive: [
