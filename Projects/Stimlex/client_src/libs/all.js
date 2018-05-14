@@ -21,7 +21,6 @@ $(document).ready(function() {
 
 
 
-
 /*FIXED SCROLL FOR MENU*/
 /*$(document).ready(function() {
 
@@ -58,144 +57,152 @@ $(document).ready(function() {
 
 $(document).ready(function() {
 
-/*  if (document.documentElement.clientWidth > 1200) {
-    new WOW().init();
+  /*  if (document.documentElement.clientWidth > 1200) {
+      new WOW().init();
 
-  };
+    };
 
-  */
+    */
 
-  $('.scrolling__link').on('click', function(e) {
-    e.preventDefault();
-    var t = 1500;
-    var d = $(this).attr('data-href') ? $(this).attr('data-href') : $(this).attr('href');
-    $('html,body').stop().animate({
-      scrollTop: $(d).offset().top
-    }, t);
-  });
+    $('.scrolling__link').on('click', function(e) {
+      e.preventDefault();
+      var t = 1500;
+      var d = $(this).attr('data-href') ? $(this).attr('data-href') : $(this).attr('href');
+      $('html,body').stop().animate({
+        scrollTop: $(d).offset().top
+      }, t);
+    });
 
-  $(".js-video-button").modalVideo({
-    youtube:{
-      autoplay: 1,
-      nocookie: true,
-      cc_load_policy: 1,
-      color: null,
-      controls: 1,
-      disablekb: 0,
-      enablejsapi: 0,
-      end: null,
-      fs: 1,
-      h1: null,
-      iv_load_policy: 1,
-      list: null,
-      listType: null,
-      loop: 0,
-      modestbranding: null,
-      origin: null,
-      playlist: null,
-      playsinline: null,
-      rel: 0,
-      showinfo: 1,
-      start: 0,
-      wmode: 'transparent',
-      theme: 'dark'
+    $(".js-video-button").modalVideo({
+      youtube: {
+        autoplay: 1,
+        nocookie: true,
+        cc_load_policy: 1,
+        color: null,
+        controls: 1,
+        disablekb: 0,
+        enablejsapi: 0,
+        end: null,
+        fs: 1,
+        h1: null,
+        iv_load_policy: 1,
+        list: null,
+        listType: null,
+        loop: 0,
+        modestbranding: null,
+        origin: null,
+        playlist: null,
+        playsinline: null,
+        rel: 0,
+        showinfo: 1,
+        start: 0,
+        wmode: 'transparent',
+        theme: 'dark'
 
-    }
-  });
-
-  /*LAZY LOAD*/
-/*  $('.lazy').lazy({
-    effect: "fadeIn",
-    effectTime: 200,
-    threshold: 0,
-    scrollDirection: 'vertical',
-    visibleOnly: true,
-
-    onError: function(element) {
-      console.log('error loading ' + element.data('src'));
-    }
-
-  });
-  */
-
-
-
-  $('.slider-for-recipe').slick({
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    arrows: false,
-    dots: false,
-    asNavFor: '.slider-nav-recipe',
-    fade: true,
-    draggable: false
-  });
-
-
-  $('.slider-nav-recipe').slick({
-    slidesToShow: 4,
-    slidesToScroll: 1,
-    asNavFor: '.slider-for-recipe',
-    arrows: false,
-    dots: false,
-    focusOnSelect: true,
-    infinite: true,
-/*    initialSlide: 2,*/
-
-    responsive: [
-
-/*    {
-      breakpoint: 1024,
-      settings: {
-        slidesToShow: 3,
       }
-    },
+    });
 
-    {
-      breakpoint: 700,
-      settings: {
-        slidesToShow: 2,
+    /*LAZY LOAD*/
+  /*  $('.lazy').lazy({
+      effect: "fadeIn",
+      effectTime: 200,
+      threshold: 0,
+      scrollDirection: 'vertical',
+      visibleOnly: true,
+
+      onError: function(element) {
+        console.log('error loading ' + element.data('src'));
       }
-    },
 
-    {
-      breakpoint: 500,
-      settings: {
-        slidesToShow: 1,
-      }
-    }*/
+    });
+    */
 
-    ]
+
+
+    $('.slider-for-recipe').slick({
+      slidesToShow: 1,
+      arrows: false,
+      dots: false,
+      asNavFor: '.slider-nav-recipe',
+      fade: true,
+      draggable: false,
+      infinite: true,
+    });
+
+
+    $('.slider-nav-recipe').slick({
+      slidesToShow: 4,
+      asNavFor: '.slider-for-recipe',
+      arrows: false,
+      dots: false,
+      focusOnSelect: true,
+      infinite: true,
+      /*    initialSlide: 2,*/
+
+      responsive: [
+
+      /*    {
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 3,
+            }
+          },
+
+          {
+            breakpoint: 700,
+            settings: {
+              slidesToShow: 2,
+            }
+          },
+
+          {
+            breakpoint: 500,
+            settings: {
+              slidesToShow: 1,
+            }
+          }*/
+
+          ]
+        });
+
+
   });
 
 
+
+$('.slider-review').slick({
+  slidesToShow: 1,
+  draggable: false,
+  infinite: true,
+  dots: true,
 });
 
 
 
-/*$(window).on('resize orientationchange', function() {
+$(window).on('resize orientationchange', function() {
   $('.slider').slick('resize');
 });
-*/
 
 
 
-// $(".form").submit(function() {
-//   var th = $(this);
-//   $.ajax({
-//     type: "POST",
-//     url: "mail.php",
-//     data: th.serialize()
-//   }).done(function() {
 
-//     var inst = $('[data-remodal-id=modal-thanks]').remodal();
-//     inst.open();
+$(".form").submit(function() {
+  var th = $(this);
+  $.ajax({
+    type: "POST",
+    url: "mail.php",
+    data: th.serialize()
+  }).done(function() {
 
-//     setTimeout(function() {
-//       th.trigger("reset");
-//     }, 1000);
-//   });
-//   return false;
-// });
+    var inst = $('[data-remodal-id=modal-thanks]').remodal();
+    inst.open();
+
+    setTimeout(function() {
+      th.trigger("reset");
+    }, 1000);
+  });
+  return false;
+});
 
 
 

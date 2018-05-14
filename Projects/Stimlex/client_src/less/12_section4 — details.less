@@ -19,6 +19,24 @@
 
 .details {
 	background-color: rgb(245, 250, 254);
+
+	.container {
+		position: relative;
+
+		&:before {
+			content: '';
+			position: absolute;
+			bottom: 0px;
+			left: 50%;
+			transform: translateX(-50%);
+			width: 100vw;
+			height: 560px;
+			background: url(../images/barbecue-shadow.png)no-repeat center/cover;
+			z-index: 10;
+			overflow: hidden;
+		}
+	}
+	
 	&__title {
 		color: #272b35;
 	}
@@ -81,6 +99,7 @@
 		min-height: 150px;
 		margin-bottom: 32px;
 		position: relative;
+
 		&:before {
 			content: '';
 			position: absolute;
@@ -106,6 +125,7 @@
 	.content {
 		position: relative;
 		width: 300px;
+		z-index: 11;
 		&__title {
 			padding: 14px 0;
 			font-size: 20px;
@@ -113,7 +133,6 @@
 			color: #272b35;
 		}
 		&__text {
-
 			font-weight: 300;
 			color: #272b35;
 		}
@@ -124,6 +143,7 @@
 		top: -20px;
 		left: 50%;
 		transform: translate(-50%);
+		z-index: 11;
 	}
 
 	.details1 {
