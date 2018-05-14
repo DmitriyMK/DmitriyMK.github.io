@@ -21,6 +21,7 @@ $(document).ready(function() {
 
 
 
+
 /*FIXED SCROLL FOR MENU*/
 /*$(document).ready(function() {
 
@@ -62,7 +63,7 @@ $(document).ready(function() {
 
   };
 
-*/
+  */
 
   $('.scrolling__link').on('click', function(e) {
     e.preventDefault();
@@ -71,6 +72,35 @@ $(document).ready(function() {
     $('html,body').stop().animate({
       scrollTop: $(d).offset().top
     }, t);
+  });
+
+  $(".js-video-button").modalVideo({
+    youtube:{
+      autoplay: 1,
+      nocookie: true,
+      cc_load_policy: 1,
+      color: null,
+      controls: 1,
+      disablekb: 0,
+      enablejsapi: 0,
+      end: null,
+      fs: 1,
+      h1: null,
+      iv_load_policy: 1,
+      list: null,
+      listType: null,
+      loop: 0,
+      modestbranding: null,
+      origin: null,
+      playlist: null,
+      playsinline: null,
+      rel: 0,
+      showinfo: 1,
+      start: 0,
+      wmode: 'transparent',
+      theme: 'dark'
+
+    }
   });
 
   /*LAZY LOAD*/
@@ -86,48 +116,54 @@ $(document).ready(function() {
     }
 
   });
-*/
-
-  $('.phone__mask').mask('+380(99)999-99-99');
-
-
-  $('.counter').counterUp({
-    delay: 10,
-    time: 1000
-  });
+  */
 
 
 
-
-/*  $('.slider-for').slick({
+  $('.slider-for-recipe').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
+    arrows: false,
     dots: false,
-    arrow: true,
-    asNavFor: '.slider-nav',
-    fade: true
+    asNavFor: '.slider-nav-recipe',
+    fade: true,
   });
 
 
-  $('.slider-nav').slick({
-    slidesToShow: 3,
+  $('.slider-nav-recipe').slick({
+    slidesToShow: 4,
     slidesToScroll: 1,
-    asNavFor: '.slider-for',
+    asNavFor: '.slider-for-recipe',
     arrows: false,
     dots: false,
     focusOnSelect: true,
+/*    initialSlide: 2,*/
+
     responsive: [
 
-      {
-        breakpoint: 576,
-        settings: {
-          slidesToShow: 2,
-          dots: true,
-        }
+/*    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3,
       }
+    },
+
+    {
+      breakpoint: 700,
+      settings: {
+        slidesToShow: 2,
+      }
+    },
+
+    {
+      breakpoint: 500,
+      settings: {
+        slidesToShow: 1,
+      }
+    }*/
 
     ]
-  });*/
+  });
 
 
 });

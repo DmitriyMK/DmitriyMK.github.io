@@ -1,0 +1,114 @@
+@media @mobile {
+
+}
+@media @tablet {
+
+}
+@media @desktop {
+
+}
+@media @desktop-xl {
+	
+}
+@media @desktop-xl-2 {
+
+}
+@media @desktop-xll {
+	
+}
+
+.recipe {
+	background: url(../images/back__recipe.jpg)no-repeat center/cover;
+	min-height: 940px;
+	&__title {
+		color: #fff;
+	}
+
+	&__box {
+		padding-top: 120px;
+		width: 900px;
+		margin: auto;
+	}
+
+	&__products {
+		padding: 15px 0;
+	}
+
+	.slider {
+		&__item {
+			position: relative;
+			cursor: grab;
+		}
+		&__title {
+			width: 170px;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+
+			color: #fefeff;
+			font-size: 20px;
+			font-weight: 700;
+		}
+	}
+
+	&__item {
+		list-style-type: decimal; 
+		list-style-position: inside; 
+		color: #fefeff;
+	}	
+
+	.slider-nav-recipe {
+		margin-bottom: 20px;
+		.slider__item {
+			&:before {
+				content: '';
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 8px;
+				background: transparent;
+				transition: all .3s linear;
+			}
+			&:after {
+				content: '';
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				width: 100%;
+				height: 8px;
+				background: transparent;
+				transition: all .3s linear;
+			}
+		}
+		.slick-current { 
+			&:before {
+				content: '';
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 8px;
+				background: #fca214;
+			}
+			&:after {
+				content: '';
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				width: 100%;
+				height: 8px;
+				background: #fca214;
+			}
+		}
+		.slider__img {
+			height: 225px;
+		}
+	}
+
+}
+
+
+
+

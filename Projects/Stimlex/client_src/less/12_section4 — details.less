@@ -153,5 +153,38 @@
 	}
 }
 
+.video {
+	padding-top: 100px;
+	padding-bottom: 60px;
+	text-align: center;
+	position: relative;
+	&__title {
+		font-size: 30px;
+		font-weight: 700;
+		color: #272b35;
+	}
+	&__img {
+		position: absolute;
+		top: 140px;
+		left: 50%;
+		transform: translateX(-54%);
+	}
+
+	&__play {
+		position: relative;
+		display: inline-block;
+		margin: auto;
+		padding-top: 70px;
+		font-size: 52px;
+		z-index: 10;
+		transition: opacity .3s linear;
+		
+		&:hover {
+			cursor: pointer;
+			opacity: 0.5;
+		}
+	}
+}
+
 
 

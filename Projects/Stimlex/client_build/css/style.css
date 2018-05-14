@@ -1590,14 +1590,9 @@ section {
         padding: 80px 0;
     }
 }
-@media only screen and (min-width: 1600px) {
-    section {
-        padding: 90px 0;
-    }
-}
 .section__title {
     position: relative;
-    font-size: 45px;
+    font-size: 40px;
     font-weight: 700;
     text-align: center;
     color: #222326;
@@ -1607,7 +1602,7 @@ section {
     position: absolute;
     width: 130px;
     height: 4px;
-    bottom: -20px;
+    bottom: -25px;
     left: 50%;
     -webkit-transform: translateX(-50%);
         -ms-transform: translateX(-50%);
@@ -1971,6 +1966,170 @@ section {
     top: -30px;
     left: -122px;
     z-index: 10;
+}
+.video {
+    padding-top: 100px;
+    padding-bottom: 60px;
+    text-align: center;
+    position: relative;
+}
+.video__title {
+    font-size: 30px;
+    font-weight: 700;
+    color: #272b35;
+}
+.video__img {
+    position: absolute;
+    top: 140px;
+    left: 50%;
+    -webkit-transform: translateX(-54%);
+        -ms-transform: translateX(-54%);
+            transform: translateX(-54%);
+}
+.video__play {
+    position: relative;
+    display: inline-block;
+    margin: auto;
+    padding-top: 70px;
+    font-size: 52px;
+    z-index: 10;
+    -webkit-transition: opacity 0.3s linear;
+         -o-transition: opacity 0.3s linear;
+            transition: opacity 0.3s linear;
+}
+.video__play:hover {
+    cursor: pointer;
+    opacity: 0.5;
+}
+.step {
+    background: url(../images/back__step.jpg) no-repeat center / cover;
+}
+.step .list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin: 60px 0;
+}
+.step .list__item {
+    width: 24%;
+    text-align: center;
+    color: #000;
+}
+.step .list__img {
+    position: relative;
+    display: block;
+    margin: 15px auto;
+    height: 227px;
+    border-radius: 50%;
+    -webkit-box-shadow: 0 14px 12px 0.52px rgba(39, 34, 35, 0.07);
+            box-shadow: 0 14px 12px 0.52px rgba(39, 34, 35, 0.07);
+}
+.step .list__title {
+    padding: 23px 0;
+    font-size: 18px;
+    font-weight: 700;
+}
+.step__btn {
+    -webkit-box-shadow: 1.568px 14.918px 17.4px 2.6px rgba(220, 52, 0, 0.1);
+            box-shadow: 1.568px 14.918px 17.4px 2.6px rgba(220, 52, 0, 0.1);
+    -webkit-transition: all 0.3s linear;
+         -o-transition: all 0.3s linear;
+            transition: all 0.3s linear;
+}
+.step__btn:hover {
+    -webkit-box-shadow: 1.568px 14.918px 17.4px 2.6px rgba(220, 52, 0, 0);
+            box-shadow: 1.568px 14.918px 17.4px 2.6px rgba(220, 52, 0, 0);
+}
+.recipe {
+    background: url(../images/back__recipe.jpg) no-repeat center / cover;
+    min-height: 940px;
+}
+.recipe__title {
+    color: #fff;
+}
+.recipe__box {
+    padding-top: 120px;
+    width: 900px;
+    margin: auto;
+}
+.recipe__products {
+    padding: 15px 0;
+}
+.recipe .slider__item {
+    position: relative;
+    cursor: -webkit-grab;
+    cursor:         grab;
+}
+.recipe .slider__title {
+    width: 170px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    color: #fefeff;
+    font-size: 20px;
+    font-weight: 700;
+}
+.recipe__item {
+    list-style-type: decimal;
+    list-style-position: inside;
+    color: #fefeff;
+}
+.recipe .slider-nav-recipe {
+    margin-bottom: 20px;
+}
+.recipe .slider-nav-recipe .slider__item:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 8px;
+    background: transparent;
+    -webkit-transition: all 0.3s linear;
+         -o-transition: all 0.3s linear;
+            transition: all 0.3s linear;
+}
+.recipe .slider-nav-recipe .slider__item:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 8px;
+    background: transparent;
+    -webkit-transition: all 0.3s linear;
+         -o-transition: all 0.3s linear;
+            transition: all 0.3s linear;
+}
+.recipe .slider-nav-recipe .slick-current:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 8px;
+    background: #fca214;
+}
+.recipe .slider-nav-recipe .slick-current:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 8px;
+    background: #fca214;
+}
+.recipe .slider-nav-recipe .slider__img {
+    height: 225px;
 }
 .remodal-first {
     padding-top: 95px;

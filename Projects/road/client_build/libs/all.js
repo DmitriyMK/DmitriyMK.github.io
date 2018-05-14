@@ -40,7 +40,31 @@ if (document.documentElement.clientWidth > 991) {
 
 
 
+$('.btn__box .btn').click(function() {
 
+  var options = {
+    itemSelector: '.technics__items',
+    layoutMode: 'fitRows'
+  };
+
+  $('.technics').isotope(options);
+
+  if ($(this).hasClass('btn-active')) {
+    $(this).removeClass('btn-active');
+    $('.technics').isotope({
+      filter: '.technics__items'
+    });
+
+  } else {
+    
+    $('.btn__box .btn').removeClass('btn-active')
+    var slug = $(this).addClass('btn-active').data('slug');
+    options.filter = '.' + slug;
+    $('.technics').isotope({
+      filter: '' + '.' + slug
+    });
+  }
+});
 
 
 
@@ -114,26 +138,26 @@ $(document).ready(function() {
 
     responsive: [
 
-    {
-      breakpoint: 1024,
-      settings: {
-        slidesToShow: 3,
-      }
-    },
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+        }
+      },
 
-    {
-      breakpoint: 700,
-      settings: {
-        slidesToShow: 2,
-      }
-    },
+      {
+        breakpoint: 700,
+        settings: {
+          slidesToShow: 2,
+        }
+      },
 
-    {
-      breakpoint: 500,
-      settings: {
-        slidesToShow: 1,
+      {
+        breakpoint: 500,
+        settings: {
+          slidesToShow: 1,
+        }
       }
-    }
 
     ]
   });
@@ -156,38 +180,38 @@ $(document).ready(function() {
     arrows: false,
     dots: false,
     focusOnSelect: true,
-/*    centerMode: true,*/
+    /*    centerMode: true,*/
 
     responsive: [
 
-    {
-      breakpoint: 1200,
-      settings: {
-        slidesToShow: 4,
-      }
-    },
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 4,
+        }
+      },
 
-    {
-      breakpoint: 1024,
-      settings: {
-        slidesToShow: 3,
-        centerMode: true,
-      }
-    },
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          centerMode: true,
+        }
+      },
 
-    {
-      breakpoint: 500,
-      settings: {
-        slidesToShow: 2,
-      }
-    },
+      {
+        breakpoint: 500,
+        settings: {
+          slidesToShow: 2,
+        }
+      },
 
-/*    {
-      breakpoint: 500,
-      settings: {
-        slidesToShow: 1,
-      }
-    }*/
+      /*    {
+            breakpoint: 500,
+            settings: {
+              slidesToShow: 1,
+            }
+          }*/
 
     ]
   });
@@ -236,7 +260,7 @@ function initMap() {
     styles:
 
 
-    [{
+      [{
       "stylers": [{
         "saturation": -100
       }, {
@@ -391,6 +415,6 @@ function initMap() {
     map: map,
     icon: image
       // title: 'Push-k Solutions'
-    });
+  });
 
 };
