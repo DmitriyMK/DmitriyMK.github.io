@@ -22,7 +22,7 @@
 		
 		font-weight: 700;
 		font-size: rem(80);
-		color: #fff;
+		color: #000;
 	}
 	&__subtitle {
 		font-weight: 400;
@@ -41,7 +41,8 @@
 	.grid-sizer,
 	.grid-item {
 		float: left;
-		width: 20%;
+		width: 19%;
+		margin: 0.5%;
 		transition: all .8s linear;
 		img {
 			display: block;
