@@ -1,0 +1,151 @@
+@import "_vars";
+@import "_mixin and function";
+
+body {
+	min-width: 320px; 
+	position: relative; 
+	padding-right: 0 !important;
+	font-family: $fontFamily;
+	font-size: $fontSize;
+	font-weight: 400;
+	line-height: 1.2;
+	box-sizing: border-box; 
+	z-index: 1;
+	background: #99a0ca;
+}
+
+ul {
+	list-style-type: none;
+}
+a {
+	color: inherit;
+	outline: none;
+}
+
+.wrapper-fluid {
+
+	max-width: 1400px;
+	margin: 0 auto;
+	padding: 0 15px;
+
+	@media only screen and (max-width: 991.98px) { 
+		.wrapper {
+			width: 970px;
+		}
+	}
+
+	@media only screen and (max-width: 767.98px) { 
+		.wrapper {
+			width: 750px;
+		}
+	}
+
+	@media only screen and (max-width: 575.98px) { 
+		.wrapper {
+			width: 100%;
+		}
+	}
+}
+
+.wrapper {
+	position: relative;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 15px;
+
+	@media only screen and (max-width: 991.98px) { 
+		.wrapper {
+			width: 970px;
+		}
+	}
+
+	@media only screen and (max-width: 767.98px) { 
+		.wrapper {
+			width: 750px;
+		}
+	}
+
+	@media only screen and (max-width: 575.98px) { 
+		.wrapper {
+			width: 100%;
+		}
+	}
+}
+
+
+
+
+.hide {
+	display: none;
+} 
+
+section {
+	padding: 80px 0;
+
+	@media only screen and (max-width: 991.98px) { 
+		padding: 60px 0;
+	}
+
+	@media only screen and (max-width: 575.98px) { 
+		padding: 30px 0;
+	}
+
+}
+
+.section__title {
+
+}
+
+
+/* .scrollup {
+	width: 37px;
+	height: 84px;
+	position: fixed;
+	bottom: 50px;
+	right: 15px;
+	display: none;
+	text-indent: -9999px;
+	background: url('../images/arrow-top.png') no-repeat;
+	z-index: 100;
+	@media @tablet {
+		right: 100px;
+	}
+} */
+
+
+.video-responsive { 
+	position: relative; 
+	padding-bottom: 56.25%; 
+	height: 0; 
+	overflow:hidden; 
+} 
+.video-responsive iframe, 
+.video-responsive object, 
+.video-responsive embed {
+	position: absolute; 
+	top: 0; 
+	left: 0; 
+	width: 100%;
+	height: 100%; 
+}
+
+
+/* ------------	LOADER ------------*/
+#preloader {
+	position: fixed; 
+	left: 0; 
+	top: 0; 
+	right: 0; 
+	bottom: 0; 
+	background: #fff; 
+	z-index: 1001;
+}
+#preloader i {
+	width: 70px; 
+	height: 70px; 
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	background: url('../img/preloader.gif') no-repeat 50% 50%; 
+	margin: -35px 0 0 -35px;
+}

@@ -1,0 +1,31 @@
+
+
+
+// Large devices (desktops, less than 1200px)
+@media only screen and (max-width: 1199.98px) { 
+	.wrapper {
+		width: 1170px;
+	}
+}
+
+// Medium devices (tablets, less than 992px)
+@media only screen and (max-width: 991.98px) { 
+	.wrapper {
+		width: 970px;
+	}
+}
+
+// Small devices (landscape phones, less than 768px)
+@media only screen and (max-width: 767.98px) { 
+	.wrapper {
+		width: 750px;
+	}
+}
+
+// Extra small devices (portrait phones, less than 576px)
+@media only screen and (max-width: 575.98px) { 
+	.wrapper {
+		width: 100%;
+	}
+}
+

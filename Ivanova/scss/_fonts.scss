@@ -1,0 +1,110 @@
+@import "_vars";
+@import "_mixin and function";
+
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/RobotoLight/RobotoLight.woff2') format('woff2'), 
+       url('../fonts/RobotoLight/RobotoLight.woff') format('woff'), 
+       url('../fonts/RobotoLight/RobotoLight.ttf') format('truetype');
+
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/RobotoRegular/RobotoRegular.woff2') format('woff2'), 
+       url('../fonts/RobotoRegular/RobotoRegular.woff') format('woff'), 
+       url('../fonts/RobotoRegular/RobotoRegular.ttf') format('truetype');
+
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/RobotoBold/RobotoBold.woff2') format('woff2'), 
+       url('../fonts/RobotoBold/RobotoBold.woff') format('woff'), 
+       url('../fonts/RobotoBold/RobotoBold.ttf') format('truetype');
+
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+@font-face {
+  font-family: 'fontello';
+  src: url('../fonts/Fontello/fontello.woff2') format('woff2');
+  src: url('../fonts/Fontello/fontello.woff') format('woff'),
+       url('../fonts/Fontello/fontello.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+ 
+ [class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+ 
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+ 
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+ 
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+ 
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+ 
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+ 
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+ 
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+ 
+.icon-down-open:before { content: '\e800'; } /* '' */
+.icon-location:before { content: '\e801'; } /* '' */
+.icon-email:before { content: '\e802'; } /* '' */
+.icon-up-open-big:before { content: '\e808'; } /* '' */
+.icon-right-open-big:before { content: '\e809'; } /* '' */
+.icon-left-open-big:before { content: '\e80a'; } /* '' */
+.icon-down-open-big:before { content: '\e80b'; } /* '' */
+.icon-phone:before { content: '\e81a'; } /* '' */
+.icon-phone-1:before { content: '\e81b'; } /* '' */
+.icon-mobile:before { content: '\e81c'; } /* '' */
+.icon-search:before { content: '\e81d'; } /* '' */
+.icon-search-1:before { content: '\e81e'; } /* '' */
+.icon-mail:before { content: '\e81f'; } /* '' */
+.icon-basket:before { content: '\e820'; } /* '' */
+.icon-left-open-2:before { content: '\f007'; } /* '' */
+.icon-gplus:before { content: '\f05a'; } /* '' */
+.icon-twitter-1:before { content: '\f099'; } /* '' */
+.icon-facebook-1:before { content: '\f09a'; } /* '' */
+.icon-mail-alt:before { content: '\f0e0'; } /* '' */
+.icon-direction:before { content: '\f124'; } /* '' */
+.icon-instagram:before { content: '\f16d'; } /* '' */
+.icon-dot-circled:before { content: '\f192'; } /* '' */
+.icon-whatsapp:before { content: '\f232'; } /* '' */
+.icon-telegram:before { content: '\f2c6'; } /* '' */
+.icon-twitter:before { content: '\f309'; } /* '' */
+.icon-gplus-1:before { content: '\f30f'; } /* '' */
+.icon-skype:before { content: '\f339'; } /* '' */

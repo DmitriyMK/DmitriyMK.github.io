@@ -1,0 +1,90 @@
+@import "_reset";
+@import "_fonts";
+@import "_vars";
+@import "_mixin and function";
+@import "_forms.scss";
+
+
+
+/* MAIN STYLE */
+@import "_general";
+
+
+
+.header {
+	padding-top: 32px;
+	text-align: center;
+	text-transform: uppercase;
+
+
+
+	&__logo {
+		
+		font-weight: 700;
+		font-size: rem(80);
+		color: #fff;
+	}
+	&__subtitle {
+		font-weight: 400;
+		letter-spacing: 11px;
+		color: #000;
+	}
+}
+
+
+
+.gallery {
+	.grid {
+		max-width: 100%;
+		margin: auto;
+	} 
+	.grid-sizer,
+	.grid-item {
+		float: left;
+		width: 20%;
+		transition: all .8s linear;
+		img {
+			display: block;
+			width: 100%;
+			height: auto;
+		}
+		&:hover {
+			transform: scale(1.25);
+			z-index: 10;
+		}
+	}
+}
+
+
+
+
+
+// Large devices (desktops, less than 1200px)
+@media only screen and (max-width: 1199.98px) { 
+
+
+}
+
+// Medium devices (tablets, less than 992px)
+@media only screen and (max-width: 991.98px) { 
+
+}
+
+// Small devices (landscape phones, less than 768px)
+@media only screen and (max-width: 767.98px) { 
+
+}
+
+// Extra small devices (portrait phones, less than 576px)
+@media only screen and (max-width: 575.98px) { 
+
+}
+
+
+
+
+
+
+
+
+/* @import "media.scss"; */
