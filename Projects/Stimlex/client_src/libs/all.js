@@ -137,7 +137,6 @@ $(document).ready(function() {
       dots: false,
       focusOnSelect: true,
       infinite: true,
-      /*    initialSlide: 2,*/
 
       responsive: [
 
@@ -175,6 +174,7 @@ $('.slider-review').slick({
   draggable: false,
   infinite: true,
   dots: true,
+  fade: true,
 });
 
 
