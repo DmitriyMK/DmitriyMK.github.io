@@ -1856,16 +1856,15 @@ section {
 .details .container:before {
     content: '';
     position: absolute;
-    bottom: 0;
+    bottom: 20px;
     left: 50%;
     -webkit-transform: translateX(-50%);
         -ms-transform: translateX(-50%);
             transform: translateX(-50%);
-    width: 100vw;
-    height: 560px;
-    background: url(../images/barbecue-shadow.png) no-repeat center / cover;
+    width: 100%;
+    height: 580px;
+    background: url(../images/barbecue-shadow.png) no-repeat center / contain;
     z-index: 10;
-    overflow: hidden;
 }
 .details__title {
     color: #272b35;
@@ -2080,6 +2079,9 @@ section {
 .recipe__products {
     padding: 15px 0;
 }
+.recipe .accent {
+    font-weight: 700;
+}
 .recipe .slider__item {
     position: relative;
     cursor: -webkit-grab;
@@ -2189,6 +2191,7 @@ section {
 }
 .review .slider {
     padding: 80px;
+    padding-bottom: 20px;
 }
 .review__slide {
     padding: 20px 0;
@@ -2233,6 +2236,142 @@ section {
     left: 0;
     bottom: -10px;
     background: #ff4200;
+}
+.contact {
+    padding-top: 0;
+    padding-bottom: 30px;
+    position: relative;
+    background: #15181f;
+    overflow: hidden;
+}
+@media only screen and (min-width: 992px) {
+    .contact {
+        padding-bottom: 0;
+    }
+}
+.contact__title {
+    display: none;
+}
+.contact .map {
+    width: 100%;
+    height: 450px;
+}
+@media only screen and (min-width: 992px) {
+    .contact .map {
+        height: 530px;
+    }
+}
+.contact iframe {
+    display: block;
+    border: none;
+    border: 0;
+}
+.contact .container {
+    position: relative;
+}
+.contact__box {
+    margin: auto;
+    width: 300px;
+    height: 530px;
+    padding-top: 60px;
+    padding-left: 15px;
+    padding-right: 15px;
+    background: #15181f;
+    color: #fff;
+}
+@media only screen and (min-width: 992px) {
+    .contact__box {
+        position: absolute;
+        top: -532px;
+        right: 0;
+        width: 360px;
+        height: 532px;
+        padding-left: 50px;
+        padding-top: 66px;
+        margin: inherit;
+    }
+}
+@media only screen and (min-width: 1600px) {
+    .contact__box {
+        right: -40px;
+    }
+}
+.contact .box__title {
+    padding-bottom: 20px;
+    font-size: 20px;
+    font-weight: 700;
+}
+.contact address {
+    font-style: normal;
+    padding-bottom: 7px;
+}
+.contact .tel {
+    margin-bottom: 8px;
+}
+.contact .mail {
+    margin-top: 72px;
+    font-weight: 700;
+}
+.contact .contact__ask {
+    margin-top: 40px;
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+    font-size: 20px;
+    font-weight: 700;
+}
+@media only screen and (min-width: 992px) {
+    .contact .contact__ask {
+        margin-top: 25px;
+    }
+}
+.contact .contact__text {
+    margin-top: 0;
+    margin-bottom: 35px;
+}
+.footer {
+    padding: 15px 0;
+    background: #15181f;
+}
+.footer__box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.footer__logo {
+    width: 290px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.footer__logo img {
+    width: 138px;
+    height: 34px;
+}
+.footer__title {
+    font-size: 15px;
+}
+.footer .agency {
+    text-align: right;
+}
+.footer .agency a {
+    font-size: 11.5px;
+}
+.footer .agency p {
+    padding-top: 4px;
+    font-size: 13px;
+    font-weight: 700;
 }
 .remodal-first {
     padding-top: 95px;
@@ -2484,9 +2623,9 @@ label {
     display: block;
     position: absolute;
     top: 50%;
-    -webkit-transform: translateY(-50%);
-        -ms-transform: translateY(-50%);
-            transform: translateY(-50%);
+    -webkit-transform: translateY(-25%);
+        -ms-transform: translateY(-25%);
+            transform: translateY(-25%);
     z-index: 10;
     color: #fff;
     font-size: 120px;
@@ -2499,7 +2638,7 @@ label {
 }
 .slick-dots {
     left: 50%;
-    bottom: 25px;
+    bottom: -40px;
     -webkit-transform: translateX(-50%);
         -ms-transform: translateX(-50%);
             transform: translateX(-50%);
