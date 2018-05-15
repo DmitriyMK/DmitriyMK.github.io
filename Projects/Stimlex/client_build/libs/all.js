@@ -21,20 +21,6 @@ $(document).ready(function() {
 
 
 
-/*FIXED SCROLL FOR MENU*/
-/*$(document).ready(function() {
-
-  $(window).scroll(function() {
-    if ($(this).scrollTop() > 600) {
-      $('#fixedTopMenu').addClass('fixed');
-    } else if ($(this).scrollTop() < 600) {
-      $('#fixedTopMenu').removeClass('fixed');
-    }
-  });
-
-});*/
-
-
 /*FIXED SCROLL TO TOP*/
 /*$(document).ready(function() {
 
@@ -55,6 +41,7 @@ $(document).ready(function() {
 
 });*/
 
+
 $(document).ready(function() {
 
   /*  if (document.documentElement.clientWidth > 1200) {
@@ -64,45 +51,47 @@ $(document).ready(function() {
 
     */
 
-    $('.scrolling__link').on('click', function(e) {
-      e.preventDefault();
-      var t = 1500;
-      var d = $(this).attr('data-href') ? $(this).attr('data-href') : $(this).attr('href');
-      $('html,body').stop().animate({
-        scrollTop: $(d).offset().top
-      }, t);
-    });
+  $('.scrolling__link').on('click', function(e) {
+    e.preventDefault();
+    var t = 1500;
+    var d = $(this).attr('data-href') ? $(this).attr('data-href') : $(this).attr('href');
+    $('html,body').stop().animate({
+      scrollTop: $(d).offset().top
+    }, t);
+  });
 
-    $(".js-video-button").modalVideo({
-      youtube: {
-        autoplay: 1,
-        nocookie: true,
-        cc_load_policy: 1,
-        color: null,
-        controls: 1,
-        disablekb: 0,
-        enablejsapi: 0,
-        end: null,
-        fs: 1,
-        h1: null,
-        iv_load_policy: 1,
-        list: null,
-        listType: null,
-        loop: 0,
-        modestbranding: null,
-        origin: null,
-        playlist: null,
-        playsinline: null,
-        rel: 0,
-        showinfo: 1,
-        start: 0,
-        wmode: 'transparent',
-        theme: 'dark'
+  $(".js-video-button").modalVideo({
+    youtube: {
+      autoplay: 1,
+      nocookie: true,
+      cc_load_policy: 1,
+      color: null,
+      controls: 1,
+      disablekb: 0,
+      enablejsapi: 0,
+      end: null,
+      fs: 1,
+      h1: null,
+      iv_load_policy: 1,
+      list: null,
+      listType: null,
+      loop: 0,
+      modestbranding: null,
+      origin: null,
+      playlist: null,
+      playsinline: null,
+      rel: 0,
+      showinfo: 1,
+      start: 0,
+      wmode: 'transparent',
+      theme: 'dark'
 
-      }
-    });
+    }
+  });
 
-    /*LAZY LOAD*/
+
+
+  /*LAZY LOAD*/
   /*  $('.lazy').lazy({
       effect: "fadeIn",
       effectTime: 200,
@@ -117,28 +106,34 @@ $(document).ready(function() {
     });
     */
 
+  $('.slider__barbecue').slick({
+    slidesToShow: 5,
+    arrows: false,
+    dots: false,
+  });
 
 
-    $('.slider-for-recipe').slick({
-      slidesToShow: 1,
-      arrows: false,
-      dots: false,
-      asNavFor: '.slider-nav-recipe',
-      fade: true,
-      draggable: false,
-      infinite: true,
-    });
+
+  $('.slider-for-recipe').slick({
+    slidesToShow: 1,
+    arrows: false,
+    dots: false,
+    asNavFor: '.slider-nav-recipe',
+    fade: true,
+    draggable: false,
+    infinite: true,
+  });
 
 
-    $('.slider-nav-recipe').slick({
-      slidesToShow: 4,
-      asNavFor: '.slider-for-recipe',
-      arrows: false,
-      dots: false,
-      focusOnSelect: true,
-      infinite: true,
+  $('.slider-nav-recipe').slick({
+    slidesToShow: 4,
+    asNavFor: '.slider-for-recipe',
+    arrows: false,
+    dots: false,
+    focusOnSelect: true,
+    infinite: true,
 
-      responsive: [
+    responsive: [
 
       /*    {
             breakpoint: 1024,
@@ -161,20 +156,82 @@ $(document).ready(function() {
             }
           }*/
 
-          ]
-        });
+    ]
+  });
 
-
+  $('.slider-review').slick({
+    slidesToShow: 1,
+    draggable: false,
+    infinite: true,
+    dots: true,
+    fade: true,
   });
 
 
 
-$('.slider-review').slick({
-  slidesToShow: 1,
-  draggable: false,
-  infinite: true,
-  dots: true,
-  fade: true,
+  $('[data-fancybox]').fancybox({
+    loop: false,
+    animationEffect: "zoom",
+    transitionEffect: "fade",
+    transitionDuration: 366,
+
+    clickOutside: "close",
+  });
+
+
+  /*SWITCH BARBECUE GALLERY*/
+
+  $("#crasia").bind("click", function() {
+    $(".construction img").removeClass("borderActive");
+    $(".click__imgCrasia").addClass("borderActive");
+
+    $(".big__item").removeClass("active");
+    $("#CrasiaBLF").addClass("active");
+  });
+
+
+  $("#steel").bind("click", function() {
+    $(".construction img").removeClass("borderActive");
+    $(".click__imgSteel").addClass("borderActive");
+
+    $(".big__item").removeClass("active");
+    $("#CrasiaBMF").addClass("active");
+  });
+
+
+  $("#labradorit").bind("click", function() {
+    $(".tabletop img").removeClass("borderActive");
+    $(".click__imgLabr").addClass("borderActive");
+
+    $("#tabletopType").text("«Лабрадорит»");
+
+    $(".big__item").removeClass("active");
+    $("#SteelBLF").addClass("active");
+  });
+
+
+  $("#megerichka").bind("click", function() {
+    $(".tabletop img").removeClass("borderActive");
+    $(".click__imgMeger").addClass("borderActive");
+
+    $("#tabletopType").text("«Межеричка»");
+
+    $(".big__item").removeClass("active");
+    $("#SteelBMF").addClass("active");
+  });
+
+
+  $("#pokostovskiy").bind("click", function() {
+    $(".tabletop img").removeClass("borderActive");
+    $(".click__imgPokost").addClass("borderActive");
+
+    $("#tabletopType").text("«Покостовский»");
+
+    $(".big__item").removeClass("active");
+    $("#SteelBPF").addClass("active");
+  });
+
+
 });
 
 
@@ -182,7 +239,6 @@ $('.slider-review').slick({
 $(window).on('resize orientationchange', function() {
   $('.slider').slick('resize');
 });
-
 
 
 
@@ -206,7 +262,6 @@ $(".form").submit(function() {
 
 
 
-
 function initMap() {
 
   var latlng = new google.maps.LatLng(48.4410735, 35.0167546);
@@ -227,10 +282,10 @@ function initMap() {
       style: google.maps.NavigationControlStyle.SMALL
     },
     mapTypeId: google.maps.MapTypeId.ROADMAP,
-/*    styles:*/
+    /*    styles:*/
 
 
-      
+
   };
   var map = new google.maps.Map(document.getElementById("google-map"), settings);
   var myLatlng = new google.maps.LatLng(48.4410735, 35.0167546);

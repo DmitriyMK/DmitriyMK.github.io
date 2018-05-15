@@ -1,6 +1,6 @@
 .remodal-overlay {
 
-    // background: rgba( 160, 159, 158, 0.8) !important;
+ background: rgba( 160, 159, 158, 0.8) !important;
 }
 
 
@@ -61,15 +61,15 @@
 
 
 .remodal-close { 
-    top: -30px !important;
-    right: 120px !important;
+    top: -25px !important;
+    right: 30px !important;
     width: 35px !important;
     height: 30px !important;
     color: #fff !important;
     font-weight: 700;
 
     &:before {
-        font-size: 50px !important;
+        font-size: 40px !important;
         top: 0 !important;
         left: 0 !important;
     }
@@ -77,20 +77,9 @@
 
 .remodal-common {
 
-    -webkit-border-radius: 15px;
-    -moz-border-radius: 15px;
     border-radius: 15px;
     background: #fff;
-
-    //  background: url('@{dir}product-1.png') no-repeat top center;  
-    // background-position: 50% 50%;
-
     padding: 30px 40px;
-
-    
-    // background: #3d4f4a;
-    // border: 2px solid #fff;
-    
 
     @media @mobile {
         max-width: 500px !important;
@@ -142,7 +131,7 @@ label {
 .formBox {
 
     position: relative;
-    max-width: 400px;
+    width: 311px;
     margin: auto;
 
     padding-top: 7px;
@@ -151,12 +140,12 @@ label {
     &:before {
         content: '';
         position: absolute;
-        width: 408px;
-        height: 468px;
+        width: 311px;
+        height: 358px;
         top: 50%;
         left: 50%;
-        transform: translate(-53%, -55%);
-        background: url(../images/forms-big.png)no-repeat center/contain;
+        transform: translate(-50%, -44%);
+        background: url(../images/forms-sm.png)no-repeat center/contain;
     }
     form {
         position: relative;
