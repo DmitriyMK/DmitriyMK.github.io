@@ -186,47 +186,52 @@ $(document).ready(function() {
     $(".construction img").removeClass("borderActive");
     $(".click__imgCrasia").addClass("borderActive");
 
-    $("#labradorit").bind("click", function() {
-      $(".tabletop img").removeClass("borderActive");
-      $(".click__imgLabr").addClass("borderActive");
-
-      $("#tabletopType").text("«Лабрадорит»");
-
-      $(".big__item").removeClass("active");
-      $("#CrasiaBLF").addClass("active");
-    });
-
-
-    $("#megerichka").bind("click", function() {
-      $(".tabletop img").removeClass("borderActive");
-      $(".click__imgMeger").addClass("borderActive");
-
-      $("#tabletopType").text("«Межеричка»");
-
-      $(".big__item").removeClass("active");
-      $("#CrasiaBMF").addClass("active");
-    });
-
-
-    $("#pokostovskiy").bind("click", function() {
-      $(".tabletop img").removeClass("borderActive");
-      $(".click__imgPokost").addClass("borderActive");
-
-      $("#tabletopType").text("«Покостовский»");
-
-      $(".big__item").removeClass("active");
-      $("#CrasiaBPF").addClass("active");
-    });
-
   });
 
 
   $("#steel").bind("click", function() {
+
     $(".construction img").removeClass("borderActive");
     $(".click__imgSteel").addClass("borderActive");
 
+  });
 
-    $("#labradorit").bind("click", function() {
+
+  $("#labradorit").bind("click", function() {
+    $(".tabletop img").removeClass("borderActive");
+    $(".click__imgLabr").addClass("borderActive");
+
+    $("#tabletopType").text("«Лабрадорит»");
+
+    $(".big__item").removeClass("active");
+    $("#CrasiaBLF").addClass("active");
+  });
+
+
+  $("#megerichka").bind("click", function() {
+    $(".tabletop img").removeClass("borderActive");
+    $(".click__imgMeger").addClass("borderActive");
+
+    $("#tabletopType").text("«Межеричка»");
+
+    $(".big__item").removeClass("active");
+    $("#CrasiaBMF").addClass("active");
+  });
+
+
+  $("#pokostovskiy").bind("click", function() {
+    $(".tabletop img").removeClass("borderActive");
+    $(".click__imgPokost").addClass("borderActive");
+
+    $("#tabletopType").text("«Покостовский»");
+
+    $(".big__item").removeClass("active");
+    $("#CrasiaBPF").addClass("active");
+  });
+
+
+
+  /*$("#labradorit").bind("click", function() {
       $(".tabletop img").removeClass("borderActive");
       $(".click__imgLabr").addClass("borderActive");
 
@@ -256,9 +261,7 @@ $(document).ready(function() {
 
       $(".big__item").removeClass("active");
       $("#SteelBPF").addClass("active");
-    });
-
-  });
+    });*/
 
 
 
@@ -335,7 +338,7 @@ function initMap() {
     },
     map: map,
     icon: image
-      // title: 'Push-k Solutions'
+    // title: 'Push-k Solutions'
   });
 
 };
