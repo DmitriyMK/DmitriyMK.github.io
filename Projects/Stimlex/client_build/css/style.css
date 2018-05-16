@@ -1838,7 +1838,7 @@ section {
     font-weight: 300;
 }
 .assortment__box .construction__list {
-    padding: 15px 0;
+    padding-top: 15px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1851,12 +1851,31 @@ section {
 .assortment__box .construction__item:hover {
     cursor: pointer;
 }
+.assortment__box .construction .color__list {
+    padding-top: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+.assortment__box .construction .color__item {
+    width: 66px;
+    height: 66px;
+    margin-right: 10px;
+    text-align: center;
+}
+.assortment__box .construction .color__item a {
+    cursor: -webkit-zoom-in;
+    cursor:         zoom-in;
+}
+.assortment__box .tabletop {
+    position: relative;
+}
 .assortment__box .tabletop__text {
     text-align: right;
     font-weight: 300;
 }
 .assortment__box .tabletop__list {
-    padding: 15px 0;
+    padding-top: 15px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1868,6 +1887,22 @@ section {
 }
 .assortment__box .tabletop__item:hover {
     cursor: pointer;
+}
+.assortment__box .tabletop .color__list {
+    padding-top: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+.assortment__box .tabletop .color__item {
+    width: 66px;
+    height: 66px;
+    margin-left: 10px;
+    text-align: center;
+}
+.assortment__box .tabletop .color__item a {
+    cursor: -webkit-zoom-in;
+    cursor:         zoom-in;
 }
 .assortment__box .info__list {
     padding-top: 15px;

@@ -94,12 +94,13 @@
 			justify-content: space-between;
 		}
 
+
 		.construction {
 			&__text {
 				font-weight: 300;
 			}
 			&__list {
-				padding: 15px 0;
+				padding-top: 15px;
 				display: flex;
 			}
 			&__item {
@@ -110,15 +111,33 @@
 					cursor: pointer;
 				}
 			}
+
+			.color__list {
+				padding-top: 10px;
+				display: flex;
+			}
+
+			.color__item {
+				width: 66px;
+				height: 66px;
+				margin-right: 10px;
+				text-align: center;
+				a {
+					cursor: zoom-in;
+				}
+			}
 		}
 
+
 		.tabletop {
+			position: relative;
 			&__text {
 				text-align: right;
 				font-weight: 300;
 			}
 			&__list {
-				padding: 15px 0;
+				
+				padding-top: 15px;
 				display: flex;
 			}
 			&__item {
@@ -129,7 +148,24 @@
 					cursor: pointer;
 				}
 			}
+
+			.color__list {
+				padding-top: 10px;
+				display: flex;
+
+			}
+
+			.color__item {
+				width: 66px;
+				height: 66px;
+				margin-left: 10px;
+				text-align: center;
+				a {
+					cursor: zoom-in;
+				}
+			}
 		}
+
 
 		.info {
 			&__list {

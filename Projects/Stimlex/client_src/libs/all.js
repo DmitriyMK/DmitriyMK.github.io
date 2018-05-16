@@ -1,7 +1,7 @@
 $(document).ready(function() {
 
   $("body").niceScroll({
-    scrollspeed: 60,
+    scrollspeed: 70,
     mousescrollstep: 60,
     smoothscroll: true,
     cursorwidth: 8,
@@ -174,95 +174,138 @@ $(document).ready(function() {
     animationEffect: "zoom",
     transitionEffect: "fade",
     transitionDuration: 366,
+    protect: true,
 
     clickOutside: "close",
   });
 
+});
 
-  /*SWITCH BARBECUE GALLERY*/
+<<<<<<< HEAD
 
-  $("#crasia").bind("click", function() {
+/*SWITCH BARBECUE GALLERY*/
 
-    $(".construction img").removeClass("borderActive");
-    $(".click__imgCrasia").addClass("borderActive");
+$("#crasia").bind("click", function() {
+  $(".construction img").removeClass("borderActive");
+  $(".click__imgCrasia").addClass("borderActive"); //Рамочки
+=======
 
-    $("#labradorit").bind("click", function() {
-      $(".tabletop img").removeClass("borderActive");
-      $(".click__imgLabr").addClass("borderActive");
+/*SWITCH BARBECUE GALLERY*/
 
-      $("#tabletopType").text("«Лабрадорит»");
+$("#crasia").bind("click", function() {
 
-      $(".big__item").removeClass("active");
-      $("#CrasiaBLF").addClass("active");
-    });
+  $(".construction img").removeClass("borderActive");
+  $(".click__imgCrasia").addClass("borderActive");
 
-
-    $("#megerichka").bind("click", function() {
-      $(".tabletop img").removeClass("borderActive");
-      $(".click__imgMeger").addClass("borderActive");
-
-      $("#tabletopType").text("«Межеричка»");
-
-      $(".big__item").removeClass("active");
-      $("#CrasiaBMF").addClass("active");
-    });
+>>>>>>> 27ff969d3405ae6ea92f326956047aebdd5c24f0
+});
 
 
-    $("#pokostovskiy").bind("click", function() {
-      $(".tabletop img").removeClass("borderActive");
-      $(".click__imgPokost").addClass("borderActive");
-
-      $("#tabletopType").text("«Покостовский»");
-
-      $(".big__item").removeClass("active");
-      $("#CrasiaBPF").addClass("active");
-    });
-
-  });
+$("#steel").bind("click", function() {
+<<<<<<< HEAD
+  $(".construction img").removeClass("borderActive");
+  $(".click__imgSteel").addClass("borderActive"); //Рамочки
+});
 
 
-  $("#steel").bind("click", function() {
-    $(".construction img").removeClass("borderActive");
-    $(".click__imgSteel").addClass("borderActive");
+
+$("#labradorit").bind("click", function() {
+  $(".tabletop img").removeClass("borderActive");
+  $(".click__imgLabr").addClass("borderActive"); //Рамочки
+
+  $("#tabletopType").text("«Лабрадорит»"); // Изменение текста в описании
+
+  $(".big__item").removeClass("active");
+  $("#CrasiaBLF").addClass("active");  //Изначально display: none. при добавлении класа active, display: block;
+});
 
 
-    $("#labradorit").bind("click", function() {
-      $(".tabletop img").removeClass("borderActive");
-      $(".click__imgLabr").addClass("borderActive");
+$("#megerichka").bind("click", function() {
+  $(".tabletop img").removeClass("borderActive");
+  $(".click__imgMeger").addClass("borderActive");
 
-      $("#tabletopType").text("«Лабрадорит»");
+  $("#tabletopType").text("«Межеричка»");
 
-      $(".big__item").removeClass("active");
-      $("#SteelBLF").addClass("active");
-    });
+=======
 
-
-    $("#megerichka").bind("click", function() {
-      $(".tabletop img").removeClass("borderActive");
-      $(".click__imgMeger").addClass("borderActive");
-
-      $("#tabletopType").text("«Межеричка»");
-
-      $(".big__item").removeClass("active");
-      $("#SteelBMF").addClass("active");
-    });
-
-
-    $("#pokostovskiy").bind("click", function() {
-      $(".tabletop img").removeClass("borderActive");
-      $(".click__imgPokost").addClass("borderActive");
-
-      $("#tabletopType").text("«Покостовский»");
-
-      $(".big__item").removeClass("active");
-      $("#SteelBPF").addClass("active");
-    });
-
-  });
-
-
+  $(".construction img").removeClass("borderActive");
+  $(".click__imgSteel").addClass("borderActive");
 
 });
+
+
+$("#labradorit").bind("click", function() {
+  $(".tabletop img").removeClass("borderActive");
+  $(".click__imgLabr").addClass("borderActive");
+
+  $("#tabletopType").text("«Лабрадорит»");
+
+  $(".big__item").removeClass("active");
+  $("#CrasiaBLF").addClass("active");
+});
+
+
+$("#megerichka").bind("click", function() {
+  $(".tabletop img").removeClass("borderActive");
+  $(".click__imgMeger").addClass("borderActive");
+
+  $("#tabletopType").text("«Межеричка»");
+
+>>>>>>> 27ff969d3405ae6ea92f326956047aebdd5c24f0
+  $(".big__item").removeClass("active");
+  $("#CrasiaBMF").addClass("active");
+});
+
+
+$("#pokostovskiy").bind("click", function() {
+  $(".tabletop img").removeClass("borderActive");
+  $(".click__imgPokost").addClass("borderActive");
+
+  $("#tabletopType").text("«Покостовский»");
+
+  $(".big__item").removeClass("active");
+  $("#CrasiaBPF").addClass("active");
+});
+
+/*
+  
+
+
+<<<<<<< HEAD
+  $("#labradorit").bind("click", function() {
+=======
+/*$("#labradorit").bind("click", function() {
+>>>>>>> 27ff969d3405ae6ea92f326956047aebdd5c24f0
+    $(".tabletop img").removeClass("borderActive");
+    $(".click__imgLabr").addClass("borderActive");
+
+    $("#tabletopType").text("«Лабрадорит»");
+
+    $(".big__item").removeClass("active");
+    $("#SteelBLF").addClass("active");
+  });
+
+
+  $("#megerichka").bind("click", function() {
+    $(".tabletop img").removeClass("borderActive");
+    $(".click__imgMeger").addClass("borderActive");
+
+    $("#tabletopType").text("«Межеричка»");
+
+    $(".big__item").removeClass("active");
+    $("#SteelBMF").addClass("active");
+  });
+
+
+  $("#pokostovskiy").bind("click", function() {
+    $(".tabletop img").removeClass("borderActive");
+    $(".click__imgPokost").addClass("borderActive");
+
+    $("#tabletopType").text("«Покостовский»");
+
+    $(".big__item").removeClass("active");
+    $("#SteelBPF").addClass("active");
+  });*/
 
 
 
@@ -335,7 +378,7 @@ function initMap() {
     },
     map: map,
     icon: image
-      // title: 'Push-k Solutions'
+    // title: 'Push-k Solutions'
   });
 
 };
