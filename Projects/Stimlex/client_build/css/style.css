@@ -1760,6 +1760,17 @@ section {
     font-weight: 700;
 }
 .assortment {
+    padding: 0;
+}
+.assortment__title {
+    padding-top: 60px;
+}
+@media only screen and (min-width: 1200px) {
+    .assortment__title {
+        padding-top: 80px;
+    }
+}
+.assortment .barbecue__single {
     background: url(../images/back__assortment.jpg) no-repeat center / cover;
 }
 .assortment li, .assortment a {
@@ -1768,7 +1779,7 @@ section {
 .assortment__title {
     color: #fff;
 }
-.assortment__box {
+.assortment .barbecue__box {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1777,22 +1788,22 @@ section {
     justify-content: space-between;
     padding: 100px 120px;
 }
-.assortment__box .box__img {
+.assortment .barbecue__box .box__img {
     width: 420px;
 }
-.assortment__box .big__item {
+.assortment .barbecue__box .big__item {
     display: none;
 }
-.assortment__box .active {
+.assortment .barbecue__box .active {
     display: block;
 }
-.assortment__box .big__img {
+.assortment .barbecue__box .big__img {
     display: block;
     max-width: 100%;
     height: auto;
     border: 2px solid #fff;
 }
-.assortment__box .click__img {
+.assortment .barbecue__box .click__img {
     display: block;
     max-width: 100%;
     height: auto;
@@ -1801,31 +1812,31 @@ section {
          -o-transition: all 0.3s linear;
             transition: all 0.3s linear;
 }
-.assortment__box .borderActive {
-    border: 2px solid #ff9c00;
+.assortment .barbecue__box .borderActive {
+    border: 4px solid #ff9c00;
 }
-.assortment__box .slider__barbecue {
+.assortment .barbecue__box .slider__barbecue {
     width: 100%;
 }
-.assortment__box .slider__item {
+.assortment .barbecue__box .slider__item {
     float: left;
     width: 80px!important;
     height: 80px;
     margin-right: 5px;
     margin-top: 8px;
 }
-.assortment__box .slider__item:last-of-type {
+.assortment .barbecue__box .slider__item:last-of-type {
     margin-right: 0;
 }
-.assortment__box .box__info {
+.assortment .barbecue__box .box__info {
     padding-left: 20px;
     width: 460px;
 }
-.assortment__box .box__info .title {
+.assortment .barbecue__box .box__info .title {
     font-size: 30px;
     font-weight: 700;
 }
-.assortment__box .btn__box {
+.assortment .barbecue__box .btn__box {
     padding-top: 8px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1834,142 +1845,193 @@ section {
     -ms-flex-pack: justify;
     justify-content: space-between;
 }
-.assortment__box .construction__text {
+.assortment .barbecue__box .construction__text {
     font-weight: 300;
 }
-.assortment__box .construction__list {
+.assortment .barbecue__box .construction__list {
     padding-top: 15px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
 }
-.assortment__box .construction__item {
+.assortment .barbecue__box .construction__item {
     width: 66px;
     height: 66px;
     margin-right: 10px;
 }
-.assortment__box .construction__item:hover {
+.assortment .barbecue__box .construction__item:hover {
     cursor: pointer;
 }
-.assortment__box .construction .color__list {
+.assortment .barbecue__box .construction .color__list {
     padding-top: 10px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
 }
-.assortment__box .construction .color__item {
+.assortment .barbecue__box .construction .color__item {
     width: 66px;
     height: 66px;
     margin-right: 10px;
     text-align: center;
 }
-.assortment__box .construction .color__item a {
-    cursor: -webkit-zoom-in;
-    cursor:         zoom-in;
-}
-.assortment__box .tabletop {
+.assortment .barbecue__box .tabletop {
     position: relative;
 }
-.assortment__box .tabletop__text {
+.assortment .barbecue__box .tabletop__text {
     text-align: right;
     font-weight: 300;
 }
-.assortment__box .tabletop__list {
+.assortment .barbecue__box .tabletop__list {
     padding-top: 15px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
 }
-.assortment__box .tabletop__item {
+.assortment .barbecue__box .tabletop__item {
     width: 66px;
     height: 66px;
     margin-left: 10px;
 }
-.assortment__box .tabletop__item:hover {
+.assortment .barbecue__box .tabletop__item:hover {
     cursor: pointer;
 }
-.assortment__box .tabletop .color__list {
+.assortment .barbecue__box .tabletop .color__list {
     padding-top: 10px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
 }
-.assortment__box .tabletop .color__item {
+.assortment .barbecue__box .tabletop .color__item {
     width: 66px;
     height: 66px;
     margin-left: 10px;
     text-align: center;
 }
-.assortment__box .tabletop .color__item a {
+.assortment .barbecue__box .tabletop .color__item a {
     cursor: -webkit-zoom-in;
     cursor:         zoom-in;
 }
-.assortment__box .info__list {
+.assortment .barbecue__box .info__list {
     padding-top: 15px;
 }
-.assortment__box .info__item {
+.assortment .barbecue__box .info__item {
     margin-bottom: 1px;
     position: relative;
     list-style-type: disc;
     list-style-position: inside;
 }
-.assortment__box .info__item:after {
+.assortment .barbecue__box .info__item:after {
     content: '';
     position: absolute;
     height: 1px;
     bottom: 0;
     background: url(../images/icons/lines.png);
 }
-.assortment__box .info__item:nth-of-type(1):after {
+.assortment .barbecue__box .info__item:nth-of-type(1):after {
     width: 66px;
     left: 200px;
 }
-.assortment__box .info__item:nth-of-type(2):after {
+.assortment .barbecue__box .info__item:nth-of-type(2):after {
     width: 140px;
     left: 130px;
 }
-.assortment__box .info__item:nth-of-type(3):after {
+.assortment .barbecue__box .info__item:nth-of-type(3):after {
     width: 180px;
     left: 170px;
 }
-.assortment__box .info__item:nth-of-type(4):after {
+.assortment .barbecue__box .info__item:nth-of-type(4):after {
     width: 222px;
     left: 120px;
 }
-.assortment__box .info__item:nth-of-type(5):after {
+.assortment .barbecue__box .info__item:nth-of-type(5):after {
     width: 270px;
     left: 88px;
 }
-.assortment__box .info__item:nth-of-type(6):after {
+.assortment .barbecue__box .info__item:nth-of-type(6):after {
     width: 270px;
     left: 88px;
 }
-.assortment__box .info__item:nth-of-type(7):after {
+.assortment .barbecue__box .info__item:nth-of-type(7):after {
     width: 270px;
     left: 88px;
 }
-.assortment__box .info__item:nth-of-type(8):after {
+.assortment .barbecue__box .info__item:nth-of-type(8):after {
     width: 320px;
     left: 55px;
 }
-.assortment__box .text-right {
+.assortment .barbecue__box .info__item-dark {
+    margin-bottom: 1px;
+    position: relative;
+    list-style-type: disc;
+    list-style-position: inside;
+}
+.assortment .barbecue__box .info__item-dark:after {
+    content: '';
+    position: absolute;
+    height: 1px;
+    bottom: 0;
+    background: url(../images/icons/lines-dark.png);
+}
+.assortment .barbecue__box .info__item-dark:nth-of-type(1):after {
+    width: 66px;
+    left: 200px;
+}
+.assortment .barbecue__box .info__item-dark:nth-of-type(2):after {
+    width: 140px;
+    left: 130px;
+}
+.assortment .barbecue__box .info__item-dark:nth-of-type(3):after {
+    width: 180px;
+    left: 170px;
+}
+.assortment .barbecue__box .info__item-dark:nth-of-type(4):after {
+    width: 222px;
+    left: 120px;
+}
+.assortment .barbecue__box .info__item-dark:nth-of-type(5):after {
+    width: 270px;
+    left: 88px;
+}
+.assortment .barbecue__box .info__item-dark:nth-of-type(6):after {
+    width: 270px;
+    left: 88px;
+}
+.assortment .barbecue__box .info__item-dark:nth-of-type(7):after {
+    width: 270px;
+    left: 88px;
+}
+.assortment .barbecue__box .info__item-dark:nth-of-type(8):after {
+    width: 320px;
+    left: 55px;
+}
+.assortment .barbecue__box .text-right {
     float: right;
 }
-.assortment__box .price {
+.assortment .barbecue__box .price {
     padding: 50px 0 40px 0;
     font-size: 30px;
     font-weight: 700;
     color: #fff;
 }
-.assortment__box .old__price {
+.assortment .barbecue__box .old__price {
     padding: 0 10px;
     text-decoration: line-through;
     -webkit-text-decoration-color: #ff4200;
             text-decoration-color: #ff4200;
     font-weight: 300;
 }
-.assortment__box .btn {
+.assortment .barbecue__box .btn {
     padding: 10px 14px;
+}
+.assortment .barbecue__complex {
+    color: #000;
+    background-color: #eef4f9;
+}
+.assortment .barbecue__complex .price {
+    color: #000;
+}
+.assortment .barbecue__complex .btn {
+    color: #fff;
 }
 .consult {
     margin-top: -74px;
