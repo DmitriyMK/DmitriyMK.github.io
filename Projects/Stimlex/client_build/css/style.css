@@ -1779,6 +1779,18 @@ section {
 .assortment__title {
     color: #fff;
 }
+.assortment .color__list {
+    padding-top: 5px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+.assortment .color__item {
+    width: 66px;
+    text-align: center;
+    margin-bottom: 10px;
+    font-weight: 300;
+}
 .assortment .barbecue__box {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1835,9 +1847,9 @@ section {
 .assortment .barbecue__box .box__info .title {
     font-size: 30px;
     font-weight: 700;
+    padding-bottom: 5px;
 }
 .assortment .barbecue__box .btn__box {
-    padding-top: 8px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1849,7 +1861,7 @@ section {
     font-weight: 300;
 }
 .assortment .barbecue__box .construction__list {
-    padding-top: 15px;
+    padding-top: 5px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1862,17 +1874,8 @@ section {
 .assortment .barbecue__box .construction__item:hover {
     cursor: pointer;
 }
-.assortment .barbecue__box .construction .color__list {
-    padding-top: 10px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-}
 .assortment .barbecue__box .construction .color__item {
-    width: 66px;
-    height: 66px;
     margin-right: 10px;
-    text-align: center;
 }
 .assortment .barbecue__box .tabletop {
     position: relative;
@@ -1882,7 +1885,7 @@ section {
     font-weight: 300;
 }
 .assortment .barbecue__box .tabletop__list {
-    padding-top: 15px;
+    padding-top: 5px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1895,24 +1898,8 @@ section {
 .assortment .barbecue__box .tabletop__item:hover {
     cursor: pointer;
 }
-.assortment .barbecue__box .tabletop .color__list {
-    padding-top: 10px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-}
 .assortment .barbecue__box .tabletop .color__item {
-    width: 66px;
-    height: 66px;
     margin-left: 10px;
-    text-align: center;
-}
-.assortment .barbecue__box .tabletop .color__item a {
-    cursor: -webkit-zoom-in;
-    cursor:         zoom-in;
-}
-.assortment .barbecue__box .info__list {
-    padding-top: 15px;
 }
 .assortment .barbecue__box .info__item {
     margin-bottom: 1px;
@@ -2008,7 +1995,7 @@ section {
     float: right;
 }
 .assortment .barbecue__box .price {
-    padding: 50px 0 40px 0;
+    padding: 20px 0;
     font-size: 30px;
     font-weight: 700;
     color: #fff;
