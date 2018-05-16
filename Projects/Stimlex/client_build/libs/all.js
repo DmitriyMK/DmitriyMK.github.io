@@ -182,12 +182,6 @@ $(document).ready(function() {
 });
 
 
-/*SWITCH BARBECUE GALLERY*/
-
-$("#crasia").bind("click", function() {
-
-  $(".construction img").removeClass("borderActive");
-  $(".click__imgCrasia").addClass("borderActive"); //Рамочки
 
 
 /*SWITCH BARBECUE GALLERY*/
