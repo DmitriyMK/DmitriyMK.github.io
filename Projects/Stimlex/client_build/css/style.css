@@ -2112,9 +2112,12 @@ section {
     float: right;
 }
 .assortment .barbecue__single {
+    position: relative;
     background: url(../images/back__assortment.jpg) no-repeat center / cover;
+    z-index: 10;
 }
 .assortment .barbecue__complex {
+    position: relative;
     color: #000;
     background-color: #eef4f9;
 }
@@ -2125,7 +2128,8 @@ section {
     color: #fff;
 }
 .assortment .barbecue__other {
-    padding: 80px 0;
+    position: relative;
+    padding: 100px 0;
     color: #000;
     background: url(../images/back__barbecue-more.jpg) no-repeat center / cover;
 }
@@ -2195,12 +2199,47 @@ section {
 .decor2 {
     position: absolute;
     left: 25px;
-    top: 260px;
+    top: 270px;
 }
 .decor3 {
     position: absolute;
     left: 0;
     top: 715px;
+}
+.decor4 {
+    position: absolute;
+    right: 25px;
+    top: 570px;
+}
+.decor5 {
+    position: absolute;
+    left: 180px;
+    top: 70px;
+}
+.decor6 {
+    position: absolute;
+    left: 80px;
+    top: 400px;
+}
+.decor7 {
+    position: absolute;
+    left: 180px;
+    top: 250px;
+}
+.decor8 {
+    position: absolute;
+    right: 80px;
+    top: 350px;
+}
+.decor9 {
+    position: absolute;
+    right: 80px;
+    top: 350px;
+}
+.decor10 {
+    position: absolute;
+    right: 80px;
+    top: 350px;
 }
 .consult {
     margin-top: -74px;
