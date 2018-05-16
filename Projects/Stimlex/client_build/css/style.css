@@ -1680,6 +1680,7 @@ body {
     margin-right: 0 !important;
 }
 section {
+    position: relative;
     padding: 60px 0;
 }
 @media only screen and (min-width: 1200px) {
@@ -1844,7 +1845,7 @@ section {
 }
 .reasons .list__img {
     position: relative;
-    display: block;
+    display: inline-block;
     margin: 15px auto;
     height: 227px;
     border-radius: 50%;
@@ -2185,6 +2186,21 @@ section {
 }
 .assortment .barbecue__other .btn {
     color: #fff;
+}
+.decor1 {
+    position: absolute;
+    left: 0;
+    top: 60px;
+}
+.decor2 {
+    position: absolute;
+    left: 25px;
+    top: 260px;
+}
+.decor3 {
+    position: absolute;
+    left: 0;
+    top: 715px;
 }
 .consult {
     margin-top: -74px;
