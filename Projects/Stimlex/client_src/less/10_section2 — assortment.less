@@ -21,25 +21,28 @@
 .assortment {
 	padding: 0;
 
-
-
 	&__title {
 		padding-top: 60px;
+		color: #fff;
 		@media @desktop-xl {
 			padding-top: 80px;
 		}
 	}
 
-	.barbecue__single {
-		background: url(../images/back__assortment.jpg)no-repeat center/cover;
-	}
+	
+	/* ¯\_(ツ)_/¯ */
+	/* COMMON STYLE FOR SECTION */
 
 	li, a {
 		outline: none;
 	}
 
-	&__title {
-		color: #fff;
+
+	.big__img {
+		display: block;
+		max-width: 100%;
+		height: auto;
+		border: 2px solid #fff;
 	}
 
 	.color__list {
@@ -50,14 +53,18 @@
 	.color__item {
 		width: 66px;
 		text-align: center;
-		margin-bottom: 10px;
+		margin-bottom: 12px;
 		font-weight: 300;
+	}
+
+	.btn {
+		padding: 10px 14px;
 	}
 
 	.barbecue__box {
 		display: flex;
 		justify-content: space-between;
-		padding: 100px 120px;
+		padding: 80px 120px;
 
 		.box__img {
 			width: 420px;
@@ -69,13 +76,6 @@
 
 		.active {
 			display: block;
-		}
-
-		.big__img {
-			display: block;
-			max-width: 100%;
-			height: auto;
-			border: 2px solid #fff;
 		}
 
 		.click__img {
@@ -111,12 +111,13 @@
 			.title {
 				font-size: 30px;
 				font-weight: 700;
-				padding-bottom: 5px;
+				padding-bottom: 12px;
 			}
 		}
 		.btn__box {
 			display: flex;
 			justify-content: space-between;
+			padding-bottom: 8px;
 		}
 
 
@@ -295,12 +296,8 @@
 			}
 		}
 
-		.text-right {
-			float: right;
-		}
-
 		.price {
-			padding: 20px 0;
+			padding: 24px 0;
 			font-size: 30px;
 			font-weight: 700;
 			color: #fff;
@@ -313,12 +310,20 @@
 			font-weight: 300;
 		}
 
-		.btn {
-			padding: 10px 14px;
+		.text-right {
+			float: right;
 		}
 	}
 
 
+
+	/* ¯\_(ツ)_/¯ */
+	.barbecue__single {
+		background: url(../images/back__assortment.jpg)no-repeat center/cover;
+	}
+
+
+	/* ¯\_(ツ)_/¯ */
 	.barbecue__complex {
 		color: #000;
 		background-color: rgb(238, 244, 249);
@@ -330,7 +335,70 @@
 		.btn {
 			color: #fff;
 		}
+	}
 
+
+	/* ¯\_(ツ)_/¯ */
+	.barbecue__other {
+		padding: 80px 0;
+		color: #000;
+		background: url(../images/back__barbecue-more.jpg)no-repeat center/cover;
+
+		&-box {
+			display: flex;
+			justify-content: space-between;
+		}
+
+		.product {
+			width: 350px;
+			margin: auto;
+			margin-bottom: 25px;
+			text-align: center;
+
+			&__desc {
+				margin-bottom: 25px;
+				min-height: 60px;
+			}
+
+			&__title {
+				font-size: 20px;
+				font-weight: 700;
+			}
+			&__model {
+				padding-top: 5px;
+				font-size: 19px;
+			}
+		}
+
+		.slider__item {
+			float: left;
+			width: 66px!important;
+			height: 66px;
+			margin-right: 5px;
+			margin-top: 8px;
+
+			&:last-of-type {
+				margin-right: 0;
+			}
+		}
+
+		.price {
+			padding: 20px 0;
+			font-size: 19px;
+			font-weight: 700;
+			color: #000;
+		}
+
+		.old__price {
+			padding: 0 5px;
+			text-decoration: line-through;
+			text-decoration-color: @red;
+			font-weight: 300;
+		}
+
+		.btn {
+			color: #fff;
+		}
 	}
 
 

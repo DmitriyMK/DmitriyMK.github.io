@@ -1761,23 +1761,29 @@ section {
 }
 .assortment {
     padding: 0;
+    /* ¯\_(ツ)_/¯ */
+    /* COMMON STYLE FOR SECTION */
+    /* ¯\_(ツ)_/¯ */
+    /* ¯\_(ツ)_/¯ */
+    /* ¯\_(ツ)_/¯ */
 }
 .assortment__title {
     padding-top: 60px;
+    color: #fff;
 }
 @media only screen and (min-width: 1200px) {
     .assortment__title {
         padding-top: 80px;
     }
 }
-.assortment .barbecue__single {
-    background: url(../images/back__assortment.jpg) no-repeat center / cover;
-}
 .assortment li, .assortment a {
     outline: none;
 }
-.assortment__title {
-    color: #fff;
+.assortment .big__img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #fff;
 }
 .assortment .color__list {
     padding-top: 5px;
@@ -1788,8 +1794,11 @@ section {
 .assortment .color__item {
     width: 66px;
     text-align: center;
-    margin-bottom: 10px;
+    margin-bottom: 12px;
     font-weight: 300;
+}
+.assortment .btn {
+    padding: 10px 14px;
 }
 .assortment .barbecue__box {
     display: -webkit-box;
@@ -1798,7 +1807,7 @@ section {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    padding: 100px 120px;
+    padding: 80px 120px;
 }
 .assortment .barbecue__box .box__img {
     width: 420px;
@@ -1808,12 +1817,6 @@ section {
 }
 .assortment .barbecue__box .active {
     display: block;
-}
-.assortment .barbecue__box .big__img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-    border: 2px solid #fff;
 }
 .assortment .barbecue__box .click__img {
     display: block;
@@ -1847,7 +1850,7 @@ section {
 .assortment .barbecue__box .box__info .title {
     font-size: 30px;
     font-weight: 700;
-    padding-bottom: 5px;
+    padding-bottom: 12px;
 }
 .assortment .barbecue__box .btn__box {
     display: -webkit-box;
@@ -1856,6 +1859,7 @@ section {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
+    padding-bottom: 8px;
 }
 .assortment .barbecue__box .construction__text {
     font-weight: 300;
@@ -1991,11 +1995,8 @@ section {
     width: 320px;
     left: 55px;
 }
-.assortment .barbecue__box .text-right {
-    float: right;
-}
 .assortment .barbecue__box .price {
-    padding: 20px 0;
+    padding: 24px 0;
     font-size: 30px;
     font-weight: 700;
     color: #fff;
@@ -2007,8 +2008,11 @@ section {
             text-decoration-color: #ff4200;
     font-weight: 300;
 }
-.assortment .barbecue__box .btn {
-    padding: 10px 14px;
+.assortment .barbecue__box .text-right {
+    float: right;
+}
+.assortment .barbecue__single {
+    background: url(../images/back__assortment.jpg) no-repeat center / cover;
 }
 .assortment .barbecue__complex {
     color: #000;
@@ -2018,6 +2022,63 @@ section {
     color: #000;
 }
 .assortment .barbecue__complex .btn {
+    color: #fff;
+}
+.assortment .barbecue__other {
+    padding: 80px 0;
+    color: #000;
+    background: url(../images/back__barbecue-more.jpg) no-repeat center / cover;
+}
+.assortment .barbecue__other-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+.assortment .barbecue__other .product {
+    width: 350px;
+    margin: auto;
+    margin-bottom: 25px;
+    text-align: center;
+}
+.assortment .barbecue__other .product__desc {
+    margin-bottom: 25px;
+    min-height: 60px;
+}
+.assortment .barbecue__other .product__title {
+    font-size: 20px;
+    font-weight: 700;
+}
+.assortment .barbecue__other .product__model {
+    padding-top: 5px;
+    font-size: 19px;
+}
+.assortment .barbecue__other .slider__item {
+    float: left;
+    width: 66px!important;
+    height: 66px;
+    margin-right: 5px;
+    margin-top: 8px;
+}
+.assortment .barbecue__other .slider__item:last-of-type {
+    margin-right: 0;
+}
+.assortment .barbecue__other .price {
+    padding: 20px 0;
+    font-size: 19px;
+    font-weight: 700;
+    color: #000;
+}
+.assortment .barbecue__other .old__price {
+    padding: 0 5px;
+    text-decoration: line-through;
+    -webkit-text-decoration-color: #ff4200;
+            text-decoration-color: #ff4200;
+    font-weight: 300;
+}
+.assortment .barbecue__other .btn {
     color: #fff;
 }
 .consult {

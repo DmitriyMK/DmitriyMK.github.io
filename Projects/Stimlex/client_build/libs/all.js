@@ -113,6 +113,13 @@ $(document).ready(function() {
   });
 
 
+  $('.slider__product').slick({
+    slidesToShow: 5,
+    arrows: false,
+    dots: false,
+  });
+
+
 
   $('.slider-for-recipe').slick({
     slidesToShow: 1,
