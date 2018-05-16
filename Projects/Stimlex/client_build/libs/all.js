@@ -174,7 +174,6 @@ $(document).ready(function() {
     animationEffect: "zoom",
     transitionEffect: "fade",
     transitionDuration: 366,
-    protect: true,
 
     clickOutside: "close",
   });
@@ -190,7 +189,6 @@ $("#crasia").bind("click", function() {
 
   $(".construction img").removeClass("borderActive");
   $(".click__imgCrasia").addClass("borderActive");
-
 
 });
 
