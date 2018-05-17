@@ -168,15 +168,19 @@ $(document).ready(function() {
 
   $('.tabletop__item a').click(function() {
     var clicknumber = $(this).data('clicknumber');
-    clicknumber ++;
+    clicknumber++;
     if (clicknumber == 1) {
-        $('.tabletop__item a .click__img').removeClass('borderActive');
-        $(this).find('.click__img').addClass('borderActive');
+      $('.tabletop__item a .click__img').removeClass('borderActive');
+      $(this).find('.click__img').addClass('borderActive');
+      $('#tabletopType').html($(this).data('color'));
+      $('.big__item').removeClass('active');
+      var selector = '#' + $('.construction__item a .borderActive').data('construction') + $('.tabletop__item a .borderActive').data('color');
+      $(selector).addClass('active');
     }
     $('.tabletop__item a').attr('data-clicknumber', 0).off("click.fb-start");
     $(this).attr('data-clicknumber', clicknumber);
-    //alert(clicknumber);
-      $(this).fancybox({
+
+    $(this).fancybox({
       loop: false,
       animationEffect: "zoom",
       transitionEffect: "fade",
@@ -190,15 +194,18 @@ $(document).ready(function() {
 
   $('.construction__item a').click(function() {
     var clicknumber = $(this).data('clicknumber');
-    clicknumber ++;
-    if (clicknumber == 1){
-     $('.construction__item .click__img').removeClass('borderActive');
-     $(this).find('.click__img').addClass('borderActive');
+    clicknumber++;
+    if (clicknumber == 1) {
+      $('.construction__item .click__img').removeClass('borderActive');
+      $(this).find('.click__img').addClass('borderActive');
+      $('.big__item').removeClass('active');
+      var selector = '#' + $('.construction__item a .borderActive').data('construction') + $('.tabletop__item a .borderActive').data('color');
+      $(selector).addClass('active');
     }
     $('.construction__item a').attr('data-clicknumber', 0).off("click.fb-start");
     $(this).attr('data-clicknumber', clicknumber);
-    //alert(clicknumber);
-      $(this).fancybox({
+
+    $(this).fancybox({
       loop: false,
       animationEffect: "zoom",
       transitionEffect: "fade",
