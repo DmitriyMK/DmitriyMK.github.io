@@ -1812,9 +1812,10 @@ section {
     position: absolute;
     left: 50%;
     bottom: 0;
-    -webkit-transform: translateX(-84%);
-        -ms-transform: translateX(-84%);
-            transform: translateX(-84%);
+    -webkit-transform: translateX(-88%);
+        -ms-transform: translateX(-88%);
+            transform: translateX(-88%);
+    overflow: hidden;
 }
 .header .img-plate {
     position: absolute;
@@ -2949,6 +2950,10 @@ section {
     height: 34px;
 }
 .footer__title {
+    font-size: 15px;
+}
+.footer .footer__copy {
+    text-align: center;
     font-size: 15px;
 }
 .footer .agency {
