@@ -1929,32 +1929,11 @@ section {
 .assortment .barbecue__box .borderActive {
     position: relative;
     display: block;
-    border: 2px solid #ff9c00;
-}
-.assortment .barbecue__box .borderActive:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.6);
-}
-.assortment .barbecue__box .borderActive:after {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
-    width: 27px;
-    height: 27px;
-    background: url(../images/icons/zoom-in.png);
+    /* 			border: 2px solid #ff9c00;	 */
 }
 .assortment .barbecue__box .itemActive {
     position: relative;
-    /* border: 2px solid #ff9c00;	 */
+    border: 2px solid #ff9c00;
 }
 .assortment .barbecue__box .itemActive:before {
     content: '';
@@ -2285,7 +2264,7 @@ section {
 .decor9 {
     position: absolute;
     right: 80px;
-    top: -80px;
+    top: -95px;
 }
 .decor10 {
     position: absolute;

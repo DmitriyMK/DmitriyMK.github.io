@@ -195,6 +195,15 @@ $(document).ready(function() {
   });
 
 
+
+  $('.tabletop__item a').click(function() {
+
+    $(".tabletop__item").removeClass("itemActive");
+    $(this).parents('.tabletop__item').addClass('itemActive');
+
+  });
+
+
   $('.construction__item a').click(function() {
     var clicknumber = $(this).data('clicknumber');
     clicknumber++;
@@ -207,7 +216,7 @@ $(document).ready(function() {
       var selector = '#' + $('.construction__item a .borderActive').data('construction') + $('.tabletop__item a .borderActive').data('color');
       $(selector).addClass('active');
     }
-    
+
     $('.construction__item a').attr('data-clicknumber', 0).off("click.fb-start");
     $(this).attr('data-clicknumber', clicknumber);
 
@@ -223,6 +232,13 @@ $(document).ready(function() {
   });
 
 });
+
+$('.construction__item a').click(function() {
+
+    $(".construction__item").removeClass("itemActive");
+    $(this).parents('.construction__item').addClass('itemActive');
+
+  });
 
 
 
