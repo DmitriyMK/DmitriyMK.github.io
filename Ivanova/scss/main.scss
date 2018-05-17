@@ -12,24 +12,238 @@
 
 
 .header {
-	padding-top: 32px;
+
+	padding-top: 25px;
 	text-align: center;
 	text-transform: uppercase;
 
 
+	@media only screen and (max-width: 1199.98px) { 
+
+	}
+
+	@media only screen and (max-width: 991.98px) { 
+
+	}
+
+	@media only screen and (max-width: 767.98px) { 
+	}
+
+	@media only screen and (max-width: 575.98px) { 
+		
+	}
 
 	&__logo {
 		
 		font-weight: 700;
-		font-size: rem(80);
+		font-size: rem(60);
 		color: #000;
+
+		@media only screen and (max-width: 991.98px) { 
+		}
+
+		@media only screen and (max-width: 767.98px) { 
+			font-size: rem(36);
+		}
+
+		@media only screen and (max-width: 575.98px) { 
+			font-size: rem(22);
+		}
 	}
 	&__subtitle {
 		font-weight: 400;
 		letter-spacing: 11px;
 		color: #000;
+
+		@media only screen and (max-width: 991.98px) { 
+		}
+
+		@media only screen and (max-width: 767.98px) { 
+			letter-spacing: 5px;
+		}
+
+		@media only screen and (max-width: 575.98px) { 
+			letter-spacing: 2px;
+			font-size: 14px;
+		}
 	}
 }
+
+
+
+
+/* ------------ MENU ------------ */ 
+
+$button-height: 27px;
+$button-width: 35px;
+
+.button__container {
+	position: fixed;
+	top: 6%;
+	right: 2%;
+	height: $button-height;
+	width: $button-width;
+		
+	cursor: pointer;
+	z-index: 100;
+	transition: opacity .25s ease;
+
+	&:hover {
+		opacity: .7;
+	}
+	&.active {
+		.top {
+			transform: translateY(10px) translateX(0) rotate(45deg);
+			background: #fff;
+		}
+		.middle {
+			opacity: 0;
+			background: #fff;
+		}   
+		.bottom {
+			transform: translateY(-10px) translateX(0) rotate(-45deg);
+			background: #fff;
+		}
+	}
+	span {
+		background: #663399;
+		border: none;
+		height: 5px;
+		width: 100%;
+		position: absolute;
+		top: 0px;
+		left: 0;
+		transition:  all .35s ease;
+
+		&:nth-of-type(2) {
+			top: 10px;
+		}
+
+		&:nth-of-type(3) {
+			top: 20px;
+		}
+	}
+}
+.menu__wrapper .overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 1;
+	visibility: hidden;
+	transition: opacity .35s, visibility .35s, width .35s;
+	z-index: 50;
+	&:before {
+		content: '';
+		background: #663399;
+		left: -55%;
+		top: 0;
+		width: 50%;
+		height: 100%;
+		position: absolute;
+		transition: left .35s ease;
+	}
+	&:after {
+		content: '';
+		background: #663399;
+		right: -55%;
+		top: 0;
+		width: 50%;
+		height: 100%;
+		position: absolute;
+		transition: all .35s ease;
+	}
+	&.open {
+		opacity: .9;
+		visibility: visible;
+		height: 100%;
+
+		&:before {
+			left: 0;
+		}
+		&:after {
+			right: 0;
+		}
+		li {
+			animation: fadeInRight .5s ease forwards;
+			animation-delay: .35s;
+			&:nth-of-type(2) {
+				animation-delay: .45s;
+			}
+			&:nth-of-type(3) {
+				animation-delay: .55s;
+			}
+			&:nth-of-type(4) {
+				animation-delay: .65s;
+			}
+		}
+	}
+	.overlay__menu {
+		position: relative;
+		height: 70%;
+		top: 50%;
+		transform: translateY(-50%);
+		font-size: 50px;
+		font-weight: 400;
+		text-align: center;
+		z-index: 100;
+	}
+	.overlay__menu-list {
+		padding: 0;
+		margin: 0 auto;
+		display: inline-block;
+		position: relative;
+		height: 100%; 
+		.overlay__menu-item {
+			display: block;
+			height: 25%;
+			height: calc(100% / 4);
+			min-height: 50px;
+			position: relative;
+			opacity: 0;
+			.overlay__menu-link {
+				display: block;
+				position: relative;
+				color: #fff;
+				text-decoration: none;
+				overflow: hidden;
+				line-height: 60px;
+
+				letter-spacing: 2px;
+				&:hover:after,
+				&:focus:after,
+				&:active:after {
+					width: 100%;
+				}
+				&:after {
+					content: '';
+					position: absolute;
+					bottom: 0;
+					left: 50%;
+					width: 0%;
+					transform: translateX(-50%);
+					height: 3px;
+					background: #fff;
+					transition: .35s;
+				}
+			}
+		}
+	}
+}
+@keyframes fadeInRight {
+	0% {
+		opacity: 0;
+		left: 20%;
+	}
+	100% {
+		opacity: 1;
+		left: 0;
+	}
+}
+
+
+
 
 
 
@@ -38,12 +252,36 @@
 		max-width: 100%;
 		margin: auto;
 	} 
+
 	.grid-sizer,
 	.grid-item {
 		float: left;
 		width: 19%;
 		margin: 0.5%;
 		transition: all .8s linear;
+
+		@media only screen and (max-width: 1199.98px) { 
+			width: 24%;
+		}
+
+		@media only screen and (max-width: 991.98px) { 
+			width: 32%;
+		}
+
+		@media only screen and (max-width: 767.98px) { 
+			width: 32%;
+		}
+
+		@media only screen and (max-width: 575.98px) { 
+			width: 49%;
+		}
+
+		@media only screen and (max-width: 359px) { 
+			width: 100%;
+			margin: 10px 0;
+			float: none;
+		}
+
 		img {
 			display: block;
 			width: 100%;
@@ -52,6 +290,10 @@
 		&:hover {
 			transform: scale(1.25);
 			z-index: 10;
+
+			@media only screen and (max-width: 767.98px) { 
+				transform: none;
+			}
 		}
 	}
 }

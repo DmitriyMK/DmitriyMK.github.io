@@ -21,9 +21,6 @@ $(document).ready(function() {
       }
     });*/
 
-  });
-
-
 
 // init Masonry
 var grid = document.querySelector('.grid');
@@ -33,6 +30,19 @@ var msnry = new Masonry( grid, {
   columnWidth: '.grid-sizer',
   percentPosition: true
 });
+
+
+/*MENU*/
+$('#toggle').click(function() {
+  $(this).toggleClass('active');
+  $('#overlay').toggleClass('open');
+});
+
+
+
+});
+
+
 
 
 
@@ -58,22 +68,10 @@ var msnry = new Masonry( grid, {
 
 });*/
 
-$(document).ready(function() {
-
- if (document.documentElement.clientWidth > 1200) {
-  new WOW().init();
-
-};
-
-
-$('.phone__mask').mask('+38(999)999-99-99');
-
-
-});
 
 
 
-$(".form").submit(function() {
+/*$(".form").submit(function() {
   var th = $(this);
   $.ajax({
     type: "POST",
@@ -89,7 +87,7 @@ $(".form").submit(function() {
     }, 1000);
   });
   return false;
-});
+});*/
 
 
 
