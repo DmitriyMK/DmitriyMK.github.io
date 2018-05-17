@@ -1723,6 +1723,7 @@ section {
     position: relative;
     background: url(../images/back__hero.jpg) no-repeat center / cover;
     min-height: 949px;
+    z-index: 10;
 }
 .header__top {
     padding: 10px 0;
@@ -1911,7 +1912,7 @@ section {
 .assortment .barbecue__box .box__img {
     width: 416px;
 }
-.assortment .barbecue__box .big__item {
+.assortment .barbecue__box .big__item, .assortment .barbecue__box .big__item2 {
     display: none;
 }
 .assortment .barbecue__box .active {
@@ -1921,31 +1922,25 @@ section {
     display: block;
     max-width: 100%;
     height: auto;
-    border: 2px solid #fff;
     -webkit-transition: all 0.3s linear;
          -o-transition: all 0.3s linear;
             transition: all 0.3s linear;
 }
-.assortment .barbecue__box .borderActive {
-    position: relative;
+.assortment .barbecue__box .itemActive a {
     display: block;
-    /* 			border: 2px solid #ff9c00;	 */
-}
-.assortment .barbecue__box .itemActive {
     position: relative;
-    border: 2px solid #ff9c00;
+    border: 2px solid #ff9c00!important;
 }
-.assortment .barbecue__box .itemActive:before {
+.assortment .barbecue__box .itemActive a:before {
     content: '';
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.6);
-    z-index: 1;
+    background: rgba(0, 0, 0, 0.15);
 }
-.assortment .barbecue__box .itemActive:after {
+.assortment .barbecue__box .itemActive a:after {
     content: '';
     position: absolute;
     top: 50%;
@@ -1956,7 +1951,6 @@ section {
     width: 27px;
     height: 27px;
     background: url(../images/icons/zoom-in.png);
-    z-index: 1;
 }
 .assortment .barbecue__box .slider__barbecue {
     width: 100%;
@@ -2008,6 +2002,29 @@ section {
 .assortment .barbecue__box .construction__item:hover {
     cursor: pointer;
 }
+.assortment .barbecue__box .construction__item a {
+    display: block;
+    border: 2px solid #fff;
+    -webkit-transition: 0.3s linear;
+         -o-transition: 0.3s linear;
+            transition: 0.3s linear;
+}
+.assortment .barbecue__box .construction__item2 {
+    position: relative;
+    width: 66px;
+    height: 66px;
+    margin-right: 10px;
+}
+.assortment .barbecue__box .construction__item2:hover {
+    cursor: pointer;
+}
+.assortment .barbecue__box .construction__item2 a {
+    display: block;
+    border: 2px solid #fff;
+    -webkit-transition: 0.3s linear;
+         -o-transition: 0.3s linear;
+            transition: 0.3s linear;
+}
 .assortment .barbecue__box .construction .color__item {
     margin-right: 10px;
 }
@@ -2031,6 +2048,28 @@ section {
 }
 .assortment .barbecue__box .tabletop__item:hover {
     cursor: pointer;
+}
+.assortment .barbecue__box .tabletop__item a {
+    display: block;
+    border: 2px solid #fff;
+    -webkit-transition: 0.3s linear;
+         -o-transition: 0.3s linear;
+            transition: 0.3s linear;
+}
+.assortment .barbecue__box .tabletop__item2 {
+    width: 66px;
+    height: 66px;
+    margin-left: 10px;
+}
+.assortment .barbecue__box .tabletop__item2:hover {
+    cursor: pointer;
+}
+.assortment .barbecue__box .tabletop__item2 a {
+    display: block;
+    border: 2px solid #fff;
+    -webkit-transition: 0.3s linear;
+         -o-transition: 0.3s linear;
+            transition: 0.3s linear;
 }
 .assortment .barbecue__box .tabletop .color__item {
     margin-left: 10px;
@@ -2542,7 +2581,7 @@ section {
 .decor13 {
     position: absolute;
     left: 180px;
-    top: 500px;
+    top: 550px;
 }
 .decor14 {
     position: absolute;
@@ -2567,7 +2606,7 @@ section {
 .decor18 {
     position: absolute;
     right: 160px;
-    top: 450px;
+    top: 480px;
 }
 .step {
     background: url(../images/back__step.jpg) no-repeat center / cover;

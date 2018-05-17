@@ -45,17 +45,11 @@ $(document).ready(function() {
 
 $(document).ready(function() {
 
-  /*  if (document.documentElement.clientWidth > 1200) {
-      new WOW().init();
-
-    };
-
-    */
 
   if (document.documentElement.clientWidth > 1200) {
     $(window).enllax();
-
   };
+
 
   $('.scrolling__link').on('click', function(e) {
     e.preventDefault();
@@ -65,6 +59,7 @@ $(document).ready(function() {
       scrollTop: $(d).offset().top
     }, t);
   });
+
 
   $(".js-video-button").modalVideo({
     youtube: {
@@ -110,7 +105,6 @@ $(document).ready(function() {
   });
 
 
-
   $('.slider-for-recipe').slick({
     slidesToShow: 1,
     arrows: false,
@@ -154,7 +148,9 @@ $(document).ready(function() {
           }*/
 
     ]
+
   });
+
 
   $('.slider-review').slick({
     slidesToShow: 1,
@@ -166,6 +162,76 @@ $(document).ready(function() {
 
 
 
+  /*  $('.tabletop__item a').click(function() {
+      var clicknumber = $(this).data('clicknumber');
+      clicknumber++;
+
+      if (clicknumber == 1) {
+
+        $('.tabletop__item').removeClass('itemActive');
+        $(this).parents('.tabletop__item').addClass('itemActive');
+        $('#tabletopType').html($(this).data('color'));
+
+
+        $('.big__item').removeClass('active');
+        var selector = '#' + $('.construction__item.itemActive a img').data('construction') + $('.tabletop__item.itemActive a img').data('color');
+        $(selector).addClass('active');
+      }
+
+      $('.tabletop__item a').attr('data-clicknumber', 0).off("click.fb-start");
+      $(this).attr('data-clicknumber', clicknumber);
+
+      $(this).fancybox({
+        loop: false,
+        animationEffect: "zoom",
+        transitionEffect: "fade",
+        transitionDuration: 366,
+
+        clickOutside: "close",
+      });
+
+      return false;
+
+    });
+
+
+
+    $('.construction__item a').click(function() {
+      var clicknumber = $(this).data('clicknumber');
+      clicknumber++;
+
+      if (clicknumber == 1) {
+
+        $('.construction__item').removeClass('itemActive');
+        $(this).parents('.construction__item').addClass('itemActive');
+
+
+        $('.big__item').removeClass('active');
+        var selector = '#' + $('.construction__item.itemActive a').data('construction') + $('.tabletop__item.itemActive a img').data('color');
+        $(selector).addClass('active');
+      }
+
+      $('.construction__item a').attr('data-clicknumber', 0).off("click.fb-start");
+      $(this).attr('data-clicknumber', clicknumber);
+
+
+      $(this).fancybox({
+        loop: false,
+        animationEffect: "zoom",
+        transitionEffect: "fade",
+        transitionDuration: 366,
+
+        clickOutside: "close",
+      });
+
+      return false;
+    });
+    */
+
+
+
+  /*  SCRIPT FOR SINGLE BARBECUE*/
+
   $('.tabletop__item a').click(function() {
     var clicknumber = $(this).data('clicknumber');
     clicknumber++;
@@ -174,7 +240,12 @@ $(document).ready(function() {
 
       $('.tabletop__item a .click__img').removeClass('borderActive');
       $(this).find('.click__img').addClass('borderActive');
+
+      $(".tabletop__item").removeClass("itemActive");
+      $(this).parents('.tabletop__item').addClass('itemActive');
+
       $('#tabletopType').html($(this).data('color'));
+
       $('.big__item').removeClass('active');
       var selector = '#' + $('.construction__item a .borderActive').data('construction') + $('.tabletop__item a .borderActive').data('color');
       $(selector).addClass('active');
@@ -184,6 +255,7 @@ $(document).ready(function() {
     $(this).attr('data-clicknumber', clicknumber);
 
     $(this).fancybox({
+
       loop: false,
       animationEffect: "zoom",
       transitionEffect: "fade",
@@ -191,16 +263,8 @@ $(document).ready(function() {
 
       clickOutside: "close",
     });
+
     return false;
-  });
-
-
-
-  $('.tabletop__item a').click(function() {
-
-    $(".tabletop__item").removeClass("itemActive");
-    $(this).parents('.tabletop__item').addClass('itemActive');
-
   });
 
 
@@ -212,7 +276,12 @@ $(document).ready(function() {
 
       $('.construction__item .click__img').removeClass('borderActive');
       $(this).find('.click__img').addClass('borderActive');
+
+      $(".construction__item").removeClass("itemActive");
+      $(this).parents('.construction__item').addClass('itemActive');
+
       $('.big__item').removeClass('active');
+
       var selector = '#' + $('.construction__item a .borderActive').data('construction') + $('.tabletop__item a .borderActive').data('color');
       $(selector).addClass('active');
     }
@@ -231,14 +300,81 @@ $(document).ready(function() {
     return false;
   });
 
-});
 
-$('.construction__item a').click(function() {
 
-    $(".construction__item").removeClass("itemActive");
-    $(this).parents('.construction__item').addClass('itemActive');
+  /*  SCRIPT FOR COMPLEX BARBECUE*/
 
+  $('.tabletop__item2 a').click(function() {
+    var clicknumber = $(this).data('clicknumber');
+    clicknumber++;
+
+    if (clicknumber == 1) {
+
+      $('.tabletop__item2 a .click__img').removeClass('borderActive');
+      $(this).find('.click__img').addClass('borderActive');
+
+      $(".tabletop__item2").removeClass("itemActive");
+      $(this).parents('.tabletop__item2').addClass('itemActive');
+
+      $('#tabletopType2').html($(this).data('color'));
+
+      $('.big__item2').removeClass('active');
+      var selector = '#' + $('.construction__item2 a .borderActive').data('construction') + $('.tabletop__item2 a .borderActive').data('color');
+      $(selector).addClass('active');
+    }
+
+
+    $('.tabletop__item2 a').attr('data-clicknumber', 0).off("click.fb-start");
+    $(this).attr('data-clicknumber', clicknumber);
+
+    $(this).fancybox({
+
+      loop: false,
+      animationEffect: "zoom",
+      transitionEffect: "fade",
+      transitionDuration: 366,
+
+      clickOutside: "close",
+    });
+
+    return false;
   });
+
+
+  $('.construction__item2 a').click(function() {
+    var clicknumber = $(this).data('clicknumber');
+    clicknumber++;
+
+    if (clicknumber == 1) {
+
+      $('.construction__item2 .click__img').removeClass('borderActive');
+      $(this).find('.click__img').addClass('borderActive');
+
+      $(".construction__item2").removeClass("itemActive");
+      $(this).parents('.construction__item2').addClass('itemActive');
+
+      $('.big__item2').removeClass('active');
+
+      var selector = '#' + $('.construction__item2 a .borderActive').data('construction') + $('.tabletop__item2 a .borderActive').data('color');
+      $(selector).addClass('active');
+    }
+
+    $('.construction__item2 a').attr('data-clicknumber', 0).off("click.fb-start");
+    $(this).attr('data-clicknumber', clicknumber);
+
+    $(this).fancybox({
+      loop: false,
+      animationEffect: "zoom",
+      transitionEffect: "fade",
+      transitionDuration: 366,
+
+      clickOutside: "close",
+    });
+    return false;
+  });
+
+
+});
 
 
 
