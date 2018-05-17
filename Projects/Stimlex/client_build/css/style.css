@@ -2285,17 +2285,17 @@ section {
 .decor9 {
     position: absolute;
     right: 80px;
-    top: 0;
+    top: -80px;
 }
 .decor10 {
     position: absolute;
     right: 180px;
-    top: 380px;
+    top: 300px;
 }
 .decor11 {
     position: absolute;
     right: 80px;
-    top: 460px;
+    top: 400px;
 }
 .consult {
     margin-top: -74px;
