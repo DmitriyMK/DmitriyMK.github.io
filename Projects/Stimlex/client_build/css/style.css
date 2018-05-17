@@ -2324,6 +2324,9 @@ section {
     z-index: 12;
     height: 639px;
 }
+.consult .container {
+    position: relative;
+}
 .consult__box {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2401,8 +2404,8 @@ section {
 }
 .decor19 {
     position: absolute;
-    left: 0;
-    top: -25px;
+    left: -376px;
+    top: -105px;
 }
 .details {
     position: relative;
