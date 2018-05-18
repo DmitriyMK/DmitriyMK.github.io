@@ -81,7 +81,7 @@ $(document).ready(function() {
   $(".js-video-button").modalVideo({
     youtube: {
       autoplay: 1,
-      nocookie: true,
+      nocookie: false,
       cc_load_policy: 1,
       color: null,
       controls: 1,
@@ -112,14 +112,13 @@ $(document).ready(function() {
     slidesToShow: 5,
     arrows: false,
     dots: false,
-
   });
+
 
   $('.sliderBarbecueComplex').slick({
     slidesToShow: 4,
     arrows: false,
     dots: false,
-
   });
 
 
@@ -138,7 +137,6 @@ $(document).ready(function() {
     },
 
     ]
-
   });
 
 
