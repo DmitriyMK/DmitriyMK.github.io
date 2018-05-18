@@ -1580,7 +1580,7 @@ section {
     position: relative;
 }
 .video__link:hover:before {
-    background: rgba(251, 45, 25, 0.2);
+    background: rgba(0, 0, 0, 0.2);
 }
 .video__link:before {
     content: '';
@@ -1590,7 +1590,7 @@ section {
     width: 70px;
     height: 70px;
     border-radius: 50%;
-    background: rgba(0, 0, 0, 0.2);
+    background: rgba(251, 45, 25, 0.2);
     z-index: 10;
     -webkit-transition: background-color 0.3s linear;
          -o-transition: background-color 0.3s linear;
