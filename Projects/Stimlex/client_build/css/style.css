@@ -1885,6 +1885,9 @@ section {
     height: auto;
     border: 2px solid #fff;
 }
+.assortment .big__img-gray {
+    border: 2px solid #a1a1a1;
+}
 .assortment .color__list {
     padding-top: 5px;
     display: -webkit-box;
@@ -1900,6 +1903,15 @@ section {
 }
 .assortment .btn {
     padding: 10px 14px;
+    -webkit-transition: all 0.3s linear;
+         -o-transition: all 0.3s linear;
+            transition: all 0.3s linear;
+    -webkit-box-shadow: 1.568px 14.918px 17.4px 2.6px rgba(220, 52, 0, 0.1);
+            box-shadow: 1.568px 14.918px 17.4px 2.6px rgba(220, 52, 0, 0.1);
+}
+.assortment .btn:hover {
+    -webkit-box-shadow: 1.568px 14.918px 17.4px 2.6px rgba(220, 52, 0, 0);
+            box-shadow: 1.568px 14.918px 17.4px 2.6px rgba(220, 52, 0, 0);
 }
 .assortment .barbecue__box {
     display: -webkit-box;
@@ -2021,7 +2033,7 @@ section {
 }
 .assortment .barbecue__box .construction__item2 a {
     display: block;
-    border: 2px solid #fff;
+    border: 2px solid #a1a1a1;
     -webkit-transition: 0.3s linear;
          -o-transition: 0.3s linear;
             transition: 0.3s linear;
@@ -2067,7 +2079,7 @@ section {
 }
 .assortment .barbecue__box .tabletop__item2 a {
     display: block;
-    border: 2px solid #fff;
+    border: 2px solid #a1a1a1;
     -webkit-transition: 0.3s linear;
          -o-transition: 0.3s linear;
             transition: 0.3s linear;
@@ -2261,25 +2273,10 @@ section {
 .assortment .barbecue__other .btn {
     color: #fff;
 }
-.decor1 {
-    position: absolute;
-    left: 0;
-    top: 60px;
-}
-.decor2 {
-    position: absolute;
-    left: 25px;
-    top: 270px;
-}
 .decor3 {
     position: absolute;
     left: 0;
-    top: 755px;
-}
-.decor4 {
-    position: absolute;
-    right: 25px;
-    top: 570px;
+    top: 765px;
 }
 .decor5 {
     position: absolute;
