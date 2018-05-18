@@ -105,36 +105,30 @@ section {
 
 .section__title {
     position: relative;
-    font-size: 40px;
+    font-size: 27px;
     font-weight: 700;
     text-align: center;
     color: #222326;
+
     &:before {
         content: '';
         position: absolute;
         width: 130px;
         height: 4px;
-        bottom: -25px;
+        bottom: -20px;
         left: 50%;
         transform: translateX(-50%);
         background: @red;
-    }
-    @media @mobile {
 
+        @media @desktop {
+            bottom: -25px;
+        }
     }
-    @media @tablet {
 
-    }
     @media @desktop {
-
+        font-size: 30px;
     }
     @media @desktop-xl {
-
-    }
-    @media @desktop-xl-2 {
-
-    }
-    @media @desktop-xll {
-
+        font-size: 40px;
     }
 }
