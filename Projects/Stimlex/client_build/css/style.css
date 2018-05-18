@@ -2317,7 +2317,7 @@ section {
     margin-top: -74px;
     margin-bottom: -110px;
     position: relative;
-    background: url(../images/back__consult.png) no-repeat center;
+    background: url(../images/back__consult.png) repeat-x center;
     z-index: 12;
     height: 639px;
 }
@@ -2562,6 +2562,26 @@ section {
         -ms-transform: translateX(-54%);
             transform: translateX(-54%);
 }
+.video__link {
+    position: relative;
+}
+.video__link:hover:before {
+    background: rgba(251, 45, 25, 0.2);
+}
+.video__link:before {
+    content: '';
+    position: absolute;
+    top: -35px;
+    left: -5px;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.2);
+    z-index: 10;
+    -webkit-transition: background-color 0.3s linear;
+         -o-transition: background-color 0.3s linear;
+            transition: background-color 0.3s linear;
+}
 .video__play {
     position: relative;
     display: inline-block;
@@ -2620,7 +2640,7 @@ section {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    margin: 60px 0 50px 0;
+    margin: 60px 0 30px 0;
 }
 .step .list__item {
     -ms-flex-item-align: baseline;
@@ -2645,7 +2665,8 @@ section {
 }
 .step .btn {
     display: block;
-    margin: auto;
+    margin: 20px auto 0 auto;
+    color: #fff;
     -webkit-box-shadow: 1.568px 14.918px 17.4px 2.6px rgba(220, 52, 0, 0.1);
             box-shadow: 1.568px 14.918px 17.4px 2.6px rgba(220, 52, 0, 0.1);
     -webkit-transition: all 0.3s linear;

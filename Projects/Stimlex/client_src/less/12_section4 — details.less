@@ -189,6 +189,29 @@
 		transform: translateX(-54%);
 	}
 
+	&__link {
+		position: relative;
+
+		&:hover {
+			&:before {
+				background: rgba(251,45,25,.2);
+			}
+		}
+
+		&:before {
+			content: '';
+			position: absolute;
+			top: -35px;
+			left: -5px;
+			width: 70px;
+			height: 70px;
+			border-radius: 50%;
+			background: rgba(0,0,0,.2);
+			z-index: 10;
+			transition: background-color .3s linear;
+		}
+	}
+
 	&__play {
 		position: relative;
 		display: inline-block;
