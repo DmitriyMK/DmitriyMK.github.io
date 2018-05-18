@@ -124,9 +124,21 @@ $(document).ready(function() {
 
 
   $('.slider__product').slick({
-    slidesToShow: 5,
+    slidesToShow: 3,
     arrows: false,
     dots: false,
+
+    responsive: [
+
+    {
+      breakpoint: 992,
+      settings: {
+        slidesToShow: 3,
+      }
+    },
+
+    ]
+
   });
 
 
@@ -172,9 +184,9 @@ $(document).ready(function() {
             }
           }*/
 
-    ]
+          ]
 
-  });
+        });
 
 
   $('.slider-review').slick({

@@ -1565,8 +1565,19 @@ section {
 .assortment .barbecue__box .info__item-dark {
     margin-bottom: 1px;
     position: relative;
-    list-style-type: disc;
-    list-style-position: inside;
+    font-size: 13px;
+}
+@media only screen and (min-width: 768px) {
+    .assortment .barbecue__box .info__item-dark br {
+        display: none;
+    }
+}
+@media only screen and (min-width: 768px) {
+    .assortment .barbecue__box .info__item-dark {
+        list-style-type: disc;
+        list-style-position: inside;
+        font-size: inherit;
+    }
 }
 @media only screen and (min-width: 768px) {
     .assortment .barbecue__box .info__item-dark:after {
@@ -1669,27 +1680,59 @@ section {
 }
 .assortment .barbecue__other {
     position: relative;
-    padding: 100px 0;
+    padding: 60px 0;
     color: #000;
     background: url(../images/back__barbecue-more.jpg) no-repeat center / cover;
+}
+@media only screen and (min-width: 1200px) {
+    .assortment .barbecue__other {
+        padding: 100px 0;
+    }
 }
 .assortment .barbecue__other-box {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+        flex-direction: column;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
 }
+@media only screen and (min-width: 992px) {
+    .assortment .barbecue__other-box {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    }
+}
 .assortment .barbecue__other .product {
-    width: 350px;
+    width: 300px;
     margin: auto;
-    margin-bottom: 25px;
+    margin-bottom: 60px;
     text-align: center;
 }
+@media only screen and (min-width: 992px) {
+    .assortment .barbecue__other .product {
+        margin-bottom: inherit;
+    }
+}
+@media only screen and (min-width: 1200px) {
+    .assortment .barbecue__other .product {
+        width: 350px;
+    }
+}
 .assortment .barbecue__other .product__desc {
-    margin-bottom: 25px;
-    min-height: 60px;
+    margin-bottom: 15px;
+}
+@media only screen and (min-width: 992px) {
+    .assortment .barbecue__other .product__desc {
+        margin-bottom: 25px;
+        min-height: 60px;
+    }
 }
 .assortment .barbecue__other .product__title {
     font-size: 20px;
@@ -1700,24 +1743,40 @@ section {
     font-size: 19px;
 }
 .assortment .barbecue__other .product__img img {
-    width: 100%;
-    height: 317px;
+    max-width: 300px;
+    height: auto;
     border: 1px solid #a1a1a1;
+}
+@media only screen and (min-width: 992px) {
+    .assortment .barbecue__other .product__img img {
+        max-width: 100%;
+    }
+}
+@media only screen and (min-width: 1200px) {
+    .assortment .barbecue__other .product__img img {
+        width: 100%;
+        height: 317px;
+    }
 }
 .assortment .barbecue__other .slider__item {
     float: left;
     width: 66px!important;
     height: 66px;
-    margin-right: 5px;
+    margin-right: 10px;
     margin-top: 8px;
     border: 1px solid #a1a1a1;
+}
+@media only screen and (min-width: 992px) {
+    .assortment .barbecue__other .slider__item {
+        margin-right: 4.5px;
+    }
 }
 .assortment .barbecue__other .slider__item:last-of-type {
     margin-right: 0;
 }
 .assortment .barbecue__other .price {
     padding: 20px 0;
-    font-size: 19px;
+    font-size: 20px;
     font-weight: 700;
     color: #000;
 }
@@ -1803,8 +1862,13 @@ section {
     .decor5 {
         display: block;
         position: absolute;
-        left: 170px;
+        left: 20px;
         top: 200px;
+    }
+}
+@media only screen and (min-width: 1600px) {
+    .decor5 {
+        left: 170px;
     }
 }
 .decor6 {
@@ -1814,8 +1878,13 @@ section {
     .decor6 {
         display: block;
         position: absolute;
-        left: 60px;
+        left: 30px;
         top: 310px;
+    }
+}
+@media only screen and (min-width: 1600px) {
+    .decor6 {
+        left: 60px;
     }
 }
 .decor7 {
@@ -1832,7 +1901,7 @@ section {
 .decor8 {
     display: none;
 }
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1600px) {
     .decor8 {
         display: block;
         position: absolute;
@@ -1848,7 +1917,7 @@ section {
         display: block;
         position: absolute;
         right: 80px;
-        top: -95px;
+        top: -105px;
     }
 }
 .decor10 {
@@ -1858,6 +1927,12 @@ section {
     .decor10 {
         display: block;
         position: absolute;
+        right: 40px;
+        top: 160px;
+    }
+}
+@media only screen and (min-width: 1600px) {
+    .decor10 {
         right: 180px;
         top: 300px;
     }
