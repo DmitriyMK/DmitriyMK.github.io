@@ -763,7 +763,7 @@ section {
 }
 @media only screen and (min-width: 992px) {
     .header {
-        min-height: 650px;
+        min-height: 100vh;
     }
 }
 @media only screen and (min-width: 1600px) {

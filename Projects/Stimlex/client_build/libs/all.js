@@ -162,81 +162,10 @@ $(document).ready(function() {
 
 
 
-  /*  $('.tabletop__item a').click(function() {
-      var clicknumber = $(this).data('clicknumber');
-      clicknumber++;
-
-      if (clicknumber == 1) {
-
-        $('.tabletop__item').removeClass('itemActive');
-        $(this).parents('.tabletop__item').addClass('itemActive');
-        $('#tabletopType').html($(this).data('color'));
-
-
-        $('.big__item').removeClass('active');
-        var selector = '#' + $('.construction__item.itemActive a img').data('construction') + $('.tabletop__item.itemActive a img').data('color');
-        $(selector).addClass('active');
-      }
-
-      $('.tabletop__item a').attr('data-clicknumber', 0).off("click.fb-start");
-      $(this).attr('data-clicknumber', clicknumber);
-
-      $(this).fancybox({
-        loop: false,
-        animationEffect: "zoom",
-        transitionEffect: "fade",
-        transitionDuration: 366,
-
-        clickOutside: "close",
-      });
-
-      return false;
-
-    });
-
-
-
-    $('.construction__item a').click(function() {
-      var clicknumber = $(this).data('clicknumber');
-      clicknumber++;
-
-      if (clicknumber == 1) {
-
-        $('.construction__item').removeClass('itemActive');
-        $(this).parents('.construction__item').addClass('itemActive');
-
-
-        $('.big__item').removeClass('active');
-        var selector = '#' + $('.construction__item.itemActive a').data('construction') + $('.tabletop__item.itemActive a img').data('color');
-        $(selector).addClass('active');
-      }
-
-      $('.construction__item a').attr('data-clicknumber', 0).off("click.fb-start");
-      $(this).attr('data-clicknumber', clicknumber);
-
-
-      $(this).fancybox({
-        loop: false,
-        animationEffect: "zoom",
-        transitionEffect: "fade",
-        transitionDuration: 366,
-
-        clickOutside: "close",
-      });
-
-      return false;
-    });
-    */
-
-
-
   /*  SCRIPT FOR SINGLE BARBECUE*/
 
   $('.tabletop__item a').click(function() {
-    var clicknumber = $(this).data('clicknumber');
-    clicknumber++;
-
-    if (clicknumber == 1) {
+    if (!$(this).parents('.tabletop__item').hasClass('itemActive')) {
 
       $('.tabletop__item a .click__img').removeClass('borderActive');
       $(this).find('.click__img').addClass('borderActive');
@@ -251,8 +180,7 @@ $(document).ready(function() {
       $(selector).addClass('active');
     }
 
-    $('.tabletop__item a').attr('data-clicknumber', 0).off("click.fb-start");
-    $(this).attr('data-clicknumber', clicknumber);
+    $('.tabletop__item a').off("click.fb-start");
 
     $(this).fancybox({
 
@@ -269,10 +197,8 @@ $(document).ready(function() {
 
 
   $('.construction__item a').click(function() {
-    var clicknumber = $(this).data('clicknumber');
-    clicknumber++;
 
-    if (clicknumber == 1) {
+    if (!$(this).parents('.construction__item').hasClass('itemActive')) {
 
       $('.construction__item .click__img').removeClass('borderActive');
       $(this).find('.click__img').addClass('borderActive');
@@ -285,9 +211,7 @@ $(document).ready(function() {
       var selector = '#' + $('.construction__item a .borderActive').data('construction') + $('.tabletop__item a .borderActive').data('color');
       $(selector).addClass('active');
     }
-
-    $('.construction__item a').attr('data-clicknumber', 0).off("click.fb-start");
-    $(this).attr('data-clicknumber', clicknumber);
+    $('.construction__item a').off("click.fb-start");
 
     $(this).fancybox({
       loop: false,
@@ -301,14 +225,11 @@ $(document).ready(function() {
   });
 
 
-
+  
   /*  SCRIPT FOR COMPLEX BARBECUE*/
 
   $('.tabletop__item2 a').click(function() {
-    var clicknumber = $(this).data('clicknumber');
-    clicknumber++;
-
-    if (clicknumber == 1) {
+    if (!$(this).parents('.tabletop__item2').hasClass('itemActive')) {
 
       $('.tabletop__item2 a .click__img').removeClass('borderActive');
       $(this).find('.click__img').addClass('borderActive');
@@ -323,9 +244,7 @@ $(document).ready(function() {
       $(selector).addClass('active');
     }
 
-
-    $('.tabletop__item2 a').attr('data-clicknumber', 0).off("click.fb-start");
-    $(this).attr('data-clicknumber', clicknumber);
+    $('.tabletop__item2 a').off("click.fb-start");
 
     $(this).fancybox({
 
@@ -342,10 +261,8 @@ $(document).ready(function() {
 
 
   $('.construction__item2 a').click(function() {
-    var clicknumber = $(this).data('clicknumber');
-    clicknumber++;
 
-    if (clicknumber == 1) {
+    if (!$(this).parents('.construction__item2').hasClass('itemActive')) {
 
       $('.construction__item2 .click__img').removeClass('borderActive');
       $(this).find('.click__img').addClass('borderActive');
@@ -358,9 +275,7 @@ $(document).ready(function() {
       var selector = '#' + $('.construction__item2 a .borderActive').data('construction') + $('.tabletop__item2 a .borderActive').data('color');
       $(selector).addClass('active');
     }
-
-    $('.construction__item2 a').attr('data-clicknumber', 0).off("click.fb-start");
-    $(this).attr('data-clicknumber', clicknumber);
+    $('.construction__item2 a').off("click.fb-start");
 
     $(this).fancybox({
       loop: false,
@@ -371,6 +286,17 @@ $(document).ready(function() {
       clickOutside: "close",
     });
     return false;
+  });
+
+
+  /*  SCRIPT FOR FANCYBOX*/
+  $('.itemActive a').fancybox({
+    loop: false,
+    animationEffect: "zoom",
+    transitionEffect: "fade",
+    transitionDuration: 366,
+
+    clickOutside: "close",
   });
 
 
@@ -424,9 +350,6 @@ function initMap() {
       style: google.maps.NavigationControlStyle.SMALL
     },
     mapTypeId: google.maps.MapTypeId.ROADMAP,
-    /*    styles:*/
-
-
 
   };
   var map = new google.maps.Map(document.getElementById("google-map"), settings);
@@ -447,7 +370,7 @@ function initMap() {
     },
     map: map,
     icon: image
-      // title: 'Push-k Solutions'
+
   });
 
 };
