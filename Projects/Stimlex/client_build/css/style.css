@@ -871,7 +871,7 @@ section {
 }
 .header__center {
     padding-top: 20vh;
-    padding-bottom: 5vh;
+    padding-bottom: 15vh;
     text-align: center;
 }
 @media only screen and (min-width: 768px) {
@@ -993,7 +993,7 @@ section {
 }
 @media only screen and (min-width: 1200px) {
     .header .arr-down {
-        margin-top: 13px;
+        margin-top: 30px;
     }
 }
 @media only screen and (min-width: 1600px) {
@@ -1057,11 +1057,17 @@ section {
     -ms-flex-align: baseline;
     align-items: baseline;
     margin: 60px 0;
+    margin-bottom: 0;
 }
 @media only screen and (min-width: 768px) {
     .reasons .list {
         -ms-flex-pack: distribute;
         justify-content: space-around;
+    }
+}
+@media only screen and (min-width: 992px) {
+    .reasons .list {
+        margin: 60px 0;
     }
 }
 @media only screen and (min-width: 1200px) {
@@ -1090,9 +1096,9 @@ section {
 }
 .reasons .list__img {
     position: relative;
-    display: inline-block;
+    display: block;
     margin: 15px auto;
-    height: auto;
+    height: 166px;
     border-radius: 50%;
     -webkit-box-shadow: 0 16px 12px 0.52px rgba(39, 34, 35, 0.07);
             box-shadow: 0 16px 12px 0.52px rgba(39, 34, 35, 0.07);
@@ -1119,6 +1125,11 @@ section {
         padding: 23px 0;
         font-size: 18px;
     }
+}
+.reasons .list__text {
+    max-width: 290px;
+    text-align: center;
+    margin: auto;
 }
 .assortment {
     padding: 0;
@@ -1178,10 +1189,31 @@ section {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+        flex-direction: column;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    padding: 100px 120px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 80px 0;
+}
+@media only screen and (min-width: 992px) {
+    .assortment .barbecue__box {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+        padding: 80px 30px;
+    }
+}
+@media only screen and (min-width: 1200px) {
+    .assortment .barbecue__box {
+        padding: 100px 120px;
+    }
 }
 .assortment .barbecue__box .box__img {
     width: 416px;
@@ -1456,8 +1488,18 @@ section {
 }
 .assortment .barbecue__single {
     position: relative;
-    background: url(../images/back__assortment.jpg) no-repeat center / cover;
+    background: url(../images/back__assortment-single.jpg) no-repeat center / cover;
     z-index: 10;
+}
+@media only screen and (min-width: 1200px) {
+    .assortment .barbecue__single {
+        background: url(../images/back__assortment-med.jpg) no-repeat center / cover;
+    }
+}
+@media only screen and (min-width: 1600px) {
+    .assortment .barbecue__single {
+        background: url(../images/back__assortment.jpg) no-repeat center / cover;
+    }
 }
 .assortment .barbecue__complex {
     position: relative;
@@ -1534,10 +1576,64 @@ section {
 .assortment .barbecue__other .btn {
     color: #fff;
 }
+.decor1 {
+    display: none;
+}
+@media only screen and (min-width: 992px) {
+    .decor1 {
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 60px;
+    }
+    .decor1 img {
+        width: 100px;
+    }
+}
+@media only screen and (min-width: 1600px) {
+    .decor1 {
+        display: none;
+    }
+}
+.decor2 {
+    display: none;
+}
+@media only screen and (min-width: 1200px) {
+    .decor2 {
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 380px;
+    }
+}
+@media only screen and (min-width: 1600px) {
+    .decor2 {
+        display: none;
+    }
+}
 .decor3 {
     position: absolute;
     left: 0;
     top: 765px;
+}
+.decor4 {
+    display: none;
+}
+@media only screen and (min-width: 1200px) {
+    .decor4 {
+        display: block;
+        position: absolute;
+        right: 0;
+        bottom: 50px;
+    }
+    .decor4 img {
+        width: 200px;
+    }
+}
+@media only screen and (min-width: 1600px) {
+    .decor4 {
+        display: none;
+    }
 }
 .decor5 {
     position: absolute;

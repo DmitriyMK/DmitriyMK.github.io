@@ -2740,7 +2740,7 @@ textarea {
         line-height: 44px;
     }
 }
-.pagination .page-numbers-active {
+.pagination .current {
     background-color: #f0d91a;
 }
 .about__box {
