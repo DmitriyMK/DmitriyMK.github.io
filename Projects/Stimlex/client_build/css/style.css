@@ -1167,13 +1167,20 @@ section {
     display: flex;
 }
 .assortment .color__item {
-    width: 66px;
+    width: 44px;
     text-align: center;
     margin-bottom: 12px;
     font-size: 14px;
     font-weight: 300;
 }
+@media only screen and (min-width: 768px) {
+    .assortment .color__item {
+        width: 66px;
+    }
+}
 .assortment .btn {
+    display: block;
+    margin: auto;
     padding: 10px 14px;
     -webkit-transition: all 0.3s linear;
          -o-transition: all 0.3s linear;
@@ -1184,6 +1191,11 @@ section {
 .assortment .btn:hover {
     -webkit-box-shadow: 1.568px 14.918px 17.4px 2.6px rgba(220, 52, 0, 0);
             box-shadow: 1.568px 14.918px 17.4px 2.6px rgba(220, 52, 0, 0);
+}
+@media only screen and (min-width: 992px) {
+    .assortment .btn {
+        display: inline;
+    }
 }
 .assortment .barbecue__box {
     position: relative;
@@ -1196,7 +1208,7 @@ section {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    padding: 80px 0;
+    padding: 60px 0;
 }
 @media only screen and (min-width: 992px) {
     .assortment .barbecue__box {
@@ -1210,6 +1222,15 @@ section {
 }
 .assortment .barbecue__box .big__item, .assortment .barbecue__box .big__item2 {
     display: none;
+}
+.assortment .barbecue__box .big__item img, .assortment .barbecue__box .big__item2 img {
+    height: 300px;
+    margin: auto;
+}
+@media only screen and (min-width: 992px) {
+    .assortment .barbecue__box .big__item img, .assortment .barbecue__box .big__item2 img {
+        height: auto;
+    }
 }
 .assortment .barbecue__box .active {
     display: block;
@@ -1244,30 +1265,64 @@ section {
     -webkit-transform: translate(-50%, -50%);
         -ms-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
-    width: 27px;
-    height: 27px;
+    width: 20px;
+    height: 20px;
     background: url(../images/icons/zoom-in.png);
+    background-size: contain;
+}
+@media only screen and (min-width: 768px) {
+    .assortment .barbecue__box .itemActive a:after {
+        width: 27px;
+        height: 27px;
+    }
 }
 .assortment .barbecue__box .slider__barbecue {
     width: 100%;
+    margin-bottom: 20px;
+}
+@media only screen and (min-width: 992px) {
+    .assortment .barbecue__box .slider__barbecue {
+        margin-bottom: inherit;
+    }
+}
+.assortment .barbecue__box .sliderBarbecueComplex .slider__item {
+    width: 56px!important;
+    height: 56px;
+}
+@media only screen and (min-width: 768px) {
+    .assortment .barbecue__box .sliderBarbecueComplex .slider__item {
+        width: 79.5px!important;
+        height: 79.5px;
+    }
 }
 .assortment .barbecue__box .slider__item {
-    float: left;
-    width: 80px!important;
-    height: 80px;
     margin-right: 4px;
     margin-top: 8px;
+    width: 18.9%!important;
+    height: 18.9%;
     border: 1px solid #a1a1a1;
 }
 .assortment .barbecue__box .slider__item:last-of-type {
     margin-right: 0;
+}
+@media only screen and (min-width: 768px) {
+    .assortment .barbecue__box .slider__item {
+        width: 80px!important;
+        height: 80px;
+        margin-right: 4px;
+    }
+}
+@media only screen and (min-width: 768px) {
+    .assortment .barbecue__box .box__img {
+        width: 416px;
+        margin: auto;
+    }
 }
 @media only screen and (min-width: 992px) {
     .assortment .barbecue__box .box__img {
         position: absolute;
         left: 30px;
         top: 80px;
-        width: 416px;
     }
 }
 @media only screen and (min-width: 1200px) {
@@ -1277,7 +1332,13 @@ section {
     }
 }
 .assortment .barbecue__box .box__info {
-    width: 440px;
+    max-width: 300px;
+}
+@media only screen and (min-width: 768px) {
+    .assortment .barbecue__box .box__info {
+        width: 440px;
+        max-width: inherit;
+    }
 }
 @media only screen and (min-width: 992px) {
     .assortment .barbecue__box .box__info {
@@ -1293,6 +1354,12 @@ section {
     font-size: 30px;
     font-weight: 700;
     padding-bottom: 12px;
+    text-align: center;
+}
+@media only screen and (min-width: 992px) {
+    .assortment .barbecue__box .box__info .title {
+        text-align: left;
+    }
 }
 .assortment .barbecue__box .btn__box {
     display: -webkit-box;
@@ -1305,6 +1372,12 @@ section {
 }
 .assortment .barbecue__box .construction__text {
     font-weight: 300;
+    font-size: 14px;
+}
+@media only screen and (min-width: 768px) {
+    .assortment .barbecue__box .construction__text {
+        font-size: inherit;
+    }
 }
 .assortment .barbecue__box .construction__list {
     padding-top: 5px;
@@ -1314,9 +1387,15 @@ section {
 }
 .assortment .barbecue__box .construction__item {
     position: relative;
-    width: 66px;
-    height: 66px;
     margin-right: 10px;
+    width: 44px;
+    height: 44px;
+}
+@media only screen and (min-width: 768px) {
+    .assortment .barbecue__box .construction__item {
+        width: 66px;
+        height: 66px;
+    }
 }
 .assortment .barbecue__box .construction__item:hover {
     cursor: pointer;
@@ -1330,9 +1409,15 @@ section {
 }
 .assortment .barbecue__box .construction__item2 {
     position: relative;
-    width: 66px;
-    height: 66px;
     margin-right: 10px;
+    width: 44px;
+    height: 44px;
+}
+@media only screen and (min-width: 768px) {
+    .assortment .barbecue__box .construction__item2 {
+        width: 66px;
+        height: 66px;
+    }
 }
 .assortment .barbecue__box .construction__item2:hover {
     cursor: pointer;
@@ -1353,6 +1438,12 @@ section {
 .assortment .barbecue__box .tabletop__text {
     text-align: right;
     font-weight: 300;
+    font-size: 14px;
+}
+@media only screen and (min-width: 768px) {
+    .assortment .barbecue__box .tabletop__text {
+        font-size: inherit;
+    }
 }
 .assortment .barbecue__box .tabletop__list {
     padding-top: 5px;
@@ -1361,9 +1452,15 @@ section {
     display: flex;
 }
 .assortment .barbecue__box .tabletop__item {
-    width: 66px;
-    height: 66px;
     margin-left: 10px;
+    width: 44px;
+    height: 44px;
+}
+@media only screen and (min-width: 768px) {
+    .assortment .barbecue__box .tabletop__item {
+        width: 66px;
+        height: 66px;
+    }
 }
 .assortment .barbecue__box .tabletop__item:hover {
     cursor: pointer;
@@ -1376,9 +1473,15 @@ section {
             transition: 0.3s linear;
 }
 .assortment .barbecue__box .tabletop__item2 {
-    width: 66px;
-    height: 66px;
     margin-left: 10px;
+    width: 44px;
+    height: 44px;
+}
+@media only screen and (min-width: 768px) {
+    .assortment .barbecue__box .tabletop__item2 {
+        width: 66px;
+        height: 66px;
+    }
 }
 .assortment .barbecue__box .tabletop__item2:hover {
     cursor: pointer;
@@ -1393,18 +1496,39 @@ section {
 .assortment .barbecue__box .tabletop .color__item {
     margin-left: 10px;
 }
+.assortment .barbecue__box .info__list {
+    padding: 0 10px;
+}
+@media only screen and (min-width: 768px) {
+    .assortment .barbecue__box .info__list {
+        padding: inherit;
+    }
+}
 .assortment .barbecue__box .info__item {
     margin-bottom: 1px;
     position: relative;
-    list-style-type: disc;
-    list-style-position: inside;
+    font-size: 13px;
 }
-.assortment .barbecue__box .info__item:after {
-    content: '';
-    position: absolute;
-    height: 1px;
-    bottom: 0;
-    background: url(../images/icons/lines.png);
+@media only screen and (min-width: 768px) {
+    .assortment .barbecue__box .info__item br {
+        display: none;
+    }
+}
+@media only screen and (min-width: 768px) {
+    .assortment .barbecue__box .info__item {
+        list-style-type: disc;
+        list-style-position: inside;
+        font-size: inherit;
+    }
+}
+@media only screen and (min-width: 768px) {
+    .assortment .barbecue__box .info__item:after {
+        content: '';
+        position: absolute;
+        height: 1px;
+        bottom: 0;
+        background: url(../images/icons/lines.png);
+    }
 }
 .assortment .barbecue__box .info__item:nth-of-type(1):after {
     width: 66px;
@@ -1444,12 +1568,14 @@ section {
     list-style-type: disc;
     list-style-position: inside;
 }
-.assortment .barbecue__box .info__item-dark:after {
-    content: '';
-    position: absolute;
-    height: 1px;
-    bottom: 0;
-    background: url(../images/icons/lines-dark.png);
+@media only screen and (min-width: 768px) {
+    .assortment .barbecue__box .info__item-dark:after {
+        content: '';
+        position: absolute;
+        height: 1px;
+        bottom: 0;
+        background: url(../images/icons/lines-dark.png);
+    }
 }
 .assortment .barbecue__box .info__item-dark:nth-of-type(1):after {
     width: 66px;
@@ -1485,16 +1611,32 @@ section {
 }
 .assortment .barbecue__box .price {
     padding: 24px 0;
-    font-size: 30px;
+    font-size: 20px;
     font-weight: 700;
     color: #fff;
+    text-align: center;
+}
+@media tablet {
+    .assortment .barbecue__box .price {
+        text-align: left;
+    }
+}
+@media only screen and (min-width: 992px) {
+    .assortment .barbecue__box .price {
+        font-size: 30px;
+    }
 }
 .assortment .barbecue__box .old__price {
-    padding: 0 10px;
+    padding: 0 5px;
     text-decoration: line-through;
     -webkit-text-decoration-color: #ff4200;
             text-decoration-color: #ff4200;
     font-weight: 300;
+}
+@media only screen and (min-width: 992px) {
+    .assortment .barbecue__box .old__price {
+        padding: 0 10px;
+    }
 }
 .assortment .barbecue__box .text-right {
     float: right;
@@ -1625,9 +1767,15 @@ section {
     }
 }
 .decor3 {
-    position: absolute;
-    left: 0;
-    bottom: -70px;
+    display: none;
+}
+@media only screen and (min-width: 992px) {
+    .decor3 {
+        display: block;
+        position: absolute;
+        left: 0;
+        bottom: -70px;
+    }
 }
 .decor4 {
     display: none;
@@ -1649,39 +1797,81 @@ section {
     }
 }
 .decor5 {
-    position: absolute;
-    left: 170px;
-    top: 200px;
+    display: none;
+}
+@media only screen and (min-width: 1200px) {
+    .decor5 {
+        display: block;
+        position: absolute;
+        left: 170px;
+        top: 200px;
+    }
 }
 .decor6 {
-    position: absolute;
-    left: 60px;
-    top: 310px;
+    display: none;
+}
+@media only screen and (min-width: 1200px) {
+    .decor6 {
+        display: block;
+        position: absolute;
+        left: 60px;
+        top: 310px;
+    }
 }
 .decor7 {
-    position: absolute;
-    left: 90px;
-    top: 580px;
+    display: none;
+}
+@media only screen and (min-width: 1200px) {
+    .decor7 {
+        display: block;
+        position: absolute;
+        left: 90px;
+        top: 580px;
+    }
 }
 .decor8 {
-    position: absolute;
-    left: 200px;
-    top: 450px;
+    display: none;
+}
+@media only screen and (min-width: 1200px) {
+    .decor8 {
+        display: block;
+        position: absolute;
+        left: 200px;
+        top: 450px;
+    }
 }
 .decor9 {
-    position: absolute;
-    right: 80px;
-    top: -95px;
+    display: none;
+}
+@media only screen and (min-width: 1200px) {
+    .decor9 {
+        display: block;
+        position: absolute;
+        right: 80px;
+        top: -95px;
+    }
 }
 .decor10 {
-    position: absolute;
-    right: 180px;
-    top: 300px;
+    display: none;
+}
+@media only screen and (min-width: 1200px) {
+    .decor10 {
+        display: block;
+        position: absolute;
+        right: 180px;
+        top: 300px;
+    }
 }
 .decor11 {
-    position: absolute;
-    right: 80px;
-    top: 400px;
+    display: none;
+}
+@media only screen and (min-width: 1200px) {
+    .decor11 {
+        display: block;
+        position: absolute;
+        right: 80px;
+        top: 400px;
+    }
 }
 .consult {
     margin-top: -74px;

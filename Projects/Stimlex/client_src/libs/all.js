@@ -108,10 +108,18 @@ $(document).ready(function() {
   });
 
 
-  $('.slider__barbecue').slick({
+  $('.sliderBarbecueSingle').slick({
     slidesToShow: 5,
     arrows: false,
     dots: false,
+
+  });
+
+  $('.sliderBarbecueComplex').slick({
+    slidesToShow: 4,
+    arrows: false,
+    dots: false,
+
   });
 
 

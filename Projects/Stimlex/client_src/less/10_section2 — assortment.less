@@ -51,14 +51,20 @@
 	}
 
 	.color__item {
-		width: 66px;
+		width: 44px;
 		text-align: center;
 		margin-bottom: 12px;
 		font-size: 14px;
-		font-weight: 300;
+		font-weight: 300;	
+
+		@media @tablet {
+			width: 66px;
+		}
 	}
 
 	.btn {
+		display: block;
+		margin: auto;
 		padding: 10px 14px;
 
 		transition: all .3s linear;
@@ -66,6 +72,11 @@
 		&:hover{
 			box-shadow: 1.568px 14.918px 17.4px 2.6px rgba(220, 52, 0, 0);
 		}
+
+		@media @desktop {
+			display: inline;
+
+		} 
 	}
 
 	.barbecue__box {
@@ -74,13 +85,12 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		padding: 80px 0px;
+		padding: 60px 0px;
 
 		@media @tablet {
 
 		}
 		@media @desktop {
-
 			padding: 80px 30px;
 		}
 		@media @desktop-xl {
@@ -90,6 +100,14 @@
 
 		.big__item, .big__item2 {
 			display: none;
+
+			img {
+				height: 300px;
+				margin: auto;
+				@media @desktop {
+					height: auto;
+				}
+			}
 		}
 
 		.active {
@@ -123,61 +141,88 @@
 				top: 50%;
 				left: 50%;
 				transform: translate(-50%, -50%);
-				width: 27px;
-				height: 27px;
+				width: 20px;
+				height: 20px;
 				background: url(../images/icons/zoom-in.png);
+				background-size: contain;
+				@media @tablet {
+					width: 27px;
+					height: 27px;
+				}
 			}
 		} 
 
 		.slider__barbecue {
 			width: 100%;
+			margin-bottom: 20px;
+			@media @desktop {
+				margin-bottom: inherit;
+			}
 		}
 
+		.sliderBarbecueComplex {
+			.slider__item {		
 
-		.slider__item {
-			float: left;
-			width: 80px!important;
-			height: 80px;
+				width: 56px!important;
+				height: 56px;		
+
+				@media @tablet {
+					width: 79.5px!important;
+					height: 79.5px;		
+				}
+			}
+		}
+
+		.slider__item {		
+			
 			margin-right: 4px;
 			margin-top: 8px;
+
+			width: 18.9%!important;
+			height: 18.9%;
+
 			border: 1px solid #a1a1a1;
+
 			&:last-of-type {
 				margin-right: 0;
+			}
+			
+			@media @tablet {
+				width: 80px!important;
+				height: 80px;
+				margin-right: 4px;
+				
+			}
+			@media @desktop {
+
 			}
 		}
 
 
-
 		.box__img {	
-
 			@media @tablet {
-
+				width: 416px;
+				margin: auto;
 			}
 
 			@media @desktop {
 				position: absolute;
 				left: 30px;
 				top: 80px;
-				width: 416px;
 			}
 
 			@media @desktop-xl {
 				left: 120px;
 				top: 100px;
 			}
-
 		}
 
-
-
-
 		.box__info {
-
-		
-			width: 440px;
+			max-width: 300px;
 
 			@media @tablet {
-
+				width: 440px;
+				max-width: inherit;
 			}
 
 			@media @desktop {
@@ -196,46 +241,29 @@
 				font-size: 30px;
 				font-weight: 700;
 				padding-bottom: 12px;
+				text-align: center;
 
-				@media @tablet {
-
-				}
 				@media @desktop {
-
+					text-align: left;
 				}
-				@media @desktop-xl {
 
-				}
-				@media @desktop-xl-2 {
-
-				}
 			}
-
 		}
 
 		.btn__box {
 			display: flex;
 			justify-content: space-between;
 			padding-bottom: 8px;
-
-			@media @tablet {
-
-			}
-			@media @desktop {
-
-			}
-			@media @desktop-xl {
-
-			}
-			@media @desktop-xl-2 {
-
-			}
 		}
 
 
 		.construction {
 			&__text {
 				font-weight: 300;
+				font-size: 14px;
+				@media @tablet {
+					font-size: inherit;
+				}
 			}
 			&__list {
 				padding-top: 5px;
@@ -243,9 +271,18 @@
 			}
 			&__item {
 				position: relative;
-				width: 66px;
-				height: 66px;
 				margin-right: 10px;
+
+				width: 44px;
+				height: 44px;
+
+				@media @tablet {
+					width: 66px;
+					height: 66px;
+				}
+				@media @desktop {
+
+				}
 
 				&:hover {
 					cursor: pointer;
@@ -260,9 +297,18 @@
 
 			&__item2 {
 				position: relative;
-				width: 66px;
-				height: 66px;
 				margin-right: 10px;
+
+				width: 44px;
+				height: 44px;
+
+				@media @tablet {
+					width: 66px;
+					height: 66px;
+				}
+				@media @desktop {
+
+				}
 
 				&:hover {
 					cursor: pointer;
@@ -280,21 +326,33 @@
 			}
 		}
 
-
 		.tabletop {
 			position: relative;
 			&__text {
 				text-align: right;
 				font-weight: 300;
+				font-size: 14px;
+				@media @tablet {
+					font-size: inherit;
+				}
 			}
 			&__list {
 				padding-top: 5px;
 				display: flex;
 			}
 			&__item {
-				width: 66px;
-				height: 66px;
 				margin-left: 10px;
+
+				width: 44px;
+				height: 44px;
+
+				@media @tablet {
+					width: 66px;
+					height: 66px;
+				}
+				@media @desktop {
+
+				}
 				
 				&:hover {
 					cursor: pointer;
@@ -308,9 +366,18 @@
 			}
 
 			&__item2 {
-				width: 66px;
-				height: 66px;
 				margin-left: 10px;
+
+				width: 44px;
+				height: 44px;
+
+				@media @tablet {
+					width: 66px;
+					height: 66px;
+				}
+				@media @desktop {
+
+				}
 				
 				&:hover {
 					cursor: pointer;
@@ -331,30 +398,39 @@
 
 		.info {
 
+			&__list {
+				padding: 0 10px;
+				@media @tablet {
+					padding: inherit;
+				}
+			}
+			
 			&__item {
 				margin-bottom: 1px;
 				position: relative;
-				list-style-type: disc;
-				list-style-position: inside;
+				font-size: 13px;
+
+				br {
+					@media @tablet {
+						display: none;
+					}
+				}
+				@media @tablet {
+					list-style-type: disc;
+					list-style-position: inside;
+					font-size: inherit;
+				}
+
 				&:after {
-					content: '';
-					position: absolute;
-					height: 1px;
-					bottom: 0;
-					background: url(../images/icons/lines.png);
 
 					@media @tablet {
-
+						content: '';
+						position: absolute;
+						height: 1px;
+						bottom: 0;
+						background: url(../images/icons/lines.png);
 					}
-					@media @desktop {
 
-					}
-					@media @desktop-xl {
-
-					}
-					@media @desktop-xl-2 {
-
-					}
 				}
 				&:nth-of-type(1) {
 					&:after {
@@ -412,24 +488,16 @@
 				list-style-type: disc;
 				list-style-position: inside;
 				&:after {
-					content: '';
-					position: absolute;
-					height: 1px;
-					bottom: 0;
-					background: url(../images/icons/lines-dark.png);
-
+					
 					@media @tablet {
+						content: '';
+						position: absolute;
+						height: 1px;
+						bottom: 0;
+						background: url(../images/icons/lines-dark.png);
 
 					}
-					@media @desktop {
 
-					}
-					@media @desktop-xl {
-
-					}
-					@media @desktop-xl-2 {
-
-					}
 				}
 				&:nth-of-type(1) {
 					&:after {
@@ -484,26 +552,22 @@
 
 		.price {
 			padding: 24px 0;
-			font-size: 30px;
+			font-size: 20px;
 			font-weight: 700;
 			color: #fff;
+			text-align: center;
 
-			@media @tablet {
-
+			@media tablet {
+				text-align: left;
 			}
+
 			@media @desktop {
-
-			}
-			@media @desktop-xl {
-
-			}
-			@media @desktop-xl-2 {
-
+				font-size: 30px;
 			}
 		}
 
 		.old__price {
-			padding: 0 10px;
+			padding: 0 5px;
 			text-decoration: line-through;
 			text-decoration-color: @red;
 			font-weight: 300;
@@ -512,7 +576,7 @@
 
 			}
 			@media @desktop {
-
+				padding: 0 10px;
 			}
 			@media @desktop-xl {
 
@@ -724,9 +788,6 @@
 .decor1 {
 	display: none;
 
-	@media @tablet {
-
-	}
 	@media @desktop {
 		display: block;
 		position: absolute;
@@ -760,21 +821,13 @@
 }
 
 .decor3 {
-	position: absolute;
-	left: 0;
-	bottom: -70px;
+	display: none;
 
-	@media @tablet {
-
-	}
 	@media @desktop {
-
-	}
-	@media @desktop-xl {
-
-	}
-	@media @desktop-xl-2 {
-
+		display: block;
+		position: absolute;
+		left: 0;
+		bottom: -70px;
 	}
 }
 
@@ -798,86 +851,72 @@
 	}
 }
 
-
 .decor5 {
-	position: absolute;
-	left: 170px;
-	top: 200px;
-
-	@media @tablet {
-
-	}
-	@media @desktop {
-
-	}
+	display: none;
 	@media @desktop-xl {
-
-	}
-	@media @desktop-xl-2 {
-
+		display: block;
+		position: absolute;
+		left: 170px;
+		top: 200px;
 	}
 }
 
 .decor6 {
-	position: absolute;
-	left: 60px;
-	top: 310px;
-
-	@media @tablet {
-
-	}
-	@media @desktop {
-
-	}
+	display: none;
 	@media @desktop-xl {
-
-	}
-	@media @desktop-xl-2 {
-
+		display: block;
+		position: absolute;
+		left: 60px;
+		top: 310px;
 	}
 }
 
 .decor7 {
-	position: absolute;
-	left: 90px;
-	top: 580px;
-
-	@media @tablet {
-
-	}
-	@media @desktop {
-
-	}
+	display: none;
 	@media @desktop-xl {
-
-	}
-	@media @desktop-xl-2 {
-
+		display: block;
+		position: absolute;
+		left: 90px;
+		top: 580px;
 	}
 }
 
 .decor8 {
-	position: absolute;
-	left: 200px;
-	top: 450px;
+	display: none;
+	@media @desktop-xl {
+		display: block;
+		position: absolute;
+		left: 200px;
+		top: 450px;
+	}
 }
 
-
-
 .decor9 {
-	position: absolute;
-	right: 80px;
-	top: -95px;
+	display: none;
+	@media @desktop-xl {
+		display: block;
+		position: absolute;
+		right: 80px;
+		top: -95px;
+	}
 }
 
 .decor10 {
-	position: absolute;
-	right: 180px;
-	top: 300px;
+	display: none;
+	@media @desktop-xl {
+		display: block;
+		position: absolute;
+		right: 180px;
+		top: 300px;
+	}
 }
 
 .decor11 {
-	position: absolute;
-	right: 80px;
-	top: 400px;
+	display: none;
+	@media @desktop-xl {
+		display: block;
+		position: absolute;
+		right: 80px;
+		top: 400px;
+	}
 }
