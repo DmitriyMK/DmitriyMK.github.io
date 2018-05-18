@@ -20,15 +20,18 @@
 
 .step {
 	background: url(../images/back__step.jpg)no-repeat center/cover;
+	z-index: -1;
+
 
 	.list {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-		margin: 60px 0;
+		margin: 60px 0 50px 0;
 
 		&__item {
-			width: 24%;
+			align-self: baseline;
+			width: 20%;
 			text-align: center;
 			color: #000;
 			
@@ -43,18 +46,22 @@
 		}
 		&__title {
 			padding: 23px 0;
-			font-size: 18px;
+			font-size: 20px;
 			font-weight: 700;
 		}
 	}
 
-	&__btn {
+	.btn {
+		display: block;
+		margin: auto;
+
 		box-shadow: 1.568px 14.918px 17.4px 2.6px rgba(220, 52, 0, 0.1);
 		transition: all .3s linear;
 		&:hover {
 			box-shadow: 1.568px 14.918px 17.4px 2.6px rgba(220, 52, 0, 0);
 		}
 	}
+
 }
 
 

@@ -2409,7 +2409,6 @@ section {
 }
 .details {
     position: relative;
-    z-index: 10;
     background-color: #f5fafe;
 }
 .details .container {
@@ -2573,14 +2572,7 @@ section {
     padding-top: 70px;
     font-size: 52px;
     z-index: 10;
-    opacity: 0.5;
-    -webkit-transition: opacity 0.3s linear;
-         -o-transition: opacity 0.3s linear;
-            transition: opacity 0.3s linear;
-}
-.video__play:hover {
     cursor: pointer;
-    opacity: 1;
 }
 .decor12 {
     position: absolute;
@@ -2619,6 +2611,7 @@ section {
 }
 .step {
     background: url(../images/back__step.jpg) no-repeat center / cover;
+    z-index: -1;
 }
 .step .list {
     display: -webkit-box;
@@ -2630,10 +2623,12 @@ section {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    margin: 60px 0;
+    margin: 60px 0 50px 0;
 }
 .step .list__item {
-    width: 24%;
+    -ms-flex-item-align: baseline;
+    align-self: baseline;
+    width: 20%;
     text-align: center;
     color: #000;
 }
@@ -2648,17 +2643,19 @@ section {
 }
 .step .list__title {
     padding: 23px 0;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 700;
 }
-.step__btn {
+.step .btn {
+    display: block;
+    margin: auto;
     -webkit-box-shadow: 1.568px 14.918px 17.4px 2.6px rgba(220, 52, 0, 0.1);
             box-shadow: 1.568px 14.918px 17.4px 2.6px rgba(220, 52, 0, 0.1);
     -webkit-transition: all 0.3s linear;
          -o-transition: all 0.3s linear;
             transition: all 0.3s linear;
 }
-.step__btn:hover {
+.step .btn:hover {
     -webkit-box-shadow: 1.568px 14.918px 17.4px 2.6px rgba(220, 52, 0, 0);
             box-shadow: 1.568px 14.918px 17.4px 2.6px rgba(220, 52, 0, 0);
 }
@@ -2856,7 +2853,7 @@ section {
 }
 @media only screen and (min-width: 992px) {
     .contacts .map {
-        height: 530px;
+        height: 490px;
     }
 }
 .contacts iframe {
@@ -2895,6 +2892,7 @@ section {
     }
 }
 .contacts .box__title {
+    padding-top: 35px;
     padding-bottom: 20px;
     font-size: 20px;
     font-weight: 700;
@@ -2907,12 +2905,11 @@ section {
     margin-bottom: 8px;
 }
 .contacts .mail {
-    margin-top: 72px;
     font-weight: 700;
 }
 .contacts .contacts__ask {
-    margin-top: 40px;
     margin-bottom: 5px;
+    padding-top: 25px;
     padding-bottom: 5px;
     font-size: 20px;
     font-weight: 700;
