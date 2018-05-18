@@ -3,13 +3,6 @@
 }
 @font-face {
     font-family: 'Roboto';
-    src: url('../fonts/RobotoThin/roboto-thin.woff2') format('woff2'), url('../fonts/RobotoThin/roboto-thin.woff') format('woff'), url('../fonts/RobotoLight/RobotoLight.ttf') format('truetype');
-    font-weight: 200;
-    font-style: normal;
-    font-display: swap;
-}
-@font-face {
-    font-family: 'Roboto';
     src: url('../fonts/RobotoLight/RobotoLight.woff2') format('woff2'), url('../fonts/RobotoLight/RobotoLight.woff') format('woff'), url('../fonts/RobotoLight/RobotoLight.ttf') format('truetype');
     font-weight: 300;
     font-style: normal;
