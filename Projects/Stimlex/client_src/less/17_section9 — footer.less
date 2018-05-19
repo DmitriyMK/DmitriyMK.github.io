@@ -24,32 +24,63 @@
 	background: #15181f;
 	&__box {
 		display: flex;
+		flex-direction: column;
 		justify-content: space-between;
 		align-items: center;
+
+
+		@media @tablet {
+
+		}
+		@media @desktop {
+			flex-direction: row;
+		}
 	}
 
 	&__logo {
 		width: 290px;
 		display: flex;
-		justify-content: space-between;
+		justify-content: space-around;
 		align-items: center;
 
+		@media @tablet {
+			justify-content: space-between;
+		}
+		@media @desktop {
+
+		}
+
 		img {
-			width: 138px;
-			height: 34px;
+			width: 130px;
+			height: 30px;
+
+			@media @tablet {
+				width: 138px;
+				height: 34px;
+			}
 		}
 	}
 	&__title {
-		font-size: 15px;
+		font-size: 13px;
+		@media @tablet {
+			font-size: 15px;
+		}
 	}
 
 	.footer__copy {
+		margin: 20px 0;
 		text-align: center;
 		font-size: 15px;
+		@media @tablet {
+			font-size: 15px;
+		}
 	}
 
 	.agency {
-		text-align: right;
+		text-align: center;
+		@media @desktop {
+			text-align: right;
+		}
 		a {
 			font-size: 11.5px;
 		}

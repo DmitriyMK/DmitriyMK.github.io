@@ -23,16 +23,18 @@
 	position: relative;
 	background: #15181f;
 	overflow: hidden;
+
 	@media @desktop {
 		padding-bottom: 0;
 	}
+
 	&__title {
 		display: none;
 	}
 
 	.map {
 		width: 100%;
-		height: 450px; 
+		height: 400px; 
 
 		@media @desktop {
 			height: 490px; 
@@ -44,6 +46,7 @@
 		border: none;
 		border: 0;
 	}
+
 	.container {
 		position: relative;
 
@@ -52,10 +55,7 @@
 	&__box {
 		margin: auto;
 		width: 300px;
-		height: 530px;
-		padding-top: 60px;
-		padding-left: 15px;
-		padding-right: 15px;
+		padding: 15px;
 
 		background: #15181f;
 		color: #fff;
@@ -76,8 +76,17 @@
 			padding-top:  66px;
 			margin: inherit;
 		}
+
 		@media @desktop-xl-2 {
 			right: -40px;
+		}
+	}
+
+	&__list {
+		text-align: center;
+
+		@media @tablet {
+			text-align: left;
 		}
 	}
 
@@ -86,7 +95,13 @@
 		padding-bottom: 20px;
 		font-size: 20px;
 		font-weight: 700;
+		text-align: center;
+
+		@media @tablet {
+			text-align: left;
+		}
 	}
+
 	address {
 		font-style: normal;
 		padding-bottom: 7px;
@@ -106,6 +121,12 @@
 		padding-bottom: 5px;
 		font-size: 20px;
 		font-weight: 700;
+		text-align: center;
+
+		@media @tablet {
+			text-align: left;
+		}
+
 		@media @desktop {
 			margin-top: 25px;
 		}
@@ -113,5 +134,18 @@
 	.contacts__text {
 		margin-top: 0;
 		margin-bottom: 35px;
+		text-align: center;
+
+		@media @tablet {
+			text-align: left;
+		}
+	}
+
+	.btn {
+		display: block;
+		margin: auto;
+		@media @tablet {
+			display: inline;
+		}
 	}
 }

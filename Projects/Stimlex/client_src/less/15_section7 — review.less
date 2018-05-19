@@ -1,6 +1,4 @@
-@media @mobile {
 
-}
 @media @tablet {
 
 }
@@ -13,9 +11,7 @@
 @media @desktop-xl-2 {
 
 }
-@media @desktop-xll {
-	
-}
+
 
 
 
@@ -41,8 +37,14 @@
 	}
 
 	.slider {
-		padding: 80px; 
-		padding-bottom: 20px;
+
+		@media @desktop {
+			padding: 40px;
+		}
+
+		@media @desktop-xl-2 {
+			padding: 80px; 
+		}
 	}
 
 	&__slide {
@@ -51,24 +53,53 @@
 	}
 
 	&__photo {
-		float: left;
-		width: 20%;
+		max-width: 180px;
+		max-height: 180px;
+		margin: auto;
 		box-shadow: 0.628px 8.978px 8.64px 0.36px rgba(0, 0, 0, 0.4);
 		transform: scale(1.05);
-		img {
-			display: block;
+
+		@media @tablet {
 			max-width: 225px;
 			max-height: 225px;
 		}
+		@media @desktop {
+			float: left;
+			width: 200px;
+			margin-top: 20px;
+		}
+		@media @desktop-xl {
+			width: 20%;
+			margin-top: 0;
+		}
+
+		img {
+			display: block;
+			max-width: 100%;
+			height: auto;
+		}
 	}
+
 	&__content {
-		width: 68%;	
-		float: left;
-		margin: 20px 0 0 50px;
+		width: 100%;
+		margin: 20px 0;
 		padding: 20px;
 		background: #fff;
 		color: #000;
 		box-shadow: 0.628px 8.978px 8.64px 0.36px rgba(0, 0, 0, 0.4);
+
+		@media @tablet {
+
+		}
+		@media @desktop {
+			width: 600px;	
+			float: left;
+			margin: 20px 0 0 50px;
+		}
+		@media @desktop-xl {
+			width: 68%;	
+		}
+
 
 		.name {
 			font-weight: 700;
@@ -88,8 +119,47 @@
 		}
 	}
 
+	.slick-prev {
+		top: 100px;
+		left: 0;
 
+		@media @tablet {
+			left: 20vh;
+		}
+
+		@media @desktop {
+			left: -10px;
+		}
+
+		@media @desktop-xl {
+			top: 50%;
+			left: 0; 
+		}
+
+		@media @desktop-xl-2 {
+			left: -50px; 
+		}
+	}
+
+	.slick-next {
+		top: 100px;
+		right: 0;
+
+		@media @tablet {
+			right: 20vh;
+		}
+
+		@media @desktop {
+			top: 50%;
+			right: 0;
+		}
+
+		@media @desktop-xl {
+			right: 80px;
+		}
+
+		@media @desktop-xl-2 {
+			right: 50px; 
+		}
+	}
 }
-
-
-
