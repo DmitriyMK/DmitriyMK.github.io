@@ -149,18 +149,12 @@ $(document).ready(function() {
     },
 
     {
-      breakpoint: 700,
+      breakpoint: 480,
       settings: {
         slidesToShow: 2,
       }
     },
 
-    {
-      breakpoint: 500,
-      settings: {
-        slidesToShow: 1,
-      }
-    }
 
     ]
 
