@@ -144,8 +144,8 @@ $(document).ready(function() {
       }
     },
 
-
     ]
+
   });
 
 
@@ -174,7 +174,6 @@ $(document).ready(function() {
         arrows: true,
       }
     },
-
 
     ]
 
@@ -361,13 +360,13 @@ $(".form").submit(function() {
 
 function initMap() {
 
-  var latlng = new google.maps.LatLng(48.4410735, 35.0167546);
+  var latlng = new google.maps.LatLng(48.4410735, 35.0170546);
   var settings = {
     zoom: 17,
     center: latlng,
     center: {
       lat: 48.4410735,
-      lng: 35.0187546
+      lng: 35.0170546
     },
     mapTypeControl: true,
     mapTypeControlOptions: {

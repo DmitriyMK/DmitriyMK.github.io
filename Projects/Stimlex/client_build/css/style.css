@@ -3362,7 +3362,7 @@ section {
     background: rgba(160, 159, 158, 0.8) !important;
 }
 .remodal-first {
-    padding-top: 95px;
+    padding-top: 50px;
     text-align: center;
     width: 376px;
 }
@@ -3466,7 +3466,7 @@ label {
 }
 .formBox {
     position: relative;
-    width: 311px;
+    width: 298px;
     margin: auto;
     padding-top: 7px;
     text-align: center;
@@ -3479,9 +3479,9 @@ label {
     height: 358px;
     top: 50%;
     left: 50%;
-    -webkit-transform: translate(-50%, -44%);
-        -ms-transform: translate(-50%, -44%);
-            transform: translate(-50%, -44%);
+    -webkit-transform: translate(-46%, -44%);
+        -ms-transform: translate(-46%, -44%);
+            transform: translate(-46%, -44%);
     background: url(../images/forms-sm.png) no-repeat center / contain;
 }
 .formBox form {
