@@ -127,6 +127,25 @@ $(document).ready(function() {
     fade: true,
     draggable: false,
     infinite: true,
+
+    responsive: [
+
+    {
+      breakpoint: 992,
+      settings: {
+        dots: true,
+      }
+    },
+
+    {
+      breakpoint: 480,
+      settings: {
+        dots: true,
+      }
+    },
+
+
+    ]
   });
 
 
@@ -152,6 +171,7 @@ $(document).ready(function() {
       breakpoint: 480,
       settings: {
         slidesToShow: 2,
+        arrows: true,
       }
     },
 
