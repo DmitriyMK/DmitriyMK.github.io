@@ -17,28 +17,30 @@
 
 
 .consult {
-	margin-top: -74px;
-	margin-bottom: -110px;
+	
 	position: relative;
-	background: url(../images/back__consult.png)no-repeat 30% center/cover ;
+	background: #666;
 
 	z-index: 12;
 	height: 690px;
+	overflow: hidden;
 
-	@media @tablet {
 
-	}
+
 	@media @desktop {
-
+		overflow: visible;
 	}
+
 	@media @desktop-xl {
 
 	}
 	@media @desktop-xl-2 {
-
+		margin-top: -74px;
+		margin-bottom: -110px;
 		height: 639px;
 		background: url(../images/back__consult.png)repeat-x center;
 	}
+
 	@media @desktop-xll {
 
 	}
@@ -53,13 +55,16 @@
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-		margin-top: 30px;
+		
 
 		@media @tablet {
 
 		}
 		@media @desktop {
-			margin-top: 90px;
+			margin-top: 28px;
+			flex-direction: row;
+			justify-content: space-between;
+			align-items: inherit;
 		}
 		@media @desktop-xl {
 
@@ -77,10 +82,8 @@
 		margin-top: 0px;
 		width: 300px;
 
-
-
 		@media @tablet {
-			width: 350px;
+			width: inherit;
 		}
 		@media @desktop {
 			padding-right: 20px;
@@ -99,8 +102,8 @@
 	}
 
 	&__title {
-		margin-top: 25px;
-		font-size: 26px;
+		margin-top: 30px;
+		font-size: 23px;
 		font-weight: bold;
 		text-align: center;
 		@media @tablet {
@@ -119,11 +122,15 @@
 		position: relative;
 		margin-top: 25px;
 		padding-left: 22px;
-		font-size: 20px;
+		font-size: 18px;
 
-		@media @tablet {
+		br {
+			display: none;
+			@media @tablet {
+				display: inline;
+			}
+		} 
 
-		}
 		@media @desktop {
 			margin-top: 66px;
 		}
@@ -143,6 +150,7 @@
 	}
 
 
+
 	&__form {
 		position: relative;
 		width: 290px;
@@ -151,74 +159,77 @@
 		padding-top: 7px;
 		text-align: center;
 
-		@media @tablet {
-
-		}
-		@media @desktop {
-
-		}
 		@media @desktop-xl {
-			margin-right: 130px;
+			margin-right: 140px;
 		}
 
 		&:before {
 			content: '';
 			position: absolute;
-			width: 327px;
-			height: 353px;
+			width: 311px;
+			height: 351px;
 			top: -40px;
 			left: 50%;
-			transform: translateX(-40%);
-			background: url(../images/forms.png)no-repeat;
+			transform: translateX(-46%);
+			background: url(../images/forms-sm.png)no-repeat;
+
+			
 
 			@media @tablet {
-
+				width: 327px;
+				height: 353px;
+				top: -40px;
+				left: 50%;
+				transform: translateX(-40%);
+				background: url(../images/forms.png)no-repeat;
 			}
-			@media @desktop {
 
-			}
-			@media @desktop-xl {
-
-			}
 			@media @desktop-xl-2 {
 				width: 402px;
 				height: 468px;
-				top: -120px;
+				top: -130px;
 				left: 50%;
-				transform: translateX(-40%);
+				transform: translateX(-38%);
 				background: url(../images/forms-big.png)no-repeat;
 			}
 
 		}
+
+
+
 		form {
 			position: relative;
 		}
-	}
 
-	.formBox__title {
-		font-size: 25px;
-		font-weight: 700;
-		color: #fff;
-	}
-	.form__line {
-		display: block;
-		padding: 8px 25px;
-		margin: 10px auto;
-		background: transparent;
-		border: 1px solid #726f6c;
-		width: 80%;
-		border-radius: 20px;
-		&:hover, &:focus {
-			border: 1px solid #726f6c!important;
+		.formBox__title {
+			font-size: 25px;
+			font-weight: 700;
+			color: #fff;
 		}
-		@media @desktop-xl-2 {
-			width: 100%;
+
+		.form__line {
+			display: block;
+			padding: 8px 25px;
+			margin: 10px auto;
+			background: transparent;
+			border: 1px solid #726f6c;
+			width: 80%;
+			border-radius: 20px;
+			&:hover, &:focus {
+				border: 1px solid #726f6c!important;
+			}
+			@media @desktop-xl-2 {
+				width: 96%;
+			}
 		}
-	}
-	.btn {
-		margin-top: 8px;
+
+		.btn {
+			margin-top: 8px;
+		}
+
 	}
 }
+
 
 .decor19 {
 	position: absolute;

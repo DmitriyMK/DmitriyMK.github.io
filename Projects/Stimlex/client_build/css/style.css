@@ -1949,15 +1949,21 @@ section {
     }
 }
 .consult {
-    margin-top: -74px;
-    margin-bottom: -110px;
     position: relative;
-    background: url(../images/back__consult.png) no-repeat 30% center / cover;
+    background: #666;
     z-index: 12;
     height: 690px;
+    overflow: hidden;
+}
+@media only screen and (min-width: 992px) {
+    .consult {
+        overflow: visible;
+    }
 }
 @media only screen and (min-width: 1600px) {
     .consult {
+        margin-top: -74px;
+        margin-bottom: -110px;
         height: 639px;
         background: url(../images/back__consult.png) repeat-x center;
     }
@@ -1979,11 +1985,20 @@ section {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    margin-top: 30px;
 }
 @media only screen and (min-width: 992px) {
     .consult__box {
-        margin-top: 90px;
+        margin-top: 28px;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        -webkit-box-align: inherit;
+        -ms-flex-align: inherit;
+        align-items: inherit;
     }
 }
 .consult__ask {
@@ -1993,7 +2008,7 @@ section {
 }
 @media only screen and (min-width: 768px) {
     .consult__ask {
-        width: 350px;
+        width: inherit;
     }
 }
 @media only screen and (min-width: 992px) {
@@ -2009,8 +2024,8 @@ section {
     }
 }
 .consult__title {
-    margin-top: 25px;
-    font-size: 26px;
+    margin-top: 30px;
+    font-size: 23px;
     font-weight: bold;
     text-align: center;
 }
@@ -2029,7 +2044,15 @@ section {
     position: relative;
     margin-top: 25px;
     padding-left: 22px;
-    font-size: 20px;
+    font-size: 18px;
+}
+.consult__text br {
+    display: none;
+}
+@media only screen and (min-width: 768px) {
+    .consult__text br {
+        display: inline;
+    }
 }
 @media only screen and (min-width: 992px) {
     .consult__text {
@@ -2060,42 +2083,54 @@ section {
 }
 @media only screen and (min-width: 1200px) {
     .consult__form {
-        margin-right: 130px;
+        margin-right: 140px;
     }
 }
 .consult__form:before {
     content: '';
     position: absolute;
-    width: 327px;
-    height: 353px;
+    width: 311px;
+    height: 351px;
     top: -40px;
     left: 50%;
-    -webkit-transform: translateX(-40%);
-        -ms-transform: translateX(-40%);
-            transform: translateX(-40%);
-    background: url(../images/forms.png) no-repeat;
+    -webkit-transform: translateX(-46%);
+        -ms-transform: translateX(-46%);
+            transform: translateX(-46%);
+    background: url(../images/forms-sm.png) no-repeat;
+}
+@media only screen and (min-width: 768px) {
+    .consult__form:before {
+        width: 327px;
+        height: 353px;
+        top: -40px;
+        left: 50%;
+        -webkit-transform: translateX(-40%);
+            -ms-transform: translateX(-40%);
+                transform: translateX(-40%);
+        background: url(../images/forms.png) no-repeat;
+    }
 }
 @media only screen and (min-width: 1600px) {
     .consult__form:before {
         width: 402px;
         height: 468px;
-        top: -120px;
+        top: -130px;
         left: 50%;
-        -webkit-transform: translateX(-40%);
-            -ms-transform: translateX(-40%);
-                transform: translateX(-40%);
+        -webkit-transform: translateX(-38%);
+            -ms-transform: translateX(-38%);
+                transform: translateX(-38%);
         background: url(../images/forms-big.png) no-repeat;
     }
 }
 .consult__form form {
     position: relative;
 }
-.consult .formBox__title {
+.consult__form .formBox__title {
     font-size: 25px;
     font-weight: 700;
     color: #fff;
 }
-.consult .form__line {
+.consult__form .form__line {
     display: block;
     padding: 8px 25px;
     margin: 10px auto;
@@ -2104,15 +2139,15 @@ section {
     width: 80%;
     border-radius: 20px;
 }
-.consult .form__line:hover, .consult .form__line:focus {
+.consult__form .form__line:hover, .consult__form .form__line:focus {
     border: 1px solid #726f6c!important;
 }
 @media only screen and (min-width: 1600px) {
-    .consult .form__line {
-        width: 100%;
+    .consult__form .form__line {
+        width: 96%;
     }
 }
-.consult .btn {
+.consult__form .btn {
     margin-top: 8px;
 }
 .decor19 {
