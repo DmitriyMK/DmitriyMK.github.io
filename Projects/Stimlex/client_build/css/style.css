@@ -2101,11 +2101,16 @@ section {
     margin: 10px auto;
     background: transparent;
     border: 1px solid #726f6c;
-    width: 100%;
+    width: 80%;
     border-radius: 20px;
 }
 .consult .form__line:hover, .consult .form__line:focus {
     border: 1px solid #726f6c!important;
+}
+@media only screen and (min-width: 1600px) {
+    .consult .form__line {
+        width: 100%;
+    }
 }
 .consult .btn {
     margin-top: 8px;
