@@ -1,6 +1,4 @@
-@media @mobile {
 
-}
 @media @tablet {
 
 }
@@ -22,9 +20,28 @@
 	margin-top: -74px;
 	margin-bottom: -110px;
 	position: relative;
-	background: url(../images/back__consult.png)repeat-x center;
+	background: url(../images/back__consult.png)no-repeat 30% center/cover ;
+
 	z-index: 12;
-	height: 639px;
+	height: 690px;
+
+	@media @tablet {
+
+	}
+	@media @desktop {
+
+	}
+	@media @desktop-xl {
+
+	}
+	@media @desktop-xl-2 {
+
+		height: 639px;
+		background: url(../images/back__consult.png)repeat-x center;
+	}
+	@media @desktop-xll {
+
+	}
 
 	.container {
 		position: relative;
@@ -33,25 +50,87 @@
 	&__box {
 
 		display: flex;
-		justify-content: space-between;
-		margin-top: 90px;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		margin-top: 30px;
+
+		@media @tablet {
+
+		}
+		@media @desktop {
+			margin-top: 90px;
+		}
+		@media @desktop-xl {
+
+		}
+		@media @desktop-xl-2 {
+
+		}
+		@media @desktop-xll {
+
+		}
 	}
 
 	&__ask {
+		margin: auto;
 		margin-top: 0px;
-		margin-left: 105px;
+		width: 300px;
+
+
+
+		@media @tablet {
+			width: 350px;
+		}
+		@media @desktop {
+			padding-right: 20px;
+			max-width: inherit;
+		}
+		@media @desktop-xl {
+			margin-left: 105px;
+			padding-right: 0;
+		}
+		@media @desktop-xl-2 {
+
+		}
+		@media @desktop-xll {
+
+		}
 	}
 
 	&__title {
-		font-size: 40px;
+		margin-top: 25px;
+		font-size: 26px;
 		font-weight: bold;
+		text-align: center;
+		@media @tablet {
+
+		}
+		@media @desktop {
+			text-align: left;
+			font-size: 30px;
+		}
+		@media @desktop-xl {
+			font-size: 40px;
+		}
 	}
 
 	&__text {
 		position: relative;
-		margin-top: 66px;
+		margin-top: 25px;
 		padding-left: 22px;
-		font-size: 25px;
+		font-size: 20px;
+
+		@media @tablet {
+
+		}
+		@media @desktop {
+			margin-top: 66px;
+		}
+		@media @desktop-xl {
+			font-size: 25px;
+		}
+
 		&:before {
 			content: '';
 			position: absolute;
@@ -68,18 +147,48 @@
 		position: relative;
 		width: 290px;
 		margin: 0 auto;
-		margin-right: 130px;
+		margin-top: 70px;
 		padding-top: 7px;
 		text-align: center;
+
+		@media @tablet {
+
+		}
+		@media @desktop {
+
+		}
+		@media @desktop-xl {
+			margin-right: 130px;
+		}
+
 		&:before {
 			content: '';
 			position: absolute;
-			width: 402px;
-			height: 468px;
-			top: -136px;
+			width: 327px;
+			height: 353px;
+			top: -40px;
 			left: 50%;
 			transform: translateX(-40%);
-			background: url(../images/forms-big.png)no-repeat center/cover;
+			background: url(../images/forms.png)no-repeat;
+
+			@media @tablet {
+
+			}
+			@media @desktop {
+
+			}
+			@media @desktop-xl {
+
+			}
+			@media @desktop-xl-2 {
+				width: 402px;
+				height: 468px;
+				top: -120px;
+				left: 50%;
+				transform: translateX(-40%);
+				background: url(../images/forms-big.png)no-repeat;
+			}
+
 		}
 		form {
 			position: relative;
@@ -112,4 +221,19 @@
 	position: absolute;
 	left: -376px;
 	top: -105px;
+	@media @tablet {
+
+	}
+	@media @desktop {
+
+	}
+	@media @desktop-xl {
+
+	}
+	@media @desktop-xl-2 {
+
+	}
+	@media @desktop-xll {
+
+	}
 }
