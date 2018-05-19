@@ -21,29 +21,27 @@
 	position: relative;
 	background: #666;
 
+
 	z-index: 12;
 	height: 690px;
 	overflow: hidden;
 
-
-
 	@media @desktop {
 		overflow: visible;
+		height: 639px;
+		background: url(../images/back__consult.png)repeat-x center;
+		margin-top: -74px;
+		margin-bottom: -110px;
 	}
 
 	@media @desktop-xl {
 
 	}
 	@media @desktop-xl-2 {
-		margin-top: -74px;
-		margin-bottom: -110px;
 		height: 639px;
 		background: url(../images/back__consult.png)repeat-x center;
 	}
 
-	@media @desktop-xll {
-
-	}
 
 	.container {
 		position: relative;
@@ -80,14 +78,14 @@
 	&__ask {
 		margin: auto;
 		margin-top: 0px;
-		width: 300px;
+		max-width: 300px;
 
 		@media @tablet {
-			width: inherit;
+			max-width: 500px;
 		}
 		@media @desktop {
 			padding-right: 20px;
-			max-width: inherit;
+			max-width: 580px;
 		}
 		@media @desktop-xl {
 			margin-left: 105px;
@@ -102,7 +100,7 @@
 	}
 
 	&__title {
-		margin-top: 30px;
+		
 		font-size: 23px;
 		font-weight: bold;
 		text-align: center;
@@ -110,10 +108,16 @@
 
 		}
 		@media @desktop {
+			margin-top: 70px;
 			text-align: left;
-			font-size: 30px;
+			font-size: 36px;
 		}
 		@media @desktop-xl {
+			margin-top: 40px;
+			font-size: 40px;
+		}
+		@media @desktop-xl-2 {
+
 			font-size: 40px;
 		}
 	}
@@ -121,8 +125,9 @@
 	&__text {
 		position: relative;
 		margin-top: 25px;
-		padding-left: 22px;
+		
 		font-size: 18px;
+		text-align: center;
 
 		br {
 			display: none;
@@ -133,19 +138,25 @@
 
 		@media @desktop {
 			margin-top: 66px;
+			padding-left: 22px;
+			text-align: left;
+			font-size: 24px;
 		}
 		@media @desktop-xl {
 			font-size: 25px;
 		}
 
 		&:before {
-			content: '';
-			position: absolute;
-			left: 0;
-			top: 0;
-			width: 2px;
-			height: 100%;
-			background: #fff;
+			@media @desktop {
+				content: '';
+				position: absolute;
+				left: 0;
+				top: 0;
+				width: 2px;
+				height: 100%;
+				background: #fff;
+			}
+			
 		}
 	}
 
@@ -219,7 +230,7 @@
 				border: 1px solid #726f6c!important;
 			}
 			@media @desktop-xl-2 {
-				width: 96%;
+				width: 84%;
 			}
 		}
 
