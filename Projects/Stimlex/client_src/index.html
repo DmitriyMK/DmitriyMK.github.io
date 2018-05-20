@@ -38,8 +38,20 @@
 	<script defer src="./libs/slick.js"></script>
 
 	<script defer src="https://maps.googleapis.com/maps/api/js?callback=initMap&key=AIzaSyDFnsXtzPC77ZP4pkabK8_yVr5qazdPCjc"></script>
-	<script defer src="https://www.youtube.com/yts/jsbin/player-vflXIriOh/en_US/base.js"></script>
-	<script defer src="https://www.youtube.com/yts/jsbin/www-embed-player-vflHvHVeu/www-embed-player.js "></script>
+<!-- 	<script defer src="https://www.youtube.com/yts/jsbin/player-vflXIriOh/en_US/base.js"></script>
+	<script defer src="https://www.youtube.com/yts/jsbin/www-embed-player-vflHvHVeu/www-embed-player.js "></script> -->
+
+	<script>
+		function init() {
+			var vidDefer = document.getElementsByTagName('iframe');
+			for (var i=0; i<vidDefer.length; i++) {
+				if(vidDefer[i].getAttribute('data-src')) {
+					vidDefer[i].setAttribute('src',vidDefer[i].getAttribute('data-src'));
+				} 
+			} 
+		}
+		window.onload = init;
+	</script>
 
 
 </head>
@@ -60,7 +72,7 @@
 					</div>
 
 					<div class="contact">
-						
+
 						<a class="contact__phone" href="tel:+380970800493">+38 (097) 080 04 93</a>
 						<button class="btn contact__btn btn-deks" data-remodal-target="callback">Заказать звонок</button>
 					</div>
@@ -68,7 +80,7 @@
 			</div>
 		</div>
 
-		
+
 		<div class="header__center">
 			<div class="container">
 				<div class="header__accent">
@@ -79,7 +91,7 @@
 				<button class="btn btn-mobile" data-remodal-target="callback">Заказать звонок</button>
 
 				<a class="arr-down scrolling__link" href="#reasons"><img src="./images/icons/down.png" alt="Смотреть далее"></a>
-				
+
 				<img class="img-table" src="./images/table.png" alt="Барбекю Stimlex">
 				<img class="img-plate" src="./images/plateFood1.png" alt="Барбекю Stimlex">
 			</div>
@@ -585,7 +597,7 @@
 						<div class="product__desc">
 							<h4 class="product__title">Стол приставной</h4>
 						</div>
-						
+
 
 						<div class="product__img">
 							<a class="fancybox" data-fancybox="CRASIA_TABLE" href="images/photo/table.jpg">
@@ -1022,7 +1034,7 @@
 			<h2 class="section__title contacts__title">Контакты</h2>	
 
 			<div class="map" id="google-map">
-				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2646.8054558132194!2d35.01456591565963!3d48.44107347924872!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40dbe34048a6ab2f%3A0x34bf8eb46a3693b2!2z0L_RgNC-0YHQvy4g0JDQu9C10LrRgdCw0L3QtNGA0LAg0J_QvtC70Y8sIDExOSwg0JTQvdC40L_RgNC-LCDQlNC90LXQv9GA0L7Qv9C10YLRgNC-0LLRgdC60LDRjyDQvtCx0LvQsNGB0YLRjCwgNDkwMDA!5e0!3m2!1sru!2sua!4v1526307720959"></iframe>
+				<iframe data-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2646.8054558132194!2d35.01456591565963!3d48.44107347924872!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40dbe34048a6ab2f%3A0x34bf8eb46a3693b2!2z0L_RgNC-0YHQvy4g0JDQu9C10LrRgdCw0L3QtNGA0LAg0J_QvtC70Y8sIDExOSwg0JTQvdC40L_RgNC-LCDQlNC90LXQv9GA0L7Qv9C10YLRgNC-0LLRgdC60LDRjyDQvtCx0LvQsNGB0YLRjCwgNDkwMDA!5e0!3m2!1sru!2sua!4v1526307720959"></iframe>
 			</div>
 
 			<div class="container">
@@ -1179,7 +1191,7 @@
 		<div class="remodal video" data-remodal-id="video"> 
 			<button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
 			<div class="video-responsive">
-				<iframe src="https://www.youtube.com/embed/3W2vlAuVhOQ?ecver=1" allow="autoplay; encrypted-media"></iframe>
+				<iframe data-src="https://www.youtube.com/embed/3W2vlAuVhOQ?ecver=1" allow="autoplay; encrypted-media"></iframe>
 			</div>
 		</div> 
 
@@ -1204,11 +1216,11 @@
 		<script src="./libs/jquery.validate.min.js"></script>
 		<script src="./libs/jquery-modal-video.min.js"></script>
 
-		
+
 		<script src="./libs/all.js"></script>
 
 
-		
+
 
 
 	</body>
