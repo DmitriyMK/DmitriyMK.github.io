@@ -17,30 +17,11 @@
 	text-align: center;
 	text-transform: uppercase;
 
-
-	@media only screen and (max-width: 1199.98px) { 
-
-	}
-
-	@media only screen and (max-width: 991.98px) { 
-
-	}
-
-	@media only screen and (max-width: 767.98px) { 
-	}
-
-	@media only screen and (max-width: 575.98px) { 
-		
-	}
-
 	&__logo {
 		
 		font-weight: 700;
 		font-size: rem(60);
 		color: #000;
-
-		@media only screen and (max-width: 991.98px) { 
-		}
 
 		@media only screen and (max-width: 767.98px) { 
 			font-size: rem(36);
@@ -54,9 +35,6 @@
 		font-weight: 400;
 		letter-spacing: 11px;
 		color: #000;
-
-		@media only screen and (max-width: 991.98px) { 
-		}
 
 		@media only screen and (max-width: 767.98px) { 
 			letter-spacing: 5px;
@@ -124,6 +102,7 @@ $button-width: 35px;
 		}
 	}
 }
+
 .menu__wrapper .overlay {
 	position: fixed;
 	top: 0;
@@ -231,6 +210,7 @@ $button-width: 35px;
 		}
 	}
 }
+
 @keyframes fadeInRight {
 	0% {
 		opacity: 0;
