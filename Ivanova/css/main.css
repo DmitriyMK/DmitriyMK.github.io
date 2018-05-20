@@ -634,7 +634,7 @@ section {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   opacity: 1;
   visibility: hidden;
   -webkit-transition: opacity .35s, visibility .35s, width .35s;
@@ -676,12 +676,12 @@ section {
                 animation-delay: .65s; }
   .menu__wrapper .overlay .overlay__menu {
     position: relative;
-    height: 50%;
+    /* height: 100%; */
     top: 50%;
     -webkit-transform: translateY(-50%);
         -ms-transform: translateY(-50%);
             transform: translateY(-50%);
-    font-size: 35px;
+    font-size: 30px;
     font-weight: 400;
     text-align: center;
     z-index: 100; }
@@ -690,10 +690,10 @@ section {
     margin: 0 auto;
     display: inline-block;
     position: relative;
-    height: 100%; }
+    height: 90%; }
     .menu__wrapper .overlay .overlay__menu-list .overlay__menu-item {
       display: block;
-      min-height: 70px;
+      min-height: 50px;
       position: relative;
       opacity: 0; }
       .menu__wrapper .overlay .overlay__menu-list .overlay__menu-item .overlay__menu-link {
@@ -702,7 +702,7 @@ section {
         color: #fff;
         text-decoration: none;
         overflow: hidden;
-        line-height: 70px;
+        line-height: 50px;
         letter-spacing: 2px; }
         .menu__wrapper .overlay .overlay__menu-list .overlay__menu-item .overlay__menu-link:hover:after, .menu__wrapper .overlay .overlay__menu-list .overlay__menu-item .overlay__menu-link:focus:after, .menu__wrapper .overlay .overlay__menu-list .overlay__menu-item .overlay__menu-link:active:after {
           width: 100%; }
