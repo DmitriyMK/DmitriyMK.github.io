@@ -11,6 +11,8 @@
 
 
 
+/* ------------ HEADER ------------ */ 
+
 .header {
 
 	padding-top: 25px;
@@ -18,7 +20,7 @@
 	text-transform: uppercase;
 
 	&__logo {
-		
+		display: inline-block;
 		font-weight: 700;
 		font-size: rem(60);
 		color: #000;
@@ -49,7 +51,6 @@
 
 
 
-
 /* ------------ MENU ------------ */ 
 
 $button-height: 27px;
@@ -57,11 +58,11 @@ $button-width: 35px;
 
 .button__container {
 	position: fixed;
-	top: 6%;
+	top: 4%;
 	right: 2%;
 	height: $button-height;
 	width: $button-width;
-		
+
 	cursor: pointer;
 	z-index: 100;
 	transition: opacity .25s ease;
@@ -102,7 +103,6 @@ $button-width: 35px;
 		}
 	}
 }
-
 .menu__wrapper .overlay {
 	position: fixed;
 	top: 0;
@@ -210,7 +210,6 @@ $button-width: 35px;
 		}
 	}
 }
-
 @keyframes fadeInRight {
 	0% {
 		opacity: 0;
@@ -225,20 +224,28 @@ $button-width: 35px;
 
 
 
-
+/* SECTION 2 GALLERY */
 
 .gallery {
+	flex: 1 1 0;
 	.grid {
+		position: relative;
 		max-width: 100%;
 		margin: auto;
 	} 
 
-	.grid-sizer,
+	.grid:after {
+		content: '';
+		display: block;
+		clear: both;
+	}
+
 	.grid-item {
 		float: left;
 		width: 19%;
+		height: auto;
 		margin: 0.5%;
-		transition: all .8s linear;
+		transition: all .3s linear;
 
 		@media only screen and (max-width: 1199.98px) { 
 			width: 24%;
@@ -268,7 +275,7 @@ $button-width: 35px;
 			height: auto;
 		}
 		&:hover {
-			transform: scale(1.25);
+			transform: scale(1.15);
 			z-index: 10;
 
 			@media only screen and (max-width: 767.98px) { 
@@ -276,6 +283,142 @@ $button-width: 35px;
 			}
 		}
 	}
+
+}
+
+
+
+/* SECTION 3 ABOUT */
+.about {
+	flex: 1 1 0;
+
+	&__title {
+		font-weight: 700;
+		font-size: rem(36);
+		text-align: center;
+
+
+		@media only screen and (max-width: 767.98px) { 
+			font-size: rem(30);
+		}
+
+		@media only screen and (max-width: 575.98px) { 
+			font-size: rem(24);
+		}
+	}
+
+	&__box {
+		padding: 50px;
+		display: flex;
+		justify-content: space-around;
+
+		@media only screen and (max-width: 991.98px) { 
+			padding: 50px 0;
+		}
+
+
+		@media only screen and (max-width: 767.98px) { 
+			flex-direction: column;
+			align-items: center;
+		}
+		@media only screen and (max-width: 575.98px) { 
+			padding: 25px 0;
+		}
+
+	}
+
+	.box__left {
+		width: 40%;
+
+		img {
+			box-shadow: 5px 0px 15px 0px rgba(0,0,0,0.35);
+		}
+
+		@media only screen and (max-width: 767.98px) { 
+			width: 60%;
+			margin-bottom: 30px;
+		}
+
+		@media only screen and (max-width: 575.98px) { 
+			width: 100%;
+		}
+	}
+	.box__right {
+		margin-left: 50px;
+		width: 60%;
+
+
+		@media only screen and (max-width: 991.98px) { 
+			margin-left: 25px;
+		}
+
+		@media only screen and (max-width: 767.98px) { 
+			margin-left: 0;
+			width: 80%;
+		}
+
+		@media only screen and (max-width: 575.98px) { 
+			width: 100%;
+		}
+
+		p {
+			font-size: 16px;
+			padding-bottom: 20px;
+		}
+	}
+}
+
+
+
+
+/* FOOTER */
+
+.footer {
+	padding: 25px 0;
+	background: rgba(117, 115, 116, 0.056);
+	&__box {
+
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		@media only screen and (max-width: 575.98px) { 
+			flex-direction: column;
+		}
+	}
+
+	.right {
+		text-align: right;
+		@media only screen and (max-width: 575.98px) { 
+			padding-top: 15px;
+		}
+	}
+
+	.name {
+		font-weight: 700;
+		font-size: 13px;
+	}
+}
+
+
+
+
+@media only screen and (max-width: 1199.98px) { 
+
+}
+
+
+@media only screen and (max-width: 991.98px) { 
+
+}
+
+
+@media only screen and (max-width: 767.98px) { 
+
+}
+
+@media only screen and (max-width: 575.98px) { 
+
 }
 
 

@@ -5,13 +5,16 @@ body {
 	min-width: 320px; 
 	position: relative; 
 	padding-right: 0 !important;
-	font-family: $fontFamily;
+	
 	font-size: $fontSize;
 	font-weight: 400;
 	line-height: 1.2;
 	box-sizing: border-box; 
 	z-index: 1;
 	background: #fafafa;
+
+	display: flex;
+	flex-direction: column;
 }
 
 ul {
@@ -59,10 +62,15 @@ a {
 
 
 
-
 .hide {
 	display: none;
 } 
+
+.responsive {
+	display: block;
+	width: 100%;
+	height: auto;
+}
 
 section {
 	padding: 80px 0;
