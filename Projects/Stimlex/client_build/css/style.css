@@ -677,6 +677,18 @@ section {
         font-size: 40px;
     }
 }
+::-webkit-input-placeholder {
+    font-size: 16px;
+}
+::-moz-placeholder {
+    font-size: 16px;
+}
+:-ms-input-placeholder {
+    font-size: 16px;
+}
+:-moz-placeholder {
+    font-size: 16px;
+}
 .header {
     position: relative;
     background: url(../images/back__hero-sm.jpg) no-repeat 48%;
