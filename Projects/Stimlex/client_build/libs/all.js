@@ -60,7 +60,7 @@ $(document).ready(function() {
   $(".js-video-button").modalVideo({
     youtube: {
       autoplay: 1,
-      nocookie: false,
+      nocookie: true,
       cc_load_policy: 1,
       color: null,
       controls: 1,
