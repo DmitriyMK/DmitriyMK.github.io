@@ -640,29 +640,18 @@ section {
   -webkit-transition: opacity .35s, visibility .35s, width .35s;
   -o-transition: opacity .35s, visibility .35s, width .35s;
   transition: opacity .35s, visibility .35s, width .35s;
-  z-index: 50; }
+  z-index: 50;
+  -webkit-transition: all .3s linear;
+  -o-transition: all .3s linear;
+  transition: all .3s linear; }
   .menu__wrapper .overlay:before {
     content: '';
     background: #663399;
-    left: -55%;
+    left: 0;
     top: 0;
-    width: 50%;
+    width: 100%;
     height: 100%;
-    position: absolute;
-    -webkit-transition: left .35s ease;
-    -o-transition: left .35s ease;
-    transition: left .35s ease; }
-  .menu__wrapper .overlay:after {
-    content: '';
-    background: #663399;
-    right: -55%;
-    top: 0;
-    width: 50%;
-    height: 100%;
-    position: absolute;
-    -webkit-transition: all .35s ease;
-    -o-transition: all .35s ease;
-    transition: all .35s ease; }
+    position: absolute; }
   .menu__wrapper .overlay.open {
     opacity: .9;
     visibility: visible;
@@ -687,12 +676,12 @@ section {
                 animation-delay: .65s; }
   .menu__wrapper .overlay .overlay__menu {
     position: relative;
-    height: 70%;
+    height: 50%;
     top: 50%;
     -webkit-transform: translateY(-50%);
         -ms-transform: translateY(-50%);
             transform: translateY(-50%);
-    font-size: 50px;
+    font-size: 35px;
     font-weight: 400;
     text-align: center;
     z-index: 100; }
@@ -704,10 +693,7 @@ section {
     height: 100%; }
     .menu__wrapper .overlay .overlay__menu-list .overlay__menu-item {
       display: block;
-      height: 25%;
-      height: -webkit-calc(100% / 4);
-      height: calc(100% / 4);
-      min-height: 50px;
+      min-height: 70px;
       position: relative;
       opacity: 0; }
       .menu__wrapper .overlay .overlay__menu-list .overlay__menu-item .overlay__menu-link {
@@ -716,7 +702,7 @@ section {
         color: #fff;
         text-decoration: none;
         overflow: hidden;
-        line-height: 60px;
+        line-height: 70px;
         letter-spacing: 2px; }
         .menu__wrapper .overlay .overlay__menu-list .overlay__menu-item .overlay__menu-link:hover:after, .menu__wrapper .overlay .overlay__menu-list .overlay__menu-item .overlay__menu-link:focus:after, .menu__wrapper .overlay .overlay__menu-list .overlay__menu-item .overlay__menu-link:active:after {
           width: 100%; }
@@ -820,7 +806,7 @@ section {
         font-size: 1.875rem; } }
     @media only screen and (max-width: 575.98px) {
       .about__title {
-        font-size: 1.5rem; } }
+        font-size: 1.25rem; } }
   .about__box {
     padding: 50px;
     display: -webkit-box;
