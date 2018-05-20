@@ -607,12 +607,13 @@
 	/* ¯\_(ツ)_/¯ */
 	.barbecue__single {
 		position: relative;
-		background: url(../images/back__assortment-single.jpg)no-repeat;
+		background: url(../images/back__assortment-single.jpg)no-repeat center/cover;
 		background-attachment: fixed;
 		z-index: 10;
 
 		@media @tablet {
 			background: url(../images/back__assortment-single.jpg)no-repeat center/cover;
+			background-attachment: fixed;
 		}
 		@media @desktop {
 
@@ -648,10 +649,15 @@
 		position: relative;
 		padding: 60px 0;
 		color: #000;
-		background: url(../images/back__barbecue-more.jpg)no-repeat;
+		background: url(../images/back__barbecue-more.jpg)no-repeat center/cover;
 		background-attachment: fixed;
 
 		@media @tablet {
+			background: url(../images/back__barbecue-more.jpg)no-repeat center/cover;
+			background-attachment: fixed;
+		}
+
+		@media @desktop {
 			background: url(../images/back__barbecue-more.jpg)no-repeat center/cover;
 		}
 
