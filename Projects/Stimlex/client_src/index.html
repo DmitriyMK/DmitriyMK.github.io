@@ -33,31 +33,6 @@
 	<link rel="stylesheet" href="./css/modal-video.min.css">
 
 	<link rel="stylesheet" href="./css/style.css">
-
-	<script defer src="./libs/fancybox.js"></script>
-	<script defer src="./libs/remodal.min.js"></script>
-	<script defer src="./libs/slick.js"></script>
-	<script defer src="./libs/jquery.validate.min.js"></script>
-	<script defer src="./libs/jquery-modal-video.min.js"></script>
-
-	<script defer src="https://maps.googleapis.com/maps/api/js?callback=initMap&key=AIzaSyDFnsXtzPC77ZP4pkabK8_yVr5qazdPCjc"></script>
-	
-	<script defer src="https://www.youtube.com/yts/jsbin/player-vflXIriOh/en_US/base.js"></script>
-	<script defer src="https://www.youtube.com/yts/jsbin/www-embed-player-vflHvHVeu/www-embed-player.js "></script>
-
-	<script>
-		function init() {
-			var vidDefer = document.getElementsByTagName('iframe');
-			for (var i=0; i<vidDefer.length; i++) {
-				if(vidDefer[i].getAttribute('data-src')) {
-					vidDefer[i].setAttribute('src',vidDefer[i].getAttribute('data-src'));
-				} 
-			} 
-		}
-		window.onload = init;
-	</script>
-
-
 </head>
 
 <body>
@@ -1213,6 +1188,29 @@
 
 		<script src="./libs/jquery.nicescroll.min.js"></script>
 		<script src="./libs/jquery.enllax.min.js"></script>
+
+		<script defer src="./libs/fancybox.js"></script>
+		<script defer src="./libs/remodal.min.js"></script>
+		<script defer src="./libs/slick.js"></script>
+		<script defer src="./libs/jquery.validate.min.js"></script>
+		<script defer src="./libs/jquery-modal-video.min.js"></script>
+
+		<script defer src="https://maps.googleapis.com/maps/api/js?callback=initMap&key=AIzaSyDFnsXtzPC77ZP4pkabK8_yVr5qazdPCjc"></script>
+		
+		<script defer src="https://www.youtube.com/yts/jsbin/player-vflXIriOh/en_US/base.js"></script>
+		<script defer src="https://www.youtube.com/yts/jsbin/www-embed-player-vflHvHVeu/www-embed-player.js "></script>
+
+		<script>
+			function init() {
+				var vidDefer = document.getElementsByTagName('iframe');
+				for (var i=0; i<vidDefer.length; i++) {
+					if(vidDefer[i].getAttribute('data-src')) {
+						vidDefer[i].setAttribute('src',vidDefer[i].getAttribute('data-src'));
+					} 
+				} 
+			}
+			window.onload = init;
+		</script>
 		
 
 		<script src="./libs/all.js"></script>
