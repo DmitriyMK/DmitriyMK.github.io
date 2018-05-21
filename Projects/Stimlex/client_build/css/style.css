@@ -2650,8 +2650,22 @@ section {
     }
 }
 .step {
-    background: url(../images/back__step.jpg) no-repeat center / cover;
+    background: url(../images/back__step-med.jpg);
+    /* 	background-attachment: fixed;  */
     z-index: -1;
+    /* 	@media @desktop-xl {
+	background: url(../images/back__step.jpg)no-repeat center/cover;
+} */
+}
+@media only screen and (min-width: 768px) {
+    .step {
+        background: url(../images/back__step-med.jpg);
+    }
+}
+@media only screen and (min-width: 992px) {
+    .step {
+        background: url(../images/back__step.jpg) no-repeat center / cover;
+    }
 }
 .step br {
     display: none;

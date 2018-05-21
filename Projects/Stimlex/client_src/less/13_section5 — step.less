@@ -19,12 +19,19 @@
 
 
 .step {
-	background: url(../images/back__step.jpg)no-repeat center/cover;
+	background: url(../images/back__step-med.jpg);
+/* 	background-attachment: fixed;  */
 	z-index: -1;
 
 	@media @tablet {
-		
+		background: url(../images/back__step-med.jpg);
 	}
+	@media @desktop {
+		background: url(../images/back__step.jpg)no-repeat center/cover;
+	}
+/* 	@media @desktop-xl {
+	background: url(../images/back__step.jpg)no-repeat center/cover;
+} */
 
 	br {
 		display: none;
