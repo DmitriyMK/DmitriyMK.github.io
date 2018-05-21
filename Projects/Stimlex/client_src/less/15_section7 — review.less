@@ -18,7 +18,12 @@
 .review {
 	overflow: hidden;
 	position: relative;
-	background: url(../images/back__review.jpg)no-repeat center/cover;
+	background: url(../images/back__review — small.jpg)no-repeat center/cover;
+
+	@media @tablet {
+		background: url(../images/back__review.jpg)no-repeat center/cover;
+	}
+	
 	&:before {
 		content: '';
 		position: absolute;

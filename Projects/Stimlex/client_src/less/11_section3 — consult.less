@@ -36,14 +36,6 @@
 		margin-bottom: -110px;
 	}
 
-	@media @desktop-xl {
-
-	}
-	@media @desktop-xl-2 {
-		height: 639px;
-		background: url(../images/back__consult.png)repeat-x center;
-	}
-
 
 	.container {
 		position: relative;
@@ -56,25 +48,13 @@
 		justify-content: center;
 		align-items: center;
 
-
-		@media @tablet {
-
-		}
 		@media @desktop {
 			margin-top: 28px;
 			flex-direction: row;
 			justify-content: space-between;
 			align-items: inherit;
 		}
-		@media @desktop-xl {
 
-		}
-		@media @desktop-xl-2 {
-
-		}
-		@media @desktop-xll {
-
-		}
 	}
 
 	&__ask {
@@ -107,7 +87,7 @@
 		font-weight: bold;
 		text-align: center;
 		@media @tablet {
-
+			font-size: 30px;
 		}
 		@media @desktop {
 			margin-top: 70px;
@@ -133,10 +113,14 @@
 
 		br {
 			display: none;
-			@media @tablet {
+			@media @desktop {
 				display: inline;
 			}
 		} 
+
+		@media @tablet {
+			font-size: 22px;
+		}
 
 		@media @desktop {
 			margin-top: 66px;

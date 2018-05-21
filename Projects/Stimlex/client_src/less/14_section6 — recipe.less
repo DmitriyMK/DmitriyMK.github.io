@@ -12,7 +12,7 @@
 
 
 .recipe {
-	background: url(../images/back__recipe-sm.jpg);
+	background: url(../images/back__recipe-sm.jpg) no-repeat center/cover;
 	
 
 	@media @tablet {
@@ -100,9 +100,14 @@
 	.slider-nav-recipe {
 		margin: 0 auto;
 		margin-bottom: 20px;
-		.slider__item {
 
-			
+		@media @tablet {
+			margin: 0 30px;
+		}
+		@media @desktop {
+			margin: 0 auto;
+		}
+		.slider__item {		
 			@media @tablet {
 
 			}
@@ -124,9 +129,6 @@
 				background: transparent;
 				transition: all .3s linear;
 
-				@media @tablet {
-
-				}
 				@media @desktop {
 					width: 100%;
 				}
@@ -142,9 +144,6 @@
 				background: transparent;
 				transition: all .3s linear;
 
-				@media @tablet {
-
-				}
 				@media @desktop {
 					width: 100%;
 				}
@@ -161,9 +160,6 @@
 				height: 8px;
 				background: #fca214;
 
-				@media @tablet {
-
-				}
 				@media @desktop {
 					width: 100%;
 				}
@@ -178,9 +174,6 @@
 				height: 8px;
 				background: #fca214;
 
-				@media @tablet {
-
-				}
 				@media @desktop {
 					width: 100%;
 				}
@@ -191,20 +184,12 @@
 			width: 200px;
 			margin: auto;
 
-			@media @tablet {
+
+			@media @desktop {
 				height: 225px;
 				width: 100%;
 			}
 
-			@media @tablet {
-
-			}
-			@media @desktop {
-				max-width: 300px;
-			}
-			@media @desktop-xl {
-
-			}
 		}
 	}
 
@@ -222,10 +207,18 @@
 
 	.slick-prev {
 		left: 2vh; 
+		@media @tablet {
+			left: -30px; 
+		}
+
 	}
 
 	.slick-next {
 		right: 2vh; 
+		@media @tablet {
+			right: -30px;
+		}
+
 	}
 
 
