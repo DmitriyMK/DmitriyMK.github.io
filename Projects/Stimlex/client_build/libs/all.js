@@ -302,7 +302,7 @@ $(document).ready(function() {
 
 
 $(window).on('resize orientationchange', function() {
-  $('.slider').slick('resize');
+  $('.sliderResize ').slick('resize');
 });
 
 

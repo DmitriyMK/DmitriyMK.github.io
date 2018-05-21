@@ -1723,7 +1723,7 @@ section {
     margin-right: 4px;
     margin-top: 8px;
     width: 80px;
-    height: 80px;
+    max-height: 80px;
     border: 1px solid #a1a1a1;
 }
 .assortment .barbecue__other .slider__item:last-of-type {
