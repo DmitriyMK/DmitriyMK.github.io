@@ -2653,10 +2653,10 @@ section {
     }
 }
 .step {
-    background: url(../images/back__step_sm.jpg);
+    background: url(../images/back__step-small.jpg);
     z-index: -1;
 }
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 768px) {
     .step {
         background: url(../images/back__step.jpg) no-repeat center / cover;
     }
@@ -2904,7 +2904,7 @@ section {
 }
 .recipe .slider-nav-recipe .slider__img {
     height: auto;
-    width: 200px;
+    width: 150px;
 }
 @media only screen and (min-width: 768px) {
     .recipe .slider-nav-recipe .slider__img {
