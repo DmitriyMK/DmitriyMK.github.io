@@ -42,7 +42,7 @@
 	}
 
 	.big__img-gray {
-		border: 2px solid #a1a1a1;
+		border: 1px solid #a1a1a1;
 	} 
 
 	.color__list {
@@ -152,33 +152,24 @@
 			}
 		} 
 
+
 		.slider__barbecue {
 			width: 100%;
 			margin-bottom: 20px;
+			display: flex;
+			justify-content: space-between;
 			@media @desktop {
 				margin-bottom: inherit;
 			}
 		}
 
-		.sliderBarbecueComplex {
-			.slider__item {		
-
-				width: 56px!important;
-				height: 56px;		
-
-				@media @tablet {
-					width: 79.5px!important;
-					height: 79.5px;		
-				}
-			}
-		}
 
 		.slider__item {		
 			
 			margin-right: 4px;
 			margin-top: 8px;
 
-			width: 18.9%!important;
+			width: 18.9%;
 			height: 18.9%;
 
 			border: 1px solid #a1a1a1;
@@ -631,6 +622,15 @@
 		color: #000;
 		background-color: rgb(238, 244, 249);
 
+		.slider__item {
+
+			border: 1px solid #a1a1a1;
+
+			&:last-of-type {
+				margin-right: 0;
+			}
+		}
+
 		.price {
 			color: #000;
 		}
@@ -638,7 +638,6 @@
 		.btn {
 			color: #fff;
 		}
-
 	}
 
 
@@ -647,14 +646,10 @@
 		position: relative;
 		padding: 60px 0;
 		color: #000;
-		background: url(../images/back__barbecue-more.jpg)no-repeat center/cover;
-		
-
-		background-position: center center;
+		background: url(../images/back__barbecue-small.jpg);
+		background-attachment: fixed;
 
 		@media @tablet {
-			background: url(../images/back__barbecue-more.jpg)no-repeat center/cover;
-
 		}
 
 		@media @desktop {
@@ -765,31 +760,34 @@
 			}
 		}
 
+		.slider__product {
+			display: flex;
+			justify-content: space-between;
+		}
+
 
 
 		.slider__item {
-			float: left;
-			width: 66px!important;
-			height: 66px;
-			margin-right: 10px;
+			margin-right: 4px; 
 			margin-top: 8px;
+
+			width: 80px;
+			height: 80px;
+
 			border: 1px solid #a1a1a1;
-
-			@media @tablet {
-
-			}
-			@media @desktop {
-				margin-right: 4.5px;
-			}
-			@media @desktop-xl {
-
-			}
-			@media @desktop-xl-2 {
-
-			}
 
 			&:last-of-type {
 				margin-right: 0;
+			} 
+
+			img {
+				display: block;
+				width: 100%;
+			}
+			
+			@media @tablet {
+
+				
 			}
 		}
 

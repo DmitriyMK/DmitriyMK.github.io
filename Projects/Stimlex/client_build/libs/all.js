@@ -87,37 +87,6 @@ $(document).ready(function() {
   });
 
 
-  $('.sliderBarbecueSingle').slick({
-    slidesToShow: 5,
-    arrows: false,
-    dots: false,
-  });
-
-
-  $('.sliderBarbecueComplex').slick({
-    slidesToShow: 4,
-    arrows: false,
-    dots: false,
-  });
-
-
-  $('.slider__product').slick({
-    slidesToShow: 3,
-    arrows: false,
-    dots: false,
-
-    responsive: [
-
-    {
-      breakpoint: 992,
-      settings: {
-        slidesToShow: 3,
-      }
-    },
-
-    ]
-  });
-
 
   $('.slider-for-recipe').slick({
     slidesToShow: 1,

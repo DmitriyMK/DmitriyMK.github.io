@@ -970,7 +970,7 @@ section {
     .header .img-plate {
         display: block;
         position: absolute;
-        bottom: -50px;
+        bottom: -40px;
         left: 50%;
         -webkit-transform: translateX(-120%);
             -ms-transform: translateX(-120%);
@@ -1098,7 +1098,7 @@ section {
     border: 2px solid #fff;
 }
 .assortment .big__img-gray {
-    border: 2px solid #a1a1a1;
+    border: 1px solid #a1a1a1;
 }
 .assortment .color__list {
     padding-top: 5px;
@@ -1219,26 +1219,22 @@ section {
 .assortment .barbecue__box .slider__barbecue {
     width: 100%;
     margin-bottom: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
 }
 @media only screen and (min-width: 992px) {
     .assortment .barbecue__box .slider__barbecue {
         margin-bottom: inherit;
     }
 }
-.assortment .barbecue__box .sliderBarbecueComplex .slider__item {
-    width: 56px!important;
-    height: 56px;
-}
-@media only screen and (min-width: 768px) {
-    .assortment .barbecue__box .sliderBarbecueComplex .slider__item {
-        width: 79.5px!important;
-        height: 79.5px;
-    }
-}
 .assortment .barbecue__box .slider__item {
     margin-right: 4px;
     margin-top: 8px;
-    width: 18.9%!important;
+    width: 18.9%;
     height: 18.9%;
     border: 1px solid #a1a1a1;
 }
@@ -1617,6 +1613,12 @@ section {
     color: #000;
     background-color: #eef4f9;
 }
+.assortment .barbecue__complex .slider__item {
+    border: 1px solid #a1a1a1;
+}
+.assortment .barbecue__complex .slider__item:last-of-type {
+    margin-right: 0;
+}
 .assortment .barbecue__complex .price {
     color: #000;
 }
@@ -1627,13 +1629,8 @@ section {
     position: relative;
     padding: 60px 0;
     color: #000;
-    background: url(../images/back__barbecue-more.jpg) no-repeat center / cover;
-    background-position: center center;
-}
-@media only screen and (min-width: 768px) {
-    .assortment .barbecue__other {
-        background: url(../images/back__barbecue-more.jpg) no-repeat center / cover;
-    }
+    background: url(../images/back__barbecue-small.jpg);
+    background-attachment: fixed;
 }
 @media only screen and (min-width: 992px) {
     .assortment .barbecue__other {
@@ -1714,21 +1711,27 @@ section {
         height: 317px;
     }
 }
-.assortment .barbecue__other .slider__item {
-    float: left;
-    width: 66px!important;
-    height: 66px;
-    margin-right: 10px;
-    margin-top: 8px;
-    border: 1px solid #a1a1a1;
+.assortment .barbecue__other .slider__product {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
 }
-@media only screen and (min-width: 992px) {
-    .assortment .barbecue__other .slider__item {
-        margin-right: 4.5px;
-    }
+.assortment .barbecue__other .slider__item {
+    margin-right: 4px;
+    margin-top: 8px;
+    width: 80px;
+    height: 80px;
+    border: 1px solid #a1a1a1;
 }
 .assortment .barbecue__other .slider__item:last-of-type {
     margin-right: 0;
+}
+.assortment .barbecue__other .slider__item img {
+    display: block;
+    width: 100%;
 }
 .assortment .barbecue__other .price {
     padding: 20px 0;
@@ -2706,7 +2709,7 @@ section {
 }
 @media only screen and (min-width: 992px) {
     .step .list__item {
-        width: 24%;
+        width: 20%;
         margin-bottom: inherit;
     }
 }
