@@ -90,6 +90,7 @@ $(document).ready(function() {
 
   $('.slider-for-recipe').slick({
     slidesToShow: 1,
+    slidesToScroll: 1,
     arrows: false,
     dots: false,
     asNavFor: '.slider-nav-recipe',
@@ -107,7 +108,7 @@ $(document).ready(function() {
     },
 
     {
-      breakpoint: 480,
+      breakpoint: 767,
       settings: {
         dots: true,
       }
@@ -120,26 +121,32 @@ $(document).ready(function() {
 
   $('.slider-nav-recipe').slick({
     slidesToShow: 4,
+    slidesToScroll: 1,
     asNavFor: '.slider-for-recipe',
     arrows: false,
     dots: false,
     focusOnSelect: true,
     infinite: true,
+    centerMode: false,
 
     responsive: [
 
     {
       breakpoint: 992,
       settings: {
-        slidesToShow: 3,
+        slidesToShow: 2,
+        slidesToScroll: 1,
         arrows: true,
+
       }
     },
 
     {
-      breakpoint: 480,
+      breakpoint: 767,
       settings: {
-        slidesToShow: 2,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+
         arrows: true,
       }
     },

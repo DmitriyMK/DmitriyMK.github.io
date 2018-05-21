@@ -1909,16 +1909,20 @@ section {
 }
 .consult {
     position: relative;
-    background: #666;
+    background: url(../images/back__consult-small.jpg) no-repeat center / cover;
     z-index: 12;
-    height: 690px;
     overflow: hidden;
+}
+@media only screen and (min-width: 768px) {
+    .consult {
+        background: url(../images/back__consult-med.jpg) center / cover;
+    }
 }
 @media only screen and (min-width: 992px) {
     .consult {
+        background: url(../images/back__consult.png) repeat-x center;
         overflow: visible;
         height: 639px;
-        background: url(../images/back__consult.png) repeat-x center;
         margin-top: -74px;
         margin-bottom: -110px;
     }
@@ -2048,8 +2052,7 @@ section {
 .consult__form {
     position: relative;
     width: 290px;
-    margin: 0 auto;
-    margin-top: 70px;
+    margin: 60px auto;
     padding-top: 7px;
     text-align: center;
 }
@@ -2785,8 +2788,7 @@ section {
             box-shadow: 1.568px 14.918px 17.4px 2.6px rgba(220, 52, 0, 0);
 }
 .recipe {
-    background: url(../images/back__recipe.jpg) no-repeat 60%;
-    background-size: cover;
+    background: url(../images/back__recipe-sm.jpg);
 }
 @media only screen and (min-width: 992px) {
     .recipe {
@@ -2859,10 +2861,13 @@ section {
     color: #fefeff;
 }
 .recipe .slider-nav-recipe {
+    margin: 0 auto;
     margin-bottom: 20px;
 }
-.recipe .slider-nav-recipe .slider__item {
-    width: 300px;
+@media only screen and (min-width: 992px) {
+    .recipe .slider-nav-recipe .slider__item {
+        max-width: 100%;
+    }
 }
 .recipe .slider-nav-recipe .slider__item:before {
     content: '';
@@ -2908,12 +2913,17 @@ section {
 }
 .recipe .slider-nav-recipe .slider__img {
     height: auto;
-    width: 100%;
+    width: 200px;
 }
 @media only screen and (min-width: 768px) {
     .recipe .slider-nav-recipe .slider__img {
         height: 225px;
         width: 100%;
+    }
+}
+@media only screen and (min-width: 992px) {
+    .recipe .slider-nav-recipe .slider__img {
+        max-width: 300px;
     }
 }
 .recipe .slick-prev, .recipe .slick-next {

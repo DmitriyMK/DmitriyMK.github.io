@@ -17,19 +17,21 @@
 
 
 .consult {
-	
 	position: relative;
-	background: #666;
-
-
+	background: url(../images/back__consult-small.jpg)no-repeat center/cover;
 	z-index: 12;
-	height: 690px;
+	
 	overflow: hidden;
 
+	@media @tablet {
+		background: url(../images/back__consult-med.jpg) center/cover;
+	}
+
 	@media @desktop {
+		background: url(../images/back__consult.png)repeat-x center;
 		overflow: visible;
 		height: 639px;
-		background: url(../images/back__consult.png)repeat-x center;
+
 		margin-top: -74px;
 		margin-bottom: -110px;
 	}
@@ -53,7 +55,7 @@
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-		
+
 
 		@media @tablet {
 
@@ -100,7 +102,7 @@
 	}
 
 	&__title {
-		
+
 		font-size: 23px;
 		font-weight: bold;
 		text-align: center;
@@ -125,7 +127,7 @@
 	&__text {
 		position: relative;
 		margin-top: 25px;
-		
+
 		font-size: 18px;
 		text-align: center;
 
@@ -156,7 +158,7 @@
 				height: 100%;
 				background: #fff;
 			}
-			
+
 		}
 	}
 
@@ -165,8 +167,8 @@
 	&__form {
 		position: relative;
 		width: 290px;
-		margin: 0 auto;
-		margin-top: 70px;
+		margin: 60px auto;
+
 		padding-top: 7px;
 		text-align: center;
 
@@ -184,7 +186,7 @@
 			transform: translateX(-46%);
 			background: url(../images/forms-sm.png)no-repeat;
 
-			
+
 
 			@media @tablet {
 				width: 327px;

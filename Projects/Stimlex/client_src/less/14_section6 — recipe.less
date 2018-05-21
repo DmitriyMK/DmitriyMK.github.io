@@ -12,9 +12,7 @@
 
 
 .recipe {
-	background: url(../images/back__recipe.jpg)no-repeat 60%;
-	background-size: cover;
-
+	background: url(../images/back__recipe-sm.jpg);
 	
 
 	@media @tablet {
@@ -99,9 +97,20 @@
 	}	
 
 	.slider-nav-recipe {
+		margin: 0 auto;
 		margin-bottom: 20px;
 		.slider__item {
-			width: 300px;
+
+			
+			@media @tablet {
+
+			}
+			@media @desktop {
+				max-width: 100%;
+			}
+			@media @desktop-xl {
+
+			}
 
 			&:before {
 				content: '';
@@ -146,11 +155,21 @@
 		}
 		.slider__img {
 			height: auto;
-			width: 100%;
+			width: 200px;
 
 			@media @tablet {
 				height: 225px;
 				width: 100%;
+			}
+
+			@media @tablet {
+
+			}
+			@media @desktop {
+				max-width: 300px;
+			}
+			@media @desktop-xl {
+
 			}
 		}
 	}
