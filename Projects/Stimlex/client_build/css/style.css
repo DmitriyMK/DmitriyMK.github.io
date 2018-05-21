@@ -1594,15 +1594,12 @@ section {
 }
 .assortment .barbecue__single {
     position: relative;
-    background: url(../images/back__assortment-single.jpg) no-repeat center / cover;
-    background-attachment: fixed;
-    background-position: center center;
+    background: url(../images/back__assortment-small.jpg) no-repeat center / cover;
     z-index: 10;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 992px) {
     .assortment .barbecue__single {
         background: url(../images/back__assortment-single.jpg) no-repeat center / cover;
-        background-attachment: fixed;
     }
 }
 @media only screen and (min-width: 1200px) {
@@ -1631,13 +1628,11 @@ section {
     padding: 60px 0;
     color: #000;
     background: url(../images/back__barbecue-more.jpg) no-repeat center / cover;
-    background-attachment: fixed;
     background-position: center center;
 }
 @media only screen and (min-width: 768px) {
     .assortment .barbecue__other {
         background: url(../images/back__barbecue-more.jpg) no-repeat center / cover;
-        background-attachment: fixed;
     }
 }
 @media only screen and (min-width: 992px) {
