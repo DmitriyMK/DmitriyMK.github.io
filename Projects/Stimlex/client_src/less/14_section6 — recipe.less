@@ -30,14 +30,13 @@
 	}
 
 	&__box {
-		padding-top: 120px;
-		
+		padding-top: 70px;
 		margin: auto;
-
 		@media @tablet {
 
 		}
 		@media @desktop {
+			padding-top: 120px;
 			width: 900px;
 		}
 		@media @desktop-xl {
@@ -72,7 +71,7 @@
 			user-select: text;
 		}
 		&__title {
-			width: 95%;
+			width: 200px;
 			position: absolute;
 			top: 50%;
 			left: 50%;
@@ -84,8 +83,10 @@
 			text-align: center;
 
 			@media @tablet {
-				width: 80%;
 				font-size: 20px;
+			}
+			@media @desktop {
+				width: 80%;
 			}
 		}
 	}
@@ -102,8 +103,6 @@
 		.slider__item {
 
 			
-
-			
 			@media @tablet {
 
 			}
@@ -118,21 +117,37 @@
 				content: '';
 				position: absolute;
 				top: 0;
-				left: 0;
-				width: 100%;
+				left: 50%;
+				transform: translateX(-50%);
+				width: 200px;
 				height: 8px;
 				background: transparent;
 				transition: all .3s linear;
+
+				@media @tablet {
+
+				}
+				@media @desktop {
+					width: 100%;
+				}
 			}
 			&:after {
 				content: '';
 				position: absolute;
 				bottom: 0;
-				left: 0;
-				width: 100%;
+				left: 50%;
+				transform: translateX(-50%);
+				width: 200px;
 				height: 8px;
 				background: transparent;
 				transition: all .3s linear;
+
+				@media @tablet {
+
+				}
+				@media @desktop {
+					width: 100%;
+				}
 			}
 		}
 		.slick-current { 
@@ -140,24 +155,41 @@
 				content: '';
 				position: absolute;
 				top: 0;
-				left: 0;
-				width: 100%;
+				left: 50%;
+				transform: translateX(-50%);
+				width: 200px;
 				height: 8px;
 				background: #fca214;
+
+				@media @tablet {
+
+				}
+				@media @desktop {
+					width: 100%;
+				}
 			}
 			&:after {
 				content: '';
 				position: absolute;
 				bottom: 0;
-				left: 0;
-				width: 100%;
+				left: 50%;
+				transform: translateX(-50%);
+				width: 200px;
 				height: 8px;
 				background: #fca214;
+
+				@media @tablet {
+
+				}
+				@media @desktop {
+					width: 100%;
+				}
 			}
 		}
 		.slider__img {
 			height: auto;
-			width: 150px;
+			width: 200px;
+			margin: auto;
 
 			@media @tablet {
 				height: 225px;
@@ -182,18 +214,18 @@
 		font-family: 'Fontello'; 
 		transition: all .3s linear;
 
-		top: -70px;
+		top: 43%;
 		transform: translateY(-50%);
 		z-index: 10;
 
 	}
 
 	.slick-prev {
-		left: 10vh; 
+		left: 2vh; 
 	}
 
 	.slick-next {
-		right: 10vh; 
+		right: 2vh; 
 	}
 
 

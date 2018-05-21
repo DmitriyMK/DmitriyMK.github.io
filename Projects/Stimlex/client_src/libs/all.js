@@ -1,29 +1,4 @@
-
-
-/*FIXED SCROLL TO TOP*/
-/*$(document).ready(function() {
-
-  $(window).scroll(function() {
-    if ($(this).scrollTop() > 400) {
-      $('.scrollup').fadeIn();
-    } else {
-      $('.scrollup').fadeOut();
-    }
-  });
-
-  $('.scrollup').click(function() {
-    $("html, body").animate({
-      scrollTop: 0
-    }, 600);
-    return false;
-  });
-
-});*/
-
-
-
 $(document).ready(function() {
-
 
   if (document.documentElement.clientWidth > 1200) {
     $(window).enllax();
@@ -134,7 +109,7 @@ $(document).ready(function() {
     {
       breakpoint: 992,
       settings: {
-        slidesToShow: 2,
+        slidesToShow: 3,
         slidesToScroll: 1,
         arrows: true,
 
@@ -142,9 +117,19 @@ $(document).ready(function() {
     },
 
     {
-      breakpoint: 767,
+      breakpoint: 768,
       settings: {
-        slidesToShow: 1,
+        slidesToShow: 2,
+        slidesToScroll: 1,
+
+        arrows: true,
+      }
+    },
+
+    {
+      breakpoint: 550,
+      settings: {
+        slidesToShow: 2,
         slidesToScroll: 1,
 
         arrows: true,

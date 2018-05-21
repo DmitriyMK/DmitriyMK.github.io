@@ -2791,11 +2791,12 @@ section {
     color: #fff;
 }
 .recipe__box {
-    padding-top: 120px;
+    padding-top: 70px;
     margin: auto;
 }
 @media only screen and (min-width: 992px) {
     .recipe__box {
+        padding-top: 120px;
         width: 900px;
     }
 }
@@ -2828,7 +2829,7 @@ section {
             user-select: text;
 }
 .recipe .slider__title {
-    width: 95%;
+    width: 200px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -2842,8 +2843,12 @@ section {
 }
 @media only screen and (min-width: 768px) {
     .recipe .slider__title {
-        width: 80%;
         font-size: 20px;
+    }
+}
+@media only screen and (min-width: 992px) {
+    .recipe .slider__title {
+        width: 80%;
     }
 }
 .recipe__item {
@@ -2864,47 +2869,80 @@ section {
     content: '';
     position: absolute;
     top: 0;
-    left: 0;
-    width: 100%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+    width: 200px;
     height: 8px;
     background: transparent;
     -webkit-transition: all 0.3s linear;
          -o-transition: all 0.3s linear;
             transition: all 0.3s linear;
+}
+@media only screen and (min-width: 992px) {
+    .recipe .slider-nav-recipe .slider__item:before {
+        width: 100%;
+    }
 }
 .recipe .slider-nav-recipe .slider__item:after {
     content: '';
     position: absolute;
     bottom: 0;
-    left: 0;
-    width: 100%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+    width: 200px;
     height: 8px;
     background: transparent;
     -webkit-transition: all 0.3s linear;
          -o-transition: all 0.3s linear;
             transition: all 0.3s linear;
 }
+@media only screen and (min-width: 992px) {
+    .recipe .slider-nav-recipe .slider__item:after {
+        width: 100%;
+    }
+}
 .recipe .slider-nav-recipe .slick-current:before {
     content: '';
     position: absolute;
     top: 0;
-    left: 0;
-    width: 100%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+    width: 200px;
     height: 8px;
     background: #fca214;
+}
+@media only screen and (min-width: 992px) {
+    .recipe .slider-nav-recipe .slick-current:before {
+        width: 100%;
+    }
 }
 .recipe .slider-nav-recipe .slick-current:after {
     content: '';
     position: absolute;
     bottom: 0;
-    left: 0;
-    width: 100%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+    width: 200px;
     height: 8px;
     background: #fca214;
 }
+@media only screen and (min-width: 992px) {
+    .recipe .slider-nav-recipe .slick-current:after {
+        width: 100%;
+    }
+}
 .recipe .slider-nav-recipe .slider__img {
     height: auto;
-    width: 150px;
+    width: 200px;
+    margin: auto;
 }
 @media only screen and (min-width: 768px) {
     .recipe .slider-nav-recipe .slider__img {
@@ -2922,17 +2960,17 @@ section {
     -webkit-transition: all 0.3s linear;
          -o-transition: all 0.3s linear;
             transition: all 0.3s linear;
-    top: -70px;
+    top: 43%;
     -webkit-transform: translateY(-50%);
         -ms-transform: translateY(-50%);
             transform: translateY(-50%);
     z-index: 10;
 }
 .recipe .slick-prev {
-    left: 10vh;
+    left: 2vh;
 }
 .recipe .slick-next {
-    right: 10vh;
+    right: 2vh;
 }
 .recipe .slick-prev:before, .recipe .slick-next:before {
     display: block;
@@ -3380,8 +3418,8 @@ section {
     margin: 30px 0 0 15px;
 }
 .remodal-close {
-    top: -25px !important;
-    right: 30px !important;
+    top: -20px !important;
+    right: 10px !important;
     width: 35px !important;
     height: 30px !important;
     color: #fff !important;
