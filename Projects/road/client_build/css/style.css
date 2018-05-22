@@ -2221,7 +2221,7 @@ textarea {
 .services__list {
     position: relative;
 }
-.services__text {
+.services p {
     position: relative;
     color: #000;
     background: #fff;
@@ -3049,6 +3049,9 @@ textarea {
         -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+        -webkit-box-pack: start;
+        -ms-flex-pack: start;
+        justify-content: flex-start;
     }
 }
 .roads__items {
@@ -3066,6 +3069,7 @@ textarea {
     .roads__items {
         margin-bottom: inherit;
         min-width: inherit;
+        margin-right: 30px;
     }
 }
 .roads__items-title {
@@ -3383,6 +3387,13 @@ textarea {
             flex-wrap: wrap;
     }
 }
+@media only screen and (min-width: 992px) {
+    .sale {
+        -webkit-box-pack: start;
+        -ms-flex-pack: start;
+        justify-content: flex-start;
+    }
+}
 .sale__items {
     position: relative;
     min-width: 300px;
@@ -3399,8 +3410,14 @@ textarea {
 }
 @media only screen and (min-width: 992px) {
     .sale__items {
-        width: 32%;
+        width: 31%;
         margin-bottom: 50px;
+        margin-right: 22px;
+    }
+}
+@media only screen and (min-width: 1200px) {
+    .sale__items {
+        margin-right: 25px;
     }
 }
 .sale__items-title {
@@ -4112,9 +4129,9 @@ iframe {
         -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-        -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-        justify-content: space-between;
+        -webkit-box-pack: start;
+        -ms-flex-pack: start;
+        justify-content: flex-start;
         -ms-flex-wrap: wrap;
             flex-wrap: wrap;
     }

@@ -29,6 +29,9 @@
 		justify-content: space-between;
 		flex-wrap: wrap;
 	}
+	@media @desktop {
+		justify-content: flex-start;
+	}
 
 	
 	&__items {
@@ -44,8 +47,12 @@
 		}
 		
 		@media @desktop {
-			width: 32%;
+			width: 31%;
 			margin-bottom: 50px;
+			margin-right: 22px;
+		}
+		@media @desktop-xl {
+			margin-right: 25px;
 		}
 
 		
