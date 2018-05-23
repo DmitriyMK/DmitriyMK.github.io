@@ -1,4 +1,0 @@
-
-
-$('#flyRight').enllax();  
-
