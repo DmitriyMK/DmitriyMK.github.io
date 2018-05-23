@@ -10,8 +10,6 @@
 	<meta name="description" content=""/>
 	<meta name="keywords" content=""/>
 
-	
-	
 	<meta property="og:type" content="website">
 	<meta property="og:url" content="https://example.com/page.html">
 	<meta property="og:title" content="Content Title">
@@ -59,19 +57,48 @@
 
 
 
-	<section class="page__inner about">
+	<section class="contact">
 		<div class="wrapper">
-		<h2 class="about__title">ABOUT ME</h1>
-		<div class="about__box">
-			<div class="box__left">
-				<img class="responsive" src="img/photograph.jpg" alt="Elena Ivanova">
+			<h2 class="blog__title">Как меня найти</h2>
+
+			<div class="contact__wrap">
+				<img src="img/photo/IMG_0541_.jpg" alt="">
 			</div>
-			<div class="box__right">
-				<p>As a professional photographer, I offer my clients a wide set of services they can use for the benefit of their business or to make their project look more attractive. Even if you are not a businessman, you can still find what you are looking for at my website. Feel free to browse this page to learn more about photography services I provide.
-				</p>
-				<p>My projects differ in a variety of aspects from works of other photographers. On my website you will not find any ordinary photos and shots that can be described as dull and boring. In this project I tried to underline the emotional meaning of love and long-lasting relationship. The project features professional models portraying an initial idea of love and passion in these photos.</p>
-			</div>
-		</div>
+
+			<div class="contact__box">
+
+				<div class="contact__content">
+					<p>по телефону — <a href="tel:+380666096090">+38 066 609 6090</a></p>
+					<p>или по адресу — <a href="mailto:y.patyaka@gmail.com">y.patyaka@gmail.com</a></p>
+					<p>в социальных сетях — <a href="#">Инстаграм</a> и <a href="https://www.facebook.com/ivankacomua">Фейсбук</a></p>
+
+					<p class="contact__text">Если вдруг вы звоните, а я не отвечаю на звонки, значит, я фотографирую. В этот момент все время и внимание направлено только на съемку. Как-только я освобожусь – я обязательно вам перезвоню. В остальное время всегда на связи и рада Вас слышать.</p>
+				</div>
+
+				<div class="feedback__form">
+					<form action="mail.php" method="post" class="form form-validate" name="contact-form">
+						<!-- Hidden Required Fields -->
+						<input type="hidden" name="project_name" value="Фото Сайт">
+						<input type="hidden" name="admin_email" value="alchimic@ua.fm">
+						<input type="hidden" name="form_subject" value="Вопросик имеется">
+						<!-- END Hidden Required Fields -->
+
+						<div class="row__top">
+							<input class="form__line name" type="text" name="name" placeholder="Имя" required tabindex="1">
+							<input class="form__line name" type="tel" name="name" placeholder="Телефон" required tabindex="2">
+						</div>
+
+						<div class="form__row">
+						<textarea class="form__line" name="text" placeholder="Сообщение" tabindex="3"></textarea>
+						</div>
+
+						<input type="submit" class="btn" value="Отправить"> 
+					</form>
+				</div>
+			</div>	
+
+			
+
 		</div>
 	</section>
 
