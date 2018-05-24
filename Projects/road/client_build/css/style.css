@@ -4299,8 +4299,11 @@ iframe {
     .footer .logo__road {
         display: block;
         position: absolute;
-        bottom: -100px;
-        left: -370px;
+        bottom: 0;
+        left: 50%;
+        -webkit-transform: translateX(-140%);
+            -ms-transform: translateX(-140%);
+                transform: translateX(-140%);
     }
 }
 .footer .footer__contact {
@@ -4348,6 +4351,24 @@ iframe {
 @media only screen and (min-width: 992px) {
     .footer .footer__text {
         padding-right: 30px;
+    }
+}
+.agency {
+    padding: 15px 0;
+    text-align: center;
+    font-size: 90%;
+    opacity: 0.5;
+    font-weight: 300;
+}
+@media only screen and (min-width: 992px) {
+    .agency {
+        text-align: left;
+    }
+}
+@media only screen and (min-width: 1200px) {
+    .agency {
+        text-align: right;
+        padding-right: 60px;
     }
 }
 /* RESPONSIVE MENU TO 992px*/

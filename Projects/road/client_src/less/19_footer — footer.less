@@ -47,8 +47,9 @@
 		@media @desktop {
 			display: block;
 			position: absolute;
-			bottom: -100px;
-			left: -370px;
+			bottom: 0;
+			left: 50%;
+			transform: translateX(-140%);
 		}
 	}
 
@@ -96,5 +97,21 @@
 		@media @desktop {
 			padding-right: 30px;
 		}
+	}
+}
+
+.agency {
+	padding: 15px 0;
+	text-align: center;
+	font-size: 90%;
+	opacity: 0.5;
+	font-weight: 300;
+
+	@media @desktop {
+		text-align: left;
+	}
+	@media @desktop-xl {
+		text-align: right;
+		padding-right: 60px;
 	}
 }
