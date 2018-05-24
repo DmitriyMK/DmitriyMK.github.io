@@ -1,0 +1,141 @@
+@media @mobile {
+
+}
+@media @tablet {
+
+}
+@media @desktop {
+
+}
+@media @desktop-xl {
+	
+}
+@media @desktop-xl-2 {
+
+}
+@media @desktop-xll {
+	
+}
+
+header {
+	padding: 8px 0;
+	background: @black;
+
+	.contact {
+		display: flex;
+		align-items: center;
+	}
+
+	.header__logo {
+		flex-basis: 11%;
+	}
+
+	.header__nav {
+		flex-basis: 50%;
+	}
+
+	.header__link {
+		position: relative;
+		margin-right: 20px;
+
+		transition: color .3s ease-in-out;
+		&:before {
+			display: block;
+			position: absolute;
+			content: "";
+			height: 2px;
+			width: 0;
+			background-color: @red;
+			transition: width .3s ease-in-out, left .3s ease-in-out;
+			left: 50%;
+			bottom: -5px;
+		}
+		&:after{
+			display: block;
+			position: absolute;
+			content: "";
+			height: 2px;
+			width: 0;
+			background-color: @red;
+			transition: width .3s ease-in-out;
+			left: 50%;
+			bottom: -5px;
+		}
+		&:hover {
+			&:before {
+				width: 50%;
+				left: 0;
+			}
+			&:after {
+				width: 50%;
+			}
+		}
+	}
+
+	.contact {
+		flex-basis: 25%;
+	}
+
+	.contact__link {
+		margin-right: 10px;
+	}
+
+	.tel {
+		margin-left: 30px;
+		transition: color .3s ease-in-out;
+		&:hover {
+			color: @red;
+		}
+	}
+
+	
+
+}
+
+
+
+.header {
+	background: url(../images/hero__images.jpg)no-repeat center/cover;
+
+	&__top {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__center {
+		padding-top: 155px;
+		max-width: 900px;
+	}
+
+	&__title {
+		font-size: 55px;
+		font-weight: 900;
+		color: #fff;
+	}
+
+	&__slogan {
+		font-size: 45px;
+		font-weight: 300;
+	}
+}
+
+
+
+
+/* #fixedTopMenu.fixed{
+	position: fixed;
+	padding: 0 15px;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background: #131313;
+	z-index: 3000;
+	animation: smoothScroll 1s forwards;
+	&:after {
+		display: none;
+	}
+}
+*/
+
+
