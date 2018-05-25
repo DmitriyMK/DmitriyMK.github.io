@@ -17,7 +17,24 @@
 	
 }
 
-.services-inner{
+.services-inner {
+
+	ul li {
+		list-style-type: disc;
+		list-style-position: inside;
+		font-size: 17px;
+		padding-left: 15px;
+		
+
+        @media @desktop {
+        	padding-left: 25px;
+            font-size: 20px;
+        }
+	}
+
+	ol li {
+		list-style-type: decimal;
+	}
 
 	&__info {
 		display: flex;
@@ -161,9 +178,10 @@
 
 		}
 
-		li {
+		ul li {
 			list-style-type: disc;
 			list-style-position: inside;
+			font-size: 17px;
 		}
 
 		p {

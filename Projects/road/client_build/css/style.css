@@ -1513,7 +1513,7 @@ ul {
     padding: 0;
     margin: 0;
 }
-li {
+ul li {
     list-style-type: none;
 }
 body {
@@ -1609,6 +1609,7 @@ body {
     font-size: 17px;
     padding: 15px 5px;
     margin: 0;
+    margin-bottom: 15px;
 }
 @media only screen and (min-width: 768px) {
     .page-inner__desc {
@@ -3146,6 +3147,8 @@ textarea {
 .roads li {
     position: relative;
     padding: 2px 5px 2px 30px;
+    list-style-type: none!important;
+    font-size: inherit!important;
 }
 .roads li:before {
     content: '';
@@ -3179,6 +3182,21 @@ textarea {
     -webkit-box-shadow: none;
             box-shadow: none;
     background-color: #fab900;
+}
+.services-inner ul li {
+    list-style-type: disc;
+    list-style-position: inside;
+    font-size: 17px;
+    padding-left: 15px;
+}
+@media only screen and (min-width: 992px) {
+    .services-inner ul li {
+        padding-left: 25px;
+        font-size: 20px;
+    }
+}
+.services-inner ol li {
+    list-style-type: decimal;
 }
 .services-inner__info {
     display: -webkit-box;
@@ -3330,9 +3348,10 @@ textarea {
         padding: 10px 20px;
     }
 }
-.services-inner .contents li {
+.services-inner .contents ul li {
     list-style-type: disc;
     list-style-position: inside;
+    font-size: 17px;
 }
 .services-inner .contents p {
     margin: 5px 0;
@@ -3499,6 +3518,8 @@ textarea {
     position: relative;
     padding: 2px 5px 2px 30px;
     width: 100%;
+    list-style-type: none!important;
+    font-size: inherit!important;
 }
 .sale li:before {
     content: '';
@@ -3646,6 +3667,9 @@ iframe {
 .feedback__item {
     position: relative;
     margin-bottom: 25px;
+    list-style-type: none!important;
+    font-size: inherit!important;
+    padding-left: inherit!important;
 }
 .feedback__item:before {
     position: absolute;
@@ -3856,6 +3880,8 @@ iframe {
     position: relative;
     padding: 2px 5px 2px 30px;
     width: 100%;
+    list-style-type: none!important;
+    font-size: inherit!important;
 }
 .technics li:before {
     content: '';
@@ -3951,7 +3977,8 @@ iframe {
     }
 }
 .technics__info li {
-    outline: none !important;
+    outline: none!important;
+    padding-left: inherit!important;
 }
 .technics__info .technics__slider {
     overflow: hidden;
@@ -3990,6 +4017,8 @@ iframe {
     height: 100px;
     margin: 0 4px;
     cursor: pointer;
+    font-size: inherit!important;
+    padding-left: inherit!important;
 }
 @media only screen and (min-width: 992px) {
     .technics__info .slider-nav-technics li {
@@ -4178,6 +4207,9 @@ iframe {
         margin-right: 0;
     }
 }
+.technics-inner .technics__items li {
+    font-size: inherit!important;
+}
 .technics-inner .technics__items-title {
     padding: 10px 20px;
     position: absolute;
@@ -4248,6 +4280,7 @@ iframe {
     position: relative;
     padding: 2px 5px 2px 30px;
     width: 100%;
+    list-style-type: none!important;
 }
 .technics-inner li:before {
     content: '';

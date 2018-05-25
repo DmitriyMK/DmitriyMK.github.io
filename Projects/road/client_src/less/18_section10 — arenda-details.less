@@ -33,7 +33,8 @@
 	}
 
 	li {
-		outline: none!important
+		outline: none!important;
+		padding-left: inherit!important;
 	}
 
 	.technics__slider {
@@ -80,6 +81,8 @@
 			height: 100px;
 			margin: 0 4px;
 			cursor: pointer;
+			font-size: inherit!important;
+			padding-left: inherit!important;
 
 			@media @tablet {
 
@@ -252,6 +255,10 @@
 			}
 		} 
 
+		li {
+			font-size: inherit!important;
+		}
+
 		
 		&-title {
 			padding: 10px 20px;
@@ -320,6 +327,7 @@
 		position: relative;
 		padding: 2px 5px 2px 30px;
 		width: 100%;
+		list-style-type: none!important;
 		&:before {
 			content: '';
 			position: absolute;
