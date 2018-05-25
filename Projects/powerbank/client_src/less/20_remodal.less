@@ -170,27 +170,40 @@ label {
 
 .formBox {
     position: relative;
-    background: #fff;
+    background: @blue;
     padding: 30px 15px;
     max-width: 400px;
     margin: 20px auto;
     text-align: center;
     &__title {
-        
+        padding-top: 5px;
+        font-size: 24px;
+        font-weight: 700;
+        color: #fff;
     }
     &__text {
-        
+        padding-top: 5px;
+        padding-bottom: 35px;
+        font-size: 18px;
+        color: #fff;
     }
 
     .form__line {
-        width: 100%;
-        padding-left: 15px;
-        padding-bottom: 7px;
-        border: none!important;     
-        outline: none;
-        font-size: 18px;
+        width: 240px;
+        padding: 9.5px 15px;
+        margin-bottom: 15px;
+        border: 1px solid #fff;
+        border-radius: 5px;
+        background-color: rgba(246, 250, 255, 0.302);
+        box-shadow: 1.046px 14.963px 19.14px 2.86px rgba(63, 69, 109, 0.1),0.349px 4.988px 6.84px 2.16px rgba(63, 69, 109, 0.08);
+        transition: all .3s linear;
+
+        &:hover, &:focus {
+            box-shadow: none;
+        }
     }
     .btn {
+        width: 240px;
         margin: 15px 0 5px 0;
         color: #fff;
         &:hover {
@@ -199,14 +212,6 @@ label {
     } 
 }
 
-.video {
-    max-width: 780px;
-    iframe {
-        border: none;
-        width: 100%;
-        height: 100%;
-    }
-}
 
 .thanks__title {
     padding-bottom: 15px;
