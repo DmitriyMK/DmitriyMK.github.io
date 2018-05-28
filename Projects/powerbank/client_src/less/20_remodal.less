@@ -1,0 +1,237 @@
+.remodal-overlay {
+
+    // background: rgba( 160, 159, 158, 0.8) !important;
+}
+
+
+.remodal-first {
+    padding-top: 95px;
+    text-align: center;
+    width: 376px;
+
+    @media @mobile {
+        max-width: 376px !important;
+        height: auto;
+        padding: 40px 15px;
+        margin: 0 auto;
+        text-align: center;
+        background: #f9fbfc;
+        border-radius: 10px;
+        
+    }
+    @media @tablet {
+
+        padding: 50px 15px;
+        max-width: 489px !important;
+        height: 487px;
+        text-align: left;
+        border-radius: 0px;
+        background: url('@{dir}form.png') no-repeat top center;
+        padding: 120px 0 0 109px;
+
+    }
+
+    .remodal-close {
+
+        @media @mobile {
+            color: #000 !important;
+        }
+        @media @tablet {
+            color: #fff !important;
+
+        }
+    }
+    &:before {
+        display: none;
+    }
+}
+
+
+
+
+
+.btn-remodal {
+    margin: 30px 0 0 15px;
+
+}
+
+
+
+
+
+
+.remodal-close { 
+    top: 12px !important;
+    right: 15px !important;
+    color: #fff !important;
+    font-weight: 900;
+    @media @mobile {
+       width: 10px !important;
+       height: 16px !important;
+   }
+   @media @tablet { 
+    width: 35px !important;
+    height: 30px !important;
+}
+&:before {
+    @media @mobile {
+        font-size: 30px !important;
+        top: -7px !important;
+        left: -12px !important;
+    }
+    @media @tablet { 
+        font-size: 50px !important;
+        top: -0px !important;
+        left: -0px !important;
+    }
+}
+}
+
+.remodal-common {
+
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+    background: #fff;
+
+    //  background: url('@{dir}product-1.png') no-repeat top center;  
+    // background-position: 50% 50%;
+
+    padding: 30px 40px;
+
+    
+    // background: #3d4f4a;
+    // border: 2px solid #fff;
+    
+
+    @media @mobile {
+        max-width: 500px !important;
+        padding: 40px 15px;
+        margin: 0 auto;
+        text-align: center;
+        
+    }
+    @media @tablet {
+        padding: 40px 20px;
+        max-width: 450px !important;
+        text-align: center;
+    }
+    .remodal-close {
+        color: #000 !important;
+    }
+}
+
+
+
+.error-input{
+    clear: both;
+    float: left;
+    font-size: 13px;
+    padding-left: 93px;
+    color: #df3a3a;
+
+    margin: 0 auto;
+    text-align: center;
+    
+}
+
+
+input:focus:required:invalid,
+textarea:focus:required:invalid {
+  // border: solid 0px rgba(222,78,0,.51) !important;
+  border-bottom: 1px solid #909091;
+  
+}
+input:required:valid,
+textarea:required:valid {
+  // border: solid 0px rgba(222,78,0,.51) !important;
+  border-bottom: 1px solid #909091;
+  
+}
+#name-error {
+    font-size: 0 !important;
+}
+.input {
+    position: relative;
+}
+label {
+    position: absolute;
+    top: 0;
+    border: 0;
+    font-size: 0 !important;
+    vertical-align: baseline;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+
+.formBox {
+    position: relative;
+    background: @blue;
+    padding: 30px 15px;
+    max-width: 400px;
+    margin: 20px auto;
+    text-align: center;
+    &__title {
+        padding-top: 5px;
+        font-size: 24px;
+        font-weight: 700;
+        color: #fff;
+    }
+    &__text {
+        padding-top: 5px;
+        padding-bottom: 35px;
+        font-size: 18px;
+        color: #fff;
+    }
+
+    .form__line {
+        width: 240px;
+        padding: 9.5px 15px;
+        margin-bottom: 15px;
+        border: 1px solid #fff;
+        border-radius: 5px;
+        background-color: rgba(246, 250, 255, 0.302);
+        box-shadow: 1.046px 14.963px 19.14px 2.86px rgba(63, 69, 109, 0.1),0.349px 4.988px 6.84px 2.16px rgba(63, 69, 109, 0.08);
+        transition: all .3s linear;
+
+        &:hover, &:focus {
+            box-shadow: none;
+        }
+    }
+    .btn {
+        width: 240px;
+        margin: 15px 0 5px 0;
+        color: #fff;
+        &:hover {
+            color: #000;
+        }
+    } 
+}
+
+
+.thanks__title {
+    padding-bottom: 15px;
+    font-size: 22px;
+    font-weight: 700;
+    color: #000;
+    text-transform: uppercase;
+}
+.thanks__text {
+    display: block;
+    padding-bottom: 15px;
+    padding-left: 0;
+    font-size: 18px;
+    color: #000;
+}
+
+
+
+
+
+
+
+

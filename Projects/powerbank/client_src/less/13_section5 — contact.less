@@ -1,0 +1,112 @@
+@media @mobile {
+
+}
+@media @tablet {
+
+}
+@media @desktop {
+
+}
+@media @desktop-xl {
+	
+}
+@media @desktop-xl-2 {
+
+}
+@media @desktop-xll {
+	
+}
+
+.contacts {
+	padding-top: 0;
+	padding-bottom: 30px;
+	position: relative;
+	background: #1b1e27;
+	overflow: hidden;
+
+	@media @desktop {
+		padding-bottom: 0;
+	}
+
+	.hidden {
+		display: none;
+	}
+
+	&__title {
+		display: none;
+	}
+
+	.map {
+		width: 100%;
+		height: 400px; 
+	}
+
+	.container {
+		position: relative;
+	}
+
+	&__box {
+		margin: auto;
+		width: 300px;
+		padding: 15px;
+		background: #1b1e27;
+		color: #fff;
+
+		@media @mobile {
+
+		}
+		@media @tablet {
+
+		}
+		@media @desktop {
+			position: absolute;
+			top: -400px;
+			right: 0;
+			width: 350px;
+			height: 400px;
+			padding-left: 50px;
+			padding-top:  10px;
+			margin: inherit;
+		}
+
+		@media @desktop-xl-2 {
+			right: -10px;
+		}
+	}
+
+	&__list {
+		text-align: center;
+
+		@media @tablet {
+			text-align: left;
+		}
+	}
+
+	&__item {
+		margin-bottom: 27px;
+	}
+
+	.box__title {
+		padding-top: 40px;
+		padding-bottom: 25px;
+		font-size: 22px;
+		font-weight: 700;
+		text-align: center;
+
+		@media @tablet {
+			text-align: left;
+		}
+	}
+
+	address {
+		font-style: normal;
+	}
+
+	.tel {
+
+	}
+
+	.mail {
+		font-weight: 700;
+	}
+}

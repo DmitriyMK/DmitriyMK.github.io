@@ -1,0 +1,131 @@
+@media @mobile {
+
+}
+@media @tablet {
+
+}
+@media @desktop {
+
+}
+@media @desktop-xl {
+	
+}
+@media @desktop-xl-2 {
+
+}
+@media @desktop-xll {
+	
+}
+
+.catalog {
+	position: relative;
+	background: url(../images/back__catalogue.jpg)no-repeat center/cover;
+	background-attachment: fixed;
+	overflow: hidden;
+
+	&:before {
+		content: '';
+		position: absolute;
+		top: -5px;
+		left: 0;
+		width: 100%;
+		height: 0;
+		box-shadow: -2.703px 12.716px 60px 15.12px rgba(27, 74, 113, 0.50),-2.703px 12.716px 17.22px 3.78px rgba(27, 74, 113, 0.20);
+	}
+
+	.title__box {
+		float: right;
+		text-align: right;
+	}
+
+	&__title {
+		padding-left: 30px;
+		text-align: right;
+		color: #fff;
+		&:before {
+			right: 0;
+			background: #7dd2ff;
+		}
+	}
+
+	&__decor {
+		float: right;
+		display: block;
+		padding-top: 30px;
+	}
+
+	&__list {
+		clear: both;
+		padding: 30px 0;
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+	}
+
+	&__item {
+		position: relative;
+		width: 360px;
+		margin-bottom: 60px;
+
+		overflow: hidden;
+		border-radius: 7px;
+		background-color: #fff;
+		box-shadow: 1.325px 18.954px 19.14px 2.86px rgba(63, 69, 109, 0.15),0.907px 12.968px 6.84px 2.16px rgba(63, 69, 109, 0.08);
+		z-index: 1;
+		transition: all .3s linear;
+		&:hover {
+			box-shadow: none;
+
+			.catalog__model {
+				&:before {
+					background: #fc96be;
+				}
+			}
+		}
+	}
+
+	&__img {
+		img {
+			display: block;
+			max-width: 100%;
+			height: 235px;
+			margin: 0 auto;
+		}
+	}
+
+	&__model {
+		padding: 20px 0 25px 0;
+		position: relative;
+		color: #000;
+		font-size: 19px;
+		text-align: center;
+		&:before {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 50%;
+			transform: translateX(-50%);
+			width: 276px;
+			height: 3px;
+			background: #ffa415;
+			transition: background-color .3s linear;
+		}
+	}
+
+	&__circle {
+		display: block;
+		position: absolute;
+		z-index: 0;
+		top: -110px;
+		left: 0;
+	}
+
+	&__logo {
+		display: block;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+}
+
