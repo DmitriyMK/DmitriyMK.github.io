@@ -48,19 +48,8 @@
 	<script defer src="./libs/remodal.min.js"></script>
 	<script defer src="./libs/jquery.validate.min.js"></script>
 	<script async defer src="https://maps.googleapis.com/maps/api/js?callback=initMap&key=AIzaSyDFnsXtzPC77ZP4pkabK8_yVr5qazdPCjc"></script>
-	<script src="./libs/map.js"></script>  
+	<script defer src="./libs/map.js"></script>  
 
-	<script>
-		function init() {
-			var vidDefer = document.getElementsByTagName('iframe');
-			for (var i=0; i<vidDefer.length; i++) {
-				if(vidDefer[i].getAttribute('data-src')) {
-					vidDefer[i].setAttribute('src',vidDefer[i].getAttribute('data-src'));
-				} 
-			} 
-		}
-		window.onload = init;
-	</script>
 </head>
 
 
