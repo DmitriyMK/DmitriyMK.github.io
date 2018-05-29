@@ -95,7 +95,12 @@ header {
 	}
 
 	.btn {
-		transition: all .3s linear;
+		box-shadow: 1.046px 14.963px 19.14px 2.86px rgba(63, 69, 109, 0.1),0.349px 4.988px 6.84px 2.16px rgba(63, 69, 109, 0.08);
+		transition: box-shadow .3s linear;
+
+		&:hover, &:focus {
+			box-shadow: none;
+		}
 	}
 
 	.tel {
@@ -140,7 +145,7 @@ header {
 	}
 
 	&__center {
-		padding-top: 220px;
+		padding-top: 250px;
 	}
 
 	&__title {
@@ -194,6 +199,8 @@ header {
 		position: absolute;
 		left: 400px;
 		bottom: 150px;
+
+		animation: pulsed 2.5s linear infinite;
 	}
 }
 
@@ -266,4 +273,194 @@ header {
 
 #fixedTopMenu.menuDefault{
 	opacity: 1;
+
+}
+
+#fixedTopMenu.menuResize{
+
+	.header__logo img {
+		max-width: inherit;
+	}
+
+	.btn {
+		height: 40px;
+	}
+}
+
+
+
+
+.ico_shape1, .ico_shape10, .ico_shape12, .ico_shape4, .ico_shape8, .ico_shape9, .ico_shape7, .ico_shape16, .ico_shape3, .ico_shape15, .ico_shape6, .ico_shape14, .ico_shape2, .ico_shape13, .ico_shape17, .ico_shape5, .ico_shape11 {
+	display: inline-block;
+	background-image: url(../images/decor/spritebox-sprite.png);
+	background-repeat: no-repeat;
+	position: absolute;
+
+}
+
+.ico_shape1 {
+	background-position: -0px -0px;
+	height: 57px;
+	width: 57px;
+
+	top: 180px;
+	left: 160px;
+}
+
+
+.ico_shape2 {
+	background-position: -18px -98px;
+	height: 16px;
+	width: 16px;
+
+	top: 140px;
+	left: 380px;
+}
+
+.ico_shape3 {
+	background-position: -114px -63px;
+	height: 18px;
+	width: 18px;
+
+	top: 225px;
+	left: 525px;
+}
+
+.ico_shape4 {
+	background-position: -37px -57px;
+	height: 33px;
+	width: 30px;
+
+	top: 135px;
+	left: 710px;
+}
+
+.ico_shape5 {
+	background-position: -84px -98px;
+	height: 13px;
+	width: 26px;
+
+	top: 210px;
+	left: 915px;
+}
+
+.ico_shape6 {
+	background-position: -0px -98px;
+	height: 18px;
+	width: 18px;
+
+	top: 150px;
+	right: 840px;
+}
+
+.ico_shape7 {
+	background-position: -114px -24px;
+	height: 21px;
+	width: 22px;
+
+	top: 135px;
+	right: 640px;
+}
+
+.ico_shape8 {
+	background-position: -67px -57px;
+	height: 28px;
+	width: 22px;
+
+	top: 85px;
+	right: 430px;
+}
+
+.ico_shape9 {
+	background-position: -114px -0px;
+	height: 24px;
+	width: 28px;
+
+	top: 150px;
+	right: 50px;
+}
+
+.ico_shape10 {
+	background-position: -57px -0px;
+	height: 57px;
+	width: 57px;
+
+	top: 225px;
+	right: 88px;
+}
+
+.ico_shape11 {
+	background-position: -37px -90px;
+	height: 7px;
+	width: 33px;
+
+	top: 540px;
+	left: 150px;
+}
+
+.ico_shape12 {
+	background-position: -0px -57px;
+	height: 41px;
+	width: 37px;
+
+	top: 645px;
+	left: 80px;
+}
+
+.ico_shape13 {
+	background-position: -34px -98px;
+	height: 15px;
+	width: 25px;
+
+	top: 735px;
+	left: 470px;
+}
+
+.ico_shape14 {
+	background-position: -114px -81px;
+	height: 16px;
+	width: 16px;
+
+	top: 385px;
+	right: 200px;
+}
+
+.ico_shape15 {
+	background-position: -89px -57px;
+	height: 18px;
+	width: 18px;
+
+	bottom: 125px;
+	left: 230px;
+}
+
+.ico_shape16 {
+	background-position: -114px -45px;
+	height: 18px;
+	width: 18px;
+
+	top: 475px;
+	right: 50px;
+}
+
+.ico_shape17 {
+	background-position: -59px -98px;
+	height: 15px;
+	width: 25px;
+
+	bottom: 85px;
+	right: 70px;
+}
+
+.ico_shape18 {
+	display: inline-block;
+	background-image: url(../images/decor/shape18.png);
+	background-repeat: no-repeat;
+	position: absolute;
+
+	width: 62px;
+	height: 58px;
+
+	top: 600px;
+	right: 90px;
 }

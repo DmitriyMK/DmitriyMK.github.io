@@ -680,9 +680,17 @@ header .contact__link {
     margin-right: 10px;
 }
 header .btn {
-    -webkit-transition: all 0.3s linear;
-         -o-transition: all 0.3s linear;
-            transition: all 0.3s linear;
+    -webkit-box-shadow: 1.046px 14.963px 19.14px 2.86px rgba(63, 69, 109, 0.1), 0.349px 4.988px 6.84px 2.16px rgba(63, 69, 109, 0.08);
+            box-shadow: 1.046px 14.963px 19.14px 2.86px rgba(63, 69, 109, 0.1), 0.349px 4.988px 6.84px 2.16px rgba(63, 69, 109, 0.08);
+    -webkit-transition: -webkit-box-shadow 0.3s linear;
+            transition: -webkit-box-shadow 0.3s linear;
+         -o-transition:         box-shadow 0.3s linear;
+            transition:         box-shadow 0.3s linear;
+            transition:         box-shadow 0.3s linear, -webkit-box-shadow 0.3s linear;
+}
+header .btn:hover, header .btn:focus {
+    -webkit-box-shadow: none;
+            box-shadow: none;
 }
 header .tel {
     margin-left: 30px;
@@ -727,7 +735,7 @@ header .tel:hover {
     align-items: center;
 }
 .header__center {
-    padding-top: 220px;
+    padding-top: 250px;
 }
 .header__title {
     position: relative;
@@ -775,6 +783,8 @@ header .tel:hover {
     position: absolute;
     left: 400px;
     bottom: 150px;
+    -webkit-animation: pulsed 2.5s linear infinite;
+            animation: pulsed 2.5s linear infinite;
 }
 .arr-down {
     display: none;
@@ -836,6 +846,147 @@ header .tel:hover {
 }
 #fixedTopMenu.menuDefault {
     opacity: 1;
+}
+#fixedTopMenu.menuResize .header__logo img {
+    max-width: inherit;
+}
+#fixedTopMenu.menuResize .btn {
+    height: 40px;
+}
+.ico_shape1, .ico_shape10, .ico_shape12, .ico_shape4, .ico_shape8, .ico_shape9, .ico_shape7, .ico_shape16, .ico_shape3, .ico_shape15, .ico_shape6, .ico_shape14, .ico_shape2, .ico_shape13, .ico_shape17, .ico_shape5, .ico_shape11 {
+    display: inline-block;
+    background-image: url(../images/decor/spritebox-sprite.png);
+    background-repeat: no-repeat;
+    position: absolute;
+}
+.ico_shape1 {
+    background-position: 0 0;
+    height: 57px;
+    width: 57px;
+    top: 180px;
+    left: 160px;
+}
+.ico_shape2 {
+    background-position: -18px -98px;
+    height: 16px;
+    width: 16px;
+    top: 140px;
+    left: 380px;
+}
+.ico_shape3 {
+    background-position: -114px -63px;
+    height: 18px;
+    width: 18px;
+    top: 225px;
+    left: 525px;
+}
+.ico_shape4 {
+    background-position: -37px -57px;
+    height: 33px;
+    width: 30px;
+    top: 135px;
+    left: 710px;
+}
+.ico_shape5 {
+    background-position: -84px -98px;
+    height: 13px;
+    width: 26px;
+    top: 210px;
+    left: 915px;
+}
+.ico_shape6 {
+    background-position: 0 -98px;
+    height: 18px;
+    width: 18px;
+    top: 150px;
+    right: 840px;
+}
+.ico_shape7 {
+    background-position: -114px -24px;
+    height: 21px;
+    width: 22px;
+    top: 135px;
+    right: 640px;
+}
+.ico_shape8 {
+    background-position: -67px -57px;
+    height: 28px;
+    width: 22px;
+    top: 85px;
+    right: 430px;
+}
+.ico_shape9 {
+    background-position: -114px 0;
+    height: 24px;
+    width: 28px;
+    top: 150px;
+    right: 50px;
+}
+.ico_shape10 {
+    background-position: -57px 0;
+    height: 57px;
+    width: 57px;
+    top: 225px;
+    right: 88px;
+}
+.ico_shape11 {
+    background-position: -37px -90px;
+    height: 7px;
+    width: 33px;
+    top: 540px;
+    left: 150px;
+}
+.ico_shape12 {
+    background-position: 0 -57px;
+    height: 41px;
+    width: 37px;
+    top: 645px;
+    left: 80px;
+}
+.ico_shape13 {
+    background-position: -34px -98px;
+    height: 15px;
+    width: 25px;
+    top: 735px;
+    left: 470px;
+}
+.ico_shape14 {
+    background-position: -114px -81px;
+    height: 16px;
+    width: 16px;
+    top: 385px;
+    right: 200px;
+}
+.ico_shape15 {
+    background-position: -89px -57px;
+    height: 18px;
+    width: 18px;
+    bottom: 125px;
+    left: 230px;
+}
+.ico_shape16 {
+    background-position: -114px -45px;
+    height: 18px;
+    width: 18px;
+    top: 475px;
+    right: 50px;
+}
+.ico_shape17 {
+    background-position: -59px -98px;
+    height: 15px;
+    width: 25px;
+    bottom: 85px;
+    right: 70px;
+}
+.ico_shape18 {
+    display: inline-block;
+    background-image: url(../images/decor/shape18.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 62px;
+    height: 58px;
+    top: 600px;
+    right: 90px;
 }
 .about {
     position: relative;
@@ -1185,6 +1336,7 @@ header .tel:hover {
     right: 0;
 }
 .question {
+    position: relative;
     padding: 95px 0;
     background: url(../images/back__ask.jpg) no-repeat center / cover;
 }
@@ -1230,6 +1382,7 @@ header .tel:hover {
             box-shadow: none;
 }
 .question .btn {
+    width: 240px;
     -webkit-box-shadow: 1.046px 14.963px 19.14px 2.86px rgba(63, 69, 109, 0.1), 0.349px 4.988px 6.84px 2.16px rgba(63, 69, 109, 0.08);
             box-shadow: 1.046px 14.963px 19.14px 2.86px rgba(63, 69, 109, 0.1), 0.349px 4.988px 6.84px 2.16px rgba(63, 69, 109, 0.08);
     -webkit-transition: -webkit-box-shadow 0.3s linear;
@@ -1241,6 +1394,124 @@ header .tel:hover {
 .question .btn:hover, .question .btn:focus {
     -webkit-box-shadow: none;
             box-shadow: none;
+}
+.question .ico_shape-bottom1, .question .ico_shape-bottom10, .question .ico_shape-bottom12, .question .ico_shape-bottom4, .question .ico_shape-bottom8, .question .ico_shape-bottom9, .question .ico_shape-bottom7, .question .ico_shape-bottom16, .question .ico_shape-bottom3, .question .ico_shape-bottom15, .question .ico_shape-bottom6, .question .ico_shape-bottom14, .question .ico_shape-bottom2, .question .ico_shape-bottom13, .question .ico_shape-bottom17, .question .ico_shape-bottom5, .question .ico_shape-bottom11 {
+    display: inline-block;
+    background-image: url(../images/decor/spritebox-sprite-bottom.png);
+    background-repeat: no-repeat;
+    position: absolute;
+}
+.question .ico_shape-bottom1 {
+    background-position: -23px -87px;
+    height: 21px;
+    width: 31px;
+    top: 120px;
+    left: 30px;
+}
+.question .ico_shape-bottom2 {
+    background-position: 0 0;
+    height: 51px;
+    width: 51px;
+    top: 110px;
+    left: 70px;
+}
+.question .ico_shape-bottom3 {
+    background-position: 0 -51px;
+    height: 36px;
+    width: 36px;
+    bottom: 50px;
+    left: 120px;
+}
+.question .ico_shape-bottom4 {
+    background-position: -88px 0;
+    height: 28px;
+    width: 29px;
+    top: 40px;
+    left: 230px;
+}
+.question .ico_shape-bottom5 {
+    background-position: -117px 0;
+    height: 16px;
+    width: 16px;
+    bottom: 140px;
+    left: 255px;
+}
+.question .ico_shape-bottom6 {
+    background-position: -88px -55px;
+    height: 24px;
+    width: 28px;
+    bottom: 30px;
+    left: 495px;
+}
+.question .ico_shape-bottom7 {
+    background-position: -36px -51px;
+    height: 31px;
+    width: 34px;
+    bottom: 30px;
+    left: 700px;
+}
+.question .ico_shape-bottom8 {
+    background-position: -70px -51px;
+    height: 18px;
+    width: 18px;
+    top: 30px;
+    left: 880px;
+}
+.question .ico_shape-bottom9 {
+    background-position: -88px -28px;
+    height: 27px;
+    width: 24px;
+    top: 80px;
+    right: 650px;
+}
+.question .ico_shape-bottom10 {
+    background-position: 0 -110px;
+    height: 15px;
+    width: 25px;
+    bottom: 30px;
+    right: 450px;
+}
+.question .ico_shape-bottom11 {
+    background-position: -25px -110px;
+    height: 13px;
+    width: 26px;
+    top: 30px;
+    right: 450px;
+}
+.question .ico_shape-bottom12 {
+    background-position: -86px -87px;
+    height: 18px;
+    width: 18px;
+    top: 180px;
+    right: 350px;
+}
+.question .ico_shape-bottom13 {
+    background-position: -51px 0;
+    height: 41px;
+    width: 37px;
+    bottom: 20px;
+    right: 290px;
+}
+.question .ico_shape-bottom14 {
+    background-position: 0 -87px;
+    height: 23px;
+    width: 23px;
+    top: 50px;
+    right: 230px;
+}
+.question .ico_shape-bottom15 {
+    background-position: -117px -16px;
+    height: 16px;
+    width: 16px;
+    top: 70px;
+    right: 160px;
+}
+.question .ico_shape-bottom16 {
+    background-position: -54px -87px;
+    height: 19px;
+    width: 32px;
+    top: 220px;
+    right: 100px;
 }
 .contacts {
     padding-top: 0;
@@ -1399,7 +1670,7 @@ header .tel:hover {
     font-size: 11.5px;
 }
 .footer .agency p {
-    font-size: 10px;
+    font-size: 11px;
     margin-bottom: 5px;
 }
 .footer .agency img {
