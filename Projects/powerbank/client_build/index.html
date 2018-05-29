@@ -33,29 +33,29 @@
 	<link rel="stylesheet" href="./css/fancybox.css"> 
 -->
 
-	<link rel="stylesheet" href="./css/style.css">
+<link rel="stylesheet" href="./css/style.css">
 
 
-	<script defer src="./libs/remodal.min.js"></script>
+<script defer src="./libs/remodal.min.js"></script>
 
 	<!-- 	
 	<script defer src="./libs/slick.js"></script> 
 	<script defer src="./libs/fancybox.js"></script>
 -->
-	<script defer src="./libs/jquery.validate.min.js"></script>
+<script defer src="./libs/jquery.validate.min.js"></script>
 
-	<script async defer src="https://maps.googleapis.com/maps/api/js?callback=initMap&key=AIzaSyDFnsXtzPC77ZP4pkabK8_yVr5qazdPCjc"></script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?callback=initMap&key=AIzaSyDFnsXtzPC77ZP4pkabK8_yVr5qazdPCjc"></script>
 
-	<script defer src="libs/map.js"></script>  
+<script defer src="./libs/map.js"></script>  
 </head>
 
 
 <body>
 
-	<header>	
+	<header id="fixedTopMenu">	
 		<div class="container">
 			<span class="anchor" id="header"></span>
-			<div class="header__top">
+			<div class="header__top" >
 				<a class="header__logo" href="index.html"><img src="images/icons/logo.png" alt="FM"></a>
 
 				<nav class="header__nav">
@@ -83,13 +83,16 @@
 			<div class="header__center">
 				<h1 class="header__title"><span>Популярные аксессуары</span> <br> <span>с оригинальным дизайном</span></h1>
 				<h2 class="header__slogan">Выделяйтесь из толпы!</h2>
-
-				<!-- <a class="arr-down scrolling__link" href="#reasons"><img src="./images/icons/down.png" alt="Смотреть далее"></a> -->
 			</div>
+			<a class="arr-down scrolling__link" href="#about">
+				<img src="./images/icons/arrow.png" alt="Смотреть далее">
+			</a> 
 			<img class="header__img" src="images/girl.png" alt="Популярные аксессуары с оригинальным дизайном">
 			<img class="header__circle" src="images/circleHero.png" alt="decor">
 			<img class="header__decor" src="images/decor/shapePack.png" alt="decor">
 		</div>
+
+		<img class="decorSection" src="images/decor/shapePack-section.png" alt="decor">
 	</section>
 
 
@@ -399,6 +402,7 @@
 	<!-- Load Scripts -->
 	<script src='https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js?ver=3.9.2'></script> 
 	<script src="./libs/jquery.nicescroll.min.js"></script>
+	<script src="./libs/jquery.plaxmove.js"></script>
 	
 	<script src="./libs/all.js"></script>
 

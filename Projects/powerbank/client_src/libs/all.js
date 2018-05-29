@@ -36,6 +36,12 @@ $(document).ready(function() {
   });
 
 
+  $('.decorSection').plaxmove({
+    ratioH:0.015,
+    ratioV:0.015
+  });
+
+
 
 /*  $('.slider-for-recipe').slick({
     slidesToShow: 1,
@@ -95,6 +101,22 @@ $(window).on('resize orientationchange', function() {
   $('.slider').slick('resize');
 });
 */
+
+
+$(document).ready(function() {
+
+if (document.documentElement.clientWidth > 991) {
+
+  $(window).scroll(function() {
+    if ($(this).scrollTop() > 700) {
+      $('#fixedTopMenu').addClass('fixed');
+    } else if ($(this).scrollTop() < 700) {
+      $('#fixedTopMenu').removeClass('fixed');
+    }
+  });
+};
+
+});
 
 
 $(".form").submit(function() {

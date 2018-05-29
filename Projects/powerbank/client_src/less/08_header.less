@@ -76,6 +76,10 @@ header {
 		flex-basis: 25%;
 	}
 
+	.contact__item {
+		list-style-type: none;
+	}
+
 	.contact__link {
 		margin-right: 10px;
 	}
@@ -87,9 +91,6 @@ header {
 			color: @red;
 		}
 	}
-
-	
-
 }
 
 
@@ -101,10 +102,21 @@ header {
 	overflow: hidden;
 	z-index: 1;
 
-
 	.container {
 		height: 775px;
 		position: relative;
+
+		&:before {
+			content: '';
+			position: absolute;
+			bottom: 0;
+			left: 50px;
+			width: 15px;
+			height: 124px;
+			background: @blue;
+			opacity: .55;
+			z-index: -1;
+		}
 	}
 
 	&__top {
@@ -154,6 +166,7 @@ header {
 		right: -180px;
 		z-index: 1;
 	}
+
 	&__circle {
 		display: block;
 		position: absolute;
@@ -161,6 +174,7 @@ header {
 		top: -110px;
 		left: -540px;
 	}
+
 	&__decor {
 		position: absolute;
 		left: 400px;
@@ -170,20 +184,78 @@ header {
 
 
 
+.arr-down {
+	display: none;
 
-/* #fixedTopMenu.fixed{
-	position: fixed;
-	padding: 0 15px;
+	@media @desktop {
+		display: block;
+		position: absolute;
+		bottom: 40px;
+		left: 40px;
+		display: block;
+		width: 40px;
+
+		animation: arrow-bounce 2s infinite;
+		z-index: 10;
+
+		&:hover {
+			animation-play-state: paused;
+		}
+	}
+}
+
+.decorSection {
+	position: absolute;
 	top: 0;
 	left: 0;
 	width: 100%;
-	background: #131313;
-	z-index: 3000;
-	animation: smoothScroll 1s forwards;
-	&:after {
-		display: none;
+	height: 100%;
+}
+
+
+
+
+#fixedTopMenu.fixed{
+
+	position: fixed;
+	padding: 5px 15px;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 100;
+
+	animation: smoothScroll 1s linear; 
+
+	.header__logo img {
+		max-width: 45px;
+	}
+
+	.btn {
+		height: 33px;
+	}
+}
+
+/* #fixedTopMenu.fixed{
+
+	@media @desktop {
+
+		box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+
+		.logo__img {
+			max-width: 100px;
+		}
+
+		HIDE SHADOW
+		&:before {
+			display: none;
+		}
+
+		.nav__list-submenu,
+		.nav__list-submenu2 {
+			position: absolute;
+			top: 43px;
+		}
 	}
 }
 */
-
 
