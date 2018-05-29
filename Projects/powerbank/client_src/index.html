@@ -26,6 +26,9 @@
 
 	<link rel="stylesheet" href="./css/remodal.css">
 	<link rel="stylesheet" href="./css/remodal-default-theme.css">
+	<link rel="stylesheet" href="./css/animate.min.css">
+	<link rel="stylesheet" href="./css/style.css">
+
 
 <!-- 
 	<link rel="stylesheet" href="./css/slick-theme.css">
@@ -33,20 +36,31 @@
 	<link rel="stylesheet" href="./css/fancybox.css"> 
 -->
 
-<link rel="stylesheet" href="./css/style.css">
-
-
-<script defer src="./libs/remodal.min.js"></script>
-
 	<!-- 	
 	<script defer src="./libs/slick.js"></script> 
 	<script defer src="./libs/fancybox.js"></script>
 -->
-<script defer src="./libs/jquery.validate.min.js"></script>
 
-<script async defer src="https://maps.googleapis.com/maps/api/js?callback=initMap&key=AIzaSyDFnsXtzPC77ZP4pkabK8_yVr5qazdPCjc"></script>
 
-<script defer src="./libs/map.js"></script>  
+
+
+
+	<script defer src="./libs/remodal.min.js"></script>
+	<script defer src="./libs/jquery.validate.min.js"></script>
+	<script async defer src="https://maps.googleapis.com/maps/api/js?callback=initMap&key=AIzaSyDFnsXtzPC77ZP4pkabK8_yVr5qazdPCjc"></script>
+	<script src="./libs/map.js"></script>  
+
+	<script>
+		function init() {
+			var vidDefer = document.getElementsByTagName('iframe');
+			for (var i=0; i<vidDefer.length; i++) {
+				if(vidDefer[i].getAttribute('data-src')) {
+					vidDefer[i].setAttribute('src',vidDefer[i].getAttribute('data-src'));
+				} 
+			} 
+		}
+		window.onload = init;
+	</script>
 </head>
 
 
@@ -54,7 +68,6 @@
 
 	<header id="fixedTopMenu">	
 		<div class="container">
-			<span class="anchor" id="header"></span>
 			<div class="header__top" >
 				<a class="header__logo" href="index.html"><img src="images/icons/logo.png" alt="FM"></a>
 
@@ -79,6 +92,7 @@
 
 
 	<section class="header">
+		<span class="anchor" id="header"></span>
 		<div class="container">
 			<div class="header__center">
 				<h1 class="header__title"><span>Популярные аксессуары</span> <br> <span>с оригинальным дизайном</span></h1>
@@ -92,7 +106,7 @@
 			<img class="header__decor" src="images/decor/shapePack.png" alt="decor">
 		</div>
 
-		<img class="decorSection" src="images/decor/shapePack-section.png" alt="decor">
+		<!-- <img class="decorSection" src="images/decor/shapePack-section.png" alt="decor"> -->
 	</section>
 
 
@@ -212,7 +226,67 @@
 						<h3 class="catalog__model">Power Bank 17600 mAh</h3>
 					</a>
 				</li>
+
+
+
+
+				<li class="catalog__item">
+					<a href="#" class="catalog__link">
+						<div class="catalog__img">
+							<img src="images/catalog/allmodels.jpg" alt="Все модели Power Bank" title="Все модели Power Bank">
+						</div>
+						<h3 class="catalog__model">Все модели Power Bank</h3>
+					</a>
+				</li>
+
+				<li class="catalog__item">
+					<a href="#" class="catalog__link">
+						<div class="catalog__img">
+							<img src="images/catalog/power4000.jpg" alt="Power Bank 4000 mAh" title="Power Bank 4000 mAh">
+						</div>
+						<h3 class="catalog__model">Power Bank 4000 mAh</h3>
+					</a>
+				</li>
+
+				<li class="catalog__item">
+					<a href="#" class="catalog__link">
+						<div class="catalog__img">
+							<img src="images/catalog/power7500.jpg" alt="Power Bank 7500 mAh" title="Power Bank 7500 mAh">
+						</div>
+						<h3 class="catalog__model">Power Bank 7500 mAh</h3>
+					</a>
+				</li>
+
+
+				<li class="catalog__item">
+					<a href="#" class="catalog__link">
+						<div class="catalog__img">
+							<img src="images/catalog/power8000.jpg" alt="Power Bank 8000 mAh" title="Power Bank 8000 mAh">
+						</div>
+						<h3 class="catalog__model">Power Bank 8000 mAh</h3>
+					</a>
+				</li>
+
+				<li class="catalog__item">
+					<a href="#" class="catalog__link">
+						<div class="catalog__img">
+							<img src="images/catalog/power11000.jpg" alt="Power Bank 11000 mAh" title="Power Bank 11000 mAh">
+						</div>
+						<h3 class="catalog__model">Power Bank 11000 mAh</h3>
+					</a>
+				</li>
+
+				<li class="catalog__item">
+					<a href="#" class="catalog__link">
+						<div class="catalog__img">
+							<img src="images/catalog/power16500.jpg" alt="Power Bank 17600 mAh" title="Power Bank 17600 mAh">
+						</div>
+						<h3 class="catalog__model">Power Bank 17600 mAh</h3>
+					</a>
+				</li>
 			</ul>
+
+
 
 			<img class="catalog__circle" src="images/circle-catalog.png" alt="circle">
 			<img class="catalog__logo" src="images/back__logo.png" alt="flash market">
@@ -305,7 +379,7 @@
 						<!-- END Hidden Required Fields -->
 
 						<input class="form__line name" type="text" name="Имя&nbsp;покупателя" placeholder="Ваше имя" required>
-						<input class="form__line" type="tel" name="Телефон&nbsp;покупателя" placeholder="Ваш телефон" required>
+						<input class="form__line phone-mask" type="tel" name="Телефон&nbsp;покупателя" placeholder="Ваш телефон" required>
 						<input type="submit" class="btn form__btn" value="Отправить"> 
 					</form>
 				</div>
@@ -384,8 +458,8 @@
 			<!-- END Hidden Required Fields -->
 			<p class="formBox__title">Заполните форму</p>
 			<p class="formBox__text">И наш менеджер свяжется с Вами в ближайшее время</p>
-			<input class="form__line name" type="text" name="name" placeholder="Ваше имя" required>
-			<input class="form__line" type="tel" name="phone" placeholder="Ваш телефон" required>
+			<input class="form__line name" type="text" name="name" placeholder="Ваше имя" required autofocus>
+			<input class="form__line phone-mask" type="tel" name="phone" placeholder="Ваш телефон" required>
 			<input type="submit" class="btn" value="Заказать звонок"> 
 		</form>
 	</div> 
@@ -401,9 +475,14 @@
 
 	<!-- Load Scripts -->
 	<script src='https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js?ver=3.9.2'></script> 
-	<script src="./libs/jquery.nicescroll.min.js"></script>
-	<script src="./libs/jquery.plaxmove.js"></script>
+
 	
+	<script src="./libs/jquery.nicescroll.min.js"></script>
+	<script src="./libs/wow.min.js"></script>
+	<script src="./libs/jquery.plaxmove.js"></script>
+
+	
+	<script src="./libs/jquery.mask.min.js"></script>	
 	<script src="./libs/all.js"></script>
 
 

@@ -18,8 +18,17 @@
 }
 
 header {
+	position: fixed;
+
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 100;
+
 	padding: 8px 0;
 	background: @black;
+	opacity: 1;
+	transition: opacity .3s linear;
 
 	.contact {
 		display: flex;
@@ -28,6 +37,7 @@ header {
 
 	.header__logo {
 		flex-basis: 11%;
+		transition: all .3s linear;
 	}
 
 	.header__nav {
@@ -84,6 +94,10 @@ header {
 		margin-right: 10px;
 	}
 
+	.btn {
+		transition: all .3s linear;
+	}
+
 	.tel {
 		margin-left: 30px;
 		transition: color .3s ease-in-out;
@@ -103,7 +117,7 @@ header {
 	z-index: 1;
 
 	.container {
-		height: 775px;
+		height: 860px;
 		position: relative;
 
 		&:before {
@@ -126,16 +140,17 @@ header {
 	}
 
 	&__center {
-		padding-top: 160px;
+		padding-top: 220px;
 	}
 
 	&__title {
 		position: relative;
 		font-size: 55px;
-		font-weight: 700;
+		font-weight: 900;
+		letter-spacing: 2px;
 		color: #fff;
 		z-index: 10;
-		
+
 		span {
 			position: relative;
 			&:before {
@@ -218,13 +233,13 @@ header {
 #fixedTopMenu.fixed{
 
 	position: fixed;
-	padding: 5px 15px;
 	top: 0;
 	left: 0;
 	width: 100%;
 	z-index: 100;
 
-	animation: smoothScroll 1s linear; 
+	animation: smoothScroll .5s linear;
+	transition: all .3s linear;
 
 	.header__logo img {
 		max-width: 45px;
@@ -235,27 +250,20 @@ header {
 	}
 }
 
-/* #fixedTopMenu.fixed{
+#fixedTopMenu.menuHide{
+	opacity: 0;
+	transition: opacity .3s linear;
+	animation: antiSmoothScroll .5s linear;
 
-	@media @desktop {
+	.header__logo img {
+		max-width: 45px;
+	}
 
-		box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.2);
-
-		.logo__img {
-			max-width: 100px;
-		}
-
-		HIDE SHADOW
-		&:before {
-			display: none;
-		}
-
-		.nav__list-submenu,
-		.nav__list-submenu2 {
-			position: absolute;
-			top: 43px;
-		}
+	.btn {
+		height: 33px;
 	}
 }
-*/
 
+#fixedTopMenu.menuDefault{
+	opacity: 1;
+}

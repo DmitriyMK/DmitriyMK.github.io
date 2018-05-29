@@ -3,8 +3,7 @@ var markersData = [{
     lng: 30.522235,
     name: "ФЛЕШ-МАРКЕТ Украина",
     address: "г. Киев, ул. м (Тельмана), д. 1/32, 3 этаж, офис 16."
-}
-];
+}];
 
 var map, infoWindow;
 
@@ -13,7 +12,7 @@ function initMap() {
 
     var mapOptions = {
         center: centerLatLng,
-        zoom: 18,
+        zoom: 17,
 
         mapTypeControl: true,
 
@@ -29,184 +28,123 @@ function initMap() {
         mapTypeId: google.maps.MapTypeId.ROADMAP,
         styles:
 
-        [
-        {
+            [{
             "elementType": "geometry",
-            "stylers": [
-            {
-                "color": "#242f3e"
-            }
-            ]
-        },
-        {
+            "stylers": [{
+                "color": "#555b6b"
+            }]
+        }, {
             "elementType": "labels.text.fill",
-            "stylers": [
-            {
+            "stylers": [{
                 "color": "#746855"
-            }
-            ]
-        },
-        {
+            }]
+        }, {
             "elementType": "labels.text.stroke",
-            "stylers": [
-            {
+            "stylers": [{
                 "color": "#242f3e"
-            }
-            ]
-        },
-        {
+            }]
+        }, {
             "featureType": "administrative.locality",
             "elementType": "labels.text.fill",
-            "stylers": [
-            {
+            "stylers": [{
                 "color": "#d59563"
-            }
-            ]
-        },
-        {
+            }]
+        }, {
             "featureType": "poi",
             "elementType": "labels.text.fill",
-            "stylers": [
-            {
+            "stylers": [{
                 "color": "#d59563"
-            }
-            ]
-        },
-        {
+            }]
+        }, {
             "featureType": "poi.business",
-            "stylers": [
-            {
+            "stylers": [{
                 "visibility": "off"
-            }
-            ]
-        },
-        {
+            }]
+        }, {
             "featureType": "poi.park",
             "elementType": "geometry",
-            "stylers": [
-            {
+            "stylers": [{
                 "color": "#263c3f"
-            }
-            ]
-        },
-        {
+            }]
+        }, {
             "featureType": "poi.park",
             "elementType": "labels.text",
-            "stylers": [
-            {
+            "stylers": [{
                 "visibility": "off"
-            }
-            ]
-        },
-        {
+            }]
+        }, {
             "featureType": "poi.park",
             "elementType": "labels.text.fill",
-            "stylers": [
-            {
+            "stylers": [{
                 "color": "#6b9a76"
-            }
-            ]
-        },
-        {
+            }]
+        }, {
             "featureType": "road",
             "elementType": "geometry",
-            "stylers": [
-            {
-                "color": "#38414e"
-            }
-            ]
-        },
-        {
+            "stylers": [{
+                "color": "#434a5b"
+            }]
+        }, {
             "featureType": "road",
             "elementType": "geometry.stroke",
-            "stylers": [
-            {
-                "color": "#212a37"
-            }
-            ]
-        },
-        {
+            "stylers": [{
+                "color": "#434a5b"
+            }]
+        }, {
             "featureType": "road",
             "elementType": "labels.text.fill",
-            "stylers": [
-            {
-                "color": "#9ca5b3"
-            }
-            ]
-        },
-        {
+            "stylers": [{
+                "color": "#adb0b7"
+            }]
+        }, {
             "featureType": "road.highway",
             "elementType": "geometry",
-            "stylers": [
-            {
+            "stylers": [{
                 "color": "#746855"
-            }
-            ]
-        },
-        {
+            }]
+        }, {
             "featureType": "road.highway",
             "elementType": "geometry.stroke",
-            "stylers": [
-            {
+            "stylers": [{
                 "color": "#1f2835"
-            }
-            ]
-        },
-        {
+            }]
+        }, {
             "featureType": "road.highway",
             "elementType": "labels.text.fill",
-            "stylers": [
-            {
+            "stylers": [{
                 "color": "#f3d19c"
-            }
-            ]
-        },
-        {
+            }]
+        }, {
             "featureType": "transit",
             "elementType": "geometry",
-            "stylers": [
-            {
+            "stylers": [{
                 "color": "#2f3948"
-            }
-            ]
-        },
-        {
+            }]
+        }, {
             "featureType": "transit.station",
             "elementType": "labels.text.fill",
-            "stylers": [
-            {
+            "stylers": [{
                 "color": "#d59563"
-            }
-            ]
-        },
-        {
+            }]
+        }, {
             "featureType": "water",
             "elementType": "geometry",
-            "stylers": [
-            {
+            "stylers": [{
                 "color": "#17263c"
-            }
-            ]
-        },
-        {
+            }]
+        }, {
             "featureType": "water",
             "elementType": "labels.text.fill",
-            "stylers": [
-            {
+            "stylers": [{
                 "color": "#515c6d"
-            }
-            ]
-        },
-        {
+            }]
+        }, {
             "featureType": "water",
             "elementType": "labels.text.stroke",
-            "stylers": [
-            {
+            "stylers": [{
                 "color": "#17263c"
-            }
-            ]
-        }
-        ]
+            }]
+        }]
 
 
     };
@@ -215,11 +153,11 @@ function initMap() {
 
     map = new google.maps.Map(document.getElementById("map"), mapOptions);
 
-    infoWindow = new google.maps.InfoWindow();
+/*    infoWindow = new google.maps.InfoWindow();
 
     google.maps.event.addListener(map, "click", function() {
         infoWindow.close();
-    });
+    });*/
 
     // Определяем границы видимой области карты в соответствии с положением маркеров
     var bounds = new google.maps.LatLngBounds();
@@ -240,7 +178,8 @@ function initMap() {
     /*map.fitBounds(bounds);*/
 
 }
-google.maps.event.addDomListener(window, "load", initMap);
+
+/*google.maps.event.addDomListener(initMap);*/
 
 function addMarker(latLng, name, address) {
 

@@ -1,6 +1,8 @@
 
 $(document).ready(function() {
 
+ 
+
 
   if (document.documentElement.clientWidth > 1200) {
 
@@ -36,10 +38,13 @@ $(document).ready(function() {
   });
 
 
-  $('.decorSection').plaxmove({
+/*  $('.decorSection').plaxmove({
     ratioH:0.015,
     ratioV:0.015
-  });
+  });*/
+
+
+
 
 
 
@@ -108,15 +113,35 @@ $(document).ready(function() {
 if (document.documentElement.clientWidth > 991) {
 
   $(window).scroll(function() {
-    if ($(this).scrollTop() > 700) {
+
+  
+    if ($(this).scrollTop() > 800) {
+      $('#fixedTopMenu').removeClass('menuHide');
       $('#fixedTopMenu').addClass('fixed');
-    } else if ($(this).scrollTop() < 700) {
+
+    } else if ($(this).scrollTop() < 800) {
+      $('#fixedTopMenu').addClass('menuHide');
       $('#fixedTopMenu').removeClass('fixed');
-    }
+    };
+
+
+    if ($(this).scrollTop() > 30) {
+      $('#fixedTopMenu').removeClass('menuDefault');
+
+    } else if ($(this).scrollTop() < 30) {
+      $('#fixedTopMenu').addClass('menuDefault');
+    };
+    
   });
 };
 
 });
+
+
+
+$('.phone-mask').mask('+38(999)999-99-99');
+
+
 
 
 $(".form").submit(function() {
