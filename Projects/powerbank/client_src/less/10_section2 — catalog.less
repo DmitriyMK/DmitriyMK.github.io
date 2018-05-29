@@ -78,8 +78,19 @@
 
 			.catalog__model {
 				&:before {
+					width: 0;
+					height: 0;
+				}
+
+				&:after{			
+					width: 276px;
+					height: 3px;
 					background: #fc96be;
 				}
+			}
+
+			.catalog__img img {
+				transform: scale(1.1);
 			}
 		}
 	}
@@ -90,6 +101,7 @@
 			max-width: 100%;
 			height: 235px;
 			margin: 0 auto;
+			transition: transform .3s linear;
 		}
 	}
 
@@ -108,7 +120,20 @@
 			width: 276px;
 			height: 3px;
 			background: #ffa415;
-			transition: background-color .3s linear;
+			transition: all .3s linear;
+		}
+
+		&:after{
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 50%;
+			transform: translateX(-50%);
+			width: 0;
+			height: 0;
+
+			background: #fc96be;
+			transition: all .3s linear;
 		}
 	}
 

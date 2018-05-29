@@ -2,17 +2,16 @@
 <html lang="ru">
 
 <head>
-
 	<meta charset="utf-8">
-	<title>FM. Популярные аксессуары с оригинальным дизайном</title>
+	<title>Flash-Market. Популярные аксессуары с оригинальным дизайном</title>
 
-	<meta name="description" content="">
+	<meta name="description" content="Flash-Market. Популярные аксессуары с оригинальным дизайном">
 	<meta name="keywords" content="">
 
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<link rel="shortcut icon" href="images/icons/favicons.png" type="image/x-icon">
+	<link rel="shortcut icon" href="favicon.png" type="image/x-icon">
 	<meta name="theme-color" content="#181c25">
 
 	<meta property="og:type" content="website"/> 
@@ -26,6 +25,9 @@
 
 	<link rel="stylesheet" href="./css/remodal.css">
 	<link rel="stylesheet" href="./css/remodal-default-theme.css">
+	<link rel="stylesheet" href="./css/animate.min.css">
+	<link rel="stylesheet" href="./css/style.css">
+
 
 <!-- 
 	<link rel="stylesheet" href="./css/slick-theme.css">
@@ -33,29 +35,21 @@
 	<link rel="stylesheet" href="./css/fancybox.css"> 
 -->
 
-	<link rel="stylesheet" href="./css/style.css">
-
-
-	<script defer src="./libs/remodal.min.js"></script>
-
 	<!-- 	
 	<script defer src="./libs/slick.js"></script> 
 	<script defer src="./libs/fancybox.js"></script>
 -->
-	<script defer src="./libs/jquery.validate.min.js"></script>
 
-	<script async defer src="https://maps.googleapis.com/maps/api/js?callback=initMap&key=AIzaSyDFnsXtzPC77ZP4pkabK8_yVr5qazdPCjc"></script>
+<script defer src="./libs/remodal.min.js"></script>
+<script defer src="./libs/jquery.validate.min.js"></script>
 
-	<script defer src="libs/map.js"></script>  
 </head>
 
 
 <body>
-
-	<header>	
+	<header id="fixedTopMenu">	
 		<div class="container">
-			<span class="anchor" id="header"></span>
-			<div class="header__top">
+			<div class="header__top" >
 				<a class="header__logo" href="index.html"><img src="images/icons/logo.png" alt="FM"></a>
 
 				<nav class="header__nav">
@@ -67,8 +61,8 @@
 				</nav>
 
 				<ul class="contact">
-					<li class="contact__item"><a class="contact__link" href="#"><img src="images/icons/fb.png" alt="facebook"></a></li>
-					<li class="contact__item"><a class="contact__link" href="#"><img src="images/icons/insta.png" alt="instagram"></a></li>
+					<li class="contact__item"><a class="contact__link" href="https://www.facebook.com/flashmarket.ua/" target="_blank" rel="noopener noreferrer"><img src="images/icons/fb.png" alt="facebook"></a></li>
+					<li class="contact__item"><a class="contact__link" href="https://www.instagram.com/flashmarket.ua/" target="_blank" rel="noopener noreferrer"><img src="images/icons/insta.png" alt="instagram"></a></li>
 					<li class="contact__item tel"><a class="contact__link" href="tel:+380443378020">+38 (044) 337-80-20</a></li>
 				</ul>
 				<button class="btn" data-remodal-target="callback">Заказать звонок</button>
@@ -79,17 +73,41 @@
 
 
 	<section class="header">
+		<span class="anchor" id="header"></span>
 		<div class="container">
 			<div class="header__center">
 				<h1 class="header__title"><span>Популярные аксессуары</span> <br> <span>с оригинальным дизайном</span></h1>
 				<h2 class="header__slogan">Выделяйтесь из толпы!</h2>
-
-				<!-- <a class="arr-down scrolling__link" href="#reasons"><img src="./images/icons/down.png" alt="Смотреть далее"></a> -->
 			</div>
+			<a class="arr-down scrolling__link" href="#about">
+				<img src="./images/icons/arrow.png" alt="Смотреть далее">
+			</a> 
 			<img class="header__img" src="images/girl.png" alt="Популярные аксессуары с оригинальным дизайном">
 			<img class="header__circle" src="images/circleHero.png" alt="decor">
 			<img class="header__decor" src="images/decor/shapePack.png" alt="decor">
 		</div>
+
+		<div class="ico_shape1 decorSection1"></div>
+		<div class="ico_shape2 decorSection2"></div>
+		<div class="ico_shape3 decorSection3"></div>
+		<div class="ico_shape4 decorSection4"></div>
+
+		<div class="ico_shape5 decorSection5"></div>
+		<div class="ico_shape6 decorSection6"></div>
+		<div class="ico_shape7 decorSection7"></div>
+		<div class="ico_shape8 decorSection8"></div>
+
+		<div class="ico_shape9 decorSection9"></div>
+		<div class="ico_shape10 decorSection10"></div>
+		<div class="ico_shape11 decorSection11"></div>
+		<div class="ico_shape12 decorSection12"></div>
+
+		<div class="ico_shape13 decorSection13"></div>
+		<div class="ico_shape14 decorSection14"></div>
+		<div class="ico_shape15 decorSection15"></div>
+		<div class="ico_shape16 decorSection16"></div>
+		<div class="ico_shape17 decorSection17"></div>
+		<div class="ico_shape18 decorSection18"></div>
 	</section>
 
 
@@ -97,12 +115,12 @@
 	<section class="about">
 		<span class="anchor" id="about"></span>
 		<div class="container">
-			<div class="title__box clearfix">
+			<div class="title__box clearfix fadeIn wow" data-wow-delay="0.2s" data-wow-duration="1s">
 				<h2 class="about__title section__title">Наши преимущества</h2>
 				<img class="about__decor" src="images/decor/circle.png" alt="decor">
 			</div>
 			<ul class="list">
-				<li class="list__item">
+				<li class="list__item fadeInUp wow" data-wow-offset="80" data-wow-delay="0.2s" data-wow-duration="1s">
 					<div class="img__wrap">
 						<img class="list__img" src="images/about__icon1.png" alt="Опыт">
 					</div>
@@ -110,7 +128,7 @@
 					<p class="list__text">За 10 лет работы мы научились выполнять задачи любой сложности.</p>
 				</li>
 
-				<li class="list__item">
+				<li class="list__item fadeInUp wow" data-wow-offset="80" data-wow-delay="0.4s" data-wow-duration="1s">
 					<div class="img__wrap2">
 						<img class="list__img" src="images/about__icon2.png" alt="Cкорость">
 					</div>
@@ -118,7 +136,7 @@
 					<p class="list__text">Собственное производство сокращает время выполнения заказа.</p>
 				</li>
 
-				<li class="list__item">
+				<li class="list__item fadeInUp wow" data-wow-offset="80" data-wow-delay="0.6s" data-wow-duration="1s">
 					<div class="img__wrap2">
 						<img class="list__img" src="images/about__icon3.png" alt="Рекомендации">
 					</div>
@@ -126,7 +144,7 @@
 					<p class="list__text">Наши клиенты рекомендуют нас своим друзьям и близким.</p>
 				</li>
 
-				<li class="list__item">
+				<li class="list__item fadeInUp wow" data-wow-offset="80" data-wow-delay="0.8s" data-wow-duration="1s">
 					<div class="img__wrap2">
 						<img class="list__img" src="images/about__icon4.png" alt="Надежность">
 					</div>
@@ -155,7 +173,7 @@
 			</div>
 
 			<ul class="catalog__list">
-				<li class="catalog__item">
+				<li class="catalog__item fadeInUp wow" data-wow-offset="80" data-wow-delay="0.2s" data-wow-duration="1s">
 					<a href="#" class="catalog__link">
 						<div class="catalog__img">
 							<img src="images/catalog/allmodels.jpg" alt="Все модели Power Bank" title="Все модели Power Bank">
@@ -164,7 +182,7 @@
 					</a>
 				</li>
 
-				<li class="catalog__item">
+				<li class="catalog__item fadeInUp wow" data-wow-offset="80" data-wow-delay="0.4s" data-wow-duration="1s">
 					<a href="#" class="catalog__link">
 						<div class="catalog__img">
 							<img src="images/catalog/power4000.jpg" alt="Power Bank 4000 mAh" title="Power Bank 4000 mAh">
@@ -173,7 +191,7 @@
 					</a>
 				</li>
 
-				<li class="catalog__item">
+				<li class="catalog__item fadeInUp wow" data-wow-offset="80" data-wow-delay="0.6s" data-wow-duration="1s">
 					<a href="#" class="catalog__link">
 						<div class="catalog__img">
 							<img src="images/catalog/power7500.jpg" alt="Power Bank 7500 mAh" title="Power Bank 7500 mAh">
@@ -183,7 +201,7 @@
 				</li>
 
 
-				<li class="catalog__item">
+				<li class="catalog__item fadeInUp wow" data-wow-offset="80" data-wow-delay="0.2s" data-wow-duration="1s">
 					<a href="#" class="catalog__link">
 						<div class="catalog__img">
 							<img src="images/catalog/power8000.jpg" alt="Power Bank 8000 mAh" title="Power Bank 8000 mAh">
@@ -192,7 +210,7 @@
 					</a>
 				</li>
 
-				<li class="catalog__item">
+				<li class="catalog__item fadeInUp wow" data-wow-offset="80" data-wow-delay="0.4s" data-wow-duration="1s">
 					<a href="#" class="catalog__link">
 						<div class="catalog__img">
 							<img src="images/catalog/power11000.jpg" alt="Power Bank 11000 mAh" title="Power Bank 11000 mAh">
@@ -201,7 +219,65 @@
 					</a>
 				</li>
 
-				<li class="catalog__item">
+				<li class="catalog__item fadeInUp wow" data-wow-offset="80" data-wow-delay="0.6s" data-wow-duration="1s">
+					<a href="#" class="catalog__link">
+						<div class="catalog__img">
+							<img src="images/catalog/power16500.jpg" alt="Power Bank 17600 mAh" title="Power Bank 17600 mAh">
+						</div>
+						<h3 class="catalog__model">Power Bank 17600 mAh</h3>
+					</a>
+				</li>
+
+
+
+
+				<li class="catalog__item fadeInUp wow" data-wow-offset="80" data-wow-delay="0.2s" data-wow-duration="1s">
+					<a href="#" class="catalog__link">
+						<div class="catalog__img">
+							<img src="images/catalog/allmodels.jpg" alt="Все модели Power Bank" title="Все модели Power Bank">
+						</div>
+						<h3 class="catalog__model">Все модели Power Bank</h3>
+					</a>
+				</li>
+
+				<li class="catalog__item fadeInUp wow" data-wow-offset="80" data-wow-delay="0.4s" data-wow-duration="1s">
+					<a href="#" class="catalog__link">
+						<div class="catalog__img">
+							<img src="images/catalog/power4000.jpg" alt="Power Bank 4000 mAh" title="Power Bank 4000 mAh">
+						</div>
+						<h3 class="catalog__model">Power Bank 4000 mAh</h3>
+					</a>
+				</li>
+
+				<li class="catalog__item fadeInUp wow" data-wow-offset="80" data-wow-delay="0.6s" data-wow-duration="1s">
+					<a href="#" class="catalog__link">
+						<div class="catalog__img">
+							<img src="images/catalog/power7500.jpg" alt="Power Bank 7500 mAh" title="Power Bank 7500 mAh">
+						</div>
+						<h3 class="catalog__model">Power Bank 7500 mAh</h3>
+					</a>
+				</li>
+
+
+				<li class="catalog__item fadeInUp wow" data-wow-offset="80" data-wow-delay="0.2s" data-wow-duration="1s">
+					<a href="#" class="catalog__link">
+						<div class="catalog__img">
+							<img src="images/catalog/power8000.jpg" alt="Power Bank 8000 mAh" title="Power Bank 8000 mAh">
+						</div>
+						<h3 class="catalog__model">Power Bank 8000 mAh</h3>
+					</a>
+				</li>
+
+				<li class="catalog__item fadeInUp wow" data-wow-offset="80" data-wow-delay="0.4s" data-wow-duration="1s">
+					<a href="#" class="catalog__link">
+						<div class="catalog__img">
+							<img src="images/catalog/power11000.jpg" alt="Power Bank 11000 mAh" title="Power Bank 11000 mAh">
+						</div>
+						<h3 class="catalog__model">Power Bank 11000 mAh</h3>
+					</a>
+				</li>
+
+				<li class="catalog__item fadeInUp wow" data-wow-offset="80" data-wow-delay="0.6s" data-wow-duration="1s">
 					<a href="#" class="catalog__link">
 						<div class="catalog__img">
 							<img src="images/catalog/power16500.jpg" alt="Power Bank 17600 mAh" title="Power Bank 17600 mAh">
@@ -210,6 +286,8 @@
 					</a>
 				</li>
 			</ul>
+
+
 
 			<img class="catalog__circle" src="images/circle-catalog.png" alt="circle">
 			<img class="catalog__logo" src="images/back__logo.png" alt="flash market">
@@ -221,48 +299,48 @@
 	<section class="works">
 		<span class="anchor" id="ask"></span>
 		<div class="container">
-			<div class="title__box clearfix">
+			<div class="title__box clearfix fadeIn wow" data-wow-delay="0.2s" data-wow-duration="1s">
 				<h2 class="works__title section__title">Как это работает</h2>
 				<img class="works__decor" src="images/decor/circle.png" alt="decor">
 			</div>
 
 			<ol class="list">
-				<li class="list__item">
+				<li class="list__item fadeInUp wow" data-wow-offset="80" data-wow-delay="0.2s" data-wow-duration="1s">
 					<div class="img__wrap">
 						<img class="list__img" src="images/works1.png" alt="Шаг №1">
 					</div>
 					<p class="list__text">Вы выбираете вид и модель аксессуара.</p>
 				</li>
 
-				<li class="list__item">
+				<li class="list__item fadeInUp wow" data-wow-offset="80" data-wow-delay="0.4s" data-wow-duration="1s">
 					<div class="img__wrap">
 						<img class="list__img" src="images/works2.png" alt="Шаг №2">
 					</div>
 					<p class="list__text">Подбираете понравившийся принт.</p>
 				</li>
 
-				<li class="list__item">
+				<li class="list__item fadeInUp wow" data-wow-offset="80" data-wow-delay="0.6s" data-wow-duration="1s">
 					<div class="img__wrap">
 						<img class="list__img" src="images/works3.png" alt="Шаг №3">
 					</div>
 					<p class="list__text">Отмечаете подарок, который Вам по душе.</p>
 				</li>
 
-				<li class="list__item">
+				<li class="list__item fadeInUp wow" data-wow-offset="80" data-wow-delay="0.2s" data-wow-duration="1s">
 					<div class="img__wrap">
 						<img class="list__img" src="images/works4.png" alt="Шаг №4">
 					</div>
 					<p class="list__text">Оставляете заявку на сайте, и наш менеджер связывается с Вами, для уточнения деталей.</p>
 				</li>
 
-				<li class="list__item">
+				<li class="list__item fadeInUp wow" data-wow-offset="80" data-wow-delay="0.4s" data-wow-duration="1s">
 					<div class="img__wrap">
 						<img class="list__img" src="images/works5.png" alt="Шаг №5">
 					</div>
 					<p class="list__text">Доставка Новой Почтой в течение 1-2 дней.</p>
 				</li>
 
-				<li class="list__item">
+				<li class="list__item fadeInUp wow" data-wow-offset="80" data-wow-delay="0.6s" data-wow-duration="1s">
 					<div class="img__wrap">
 						<img class="list__img" src="images/works6.png" alt="Шаг №6">
 					</div>
@@ -302,13 +380,32 @@
 						<!-- END Hidden Required Fields -->
 
 						<input class="form__line name" type="text" name="Имя&nbsp;покупателя" placeholder="Ваше имя" required>
-						<input class="form__line" type="tel" name="Телефон&nbsp;покупателя" placeholder="Ваш телефон" required>
+						<input class="form__line phone-mask" type="tel" name="Телефон&nbsp;покупателя" placeholder="Ваш телефон" required>
 						<input type="submit" class="btn form__btn" value="Отправить"> 
 					</form>
 				</div>
 			</div>
-
 		</div>
+
+		<div class="ico_shape-bottom1 decorSection-bottom1"></div>
+		<div class="ico_shape-bottom2 decorSection-bottom2"></div>
+		<div class="ico_shape-bottom3 decorSection-bottom3"></div>
+		<div class="ico_shape-bottom4 decorSection-bottom4"></div>
+
+		<div class="ico_shape-bottom5 decorSection-bottom5"></div>
+		<div class="ico_shape-bottom6 decorSection-bottom6"></div>
+		<div class="ico_shape-bottom7 decorSection-bottom7"></div>
+		<div class="ico_shape-bottom8 decorSection-bottom8"></div>
+
+		<div class="ico_shape-bottom9 decorSection-bottom9"></div>
+		<div class="ico_shape-bottom10 decorSection-bottom10"></div>
+		<div class="ico_shape-bottom11 decorSection-bottom11"></div>
+		<div class="ico_shape-bottom12 decorSection-bottom12"></div>
+
+		<div class="ico_shape-bottom13 decorSection-bottom13"></div>
+		<div class="ico_shape-bottom14 decorSection-bottom14"></div>
+		<div class="ico_shape-bottom15 decorSection-bottom15"></div>
+		<div class="ico_shape-bottom16 decorSection-bottom16"></div>
 	</div>
 
 
@@ -381,8 +478,8 @@
 			<!-- END Hidden Required Fields -->
 			<p class="formBox__title">Заполните форму</p>
 			<p class="formBox__text">И наш менеджер свяжется с Вами в ближайшее время</p>
-			<input class="form__line name" type="text" name="name" placeholder="Ваше имя" required>
-			<input class="form__line" type="tel" name="phone" placeholder="Ваш телефон" required>
+			<input class="form__line name" type="text" name="name" placeholder="Ваше имя" required autofocus>
+			<input class="form__line phone-mask" type="tel" name="phone" placeholder="Ваш телефон" required>
 			<input type="submit" class="btn" value="Заказать звонок"> 
 		</form>
 	</div> 
@@ -398,9 +495,19 @@
 
 	<!-- Load Scripts -->
 	<script src='https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js?ver=3.9.2'></script> 
-	<script src="./libs/jquery.nicescroll.min.js"></script>
+
 	
+	<script src="./libs/jquery.nicescroll.min.js"></script>
+	<script src="./libs/wow.min.js"></script>
+	<script src="./libs/jquery.plaxmove.js"></script>
+
+	
+	<script src="./libs/jquery.mask.min.js"></script>	
 	<script src="./libs/all.js"></script>
+
+
+	<script async defer src="https://maps.googleapis.com/maps/api/js?callback=initMap&key=AIzaSyDFnsXtzPC77ZP4pkabK8_yVr5qazdPCjc"></script>
+	<script src="./libs/map.js"></script>  
 
 
 </body>
