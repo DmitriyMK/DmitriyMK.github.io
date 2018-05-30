@@ -22,6 +22,17 @@
 	background: url(../images/back__catalogue.jpg)no-repeat center/cover;
 	background-attachment: fixed;
 	overflow: hidden;
+	text-align: center;
+
+	@media @tablet {
+
+	}
+	@media @desktop {
+
+	}
+	@media @desktop-xl {
+		text-align: inherit;
+	}
 
 	&:before {
 		content: '';
@@ -34,14 +45,20 @@
 	}
 
 	.title__box {
-		float: right;
-		text-align: right;
+		text-align: center;
+		@media @desktop-xl {
+			float: right;
+			text-align: right;
+		}
 	}
 
 	&__title {
-		padding-left: 30px;
-		text-align: right;
 		color: #fff;
+
+		@media @tablet {
+			padding-left: 30px;
+			text-align: right;
+		}
 		&:before {
 			right: 0;
 			background: #7dd2ff;
@@ -49,30 +66,60 @@
 	}
 
 	&__decor {
-		float: right;
-		display: block;
-		padding-top: 30px;
+		display: none;
+
+		@media @desktop-xl {
+			float: right;
+			display: block;
+			padding-top: 30px;
+		}
 	}
 
 	&__list {
 		clear: both;
 		padding: 30px 0;
 		display: flex;
-		justify-content: space-between;
+		justify-content: center;
 		flex-wrap: wrap;
+		margin-top: 30px;
+
+		@media @tablet {
+			justify-content: space-around;
+		}
+
+		@media @desktop {
+			justify-content: inherit;
+		}
+
+		@media @desktop-xl {
+			margin-top: inherit;
+		}
 	}
 
 	&__item {
 		position: relative;
-		width: 360px;
-		margin-bottom: 60px;
-
+		width: 290px;
+		margin-bottom: 30px;
+		margin-left: 10px;
+		margin-right: 10px;
 		overflow: hidden;
 		border-radius: 7px;
 		background-color: #fff;
 		box-shadow: 1.325px 18.954px 19.14px 2.86px rgba(63, 69, 109, 0.15),0.907px 12.968px 6.84px 2.16px rgba(63, 69, 109, 0.08);
 		z-index: 1;
 		transition: all .3s linear;
+
+		@media @desktop {
+			
+			margin-bottom: 60px;
+		}
+
+		@media @desktop-xl {
+			width: 360px;
+			margin-left: 15px;
+			margin-right: 15px;
+		}
+
 		&:hover {
 			box-shadow: none;
 
@@ -99,9 +146,17 @@
 		img {
 			display: block;
 			max-width: 100%;
-			height: 235px;
+			height: 185px;
 			margin: 0 auto;
 			transition: transform .3s linear;
+
+			@media @desktop {
+
+			}
+			@media @desktop-xl {
+				height: 235px;
+			}
+
 		}
 	}
 
@@ -138,19 +193,27 @@
 	}
 
 	&__circle {
-		display: block;
-		position: absolute;
-		z-index: 0;
-		top: -110px;
-		left: 0;
+		display: none;
+
+		@media @desktop-xl {
+			display: block;
+			position: absolute;
+			z-index: 0;
+			top: -110px;
+			left: 0;
+		}
 	}
 
 	&__logo {
-		display: block;
-		position: absolute;
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -50%);
+		display: none;
+		
+		@media @desktop {
+			display: block;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
 	}
 }
 

@@ -1722,6 +1722,12 @@ header .tel:hover {
     background: url(../images/back__catalogue.jpg) no-repeat center / cover;
     background-attachment: fixed;
     overflow: hidden;
+    text-align: center;
+}
+@media only screen and (min-width: 1200px) {
+    .catalog {
+        text-align: inherit;
+    }
 }
 .catalog:before {
     content: '';
@@ -1734,22 +1740,36 @@ header .tel:hover {
             box-shadow: -2.703px 12.716px 60px 15.12px rgba(27, 74, 113, 0.5), -2.703px 12.716px 17.22px 3.78px rgba(27, 74, 113, 0.2);
 }
 .catalog .title__box {
-    float: right;
-    text-align: right;
+    text-align: center;
+}
+@media only screen and (min-width: 1200px) {
+    .catalog .title__box {
+        float: right;
+        text-align: right;
+    }
 }
 .catalog__title {
-    padding-left: 30px;
-    text-align: right;
     color: #fff;
+}
+@media only screen and (min-width: 768px) {
+    .catalog__title {
+        padding-left: 30px;
+        text-align: right;
+    }
 }
 .catalog__title:before {
     right: 0;
     background: #7dd2ff;
 }
 .catalog__decor {
-    float: right;
-    display: block;
-    padding-top: 30px;
+    display: none;
+}
+@media only screen and (min-width: 1200px) {
+    .catalog__decor {
+        float: right;
+        display: block;
+        padding-top: 30px;
+    }
 }
 .catalog__list {
     clear: both;
@@ -1757,16 +1777,37 @@ header .tel:hover {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    margin-top: 30px;
+}
+@media only screen and (min-width: 768px) {
+    .catalog__list {
+        -ms-flex-pack: distribute;
+        justify-content: space-around;
+    }
+}
+@media only screen and (min-width: 992px) {
+    .catalog__list {
+        -webkit-box-pack: inherit;
+        -ms-flex-pack: inherit;
+        justify-content: inherit;
+    }
+}
+@media only screen and (min-width: 1200px) {
+    .catalog__list {
+        margin-top: inherit;
+    }
 }
 .catalog__item {
     position: relative;
-    width: 360px;
-    margin-bottom: 60px;
+    width: 290px;
+    margin-bottom: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
     overflow: hidden;
     border-radius: 7px;
     background-color: #fff;
@@ -1776,6 +1817,18 @@ header .tel:hover {
     -webkit-transition: all 0.3s linear;
          -o-transition: all 0.3s linear;
             transition: all 0.3s linear;
+}
+@media only screen and (min-width: 992px) {
+    .catalog__item {
+        margin-bottom: 60px;
+    }
+}
+@media only screen and (min-width: 1200px) {
+    .catalog__item {
+        width: 360px;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
 }
 .catalog__item:hover {
     -webkit-box-shadow: none;
@@ -1798,13 +1851,18 @@ header .tel:hover {
 .catalog__img img {
     display: block;
     max-width: 100%;
-    height: 235px;
+    height: 185px;
     margin: 0 auto;
     -webkit-transition: -webkit-transform 0.3s linear;
             transition: -webkit-transform 0.3s linear;
          -o-transition:         transform 0.3s linear;
             transition:         transform 0.3s linear;
             transition:         transform 0.3s linear, -webkit-transform 0.3s linear;
+}
+@media only screen and (min-width: 1200px) {
+    .catalog__img img {
+        height: 235px;
+    }
 }
 .catalog__model {
     padding: 20px 0 25px 0;
@@ -1844,20 +1902,30 @@ header .tel:hover {
             transition: all 0.3s linear;
 }
 .catalog__circle {
-    display: block;
-    position: absolute;
-    z-index: 0;
-    top: -110px;
-    left: 0;
+    display: none;
+}
+@media only screen and (min-width: 1200px) {
+    .catalog__circle {
+        display: block;
+        position: absolute;
+        z-index: 0;
+        top: -110px;
+        left: 0;
+    }
 }
 .catalog__logo {
-    display: block;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
+    display: none;
+}
+@media only screen and (min-width: 992px) {
+    .catalog__logo {
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+    }
 }
 .works {
     position: relative;
