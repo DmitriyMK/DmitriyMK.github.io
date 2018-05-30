@@ -3069,6 +3069,7 @@ textarea {
     margin-bottom: 30px;
     -webkit-box-shadow: 17px 19px 26px 0.81px rgba(171, 171, 171, 0.2);
             box-shadow: 17px 19px 26px 0.81px rgba(171, 171, 171, 0.2);
+    position: relative;
 }
 @media only screen and (min-width: 768px) {
     .roads__items {
@@ -3082,10 +3083,10 @@ textarea {
         margin-right: 30px;
     }
 }
-.roads__items-title {
+.roads__items .roads__item-title {
     padding: 10px 20px;
     position: absolute;
-    bottom: -16px;
+    bottom: -20px;
     -webkit-transform: translateY(0);
         -ms-transform: translateY(0);
             transform: translateY(0);
@@ -3093,8 +3094,10 @@ textarea {
     width: 100%;
     background: rgba(0, 0, 0, 0.5);
     color: #fff;
+    font-size: 16px;
+    font-weight: 700;
 }
-.roads__items-title:before {
+.roads__items .roads__item-title:before {
     content: '';
     position: absolute;
     bottom: 0;

@@ -298,6 +298,8 @@
 		min-width: 300px;
 		margin-bottom: 30px;
 		box-shadow: 17px 19px 26px 0.81px rgba(171, 171, 171, 0.2);
+		position: relative;
+
 		@media @tablet {
 			min-width: 360px;
 		}
@@ -309,15 +311,17 @@
 		}
 
 		
-		&-title {
+		.roads__item-title {
 			padding: 10px 20px;
 			position: absolute;
-			bottom: -16px;
+			bottom: -20px;
 			transform: translateY(0);
 			left: 0;
 			width: 100%;
 			background: rgba(0, 0, 0, .5);
 			color: #fff;
+			font-size: 16px;
+			font-weight: 700;
 			&:before {
 				content: '';
 				position: absolute;
@@ -336,6 +340,7 @@
 		width: 100%;
 		box-shadow: 17px 19px 26px 0.81px rgba(171, 171, 171, 0.18);
 		overflow: hidden;
+
 		@media @tablet {
 
 		}
