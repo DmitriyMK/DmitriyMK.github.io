@@ -73,6 +73,9 @@ $('.decorSection18').plaxmove({
 
 
 
+
+
+
   /*  $('.slider-for-recipe').slick({
       slidesToShow: 1,
       slidesToScroll: 1,
