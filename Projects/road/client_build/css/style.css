@@ -3086,7 +3086,7 @@ textarea {
 .roads__items .roads__item-title {
     padding: 10px 20px;
     position: absolute;
-    bottom: -20px;
+    bottom: -17px;
     -webkit-transform: translateY(0);
         -ms-transform: translateY(0);
             transform: translateY(0);
@@ -3190,7 +3190,7 @@ textarea {
     list-style-type: disc;
     list-style-position: inside;
     font-size: 17px;
-    padding-left: 15px;
+    padding-left: 25px;
 }
 @media only screen and (min-width: 992px) {
     .services-inner ul li {
@@ -3454,7 +3454,7 @@ textarea {
 .sale__items-title {
     padding: 10px 20px;
     position: absolute;
-    bottom: -20px;
+    bottom: -17px;
     -webkit-transform: translateY(0);
         -ms-transform: translateY(0);
             transform: translateY(0);
@@ -3462,7 +3462,8 @@ textarea {
     width: 100%;
     background: rgba(0, 0, 0, 0.5);
     color: #fff;
-    font-size: 20px;
+    /* 			font-size: 20px; */
+    font-size: 16px;
     font-weight: 700;
 }
 .sale__items-title:before {
