@@ -1,7 +1,6 @@
 $(document).ready(function() {
 
 
-
   if (document.documentElement.clientWidth > 1200) {
 
     new WOW().init();
@@ -22,9 +21,34 @@ $(document).ready(function() {
     });
 
     $('html').addClass('no-overflow-y');
-
   };
+});
 
+
+/*RESPONSIVER BURGER MENU*/
+
+var $menu = $('.nav');
+
+$('.burger').click(function() {
+
+  $('.burger').toggleClass('active');
+  $('.overlay').toggleClass('open').show;
+
+});
+
+
+
+$(document).mouseup(function(e) {
+  if (!$menu.is(e.target) && $menu.has(e.target).length === 0) {
+
+    $(".burger").removeClass('active');
+    $('.overlay').removeClass('open');
+
+  }
+});
+
+
+$(document).ready(function() {
 
   $('.scrolling__link').on('click', function(e) {
     e.preventDefault();
@@ -53,126 +77,60 @@ $(document).ready(function() {
   });
 
 
-$('.decorSection10').plaxmove({
+  $('.decorSection10').plaxmove({
     ratioH: 0.0055,
     ratioV: 0.0200,
   });
 
-$('.decorSection12').plaxmove({
+  $('.decorSection12').plaxmove({
     ratioH: -0.0055,
     ratioV: 0.0255,
     invertV: 0.0185
   });
 
-$('.decorSection18').plaxmove({
+  $('.decorSection18').plaxmove({
     ratioH: -0.0055,
     ratioV: 0.0255,
     invertV: 0.0185,
   });
 
-
-
-
-
-
-
-  /*  $('.slider-for-recipe').slick({
-      slidesToShow: 1,
-      slidesToScroll: 1,
-      arrows: false,
-      dots: false,
-      asNavFor: '.slider-nav-recipe',
-      fade: true,
-      draggable: false,
-      infinite: true,
-
-    });*/
-
-
-  /*  $('.slider-nav-recipe').slick({
-      slidesToShow: 4,
-      slidesToScroll: 1,
-      asNavFor: '.slider-for-recipe',
-      arrows: false,
-      dots: false,
-      focusOnSelect: true,
-      infinite: true,
-      centerMode: false,
-
-      responsive: [
-
-      {
-        breakpoint: 992,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1,
-          arrows: true,
-
-        }
-      },
-
-      {
-        breakpoint: 767,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-
-          arrows: true,
-        }
-      },
-
-      ]
-
-    });
-    */
-
 });
 
 
-/*
-$(window).on('resize orientationchange', function() {
-  $('.slider').slick('resize');
-});
-*/
+
+if (document.documentElement.clientWidth > 991) {
+
+  $(window).scroll(function() {
 
 
-$(document).ready(function() {
+    if ($(this).scrollTop() > 800) {
+      $('#fixedTopMenu').removeClass('menuHide');
+      $('#fixedTopMenu').addClass('fixed');
 
-  if (document.documentElement.clientWidth > 991) {
-
-    $(window).scroll(function() {
-
-
-      if ($(this).scrollTop() > 800) {
-        $('#fixedTopMenu').removeClass('menuHide');
-        $('#fixedTopMenu').addClass('fixed');
-
-      } else if ($(this).scrollTop() < 800) {
-        $('#fixedTopMenu').addClass('menuHide');
-        $('#fixedTopMenu').removeClass('fixed');
-      };
+    } else if ($(this).scrollTop() < 800) {
+      $('#fixedTopMenu').addClass('menuHide');
+      $('#fixedTopMenu').removeClass('fixed');
+    };
 
 
 
-      if ($(this).scrollTop() > 20) {
-        $('#fixedTopMenu').removeClass('menuDefault');
+    if ($(this).scrollTop() > 20) {
+      $('#fixedTopMenu').removeClass('menuDefault');
 
-      } else if ($(this).scrollTop() < 20) {
-        $('#fixedTopMenu').addClass('menuDefault');
-      };
+    } else if ($(this).scrollTop() < 20) {
+      $('#fixedTopMenu').addClass('menuDefault');
+    };
 
 
-      if ($(this).scrollTop() > 250) {
-        $('#fixedTopMenu').removeClass('menuResize');
+    if ($(this).scrollTop() > 250) {
+      $('#fixedTopMenu').removeClass('menuResize');
 
-      } else if ($(this).scrollTop() < 250) {
-        $('#fixedTopMenu').addClass('menuResize');
-      };
+    } else if ($(this).scrollTop() < 250) {
+      $('#fixedTopMenu').addClass('menuResize');
+    };
 
-    });
-  };
-
-});
+  });
+};
 
 
 

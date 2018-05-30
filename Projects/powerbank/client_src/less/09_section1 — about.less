@@ -19,39 +19,108 @@
 
 .about {
 	position: relative;
-	background: url(../images/back__aboutl.jpg)no-repeat center/cover;
+	background: url(../images/back__about-small.jpg)no-repeat center/cover;
 	color: #1f2329;
 	overflow: hidden;
 
+	@media @tablet {
+		background: url(../images/back__aboutl.jpg)no-repeat center/cover;
+	}
+
+	@media @desktop {
+
+	}
+
 	&__title {
-		padding-left: 30px;
+		@media @desktop {
+			padding-left: 30px;
+		}
 	}
 
 	&__decor {
-		display: block;
-		padding-top: 30px;
-		padding-left: 30px;
+		display: none;
+
+		@media @desktop {
+			display: block;
+			padding-top: 30px;
+			padding-left: 30px;
+		}
 	}
 
 	.list {
 		display: flex;
-		justify-content: space-between;
-		margin-top: 20px;
+		justify-content: space-around;
+		flex-wrap: wrap;
+		margin-top: 40px;
+
+
+		@media @tablet {
+		}
+
+		@media @desktop {
+			margin-top: 20px;
+			justify-content: space-between;
+		}
+
+
+		@media @desktop-xl {
+			flex-wrap: nowrap;
+		}
+
+		@media @desktop-xl-2 {
+
+		}
+
+		@media @desktop-xll {
+			margin-bottom: inherit;
+		}
 
 		&__item {
 			position: relative;
 			width: 300px;
+			margin-bottom: 40px;
 			text-align: center;
 			list-style-type: none;
+
+			@media @tablet {
+
+			}
+			@media @desktop {
+				width: 50%;
+			}
+			@media @desktop-xl {
+				width: 300px;
+			}
+			@media @desktop-xl-2 {
+
+			}
+			@media @desktop-xll {
+
+			}
 		}
 
 
 		&__img {
 			position: relative;
 			z-index: 10;
+
+			height: 200px;
+
+			@media @tablet {
+
+			}
+			@media @desktop {
+
+			}
+			@media @desktop-xl {
+				height: inherit;
+			}
+
 			&:first-of-type(1) {
-				margin-left: 30px;
-			}		
+				@media @desktop {
+					margin-left: 30px;
+				}
+			}	
 		}
 
 		.img__wrap {
@@ -61,11 +130,19 @@
 				content: '';
 				position: absolute;
 				bottom: 25px;
-				left: 20px;
-				width: 220px;
-				height: 220px;
+				left: 50%;
+				transform: translateX(-50%);
+				width: 180px;
+				height: 180px;
 				border-radius: 50%;
 				box-shadow: 0px 34.915px 13.92px 2.08px rgba(82, 109, 154, 0.18);
+
+				@media @desktop-xl {
+					left: 20px;
+					transform: none;
+					width: 220px;
+					height: 220px;
+				}
 			}
 		}
 
@@ -76,11 +153,19 @@
 				content: '';
 				position: absolute;
 				bottom: 25px;
-				left: 35px;
-				width: 220px;
-				height: 220px;
+				left: 50%;
+				transform: translateX(-50%);
+				width: 180px;
+				height: 180px;
 				border-radius: 50%;
 				box-shadow: 0px 34.915px 13.92px 2.08px rgba(82, 109, 154, 0.18);
+
+				@media @desktop-xl {
+					left: 35px;
+					transform: none;
+					width: 220px;
+					height: 220px;
+				}
 			}
 		}
 
@@ -89,6 +174,22 @@
 			padding-bottom: 15px;
 			font-size: 22px;
 			font-weight: 700;
+
+			@media @tablet {
+
+			}
+			@media @desktop {
+
+			}
+			@media @desktop-xl {
+
+			}
+			@media @desktop-xl-2 {
+
+			}
+			@media @desktop-xll {
+
+			}
 		}
 
 		&__text {
@@ -97,29 +198,83 @@
 	}
 
 	&__mobile {
+		display: none;
 		position: absolute;
 
-		&:nth-of-type(1) {
-			top: -10px;
-			left: 0;
-		}
-		&:nth-of-type(2) {
-			top: 170px;
-			left: 0;
-		}
-		&:nth-of-type(3) {
-			bottom: 25px;
-			right: 0;
-		}
-		&:nth-of-type(4) {
-			bottom: -125px;
-			right: 0;
-		}
-		&:nth-of-type(5) {
-			bottom: -140px;
-			right: 50px;
+		@media @desktop-xl {
+			display: block;
+			position: absolute;
 		}
 
+		&:nth-of-type(1) {
+			@media @desktop-xl {
+				top: 0px;
+				left: -66px;
+				width: 160px;
+			}
+			@media @desktop-xl-2 {
+				width: 160px;
+				top: -10px;
+				left: 0;
+			}
+			@media @desktop-xll {
+				width: 188px;
+			}
+		}
+		&:nth-of-type(2) {
+			@media @desktop-xl {
+				top: 350px;
+				left: -40px;
+				width: 140px;
+			}
+			@media @desktop-xl-2 {
+				top: 170px;
+				left: 0;
+			}
+			@media @desktop-xll {
+				width: 167px;
+			}
+		}
+		&:nth-of-type(3) {
+			@media @desktop-xl {
+				bottom: -55px;
+				right: 0;
+			}
+			@media @desktop-xl-2 {
+				bottom: 25px;
+			}
+		}
+		&:nth-of-type(4) {
+
+			@media @desktop-xl {
+				bottom: -175px;
+				right: 0;
+				width: 270px;
+			}
+			@media @desktop-xl-2 {
+				width: 270px;
+				right: -50px;
+				bottom: -125px
+			}
+			@media @desktop-xll {
+				width: 317px;
+				right: 0;
+			}
+		}
+		&:nth-of-type(5) {
+			@media @desktop-xl {
+				bottom: -130px;
+				right: 130px;
+				width: 340px;
+			}
+			@media @desktop-xl-2 {
+				right: 0px;
+			}
+			@media @desktop-xll {
+				width: 389px;
+				right: 50px;
+			}
+		}
 	}
 }
 
