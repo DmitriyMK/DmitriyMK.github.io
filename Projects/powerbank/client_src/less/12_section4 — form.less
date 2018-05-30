@@ -20,12 +20,27 @@
 
 .question {
 	position: relative;
-	padding: 95px 0;
+	padding: 60px 0;
 	background: url(../images/back__ask.jpg)no-repeat center/cover;
 
+	@media @desktop {
+		padding: 80px 0;
+	}
+	@media @desktop-xl-2 {
+		padding: 95px 0;
+	}
+
 	&__box {
-		width: 780px;
+		max-width: 340px;
 		margin: auto;
+		text-align: center;
+		@media @tablet {
+			max-width: initial;
+			text-align: inherit;
+		}
+		@media @desktop {
+			width: 780px;
+		}
 	}
 
 	&__title {
@@ -44,12 +59,21 @@
 
 	form {
 		display: flex;
-		justify-content: space-between;
-		margin-top: 64px;
+		flex-wrap: wrap;
+		justify-content: center;
+		margin-top: 25px;
+
+		@media @tablet {
+			margin-top: 64px;
+			flex-wrap: nowrap;
+			justify-content: space-between;
+		}
 	}
 
 	.form__line {
-		width: 240px;
+		width: 220px;
+		height: 40px;
+		margin-bottom: 20px;
 		padding: 0 15px;
 		border: 1px solid #fff;
 		border-radius: 5px;
@@ -57,14 +81,24 @@
 		box-shadow: 1.046px 14.963px 19.14px 2.86px rgba(63, 69, 109, 0.1),0.349px 4.988px 6.84px 2.16px rgba(63, 69, 109, 0.08);
 		transition: all .3s linear;
 
+		@media @desktop {
+			width: 240px;
+		}
+
 		&:hover, &:focus {
 			box-shadow: none;
 		}
 	}
 	.btn {
-		width: 240px;
+		width: 220px;
+		height: 40px;
+		text-align: center;
 		box-shadow: 1.046px 14.963px 19.14px 2.86px rgba(63, 69, 109, 0.1),0.349px 4.988px 6.84px 2.16px rgba(63, 69, 109, 0.08);
 		transition: box-shadow .3s linear;
+
+		@media @desktop {
+			width: 240px;
+		}
 
 		&:hover, &:focus {
 			box-shadow: none;
@@ -73,13 +107,15 @@
 
 
 	.ico_shape-bottom1, .ico_shape-bottom10, .ico_shape-bottom12, .ico_shape-bottom4, .ico_shape-bottom8, .ico_shape-bottom9, .ico_shape-bottom7, .ico_shape-bottom16, .ico_shape-bottom3, .ico_shape-bottom15, .ico_shape-bottom6, .ico_shape-bottom14, .ico_shape-bottom2, .ico_shape-bottom13, .ico_shape-bottom17, .ico_shape-bottom5, .ico_shape-bottom11 {
-		display: inline-block;
-		background-image: url(../images/decor/spritebox-sprite-bottom.png);
-		background-repeat: no-repeat;
-		position: absolute;
+		display: none;
+
+		@media @desktop-xl {
+			display: inline-block;
+			background-image: url(../images/decor/spritebox-sprite-bottom.png);
+			background-repeat: no-repeat;
+			position: absolute;
+		}
 	}
-
-
 
 	.ico_shape-bottom1 {
 		background-position: -23px -87px;

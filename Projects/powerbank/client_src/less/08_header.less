@@ -240,6 +240,7 @@ header {
 
 	.container {
 		height: 90vh;
+		max-height: 550px;
 		position: relative;
 
 		@media only screen 
@@ -268,6 +269,7 @@ header {
 
 		@media @tablet {
 			height: 450px;
+			max-height: inherit;
 		}
 		@media @desktop {
 			height: 560px;
@@ -302,8 +304,9 @@ header {
 
 	&__center {
 		margin: auto;
-		max-width: 320px;
-		padding-top: 13vh;
+		max-width: 360px;
+		padding-top: 17vh;
+		text-align: left;
 
 		@media only screen 
 		and (device-width : 375px) 
@@ -404,8 +407,8 @@ header {
 	}
 
 	&__slogan {
-		padding-top: 25px;
-		font-size: 25px;
+		padding-top: 10px;
+		font-size: 23px;
 		font-weight: 400;
 		position: relative;
 		z-index: 2;
@@ -495,11 +498,16 @@ header {
 
 		width: 300px;
 		height: 286px;
-		right: -14px;
-		bottom: -50px;
-
+		right: -10px;
+		bottom: -34px;
 
 		background: url(../images/girl-sm.png)no-repeat center/contain;
+
+
+		@media @mobile-xl {
+			bottom: -10px;
+		}
+
 
 		@media only screen 
 		and (device-width : 414px) 

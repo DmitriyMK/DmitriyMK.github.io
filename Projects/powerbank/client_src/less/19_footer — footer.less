@@ -42,22 +42,26 @@
 	&__logo {
 		width: 350px;
 		display: flex;
+		flex-direction: column;
 		justify-content: space-around;
 		align-items: center;
+		text-align: center;
 
-		@media @tablet {
-			justify-content: space-between;
-		}
 		@media @desktop {
-
+			flex-direction: row;
+			justify-content: space-between;
+			text-align: inherit;
 		}
-
-
 	}
+
 	&__title {
+		padding-top: 8px;
 		font-size: 13px;
 		@media @tablet {
 			font-size: 15px;
+		}
+		@media @desktop {
+			padding-top: inherit;
 		}
 	}
 
