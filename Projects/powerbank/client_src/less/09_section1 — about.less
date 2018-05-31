@@ -19,7 +19,7 @@
 
 .about {
 	position: relative;
-	background: url(../images/back__about-small.jpg)no-repeat center/cover;
+	background: url(../images/back__about-small.jpg) 0% 0%;
 	color: #1f2329;
 	overflow: hidden;
 
@@ -75,24 +75,18 @@
 		&__item {
 			position: relative;
 			width: 300px;
-			margin-bottom: 40px;
+			margin-bottom: 20px;
 			text-align: center;
 			list-style-type: none;
 
 			@media @tablet {
-
+				margin-bottom: 40px;
 			}
 			@media @desktop {
 				width: 50%;
 			}
 			@media @desktop-xl {
 				width: 300px;
-			}
-			@media @desktop-xl-2 {
-
-			}
-			@media @desktop-xll {
-
 			}
 		}
 
@@ -108,7 +102,7 @@
 			}
 
 			&:first-of-type {
-					margin-left: 30px;
+				margin-left: 30px;
 			}	
 		}
 
@@ -163,26 +157,13 @@
 			padding-bottom: 15px;
 			font-size: 22px;
 			font-weight: 700;
-
-			@media @tablet {
-
-			}
-			@media @desktop {
-
-			}
-			@media @desktop-xl {
-
-			}
-			@media @desktop-xl-2 {
-
-			}
-			@media @desktop-xll {
-
-			}
 		}
 
 		&__text {
-			padding: 0 33px;
+			padding: 0 15px;
+			@media @tablet {
+				padding: 0 33px;
+			}
 		}
 	}
 

@@ -1493,7 +1493,7 @@ header .tel span {
 }
 .about {
     position: relative;
-    background: url(../images/back__about-small.jpg) no-repeat center / cover;
+    background: url(../images/back__about-small.jpg) 0 0;
     color: #1f2329;
     overflow: hidden;
 }
@@ -1549,9 +1549,14 @@ header .tel span {
 .about .list__item {
     position: relative;
     width: 300px;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     text-align: center;
     list-style-type: none;
+}
+@media only screen and (min-width: 768px) {
+    .about .list__item {
+        margin-bottom: 40px;
+    }
 }
 @media only screen and (min-width: 992px) {
     .about .list__item {
@@ -1639,7 +1644,12 @@ header .tel span {
     font-weight: 700;
 }
 .about .list__text {
-    padding: 0 33px;
+    padding: 0 15px;
+}
+@media only screen and (min-width: 768px) {
+    .about .list__text {
+        padding: 0 33px;
+    }
 }
 .about__mobile {
     display: none;
