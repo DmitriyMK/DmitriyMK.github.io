@@ -899,8 +899,8 @@ header .tel span {
     z-index: 1;
 }
 .header .container {
-    height: 90vh;
-    max-height: 450px;
+    height: 100vh;
+    max-height: 520px;
     position: relative;
 }
 @media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
@@ -961,17 +961,17 @@ header .tel span {
 .header__center {
     margin: auto;
     max-width: 360px;
-    padding-top: 17vh;
+    padding-top: 20vh;
     text-align: left;
 }
 @media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
     .header__center {
-        padding-top: 55px;
+        padding-top: 110px;
     }
 }
 @media only screen and (device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) {
     .header__center {
-        padding-top: 60px;
+        padding-top: 100px;
     }
 }
 @media only screen and (min-width: 768px) {
@@ -983,7 +983,7 @@ header .tel span {
 }
 @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape) {
     .header__center {
-        padding-top: 60px;
+        padding-top: 90px;
     }
 }
 @media only screen and (min-width: 992px) {
