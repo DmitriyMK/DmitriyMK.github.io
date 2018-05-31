@@ -897,16 +897,42 @@ header .tel span {
     position: relative;
     overflow: hidden;
     z-index: 1;
-    /* 	&:before {
-	content: '';
-	display: block;
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background: url(../images/decor/shapePack-section-top.png)no-repeat 50% 40%;
-} */
+}
+.header:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    width: 100%;
+    height: 139px;
+    background: url(../images/hero__images-sm.png) no-repeat;
+}
+@media only screen and (min-width: 768px) {
+    .header:before {
+        display: none;
+    }
+}
+.header:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    width: 100%;
+    height: 139px;
+    background: url(../images/hero__images-sm2.png) no-repeat;
+}
+@media only screen and (min-width: 768px) {
+    .header:after {
+        display: none;
+    }
 }
 .header .container {
     height: 100vh;
@@ -1187,6 +1213,7 @@ header .tel span {
     right: -10px;
     bottom: -34px;
     background: url(../images/girl-sm.png) no-repeat center / contain;
+    z-index: 10;
 }
 @media only screen and (min-width: 370px) {
     .header .girl {
