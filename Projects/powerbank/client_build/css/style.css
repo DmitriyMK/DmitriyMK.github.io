@@ -1215,7 +1215,7 @@ header .tel span {
 }
 @media only screen and (device-width: 736px) and (device-height: 414px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape) {
     .header .girl {
-        right: 0;
+        right: -3px;
     }
 }
 @media only screen and (min-width: 992px) {
@@ -2166,7 +2166,7 @@ header .tel span {
 }
 @media only screen and (min-width: 1200px) {
     .works__mobile:nth-of-type(2) {
-        top: 880px;
+        top: 960px;
         left: -170px;
     }
 }
@@ -2213,8 +2213,8 @@ header .tel span {
 }
 @media only screen and (min-width: 1200px) {
     .works__mobile:nth-of-type(5) {
-        top: 1020px;
-        right: 190px;
+        top: 1120px;
+        right: 150px;
     }
 }
 @media only screen and (min-width: 1600px) {
@@ -2512,7 +2512,7 @@ header .tel span {
 .contacts__list {
     text-align: center;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 992px) {
     .contacts__list {
         text-align: left;
     }
@@ -2528,7 +2528,7 @@ header .tel span {
     font-weight: 700;
     text-align: center;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 992px) {
     .contacts .box__title {
         text-align: left;
     }
