@@ -236,16 +236,15 @@ $(window).on('resize orientationchange', function() {
 
 /*GOOGLE MAP WITH STYLE*/
 
-
 function initMap() {
 
-  var latlng = new google.maps.LatLng(50.4563181, 30.5178368);
+  var latlng = new google.maps.LatLng(50.0211168, 36.2187095);
   var settings = {
     zoom: 17,
     center: latlng,
     center: {
-      lat: 50.4563181,
-      lng: 30.5178368
+      lat: 50.0211168,
+      lng: 36.2187095
     },
     mapTypeControl: true,
     mapTypeControlOptions: {
@@ -396,7 +395,7 @@ function initMap() {
 
   };
   var map = new google.maps.Map(document.getElementById("google-map"), settings);
-  var myLatlng = new google.maps.LatLng(50.4563181, 30.5178368);
+  var myLatlng = new google.maps.LatLng(50.0211168, 36.2187095);
 
   var myOptions = {
     zoom: 10,
@@ -408,8 +407,8 @@ function initMap() {
   var image = 'images/icons/marker.png';
   var beachMarker = new google.maps.Marker({
     position: {
-      lat: 50.4563181,
-      lng: 30.5178368
+      lat: 50.0211168,
+      lng: 36.2187095
 
     },
     map: map,
