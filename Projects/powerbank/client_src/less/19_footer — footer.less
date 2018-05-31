@@ -40,7 +40,7 @@
 	}
 
 	&__logo {
-		width: 350px;
+		max-width: 350px;
 		display: flex;
 		flex-direction: column;
 		justify-content: space-around;
@@ -48,6 +48,7 @@
 		text-align: center;
 
 		@media @desktop {
+			width: 350px;
 			flex-direction: row;
 			justify-content: space-between;
 			text-align: inherit;
