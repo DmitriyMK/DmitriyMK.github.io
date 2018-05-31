@@ -74,7 +74,7 @@ header {
 	.header__nav {
 		display: flex;
 		order: 3;
-		margin-left: 25px;
+		margin-left: 10px;
 		@media @tablet {
 
 		}
@@ -101,7 +101,7 @@ header {
 	}
 
 	.nav__item {
-		margin-top: 30px;
+		margin-top: 25px;
 		list-style-type: none; 
 		font-size: 18px;
 
@@ -219,9 +219,19 @@ header {
 		&:hover {
 			color: @red;
 		}
+		span {
+			display: none;
+		}
 
 		@media @tablet {
 			margin-left: 10px;
+
+			img {
+				display: none;
+			}
+			span {
+				display: inline-block;
+			}
 		}
 		@media @desktop-xl {
 			margin-left: 30px;
@@ -240,7 +250,7 @@ header {
 
 	.container {
 		height: 90vh;
-		max-height: 550px;
+		max-height: 450px;
 		position: relative;
 
 		@media only screen 
@@ -516,6 +526,13 @@ header {
 			bottom: -60px;
 		}
 
+		@media only screen 
+		and (min-device-width : 568px) 
+		and (max-device-width : 812px) 
+		and (orientation : landscape) {
+			bottom: -60px;
+		}
+
 		
 
 		@media @tablet {
@@ -555,6 +572,8 @@ header {
 			display: none;
 		}
 	}
+
+
 }
 
 

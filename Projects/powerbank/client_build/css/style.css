@@ -703,7 +703,7 @@ header .header__nav {
     -webkit-box-ordinal-group: 4;
     -ms-flex-order: 3;
     order: 3;
-    margin-left: 25px;
+    margin-left: 10px;
 }
 @media only screen and (min-width: 992px) {
     header .header__nav {
@@ -743,7 +743,7 @@ header .nav__list {
     }
 }
 header .nav__item {
-    margin-top: 30px;
+    margin-top: 25px;
     list-style-type: none;
     font-size: 18px;
 }
@@ -875,9 +875,18 @@ header .tel {
 header .tel:hover {
     color: #df3e51;
 }
+header .tel span {
+    display: none;
+}
 @media only screen and (min-width: 768px) {
     header .tel {
         margin-left: 10px;
+    }
+    header .tel img {
+        display: none;
+    }
+    header .tel span {
+        display: inline-block;
     }
 }
 @media only screen and (min-width: 1200px) {
@@ -894,7 +903,7 @@ header .tel:hover {
 }
 .header .container {
     height: 90vh;
-    max-height: 550px;
+    max-height: 450px;
     position: relative;
 }
 @media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
@@ -1173,6 +1182,11 @@ header .tel:hover {
     }
 }
 @media only screen and (device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) {
+    .header .girl {
+        bottom: -60px;
+    }
+}
+@media only screen and (min-device-width: 568px) and (max-device-width: 812px) and (orientation: landscape) {
     .header .girl {
         bottom: -60px;
     }
@@ -1559,10 +1573,8 @@ header .tel:hover {
         height: inherit;
     }
 }
-@media only screen and (min-width: 992px) {
-    .about .list__img:first-of-type(1) {
-        margin-left: 30px;
-    }
+.about .list__img:first-of-type {
+    margin-left: 30px;
 }
 .about .list .img__wrap {
     position: relative;
@@ -1584,7 +1596,7 @@ header .tel:hover {
 }
 @media only screen and (min-width: 1200px) {
     .about .list .img__wrap:before {
-        left: 20px;
+        left: 40px;
         -webkit-transform: none;
             -ms-transform: none;
                 transform: none;
@@ -1937,12 +1949,19 @@ header .tel:hover {
 }
 .works {
     position: relative;
-    background: url(../images/back__works.jpg) no-repeat center / cover;
+    background: url(../images/back__works-sm.jpg) 70% 50%;
     color: #1f2329;
     overflow: hidden;
 }
-.works__title {
-    padding-left: 30px;
+@media only screen and (min-width: 768px) {
+    .works {
+        background: url(../images/back__works.jpg) no-repeat center / cover;
+    }
+}
+@media only screen and (min-width: 768px) {
+    .works__title {
+        padding-left: 30px;
+    }
 }
 .works__decor {
     display: none;
@@ -1985,7 +2004,7 @@ header .tel:hover {
 .works .list__item {
     position: relative;
     width: 290px;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     text-align: center;
     counter-increment: li;
     list-style-type: none;
@@ -2070,7 +2089,7 @@ header .tel:hover {
 }
 .works .list__text {
     padding: 10px;
-    min-height: 85px;
+    /* min-height: 85px; */
     position: relative;
     font-size: 18px;
     color: #2d3440;
