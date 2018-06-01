@@ -1616,6 +1616,7 @@ section {
     background: url(../images/back__header.jpg) no-repeat center / cover;
     /*  ¯\_(ツ)_/¯  */
     /*  ¯\_(ツ)_/¯  */
+    /*  ¯\_(ツ)_/¯  */
 }
 .header__top {
     padding: 30px 0;
@@ -1739,6 +1740,18 @@ section {
     font-weight: 600;
     line-height: 34px;
     padding-bottom: 15px;
+}
+.header__end {
+    padding-top: 220px;
+}
+.header__end .price {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    padding-right: 150px;
 }
 .remodal-first {
     padding-top: 95px;
