@@ -489,6 +489,7 @@ section {
 
 /* SECTION 2 GALLERY */
 .gallery {
+  padding-top: 0;
   -webkit-box-flex: 1;
   -webkit-flex: 1 1 0;
       -ms-flex: 1 1 0px;
