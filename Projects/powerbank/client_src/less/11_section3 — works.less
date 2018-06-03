@@ -20,43 +20,17 @@
 
 .works {
 	position: relative;
-	background: url(../images/back__works.jpg)no-repeat center/cover;
+	background: url(../images/back__works-sm.jpg) 70% 50%;
 	color: #1f2329;
 	overflow: hidden;
 
 	@media @tablet {
-
-	}
-	@media @desktop {
-
-	}
-	@media @desktop-xl {
-
-	}
-	@media @desktop-xl-2 {
-
-	}
-	@media @desktop-xll {
-
+		background: url(../images/back__works.jpg)no-repeat center/cover;
 	}
 
 	&__title {
-		padding-left: 30px;
-
 		@media @tablet {
-
-		}
-		@media @desktop {
-
-		}
-		@media @desktop-xl {
-
-		}
-		@media @desktop-xl-2 {
-
-		}
-		@media @desktop-xll {
-
+			padding-left: 30px;
 		}
 	}
 
@@ -96,7 +70,7 @@
 		&__item {
 			position: relative;
 			width: 290px;
-			margin-bottom: 20px;
+			margin-bottom: 15px;
 			text-align: center;
 			counter-increment: li;	
 			list-style-type: none;	
@@ -180,7 +154,7 @@
 
 		&__text {
 			padding: 10px;
-			min-height: 85px;
+			/* min-height: 85px; */
 			position: relative;
 			font-size: 18px;
 			color: #2d3440;
@@ -246,7 +220,7 @@
 
 		&:nth-of-type(2) {
 			@media @desktop-xl {
-				top: 880px;
+				top: 960px;
 				left: -170px;
 			}
 			@media @desktop-xl-2 {
@@ -288,8 +262,8 @@
 		}
 		&:nth-of-type(5) {
 			@media @desktop-xl {
-				top: 1020px;
-				right: 190px;
+				top: 1120px;
+				right: 150px;
 			}
 			@media @desktop-xl-2 {
 				top: 660px;

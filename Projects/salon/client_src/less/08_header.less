@@ -1,0 +1,163 @@
+@media @mobile {
+
+}
+@media @tablet {
+
+}
+@media @desktop {
+
+}
+@media @desktop-xl {
+	
+}
+@media @desktop-xl-2 {
+
+}
+@media @desktop-xll {
+	
+}
+
+.header {
+	background-color: @violet; 
+	background: url(../images/back__header.jpg)no-repeat center/cover;
+
+	&__top {
+		padding: 30px 0;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	/*  ¯\_(ツ)_/¯  */
+
+	&__logo {
+		display: flex;
+		align-items: center;
+		flex: 1;
+
+		img {
+			margin-right: 15px;
+		}
+
+		.title {
+			font-size: 25px;
+			line-height: 1.1;
+			font-family: @ff2;
+			font-weight: 800;
+		}
+		.desc {
+			font-size: 15px;
+			color: #a799b5;
+		}
+	}
+
+	.delivery {
+		display: flex;
+		align-items: center;
+		&__icon {
+			margin-right: 15px;
+		}
+		&__title {
+			font-weight: 700;
+
+			span {
+				font-weight: 400;
+				color: #b3a6bf;
+			}
+		}
+	}
+
+	.devider {
+		margin: 0 40px;
+	}
+
+	.contact {
+		display: flex;
+		align-items: center;
+
+		&__icon {
+			margin-right: 15px;
+		}
+
+		&__link {
+			font-weight: 600;
+			transition: color .3s linear;
+			&:hover {
+				color: @yellow;
+			}
+		}
+	}
+
+	.btn {
+		position: relative;
+
+		display: block;
+		margin-left: 35px;
+		width: 180px;
+		height: 40px;
+
+		font-family: @ff2;
+		font-weight: 900;
+		text-transform: uppercase;
+		border: 3px solid @yellow;
+		border-radius: 15px;
+		z-index: 1;
+		
+
+		&:before {
+			content: '';
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 0;
+			height: 100%;
+			background: @yellow;
+			transition: all .5s linear;
+			border-radius: 10px;
+			z-index: -1;
+		}
+
+		&:hover {
+			&:before {
+				width: 100%;
+			}
+		}
+	}
+
+	/*  ¯\_(ツ)_/¯  */
+
+	&__center {
+		padding-top: 15px;
+		text-align: center;
+		text-transform: uppercase;
+
+		&-title {
+			font-size: 60px;
+			font-family: @ff2;
+			font-weight: 900;
+		}
+
+		&-subtitle {
+			font-size: 20px;
+			font-weight: 600;
+			line-height: 34px;
+			padding-bottom: 15px;
+		}
+	}
+
+	/*  ¯\_(ツ)_/¯  */
+
+	&__end {
+		padding-top: 220px;
+
+		.price {
+			display: flex;
+			justify-content: flex-end;
+			padding-right: 150px;
+
+			p:nth-child(1) {
+				
+			}
+		}
+	}
+}

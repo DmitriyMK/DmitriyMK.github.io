@@ -4405,7 +4405,8 @@ iframe {
 @media only screen and (min-width: 1200px) {
     .agency {
         text-align: right;
-        padding-right: 60px;
+        padding-top: 60px;
+        /* 		padding-right: 60px; */
     }
 }
 /* RESPONSIVE MENU TO 992px*/

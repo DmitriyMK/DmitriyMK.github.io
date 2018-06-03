@@ -587,10 +587,15 @@ section {
     position: absolute;
     bottom: 2px;
     left: 0;
-    width: 105%;
+    width: 100%;
     height: 12px;
     background: #fff;
     z-index: -1;
+}
+@media only screen and (min-width: 768px) {
+    .section__title:before {
+        width: 105%;
+    }
 }
 @media only screen and (min-width: 768px) {
     .section__title {
@@ -703,10 +708,11 @@ header .header__nav {
     -webkit-box-ordinal-group: 4;
     -ms-flex-order: 3;
     order: 3;
-    margin-left: 25px;
+    margin-left: 30px;
 }
 @media only screen and (min-width: 992px) {
     header .header__nav {
+        margin-left: 10px;
         -ms-flex-preferred-size: 48%;
         flex-basis: 48%;
         -webkit-box-ordinal-group: inherit;
@@ -743,7 +749,7 @@ header .nav__list {
     }
 }
 header .nav__item {
-    margin-top: 30px;
+    margin-top: 25px;
     list-style-type: none;
     font-size: 18px;
 }
@@ -826,15 +832,6 @@ header .contact__link {
         margin-right: 10px;
     }
 }
-header .smm img {
-    width: 30px;
-    height: 30px;
-}
-@media only screen and (min-width: 768px) {
-    header .smm {
-        display: block;
-    }
-}
 header .btn {
     -webkit-box-shadow: 1.046px 14.963px 19.14px 2.86px rgba(63, 69, 109, 0.1), 0.349px 4.988px 6.84px 2.16px rgba(63, 69, 109, 0.08);
             box-shadow: 1.046px 14.963px 19.14px 2.86px rgba(63, 69, 109, 0.1), 0.349px 4.988px 6.84px 2.16px rgba(63, 69, 109, 0.08);
@@ -858,13 +855,13 @@ header .btn:hover, header .btn:focus {
 }
 @media only screen and (min-width: 1200px) {
     header .btn {
-        height: 33px;
+        height: 34px;
         width: 200px;
     }
 }
 @media only screen and (min-width: 1600px) {
     header .btn {
-        height: 40px;
+        height: 41px;
     }
 }
 header .tel {
@@ -875,9 +872,18 @@ header .tel {
 header .tel:hover {
     color: #df3e51;
 }
+header .tel span {
+    display: none;
+}
 @media only screen and (min-width: 768px) {
     header .tel {
         margin-left: 10px;
+    }
+    header .tel img {
+        display: none;
+    }
+    header .tel span {
+        display: inline-block;
     }
 }
 @media only screen and (min-width: 1200px) {
@@ -892,9 +898,45 @@ header .tel:hover {
     overflow: hidden;
     z-index: 1;
 }
+.header:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    width: 100%;
+    height: 139px;
+    background: url(../images/hero__images-sm.png) no-repeat;
+}
+@media only screen and (min-width: 768px) {
+    .header:before {
+        display: none;
+    }
+}
+.header:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    width: 100%;
+    height: 139px;
+    background: url(../images/hero__images-sm2.png) no-repeat;
+}
+@media only screen and (min-width: 768px) {
+    .header:after {
+        display: none;
+    }
+}
 .header .container {
-    height: 90vh;
-    max-height: 550px;
+    height: 100vh;
+    max-height: 520px;
     position: relative;
 }
 @media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
@@ -925,7 +967,7 @@ header .tel:hover {
 }
 @media only screen and (min-width: 1600px) {
     .header .container {
-        height: 860px;
+        height: 880px;
     }
 }
 @media only screen and (min-width: 992px) {
@@ -955,17 +997,17 @@ header .tel:hover {
 .header__center {
     margin: auto;
     max-width: 360px;
-    padding-top: 17vh;
+    padding-top: 20vh;
     text-align: left;
 }
 @media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
     .header__center {
-        padding-top: 55px;
+        padding-top: 110px;
     }
 }
 @media only screen and (device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) {
     .header__center {
-        padding-top: 60px;
+        padding-top: 100px;
     }
 }
 @media only screen and (min-width: 768px) {
@@ -977,7 +1019,7 @@ header .tel:hover {
 }
 @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape) {
     .header__center {
-        padding-top: 60px;
+        padding-top: 90px;
     }
 }
 @media only screen and (min-width: 992px) {
@@ -1035,6 +1077,11 @@ header .tel:hover {
 }
 .header__title span {
     position: relative;
+}
+.header__title span:before {
+    -webkit-animation: growLine 2s linear;
+            animation: growLine 2s linear;
+    /* animation-delay: 1s;  */
 }
 @media only screen and (min-width: 992px) {
     .header__title span:before {
@@ -1166,6 +1213,7 @@ header .tel:hover {
     right: -10px;
     bottom: -34px;
     background: url(../images/girl-sm.png) no-repeat center / contain;
+    z-index: 10;
 }
 @media only screen and (min-width: 370px) {
     .header .girl {
@@ -1173,6 +1221,11 @@ header .tel:hover {
     }
 }
 @media only screen and (device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) {
+    .header .girl {
+        bottom: -60px;
+    }
+}
+@media only screen and (min-device-width: 568px) and (max-device-width: 812px) and (orientation: landscape) {
     .header .girl {
         bottom: -60px;
     }
@@ -1199,7 +1252,7 @@ header .tel:hover {
 }
 @media only screen and (device-width: 736px) and (device-height: 414px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape) {
     .header .girl {
-        right: 0;
+        right: -3px;
     }
 }
 @media only screen and (min-width: 992px) {
@@ -1247,7 +1300,7 @@ header .tel:hover {
     max-width: 45px;
 }
 #fixedTopMenu.fixed .btn {
-    height: 33px;
+    height: 34px;
 }
 #fixedTopMenu.menuHide {
     opacity: 0;
@@ -1261,7 +1314,7 @@ header .tel:hover {
     max-width: 45px;
 }
 #fixedTopMenu.menuHide .btn {
-    height: 33px;
+    height: 34px;
 }
 #fixedTopMenu.menuDefault {
     opacity: 1;
@@ -1271,7 +1324,7 @@ header .tel:hover {
         max-width: inherit;
     }
     #fixedTopMenu.menuResize .btn {
-        height: 40px;
+        height: 41px;
     }
 }
 .ico_shape1, .ico_shape10, .ico_shape12, .ico_shape4, .ico_shape8, .ico_shape9, .ico_shape7, .ico_shape16, .ico_shape3, .ico_shape15, .ico_shape6, .ico_shape14, .ico_shape2, .ico_shape13, .ico_shape17, .ico_shape5, .ico_shape11 {
@@ -1479,7 +1532,7 @@ header .tel:hover {
 }
 .about {
     position: relative;
-    background: url(../images/back__about-small.jpg) no-repeat center / cover;
+    background: url(../images/back__about-small.jpg) 0 0;
     color: #1f2329;
     overflow: hidden;
 }
@@ -1535,9 +1588,14 @@ header .tel:hover {
 .about .list__item {
     position: relative;
     width: 300px;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     text-align: center;
     list-style-type: none;
+}
+@media only screen and (min-width: 768px) {
+    .about .list__item {
+        margin-bottom: 40px;
+    }
 }
 @media only screen and (min-width: 992px) {
     .about .list__item {
@@ -1559,10 +1617,8 @@ header .tel:hover {
         height: inherit;
     }
 }
-@media only screen and (min-width: 992px) {
-    .about .list__img:first-of-type(1) {
-        margin-left: 30px;
-    }
+.about .list__img:first-of-type {
+    margin-left: 30px;
 }
 .about .list .img__wrap {
     position: relative;
@@ -1584,7 +1640,7 @@ header .tel:hover {
 }
 @media only screen and (min-width: 1200px) {
     .about .list .img__wrap:before {
-        left: 20px;
+        left: 40px;
         -webkit-transform: none;
             -ms-transform: none;
                 transform: none;
@@ -1627,11 +1683,19 @@ header .tel:hover {
     font-weight: 700;
 }
 .about .list__text {
-    padding: 0 33px;
+    padding: 0 15px;
+}
+@media only screen and (min-width: 768px) {
+    .about .list__text {
+        padding: 0 33px;
+    }
 }
 .about__mobile {
     display: none;
     position: absolute;
+    -webkit-transition: all 0.3s linear;
+         -o-transition: all 0.3s linear;
+            transition: all 0.3s linear;
 }
 @media only screen and (min-width: 1200px) {
     .about__mobile {
@@ -1937,12 +2001,19 @@ header .tel:hover {
 }
 .works {
     position: relative;
-    background: url(../images/back__works.jpg) no-repeat center / cover;
+    background: url(../images/back__works-sm.jpg) 70% 50%;
     color: #1f2329;
     overflow: hidden;
 }
-.works__title {
-    padding-left: 30px;
+@media only screen and (min-width: 768px) {
+    .works {
+        background: url(../images/back__works.jpg) no-repeat center / cover;
+    }
+}
+@media only screen and (min-width: 768px) {
+    .works__title {
+        padding-left: 30px;
+    }
 }
 .works__decor {
     display: none;
@@ -1985,7 +2056,7 @@ header .tel:hover {
 .works .list__item {
     position: relative;
     width: 290px;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     text-align: center;
     counter-increment: li;
     list-style-type: none;
@@ -2070,7 +2141,7 @@ header .tel:hover {
 }
 .works .list__text {
     padding: 10px;
-    min-height: 85px;
+    /* min-height: 85px; */
     position: relative;
     font-size: 18px;
     color: #2d3440;
@@ -2132,7 +2203,7 @@ header .tel:hover {
 }
 @media only screen and (min-width: 1200px) {
     .works__mobile:nth-of-type(2) {
-        top: 880px;
+        top: 960px;
         left: -170px;
     }
 }
@@ -2179,8 +2250,8 @@ header .tel:hover {
 }
 @media only screen and (min-width: 1200px) {
     .works__mobile:nth-of-type(5) {
-        top: 1020px;
-        right: 190px;
+        top: 1120px;
+        right: 150px;
     }
 }
 @media only screen and (min-width: 1600px) {
@@ -2217,7 +2288,7 @@ header .tel:hover {
 }
 @media only screen and (min-width: 768px) {
     .question__box {
-        max-width: initial;
+        max-width: 780px;
         text-align: inherit;
     }
 }
@@ -2478,7 +2549,7 @@ header .tel:hover {
 .contacts__list {
     text-align: center;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 992px) {
     .contacts__list {
         text-align: left;
     }
@@ -2494,7 +2565,7 @@ header .tel:hover {
     font-weight: 700;
     text-align: center;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 992px) {
     .contacts .box__title {
         text-align: left;
     }
@@ -2536,7 +2607,7 @@ header .tel:hover {
     }
 }
 .footer__logo {
-    width: 350px;
+    max-width: 350px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2553,6 +2624,7 @@ header .tel:hover {
 }
 @media only screen and (min-width: 992px) {
     .footer__logo {
+        width: 350px;
         -webkit-box-orient: horizontal;
         -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -2735,15 +2807,18 @@ label {
 }
 .formBox {
     position: relative;
-    background: #59c6ff;
+    background: #007fe3;
     padding: 30px 15px;
     max-width: 400px;
     margin: 20px auto;
     text-align: center;
+    border-radius: 10px;
 }
 .formBox__title {
+    margin: 10px 0;
     padding-top: 5px;
-    font-size: 24px;
+    padding-bottom: 15px;
+    font-size: 28px;
     font-weight: 700;
     color: #fff;
 }
@@ -2896,6 +2971,22 @@ label {
         /* box-shadow: 0 0 0 0 rgba(204,169,44, 0); */
         -webkit-transform: scale(1);
                 transform: scale(1);
+    }
+}
+@-webkit-keyframes growLine {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 100%;
+    }
+}
+@keyframes growLine {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 100%;
     }
 }
 .slick-prev, .slick-next {
@@ -3055,7 +3146,7 @@ label {
     display: block;
     width: 40px;
     height: 2px;
-    background: #df3e51;
+    background: #fff;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -3070,7 +3161,7 @@ label {
     content: '';
     position: absolute;
     height: 2px;
-    background: #df3e51;
+    background: #fff;
     width: 40px;
     top: 50%;
     left: 50%;

@@ -37,6 +37,14 @@ $('.burger').click(function() {
 });
 
 
+$('.header__link').click(function() {
+
+  $(".burger").removeClass('active').fast;
+  $('.overlay').removeClass('open').fast;
+
+});
+
+
 
 $(document).mouseup(function(e) {
   if (!$menu.is(e.target) && $menu.has(e.target).length === 0) {
