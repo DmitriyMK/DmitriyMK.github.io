@@ -1,0 +1,143 @@
+@media @mobile {
+
+}
+@media @tablet {
+
+}
+@media @desktop {
+
+}
+@media @desktop-xl {
+
+}
+@media @desktop-xl-2 {
+
+}
+@media @desktop-xll {
+
+}
+
+
+.details {
+	position: relative;
+	overflow: hidden;
+	background: url(../images/back__gift.jpg)center/cover;
+
+	&:before {
+			content: '';
+			position: absolute;
+			bottom: -300px;
+			left: 0;
+
+			width: 305px;
+			height: 679px;
+
+			background: url(../images/decor__left.png)no-repeat center/cover;
+		}
+
+		&:after {
+			content: '';
+			position: absolute;
+			top: -300px;
+			right: 0;
+			width: 305px;
+			height: 679px;
+
+			background: url(../images/decor__right.png)no-repeat center/cover;
+		}
+
+	&__box {
+		display: flex;
+		justify-content: space-around;
+	}
+
+	&__list {
+		width: 470px;
+		padding-top: 30px;
+	}
+
+
+	&__item {
+		display: flex;
+		align-items: center;
+
+		position: relative;
+		counter-increment: li;
+		min-height: 46px;
+		padding-left: 60px;	
+		margin-bottom: 30px;
+
+		font-size: 17px;
+		color: #b3a6bf;
+
+		&:before {
+			content: "";
+			position: absolute;
+			top: 50%;
+			left: 0;
+			transform: translateY(-50%);
+			width: 42px;
+			height: 42px;
+			background: url(../images/round.png);			
+		}
+
+		&:after{
+			content: "" counter(li);
+			position: absolute;
+			padding: 0 5px;
+			top: 50%;
+			left: 5px;
+			transform: translateY(-52%);
+
+			font-size: 46px;
+			font-family: @ff2;
+			font-weight: 900;
+			color: @yellow;			
+		}
+	}
+
+
+	.details__list-right {
+		width: 470px;
+		padding-top: 30px;
+		counter-reset: test 3;
+	}
+
+	.details__item-right {
+		position: relative;
+		
+		min-height: 46px;
+		padding-left: 60px;	
+		margin-bottom: 30px;
+
+		font-size: 17px;
+		color: #b3a6bf;
+
+		&:before {
+			content: "";
+			position: absolute;
+			top: 50%;
+			left: 0;
+			transform: translateY(-50%);
+			width: 42px;
+			height: 42px;
+			background: url(../images/round.png);			
+		}
+
+		&:after{
+			counter-increment: test;
+			content:  "" counter(test);
+
+			position: absolute;
+			padding: 0 5px;
+			top: 50%;
+			left: 3px;
+			transform: translateY(-52%);
+
+			font-size: 46px;
+			font-family: @ff2;
+			font-weight: 900;
+			color: @yellow;			
+		}
+	}
+}

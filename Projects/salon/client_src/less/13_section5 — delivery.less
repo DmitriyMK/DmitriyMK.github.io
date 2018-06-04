@@ -1,0 +1,121 @@
+@media @mobile {
+
+}
+@media @tablet {
+
+}
+@media @desktop {
+
+}
+@media @desktop-xl {
+	
+}
+@media @desktop-xl-2 {
+
+}
+@media @desktop-xll {
+	
+}
+
+
+.delivery {
+	color: @black;
+	background: url(../images/back__white.jpg)no-repeat center/cover;
+	
+	.list {
+		display: flex;
+		justify-content: space-around;
+		flex-wrap: wrap;
+		margin-top: 40px;
+
+		@media @tablet {
+		}
+
+		@media @desktop {
+			margin-top: 60px;
+			justify-content: space-around;
+		}
+
+		@media @desktop-xl {
+			flex-wrap: nowrap;
+			padding: 0 120px;
+		}
+
+		@media @desktop-xl-2 {
+
+		}
+
+		@media @desktop-xll {
+			margin-bottom: inherit;
+		}
+
+		&__item {
+			position: relative;
+			width: 300px;
+			margin-bottom: 20px;
+			text-align: center;
+			counter-increment: li;	
+
+			&:before {
+				content: "" counter(li);
+				position: absolute;
+				padding: 0 5px;
+				top: 95px;
+				left: 28px;
+
+				font-size: 18px;
+				color: #fff;
+				background: #cdcdcd;				
+			}
+
+			@media @tablet {
+				margin-bottom: 40px;
+			}
+			@media @desktop {
+				width: 50%;
+			}
+			@media @desktop-xl {
+				width: 300px;
+			}
+		}	
+	}
+
+
+	&__img {
+		position: relative;
+		z-index: 10;
+		height: 200px;
+
+		@media @desktop {
+			height: inherit;
+		}
+	}
+
+	.img__wrap {
+		position: relative;
+		z-index: 1;
+	}
+
+	&__text {
+		padding: 5px 15px;
+		font-size: 16px;
+		color: #868488;
+	}
+
+	.btn-red {
+		margin-top: 15px;
+		width: 160px;
+		height: 42px;
+		background-image: -moz-linear-gradient( 90deg, rgb(255,32,21) 0%, rgb(255,35,24) 97%);
+		background-image: -webkit-linear-gradient( 90deg, rgb(255,32,21) 0%, rgb(255,35,24) 97%);
+		background-image: -ms-linear-gradient( 90deg, rgb(255,32,21) 0%, rgb(255,35,24) 97%);
+		box-shadow: 0px 1px 0px 0px rgba(255, 255, 255, 0.004),0px 4px 18px 0px rgba(234, 234, 234, 0.85),0px 4px 5px 0px rgba(0, 0, 0, 0.09),inset 0px -2px 0px 0px rgba(255, 60, 50, 0.57),inset 0px -3px 0px 0px rgba(219, 30, 20, 0.004),inset 0px 1px 0px 0px rgba(227, 22, 12, 0.004),inset 0px -4px 0px 0px rgba(255, 255, 255, 0.4);
+		border-radius: 25px;
+		color: #fff;
+		outline: none;
+		transition: box-shadow .3s linear;
+		&:hover {
+			box-shadow: none;
+		}
+	}
+}

@@ -52,6 +52,8 @@
 	}
 
 	.delivery {
+		background: transparent;
+		color: inherit;
 		display: flex;
 		align-items: center;
 		&__icon {
@@ -102,6 +104,7 @@
 		border: 3px solid @yellow;
 		border-radius: 15px;
 		z-index: 1;
+		outline: none;
 		
 
 		&:before {
@@ -127,36 +130,111 @@
 	/*  ¯\_(ツ)_/¯  */
 
 	&__center {
-		padding-top: 15px;
+		padding-top: 130px;
 		text-align: center;
 		text-transform: uppercase;
 
 		&-title {
-			font-size: 60px;
+			font-size: 66px;
 			font-family: @ff2;
 			font-weight: 900;
 		}
 
 		&-subtitle {
-			font-size: 20px;
+			font-size: 24px;
 			font-weight: 600;
 			line-height: 34px;
-			padding-bottom: 15px;
+			padding-top: 25px;
+			padding-bottom: 20px;
 		}
 	}
 
 	/*  ¯\_(ツ)_/¯  */
 
 	&__end {
-		padding-top: 220px;
+		padding-top: 290px;
 
 		.price {
+			position: relative;
 			display: flex;
+			align-items: center;
 			justify-content: flex-end;
-			padding-right: 150px;
+			padding-right: 140px;
+			z-index: 10;
+			&:before {
+				content: '';
+				display: block;
+				position: absolute;
+				top: -15px;
+				right: 25px;
+				width: 377px;
+				height: 84px;
+
+				border-radius: 10px;
+				background: url(../images/back__price.png);
+				z-index: -1;
+			}	
 
 			p:nth-child(1) {
-				
+				text-transform: uppercase;
+				text-align: right;
+				font-size: 14px;
+				font-weight: 600;
+			}
+			p:nth-child(2) {
+				margin: 0 30px;
+				position: relative;
+				z-index: 10;
+				font-size: 14px;
+				font-weight: 600;
+				color: #000;
+				&:before {
+					content: '';
+					position: absolute;
+					top: 40%;
+					left: 70%;
+					transform: translate(-50%, -50%);
+					width: 47px;
+					height: 47px;
+					background: url(../images/coupon.png);
+					z-index: -1;
+				}
+			}
+			p:nth-child(3) {
+				position: relative;
+				font-size: 43px;
+				font-family: @ff2;
+				font-weight: 900;
+				sup {
+					position: absolute;
+					top: 7px;
+					right: -22px;
+					font-family: @ff2;
+					font-size: 14px;
+					font-weight: 800;
+					color: #b3a6bf;
+				}
+				sub {
+					position: absolute;
+					bottom: 7px;
+					right: -32px;
+					font-family: @ff1;
+					font-size: 14px;
+					font-weight: 600;
+					color: #fff;
+				}
+			}
+		}
+
+		.arr-down {
+			margin: 90px 0 30px 0;
+			display: flex;
+			justify-content: center;
+
+			animation: arrow-bounce 2.5s infinite;
+
+			&:hover {
+				animation-play-state: paused;
 			}
 		}
 	}

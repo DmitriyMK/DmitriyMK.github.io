@@ -1,0 +1,240 @@
+@media @mobile {
+
+}
+@media @tablet {
+
+}
+@media @desktop {
+
+}
+@media @desktop-xl {
+	
+}
+@media @desktop-xl-2 {
+
+}
+@media @desktop-xll {
+	
+}
+
+.gift{
+	background: url(../images/back__gift.jpg)no-repeat center/cover;
+	overflow: hidden;
+	&__box {
+		position: relative;
+		display: flex;
+		justify-content: space-between;
+
+		&:before {
+			content: '';
+			position: absolute;
+			top: -250px;
+			right: 76px;
+			width: 738px;
+			height: 685px;
+			background: url(../images/gift.png)no-repeat center/contain;
+
+		}
+	}
+
+	&__ask {
+		font-size: 50px;
+		font-weight: 900;
+		line-height: 43px;
+		font-family: @ff2;
+		text-transform: uppercase;
+	}
+
+	&__decor {
+		padding-top: 32px;
+	}
+
+	&__propose {
+		padding-top: 25px;
+		display: flex;
+	}
+
+	&__content {
+		margin-left: 25px;
+
+		.text__accent {
+			font-size: 20px;
+			font-weight: 600;
+		}
+		.text {
+			color: #b3a6bf;
+		}
+	}
+
+	.form {
+		margin-top: -10px; 
+		width: 278px;
+		min-height: 315px;
+
+		position: relative;
+		text-align: center;
+		border-top: 3px solid @yellow;
+		border-radius: 10px;
+		background-image: -moz-linear-gradient( 90deg, rgb(133,63,199) 10%, rgb(126,67,177) 100%);
+		background-image: -webkit-linear-gradient( 90deg, rgb(133,63,199) 10%, rgb(126,67,177) 100%);
+		background-image: -ms-linear-gradient( 90deg, rgb(133,63,199) 10%, rgb(126,67,177) 100%);
+		box-shadow: inset 0px 3px 0px 0px rgba(255, 186, 0, 0.004);
+		z-index: 10;
+		
+
+		form {
+			margin-top: -1.5px;
+		}
+
+		&__title {
+			padding-top: 22px;
+			padding-bottom: 10px;
+			font-size: 20px;
+			font-weight: 600;
+			text-align: center;
+			text-transform: uppercase;
+		}
+
+		&__text {
+			display: flex;
+			justify-content: center;
+
+			.text {
+				font-size: 15px;
+				padding-right: 10px;
+				color: #b3a6bf;
+			}
+		}
+
+		&__line {
+			display: inline-block;
+			position: relative;
+			width: 236px;
+			height: 48px;
+			padding: 0 35px;
+			color: #b3a6bf;
+			border: none!important;
+			background-color: rgb(108, 55, 154);
+			box-shadow: inset 0px 1px 0px 0px rgba(102, 52, 145, 0.004);
+		}
+
+		.inputWrap1 {
+			position: relative;
+			&:before {
+				content: '\e803';
+				position: absolute;
+				font-family: 'Fontello';
+				left: 0;
+				top: 38px;
+				left: 35px;
+				font-size: 15px;
+				z-index: 10;
+				color: @yellow;
+			}
+		}
+		.inputWrap2 {
+			position: relative;
+			&:before {
+				content: '\e804';
+				position: absolute;
+				font-family: 'Fontello';
+				left: 0;
+				top: 15px;
+				left: 35px;
+				font-size: 17px;
+				z-index: 10;
+				color: @yellow;
+			}
+		}
+
+		.name {
+			position: relative;
+
+			margin-top: 23px;
+			border-top-left-radius: 10px;
+			border-top-right-radius: 10px; 
+		}
+		.phone-mask {
+			margin-bottom: 23px;
+			border-bottom-left-radius: 10px;
+			border-bottom-right-radius: 10px; 
+		}
+
+		.btn__wrap {
+			width: 230px;
+			height: 42px;
+			position: relative;
+			z-index: 10;
+			
+			margin: auto;
+			&:before {
+				content: '';
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				width: 0;
+				height: 100%;
+				background: @yellow;
+				transition: all .5s linear;
+				border-radius: 21px;	
+				z-index: -1;
+			}
+
+			&:hover {
+				&:before {
+					width: 100%;
+				}
+			}
+		}
+
+		.btn {
+			width: 230px;
+			height: 42px;
+			font-size: 16px;
+			font-weight: 900;
+			font-family: @ff2;
+			text-transform: uppercase;
+
+			border: 3px solid @yellow;
+			border-radius: 21px;			
+		}
+	}
+
+	.slider__title {
+		margin-top: 65px;
+		position: relative;
+		text-transform: uppercase;
+		font-size: 18px;	
+		font-family: @ff2;
+		font-weight: 900;
+		text-align: center;
+
+		&:before {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 1166px;
+			height: 17px;
+			background: url(../images/devider-big.png);
+		}
+	}
+
+	.slider__present {
+		padding: 30px 20px 0 20px;
+	}
+
+	.slide {
+		outline: none;
+		img {
+			display: block;
+			margin: auto;
+		}
+		.text {
+			width: 80px;
+			color: #b3a6bf;
+			user-select: text;
+			margin: auto;
+		}
+	}
+}

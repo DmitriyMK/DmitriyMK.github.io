@@ -39,9 +39,9 @@
 	<script defer src="./libs/jquery.validate.min.js"></script>
 	<script defer src="./libs/waypoints.min.js"></script>
 	<script defer src="./libs/jquery.counterup.min.js"></script>
+	<script defer src="./libs/masked-input.js"></script>
 	<!-- <script defer src="./libs/jquery-modal-video.min.js"></script> -->
 </head>
-
 <body>
 
 	<header class="header" id="header">	
@@ -75,7 +75,7 @@
 					</ul>
 				</div>
 
-				<button class="header__btn btn">Заказать звонок</button>
+				<button class="header__btn btn" data-remodal-target="callback">Заказать звонок</button>
 			</div>
 
 
@@ -100,21 +100,370 @@
 
 
 
-<!-- 
-	<section class="">
-		<span class="anchor" id=""></span>
+
+	<section class="guarantee" id="guarantee">
 		<div class="container">
-			<h2 class="__title section__title"></h2>
+			<h2 class="guarantee__title section__title">Наши гарантии</h2>
+			<div class="section-devider">
+				<img src="images/devider-gray.png" alt="decor">
+			</div>
+
+			<ul class="list">
+				<li class="list__item fadeInUp wow" data-wow-offset="80" data-wow-delay="0.2s" data-wow-duration="1s">
+					<div class="img__wrap">
+						<img class="list__img" src="images/guarantee1.png" alt="Консультация 24/7">
+					</div>
+					<h3 class="list__title">Консультация 24/7</h3>
+					<p class="list__text">Мы отвечаем за Ваш успех в маникюрном деле, и  при необходимости будем Вас  консультировать  24 часа бесплатно.</p>
+				</li>
+
+				<li class="list__item fadeInUp wow" data-wow-offset="80" data-wow-delay="0.2s" data-wow-duration="1s">
+					<div class="img__wrap">
+						<img class="list__img" src="images/guarantee2.png" alt="Честное сотрудничество">
+					</div>
+					<h3 class="list__title">Честное сотрудничество</h3>
+					<p class="list__text">Наша компания вернет Вам деньги, если Вас что не устроило.</p>
+				</li>
+
+				<li class="list__item fadeInUp wow" data-wow-offset="80" data-wow-delay="0.2s" data-wow-duration="1s">
+					<div class="img__wrap">
+						<img class="list__img" src="images/guarantee3.png" alt="Честное сотрудничество">
+					</div>
+					<h3 class="list__title">Обмен и возврат</h3>
+					<p class="list__text">Бесплатно обменяем товар, если он пострадал при перевозке.</p>
+				</li>
+
+				<li class="list__item fadeInUp wow" data-wow-offset="80" data-wow-delay="0.2s" data-wow-duration="1s">
+					<div class="img__wrap">
+						<img class="list__img" src="images/guarantee4.png" alt="Удобный сервис">
+					</div>
+					<h3 class="list__title">Удобный сервис</h3>
+					<p class="list__text">Обеспечим быструю доставку расходных материалов по выгодной цене.</p>
+				</li>
+			</ul>
 		</div>
 	</section>
 
--->
+
+
+
+	<section class="progress">
+		<div class="container">
+			<h2 class="progress__title section__title">Наши достижения в цифрах</h2>
+			<div class="section-devider">
+				<img src="images/devider-violet.png" alt="decor">
+			</div>
+
+			<ul class="statistics">
+				<li class="statistics__item">
+					<div class="ico_tart stat__icon"></div>
+					<p class="statistics__title counter">2016</p>
+					<p class="statistics__text">Год основания компании</p>
+					<img class="devider" src="images/devider-vertica-small2.png" alt="decor">
+				</li>
+				<li class="statistics__item plus">
+					<div class="ico_pack stat__icon"></div>
+					<p class="statistics__title"><span class="counter">3000</span><span class="plus">+</span></p>
+					<p class="statistics__text">Стартовых наборов продано за последний год</p>
+					<img class="devider2" src="images/devider-vertica-small2.png" alt="decor">
+				</li>
+				<li class="statistics__item plus">
+					<div class="ico_queen stat__icon"></div>
+					<p class="statistics__title"><span class="counter">2000</span><span class="plus">+</span></p>
+					<p class="statistics__text">Мастеров маникюра и педикюра наши клиенты</p>
+				</li>
+			</ul>
+		</div>
+	</section>
 
 
 
 
+	<section class="catalog">
+		<div class="container">
+			<h2 class="catalog__title section__title">Стандарт наборы</h2>
+			<div class="section-devider">
+				<img src="images/devider-gray.png" alt="decor">
+			</div>
+		</div>
+	</section>
 
 
+
+
+	<section class="gift">
+		<div class="container">
+			<h2 class="hidden">Подарок</h2>
+
+			<div class="gift__box">
+				<div class="box__left">
+					<h3 class="gift__ask">Выбрали <br> подходящий набор?</h3>
+					<img class="gift__decor" src="images/line--color.png" alt="decor">
+
+					<div class="gift__propose">
+						<div class="ico_cursor"></div>
+						<div class="gift__content">
+							<p class="text__accent">ОФОРМЛЯЙТЕ ЗАКАЗ СЕГОДНЯ</p>
+							<p class="text">и получите гарантированный подарок!</p>
+						</div>
+					</div>
+
+					<div class="gift__timer">
+						<p class="timer__text">До конца акции осталось:</p>
+					</div>
+				</div>
+
+				<div class="box__right form">
+					<form action="mail.php" method="post" class="form white-popup form-validate" name="Receive Gift">
+						<!-- Hidden Required Fields -->
+						<input type="hidden" name="project_name" value="НогтиРост">
+						<input type="hidden" name="admin_email" value="dm@push-k.ua">
+						<input type="hidden" name="form_subject" value="НогтиРост > Заказ на обратный звонок и получение подарка">
+						<input type="hidden" name="whatform" value="НогтиРост > Заказ на обратный звонок и получение подарка">
+						<!-- END Hidden Required Fields -->
+
+						<h4 class="form__title">ЗАПОЛНИТЕ ФОРМУ</h4>
+						<div class="form__text">
+							<p class="text">и гарантированно <br> получите <span class="accent">подарок</span></p>
+							<div class="ico_gift"></div>
+						</div>
+
+						<div class="inputWrap1">
+							<input class="form__line name" type="text" name="Имя&nbsp;покупателя" placeholder="Ваше имя" required>
+						</div>
+						<div class="inputWrap2">
+							<input class="form__line phone-mask" type="tel" name="Телефон&nbsp;покупателя" placeholder="Ваш телефон" required>
+						</div>				
+						
+						<div class="btn__wrap">
+							<input type="submit" class="btn" value="Заказать звонок"> 
+						</div>
+						
+					</form>
+				</div>
+			</div>
+
+			<div class="slider__gift">
+				<h4 class="slider__title">ПОДАРКИ</h4>
+
+				<ul class="slider__present slider">
+					<li class="slide">
+						<div class="slide__img">
+							<img src="images/present1.png" alt="Веер типс">
+						</div>
+						<div>
+							<h4 class="text">Веер типс</h4>
+						</div>
+					</li>
+
+					<li class="slide">
+						<div class="slide__img">
+							<img src="images/present2.png" alt="Набор для стемпинга">
+						</div>
+						<div>
+							<h4 class="text">Набор для стемпинга</h4>
+						</div>
+					</li>
+
+					<li class="slide">
+						<div class="slide__img">
+							<img src="images/present3.png" alt="Набор для стемпинга">
+						</div>
+						<div>
+							<h4 class="text">Веер типс</h4>
+						</div>
+					</li>
+
+					<li class="slide">
+						<div class="slide__img">
+							<img src="images/present4.png" alt="Набор для стемпинга">
+						</div>
+						<div>
+							<h4 class="text">Веер типс</h4>
+						</div>
+					</li>
+
+					<li class="slide">
+						<div class="slide__img">
+							<img src="images/present5.png" alt="Набор для стемпинга">
+						</div>
+						<div>
+							<h4 class="text">Веер типс</h4>
+						</div>
+					</li>
+
+					<li class="slide">
+						<div class="slide__img">
+							<img src="images/present6.png" alt="Набор для стемпинга">
+						</div>
+						<div>
+							<h4 class="text">Веер типс</h4>
+						</div>
+					</li>
+
+					<li class="slide">
+						<div class="slide__img">
+							<img src="images/present7.png" alt="Набор для стемпинга">
+						</div>
+						<div>
+							<h4 class="text">Веер типс</h4>
+						</div>
+					</li>
+				</ul>
+			</div>
+
+
+		</div>
+	</section>
+
+
+
+
+	<section class="delivery">
+		<div class="container">
+			<h2 class="delivery__title section__title">Как получить стартовый набор?</h2>
+			<div class="section-devider">
+				<img src="images/devider-gray.png" alt="decor">
+			</div>
+
+			<ol class="list">
+				<li class="list__item fadeInUp wow" data-wow-offset="80" data-wow-delay="0.2s" data-wow-duration="1s">
+					<div class="img__wrap">
+						<img class="list__img" src="images/step1.png" alt="Выбор">
+					</div>
+					<p class="list__text">Вы выбираете набор на сайте и оставляете заявку.</p>
+					<button class="btn-red" data-remodal-target="order">Оставить заявку</button>
+				</li>
+
+				<li class="list__item fadeInUp wow" data-wow-offset="80" data-wow-delay="0.2s" data-wow-duration="1s">
+					<div class="img__wrap">
+						<img class="list__img" src="images/step2.png" alt="Общение">
+					</div>
+					<p class="list__text">Наш менеджер связывается с Вами в течение 10 минут.</p>
+				</li>
+
+				<li class="list__item fadeInUp wow" data-wow-offset="80" data-wow-delay="0.2s" data-wow-duration="1s">
+					<div class="img__wrap">
+						<img class="list__img" src="images/step3.png" alt="Честное сотрудничество">
+					</div>
+					<p class="list__text">Вы оставляете свой адрес и мы оперативно отправляем Ваш набор.</p>
+				</li>
+			</ol>
+		</div>
+	</section>
+
+
+
+
+	<section class="details">
+		<div class="container">
+			<h2 class="delivery__title section__title">Наша продукция для Вас, если Вы хотите:</h2>
+			<div class="section-devider">
+				<img src="images/devider-violet.png" alt="decor">
+			</div>
+
+			<div class="details__box">
+
+				<ol class="details__list">
+					<li class="details__item">Работать на себя и стать независимой.</li>
+					<li class="details__item">Ухаживать за своими ноготками дома и не переплачивать мастерам.</li>
+					<li class="details__item">Открыть  маникюрный салон или развивать уже существующий.</li>
+				</ol>
+
+				<ol class="details__list-right">
+					<li class="details__item-right">Став совершеннолетней, освоить востребованную профессию.</li>
+					<li class="details__item-right">Изменить род своей деятельности и наконец-то получать удовольствие.</li>
+					<li class="details__item-right">Сделать подарок жене, девушке, сестре,  дочке, внучке, бабушке или подруге.</li>
+				</ol>
+			</div>
+		</div>
+	</section>
+
+
+
+
+	<section class="office">
+		<div class="container">
+			<h2 class="office__title section__title">Офис и сотрудники компании</h2>
+			<div class="section-devider">
+				<img src="images/devider-gray.png" alt="decor">
+			</div>
+
+			<div class="office__box">
+
+				<div class="ceo">
+					<img src="images/photo/ceo.png" alt="Наумчик Ольга">
+					<div class="content">
+						<p class="name">Наумчик Ольга</p>
+						<p class="position">Основатель компании</p>
+					</div>
+				</div>
+
+
+				<div class="office__slider slider">
+					<div class="slide">
+						<img src="images/photo/office.jpg" alt="Офис">
+					</div>
+					<div class="slide">
+						<img src="images/photo/office.jpg" alt="Офис">
+					</div>
+					<div class="slide">
+						<img src="images/photo/office.jpg" alt="Офис">
+					</div>
+				</div>
+
+
+				<div class="workers">
+					<div class="person worker1">
+						<img src="images/photo/office1.png" alt="Попсий Дарья">
+						<div class="content">
+							<p class="name">Попсий <br> Дарья</p>
+							<p class="position">Мастер маникюра и продавец-консультант</p>
+						</div>
+					</div>
+
+					<div class="person worker2">
+						<img src="images/photo/office2.png" alt="Тимошенко Инна">
+						<div class="content">
+							<p class="name">Тимошенко <br> Инна</p>
+							<p class="position">Менеджер по продажам</p>
+						</div>
+					</div>
+					
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+
+
+
+	<section class="review">
+		<div class="container">
+			<h2 class="review__title section__title">Отзывы наших клиентов</h2>
+			<div class="section-devider">
+				<img src="images/devider-violet.png" alt="decor">
+			</div>
+
+			<div class="review__slider">
+
+				<div class="slide">
+					<div class="slide__text">
+						<p>Получила посылочку уже второй раз! Посылка аккуратно упакована, быстрая доставка! Очень приятно работать с такими людьми, честными и порядочными!</p>
+						<p>Спасибо за ваш труд! Отдельное спасибо за подарочек)</p>
+					</div>
+					<div class="reviewer">
+						<div class="reviewer__photo"></div>
+						<div class="reviewer__about">
+							<p class="name">Алена Резниченко</p>
+							<p class="city">г. Запорожье</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
 
 
 <!-- 	<section class="contacts">
@@ -179,6 +528,24 @@
 	<h3 class="thanks__title">Благодарим Вас!</h3>
 	<p class="thanks__text">Мы свяжемся с Вами <br>в ближайшее время.</p>
 </div>
+
+<!-- MODALS -->
+<div class="remodal formBox" data-remodal-id="callback"> 
+	<button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
+	<form class="form form-validate" name="callback">
+		<!-- Hidden Required Fields -->
+		<input type="hidden" name="project_name" value="FlashMarket">
+		<input type="hidden" name="admin_email" value="dm@push-k.ua">
+		<input type="hidden" name="form_subject" value="Обратный звонок">
+		<input type="hidden" name="whatform" value="FlashMarket > Обратный звонок">
+		<!-- END Hidden Required Fields -->
+		<p class="formBox__title">Заполните форму</p>
+		<p class="formBox__text">И наш менеджер свяжется с Вами в ближайшее время</p>
+		<input class="form__line name" type="text" name="name" placeholder="Ваше имя" required autofocus>
+		<input class="form__line phone-mask" type="tel" name="phone" placeholder="Ваш телефон" required>
+		<input type="submit" class="btn" value="Заказать звонок"> 
+	</form>
+</div> 
 
 
 <!-- Load Scripts -->
