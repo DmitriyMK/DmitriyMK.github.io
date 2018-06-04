@@ -15,9 +15,17 @@
 
 .header {
 
-	padding-top: 25px;
 	text-align: center;
 	text-transform: uppercase;
+
+	.img__wrap {
+		max-width: 500px;
+		img {
+			display: block;
+			width: 100%;
+			height: auto;
+		}
+	}
 
 	&__logo {
 		display: inline-block;
@@ -252,6 +260,7 @@ $button-width: 35px;
 /* SECTION 2 GALLERY */
 
 .gallery {
+	padding-top: 0;
 	flex: 1 1 0;
 	.grid {
 		position: relative;
@@ -390,8 +399,8 @@ $button-width: 35px;
 		}
 
 		p {
-			font-size: 16px;
-			padding-bottom: 20px;
+			font-size: 17px;
+			padding-bottom: 10px;
 		}
 	}
 }
