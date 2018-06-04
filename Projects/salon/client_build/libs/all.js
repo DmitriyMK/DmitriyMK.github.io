@@ -78,30 +78,31 @@ $(document).ready(function() {
     });*/
 
 
-  $('.slider__present').slick({
-    slidesToShow: 7,
-    slidesToScroll: 1,
-    arrows: false,
-    dots: false,
-    infinite: true,
+    $('.slider__present').slick({
+      slidesToShow: 7,
+      slidesToScroll: 1,
+      arrows: false,
+      dots: false,
+      infinite: true,
+
+    });
+
+
+    $('.office__slider').slick({
+      arrows: true,
+      dots: false,
+
+    });
+
+
+    $('.review__slider').slick({
+      slidesToShow: 2,
+      slidesToScroll: 1,
+      arrows: true,
+      dots: true,
+    });
 
   });
-
-
-  $('.office__slider').slick({
-    arrows: true,
-    dots: false,
-
-  });
-
-
-   $('.review__slider').slick({
-    arrows: true,
-    dots: false,
-
-  });
-
-});
 
 
 

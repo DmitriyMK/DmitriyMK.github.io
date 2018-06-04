@@ -2577,7 +2577,44 @@ section {
     height: 679px;
     background: url(../images/decor__right.png) no-repeat center / cover;
 }
+.review__slider .slick-prev, .review__slider .slick-next {
+    width: 40px;
+    height: 40px;
+}
+.review__slider .slick-prev {
+    left: 0;
+}
+.review__slider .slick-next {
+    right: 0;
+}
+.review__slider .slick-prev:before, .review__slider .slick-next:before {
+    display: block;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+    z-index: 10;
+    color: #1b1b1b;
+    font-size: 20px;
+}
+.review__slider .slick-prev:before {
+    left: 10px;
+    content: '\e805';
+}
+.review__slider .slick-next:before {
+    right: 10px;
+    content: '\e806';
+}
 .review .slide {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    margin-top: 30px;
     outline: none;
     max-width: 490px;
 }
@@ -2592,6 +2629,46 @@ section {
        -moz-user-select: text;
         -ms-user-select: text;
             user-select: text;
+}
+.review .slide__text p {
+    padding-bottom: 10px;
+}
+.review .slide .reviewer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-top: 20px;
+    -webkit-user-select: text;
+       -moz-user-select: text;
+        -ms-user-select: text;
+            user-select: text;
+}
+.review .slide .reviewer__photo {
+    margin-right: 30px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: url(../images/photo/review1.jpg) no-repeat 25% 0;
+}
+.review .slide .reviewer .name {
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.review .slide .reviewer .city {
+    color: #b3a6bf;
+}
+.review .turn .slide__text {
+    -webkit-box-ordinal-group: 3;
+    -ms-flex-order: 2;
+    order: 2;
+}
+.review .turn .reviewer {
+    -webkit-box-ordinal-group: 2;
+    -ms-flex-order: 1;
+    order: 1;
 }
 .remodal-first {
     padding-top: 95px;
