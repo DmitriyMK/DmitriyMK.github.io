@@ -1207,6 +1207,14 @@ section {
 .gift__content .text {
     color: #b3a6bf;
 }
+.gift .timer {
+    margin-top: 20px;
+    width: 350px;
+}
+.gift .timer__text {
+    color: #b3a6bf;
+    margin-top: 30px;
+}
 .gift .form {
     margin-top: -10px;
     width: 278px;
