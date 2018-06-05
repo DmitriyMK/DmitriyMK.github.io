@@ -1602,6 +1602,10 @@ button {
     -webkit-box-shadow: none;
             box-shadow: none;
 }
+.devider {
+    display: inline-block;
+    text-align: center;
+}
 body {
     position: relative;
     z-index: 1;
@@ -3280,21 +3284,21 @@ label {
     height: 35px;
     width: 36px;
 }
-.ico_car {
+.ico_pack {
     background-image: url(../images/icons/spritebox-sprite.png);
     background-repeat: no-repeat;
     background-position: -36px 0;
     height: 35px;
     width: 36px;
 }
-.ico_cursor {
+.ico_gift {
     background-image: url(../images/icons/spritebox-sprite.png);
     background-repeat: no-repeat;
     background-position: 0 -35px;
     height: 35px;
     width: 36px;
 }
-.ico_gift {
+.ico_queen {
     background-image: url(../images/icons/spritebox-sprite.png);
     background-repeat: no-repeat;
     background-position: -36px -35px;
@@ -3308,21 +3312,21 @@ label {
     height: 35px;
     width: 36px;
 }
-.ico_pack {
+.ico_cart {
     background-image: url(../images/icons/spritebox-sprite.png);
     background-repeat: no-repeat;
     background-position: -72px -35px;
     height: 35px;
     width: 36px;
 }
-.ico_cart {
+.ico_cursor {
     background-image: url(../images/icons/spritebox-sprite.png);
     background-repeat: no-repeat;
     background-position: 0 -70px;
     height: 35px;
     width: 36px;
 }
-.ico_queen {
+.ico_car {
     background-image: url(../images/icons/spritebox-sprite.png);
     background-repeat: no-repeat;
     background-position: -36px -70px;
@@ -3336,24 +3340,45 @@ label {
     height: 35px;
     width: 36px;
 }
-.ico_phone3 {
+.ico_locate {
     background-image: url(../images/icons/spritebox-sprite.png);
     background-repeat: no-repeat;
     background-position: -108px 0;
+    height: 18px;
+    width: 14px;
+}
+.ico_devider-violet {
+    background-image: url(../images/icons/spritebox-sprite.png);
+    background-repeat: no-repeat;
+    background-position: -122px 0;
+    height: 17px;
+    width: 294px;
+}
+.ico_devider-gray {
+    background-image: url(../images/icons/spritebox-sprite.png);
+    background-repeat: no-repeat;
+    background-position: -122px -17px;
+    height: 17px;
+    width: 254px;
+}
+.ico_phone3 {
+    background-image: url(../images/icons/spritebox-sprite.png);
+    background-repeat: no-repeat;
+    background-position: -376px -17px;
     height: 17px;
     width: 19px;
 }
 .ico_phone4 {
     background-image: url(../images/icons/spritebox-sprite.png);
     background-repeat: no-repeat;
-    background-position: -108px -17px;
+    background-position: -395px -17px;
     height: 17px;
     width: 19px;
 }
 .ico_phone2 {
     background-image: url(../images/icons/spritebox-sprite.png);
     background-repeat: no-repeat;
-    background-position: -108px -34px;
+    background-position: -122px -34px;
     height: 14px;
     width: 14px;
 }
