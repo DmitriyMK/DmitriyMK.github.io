@@ -634,10 +634,26 @@
 		<button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
 		<form class="form form-validate" name="callback">
 			<!-- Hidden Required Fields -->
-			<input type="hidden" name="project_name" value="FlashMarket">
+			<input type="hidden" name="project_name" value="НогтиРост">
 			<input type="hidden" name="admin_email" value="dm@push-k.ua">
-			<input type="hidden" name="form_subject" value="Обратный звонок">
-			<input type="hidden" name="whatform" value="FlashMarket > Обратный звонок">
+			<input type="hidden" name="form_subject" value="ОбратныйНогтиРостFlashMarket > Обратный звонок">
+			<!-- END Hidden Required Fields -->
+			<p class="formBox__title">Заполните форму</p>
+			<p class="formBox__text">И наш менеджер свяжется с Вами в ближайшее время</p>
+			<input class="form__line name" type="text" name="name" placeholder="Ваше имя" required autofocus>
+			<input class="form__line phone-mask" type="tel" name="phone" placeholder="Ваш телефон" required>
+			<input type="submit" class="btn" value="Заказать звонок"> 
+		</form>
+	</div> 
+
+	<div class="remodal formBox" data-remodal-id="order"> 
+		<button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
+		<form class="form form-validate" name="callback">
+			<!-- Hidden Required Fields -->
+			<input type="hidden" name="project_name" value="НогтиРост">
+			<input type="hidden" name="admin_email" value="dm@push-k.ua">
+			<input type="hidden" name="form_subject" value="Заявка на набор">
+			<input type="hidden" name="whatform" value="НогтиРост > Заявка на набор">
 			<!-- END Hidden Required Fields -->
 			<p class="formBox__title">Заполните форму</p>
 			<p class="formBox__text">И наш менеджер свяжется с Вами в ближайшее время</p>
@@ -656,7 +672,7 @@
 	<script src="libs/all.js"></script>
 
 
-	<script async defer src="https://maps.googleapis.com/maps/api/js?callback=initMap&key=AIzaSyDFnsXtzPC77ZP4pkabK8_yVr5qazdPCjc"></script>
+	<script async src="https://maps.googleapis.com/maps/api/js?callback=initMap&key=AIzaSyDFnsXtzPC77ZP4pkabK8_yVr5qazdPCjc"></script>
 	<script src="libs/map.js"></script>  
 
 

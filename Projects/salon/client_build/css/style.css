@@ -2177,8 +2177,10 @@ section {
 .gift .form .btn__wrap {
     width: 230px;
     height: 42px;
+    border-radius: 21px;
     position: relative;
     z-index: 10;
+    overflow: hidden;
     margin: auto;
 }
 .gift .form .btn__wrap:before {
