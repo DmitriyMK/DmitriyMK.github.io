@@ -2729,6 +2729,107 @@ section {
     -ms-flex-order: 1;
     order: 1;
 }
+.footer {
+    padding: 15px 0;
+    background-image: -webkit-gradient(linear, left bottom, left top, from(#191b24), to(#202530));
+    background-image: -webkit-linear-gradient(bottom, #191b24, #202530);
+    background-image:      -o-linear-gradient(bottom, #191b24, #202530);
+    background-image:         linear-gradient(to top, #191b24, #202530);
+}
+.footer__box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+@media only screen and (min-width: 992px) {
+    .footer__box {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    }
+}
+.footer__logo {
+    max-width: 350px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    text-align: center;
+}
+@media only screen and (min-width: 992px) {
+    .footer__logo {
+        width: 350px;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        text-align: inherit;
+    }
+}
+.footer__title {
+    padding-top: 8px;
+    font-size: 13px;
+}
+@media only screen and (min-width: 768px) {
+    .footer__title {
+        font-size: 15px;
+    }
+}
+@media only screen and (min-width: 992px) {
+    .footer__title {
+        padding-top: inherit;
+    }
+}
+.footer .footer__copy {
+    margin: 20px 0;
+    text-align: center;
+    font-size: 15px;
+}
+@media only screen and (min-width: 768px) {
+    .footer .footer__copy {
+        font-size: 15px;
+    }
+}
+.footer .agency {
+    text-align: center;
+}
+@media only screen and (min-width: 992px) {
+    .footer .agency {
+        text-align: right;
+    }
+}
+.footer .agency a {
+    font-size: 11.5px;
+}
+.footer .agency p {
+    font-size: 11px;
+    margin-bottom: 5px;
+}
+.footer .agency img {
+    width: 90px;
+}
 .remodal-first {
     padding-top: 95px;
     text-align: center;
