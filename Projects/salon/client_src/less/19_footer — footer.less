@@ -18,8 +18,9 @@
 }
 
 .footer {
-	padding: 15px 0;
-	background-image: linear-gradient(to top, #191b24, #202530);
+	padding: 25px 0;
+	background-color: rgb(99, 53, 138);
+
 
 	
 	&__box {
@@ -38,56 +39,48 @@
 	}
 
 	&__logo {
-		max-width: 350px;
 		display: flex;
-		flex-direction: column;
-		justify-content: space-around;
+		justify-content: space-between;
 		align-items: center;
-		text-align: center;
+		flex-basis: 300px;
 
-		@media @desktop {
-			width: 350px;
-			flex-direction: row;
-			justify-content: space-between;
-			text-align: inherit;
+		img {
+			margin-right: 15px;
+		}
+
+		.title {
+			font-size: 25px;
+			line-height: 1.1;
+			font-family: @ff2;
+			font-weight: 800;
+		}
+		.desc {
+			font-size: 15px;
+			color: #a799b5;
 		}
 	}
 
-	&__title {
-		padding-top: 8px;
-		font-size: 13px;
-		@media @tablet {
-			font-size: 15px;
+	.delivery {
+		background: transparent;
+		color: inherit;
+		display: flex;
+		align-items: center;
+		flex-basis: 650px;
+		&__icon {
+			margin-right: 15px;
 		}
-		@media @desktop {
-			padding-top: inherit;
-		}
-	}
+		&__title {
+			font-weight: 700;
 
-	.footer__copy {
-		margin: 20px 0;
-		text-align: center;
-		font-size: 15px;
-		@media @tablet {
-			font-size: 15px;
+			span {
+				font-weight: 400;
+				color: #b3a6bf;
+			}
 		}
 	}
 
 	.agency {
-		text-align: center;
-		@media @desktop {
-			text-align: right;
-		}
-		a {
-			font-size: 11.5px;
-		}
-		p {
-			font-size: 11px;
-			margin-bottom: 5px;
-		}
-		img {
-			width: 90px;
-		}
+
 	}
 } 
 
