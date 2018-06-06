@@ -703,22 +703,18 @@ button {
 .btn-red {
     width: 230px;
     height: 42px;
-    background-image: -webkit-linear-gradient(90deg, #ff2015 0%, #ff2318 97%);
-    background-image:     -ms-linear-gradient(90deg, #ff2015 0%, #ff2318 97%);
+    background: #ff2116;
     -webkit-box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.004), 0 4px 18px 0 rgba(234, 234, 234, 0.85), 0 4px 5px 0 rgba(0, 0, 0, 0.09), inset 0 -2px 0 0 rgba(255, 60, 50, 0.57), inset 0 -3px 0 0 rgba(219, 30, 20, 0.004), inset 0 1px 0 0 rgba(227, 22, 12, 0.004), inset 0 -4px 0 0 rgba(255, 255, 255, 0.4);
             box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.004), 0 4px 18px 0 rgba(234, 234, 234, 0.85), 0 4px 5px 0 rgba(0, 0, 0, 0.09), inset 0 -2px 0 0 rgba(255, 60, 50, 0.57), inset 0 -3px 0 0 rgba(219, 30, 20, 0.004), inset 0 1px 0 0 rgba(227, 22, 12, 0.004), inset 0 -4px 0 0 rgba(255, 255, 255, 0.4);
     border-radius: 21px;
     color: #fff;
     outline: none;
-    -webkit-transition: -webkit-box-shadow 0.3s linear;
-            transition: -webkit-box-shadow 0.3s linear;
-         -o-transition:         box-shadow 0.3s linear;
-            transition:         box-shadow 0.3s linear;
-            transition:         box-shadow 0.3s linear, -webkit-box-shadow 0.3s linear;
+    -webkit-transition: background-color 0.3s linear;
+         -o-transition: background-color 0.3s linear;
+            transition: background-color 0.3s linear;
 }
 .btn-red:hover {
-    -webkit-box-shadow: none;
-            box-shadow: none;
+    background: #e20b00;
 }
 .devider {
     display: inline-block;
@@ -1218,7 +1214,7 @@ section {
             transition: all 0.3s linear;
 }
 .catalog .tabs__box {
-    padding: 50px 0;
+    padding: 70px 0;
     background-color: #fafafa;
 }
 .catalog .tabs__box .pack {
@@ -1234,12 +1230,23 @@ section {
 .catalog .tabs__box .pack__img {
     position: absolute;
     left: 0;
-    top: 0;
+    top: 60px;
     max-width: 420px;
 }
 .catalog .tabs__box .pack__img-big {
-    max-width: 420px;
-    max-height: 290px;
+    position: relative;
+    width: 420px;
+    height: 340px;
+    background: #1b1b1b;
+    border-radius: 10px;
+}
+.catalog .tabs__box .pack__img-big img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
 }
 .catalog .tabs__box .pack__img-small {
     padding: 9px 0;
@@ -1261,7 +1268,6 @@ section {
     width: 100%;
     height: auto;
     outline: none;
-    border-radius: 10px;
 }
 .catalog .tabs__box .pack__title {
     text-transform: uppercase;
@@ -1327,7 +1333,7 @@ section {
     right: -22px;
     font-family: 'Exo', sans-serif;
     font-size: 14px;
-    font-weight: 800;
+    font-weight: 900;
     color: #b3a6bf;
 }
 .catalog .tabs__box .pack .priceNew p sub {

@@ -76,7 +76,7 @@
 		}
 
 		&__box {
-			padding: 50px 0;
+			padding: 70px 0;
 			background-color: #fafafa;
 
 			.pack {
@@ -88,13 +88,23 @@
 				&__img {
 					position: absolute;
 					left: 0;
-					top: 0;
+					top: 60px;
 					max-width: 420px;
 				}
 
 				&__img-big {
-					max-width: 420px;
-					max-height: 290px;
+					position: relative;
+					width: 420px;
+					height: 340px;
+					background: @black;
+					border-radius: 10px;
+
+					img {
+						position: absolute;
+						top: 50%;
+						left: 50%;
+						transform: translate(-50%, -50%);
+					}
 				}
 
 				&__img-small {
@@ -115,7 +125,7 @@
 					width: 100%;
 					height: auto;
 					outline: none;
-					border-radius: 10px;
+					
 				}
 
 				/*  ¯\_(ツ)_/¯  */ /* IMAGES */ /*  ¯\_(ツ)_/¯  */
@@ -183,7 +193,7 @@
 							right: -22px;
 							font-family: @ff2;
 							font-size: 14px;
-							font-weight: 800;
+							font-weight: 900;
 							color: #b3a6bf;
 						}
 						sub {
