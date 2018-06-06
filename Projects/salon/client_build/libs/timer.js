@@ -13,7 +13,7 @@
             }
             , "design": {
                 "type":"circle", "params": {
-                    "width":"4", "radius":"35", "line":"solid", "line-color":"#ffba00", "background":"solid", "background-color":"rgba(126,80,169,0.09)", "direction":"direct", "number-font-family": {
+                    "width":"4", "radius":"35", "line":"solid", "line-color":"#ffba00", "background":"solid", "background-color":"rgba(126,80,169,0.8)", "direction":"direct", "number-font-family": {
                         "family": "Roboto", "link": "<link href='http://fonts.googleapis.com/css?family=Roboto&subset=latin,cyrillic' rel='stylesheet' type='text/css'>"
                     }
                     , "number-font-size":"32", "number-font-color":"#ffffff", "separator-margin":"8", "separator-on":false, "separator-text":":", "text-on":true, "text-font-family": {
