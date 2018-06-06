@@ -1241,7 +1241,7 @@ section {
 .catalog .tabs__box .pack__img {
     position: absolute;
     left: 0;
-    top: 60px;
+    top: 0;
     max-width: 370px;
 }
 .catalog .tabs__box .pack__img-big {
@@ -1280,14 +1280,14 @@ section {
     color: #1b1b1b;
 }
 .catalog .tabs__box .pack__list {
-    margin-top: 30px;
+    margin-top: 15px;
     padding: 20px;
     border: 2px dashed #e6e6e6;
     border-radius: 16px;
 }
 .catalog .tabs__box .pack .list__title {
     display: inline-block;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     padding: 5px;
     background: #ffba00;
     text-transform: uppercase;
