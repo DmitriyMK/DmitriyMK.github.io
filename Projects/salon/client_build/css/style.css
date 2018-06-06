@@ -701,13 +701,13 @@ button {
     cursor: pointer;
 }
 .btn-red {
-    width: 200px;
+    width: 230px;
     height: 42px;
     background-image: -webkit-linear-gradient(90deg, #ff2015 0%, #ff2318 97%);
     background-image:     -ms-linear-gradient(90deg, #ff2015 0%, #ff2318 97%);
     -webkit-box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.004), 0 4px 18px 0 rgba(234, 234, 234, 0.85), 0 4px 5px 0 rgba(0, 0, 0, 0.09), inset 0 -2px 0 0 rgba(255, 60, 50, 0.57), inset 0 -3px 0 0 rgba(219, 30, 20, 0.004), inset 0 1px 0 0 rgba(227, 22, 12, 0.004), inset 0 -4px 0 0 rgba(255, 255, 255, 0.4);
             box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.004), 0 4px 18px 0 rgba(234, 234, 234, 0.85), 0 4px 5px 0 rgba(0, 0, 0, 0.09), inset 0 -2px 0 0 rgba(255, 60, 50, 0.57), inset 0 -3px 0 0 rgba(219, 30, 20, 0.004), inset 0 1px 0 0 rgba(227, 22, 12, 0.004), inset 0 -4px 0 0 rgba(255, 255, 255, 0.4);
-    border-radius: 25px;
+    border-radius: 21px;
     color: #fff;
     outline: none;
     -webkit-transition: -webkit-box-shadow 0.3s linear;
@@ -962,6 +962,8 @@ section {
     font-size: 43px;
     font-family: 'Exo', sans-serif;
     font-weight: 900;
+    -webkit-animation: pulsed 2.5s linear infinite;
+            animation: pulsed 2.5s linear infinite;
 }
 .header__end .price p:nth-child(3) sup {
     position: absolute;
@@ -980,10 +982,6 @@ section {
     font-size: 14px;
     font-weight: 600;
     color: #fff;
-}
-.header__end .price p {
-    -webkit-animation: pulsed 2.5s linear infinite;
-            animation: pulsed 2.5s linear infinite;
 }
 .header__end .arr-down {
     margin: 90px 0 30px 0;
@@ -1224,7 +1222,6 @@ section {
 .gift .form {
     margin-top: -10px;
     width: 278px;
-    min-height: 315px;
     position: relative;
     text-align: center;
     border-top: 3px solid #ffba00;
@@ -1239,7 +1236,7 @@ section {
     margin-top: -1.5px;
 }
 .gift .form__title {
-    padding-top: 22px;
+    padding-top: 35px;
     padding-bottom: 10px;
     font-size: 20px;
     font-weight: 600;
@@ -1265,6 +1262,7 @@ section {
     width: 236px;
     height: 48px;
     padding: 0 35px;
+    margin-bottom: 15px;
     color: #b3a6bf;
     border: none!important;
     background-color: #6c379a;
@@ -2411,8 +2409,8 @@ label {
     }
     70% {
         /* box-shadow: 0 0 0 10px rgba(204,169,44, 0); */
-        -webkit-transform: scale(1.15);
-                transform: scale(1.15);
+        -webkit-transform: scale(1.1);
+                transform: scale(1.1);
     }
     100% {
         /* box-shadow: 0 0 0 0 rgba(204,169,44, 0); */
@@ -2428,8 +2426,8 @@ label {
     }
     70% {
         /* box-shadow: 0 0 0 10px rgba(204,169,44, 0); */
-        -webkit-transform: scale(1.15);
-                transform: scale(1.15);
+        -webkit-transform: scale(1.1);
+                transform: scale(1.1);
     }
     100% {
         /* box-shadow: 0 0 0 0 rgba(204,169,44, 0); */
