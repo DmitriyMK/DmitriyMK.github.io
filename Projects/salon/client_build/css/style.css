@@ -913,6 +913,12 @@ section {
     justify-content: flex-end;
     padding-right: 140px;
     z-index: 10;
+    -webkit-animation: arrow-bounce 3s infinite;
+            animation: arrow-bounce 3s infinite;
+}
+.header__end .price:hover {
+    -webkit-animation-play-state: paused;
+            animation-play-state: paused;
 }
 .header__end .price:before {
     content: '';
@@ -958,8 +964,8 @@ section {
     font-size: 43px;
     font-family: 'Exo', sans-serif;
     font-weight: 900;
-    -webkit-animation: pulsed 2.5s linear infinite;
-            animation: pulsed 2.5s linear infinite;
+    -webkit-animation: pulsed 2s linear infinite;
+            animation: pulsed 2s linear infinite;
 }
 .header__end .price p:nth-child(3) sup {
     position: absolute;
@@ -1159,6 +1165,9 @@ section {
     color: #1b1b1b;
     background: url(../images/back__white.jpg) no-repeat center / cover;
 }
+.catalog .catalog__title-2 {
+    padding-top: 85px;
+}
 .catalog .container {
     padding: 0 50px;
 }
@@ -1237,18 +1246,12 @@ section {
     max-width: 370px;
 }
 .catalog .tabs__box .pack__img-big {
-    position: relative;
     width: 370px;
     height: 300px;
-    border-radius: 10px;
+    border-radius: 16px;
 }
 .catalog .tabs__box .pack__img-big img {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
+    border-radius: 16px;
 }
 .catalog .tabs__box .pack__img-small {
     padding: 9px 0;
@@ -1352,11 +1355,11 @@ section {
 }
 .catalog .tabs__content {
     display: none;
-    -webkit-transform: translateY(15px);
-        -ms-transform: translateY(15px);
-            transform: translateY(15px);
-    -webkit-animation: fadeInUPS 0.3s linear 1 forwards;
-            animation: fadeInUPS 0.3s linear 1 forwards;
+    -webkit-transform: translateY(30px);
+        -ms-transform: translateY(30px);
+            transform: translateY(30px);
+    -webkit-animation: fadeInUPS 0.6s linear 1 forwards;
+            animation: fadeInUPS 0.6s linear 1 forwards;
 }
 .catalog .tabs__content.active {
     display: block;

@@ -22,6 +22,10 @@
 	color: @black;
 	background: url(../images/back__white.jpg)no-repeat center/cover;
 
+	.catalog__title-2 {
+		padding-top: 85px;
+	}
+
 	.container {
 		padding: 0 50px;
 	}
@@ -96,16 +100,12 @@
 				}
 
 				&__img-big {
-					position: relative;
 					width: 370px;
 					height: 300px;
-					border-radius: 10px;
-
+					border-radius: 16px;
+					
 					img {
-						position: absolute;
-						top: 50%;
-						left: 50%;
-						transform: translate(-50%, -50%);
+						border-radius: 16px;
 					}
 				}
 
@@ -217,8 +217,8 @@
 
 		&__content {
 			display: none;
-			transform: translateY(15px);
-			animation: fadeInUPS .3s linear 1 forwards;
+			transform: translateY(30px);
+			animation: fadeInUPS .6s linear 1 forwards;
 		}
 
 		&__content.active {

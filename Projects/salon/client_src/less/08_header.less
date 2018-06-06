@@ -164,6 +164,12 @@
 			padding-right: 140px;
 			z-index: 10;
 
+			animation: arrow-bounce 3s infinite;
+
+			&:hover {
+				animation-play-state: paused;
+			}
+
 			
 
 			&:before {
@@ -211,7 +217,8 @@
 				font-family: @ff2;
 				font-weight: 900;
 				
-				animation: pulsed 2.5s linear infinite;
+				animation: pulsed 2s linear infinite;
+
 				sup {
 					position: absolute;
 					top: 7px;
@@ -230,10 +237,6 @@
 					font-weight: 600;
 					color: #fff;
 				}
-			}
-
-			p {
-				
 			}
 		}
 
