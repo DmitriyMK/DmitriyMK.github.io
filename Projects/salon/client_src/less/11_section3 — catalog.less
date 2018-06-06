@@ -21,4 +21,174 @@
 .catalog {
 	color: @black;
 	background: url(../images/back__white.jpg)no-repeat center/cover;
+
+	.tabs {
+		padding: 30px 0;
+		display: flex;
+		justify-content: center;
+		margin: auto;
+
+		text-transform: uppercase;
+		font-family: @ff2;
+		font-weight: 900;
+
+		&__link {
+			cursor: pointer;
+			margin: 0 3%;
+			padding: 8px 30px;
+			border-left: 3px solid #f9f9f9;
+			border-right: 3px solid #868488;
+			border-radius: 16px;
+			box-sizing: border-box;
+			background-position: 0 0, 0 100%;
+			background-repeat: no-repeat;
+			background-size: 100% 3px;
+
+			background-image: -webkit-linear-gradient(left, #f9f9f9 0%, #868488 100%), -webkit-linear-gradient(left, #f9f9f9 0%, #868488 100%); 
+			background-image: -moz-linear-gradient(left, #f9f9f9 0%, #868488 100%), -moz-linear-gradient(left, #f9f9f9 0%, #868488 100%);
+			background-image: -o-linear-gradient(left, #f9f9f9 0%, #868488 100%), -o-linear-gradient(left, #f9f9f9 0%, #868488 100%);
+			background-image: linear-gradient(to right, #f9f9f9 0%, #868488 100%), linear-gradient(to right, #f9f9f9 0%, #868488 100%);
+			
+
+			transition: all .3s linear;
+		}
+
+		&__link.active {
+			padding: 8px 30px;
+			border-left: 3px solid #febe12;
+			border-right: 3px solid #b35bff;
+			border-radius: 16px;
+			box-sizing: border-box;
+			background-position: 0 0, 0 100%;
+			background-repeat: no-repeat;
+			background-size: 100% 3px;
+
+			background-image: -webkit-linear-gradient(left, #febe12 0%, #b35bff 100%), -webkit-linear-gradient(left, #febe12 0%, #b35bff 100%); 
+			background-image: -moz-linear-gradient(left, #febe12 0%, #b35bff 100%), -moz-linear-gradient(left, #febe12 0%, #b35bff 100%);
+			background-image: -o-linear-gradient(left, #febe12 0%, #b35bff 100%), -o-linear-gradient(left, #febe12 0%, #b35bff 100%);
+			background-image: linear-gradient(to right, #febe12 0%, #b35bff 100%), linear-gradient(to right, #febe12 0%, #b35bff 100%);
+
+			transition: all .3s linear;
+		}
+
+		&__box {
+			padding: 50px 0;
+			background-color: #fafafa;
+
+			.pack {
+				padding-left: 450px;
+				width: 1100px;
+				position: relative;
+
+				/*  ¯\_(ツ)_/¯  */ /* IMAGES */ /*  ¯\_(ツ)_/¯  */
+				&__img {
+					position: absolute;
+					left: 0;
+					top: 0;
+					max-width: 370px;
+				}
+
+				&__img-big {
+					max-width: 370px;
+					max-height: 290px;
+				}
+
+				&__img-small {
+					padding: 9px 0;
+					display: flex;
+					justify-content: space-between;
+				}
+
+				&__small {
+					width: 80px;
+					height: 80px;
+					overflow: hidden;
+					border-radius: 10px;
+				}
+
+				img {
+					display: block;
+					width: 100%;
+					height: auto;
+					outline: none;
+					border-radius: 10px;
+				}
+
+				/*  ¯\_(ツ)_/¯  */ /* IMAGES */ /*  ¯\_(ツ)_/¯  */
+
+				&__title {
+					text-transform: uppercase;
+					font-size: 24px;
+					font-weight: 700;
+					color: @black;
+				}
+
+				&__list {
+					margin-top: 30px;
+				}
+
+				.list__title {
+					display: inline-block;
+					margin: 16px 0;
+					padding: 5px;
+					background: @yellow;
+					text-transform: uppercase;
+					font-weight: 700;
+				}
+
+				ol {
+					columns: 2;
+				}
+
+				&__item {
+					padding-bottom: 5px;
+					padding-right: 15px;
+					list-style: inherit;
+					list-style-position: inside; 
+					color: #868488;
+				}
+
+				.priceNew {
+					display: flex;
+					align-items: center;
+					p {
+						position: relative;
+						font-size: 43px;
+						font-family: @ff2;
+						font-weight: 900;
+
+						sup {
+							position: absolute;
+							top: 7px;
+							right: -22px;
+							font-family: @ff2;
+							font-size: 14px;
+							font-weight: 800;
+							color: #b3a6bf;
+						}
+						sub {
+							position: absolute;
+							bottom: 7px;
+							right: -32px;
+							font-family: @ff1;
+							font-size: 14px;
+							font-weight: 600;
+							color: #fff;
+						}
+					}
+				}	
+			}			
+		}
+
+		&__content {
+			display: none;
+			transform: translateY(15px);
+			animation: fadeInUPS .3s linear 1 forwards;
+		}
+
+		&__content.active {
+			display: block;
+		}
+
+	}
 }

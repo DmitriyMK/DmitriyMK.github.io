@@ -46,10 +46,6 @@
 	<link rel="stylesheet" href="css/remodal-default-theme.css">
 
 	<link rel="stylesheet" href="css/style.css">
-
-
-
-
 	
 
 </head>
@@ -191,11 +187,99 @@
 
 
 	<section class="catalog">
+
 		<div class="container">
 			<h2 class="catalog__title section__title">Стандарт наборы</h2>
 			<div class="section-devider">
 				<div class="ico_devider-gray devider"></div>
 			</div>
+
+			<ul class="tabs">
+				<li class="tabs__link" data-tabs="1">Econom</li>
+				<li class="tabs__link active" data-tabs="2">Start</li>
+				<li class="tabs__link" data-tabs="3">Basic</li>
+				<li class="tabs__link" data-tabs="4">Activ</li>
+				<li class="tabs__link" data-tabs="5">Master</li>
+			</ul>
+		</div>
+
+		<div class="tabs__box">
+			<div class="container">
+
+				<div id="tabs-1" class="tabs__content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium tempore deleniti, quos perferendis corporis ab accusamus magni quibusdam tempora ea porro quae explicabo. Assumenda recusandae, esse dolorum eveniet atque. Iusto. </div>
+
+				<div id="tabs-2" class="tabs__content active">
+					<div class="pack">
+						<h3 class="pack__title">Набор для наращивания ногтей Start</h3>
+
+						<div class="pack__img">
+
+							<div class="pack__img-big">
+								<a data-fancybox="start" href="images/pack/2Start1.jpg">
+									<img src="images/pack/small/2Start1.jpg" alt="Набор для наращивания ногтей Start" title="Набор для наращивания ногтей Start">
+								</a>
+							</div>
+
+							<div class="pack__img-small">
+								<a class="pack__small" data-fancybox="start" href="images/pack/2Start2.jpg">
+									<img src="images/pack/small/2Start2.jpg" alt="Набор для наращивания ногтей Start" title="Набор для наращивания ногтей Start">
+								</a>
+
+								<a class="pack__small"  data-fancybox="start" href="images/pack/2Start3.jpg">
+									<img src="images/pack/small/2Start3.jpg" alt="Набор для наращивания ногтей Start" title="Набор для наращивания ногтей Start">
+								</a>
+
+								<a class="pack__small" data-fancybox="start" href="images/pack/2Start4.jpg">
+									<img src="images/pack/small/2Start4.jpg" alt="Набор для наращивания ногтей Start" title="Набор для наращивания ногтей Start">
+								</a>
+							</div>
+						</div>
+
+						<div class="pack__list">
+							<h4 class="list__title">В набор входит:</h4>
+							<ol>
+								<li class="pack__item">Уф-лампа на 36 ватт с таймером на 2 минуты.</li>
+								<li class="pack__item">Фрезер-ручка на 15 000 оборотов и насадки в комплекте.</li>
+								<li class="pack__item">Пилки 3 штуки.</li>
+								<li class="pack__item">Бафик.</li>
+								<li class="pack__item">Щетка.</li>
+								<li class="pack__item">Палочка апельсина 6 шт.</li>
+								<li class="pack__item">Пушер (металический).</li>
+								<li class="pack__item">Кисточки (набор 6 шт.)</li>
+								<li class="pack__item">Растопырки для пальчиков.</li>
+								<li class="pack__item">Салфетки без ворса 200шт.</li>
+								<li class="pack__item">Формы широкие 100шт.</li>
+								<li class="pack__item">Карусель страз для маникюрного декора.</li>
+								<li class="pack__item">Гель краски цветные 8шт. по 5 мл.</li>
+								<li class="pack__item">Гель камуфляжный (однофазный 15мл.)</li>
+								<li class="pack__item">Гель прозрачный (однофазный 15мл.)</li>
+								<li class="pack__item">Гель белый (однофазный 15мл.)</li>
+								<li class="pack__item">Топовое покрытие 8,5мл.</li>
+								<li class="pack__item">Базовое покрытие 8,5мл.</li>
+								<li class="pack__item">Масло (для кутикулы 15мл.)</li>
+								<li class="pack__item">Подготовитель ногтя 3 в 1 (обезжириватель 100мл.)</li>
+							</ol>
+						</div>
+
+						<div class="priceOld">
+							<p>Цена: <span>1950 ГРИВЕН</span></p>
+						</div>
+
+						<div class="priceNew">
+							<div class="ico_cart"></div>	
+							<p>1760<sup>00</sup><sub>ГРН</sub></p>
+							<button class="btn-red" data-remodal-target="order_Start">Заказать</button>
+						</div>
+					</div>
+				</div>
+
+				<div id="tabs-3" class="tabs__content">333333333333333333333333333333333333</div>
+
+				<div id="tabs-4" class="tabs__content">444444444444444444444444444444444444444444444</div>
+
+				<div id="tabs-5" class="tabs__content">55555555555555555555555555555555555555555555</div>
+			</div>
+
 		</div>
 	</section>
 
@@ -204,8 +288,6 @@
 
 	<section class="gift">
 		<div class="container">
-			<h2 class="hidden">Подарок</h2>
-
 			<div class="gift__box">
 				<div class="box__left">
 					<h3 class="gift__ask">Выбрали <br> подходящий набор?</h3>
@@ -719,23 +801,10 @@
 	<!-- Load Scripts -->
 	
 	<script src='https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js?ver=3.9.2'></script>
-
 	<script src="libs/jquery.nicescroll.min.js"></script>
-
-	
-
-
 	<script async defer src="https://maps.googleapis.com/maps/api/js?callback=initMap&key=AIzaSyDFnsXtzPC77ZP4pkabK8_yVr5qazdPCjc"></script>
 	<script src="libs/map.js"></script>  
-
 	
 	<script src="libs/all.js"></script>
-
-
-
-
-
-
-
 </body>
 </html>
