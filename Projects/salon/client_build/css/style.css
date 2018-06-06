@@ -1624,7 +1624,8 @@ section {
     color: #fff;
 }
 .office .office__slider {
-    max-width: 460px;
+    display: inline-block;
+    width: 460px;
 }
 .office .office__slider .slide {
     max-height: 270px;
