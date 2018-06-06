@@ -1163,6 +1163,9 @@ section {
     color: #1b1b1b;
     background: url(../images/back__white.jpg) no-repeat center / cover;
 }
+.catalog .container {
+    padding: 0 50px;
+}
 .catalog .tabs {
     padding: 30px 0;
     display: -webkit-box;
@@ -1219,8 +1222,7 @@ section {
     background-color: #fafafa;
 }
 .catalog .tabs__box .pack {
-    padding-left: 450px;
-    width: 1100px;
+    padding-left: 470px;
     position: relative;
     /*  ¯\_(ツ)_/¯  */
     /* IMAGES */
@@ -1233,10 +1235,10 @@ section {
     position: absolute;
     left: 0;
     top: 0;
-    max-width: 370px;
+    max-width: 420px;
 }
 .catalog .tabs__box .pack__img-big {
-    max-width: 370px;
+    max-width: 420px;
     max-height: 290px;
 }
 .catalog .tabs__box .pack__img-small {
@@ -1269,10 +1271,13 @@ section {
 }
 .catalog .tabs__box .pack__list {
     margin-top: 30px;
+    padding: 20px;
+    border: 2px dashed #e6e6e6;
+    border-radius: 16px;
 }
 .catalog .tabs__box .pack .list__title {
     display: inline-block;
-    margin: 16px 0;
+    margin-bottom: 10px;
     padding: 5px;
     background: #ffba00;
     text-transform: uppercase;
@@ -1285,9 +1290,21 @@ section {
 .catalog .tabs__box .pack__item {
     padding-bottom: 5px;
     padding-right: 15px;
+    font-size: 16px;
     list-style: inherit;
     list-style-position: inside;
     color: #868488;
+}
+.catalog .tabs__box .pack .priceOld {
+    padding: 20px 0 10px 0;
+    font-weight: 600;
+    color: #1b1b1b;
+}
+.catalog .tabs__box .pack .priceOld span {
+    padding-left: 15px;
+    text-decoration: line-through;
+    -webkit-text-decoration-color: #ff2116;
+            text-decoration-color: #ff2116;
 }
 .catalog .tabs__box .pack .priceNew {
     display: -webkit-box;
@@ -1298,6 +1315,7 @@ section {
     align-items: center;
 }
 .catalog .tabs__box .pack .priceNew p {
+    padding-left: 22px;
     position: relative;
     font-size: 43px;
     font-family: 'Exo', sans-serif;
@@ -1319,7 +1337,10 @@ section {
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
     font-weight: 600;
-    color: #fff;
+}
+.catalog .tabs__box .pack .priceNew .btn-red {
+    text-transform: uppercase;
+    margin-left: 50px;
 }
 .catalog .tabs__content {
     display: none;
