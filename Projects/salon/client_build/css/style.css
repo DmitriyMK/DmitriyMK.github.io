@@ -964,8 +964,6 @@ section {
     font-size: 43px;
     font-family: 'Exo', sans-serif;
     font-weight: 900;
-    -webkit-animation: pulsed 2s linear infinite;
-            animation: pulsed 2s linear infinite;
 }
 .header__end .price p:nth-child(3) sup {
     position: absolute;
