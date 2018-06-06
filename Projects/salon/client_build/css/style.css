@@ -1551,7 +1551,7 @@ section {
 .details .details__list-right {
     width: 470px;
     padding-top: 30px;
-    counter-reset: test 3;
+    counter-reset: left 3;
 }
 .details .details__item-right {
     position: relative;
@@ -1574,8 +1574,8 @@ section {
     background: url(../images/round.png);
 }
 .details .details__item-right:after {
-    counter-increment: test;
-    content: '' counter(test);
+    counter-increment: left;
+    content: '' counter(left);
     position: absolute;
     padding: 0 5px;
     top: 50%;
