@@ -1162,6 +1162,7 @@ section {
     color: #b3a6bf;
 }
 .catalog {
+    padding-bottom: 0;
     color: #1b1b1b;
     background: url(../images/back__white.jpg) no-repeat center / cover;
 }
@@ -1301,7 +1302,7 @@ section {
 .catalog .tabs__box .pack__item {
     padding-bottom: 5px;
     padding-right: 15px;
-    font-size: 16px;
+    font-size: 14px;
     list-style: inherit;
     list-style-position: inside;
     color: #868488;
