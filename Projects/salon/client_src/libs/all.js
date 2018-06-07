@@ -104,6 +104,16 @@ $(document).ready(function() {
     slidesToScroll: 1,
     arrows: true,
     dots: true,
+    responsive: [
+
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+        }
+      },
+
+    ]
   });
 
 
