@@ -3220,6 +3220,9 @@ section {
         -webkit-box-pack: justify;
         -ms-flex-pack: justify;
         justify-content: space-between;
+        -webkit-box-align: end;
+        -ms-flex-align: end;
+        align-items: flex-end;
     }
 }
 .contacts .lastForm .btn-red {
@@ -3228,6 +3231,7 @@ section {
 @media only screen and (min-width: 992px) {
     .contacts .lastForm .btn-red {
         margin: inherit;
+        margin-left: 15px;
     }
 }
 .footer {
