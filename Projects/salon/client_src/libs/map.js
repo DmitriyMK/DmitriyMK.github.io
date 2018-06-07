@@ -8,7 +8,7 @@ var markersData = [{
 var map, infoWindow;
 
 function initMap() {
-    var centerLatLng = new google.maps.LatLng(51.478711, 31.2760772);
+    var centerLatLng = new google.maps.LatLng(51.478711, 31.2780772);
 
     var mapOptions = {
         center: centerLatLng,

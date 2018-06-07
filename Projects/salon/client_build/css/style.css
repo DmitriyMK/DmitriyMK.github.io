@@ -1853,6 +1853,7 @@ section {
 @media only screen and (min-width: 992px) {
     .catalog .tabs__box .pack .priceNew .btn-red {
         width: 230px;
+        margin-top: 0;
         margin-left: 50px;
     }
 }
@@ -2175,6 +2176,7 @@ section {
     font-weight: 900;
     font-family: 'Exo', sans-serif;
     text-transform: uppercase;
+    background: transparent;
     border: 3px solid #ffba00;
     border-radius: 21px;
 }
@@ -2947,9 +2949,14 @@ section {
 }
 @media only screen and (min-width: 992px) {
     .contacts .container {
-        width: auto;
+        width: 945px;
         margin: auto;
         padding: auto;
+    }
+}
+@media only screen and (min-width: 1200px) {
+    .contacts .container {
+        width: 1170px;
     }
 }
 .contacts .box {
