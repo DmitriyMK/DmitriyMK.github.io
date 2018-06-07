@@ -21,7 +21,7 @@
 	padding-top: 0;
 	padding-bottom: 0;
 	position: relative;
-	background: #202530;
+	background: #fff;
 	overflow: hidden;
 
 	.hidden {
@@ -29,64 +29,117 @@
 	}
 
 	.map {
-
 		width: 100%;
-		height: 550px; 
+		height: 400px; 
+
+		@media @desktop {
+			height: 550px; 
+		}
 	}
 
 	.container {
 		position: relative;
+		padding: 0;
+		margin: 0;
+		width: 100%;
+		@media @desktop {
+			width: auto;
+			margin: auto;
+			padding: auto;
+		}
 	}
 
 
 	.box {
-		position: absolute;
-		top: -540px;
-		right: 0;	
-		width: 600px;
-		margin: 20px 0;
-		
+		display: flex;
+		flex-direction: column;
+		align-items: center;
 
+		@media @desktop {
+			display: inherit;
+			position: absolute;
+			top: -540px;
+			right: 0;	
+			width: 600px;
+			margin: 20px 0;
+		}
+		
 		&__content {
-			width: 1200px;
 			background: #fff;
+			@media @desktop {
+				width: 1200px;
+			}
 		}
 
 		.wrapper {
-			width: 600px;
+			width: 100%;
 			color: @black;
-			padding: 30px;
-			border-left: 5px solid @yellow;
+			padding: 15px;
+			
+			@media @tablet {
+				width: 600px;
+			}
+			@media @desktop {
+				padding: 30px;
+				border-left: 5px solid @yellow;
+			}
 		}
 
 		&__titles {
 			position: relative;
-			font-size: 36px;
+			font-size: 26px;
 			font-weight: 900;
 			font-family: @ff2;
 			text-transform: uppercase;
+			text-align: center;
+
+			@media @tablet {
+				font-size: 30px;
+			}
+			@media @desktop {
+				font-size: 36px;
+				text-align: left;
+			}
+
 			&:before {
-				content: '';
-				display: inline-block;
-				position: absolute;
-				right: 125px;
-				top: 50%;
-				transform: translateY(-50%);
-				width: 179px;
-				height: 6px;
-				background: url(../images/line-color.png)
+				@media @desktop {
+					content: '';
+					display: inline-block;
+					position: absolute;
+					right: 125px;
+					top: 50%;
+					transform: translateY(-50%);
+					width: 179px;
+					height: 6px;
+					background: url(../images/line-color.png);
+				}
 			}
 		}
 
 		&__info {
-			margin-top: 40px;
+			margin-top: 25px;
 			display: flex;
 			justify-content: space-between;
+			flex-direction: column;
+			align-items: center;
+
+			@media @desktop {
+				margin-top: 40px;
+				flex-direction: row;
+				align-items: inherit;
+			}
 		}
 
 		.address {
 			position: relative;
-			padding-left: 46px;
+			padding-left: 40px;
+
+			@media @tablet {
+
+			}
+			@media @desktop {
+				padding-left: 46px;
+			}
 			&:before {
 				content: '';
 				position: absolute;
@@ -98,13 +151,21 @@
 			}
 		}
 		address {
-			text-transform: uppercase;
 			font-style: normal;
 			font-weight: 700;
+
+			@media @desktop {
+				text-transform: uppercase;
+			}
 		}
 		.time {
-			padding-top: 10px;
+			padding-top: 20px;
+			padding-bottom: 20px;
 			color: #868488;
+			@media @desktop {
+				padding-top: 10px;
+				padding-bottom: 0;
+			}
 		}
 	}
 
@@ -127,19 +188,48 @@
 	}
 
 	.box__img {
-		width: 1200px;
-		background: #f6f6f6;
+		width: 100%;
+		
+		@media @tablet {
+			width: 600px;
+		}
+
+		@media @desktop {
+			width: 1200px;
+			background: #f6f6f6;
+		}
+
 		.img__list {
 			padding: 5px 0;
 			display: flex;
-			justify-content: space-between;
+			flex-wrap: wrap;
+			justify-content: center;
+
+			@media @tablet {
+
+			}
+			@media @desktop {
+				flex-wrap: wrap;
+				justify-content: space-between;
+			}
 		}
 		.img__item {
+			margin: 2% 2%;  
+
+			@media @desktop {
+				margin: inherit;
+			}
+
 			img {
 				display: block;
 				border-radius: 10px;
-				width: 93px;
-				height: 93px;
+				width: 75px;
+				height: 75px;
+
+				@media @desktop {
+					width: 93px;
+					height: 93px;
+				}
 			}
 		}
 	}
@@ -151,12 +241,26 @@
 	.text {
 		color: #868488;
 	}
-	.btn-red {
-	
-	}
+
 	.lastForm {
 		display: flex;
-		justify-content: space-between;
+		justify-content: center;
 		align-items: center;
+		flex-direction: column;
+		text-align: center;
+
+		@media @desktop {
+			text-align: left;
+			flex-direction: row;
+			justify-content: space-between;
+		}
+
+		.btn-red {
+			margin: 15px 0;
+
+			@media @desktop {
+				margin: inherit;
+			}
+		}
 	}
 }
