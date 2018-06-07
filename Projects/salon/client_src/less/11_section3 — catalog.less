@@ -25,10 +25,30 @@
 
 	.catalog__title-2 {
 		padding-top: 85px;
+
+		@media @tablet {
+
+}
+@media @desktop {
+
+}
+@media @desktop-xl {
+	
+}
 	}
 
 	.container {
 		padding: 0 50px;
+
+		@media @tablet {
+
+}
+@media @desktop {
+
+}
+@media @desktop-xl {
+	
+}
 	}
 
 	.tabs {
@@ -40,6 +60,16 @@
 		text-transform: uppercase;
 		font-family: @ff2;
 		font-weight: 900;
+
+		@media @tablet {
+
+}
+@media @desktop {
+
+}
+@media @desktop-xl {
+	
+}
 
 		&__link {
 			cursor: pointer;
@@ -57,9 +87,18 @@
 			background-image: -moz-linear-gradient(left, #f9f9f9 0%, #868488 100%), -moz-linear-gradient(left, #f9f9f9 0%, #868488 100%);
 			background-image: -o-linear-gradient(left, #f9f9f9 0%, #868488 100%), -o-linear-gradient(left, #f9f9f9 0%, #868488 100%);
 			background-image: linear-gradient(to right, #f9f9f9 0%, #868488 100%), linear-gradient(to right, #f9f9f9 0%, #868488 100%);
-			
 
 			transition: all .3s linear;
+
+			@media @tablet {
+
+}
+@media @desktop {
+
+}
+@media @desktop-xl {
+	
+}
 		}
 
 		&__link.active {
@@ -78,6 +117,16 @@
 			background-image: linear-gradient(to right, #febe12 0%, #b35bff 100%), linear-gradient(to right, #febe12 0%, #b35bff 100%);
 
 			transition: all .3s linear;
+
+			@media @tablet {
+
+}
+@media @desktop {
+
+}
+@media @desktop-xl {
+	
+}
 		}
 
 		&__box {
@@ -92,18 +141,48 @@
 				padding-left: 430px;
 				position: relative;
 
+				@media @tablet {
+
+}
+@media @desktop {
+
+}
+@media @desktop-xl {
+	
+}
+
 				/*  ¯\_(ツ)_/¯  */ /* IMAGES */ /*  ¯\_(ツ)_/¯  */
 				&__img {
 					position: absolute;
 					left: 0;
 					top: 0;
 					max-width: 370px;
+
+					@media @tablet {
+
+}
+@media @desktop {
+
+}
+@media @desktop-xl {
+	
+}
 				}
 
 				&__img-big {
 					width: 370px;
 					height: 300px;
 					border-radius: 16px;
+
+					@media @tablet {
+
+}
+@media @desktop {
+
+}
+@media @desktop-xl {
+	
+}
 					
 					img {
 						border-radius: 16px;
@@ -121,6 +200,16 @@
 					height: 80px;
 					overflow: hidden;
 					border-radius: 10px;
+
+					@media @tablet {
+
+}
+@media @desktop {
+
+}
+@media @desktop-xl {
+	
+}
 				}
 
 				img {
@@ -138,6 +227,16 @@
 					font-size: 24px;
 					font-weight: 700;
 					color: @black;
+
+					@media @tablet {
+
+}
+@media @desktop {
+
+}
+@media @desktop-xl {
+	
+}
 				}
 
 				&__list {
@@ -145,6 +244,16 @@
 					padding: 20px;
 					border: 2px dashed #e6e6e6;
 					border-radius: 16px;
+
+					@media @tablet {
+
+}
+@media @desktop {
+
+}
+@media @desktop-xl {
+	
+}
 				}
 
 				.list__title {
@@ -158,6 +267,16 @@
 
 				ol {
 					columns: 2;
+
+					@media @tablet {
+
+}
+@media @desktop {
+
+}
+@media @desktop-xl {
+	
+}
 				}
 
 				&__item {
@@ -167,6 +286,7 @@
 					list-style: inherit;
 					list-style-position: inside; 
 					color: #868488;
+
 				}
 
 				.priceOld {
@@ -219,11 +339,14 @@
 		&__content {
 			display: none;
 			transform: translateY(30px);
-			animation: fadeInUPS .6s linear 1 forwards;
+			transition: all .3s linear;
+			animation: fadeInUPS .6s linear forwards;
+			opacity: 0;
 		}
 
 		&__content.active {
 			display: block;
+			opacity: 1;
 		}
 
 	}
