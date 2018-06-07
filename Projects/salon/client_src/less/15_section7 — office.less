@@ -24,10 +24,23 @@
 
 	&__box {
 		padding-top: 20px;
-		padding-left: 80px;
-		padding-right: 40px;
 		display: flex;
-		justify-content: space-between;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		flex-direction: column;
+		align-items: center;
+
+		@media @tablet {
+			flex-direction: row;
+			align-items: inherit;
+			padding-left: 80px;
+			padding-right: 40px;
+		}
+
+		@media @desktop-xl {
+			justify-content: space-between;
+			flex-wrap: nowrap;
+		}
 	}
 
 	.ceo {
@@ -58,13 +71,23 @@
 	}
 
 	.office__slider {
+		margin-top: 30px;
+		order: 3;
 		display: inline-block;
-		width: 460px;
+		width: 300px;
+
+		@media @tablet {
+			margin-top: 35px;
+			width: 460px;
+		}
+
+		@media @desktop-xl {
+			margin-top: inherit;
+			order: inherit;
+		}
 
 		.slide {
 			max-height: 270px;
-
-
 		}
 
 		.slick-prev, .slick-next {
@@ -100,13 +123,21 @@
 	}
 
 	.workers {
+		margin-top: 30px;
 		max-width: 300px;
-		max-height: 270px;
+		
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
+
+		@media @tablet {
+			margin-top: inherit;
+			max-height: 270px;
+		}
+
 		.person {
 			display: flex;
+			margin-bottom: 15px;
 			img {
 				max-height: 125px;
 				margin-right: 15px;

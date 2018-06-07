@@ -2520,14 +2520,42 @@ section {
 }
 .office__box {
     padding-top: 20px;
-    padding-left: 80px;
-    padding-right: 40px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+@media only screen and (min-width: 768px) {
+    .office__box {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+        -webkit-box-align: inherit;
+        -ms-flex-align: inherit;
+        align-items: inherit;
+        padding-left: 80px;
+        padding-right: 40px;
+    }
+}
+@media only screen and (min-width: 1200px) {
+    .office__box {
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        -ms-flex-wrap: nowrap;
+            flex-wrap: nowrap;
+    }
 }
 .office .ceo {
     position: relative;
@@ -2554,8 +2582,26 @@ section {
     color: #fff;
 }
 .office .office__slider {
+    margin-top: 30px;
+    -webkit-box-ordinal-group: 4;
+    -ms-flex-order: 3;
+    order: 3;
     display: inline-block;
-    width: 460px;
+    width: 300px;
+}
+@media only screen and (min-width: 768px) {
+    .office .office__slider {
+        margin-top: 35px;
+        width: 460px;
+    }
+}
+@media only screen and (min-width: 1200px) {
+    .office .office__slider {
+        margin-top: inherit;
+        -webkit-box-ordinal-group: inherit;
+        -ms-flex-order: inherit;
+        order: inherit;
+    }
 }
 .office .office__slider .slide {
     max-height: 270px;
@@ -2589,8 +2635,8 @@ section {
     right: 10px;
 }
 .office .workers {
+    margin-top: 30px;
     max-width: 300px;
-    max-height: 270px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2602,10 +2648,17 @@ section {
     -ms-flex-pack: justify;
     justify-content: space-between;
 }
+@media only screen and (min-width: 768px) {
+    .office .workers {
+        margin-top: inherit;
+        max-height: 270px;
+    }
+}
 .office .workers .person {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    margin-bottom: 15px;
 }
 .office .workers .person img {
     max-height: 125px;
