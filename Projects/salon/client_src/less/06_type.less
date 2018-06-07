@@ -93,8 +93,11 @@ body {
 }
 
 section {
-    /*     overflow: hidden; */
-    padding: 85px 0;
+    padding: 60px 0;
+
+    @media @tablet {
+        padding: 85px 0;
+    }
 }
 
 
@@ -104,28 +107,17 @@ section {
 }
 
 .section__title {
-    font-size: 36px;
+    font-size: 26px;
     text-align: center;
     font-weight: 900;
     font-family: @ff2;
     text-transform: uppercase;
     padding-bottom: 13px;
-    @media @mobile {
 
-    }
     @media @tablet {
-
+         font-size: 30px;
     }
     @media @desktop {
-
-    }
-    @media @desktop-xl {
-
-    }
-    @media @desktop-xl-2 {
-
-    }
-    @media @desktop-xll {
-
+        font-size: 36px;
     }
 }
