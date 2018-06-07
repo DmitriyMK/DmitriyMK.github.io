@@ -24,49 +24,73 @@
 	background: url(../images/back__review.jpg)no-repeat center/cover;
 
 	&:before {
+		@media @tablet {
 			content: '';
 			position: absolute;
 			bottom: -300px;
-			left: 0;
-
+			left: -100px;
 			width: 305px;
 			height: 679px;
-
 			background: url(../images/decor__left.png)no-repeat center/cover;
 		}
 
-		&:after {
+		@media @desktop {
+			left: -50px;
+		}
+		@media @desktop-xl {
+			left: 0;
+		}
+	}
+
+	&:after {
+		@media @tablet {
 			content: '';
 			position: absolute;
 			top: -300px;
-			right: 0;
+			right: -100px;
 			width: 305px;
 			height: 679px;
-
 			background: url(../images/decor__right.png)no-repeat center/cover;
 		}
+		@media @desktop {
+			right: -50px;
+		}
+		@media @desktop-xl {
+			right: 0;
+		}
+	}
 
 	&__box {
 		display: flex;
 		justify-content: space-around;
+		flex-direction: column;
+		align-items: center;
+
+		@media @desktop {
+			flex-direction: row;
+			align-items: center;
+		}
 	}
 
 	&__list {
-		width: 470px;
-		padding-top: 30px;
+		max-width: 470px;
+		padding-top: 50px;
+
+		@media @desktop {
+			padding-top: 30px;
+			width: 470px;
+		}
 	}
 
 
 	&__item {
 		display: flex;
 		align-items: center;
-
 		position: relative;
 		counter-increment: li;
 		min-height: 46px;
 		padding-left: 60px;	
 		margin-bottom: 30px;
-
 		font-size: 17px;
 		color: #b3a6bf;
 
@@ -78,7 +102,7 @@
 			transform: translateY(-50%);
 			width: 42px;
 			height: 42px;
-			background: url(../images/round.png);			
+			background: url(../images/round.png);		
 		}
 
 		&:after{
@@ -88,7 +112,6 @@
 			top: 50%;
 			left: 5px;
 			transform: translateY(-52%);
-
 			font-size: 46px;
 			font-family: @ff2;
 			font-weight: 900;
@@ -96,20 +119,22 @@
 		}
 	}
 
-
 	.details__list-right {
-		width: 470px;
-		padding-top: 30px;
+		max-width: 470px;
 		counter-reset: left 3;
+
+		@media @desktop {
+			width: 470px;
+			padding-top: 30px;
+			counter-reset: left 3;
+		}
 	}
 
 	.details__item-right {
-		position: relative;
-		
+		position: relative;	
 		min-height: 46px;
 		padding-left: 60px;	
 		margin-bottom: 30px;
-
 		font-size: 17px;
 		color: #b3a6bf;
 
@@ -127,13 +152,11 @@
 		&:after{
 			counter-increment: left;
 			content:  "" counter(left);
-
 			position: absolute;
 			padding: 0 5px;
 			top: 50%;
 			left: 3px;
 			transform: translateY(-52%);
-
 			font-size: 46px;
 			font-family: @ff2;
 			font-weight: 900;
