@@ -3,8 +3,6 @@ $(document).ready(function() {
 
   if (document.documentElement.clientWidth > 1200) {
 
-    /*new WOW().init();*/
-
     $("body").niceScroll({
       scrollspeed: 70,
       mousescrollstep: 60,
@@ -23,7 +21,6 @@ $(document).ready(function() {
     $('html').addClass('no-overflow-y');
 
   };
-
 });
 
 
@@ -53,7 +50,46 @@ $(document).ready(function() {
     slidesToScroll: 1,
     arrows: false,
     dots: false,
-    infinite: true,
+
+    responsive: [
+
+      {
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 5,
+          arrows: true,
+          dots: true,
+        }
+      },
+
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 4,
+          arrows: true,
+          dots: true,
+        }
+      },
+
+      {
+        breakpoint: 500,
+        settings: {
+          slidesToShow: 3,
+          arrows: true,
+          dots: true,
+        }
+      },
+
+      {
+        breakpoint: 400,
+        settings: {
+          slidesToShow: 2,
+          arrows: true,
+          dots: true,
+        }
+      },
+
+    ]
   });
 
 
@@ -90,7 +126,6 @@ $(document).ready(function() {
   $('#tabs-' + tabID).addClass('active').siblings().removeClass('active');
   
 });
-
 
 
 });
