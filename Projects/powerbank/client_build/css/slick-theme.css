@@ -75,37 +75,23 @@
 {
     left: -25px;
 }
-[dir='rtl'] .slick-prev
-{
-    right: -25px;
-    left: auto;
-}
+
 .slick-prev:before
 {
-    content: '\f177';
+    content: '\e800';
 }
-[dir='rtl'] .slick-prev:before
-{
-    content: '\f178';
-}
+
 
 .slick-next
 {
     right: -25px;
 }
-[dir='rtl'] .slick-next
-{
-    right: auto;
-    left: -25px;
-}
+
 .slick-next:before
 {
-    content: '\f178';
+    content: '\e802';
 }
-[dir='rtl'] .slick-next:before
-{
-    content: '\f177';
-}
+
 
 /* Dots */
 .slick-dotted.slick-slider

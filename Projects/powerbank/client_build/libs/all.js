@@ -22,6 +22,61 @@ $(document).ready(function() {
 
     $('html').addClass('no-overflow-y');
   };
+
+
+  $(".js-video-button").modalVideo({
+    youtube: {
+      autoplay: 1,
+      nocookie: true,
+      cc_load_policy: 1,
+      color: null,
+      controls: 1,
+      disablekb: 0,
+      enablejsapi: 0,
+      end: null,
+      fs: 1,
+      h1: null,
+      iv_load_policy: 1,
+      list: null,
+      listType: null,
+      loop: 0,
+      modestbranding: null,
+      origin: null,
+      playlist: null,
+      playsinline: null,
+      rel: 0,
+      showinfo: 1,
+      start: 0,
+      wmode: 'transparent',
+      theme: 'dark'
+
+    }
+  });
+
+   $('.product__slider-decor').slick({
+            
+      dots: false,
+      arrow: true,
+/*      slidesToShow: 1,*/
+      rows: 2,
+      slidesPerRow: 5,
+      infinite: true,
+
+
+      responsive: [
+/*
+        {
+          breakpoint: 1600,
+          settings: {
+            slidesToShow: 5,
+          }
+        },*/
+
+
+      ]
+
+    });
+
 });
 
 
@@ -84,7 +139,6 @@ $(document).ready(function() {
     invertV: 0.0185,
   });
 
-
   $('.decorSection10').plaxmove({
     ratioH: 0.0055,
     ratioV: 0.0200,
@@ -93,7 +147,7 @@ $(document).ready(function() {
   $('.decorSection12').plaxmove({
     ratioH: -0.0055,
     ratioV: 0.0255,
-    invertV: 0.0185
+    invertV: 0.0185,
   });
 
   $('.decorSection18').plaxmove({
@@ -142,7 +196,28 @@ if (document.documentElement.clientWidth > 991) {
 
 
 
-$('.phone-mask').mask('+38(999)999-99-99');
+$(document).ready(function() {
+
+  $('.phone-mask').mask('+38(999)999-99-99');
+
+
+  $('[data-fancybox]').fancybox({
+    loop: true,
+    animationEffect: "zoom",
+    transitionEffect: "fade",
+    transitionDuration: 366,
+
+    clickOutside: "close",
+  });
+  
+
+});
+
+
+
+$(window).on('resize orientationchange', function() {
+  $('.slider').slick('resize');
+});
 
 
 
