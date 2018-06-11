@@ -685,9 +685,6 @@ button {
     background-image:     -ms-linear-gradient(70deg, #ff678b 0%, #ff5785 26%, #fe477f 100%);
     width: 200px;
     height: 40px;
-    -webkit-transition: all 0.3s linear;
-         -o-transition: all 0.3s linear;
-            transition: all 0.3s linear;
 }
 .btn:hover {
     background: #df3e51;
@@ -3074,13 +3071,11 @@ header .tel span {
     font-size: 60px;
     cursor: pointer;
     position: relative;
-    -webkit-transition: color 0.3s linear;
-         -o-transition: color 0.3s linear;
-            transition: color 0.3s linear;
+    /* 				transition: color .3s linear; */
     margin: 0 40px;
 }
 .catalogFull .product .utube__link:hover {
-    color: #f71c8b;
+    color: #df3e51;
 }
 .catalogFull .product .utube__link:before {
     content: '';
@@ -3346,9 +3341,6 @@ header .tel span {
     width: 240px;
     border-radius: 0;
     color: #fff;
-    -webkit-transition: all 0.3s linear;
-         -o-transition: all 0.3s linear;
-            transition: all 0.3s linear;
 }
 .catalogFull .product .btn-gray {
     border: 2px solid #8e949f;
@@ -3358,14 +3350,53 @@ header .tel span {
     line-height: 40px;
     text-align: center;
     color: #2d3440;
-    -webkit-transition: all 0.3s linear;
-         -o-transition: all 0.3s linear;
-            transition: all 0.3s linear;
+    /* 			transition: all .3s linear; */
 }
 .catalogFull .product .btn-gray:hover {
     border: 2px solid transparent;
     color: #fff;
-    background: #f71c8b;
+    background: #df3e51;
+}
+.getToKnow {
+    background: url(../images/back__getToKnow.jpg) no-repeat center / cover;
+}
+.getToKnow .section__title-second {
+    display: inline-block;
+    position: relative;
+    font-size: 30px;
+    font-weight: 700;
+    color: #272b35;
+    z-index: 1;
+}
+.getToKnow .section__title-second:before {
+    content: '';
+    position: absolute;
+    bottom: 2px;
+    left: 0;
+    width: 100%;
+    height: 12px;
+    background: #fff;
+    z-index: -1;
+}
+@media only screen and (min-width: 768px) {
+    .getToKnow .section__title-second:before {
+        width: 105%;
+    }
+}
+@media only screen and (min-width: 768px) {
+    .getToKnow .section__title-second {
+        font-size: 35px;
+    }
+}
+@media only screen and (min-width: 992px) {
+    .getToKnow .section__title-second {
+        font-size: 40px;
+    }
+}
+@media only screen and (min-width: 1200px) {
+    .getToKnow .section__title-second {
+        font-size: 45px;
+    }
 }
 .footer {
     padding: 15px 0;

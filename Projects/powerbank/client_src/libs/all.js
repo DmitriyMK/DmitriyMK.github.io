@@ -64,7 +64,7 @@ $(document).ready(function() {
 
 
       infinite: true,
-      focusOnSelect: true,
+/*      focusOnSelect: true,*/
       slidesToScroll: 1,
 
 
