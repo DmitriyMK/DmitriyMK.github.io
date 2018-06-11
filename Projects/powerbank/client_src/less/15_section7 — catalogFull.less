@@ -120,6 +120,7 @@
 		/*  ¯\_(ツ)_/¯  */ /* END IMAGES */ /*  ¯\_(ツ)_/¯  */
 
 		.utube {
+			padding-top: 10px;
 			display: flex;
 			align-items: center;
 			justify-content: space-between;
@@ -171,6 +172,7 @@
 
 		&__info {
 			margin-left: 170px;
+			color: #2d3440;
 		}
 
 		&__title {
@@ -195,39 +197,11 @@
 			}
 		}
 
+
 		&__slider-decor {
 			width: 500px;
-		}
-
-		&__decor {
-
-			padding: 10px 0;
-			list-style: none;
-			
-			
-			img {
-				display: block;
-				width: 80px;
-				height: 120px;
-				border-radius: 7px;	
-				box-shadow: 1px 6px 8px 2.86px rgba(63, 69, 109, 0.15);
-				border: 1px solid #fff; 
-				cursor: pointer;
-				transition: all .3s linear;
-				background: transparent;
-
-				&:hover {
-					box-shadow: none;
-					border: 1px solid #fff; 
-				}
-			}
-
-			.img-active {
-				border: 5px solid #fff; 
-			}
-		}
-
-		.product__slider-decor {
+			padding-bottom: 30px;
+			outline: none!important;
 
 			.slick-prev:before, .slick-next:before {
 				display: block;
@@ -241,49 +215,221 @@
 			}
 
 			.slick-prev:before {
-				left: 10px;
+				left: -60px;
 				content: '\e805';
 			} 
 			.slick-next:before {
-				right: 10px;
+				right: -60px;
 				content: '\e806';
 			}
 		}
 
+		&__decor {
+			position: relative;
+			padding: 10px 0;
+			list-style: none;
+			outline: none!important;
+			
+			.img__wrap {
+				position: relative;
+				width: 80px;
+				height: 120px;
+				margin: auto;
+				overflow: hidden;
+				border: 1px solid #fff; 
+				box-shadow: 0 8px 2px 0px rgba(63, 69, 109, 0.15);
+				border-radius: 7px;	
+				cursor: pointer;
+				transition: all .3s linear;
+				background: transparent;
+
+				&:hover {
+					box-shadow: none;
+				}
+			}
+
+			img {
+				position: absolute;
+
+				top: -15px;
+				display: block;
+				width: 100%;
+				height: auto;
+				
+				
+			}
+
+			.img-active {
+				border: 5px solid #fff; 
+			}
+		}
+
 		.present {
-			width: 410px;
+			padding-top: 8px;
+			padding-bottom: 20px;
+			width: 400px;
 			display: flex;
 			justify-content: space-between;
-		}
-
-		label {
-			position: inherit;
-			cursor: pointer;
-
-		}
-		input[type="radio"] {
-			margin: auto;
 			text-align: center;
-			width: 20px;
-			height: 20px;
-			border-color: #fff;
-			box-shadow: 
-			0 0 0 4px #fff,
-			0 0 0 6px #383838;
-			border-radius: 50%;
-			cursor: pointer;
+
+			&__img {
+				position: relative;
+				width: 88px;
+				height: 88px;
+				background: #fff;
+
+				box-shadow: 0 8px 2px 0px rgba(63, 69, 109, 0.15);
+				transition: all .3s linear;
+				border-radius: 7px;	
+				border: 1px solid #fff; 
+
+				&:hover {
+					box-shadow: none;
+					border: 1px solid #fff; 
+				}
+
+				&:before {
+					content: '';
+					position: absolute;
+					top: 0;
+					left: 0;
+					width: 100%;
+					height: 100%;
+					background: rgba(194, 197, 212, 0);
+					border-radius: 7px;	
+					border: 1px solid #fff; 
+					cursor: pointer;
+					z-index: 10;
+					transition: background-color .3s ease;
+				}
+				&:after {
+					content: '';
+					position: absolute;
+					top: 50%;
+					left: 50%;
+					width: 45px;
+					height: 45px;
+					transform: translate(-50%, -50%);
+					background: url(../images/icons/zoom.png);
+					z-index: 11;
+					opacity: 0;
+					transition: opacity .3s ease;
+				}
+			}
+
+			.presentActive {
+				&:before {
+					background: rgba(194, 197, 212, .4);
+				}
+				&:after {
+					opacity: 1;
+				}
+			}
+
+			img {
+				position: relative;
+				cursor: pointer;				
+			}
+
+			label {
+				position: inherit;
+				cursor: pointer;
+
+			}
+			input[type="radio"] {
+				margin: auto;
+				text-align: center;
+				width: 17px;
+				height: 17px;
+				border: 3px solid #fff;
+				border-radius: 50%;
+				cursor: pointer;
+				margin-top: 15px;
+				transition: all .3s ease;
+				background: rgba(194, 197, 212, .4);
+			}
+			input[type="radio"]:active  {
+				background-color: #f71c8b;
+			}
+			input[type="radio"]:checked {
+				background-color: #f71c8b;
+			}
 		}
-		input[type="radio"]:active  {
-			background-color: @red;
+
+		.parameter {
+			padding-right: 330px;
+			margin-bottom: 4px;
+			position: relative;
+			font-size: 16px;
+			font-weight: 700;
+			color: #2d3440;
+
+			&__list {
+				padding-top: 10px;
+				list-style: none;
+			}
+
+			&__prop {
+				position: relative;
+				display: block;
+				overflow: hidden;
+
+				&:after {
+					content: '';
+					position: absolute;
+					margin-left: 3px;
+					bottom: 1px;
+					width: 100%;
+					border-bottom: 1px dotted;
+				}
+			}
+
+			&__value {
+				float: right;
+				padding-left: .2em;
+			}
 		}
-		input[type="radio"]:checked {
-			background-color: @red;
+
+		&__price {
+			padding-top: 15px;
+			font-size: 34px;
+
+			span {
+				padding-left: 37px;
+				font-size: 25px;
+				text-decoration: line-through;
+				text-decoration-color: #ff7fa1; 
+			}
 		}
 
+		&__btn {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			width: 100%;
+			margin-top: 11px;
+		}
+		.btn {
+			width: 240px;
+			border-radius: 0;
+			color: #fff;
+			transition: all .3s linear;
+		}
 
-
-
-
-
+		.btn-gray {
+			border: 2px solid #8e949f;
+			margin-left: 85px;
+			width: 280px;
+			height: 40px;
+			line-height: 40px;
+			text-align: center;
+			color: #2d3440;
+			transition: all .3s linear;
+			&:hover {
+				border: 2px solid transparent;
+				color: #fff;
+				background: #f71c8b;
+			}
+		}
 	}
 }

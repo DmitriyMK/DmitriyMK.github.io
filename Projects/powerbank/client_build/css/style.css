@@ -685,6 +685,9 @@ button {
     background-image:     -ms-linear-gradient(70deg, #ff678b 0%, #ff5785 26%, #fe477f 100%);
     width: 200px;
     height: 40px;
+    -webkit-transition: all 0.3s linear;
+         -o-transition: all 0.3s linear;
+            transition: all 0.3s linear;
 }
 .btn:hover {
     background: #df3e51;
@@ -3050,6 +3053,7 @@ header .tel span {
     height: 87px;
 }
 .catalogFull .product .utube {
+    padding-top: 10px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -3104,6 +3108,7 @@ header .tel span {
 }
 .catalogFull .product__info {
     margin-left: 170px;
+    color: #2d3440;
 }
 .catalogFull .product__title {
     display: inline-block;
@@ -3129,34 +3134,10 @@ header .tel span {
 }
 .catalogFull .product__slider-decor {
     width: 500px;
+    padding-bottom: 30px;
+    outline: none!important;
 }
-.catalogFull .product__decor {
-    padding: 10px 0;
-    list-style: none;
-}
-.catalogFull .product__decor img {
-    display: block;
-    width: 80px;
-    height: 120px;
-    border-radius: 7px;
-    -webkit-box-shadow: 1px 6px 8px 2.86px rgba(63, 69, 109, 0.15);
-            box-shadow: 1px 6px 8px 2.86px rgba(63, 69, 109, 0.15);
-    border: 1px solid #fff;
-    cursor: pointer;
-    -webkit-transition: all 0.3s linear;
-         -o-transition: all 0.3s linear;
-            transition: all 0.3s linear;
-    background: transparent;
-}
-.catalogFull .product__decor img:hover {
-    -webkit-box-shadow: none;
-            box-shadow: none;
-    border: 1px solid #fff;
-}
-.catalogFull .product__decor .img-active {
-    border: 5px solid #fff;
-}
-.catalogFull .product .product__slider-decor .slick-prev:before, .catalogFull .product .product__slider-decor .slick-next:before {
+.catalogFull .product__slider-decor .slick-prev:before, .catalogFull .product__slider-decor .slick-next:before {
     display: block;
     position: absolute;
     top: 50%;
@@ -3167,45 +3148,224 @@ header .tel span {
     color: #505762;
     font-size: 74px;
 }
-.catalogFull .product .product__slider-decor .slick-prev:before {
-    left: 10px;
+.catalogFull .product__slider-decor .slick-prev:before {
+    left: -60px;
     content: '\e805';
 }
-.catalogFull .product .product__slider-decor .slick-next:before {
-    right: 10px;
+.catalogFull .product__slider-decor .slick-next:before {
+    right: -60px;
     content: '\e806';
 }
+.catalogFull .product__decor {
+    position: relative;
+    padding: 10px 0;
+    list-style: none;
+    outline: none!important;
+}
+.catalogFull .product__decor .img__wrap {
+    position: relative;
+    width: 80px;
+    height: 120px;
+    margin: auto;
+    overflow: hidden;
+    border: 1px solid #fff;
+    -webkit-box-shadow: 0 8px 2px 0 rgba(63, 69, 109, 0.15);
+            box-shadow: 0 8px 2px 0 rgba(63, 69, 109, 0.15);
+    border-radius: 7px;
+    cursor: pointer;
+    -webkit-transition: all 0.3s linear;
+         -o-transition: all 0.3s linear;
+            transition: all 0.3s linear;
+    background: transparent;
+}
+.catalogFull .product__decor .img__wrap:hover {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+}
+.catalogFull .product__decor img {
+    position: absolute;
+    top: -15px;
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.catalogFull .product__decor .img-active {
+    border: 5px solid #fff;
+}
 .catalogFull .product .present {
-    width: 410px;
+    padding-top: 8px;
+    padding-bottom: 20px;
+    width: 400px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
+    text-align: center;
 }
-.catalogFull .product label {
+.catalogFull .product .present__img {
+    position: relative;
+    width: 88px;
+    height: 88px;
+    background: #fff;
+    -webkit-box-shadow: 0 8px 2px 0 rgba(63, 69, 109, 0.15);
+            box-shadow: 0 8px 2px 0 rgba(63, 69, 109, 0.15);
+    -webkit-transition: all 0.3s linear;
+         -o-transition: all 0.3s linear;
+            transition: all 0.3s linear;
+    border-radius: 7px;
+    border: 1px solid #fff;
+}
+.catalogFull .product .present__img:hover {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    border: 1px solid #fff;
+}
+.catalogFull .product .present__img:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(194, 197, 212, 0);
+    border-radius: 7px;
+    border: 1px solid #fff;
+    cursor: pointer;
+    z-index: 10;
+    -webkit-transition: background-color 0.3s ease;
+         -o-transition: background-color 0.3s ease;
+            transition: background-color 0.3s ease;
+}
+.catalogFull .product .present__img:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 45px;
+    height: 45px;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    background: url(../images/icons/zoom.png);
+    z-index: 11;
+    opacity: 0;
+    -webkit-transition: opacity 0.3s ease;
+         -o-transition: opacity 0.3s ease;
+            transition: opacity 0.3s ease;
+}
+.catalogFull .product .present .presentActive:before {
+    background: rgba(194, 197, 212, 0.4);
+}
+.catalogFull .product .present .presentActive:after {
+    opacity: 1;
+}
+.catalogFull .product .present img {
+    position: relative;
+    cursor: pointer;
+}
+.catalogFull .product .present label {
     position: inherit;
     cursor: pointer;
 }
-.catalogFull .product input[type='radio'] {
+.catalogFull .product .present input[type='radio'] {
     margin: auto;
     text-align: center;
-    width: 20px;
-    height: 20px;
-    border-color: #fff;
-    -webkit-box-shadow: 0 0 0 4px #fff,
-    0 0 0 6px #383838;
-            box-shadow: 0 0 0 4px #fff,
-    0 0 0 6px #383838;
+    width: 17px;
+    height: 17px;
+    border: 3px solid #fff;
     border-radius: 50%;
     cursor: pointer;
+    margin-top: 15px;
+    -webkit-transition: all 0.3s ease;
+         -o-transition: all 0.3s ease;
+            transition: all 0.3s ease;
+    background: rgba(194, 197, 212, 0.4);
 }
-.catalogFull .product input[type='radio']:active {
-    background-color: #df3e51;
+.catalogFull .product .present input[type='radio']:active {
+    background-color: #f71c8b;
 }
-.catalogFull .product input[type='radio']:checked {
-    background-color: #df3e51;
+.catalogFull .product .present input[type='radio']:checked {
+    background-color: #f71c8b;
+}
+.catalogFull .product .parameter {
+    padding-right: 330px;
+    margin-bottom: 4px;
+    position: relative;
+    font-size: 16px;
+    font-weight: 700;
+    color: #2d3440;
+}
+.catalogFull .product .parameter__list {
+    padding-top: 10px;
+    list-style: none;
+}
+.catalogFull .product .parameter__prop {
+    position: relative;
+    display: block;
+    overflow: hidden;
+}
+.catalogFull .product .parameter__prop:after {
+    content: '';
+    position: absolute;
+    margin-left: 3px;
+    bottom: 1px;
+    width: 100%;
+    border-bottom: 1px dotted;
+}
+.catalogFull .product .parameter__value {
+    float: right;
+    padding-left: 0.2em;
+}
+.catalogFull .product__price {
+    padding-top: 15px;
+    font-size: 34px;
+}
+.catalogFull .product__price span {
+    padding-left: 37px;
+    font-size: 25px;
+    text-decoration: line-through;
+    -webkit-text-decoration-color: #ff7fa1;
+            text-decoration-color: #ff7fa1;
+}
+.catalogFull .product__btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 11px;
+}
+.catalogFull .product .btn {
+    width: 240px;
+    border-radius: 0;
+    color: #fff;
+    -webkit-transition: all 0.3s linear;
+         -o-transition: all 0.3s linear;
+            transition: all 0.3s linear;
+}
+.catalogFull .product .btn-gray {
+    border: 2px solid #8e949f;
+    margin-left: 85px;
+    width: 280px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: #2d3440;
+    -webkit-transition: all 0.3s linear;
+         -o-transition: all 0.3s linear;
+            transition: all 0.3s linear;
+}
+.catalogFull .product .btn-gray:hover {
+    border: 2px solid transparent;
+    color: #fff;
+    background: #f71c8b;
 }
 .footer {
     padding: 15px 0;
@@ -3702,6 +3862,9 @@ label {
     .slick-dots li.slick-active button {
         background: #fff;
     }
+}
+.slick-current, .slick-slide, .slick-active {
+    outline: none!important;
 }
 /* RESPONSIVE MENU TO 992px*/
 .open {

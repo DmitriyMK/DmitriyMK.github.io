@@ -27,7 +27,7 @@ $(document).ready(function() {
   $(".js-video-button").modalVideo({
     youtube: {
       autoplay: 1,
-      nocookie: true,
+      nocookie: false,
       cc_load_policy: 1,
       color: null,
       controls: 1,
@@ -57,10 +57,18 @@ $(document).ready(function() {
             
       dots: false,
       arrow: true,
-/*      slidesToShow: 1,*/
+      slidesToShow: 5,
+      slidesToScroll: 1,
       rows: 2,
-      slidesPerRow: 5,
+/*      slidesPerRow: 5,*/
+
+
       infinite: true,
+      focusOnSelect: true,
+      slidesToScroll: 1,
+
+
+      infinite: false,
 
 
       responsive: [
