@@ -3828,8 +3828,8 @@ header .tel span {
 }
 @media only screen and (min-width: 992px) {
     .getToKnow__img {
-        width: 492px;
         bottom: -98px;
+        height: 492px;
     }
 }
 @media only screen and (min-width: 1200px) {
