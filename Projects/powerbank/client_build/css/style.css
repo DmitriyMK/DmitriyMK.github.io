@@ -3200,6 +3200,7 @@ header .tel span {
     text-align: center;
 }
 .catalogFull .product .present__img {
+    display: block;
     position: relative;
     width: 88px;
     height: 88px;
@@ -3211,6 +3212,10 @@ header .tel span {
             transition: all 0.3s linear;
     border-radius: 7px;
     border: 1px solid #fff;
+}
+.catalogFull .product .present__img a {
+    position: relative;
+    z-index: 10;
 }
 .catalogFull .product .present__img:hover {
     -webkit-box-shadow: none;
@@ -3339,7 +3344,6 @@ header .tel span {
 }
 .catalogFull .product .btn {
     width: 240px;
-    border-radius: 0;
     color: #fff;
 }
 .catalogFull .product .btn-gray {
@@ -3350,6 +3354,7 @@ header .tel span {
     line-height: 40px;
     text-align: center;
     color: #2d3440;
+    border-radius: 5px;
     /* 			transition: all .3s linear; */
 }
 .catalogFull .product .btn-gray:hover {
@@ -3358,9 +3363,14 @@ header .tel span {
     background: #df3e51;
 }
 .getToKnow {
+    position: relative;
+    padding-top: 88px;
+    padding-bottom: 118px;
+    padding-left: 390px;
     background: url(../images/back__getToKnow.jpg) no-repeat center / cover;
 }
 .getToKnow .section__title-second {
+    line-height: 0.5;
     display: inline-block;
     position: relative;
     font-size: 30px;
@@ -3371,7 +3381,7 @@ header .tel span {
 .getToKnow .section__title-second:before {
     content: '';
     position: absolute;
-    bottom: 2px;
+    bottom: -6px;
     left: 0;
     width: 100%;
     height: 12px;
@@ -3397,6 +3407,32 @@ header .tel span {
     .getToKnow .section__title-second {
         font-size: 45px;
     }
+}
+.getToKnow .btn {
+    display: block;
+    width: 240px;
+    margin-top: 70px;
+    text-align: center;
+    line-height: 40px;
+    -webkit-box-shadow: 1.046px 14.963px 19.14px 2.86px rgba(63, 69, 109, 0.1), 0.349px 4.988px 6.84px 2.16px rgba(63, 69, 109, 0.08);
+            box-shadow: 1.046px 14.963px 19.14px 2.86px rgba(63, 69, 109, 0.1), 0.349px 4.988px 6.84px 2.16px rgba(63, 69, 109, 0.08);
+    -webkit-transition: -webkit-box-shadow 0.3s linear;
+            transition: -webkit-box-shadow 0.3s linear;
+         -o-transition:         box-shadow 0.3s linear;
+            transition:         box-shadow 0.3s linear;
+            transition:         box-shadow 0.3s linear, -webkit-box-shadow 0.3s linear;
+}
+.getToKnow .btn:hover, .getToKnow .btn:focus {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+}
+.getToKnow__img {
+    position: absolute;
+    left: 50%;
+    bottom: -98px;
+    -webkit-transform: translateX(10%);
+        -ms-transform: translateX(10%);
+            transform: translateX(10%);
 }
 .footer {
     padding: 15px 0;

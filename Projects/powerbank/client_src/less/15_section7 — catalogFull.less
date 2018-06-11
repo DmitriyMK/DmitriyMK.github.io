@@ -272,7 +272,9 @@
 			justify-content: space-between;
 			text-align: center;
 
+
 			&__img {
+				display: block;
 				position: relative;
 				width: 88px;
 				height: 88px;
@@ -282,6 +284,12 @@
 				transition: all .3s linear;
 				border-radius: 7px;	
 				border: 1px solid #fff; 
+
+
+				a {
+					position: relative;
+					z-index: 10;
+				}
 
 				&:hover {
 					box-shadow: none;
@@ -409,9 +417,9 @@
 			width: 100%;
 			margin-top: 11px;
 		}
+
 		.btn {
 			width: 240px;
-			border-radius: 0;
 			color: #fff;
 
 		}
@@ -424,6 +432,7 @@
 			line-height: 40px;
 			text-align: center;
 			color: #2d3440;
+			border-radius: 5px;
 /* 			transition: all .3s linear; */
 			&:hover {
 				border: 2px solid transparent;
