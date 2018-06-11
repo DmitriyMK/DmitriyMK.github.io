@@ -62,9 +62,7 @@ $(document).ready(function() {
     rows: 2,
     /*      slidesPerRow: 5,*/
 
-
     infinite: true,
-    /*      focusOnSelect: true,*/
     slidesToScroll: 1,
 
 
@@ -72,13 +70,13 @@ $(document).ready(function() {
 
 
     responsive: [
-      /*
-              {
-                breakpoint: 1600,
-                settings: {
-                  slidesToShow: 5,
-                }
-              },*/
+
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 3,
+      }
+    },
 
 
     ]
