@@ -2737,59 +2737,30 @@ header .tel span {
     z-index: 1;
     -webkit-box-shadow: 1.325px 18.954px 37.41px 5.59px rgba(63, 69, 109, 0.13), 0.907px 12.968px 6.84px 2.16px rgba(63, 69, 109, 0.06);
             box-shadow: 1.325px 18.954px 37.41px 5.59px rgba(63, 69, 109, 0.13), 0.907px 12.968px 6.84px 2.16px rgba(63, 69, 109, 0.06);
-    /* 	&:before {
-	content: '';
-	display: block;
-	position: absolute;
-	top: 25%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	width: 100%;
-	height: 139px;
-	background: url(../images/hero__images-sm.png)no-repeat;
-	@media @tablet {
-		display: none;
-	}
-} 
-
-&:after{
-	content: '';
-	display: block;
-	position: absolute;
-	top: 60%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	width: 100%;
-	height: 139px;
-	background: url(../images/hero__images-sm2.png)no-repeat;
-	@media @tablet {
-		display: none;
-	}
-	}  */
 }
 .headerInner .container {
-    height: 510px;
+    height: 450px;
     position: relative;
+}
+@media only screen and (min-width: 992px) {
+    .headerInner .container {
+        height: 510px;
+    }
 }
 .headerInner__center {
     padding-top: 190px;
 }
 .headerInner__title {
     position: relative;
-    font-size: 23px;
+    font-size: 30px;
+    font-weight: 900;
     text-align: center;
     color: #fff;
     z-index: 10;
 }
-@media only screen and (min-device-width: 360px) {
-    .headerInner__title {
-        font-size: 27px;
-        font-weight: 900;
-    }
-}
 @media only screen and (min-width: 768px) {
     .headerInner__title {
-        font-size: 30px;
+        font-size: 40px;
     }
 }
 @media only screen and (min-width: 992px) {
@@ -2854,8 +2825,23 @@ header .tel span {
     position: absolute;
 }
 .headerInner .hand-1 {
-    top: 68px;
-    left: 0;
+    top: 80px;
+    left: -20px;
+    width: 250px;
+}
+@media only screen and (min-width: 992px) {
+    .headerInner .hand-1 {
+        width: 354px;
+        top: 40px;
+        left: -40px;
+    }
+}
+@media only screen and (min-width: 1200px) {
+    .headerInner .hand-1 {
+        width: 354px;
+        top: 40px;
+        left: -40px;
+    }
 }
 @media only screen and (min-width: 1600px) {
     .headerInner .hand-1 {
@@ -2864,8 +2850,22 @@ header .tel span {
     }
 }
 .headerInner .hand-2 {
-    bottom: 19px;
-    left: 0;
+    width: 190px;
+    bottom: -40px;
+    left: -35px;
+}
+@media only screen and (min-width: 992px) {
+    .headerInner .hand-2 {
+        width: 251px;
+        bottom: -40px;
+        left: -30px;
+    }
+}
+@media only screen and (min-width: 1200px) {
+    .headerInner .hand-2 {
+        bottom: -40px;
+        left: -50px;
+    }
 }
 @media only screen and (min-width: 1600px) {
     .headerInner .hand-2 {
@@ -2873,18 +2873,48 @@ header .tel span {
         left: 0;
     }
 }
-@media only screen and (min-width: 1600px) {
+.headerInner .hand-3 {
+    bottom: -34px;
+    right: 20px;
+    width: 130px;
+    -webkit-transform: rotate(35deg);
+        -ms-transform: rotate(35deg);
+            transform: rotate(35deg);
+}
+@media only screen and (min-width: 992px) {
     .headerInner .hand-3 {
-        bottom: -10px;
+        width: 165px;
+        bottom: -30px;
+        right: inherit;
+        left: 50%;
+        -webkit-transform: translateX(35%) rotate(0);
+            -ms-transform: translateX(35%) rotate(0);
+                transform: translateX(35%) rotate(0);
+    }
+}
+@media only screen and (min-width: 1200px) {
+    .headerInner .hand-3 {
+        bottom: -30px;
         left: 50%;
         -webkit-transform: translateX(35%);
             -ms-transform: translateX(35%);
                 transform: translateX(35%);
     }
 }
+@media only screen and (min-width: 1600px) {
+    .headerInner .hand-3 {
+        bottom: -10px;
+    }
+}
 .headerInner .hand-4 {
-    bottom: -50px;
-    right: -90px;
+    display: none;
+}
+@media only screen and (min-width: 1200px) {
+    .headerInner .hand-4 {
+        display: block;
+        bottom: -50px;
+        right: -100px;
+    }
 }
 @media only screen and (min-width: 1600px) {
     .headerInner .hand-4 {
@@ -2907,15 +2937,17 @@ header .tel span {
     bottom: 70px;
     left: 530px;
 }
-.headerInner .ico_shape7 {
-    background-position: -114px -24px;
-    height: 21px;
-    width: 22px;
-    top: 110px;
-    right: 1230px;
-    -webkit-transform: rotate(50deg);
-        -ms-transform: rotate(50deg);
-            transform: rotate(50deg);
+@media only screen and (min-width: 1200px) {
+    .headerInner .ico_shape7 {
+        background-position: -114px -24px;
+        height: 21px;
+        width: 22px;
+        top: 110px;
+        right: 1230px;
+        -webkit-transform: rotate(50deg);
+            -ms-transform: rotate(50deg);
+                transform: rotate(50deg);
+    }
 }
 .headerInner .ico_shape6 {
     background-position: 0 -98px;
@@ -3091,7 +3123,6 @@ header .tel span {
     font-size: 60px;
     cursor: pointer;
     position: relative;
-    /* 				transition: color .3s linear; */
     margin: 0 40px;
 }
 .catalogFull .product .utube__link:hover {
@@ -3178,20 +3209,20 @@ header .tel span {
     outline: none!important;
 }
 .catalogFull .product__decor .img__wrap {
+    content-box: border-box;
     position: relative;
     width: 80px;
     height: 120px;
     margin: auto;
     overflow: hidden;
-    border: 1px solid #fff;
-    -webkit-box-shadow: 0 8px 2px 0 rgba(63, 69, 109, 0.15);
-            box-shadow: 0 8px 2px 0 rgba(63, 69, 109, 0.15);
+    border: 4px solid transparent;
+    -webkit-box-shadow: 0 8px 8px -2px rgba(63, 69, 109, 0.15);
+            box-shadow: 0 8px 8px -2px rgba(63, 69, 109, 0.15);
     border-radius: 7px;
     cursor: pointer;
     -webkit-transition: all 0.3s linear;
          -o-transition: all 0.3s linear;
             transition: all 0.3s linear;
-    background: transparent;
 }
 .catalogFull .product__decor .img__wrap:hover {
     -webkit-box-shadow: none;
@@ -3199,13 +3230,13 @@ header .tel span {
 }
 .catalogFull .product__decor img {
     position: absolute;
-    top: -15px;
+    top: 0;
     display: block;
     width: 100%;
     height: auto;
 }
 .catalogFull .product__decor .img-active {
-    border: 5px solid #fff;
+    border: 4px solid #fe6289;
 }
 .catalogFull .product .present {
     padding-top: 8px;
@@ -3225,8 +3256,8 @@ header .tel span {
     width: 88px;
     height: 88px;
     background: #fff;
-    -webkit-box-shadow: 0 8px 2px 0 rgba(63, 69, 109, 0.15);
-            box-shadow: 0 8px 2px 0 rgba(63, 69, 109, 0.15);
+    -webkit-box-shadow: 0 8px 8px -2px rgba(63, 69, 109, 0.15);
+            box-shadow: 0 8px 8px -2px rgba(63, 69, 109, 0.15);
     -webkit-transition: all 0.3s linear;
          -o-transition: all 0.3s linear;
             transition: all 0.3s linear;
@@ -3251,7 +3282,7 @@ header .tel span {
     height: 100%;
     background: rgba(194, 197, 212, 0);
     border-radius: 7px;
-    border: 1px solid #fff;
+    border: 4px solid transparent;
     cursor: pointer;
     z-index: 10;
     -webkit-transition: background-color 0.3s ease;
@@ -3274,6 +3305,9 @@ header .tel span {
     -webkit-transition: opacity 0.3s ease;
          -o-transition: opacity 0.3s ease;
             transition: opacity 0.3s ease;
+}
+.catalogFull .product .present .presentActive {
+    border: 4px solid #fe6289;
 }
 .catalogFull .product .present .presentActive:before {
     background: rgba(194, 197, 212, 0.4);

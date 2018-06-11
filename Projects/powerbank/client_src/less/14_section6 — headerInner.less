@@ -26,39 +26,12 @@
 	z-index: 1;
 	box-shadow: 1.325px 18.954px 37.41px 5.59px rgba(63, 69, 109, 0.13),0.907px 12.968px 6.84px 2.16px rgba(63, 69, 109, 0.06);
 
-/* 	&:before {
-	content: '';
-	display: block;
-	position: absolute;
-	top: 25%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	width: 100%;
-	height: 139px;
-	background: url(../images/hero__images-sm.png)no-repeat;
-	@media @tablet {
-		display: none;
-	}
-} 
-
-&:after{
-	content: '';
-	display: block;
-	position: absolute;
-	top: 60%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	width: 100%;
-	height: 139px;
-	background: url(../images/hero__images-sm2.png)no-repeat;
-	@media @tablet {
-		display: none;
-	}
-	}  */
-
 	.container {
-		height: 510px;
+		height: 450px;
 		position: relative;
+		@media @desktop {
+			height: 510px;
+		}
 	}
 
 
@@ -69,19 +42,15 @@
 
 	&__title {
 		position: relative;
-		font-size: 23px;
+		font-size: 30px;
+		font-weight: 900;
 		text-align: center;
 		
 		color: #fff;
 		z-index: 10;
 
-		@media only screen and (min-device-width : 360px) { 
-			font-size: 27px;
-			font-weight: 900;
-		}
-
 		@media @tablet {
-			font-size: 30px;
+			font-size: 40px;
 		}
 		@media @desktop {
 			max-width: inherit;
@@ -152,17 +121,23 @@
 	}
 
 	.hand-1 {
-		top: 68px;
-		left: 0;
+		top: 80px;
+		left: -20px;
+
+		width: 250px;
 
 		@media @tablet {
 
 		}
 		@media @desktop {
-
+			width: 354px;
+			top: 40px;
+			left: -40px;
 		}
 		@media @desktop-xl {
-
+			width: 354px;
+			top: 40px;
+			left: -40px;
 		}
 		@media @desktop-xl-2 {
 			top: 68px;
@@ -170,17 +145,21 @@
 		}
 	}
 	.hand-2 {
-		bottom: 19px;
-		left: 0;
+		width: 190px;
+		bottom: -40px;
+		left: -35px;
 
 		@media @tablet {
 
 		}
 		@media @desktop {
-
+			width: 251px;
+			bottom: -40px;
+			left: -30px;
 		}
 		@media @desktop-xl {
-
+			bottom: -40px;
+			left: -50px;
 		}
 		@media @desktop-xl-2 {
 			bottom: 19px;
@@ -188,35 +167,38 @@
 		}
 	}
 	.hand-3 {
-		
+		bottom: -34px;
+		right: 20px;
+		width: 130px;
+		transform: rotate(35deg);
 
 		@media @tablet {
 
 		}
 		@media @desktop {
-
+			width: 165px;
+			bottom: -30px;
+			right: inherit;
+			left: 50%;
+			transform: translateX(35%) rotate(0);
 		}
 		@media @desktop-xl {
-
-		}
-		@media @desktop-xl-2 {
-			bottom: -10px;
+			bottom: -30px;
 			left: 50%;
 			transform: translateX(35%);
 		}
+		@media @desktop-xl-2 {
+			bottom: -10px;
+		}
 	}
+
 	.hand-4 {
-		bottom: -50px;
-		right: -90px;
+		display: none;
 
-		@media @tablet {
-
-		}
-		@media @desktop {
-
-		}
 		@media @desktop-xl {
-
+			display: block;
+			bottom: -50px;
+			right: -100px;
 		}
 		@media @desktop-xl-2 {
 			bottom: -50px;
@@ -242,13 +224,17 @@
 	}
 
 	.ico_shape7 {
-		background-position: -114px -24px;
-		height: 21px;
-		width: 22px;
 
-		top: 110px;
-		right: 1230px;
-		transform: rotate(50deg);
+		@media @desktop-xl{
+			background-position: -114px -24px;
+			height: 21px;
+			width: 22px;
+
+			top: 110px;
+			right: 1230px;
+			transform: rotate(50deg);
+		}
+		
 	}
 
 	.ico_shape6 {
