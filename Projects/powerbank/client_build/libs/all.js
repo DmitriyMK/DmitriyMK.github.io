@@ -53,37 +53,37 @@ $(document).ready(function() {
     }
   });
 
-   $('.product__slider-decor').slick({
-            
-      dots: false,
-      arrow: true,
-      slidesToShow: 5,
-      slidesToScroll: 1,
-      rows: 2,
-/*      slidesPerRow: 5,*/
+  $('.product__slider-decor').slick({
+
+    dots: false,
+    arrow: true,
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    rows: 2,
+    /*      slidesPerRow: 5,*/
 
 
-      infinite: true,
-/*      focusOnSelect: true,*/
-      slidesToScroll: 1,
+    infinite: true,
+    /*      focusOnSelect: true,*/
+    slidesToScroll: 1,
 
 
-      infinite: false,
+    infinite: false,
 
 
-      responsive: [
-/*
-        {
-          breakpoint: 1600,
-          settings: {
-            slidesToShow: 5,
-          }
-        },*/
+    responsive: [
+      /*
+              {
+                breakpoint: 1600,
+                settings: {
+                  slidesToShow: 5,
+                }
+              },*/
 
 
-      ]
+    ]
 
-    });
+  });
 
 });
 
@@ -131,37 +131,49 @@ $(document).ready(function() {
   });
 
 
-  $('.decorSection1').plaxmove({
-    ratioH: 0.0055,
-    ratioV: 0.0200,
+  $('.decorSection1').each(function() {
+    $(this).plaxmove({
+      ratioH: 0.0055,
+      ratioV: 0.0200,
+    });
   });
 
-  $('.decorSection4').plaxmove({
-    ratioH: 0.0095,
-    ratioV: 0.0100,
+  $('.decorSection4').each(function() {
+    $(this).plaxmove({
+      ratioH: 0.0095,
+      ratioV: 0.0100,
+    });
   });
 
-  $('.decorSection7').plaxmove({
-    ratioH: -0.0055,
-    ratioV: 0.0255,
-    invertV: 0.0185,
+  $('.decorSection7').each(function() {
+    $(this).plaxmove({
+      ratioH: -0.0055,
+      ratioV: 0.0255,
+      invertV: 0.0185,
+    });
   });
 
-  $('.decorSection10').plaxmove({
-    ratioH: 0.0055,
-    ratioV: 0.0200,
+  $('.decorSection10').each(function() {
+    $(this).plaxmove({
+      ratioH: 0.0055,
+      ratioV: 0.0200,
+    });
   });
 
-  $('.decorSection12').plaxmove({
-    ratioH: -0.0055,
-    ratioV: 0.0255,
-    invertV: 0.0185,
+  $('.decorSection12').each(function() {
+    $(this).plaxmove({
+      ratioH: -0.0055,
+      ratioV: 0.0255,
+      invertV: 0.0185,
+    });
   });
 
-  $('.decorSection18').plaxmove({
-    ratioH: -0.0055,
-    ratioV: 0.0255,
-    invertV: 0.0185,
+  $('.decorSection18').each(function() {
+    $(this).plaxmove({
+      ratioH: -0.0055,
+      ratioV: 0.0255,
+      invertV: 0.0185,
+    });
   });
 
 });
@@ -217,7 +229,7 @@ $(document).ready(function() {
 
     clickOutside: "close",
   });
-  
+
 
 });
 

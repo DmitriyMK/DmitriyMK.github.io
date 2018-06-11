@@ -2857,20 +2857,40 @@ header .tel span {
     top: 68px;
     left: 0;
 }
+@media only screen and (min-width: 1600px) {
+    .headerInner .hand-1 {
+        top: 68px;
+        left: 0;
+    }
+}
 .headerInner .hand-2 {
     bottom: 19px;
     left: 0;
 }
-.headerInner .hand-3 {
-    bottom: -10px;
-    left: 50%;
-    -webkit-transform: translateX(35%);
-        -ms-transform: translateX(35%);
-            transform: translateX(35%);
+@media only screen and (min-width: 1600px) {
+    .headerInner .hand-2 {
+        bottom: 19px;
+        left: 0;
+    }
+}
+@media only screen and (min-width: 1600px) {
+    .headerInner .hand-3 {
+        bottom: -10px;
+        left: 50%;
+        -webkit-transform: translateX(35%);
+            -ms-transform: translateX(35%);
+                transform: translateX(35%);
+    }
 }
 .headerInner .hand-4 {
     bottom: -50px;
-    right: 0;
+    right: -90px;
+}
+@media only screen and (min-width: 1600px) {
+    .headerInner .hand-4 {
+        bottom: -50px;
+        right: 0;
+    }
 }
 .headerInner .ico_shape18 {
     top: 240px;
@@ -3350,7 +3370,7 @@ header .tel span {
     border: 2px solid #8e949f;
     margin-left: 85px;
     width: 280px;
-    height: 40px;
+    height: 42px;
     line-height: 40px;
     text-align: center;
     color: #2d3440;
