@@ -3464,8 +3464,8 @@ header .tel span {
 }
 @media only screen and (min-width: 768px) {
     .catalogFull .product .present__img {
-        width: inherit;
-        height: inherit;
+        width: 85px;
+        height: 85px;
     }
 }
 .catalogFull .product .present__img a {
@@ -3533,8 +3533,8 @@ header .tel span {
 }
 @media only screen and (min-width: 768px) {
     .catalogFull .product .present img {
-        width: 88px;
-        height: 88px;
+        width: 78px;
+        height: 78px;
     }
 }
 .catalogFull .product .present label {
@@ -3676,7 +3676,7 @@ header .tel span {
 @media only screen and (min-width: 992px) {
     .catalogFull .product .btn-gray {
         width: 280px;
-        margin-top: inherit;
+        margin-top: 0;
         margin-left: 20px;
     }
 }
