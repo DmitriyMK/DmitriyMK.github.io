@@ -3450,8 +3450,8 @@ header .tel span {
 .catalogFull .product .present__img {
     display: block;
     position: relative;
-    width: 68px;
-    height: 68px;
+    max-width: 68px;
+    max-height: 68px;
     background: #fff;
     overflow: hidden;
     -webkit-box-shadow: 0 8px 8px -2px rgba(63, 69, 109, 0.15);
@@ -3464,8 +3464,8 @@ header .tel span {
 }
 @media only screen and (min-width: 768px) {
     .catalogFull .product .present__img {
-        width: 85px;
-        height: 85px;
+        max-width: 85px;
+        max-height: 85px;
     }
 }
 .catalogFull .product .present__img a {
@@ -3847,6 +3847,75 @@ header .tel span {
             -ms-transform: translateX(10%);
                 transform: translateX(10%);
     }
+}
+@media only screen and (min-width: 992px) {
+    .catalogDetails .product__info {
+        margin-top: 18px;
+    }
+}
+@media only screen and (min-width: 992px) {
+    .catalogDetails .product__slider-decor {
+        padding-bottom: 54px;
+    }
+}
+@media only screen and (min-width: 992px) {
+    .catalogDetails .product__price {
+        padding-top: 48px;
+        padding-bottom: 0;
+    }
+}
+.product__details {
+    padding-top: 48px;
+    position: relative;
+    color: #2d3440;
+    z-index: 1;
+}
+.product__details .desc {
+    padding-top: 14px;
+    padding-bottom: 39px;
+    max-width: 800px;
+}
+.product__details .parameter {
+    width: 270px;
+    margin: auto;
+    position: relative;
+    font-size: 16px;
+    color: #2d3440;
+    text-align: left;
+}
+.product__details .parameter__list {
+    padding-bottom: 32px;
+}
+@media only screen and (min-width: 992px) {
+    .product__details .parameter {
+        margin: initial;
+        margin-bottom: 5px;
+        width: 352px;
+    }
+}
+.product__details .parameter__list {
+    padding-top: 10px;
+    list-style: none;
+}
+.product__details .parameter__prop {
+    position: relative;
+    display: block;
+    overflow: hidden;
+}
+.product__details .parameter__prop:after {
+    content: '';
+    position: absolute;
+    margin-left: 3px;
+    bottom: 1px;
+    width: 100%;
+    border-bottom: 1px dotted;
+}
+.product__details .parameter__value {
+    float: right;
+    padding-left: 0.2em;
+}
+.product__details .product__attention {
+    list-style-position: inside;
 }
 .footer {
     padding: 15px 0;
