@@ -7,12 +7,11 @@
 
 	<meta name="description" content="Flash-Market. Популярные аксессуары с оригинальным дизайном">
 	<meta name="keywords" content="">
-
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-
 	<link rel="shortcut icon" href="favicon.png" type="image/x-icon">
 	<meta name="theme-color" content="#181c25">
+
 
 	<meta property="og:type" content="website"/> 
 	<meta property="og:image" content="images/FM-og.png">
@@ -24,16 +23,32 @@
 	<meta property="og:title" content="Flash-Market">
 
 
-	<link rel="stylesheet" href="./css/remodal.css">
-	<link rel="stylesheet" href="./css/remodal-default-theme.css">
-	<link rel="stylesheet" href="./css/fancybox.css">
-	<link rel="stylesheet" href="./css/animate.min.css">
+	<link rel="preload" href="./css/remodal.css" as="style" onload="this.rel='stylesheet'">
+	<link rel="preload" href="./css/remodal-default-theme.css" as="style" onload="this.rel='stylesheet'">
+	<link rel="preload" href="./css/fancybox.css" as="style" onload="this.rel='stylesheet'">
+	<link rel="preload" href="./css/animate.min.css" as="style" onload="this.rel='stylesheet'">
+
+	<noscript>
+		<link rel="stylesheet" href="./css/remodal.css">
+		<link rel="stylesheet" href="./css/remodal-default-theme.css">
+		<link rel="stylesheet" href="./css/fancybox.css">
+		<link rel="stylesheet" href="./css/animate.min.css">
+	</noscript>
+
 	<link rel="stylesheet" href="./css/style.css">
 
-	<script defer src="./libs/remodal.min.js"></script>
+	<!-- DEFER SCRIPT -->
 	<script defer src="./libs/fancybox.js"></script>
+	<script defer src="./libs/slick.js"></script>
 	<script defer src="./libs/jquery.validate.min.js"></script>
-	
+
+	<script defer src="./libs/wow.min.js"></script>
+	<script defer src="./libs/jquery.plaxmove.js"></script>
+	<script defer src="./libs/jquery.mask.min.js"></script>	
+	<script defer src="./libs/jquery-modal-video.min.js"></script>
+
+	<!-- END DEFER SCRIPT -->
+
 </head>
 <body>
 
@@ -442,15 +457,9 @@
 
 
 	<!-- Load Scripts -->
-	<script src='https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js?ver=3.9.2'></script> 
-
-	
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
 	<script src="./libs/jquery.nicescroll.min.js"></script>
-	<script src="./libs/wow.min.js"></script>
-	<script src="./libs/jquery.plaxmove.js"></script>
-
-	
-	<script src="./libs/jquery.mask.min.js"></script>	
+	<script src="./libs/remodal.min.js"></script>
 	<script src="./libs/all.js"></script>
 
 

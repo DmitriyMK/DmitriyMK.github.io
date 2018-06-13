@@ -24,17 +24,40 @@
 	<meta property="og:title" content="Flash-Market">
 
 
-	<link rel="stylesheet" href="./css/remodal.css">
-	<link rel="stylesheet" href="./css/remodal-default-theme.css">
-	<link rel="stylesheet" href="./css/fancybox.css">
-	<link rel="stylesheet" href="./css/animate.min.css">
-	<link rel="stylesheet" href="./css/fancybox.css">
-	<link rel="stylesheet" href="./css/modal-video.min.css">
-	<link rel="stylesheet" href="./css/slick-theme.css">
-	<link rel="stylesheet" href="./css/slick.css">
+	<link rel="preload" href="./css/remodal.css" as="style" onload="this.rel='stylesheet'">
+	<link rel="preload" href="./css/remodal-default-theme.css" as="style" onload="this.rel='stylesheet'">
+	<link rel="preload" href="./css/fancybox.css" as="style" onload="this.rel='stylesheet'">
+	<link rel="preload" href="./css/animate.min.css" as="style" onload="this.rel='stylesheet'">
+	<link rel="preload" href="./css/modal-video.min.css" as="style" onload="this.rel='stylesheet'">
+	<link rel="preload" href="./css/slick-theme.css" as="style" onload="this.rel='stylesheet'">
+	<link rel="preload" href="./css/slick.css" as="style" onload="this.rel='stylesheet'">
+
+	<noscript>
+		<link rel="stylesheet" href="./css/remodal.css">
+		<link rel="stylesheet" href="./css/remodal-default-theme.css">
+		<link rel="stylesheet" href="./css/fancybox.css">
+		<link rel="stylesheet" href="./css/animate.min.css">
+		<link rel="stylesheet" href="./css/modal-video.min.css">
+		<link rel="stylesheet" href="./css/slick-theme.css">
+		<link rel="stylesheet" href="./css/slick.css">
+	</noscript>
+
+
 	<link rel="stylesheet" href="./css/style.css">
 
-	
+
+	<!-- DEFER SCRIPT -->
+	<script defer src="./libs/fancybox.js"></script>
+	<script defer src="./libs/slick.js"></script>
+	<script defer src="./libs/jquery.validate.min.js"></script>
+
+	<script defer src="./libs/wow.min.js"></script>
+	<script defer src="./libs/jquery.plaxmove.js"></script>
+	<script defer src="./libs/jquery.mask.min.js"></script>	
+	<script defer src="./libs/jquery-modal-video.min.js"></script>
+
+	<!-- END DEFER SCRIPT -->
+
 
 </head>
 <body>
@@ -824,24 +847,14 @@
 
 
 	<!-- Load Scripts -->
-	<script src='https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js?ver=3.9.2'></script> 
-
-
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
 	<script src="./libs/jquery.nicescroll.min.js"></script>
-	<script src="./libs/wow.min.js"></script>
-	<script src="./libs/jquery.plaxmove.js"></script>
-	<script src="./libs/jquery.mask.min.js"></script>	
 	<script src="./libs/remodal.min.js"></script>
-	<script src="./libs/fancybox.js"></script>
-	<script src="./libs/slick.js"></script>
-	<script src="./libs/jquery.validate.min.js"></script>
-	<script src="./libs/jquery-modal-video.min.js"></script>
 	<script src="./libs/all.js"></script>
 
 
 	<script async defer src="https://maps.googleapis.com/maps/api/js?callback=initMap&key=AIzaSyDFnsXtzPC77ZP4pkabK8_yVr5qazdPCjc"></script>
 	<script src="./libs/map.js"></script>  
-
 
 </body>
 </html>
