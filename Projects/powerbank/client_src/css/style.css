@@ -1,14 +1,4 @@
-/* @fs: 						      	1.6rem;
-@fss: 						    	2rem;
-@fsb: 						    	1.6rem;
 
-
-@h1: 						      	4rem;
-@h2: 						      	3rem;
-@h3: 						      	2rem;
-@h4: 						      	2rem;
-@h5: 						      	2rem;
-@h6: 						      	2rem; */
 @font-face
 {
     font-family: 'Roboto Condensed';
@@ -207,42 +197,7 @@
 {
     content: '\f178';
 }
-/* '' */
-/* @import url('https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&subset=cyrillic'); */
-/* .placeholder(@ff: @ff; @fs: @fs; @fw: 400; @color: @text-color) {
-	input::-webkit-input-placeholder, textarea::-webkit-input-placeholder      {
-		font-family: @ff2;
-		font-size: @fs;
-		font-weight: @fw;
-		line-height: 1;
-		color: @color;
-	}
-	input::-moz-placeholder, textarea::-moz-placeholder                			{
-		font-family: @ff2;
-		font-size: @fs;
-		font-weight: @fw;
-		line-height: 1;
-		color: @color;
-	}
-	input:-moz-placeholder, textarea:-moz-placeholder                 			{
-		font-family: @ff2;
-		font-size: @fs;
-		font-weight: @fw;
-		line-height: 1;
-		color: @color;
-	}
-	input:-ms-input-placeholder, textarea:-ms-input-placeholder          		{
-		font-family: @ff2;
-		font-size: @fs;
-		font-weight: @fw;
-		line-height: 1;
-		color: @color;
-	}
-	input:focus::-webkit-input-placeholder, textarea:focus::-webkit-input-placeholder 		{opacity: 0; transition: opacity 0.3s ease;}
-	input:focus::-moz-placeholder, textarea:focus::-moz-placeholder          				{opacity: 0; transition: opacity 0.3s ease;}
-	input:focus:-moz-placeholder, textarea:focus:-moz-placeholder           				{opacity: 0; transition: opacity 0.3s ease;}
-	input:focus:-ms-input-placeholder, textarea:focus:-ms-input-placeholder      			{opacity: 0; transition: opacity 0.3s ease;}
-} */
+
 html
 {
     font-family: sans-serif;

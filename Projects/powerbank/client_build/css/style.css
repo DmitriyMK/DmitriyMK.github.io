@@ -178,41 +178,7 @@
 .icon-dot-circled:before {
     content: '\f192';
 }
-/* '' */
-/* .placeholder(@ff: @ff; @fs: @fs; @fw: 400; @color: @text-color) {
-	input::-webkit-input-placeholder, textarea::-webkit-input-placeholder      {
-		font-family: @ff2;
-		font-size: @fs;
-		font-weight: @fw;
-		line-height: 1;
-		color: @color;
-	}
-	input::-moz-placeholder, textarea::-moz-placeholder                			{
-		font-family: @ff2;
-		font-size: @fs;
-		font-weight: @fw;
-		line-height: 1;
-		color: @color;
-	}
-	input:-moz-placeholder, textarea:-moz-placeholder                 			{
-		font-family: @ff2;
-		font-size: @fs;
-		font-weight: @fw;
-		line-height: 1;
-		color: @color;
-	}
-	input:-ms-input-placeholder, textarea:-ms-input-placeholder          		{
-		font-family: @ff2;
-		font-size: @fs;
-		font-weight: @fw;
-		line-height: 1;
-		color: @color;
-	}
-	input:focus::-webkit-input-placeholder, textarea:focus::-webkit-input-placeholder 		{opacity: 0; transition: opacity 0.3s ease;}
-	input:focus::-moz-placeholder, textarea:focus::-moz-placeholder          				{opacity: 0; transition: opacity 0.3s ease;}
-	input:focus:-moz-placeholder, textarea:focus:-moz-placeholder           				{opacity: 0; transition: opacity 0.3s ease;}
-	input:focus:-ms-input-placeholder, textarea:focus:-ms-input-placeholder      			{opacity: 0; transition: opacity 0.3s ease;}
-} */
+
 html {
     font-family: sans-serif;
         -ms-text-size-adjust: 100%;
@@ -614,21 +580,6 @@ input, textarea {
         -ms-user-select: text;
             user-select: text;
 }
-/* 
- .scrollup {
-	width: 37px;
-	height: 84px;
-	position: fixed;
-	bottom: 50px;
-	right: 15px;
-	display: none;
-	text-indent: -9999px;
-	background: url('../images/arrow-top.png') no-repeat;
-	z-index: 100;
-	@media @tablet {
-		right: 100px;
-	}
-	}  */
 .anchor {
     visibility: hidden;
     display: block;
