@@ -69,21 +69,29 @@
 	}
 
 	.catalogFull__title {
+		max-width: 320px;
+		margin: auto;
+		position: relative;
 		font-size: 21px;
 		
 		@media @desktop {
+			max-width: inherit;
+			display: inline-block;
 			font-size: 30px;
 		}
 
 		&:before {
-			width: 80%;
-			left: 50%;
-			transform: translateX(-50%);
+			content: '';
+			position: absolute;
+			bottom: 2px;
+			left: 0;
+			width: 100%;
+			height: 12px;
+			background: #fff;
+			z-index: -1;
 
-			@media @desktop {
-				width: inherit;
-				left: inherit;
-				transform: inherit;
+			@media @tablet {
+				width: 105%;
 			}
 		}
 	}

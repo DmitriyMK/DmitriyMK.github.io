@@ -212,7 +212,20 @@
 			position: absolute;
 			top: 50%;
 			left: 50%;
+			transform: translate(-50%, -35%);
+			max-width: 100%;
+			max-height: 80px;		
+
+		}
+
+		@media @desktop-xl {
+			transform: translate(-50%, -20%);
+		}
+
+		@media @desktop-xl-2 {
 			transform: translate(-50%, -50%);
+			max-width: inherit;
+			max-height: inherit;		
 		}
 	}
 }
