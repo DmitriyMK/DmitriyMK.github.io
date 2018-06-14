@@ -24,7 +24,7 @@
 	<meta property="og:title" content="Flash-Market">
 
 
-
+<!-- 
 	<link rel="stylesheet" href="./css/remodal.css">
 	<link rel="stylesheet" href="./css/remodal-default-theme.css">
 	<link rel="stylesheet" href="./css/fancybox.css">
@@ -32,6 +32,27 @@
 	<link rel="stylesheet" href="./css/modal-video.min.css">
 	<link rel="stylesheet" href="./css/slick-theme.css">
 	<link rel="stylesheet" href="./css/slick.css">
+	<link rel="stylesheet" href="./css/style.css"> -->
+
+
+	<link rel="preload" href="./css/remodal.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+	<link rel="preload" href="./css/remodal-default-theme.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+	<link rel="preload" href="./css/fancybox.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+	<link rel="preload" href="./css/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+	<link rel="preload" href="./css/modal-video.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+	<link rel="preload" href="./css/slick-theme.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+	<link rel="preload" href="./css/slick.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+
+	<noscript>
+		<link rel="stylesheet" href="./css/remodal.css">
+		<link rel="stylesheet" href="./css/remodal-default-theme.css">
+		<link rel="stylesheet" href="./css/fancybox.css">
+		<link rel="stylesheet" href="./css/animate.min.css">
+		<link rel="stylesheet" href="./css/modal-video.min.css">
+		<link rel="stylesheet" href="./css/slick-theme.css">
+		<link rel="stylesheet" href="./css/slick.css">
+	</noscript>
+
 	<link rel="stylesheet" href="./css/style.css">
 
 
@@ -45,6 +66,8 @@
 	<script defer src="./libs/jquery.mask.min.js"></script>	
 	<script defer src="./libs/jquery-modal-video.min.js"></script>
 	<!-- END DEFER SCRIPT -->
+
+	<script src="./libs/cssrelpreload.js"></script>
 
 
 </head>
@@ -838,6 +861,7 @@
 	<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
 	<script src="./libs/jquery.nicescroll.min.js"></script>
 	<script src="./libs/remodal.min.js"></script>
+	
 	<script src="./libs/all.js"></script>
 
 

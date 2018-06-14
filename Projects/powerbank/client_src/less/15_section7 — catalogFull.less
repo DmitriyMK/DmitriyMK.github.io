@@ -336,15 +336,46 @@
 
 			@media @tablet {
 				width: 500px;
+				margin: 0;
 				margin: initial;
 				padding-bottom: 30px;
+			}
+
+			.slick-prev {
+				width: 50px;
+				height: 100%;
+				left: -50px;
+
+				@media @desktop {
+					width: 50px;
+					left: -50px;
+				}
+				@media @desktop-xl {
+					width: 70px;
+					left: -70px;
+				}
+			}
+
+			.slick-next {
+				width: 50px;
+				height: 100%;
+				right: -50px;	
+
+				@media @desktop {
+					width: 50px;
+					right: -50px;
+				}
+				@media @desktop-xl {
+					width: 70px;
+					right: -70px;
+				}	
 			}
 
 			.slick-prev:before, .slick-next:before {
 				display: block;
 				position: absolute;
 				top: 50%;
-				transform: translateY(-50%);
+				transform: translateY(-54%);
 				z-index: 10;
 				color: #505762;
 				font-size: 45px;
@@ -359,32 +390,13 @@
 			}
 
 			.slick-prev:before {
-				left: -10px;
+				left: 10px;
 				content: '\e805';
-
-				@media @tablet {
-
-				}
-				@media @desktop {
-					left: -20px;
-				}
-				@media @desktop-xl {
-					left: -60px;
-				}
 			} 
+
 			.slick-next:before {
-				right: -20px;
 				content: '\e806';
-
-				@media @tablet {
-
-				}
-				@media @desktop {
-					right: -30px;
-				}
-				@media @desktop-xl {
-					right: -60px;
-				}
+				right: 10px;
 			}
 		}
 
@@ -438,6 +450,7 @@
 				padding-bottom: 20px;
 			}
 			@media @desktop {
+				margin: 0;
 				margin: initial;
 			}
 
@@ -565,6 +578,7 @@
 
 			}
 			@media @desktop {
+				margin: 0;
 				margin: initial;
 				margin-bottom: 5px;
 			}
