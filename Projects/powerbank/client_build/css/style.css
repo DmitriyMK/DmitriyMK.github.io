@@ -3409,7 +3409,7 @@ header .tel span {
 .catalogFull .product__slider-decor .slick-prev {
     width: 50px;
     height: 100%;
-    left: -50px;
+    left: -40px;
 }
 @media only screen and (min-width: 992px) {
     .catalogFull .product__slider-decor .slick-prev {
@@ -3426,7 +3426,7 @@ header .tel span {
 .catalogFull .product__slider-decor .slick-next {
     width: 50px;
     height: 100%;
-    right: -50px;
+    right: -30px;
 }
 @media only screen and (min-width: 992px) {
     .catalogFull .product__slider-decor .slick-next {
@@ -3444,13 +3444,20 @@ header .tel span {
     display: block;
     position: absolute;
     top: 50%;
-    -webkit-transform: translateY(-54%);
-        -ms-transform: translateY(-54%);
-            transform: translateY(-54%);
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
     z-index: 10;
     color: #505762;
     font-size: 45px;
     padding: 110px 0;
+}
+@media only screen and (min-width: 768px) {
+    .catalogFull .product__slider-decor .slick-prev:before, .catalogFull .product__slider-decor .slick-next:before {
+        -webkit-transform: translateY(-54%);
+            -ms-transform: translateY(-54%);
+                transform: translateY(-54%);
+    }
 }
 @media only screen and (min-width: 992px) {
     .catalogFull .product__slider-decor .slick-prev:before, .catalogFull .product__slider-decor .slick-next:before {
@@ -3463,7 +3470,7 @@ header .tel span {
     }
 }
 .catalogFull .product__slider-decor .slick-prev:before {
-    left: 10px;
+    left: 20px;
     content: '\e805';
 }
 .catalogFull .product__slider-decor .slick-next:before {

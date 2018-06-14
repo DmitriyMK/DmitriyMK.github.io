@@ -344,7 +344,7 @@
 			.slick-prev {
 				width: 50px;
 				height: 100%;
-				left: -50px;
+				left: -40px;
 
 				@media @desktop {
 					width: 50px;
@@ -359,7 +359,7 @@
 			.slick-next {
 				width: 50px;
 				height: 100%;
-				right: -50px;	
+				right: -30px;	
 
 				@media @desktop {
 					width: 50px;
@@ -375,11 +375,15 @@
 				display: block;
 				position: absolute;
 				top: 50%;
-				transform: translateY(-54%);
+				transform: translateY(-50%);
 				z-index: 10;
 				color: #505762;
 				font-size: 45px;
 				padding: 110px 0;
+
+				@media @tablet {
+					transform: translateY(-54%);
+				}
 
 				@media @desktop {
 					font-size: 50px;
@@ -390,7 +394,7 @@
 			}
 
 			.slick-prev:before {
-				left: 10px;
+				left: 20px;
 				content: '\e805';
 			} 
 
