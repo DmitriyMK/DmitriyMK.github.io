@@ -32,9 +32,6 @@ gulp.task('css', function () {
         .pipe(sourcemaps.init())
         .pipe(filesize())
 
-
-
-
         .pipe(concat('style.less'))
         .pipe(less())
         .pipe(gulpif(argv.mob,gcmq()))
