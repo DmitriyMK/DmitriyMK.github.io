@@ -64,6 +64,8 @@ $(document).ready(function() {
     infinite: true,
     slidesToScroll: 1,
     infinite: false,
+    lazyLoad: 'ondemand',
+
     responsive: [{
       breakpoint: 768,
       settings: {
@@ -214,7 +216,8 @@ $(document).ready(function() {
     transitionEffect: "fade",
     transitionDuration: 366,
 
-    clickOutside: "close",
+    clickSlide: "close",
+    modal: false,
   });
 
 

@@ -38,6 +38,20 @@
 			padding-bottom: 0;
 		}
 	}
+
+	.product__slider-decor {
+		.slick-prev:before, .slick-next:before {
+			top: 50%;
+			transform: translateY(-50%);
+
+			@media @tablet {
+				transform: translateY(-55%);
+			}
+			@media @desktop {
+				transform: translateY(-59%);
+			}
+		}
+	}
 }
 
 
