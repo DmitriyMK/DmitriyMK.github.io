@@ -1,5 +1,6 @@
-$(document).ready(function() {
+var price = 9999999999;
 
+$(document).ready(function() {
 
   if (document.documentElement.clientWidth > 1200) {
 
@@ -60,27 +61,15 @@ $(document).ready(function() {
     slidesToShow: 5,
     slidesToScroll: 1,
     rows: 2,
-    /*      slidesPerRow: 5,*/
-
     infinite: true,
     slidesToScroll: 1,
-
-
     infinite: false,
-
-
-    responsive: [
-
-    {
+    responsive: [{
       breakpoint: 768,
       settings: {
         slidesToShow: 3,
       }
-    },
-
-
-    ]
-
+    }, ]
   });
 
 });
@@ -229,6 +218,48 @@ $(document).ready(function() {
   });
 
 
+  $('.product__decor').click(function() {
+    var selector = '#' + $(this).data('decor');
+    $('.bigPhoto__item.active').removeClass('active');
+    $(selector).addClass('active');
+    $('.product__decor .img-active').removeClass('img-active');
+    $(this).children('.img__wrap').addClass('img-active');
+  })
+
+
+  $('.present-radio').change(function() {
+    $(this).parents('.present').find('.present__img').removeClass('presentActive');
+    $('.present__item a.present__img').off("click.fb-start");
+    var $block = $(this).parents('.present__item');
+    $block.find('.present__img').addClass('presentActive').fancybox({
+
+      loop: false,
+      animationEffect: "zoom",
+      transitionEffect: "fade",
+      transitionDuration: 366,
+
+      clickOutside: "close",
+    });
+  });
+
+
+  $('.present__item a.present__img').click(function(event) {
+    if (!$(this).hasClass('presentActive')) {
+      $(this).parents('.present__item').find('.present-radio').trigger('click');
+      return false;
+    }
+  });
+
+  $('.present__img.presentActive').fancybox({
+    loop: false,
+    animationEffect: "zoom",
+    transitionEffect: "fade",
+    transitionDuration: 366,
+
+    clickOutside: "close",
+  });
+
+
 });
 
 
@@ -241,9 +272,23 @@ $(window).on('resize orientationchange', function() {
 
 $(".form").submit(function() {
   var th = $(this);
+  var $active_big = $('.bigPhoto__item.active');
+  var selector = '.capacity' + capacity + ' input:checked';
+  console.log(selector)
+
+  var $active_podarok = $(selector);
+  var podarok = 'no';
+  if ($active_podarok[0])
+    podarok = $active_podarok.val();
+  
+  var whatform = $active_big.data('capacity') + 'mA*h>' + $active_big.data('decor') + ' PLUS podarok ' + podarok + '; ' + price + 'грн';
+
+  console.log(whatform);
+  th.children('input[name="whatform"]').val(whatform);
+
   $.ajax({
     type: "POST",
-    url: "mail.php",
+    url: "/mail.php",
     data: th.serialize()
   }).done(function() {
 
@@ -253,6 +298,9 @@ $(".form").submit(function() {
     setTimeout(function() {
       th.trigger("reset");
     }, 1000);
+
+    console.log(th.serialize());
+
   });
   return false;
 });
