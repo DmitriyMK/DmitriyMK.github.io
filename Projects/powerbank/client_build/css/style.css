@@ -3566,6 +3566,9 @@ header .tel span {
         margin-right: 10px;
     }
 }
+.catalogFull .product .present .slick-list {
+    width: 100%;
+}
 .catalogFull .product .present .slick-prev {
     width: 50px;
     height: 100%;
