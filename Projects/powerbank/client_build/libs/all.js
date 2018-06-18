@@ -55,7 +55,6 @@ $(document).ready(function() {
   });
 
 
-
   $('.product__slider-decor').slick({
 
     dots: false,
@@ -63,10 +62,8 @@ $(document).ready(function() {
     slidesToShow: 5,
     slidesToScroll: 1,
     rows: 2,
-    infinite: true,
-    slidesToScroll: 1,
     infinite: false,
-    lazyLoad: 'ondemand',
+    initialSlide: 1,
 
     responsive: [{
       breakpoint: 768,
@@ -104,18 +101,6 @@ $(document).ready(function() {
   })
 
 });
-
-
-
-/*
- */
-/*
-if(sliderItem > 3) {
-*/
-
-/*  
-
-};*/
 
 
 

@@ -3415,6 +3415,9 @@ header .tel span {
         padding-bottom: 30px;
     }
 }
+.catalogFull .product__slider-decor .slick-list {
+    width: 100%;
+}
 .catalogFull .product__slider-decor .slick-prev {
     width: 50px;
     height: 100%;
@@ -3498,7 +3501,6 @@ header .tel span {
     outline: none!important;
 }
 .catalogFull .product__decor .img__wrap {
-    /* 				content-box: border-box;  */
     position: relative;
     width: 70px;
     height: 100px;
