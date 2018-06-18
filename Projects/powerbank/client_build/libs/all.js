@@ -54,6 +54,14 @@ $(document).ready(function() {
     }
   });
 
+  
+  $('.present').slick({
+    slidesToShow: 4,
+    dots: false,
+    arrow: true,
+  });
+
+
   $('.product__slider-decor').slick({
 
     dots: false,
