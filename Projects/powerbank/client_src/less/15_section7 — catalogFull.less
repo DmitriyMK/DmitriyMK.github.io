@@ -249,7 +249,7 @@
 				font-size: 60px;
 				cursor: pointer;
 				position: relative;
-		
+
 
 				@media @desktop {
 					margin: 0 40px;
@@ -444,7 +444,7 @@
 			outline: none!important;
 			
 			.img__wrap {
-				content-box: border-box; 
+/* 				content-box: border-box;  */
 				position: relative;
 				width: 70px;
 				height: 100px;
@@ -481,26 +481,108 @@
 
 		.present {
 			padding-top: 8px;
+			padding-left: 15px;
+			padding-right: 15px;
 			width: 290px;
 			margin: auto;
 			display: flex;
-			justify-content: space-between;
 			text-align: center;
 
 			@media @tablet {
 				width: 400px;
 				padding-bottom: 20px;
 			}
+
 			@media @desktop {
 				margin: 0;
+				padding-left: 0;
+				padding-right: 0;
 				margin: initial;
+			}
+
+			&__item {
+				margin-right: 5px;
+
+				@media @desktop {
+					margin-right: 10px;
+				}
+			}
+
+			.slick-prev {
+				width: 50px;
+				height: 100%;
+				left: -25px;
+				z-index: 10;
+
+				@media @desktop {
+					width: 50px;
+					left: -50px;
+				}
+				@media @desktop-xl {
+					width: 70px;
+					left: -70px;
+				}
+			}
+
+			.slick-next {
+				width: 50px;
+				height: 100%;
+				right: -20px;	
+				z-index: 10;
+
+				@media @desktop {
+					width: 50px;
+					right: -50px;
+				}
+				@media @desktop-xl {
+					width: 70px;
+					right: -70px;
+				}	
+			}
+
+			.slick-prev:before, .slick-next:before {
+				display: block;
+				position: absolute;
+				top: 50%;
+				transform: translateY(-54%);
+				z-index: 10;
+				color: #505762;
+				font-size: 45px;
+				padding: 110px 0;
+
+				@media @tablet {
+					transform: translateY(-58%);
+				}
+
+				@media @desktop {
+					font-size: 50px;
+				}
+				@media @desktop-xl {
+					font-size: 74px;
+				}
+			}
+
+			.slick-prev:before {
+				left: 20px;
+				content: '\e805';
+				
+				@media @desktop {
+					left: 10px;
+				}
+			} 
+
+			.slick-next:before {
+				content: '\e806';
+				right: 10px;
 			}
 
 			&__img {
 				display: block;
+				margin: auto;
 				position: relative;
 				max-width: 68px;
 				max-height: 68px;
+
 				background: #fff;
 				overflow: hidden;
 
@@ -592,13 +674,13 @@
 			}
 			input[type="radio"] {
 				margin: auto;
+				margin-top: 15px;
 				text-align: center;
 				width: 17px;
 				height: 17px;
 				border: 3px solid #fff;
 				border-radius: 50%;
 				cursor: pointer;
-				margin-top: 15px;
 				transition: all .3s ease;
 				background: rgba(194, 197, 212, .4);
 			}

@@ -2,42 +2,15 @@
 	user-select: text;
 }
 
-/* 
- .scrollup {
-	width: 37px;
-	height: 84px;
-	position: fixed;
-	bottom: 50px;
-	right: 15px;
-	display: none;
-	text-indent: -9999px;
-	background: url('../images/arrow-top.png') no-repeat;
-	z-index: 100;
-	@media @tablet {
-		right: 100px;
+
+.anchor {
+	visibility: hidden;
+	display: block;
+	height: 60px;
+	margin-top: -60px;
+
+	@media @desktop-xl-2 {
+		height: 140px;
+		margin-top: -140px;
 	}
-	}  */
-
-	.anchor {
-		visibility: hidden;
-		display: block;
-		height: 60px;
-		margin-top: -60px;
-
-		@media @desktop-xl-2 {
-			height: 140px;
-			margin-top: -140px;
-		}
-	}
-
-
-
-	/* ONLY FOR IE11 */
-	@media all and (-ms-high-contrast:none) {
-		::-ms-backdrop  {} 
-	}
-
-	/* ONLY FOR EDGE */
-	@supports (-ms-ime-align:auto) {
-
-	}
+}

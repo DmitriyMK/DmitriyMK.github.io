@@ -54,12 +54,6 @@ $(document).ready(function() {
     }
   });
 
-  
-  $('.present').slick({
-    slidesToShow: 4,
-    dots: false,
-    arrow: true,
-  });
 
 
   $('.product__slider-decor').slick({
@@ -82,7 +76,47 @@ $(document).ready(function() {
     }, ]
   });
 
+
+  $('.container').each(function() {
+    slideNumber = 0;
+    $(this).find('.present__item').each(function() {
+      slideNumber++;
+    })
+    if (slideNumber > 3) {
+
+      $(this).find('.present').slick({
+
+        slidesToShow: 4,
+        infinite: false,
+        dots: false,
+        arrow: true,
+
+        responsive: [{
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 3,
+          }
+        }, ]
+
+      });
+
+    };
+  })
+
 });
+
+
+
+/*
+ */
+/*
+if(sliderItem > 3) {
+*/
+
+/*  
+
+};*/
+
 
 
 /*RESPONSIVER BURGER MENU*/
@@ -291,7 +325,7 @@ $(".form").submit(function() {
   var podarok = 'no';
   if ($active_podarok[0])
     podarok = $active_podarok.val();
-  
+
   var whatform = $active_big.data('capacity') + 'mA*h>' + $active_big.data('decor') + ' PLUS podarok ' + podarok + '; ' + price + 'грн';
 
   console.log(whatform);

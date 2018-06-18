@@ -179,40 +179,6 @@
     content: '\f192';
 }
 /* '' */
-/* .placeholder(@ff: @ff; @fs: @fs; @fw: 400; @color: @text-color) {
-	input::-webkit-input-placeholder, textarea::-webkit-input-placeholder      {
-		font-family: @ff2;
-		font-size: @fs;
-		font-weight: @fw;
-		line-height: 1;
-		color: @color;
-	}
-	input::-moz-placeholder, textarea::-moz-placeholder                			{
-		font-family: @ff2;
-		font-size: @fs;
-		font-weight: @fw;
-		line-height: 1;
-		color: @color;
-	}
-	input:-moz-placeholder, textarea:-moz-placeholder                 			{
-		font-family: @ff2;
-		font-size: @fs;
-		font-weight: @fw;
-		line-height: 1;
-		color: @color;
-	}
-	input:-ms-input-placeholder, textarea:-ms-input-placeholder          		{
-		font-family: @ff2;
-		font-size: @fs;
-		font-weight: @fw;
-		line-height: 1;
-		color: @color;
-	}
-	input:focus::-webkit-input-placeholder, textarea:focus::-webkit-input-placeholder 		{opacity: 0; transition: opacity 0.3s ease;}
-	input:focus::-moz-placeholder, textarea:focus::-moz-placeholder          				{opacity: 0; transition: opacity 0.3s ease;}
-	input:focus:-moz-placeholder, textarea:focus:-moz-placeholder           				{opacity: 0; transition: opacity 0.3s ease;}
-	input:focus:-ms-input-placeholder, textarea:focus:-ms-input-placeholder      			{opacity: 0; transition: opacity 0.3s ease;}
-} */
 html {
     font-family: sans-serif;
         -ms-text-size-adjust: 100%;
@@ -614,21 +580,6 @@ input, textarea {
         -ms-user-select: text;
             user-select: text;
 }
-/* 
- .scrollup {
-	width: 37px;
-	height: 84px;
-	position: fixed;
-	bottom: 50px;
-	right: 15px;
-	display: none;
-	text-indent: -9999px;
-	background: url('../images/arrow-top.png') no-repeat;
-	z-index: 100;
-	@media @tablet {
-		right: 100px;
-	}
-	}  */
 .anchor {
     visibility: hidden;
     display: block;
@@ -641,8 +592,6 @@ input, textarea {
         margin-top: -140px;
     }
 }
-/* ONLY FOR IE11 */
-/* ONLY FOR EDGE */
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, main, menu, nav, output, ruby, section, summary, time, mark, audio, video {
     margin: 0;
     padding: 0;
@@ -1432,7 +1381,7 @@ header .tel span {
                 animation-play-state: paused;
     }
 }
-@media only screen and (min-width: 992px) and only screen and (min-width: 1600px) {
+@media only screen and (min-width: 1600px) {
     .arr-down {
         bottom: 40px;
     }
@@ -3549,7 +3498,7 @@ header .tel span {
     outline: none!important;
 }
 .catalogFull .product__decor .img__wrap {
-    content-box: border-box;
+    /* 				content-box: border-box;  */
     position: relative;
     width: 70px;
     height: 100px;
@@ -3586,14 +3535,13 @@ header .tel span {
 }
 .catalogFull .product .present {
     padding-top: 8px;
+    padding-left: 15px;
+    padding-right: 15px;
     width: 290px;
     margin: auto;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
     text-align: center;
 }
 @media only screen and (min-width: 768px) {
@@ -3605,11 +3553,100 @@ header .tel span {
 @media only screen and (min-width: 992px) {
     .catalogFull .product .present {
         margin: 0;
+        padding-left: 0;
+        padding-right: 0;
         margin: initial;
     }
 }
+.catalogFull .product .present__item {
+    margin-right: 5px;
+}
+@media only screen and (min-width: 992px) {
+    .catalogFull .product .present__item {
+        margin-right: 10px;
+    }
+}
+.catalogFull .product .present .slick-prev {
+    width: 50px;
+    height: 100%;
+    left: -25px;
+    z-index: 10;
+}
+@media only screen and (min-width: 992px) {
+    .catalogFull .product .present .slick-prev {
+        width: 50px;
+        left: -50px;
+    }
+}
+@media only screen and (min-width: 1200px) {
+    .catalogFull .product .present .slick-prev {
+        width: 70px;
+        left: -70px;
+    }
+}
+.catalogFull .product .present .slick-next {
+    width: 50px;
+    height: 100%;
+    right: -20px;
+    z-index: 10;
+}
+@media only screen and (min-width: 992px) {
+    .catalogFull .product .present .slick-next {
+        width: 50px;
+        right: -50px;
+    }
+}
+@media only screen and (min-width: 1200px) {
+    .catalogFull .product .present .slick-next {
+        width: 70px;
+        right: -70px;
+    }
+}
+.catalogFull .product .present .slick-prev:before, .catalogFull .product .present .slick-next:before {
+    display: block;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-54%);
+        -ms-transform: translateY(-54%);
+            transform: translateY(-54%);
+    z-index: 10;
+    color: #505762;
+    font-size: 45px;
+    padding: 110px 0;
+}
+@media only screen and (min-width: 768px) {
+    .catalogFull .product .present .slick-prev:before, .catalogFull .product .present .slick-next:before {
+        -webkit-transform: translateY(-58%);
+            -ms-transform: translateY(-58%);
+                transform: translateY(-58%);
+    }
+}
+@media only screen and (min-width: 992px) {
+    .catalogFull .product .present .slick-prev:before, .catalogFull .product .present .slick-next:before {
+        font-size: 50px;
+    }
+}
+@media only screen and (min-width: 1200px) {
+    .catalogFull .product .present .slick-prev:before, .catalogFull .product .present .slick-next:before {
+        font-size: 74px;
+    }
+}
+.catalogFull .product .present .slick-prev:before {
+    left: 20px;
+    content: '\e805';
+}
+@media only screen and (min-width: 992px) {
+    .catalogFull .product .present .slick-prev:before {
+        left: 10px;
+    }
+}
+.catalogFull .product .present .slick-next:before {
+    content: '\e806';
+    right: 10px;
+}
 .catalogFull .product .present__img {
     display: block;
+    margin: auto;
     position: relative;
     max-width: 68px;
     max-height: 68px;
@@ -3709,13 +3746,13 @@ header .tel span {
 }
 .catalogFull .product .present input[type='radio'] {
     margin: auto;
+    margin-top: 15px;
     text-align: center;
     width: 17px;
     height: 17px;
     border: 3px solid #fff;
     border-radius: 50%;
     cursor: pointer;
-    margin-top: 15px;
     -webkit-transition: all 0.3s ease;
          -o-transition: all 0.3s ease;
             transition: all 0.3s ease;
@@ -4619,9 +4656,6 @@ label {
     -webkit-transform: translateX(-50%);
         -ms-transform: translateX(-50%);
             transform: translateX(-50%);
-    -webkit-border-image: transparent;
-         -o-border-image: transparent;
-            border-image: transparent;
 }
 .slick-dots li {
     margin: 0 5px;
