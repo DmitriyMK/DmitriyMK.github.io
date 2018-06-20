@@ -30,8 +30,9 @@ canvas.addEventListener("mouseup", function() {
     ctx.beginPath();
 })
 
-ctx.lineWidth = 10 * 2;
+ctx.lineWidth = 20;
 ctx.fill = 'magenta';
+ctx.strokeStyle = 'magenta'
 
 canvas.addEventListener("mousemove", function(e) {
 
@@ -39,8 +40,9 @@ canvas.addEventListener("mousemove", function(e) {
         ctx.lineTo(e.clientX, e.clientY);
         ctx.stroke();
 
-        ctx.beginPath();
-        ctx.arc(e.clientX, e.clientY, 10, 0, Math.PI * 2);
+        // ctx.beginPath();
+        // ctx.arc(e.clientX, e.clientY, 5, 0, Math.PI * 2);
+        // ctx.fill = 'magenta';
         ctx.fill();
 
         ctx.beginPath();

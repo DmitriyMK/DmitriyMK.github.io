@@ -750,6 +750,7 @@ section {
 }
 .header {
     height: 100vh;
+    background: #fafafa;
 }
 .canvas {
     display: block;
