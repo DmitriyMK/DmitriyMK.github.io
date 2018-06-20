@@ -283,13 +283,22 @@ $(document).ready(function() {
 
     clickOutside: "close",
 
+
     // toolbar: true,
+
     modal: false,
+
+    helpers: {
+      overlay: {
+        closeClick: false
+      } // prevents closing when clicking OUTSIDE fancybox 
+    }
+
     touch: true,
 
     touch: {
-        vertical: false, // Allow to drag content vertically
-        momentum: true // Continue movement after releasing mouse/touch when panning
+      vertical: false, // Allow to drag content vertically
+      momentum: true // Continue movement after releasing mouse/touch when panning
     },
 
   });
