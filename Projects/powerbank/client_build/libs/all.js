@@ -281,6 +281,7 @@ $(document).ready(function() {
     transitionEffect: "fade",
     transitionDuration: 366,
 
+    closeClick  : false, // prevents closing when clicking INSIDE fancybox 
     clickOutside: "close",
 
 
