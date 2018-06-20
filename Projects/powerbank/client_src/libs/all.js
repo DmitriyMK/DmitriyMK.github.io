@@ -63,7 +63,6 @@ $(document).ready(function() {
     slidesToScroll: 1,
     rows: 2,
     infinite: false,
-    initialSlide: 1,
 
     responsive: [{
       breakpoint: 768,
@@ -184,11 +183,50 @@ $(document).ready(function() {
     });
   });
 
+
   $('.decorSection18').each(function() {
     $(this).plaxmove({
       ratioH: -0.0055,
       ratioV: 0.0255,
       invertV: 0.0185,
+    });
+  });
+
+
+
+  $('.decorInnerSection18').each(function() {
+    $(this).plaxmove({
+      ratioH: -0.0055,
+      ratioV: 0.0155,
+    });
+  });
+
+
+  $('.decorInnerSection7').each(function() {
+    $(this).plaxmove({
+      ratioH: -0.0055,
+      ratioV: 0.0085,
+    });
+  });
+
+  $('.decorInnerSection4').each(function() {
+    $(this).plaxmove({
+      ratioH: 0.0125,
+      ratioV: -0.0070,
+    });
+  });
+
+  $('.decorInnerSection1').each(function() {
+    $(this).plaxmove({
+      ratioH: 0.0055,
+      ratioV: -0.0070,
+    });
+  });
+
+  $('.decorInnerSection10').each(function() {
+    $(this).plaxmove({
+      ratioH: 0.0055,
+      ratioV: 0.0020,
     });
   });
 

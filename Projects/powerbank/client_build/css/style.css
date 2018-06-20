@@ -2923,7 +2923,7 @@ header .tel span {
     }
 }
 .headerInner .ico_shape18 {
-    top: 240px;
+    top: 200px;
     left: 50px;
     -webkit-transform: rotate(95deg);
         -ms-transform: rotate(95deg);
@@ -2934,12 +2934,12 @@ header .tel span {
     height: 57px;
     width: 57px;
     top: inherit;
-    bottom: 20px;
+    bottom: 0;
     left: 400px;
 }
 @media only screen and (min-width: 1600px) {
     .headerInner .ico_shape10 {
-        bottom: 70px;
+        bottom: -20px;
         left: 530px;
     }
 }
@@ -2948,7 +2948,7 @@ header .tel span {
 }
 @media only screen and (min-width: 1600px) {
     .headerInner .ico_shape7 {
-        top: 110px;
+        top: 50px;
         right: 1230px;
         -webkit-transform: rotate(50deg);
             -ms-transform: rotate(50deg);
@@ -2973,7 +2973,7 @@ header .tel span {
     background-position: -37px -57px;
     height: 33px;
     width: 30px;
-    top: 115px;
+    top: 125px;
     left: 1210px;
     -webkit-transform: rotate(100deg);
         -ms-transform: rotate(100deg);
@@ -2991,12 +2991,12 @@ header .tel span {
     background-position: 0 0;
     height: 57px;
     width: 57px;
-    top: 100px;
+    top: 150px;
     left: 550px;
 }
 @media only screen and (min-width: 1600px) {
     .headerInner .ico_shape1 {
-        top: 160px;
+        top: 200px;
         right: 128px;
         left: inherit;
     }
@@ -3417,6 +3417,9 @@ header .tel span {
 }
 .catalogFull .product__slider-decor .slick-list {
     width: 100%;
+}
+.catalogFull .product__slider-decor .slick-track {
+    margin: 0;
 }
 .catalogFull .product__slider-decor .slick-prev {
     width: 50px;
