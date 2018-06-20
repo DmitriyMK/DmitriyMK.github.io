@@ -284,17 +284,6 @@ $(document).ready(function() {
     closeClick  : false, // prevents closing when clicking INSIDE fancybox 
     clickOutside: "close",
 
-
-    // toolbar: true,
-
-    modal: false,
-
-    helpers: {
-      overlay: {
-        closeClick: false
-      } // prevents closing when clicking OUTSIDE fancybox 
-    },
-
   });
 
 
@@ -336,6 +325,7 @@ $(document).ready(function() {
     transitionEffect: "fade",
     transitionDuration: 366,
 
+    closeClick  : false, // prevents closing when clicking INSIDE fancybox 
     clickOutside: "close",
   });
 
