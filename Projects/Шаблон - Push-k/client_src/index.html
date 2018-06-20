@@ -8,29 +8,26 @@
 
 	<meta name="description" content="">
 	<meta name="keywords" content="">
-
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-
-	<link rel="shortcut icon" href="images/" type="image/x-icon">
-	<meta name="theme-color" content="#222326">
+	<link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+	<meta name="theme-color" content="#181c25">
 
 	<meta property="og:type" content="website"/> 
-	<meta property="og:image" content="images/">
-	<meta property="og:image:width" content="">
-	<meta property="og:image:height" content="">
-	
+	<meta property="og:image" content="images/FM-og.png">
+	<meta property="og:image:width" content="233">
+	<meta property="og:image:height" content="206">
 	<meta property="og:description" content="">
 	<meta property="og:title" content="">
 
 
-	<link rel="preload" href="./css/remodal.css" as="style" onload="this.rel='stylesheet'">
-	<link rel="preload" href="./css/remodal-default-theme.css" as="style" onload="this.rel='stylesheet'">
-	<link rel="preload" href="./css/fancybox.css" as="style" onload="this.rel='stylesheet'">
-	<link rel="preload" href="./css/animate.min.css" as="style" onload="this.rel='stylesheet'">
-	<link rel="preload" href="./css/modal-video.min.css" as="style" onload="this.rel='stylesheet'">
-	<link rel="preload" href="./css/slick-theme.css" as="style" onload="this.rel='stylesheet'">
-	<link rel="preload" href="./css/slick.css" as="style" onload="this.rel='stylesheet'">
+	<link rel="preload" href="./css/remodal.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+	<link rel="preload" href="./css/remodal-default-theme.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+	<link rel="preload" href="./css/fancybox.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+	<link rel="preload" href="./css/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+	<link rel="preload" href="./css/modal-video.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+	<link rel="preload" href="./css/slick-theme.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+	<link rel="preload" href="./css/slick.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
 
 	<noscript>
 		<link rel="stylesheet" href="./css/remodal.css">
@@ -42,6 +39,7 @@
 		<link rel="stylesheet" href="./css/slick.css">
 	</noscript>
 
+	<link rel="stylesheet" href="./css/style.css">
 
 	<!-- DEFER SCRIPT -->
 	<script defer src="./libs/fancybox.js"></script>
@@ -52,6 +50,7 @@
 	<script defer src="./libs/jquery.plaxmove.js"></script>
 	<script defer src="./libs/jquery.mask.min.js"></script>	
 	<script defer src="./libs/jquery-modal-video.min.js"></script>
+	<script defer src="./libs/cssrelpreload.js"></script>
 
 	<!-- END DEFER SCRIPT -->
 
@@ -158,10 +157,9 @@
 <script src="./libs/jquery.nicescroll.min.js"></script>
 <script src="./libs/remodal.min.js"></script>
 <script src="./libs/all.js"></script>
-
-
-<script async defer src="https://maps.googleapis.com/maps/api/js?callback=initMap&key=AIzaSyDFnsXtzPC77ZP4pkabK8_yVr5qazdPCjc"></script>
 <script src="./libs/map.js"></script>  
+
+<script async defer src="https://maps.googleapis.com/maps/api/js?callback=initMap&key=AIzaSyDFnsXtzPC77ZP4pkabK8_yVr5qazdPCjc&callback=initMap"></script>
 
 
 </body>

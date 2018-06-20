@@ -1,0 +1,50 @@
+@import "_vars";
+@import "_mixin and function";
+
+
+body {
+	min-width: 320px; 
+	padding-right: 0 !important;
+	font-family: $f1;
+	font-size: $fs;
+	font-weight: 400;
+	line-height: 1.2;
+	box-sizing: border-box; 
+}
+
+a {
+	color: inherit;
+	outline: none!important;
+}
+
+button {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+  outline: none!important;
+}
+
+.wrapper {
+	position: relative;
+	max-width: 1130px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+
+.hide {
+	display: none;
+} 
+
+
+.section {
+	padding: 80px 0; 
+}
+
+
+.section__title {
+
+}
