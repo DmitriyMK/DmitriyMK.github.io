@@ -283,6 +283,7 @@ $(document).ready(function() {
 
     clickOutside: "close",
     modal: false,
+    touch: true,
 
   });
 
