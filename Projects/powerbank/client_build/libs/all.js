@@ -282,8 +282,15 @@ $(document).ready(function() {
     transitionDuration: 366,
 
     clickOutside: "close",
+
+    // toolbar: true,
     modal: false,
     touch: true,
+
+    touch: {
+        vertical: false, // Allow to drag content vertically
+        momentum: true // Continue movement after releasing mouse/touch when panning
+    },
 
   });
 
