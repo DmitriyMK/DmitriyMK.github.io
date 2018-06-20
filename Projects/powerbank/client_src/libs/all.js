@@ -289,12 +289,6 @@ $(document).ready(function() {
 
     modal: false,
 
-    helpers: {
-      overlay: {
-        closeClick: false
-      } // prevents closing when clicking OUTSIDE fancybox 
-    },
-
   });
 
 
@@ -321,16 +315,9 @@ $(document).ready(function() {
       closeClick: false, // prevents closing when clicking INSIDE fancybox 
       clickOutside: "close",
 
-
       // toolbar: true,
 
       modal: false,
-
-      helpers: {
-        overlay: {
-          closeClick: false
-        } // prevents closing when clicking OUTSIDE fancybox 
-      },
 
     });
   });
@@ -356,12 +343,6 @@ $(document).ready(function() {
     // toolbar: true,
 
     modal: false,
-
-    helpers: {
-      overlay: {
-        closeClick: false
-      } // prevents closing when clicking OUTSIDE fancybox 
-    },
   });
 
 
