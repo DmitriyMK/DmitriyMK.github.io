@@ -281,7 +281,7 @@ $(document).ready(function() {
     transitionEffect: "fade",
     transitionDuration: 366,
 
-    closeClick  : false, // prevents closing when clicking INSIDE fancybox 
+    closeClick: false, // prevents closing when clicking INSIDE fancybox 
     clickOutside: "close",
 
 
@@ -318,21 +318,21 @@ $(document).ready(function() {
       transitionEffect: "fade",
       transitionDuration: 366,
 
-    closeClick  : false, // prevents closing when clicking INSIDE fancybox 
-    clickOutside: "close",
+      closeClick: false, // prevents closing when clicking INSIDE fancybox 
+      clickOutside: "close",
 
 
-    // toolbar: true,
+      // toolbar: true,
 
-    modal: false,
+      modal: false,
 
-    helpers: {
-      overlay: {
-        closeClick: false
-      } // prevents closing when clicking OUTSIDE fancybox 
-    },
-    
-  });
+      helpers: {
+        overlay: {
+          closeClick: false
+        } // prevents closing when clicking OUTSIDE fancybox 
+      },
+
+    });
   });
 
 
@@ -349,7 +349,7 @@ $(document).ready(function() {
     transitionEffect: "fade",
     transitionDuration: 366,
 
-    closeClick  : false, // prevents closing when clicking INSIDE fancybox 
+    closeClick: false, // prevents closing when clicking INSIDE fancybox 
     clickOutside: "close",
 
 
