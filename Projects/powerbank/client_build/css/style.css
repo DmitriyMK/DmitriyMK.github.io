@@ -714,6 +714,16 @@ section {
         font-size: 45px;
     }
 }
+.fancybox-infobar, .fancybox-toolbar, .fancybox-arrow {
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+.fancybox-button--close:after, .fancybox-button--close:before {
+    height: 4px;
+    width: 24px;
+    top: calc(44%);
+    left: calc(26%);
+}
 ::-webkit-input-placeholder {
     font-size: 17px;
     color: #fff;
@@ -3015,7 +3025,12 @@ header .tel span {
     overflow: hidden;
 }
 .catalogFull:nth-of-type(odd) {
-    background: #e5ebf9;
+    background: #cedcfc;
+}
+@media only screen and (min-width: 992px) {
+    .catalogFull:nth-of-type(odd) {
+        background: #e5ebf9;
+    }
 }
 .catalogFull:nth-of-type(odd) .catalogFull__decor {
     display: none;

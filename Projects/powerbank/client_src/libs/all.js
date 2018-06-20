@@ -276,13 +276,14 @@ $(document).ready(function() {
 
 
   $('[data-fancybox]').fancybox({
-    loop: true,
+    loop: false,
     animationEffect: "zoom",
     transitionEffect: "fade",
     transitionDuration: 366,
 
-    clickSlide: "close",
+    clickOutside: "close",
     modal: false,
+
   });
 
 

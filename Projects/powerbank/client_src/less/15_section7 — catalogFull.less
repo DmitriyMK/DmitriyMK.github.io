@@ -22,7 +22,11 @@
 	overflow: hidden;
 
 	&:nth-of-type(odd) {
-		background: #e5ebf9;
+		background: #cedcfc;
+		
+		@media @desktop {
+			background: #e5ebf9;
+		}
 
 		.catalogFull__decor {
 			display: none;
@@ -35,6 +39,7 @@
 
 	&:nth-of-type(even) {
 		background: #f0f4ff;
+
 
 		.catalogFull__decor {
 			display: none;
