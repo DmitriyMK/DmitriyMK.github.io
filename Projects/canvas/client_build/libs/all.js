@@ -1,12 +1,12 @@
-var
-    canvas = document.getElementById("canvas"),
-    ctx = canvas.getContext("2d");
+// var
+//     canvas = document.getElementById("canvas"),
+//     ctx = canvas.getContext("2d");
 
-isMouseDown = false;
+// isMouseDown = false;
 
 
-canvas.width = window.innerWidth;
-canvas.height = window.innerHeight;
+// canvas.width = window.innerWidth;
+// canvas.height = window.innerHeight;
 // canvas.width = 640;
 // canvas.height = 480;
 
@@ -21,36 +21,36 @@ canvas.height = window.innerHeight;
 
 // DRAW PICTURE
 
-canvas.addEventListener("mousedown", function() {
-    isMouseDown = true;
-})
+// canvas.addEventListener("mousedown", function() {
+//     isMouseDown = true;
+// })
 
-canvas.addEventListener("mouseup", function() {
-    isMouseDown = false;
-    ctx.beginPath();
-})
+// canvas.addEventListener("mouseup", function() {
+//     isMouseDown = false;
+//     ctx.beginPath();
+// })
 
-ctx.lineWidth = 20;
-ctx.fill = 'magenta';
-ctx.strokeStyle = 'magenta'
+// ctx.lineWidth = 20;
+// ctx.fill = 'magenta';
+// ctx.strokeStyle = 'magenta'
 
-canvas.addEventListener("mousemove", function(e) {
+// canvas.addEventListener("mousemove", function(e) {
 
-    if (isMouseDown) {
-        ctx.lineTo(e.clientX, e.clientY);
-        ctx.stroke();
+//     if (isMouseDown) {
+//         ctx.lineTo(e.clientX, e.clientY);
+//         ctx.stroke();
 
-        // ctx.beginPath();
-        // ctx.arc(e.clientX, e.clientY, 5, 0, Math.PI * 2);
-        // ctx.fill = 'magenta';
-        ctx.fill();
+//         // ctx.beginPath();
+//         // ctx.arc(e.clientX, e.clientY, 5, 0, Math.PI * 2);
+//         // ctx.fill = 'magenta';
+//         ctx.fill();
 
-        ctx.beginPath();
-        ctx.moveTo(e.clientX, e.clientY);
-    }
+//         ctx.beginPath();
+//         ctx.moveTo(e.clientX, e.clientY);
+//     }
 
 
-})
+// })
 
 
 
@@ -102,3 +102,28 @@ canvas.addEventListener("mousemove", function(e) {
 //         ctx.clearRect(20 + i * 32, 20 + j * 32, 32, 32);
 //         ctx.clearRect(20 + (i + 1) * 32, 20 + (j + 1) * 32, 32, 32);
 //     }
+
+
+
+//DRAW TEXT
+
+var canvas = document.getElementById("canvas");
+var ctx = canvas.getContext("2d");
+
+
+canvas.width = 640;
+canvas.height = 480;
+
+
+var grad = ctx.createLinearGradient(0, 0, 500, 0);
+
+grad.addColorStop("0", "magenta");
+grad.addColorStop(".50", "blue");
+grad.addColorStop("1", "red");
+
+ctx.fillStyle = grad;
+
+
+ctx.font = "80px Georgia";
+ctx.fillText("Push-ka solutions", 0, 370);
+ctx.textAlign = "center";

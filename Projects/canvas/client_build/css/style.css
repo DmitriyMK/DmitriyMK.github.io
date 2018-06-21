@@ -751,9 +751,13 @@ section {
 .header {
     height: 100vh;
     background: #191c26;
+    overflow: hidden;
+    margin: 0 auto;
+    text-align: center;
 }
 .canvas {
     display: block;
+    margin: auto;
 }
 .remodal-first {
     padding-top: 95px;
