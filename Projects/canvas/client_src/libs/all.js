@@ -107,23 +107,27 @@
 
 //DRAW TEXT
 
-var canvas = document.getElementById("canvas");
-var ctx = canvas.getContext("2d");
+// var canvas = document.getElementById("canvas");
+// var ctx = canvas.getContext("2d");
 
 
-canvas.width = 640;
-canvas.height = 480;
+// canvas.width = 640;
+// canvas.height = 480;
 
 
-var grad = ctx.createLinearGradient(0, 0, 500, 0);
+// var grad = ctx.createLinearGradient(0, 0, 500, 0);
 
-grad.addColorStop("0", "magenta");
-grad.addColorStop(".50", "blue");
-grad.addColorStop("1", "red");
+// grad.addColorStop("0", "magenta");
+// grad.addColorStop(".50", "blue");
+// grad.addColorStop("1", "red");
 
-ctx.fillStyle = grad;
+// ctx.fillStyle = grad;
 
 
-ctx.font = "80px Georgia";
-ctx.fillText("Push-ka solutions", 0, 370);
-ctx.textAlign = "center";
+// ctx.font = "80px Georgia";
+// ctx.fillText("Push-ka solutions", 0, 370);
+// ctx.textAlign = "center";
+
+(function($) {
+    var header = $('#header')
+})
