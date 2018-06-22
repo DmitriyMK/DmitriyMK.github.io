@@ -31,6 +31,8 @@
 }
 
 .row{
+	margin-top: 20px;
+	margin-bottom: 170px;
 	display: flex;
   }
   .col-sm-4{
@@ -138,5 +140,57 @@
 
 .svg3 .st5 {
 	fill: #C0C6D3;
+}
+
+
+.container {
+	position: relative;
+}
+
+.socials {
+	position: absolute;
+	top: 15px;
+	right: 50px;
+	color: @black;
+	margin-top: 50px;
+	margin-bottom: 150px;
+
+
+	.st-total  {
+		display: none!important;
+	}
+
+	
+	#st-1, a {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-end;
+		text-align: center;
+		cursor: pointer;
+		
+	}
+
+	.btn {
+		margin-bottom: 15px;
+	}
+
+	.st-btn {
+		margin-right: 0!important;
+		margin-bottom: 15px;
+		opacity: 0;
+		display: none!important;
+	}
+	.active {
+		opacity: 1;
+		display: block!important;
+	}
+
+	#st-1 {
+
+	}
+
+	.active {
+		display: block;
+	}
 }
 

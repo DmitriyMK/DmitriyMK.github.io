@@ -202,3 +202,23 @@ $(document).ready(function() {
     }, 0.1);
 
 });
+
+
+
+var $btn = $('.btn');
+
+$('.btn').click(function() {
+
+    $('.st-btn').toggleClass('active');
+
+});
+
+
+
+$(document).mouseup(function(e) {
+    if (!$btn.is(e.target) && $btn.has(e.target).length === 0) {
+
+        $('.st-btn').toggleClass('active');
+
+    }
+});

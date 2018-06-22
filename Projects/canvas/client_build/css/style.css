@@ -753,6 +753,8 @@ section {
     margin: auto;
 }
 .row {
+    margin-top: 20px;
+    margin-bottom: 170px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -846,6 +848,50 @@ section {
 }
 .svg3 .st5 {
     fill: #c0c6d3;
+}
+.container {
+    position: relative;
+}
+.socials {
+    position: absolute;
+    top: 15px;
+    right: 50px;
+    color: #191c26;
+    margin-top: 50px;
+    margin-bottom: 150px;
+}
+.socials .st-total {
+    display: none!important;
+}
+.socials #st-1, .socials a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+    text-align: center;
+    cursor: pointer;
+}
+.socials .btn {
+    margin-bottom: 15px;
+}
+.socials .st-btn {
+    margin-right: 0!important;
+    margin-bottom: 15px;
+    opacity: 0;
+    display: none!important;
+}
+.socials .active {
+    opacity: 1;
+    display: block!important;
+}
+.socials .active {
+    display: block;
 }
 .remodal-first {
     padding-top: 95px;
