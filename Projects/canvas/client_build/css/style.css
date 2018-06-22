@@ -748,16 +748,104 @@ section {
 :-moz-placeholder {
     font-size: 16px;
 }
-.header {
-    height: 100vh;
-    background: #191c26;
-    overflow: hidden;
-    margin: 0 auto;
-    text-align: center;
-}
 .canvas {
     display: block;
     margin: auto;
+}
+.row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+.col-sm-4 {
+    width: 33%;
+}
+.svg1 .st0 {
+    fill: #fff;
+    stroke: #00a896;
+    stroke-width: 4.75;
+    stroke-miterlimit: 10;
+}
+.svg1 .st1 {
+    fill: none;
+    stroke: #00a896;
+    stroke-width: 4.75;
+    stroke-miterlimit: 10;
+}
+.svg1 .st2 {
+    fill: #bde2df;
+    stroke: #00a896;
+    stroke-width: 4.75;
+    stroke-miterlimit: 10;
+}
+.svg1 .st3 {
+    fill: #00a896;
+}
+.svg1 .st4 {
+    fill: #c0c6d3;
+}
+.svg2 .st0 {
+    fill: #fff;
+    stroke: #00a896;
+    stroke-width: 4.75;
+    stroke-miterlimit: 10;
+}
+.svg2 .st1 {
+    -webkit-clip-path: url(#SVGID_2_);
+            clip-path: url(#SVGID_2_);
+}
+.svg2 .st2 {
+    fill: none;
+    stroke: #00a896;
+    stroke-width: 1.9;
+    stroke-miterlimit: 10;
+}
+.svg2 .st3 {
+    fill: #bde2df;
+    stroke: #00a896;
+    stroke-width: 4.75;
+    stroke-miterlimit: 10;
+}
+.svg2 .st4 {
+    fill: none;
+    stroke: #00a896;
+    stroke-width: 4.75;
+    stroke-miterlimit: 10;
+}
+.svg2 .st5 {
+    fill: #00a896;
+}
+.svg2 .st6 {
+    fill: #c0c6d3;
+}
+.svg3 .st0 {
+    fill: #bde2df;
+    stroke: #00a896;
+    stroke-width: 4.75;
+    stroke-miterlimit: 10;
+}
+.svg3 .st1 {
+    fill: #fff;
+    stroke: #00a896;
+    stroke-width: 4.75;
+    stroke-miterlimit: 10;
+}
+.svg3 .st2 {
+    -webkit-clip-path: url(#SVGID_2_);
+            clip-path: url(#SVGID_2_);
+}
+.svg3 .st3 {
+    -webkit-clip-path: url(#SVGID_4_);
+            clip-path: url(#SVGID_4_);
+}
+.svg3 .st4 {
+    fill: none;
+    stroke: #00a896;
+    stroke-width: 1.9;
+    stroke-miterlimit: 10;
+}
+.svg3 .st5 {
+    fill: #c0c6d3;
 }
 .remodal-first {
     padding-top: 95px;

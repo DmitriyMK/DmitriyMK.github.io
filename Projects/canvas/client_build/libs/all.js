@@ -128,6 +128,77 @@
 // ctx.fillText("Push-ka solutions", 0, 370);
 // ctx.textAlign = "center";
 
-(function($) {
-    var header = $('#header')
-})
+
+
+$(document).ready(function() {
+    // ----- timeline and drawSVG ------ //
+    var svgTween = new TimelineMax({
+        delay: 0.5
+    });
+
+    svgTween.staggerFrom(".svg1 .st0", 0.5, {
+        opacity: 0,
+        y: -50
+    }, 0.1).staggerFrom(".svg1 .st1", 0.5, {
+        opacity: 0,
+        y: -50
+    }, 0.1).staggerFrom(".svg1 .st2", 0.5, {
+        opacity: 0,
+        x: 50
+    }, 0.1).staggerFrom(".svg1 .st4", 0.5, {
+        opacity: 0,
+        x: 50
+    }, 0.1).staggerFrom(".svg1 .st3", 0.5, {
+        opacity: 0,
+        x: 50
+    }, 0.1);
+
+
+    var svgTween2 = new TimelineMax({
+        delay: 0.5
+    });
+    svgTween2.staggerFrom(".svg2 .st0", 0.5, {
+        opacity: 0,
+        y: -50
+    }, 0.1).staggerFrom(".svg2 .st2", 0.5, {
+        opacity: 0,
+        y: -50
+    }, 0.1).staggerFrom(".svg2 .st3", 0.5, {
+        opacity: 0,
+        x: 50
+    }, 0.1).staggerFrom(".svg2 .st4", 0.5, {
+        opacity: 0,
+        x: 50
+    }, 0.1).staggerFrom(".svg2 .st5", 0.5, {
+        opacity: 0,
+        x: 50
+    }, 0.1).staggerFrom(".svg2 .st6", 0.5, {
+        opacity: 0,
+        x: 50
+    }, 0.1);
+
+
+    var svgTween3 = new TimelineMax({
+        delay: 0.5
+    });
+    svgTween3.staggerFrom(".svg3 .st0", 0.5, {
+        opacity: 0,
+        y: -50
+    }, 0.1).staggerFrom(".svg3 .st2", 0.5, {
+        opacity: 0,
+        y: -50
+    }, 0.1).staggerFrom(".svg3 .st3", 0.5, {
+        opacity: 0,
+        x: 50
+    }, 0.1).staggerFrom(".svg3 .st4", 0.5, {
+        opacity: 0,
+        x: 50
+    }, 0.1).staggerFrom(".svg3 .st5", 0.5, {
+        opacity: 0,
+        x: 50
+    }, 0.1).staggerFrom(".svg3 .st6", 0.5, {
+        opacity: 0,
+        x: 50
+    }, 0.1);
+
+});
