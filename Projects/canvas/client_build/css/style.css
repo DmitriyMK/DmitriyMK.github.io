@@ -861,7 +861,7 @@ section {
     margin-bottom: 150px;
 }
 .socials .st-total {
-    display: none!important;
+    display: none !important;
 }
 .socials #st-1, .socials a {
     display: -webkit-box;
@@ -877,23 +877,69 @@ section {
     text-align: center;
     cursor: pointer;
 }
-.socials .btn {
-    padding: 5px 15px;
+.btn {
+    position: relative;
+    padding: 15px 25px;
     margin-bottom: 15px;
     background: red;
+    z-index: 10;
 }
-.socials .st-btn {
-    margin-right: 0!important;
-    margin-bottom: 15px;
-    opacity: 0;
-    display: none!important;
+.st-btn {
+    display: block !important;
+    margin-right: 0 !important;
+    -webkit-transition: all 0.5s ease !important;
+         -o-transition: all 0.5s ease !important;
+            transition: all 0.5s ease !important;
 }
-.socials .active {
-    opacity: 1;
-    display: block!important;
+.st-btn:nth-of-type(1) {
+    -webkit-transform: translateY(0px) !important;
+        -ms-transform: translateY(0px) !important;
+            transform: translateY(0px) !important;
 }
-.socials .active {
-    display: block;
+.st-btn:nth-of-type(2) {
+    -webkit-transform: translateY(-50px) !important;
+        -ms-transform: translateY(-50px) !important;
+            transform: translateY(-50px) !important;
+}
+.st-btn:nth-of-type(3) {
+    -webkit-transform: translateY(-85px) !important;
+        -ms-transform: translateY(-85px) !important;
+            transform: translateY(-85px) !important;
+}
+.st-btn:nth-of-type(4) {
+    -webkit-transform: translateY(-115px) !important;
+        -ms-transform: translateY(-115px) !important;
+            transform: translateY(-115px) !important;
+}
+.st-btn:nth-of-type(5) {
+    -webkit-transform: translateY(-145px) !important;
+        -ms-transform: translateY(-145px) !important;
+            transform: translateY(-145px) !important;
+}
+.active:nth-of-type(1) {
+    -webkit-transform: translateY(0px) !important;
+        -ms-transform: translateY(0px) !important;
+            transform: translateY(0px) !important;
+}
+.active:nth-of-type(2) {
+    -webkit-transform: translateY(10px) !important;
+        -ms-transform: translateY(10px) !important;
+            transform: translateY(10px) !important;
+}
+.active:nth-of-type(3) {
+    -webkit-transform: translateY(20px) !important;
+        -ms-transform: translateY(20px) !important;
+            transform: translateY(20px) !important;
+}
+.active:nth-of-type(4) {
+    -webkit-transform: translateY(30px) !important;
+        -ms-transform: translateY(30px) !important;
+            transform: translateY(30px) !important;
+}
+.active:nth-of-type(5) {
+    -webkit-transform: translateY(40px) !important;
+        -ms-transform: translateY(40px) !important;
+            transform: translateY(40px) !important;
 }
 .remodal-first {
     padding-top: 95px;
