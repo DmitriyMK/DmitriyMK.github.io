@@ -878,7 +878,9 @@ section {
     cursor: pointer;
 }
 .socials .btn {
+    padding: 5px 15px;
     margin-bottom: 15px;
+    background: red;
 }
 .socials .st-btn {
     margin-right: 0!important;
