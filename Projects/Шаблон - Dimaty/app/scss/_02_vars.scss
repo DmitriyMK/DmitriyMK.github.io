@@ -6,5 +6,15 @@ $red: #ff332a;
 $green: #58b32c;
 
 
-
-
+// Extra small devices (portrait phones, less than 576px)
+$mobile:        ~"only screen and (max-width: 576px)";
+// Small devices (landscape phones, less than 768px)
+$tablet:        ~"only screen and (max-width: 768px)";
+// Medium devices (tablets, less than 992px)
+$desktop:       ~"only screen and (max-width: 992px)";
+// Large devices (desktops, less than 1200px)
+$desktop-xl:    ~"only screen and (max-width: 1200px)";
+// Large devices (desktops, less than 1366px)
+$desktop-xl-2:  ~"only screen and (max-width: 1366px)";
+// Large devices (desktops, less than 1680px) 
+$desktop-xll:   ~"only screen and (max-width: 1680px)";
