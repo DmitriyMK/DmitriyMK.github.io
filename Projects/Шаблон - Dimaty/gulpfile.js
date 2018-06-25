@@ -19,18 +19,6 @@ var gulp = require('gulp'),
 //    rsync = require('gulp-rsync');
 
 
-gulp.task('browser-sync', function() {
-    browserSync({
-        server: {
-            baseDir: 'app'
-        },
-        notify: false,
-        // open: false,
-        // online: false, // Work Offline Without Internet Connection
-        // tunnel: true, tunnel: "projectname", // Demonstration page: http://projectname.localtunnel.me
-    });
-});
-
 
 gulp.task('sass', function() {
     return gulp.src('app/scss/**/*.scss')
@@ -44,7 +32,9 @@ gulp.task('sass', function() {
             suffix: '.min',
             prefix: ''
         }))
-        .pipe(autoprefixer(['last 15 versions']))
+        .pipe(autoprefixer(['last 15 versions', '> 1%'], {
+            cascade: true
+        }))
         .pipe(cleancss({
             level: {
                 1: {
@@ -53,9 +43,23 @@ gulp.task('sass', function() {
             }
         }))
         .pipe(gulp.dest('app/css'))
-        .pipe(browserSync.stream())
+        .pipe(browserSync.reload({
+            stream: true
+        }))
 });
 
+
+gulp.task('browser-sync', function() {
+    browserSync({
+        server: {
+            baseDir: 'app'
+        },
+        notify: false,
+        // open: false,
+        // online: false, // Work Offline Without Internet Connection
+        // tunnel: true, tunnel: "projectname", // Demonstration page: http://projectname.localtunnel.me
+    });
+});
 
 
 gulp.task('scripts', function() {
@@ -67,18 +71,20 @@ gulp.task('scripts', function() {
         .pipe(concat('script.min.js'))
         .pipe(uglify())
         .pipe(gulp.dest('app/js'))
-        .pipe(browserSync.reload({ stream: true }))
+        .pipe(browserSync.reload({
+            stream: true
+        }))
 });
 
 
-//gulp.task('css-libs', ['sass'], function() {
-//    return gulp.src('app/css/main.css')
-//        .pipe(cssnano())
-//        .pipe(rename({
-//            suffix: '.min'
-//        }))
-//        .pipe(gulp.dest('app/css'));
-//});
+gulp.task('css-libs', ['sass'], function() {
+    return gulp.src('app/css/main.css')
+        .pipe(cssnano())
+        .pipe(rename({
+            suffix: '.min'
+        }))
+        .pipe(gulp.dest('app/css'));
+});
 
 
 gulp.task('watch', ['browser-sync', 'css-libs', 'scripts'], function() {
@@ -86,6 +92,7 @@ gulp.task('watch', ['browser-sync', 'css-libs', 'scripts'], function() {
     gulp.watch('app/*.html', browserSync.reload);
     gulp.watch('app/js/**/*.js', browserSync.reload);
 });
+
 
 
 gulp.task('clean', function() {

@@ -1,5 +1,6 @@
 @import "_02_vars.scss";
 @import "_03_mixin and function.scss";
+
 body {
     min-width: 320px;
     padding-right: 0 !important;
@@ -8,6 +9,7 @@ body {
     font-weight: 400;
     line-height: 1.2;
     box-sizing: border-box;
+    color: #000;
 }
 
 a {

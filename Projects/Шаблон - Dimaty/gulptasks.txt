@@ -13,3 +13,6 @@ npm install --save-dev node-bourbon
 npm install --save bourbon
 npm install gulp-sass-glob --save-dev
 npm i -g gulp-cli
+
+npm install gulp-clean-css --save-dev
+npm install --save-dev gulp-notify

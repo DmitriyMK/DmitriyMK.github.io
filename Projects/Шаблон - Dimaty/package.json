@@ -1,5 +1,5 @@
 {
-  "name": "my_portfolio",
+  "name": "",
   "version": "1.0.0",
   "main": "gulpfile.js",
   "scripts": {
@@ -16,10 +16,14 @@
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^4.1.0",
     "gulp-cache": "^1.0.2",
+    "gulp-clean": "^0.4.0",
+    "gulp-clean-css": "^3.9.4",
     "gulp-concat": "^2.6.1",
     "gulp-cssnano": "^2.1.2",
     "gulp-imagemin": "^4.1.0",
+    "gulp-notify": "^3.2.0",
     "gulp-rename": "^1.2.2",
+    "gulp-rsync": "0.0.8",
     "gulp-sass": "^3.2.1",
     "gulp-sass-glob": "^1.0.8",
     "gulp-uglifyjs": "^0.6.2",
