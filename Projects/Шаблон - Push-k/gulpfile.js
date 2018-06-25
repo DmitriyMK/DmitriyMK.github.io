@@ -19,6 +19,8 @@ var imagemin        = require('gulp-imagemin');
 var fileinclude     = require('gulp-file-include');
 var autoprefixer    = require('gulp-autoprefixer');
 
+var notify =        require("gulp-notify");
+
 
 gulp.task('less', function () {
   return gulp.src(baseDir + '/less/**/*.less')
@@ -32,11 +34,10 @@ gulp.task('css', function () {
         .pipe(sourcemaps.init())
         .pipe(filesize())
 
-
-
-
         .pipe(concat('style.less'))
-        .pipe(less())
+        .pipe(less({
+            outputStyle: 'expanded'
+        }).on("error", notify.onError()))
         .pipe(gulpif(argv.mob,gcmq()))
 
         .pipe(autoprefixer(['last 5 versions', '> 1%', 'ie 8'], {
