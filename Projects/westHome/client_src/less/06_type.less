@@ -94,24 +94,18 @@ body {
 }
 
 section {
-    /*     overflow: hidden; */
-    padding: 60px 0;
-    @media @desktop-xl {
-        padding: 80px 0;
-    }
-    @media @desktop-xl-2 {
-        padding: 110px 0;
-    }
-    @media @desktop-xll {
-
-    }
+    padding: 68px 0;
 }
 
 
 
 
 
+
 .section__title {
+    font-size: 45px;
+    font-weight: 400;
+    color: #2c2b30;
 
     @media @mobile {
 
@@ -130,5 +124,17 @@ section {
     }
     @media @desktop-xll {
 
+    }
+
+    &-accent {
+        position: relative;
+        font-weight: 700;
+        &:before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            .spritebox(-220px, -2px, 2px, 344px);
+        }
     }
 }
