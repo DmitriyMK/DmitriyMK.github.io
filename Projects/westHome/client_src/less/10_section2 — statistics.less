@@ -1,0 +1,76 @@
+@media @mobile {
+
+}
+@media @tablet {
+
+}
+@media @desktop {
+
+}
+@media @desktop-xl {
+	
+}
+@media @desktop-xl-2 {
+
+}
+@media @desktop-xll {
+	
+}
+
+.statistics {
+	background: url(../images/statistics__back.jpg);
+
+	&__list {
+		padding: 58px 20px;
+		display: flex;
+		justify-content: space-around;
+	}
+
+	&__item {
+		text-align: center;
+		width: 250px;
+		margin: auto;
+	}
+
+	&__title {
+		position: relative;
+		display: inline-block;
+		margin-bottom: 45px;
+		font-family: @ff2;
+		font-size: 60px;	
+		font-weight: 700;
+
+		&:before {
+			content: '';
+			position: absolute;
+			bottom: -11px;
+			left: 50%;
+			transform: translateX(-50%);
+			width: 50px;
+			height: 1px;
+			background: @red;
+		}
+
+		&-accent {
+			padding-left: 15px;
+			color: #8e959c;
+			font-family: @ff2;
+			font-size: 60px;	
+			font-weight: 700;
+		}
+
+		&-accent2 {
+			color: #8e959c;
+			font-family: @ff2;
+			font-size: 35px;	
+			font-weight: 700;
+		}
+	}
+
+	&__text {
+		font-size: 20px;
+		font-weight: 700;
+	}
+
+
+}

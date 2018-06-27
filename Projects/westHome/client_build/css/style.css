@@ -985,6 +985,59 @@ section {
 .advantages__text {
     line-height: 1;
 }
+.statistics {
+    background: url(../images/statistics__back.jpg);
+}
+.statistics__list {
+    padding: 58px 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+}
+.statistics__item {
+    text-align: center;
+    width: 250px;
+    margin: auto;
+}
+.statistics__title {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 45px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 60px;
+    font-weight: 700;
+}
+.statistics__title:before {
+    content: '';
+    position: absolute;
+    bottom: -11px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+    width: 50px;
+    height: 1px;
+    background: #ff4a3c;
+}
+.statistics__title-accent {
+    padding-left: 15px;
+    color: #8e959c;
+    font-family: 'Roboto', sans-serif;
+    font-size: 60px;
+    font-weight: 700;
+}
+.statistics__title-accent2 {
+    color: #8e959c;
+    font-family: 'Roboto', sans-serif;
+    font-size: 35px;
+    font-weight: 700;
+}
+.statistics__text {
+    font-size: 20px;
+    font-weight: 700;
+}
 .remodal-first {
     padding-top: 95px;
     text-align: center;

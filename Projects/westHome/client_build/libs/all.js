@@ -26,6 +26,15 @@ $(document).ready(function() {
 
   };
 
+});
+
+
+$(document).ready(function() {
+
+  $('.counter').counterUp({
+    delay: 10,
+    time: 1000
+  });
 
   $('.scrolling__link').on('click', function(e) {
     e.preventDefault();
@@ -34,11 +43,6 @@ $(document).ready(function() {
     $('html,body').stop().animate({
       scrollTop: $(d).offset().top
     }, t);
-
-    $('.counter').counterUp({
-      delay: 10,
-      time: 1000
-    });
 
   });
 
@@ -122,7 +126,7 @@ $(document).ready(function() {
       ]
 
     });
-  */
+    */
 
 });
 
