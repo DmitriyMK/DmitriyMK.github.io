@@ -1,0 +1,189 @@
+@media @mobile {
+
+}
+@media @tablet {
+
+}
+@media @desktop {
+
+}
+@media @desktop-xl {
+	
+}
+@media @desktop-xl-2 {
+
+}
+@media @desktop-xll {
+	
+}
+
+.header {
+	position: relative;
+	background: url(../images/header__hero.jpg)no-repeat center/cover;
+
+	&:before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 658px;
+		height: 652px;
+		background: url('../images/decor/header__decor-left.png');
+	}
+
+	&:after {
+		content: '';
+		position: absolute;
+		bottom: -170px;
+		right: 0;
+		width: 830px;
+		height: 1107px;
+		background: url('../images/decor/header__decor-right.png');
+	}
+
+	&__top {
+		padding: 12px 0;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__logo {
+		display: flex;
+		align-items: center;
+		flex-basis: 530px;
+	}
+
+	&__title {
+		padding-left: 15px;
+	}
+
+	&__tel {
+		display: flex;
+		align-items: center;
+		font-weight: 500;
+	}
+
+	.ico_mobile {
+		margin-right: 15px;
+	}
+}
+
+
+.siteInfo {
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	z-index: 10;
+	&__left {
+		padding-top: 260px;
+	}
+	&__right {
+		position: relative;
+		padding-top: 80px;
+		margin-right: -220px;
+	}
+
+
+	&__title {
+		position: relative;
+		padding-bottom: 8px;
+		font-size: 40px;
+		font-weight: 900;
+		&:after {
+			content: '';
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 98%;
+			height: 2px;
+			background: #fff;
+		}
+
+		&-accent {
+			font-size: 46.5px;
+		}
+	}
+	
+	&__slogan {
+		font-size: 39px;
+	}
+
+	&__listTitle {
+		padding-top: 48px;
+		font-size: 31.23px;
+		font-weight: 700;
+	}
+
+	&__list {
+		padding-top: 15px;
+	}
+
+	&__item {
+		font-size: 21.83px;
+		list-style: disc inside;
+		vertical-align: middle;
+	}
+
+	&__guarantee {
+		position: relative;
+		font-size: 56.7px;
+		line-height: 1;
+		font-weight: 700;
+
+		&:before {
+			content: '';
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 100%;
+			height: 1px;
+			background: #fff;
+		}
+
+		&-accent {
+			position: relative;
+			display: block;
+			font-size: 35px;
+			font-weight: 400;
+
+			&:before {
+				content: '';
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				width: 100%;
+				height: 1px;
+				background: #fff;
+			}
+		}
+	}
+
+
+	.guarantee__text {
+		position: absolute;
+		top: 50%;
+		right: 50%;
+		transform: translate(50%, 95%);
+	}
+}
+
+
+.arrow-down {
+	margin: 25px auto 35px auto;
+
+	a {
+		display: block;
+		animation: arrow-bounce 2s infinite;
+		z-index: 10;
+
+		&:hover {
+			animation-play-state: paused;
+		}
+	}
+
+	.ico_arr_down {
+		margin: auto;
+	}
+
+}
