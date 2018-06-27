@@ -630,6 +630,7 @@ section {
     background: url('../images/decor/header__decor-right.png');
 }
 .header__top {
+    position: relative;
     padding: 12px 0;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -640,6 +641,7 @@ section {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+    z-index: 10;
 }
 .header__logo {
     display: -webkit-box;
