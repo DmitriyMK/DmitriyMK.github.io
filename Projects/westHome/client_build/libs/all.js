@@ -31,11 +31,6 @@ $(document).ready(function() {
 
 $(document).ready(function() {
 
-  $('.counter').counterUp({
-    delay: 10,
-    time: 1000
-  });
-
   $('.scrolling__link').on('click', function(e) {
     e.preventDefault();
     var t = 1500;
@@ -45,6 +40,15 @@ $(document).ready(function() {
     }, t);
 
   });
+
+
+  $('.counter').counterUp({
+    delay: 10,
+    time: 1000
+  });
+
+
+  $('.phone-mask').mask('+38(999)999-99-99');
 
 
   /*  $(".js-video-button").modalVideo({

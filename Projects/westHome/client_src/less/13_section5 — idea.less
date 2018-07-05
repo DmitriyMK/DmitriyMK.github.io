@@ -1,0 +1,140 @@
+@media @mobile {
+
+}
+@media @tablet {
+
+}
+@media @desktop {
+
+}
+@media @desktop-xl {
+	
+}
+@media @desktop-xl-2 {
+
+}
+@media @desktop-xll {
+	
+}
+
+
+.idea {
+	background: url('..//images/form-sec__back.jpg')no-repeat center/cover;
+
+	&__title {
+		color: #fff;
+		font-size: 32.84px;
+		&-accent {
+			font-size: 55.51px;
+			&:before {
+				content: '';
+				position: absolute;
+				bottom: -2px;
+				left: 0;
+				.spritebox(-564px, -2px, 2px, 270px);
+			}
+		}
+	}
+
+	&__text {
+		font-size: 20px;
+		font-weight: 300;
+		padding-top: 33px;
+	}
+
+
+	&__box {
+		display: flex;
+		justify-content: space-between;
+		padding-left: 200px;
+		padding-right: 100px;
+	} 
+
+
+	&__content {
+		padding-top: 55px;
+	}
+
+	&__form {
+		margin-top: -5px;
+		position: relative;
+
+		&:before {
+			position: absolute;
+			content: '';
+			top: 0;
+			left: -280px;
+			width: 401px;
+			height: 390px;
+			background: url(../images/decor/form-decor.png);	
+		}
+
+		
+	}
+
+
+	.form{
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		background: url(../images/form__back.png)no-repeat center/contain;
+		width: 319px;
+		min-height: 352px;	
+		padding: 40px 25px 30px 50px;			
+	}
+
+	.form__title {
+		padding-bottom: 18px;
+		font-size: 23px;
+		font-weight: 700;
+		color: #000;
+		text-align: center;
+	}
+	.form__text {
+		padding-left: 20px;
+		padding-bottom: 28px;
+		color: #010101;
+	}
+
+	.input__wrap {
+		position: relative;
+		width: 247px;	
+		margin: 0 auto;
+		margin-bottom: 22px;
+		
+		&:before {
+			content: '';
+			position: absolute;
+			top: 50%;
+			left: 45%;
+			transform: translate(-50%, -50%);
+			width: 244px;
+			height: 40px;
+			background: url(../images/decor/form__wrap.png);
+		}
+	}
+
+	.form__line {
+		position: relative;
+		padding: 6px;
+		font-family: @ff1;
+		font-weight: 400;
+		color: #1e222d;
+	}
+
+	.form__btn {
+		background: @red;
+		color: #fff;
+		font-weight: 700;
+		transition: background-color .3s linear;
+		&:hover {
+			background: darken(@red, 20%)
+		}
+	}
+
+
+}
+
+
+
+

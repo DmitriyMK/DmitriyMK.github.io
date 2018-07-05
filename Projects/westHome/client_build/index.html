@@ -46,16 +46,16 @@
 <script defer src="./libs/slick.js"></script>
 <script defer src="./libs/jquery.validate.min.js"></script>
 
-<!-- 	<script defer src="./libs/wow.min.js"></script>
+<!-- 	<script defer src="./libs/wow.min.js"></script> -->
 
-	<script defer src="./libs/jquery.mask.min.js"></script>	
-	<script defer src="./libs/jquery-modal-video.min.js"></script> -->
-	<script defer src="./libs/waypoints.min.js"></script>
-	<script defer src="./libs/jquery.counterup.min.js"></script>
+<script defer src="./libs/masked-input.js"></script>	
+<!-- <script defer src="./libs/jquery-modal-video.min.js"></script> -->
+<script defer src="./libs/waypoints.min.js"></script>
+<script defer src="./libs/jquery.counterup.min.js"></script>
 
-	<script defer src="./libs/cssrelpreload.js"></script>
+<script defer src="./libs/cssrelpreload.js"></script>
 
-	<!-- END DEFER SCRIPT -->
+<!-- END DEFER SCRIPT -->
 
 
 </head>
@@ -185,6 +185,89 @@
 
 		</div>
 	</div>
+
+
+
+
+	<section class="idea">
+		<div class="container">
+			<div class="idea__box">
+
+				<div class="idea__content">
+					<h2 class="idea__title section__title"><span class=" idea__title-accent section__title-accent">Ваша идея</span><br> наша реализация!</h2>
+					<p class="idea__text">Оставьте заявку и наш менеджер <br> сделает бесплатно  расчет <br> по Вашим размерам!</p>
+				</div>
+
+				<div class="idea__form">
+					<form action="mail.php" method="post" class="form form-validate" name="callback">
+						<h4 class="form__title">Заполните форму</h4>
+						<p class="form__text">и получите расчет стоимости <br> с точностью до 90%, <br> за 5 минут по телефону. </p>
+						<!-- Hidden Required Fields -->
+						<input type="hidden" name="project_name" value="WestHome">
+						<input type="hidden" name="admin_email" value="dm@push-k.ua">
+						<input type="hidden" name="form_subject" value="WestHome > Заявка">
+						<input type="hidden" name="whatform" value="WestHome > Заявка">
+						<!-- END Hidden Required Fields -->
+
+						<div class="input__wrap">
+							<input class="form__line name" type="text" name="Имя&nbsp;покупателя" placeholder="Ваше имя" required>
+						</div>
+						<div class="input__wrap">
+							<input class="form__line phone-mask" type="tel" name="Телефон&nbsp;покупателя" placeholder="Ваш телефон" required>
+						</div>				
+						<input type="submit" class="btn form__btn" value="Заказать "> 
+					</form>
+				</div>
+				
+			</div>															
+		</div>
+	</section>
+
+
+
+
+	<section class="advantagesStone">
+		<div class="container">	
+
+			<div class="advantagesStone__box">
+				<div class="advantagesStone__img">
+					<img src="images/advantagesStone__photo.jpg" alt="Преимущества натурального камня">
+				</div>
+
+				<div class="advantagesStone__content">
+					<h2 class="advantagesStone__title section__title"><span class="advantagesStone__title-accent section__title-accent">Преимущества</span><br> натурального камня?</h2>
+					
+					<ul class="advantagesStone__list">
+						<li class="advantagesStone__item">
+							<h3 class="advantagesStone__item-title">Уникальность</h3>
+							<p class="advantagesStone__text">Каждое изделие из гранита и мрамора является уникальным,<br> поскольку отличается неповторимым рисунком и цветом. </p>
+						</li>
+						<li class="advantagesStone__item">
+							<h3 class="advantagesStone__item-title">Прочность и долговечность</h3>
+							<p class="advantagesStone__text">Натуральный камень устойчив к воздействию высоких и низких температур, легко противостоит разрушительному влиянию окружающей среды и влаге. </p>
+						</li>
+						<li class="advantagesStone__item">
+							<h3 class="advantagesStone__item-title">Инертность</h3>
+							<p class="advantagesStone__text">Натуральный камень не вступает в реакцию с веществами, которые <br> содержатся в отделочных и строительных материалах.</p>
+						</li>
+						<li class="advantagesStone__item">
+							<h3 class="advantagesStone__item-title">Актуальность</h3>
+							<p class="advantagesStone__text">Изделия из натурального камня всегда были и <br> остаются стильными и востребованными.</p>
+						</li>
+						<li class="advantagesStone__item">
+							<h3 class="advantagesStone__item-title">Экологичность</h3>
+							<p class="advantagesStone__text">Натуральный камень обладает бактерицидным действием и <br> не оказывает негативного воздействия на здоровье человека.</p>
+						</li>
+						<li class="advantagesStone__item">
+							<h3 class="advantagesStone__item-title">Престиж</h3>
+							<p class="advantagesStone__text">Выбирая изделия из гранита и мрамора, <br> Вы подчеркиваете высокий статус и хороший вкус.</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+			
+		</div>
+	</section>
 
 
 
