@@ -20,6 +20,10 @@
 .review {
 	background: url(../images/review__back.jpg);
 
+	.container {
+		padding-left: 290px;
+	}
+
 	&__title {
 		color: #fff;
 		font-size: 32.84px;
@@ -32,6 +36,30 @@
 				left: 0;
 				.spritebox(-564px, -2px, 2px, 270px);
 			}
+		}
+	}
+
+	.slide {
+		display: flex;
+		justify-content: space-between;
+		width: 100%;
+
+
+		&__img {
+			width: 230px;
+		}
+
+		&__content {
+			margin-left: 50px;
+			margin-top: 150px;
+		}
+
+		.name {
+			font-size: 20px;
+			font-weight: 700;
+		}
+		.desc {
+			font-size: 18px;
 		}
 	}
 }

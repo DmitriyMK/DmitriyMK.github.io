@@ -62,12 +62,13 @@ $(document).ready(function() {
 
 
 
-  $('.slider-review').slick({
+  $('.review-slider').slick({
 
       arrows: true,
       dots: true,
       focusOnSelect: true,
-      infinite: true,
+      infinite: false,
+      fade: true,
 
     });
     

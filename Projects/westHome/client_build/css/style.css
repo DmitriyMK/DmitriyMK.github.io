@@ -500,37 +500,7 @@ template {
         -ms-user-select: text;
             user-select: text;
 }
-.scrollup {
-    width: 37px;
-    height: 84px;
-    position: fixed;
-    bottom: 50px;
-    right: 15px;
-    display: none;
-    text-indent: -9999px;
-    background: url('../images/arrow-top.png') no-repeat;
-    z-index: 100;
-}
-@media only screen and (min-width: 768px) {
-    .scrollup {
-        right: 100px;
-    }
-}
-.video-responsive {
-    position: relative;
-    padding-bottom: 56.25%;
-    height: 0;
-    overflow: hidden;
-}
-.video-responsive iframe, .video-responsive object, .video-responsive embed {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
 /* ONLY FOR IE11 */
-/* ONLY FOR EDGE */
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, main, menu, nav, output, ruby, section, summary, time, mark, audio, video {
     margin: 0;
     padding: 0;
@@ -1525,6 +1495,9 @@ section {
 .review {
     background: url(../images/review__back.jpg);
 }
+.review .container {
+    padding-left: 290px;
+}
 .review__title {
     color: #fff;
     font-size: 32.84px;
@@ -1542,6 +1515,29 @@ section {
     background-position: -564px -2px;
     height: 2px;
     width: 270px;
+}
+.review .slide {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    width: 100%;
+}
+.review .slide__img {
+    width: 230px;
+}
+.review .slide__content {
+    margin-left: 50px;
+    margin-top: 150px;
+}
+.review .slide .name {
+    font-size: 20px;
+    font-weight: 700;
+}
+.review .slide .desc {
+    font-size: 18px;
 }
 .remodal-first {
     padding-top: 95px;
@@ -1835,53 +1831,47 @@ label {
 .slick-prev, .slick-next {
     width: 50px;
     height: 100%;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-        -ms-transform: translateY(-50%);
-            transform: translateY(-50%);
-    font-family: 'Fontello';
-    -webkit-transition: all 0.3s linear;
-         -o-transition: all 0.3s linear;
-            transition: all 0.3s linear;
+    opacity: 0.75;
+    -webkit-transition: opacity 0.3s linear;
+         -o-transition: opacity 0.3s linear;
+            transition: opacity 0.3s linear;
     z-index: 10;
 }
 .slick-prev {
-    left: -40px;
+    top: 100px;
+    left: -50px;
+    background-image: url(../images/icons/spritebox-sprite.png);
+    background-repeat: no-repeat;
+    background-position: 0 -174px;
+    height: 19px;
+    width: 36px;
 }
 .slick-next {
-    right: -40px;
+    top: 150px;
+    left: -50px;
+    background-image: url(../images/icons/spritebox-sprite.png);
+    background-repeat: no-repeat;
+    background-position: -36px -174px;
+    height: 19px;
+    width: 36px;
 }
 .slick-prev:before, .slick-next:before {
-    display: block;
-    position: absolute;
+    width: 0;
+    height: 0;
+}
+.slick-dots {
+    display: inline-block !important;
+    left: -50px;
     top: 50%;
     -webkit-transform: translateY(-50%);
         -ms-transform: translateY(-50%);
             transform: translateY(-50%);
-    z-index: 10;
-    color: #fff;
-    font-size: 45px;
-}
-.slick-prev:before {
-    left: 20px;
-    content: '\e805';
-}
-.slick-next:before {
-    content: '\e806';
-    right: 10px;
-}
-.slick-dots {
-    left: 50%;
-    bottom: -40px;
-    -webkit-transform: translateX(-50%);
-        -ms-transform: translateX(-50%);
-            transform: translateX(-50%);
     -webkit-border-image: transparent;
          -o-border-image: transparent;
             border-image: transparent;
 }
 .slick-dots li {
-    margin: 0 5px;
+    margin: 7px;
     width: 20px;
     height: 20px;
 }

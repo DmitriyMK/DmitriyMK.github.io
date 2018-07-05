@@ -2,149 +2,42 @@
 .slick-next {
 	width: 50px;
 	height: 100%;
-	top: 50%;	
-	transform: translateY(-50%);
-
-	font-family: 'Fontello'; 
-	transition: all .3s linear;
+	opacity: 0.75;
+	transition: opacity .3s linear;
 	z-index: 10;
-
-	@media @tablet {
-
-	}
-	@media @desktop {
-		
-	}
-	@media @desktop-xl {
-
-	}
-	@media @desktop-xl-2 {
-
-	}
-	@media @desktop-xll {
-
-	}
-
 }
 
+
 .slick-prev {
-	left: -40px;
-
-	@media @tablet {
-
-	}
-	@media @desktop {
-
-	}
-	@media @desktop-xl {
-
-	}
-	@media @desktop-xl-2 {
-
-	}
+	top: 100px;
+	left: -50px;
+	.spritebox(-0px, -174px, 19px, 36px);
 }
 
 .slick-next {
-	right: -40px; 
-	
-	@media @tablet {
-
-	}
-	@media @desktop {
-
-	}
-	@media @desktop-xl {
-
-	}
-	@media @desktop-xl-2 {
-
-	}
+	top: 150px;
+	left: -50px; 
+	.spritebox(-36px, -174px, 19px, 36px);
 }
 
 
 .slick-prev:before,
 .slick-next:before {
-	
-	display: block;
-	position: absolute;
-
-	top: 50%;
-	transform: translateY(-50%);
-
-	z-index: 10;
-	color: #fff;
-	font-size: 45px;
-	
-
-	@media @tablet {
-
-	}
-	@media @desktop {
-
-	}
-	@media @desktop-xl {
-
-	}
-	@media @desktop-xl-2 {
-
-	}
-}
-
-.slick-prev:before {
-	left: 20px;
-	content: '\e805';
-	
-	@media @tablet {
-
-	}
-	@media @desktop {
-
-	}
-	@media @desktop-xl {
-
-	}
-	@media @desktop-xl-2 {
-
-	}
-	@media @desktop-xll {
-
-	}
-}
-
-
-
-
-.slick-next:before {
-	content: '\e806';
-	right: 10px;
-
-
-	@media @tablet {
-
-	}
-	@media @desktop {
-
-	}
-	@media @desktop-xl {
-		
-	}
-	@media @desktop-xl-2 {
-
-	}
-	@media @desktop-xll {
-
-	}
+	width: 0;
+	height: 0;
 }
 
 
 .slick-dots {
-	left: 50%;
-	bottom: -40px;
-	transform: translateX(-50%);
+	display: inline-block!important;
+	left: -50px;
+	top: 50%;
+	transform: translateY(-50%);
+
 	border-image: transparent;
 
 	li {
-		margin: 0 5px;
+		margin: 7px;
 		width: 20px;
 		height: 20px;
 
