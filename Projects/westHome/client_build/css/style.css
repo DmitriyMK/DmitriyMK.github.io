@@ -1449,6 +1449,7 @@ section {
 }
 .production {
     position: relative;
+    padding-bottom: 160px;
     background: #fafbfc;
     color: #0d0f11;
 }
@@ -1461,9 +1462,86 @@ section {
     height: 100%;
     background: url(../images/decor/lines__back-vertical2.png);
 }
+.production .container {
+    position: relative;
+}
 .production__title {
     text-align: right;
     font-size: 40px;
+}
+.production__box {
+    margin-top: 56px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+.production__box-sm {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 560px;
+}
+.production__box-sm > div {
+    width: 50%;
+}
+.production__box img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+.production .img__wrap-big {
+    position: relative;
+    max-width: 580px;
+    height: 390px;
+    z-index: 10;
+}
+.production .img__wrap-big:before {
+    content: '';
+    position: absolute;
+    bottom: -40px;
+    left: -66px;
+    width: 590px;
+    height: 380px;
+    background: #fff;
+    -webkit-box-shadow: 0 12px 17.22px 3.78px rgba(66, 107, 141, 0.14);
+            box-shadow: 0 12px 17.22px 3.78px rgba(66, 107, 141, 0.14);
+    z-index: -1;
+}
+.production .img__wrap-sm {
+    width: 268px;
+    height: 180px;
+    margin-bottom: 15px;
+    -webkit-box-shadow: 0 12px 17.22px 3.78px rgba(8, 8, 8, 0.14);
+            box-shadow: 0 12px 17.22px 3.78px rgba(8, 8, 8, 0.14);
+}
+.review {
+    background: url(../images/review__back.jpg);
+}
+.review__title {
+    color: #fff;
+    font-size: 32.84px;
+}
+.review__title-accent {
+    font-size: 55.51px;
+}
+.review__title-accent:before {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    background-image: url(../images/icons/spritebox-sprite.png);
+    background-repeat: no-repeat;
+    background-position: -564px -2px;
+    height: 2px;
+    width: 270px;
 }
 .remodal-first {
     padding-top: 95px;
