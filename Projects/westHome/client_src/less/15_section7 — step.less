@@ -1,0 +1,187 @@
+@media @mobile {
+
+}
+@media @tablet {
+
+}
+@media @desktop {
+
+}
+@media @desktop-xl {
+	
+}
+@media @desktop-xl-2 {
+
+}
+@media @desktop-xll {
+	
+}
+
+
+.step {
+	position: relative;
+	background: #fafbfc;
+	color: #0d0f11;
+
+	&:before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 249px;
+		width: 541px;
+		height: 100%;
+		background: url(../images/decor/lines__back-vertical2.png);
+	}
+
+	.container {
+		position: relative;
+		padding-right: 200px;
+	}
+
+	&__box {
+		float: right;
+		width: 500px;
+	}
+
+	&__title {
+		font-size: 40px;
+	}
+
+	&__list {
+		padding-top: 66px;
+	}
+
+	&__item {
+		position: relative;
+		margin-bottom: 50px;
+		color: #0d0f11;
+
+		&-title {
+			padding-bottom: 15px;
+			font-size: 25px;
+			font-weight: 700;    
+		}
+		&-text {
+			position: relative;
+			max-width: 350px;
+			&:before {
+				content: '';
+				position: absolute;
+				right: -60px;
+				width: 50px; 
+				height: 1px;
+				background: #b1b1b1;
+			}
+		}
+
+		&:nth-of-type(1) {
+			&:before {
+				content: '';
+				position: absolute;
+				left: -350px;
+				top: -40px;
+				width: 240px;
+				height: 250px;
+				background: url(../images/stone1.png);
+			}
+
+			p {
+				&:before {
+					top: 20px;
+				}
+			}
+		}
+
+		&:nth-of-type(2) {
+			&:before {
+				content: '';
+				position: absolute;
+				left: -190px;
+				top: -20px;
+				width: 165px;
+				height: 165px;
+				background: url(../images/stone2.png);
+			}
+
+			p {
+				&:before {
+					top: 30px;
+				}
+				&:after {
+
+				}
+			}
+		}
+
+		&:nth-of-type(3) {
+			&:before {
+				content: '';
+				position: absolute;
+				left: -350px;
+				top: -30px;
+				width: 201px;
+				height: 201px;
+				background: url(../images/stone3.png);
+			}
+
+			p {
+				&:before {
+					top: 8px;
+				}
+				&:after {
+
+				}
+			}
+		}
+
+		&:nth-of-type(4) {
+			&:before {
+				content: '';
+				position: absolute;
+				left: -160px;
+				top: -10px;
+				width: 114px;
+				height: 120px;
+				background: url(../images/stone4.png);
+			}
+
+			p {
+				&:before {
+					top: 10px;
+				}
+				&:after {
+
+				}
+			}
+		}	
+	}
+
+	.step-img {
+		position: absolute;
+		right: 8px;
+	}
+	.step-img1 {
+		top: 38px;
+	}
+	.step-img2 {
+		top: 45px;
+	}
+	.step-img3 {
+		top: 28px;
+	}
+	.step-img4 {
+		top: 18px;
+	}
+
+	.btn {
+		margin-top: 28px;
+		margin-bottom: 15px;
+		background: @red;
+		color: #fff;
+		transition: box-shadow .3s linear;
+		box-shadow: 0px 12px 12px 3.24px rgba(255, 74, 60, 0.33);
+		&:hover {
+			box-shadow: none;
+		}
+	}
+}
