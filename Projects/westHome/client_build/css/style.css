@@ -1398,6 +1398,73 @@ section {
     -webkit-box-shadow: none;
             box-shadow: none;
 }
+.sample {
+    padding: 66px 0;
+    background: url(../images/sample__back.jpg) no-repeat center / cover;
+    font-family: 'Roboto', sans-serif;
+}
+.sample__title {
+    position: relative;
+    font-size: 36.53px;
+    font-weight: 300;
+    text-align: center;
+}
+.sample__title strong {
+    font-weight: 700;
+}
+.sample__title:before {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    background-image: url(../images/icons/spritebox-sprite.png);
+    background-repeat: no-repeat;
+    background-position: -220px 0;
+    height: 2px;
+    width: 854px;
+}
+.sample .form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin-top: 34px;
+}
+.sample .form__line {
+    width: 319px;
+    margin-left: 15px;
+    padding-left: 15px;
+}
+.sample .btn {
+    margin-left: 15px;
+    background: #ff4a3c;
+    color: #fff;
+    -webkit-transition: background-color 0.3s linear;
+         -o-transition: background-color 0.3s linear;
+            transition: background-color 0.3s linear;
+}
+.sample .btn:hover {
+    background: #d50f00;
+}
+.production {
+    position: relative;
+    background: #fafbfc;
+    color: #0d0f11;
+}
+.production:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 249px;
+    width: 541px;
+    height: 100%;
+    background: url(../images/decor/lines__back-vertical2.png);
+}
+.production__title {
+    text-align: right;
+    font-size: 40px;
+}
 .remodal-first {
     padding-top: 95px;
     text-align: center;

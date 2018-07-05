@@ -1,0 +1,61 @@
+@media @mobile {
+
+}
+@media @tablet {
+
+}
+@media @desktop {
+
+}
+@media @desktop-xl {
+	
+}
+@media @desktop-xl-2 {
+
+}
+@media @desktop-xll {
+	
+}
+
+
+.sample {
+	padding: 66px 0;
+	background: url(../images/sample__back.jpg)no-repeat center/cover;
+	font-family: @ff2;
+	&__title {
+		position: relative;
+		font-size: 36.53px;
+		font-weight: 300;
+		text-align: center;
+		strong {
+			font-weight: 700;
+		}
+		&:before {
+			content: '';
+			position: absolute;
+			bottom: -10px;
+			.spritebox(-220px, -0px, 2px, 854px)
+		}
+	}
+	.form {
+		display: flex;
+		justify-content: center;
+		margin-top: 34px;
+	}
+	.form__line {
+		width: 319px;	
+		margin-left: 15px;
+		padding-left: 15px;
+	}
+	.btn {
+		margin-left: 15px;
+		background: @red;
+		color: #fff;
+		transition: background-color .3s linear;
+		&:hover {
+			background: darken(@red, 20%)
+		}
+	}
+}
+
+
