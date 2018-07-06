@@ -637,7 +637,11 @@ section {
     position: relative;
     background: url(../images/header__hero.jpg) no-repeat center / cover;
     overflow: hidden;
-    min-height: 640px;
+}
+@media only screen and (min-width: 992px) {
+    .header {
+        min-height: 640px;
+    }
 }
 .header:before {
     display: none;
@@ -700,15 +704,18 @@ section {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-}
-@media only screen and (min-width: 1200px) {
-    .header__logo {
-        -ms-flex-preferred-size: 530px;
-        flex-basis: 530px;
-    }
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+        flex: 1;
 }
 .header__title {
-    padding-left: 15px;
+    display: none;
+}
+@media only screen and (min-width: 992px) {
+    .header__title {
+        display: block;
+        padding-left: 15px;
+    }
 }
 .header__tel {
     display: -webkit-box;
@@ -719,7 +726,19 @@ section {
     align-items: center;
     font-weight: 500;
 }
+.header__tel span {
+    display: none;
+}
+@media only screen and (min-width: 768px) {
+    .header__tel {
+        margin-right: 25px;
+    }
+    .header__tel span {
+        display: inline;
+    }
+}
 .header .ico_mobile {
+    margin-left: 15px;
     margin-right: 15px;
 }
 .siteInfo {
@@ -748,8 +767,13 @@ section {
 .siteInfo__title {
     position: relative;
     padding-bottom: 8px;
-    font-size: 28px;
+    font-size: 25px;
     font-weight: 900;
+}
+@media only screen and (min-width: 992px) {
+    .siteInfo__title {
+        font-size: 28px;
+    }
 }
 @media only screen and (min-width: 1200px) {
     .siteInfo__title {
@@ -766,9 +790,14 @@ section {
     position: absolute;
     bottom: 0;
     left: 0;
-    width: 470px;
+    width: 340px;
     height: 2px;
     background: #fff;
+}
+@media only screen and (min-width: 992px) {
+    .siteInfo__title:after {
+        width: 470px;
+    }
 }
 @media only screen and (min-width: 1200px) {
     .siteInfo__title:after {
@@ -848,7 +877,12 @@ section {
     }
 }
 .siteInfo__img {
-    width: 420px;
+    width: 350px;
+}
+@media only screen and (min-width: 992px) {
+    .siteInfo__img {
+        width: 420px;
+    }
 }
 @media only screen and (min-width: 1200px) {
     .siteInfo__img {
@@ -872,10 +906,15 @@ section {
 }
 .siteInfo__guarantee {
     position: relative;
-    font-size: 32px;
+    font-size: 28px;
     line-height: 1;
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
+}
+@media only screen and (min-width: 992px) {
+    .siteInfo__guarantee {
+        font-size: 32px;
+    }
 }
 @media only screen and (min-width: 1200px) {
     .siteInfo__guarantee {
@@ -900,8 +939,13 @@ section {
     position: relative;
     display: block;
     margin-top: 5px;
-    font-size: 28px;
+    font-size: 24px;
     font-weight: 300;
+}
+@media only screen and (min-width: 992px) {
+    .siteInfo__guarantee-accent {
+        font-size: 28px;
+    }
 }
 @media only screen and (min-width: 1200px) {
     .siteInfo__guarantee-accent {
@@ -921,9 +965,16 @@ section {
     position: absolute;
     top: 50%;
     right: 50%;
-    -webkit-transform: translate(50%, 41%);
-        -ms-transform: translate(50%, 41%);
-            transform: translate(50%, 41%);
+    -webkit-transform: translate(50%, -75%);
+        -ms-transform: translate(50%, -75%);
+            transform: translate(50%, -75%);
+}
+@media only screen and (min-width: 992px) {
+    .siteInfo .guarantee__text {
+        -webkit-transform: translate(50%, 41%);
+            -ms-transform: translate(50%, 41%);
+                transform: translate(50%, 41%);
+    }
 }
 @media only screen and (min-width: 1920px) {
     .siteInfo .guarantee__text {
@@ -1905,7 +1956,7 @@ section {
 @media only screen and (min-width: 320px) {
     .remodal-close:before {
         font-size: 30px !important;
-        top: -7px !important;
+        top: 8px !important;
         left: -12px !important;
     }
 }
