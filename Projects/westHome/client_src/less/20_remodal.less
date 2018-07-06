@@ -63,16 +63,17 @@
 .remodal-close { 
     top: 12px !important;
     right: 15px !important;
-    color: #fff !important;
+    color: @red !important;
     font-weight: 900;
     @media @mobile {
-       width: 10px !important;
-       height: 16px !important;
-   }
-   @media @tablet { 
+     width: 10px !important;
+     height: 16px !important;
+ }
+ @media @tablet { 
     width: 35px !important;
     height: 30px !important;
 }
+
 &:before {
     @media @mobile {
         font-size: 30px !important;
@@ -94,14 +95,7 @@
     border-radius: 15px;
     background: #fff;
 
-    //  background: url('@{dir}product-1.png') no-repeat top center;  
-    // background-position: 50% 50%;
-
     padding: 30px 40px;
-
-    
-    // background: #3d4f4a;
-    // border: 2px solid #fff;
     
 
     @media @mobile {
@@ -117,7 +111,7 @@
         text-align: center;
     }
     .remodal-close {
-        color: #000 !important;
+        color: @red !important;
     }
 }
 
@@ -169,34 +163,62 @@ label {
 
 
 .formBox {
-    position: relative;
-    background: #fff;
-    padding: 30px 15px;
-    max-width: 400px;
-    margin: 20px auto;
-    text-align: center;
+    position: relative;  
+    max-width: 319px;
+    min-height: 352px;  
+    padding: 50px 25px 30px 50px;  
+    background: url(../images/form__back.png)no-repeat center/contain;
+    font-family: @ff2;
+
     &__title {
-        
+        padding-bottom: 18px;
+        font-size: 23px;
+        font-weight: 700;
+        color: #000;
+        text-align: center;
     }
+
     &__text {
+        padding-left: 20px;
+        padding-bottom: 28px;
+        color: #010101;
+    }
+
+    .input__wrap {
+        position: relative;
+        width: 247px;   
+        margin: 0 auto;
+        margin-bottom: 22px;
         
+        &:before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 244px;
+            height: 40px;
+            background: url(../images/decor/form__wrap.png);
+        }
     }
 
     .form__line {
-        width: 100%;
-        padding-left: 15px;
-        padding-bottom: 7px;
-        border: none!important;     
-        outline: none;
-        font-size: 18px;
+        position: relative;
+        padding: 6px;
+        font-family: @ff1;
+        font-weight: 400;
+        color: #1e222d;
     }
+
     .btn {
-        margin: 15px 0 5px 0;
+        background: @red;
         color: #fff;
+        font-weight: 700;
+        transition: background-color .3s linear;
         &:hover {
-            color: #000;
+            background: darken(@red, 20%)
         }
-    } 
+    }
 }
 
 .video {

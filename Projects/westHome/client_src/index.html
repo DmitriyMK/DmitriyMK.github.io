@@ -24,7 +24,7 @@
 	<link rel="preload" href="./css/remodal.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
 	<link rel="preload" href="./css/remodal-default-theme.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
 	<link rel="preload" href="./css/fancybox.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-<!-- 	<link rel="preload" href="./css/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'"> -->
+	<!-- 	<link rel="preload" href="./css/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'"> -->
 	<link rel="preload" href="./css/slick-theme.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
 	<link rel="preload" href="./css/slick.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
 
@@ -32,28 +32,24 @@
 		<link rel="stylesheet" href="./css/remodal.css">
 		<link rel="stylesheet" href="./css/remodal-default-theme.css">
 		<link rel="stylesheet" href="./css/fancybox.css">
-<!-- 		<link rel="stylesheet" href="./css/animate.min.css"> -->
-	<link rel="stylesheet" href="./css/slick-theme.css">
-	<link rel="stylesheet" href="./css/slick.css">
-</noscript>
+		<!-- 		<link rel="stylesheet" href="./css/animate.min.css"> -->
+		<link rel="stylesheet" href="./css/slick-theme.css">
+		<link rel="stylesheet" href="./css/slick.css">
+	</noscript>
 
-<link rel="stylesheet" href="./css/style.css">
+	<link rel="stylesheet" href="./css/style.css">
 
-<!-- DEFER SCRIPT -->
-<script defer src="./libs/fancybox.js"></script>
-<script defer src="./libs/slick.js"></script>
-<script defer src="./libs/jquery.validate.min.js"></script>
+	<!-- DEFER SCRIPT -->
+	<script defer src="./libs/fancybox.js"></script>
+	<script defer src="./libs/slick.js"></script>
+	<script defer src="./libs/jquery.validate.min.js"></script>
+	<!-- 	<script defer src="./libs/wow.min.js"></script> -->
+	<script defer src="./libs/masked-input.js"></script>	
+	<script defer src="./libs/waypoints.min.js"></script>
+	<script defer src="./libs/jquery.counterup.min.js"></script>
+	<script defer src="./libs/cssrelpreload.js"></script>
 
-<!-- 	<script defer src="./libs/wow.min.js"></script> -->
-
-<script defer src="./libs/masked-input.js"></script>	
-<!-- <script defer src="./libs/jquery-modal-video.min.js"></script> -->
-<script defer src="./libs/waypoints.min.js"></script>
-<script defer src="./libs/jquery.counterup.min.js"></script>
-
-<script defer src="./libs/cssrelpreload.js"></script>
-
-<!-- END DEFER SCRIPT -->
+	<!-- END DEFER SCRIPT -->
 
 
 </head>
@@ -341,7 +337,6 @@
 				</div>
 
 				<div class="production__img-sm">
-
 					<div class="production__box-sm">
 
 						<div>
@@ -375,7 +370,6 @@
 								</a>
 							</div>
 						</div>
-
 					</div>
 				</div>
 			</div>
@@ -428,6 +422,32 @@
 						<p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure doloUt enim ad minim veniam, quis nostrud exercitation ullamco</p>
 					</div>
 				</div>
+
+				<div class="slide">
+					
+					<div class="slide__img">
+						<img src="images/review__photo.jpg" alt="отзыв">
+					</div>
+
+					<div class="slide__content">
+						<p class="name">Павел Ветров</p>
+						<p class="desc">35 лет, Киев.</p>
+						<p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure doloUt enim ad minim veniam, quis nostrud exercitation ullamco</p>
+					</div>
+				</div>
+
+				<div class="slide">
+					
+					<div class="slide__img">
+						<img src="images/review__photo.jpg" alt="отзыв">
+					</div>
+
+					<div class="slide__content">
+						<p class="name">Павел Ветров</p>
+						<p class="desc">35 лет, Киев.</p>
+						<p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure doloUt enim ad minim veniam, quis nostrud exercitation ullamco</p>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -435,80 +455,117 @@
 
 
 
-<!-- 	<section class="contacts">
+	<section class="contacts">
+		<h2 class="contacts__title hidden">Контакты</h2>	
 
-	<h2 class="section__title contacts__title">Контакты</h2>	
-
-	<div class="map" id="google-map">
-		<iframe data-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2646.8054558132194!2d35.01456591565963!3d48.44107347924872!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40dbe34048a6ab2f%3A0x34bf8eb46a3693b2!2z0L_RgNC-0YHQvy4g0JDQu9C10LrRgdCw0L3QtNGA0LAg0J_QvtC70Y8sIDExOSwg0JTQvdC40L_RgNC-LCDQlNC90LXQv9GA0L7Qv9C10YLRgNC-0LLRgdC60LDRjyDQvtCx0LvQsNGB0YLRjCwgNDkwMDA!5e0!3m2!1sru!2sua!4v1526307720959" title="Контакты компании Stimlex"></iframe>
-	</div>
-
-	<div class="container">
-		<div class="contacts__box">
-			<h4 class="box__title">Контакты:</h4>
-			<ul class="contacts__list">
-				<li class="contacts__item address"><address>
-					Украина, г. Днепр, <br>
-					пр. Кирова 119
-				</address></li>
-				<li class="contacts__item tel"><a class="contact__link" href="tel:+380970800493">тел. +38097080-04-93</a></li>
-				<li class="contacts__item tel"><a class="contact__link" href="tel:+700000800493">тел. +7 0000 080-04-93</a></li> 
-
-				<li class="contacts__item mail"><a class="contact__link" href="mailto:stimlexpro@gmail.com">stimlexpro@gmail.com</a></li>
-
-			</ul>
-			<p class="contacts__ask">Остались вопросы?</p>
-			<p class="contacts__text">Мы Вам перезвоним в течении 10 минут и проконсультируем.</p>
-			<button class="btn" data-remodal-target="callback">Заказать звонок</button>
+		<div class="map" id="map">
 		</div>
-	</div>
-</section>
 
+		<div class="container">
+			<div class="contacts__box">
+				<h4 class="box__title">Контакты:</h4>
+				<ul class="contacts__list">
+					<li class="contacts__item address"><address>Украина, г. Днепр, <br> улица Будённого, 7 <br></address></li>
 
+					<li class="contacts__item tel"><a class="contact__link" href="tel:+380970800493">+38(097) 080-04-93</a></li>
 
+					<li class="contacts__item mail"><a class="contact__link" href="mailto:westhome@gmail.com"><strong>westhome@gmail.com</strong></a></li>
+				</ul>
 
-<footer class="footer">
-	<div class="container">
-
-		<div class="footer__box">
-			<div class="footer__logo">
-				<a class="footer__link" href="index.html"><img src="./images/logo.png" alt=""></a>
-				<h2 class="footer__title">Продажа барбекю <br> от производителя</h2>
-			</div>
-
-			<div class="footer__copy">
-				<p>© Copyright 2018, ТОВ СТИМЛЕКС. <br> Все права защищены.</p>
-			</div>
-
-			<div class="agency">
-				<a href="http://landingpage.push-k.ua/" target="_blank">Создание сайтов</a> 
-				<p>PUSH-K Solutions</p>
+				<p class="ask">Остались вопросы?</p>
+				<p class="text">Мы Вам перезвоним, и поможем сделать правильный выбор.</p>
+				<button class="btn" data-remodal-target="callback">Заказать звонок</button>
 			</div>
 		</div>
+	</section>
+
+
+
+
+	<footer class="footer">
+		<div class="container">
+
+			<div class="footer__box">
+				<div class="footer__logo">
+					<a class="footer__link" href="index.html"><div class="ico_logo"></div>
+					</a>
+					<h2 class="footer__title">Изделия из натурального камня <br>от производителя.</h2>
+				</div>
+
+				<div class="agency">
+					<a href="http://landingpage.push-k.ua/" target="_blank" rel="noopener noreferrer">Создание сайтов</a> 
+					<p>PUSH-K Solutions</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+
+
+	<!-- THANKS -->
+	<div class="remodal remodal-common"  data-remodal-id="modal-thanks" >
+		<button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
+		<h3 class="thanks__title">Благодарим Вас!</h3>
+		<p class="thanks__text">Мы свяжемся с Вами <br>в ближайшее время.</p>
 	</div>
-</footer> 
--->
+
+
+	<!-- MODALS -->
+	<div class="remodal formBox" data-remodal-id="callback"> 
+		<button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
+		<form class="form form-validate" name="callback">
+			<!-- Hidden Required Fields -->
+			<input type="hidden" name="project_name" value="WestHome">
+			<input type="hidden" name="admin_email" value="dm@push-k.ua">
+			<input type="hidden" name="form_subject" value="Обратный звонок">
+			<input type="hidden" name="whatform" value="WestHome > Обратный звонок">
+			<!-- END Hidden Required Fields -->
+			<p class="formBox__title">Заполните форму</p>
+			<p class="formBox__text">И наш менеджер свяжется с Вами в ближайшее время</p>
+			<div class="input__wrap">
+				<input class="form__line name" type="text" name="Имя&nbsp;покупателя" placeholder="Ваше имя" required autofocus>
+			</div>
+			<div class="input__wrap">
+				<input class="form__line phone-mask" type="tel" name="Телефон&nbsp;покупателя" placeholder="Ваш телефон" required>
+			</div>
+			<input type="submit" class="btn" value="Заказать звонок"> 
+		</form>
+	</div> 
+
+	<!-- MODALS -->
+	<div class="remodal formBox" data-remodal-id="order"> 
+		<button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
+		<form class="form form-validate" name="callback">
+			<!-- Hidden Required Fields -->
+			<input type="hidden" name="project_name" value="WestHome">
+			<input type="hidden" name="admin_email" value="dm@push-k.ua">
+			<input type="hidden" name="form_subject" value="Заказ">
+			<input type="hidden" name="whatform" value="WestHome > Заказ">
+			<!-- END Hidden Required Fields -->
+			<p class="formBox__title">Заполните форму</p>
+			<p class="formBox__text">И наш менеджер свяжется с Вами в ближайшее время</p>
+			<div class="input__wrap">
+				<input class="form__line name" type="text" name="Имя&nbsp;покупателя" placeholder="Ваше имя" required autofocus>
+			</div>
+			<div class="input__wrap">
+				<input class="form__line phone-mask" type="tel" name="Телефон&nbsp;покупателя" placeholder="Ваш телефон" required>
+			</div>
+			<input type="submit" class="btn" value="Заказать звонок"> 
+		</form>
+	</div> 
 
 
 
-<!-- THANKS -->
-<div class="remodal remodal-common"  data-remodal-id="modal-thanks" >
-	<button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
-	<h3 class="thanks__title">Благодарим Вас!</h3>
-	<p class="thanks__text">Мы свяжемся с Вами <br>в ближайшее время.</p>
-</div>
+	<!-- Load Scripts -->
+	<script src='https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js?ver=3.9.2'></script>
+	<script src="./libs/jquery.nicescroll.min.js"></script>
+	<script src="./libs/remodal.min.js"></script>
+	<script src="./libs/all.js"></script>
+	<script src="./libs/map.js"></script>  
 
+	<script async defer src="https://maps.googleapis.com/maps/api/js?callback=initMap&key=AIzaSyDFnsXtzPC77ZP4pkabK8_yVr5qazdPCjc&callback=initMap"></script> 
 
-
-<!-- Load Scripts -->
-<!-- <script src="//code.jquery.com/jquery-2.2.4.min.js"></script> -->
-<script src='https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js?ver=3.9.2'></script>
-<script src="./libs/jquery.nicescroll.min.js"></script>
-<script src="./libs/remodal.min.js"></script>
-<script src="./libs/all.js"></script>
-<!-- <script src="./libs/map.js"></script>  
-
-	<script async defer src="https://maps.googleapis.com/maps/api/js?callback=initMap&key=AIzaSyDFnsXtzPC77ZP4pkabK8_yVr5qazdPCjc&callback=initMap"></script> -->
 
 
 </body>
