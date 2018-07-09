@@ -2440,13 +2440,11 @@ section {
 @media only screen and (min-width: 768px) {
     .contacts__box {
         position: absolute;
-        padding-top: 0;
-        padding-bottom: 0;
         padding-left: 56px;
         top: -400px;
         right: -30px;
         width: 340px;
-        height: 340px;
+        height: 370px;
         -webkit-box-shadow: 0 12px 41.82px 9.18px rgba(61, 76, 133, 0.14);
                 box-shadow: 0 12px 41.82px 9.18px rgba(61, 76, 133, 0.14);
         text-align: left;
