@@ -106,7 +106,7 @@ section {
 
 
 .section__title {
-    font-size: 30px;
+    font-size: 28px;
     font-weight: 400;
     line-height: 0.8;
     color: #2c2b30;
@@ -127,12 +127,15 @@ section {
     position: relative;
     font-weight: 700;
     line-height: 1.5;
+
     &:before {
-        content: '';
-        position: absolute;
-        bottom: -2px;
-        left: 0;
-        .spritebox(-220px, -2px, 2px, 344px);
+        @media @tablet {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            .spritebox(-220px, -2px, 2px, 344px);
+        }
     }
 }
 }

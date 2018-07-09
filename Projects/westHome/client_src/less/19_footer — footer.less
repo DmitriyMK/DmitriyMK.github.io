@@ -26,6 +26,10 @@
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
+		flex-direction: column;
+		@media @tablet {
+			flex-direction: row;
+		}
 	}
 	&__logo {
 		display: flex;
@@ -37,7 +41,13 @@
 	}
 
 	.agency {
-		text-align: right;
+		margin-top: 20px;
+		text-align: center;
+		@media @tablet {
+			text-align: right;
+			margin-top: 0;
+		}
+		
 		
 		a {
 			font-size: 11.69px;
