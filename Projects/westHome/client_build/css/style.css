@@ -1508,16 +1508,18 @@ section {
         font-size: 55.51px;
     }
 }
-.idea__title-accent:before {
-    content: '';
-    position: absolute;
-    bottom: -2px;
-    left: 0;
-    background-image: url(../images/icons/spritebox-sprite.png);
-    background-repeat: no-repeat;
-    background-position: -564px -2px;
-    height: 2px;
-    width: 270px;
+@media only screen and (min-width: 768px) {
+    .idea__title-accent:before {
+        content: '';
+        position: absolute;
+        bottom: -2px;
+        left: 0;
+        background-image: url(../images/icons/spritebox-sprite.png);
+        background-repeat: no-repeat;
+        background-position: -564px -2px;
+        height: 2px;
+        width: 270px;
+    }
 }
 .idea__text {
     padding-top: 33px;
@@ -1643,6 +1645,7 @@ section {
 .idea .form__line {
     position: relative;
     padding: 6px;
+    width: 220px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     color: #1e222d;
@@ -2725,6 +2728,7 @@ label {
 .formBox .form__line {
     position: relative;
     padding: 6px;
+    width: 220px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     color: #1e222d;

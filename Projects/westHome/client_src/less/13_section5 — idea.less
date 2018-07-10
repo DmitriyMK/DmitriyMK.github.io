@@ -39,11 +39,13 @@
 			}
 
 			&:before {
-				content: '';
-				position: absolute;
-				bottom: -2px;
-				left: 0;
-				.spritebox(-564px, -2px, 2px, 270px);
+				@media @tablet {
+					content: '';
+					position: absolute;
+					bottom: -2px;
+					left: 0;
+					.spritebox(-564px, -2px, 2px, 270px);
+				}
 			}
 		}
 	}
