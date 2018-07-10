@@ -1915,6 +1915,7 @@ section {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
+    overflow: hidden;
 }
 @media only screen and (min-width: 768px) {
     .idea__box {
@@ -1925,6 +1926,7 @@ section {
         -webkit-box-align: inherit;
         -ms-flex-align: inherit;
         align-items: inherit;
+        overflow: visible;
     }
 }
 @media only screen and (min-width: 1200px) {
