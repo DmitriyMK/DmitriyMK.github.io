@@ -1626,7 +1626,7 @@ section {
 }
 .idea .input__wrap {
     position: relative;
-    width: 247px;
+    width: 244px;
     margin: 0 auto;
     margin-bottom: 22px;
 }
@@ -1645,7 +1645,7 @@ section {
 .idea .form__line {
     position: relative;
     padding: 6px;
-    width: 220px;
+    width: 200px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     color: #1e222d;
@@ -2728,7 +2728,7 @@ label {
 .formBox .form__line {
     position: relative;
     padding: 6px;
-    width: 220px;
+    width: 200px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     color: #1e222d;
