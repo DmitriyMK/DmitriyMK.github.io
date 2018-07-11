@@ -59,6 +59,15 @@ $(document).ready(function() {
   });
 
 
+  $(".stone__item-active a").fancybox({
+    arrows: true,
+    dots: true,
+    focusOnSelect: true,
+    infinite: false,
+    fade: true,
+  });
+
+
   $('.stone__item a').click(function() {
 
     if (!$(this).parents('.stone__item').hasClass('stone__item-active')) {
