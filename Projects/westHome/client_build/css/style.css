@@ -1495,7 +1495,7 @@ section {
 @media only screen and (min-width: 992px) {
     .catalog-light {
         min-height: 670px;
-        padding-bottom: inherit;
+        padding-bottom: 50px;
     }
 }
 @media only screen and (min-width: 1600px) {
@@ -1519,7 +1519,6 @@ section {
 @media only screen and (min-width: 992px) {
     .catalog-dark {
         min-height: 670px;
-        padding-bottom: inherit;
     }
 }
 @media only screen and (min-width: 1600px) {
