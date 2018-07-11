@@ -17,8 +17,13 @@
 
 .header {
 	position: relative;
-	background: url(../images/header__hero.jpg)no-repeat center/cover;
+	background: url(../images/header__hero-sm.jpg)no-repeat center/cover;
 	overflow: hidden;
+	min-height: 600px;
+
+	@media @tablet {
+		background: url(../images/header__hero.jpg)no-repeat center/cover;
+	}
 
 	@media @desktop {
 		min-height: 640px;
@@ -73,16 +78,6 @@
 		justify-content: space-between;
 		align-items: center;
 		z-index: 10;
-
-		@media @tablet {
-
-		}
-		@media @desktop {
-
-		}
-		@media @desktop-xl {
-
-		}
 	}
 
 	&__logo {

@@ -20,7 +20,11 @@
 .advantages {
 	position: relative;
 	overflow: hidden;
-	background: url(../images/advantages__back.jpg)no-repeat center/cover;
+	background: url(../images/advantages__back-sm.jpg);
+
+	@media @tablet {
+		background: url(../images/advantages__back.jpg)no-repeat center/cover;
+	}
 
 	&:before {
 		@media @desktop-xl-2 {

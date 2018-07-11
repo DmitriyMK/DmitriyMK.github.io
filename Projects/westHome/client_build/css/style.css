@@ -647,8 +647,14 @@ section {
 }
 .header {
     position: relative;
-    background: url(../images/header__hero.jpg) no-repeat center / cover;
+    background: url(../images/header__hero-sm.jpg) no-repeat center / cover;
     overflow: hidden;
+    min-height: 600px;
+}
+@media only screen and (min-width: 768px) {
+    .header {
+        background: url(../images/header__hero.jpg) no-repeat center / cover;
+    }
 }
 @media only screen and (min-width: 992px) {
     .header {
@@ -1127,7 +1133,12 @@ section {
 .advantages {
     position: relative;
     overflow: hidden;
-    background: url(../images/advantages__back.jpg) no-repeat center / cover;
+    background: url(../images/advantages__back-sm.jpg);
+}
+@media only screen and (min-width: 768px) {
+    .advantages {
+        background: url(../images/advantages__back.jpg) no-repeat center / cover;
+    }
 }
 @media only screen and (min-width: 1600px) {
     .advantages:before {
