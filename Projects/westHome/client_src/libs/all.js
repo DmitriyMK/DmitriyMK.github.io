@@ -48,18 +48,6 @@ $(document).ready(function() {
 
   $('.phone-mask').mask('+38(999)999-99-99');
 
-
-  $('[data-fancybox]').fancybox({
-    loop: true,
-    animationEffect: "zoom",
-    transitionEffect: "fade",
-    transitionDuration: 366,
-
-    clickOutside: "close",
-  });
-
-
-
   $('.review-slider').slick({
 
     arrows: true,
@@ -68,6 +56,33 @@ $(document).ready(function() {
     infinite: false,
     fade: true,
 
+  });
+
+
+  $('.stone__item a').click(function() {
+
+    if (!$(this).parents('.stone__item').hasClass('stone__item-active')) {
+
+      $(this).parents('.stone__box').find(".stone__item").removeClass("stone__item-active");
+      $(this).parents('.stone__item').addClass('stone__item-active');
+      $(this).parents('.catalog__box').find(".catalog__item.catalog__item-active").removeClass("catalog__item-active");
+      $('#' + $(this).data('model')).addClass('catalog__item-active');
+      $(this).parents('.catalog__box').find('.colorStone').html($(this).children('img').data('color'))
+      $('.colorMaterial input[name="whatform2"]').val($(this).children('img').data('color'));
+    }
+
+    $('.stone__item a').off("click.fb-start");
+
+    $(this).fancybox({
+
+      arrows: true,
+      dots: true,
+      focusOnSelect: true,
+      infinite: false,
+      fade: true,
+    });
+
+    return false;
   });
 
 
