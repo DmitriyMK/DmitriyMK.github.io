@@ -955,9 +955,16 @@ section {
         margin-right: 0;
     }
 }
+@media only screen and (min-width: 1200px) {
+    .siteInfo__right {
+        padding-top: 10px;
+        padding-bottom: 0;
+    }
+}
 @media only screen and (min-width: 1600px) {
     .siteInfo__right {
         padding-top: 80px;
+        padding-bottom: 70px;
         margin-right: -120px;
     }
 }
@@ -1064,6 +1071,13 @@ section {
         -webkit-transform: translate(50%, 0);
             -ms-transform: translate(50%, 0);
                 transform: translate(50%, 0);
+    }
+}
+@media only screen and (min-width: 1200px) {
+    .siteInfo .guarantee__text {
+        -webkit-transform: translate(50%, 25%);
+            -ms-transform: translate(50%, 25%);
+                transform: translate(50%, 25%);
     }
 }
 @media only screen and (min-width: 1920px) {
