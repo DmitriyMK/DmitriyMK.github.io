@@ -55,6 +55,7 @@ $(document).ready(function() {
     focusOnSelect: true,
     infinite: false,
     fade: true,
+    lazyLoad: 'ondemand',
 
   });
 
