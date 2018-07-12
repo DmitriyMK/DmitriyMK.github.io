@@ -2,166 +2,61 @@
 .slick-next {
 	width: 50px;
 	height: 100%;
-	top: 50%;	
-	transform: translateY(-50%);
-
-	font-family: 'Fontello'; 
-	transition: all .3s linear;
+	opacity: 1;
+	transition: opacity .3s linear;
 	z-index: 10;
-
-	@media @tablet {
-
-	}
-	@media @desktop {
-		
-	}
-	@media @desktop-xl {
-
-	}
-	@media @desktop-xl-2 {
-
-	}
-	@media @desktop-xll {
-
-	}
-
 }
 
+
 .slick-prev {
-	left: -40px;
-
-	@media @tablet {
-
-	}
-	@media @desktop {
-
-	}
-	@media @desktop-xl {
-
-	}
-	@media @desktop-xl-2 {
-
-	}
+	top: 152px;
+	left: -50px;
+	.spritebox(-0px, -174px, 19px, 36px);
 }
 
 .slick-next {
-	right: -40px; 
-	
-	@media @tablet {
-
-	}
-	@media @desktop {
-
-	}
-	@media @desktop-xl {
-
-	}
-	@media @desktop-xl-2 {
-
-	}
+	top: 213px;
+	left: -50px; 
+	.spritebox(-36px, -174px, 19px, 36px);
 }
 
 
 .slick-prev:before,
 .slick-next:before {
-	
-	display: block;
-	position: absolute;
-
-	top: 50%;
-	transform: translateY(-50%);
-
-	z-index: 10;
-	color: #fff;
-	font-size: 45px;
-	
-
-	@media @tablet {
-
-	}
-	@media @desktop {
-
-	}
-	@media @desktop-xl {
-
-	}
-	@media @desktop-xl-2 {
-
-	}
-}
-
-.slick-prev:before {
-	left: 20px;
-	content: '\e805';
-	
-	@media @tablet {
-
-	}
-	@media @desktop {
-
-	}
-	@media @desktop-xl {
-
-	}
-	@media @desktop-xl-2 {
-
-	}
-	@media @desktop-xll {
-
-	}
-}
-
-
-
-
-.slick-next:before {
-	content: '\e806';
-	right: 10px;
-
-
-	@media @tablet {
-
-	}
-	@media @desktop {
-
-	}
-	@media @desktop-xl {
-		
-	}
-	@media @desktop-xl-2 {
-
-	}
-	@media @desktop-xll {
-
-	}
+	width: 0;
+	height: 0;
 }
 
 
 .slick-dots {
-	left: 50%;
-	bottom: -40px;
-	transform: translateX(-50%);
+	display: inline-block!important;
+	left: -48px;
+	top: 50%;
+	transform: translateY(17%);
+
 	border-image: transparent;
 
 	li {
-		margin: 0 5px;
-		width: 20px;
-		height: 20px;
+		margin: 4px 8px;
+		margin-bottom: 10px;
+
+		width: 13px;
+		height: 13px;
 
 		button {
 			background: #fff;
 			display: block;
-			height: 20px;
-			width: 20px;
+			height: 13px;
+			width: 13px;
 			font-size: 0px;
 			color: #fff;
-			padding: 5px;
 			border-radius: 50%;
 			box-shadow: 0px 5px 7px 1px rgba(0, 45, 86, 0.15);
 			opacity: 0.75;
 			&:before {
 				font-size: 0;
 				opacity: 0;
+				display: none;
 			}
 
 		}
