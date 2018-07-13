@@ -2083,7 +2083,7 @@ section {
 }
 @media only screen and (min-width: 768px) {
     .advantagesStone {
-        background: url(../images/advantagesStone__back-compressor.jpg) no-repeat center / cover;
+        background: url(../images/advantagesStone__back.jpg) no-repeat center / cover;
     }
 }
 @media only screen and (min-width: 1200px) {
