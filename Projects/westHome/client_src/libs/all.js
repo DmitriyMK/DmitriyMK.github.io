@@ -105,6 +105,9 @@ $(window).on('resize orientationchange', function() {
 });
 
 
+var bLazy = new Blazy();
+
+
 
 $(".form").submit(function() {
   var th = $(this);
