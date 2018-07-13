@@ -84,11 +84,14 @@
 
 		&__img {
 			width: 230px;
-			height: 230px;
-			display: none;
+			height: 290px;
+			overflow: hidden;
+
+			img {
+				// object-fit: contain;
+			}
 
 			@media @tablet {
-				display: block;
 				height: 100%;
 				overflow: visible;
 			}

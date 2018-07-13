@@ -2798,12 +2798,11 @@ section {
 }
 .review .slide__img {
     width: 230px;
-    height: 230px;
-    display: none;
+    height: 290px;
+    overflow: hidden;
 }
 @media only screen and (min-width: 768px) {
     .review .slide__img {
-        display: block;
         height: 100%;
         overflow: visible;
     }
