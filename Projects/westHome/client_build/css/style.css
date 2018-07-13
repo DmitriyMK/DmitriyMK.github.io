@@ -3337,7 +3337,7 @@ label {
     z-index: 10;
 }
 .slick-prev {
-    top: 152px;
+    top: 70px;
     left: -50px;
     background-image: url(../images/icons/spritebox-sprite.png);
     background-repeat: no-repeat;
@@ -3346,7 +3346,7 @@ label {
     width: 36px;
 }
 .slick-next {
-    top: 213px;
+    top: 115px;
     left: -50px;
     background-image: url(../images/icons/spritebox-sprite.png);
     background-repeat: no-repeat;
@@ -3361,10 +3361,7 @@ label {
 .slick-dots {
     display: inline-block !important;
     left: -48px;
-    top: 50%;
-    -webkit-transform: translateY(17%);
-        -ms-transform: translateY(17%);
-            transform: translateY(17%);
+    top: 40%;
     -webkit-border-image: transparent;
          -o-border-image: transparent;
             border-image: transparent;
