@@ -2806,14 +2806,14 @@ section {
         justify-content: space-between;
     }
 }
-.review .slide__img {
-    width: 100%;
-    max-height: 200px;
-}
 .review .slide__img img {
     display: block;
-    max-width: 100%;
-    height: 250px;
+    height: 260px;
+}
+@media only screen and (min-width: 768px) {
+    .review .slide__img img {
+        height: 100%;
+    }
 }
 .review .slide__content {
     padding-top: 30px;
