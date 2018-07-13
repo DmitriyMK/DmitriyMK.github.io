@@ -2755,7 +2755,7 @@ section {
 }
 @media only screen and (min-width: 1200px) {
     .review__title {
-        left: 564px;
+        left: 572px;
     }
 }
 @media only screen and (min-width: 1200px) {
@@ -2806,13 +2806,18 @@ section {
         justify-content: space-between;
     }
 }
+.review .slide__img {
+    width: 260px;
+}
 .review .slide__img img {
     display: block;
     height: 260px;
+    margin: auto;
 }
 @media only screen and (min-width: 768px) {
     .review .slide__img img {
         height: 100%;
+        margin: inherit;
     }
 }
 .review .slide__content {
