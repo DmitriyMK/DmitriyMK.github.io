@@ -29,26 +29,33 @@
 	}
 
 	&:before {
-		@media @desktop-xl-2 {
+		@media @desktop-xl {
 			content: '';
 			position: absolute;
-			right: 0;
+			right: -170px;
 			top: -740px;
 			width: 423px;	
 			height: 1269px;
 			background: url(../images/decor/roundDecor__right.png);
 		}
+
+		@media @desktop-xl-2 {
+			right: 0;
+		}
 	}
 
 	&:after {
-		@media @desktop-xl-2 {
+		@media @desktop-xl {
 			content: '';
 			position: absolute;
-			left: 0;
+			left: -90px;
 			top: 80px;
 			width: 790px;
 			height: 1618px;
 			background: url(../images/decor/advantagesStone-decor-left.png);
+		}
+		@media @desktop-xl-2 {
+			left: 0;
 		}
 	}
 

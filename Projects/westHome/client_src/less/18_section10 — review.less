@@ -52,13 +52,7 @@
 		}
 
 		&-accent {
-			
-			@media @tablet {
 
-			}
-			@media @desktop {
-
-			}
 			@media @desktop-xl {
 				font-size: 60px;
 			}
@@ -91,9 +85,10 @@
 		&__img {
 			width: 230px;
 			height: 230px;
-			overflow: hidden;
+			display: none;
 
 			@media @tablet {
+				display: block;
 				height: 100%;
 				overflow: visible;
 			}
@@ -105,7 +100,7 @@
 
 			@media @tablet {
 				margin-left: 50px;
-				margin-top: 200px;
+				margin-top: 180px;
 			}
 		}
 
@@ -124,19 +119,23 @@
 .contacts {
 	padding-top: 0;
 	padding-bottom: 0;
-
+	overflow: hidden;
 	position: relative;
 
 	&:before {
-		@media @desktop-xl-2 {
+		@media @desktop-xl {
 			content: '';
 			position: absolute;
 			top: 0;
-			right: 200px;
-			width: 603px;
+			right: 0;
+			width: 500px;
 			height: 100%;
 			background: url(../images/decor/contact__line.png);
 			z-index: 10;
+		}
+		@media @desktop-xl-2 {
+			width: 603px;
+			right: 200px;
 		}
 	}
 

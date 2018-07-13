@@ -519,7 +519,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     }
 }
 a {
-    outline: none;
+    outline: none!important;
     color: inherit;
 }
 ul {
@@ -664,7 +664,7 @@ section {
 .header:before {
     display: none;
 }
-@media only screen and (min-width: 1600px) {
+@media only screen and (min-width: 1200px) {
     .header:before {
         content: '';
         display: block;
@@ -684,7 +684,7 @@ section {
 .header:after {
     display: none;
 }
-@media only screen and (min-width: 1600px) {
+@media only screen and (min-width: 1200px) {
     .header:after {
         content: '';
         display: block;
@@ -830,6 +830,11 @@ section {
     padding-bottom: 8px;
     font-size: 21px;
     font-weight: 900;
+}
+@media only screen and (min-width: 360px) {
+    .siteInfo__title {
+        font-size: 28px;
+    }
 }
 @media only screen and (min-width: 768px) {
     .siteInfo__title {
@@ -1140,7 +1145,7 @@ section {
         background: url(../images/advantages__back.jpg) no-repeat center / cover;
     }
 }
-@media only screen and (min-width: 1600px) {
+@media only screen and (min-width: 1200px) {
     .advantages:before {
         content: '';
         position: absolute;
@@ -1522,7 +1527,7 @@ section {
         padding-bottom: 50px;
     }
 }
-@media only screen and (min-width: 1600px) {
+@media only screen and (min-width: 1200px) {
     .catalog-light:before {
         content: '';
         position: absolute;
@@ -1545,7 +1550,7 @@ section {
         min-height: 670px;
     }
 }
-@media only screen and (min-width: 1600px) {
+@media only screen and (min-width: 1200px) {
     .catalog-dark:before {
         content: '';
         position: absolute;
@@ -2071,11 +2076,11 @@ section {
         background: url(../images/advantagesStone__back-compressor.jpg) no-repeat center / cover;
     }
 }
-@media only screen and (min-width: 1600px) {
+@media only screen and (min-width: 1200px) {
     .advantagesStone:before {
         content: '';
         position: absolute;
-        right: 0;
+        right: -170px;
         top: -740px;
         width: 423px;
         height: 1269px;
@@ -2083,14 +2088,24 @@ section {
     }
 }
 @media only screen and (min-width: 1600px) {
+    .advantagesStone:before {
+        right: 0;
+    }
+}
+@media only screen and (min-width: 1200px) {
     .advantagesStone:after {
         content: '';
         position: absolute;
-        left: 0;
+        left: -90px;
         top: 80px;
         width: 790px;
         height: 1618px;
         background: url(../images/decor/advantagesStone-decor-left.png);
+    }
+}
+@media only screen and (min-width: 1600px) {
+    .advantagesStone:after {
+        left: 0;
     }
 }
 .advantagesStone .container {
@@ -2263,15 +2278,20 @@ section {
     background: #fafbfc;
     color: #0d0f11;
 }
-@media only screen and (min-width: 1600px) {
+@media only screen and (min-width: 1200px) {
     .step:before {
         content: '';
         position: absolute;
         top: 0;
-        left: 249px;
+        left: 160px;
         width: 541px;
         height: 100%;
         background: url(../images/decor/lines__back-vertical2.png);
+    }
+}
+@media only screen and (min-width: 1600px) {
+    .step:before {
+        left: 249px;
     }
 }
 .step .container {
@@ -2568,15 +2588,20 @@ section {
         padding-bottom: 160px;
     }
 }
-@media only screen and (min-width: 1600px) {
+@media only screen and (min-width: 1200px) {
     .production:before {
         content: '';
         position: absolute;
         top: 0;
-        left: 249px;
+        left: 160px;
         width: 541px;
         height: 100%;
         background: url(../images/decor/lines__back-vertical2.png);
+    }
+}
+@media only screen and (min-width: 1600px) {
+    .production:before {
+        left: 249px;
     }
 }
 .production .container {
@@ -2774,10 +2799,11 @@ section {
 .review .slide__img {
     width: 230px;
     height: 230px;
-    overflow: hidden;
+    display: none;
 }
 @media only screen and (min-width: 768px) {
     .review .slide__img {
+        display: block;
         height: 100%;
         overflow: visible;
     }
@@ -2789,7 +2815,7 @@ section {
 @media only screen and (min-width: 768px) {
     .review .slide__content {
         margin-left: 50px;
-        margin-top: 200px;
+        margin-top: 180px;
     }
 }
 .review .slide .name {
@@ -2803,18 +2829,25 @@ section {
 .contacts {
     padding-top: 0;
     padding-bottom: 0;
+    overflow: hidden;
     position: relative;
 }
-@media only screen and (min-width: 1600px) {
+@media only screen and (min-width: 1200px) {
     .contacts:before {
         content: '';
         position: absolute;
         top: 0;
-        right: 200px;
-        width: 603px;
+        right: 0;
+        width: 500px;
         height: 100%;
         background: url(../images/decor/contact__line.png);
         z-index: 10;
+    }
+}
+@media only screen and (min-width: 1600px) {
+    .contacts:before {
+        width: 603px;
+        right: 200px;
     }
 }
 .contacts .hidden {
@@ -3343,7 +3376,7 @@ label {
     border-radius: 50%;
     -webkit-box-shadow: 0 5px 7px 1px rgba(0, 45, 86, 0.15);
             box-shadow: 0 5px 7px 1px rgba(0, 45, 86, 0.15);
-    opacity: 0.75;
+    opacity: 0.15;
 }
 .slick-dots li button:before {
     font-size: 0;
