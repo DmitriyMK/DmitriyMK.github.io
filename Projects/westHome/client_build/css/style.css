@@ -1795,9 +1795,6 @@ section {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     width: 175px;
@@ -1812,6 +1809,7 @@ section {
     height: 51px;
     width: 50px;
     margin-bottom: 5px;
+    margin-right: 2px;
     border: 3px solid transparent;
     -webkit-box-sizing: content-box;
             box-sizing: content-box;
