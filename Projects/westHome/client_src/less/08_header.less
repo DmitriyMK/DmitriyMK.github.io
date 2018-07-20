@@ -19,7 +19,7 @@
 	position: relative;
 	background: url(../images/header__hero-sm.jpg)no-repeat center/cover;
 	overflow: hidden;
-	min-height: 600px;
+	min-height: 560px;
 
 	@media @tablet {
 		background: url(../images/header__hero.jpg)no-repeat center/cover;
@@ -119,8 +119,12 @@
 	.btn-mob {
 		display: block;
 		margin: auto;
-		margin-top: 30px;
-		margin-bottom: 30px;
+		margin-top: 4vh;
+		margin-bottom: 4vh;
+		@media @tablet {
+			margin-top: 20px;
+			margin-bottom: 20px;
+		}
 		@media @desktop {
 			display: none;
 		}
@@ -143,7 +147,7 @@
 	}
 
 	&__left {
-		padding-top: 50px;
+		padding-top: 4vh;
 		max-width: 420px;
 		text-align: center;
 
@@ -236,14 +240,13 @@
 	}
 
 	&__listTitle {
-		padding-top: 30px;
-		padding-bottom: 15px;
+		padding-top: 13px;
+		margin-bottom: 13px;
 		font-size: 19px;
 		font-weight: 700;
 
 		@media @desktop {
 			padding-top: 46px;
-			padding-bottom: inherit;
 			font-size: 25px;
 		}
 		@media @desktop-xl {
@@ -261,6 +264,10 @@
 		@media @desktop {
 			font-size: 21.83px;
 			list-style: disc inside;
+		}
+
+		h3 {
+			display: inline-block;
 		}
 	}
 
