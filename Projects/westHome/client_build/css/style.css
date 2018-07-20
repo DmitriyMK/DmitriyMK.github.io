@@ -3363,9 +3363,6 @@ label {
     display: inline-block !important;
     left: -48px;
     top: 40%;
-    -webkit-border-image: transparent;
-         -o-border-image: transparent;
-            border-image: transparent;
 }
 .slick-dots li {
     margin: 4px 8px;
