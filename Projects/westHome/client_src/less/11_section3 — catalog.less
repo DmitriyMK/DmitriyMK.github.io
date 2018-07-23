@@ -21,13 +21,12 @@
 .catalog {
 
 	&-light {
-		padding-top: 15px;
-		padding-bottom: 30px;
+		padding-top: 30px;
+		padding-bottom: 50px;
 		position: relative;
 		background: #fff;
 		@media @desktop {
 			min-height: 670px;
-			padding-bottom: 50px;
 		}
 		&:before {
 			@media @desktop-xl {
@@ -46,8 +45,8 @@
 		}
 	}
 	&-dark {
-		padding-top: 15px;
-		padding-bottom: 30px;
+		padding-top: 30px;
+		padding-bottom: 50px;
 		position: relative;
 		background: url(../images/catalog__back.jpg);
 		@media @desktop {
@@ -152,13 +151,11 @@
 	&__item {
 		display: none;
 		opacity: 0;
-		visibility: hidden;
 		position: relative;
 
 		&-active {
 			display: block;
 			opacity: 1;
-			visibility: visible;
 		}
 
 		&:before {
@@ -282,10 +279,10 @@
 				&:before {
 					content: '';
 					position: absolute;
-					top: -35px;
+					top: -33px;
 					left: 0;
 					width: 50px;
-					height: 52px;
+					height: 50px;
 					background: rgba(138,141,151, .65);
 
 					@media @tablet {
@@ -320,6 +317,9 @@
 			@media @tablet {
 				font-size: 30px;
 			}
+		}
+		sup {
+			font-size: 16px;
 		}
 		.btn {
 			margin-top: 25px;
