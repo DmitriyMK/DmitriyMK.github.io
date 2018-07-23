@@ -152,11 +152,13 @@
 	&__item {
 		display: none;
 		opacity: 0;
+		visibility: hidden;
 		position: relative;
 
 		&-active {
 			display: block;
 			opacity: 1;
+			visibility: visible;
 		}
 
 		&:before {
@@ -255,7 +257,7 @@
 		}
 
 		.stone__item {
-			height: 51px;
+			height: 50px;
 			width: 50px;
 			margin-bottom: 5px;
 			margin-right: 2px;

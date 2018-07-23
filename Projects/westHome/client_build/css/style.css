@@ -1677,11 +1677,13 @@ section {
 .catalog__item {
     display: none;
     opacity: 0;
+    visibility: hidden;
     position: relative;
 }
 .catalog__item-active {
     display: block;
     opacity: 1;
+    visibility: visible;
 }
 @media only screen and (min-width: 992px) {
     .catalog__item:before {
@@ -1806,7 +1808,7 @@ section {
     }
 }
 .catalog__info .stone__item {
-    height: 51px;
+    height: 50px;
     width: 50px;
     margin-bottom: 5px;
     margin-right: 2px;
@@ -2700,8 +2702,8 @@ section {
     .production .img__wrap-big:before {
         content: '';
         position: absolute;
-        bottom: -40px;
-        left: -66px;
+        bottom: -35px;
+        left: -60px;
         width: 590px;
         height: 380px;
         background: #fff;
@@ -2711,8 +2713,8 @@ section {
     }
 }
 .production .img__wrap-sm {
-    width: 268px;
-    height: 180px;
+    width: 270px;
+    height: 176px;
     margin-bottom: 15px;
     -webkit-box-shadow: 0 12px 17.22px 3.78px rgba(8, 8, 8, 0.14);
             box-shadow: 0 12px 17.22px 3.78px rgba(8, 8, 8, 0.14);

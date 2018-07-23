@@ -72,14 +72,16 @@ $(document).ready(function() {
   $('.stone__item a').click(function() {
 
     if (!$(this).parents('.stone__item').hasClass('stone__item-active')) {
-
       $(this).parents('.stone__box').find(".stone__item").removeClass("stone__item-active");
       $(this).parents('.stone__item').addClass('stone__item-active');
       $(this).parents('.catalog__box').find(".catalog__item.catalog__item-active").removeClass("catalog__item-active");
       $('#' + $(this).data('model')).addClass('catalog__item-active');
       $(this).parents('.catalog__box').find('.colorStone').html($(this).children('img').data('color'))
       $('.colorMaterial input[name="whatform2"]').val($(this).children('img').data('color'));
+
     }
+
+
 
     $('.stone__item a').off("click.fb-start");
 
