@@ -1804,6 +1804,11 @@ section {
         padding-bottom: 20px;
     }
 }
+@media only screen and (min-width: 1200px) {
+    .catalog__info .stone__list {
+        width: 260px;
+    }
+}
 .catalog__info .stone__item {
     height: 50px;
     width: 50px;
@@ -1816,6 +1821,16 @@ section {
     -webkit-transition: all 0.3s linear;
          -o-transition: all 0.3s linear;
             transition: all 0.3s linear;
+}
+@media only screen and (min-width: 1200px) {
+    .catalog__info .stone__item {
+        height: 70px;
+        width: 70px;
+    }
+}
+.catalog__info .stone__item img {
+    height: 100%;
+    width: 100%;
 }
 .catalog__info .stone__item a {
     outline: none;
@@ -1839,6 +1854,14 @@ section {
     height: 50px;
     background: rgba(138, 141, 151, 0.65);
 }
+@media only screen and (min-width: 1200px) {
+    .catalog__info .stone__item-active a:before {
+        top: -53px;
+        height: 70px;
+        width: 70px;
+        z-index: 10;
+    }
+}
 .catalog__info .stone__item-active a:after {
     content: '';
     position: absolute;
@@ -1852,6 +1875,14 @@ section {
     background-position: -115px -70px;
     height: 33px;
     width: 33px;
+}
+@media only screen and (min-width: 1200px) {
+    .catalog__info .stone__item-active a:after {
+        z-index: 11;
+        -webkit-transform: translate(-50%, -130%);
+            -ms-transform: translate(-50%, -130%);
+                transform: translate(-50%, -130%);
+    }
 }
 .catalog__info .catalog__color {
     font-size: 20px;

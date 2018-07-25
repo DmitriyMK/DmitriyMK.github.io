@@ -251,6 +251,9 @@
 				padding-top: 15px;
 				padding-bottom: 20px;
 			}
+			@media @desktop-xl {
+				width: 260px;	
+			}
 		}
 
 		.stone__item {
@@ -262,6 +265,16 @@
 			box-sizing: content-box;
 			z-index: 10;
 			transition: all .3s linear;
+
+			@media @desktop-xl {
+				height: 70px;
+				width: 70px;
+			}
+
+			img {
+				height: 100%;
+				width: 100%;
+			}
 
 			a {
 				outline: none;
@@ -288,6 +301,12 @@
 					@media @tablet {
 
 					}
+					@media @desktop-xl {
+						top: -53px;
+						height: 70px;
+						width: 70px;
+						z-index: 10;
+					}
 				}
 				&:after {
 					content: '';
@@ -296,6 +315,11 @@
 					left: 50%;
 					transform: translate(-50%, -100%);
 					.spritebox(-115px, -70px, 33px, 33px);
+
+					@media @desktop-xl {
+						z-index: 11;
+						transform: translate(-50%, -130%);
+					}
 				}
 			}
 		}
