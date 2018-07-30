@@ -1,0 +1,106 @@
+@media @mobile {
+
+}
+@media @tablet {
+
+}
+@media @desktop {
+
+}
+@media @desktop-xl {
+	
+}
+@media @desktop-xl-2 {
+
+}
+@media @desktop-xll {
+	
+}
+
+
+.project {
+	position: relative;
+	z-index: 10;
+
+	&:before {
+		content: '';
+		position: absolute;
+		left: 0;
+		bottom: -155px;
+		width: 224px;
+		height: 469px;
+		background: url(../images/decor/triangle-gray-left.png)no-repeat;
+		z-index: 1;
+	}
+
+	&:after {
+		content: '';
+		position: absolute;
+		right: 240px;
+		top: 0;
+		width: 563px;
+		height: 178px;
+		background: url(../images/decor/triangle-gray.png)no-repeat;
+		z-index: 1;
+	}
+
+	.container {
+		position: relative;
+		z-index: 10;
+	}
+
+	&__title {
+		color: #fff;
+		&:before, &:after {
+			position: absolute;
+			content: '';
+			top: 50%;
+			transform: translateY(-50%);
+			height: 1px;
+			width: 77px;
+			background: #7c7e80;
+		}
+		&:before {
+			left: 250px;
+		}
+		&:after {
+			right: 250px;
+		}
+	}
+
+	&__box {
+		padding-top: 90px;
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.project__big {
+		img {
+			width: 510px;
+		}
+	}
+
+	.project__small {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		width: 50%;
+		a {
+			flex-basis: 44%;
+			margin-left: 15px;
+			margin-bottom: 15px;
+		}
+	}
+
+	img {
+		display: block;
+		max-width: 100%;
+		height: auto;
+	}
+
+	.btn {
+		display: block;
+		margin: 70px auto 0 auto;
+	}
+}
+

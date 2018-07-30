@@ -1,0 +1,40 @@
+@media @mobile {
+
+}
+@media @tablet {
+
+}
+@media @desktop {
+
+}
+@media @desktop-xl {
+	
+}
+@media @desktop-xl-2 {
+
+}
+@media @desktop-xll {
+	
+}
+
+.materials {
+	background: url(../images/catalog-white.jpg)no-repeat center/cover;
+
+	&__title {
+		&:before, &:after {
+			position: absolute;
+			content: '';
+			top: 50%;
+			transform: translateY(-50%);
+			height: 1px;
+			width: 40px;
+			background: #afafaf;
+		}
+		&:before {
+			left: 180px;
+		}
+		&:after {
+			right: 180px;
+		}
+	}
+}

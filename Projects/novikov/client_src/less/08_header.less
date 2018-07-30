@@ -1,0 +1,100 @@
+@media @mobile {
+
+}
+@media @tablet {
+
+}
+@media @desktop {
+
+}
+@media @desktop-xl {
+	
+}
+@media @desktop-xl-2 {
+
+}
+@media @desktop-xll {
+	
+}
+
+.header {
+	position: relative;
+	background: url(../images/hero-image.jpg)no-repeat center/cover;
+	min-height: 920px;
+	font-family: @ff2;
+
+	&:before {
+		content: '';
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		width: 540px;
+		height: 540px;
+		background: url(../images/decor/triangle-top-left.png)no-repeat;
+	}
+
+	&:after {
+		content: '';
+		position: absolute;
+		right: 15px;
+		top: 0;
+		width: 950px;
+		height: 375px;
+		background: url(../images/decor/triangle-top.png)no-repeat;
+	}
+
+	&__top {
+		position: relative;
+		padding: 15px 0;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		z-index: 10;
+	}
+
+	&__logo {
+		display: flex;
+		align-items: center;
+		img {
+			margin-right: 20px;
+		}
+	}
+
+	&__link {
+		margin-right: 25px;
+	}
+
+	&__center {
+		position: relative;
+		padding-top: 240px;
+		text-align: center;
+		z-index: 10;
+	}
+
+	&__title {
+		font-size: 60px;
+		font-weight: 700;
+	}
+	&__desc {
+		padding-top: 75px;
+		font-size: 38px;
+		color: #c8d1dc;
+	}
+
+	&__end {
+		padding-top: 180px;
+	}
+
+	.scrollLink {
+		display: block;
+		margin: 0 auto;	
+		animation: growLine 3s infinite;	
+		&:hover {
+			animation-play-state: paused;
+		}
+	}
+
+
+
+}
+
