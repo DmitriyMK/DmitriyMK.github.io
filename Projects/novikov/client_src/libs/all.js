@@ -1,8 +1,7 @@
-
 $(document).ready(function() {
 
 
- if (document.documentElement.clientWidth > 1200) {
+  if (document.documentElement.clientWidth > 1200) {
 
     // new WOW().init();
 
@@ -49,56 +48,37 @@ $(document).ready(function() {
   });
 
 
+  $('.leather').slick({
 
-/*  $('.slider-for-recipe').slick({
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    arrows: false,
     dots: false,
-    asNavFor: '.slider-nav-recipe',
-    fade: true,
-    draggable: false,
-    infinite: true,
-
-  });*/
-
-
-/*  $('.slider-nav-recipe').slick({
-    slidesToShow: 4,
+    arrow: true,
+    slidesToShow: 3,
     slidesToScroll: 1,
-    asNavFor: '.slider-for-recipe',
-    arrows: false,
+    rows: 3,
+    infinite: false,
+
+    // responsive: [{
+    //   breakpoint: 768,
+    //   settings: {
+    //     slidesToShow: 3,
+    //   }
+    // }, 
+    // ]
+    // 
+  });
+
+  $('.alcantara').slick({
+
     dots: false,
-    focusOnSelect: true,
-    infinite: true,
-    centerMode: false,
-
-    responsive: [
-
-    {
-      breakpoint: 992,
-      settings: {
-        slidesToShow: 2,
-        slidesToScroll: 1,
-        arrows: true,
-
-      }
-    },
-
-    {
-      breakpoint: 767,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1,
-
-        arrows: true,
-      }
-    },
-
-    ]
+    arrow: true,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    rows: 3,
+    infinite: false,
 
   });
-  */
+
+
 
 });
 

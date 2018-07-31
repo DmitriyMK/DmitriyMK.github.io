@@ -455,6 +455,12 @@ button {
     font-family: 'DIN', sans-serif;
     font-weight: 700;
     color: #1a1c20;
+    -webkit-transition: background-color 0.3s linear;
+         -o-transition: background-color 0.3s linear;
+            transition: background-color 0.3s linear;
+}
+.btn:hover {
+    background: #ab8e29;
 }
 .btn-white {
     height: 49px;
@@ -467,6 +473,15 @@ button {
     font-family: 'DIN', sans-serif;
     font-weight: 700;
     color: #1a1c20;
+    -webkit-transition: -webkit-box-shadow 0.3s linear;
+            transition: -webkit-box-shadow 0.3s linear;
+         -o-transition:         box-shadow 0.3s linear;
+            transition:         box-shadow 0.3s linear;
+            transition:         box-shadow 0.3s linear, -webkit-box-shadow 0.3s linear;
+}
+.btn-white:hover {
+    -webkit-box-shadow: none;
+            box-shadow: none;
 }
 address {
     font-style: normal;
@@ -689,8 +704,8 @@ section {
     position: absolute;
     right: 240px;
     top: 0;
-    width: 563px;
-    height: 178px;
+    width: 597px;
+    height: 200px;
     background: url(../images/decor/triangle-gray.png) no-repeat;
     z-index: 1;
 }
@@ -757,7 +772,33 @@ section {
     margin: 70px auto 0 auto;
 }
 .materials {
+    position: relative;
+    padding-bottom: 0;
     background: url(../images/catalog-white.jpg) no-repeat center / cover;
+}
+.materials:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 555px;
+    width: 224px;
+    height: 469px;
+    background: url(../images/decor/triangle-yellow-left.png) no-repeat;
+    z-index: 1;
+}
+.materials:after {
+    content: '';
+    position: absolute;
+    right: 150px;
+    top: 0;
+    width: 597px;
+    height: 200px;
+    background: url(../images/decor/triangle-gray.png) no-repeat;
+    z-index: 1;
+}
+.materials .container {
+    position: relative;
+    z-index: 10;
 }
 .materials__title:before, .materials__title:after {
     position: absolute;
@@ -768,13 +809,239 @@ section {
             transform: translateY(-50%);
     height: 1px;
     width: 40px;
-    background: #afafaf;
+    background: #898989;
 }
 .materials__title:before {
     left: 180px;
 }
 .materials__title:after {
     right: 180px;
+}
+.materials-leather {
+    position: relative;
+    padding-bottom: 60px;
+}
+@media only screen and (min-width: 1200px) {
+    .materials-leather {
+        padding-bottom: 80px;
+    }
+}
+@media only screen and (min-width: 1600px) {
+    .materials-leather {
+        padding-bottom: 100px;
+    }
+}
+.materials-alcantara {
+    padding-top: 80px;
+    position: relative;
+    background: #1a1c20;
+    padding-bottom: 60px;
+}
+@media only screen and (min-width: 1200px) {
+    .materials-alcantara {
+        padding-bottom: 80px;
+    }
+}
+@media only screen and (min-width: 1600px) {
+    .materials-alcantara {
+        padding-bottom: 100px;
+    }
+}
+.materials-alcantara:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -100px;
+    width: 224px;
+    height: 469px;
+    background: url(../images/decor/triangle-gray-left.png) no-repeat;
+    z-index: 1;
+}
+.materials-alcantara:after {
+    content: '';
+    position: absolute;
+    right: 150px;
+    top: 0;
+    width: 624px;
+    height: 206px;
+    background: url(../images/decor/triangle-yellow.png) no-repeat;
+    z-index: 1;
+}
+.materials-alcantara .materials__title {
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    text-align: center;
+    color: #fff;
+}
+.materials-alcantara .materials__title:before, .materials-alcantara .materials__title:after {
+    position: absolute;
+    content: '';
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+    height: 1px;
+    width: 40px;
+    background: #898989;
+}
+.materials-alcantara .materials__title:before {
+    left: 750px;
+}
+.materials-alcantara .materials__title:after {
+    right: 750px;
+}
+.materials-alcantara .price, .materials-alcantara .article__title {
+    color: #fff;
+}
+.materials-alcantara .box__color {
+    padding-left: 33px;
+}
+.materials-alcantara .box__photo {
+    -webkit-box-ordinal-group: 0;
+    -ms-flex-order: -1;
+    order: -1;
+}
+.materials-alcantara .box__photo .imgWrap {
+    position: relative;
+}
+.materials-alcantara .box__photo .imgWrap:before {
+    left: -55px;
+}
+.materials-alcantara .slick-prev {
+    left: 417px;
+}
+.article__box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding-top: 90px;
+}
+.article__title {
+    padding-bottom: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    color: #010101;
+}
+.box__color {
+    padding-top: 42px;
+    width: 610px;
+}
+.leather__item {
+    margin-bottom: 16px;
+}
+.leather__item .imgWrap {
+    position: relative;
+}
+.leather__item .imgWrap:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 170px;
+    height: 127px;
+    background: rgba(0, 0, 0, 0);
+    -webkit-transition: background-color 0.3s linear;
+         -o-transition: background-color 0.3s linear;
+            transition: background-color 0.3s linear;
+}
+.leather__item .imgWrap:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-75%, -50%);
+        -ms-transform: translate(-75%, -50%);
+            transform: translate(-75%, -50%);
+    opacity: 0;
+    -webkit-transition: opacity 0.3s linear;
+         -o-transition: opacity 0.3s linear;
+            transition: opacity 0.3s linear;
+    width: 54px;
+    height: 54px;
+    background: url('../images/icons/css_sprites.png') -10px -10px;
+}
+.leather__item .imgWrap:hover:before {
+    background: rgba(0, 0, 0, 0.65);
+}
+.leather__item .imgWrap:hover:after {
+    opacity: 1;
+}
+.leather__item img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    -webkit-box-shadow: 0 8px 20px 1.26px rgba(0, 0, 0, 0.27);
+            box-shadow: 0 8px 20px 1.26px rgba(0, 0, 0, 0.27);
+}
+.box__photo .imgWrap {
+    position: relative;
+}
+.box__photo .imgWrap:before {
+    content: '';
+    position: absolute;
+    top: 55px;
+    left: 55px;
+    width: 100%;
+    height: 100%;
+    background: #cfad38;
+    z-index: -1;
+    -webkit-box-shadow: 0 11px 16.74px 1.26px rgba(0, 0, 0, 0.27);
+            box-shadow: 0 11px 16.74px 1.26px rgba(0, 0, 0, 0.27);
+}
+.box__photo .imgWrap:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0);
+    -webkit-transition: background-color 0.3s linear;
+         -o-transition: background-color 0.3s linear;
+            transition: background-color 0.3s linear;
+    z-index: 10;
+}
+.box__photo .imgWrap:hover {
+    cursor: pointer;
+}
+.box__photo .imgWrap:hover:after {
+    background: rgba(0, 0, 0, 0.65);
+}
+.box__photo .imgWrap:hover .textHover {
+    opacity: 1;
+}
+.box__photo img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+.box__photo .textHover {
+    position: absolute;
+    opacity: 0;
+    top: 30px;
+    left: 20px;
+    right: 20px;
+    font-family: 'DIN', sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+    z-index: 11;
+    -webkit-transition: opacity 0.3s linear;
+         -o-transition: opacity 0.3s linear;
+            transition: opacity 0.3s linear;
+}
+.price {
+    font-family: 'Roboto', sans-serif;
+    font-size: 23px;
+    color: #010101;
+}
+.present {
+    background: #cfad38;
 }
 .remodal-first {
     padding-top: 95px;
@@ -1003,12 +1270,18 @@ label {
     z-index: 10;
 }
 .slick-prev {
-    top: 152px;
-    left: -50px;
+    bottom: -55px;
+    left: 450px;
+    width: 61px;
+    height: 37px;
+    background: url('../images/icons/css_sprites.png') -84px -10px;
 }
 .slick-next {
-    top: 213px;
-    left: -50px;
+    bottom: -55px;
+    right: 30px;
+    width: 61px;
+    height: 37px;
+    background: url('../images/icons/css_sprites.png') -84px -67px;
 }
 .slick-prev:before, .slick-next:before {
     width: 0;

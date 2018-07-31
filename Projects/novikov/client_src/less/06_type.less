@@ -54,6 +54,11 @@ button {
   font-family: @ff1;
   font-weight: 700;
   color: @black;
+  transition: background-color .3s linear;
+
+  &:hover {
+    background: darken(@yellow, 10%);
+  }
 }
 
 .btn-white  {
@@ -69,6 +74,11 @@ button {
   font-family: @ff1;
   font-weight: 700;
   color: @black;
+  transition: box-shadow .3s linear;
+
+  &:hover {
+    box-shadow: none;
+  }
 }
 
 

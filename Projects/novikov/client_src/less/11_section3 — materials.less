@@ -18,7 +18,36 @@
 }
 
 .materials {
+	position: relative;
+	padding-bottom: 0;
 	background: url(../images/catalog-white.jpg)no-repeat center/cover;
+
+	&:before {
+		content: '';
+		position: absolute;
+		left: 0;
+		top: 555px;
+		width: 224px;
+		height: 469px;
+		background: url(../images/decor/triangle-yellow-left.png)no-repeat;
+		z-index: 1;
+	}
+
+	&:after {
+		content: '';
+		position: absolute;
+		right: 150px;
+		top: 0;
+		width: 597px;
+		height: 200px;
+		background: url(../images/decor/triangle-gray.png)no-repeat;
+		z-index: 1;
+	}
+
+	.container {
+		position: relative;
+		z-index: 10;
+	}
 
 	&__title {
 		&:before, &:after {
@@ -28,7 +57,7 @@
 			transform: translateY(-50%);
 			height: 1px;
 			width: 40px;
-			background: #afafaf;
+			background: #898989;
 		}
 		&:before {
 			left: 180px;
@@ -37,4 +66,240 @@
 			right: 180px;
 		}
 	}
+
+	&-leather {
+		position: relative;
+		padding-bottom: 60px;
+
+		@media @desktop-xl {
+			padding-bottom: 80px;
+		}
+		@media @desktop-xl-2 {
+			padding-bottom: 100px;
+		}
+	}
+
+
+	&-alcantara {
+		padding-top: 80px;
+		position: relative;
+		background: @black;
+
+		padding-bottom: 60px;
+
+		@media @desktop-xl {
+			padding-bottom: 80px;
+		}
+		@media @desktop-xl-2 {
+			padding-bottom: 100px;
+		}
+
+		&:before {
+			content: '';
+			position: absolute;
+			left: 0;
+			bottom: -100px;
+			width: 224px;
+			height: 469px;
+			background: url(../images/decor/triangle-gray-left.png)no-repeat;
+			z-index: 1;
+		}
+
+		&:after {
+			content: '';
+			position: absolute;
+			right: 150px;
+			top: 0;
+			width: 624px;
+			height: 206px;
+			background: url(../images/decor/triangle-yellow.png)no-repeat;
+			z-index: 1;
+		}
+
+		.materials__title {
+			position: relative;
+			font-family: @ff2;
+			font-weight: 700;
+			font-size: 40px;
+			text-align: center;
+			color: #fff;
+
+			&:before, &:after {
+				position: absolute;
+				content: '';
+				top: 50%;
+				transform: translateY(-50%);
+				height: 1px;
+				width: 40px;
+				background: #898989;
+			}
+			&:before {
+				left: 750px;
+			}
+			&:after {
+				right: 750px;
+			}
+		}
+
+		.price, .article__title {
+			color: #fff;
+		}
+
+		.box__color {
+			padding-left: 33px;
+		}
+
+		.box__photo {
+			order: -1;
+
+			.imgWrap {
+				position: relative;
+
+				&:before {
+					left: -55px;
+				}
+			}
+		}
+
+		.slick-prev {
+			left: 417px; 	
+		}
+
+
+	}
 }
+
+
+
+
+.article__box {
+	display: flex;
+	justify-content: space-between;
+	padding-top: 90px;
+}
+
+.article__title {
+	padding-bottom: 10px;
+	font-family: @ff2;
+	font-weight: 700;
+	font-size: 26px;
+	color: #010101;
+}
+
+.box__color {
+	padding-top: 42px;
+	width: 610px;
+}
+
+
+.leather__item {
+	margin-bottom: 16px;
+
+	.imgWrap {
+		position: relative;
+		
+		&:before {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 170px;
+			height: 127px;
+			background: rgba(0, 0, 0, 0);
+			transition: background-color .3s linear;
+		}
+		&:after {
+			content: '';
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-75%, -50%);
+			opacity: 0;
+			transition: opacity .3s linear;
+			.bg-loop
+
+		}
+		&:hover {
+			&:before {
+				background: rgba(0, 0, 0, .65);
+			}
+			&:after {
+				opacity: 1;
+			}
+		}
+	}
+
+	img {
+		display: block;
+		max-width: 100%;
+		height: auto;
+		box-shadow: 0px 8px 20px 1.26px rgba(0, 0, 0, 0.27);
+	}
+}
+
+.box__photo {
+
+	.imgWrap {
+		position: relative;
+
+		&:before {
+			content: '';
+			position: absolute;
+			top: 55px;
+			left: 55px;
+			width: 100%;
+			height: 100%;
+			background: @yellow;
+			z-index: -1;
+
+			box-shadow: 0px 11px 16.74px 1.26px rgba(0, 0, 0, 0.27);
+		}
+
+		&:after {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background: rgba(0, 0, 0, 0);
+			transition: background-color .3s linear;
+			z-index: 10;
+		}
+
+		&:hover {
+			cursor: pointer;
+			&:after {
+				background: rgba(0, 0, 0, 0.65);
+			}
+			.textHover {
+				opacity: 1;
+			}
+		}
+	}
+	img {
+		display: block;
+		max-width: 100%;
+		height: auto;
+	}
+	.textHover {
+		position: absolute;
+		opacity: 0;
+		top: 30px;
+		left: 20px;
+		right: 20px;
+		font-family: @ff1;
+		font-weight: 400;
+		font-size: 22px;
+		z-index: 11;
+		transition: opacity .3s linear;
+	}
+}
+
+.price {
+	font-family: @ff2;
+	font-size: 23px;
+	color: #010101;
+}
+
+
