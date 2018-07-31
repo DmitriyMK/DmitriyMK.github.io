@@ -413,6 +413,16 @@ template {
         -ms-user-select: text;
             user-select: text;
 }
+.b-lazy {
+    -webkit-transition: opacity 500ms ease-in-out;
+         -o-transition: opacity 500ms ease-in-out;
+            transition: opacity 500ms ease-in-out;
+    max-width: 100%;
+    opacity: 0;
+}
+.b-lazy.b-loaded {
+    opacity: 1;
+}
 /* ONLY FOR IE11 */
 /* ONLY FOR EDGE */
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, main, menu, nav, output, ruby, section, summary, time, mark, audio, video {
@@ -1042,6 +1052,9 @@ section {
 }
 .present {
     background: #cfad38;
+}
+.present__box {
+    width: 450px;
 }
 .remodal-first {
     padding-top: 95px;
