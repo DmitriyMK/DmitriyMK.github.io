@@ -406,8 +406,38 @@
 	<div class="present">
 		<div class="container">
 			<div class="present__box">
-				<h3 class="present__title">Дизайн в подарок!</h3>
-				<p class="present__text">При заказе от 10м² предоставим <strong>бесплатно</strong> три варианта дизайна стен Вашего помещения.</p>
+
+				<div class="present__content">
+					<h3 class="present__title">Дизайн в подарок!</h3>
+					<p class="present__text">При заказе от 10м² предоставим <strong>бесплатно</strong> три варианта дизайна стен Вашего помещения</p>
+				</div>
+
+				<div class="present__form">
+					<form action="mail.php" method="post" class="form form-validate" name="Receive Gift">
+						<!-- Hidden Required Fields -->
+						<input type="hidden" name="project_name" value="ST NOVIKOV GROUP">
+						<input type="hidden" name="admin_email" value="dm@push-k.ua">
+						<input type="hidden" name="form_subject" value="ST NOVIKOV GROUP > Дизайн в подарок">
+						<input type="hidden" name="whatform" value="ST NOVIKOV GROUP > Дизайн в подарок">
+						<!-- END Hidden Required Fields -->
+
+						<p class="form__title">Заполните форму</p>
+						<p class="form__text">и получите бесплатно три варианта дизайна стен Вашего помещения</p>
+
+						<div class="inputWrap">
+							<input class="form__line name" type="text" name="Имя&nbsp;покупателя" placeholder="Ваше имя" required>
+						</div>
+						<div class="inputWrap">
+							<input class="form__line" type="tel" name="Телефон&nbsp;покупателя" placeholder="Ваш телефон" required>
+						</div>		
+						<div class="inputWrap">
+							<input class="form__line" type="mail" name="Email&nbsp;покупателя" placeholder="Ваш E-mail" required>
+						</div>			
+						
+						<input type="submit" class="btn" value="Получить дизайн"> 
+					</form>
+				</div>
+				
 			</div>
 		</div>
 	</div>

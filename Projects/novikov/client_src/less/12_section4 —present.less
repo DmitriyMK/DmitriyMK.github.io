@@ -19,11 +19,151 @@
 
 
 .present {
+	position: relative;
 	background: @yellow;
 
+
+	&:before {
+		content: '';
+		position: absolute;
+		width: 1600px;
+		height: 250px;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		border: 6px solid #9e9ea0;
+		box-shadow: 0px 11px 16.74px 1.26px rgba(0, 0, 0, 0.27);
+
+	}
+
 	&__box {
-		width: 450px;
+		position: relative;
+		padding: 70px 0;
+		display: flex;
+		justify-content: space-between;
+		font-family: @ff2;
+
+
+	}
+
+	&__content{
+		position: relative;
+		width: 460px;
+		color: #000;
+
+		&:before {
+			content: '';
+			position: absolute;
+			left: -170px;
+			top: 50%;
+			transform: translatey(-50%);
+			width: 135px;
+			height: 138px;
+			background: url(../images/pencil.png);
+		}
+
+		&:after {
+			content: '';
+			position: absolute;
+			left: 380px;
+			top: -170px;
+			width: 495px;
+			height: 367px;
+			background: url(../images/mac.png);
+		}
+	}
+
+	&__title {
+		position: relative;
+		padding: 10px 15px;
+		font-size: 45px;
+		&:before {
+			content: '';
+			position: absolute;
+			left: -20px;
+			bottom: 0;
+			width: 100%;
+			height: 1px;
+			background: #000;
+			opacity: 0.25;
+		}
+		
+	}
+	&__text {
+		padding: 10px 15px;
+		font-size: 24px;
+	}
+	strong {
+		font-weight: 700;
+	}
+
+	.form {
+		position: absolute;
+		top: -80px;
+		right: -70px;
+		width: 334px;
+		min-height: 456px;
+		margin: auto;
+		padding: 60px 40px 80px 40px;
+		text-align: center;
+
+		background: url(../images/form-back.jpg)no-repeat center/cover;
+
+		&__title {
+			font-family: @ff2;
+			font-weight: 700;
+			font-size: 25px;	
+			color: @yellow;
+		}
+		&__text {
+			padding: 10px 0 20px 0;
+			font-size: 15px;
+			color: @yellow;
+		}
+
+		.inputWrap{
+			position: relative;
+			margin-bottom: 10px;
+			&:before {
+				content: '';
+				position: absolute;
+				top: 50%;
+				transform: translateY(-50%);
+				left: 30px;
+			}
+		}
+
+		.inputWrap:nth-of-type(1){
+			&:before {
+				.bg-user
+			}
+		}
+		.inputWrap:nth-of-type(2){
+			&:before {
+				.bg-phone
+			}
+		}
+		.inputWrap:nth-of-type(3){
+			&:before {
+				.bg-mail
+			}
+		}
+
+		.form__line {
+			padding: 10px 50px;
+			width: 235px;
+			color: #967f2d;
+			outline: none!important;
+
+			background-image: -moz-linear-gradient( 90deg, rgb(237,242,248) 0%, rgb(251,253,255) 66%, rgb(255,255,255) 100%);
+			background-image: -webkit-linear-gradient( 90deg, rgb(237,242,248) 0%, rgb(251,253,255) 66%, rgb(255,255,255) 100%);
+			background-image: -ms-linear-gradient( 90deg, rgb(237,242,248) 0%, rgb(251,253,255) 66%, rgb(255,255,255) 100%);
+			box-shadow: 0px 11px 1px 1.26px rgba(0, 0, 0, 0.27),inset 0 0 10px 0px rgba(59, 49, 64, 0.38);
+		}
+		.btn {
+			margin-top: 25px;
+			width: 235px;
+			border: none;
+		}
 	}
 }
-
-
