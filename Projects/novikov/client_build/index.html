@@ -46,7 +46,6 @@
 	<script defer src="./libs/jquery.validate.min.js"></script>
 	<script defer src="./libs/wow.min.js"></script>
 	<script defer src="./libs/cssrelpreload.js"></script>
-
 	<!-- END DEFER SCRIPT -->
 
 
@@ -431,7 +430,7 @@
 							<input class="form__line" type="tel" name="Телефон&nbsp;покупателя" placeholder="Ваш телефон" required>
 						</div>		
 						<div class="inputWrap">
-							<input class="form__line" type="mail" name="Email&nbsp;покупателя" placeholder="Ваш E-mail" required>
+							<input class="form__line" type="email" name="Email&nbsp;покупателя" placeholder="Ваш E-mail" required>
 						</div>			
 						
 						<input type="submit" class="btn" value="Получить дизайн"> 
@@ -556,7 +555,7 @@
 
 				<input class="form__line name" type="text" name="Имя&nbsp;покупателя" placeholder="Ваше имя" required>
 				<input class="form__line" type="tel" name="Телефон&nbsp;покупателя" placeholder="Ваш телефон" required>
-				<input class="form__line" type="mail" name="Email&nbsp;покупателя" placeholder="Ваш E-mail" required>	
+				<input class="form__line" type="email" name="Email&nbsp;покупателя" placeholder="Ваш E-mail" required>	
 
 				<input type="submit" class="btn-white" value="Получить дизайн"> 
 			</form>
@@ -659,6 +658,50 @@
 
 
 
+	<section class="contacts">
+		<div class="map" id="map">
+		</div>
+
+		<div class="container">
+			<div class="contacts__box">
+				<h2 class="box__title">Контакты:</h2>
+				<ul class="contacts__list">
+					<li class="contacts__item address"><address>Украина, г. Киев, <br> улица , 7 <br></address></li>
+
+					<li class="contacts__item tel"><a class="contact__link" href="tel:+380970000000">+38 (097) 000 00 00</a></li>
+
+					<li class="contacts__item mail"><a class="contact__link" href="mailto:info@gmail.com"><strong>info@gmail.com</strong></a></li>
+				</ul>
+
+				<p class="ask">Остались вопросы?</p>
+				<p class="text">Мы Вам перезвоним, чтобы <br> ответить на них в течение 10 минут.</p>
+				<button class="btn" data-remodal-target="callback">Заказать звонок</button>
+			</div>
+		</div>
+	</section>
+
+
+
+	<footer class="footer">
+		<div class="container">
+			<div class="footer__box">
+				<div class="footer__logo">
+					<a href="index.html">
+						<img src="images/logo.png" alt="st novikov group" title="st novikov group">
+					</a>
+					<p class="footer__desc">Производство и продажа <br> стеновых панелей из кожи и алькантары.</p>
+				</div>
+				<div class="footer__agency">
+					<a class="agency" href="http://landingpage.push-k.ua/" target="_blank" rel="noopener noreferrer">Создание сайтов <br>
+						<img src="images/push-k.png" alt="push-k solutions">
+					</a> 
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+
 	<!-- THANKS -->
 	<div class="remodal remodal-common"  data-remodal-id="modal-thanks" >
 		<button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
@@ -678,10 +721,10 @@
 			<!-- END Hidden Required Fields -->
 			<p class="formBox__title">Заполните форму</p>
 			<p class="formBox__text">И наш менеджер свяжется с Вами в ближайшее время</p>
-			<div class="input__wrap">
+			<div class="inputWrap">
 				<input class="form__line name" type="text" name="Имя&nbsp;покупателя" placeholder="Ваше имя" required>
 			</div>
-			<div class="input__wrap">
+			<div class="inputWrap">
 				<input class="form__line" type="tel" name="Телефон&nbsp;покупателя" placeholder="Ваш телефон" required>
 			</div>
 			<input type="submit" class="btn" value="Заказать звонок"> 
@@ -698,10 +741,10 @@
 			<!-- END Hidden Required Fields -->
 			<p class="formBox__title">Заполните форму</p>
 			<p class="formBox__text">И наш менеджер свяжется с Вами в ближайшее время</p>
-			<div class="input__wrap">
+			<div class="inputWrap">
 				<input class="form__line name" type="text" name="Имя&nbsp;покупателя" placeholder="Ваше имя" required>
 			</div>
-			<div class="input__wrap">
+			<div class="inputWrap">
 				<input class="form__line" type="tel" name="Телефон&nbsp;покупателя" placeholder="Ваш телефон" required>
 			</div>
 			<input type="submit" class="btn" value="Подобрать дизайн"> 
@@ -718,10 +761,10 @@
 			<!-- END Hidden Required Fields -->
 			<p class="formBox__title">Заполните форму</p>
 			<p class="formBox__text">И наш менеджер свяжется с Вами в ближайшее время</p>
-			<div class="input__wrap">
+			<div class="inputWrap">
 				<input class="form__line name" type="text" name="Имя&nbsp;покупателя" placeholder="Ваше имя" required>
 			</div>
-			<div class="input__wrap">
+			<div class="inputWrap">
 				<input class="form__line" type="tel" name="Телефон&nbsp;покупателя" placeholder="Ваш телефон" required>
 			</div>
 			<input type="submit" class="btn" value="Подобрать цвет"> 
@@ -738,10 +781,10 @@
 			<!-- END Hidden Required Fields -->
 			<p class="formBox__title">Заполните форму</p>
 			<p class="formBox__text">И наш менеджер свяжется с Вами в ближайшее время</p>
-			<div class="input__wrap">
+			<div class="inputWrap">
 				<input class="form__line name" type="text" name="Имя&nbsp;покупателя" placeholder="Ваше имя" required>
 			</div>
-			<div class="input__wrap">
+			<div class="inputWrap">
 				<input class="form__line" type="tel" name="Телефон&nbsp;покупателя" placeholder="Ваш телефон" required>
 			</div>
 			<input type="submit" class="btn" value="Подобрать цвет"> 
@@ -758,10 +801,10 @@
 			<!-- END Hidden Required Fields -->
 			<p class="formBox__title">Заполните форму</p>
 			<p class="formBox__text">И наш менеджер свяжется с Вами в ближайшее время</p>
-			<div class="input__wrap">
+			<div class="inputWrap">
 				<input class="form__line name" type="text" name="Имя&nbsp;покупателя" placeholder="Ваше имя" required>
 			</div>
-			<div class="input__wrap">
+			<div class="inputWrap">
 				<input class="form__line" type="tel" name="Телефон&nbsp;покупателя" placeholder="Ваш телефон" required>
 			</div>
 			<input type="submit" class="btn" value="Оставить заявку"> 
@@ -778,10 +821,10 @@
 			<!-- END Hidden Required Fields -->
 			<p class="formBox__title">Заполните форму</p>
 			<p class="formBox__text">И наш менеджер свяжется с Вами в ближайшее время</p>
-			<div class="input__wrap">
+			<div class="inputWrap">
 				<input class="form__line name" type="text" name="Имя&nbsp;покупателя" placeholder="Ваше имя" required>
 			</div>
-			<div class="input__wrap">
+			<div class="inputWrap">
 				<input class="form__line" type="tel" name="Телефон&nbsp;покупателя" placeholder="Ваш телефон" required>
 			</div>
 			<input type="submit" class="btn" value="Хочу сотрудничать"> 
@@ -797,5 +840,5 @@
 	<script src="./libs/all.js"></script>
 	<script src="./libs/map.js"></script>  
 	<script async defer src="https://maps.googleapis.com/maps/api/js?callback=initMap&key=AIzaSyDFnsXtzPC77ZP4pkabK8_yVr5qazdPCjc&callback=initMap"></script> 
-	</body>
-	</html>
+</body>
+</html>

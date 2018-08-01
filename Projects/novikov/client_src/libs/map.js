@@ -1,26 +1,18 @@
 var markersData = [{
-        lat: 50.4427651,
-        lng: 30.5195291,
-        name: "Great Power",
-        address: "г. Киев, Крещатик, 45"
-    },
-
-    {
-        lat: 49.9915345,
-        lng: 36.2334419,
-        name: "Great Power",
-        address: "г. Харьков, ул. Пушкинская 1"
-    }
-];
+    lat: 48.4625462,
+    lng: 34.9431686,
+    name: "",
+    address: ""
+}];
 
 var map, infoWindow;
 
 function initMap() {
-    var centerLatLng = new google.maps.LatLng(49.9915345, 36.2334419);
+    var centerLatLng = new google.maps.LatLng(48.4625462, 34.9441686);
 
     var mapOptions = {
         center: centerLatLng,
-        zoom: 17,
+        zoom: 15,
 
         mapTypeControl: true,
 
@@ -34,158 +26,121 @@ function initMap() {
             style: google.maps.NavigationControlStyle.SMALL
         },
         mapTypeId: google.maps.MapTypeId.ROADMAP,
+
         styles:
 
 
             [{
-            "featureType": "landscape",
-            "stylers": [{
-                "visibility": "simplified"
-            }, {
-                "color": "#9debff"
-            }, {
-                "weight": 0.1
-            }]
-        }, {
-            "featureType": "water",
-            "stylers": [{
-                "visibility": "simplified"
-            }, {
-                "color": "#ebebeb"
-            }]
-        }, {
-            "featureType": "road.arterial",
             "elementType": "geometry",
             "stylers": [{
-                "visibility": "on"
-            }, {
-                "color": "#51dbff"
+                "color": "#242f3e"
+            }]
+        }, {
+            "elementType": "labels.text.fill",
+            "stylers": [{
+                "color": "#746855"
+            }]
+        }, {
+            "elementType": "labels.text.stroke",
+            "stylers": [{
+                "color": "#242f3e"
+            }]
+        }, {
+            "featureType": "administrative.locality",
+            "elementType": "labels.text.fill",
+            "stylers": [{
+                "color": "#d59563"
+            }]
+        }, {
+            "featureType": "poi",
+            "elementType": "labels.text.fill",
+            "stylers": [{
+                "color": "#d59563"
             }]
         }, {
             "featureType": "poi.park",
-            "elementType": "geometry.fill",
+            "elementType": "geometry",
             "stylers": [{
-                "visibility": "on"
-            }, {
-                "color": "#51dbff"
+                "color": "#263c3f"
             }]
         }, {
-            "featureType": "poi"
-        }, {
-            "featureType": "transit.line",
+            "featureType": "poi.park",
+            "elementType": "labels.text.fill",
             "stylers": [{
-                "color": "#ff4e80"
-            }, {
-                "visibility": "off"
+                "color": "#6b9a76"
+            }]
+        }, {
+            "featureType": "road",
+            "elementType": "geometry",
+            "stylers": [{
+                "color": "#38414e"
             }]
         }, {
             "featureType": "road",
             "elementType": "geometry.stroke",
             "stylers": [{
-                "visibility": "on"
-            }, {
-                "weight": 1.5
-            }, {
-                "color": "#51dbff"
+                "color": "#212a37"
             }]
         }, {
-            "featureType": "road.arterial",
-            "elementType": "geometry",
+            "featureType": "road",
+            "elementType": "labels.text.fill",
             "stylers": [{
-                "visibility": "simplified"
-            }, {
-                "color": "#51dbNaN"
+                "color": "#9ca5b3"
             }]
         }, {
             "featureType": "road.highway",
             "elementType": "geometry",
             "stylers": [{
-                "visibility": "simplified"
-            }, {
-                "color": "#51dbff"
+                "color": "#746855"
             }]
         }, {
-            "featureType": "poi.business",
+            "featureType": "road.highway",
+            "elementType": "geometry.stroke",
             "stylers": [{
-                "color": "#9debff"
-            }, {
-                "visibility": "off"
-            }]
-        }, {}, {
-            "featureType": "poi.government",
-            "stylers": [{
-                "visibility": "off"
+                "color": "#1f2835"
             }]
         }, {
-            "featureType": "poi.school",
+            "featureType": "road.highway",
+            "elementType": "labels.text.fill",
             "stylers": [{
-                "visibility": "off"
+                "color": "#f3d19c"
             }]
         }, {
-            "featureType": "administrative",
-            "stylers": [{
-                "visibility": "on"
-            }]
-        }, {
-            "featureType": "poi.medical",
-            "stylers": [{
-                "visibility": "off"
-            }]
-        }, {
-            "featureType": "poi.attraction",
+            "featureType": "transit",
             "elementType": "geometry",
             "stylers": [{
-                "visibility": "on"
-            }, {
-                "color": "#51dbff"
+                "color": "#2f3948"
             }]
         }, {
-            "featureType": "poi.place_of_worship",
+            "featureType": "transit.station",
+            "elementType": "labels.text.fill",
             "stylers": [{
-                "visibility": "off"
+                "color": "#d59563"
             }]
         }, {
-            "featureType": "poi.sports_complex",
+            "featureType": "water",
+            "elementType": "geometry",
             "stylers": [{
-                "visibility": "off"
+                "color": "#17263c"
             }]
-        }, {}, {
-            "featureType": "road.arterial",
+        }, {
+            "featureType": "water",
+            "elementType": "labels.text.fill",
+            "stylers": [{
+                "color": "#515c6d"
+            }]
+        }, {
+            "featureType": "water",
             "elementType": "labels.text.stroke",
             "stylers": [{
-                "color": "#000000"
-            }, {
-                "visibility": "off"
+                "color": "#17263c"
             }]
-        }, {
-            "featureType": "road.highway",
-            "elementType": "labels.text",
-            "stylers": [{
-                "visibility": "off"
-            }]
-        }, {
-            "featureType": "road.highway.controlled_access",
-            "stylers": [{
-                "visibility": "off"
-            }]
-        }, {
-            "featureType": "road"
         }]
-
 
     };
 
-
-
     map = new google.maps.Map(document.getElementById("map"), mapOptions);
 
-    infoWindow = new google.maps.InfoWindow();
-
-    google.maps.event.addListener(map, "click", function() {
-        infoWindow.close();
-    });
-
-    // Определяем границы видимой области карты в соответствии с положением маркеров
     var bounds = new google.maps.LatLngBounds();
 
     for (var i = 0; i < markersData.length; i++) {
@@ -196,15 +151,12 @@ function initMap() {
 
         addMarker(latLng, name, address);
 
-        // Расширяем границы нашей видимой области, добавив координаты нашего текущего маркера
         bounds.extend(latLng);
     }
 
-    // Автоматически масштабируем карту так, чтобы все маркеры были в видимой области карты
-    map.fitBounds(bounds);
+    // map.fitBounds(bounds);
 
 }
-google.maps.event.addDomListener(window, "load", initMap);
 
 function addMarker(latLng, name, address) {
 
@@ -217,15 +169,5 @@ function addMarker(latLng, name, address) {
         title: name
     });
 
-    google.maps.event.addListener(marker, "click", function() {
 
-        var contentString = '<div class="infowindow">' +
-            '<h3>' + name + '</h3>' +
-            '<p>' + address + '</p>' +
-            '</div>';
-
-        infoWindow.setContent(contentString);
-        infoWindow.open(map, marker);
-
-    });
 }

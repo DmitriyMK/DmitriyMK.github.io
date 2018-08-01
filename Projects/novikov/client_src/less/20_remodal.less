@@ -61,15 +61,15 @@
 
 
 .remodal-close { 
-    top: 12px !important;
-    right: 15px !important;
+    top: 5px !important;
+    right: 5px !important;
     color: #fff !important;
     font-weight: 900;
     @media @mobile {
-       width: 10px !important;
-       height: 16px !important;
-   }
-   @media @tablet { 
+     width: 10px !important;
+     height: 16px !important;
+ }
+ @media @tablet { 
     width: 35px !important;
     height: 30px !important;
 }
@@ -88,14 +88,8 @@
 }
 
 .remodal-common {
-
-    -webkit-border-radius: 15px;
-    -moz-border-radius: 15px;
     border-radius: 15px;
     background: #fff;
-
-    //  background: url('@{dir}product-1.png') no-repeat top center;  
-    // background-position: 50% 50%;
 
     padding: 30px 40px;
 
@@ -135,19 +129,6 @@
     
 }
 
-
-input:focus:required:invalid,
-textarea:focus:required:invalid {
-  // border: solid 0px rgba(222,78,0,.51) !important;
-  // border-bottom: 1px solid #909091;
-  
-}
-input:required:valid,
-textarea:required:valid {
-  // border: solid 0px rgba(222,78,0,.51) !important;
-  // border-bottom: 1px solid #909091;
-  
-}
 #name-error {
     font-size: 0 !important;
 }
@@ -170,41 +151,64 @@ label {
 
 .formBox {
     position: relative;
-    background: #fff;
-    padding: 30px 15px;
-    max-width: 400px;
-    margin: 20px auto;
+    width: 334px;
+    min-height: 456px;
+    margin: auto;
+    padding: 90px 40px;
     text-align: center;
+    z-index: 10;
+    background: url(../images/form-back.jpg)no-repeat center/cover;
+
     &__title {
-        
+        font-family: @ff2;
+        font-weight: 700;
+        font-size: 25px;    
+        color: @yellow;
     }
     &__text {
-        
+        padding: 10px 0 24px 0;
+        font-size: 18px;
+        color: @yellow;
+    }
+
+    .inputWrap{
+        position: relative;
+        margin-bottom: 10px;
+        &:before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 30px;
+        }
+    }
+
+    .inputWrap:nth-of-type(1){
+        &:before {
+            .bg-user
+        }
+    }
+    .inputWrap:nth-of-type(2){
+        &:before {
+            .bg-phone
+        }
     }
 
     .form__line {
-        width: 100%;
-        padding-left: 15px;
-        padding-bottom: 7px;
-        border: none!important;     
-        outline: none;
-        font-size: 18px;
+        padding: 10px 50px;
+        width: 235px;
+        color: #967f2d;
+        outline: none!important;
+
+        background-image: -moz-linear-gradient( 90deg, rgb(237,242,248) 0%, rgb(251,253,255) 66%, rgb(255,255,255) 100%);
+        background-image: -webkit-linear-gradient( 90deg, rgb(237,242,248) 0%, rgb(251,253,255) 66%, rgb(255,255,255) 100%);
+        background-image: -ms-linear-gradient( 90deg, rgb(237,242,248) 0%, rgb(251,253,255) 66%, rgb(255,255,255) 100%);
+        box-shadow: 0px 11px 1px 1.26px rgba(0, 0, 0, 0.27),inset 0 0 10px 0px rgba(59, 49, 64, 0.38);
     }
     .btn {
-        margin: 15px 0 5px 0;
-        color: #fff;
-        &:hover {
-            color: #000;
-        }
-    } 
-}
-
-.video {
-    max-width: 780px;
-    iframe {
+        margin-top: 25px;
+        width: 235px;
         border: none;
-        width: 100%;
-        height: 100%;
     }
 }
 
@@ -222,11 +226,3 @@ label {
     font-size: 18px;
     color: #000;
 }
-
-
-
-
-
-
-
-
