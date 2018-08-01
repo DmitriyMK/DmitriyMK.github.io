@@ -29,29 +29,30 @@
 
 .slick-dots {
 	display: inline-block!important;
-	left: -48px;
-	top: 50%;
-	transform: translateY(17%);
+	left: 40px;
+	bottom: -40px;
+
 
 	border-image: transparent;
 
 	li {
-		margin: 4px 8px;
+		margin: 4px 10px;
 		margin-bottom: 10px;
 
 		width: 13px;
 		height: 13px;
 
 		button {
-			background: #fff;
+			background: @yellow;
 			display: block;
-			height: 13px;
-			width: 13px;
+			height: 5px;
+			width: 5px;
 			font-size: 0px;
 			color: #fff;
-			border-radius: 50%;
+			border: 2px solid transparent;
 			box-shadow: 0px 5px 7px 1px rgba(0, 45, 86, 0.15);
 			opacity: 0.75;
+			transition: all .3s linear;
 			&:before {
 				font-size: 0;
 				opacity: 0;
@@ -60,9 +61,10 @@
 
 		}
 		&.slick-active button {
-			background: #fb0035;
-			border-radius: 50%;
+			color: transparent;
 			opacity: 1;
+			border: 2px solid @yellow;
+			transform: scale(2);
 			@media @tablet {
 				background: #fff;
 			}
@@ -73,4 +75,8 @@
 
 .slick-current, .slick-slide, .slick-active { 
 	outline: none!important;
+}
+.slick-dots li.slick-active button {
+	background: transparent;
+	color: transparent;
 }

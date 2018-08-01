@@ -78,6 +78,12 @@ $(document).ready(function() {
 
   });
 
+  $('.review__box').slick({
+    dots: true,
+    arrow: true,
+    fade: true,
+  });
+
 
 
 });
