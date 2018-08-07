@@ -760,8 +760,16 @@ svg {
     margin-top: 125px;
 }
 .clawLeft {
-    -webkit-animation: growLine 3s 1;
-            animation: growLine 3s 1;
+    -webkit-animation: growLine 3s;
+            animation: growLine 3s;
+}
+.clawRight {
+    -webkit-animation: growLine2 3s;
+            animation: growLine2 3s;
+}
+.eye {
+    -webkit-animation: growColor 3s;
+            animation: growColor 3s;
 }
 .remodal-first {
     padding-top: 95px;
@@ -1062,6 +1070,50 @@ label {
         -webkit-transform: rotate(0);
                 transform: rotate(0);
         opacity: 1;
+    }
+}
+@-webkit-keyframes growLine2 {
+    0% {
+        -webkit-transform: rotate(-3deg);
+                transform: rotate(-3deg);
+        -webkit-transform-origin: 70% 70%;
+                transform-origin: 70% 70%;
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: rotate(0);
+                transform: rotate(0);
+        opacity: 1;
+    }
+}
+@keyframes growLine2 {
+    0% {
+        -webkit-transform: rotate(-3deg);
+                transform: rotate(-3deg);
+        -webkit-transform-origin: 70% 70%;
+                transform-origin: 70% 70%;
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: rotate(0);
+                transform: rotate(0);
+        opacity: 1;
+    }
+}
+@-webkit-keyframes growColor {
+    0% {
+        fill: #ebf0f2;
+    }
+    100% {
+        fill: red;
+    }
+}
+@keyframes growColor {
+    0% {
+        fill: #ebf0f2;
+    }
+    100% {
+        fill: red;
     }
 }
 .slick-prev, .slick-next {
