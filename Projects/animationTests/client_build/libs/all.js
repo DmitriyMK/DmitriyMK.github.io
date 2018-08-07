@@ -1,34 +1,83 @@
+// var app = new PIXI.Application(800, 600, { backgroundColor: 0x1099bb });
+// document.body.appendChild(app.view);
 
+// // Scale mode for all textures, will retain pixelation
+// PIXI.settings.SCALE_MODE = PIXI.SCALE_MODES.NEAREST;
 
-var app = new PIXI.Application(800, 600, { backgroundColor: 0x1099bb });
-document.body.appendChild(app.view);
+// var sprite = PIXI.Sprite.fromImage('../images/loading_sprite.png');
 
-// Scale mode for all textures, will retain pixelation
-PIXI.settings.SCALE_MODE = PIXI.SCALE_MODES.NEAREST;
+// // Set the initial position
+// sprite.anchor.set(0.5);
+// sprite.x = app.screen.width / 2;
+// sprite.y = app.screen.height / 2;
 
-var sprite = PIXI.Sprite.fromImage('../images/loading_sprite.png');
+// // Opt-in to interactivity
+// sprite.interactive = true;
 
-// Set the initial position
-sprite.anchor.set(0.5);
-sprite.x = app.screen.width / 2;
-sprite.y = app.screen.height / 2;
+// // Shows hand cursor
+// sprite.buttonMode = true;
 
-// Opt-in to interactivity
-sprite.interactive = true;
+// // Pointers normalize touch and mouse
+// sprite.on('pointerdown', onClick);
 
-// Shows hand cursor
-sprite.buttonMode = true;
+// // Alternatively, use the mouse & touch events:
+// // sprite.on('click', onClick); // mouse-only
+// // sprite.on('tap', onClick); // touch-only
 
-// Pointers normalize touch and mouse
-sprite.on('pointerdown', onClick);
+// app.stage.addChild(sprite);
 
-// Alternatively, use the mouse & touch events:
-// sprite.on('click', onClick); // mouse-only
-// sprite.on('tap', onClick); // touch-only
+// function onClick () {
+//     sprite.scale.x *= 1.25;
+//     sprite.scale.y *= 1.25;
+// }
+// 
 
-app.stage.addChild(sprite);
+var renderer = PIXI.autoDetectRenderer(512.512, {
+  transparent: true,
+  resolution: 1
+});
 
-function onClick () {
-    sprite.scale.x *= 1.25;
-    sprite.scale.y *= 1.25;
+document.getElementById("display").appendChild(renderer.view);
+
+var stage = new PIXI.Container();
+
+PIXI.loader
+  .add("spritesheet", "../images/loading_sprite.png")
+  .load(setup);
+
+var sprite;
+
+function setup() {
+  stage.interactive = true;
+
+  var rect = new PIXI.Rectangle(0, 0, 64, 64);
+
+  var texture = PIXI.loader.resources["spritesheet"].texture;
+  texture.frame = rect;
+
+  sprite = new PIXI.Sprite(texture);
+
+  var idle = setInterval(function() {
+    if (rect.x >= 64 * 4) rect.x = 0;
+    sprite.texture.frame = rect;
+    rect.x += 64;
+  }, 500);
+
+  sprite.scale.set(2, 2);
+  sprite.vx = 3;
+  stage.addChild(sprite);
+
+  animationLoop();
+
 }
+
+function animationLoop() {
+  requestAnimationFrame(animationLoop);
+
+  renderer.render(stage);
+}
+
+window.addEventListener("keydown", function(event) {
+  event.preventDefault();
+  sprite.x += sprite.vx;
+});
