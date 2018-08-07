@@ -34,7 +34,7 @@
 
 PIXI.utils.sayHello();
 
-var renderer = PIXI.autoDetectRenderer(420, 700, {
+var renderer = PIXI.autoDetectRenderer(200, 351, {
   transparent: true,
   resolution: 1
 });
@@ -52,7 +52,7 @@ var sprite;
 function setup() {
   stage.interactive = true;
 
-  var rect = new PIXI.Rectangle(0, 0, 200, 550);
+  var rect = new PIXI.Rectangle(0, 0, 200, 351);
 
   var texture = PIXI.loader.resources["spritesheet"].texture;
   texture.frame = rect;
@@ -63,9 +63,9 @@ function setup() {
     if (rect.x >= 200 * 6) rect.x = 0;
     sprite.texture.frame = rect;
     rect.x += 200;
-  }, 200);
+  }, 250);
 
-  sprite.scale.set(2, 2);
+  sprite.scale.set(1, 1);
   sprite.vx = 1;
   stage.addChild(sprite);
 
