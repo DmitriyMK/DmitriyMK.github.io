@@ -30,9 +30,11 @@
 //     sprite.scale.x *= 1.25;
 //     sprite.scale.y *= 1.25;
 // }
-// 
+// .
 
-var renderer = PIXI.autoDetectRenderer(512.512, {
+PIXI.utils.sayHello();
+
+var renderer = PIXI.autoDetectRenderer(420, 700, {
   transparent: true,
   resolution: 1
 });
@@ -50,7 +52,7 @@ var sprite;
 function setup() {
   stage.interactive = true;
 
-  var rect = new PIXI.Rectangle(0, 0, 64, 64);
+  var rect = new PIXI.Rectangle(0, 0, 200, 550);
 
   var texture = PIXI.loader.resources["spritesheet"].texture;
   texture.frame = rect;
@@ -58,13 +60,13 @@ function setup() {
   sprite = new PIXI.Sprite(texture);
 
   var idle = setInterval(function() {
-    if (rect.x >= 64 * 4) rect.x = 0;
+    if (rect.x >= 200 * 6) rect.x = 0;
     sprite.texture.frame = rect;
-    rect.x += 64;
-  }, 500);
+    rect.x += 200;
+  }, 200);
 
   sprite.scale.set(2, 2);
-  sprite.vx = 3;
+  sprite.vx = 1;
   stage.addChild(sprite);
 
   animationLoop();
@@ -77,7 +79,4 @@ function animationLoop() {
   renderer.render(stage);
 }
 
-window.addEventListener("keydown", function(event) {
-  event.preventDefault();
-  sprite.x += sprite.vx;
-});
+
