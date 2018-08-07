@@ -1,24 +1,34 @@
 
-$(document).ready(function() {
 
-   if (document.documentElement.clientWidth > 1200) {
+var app = new PIXI.Application(800, 600, { backgroundColor: 0x1099bb });
+document.body.appendChild(app.view);
 
-    $("body").niceScroll({
-      scrollspeed: 70,
-      mousescrollstep: 60,
-      smoothscroll: true,
-      cursorwidth: 8,
-      cursorborder: 0,
-      cursorcolor: '#ff4200',
-      cursorborderradius: 2,
-      autohidemode: true,
-      horizrailenabled: false,
-      cursoropacitymin: 1,
-      background: false,
-      zindex: "9999"
-    });
+// Scale mode for all textures, will retain pixelation
+PIXI.settings.SCALE_MODE = PIXI.SCALE_MODES.NEAREST;
 
-    $('html').addClass('no-overflow-y');
+var sprite = PIXI.Sprite.fromImage('../images/loading_sprite.png');
 
-  };
-});
+// Set the initial position
+sprite.anchor.set(0.5);
+sprite.x = app.screen.width / 2;
+sprite.y = app.screen.height / 2;
+
+// Opt-in to interactivity
+sprite.interactive = true;
+
+// Shows hand cursor
+sprite.buttonMode = true;
+
+// Pointers normalize touch and mouse
+sprite.on('pointerdown', onClick);
+
+// Alternatively, use the mouse & touch events:
+// sprite.on('click', onClick); // mouse-only
+// sprite.on('tap', onClick); // touch-only
+
+app.stage.addChild(sprite);
+
+function onClick () {
+    sprite.scale.x *= 1.25;
+    sprite.scale.y *= 1.25;
+}

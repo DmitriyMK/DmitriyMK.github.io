@@ -751,14 +751,6 @@ section {
 body {
     background: #333;
 }
-svg {
-    display: block;
-}
-.container {
-    width: 500px;
-    margin: auto;
-    margin-top: 125px;
-}
 .clawLeft {
     -webkit-animation: growLine 3s;
             animation: growLine 3s;
