@@ -61,6 +61,7 @@ function setup() {
 
   sprite = new PIXI.Sprite(texture);
 
+
   stage.position.x = (sprite.width / 2) - (stage.width / 2);
   stage.position.y = (sprite.height / 2) - (stage.height / 2);
 
@@ -75,6 +76,7 @@ function setup() {
 
 
   function onClick() {
+
     var man = setInterval(function() {
       if (rect.x >= 200 * 6) rect.x = 0;
       if (rect.y >= 351 * 4) rect.y = 0;
@@ -82,6 +84,7 @@ function setup() {
       rect.x += 200;
       rect.y += 351;
     }, 250);
+    
   }
 
 
@@ -89,6 +92,7 @@ function setup() {
   animationLoop();
 
 };
+
 
 function animationLoop() {
   requestAnimationFrame(animationLoop);
