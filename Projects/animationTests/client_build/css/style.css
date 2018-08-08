@@ -751,18 +751,6 @@ section {
 body {
     background: #333;
 }
-.clawLeft {
-    -webkit-animation: growLine 3s;
-            animation: growLine 3s;
-}
-.clawRight {
-    -webkit-animation: growLine2 3s;
-            animation: growLine2 3s;
-}
-.eye {
-    -webkit-animation: growColor 3s;
-            animation: growColor 3s;
-}
 .remodal-first {
     padding-top: 95px;
     text-align: center;

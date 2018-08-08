@@ -34,47 +34,58 @@
 
 
 
-
-
-
 var renderer = PIXI.autoDetectRenderer({
   transparent: true,
-
 });
 
-document.getElementById("display").appendChild(renderer.view);
+
+var app = new PIXI.Application(800, 600, {
+  backgroundColor: 0x1099bb
+});
+document.body.appendChild(renderer.view);
+
 
 var stage = new PIXI.Container();
 
-PIXI.loader
-  .add("spritesheet", "loading_sprite.png")
-  .load(setup);
 
-var sprite;
+PIXI.loader
+.add("spritesheet", "loading_sprite.png")
+.load(setup);
+
 
 function setup() {
-  stage.interactive = true;
 
   var rect = new PIXI.Rectangle(0, 0, 200, 351);
-
   var texture = PIXI.loader.resources["spritesheet"].texture;
   texture.frame = rect;
 
   sprite = new PIXI.Sprite(texture);
 
-  var idle = setInterval(function() {
-    if (rect.x >= 200 * 6) rect.x = 0; 
-    if (rect.y >= 351 * 4) rect.y = 0; 
-    sprite.texture.frame = rect;
-    rect.x += 200; 
-    rect.y += 351; 
-  }, 250);
+  stage.position.x = (sprite.width / 2) - (stage.width / 2);
+  stage.position.y = (sprite.height / 2) - (stage.height / 2);
+
+  // Opt-in to interactivity
+  sprite.interactive = true;
+
+  // Shows hand cursor
+  sprite.buttonMode = true;
+
+  // Pointers normalize touch and mouse
+  sprite.on('pointerdown', onClick);
 
 
-  sprite.vx = 1;
-  sprite.vy = 1;
+  function onClick() {
+    var man = setInterval(function() {
+      if (rect.x >= 200 * 6) rect.x = 0;
+      if (rect.y >= 351 * 4) rect.y = 0;
+      sprite.texture.frame = rect;
+      rect.x += 200;
+      rect.y += 351;
+    }, 250);
+  }
+
+
   stage.addChild(sprite);
-
   animationLoop();
 
 };
@@ -82,7 +93,7 @@ function setup() {
 function animationLoop() {
   requestAnimationFrame(animationLoop);
   renderer.render(stage);
-}
+};
 
 
 
