@@ -32,9 +32,8 @@
 // }
 // .
 
-PIXI.utils.sayHello();
 
-var renderer = PIXI.autoDetectRenderer(200, 351, {
+var renderer = PIXI.autoDetectRenderer({
   transparent: true,
   resolution: 1
 });
