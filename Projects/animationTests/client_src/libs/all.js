@@ -63,18 +63,14 @@ function setup() {
   sprite = new PIXI.Sprite(texture);
 
   var idle = setInterval(function() {
-    if (rect.x >= 1200) rect.x = 0;
+    if (rect.x >= 200 * 6) rect.x = 0; 
+    if (rect.y >= 351 * 4) rect.y = 0; 
     sprite.texture.frame = rect;
     rect.x += 200; 
+    rect.y += 351; 
   }, 250);
 
-  // var idle2 = setInterval(function() {
-  //   if (rect.y >= 1404) rect.y = 0;
-  //   sprite.texture.frame = rect;
-  //   rect.y += 351; 
-  // }, 250);
 
-  // sprite.scale.set(1, 1);
   sprite.vx = 1;
   sprite.vy = 1;
   stage.addChild(sprite);
