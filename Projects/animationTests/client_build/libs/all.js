@@ -51,7 +51,7 @@ var sprite;
 function setup() {
   stage.interactive = true;
 
-  var rect = new PIXI.Rectangle(0, 0, 200, 351);
+  var rect = new PIXI.Rectangle(200, 351, 200, 351);
 
   var texture = PIXI.loader.resources["spritesheet"].texture;
   texture.frame = rect;
