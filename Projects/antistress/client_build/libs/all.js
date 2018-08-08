@@ -1,7 +1,8 @@
-const IMAGE_URL = "../images/logo-small.jpg";
+const IMAGE_URL = "logo-small.jpg";
 const PARTICLE_SIZE = 1; // image pixel size
-const PADDING = 150;
+const PADDING = 20;
 const DEFAULT_REPULSION_CHANGE_DISTANCE = 50;
+
 
 let repulsionChangeDistance = DEFAULT_REPULSION_CHANGE_DISTANCE;
 let pointSystem = null;
@@ -78,7 +79,7 @@ class ImageParticleSystem {
   constructor() {
     this.points = [];
     this.pointSprites = [];
-    this.renderer = PIXI.autoDetectRenderer(window.innerWidth, window.innerHeight, {
+    this.renderer = PIXI.autoDetectRenderer(window.innerWidth/1.5, window.innerHeight, {
       view: document.getElementById("viewport"),
       backgroundColor: 0xFFFFFF
     });

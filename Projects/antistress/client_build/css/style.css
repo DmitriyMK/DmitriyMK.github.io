@@ -756,14 +756,6 @@ body {
     position: relative;
     overflow: hidden;
 }
-#viewport {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    -webkit-transform: translate(-50%, -5%);
-        -ms-transform: translate(-50%, -5%);
-            transform: translate(-50%, -5%);
-}
 .remodal-first {
     padding-top: 95px;
     text-align: center;
