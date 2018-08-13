@@ -2,17 +2,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
 }
 
-audio, canvas, progress, video {
-  display: inline-block;
-  vertical-align: baseline;
-}
-
-audio:not([controls]) {
-  display: none;
-  height: 0;
-}
-
-
 a {
   background-color: transparent;
   &:active, &:hover {
@@ -83,8 +72,6 @@ input {
   }
   line-height: normal;
   &[type="checkbox"], &[type="radio"] {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
     box-sizing: border-box;
     padding: 0;
   }
@@ -94,9 +81,6 @@ input {
     }
   }
   &[type="search"] {
-    -webkit-appearance: textfield;
-    -webkit-box-sizing: content-box;
-    -moz-box-sizing: content-box;
     box-sizing: content-box;
     &::-webkit-search-cancel-button, &::-webkit-search-decoration {
       -webkit-appearance: none;
@@ -171,10 +155,6 @@ img {
 }
 
 
-[role="button"] {
-  cursor: pointer;
-}
-
 .container, .container-fluid {
   margin-right: auto;
   margin-left: auto;
@@ -198,24 +178,4 @@ img {
   .container {
     width: 1170px;
   }
-}
-
-
-.clearfix {
-  &:before, &:after {
-    content: " ";
-    display: table;
-  }
-}
-
-.container {
-  &:before, &:after {
-    content: " ";
-    display: table;
-  }
-}
-
-
-.clearfix:after, .container:after, .container-fluid:after, .row:after {
-  clear: both;
 }
