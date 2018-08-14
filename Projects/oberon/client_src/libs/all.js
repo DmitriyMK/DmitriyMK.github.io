@@ -37,6 +37,15 @@ $(document).ready(function() {
   });
 
 
+  $('[data-fancybox]').fancybox({
+    arrows: true,
+    dots: true,
+    focusOnSelect: true,
+    infinite: false,
+    fade: true,
+  });
+
+
 /*  $(".js-video-button").modalVideo({
     youtube: {
       autoplay: 1,

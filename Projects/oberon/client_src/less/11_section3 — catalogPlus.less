@@ -16,3 +16,64 @@
 @media @desktop-xll {
 	
 }
+
+.catalogPlus {
+	position: relative;
+	overflow: hidden;
+	box-shadow: 8.485px 8.485px 15.81px 1.19px rgba(0, 0, 0, 0.27);
+
+	&:before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		min-height: 270px;
+		background-image: -moz-linear-gradient( 90deg, rgb(204,204,204) 0%, rgba(225,229,235,0) 100%);
+		background-image: -webkit-linear-gradient( 90deg, rgb(204,204,204) 0%, rgba(225,229,235,0) 100%);
+		background-image: -ms-linear-gradient( 90deg, rgb(204,204,204) 0%, rgba(225,229,235,0) 100%);
+	}
+	
+	&__box {
+		margin-top: 80px;
+		display: flex;
+		justify-content: center;
+		height: 560px;
+		overflow: hidden;
+	}
+
+	&__link {
+		display: block;
+		position: relative;
+		outline: none!important;
+		transition: all .3s linear;
+
+		&:before {
+			content: '';
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			width: 95%;
+			height: 95%;
+			border: 2px solid #969596;
+			transition: all .3s linear;
+			
+		}
+
+		&:hover {
+			transform: scale(1.05);
+			&:before {
+				width: 85%;
+				height: 85%;
+			}
+		}
+	}
+
+	&__img {
+		display: block;
+		width: 380px;
+		height: auto;
+	}
+
+}
