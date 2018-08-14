@@ -842,6 +842,7 @@ section {
     color: #fff;
 }
 .catalogPlus {
+    padding-bottom: 0;
     position: relative;
     overflow: hidden;
     -webkit-box-shadow: 8.485px 8.485px 15.81px 1.19px rgba(0, 0, 0, 0.27);
@@ -867,6 +868,8 @@ section {
     justify-content: center;
     height: 560px;
     overflow: hidden;
+    -webkit-box-shadow: 8.485px 8.485px 15.81px 1.19px rgba(0, 0, 0, 0.27);
+            box-shadow: 8.485px 8.485px 15.81px 1.19px rgba(0, 0, 0, 0.27);
 }
 .catalogPlus__link {
     display: block;
@@ -891,19 +894,63 @@ section {
          -o-transition: all 0.3s linear;
             transition: all 0.3s linear;
 }
-.catalogPlus__link:hover {
-    -webkit-transform: scale(1.05);
-        -ms-transform: scale(1.05);
-            transform: scale(1.05);
-}
 .catalogPlus__link:hover:before {
-    width: 85%;
-    height: 85%;
+    width: 90%;
+    height: 90%;
 }
 .catalogPlus__img {
     display: block;
     width: 380px;
     height: auto;
+}
+.brand {
+    background: url(../images/brands__back.jpg) no-repeat center / cover;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.brand__list {
+    padding-top: 70px;
+}
+.brand__item {
+    position: relative;
+    list-style-type: none;
+    margin-right: 15px;
+    background: #fff;
+}
+.brand__wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 100px;
+    outline: none!important;
+    cursor: pointer;
+}
+.brand__img {
+    display: block;
+    max-width: 150px;
+    height: auto;
+    margin: auto;
+}
+.brandHistory {
+    text-align: left;
+}
+.brandHistory__title {
+    padding-bottom: 15px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 35px;
+    font-weight: 400;
+    color: #007581;
+}
+.brandHistory__text {
+    padding-bottom: 15px;
+    color: #616d74;
+}
+.brandHistory__img {
+    display: block;
+    margin: auto;
 }
 .remodal-first {
     padding-top: 95px;
@@ -949,9 +996,9 @@ section {
     margin: 30px 0 0 15px;
 }
 .remodal-close {
-    top: 12px !important;
-    right: 15px !important;
-    color: #fff !important;
+    top: 5px !important;
+    right: 5px !important;
+    color: #df3e51 !important;
     font-weight: 900;
 }
 @media only screen and (min-width: 320px) {
@@ -1049,6 +1096,9 @@ label {
 }
 .formBox .btn:hover {
     color: #000;
+}
+.brandBox {
+    max-width: 550px;
 }
 .video {
     max-width: 780px;
@@ -1224,45 +1274,49 @@ label {
     z-index: 10;
 }
 .slick-prev {
-    top: 152px;
-    left: -50px;
+    left: -70px;
+    width: 45px;
+    height: 45px;
+    background: url('../images/icons/sprites.png') -279px -79px;
 }
 .slick-next {
-    top: 213px;
-    left: -50px;
+    right: -50px;
+    width: 45px;
+    height: 45px;
+    background: url('../images/icons/sprites.png') -279px -144px;
 }
 .slick-prev:before, .slick-next:before {
-    width: 0;
-    height: 0;
+    -webkit-box-shadow: 0 15px 16.74px 1.26px rgba(0, 0, 0, 0.27);
+            box-shadow: 0 15px 16.74px 1.26px rgba(0, 0, 0, 0.27);
 }
 .slick-dots {
     display: inline-block !important;
-    left: -48px;
-    top: 50%;
-    -webkit-transform: translateY(17%);
-        -ms-transform: translateY(17%);
-            transform: translateY(17%);
+    left: 40px;
+    bottom: -40px;
     -webkit-border-image: transparent;
          -o-border-image: transparent;
             border-image: transparent;
 }
 .slick-dots li {
-    margin: 4px 8px;
+    margin: 4px 10px;
     margin-bottom: 10px;
     width: 13px;
     height: 13px;
 }
 .slick-dots li button {
-    background: #fff;
+    background: #fff200;
     display: block;
-    height: 13px;
-    width: 13px;
+    height: 5px;
+    width: 5px;
     font-size: 0;
     color: #fff;
-    border-radius: 50%;
+    border: 2px solid transparent;
     -webkit-box-shadow: 0 5px 7px 1px rgba(0, 45, 86, 0.15);
             box-shadow: 0 5px 7px 1px rgba(0, 45, 86, 0.15);
     opacity: 0.75;
+    -webkit-transition: all 0.3s linear;
+         -o-transition: all 0.3s linear;
+            transition: all 0.3s linear;
 }
 .slick-dots li button:before {
     font-size: 0;
@@ -1270,9 +1324,12 @@ label {
     display: none;
 }
 .slick-dots li.slick-active button {
-    background: #fb0035;
-    border-radius: 50%;
+    color: transparent;
     opacity: 1;
+    border: 2px solid #fff200;
+    -webkit-transform: scale(2);
+        -ms-transform: scale(2);
+            transform: scale(2);
 }
 @media only screen and (min-width: 768px) {
     .slick-dots li.slick-active button {
@@ -1281,6 +1338,10 @@ label {
 }
 .slick-current, .slick-slide, .slick-active {
     outline: none!important;
+}
+.slick-dots li.slick-active button {
+    background: transparent;
+    color: transparent;
 }
 .bg-utube {
     width: 76px;

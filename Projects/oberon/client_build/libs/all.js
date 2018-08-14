@@ -45,6 +45,13 @@ $(document).ready(function() {
     fade: true,
   });
 
+  $('.brand__list').slick({
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    arrows: true,
+    dots: false,
+  });
+
 
 /*  $(".js-video-button").modalVideo({
     youtube: {
