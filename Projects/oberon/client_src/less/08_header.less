@@ -1,0 +1,174 @@
+@media @mobile {
+
+}
+@media @tablet {
+
+}
+@media @desktop {
+
+}
+@media @desktop-xl {
+	
+}
+@media @desktop-xl-2 {
+
+}
+@media @desktop-xll {
+	
+}
+
+
+.header {
+	overflow: hidden;
+
+	.container {
+		position: relative;
+		&:before {
+			content: '';
+			position: absolute;
+			top: 0;
+			right: -990px;
+			height: 100%;
+			width: 1000px;
+			background: #000;
+		}
+	}
+
+	&__box {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		position: relative;
+	}
+
+	&__logo {
+		flex-basis: 350px;
+	}
+
+	&__nav {
+		flex-basis: 520px;
+	}
+
+	.nav__list {
+		display: flex;
+		align-items: center;
+	}
+
+	.nav__item {
+		list-style-type: none;		
+	}
+
+	.nav__link {
+		display: block;
+		padding: 7px 11px;
+		line-height: 60px;
+		font-size: 19.56px;
+		transition: .3s linear background-color;
+		&:hover {
+			background: @yellow;
+		}
+	}
+
+	&__time {
+		font-weight: 500;
+	}
+
+	&__btn {
+		position: relative;
+		width: 100px;
+		height: 74px;
+		background: @yellow;
+		overflow: hidden;
+
+		&:before {
+			content: '';
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			.bg-phone
+		}
+
+		&:after {
+			content: "";
+			display: block;
+			position: absolute;
+			top: 0;
+			left: -4.5em;
+			height: 100%;
+			width: 3em;
+			transform: skewX(-45deg) translateX(0);
+			transition: none;
+			background-color: rgba(255,255,255,0.5);
+		}
+
+		&:hover {
+			color: #fff;
+			&:after {
+				transform: skewX(-45deg) translateX(13.5em);
+				transition: all .5s linear;
+			}
+		}
+	}
+}
+
+.headerMain {
+	padding-top: 285px;
+	background: url(../images/hero__back.jpg)no-repeat center/cover;
+	text-align: center;
+	font-weight: 700;
+
+	&__title {
+		font-size: 48px;
+		color: #fff;
+
+		strong {
+			font-size: 122px;
+			color: @yellow;
+		}
+	}
+
+	&__address {
+		padding-top: 40px;
+		font-size: 50px;
+		color: @yellow;
+	}
+
+	.scrollMore {
+		position: relative;
+		display: inline-block;
+		margin: 180px auto -5px auto;
+
+		width: 76px;
+		height: 100px;
+		background: @yellow;
+		text-align: center;
+
+		&:before {
+			content: '';
+			position: absolute;
+			top: 20px;
+			left: 50%;
+			transform: translateX(-50%);
+			.bg-arr_down
+		}
+	}
+}
+
+
+/* #fixedTopMenu.fixed{
+	position: fixed;
+	padding: 0 15px;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background: #131313;
+	z-index: 3000;
+	animation: smoothScroll 1s forwards;
+	&:after {
+		display: none;
+	}
+}
+*/
+
+
