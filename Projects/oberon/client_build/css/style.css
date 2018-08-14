@@ -937,13 +937,6 @@ section {
 .brandHistory {
     text-align: left;
 }
-.brandHistory__title {
-    padding-bottom: 15px;
-    font-family: 'Roboto', sans-serif;
-    font-size: 35px;
-    font-weight: 400;
-    color: #007581;
-}
 .brandHistory__text {
     padding-bottom: 15px;
     color: #616d74;
@@ -951,6 +944,7 @@ section {
 .brandHistory__img {
     display: block;
     margin: auto;
+    margin-bottom: 30px;
 }
 .remodal-first {
     padding-top: 95px;
