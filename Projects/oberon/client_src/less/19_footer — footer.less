@@ -17,3 +17,34 @@
 	
 }
 
+.footer {
+	background: #000;
+	overflow: hidden;
+	&__box {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__logo {
+		display: flex;
+		align-items: center;
+		font-weight: 700;
+		color: #fefefe;
+		&-img {
+			background: @yellow;
+		}
+	}
+	&__desc {
+		margin-left: 30px;
+		font-weight: 300;
+	}
+	
+	.agency {
+		font-weight: 300;
+		color: #ebf4ff;
+		img {
+			margin-top: 7px;
+		}
+	}
+}

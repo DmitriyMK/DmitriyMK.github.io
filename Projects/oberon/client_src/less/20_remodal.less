@@ -32,13 +32,11 @@
     }
 
     .remodal-close {
-
         @media @mobile {
             color: #000 !important;
         }
         @media @tablet {
             color: #fff !important;
-
         }
     }
     &:before {
@@ -61,48 +59,27 @@
 
 
 .remodal-close { 
-    top: 5px !important;
-    right: 5px !important;
+    top: 45px !important;
+    right: 50px !important;
     color: @red !important;
-    font-weight: 900;
+    z-index: 10;
     @media @mobile {
-       width: 10px !important;
-       height: 16px !important;
-   }
-   @media @tablet { 
-    width: 35px !important;
-    height: 30px !important;
-}
-&:before {
-    @media @mobile {
-        font-size: 30px !important;
-        top: -7px !important;
-        left: -12px !important;
+        width: 10px !important;
+        height: 16px !important;
     }
     @media @tablet { 
-        font-size: 50px !important;
-        top: -0px !important;
-        left: -0px !important;
+        width: 35px !important;
+        height: 30px !important;
     }
-}
+    &:before {
+      font-size: 50px;  
+  }
 }
 
 .remodal-common {
-
-    -webkit-border-radius: 15px;
-    -moz-border-radius: 15px;
     border-radius: 15px;
     background: #fff;
-
-    //  background: url('@{dir}product-1.png') no-repeat top center;  
-    // background-position: 50% 50%;
-
-    padding: 30px 40px;
-
-    
-    // background: #3d4f4a;
-    // border: 2px solid #fff;
-    
+    padding: 30px 40px;   
 
     @media @mobile {
         max-width: 500px !important;
@@ -166,41 +143,33 @@ label {
 
 
 
-
-
 .formBox {
     position: relative;
-    background: #fff;
     padding: 30px 15px;
-    max-width: 400px;
+    max-width: 420px;
     margin: 20px auto;
     text-align: center;
-    &__title {
-        
-    }
-    &__text {
-        
-    }
-
-    .form__line {
-        width: 100%;
-        padding-left: 15px;
-        padding-bottom: 7px;
-        border: none!important;     
-        outline: none;
-        font-size: 18px;
-    }
-    .btn {
-        margin: 15px 0 5px 0;
-        color: #fff;
-        &:hover {
-            color: #000;
-        }
-    } 
 }
 
 .brandBox {
+    background: #fff;
     max-width: 550px;
+
+    .remodal-close { 
+        top: 35px !important;
+        right: 5px !important;
+        color: @red !important;
+        font-weight: 900;
+        z-index: 10;
+        @media @mobile {
+         width: 10px !important;
+         height: 16px !important;
+     }
+     @media @tablet { 
+        width: 35px !important;
+        height: 30px !important;
+    }
+}
 } 
 
 .video {

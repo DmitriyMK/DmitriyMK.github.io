@@ -1,0 +1,98 @@
+@media @mobile {
+
+}
+@media @tablet {
+
+}
+@media @desktop {
+
+}
+@media @desktop-xl {
+	
+}
+@media @desktop-xl-2 {
+
+}
+@media @desktop-xll {
+	
+}
+
+.contacts {
+	padding-top: 0;
+	padding-bottom: 0;
+	overflow: hidden;
+	position: relative;
+
+	.map {
+		width: 100%;
+		height: 500px; 
+		@media @tablet {
+			height: 600px; 
+		}
+	}
+
+	.container {
+		position: relative;
+		z-index: 10;
+	}
+
+	&__box {
+		position: absolute;
+		padding-top: 96px;
+		padding-left: 50px;
+		padding-right: 110px;
+		top: -600px;
+		right: 0;
+		width: 440px;
+		height: 600px;
+		background: #1b1a1a;
+		color: #fff;
+	}
+
+	li {
+		list-style-type: none;
+	}
+
+	.box__title {
+		padding-bottom: 10px;
+		font-size: 30px;
+		font-weight: 700;
+	}
+	.address {
+		margin-bottom: 10px;
+	}
+	.contacts__list {
+		padding-left: 15px;
+	}
+	.contacts__item {
+		padding-bottom: 6px;
+	}
+	.mail {
+		margin-top: 25px;
+		margin-bottom: 15px;
+	}
+	.social__list {
+		display: flex;
+		justify-content: space-between;
+	}
+	.ask {
+		padding-top: 30px;
+		padding-bottom: 10px;
+		color: #fff;
+		font-size: 25px;
+		font-weight: 700;
+	}
+	.text {
+		padding-left: 20px;
+	}
+
+	.btn {
+		background: @yellow;
+		font-weight: 700;
+		color: #000;
+		transition: background-color .3s linear;
+		&:hover {
+			background: darken(@yellow, 20%);
+		}
+	}
+}

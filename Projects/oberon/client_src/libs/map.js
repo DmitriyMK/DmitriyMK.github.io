@@ -1,26 +1,18 @@
 var markersData = [{
-        lat: 50.4427651,
-        lng: 30.5195291,
-        name: "Great Power",
-        address: "г. Киев, Крещатик, 45"
-    },
-
-    {
-        lat: 49.9915345,
-        lng: 36.2334419,
-        name: "Great Power",
-        address: "г. Харьков, ул. Пушкинская 1"
-    }
-];
+    lat: 50.506204,
+    lng: 30.4166926,
+    name: "Ламінат паркет & decor",
+    address: "Украина, г. Киев,  просп. Правды, 80"
+}];
 
 var map, infoWindow;
 
 function initMap() {
-    var centerLatLng = new google.maps.LatLng(49.9915345, 36.2334419);
+    var centerLatLng = new google.maps.LatLng(50.506204, 30.4166926);
 
     var mapOptions = {
         center: centerLatLng,
-        zoom: 17,
+        zoom: 15,
 
         mapTypeControl: true,
 
@@ -34,158 +26,189 @@ function initMap() {
             style: google.maps.NavigationControlStyle.SMALL
         },
         mapTypeId: google.maps.MapTypeId.ROADMAP,
+
         styles:
 
-
             [{
-            "featureType": "landscape",
+            "featureType": "all",
+            "elementType": "labels.text.fill",
             "stylers": [{
-                "visibility": "simplified"
+                "saturation": 36
             }, {
-                "color": "#9debff"
+                "color": "#ffffff"
             }, {
-                "weight": 0.1
+                "lightness": 40
             }]
         }, {
-            "featureType": "water",
-            "stylers": [{
-                "visibility": "simplified"
-            }, {
-                "color": "#ebebeb"
-            }]
-        }, {
-            "featureType": "road.arterial",
-            "elementType": "geometry",
+            "featureType": "all",
+            "elementType": "labels.text.stroke",
             "stylers": [{
                 "visibility": "on"
             }, {
-                "color": "#51dbff"
-            }]
-        }, {
-            "featureType": "poi.park",
-            "elementType": "geometry.fill",
-            "stylers": [{
-                "visibility": "on"
+                "color": "#000000"
             }, {
-                "color": "#51dbff"
+                "lightness": 16
             }]
         }, {
-            "featureType": "poi"
-        }, {
-            "featureType": "transit.line",
-            "stylers": [{
-                "color": "#ff4e80"
-            }, {
-                "visibility": "off"
-            }]
-        }, {
-            "featureType": "road",
-            "elementType": "geometry.stroke",
-            "stylers": [{
-                "visibility": "on"
-            }, {
-                "weight": 1.5
-            }, {
-                "color": "#51dbff"
-            }]
-        }, {
-            "featureType": "road.arterial",
-            "elementType": "geometry",
-            "stylers": [{
-                "visibility": "simplified"
-            }, {
-                "color": "#51dbNaN"
-            }]
-        }, {
-            "featureType": "road.highway",
-            "elementType": "geometry",
-            "stylers": [{
-                "visibility": "simplified"
-            }, {
-                "color": "#51dbff"
-            }]
-        }, {
-            "featureType": "poi.business",
-            "stylers": [{
-                "color": "#9debff"
-            }, {
-                "visibility": "off"
-            }]
-        }, {}, {
-            "featureType": "poi.government",
-            "stylers": [{
-                "visibility": "off"
-            }]
-        }, {
-            "featureType": "poi.school",
+            "featureType": "all",
+            "elementType": "labels.icon",
             "stylers": [{
                 "visibility": "off"
             }]
         }, {
             "featureType": "administrative",
-            "stylers": [{
-                "visibility": "on"
-            }]
-        }, {
-            "featureType": "poi.medical",
-            "stylers": [{
-                "visibility": "off"
-            }]
-        }, {
-            "featureType": "poi.attraction",
-            "elementType": "geometry",
-            "stylers": [{
-                "visibility": "on"
-            }, {
-                "color": "#51dbff"
-            }]
-        }, {
-            "featureType": "poi.place_of_worship",
-            "stylers": [{
-                "visibility": "off"
-            }]
-        }, {
-            "featureType": "poi.sports_complex",
-            "stylers": [{
-                "visibility": "off"
-            }]
-        }, {}, {
-            "featureType": "road.arterial",
-            "elementType": "labels.text.stroke",
+            "elementType": "geometry.fill",
             "stylers": [{
                 "color": "#000000"
             }, {
-                "visibility": "off"
+                "lightness": 20
             }]
         }, {
-            "featureType": "road.highway",
+            "featureType": "administrative",
+            "elementType": "geometry.stroke",
+            "stylers": [{
+                "color": "#000000"
+            }, {
+                "lightness": 17
+            }, {
+                "weight": 1.2
+            }]
+        }, {
+            "featureType": "administrative.province",
             "elementType": "labels.text",
             "stylers": [{
                 "visibility": "off"
             }]
         }, {
-            "featureType": "road.highway.controlled_access",
+            "featureType": "administrative.locality",
+            "elementType": "labels.text.fill",
+            "stylers": [{
+                "color": "#ffffff"
+            }, {
+                "visibility": "on"
+            }]
+        }, {
+            "featureType": "administrative.locality",
+            "elementType": "labels.text.stroke",
             "stylers": [{
                 "visibility": "off"
             }]
         }, {
-            "featureType": "road"
+            "featureType": "administrative.neighborhood",
+            "elementType": "all",
+            "stylers": [{
+                "visibility": "off"
+            }]
+        }, {
+            "featureType": "administrative.neighborhood",
+            "elementType": "geometry.fill",
+            "stylers": [{
+                "visibility": "off"
+            }]
+        }, {
+            "featureType": "administrative.neighborhood",
+            "elementType": "labels",
+            "stylers": [{
+                "visibility": "off"
+            }]
+        }, {
+            "featureType": "administrative.land_parcel",
+            "elementType": "geometry",
+            "stylers": [{
+                "visibility": "off"
+            }]
+        }, {
+            "featureType": "landscape",
+            "elementType": "geometry",
+            "stylers": [{
+                "color": "#000000"
+            }, {
+                "lightness": 20
+            }]
+        }, {
+            "featureType": "poi",
+            "elementType": "geometry",
+            "stylers": [{
+                "color": "#000000"
+            }, {
+                "lightness": 21
+            }]
+        }, {
+            "featureType": "road.highway",
+            "elementType": "geometry.fill",
+            "stylers": [{
+                "lightness": 17
+            }, {
+                "color": "#d6c400"
+            }]
+        }, {
+            "featureType": "road.highway",
+            "elementType": "geometry.stroke",
+            "stylers": [{
+                "color": "#000000"
+            }, {
+                "lightness": 29
+            }, {
+                "weight": 0.2
+            }]
+        }, {
+            "featureType": "road.arterial",
+            "elementType": "geometry",
+            "stylers": [{
+                "lightness": 18
+            }, {
+                "color": "#a29100"
+            }]
+        }, {
+            "featureType": "road.arterial",
+            "elementType": "geometry.fill",
+            "stylers": [{
+                "visibility": "on"
+            }, {
+                "color": "#ccb300"
+            }]
+        }, {
+            "featureType": "road.arterial",
+            "elementType": "labels.text",
+            "stylers": [{
+                "visibility": "on"
+            }]
+        }, {
+            "featureType": "road.local",
+            "elementType": "geometry",
+            "stylers": [{
+                "lightness": 16
+            }, {
+                "color": "#5a5300"
+            }]
+        }, {
+            "featureType": "transit",
+            "elementType": "geometry",
+            "stylers": [{
+                "color": "#000000"
+            }, {
+                "lightness": 19
+            }]
+        }, {
+            "featureType": "water",
+            "elementType": "all",
+            "stylers": [{
+                "visibility": "off"
+            }]
+        }, {
+            "featureType": "water",
+            "elementType": "geometry",
+            "stylers": [{
+                "color": "#fbd216"
+            }, {
+                "lightness": 17
+            }]
         }]
-
 
     };
 
-
-
     map = new google.maps.Map(document.getElementById("map"), mapOptions);
 
-    infoWindow = new google.maps.InfoWindow();
-
-    google.maps.event.addListener(map, "click", function() {
-        infoWindow.close();
-    });
-
-    // Определяем границы видимой области карты в соответствии с положением маркеров
     var bounds = new google.maps.LatLngBounds();
 
     for (var i = 0; i < markersData.length; i++) {
@@ -196,15 +219,12 @@ function initMap() {
 
         addMarker(latLng, name, address);
 
-        // Расширяем границы нашей видимой области, добавив координаты нашего текущего маркера
         bounds.extend(latLng);
     }
 
-    // Автоматически масштабируем карту так, чтобы все маркеры были в видимой области карты
-    map.fitBounds(bounds);
+    // map.fitBounds(bounds);
 
 }
-google.maps.event.addDomListener(window, "load", initMap);
 
 function addMarker(latLng, name, address) {
 
@@ -217,15 +237,5 @@ function addMarker(latLng, name, address) {
         title: name
     });
 
-    google.maps.event.addListener(marker, "click", function() {
 
-        var contentString = '<div class="infowindow">' +
-            '<h3>' + name + '</h3>' +
-            '<p>' + address + '</p>' +
-            '</div>';
-
-        infoWindow.setContent(contentString);
-        infoWindow.open(map, marker);
-
-    });
 }
