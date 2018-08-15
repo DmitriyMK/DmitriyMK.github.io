@@ -41,7 +41,7 @@ abbr[title] {
     border-bottom: 1px dotted;
 }
 b, strong {
-    font-weight: bold;
+    font-weight: 700;
 }
 dfn {
     font-style: italic;
@@ -499,6 +499,25 @@ button {
     cursor: pointer;
     outline: none;
 }
+.btn {
+    display: block;
+    padding: 15.5px 25px;
+    margin-top: 15px;
+    color: #fff;
+    background: #000;
+    border: none;
+    -webkit-box-shadow: 8.485px 8.485px 15.81px 1.19px rgba(0, 0, 0, 0.27);
+            box-shadow: 8.485px 8.485px 15.81px 1.19px rgba(0, 0, 0, 0.27);
+    -webkit-transition: -webkit-box-shadow 0.3s linear;
+            transition: -webkit-box-shadow 0.3s linear;
+         -o-transition:         box-shadow 0.3s linear;
+            transition:         box-shadow 0.3s linear;
+            transition:         box-shadow 0.3s linear, -webkit-box-shadow 0.3s linear;
+}
+.btn:hover {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+}
 address {
     font-style: normal;
 }
@@ -583,13 +602,9 @@ section {
     justify-content: space-between;
     position: relative;
 }
-.header__logo {
-    -ms-flex-preferred-size: 350px;
-    flex-basis: 350px;
-}
 .header__nav {
-    -ms-flex-preferred-size: 520px;
-    flex-basis: 520px;
+    -ms-flex-preferred-size: 73%;
+    flex-basis: 73%;
 }
 .header .nav__list {
     display: -webkit-box;
@@ -664,28 +679,33 @@ section {
             transition: all 0.5s linear;
 }
 .headerMain {
-    padding-top: 285px;
+    padding-top: 275px;
     background: url(../images/hero__back.jpg) no-repeat center / cover;
     text-align: center;
     font-weight: 700;
+    color: #fff;
+}
+.headerMain__logo {
+    margin-bottom: 40px;
+}
+.headerMain__logo img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: auto;
 }
 .headerMain__title {
     font-size: 48px;
-    color: #fff;
-}
-.headerMain__title strong {
-    font-size: 122px;
-    color: #fff200;
 }
 .headerMain__address {
-    padding-top: 40px;
-    font-size: 50px;
-    color: #fff200;
+    padding-top: 10px;
+    font-size: 53px;
+    font-family: 'Roboto', sans-serif;
 }
 .headerMain .scrollMore {
     position: relative;
     display: inline-block;
-    margin: 180px auto -5px auto;
+    margin: 230px auto -5px auto;
     width: 76px;
     height: 100px;
     background: #fff200;
@@ -908,14 +928,22 @@ section {
     padding-top: 100px;
     padding-bottom: 100px;
 }
+.brand__text {
+    margin-top: 70px;
+    text-align: center;
+    font-size: 26px;
+    font-weight: 700;
+}
 .brand__list {
-    padding-top: 70px;
+    margin-top: 40px;
 }
 .brand__item {
     position: relative;
     list-style-type: none;
     margin-right: 15px;
     background: #fff;
+    -webkit-clip-path: polygon(10% 0, 90% 0, 99% 10%, 100% 87%, 90% 100%, 10% 100%, 1% 85%, 0 12%);
+            clip-path: polygon(10% 0, 90% 0, 99% 10%, 100% 87%, 90% 100%, 10% 100%, 1% 85%, 0 12%);
 }
 .brand__wrap {
     display: -webkit-box;
@@ -925,14 +953,15 @@ section {
     -ms-flex-align: center;
     align-items: center;
     height: 100px;
+    max-width: 160px;
+    margin: auto;
     outline: none!important;
     cursor: pointer;
 }
 .brand__img {
     display: block;
-    max-width: 150px;
+    max-width: 100%;
     height: auto;
-    margin: auto;
 }
 .brandHistory {
     text-align: left;
@@ -945,6 +974,135 @@ section {
     display: block;
     margin: auto;
     margin-bottom: 30px;
+}
+.brandHistory ul {
+    list-style-position: inside;
+}
+.brandHistory li {
+    padding-bottom: 5px;
+}
+.brandHistory strong {
+    font-weight: 700;
+}
+.master {
+    position: relative;
+    background: url(../images/form__back.jpg) no-repeat center / cover;
+    z-index: 1;
+    overflow: hidden;
+}
+.master:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    width: 95%;
+    height: 90%;
+    border: 4px solid #fff200;
+    z-index: -1;
+}
+.master .container {
+    position: relative;
+}
+.master .container:before {
+    content: '';
+    position: absolute;
+    top: -90px;
+    right: 20px;
+    width: 404px;
+    height: 601px;
+    background: url(../images/wood__back.jpg);
+}
+.master .container:after {
+    content: '';
+    position: absolute;
+    top: -45px;
+    right: 370px;
+    width: 314px;
+    height: 561px;
+    background: url(../images/man.png);
+}
+.master__box {
+    padding: 40px 0 0 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+.master__title {
+    margin-top: 35px;
+    padding-left: 10px;
+    position: relative;
+    font-size: 27px;
+    font-weight: 700;
+    z-index: 1;
+}
+.master__title:before {
+    content: '';
+    position: absolute;
+    top: -34px;
+    left: -170px;
+    width: 695px;
+    height: 75px;
+    background: url(../images/roulette.png);
+    z-index: -1;
+}
+.master__text {
+    position: relative;
+    padding-top: 35px;
+    max-width: 450px;
+    font-size: 25px;
+    color: #fff;
+}
+.master__text:after {
+    content: '';
+    position: absolute;
+    bottom: -55px;
+    left: 0;
+    width: 521px;
+    height: 19px;
+    background: url(../images/decor-line.png);
+}
+.master strong {
+    display: block;
+    font-weight: 700;
+}
+.form {
+    position: relative;
+    padding: 40px;
+    margin-right: 40px;
+    max-width: 360px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    text-align: center;
+    background: url(../images/angle__form.png) no-repeat;
+    -webkit-box-shadow: 8.485px 8.485px 15.81px 1.19px rgba(0, 0, 0, 0.4);
+            box-shadow: 8.485px 8.485px 15.81px 1.19px rgba(0, 0, 0, 0.4);
+}
+.form__title {
+    font-size: 26px;
+    font-weight: 700;
+}
+.form__text {
+    padding: 15px 0 25px 0;
+}
+.form__line {
+    width: 265px;
+    padding: 15.5px 25px;
+    margin-bottom: 10px;
+    border: none;
+    -webkit-box-shadow: 8.485px 8.485px 15.81px 1.19px rgba(0, 0, 0, 0.27);
+            box-shadow: 8.485px 8.485px 15.81px 1.19px rgba(0, 0, 0, 0.27);
+    outline: none;
 }
 .remodal-first {
     padding-top: 95px;

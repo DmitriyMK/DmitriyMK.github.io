@@ -41,12 +41,8 @@
 		position: relative;
 	}
 
-	&__logo {
-		flex-basis: 350px;
-	}
-
 	&__nav {
-		flex-basis: 520px;
+		flex-basis: 73%;
 	}
 
 	.nav__list {
@@ -113,31 +109,36 @@
 }
 
 .headerMain {
-	padding-top: 285px;
+	padding-top: 275px;
 	background: url(../images/hero__back.jpg)no-repeat center/cover;
 	text-align: center;
 	font-weight: 700;
+	color: #fff;
 
-	&__title {
-		font-size: 48px;
-		color: #fff;
-
-		strong {
-			font-size: 122px;
-			color: @yellow;
+	&__logo {
+		margin-bottom: 40px;
+		img {
+			display: block;
+			max-width: 100%;
+			height: auto;
+			margin: auto;
 		}
 	}
 
+	&__title {
+		font-size: 48px;
+	}
+
 	&__address {
-		padding-top: 40px;
-		font-size: 50px;
-		color: @yellow;
+		padding-top: 10px;
+		font-size: 53px;
+		font-family: @ff2;
 	}
 
 	.scrollMore {
 		position: relative;
 		display: inline-block;
-		margin: 180px auto -5px auto;
+		margin: 230px auto -5px auto;
 
 		width: 76px;
 		height: 100px;

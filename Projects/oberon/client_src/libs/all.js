@@ -50,6 +50,7 @@ $(document).ready(function() {
     slidesToScroll: 1,
     arrows: true,
     dots: false,
+    lazyLoad: 'ondemand',
   });
 
 
