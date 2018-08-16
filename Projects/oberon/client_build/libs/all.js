@@ -57,6 +57,7 @@ $(document).ready(function() {
   $('.product__slider-color').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
+    fade: true,
     arrows: false,
     dots: true,
   });

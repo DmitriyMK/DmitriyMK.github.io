@@ -910,6 +910,15 @@ section {
     height: 690px;
     background: url(../images/decor-left.png);
 }
+.catalog:after {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: 0;
+    width: 100%;
+    -webkit-box-shadow: 8.485px 8.485px 15.81px 1.19px #000;
+            box-shadow: 8.485px 8.485px 15.81px 1.19px #000;
+}
 .catalog__article {
     position: relative;
     z-index: 10;
