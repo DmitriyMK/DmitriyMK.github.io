@@ -47,12 +47,18 @@ $(document).ready(function() {
   });
 
 
-  $(.'.product__slider').slick({
-    slidesToShow: 1,
+  $('.product__slider').slick({
+    slidesToShow: 3,
     slidesToScroll: 1,
     arrows: true,
-    dots: false,
-    lazyLoad: 'ondemand',
+    dots: true,
+  });
+
+  $('.product__slider-color').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    dots: true,
   });
 
 

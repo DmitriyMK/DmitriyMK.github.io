@@ -914,6 +914,18 @@ section {
     position: relative;
     z-index: 10;
 }
+.catalog .slick-dots li:nth-child(2) button:before {
+    background: #a17e68;
+}
+.catalog .slick-dots li:nth-child(3) button:before {
+    background: #bcaea2;
+}
+.catalog .slick-dots li:nth-child(4) button:before {
+    background: #d0cac0;
+}
+.catalog .slick-dots li:nth-child(5) button:before {
+    background: #beac93;
+}
 .catalogPlus {
     padding-bottom: 0;
     position: relative;
