@@ -919,7 +919,7 @@ section {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    height: 560px;
+    height: 550px;
     overflow: hidden;
     -webkit-box-shadow: 8.485px 8.485px 15.81px 1.19px rgba(0, 0, 0, 0.27);
             box-shadow: 8.485px 8.485px 15.81px 1.19px rgba(0, 0, 0, 0.27);
@@ -971,12 +971,8 @@ section {
     margin-top: 40px;
 }
 .brand__item {
-    position: relative;
     list-style-type: none;
     margin-right: 15px;
-    background: #fff;
-    -webkit-clip-path: polygon(10% 0, 90% 0, 99% 10%, 100% 87%, 90% 100%, 10% 100%, 1% 85%, 0 12%);
-            clip-path: polygon(10% 0, 90% 0, 99% 10%, 100% 87%, 90% 100%, 10% 100%, 1% 85%, 0 12%);
 }
 .brand__wrap {
     display: -webkit-box;
@@ -1418,13 +1414,15 @@ section {
     height: auto;
 }
 .contacts .ask {
-    padding-top: 30px;
+    padding-top: 15px;
+    padding-bottom: 15px;
     color: #fff;
     font-size: 25px;
     font-weight: 700;
 }
 .contacts .text {
     padding-left: 20px;
+    padding-bottom: 10px;
 }
 .contacts .btn {
     background: #fff200;
@@ -1929,6 +1927,127 @@ label {
     width: 67px;
     height: 66px;
     background: url('../images/icons/css_sprites.png') -295px -49px;
+}
+/* sprite for brand */
+.bg-gumi {
+    width: 160px;
+    height: 90px;
+    background: url('../images/brandFlag/css_sprites.png') -160px 0;
+}
+.bg-home4u {
+    width: 160px;
+    height: 90px;
+    background: url('../images/brandFlag/css_sprites.png') 0 -360px;
+}
+.bg-kronoswiss {
+    width: 160px;
+    height: 90px;
+    background: url('../images/brandFlag/css_sprites.png') 0 -90px;
+}
+.bg-kronotex {
+    width: 160px;
+    height: 90px;
+    background: url('../images/brandFlag/css_sprites.png') -160px -90px;
+}
+.bg-lesnayakrona {
+    width: 160px;
+    height: 90px;
+    background: url('../images/brandFlag/css_sprites.png') 0 -180px;
+}
+.bg-mazonetto {
+    width: 160px;
+    height: 90px;
+    background: url('../images/brandFlag/css_sprites.png') -160px -180px;
+}
+.bg-meister {
+    width: 160px;
+    height: 90px;
+    background: url('../images/brandFlag/css_sprites.png') -320px 0;
+}
+.bg-miradex {
+    width: 160px;
+    height: 90px;
+    background: url('../images/brandFlag/css_sprites.png') -320px -90px;
+}
+.bg-myfloor {
+    width: 160px;
+    height: 90px;
+    background: url('../images/brandFlag/css_sprites.png') -320px -180px;
+}
+.bg-panaget {
+    width: 160px;
+    height: 90px;
+    background: url('../images/brandFlag/css_sprites.png') 0 -270px;
+}
+.bg-rehau {
+    width: 160px;
+    height: 90px;
+    background: url('../images/brandFlag/css_sprites.png') -160px -270px;
+}
+.bg-stepFloor {
+    width: 160px;
+    height: 90px;
+    background: url('../images/brandFlag/css_sprites.png') -320px -270px;
+}
+.bg-swisskrono {
+    width: 160px;
+    height: 90px;
+    background: url('../images/brandFlag/css_sprites.png') 0 0;
+}
+.bg-tavolini {
+    width: 160px;
+    height: 90px;
+    background: url('../images/brandFlag/css_sprites.png') -160px -360px;
+}
+.bg-waldkrone {
+    width: 160px;
+    height: 90px;
+    background: url('../images/brandFlag/css_sprites.png') -320px -360px;
+}
+.bg-berthold {
+    width: 160px;
+    height: 90px;
+    background: url('../images/brandFlag/css_sprites.png') -480px 0;
+}
+.bg-aquastep {
+    width: 160px;
+    height: 90px;
+    background: url('../images/brandFlag/css_sprites.png') -480px -90px;
+}
+.bg-bolex {
+    width: 160px;
+    height: 90px;
+    background: url('../images/brandFlag/css_sprites.png') -480px -180px;
+}
+.bg-bruggan {
+    width: 160px;
+    height: 90px;
+    background: url('../images/brandFlag/css_sprites.png') -480px -270px;
+}
+.bg-callisto {
+    width: 160px;
+    height: 90px;
+    background: url('../images/brandFlag/css_sprites.png') -480px -360px;
+}
+.bg-chenedel {
+    width: 160px;
+    height: 90px;
+    background: url('../images/brandFlag/css_sprites.png') 0 -450px;
+}
+.bg-eglo {
+    width: 160px;
+    height: 90px;
+    background: url('../images/brandFlag/css_sprites.png') -160px -450px;
+}
+.bg-gazzotti {
+    width: 160px;
+    height: 90px;
+    background: url('../images/brandFlag/css_sprites.png') -320px -450px;
+}
+.bg-granorte {
+    width: 160px;
+    height: 90px;
+    background: url('../images/brandFlag/css_sprites.png') -480px -450px;
 }
 /* RESPONSIVE MENU TO 992px*/
 .open {
