@@ -48,6 +48,9 @@ button {
 }
 
 .btn {
+    position: relative;
+    overflow: hidden;
+
     display: block;
     width: 265px;
     padding: 15.5px 25px;
@@ -58,12 +61,31 @@ button {
     transition: box-shadow .3s linear; 
     font-size: 21px;
     color: #fff;
+
+    &:after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        left: -4.5em;
+        height: 100%;
+        width: 3em;
+        transform: skewX(-45deg) translateX(0);
+        transition: none;
+        background-color: rgba(255,255,255,0.5);
+    }
+
     &:hover {
+        color: #fff;
         box-shadow: none;
+        &:after {
+            transform: skewX(-45deg) translateX(20em);
+            transition: all .5s linear;
+        }
     }
 }
 
-  
+
 
 
 address {

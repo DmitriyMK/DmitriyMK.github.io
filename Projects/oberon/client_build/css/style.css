@@ -531,6 +531,8 @@ button {
     outline: none;
 }
 .btn {
+    position: relative;
+    overflow: hidden;
     display: block;
     width: 265px;
     padding: 15.5px 25px;
@@ -547,9 +549,34 @@ button {
     font-size: 21px;
     color: #fff;
 }
+.btn:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: -4.5em;
+    height: 100%;
+    width: 3em;
+    -webkit-transform: skewX(-45deg) translateX(0);
+        -ms-transform: skewX(-45deg) translateX(0);
+            transform: skewX(-45deg) translateX(0);
+    -webkit-transition: none;
+         -o-transition: none;
+            transition: none;
+    background-color: rgba(255, 255, 255, 0.5);
+}
 .btn:hover {
+    color: #fff;
     -webkit-box-shadow: none;
             box-shadow: none;
+}
+.btn:hover:after {
+    -webkit-transform: skewX(-45deg) translateX(20em);
+        -ms-transform: skewX(-45deg) translateX(20em);
+            transform: skewX(-45deg) translateX(20em);
+    -webkit-transition: all 0.5s linear;
+         -o-transition: all 0.5s linear;
+            transition: all 0.5s linear;
 }
 address {
     font-style: normal;
@@ -649,6 +676,7 @@ section {
 }
 .header .nav__item {
     list-style-type: none;
+    font-weight: 500;
 }
 .header .nav__link {
     display: block;
@@ -868,6 +896,23 @@ section {
     font-weight: 700;
     text-align: center;
     color: #fff;
+}
+.catalog {
+    position: relative;
+    background: url(../images/section-back-angle.png) no-repeat;
+}
+.catalog:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 704px;
+    height: 690px;
+    background: url(../images/decor-left.png);
+}
+.catalog__article {
+    position: relative;
+    z-index: 10;
 }
 .catalogPlus {
     padding-bottom: 0;
@@ -1361,18 +1406,12 @@ section {
 .contacts .address {
     margin-bottom: 10px;
 }
-.contacts .contacts__list {
-    padding-left: 15px;
-}
 .contacts .contacts__item {
     padding-bottom: 6px;
 }
 .contacts .mail {
     margin-top: 25px;
     margin-bottom: 15px;
-}
-.contacts .social__list {
-    padding-left: 15px;
 }
 .contacts .social__item {
     display: inline-block;
@@ -1396,7 +1435,6 @@ section {
     font-weight: 700;
 }
 .contacts .text {
-    padding-left: 20px;
     padding-bottom: 10px;
 }
 .contacts .btn {

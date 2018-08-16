@@ -18,5 +18,21 @@
 }
 
 .catalog {
+	position: relative;
+	background: url(../images/section-back-angle.png)no-repeat;
 	
+	&:before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 704px;
+		height: 690px;
+		background: url(../images/decor-left.png);
+	}
+
+	&__article {
+		position: relative;
+		z-index: 10;
+	}
 }
