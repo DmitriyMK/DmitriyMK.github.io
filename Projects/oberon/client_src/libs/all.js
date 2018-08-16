@@ -47,7 +47,7 @@ $(document).ready(function() {
   });
 
   $('.brand__list').slick({
-    slidesToShow: 6,
+    slidesToShow: 5,
     slidesToScroll: 1,
     arrows: true,
     dots: false,

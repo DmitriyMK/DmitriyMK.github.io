@@ -968,7 +968,7 @@ section {
     font-weight: 700;
 }
 .brand__list {
-    margin-top: 40px;
+    margin: 40px 100px 0 100px;
 }
 .brand__item {
     list-style-type: none;
