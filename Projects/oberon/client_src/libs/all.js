@@ -46,6 +46,16 @@ $(document).ready(function() {
     fade: true,
   });
 
+
+  $(.'.product__slider').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: true,
+    dots: false,
+    lazyLoad: 'ondemand',
+  });
+
+
   $('.brand__list').slick({
     slidesToShow: 5,
     slidesToScroll: 1,
@@ -136,7 +146,7 @@ $(document).ready(function() {
     });
     */
 
-});
+  });
 
 
 
