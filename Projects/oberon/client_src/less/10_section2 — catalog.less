@@ -17,9 +17,61 @@
 	
 }
 
+.article__wrapper {
+	position: relative;
+
+	&:before {
+		content: '';
+		position: absolute;
+		top: 43%;
+		transform: translateY(-50%);
+		right: 0;
+		height: 1px;
+		width: 356px;
+		background: #b1b4b8;
+	}
+	&:after {
+		content: '';
+		position: absolute;
+		top: 43%;
+		transform: translateY(-50%);
+		right: 9vw;
+		height: 356px;
+		width: 1px;
+		background: #b1b4b8;
+	}
+}
+
+.article__wrapper2 {
+	position: relative;
+
+	&:before {
+		content: '';
+		position: absolute;
+		top: 43%;
+		transform: translateY(-50%);
+		left: 0;
+		height: 1px;
+		width: 356px;
+		background: #b1b4b8;
+	}
+	&:after {
+		content: '';
+		position: absolute;
+		top: 43%;
+		transform: translateY(-50%);
+		left: 9vw;
+		height: 356px;
+		width: 1px;
+		background: #b1b4b8;
+	}
+}
+
 .catalog {
 	position: relative;
-	background: url(../images/section-back-angle.png)no-repeat;
+	min-height: 1010px;
+	background: url(../images/section-back-angle.png)no-repeat center/cover;
+	
 	
 	&:before {
 		content: '';
@@ -41,20 +93,178 @@
 	}
 
 	&__article {
-		position: relative;
+		margin: 0 100px;
 		z-index: 10;
+		box-shadow: 8.485px 8.485px 15.81px 1.19px rgba(0, 0, 0, 0.27);		
 	}
 
-	.slick-dots li:nth-child(2) button:before {
-		background: #a17e68;
+	.slick-prev,
+	.slick-next {
+		top: 50%;
+		transform: translateY(-150%);
 	}
-	.slick-dots li:nth-child(3) button:before {
-		background: #bcaea2;
+	.slick-prev {
+		left: -65px; 
 	}
-	.slick-dots li:nth-child(4) button:before {
-		background: #d0cac0;
-	}
-	.slick-dots li:nth-child(5) button:before {
-		background: #beac93;
+	.slick-next {
+		right: -65px; 
 	}
 }
+
+.tabs {
+	margin-top: 60px;
+	display: flex;
+	justify-content: center;
+	&__link {
+		position: relative;
+		width: 330px;
+		border-bottom: 15px solid #f1f2f5;
+
+		list-style-type: none;
+		cursor: pointer;
+		background: @yellow;
+		box-shadow: inset 10.607px 10.607px 8px 0px rgba(0, 0, 0, 0.13);
+		transition: all .3s linear;
+		&-active {
+			background: #f1f2f5;
+			box-shadow: none;
+			.tabs__title {
+				&:before {
+					opacity: 0;
+				}
+			}
+		}
+	}
+	&__title {
+		position: relative;
+		font-size: 24px;
+		line-height: 60px;
+		font-weight: 700;
+		text-align: center;
+		&:before {
+			content: '';
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+			margin-left: -25px;
+			transition: all .3s linear;
+			.bg-left
+		}
+	}
+
+	&__content {
+		visibility: hidden;
+		opacity: 0;
+		height: 0;
+		transition: opacity .3s linear;
+
+		&-active {
+			visibility: visible;
+			opacity: 1;
+			height: 100%;
+			transition: opacity .3s linear;
+		}
+	}
+}
+
+.product {
+	&__slider {
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 0!important;	
+	}
+	&__slide {
+		position: relative;
+		padding: 15px 30px 20px 30px;
+		text-align: center;
+		font-family: @ff2;
+		background: #f1f2f5;
+		border: 1px solid #b1b4b8;
+	}
+	&__titles {
+		padding-bottom: 15px;
+		font-size: 21px;
+		font-weight: 500;
+	}
+	&__link {
+		display: block;
+		max-width: 212px;
+		max-height: 225px;
+		margin: auto;
+	}
+	&__img {
+		display: block;
+		max-width: 100%;
+		height: auto;
+	}
+	&__info {
+		margin-top: 50px;
+		max-height: 70px;
+		overflow: hidden;
+	}
+	&__price {
+		margin: 10px 0;
+		font-size: 24px;
+		font-weight: 700;
+		sup {
+			font-size: 16px;
+		}
+	}
+
+	&__btn {
+		width: 200px;
+		margin: auto;
+		margin-top: 20px;
+		color: @yellow;
+		transition: all .3s linear;
+	}
+
+	&__slider-color {
+		.slick-dots {
+			li {
+				margin: 7px;
+				width: 13px;
+				height: 13px;
+
+				button {
+					background: #000;
+					display: block;
+					height: 15px;
+					width: 15px;
+					border: none!important;
+				}
+				&.slick-active button {
+					opacity: 1;
+					transform: scale(1.5);
+				}
+			}
+		}
+
+		.slick-dots li.slick-active button {
+			// background: red;
+		}
+
+		.slick-dots li:nth-child(1) button {
+			background: #85756c;
+		}
+		.slick-dots li:nth-child(2) button {
+			background: #c3bdb7;
+		}
+		.slick-dots li:nth-child(3) button {
+			background: #492c1b;
+		}
+		.slick-dots li:nth-child(4) button {
+			background: #dfc9a6;
+		}
+		.slick-dots li:nth-child(5) button {
+			background: #85756c;
+		}
+	}
+}
+
+.shop__text {
+	padding-top: 60px;
+	font-size: 18px;
+	text-align: center;
+}
+
