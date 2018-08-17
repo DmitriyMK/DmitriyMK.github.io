@@ -61,6 +61,7 @@ $(document).ready(function() {
     var tabID = $(this).attr('data-tabs');
 
     $(this).addClass('tabs__link-active').siblings().removeClass('tabs__link-active');
+    
     $('#tabs-' + tabID).addClass('tabs__content-active').siblings().removeClass('tabs__content-active');
   });
 
