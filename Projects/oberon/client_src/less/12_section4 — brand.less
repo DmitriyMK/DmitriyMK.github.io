@@ -28,13 +28,28 @@
 		text-align: center;
 		font-size: 26px;
 		font-weight: 700;
+		@media @tablet {
+
+		}
+		@media @desktop {
+
+		}
+		@media @desktop-xl {
+
+		}
 	}
 	&__list {
-		margin: 40px 100px 0 100px;
+		margin: 40px 40px 0 40px;
+		@media @desktop-xl {
+			margin: 40px 100px 0 100px;
+		}
 	}
 	&__item {
 		list-style-type: none;
-		margin-right: 15px;
+		
+		@media @desktop {
+			margin-right: 15px;
+		}
 	}
 	&__wrap {
 		display: flex;

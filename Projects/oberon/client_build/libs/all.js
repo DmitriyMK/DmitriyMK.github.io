@@ -36,6 +36,14 @@ $(document).ready(function() {
   });
 
 
+  $('.tabs__link').click(function() {
+    var tabID = $(this).attr('data-tabs');
+
+    $(this).addClass('tabs__link-active').siblings().removeClass('tabs__link-active');
+    $('#tabs-' + tabID).addClass('tabs__content-active').siblings().removeClass('tabs__content-active');
+  });
+
+
   $('.product__slider').slick({
     slidesToShow: 3,
     slidesToScroll: 1,
@@ -45,20 +53,20 @@ $(document).ready(function() {
 
     responsive: [
 
-      {
-        breakpoint: 992,
-        settings: {
-          slidesToShow: 2,
-        }
-      },
+    {
+      breakpoint: 992,
+      settings: {
+        slidesToShow: 2,
+      }
+    },
 
-      {
-        breakpoint: 767,
-        settings: {
-          slidesToShow: 1,
-          fade: true,
-        }
-      },
+    {
+      breakpoint: 767,
+      settings: {
+        slidesToShow: 1,
+        fade: true,
+      }
+    },
 
     ]
   });
@@ -73,15 +81,6 @@ $(document).ready(function() {
   });
 
 
-  $('.tabs__link').click(function() {
-    var tabID = $(this).attr('data-tabs');
-
-    $(this).addClass('tabs__link-active').siblings().removeClass('tabs__link-active');
-
-    $('#tabs-' + tabID).addClass('tabs__content-active').siblings().removeClass('tabs__content-active');
-  });
-
-
   $('.brand__list').slick({
     slidesToShow: 5,
     slidesToScroll: 1,
@@ -90,26 +89,32 @@ $(document).ready(function() {
     autoplay: true,
     pauseOnHover: true,
 
-     responsive: [
+    responsive: [
 
-      // {
-      //   breakpoint: 992,
-      //   settings: {
-      //     slidesToShow: 3,
-      //   }
-      // },
+      {
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 4,
+        }
+      },
 
-      // {
-      //   breakpoint: 767,
-      //   settings: {
-      //     slidesToShow: 1,
-      //     fade: true,
-      //   }
-      // },
+      {
+        breakpoint: 767,
+        settings: {
+          slidesToShow: 2,
+        }
+      },
 
-    ]
+      {
+        breakpoint: 400,
+        settings: {
+          slidesToShow: 1,
+        }
+      },
 
-  });
+      ]
+
+    });
 
 
   $('[data-fancybox]').fancybox({
