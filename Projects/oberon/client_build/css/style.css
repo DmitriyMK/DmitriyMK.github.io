@@ -1736,8 +1736,7 @@ section {
 }
 .brandHistory__img {
     display: block;
-    margin: auto;
-    margin-bottom: 30px;
+    margin: 30px auto;
 }
 .brandHistory ul {
     list-style-position: inside;
