@@ -36,9 +36,6 @@ $(document).ready(function() {
   });
 
 
-
-
-
   $('.product__slider').slick({
     slidesToShow: 3,
     slidesToScroll: 1,
@@ -114,30 +111,7 @@ $(document).ready(function() {
   });
 
 
-
-  /*  $('.slider-for-recipe').slick({
-      slidesToShow: 1,
-      slidesToScroll: 1,
-      arrows: false,
-      dots: false,
-      asNavFor: '.slider-nav-recipe',
-      fade: true,
-      draggable: false,
-      infinite: true,
-
-    });*/
-
-
-  /*  $('.slider-nav-recipe').slick({
-      slidesToShow: 4,
-      slidesToScroll: 1,
-      asNavFor: '.slider-for-recipe',
-      arrows: false,
-      dots: false,
-      focusOnSelect: true,
-      infinite: true,
-      centerMode: false,
-
+  /*  
       responsive: [
 
       {
@@ -162,11 +136,70 @@ $(document).ready(function() {
 
       ]
 
+      */
+
     });
-    */
+
+
+/*RESPONSIVER BURGER MENU*/
+
+var $menu = $('.nav');
+
+$('.burger').click(function() {
+
+  $('.burger').toggleClass('active');
+  $('.overlay').toggleClass('open').show;
+
+});
+
+
+$('.header__link').click(function() {
+
+  $(".burger").removeClass('active').fast;
+  $('.overlay').removeClass('open').fast;
+
+});
+
+
+
+$(document).mouseup(function(e) {
+  if (!$menu.is(e.target) && $menu.has(e.target).length === 0) {
+
+    $(".burger").removeClass('active');
+    $('.overlay').removeClass('open');
+
+  }
+});
+
+
+
+if (document.documentElement.clientWidth > 991) {
+
+  $(window).scroll(function() {
+    if ($(this).scrollTop() > 800) {
+      // $('#fixedTopMenu').removeClass('menuHide');
+      $('#fixedTopMenu').addClass('fixed');
+    } else if ($(this).scrollTop() < 800) {
+      // $('#fixedTopMenu').addClass('menuHide');
+      $('#fixedTopMenu').removeClass('fixed');
+    };
+
+
+    // if ($(this).scrollTop() > 20) {
+    //   $('#fixedTopMenu').removeClass('menuDefault');
+    // } else if ($(this).scrollTop() < 20) {
+    //   $('#fixedTopMenu').addClass('menuDefault');
+    // };
+
+
+    // if ($(this).scrollTop() > 250) {
+    //   $('#fixedTopMenu').removeClass('menuResize');
+    // } else if ($(this).scrollTop() < 250) {
+    //   $('#fixedTopMenu').addClass('menuResize');
+    // };
 
   });
-
+};
 
 
 $(window).on('resize orientationchange', function() {
