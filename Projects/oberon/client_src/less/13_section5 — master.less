@@ -43,90 +43,74 @@
 		@media @desktop-xl {
 
 		}
-		@media @desktop-xl-2 {
-	
-		}
-		@media @desktop-xll {
-
-		}
 	}
 
 	.container {
 		position: relative;
 		&:before {
-			content: "";
-			position: absolute;
-			top: -90px;
-			right: 20px;
-			width: 404px;
-			height: 601px;
-			background: url(../images/wood__back.jpg);
-
-			@media @tablet {
-
-			}
 			@media @desktop {
-
-			}
-			@media @desktop-xl {
-
-			}
-			@media @desktop-xl-2 {
-
-			}
-			@media @desktop-xll {
-
+				content: "";
+				position: absolute;
+				top: -90px;
+				right: 0;
+				width: 404px;
+				height: 601px;
+				background: url(../images/wood__back.jpg);
 			}
 		}
 		&:after {
 			content: "";
 			position: absolute;
-			top: -45px;
-			right: 370px;
-			width: 314px;
-			height: 561px;
-			background: url(../images/man.png);
+			top: 330px;
+			right: -40px;
+			width: 278px;
+			height: 398px;
+			background: url(../images/man.png)no-repeat;
+			background-size: contain; 
 
 			@media @tablet {
 
 			}
 			@media @desktop {
+				top: 90px;
+				right: 290px;
 
 			}
 			@media @desktop-xl {
-
+				top: -20px;
+				right: 338px;
+				width: 314px;
+				height: 561px;
 			}
 			@media @desktop-xl-2 {
-
-			}
-			@media @desktop-xll {
-
+				top: -45px;
+				right: 370px;
 			}
 		}
 	}
 
 	&__box {
-		padding: 40px 0 0px 0;
+		
 		display: flex;
+		flex-direction: column;
+		align-items: center;
 		justify-content: space-between;
 
 		@media @tablet {
 
 		}
 		@media @desktop {
-
-		}
-		@media @desktop-xl {
-
-		}
-		@media @desktop-xl-2 {
-
-		}
-		@media @desktop-xll {
-
+			flex-direction: row;
+			padding: 40px 0 0px 0;
 		}
 		&-left {
-
+			margin-bottom: 50px;
+			@media @desktop-xl {
+				padding-left: 50px;
+			}
+			@media @desktop-xll {
+				padding-left: 0;
+			}
 		}
 	}
 
@@ -156,11 +140,12 @@
 		&:before {
 			content: '';
 			position: absolute;
-			top: -34px;
-			left: -170px;
-			width: 695px;
+			top: -22px;
+			left: -120px;
+			width: 550px;
 			height: 75px;
 			background: url(../images/roulette.png);
+			background-size: contain;
 			z-index: -1;
 
 			@media @tablet {
@@ -170,13 +155,13 @@
 
 			}
 			@media @desktop-xl {
-
+				width: 550px;
+				top: -26px;
+				left: -120px;
 			}
 			@media @desktop-xl-2 {
-
-			}
-			@media @desktop-xll {
-
+				width: 695px;
+				left: -170px;
 			}
 		}
 	}
@@ -202,25 +187,12 @@
 
 		}
 		&:after {
-			content: '';
-			position: absolute;
-			bottom: -55px;
-			left: 0;
-			.bg-decor_line;
-			@media @tablet {
-
-			}
 			@media @desktop {
-
-			}
-			@media @desktop-xl {
-
-			}
-			@media @desktop-xl-2 {
-
-			}
-			@media @desktop-xll {
-
+				content: '';
+				position: absolute;
+				bottom: -55px;
+				left: 0;
+				.bg-decor_line;
 			}
 		}
 	}
@@ -256,8 +228,11 @@
 
 	}
 	&__title {
+		position: relative;
 		font-size: 26px;
 		font-weight: 700;
+		z-index: 10;
+		background: @yellow;
 	}
 	&__text {
 		font-size: 18px;

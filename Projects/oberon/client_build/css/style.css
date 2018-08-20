@@ -1408,7 +1408,7 @@ section {
     position: relative;
     width: 33.3%;
     height: 60px;
-    padding-top: 10px;
+    padding-top: 22px;
     text-align: center;
     list-style-type: none;
     cursor: pointer;
@@ -1422,6 +1422,7 @@ section {
 @media only screen and (min-width: 992px) {
     .tabs__link {
         width: 330px;
+        padding-top: 10px;
         padding-bottom: 10px;
         border-bottom: 15px solid #f1f2f5;
     }
@@ -1769,32 +1770,83 @@ section {
 .master .container {
     position: relative;
 }
-.master .container:before {
-    content: '';
-    position: absolute;
-    top: -90px;
-    right: 20px;
-    width: 404px;
-    height: 601px;
-    background: url(../images/wood__back.jpg);
+@media only screen and (min-width: 992px) {
+    .master .container:before {
+        content: '';
+        position: absolute;
+        top: -90px;
+        right: 0;
+        width: 404px;
+        height: 601px;
+        background: url(../images/wood__back.jpg);
+    }
 }
 .master .container:after {
     content: '';
     position: absolute;
-    top: -45px;
-    right: 370px;
-    width: 314px;
-    height: 561px;
-    background: url(../images/man.png);
+    top: 330px;
+    right: -40px;
+    width: 278px;
+    height: 398px;
+    background: url(../images/man.png) no-repeat;
+    background-size: contain;
+}
+@media only screen and (min-width: 992px) {
+    .master .container:after {
+        top: 90px;
+        right: 290px;
+    }
+}
+@media only screen and (min-width: 1200px) {
+    .master .container:after {
+        top: -20px;
+        right: 338px;
+        width: 314px;
+        height: 561px;
+    }
+}
+@media only screen and (min-width: 1600px) {
+    .master .container:after {
+        top: -45px;
+        right: 370px;
+    }
 }
 .master__box {
-    padding: 40px 0 0 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
+}
+@media only screen and (min-width: 992px) {
+    .master__box {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+        padding: 40px 0 0 0;
+    }
+}
+.master__box-left {
+    margin-bottom: 50px;
+}
+@media only screen and (min-width: 1200px) {
+    .master__box-left {
+        padding-left: 50px;
+    }
+}
+@media only screen and (min-width: 1920px) {
+    .master__box-left {
+        padding-left: 0;
+    }
 }
 .master__title {
     margin-top: 35px;
@@ -1807,12 +1859,26 @@ section {
 .master__title:before {
     content: '';
     position: absolute;
-    top: -34px;
-    left: -170px;
-    width: 695px;
+    top: -22px;
+    left: -120px;
+    width: 550px;
     height: 75px;
     background: url(../images/roulette.png);
+    background-size: contain;
     z-index: -1;
+}
+@media only screen and (min-width: 1200px) {
+    .master__title:before {
+        width: 550px;
+        top: -26px;
+        left: -120px;
+    }
+}
+@media only screen and (min-width: 1600px) {
+    .master__title:before {
+        width: 695px;
+        left: -170px;
+    }
 }
 .master__text {
     position: relative;
@@ -1821,14 +1887,16 @@ section {
     font-size: 25px;
     color: #fff;
 }
-.master__text:after {
-    content: '';
-    position: absolute;
-    bottom: -55px;
-    left: 0;
-    width: 521px;
-    height: 19px;
-    background: url('../images/icons/css_sprites.png') -10px -10px;
+@media only screen and (min-width: 992px) {
+    .master__text:after {
+        content: '';
+        position: absolute;
+        bottom: -55px;
+        left: 0;
+        width: 521px;
+        height: 19px;
+        background: url('../images/icons/css_sprites.png') -10px -10px;
+    }
 }
 .master strong {
     display: block;
@@ -1852,8 +1920,11 @@ section {
             box-shadow: 8.485px 8.485px 15.81px 1.19px rgba(0, 0, 0, 0.4);
 }
 .form__title {
+    position: relative;
     font-size: 26px;
     font-weight: 700;
+    z-index: 10;
+    background: #fff200;
 }
 .form__text {
     font-size: 18px;
