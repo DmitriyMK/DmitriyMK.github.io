@@ -12,7 +12,7 @@ $(document).ready(function() {
       smoothscroll: true,
       cursorwidth: 8,
       cursorborder: 0,
-      cursorcolor: '#23252c',
+      cursorcolor: '#fff200',
       cursorborderradius: 2,
       autohidemode: true,
       horizrailenabled: false,
