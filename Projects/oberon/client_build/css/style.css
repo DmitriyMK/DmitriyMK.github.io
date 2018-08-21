@@ -864,7 +864,13 @@ section {
 }
 @media only screen and (min-width: 992px) {
     .headerMain {
+        padding-top: 200px;
         padding-bottom: 0;
+    }
+}
+@media only screen and (min-width: 1600px) {
+    .headerMain {
+        padding-top: 280px;
     }
 }
 .headerMain__logo {
@@ -935,10 +941,15 @@ section {
     .headerMain .scrollMore {
         position: relative;
         display: inline-block;
-        margin: 290px auto -5px auto;
+        margin: 100px auto -5px auto;
         width: 76px;
         height: 100px;
         background: #fff200;
+    }
+}
+@media only screen and (min-width: 1600px) {
+    .headerMain .scrollMore {
+        margin: 290px auto -5px auto;
     }
 }
 @media only screen and (min-width: 992px) {

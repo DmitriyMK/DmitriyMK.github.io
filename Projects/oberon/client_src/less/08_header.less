@@ -184,7 +184,12 @@
 		background: url(../images/hero__back.jpg)no-repeat center/cover;
 	}
 	@media @desktop {
+		padding-top: 200px;
 		padding-bottom: 0;
+	}
+
+	@media @desktop-xl-2 {
+		padding-top: 280px;
 	}
 
 	&__logo {
@@ -244,11 +249,17 @@
 		@media @desktop {
 			position: relative;
 			display: inline-block;
-			margin: 290px auto -5px auto;
+			margin: 100px auto -5px auto;
 
 			width: 76px;
 			height: 100px;
 			background: @yellow;
+		}
+		@media @desktop-xl {
+
+		}
+		@media @desktop-xl-2 {
+			margin: 290px auto -5px auto;
 		}
 		&:before {
 			@media @desktop {
