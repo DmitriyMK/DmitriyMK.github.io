@@ -648,6 +648,7 @@ section {
     width: 100%;
     max-height: 74px;
     z-index: 100;
+    background: #000;
 }
 @media only screen and (min-width: 992px) {
     .header {
@@ -804,8 +805,12 @@ section {
     position: relative;
     width: 100px;
     height: 74px;
-    background: #fff200;
     overflow: hidden;
+}
+@media only screen and (min-width: 992px) {
+    .header__btn {
+        background: #fff200;
+    }
 }
 .header__btn:before {
     content: '';
@@ -1449,7 +1454,7 @@ section {
 .tabs__link {
     position: relative;
     width: 33.3%;
-    height: 60px;
+    height: 75px;
     padding-top: 22px;
     text-align: center;
     list-style-type: none;
@@ -1464,6 +1469,7 @@ section {
 @media only screen and (min-width: 992px) {
     .tabs__link {
         width: 330px;
+        height: 60px;
         padding-top: 10px;
         padding-bottom: 10px;
         border-bottom: 15px solid #f1f2f5;
@@ -1483,7 +1489,7 @@ section {
 @media only screen and (min-width: 992px) {
     .tabs__link-big {
         width: 660px;
-        padding-left: 60px;
+        padding-left: 30px;
         text-align: left;
     }
 }
@@ -1500,20 +1506,16 @@ section {
     padding-left: 0;
     font-size: 16px;
     font-weight: 700;
-    text-align: center;
 }
 @media only screen and (min-width: 768px) {
     .tabs__title {
         font-size: 18px;
-        padding-left: 35px;
-        text-align: left;
+        padding-left: 25px;
     }
 }
 @media only screen and (min-width: 992px) {
     .tabs__title {
         font-size: 20px;
-        padding-left: 0;
-        text-align: center;
     }
 }
 @media only screen and (min-width: 768px) {
@@ -1737,6 +1739,9 @@ section {
     padding-top: 100px;
     padding-bottom: 100px;
 }
+.brand__title {
+    font-size: 26px;
+}
 .brand__text {
     margin-top: 70px;
     text-align: center;
@@ -1929,7 +1934,7 @@ section {
         content: '';
         position: absolute;
         top: -22px;
-        left: -120px;
+        left: -130px;
         width: 550px;
         height: 75px;
         background: url(../images/roulette.png);
@@ -1941,13 +1946,14 @@ section {
     .master__title:before {
         width: 550px;
         top: -26px;
-        left: -120px;
+        left: -130px;
     }
 }
 @media only screen and (min-width: 1600px) {
     .master__title:before {
         width: 695px;
-        left: -170px;
+        left: -180px;
+        top: -33px;
     }
 }
 .master__text {
