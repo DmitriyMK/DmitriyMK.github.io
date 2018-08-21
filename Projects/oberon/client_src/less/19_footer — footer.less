@@ -22,29 +22,57 @@
 	overflow: hidden;
 	&__box {
 		display: flex;
-		justify-content: space-between;
+		flex-direction: column;
+		justify-content: center;
 		align-items: center;
+		@media @tablet {
+			flex-direction: row;
+			justify-content: space-between;
+		}
 	}
 
 	&__logo {
 		display: flex;
+		flex-direction: column;
 		align-items: center;
 		font-weight: 700;
 		color: #fefefe;
+		@media @tablet {
+			flex-direction: row;
+		}
 		img {
 			vertical-align: top;
 		}
 	}
 	&__desc {
-		margin-left: 30px;
+		padding: 15px 0;
 		font-weight: 300;
+		text-align: center;
+		@media @tablet {
+			padding: 0;
+			margin-left: 15px;
+			text-align: left;
+		}
 	}
 	
 	.agency {
+		margin: auto;
+
+		text-align: center;
 		font-weight: 300;
 		color: #ebf4ff;
+
+		@media @tablet {
+			text-align: left;
+		}
 		img {
-			margin-top: 7px;
+			display: block;
+			margin: auto;
+			margin-top: 7px;	
+			margin-bottom: 30px;
+			@media @tablet {
+				margin: inherit;
+			}
 		}
 	}
 }

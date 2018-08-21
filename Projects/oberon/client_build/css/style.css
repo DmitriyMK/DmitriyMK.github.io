@@ -2372,6 +2372,7 @@ section {
     padding-bottom: 0;
     overflow: hidden;
     position: relative;
+    background: #000;
 }
 .contacts .map {
     width: 100%;
@@ -2473,36 +2474,86 @@ section {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+}
+@media only screen and (min-width: 768px) {
+    .footer__box {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+    }
 }
 .footer__logo {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+        flex-direction: column;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
     font-weight: 700;
     color: #fefefe;
 }
+@media only screen and (min-width: 768px) {
+    .footer__logo {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    }
+}
 .footer__logo img {
     vertical-align: top;
 }
 .footer__desc {
-    margin-left: 30px;
+    padding: 15px 0;
     font-weight: 300;
+    text-align: center;
+}
+@media only screen and (min-width: 768px) {
+    .footer__desc {
+        padding: 0;
+        margin-left: 15px;
+        text-align: left;
+    }
 }
 .footer .agency {
+    margin: auto;
+    text-align: center;
     font-weight: 300;
     color: #ebf4ff;
 }
+@media only screen and (min-width: 768px) {
+    .footer .agency {
+        text-align: left;
+    }
+}
 .footer .agency img {
+    display: block;
+    margin: auto;
     margin-top: 7px;
+    margin-bottom: 30px;
+}
+@media only screen and (min-width: 768px) {
+    .footer .agency img {
+        margin: inherit;
+    }
 }
 .remodal-first {
     padding-top: 95px;
