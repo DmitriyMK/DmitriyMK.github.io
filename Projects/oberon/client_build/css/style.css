@@ -827,7 +827,7 @@ section {
     display: block;
     position: absolute;
     top: 0;
-    left: -4.5em;
+    left: -5em;
     height: 100%;
     width: 3em;
     -webkit-transform: skewX(-45deg) translateX(0);
@@ -2036,15 +2036,35 @@ section {
     outline: none;
 }
 .services {
+    overflow: hidden;
     background: #fff;
+    position: relative;
 }
 @media only screen and (min-width: 992px) {
-    .services {
-        background: url(../images/servicesBonus__back.jpg) no-repeat right;
+    .services:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: -400px;
+        width: 1047px;
+        height: 687px;
+        background: url(../images/servicesBonus__back.jpg) no-repeat;
+    }
+}
+@media only screen and (min-width: 1200px) {
+    .services:before {
+        right: -100px;
+    }
+}
+@media only screen and (min-width: 1600px) {
+    .services:before {
+        right: 0;
     }
 }
 .services__list {
+    position: relative;
     padding-top: 55px;
+    z-index: 10;
 }
 @media only screen and (min-width: 768px) {
     .services__list {
