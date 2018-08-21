@@ -20,6 +20,7 @@
 .gallery {
 	padding-bottom: 0;
 	position: relative;
+	overflow: hidden;
 	&:before {
 		content: '';
 		position: absolute;
@@ -36,13 +37,39 @@
 	&__list {
 		padding-top: 70px;
 		display: flex;
-		justify-content: space-between;
+		flex-wrap: wrap;
+		justify-content: center;
+
+		@media @tablet {
+
+		}
+		@media @desktop {
+
+		}
+		@media @desktop-xl {
+			flex-wrap: nowrap;
+			justify-content: space-between;
+		}
 	}
 
 	&__item {
 		position: relative;
 		cursor: pointer;
 		list-style-type: none;
+		width: 50%;
+		height: 320px;
+		overflow: hidden;
+
+		@media @tablet {
+
+		}
+		@media @desktop {
+
+		}
+		@media @desktop-xl {
+			height: 760px;
+		}
+
 		&:before {
 			content: '';
 			position: absolute;
@@ -73,6 +100,55 @@
 			top: 80%;
 		}
 
+		&:nth-of-type(2) img {
+			left: -100px;
+			@media @tablet {
+
+			}
+			@media @desktop {
+
+			}
+			@media @desktop-xl {
+
+			}
+		}
+		&:nth-of-type(3) img {
+			right: -350px;
+			@media @tablet {
+
+			}
+			@media @desktop {
+
+			}
+			@media @desktop-xl {
+
+			}
+		}
+		&:nth-of-type(4) img {
+			right: -330px;
+			@media @tablet {
+
+			}
+			@media @desktop {
+
+			}
+			@media @desktop-xl {
+
+			}
+		}
+		&:nth-of-type(5) img {
+			right: -40px;
+			@media @tablet {
+
+			}
+			@media @desktop {
+
+			}
+			@media @desktop-xl {
+
+			}
+		}
+
 		&:hover {
 			&:before {
 				background: rgba(0,0,0, .35);
@@ -89,18 +165,24 @@
 		left: 50%;
 		transform: translateX(-50%);
 		width: 100%;
-		font-size: 40px;
+		font-size: 30px;
 		font-weight: 700;
 		color: #fff;
 		text-align: center;
 		overflow: hidden;
 		transition: all .5s linear;
-		
+		@media @tablet {
+
+		}
+		@media @desktop {
+
+		}
+		@media @desktop-xl {
+			font-size: 40px;
+		}
 	}
 	img {
-		display: block;
-		max-width: 100%;
-		height: 770px;
+		z-index: -1;
+		position: absolute;
 	}
-	
 }
