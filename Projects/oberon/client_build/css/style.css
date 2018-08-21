@@ -733,6 +733,7 @@ section {
     }
 }
 .header .nav__list {
+    margin-top: 30px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -746,6 +747,7 @@ section {
 }
 @media only screen and (min-width: 992px) {
     .header .nav__list {
+        margin-top: inherit;
         -webkit-box-orient: horizontal;
         -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -755,18 +757,32 @@ section {
 .header .nav__item {
     list-style-type: none;
     font-weight: 500;
-}
-.header .nav__link {
-    display: block;
-    padding: 7px 11px;
-    line-height: 60px;
-    font-size: 19.56px;
+    width: 100%;
+    color: #fff;
     -webkit-transition: 0.3s linear background-color;
          -o-transition: 0.3s linear background-color;
             transition: 0.3s linear background-color;
 }
-.header .nav__link:hover {
+.header .nav__item:hover {
+    color: #000;
     background: #fff200;
+}
+@media only screen and (min-width: 992px) {
+    .header .nav__item {
+        color: inherit;
+    }
+}
+.header .nav__link {
+    display: block;
+    padding: 7px 0 7px 15px;
+    font-size: 19.56px;
+    line-height: 30px;
+}
+@media only screen and (min-width: 992px) {
+    .header .nav__link {
+        padding: 7px 11px;
+        line-height: 60px;
+    }
 }
 .header__time {
     display: none;
@@ -1138,13 +1154,13 @@ section {
 }
 .catalog {
     position: relative;
-    min-height: 950px;
-    background: url(../images/section-back-angle.png) no-repeat center / cover;
-    z-index: 20;
+    background: #e2e6eb;
 }
 @media only screen and (min-width: 768px) {
     .catalog {
         min-height: 1150px;
+        background: url(../images/section-back-angle.png) no-repeat center / cover;
+        z-index: 20;
     }
 }
 @media only screen and (min-width: 768px) {
@@ -1228,7 +1244,12 @@ section {
 }
 .article__Mainwrapper2 {
     position: relative;
-    margin-top: -120px;
+    margin-top: -62px;
+}
+@media only screen and (min-width: 768px) {
+    .article__Mainwrapper2 {
+        margin-top: -120px;
+    }
 }
 @media only screen and (min-width: 768px) {
     .article__Mainwrapper2:before {
@@ -1243,10 +1264,14 @@ section {
     }
 }
 .article__wrapper2 {
-    padding-bottom: 150px;
     background: #fff;
     position: relative;
     overflow: hidden;
+}
+@media only screen and (min-width: 768px) {
+    .article__wrapper2 {
+        padding-bottom: 150px;
+    }
 }
 @media only screen and (min-width: 1200px) {
     .article__wrapper2:before {
@@ -1310,7 +1335,11 @@ section {
 }
 .article__Mainwrapper3 {
     position: relative;
-    margin-top: -100px;
+}
+@media only screen and (min-width: 768px) {
+    .article__Mainwrapper3 {
+        margin-top: -100px;
+    }
 }
 @media only screen and (min-width: 768px) {
     .article__Mainwrapper3:before {
@@ -1334,11 +1363,15 @@ section {
             box-shadow: 8.485px 8.485px 15.81px 1.19px #000;
 }
 .article__wrapper3 {
-    padding-bottom: 80px;
     background: #fff;
     position: relative;
     overflow: hidden;
     background: url(../images/brands__back.jpg) no-repeat center / cover;
+}
+@media only screen and (min-width: 768px) {
+    .article__wrapper3 {
+        padding-bottom: 80px;
+    }
 }
 @media only screen and (min-width: 1200px) {
     .article__wrapper3:before {
@@ -1610,9 +1643,16 @@ section {
     background: #85756c;
 }
 .shop__text {
-    padding-top: 80px;
+    padding-top: 60px;
+    padding-bottom: 60px;
     font-size: 20px;
     text-align: center;
+}
+@media only screen and (min-width: 768px) {
+    .shop__text {
+        padding-top: 80px;
+        padding-bottom: 0;
+    }
 }
 .catalogPlus {
     padding-bottom: 0;
@@ -2725,25 +2765,6 @@ label {
     background: #fff;
     max-width: 550px;
 }
-.brandBox .remodal-close {
-    top: 35px !important;
-    right: 5px !important;
-    color: #000 !important;
-    font-weight: 900;
-    z-index: 10;
-}
-@media only screen and (min-width: 320px) {
-    .brandBox .remodal-close {
-        width: 10px !important;
-        height: 16px !important;
-    }
-}
-@media only screen and (min-width: 768px) {
-    .brandBox .remodal-close {
-        width: 35px !important;
-        height: 30px !important;
-    }
-}
 .video {
     max-width: 780px;
 }
@@ -3108,10 +3129,10 @@ label {
 }
 .overlay {
     position: fixed;
-    width: 220px;
-    background: #f4f6f6;
+    width: 150px;
+    background: #000;
     height: 100vh;
-    top: 60px;
+    top: 74px;
     right: -220px;
     overflow-y: scroll;
     -webkit-transition: all 0.3s linear;

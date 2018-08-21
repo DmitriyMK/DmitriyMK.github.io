@@ -78,9 +78,6 @@
 	&__nav {
 		order: 5;
 		transition: all .3s linear;
-		@media @tablet {
-
-		}
 		@media @desktop {
 			flex-basis: 70%;
 			order: 2;
@@ -88,40 +85,39 @@
 	}
 
 	.nav__list {
+		margin-top: 30px;
 		display: flex;
 		align-items: center;
 		flex-direction: column;
-
-		@media @tablet {
-
-		}
 		@media @desktop {
+			margin-top: inherit;
 			flex-direction: row;
-		}
-		@media @desktop-xl {
-
-		}
-		@media @desktop-xl-2 {
-
-		}
-		@media @desktop-xll {
-
 		}
 	}
 
 	.nav__item {
 		list-style-type: none;		
 		font-weight: 500;
+		width: 100%;
+		color: #fff;
+		transition: .3s linear background-color;
+		&:hover {
+			color: #000;
+			background: @yellow;
+		}
+		@media @desktop {
+			color: inherit;
+		}
 	}
 
 	.nav__link {
 		display: block;
-		padding: 7px 11px;
-		line-height: 60px;
+		padding: 7px 0 7px 15px;
 		font-size: 19.56px;
-		transition: .3s linear background-color;
-		&:hover {
-			background: @yellow;
+		line-height: 30px;
+		@media @desktop {
+			padding: 7px 11px;
+			line-height: 60px;
 		}
 	}
 
