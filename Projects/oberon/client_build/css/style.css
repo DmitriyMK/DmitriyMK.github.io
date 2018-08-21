@@ -733,7 +733,6 @@ section {
     }
 }
 .header .nav__list {
-    margin-top: 30px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -747,7 +746,6 @@ section {
 }
 @media only screen and (min-width: 992px) {
     .header .nav__list {
-        margin-top: inherit;
         -webkit-box-orient: horizontal;
         -webkit-box-direction: normal;
         -ms-flex-direction: row;
