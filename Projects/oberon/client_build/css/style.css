@@ -488,8 +488,6 @@ template {
     width: 1px;
     overflow: hidden;
 }
-/* ONLY FOR IE11 */
-/* ONLY FOR EDGE */
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, main, menu, nav, output, ruby, section, summary, time, mark, audio, video {
     margin: 0;
     padding: 0;
@@ -3268,4 +3266,19 @@ label {
     top: 0;
 }
 /* END RESPONSIVE MENU TO 992px*/
+/* ONLY FOR IE11 */
+@media all and (-ms-high-contrast: none) {
+    body {
+        overflow: hidden;
+    }
+    .header__logo img {
+        margin-top: -36px;
+    }
+}
+/* ONLY FOR EDGE */
+@supports (-ms-ime-align:auto) {
+    body {
+        overflow: hidden;
+    }
+}
 /*# sourceMappingURL=style.css.map */
