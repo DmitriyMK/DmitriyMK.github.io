@@ -55,7 +55,7 @@
 
 .remodal-close { 
     top: 15px !important;
-    right: 15px !important;
+    right: 5vh !important;
     color: #000 !important;
     z-index: 10;
     @media @mobile {
@@ -139,12 +139,13 @@ label {
 .formBox {
     position: relative;
     max-width: 360px;
-    margin: auto;
+    margin: 0 auto;
     .form {
         position: relative;
         padding: 40px 20px;
+        margin: auto;
         margin-bottom: 25px;
-        max-width: 360px;
+        max-width: 320px;
         display: flex;
         flex-direction: column;
         text-align: center;
@@ -153,6 +154,7 @@ label {
         @media @tablet {
             margin-bottom: 0;
             padding: 40px;
+            max-width: 360px;
         }
         @media @desktop {
             margin-right: 0;
