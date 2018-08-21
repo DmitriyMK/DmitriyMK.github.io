@@ -2469,8 +2469,8 @@ section {
     margin: 30px 0 0 15px;
 }
 .remodal-close {
-    top: 45px !important;
-    right: 50px !important;
+    top: 15px !important;
+    right: 15px !important;
     color: #000 !important;
     z-index: 10;
 }
@@ -2510,9 +2510,6 @@ section {
         text-align: center;
     }
 }
-.remodal-common .remodal-close {
-    color: #000 !important;
-}
 .error-input {
     clear: both;
     float: left;
@@ -2537,12 +2534,58 @@ label {
     margin: 0;
     padding: 0;
 }
-.formBox2 {
+.formBox {
     position: relative;
-    max-width: 420px;
-    margin: 20px auto;
-    padding: 20px;
+    max-width: 360px;
+    margin: auto;
+}
+.formBox .form {
+    position: relative;
+    padding: 40px 20px;
+    margin-bottom: 25px;
+    max-width: 360px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+        flex-direction: column;
     text-align: center;
+    background: url(../images/angle__form.png) no-repeat;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+}
+@media only screen and (min-width: 768px) {
+    .formBox .form {
+        margin-bottom: 0;
+        padding: 40px;
+    }
+}
+@media only screen and (min-width: 992px) {
+    .formBox .form {
+        margin-right: 0;
+    }
+}
+.formBox .form__title {
+    position: relative;
+    font-size: 26px;
+    font-weight: 700;
+    z-index: 10;
+    background: #fff200;
+}
+.formBox .form__text {
+    font-size: 18px;
+    padding: 15px 0 25px 0;
+}
+.formBox .form__line {
+    width: 265px;
+    padding: 15.5px 25px;
+    margin-bottom: 10px;
+    border: none;
+    -webkit-box-shadow: 8.485px 8.485px 15.81px 1.19px rgba(0, 0, 0, 0.27);
+            box-shadow: 8.485px 8.485px 15.81px 1.19px rgba(0, 0, 0, 0.27);
+    outline: none;
 }
 .brandBox {
     background: #fff;
