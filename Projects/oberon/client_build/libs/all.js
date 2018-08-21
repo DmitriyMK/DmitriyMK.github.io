@@ -1,10 +1,5 @@
 $(document).ready(function() {
-
-
   if (document.documentElement.clientWidth > 1200) {
-
-
-    // new WOW().init();
 
     $("body").niceScroll({
       scrollspeed: 70,
@@ -70,6 +65,9 @@ $(document).ready(function() {
 
     ]
   });
+
+
+  $('.phone-mask').mask('+38(999)999-99-99');
 
 
   $('.product__slider-color').slick({

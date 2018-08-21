@@ -22,23 +22,10 @@
 	<meta property="og:title" content="Ламінат паркет & decor">
 
 
-	<link rel="preload" href="./css/remodal.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-	<link rel="preload" href="./css/remodal-default-theme.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-	<link rel="preload" href="./css/fancybox.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-	<!-- 	<link rel="preload" href="./css/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'"> -->
-	<link rel="preload" href="./css/modal-video.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-	<link rel="preload" href="./css/slick-theme.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-	<link rel="preload" href="./css/slick.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-
+	<link rel="preload" href="./css/plugin.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
 
 	<noscript>
-		<link rel="stylesheet" href="./css/remodal.css">
-		<link rel="stylesheet" href="./css/remodal-default-theme.css">
-		<link rel="stylesheet" href="./css/fancybox.css">
-		<!-- 		<link rel="stylesheet" href="./css/animate.min.css"> -->
-		<link rel="stylesheet" href="./css/modal-video.min.css">
-		<link rel="stylesheet" href="./css/slick-theme.css">
-		<link rel="stylesheet" href="./css/slick.css">
+		<link rel="stylesheet" href="./css/plugin.css">
 	</noscript>
 
 	<link rel="stylesheet" href="./css/style.css">
@@ -46,16 +33,12 @@
 	<!-- DEFER SCRIPT -->
 	<script defer src="./libs/fancybox.js"></script>
 	<script defer src="./libs/slick.js"></script>
-	<!-- 	<script defer src="./libs/jquery.validate.min.js"></script> -->
+	<script defer src="./libs/jquery.validate.min.js"></script>
 	<script defer src="./libs/remodal.min.js"></script>
-	<!-- 	<script defer src="./libs/wow.min.js"></script> -->
-	<!-- 	<script defer src="./libs/jquery.mask.min.js"></script>	 -->
+	<script defer src="./libs/masked-input.js"></script>	
 	<script defer src="./libs/jquery-modal-video.min.js"></script>
 	<script defer src="./libs/cssrelpreload.js"></script>
-
 	<!-- END DEFER SCRIPT -->
-
-
 </head>
 <body>
 
@@ -2324,7 +2307,7 @@
 			<p class="form__title">Заполните форму,</p>
 			<p class="form__text">и мы с вами свяжемся</p>
 			<input class="form__line name" type="text" name="Имя&nbsp;покупателя" placeholder="Ваше имя" required>
-			<input class="form__line" type="tel" name="Телефон&nbsp;покупателя" placeholder="Ваш телефон" required>
+			<input class="form__line phone-mask" type="tel" name="Телефон&nbsp;покупателя" placeholder="Ваш телефон" required>
 			<input type="submit" class="btn" value="Заказать звонок"> 
 		</form>
 	</div> 
@@ -2340,7 +2323,7 @@
 			<p class="form__title">Заполните форму,</p>
 			<p class="form__text">и мы с вами свяжемся</p>
 			<input class="form__line name" type="text" name="Имя&nbsp;покупателя" placeholder="Ваше имя" required>
-			<input class="form__line" type="tel" name="Телефон&nbsp;покупателя" placeholder="Ваш телефон" required>
+			<input class="form__line phone-mask" type="tel" name="Телефон&nbsp;покупателя" placeholder="Ваш телефон" required>
 			<input type="submit" class="btn" value="Заказать услугу"> 
 		</form>
 	</div> 
@@ -2357,11 +2340,10 @@
 			<p class="form__title">Заполните форму,</p>
 			<p class="form__text">и мы с вами свяжемся</p>
 			<input class="form__line name" type="text" name="Имя&nbsp;покупателя" placeholder="Ваше имя" required>
-			<input class="form__line" type="tel" name="Телефон&nbsp;покупателя" placeholder="Ваш телефон" required>
+			<input class="form__line phone-mask" type="tel" name="Телефон&nbsp;покупателя" placeholder="Ваш телефон" required>
 			<input type="submit" class="btn" value="Заказать"> 
 		</form>
 	</div>
-
 	<div class="remodal formBox" data-remodal-id="assortment"> 
 		<button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
 		<form class="form form-validate" name="services">
@@ -2375,7 +2357,7 @@
 			<p class="form__title">Заполните форму,</p>
 			<p class="form__text">и мы поможем Вам подобрать напольное покрытие под интерьер Вашего помещения.</p>
 			<input class="form__line name" type="text" name="Имя&nbsp;покупателя" placeholder="Ваше имя" required>
-			<input class="form__line" type="tel" name="Телефон&nbsp;покупателя" placeholder="Ваш телефон" required>
+			<input class="form__line phone-mask" type="tel" name="Телефон&nbsp;покупателя" placeholder="Ваш телефон" required>
 			<input type="submit" class="btn" value="Заказать"> 
 		</form>
 	</div>  
