@@ -56,14 +56,16 @@
 		position: relative;
 		list-style-type: none;
 		width: 100%;
-		height: 320px;
+		height: 300px;
+		cursor: pointer;
 		overflow: hidden;
 
 		@media @tablet {
-			width: 50%;
+			width: 33%;
+			height: 500px;
 		}
 		@media @desktop {
-			
+			height: 700px;
 		}
 		@media @desktop-xl {
 			width: 20%;
@@ -95,26 +97,15 @@
 
 		
 		@media @desktop-xl {
+			padding-top: inherit;
 			&:nth-of-type(odd) .gallery__product {
-				top: 20%;
+				padding-top: 30%;
 			}
 			&:nth-of-type(even) .gallery__product {
-				top: 80%;
+				padding-top: 120%;
 			}
 		}
 
-		&:nth-of-type(1)  {
-			background: url(../images/photo__assortment1.jpg);
-			@media @tablet {
-
-			}
-			@media @desktop {
-
-			}
-			@media @desktop-xl {
-				
-			}
-		}
 		&:nth-of-type(1)  {
 			background: url(../images/photo__assortment1.jpg)no-repeat center/cover;
 		}
@@ -130,8 +121,7 @@
 		&:nth-of-type(5)  {
 			background: url(../images/photo__assortment5.jpg)no-repeat center/cover;
 		}
-
-
+		
 		&:hover {
 			&:before {
 				background: rgba(0,0,0, .35);
@@ -144,32 +134,30 @@
 		}
 	}
 	&__product {
+		display: block;
 		position: absolute;
 		left: 50%;
+		padding-top: 40%;
 		transform: translateX(-50%);
 		width: 100%;
+		height: 100%;
 		font-size: 30px;
 		font-weight: 700;
 		color: #fff;
 		text-align: center;
 		overflow: hidden;
 		transition: all .5s linear;
+		z-index: 10;
 
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -50%);
 		@media @tablet {
-
+			padding-top: 60%;
 		}
 		@media @desktop {
 
 		}
 		@media @desktop-xl {
+			padding-top: inherit;
 			font-size: 40px;
 		}
-	}
-	img {
-		z-index: -1;
-		position: absolute;
 	}
 }
