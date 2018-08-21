@@ -648,7 +648,6 @@ section {
     width: 100%;
     max-height: 74px;
     z-index: 100;
-    background: #000;
 }
 @media only screen and (min-width: 992px) {
     .header {
@@ -666,12 +665,13 @@ section {
     right: 0;
     height: 100%;
     width: 100%;
-    background: #000;
+    background: #fff200;
 }
 @media only screen and (min-width: 992px) {
     .header .container:before {
         right: -950px;
         width: 1000px;
+        background: #000;
     }
 }
 .header__box {
@@ -917,7 +917,7 @@ section {
 }
 .headerMain__address {
     padding-top: 10px;
-    font-size: 24px;
+    font-size: 22px;
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
 }
@@ -926,19 +926,9 @@ section {
         font-size: 30px;
     }
 }
-@media only screen and (min-width: 992px) {
-    .headerMain__address {
-        font-size: 40px;
-    }
-}
-@media only screen and (min-width: 1200px) {
-    .headerMain__address {
-        font-size: 45px;
-    }
-}
 @media only screen and (min-width: 1600px) {
     .headerMain__address {
-        font-size: 53px;
+        font-size: 40px;
     }
 }
 @media only screen and (min-width: 992px) {
@@ -1217,7 +1207,7 @@ section {
             transform: translateY(-150%);
 }
 .catalog .slick-prev {
-    left: 0;
+    left: 7px;
 }
 @media only screen and (min-width: 768px) {
     .catalog .slick-prev {
@@ -1230,7 +1220,7 @@ section {
     }
 }
 .catalog .slick-next {
-    right: 0;
+    right: 7px;
 }
 @media only screen and (min-width: 768px) {
     .catalog .slick-next {
@@ -1308,7 +1298,7 @@ section {
             transform: translateY(-150%);
 }
 .article__wrapper2 .slick-prev {
-    left: 0;
+    left: 7px;
 }
 @media only screen and (min-width: 768px) {
     .article__wrapper2 .slick-prev {
@@ -1321,7 +1311,7 @@ section {
     }
 }
 .article__wrapper2 .slick-next {
-    right: 0;
+    right: 7px;
 }
 @media only screen and (min-width: 768px) {
     .article__wrapper2 .slick-next {
@@ -1408,7 +1398,7 @@ section {
             transform: translateY(-150%);
 }
 .article__wrapper3 .slick-prev {
-    left: 0;
+    left: 7px;
 }
 @media only screen and (min-width: 768px) {
     .article__wrapper3 .slick-prev {
@@ -1421,7 +1411,7 @@ section {
     }
 }
 .article__wrapper3 .slick-next {
-    right: 0;
+    right: 7px;
 }
 @media only screen and (min-width: 768px) {
     .article__wrapper3 .slick-next {
@@ -2640,7 +2630,7 @@ section {
 }
 .remodal-close {
     top: 15px !important;
-    right: 5vh !important;
+    right: 15px !important;
     color: #000 !important;
     z-index: 10;
 }
@@ -2650,8 +2640,14 @@ section {
         height: 16px !important;
     }
 }
+@media only screen and (min-width: 370px) {
+    .remodal-close {
+        right: 40px !important;
+    }
+}
 @media only screen and (min-width: 768px) {
     .remodal-close {
+        right: 15px !important;
         width: 35px !important;
         height: 30px !important;
     }
@@ -3173,7 +3169,7 @@ label {
          -o-transition: all 0.6s ease-in-out;
             transition: all 0.6s ease-in-out;
     z-index: 1000;
-    background: #000;
+    background: transparent;
     border: none;
     outline: none;
     display: block;
@@ -3191,7 +3187,7 @@ label {
     display: block;
     width: 40px;
     height: 2px;
-    background: #fff200;
+    background: #000;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -3206,7 +3202,7 @@ label {
     content: '';
     position: absolute;
     height: 2px;
-    background: #fff200;
+    background: #000;
     width: 40px;
     top: 50%;
     left: 50%;

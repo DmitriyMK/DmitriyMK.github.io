@@ -23,7 +23,6 @@
 	width: 100%;
 	max-height: 74px;
 	z-index: 100;
-	background: #000;
 	@media @desktop {
 		background: #fff;
 	}
@@ -39,10 +38,11 @@
 			right: 0;
 			height: 100%;
 			width: 100%;
-			background: #000;
+			background: @yellow;
 			@media @desktop {
 				right: -950px;
 				width: 1000px;
+				background: #000;
 			}
 		}
 	}
@@ -227,21 +227,16 @@
 
 	&__address {
 		padding-top: 10px;
-		font-size: 24px;
+		font-size: 22px;
 		font-family: @ff2;
 		font-weight: 400;
 
 		@media @tablet {
 			font-size: 30px;
 		}
-		@media @desktop {
-			font-size: 40px;
-		}
-		@media @desktop-xl {
-			font-size: 45px;
-		}
+
 		@media @desktop-xl-2 {
-			font-size: 53px;
+			font-size: 40px;
 		}
 	}
 
