@@ -181,9 +181,9 @@ $(document).mouseup(function(e) {
 if (document.documentElement.clientWidth > 991) {
 
   $(window).scroll(function() {
-    if ($(this).scrollTop() > 800) {
+    if ($(this).scrollTop() > 270) {
       $('#fixedTopMenu').addClass('fixed');
-    } else if ($(this).scrollTop() < 800) {
+    } else if ($(this).scrollTop() < 270) {
       $('#fixedTopMenu').removeClass('fixed');
     };
   });

@@ -3770,6 +3770,36 @@ label {
 .postFull ul {
     padding-bottom: 15px;
 }
+.postFull h1 {
+    font-size: 26px;
+    font-weight: 700;
+    padding-bottom: 10px;
+}
+.postFull h2 {
+    font-size: 24px;
+    font-weight: 700;
+    padding-bottom: 10px;
+}
+.postFull h3 {
+    font-size: 22px;
+    font-weight: 700;
+    padding-bottom: 10px;
+}
+.postFull h4 {
+    font-size: 20px;
+    font-weight: 700;
+    padding-bottom: 10px;
+}
+.postFull h5 {
+    font-size: 18px;
+    font-weight: 700;
+    padding-bottom: 10px;
+}
+.postFull h6 {
+    font-size: 16px;
+    font-weight: 700;
+    padding-bottom: 10px;
+}
 .hare p {
     padding-top: 50px;
     font-size: 20px;
