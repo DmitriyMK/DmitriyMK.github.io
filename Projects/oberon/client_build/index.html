@@ -104,7 +104,7 @@
 			<div class="container">
 				<ul class="sale__box">
 					<li class="sale__item">
-						<a href="#" class="sale__link">
+						<a class="sale__link">
 							<img class="sale__img" src="images/photo-sale1.jpg" alt="Горячая цена на немецкий ламинат!!! ">
 							<div class="sale__content">
 								<h2 class="sale__product">Ламинат</h2>
@@ -114,7 +114,7 @@
 					</li>
 
 					<li class="sale__item">
-						<a href="#" class="sale__link">
+						<a class="sale__link">
 							<img class="sale__img" src="images/hero__back.jpg" alt="Горячая цена на немецкий ламинат!!! ">
 							<div class="sale__content">
 								<h2 class="sale__product">Ламинат</h2>
@@ -124,7 +124,7 @@
 					</li>
 
 					<li class="sale__item">
-						<a href="#" class="sale__link">
+						<a class="sale__link">
 							<img class="sale__img" src="images/video__back.jpg" alt="Горячая цена на немецкий ламинат!!! ">
 							<div class="sale__content">
 								<h2 class="sale__product">Ламинат</h2>
@@ -741,7 +741,7 @@
 							</div>
 						</div>
 					</article>
-					<p class="shop__text">Больше цветов можно посмотреть в нашем магазине г. Киев просп. Правды, 80.</p>
+					<p class="shop__text">Больше цветов можно посмотреть в нашем магазине <span>г. Киев просп. Правды, 80.</span></p>
 				</div>
 			</div>
 		</section>
@@ -1151,7 +1151,7 @@
 							</div>
 						</div>
 					</article>
-					<p class="shop__text">Больше цветов можно посмотреть в нашем магазине г. Киев просп. Правды, 80.</p>
+					<p class="shop__text">Больше цветов можно посмотреть в нашем магазине <span>г. Киев просп. Правды, 80.</span></p>
 				</div>
 			</div>
 		</div>
@@ -1561,7 +1561,7 @@
 							</div>
 						</div>
 					</article>
-					<p class="shop__text">Больше цветов можно посмотреть в нашем магазине г. Киев просп. Правды, 80.</p>
+					<p class="shop__text">Больше цветов можно посмотреть в нашем магазине <span>г. Киев просп. Правды, 80.</span></p>
 				</div>
 			</div>
 		</div>
@@ -2068,11 +2068,13 @@
 							<input type="hidden" name="form_subject" value="Oberon > Выезд специалиста">
 							<input type="hidden" name="whatform" value="Oberon > Выезд специалиста">
 							<!-- END Hidden Required Fields -->
-							<p class="form__title">Заполните форму,</p>
+							<p class="form__title">Заполните форму</p>
 							<p class="form__text">и мы с вами свяжемся.</p>
 							<input class="form__line name" type="text" name="Имя&nbsp;покупателя" placeholder="Ваше имя" required>
 							<input class="form__line phone-mask" type="tel" name="Телефон&nbsp;покупателя" placeholder="Ваш телефон" required>		
-							<input type="submit" class="btn" value="Оставить заявку"> 
+							<div class="btn">
+								<input type="submit" class="btn-submit"  value="Оставить заявку"> 
+							</div>
 						</form>
 					</div>
 				</div>
@@ -2201,7 +2203,7 @@
 						</a>
 					</li>
 					<li class="gallery__item">
-								<a data-remodal-target="assortment" class="gallery__link">
+						<a data-remodal-target="assortment" class="gallery__link">
 							<h3 class="gallery__product">Офис</h3>
 						</a>
 					</li>
@@ -2211,7 +2213,7 @@
 						</a>
 					</li>
 					<li class="gallery__item">
-							<a data-remodal-target="assortment" class="gallery__link">
+						<a data-remodal-target="assortment" class="gallery__link">
 							<h3 class="gallery__product">Гостиница</h3>
 						</a>
 					</li>
@@ -2308,7 +2310,9 @@
 			<p class="form__text">и мы с вами свяжемся</p>
 			<input class="form__line name" type="text" name="Имя&nbsp;покупателя" placeholder="Ваше имя" required>
 			<input class="form__line phone-mask" type="tel" name="Телефон&nbsp;покупателя" placeholder="Ваш телефон" required>
-			<input type="submit" class="btn" value="Заказать звонок"> 
+			<div class="btn">
+				<input type="submit" class="btn-submit"  value="Заказать звонок"> 
+			</div>
 		</form>
 	</div> 
 	<div class="remodal formBox" data-remodal-id="services"> 
@@ -2324,7 +2328,9 @@
 			<p class="form__text">и мы с вами свяжемся</p>
 			<input class="form__line name" type="text" name="Имя&nbsp;покупателя" placeholder="Ваше имя" required>
 			<input class="form__line phone-mask" type="tel" name="Телефон&nbsp;покупателя" placeholder="Ваш телефон" required>
-			<input type="submit" class="btn" value="Заказать услугу"> 
+			<div class="btn">
+				<input type="submit" class="btn-submit"  value="Заказать услугу"> 
+			</div> 
 		</form>
 	</div> 
 	<div class="remodal formBox" data-remodal-id="order"> 
@@ -2341,7 +2347,9 @@
 			<p class="form__text">и мы с вами свяжемся</p>
 			<input class="form__line name" type="text" name="Имя&nbsp;покупателя" placeholder="Ваше имя" required>
 			<input class="form__line phone-mask" type="tel" name="Телефон&nbsp;покупателя" placeholder="Ваш телефон" required>
-			<input type="submit" class="btn" value="Заказать"> 
+			<div class="btn">
+				<input type="submit" class="btn-submit"  value="Заказать"> 
+			</div> 
 		</form>
 	</div>
 	<div class="remodal formBox" data-remodal-id="assortment"> 
@@ -2358,7 +2366,9 @@
 			<p class="form__text">и мы поможем Вам подобрать напольное покрытие под интерьер Вашего помещения.</p>
 			<input class="form__line name" type="text" name="Имя&nbsp;покупателя" placeholder="Ваше имя" required>
 			<input class="form__line phone-mask" type="tel" name="Телефон&nbsp;покупателя" placeholder="Ваш телефон" required>
-			<input type="submit" class="btn" value="Заказать"> 
+			<div class="btn">
+				<input type="submit" class="btn-submit"  value="Заказать"> 
+			</div> 
 		</form>
 	</div>  
 

@@ -33,21 +33,14 @@
 		background-image: -moz-linear-gradient( 90deg, rgb(204,204,204) 0%, rgba(225,229,235,0) 100%);
 		background-image: -webkit-linear-gradient( 90deg, rgb(204,204,204) 0%, rgba(225,229,235,0) 100%);
 		background-image: -ms-linear-gradient( 90deg, rgb(204,204,204) 0%, rgba(225,229,235,0) 100%);
-
 		@media @tablet {
-
-		}
-		@media @desktop {
-
+			background: #fff;
 		}
 		@media @desktop-xl {
-
-		}
-		@media @desktop-xl-2 {
-
-		}
-		@media @desktop-xll {
-
+			min-height: 270px;
+			background-image: -moz-linear-gradient( 90deg, rgb(204,204,204) 0%, rgba(225,229,235,0) 100%);
+			background-image: -webkit-linear-gradient( 90deg, rgb(204,204,204) 0%, rgba(225,229,235,0) 100%);
+			background-image: -ms-linear-gradient( 90deg, rgb(204,204,204) 0%, rgba(225,229,235,0) 100%);
 		}
 	}
 	
@@ -58,12 +51,15 @@
 		align-items: center;
 		justify-content: center;
 		overflow: hidden;
-		box-shadow: 8.485px 8.485px 15.81px 1.19px rgba(0, 0, 0, 0.27);
 
-
+		@media @tablet {
+			flex-wrap: wrap;
+			flex-direction: row;
+		}
 		@media @desktop-xl {
 			height: 550px;
-			flex-direction: row;
+			flex-wrap: nowrap;
+			box-shadow: 8.485px 8.485px 15.81px 1.19px rgba(0, 0, 0, 0.27);
 		}
 	}
 

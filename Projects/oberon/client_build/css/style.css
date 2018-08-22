@@ -507,7 +507,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     }
 }
 a {
-    outline: none;
+    outline: none!important;
     color: inherit;
 }
 ul {
@@ -571,6 +571,11 @@ button {
          -o-transition: all 0.5s linear;
             transition: all 0.5s linear;
 }
+.btn-submit {
+    background: none;
+    border: none;
+    color: #fff;
+}
 address {
     font-style: normal;
 }
@@ -625,18 +630,6 @@ section {
     .section__title {
         font-size: 36px;
     }
-}
-::-webkit-input-placeholder {
-    font-size: 16px;
-}
-::-moz-placeholder {
-    font-size: 16px;
-}
-:-ms-input-placeholder {
-    font-size: 16px;
-}
-:-moz-placeholder {
-    font-size: 16px;
 }
 .header {
     overflow: hidden;
@@ -886,7 +879,7 @@ section {
 }
 .headerMain__logo img {
     display: block;
-    max-width: 300px;
+    max-width: 290px;
     height: auto;
     margin: auto;
 }
@@ -1215,10 +1208,15 @@ section {
     z-index: 11;
 }
 .catalog .slick-prev, .catalog .slick-next {
-    top: 50%;
-    -webkit-transform: translateY(-150%);
-        -ms-transform: translateY(-150%);
-            transform: translateY(-150%);
+    top: 150px;
+}
+@media only screen and (min-width: 768px) {
+    .catalog .slick-prev, .catalog .slick-next {
+        top: 50%;
+        -webkit-transform: translateY(-150%);
+            -ms-transform: translateY(-150%);
+                transform: translateY(-150%);
+    }
 }
 .catalog .slick-prev {
     left: 7px;
@@ -1306,10 +1304,15 @@ section {
     }
 }
 .article__wrapper2 .slick-prev, .article__wrapper2 .slick-next {
-    top: 50%;
-    -webkit-transform: translateY(-150%);
-        -ms-transform: translateY(-150%);
-            transform: translateY(-150%);
+    top: 150px;
+}
+@media only screen and (min-width: 768px) {
+    .article__wrapper2 .slick-prev, .article__wrapper2 .slick-next {
+        top: 50%;
+        -webkit-transform: translateY(-150%);
+            -ms-transform: translateY(-150%);
+                transform: translateY(-150%);
+    }
 }
 .article__wrapper2 .slick-prev {
     left: 7px;
@@ -1406,10 +1409,15 @@ section {
     }
 }
 .article__wrapper3 .slick-prev, .article__wrapper3 .slick-next {
-    top: 50%;
-    -webkit-transform: translateY(-150%);
-        -ms-transform: translateY(-150%);
-            transform: translateY(-150%);
+    top: 150px;
+}
+@media only screen and (min-width: 768px) {
+    .article__wrapper3 .slick-prev, .article__wrapper3 .slick-next {
+        top: 50%;
+        -webkit-transform: translateY(-150%);
+            -ms-transform: translateY(-150%);
+                transform: translateY(-150%);
+    }
 }
 .article__wrapper3 .slick-prev {
     left: 7px;
@@ -1467,8 +1475,8 @@ section {
 @media only screen and (min-width: 992px) {
     .tabs__link {
         width: 330px;
-        height: 60px;
-        padding-top: 10px;
+        height: 70px;
+        padding-top: 17px;
         padding-bottom: 10px;
         border-bottom: 15px solid #f1f2f5;
     }
@@ -1502,7 +1510,7 @@ section {
 .tabs__title {
     position: relative;
     padding-left: 0;
-    font-size: 16px;
+    font-size: 15px;
     font-weight: 700;
 }
 @media only screen and (min-width: 768px) {
@@ -1646,13 +1654,22 @@ section {
 .shop__text {
     padding-top: 60px;
     padding-bottom: 60px;
-    font-size: 20px;
+    font-size: 18px;
     text-align: center;
+}
+.shop__text span {
+    display: block;
+    font-weight: 700;
 }
 @media only screen and (min-width: 768px) {
     .shop__text {
+        font-size: 20px;
         padding-top: 80px;
         padding-bottom: 0;
+    }
+    .shop__text span {
+        display: inline;
+        font-weight: 400;
     }
 }
 .catalogPlus {
@@ -1672,6 +1689,18 @@ section {
     background-image: -webkit-linear-gradient(90deg, #ccc 0%, rgba(225, 229, 235, 0) 100%);
     background-image:     -ms-linear-gradient(90deg, #ccc 0%, rgba(225, 229, 235, 0) 100%);
 }
+@media only screen and (min-width: 768px) {
+    .catalogPlus:before {
+        background: #fff;
+    }
+}
+@media only screen and (min-width: 1200px) {
+    .catalogPlus:before {
+        min-height: 270px;
+        background-image: -webkit-linear-gradient(90deg, #ccc 0%, rgba(225, 229, 235, 0) 100%);
+        background-image:     -ms-linear-gradient(90deg, #ccc 0%, rgba(225, 229, 235, 0) 100%);
+    }
+}
 .catalogPlus__box {
     margin-top: 80px;
     display: -webkit-box;
@@ -1688,16 +1717,24 @@ section {
     -ms-flex-pack: center;
     justify-content: center;
     overflow: hidden;
-    -webkit-box-shadow: 8.485px 8.485px 15.81px 1.19px rgba(0, 0, 0, 0.27);
-            box-shadow: 8.485px 8.485px 15.81px 1.19px rgba(0, 0, 0, 0.27);
 }
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 768px) {
     .catalogPlus__box {
-        height: 550px;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
         -webkit-box-orient: horizontal;
         -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    }
+}
+@media only screen and (min-width: 1200px) {
+    .catalogPlus__box {
+        height: 550px;
+        -ms-flex-wrap: nowrap;
+            flex-wrap: nowrap;
+        -webkit-box-shadow: 8.485px 8.485px 15.81px 1.19px rgba(0, 0, 0, 0.27);
+                box-shadow: 8.485px 8.485px 15.81px 1.19px rgba(0, 0, 0, 0.27);
     }
 }
 .catalogPlus__link {
@@ -1737,13 +1774,10 @@ section {
     padding-top: 100px;
     padding-bottom: 100px;
 }
-.brand__title {
-    font-size: 26px;
-}
 .brand__text {
     margin-top: 70px;
     text-align: center;
-    font-size: 26px;
+    font-size: 22px;
     font-weight: 700;
 }
 .brand__list {
@@ -1891,6 +1925,11 @@ section {
 .master__box-left {
     margin-bottom: 25px;
     text-align: center;
+}
+@media only screen and (min-width: 768px) {
+    .master__box-left {
+        padding-left: 25px;
+    }
 }
 @media only screen and (min-width: 992px) {
     .master__box-left {
@@ -2587,7 +2626,7 @@ section {
     vertical-align: top;
 }
 .footer__desc {
-    padding: 15px 0;
+    padding: 15px 0 30px 0;
     font-weight: 300;
     text-align: center;
 }

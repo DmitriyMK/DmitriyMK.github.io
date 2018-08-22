@@ -97,8 +97,12 @@
 
 	.slick-prev,
 	.slick-next {
-		top: 50%;
-		transform: translateY(-150%);
+		top: 150px;
+
+		@media @tablet {
+			top: 50%;
+			transform: translateY(-150%);
+		}
 	}
 	.slick-prev {
 		left: 7px;
@@ -177,8 +181,12 @@
 
 	.slick-prev,
 	.slick-next {
-		top: 50%;
-		transform: translateY(-150%);
+		top: 150px;
+
+		@media @tablet {
+			top: 50%;
+			transform: translateY(-150%);
+		}
 	}
 	.slick-prev {
 		left: 7px;
@@ -266,8 +274,12 @@
 
 	.slick-prev,
 	.slick-next {
-		top: 50%;
-		transform: translateY(-150%);
+		top: 150px;
+
+		@media @tablet {
+			top: 50%;
+			transform: translateY(-150%);
+		}
 	}
 	.slick-prev {
 		left: 7px;
@@ -309,8 +321,8 @@
 
 		@media @desktop {
 			width: 330px;
-			height: 60px;
-			padding-top: 10px;
+			height: 70px;
+			padding-top: 17px;
 			padding-bottom: 10px;
 			border-bottom: 15px solid #f1f2f5;
 		}
@@ -342,7 +354,7 @@
 	&__title {
 		position: relative;
 		padding-left: 0;
-		font-size: 16px;
+		font-size: 15px;
 		font-weight: 700;
 		@media @tablet {
 			font-size: 18px;
@@ -483,10 +495,19 @@
 .shop__text {
 	padding-top: 60px;
 	padding-bottom: 60px;
-	font-size: 20px;
+	font-size: 18px;
 	text-align: center;
+	span {
+		display: block;
+		font-weight: 700;
+	}
 	@media @tablet {
+		font-size: 20px;
 		padding-top: 80px;
 		padding-bottom: 0;
+		span {
+			display: inline;
+			font-weight: 400;
+		}
 	}
 }
