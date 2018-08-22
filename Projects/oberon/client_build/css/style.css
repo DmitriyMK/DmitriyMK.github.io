@@ -2728,7 +2728,7 @@ section {
 }
 .remodal-close {
     top: 15px !important;
-    right: 15px !important;
+    right: 20px !important;
     color: #000 !important;
     z-index: 10;
 }
