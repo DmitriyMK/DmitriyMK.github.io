@@ -664,6 +664,15 @@ section {
     z-index: 100;
     background: #000;
 }
+.header:before {
+    content: '';
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    width: 100%;
+    -webkit-box-shadow: 8.485px 8.485px 15.81px 1.19px #000;
+            box-shadow: 8.485px 8.485px 15.81px 1.19px #000;
+}
 @media only screen and (min-width: 992px) {
     .header {
         background: #fff;
@@ -699,16 +708,6 @@ section {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    position: relative;
-}
-.header__box:before {
-    content: '';
-    position: absolute;
-    bottom: 5px;
-    left: 0;
-    width: 100%;
-    -webkit-box-shadow: 8.485px 8.485px 15.81px 1.19px #000;
-            box-shadow: 8.485px 8.485px 15.81px 1.19px #000;
 }
 .header__logo {
     -webkit-box-flex: 1;

@@ -24,6 +24,14 @@
 	max-height: 74px;
 	z-index: 100;
 	background: #000;
+	&:before {
+		content: '';
+		position: absolute;
+		bottom: 5px;
+		left: 0;
+		width: 100%;
+		box-shadow: 8.485px 8.485px 15.81px 1.19px rgba(0, 0, 0, 1);
+	}
 	@media @desktop {
 		background: #fff;
 	}
@@ -52,15 +60,6 @@
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
-		position: relative;
-		&:before {
-			content: '';
-			position: absolute;
-			bottom: 5px;
-			left: 0;
-			width: 100%;
-			box-shadow: 8.485px 8.485px 15.81px 1.19px rgba(0, 0, 0, 1);
-		}
 	}
 
 	&__logo {
