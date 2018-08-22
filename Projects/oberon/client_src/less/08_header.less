@@ -24,7 +24,7 @@
 	max-height: 74px;
 	z-index: 100;
 	background: #000;
-	&:before {
+	&:after {
 		content: '';
 		position: absolute;
 		bottom: 5px;
@@ -48,6 +48,7 @@
 			height: 100%;
 			width: 100%;
 			background: @yellow;
+			z-index: -1;
 			@media @desktop {
 				right: -950px;
 				width: 1000px;

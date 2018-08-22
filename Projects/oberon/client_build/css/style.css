@@ -664,7 +664,7 @@ section {
     z-index: 100;
     background: #000;
 }
-.header:before {
+.header:after {
     content: '';
     position: absolute;
     bottom: 5px;
@@ -690,6 +690,7 @@ section {
     height: 100%;
     width: 100%;
     background: #fff200;
+    z-index: -1;
 }
 @media only screen and (min-width: 992px) {
     .header .container:before {
@@ -3431,6 +3432,7 @@ label {
 }
 .post__img {
     max-width: 320px;
+    max-height: 240px;
 }
 @media only screen and (min-width: 768px) {
     .post__img {
