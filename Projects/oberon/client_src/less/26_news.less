@@ -35,13 +35,36 @@
 .post {
 	position: relative;
 	display: flex;
+	align-items: center;
+	flex-direction: column;
 	margin-bottom: 30px;
-	max-height: 270px;
 	z-index: 10;
-	box-shadow: 8.485px 8.485px 15.81px 1.19px rgba(0, 0, 0, 0.27);
 	overflow: hidden;
+	transition: box-shadow .3s linear;
+	&:hover {
+		box-shadow: none;
+	}
+	@media @tablet {
+		flex-direction: row;
+		align-items: inherit;
+		max-height: 250px;
+		box-shadow: 8.485px 8.485px 15.81px 1.19px rgba(0, 0, 0, 0.27);
+	}
+	@media @desktop {
+		max-height: 270px;
+	}
 	&__img {
-		flex-basis: 35%;
+		max-width: 320px;
+		@media @tablet {
+			max-width: inherit;
+			flex-basis: 50%;
+		}
+		@media @desktop {
+			flex-basis: 45%;
+		}
+		@media @desktop-xl {
+			flex-basis: 35%;
+		}
 		img {
 			display: block;
 			max-width: 100%;
@@ -50,42 +73,100 @@
 	}
 
 	&__content {
-		flex-basis: 65%;
+		max-width: 320px;
 		background: #fff;
+		@media @tablet {
+			max-width: inherit;
+			flex-basis: 50%;
+		}
+		@media @desktop {
+			flex-basis: 55%;
+		}
+		@media @desktop-xl {
+			flex-basis: 65%;
+		}
 	}
 	&__title {
-		padding: 15px 50px;
-		font-size: 28px;
+		padding: 10px 15px;
+		font-size: 20px;
 		font-weight: 700;
 		background: #000;
 		color: @yellow;
+		overflow: hidden;
+		@media @tablet {
+			padding: 7px 15px;
+			height: 60px;
+		}
+		@media @desktop {
+			height: 68px;
+			padding: 10px 35px;
+			font-size: 22px;
+		}
+		@media @desktop-xl {
+			height: 80px;
+			padding: 10px 50px;
+			font-size: 28px;
+		}
 	}
 	&__info {
-		padding: 10px 50px;
+
+		padding: 10px 10px 10px 15px;
+		overflow: hidden;
+
+		@media @tablet {
+			height: 100px;
+		}
+
+		@media @desktop {
+			height: 115px;
+			padding: 10px 10px 10px 35px;
+		}
+		@media @desktop-xl {
+			padding: 10px 50px;
+		}
 	}
 	p {
-		padding: 10px 0;
+		padding-top: 10px;
 	}
 	.btn {
+		margin: 10px auto 25px auto;
 		text-align: center;
 		color: @yellow;
+		@media @tablet {
+			margin: 0;
+			margin-top: 10px;
+			margin-left: 15px;
+		}
+		@media @desktop {
+			margin-left: 35px;
+		}
+		@media @desktop-xl {
+			margin-left: 50px;
+		}
 	}
 }
 
 .pagination {
 	&-links {
 		display: flex;
+		justify-content: center;
 		align-items: center;
+		@media @tablet {
+			justify-content: inherit;
+		}
 	}
 	a {
 		display: block;
 		padding: 2px 12px;
 		margin-right: 8px;
-		font-size: 30px;
+		font-size: 24px;
 		background: #000;
 		color: #fff;
 		transition: all .3s linear;
 		box-shadow: 8.485px 8.485px 15.81px 1.19px rgba(0, 0, 0, 0.27);
+		@media @tablet {
+			font-size: 30px;
+		}
 		&:hover {
 			box-shadow: none;
 		}
@@ -100,31 +181,13 @@
 .footerInner {
 	background: #000;
 	overflow: hidden;
-	li {
-		list-style-type: none;
-	}
-
-	.social__item {
-		display: inline-block;
-		margin-right: 5px;
-	}
-	.social__link {
-		display: block;
-		width: 50px;
-		height: 50px;
-		img {
-			display: block;
-			max-width: 100%;
-			height: auto;
-		}
-	}
-
+	
 	&__box {
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-		@media @tablet {
+		@media @desktop {
 			flex-direction: row;
 			justify-content: space-between;
 		}
@@ -136,7 +199,7 @@
 		align-items: center;
 		font-weight: 700;
 		color: #fefefe;
-		@media @tablet {
+		@media @desktop {
 			flex-direction: row;
 		}
 		img {
@@ -144,14 +207,39 @@
 		}
 	}
 	&__desc {
-		padding: 15px 0 30px 0;
+		padding: 15px 0 15px 0;
 		font-weight: 300;
 		text-align: center;
-		@media @tablet {
+		@media @desktop {
 			padding: 0;
 			margin-left: 15px;
 			margin-right: 15px;
 			text-align: left;
+		}
+	}
+
+	.social {
+		&__list {
+			display: flex;
+		}
+		&__item {
+			margin-right: 15px;
+			margin-bottom: 30px;
+			list-style-type: none;
+			@media @desktop {
+				margin-right: 5px;
+				margin-bottom: 0;
+			}
+		}
+		&__link {
+			display: block;
+			width: 50px;
+			height: 50px;
+			img {
+				display: block;
+				max-width: 100%;
+				height: auto;
+			}
 		}
 	}
 	
@@ -161,7 +249,7 @@
 		font-weight: 300;
 		color: #ebf4ff;
 
-		@media @tablet {
+		@media @desktop {
 			text-align: left;
 		}
 		img {
@@ -169,11 +257,10 @@
 			margin: auto;
 			margin-top: 7px;	
 			margin-bottom: 30px;
-			@media @tablet {
+			@media @desktop {
 				margin: 0;
 				margin-top: 7px;
 			}
 		}
 	}
 }
-

@@ -634,13 +634,14 @@ section {
 .pageInner__title {
     padding: 30px 0;
     position: relative;
-    font-size: 21px;
+    font-size: 30px;
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
+    text-align: center;
 }
 @media only screen and (min-width: 768px) {
     .pageInner__title {
-        font-size: 30px;
+        text-align: left;
     }
 }
 @media only screen and (min-width: 992px) {
@@ -3386,16 +3387,66 @@ label {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+        flex-direction: column;
     margin-bottom: 30px;
-    max-height: 270px;
     z-index: 10;
-    -webkit-box-shadow: 8.485px 8.485px 15.81px 1.19px rgba(0, 0, 0, 0.27);
-            box-shadow: 8.485px 8.485px 15.81px 1.19px rgba(0, 0, 0, 0.27);
     overflow: hidden;
+    -webkit-transition: -webkit-box-shadow 0.3s linear;
+            transition: -webkit-box-shadow 0.3s linear;
+         -o-transition:         box-shadow 0.3s linear;
+            transition:         box-shadow 0.3s linear;
+            transition:         box-shadow 0.3s linear, -webkit-box-shadow 0.3s linear;
+}
+.post:hover {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+}
+@media only screen and (min-width: 768px) {
+    .post {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+        -webkit-box-align: inherit;
+        -ms-flex-align: inherit;
+        align-items: inherit;
+        max-height: 250px;
+        -webkit-box-shadow: 8.485px 8.485px 15.81px 1.19px rgba(0, 0, 0, 0.27);
+                box-shadow: 8.485px 8.485px 15.81px 1.19px rgba(0, 0, 0, 0.27);
+    }
+}
+@media only screen and (min-width: 992px) {
+    .post {
+        max-height: 270px;
+    }
 }
 .post__img {
-    -ms-flex-preferred-size: 35%;
-    flex-basis: 35%;
+    max-width: 320px;
+}
+@media only screen and (min-width: 768px) {
+    .post__img {
+        max-width: inherit;
+        -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+    }
+}
+@media only screen and (min-width: 992px) {
+    .post__img {
+        -ms-flex-preferred-size: 45%;
+        flex-basis: 45%;
+    }
+}
+@media only screen and (min-width: 1200px) {
+    .post__img {
+        -ms-flex-preferred-size: 35%;
+        flex-basis: 35%;
+    }
 }
 .post__img img {
     display: block;
@@ -3403,40 +3454,124 @@ label {
     height: auto;
 }
 .post__content {
-    -ms-flex-preferred-size: 65%;
-    flex-basis: 65%;
+    max-width: 320px;
     background: #fff;
 }
+@media only screen and (min-width: 768px) {
+    .post__content {
+        max-width: inherit;
+        -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+    }
+}
+@media only screen and (min-width: 992px) {
+    .post__content {
+        -ms-flex-preferred-size: 55%;
+        flex-basis: 55%;
+    }
+}
+@media only screen and (min-width: 1200px) {
+    .post__content {
+        -ms-flex-preferred-size: 65%;
+        flex-basis: 65%;
+    }
+}
 .post__title {
-    padding: 15px 50px;
-    font-size: 28px;
+    padding: 10px 15px;
+    font-size: 20px;
     font-weight: 700;
     background: #000;
     color: #fff200;
+    overflow: hidden;
+}
+@media only screen and (min-width: 768px) {
+    .post__title {
+        padding: 7px 15px;
+        height: 60px;
+    }
+}
+@media only screen and (min-width: 992px) {
+    .post__title {
+        height: 68px;
+        padding: 10px 35px;
+        font-size: 22px;
+    }
+}
+@media only screen and (min-width: 1200px) {
+    .post__title {
+        height: 80px;
+        padding: 10px 50px;
+        font-size: 28px;
+    }
 }
 .post__info {
-    padding: 10px 50px;
+    padding: 10px 10px 10px 15px;
+    overflow: hidden;
+}
+@media only screen and (min-width: 768px) {
+    .post__info {
+        height: 100px;
+    }
+}
+@media only screen and (min-width: 992px) {
+    .post__info {
+        height: 115px;
+        padding: 10px 10px 10px 35px;
+    }
+}
+@media only screen and (min-width: 1200px) {
+    .post__info {
+        padding: 10px 50px;
+    }
 }
 .post p {
-    padding: 10px 0;
+    padding-top: 10px;
 }
 .post .btn {
+    margin: 10px auto 25px auto;
     text-align: center;
     color: #fff200;
+}
+@media only screen and (min-width: 768px) {
+    .post .btn {
+        margin: 0;
+        margin-top: 10px;
+        margin-left: 15px;
+    }
+}
+@media only screen and (min-width: 992px) {
+    .post .btn {
+        margin-left: 35px;
+    }
+}
+@media only screen and (min-width: 1200px) {
+    .post .btn {
+        margin-left: 50px;
+    }
 }
 .pagination-links {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+}
+@media only screen and (min-width: 768px) {
+    .pagination-links {
+        -webkit-box-pack: inherit;
+        -ms-flex-pack: inherit;
+        justify-content: inherit;
+    }
 }
 .pagination a {
     display: block;
     padding: 2px 12px;
     margin-right: 8px;
-    font-size: 30px;
+    font-size: 24px;
     background: #000;
     color: #fff;
     -webkit-transition: all 0.3s linear;
@@ -3444,6 +3579,11 @@ label {
             transition: all 0.3s linear;
     -webkit-box-shadow: 8.485px 8.485px 15.81px 1.19px rgba(0, 0, 0, 0.27);
             box-shadow: 8.485px 8.485px 15.81px 1.19px rgba(0, 0, 0, 0.27);
+}
+@media only screen and (min-width: 768px) {
+    .pagination a {
+        font-size: 30px;
+    }
 }
 .pagination a:hover {
     -webkit-box-shadow: none;
@@ -3456,23 +3596,6 @@ label {
 .footerInner {
     background: #000;
     overflow: hidden;
-}
-.footerInner li {
-    list-style-type: none;
-}
-.footerInner .social__item {
-    display: inline-block;
-    margin-right: 5px;
-}
-.footerInner .social__link {
-    display: block;
-    width: 50px;
-    height: 50px;
-}
-.footerInner .social__link img {
-    display: block;
-    max-width: 100%;
-    height: auto;
 }
 .footerInner__box {
     display: -webkit-box;
@@ -3489,7 +3612,7 @@ label {
     -ms-flex-align: center;
     align-items: center;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 992px) {
     .footerInner__box {
         -webkit-box-orient: horizontal;
         -webkit-box-direction: normal;
@@ -3514,7 +3637,7 @@ label {
     font-weight: 700;
     color: #fefefe;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 992px) {
     .footerInner__logo {
         -webkit-box-orient: horizontal;
         -webkit-box-direction: normal;
@@ -3526,11 +3649,11 @@ label {
     vertical-align: top;
 }
 .footerInner__desc {
-    padding: 15px 0 30px 0;
+    padding: 15px 0 15px 0;
     font-weight: 300;
     text-align: center;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 992px) {
     .footerInner__desc {
         padding: 0;
         margin-left: 15px;
@@ -3538,13 +3661,39 @@ label {
         text-align: left;
     }
 }
+.footerInner .social__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+.footerInner .social__item {
+    margin-right: 15px;
+    margin-bottom: 30px;
+    list-style-type: none;
+}
+@media only screen and (min-width: 992px) {
+    .footerInner .social__item {
+        margin-right: 5px;
+        margin-bottom: 0;
+    }
+}
+.footerInner .social__link {
+    display: block;
+    width: 50px;
+    height: 50px;
+}
+.footerInner .social__link img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
 .footerInner .agency {
     margin: auto;
     text-align: center;
     font-weight: 300;
     color: #ebf4ff;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 992px) {
     .footerInner .agency {
         text-align: left;
     }
@@ -3555,7 +3704,7 @@ label {
     margin-top: 7px;
     margin-bottom: 30px;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 992px) {
     .footerInner .agency img {
         margin: 0;
         margin-top: 7px;
