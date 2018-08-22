@@ -734,9 +734,9 @@ section {
     -webkit-box-ordinal-group: 6;
     -ms-flex-order: 5;
     order: 5;
-    -webkit-transition: all 0.3s linear;
-         -o-transition: all 0.3s linear;
-            transition: all 0.3s linear;
+    -webkit-transition: all 0.3s cubic-bezier(0, 1.56, 0.5, 1.62);
+         -o-transition: all 0.3s cubic-bezier(0, 1.56, 0.5, 1.62);
+            transition: all 0.3s cubic-bezier(0, 1.56, 0.5, 1.62);
 }
 @media only screen and (min-width: 992px) {
     .header__nav {
