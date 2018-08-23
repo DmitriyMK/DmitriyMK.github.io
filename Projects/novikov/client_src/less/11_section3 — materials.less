@@ -105,10 +105,13 @@
 	}
 
 	&-alcantara {
-		padding-top: 80px;
+		padding-top: 40px;
 		padding-bottom: 60px;
 		position: relative;
 		background: @black;
+		@media @desktop {
+			padding-top: 80px;
+		}
 		@media @desktop-xl {
 			padding-bottom: 100px;
 		}
@@ -158,14 +161,15 @@
 			}
 		}
 		.materials__title {
-			position: relative;
-			font-family: @ff2;
-			font-weight: 700;
-			font-size: 26px;
-			text-align: center;
-			color: #fff;
-			@media @tablet {
+			display: none;
+			@media @desktop {
+				display: block;
+				position: relative;
+				font-family: @ff2;
+				font-weight: 700;
 				font-size: 30px;
+				text-align: center;
+				color: #fff;
 			}
 			@media @desktop-xl {
 				font-size: 40px;
@@ -203,21 +207,15 @@
 		}
 
 		.box__color {
-			padding-left: 33px;
+			@media @desktop {
+				padding-left: 33px;
+			}
 		}
 
 		.box__photo {
-			
-			@media @tablet {
-
-			}
 			@media @desktop {
 				order: -1;
 			}
-			@media @desktop-xl {
-
-			}
-
 			.imgWrap {
 				position: relative;
 				&:before {
@@ -227,15 +225,15 @@
 		}
 
 		.slick-prev {
-			left: 380px; 
+			left: 0; 
 			@media @tablet {
-
+				left: 20%;
 			}
 			@media @desktop {
-
+				left: 370px; 
 			}
 			@media @desktop-xl {
-
+				left: 380px; 
 			}	
 		}
 	}
@@ -264,24 +262,21 @@
 	font-weight: 700;
 	font-size: 26px;
 	color: #010101;
+	text-align: center;
 
 	@media @tablet {
 
 	}
 	@media @desktop {
-
-	}
-	@media @desktop-xl {
-
+		text-align: inherit;
 	}
 }
 
 .box__color {
-	padding-top: 40px;
-	
+	padding-top: 20px;
 
 	@media @tablet {
-
+		padding-top: 40px;
 	}
 	@media @desktop {
 		width: 60%;
@@ -289,43 +284,53 @@
 	@media @desktop-xl {
 		width: 610px;
 	}
+
+	.btn {
+		display: block;
+		margin: auto;
+		@media @desktop {
+			margin: 0;
+		}
+	}
 }
 
 
 .leather__item {
 	margin-bottom: 16px;
-
-	@media @tablet {
-
-	}
-	@media @desktop {
-
-	}
-	@media @desktop-xl {
-
-	}
-
 	.imgWrap {
+		display: block;
+		max-width: 100%;
+		height: auto;
 		position: relative;
 		&:before {
 			content: '';
 			position: absolute;
 			top: 0;
 			left: 0;
-			width: 170px;
-			height: 127px;
+			width: 100%;
+			height: 100%;
 			background: rgba(0, 0, 0, 0);
 			transition: background-color .3s linear;
+			@media @tablet {
+				width: 170px;
+				height: 127px;
+			}
 		}
 		&:after {
 			content: '';
 			position: absolute;
 			top: 50%;
 			left: 50%;
-			transform: translate(-75%, -50%);
+			transform: translate(-50%, -50%);
 			opacity: 0;
 			transition: opacity .3s linear;
-			.bg-loop
+			.bg-loop;
+			@media @tablet {
+				transform: translate(-100%, -50%);
+			}
+			@media @desktop-xl {
+				transform: translate(-75%, -50%);
+			}
 		}
 		&:hover {
 			&:before {
@@ -341,15 +346,16 @@
 		display: block;
 		max-width: 100%;
 		height: auto;
-		box-shadow: 0px 8px 20px 1.26px rgba(0, 0, 0, 0.27);
+		box-shadow: 8px 0px 15px 1.26px rgba(0, 0, 0, 0.27);
+		@media @desktop-xl {
+			box-shadow: 0px 8px 20px 1.26px rgba(0, 0, 0, 0.27);
+		}
 	}
 }
 
 .box__photo {
 	order: -1;
-	@media @tablet {
 
-	}
 	@media @desktop {
 		order: inherit;
 		padding-top: 5%;
@@ -361,25 +367,36 @@
 	}
 	.imgWrap {
 		position: relative;
+		max-width: 320px;
+		height: auto;
+		margin: auto;
+		margin-top: 7px;
 		@media @tablet {
-
+			margin-top: 15px;
+			max-width: 450px;
 		}
 		@media @desktop {
-
+			max-width: inherit;
+			margin: 0;
 		}
-		@media @desktop-xl {
 
-		}
 		&:before {
-			content: '';
-			position: absolute;
-			top: 55px;
-			left: 55px;
-			width: 100%;
-			height: 100%;
-			background: @yellow;
-			z-index: -1;
-			box-shadow: 0px 11px 16.74px 1.26px rgba(0, 0, 0, 0.27);
+			@media @tablet {
+				content: '';
+				position: absolute;
+				bottom: -25px;
+				left: -45px;
+				width: 100%;
+				height: 100%;
+				background: @yellow;
+				z-index: -1;
+				box-shadow: 0px 11px 16.74px 1.26px rgba(0, 0, 0, 0.27);
+			}
+			@media @desktop {
+				bottom: inherit;
+				top: 55px;
+				left: 55px;
+			}
 		}
 		&:after {
 			content: '';
@@ -403,6 +420,7 @@
 		}
 	}
 	img {
+		position: relative;
 		display: block;
 		max-width: 100%;
 		height: auto;
@@ -415,35 +433,35 @@
 		right: 20px;
 		font-family: @ff1;
 		font-weight: 400;
-		font-size: 22px;
+		font-size: 15.5px;
 		z-index: 11;
 		transition: opacity .3s linear;
 		@media @tablet {
-
+			font-size: 19px;
 		}
 		@media @desktop {
 
 		}
 		@media @desktop-xl {
-
+			font-size: 22px;
 		}
 	}
 }
 
 .price {
-	margin-top: -5px;
-	margin-bottom: 5px;
+	margin-top: 45px;
+	margin-bottom: 15px;
 	font-family: @ff2;
 	font-size: 23px;
 	color: #010101;
+	text-align: center;
 	@media @tablet {
-
+		margin-top: 0px;
 	}
 	@media @desktop {
-
-	}
-	@media @desktop-xl {
-
+		margin-top: -5px;
+		margin-bottom: 5px;
+		text-align: inherit;
 	}
 }
 
