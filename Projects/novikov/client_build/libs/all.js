@@ -50,47 +50,30 @@ $(document).ready(function() {
 
   $('.leather').slick({
 
-      dots: false,
-      arrow: true,
-      slidesToShow: 3,
-      slidesToScroll: 1,
-      rows: 3,
-      infinite: false,
+    dots: false,
+    arrow: true,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    rows: 3,
+    infinite: false
+  });
 
-      responsive: [{
-          breakpoint: 768,
-          settings: {
-            slidesToShow: 2,
-            rows: 3,
-          }
-        },
-        // {
-        //   breakpoint: 767,
-        //   settings: {
-        //     slidesToShow: 1,
-        //     fade: true,
-        //   }
-      // },
-    ]
+  $('.alcantara').slick({
+
+    dots: false,
+    arrow: true,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    rows: 3,
+    infinite: false
 
   });
 
-$('.alcantara').slick({
-
-  dots: false,
-  arrow: true,
-  slidesToShow: 3,
-  slidesToScroll: 1,
-  rows: 3,
-  infinite: false,
-
-});
-
-$('.review__box').slick({
-  dots: true,
-  arrow: true,
-  fade: true,
-});
+  $('.review__box').slick({
+    dots: true,
+    arrow: true,
+    fade: true,
+  });
 
 
 

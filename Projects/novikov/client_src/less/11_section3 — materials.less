@@ -21,7 +21,7 @@
 	position: relative;
 	padding-bottom: 0;
 	background: url(../images/panel__back.jpg)no-repeat center/cover;
-	overflow: hidden;
+	
 	&:before {
 		@media @desktop-xl {
 			content: '';
@@ -99,6 +99,7 @@
 	&-leather {
 		position: relative;
 		padding-bottom: 60px;
+		overflow: hidden;
 		@media @desktop-xl {
 			padding-bottom: 100px;
 		}
@@ -227,7 +228,7 @@
 		.slick-prev {
 			left: 0; 
 			@media @tablet {
-				left: 20%;
+				
 			}
 			@media @desktop {
 				left: 370px; 
@@ -243,12 +244,14 @@
 .article__box {
 	display: flex;
 	flex-direction: column;
+	align-items: center;
 	justify-content: space-between;
 	padding-top: 25px;
 	@media @tablet {
 
 	}
 	@media @desktop {
+		align-items: inherit;
 		flex-direction: row;
 	}
 	@media @desktop-xl {
@@ -274,12 +277,14 @@
 
 .box__color {
 	padding-top: 20px;
-
+	max-width: 320px;
 	@media @tablet {
 		padding-top: 40px;
+		max-width: 400px;
 	}
 	@media @desktop {
 		width: 60%;
+		max-width: inherit;
 	}
 	@media @desktop-xl {
 		width: 610px;
@@ -292,14 +297,20 @@
 			margin: 0;
 		}
 	}
+	.slider {
+		margin: auto;
+	}
 }
 
 
 .leather__item {
 	margin-bottom: 16px;
+
 	.imgWrap {
 		display: block;
 		max-width: 100%;
+		margin-left: 5px;
+		margin-right: 5px;
 		height: auto;
 		position: relative;
 		&:before {
@@ -312,8 +323,11 @@
 			background: rgba(0, 0, 0, 0);
 			transition: background-color .3s linear;
 			@media @tablet {
+				
+			}
+			@media @desktop {
 				width: 170px;
-				height: 127px;
+			    height: 127px;
 			}
 		}
 		&:after {
@@ -326,7 +340,7 @@
 			transition: opacity .3s linear;
 			.bg-loop;
 			@media @tablet {
-				transform: translate(-100%, -50%);
+
 			}
 			@media @desktop-xl {
 				transform: translate(-75%, -50%);
@@ -346,7 +360,8 @@
 		display: block;
 		max-width: 100%;
 		height: auto;
-		box-shadow: 8px 0px 15px 1.26px rgba(0, 0, 0, 0.27);
+		box-shadow: -2px 8px 8px 0px rgba(0, 0, 0, 0.15);
+
 		@media @desktop-xl {
 			box-shadow: 0px 8px 20px 1.26px rgba(0, 0, 0, 0.27);
 		}
