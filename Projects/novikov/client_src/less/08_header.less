@@ -20,8 +20,21 @@
 .header {
 	position: relative;
 	background: url(../images/hero-image.jpg)no-repeat center/cover;
-	min-height: 920px;
+	
 	font-family: @ff2;
+
+	@media @tablet {
+
+	}
+	@media @desktop {
+
+	}
+	@media @desktop-xl {
+
+	}
+	@media @desktop-xl-2 {
+		min-height: 950px;
+	}
 
 	&:before {
 		content: '';
@@ -82,13 +95,13 @@
 	}
 
 	&__end {
-		padding-top: 180px;
+		margin-top: 180px;
 	}
 
 	.scrollLink {
 		display: block;
 		margin: 0 auto;	
-		animation: growLine 3s infinite;	
+		// animation: growLine 3s infinite;	
 		&:hover {
 			animation-play-state: paused;
 		}

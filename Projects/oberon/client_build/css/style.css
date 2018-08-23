@@ -1529,10 +1529,11 @@ section {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     margin-bottom: 0!important;
+    background: #f1f2f5;
 }
 .product__slide {
     position: relative;
@@ -1541,6 +1542,8 @@ section {
     font-family: 'Roboto', sans-serif;
     background: #f1f2f5;
     border: 1px solid #b1b4b8;
+    width: 320px;
+    overflow: hidden;
 }
 .product__titles {
     padding-bottom: 15px;

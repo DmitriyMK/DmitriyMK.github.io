@@ -551,8 +551,12 @@ section {
 .header {
     position: relative;
     background: url(../images/hero-image.jpg) no-repeat center / cover;
-    min-height: 920px;
     font-family: 'Roboto', sans-serif;
+}
+@media only screen and (min-width: 1600px) {
+    .header {
+        min-height: 950px;
+    }
 }
 .header:before {
     content: '';
@@ -616,20 +620,18 @@ section {
     color: #c8d1dc;
 }
 .header__end {
-    padding-top: 180px;
+    margin-top: 180px;
 }
 .header .scrollLink {
     display: block;
     margin: 0 auto;
-    -webkit-animation: growLine 3s infinite;
-            animation: growLine 3s infinite;
 }
 .header .scrollLink:hover {
     -webkit-animation-play-state: paused;
             animation-play-state: paused;
 }
 .advantages {
-    background: url(../images/advantages__back.jpg) no-repeat center / cover;
+    background: url(../images/advantages__back.jpg) no-repeat fixed center / cover;
 }
 .advantages__title:before, .advantages__title:after {
     position: absolute;
@@ -1045,6 +1047,8 @@ section {
             transition: opacity 0.3s linear;
 }
 .price {
+    margin-top: -5px;
+    margin-bottom: 5px;
     font-family: 'Roboto', sans-serif;
     font-size: 23px;
     color: #010101;
@@ -1194,7 +1198,7 @@ section {
 }
 .about {
     position: relative;
-    background: url(../images/panel__back.jpg) no-repeat center / cover;
+    background: url(../images/panel__back.jpg) no-repeat fixed center / cover;
 }
 .about:before {
     content: '';

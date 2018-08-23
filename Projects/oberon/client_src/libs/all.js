@@ -39,32 +39,66 @@ $(document).ready(function() {
   });
 
 
-  $('.product__slider').slick({
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    infinite: false,
-    arrows: true,
-    dots: true,
+  // $('.product__slider').slick({
+  //   slidesToShow: 3,
+  //   slidesToScroll: 1,
+  //   infinite: false,
+  //   arrows: true,
+  //   dots: true,
 
-    responsive: [
+  //   responsive: [
 
-    {
-      breakpoint: 992,
-      settings: {
-        slidesToShow: 2,
-      }
-    },
+  //     {
+  //       breakpoint: 992,
+  //       settings: {
+  //         slidesToShow: 2,
+  //       }
+  //     },
 
-    {
-      breakpoint: 767,
-      settings: {
-        slidesToShow: 1,
-        fade: true,
-      }
-    },
+  //     {
+  //       breakpoint: 767,
+  //       settings: {
+  //         slidesToShow: 1,
+  //         fade: true,
+  //       }
+  //     },
 
-    ]
-  });
+  //   ]
+  // });
+
+  $('.tabs__content').each(function() {
+    slideNumber = 0;
+    $(this).find('.product__slide').each(function() {
+      slideNumber++;
+    })
+    if (slideNumber > 3) {
+
+      $(this).find('.product__slider').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        infinite: false,
+        arrows: true,
+        dots: true,
+        responsive: [
+          {
+            breakpoint: 992,
+            settings: {
+              slidesToShow: 2,
+            }
+          },
+          {
+            breakpoint: 767,
+            settings: {
+              slidesToShow: 1,
+              fade: true,
+            }
+          },
+        ]
+
+      });
+
+    };
+  })
 
 
   $('.phone-mask').mask('+38(999)999-99-99');
@@ -110,9 +144,9 @@ $(document).ready(function() {
         }
       },
 
-      ]
+    ]
 
-    });
+  });
 
 
   $('[data-fancybox]').fancybox({
