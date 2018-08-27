@@ -18,27 +18,24 @@
 }
 
 .partner {
-	
-
-
 	.container {
 		position: relative;
-
 		&:before {
-			content: '';
-			position: absolute;
-			top: 20px;
-			left: 50%;
-			transform: translateX(-50%);
-			width: 1362px;
-			height: 605px;
-			background: url(../images/border.png)no-repeat;
-			background-size: contain;
-			z-index: -1;
+			@media @desktop-xl15 {
+				content: '';
+				position: absolute;
+				top: 20px;
+				left: 50%;
+				transform: translateX(-50%);
+				width: 1340px;
+				height: 605px;
+				background: url(../images/border.png)no-repeat;
+				background-size: contain;
+				z-index: -1;
+			}
 		}
 	}
 	
-
 	&__title {
 		color: #fff;
 	}
@@ -49,16 +46,67 @@
 		padding-left: 35px;
 		padding-right: 35px;
 		@font-family: @ff2;
+		@media @tablet {
+
+		}
+		@media @desktop {
+
+		}
+		@media @desktop-xl {
+
+		}
+	}
+	&__content {
+		
+		@media @tablet {
+
+		}
+		@media @desktop {
+			flex-basis: 50%;
+		}
+		@media @desktop-xl {
+			flex-basis: 55%;
+		}
+	}
+	&__photo {
+		
+		@media @tablet {
+
+		}
+		@media @desktop {
+			flex-basis: 50%;
+		}
+		@media @desktop-xl {
+			flex-basis: 45%;
+		}
 	}
 	&__text {
 		padding-bottom: 40px;
 		font-size: 24px;
+		@media @tablet {
+
+		}
+		@media @desktop {
+
+		}
+		@media @desktop-xl {
+
+		}
 	}
 	&__item {
 		position: relative;
 		padding-left: 50px;
 		margin-bottom: 10px;
 		font-size: 19px;
+		@media @tablet {
+
+		}
+		@media @desktop {
+
+		}
+		@media @desktop-xl {
+
+		}
 		&:before {
 			content: '';
 			position: absolute;
@@ -68,17 +116,44 @@
 			width: 7px;
 			height: 7px;
 			background: @yellow;
+			@media @tablet {
+
+			}
+			@media @desktop {
+
+			}
+			@media @desktop-xl {
+
+			}
 		}
 	}
 	&__text-end {
 		padding-top: 37px;
 		padding-bottom: 42px;
 		font-size: 24px;
+		@media @tablet {
+
+		}
+		@media @desktop {
+
+		}
+		@media @desktop-xl {
+
+		}
 	}
 
 	.btn {
 		display: block;
 		margin: auto;
 		margin-top: 75px;
+		@media @tablet {
+
+		}
+		@media @desktop {
+
+		}
+		@media @desktop-xl {
+
+		}
 	}
 }
