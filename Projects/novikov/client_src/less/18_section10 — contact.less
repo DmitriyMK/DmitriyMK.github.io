@@ -22,7 +22,7 @@
 	padding-bottom: 0;
 	overflow: hidden;
 	position: relative;
-
+	background: #fff;
 
 	.map {
 		width: 100%;
@@ -38,18 +38,30 @@
 	}
 
 	&__box {
-		position: absolute;
-		padding-top: 70px;
-		padding-left: 50px;
-		padding-right: 100px;
-		top: -500px;
-		right: 0;
-		width: 440px;
-		height: 500px;
-		background: url(../images/form__back.jpg)no-repeat center/cover;
+		margin: auto;
+		max-width: 320px;
+		padding-top: 30px;
+		padding-bottom: 40px;
+		
 		color: #494f63;
-		box-shadow: 0px 12px 41.82px 9.18px rgba(61, 76, 133, 0.14);
+		text-align: center;
+		background: #fff;
+		@media @tablet {
+			position: absolute;
+			background: url(../images/form__back.jpg)no-repeat center/cover;
+			width: 440px;
+			height: 500px;
+			top: -500px;
+			right: 0;
+			padding-right: 100px;
+			padding-top: 70px;
+			padding-left: 50px;
+			box-shadow: 0px 12px 41.82px 9.18px rgba(61, 76, 133, 0.14);
 
+			max-width: inherit;
+			margin: 0;
+			text-align: inherit;
+		}
 	}
 
 	.box__title {
@@ -59,24 +71,29 @@
 		color: #000;
 	}
 	.contacts__list {
-		padding-left: 20px;
+		@media @tablet {
+			padding-left: 20px;
+		}
 	}
 	.contacts__item {
 		padding-bottom: 10px;
 	}
-	.mail {
 
-	}
 	.ask {
-		padding-top: 30px;
+		padding-top: 10px;
 		padding-bottom: 10px;
 		color: #000;
 		font-size: 30px;
 		font-weight: 700;
+		@media @tablet {
+			padding-top: 30px;
+		}
 	}
 	.text {
-		padding-left: 20px;
 		padding-bottom: 30px;
+		@media @tablet {
+			padding-left: 20px;
+		}
 	}
 
 	.btn {

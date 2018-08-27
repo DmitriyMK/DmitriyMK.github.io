@@ -41,119 +41,90 @@
 	}
 	&__box {
 		display: flex;
+		flex-direction: column;
+		align-items: center;
 		justify-content: space-between;
 		margin-top: 50px;
-		padding-left: 35px;
-		padding-right: 35px;
-		@font-family: @ff2;
-		@media @tablet {
+		font-family: @ff2;
 
-		}
 		@media @desktop {
-
+			flex-direction: row;
+			align-items: inherit;
 		}
-		@media @desktop-xl {
-
+		@media @desktop-xl15 {
+			padding-left: 35px;
+			padding-right: 35px;
 		}
 	}
 	&__content {
-		
-		@media @tablet {
-
-		}
+		order: 2;
+		padding-top: 20px;
 		@media @desktop {
-			flex-basis: 50%;
-		}
-		@media @desktop-xl {
+			padding-top: 0;
+			order: inherit;
 			flex-basis: 55%;
 		}
 	}
 	&__photo {
-		
-		@media @tablet {
-
-		}
+		order: 1;
 		@media @desktop {
-			flex-basis: 50%;
-		}
-		@media @desktop-xl {
+			order: inherit;
 			flex-basis: 45%;
 		}
 	}
 	&__text {
-		padding-bottom: 40px;
-		font-size: 24px;
-		@media @tablet {
-
-		}
+		padding-bottom: 20px;
+		font-size: 22px;
+		text-align: center;
 		@media @desktop {
-
+			text-align: left;
 		}
 		@media @desktop-xl {
-
+			font-size: 24px;
+			padding-bottom: 40px;
 		}
 	}
 	&__item {
 		position: relative;
-		padding-left: 50px;
+		padding-left: 25px;
 		margin-bottom: 10px;
 		font-size: 19px;
-		@media @tablet {
-
-		}
 		@media @desktop {
-
-		}
-		@media @desktop-xl {
-
+			padding-left: 50px;
 		}
 		&:before {
 			content: '';
 			position: absolute;
 			top: 50%;
-			left: 30px;
+			left: 5px;
 			transform: translateY(-50%);
 			width: 7px;
 			height: 7px;
 			background: @yellow;
-			@media @tablet {
-
-			}
 			@media @desktop {
-
-			}
-			@media @desktop-xl {
-
+				left: 30px;
 			}
 		}
 	}
 	&__text-end {
-		padding-top: 37px;
-		padding-bottom: 42px;
-		font-size: 24px;
-		@media @tablet {
-
-		}
+		padding-top: 25px;
+		font-size: 20px;
+		text-align: center;
 		@media @desktop {
-
+			text-align: left;
+			padding-bottom: 42px;
 		}
 		@media @desktop-xl {
-
+			padding-top: 37px;
+			font-size: 24px;
 		}
 	}
-
 	.btn {
 		display: block;
 		margin: auto;
-		margin-top: 75px;
-		@media @tablet {
-
-		}
-		@media @desktop {
-
-		}
-		@media @desktop-xl {
-
+		margin-top: 30px;
+		@media @desktop-xl15 {
+			margin-top: 75px;
 		}
 	}
 }
