@@ -116,11 +116,8 @@
 		justify-content: space-between;
 		@media @tablet {
 			flex-direction: row;
-
 		}
-		@media @desktop {
 
-		}
 		@media @desktop-xl {
 			align-items: inherit;
 			padding-top: 70px;
@@ -166,6 +163,7 @@
 		}
 		a {
 			overflow: hidden;
+			margin: auto;
 			margin-bottom: 15px;
 			@media @tablet {
 				width: 45.5%;
@@ -179,6 +177,10 @@
 		display: block;
 		max-width: 100%;
 		height: auto;
+		margin-bottom: 15px;
+		@media @tablet {
+			margin-bottom: 0;
+		}
 	}
 
 	.btn {

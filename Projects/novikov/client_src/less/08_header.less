@@ -19,11 +19,14 @@
 
 .header {
 	position: relative;
+	min-height: 100vh;
+	max-height: 740px;
 	background: url(../images/hero-image-sm.jpg)no-repeat center/cover;
 	font-family: @ff2;
 	overflow: hidden;
 	@media @tablet {
 		min-height: 555px;
+		max-height: inherit;
 		background: url(../images/hero-image.jpg)no-repeat center/cover;
 	}
 	@media @desktop {
@@ -127,12 +130,12 @@
 
 	&__center {
 		position: relative;
-		padding-top: 9vh;
-		padding-bottom: 13vh;
+		padding-top: 15vh;
+		padding-bottom: 10vh;
 		text-align: center;
 		z-index: 10;
 		@media @mobile-xl {
-			padding-top: 9vh;
+			padding-top: 14vh;
 		}
 		@media @tablet {
 			padding-top: 100px;

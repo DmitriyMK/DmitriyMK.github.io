@@ -566,6 +566,8 @@ section {
 }
 .header {
     position: relative;
+    min-height: 100vh;
+    max-height: 740px;
     background: url(../images/hero-image-sm.jpg) no-repeat center / cover;
     font-family: 'Roboto', sans-serif;
     overflow: hidden;
@@ -573,6 +575,7 @@ section {
 @media only screen and (min-width: 768px) {
     .header {
         min-height: 555px;
+        max-height: inherit;
         background: url(../images/hero-image.jpg) no-repeat center / cover;
     }
 }
@@ -715,14 +718,14 @@ section {
 }
 .header__center {
     position: relative;
-    padding-top: 9vh;
-    padding-bottom: 13vh;
+    padding-top: 15vh;
+    padding-bottom: 10vh;
     text-align: center;
     z-index: 10;
 }
 @media only screen and (min-width: 360px) {
     .header__center {
-        padding-top: 9vh;
+        padding-top: 14vh;
     }
 }
 @media only screen and (min-width: 768px) {
@@ -1157,6 +1160,7 @@ section {
 }
 .project .project__small a {
     overflow: hidden;
+    margin: auto;
     margin-bottom: 15px;
 }
 @media only screen and (min-width: 768px) {
@@ -1170,6 +1174,12 @@ section {
     display: block;
     max-width: 100%;
     height: auto;
+    margin-bottom: 15px;
+}
+@media only screen and (min-width: 768px) {
+    .project img {
+        margin-bottom: 0;
+    }
 }
 .project .btn {
     display: block;
@@ -1267,6 +1277,7 @@ section {
 .materials-leather {
     position: relative;
     padding-bottom: 60px;
+    overflow: hidden;
 }
 @media only screen and (min-width: 1200px) {
     .materials-leather {
@@ -1417,11 +1428,6 @@ section {
 .materials-alcantara .slick-prev {
     left: 0;
 }
-@media only screen and (min-width: 768px) {
-    .materials-alcantara .slick-prev {
-        left: 20%;
-    }
-}
 @media only screen and (min-width: 992px) {
     .materials-alcantara .slick-prev {
         left: 370px;
@@ -1440,6 +1446,9 @@ section {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
         flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
@@ -1447,6 +1456,9 @@ section {
 }
 @media only screen and (min-width: 992px) {
     .article__box {
+        -webkit-box-align: inherit;
+        -ms-flex-align: inherit;
+        align-items: inherit;
         -webkit-box-orient: horizontal;
         -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -1473,15 +1485,18 @@ section {
 }
 .box__color {
     padding-top: 20px;
+    max-width: 320px;
 }
 @media only screen and (min-width: 768px) {
     .box__color {
         padding-top: 40px;
+        max-width: 400px;
     }
 }
 @media only screen and (min-width: 992px) {
     .box__color {
         width: 60%;
+        max-width: inherit;
     }
 }
 @media only screen and (min-width: 1200px) {
@@ -1498,12 +1513,17 @@ section {
         margin: 0;
     }
 }
+.box__color .slider {
+    margin: auto;
+}
 .leather__item {
     margin-bottom: 16px;
 }
 .leather__item .imgWrap {
     display: block;
     max-width: 100%;
+    margin-left: 5px;
+    margin-right: 5px;
     height: auto;
     position: relative;
 }
@@ -1519,7 +1539,7 @@ section {
          -o-transition: background-color 0.3s linear;
             transition: background-color 0.3s linear;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 992px) {
     .leather__item .imgWrap:before {
         width: 170px;
         height: 127px;
@@ -1541,13 +1561,6 @@ section {
     height: 54px;
     background: url('../images/icons/css_sprites.png') -10px -98px;
 }
-@media only screen and (min-width: 768px) {
-    .leather__item .imgWrap:after {
-        -webkit-transform: translate(-100%, -50%);
-            -ms-transform: translate(-100%, -50%);
-                transform: translate(-100%, -50%);
-    }
-}
 @media only screen and (min-width: 1200px) {
     .leather__item .imgWrap:after {
         -webkit-transform: translate(-75%, -50%);
@@ -1565,8 +1578,8 @@ section {
     display: block;
     max-width: 100%;
     height: auto;
-    -webkit-box-shadow: 8px 0 15px 1.26px rgba(0, 0, 0, 0.27);
-            box-shadow: 8px 0 15px 1.26px rgba(0, 0, 0, 0.27);
+    -webkit-box-shadow: -2px 8px 8px 0 rgba(0, 0, 0, 0.15);
+            box-shadow: -2px 8px 8px 0 rgba(0, 0, 0, 0.15);
 }
 @media only screen and (min-width: 1200px) {
     .leather__item img {
@@ -2764,15 +2777,8 @@ label {
     height: 68px;
     background: url('../images/icons/css_sprites.png') -121px -10px;
 }
-@media only screen and (min-width: 768px) {
-    .slick-prev {
-        bottom: -150px;
-        left: 20%;
-    }
-}
 @media only screen and (min-width: 992px) {
     .slick-prev {
-        bottom: -95px;
         left: 400px;
     }
 }
@@ -2787,18 +2793,6 @@ label {
     width: 91px;
     height: 68px;
     background: url('../images/icons/css_sprites.png') -10px -10px;
-}
-@media only screen and (min-width: 768px) {
-    .slick-next {
-        right: 20%;
-        bottom: -150px;
-    }
-}
-@media only screen and (min-width: 992px) {
-    .slick-next {
-        bottom: -95px;
-        right: 0;
-    }
 }
 @media only screen and (min-width: 1200px) {
     .slick-next {
