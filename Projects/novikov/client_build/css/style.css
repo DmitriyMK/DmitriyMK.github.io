@@ -1184,7 +1184,6 @@ section {
     position: relative;
     padding-bottom: 0;
     background: url(../images/panel__back.jpg) no-repeat center / cover;
-    overflow: hidden;
 }
 @media only screen and (min-width: 1200px) {
     .materials:before {
@@ -1854,25 +1853,56 @@ section {
     position: relative;
     background: url(../images/panel__back.jpg) no-repeat fixed center / cover;
 }
-.about:before {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: -85px;
-    width: 224px;
-    height: 469px;
-    background: url(../images/decor/triangle-yellow-left.png) no-repeat;
-    z-index: 1;
+@media only screen and (min-width: 1200px) {
+    .about:before {
+        content: '';
+        position: absolute;
+        background: url(../images/decor/triangle-yellow-left.png) no-repeat;
+        background-size: contain;
+        z-index: 1;
+        left: 0;
+        bottom: -150px;
+        width: 119px;
+        height: 250px;
+    }
 }
-.about:after {
-    content: '';
-    position: absolute;
-    right: 150px;
-    top: 0;
-    width: 597px;
-    height: 200px;
-    background: url(../images/decor/triangle-gray.png) no-repeat;
-    z-index: 1;
+@media only screen and (min-width: 1600px) {
+    .about:before {
+        width: 224px;
+        height: 469px;
+    }
+}
+@media only screen and (min-width: 768px) {
+    .about:after {
+        content: '';
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 300px;
+        height: 100px;
+        background: url(../images/decor/triangle-gray.png) no-repeat;
+        background-size: contain;
+        z-index: 1;
+    }
+}
+@media only screen and (min-width: 992px) {
+    .about:after {
+        width: 350px;
+        height: 117px;
+    }
+}
+@media only screen and (min-width: 1200px) {
+    .about:after {
+        width: 450px;
+        height: 150px;
+    }
+}
+@media only screen and (min-width: 1600px) {
+    .about:after {
+        width: 597px;
+        height: 200px;
+        right: 180px;
+    }
 }
 .about .container {
     position: relative;
@@ -1896,13 +1926,18 @@ section {
     right: 80px;
 }
 .about__box {
-    padding-top: 280px;
+    padding-top: 220px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
+}
+@media only screen and (min-width: 1600px) {
+    .about__box {
+        padding-top: 280px;
+    }
 }
 .about__img {
     position: relative;
