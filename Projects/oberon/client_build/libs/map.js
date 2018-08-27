@@ -12,7 +12,7 @@ function initMap() {
 
     var mapOptions = {
         center: centerLatLng,
-        zoom: 15.5,
+        zoom: 16,
 
         mapTypeControl: true,
 

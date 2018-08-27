@@ -36,7 +36,6 @@
 		@media @desktop-xl-2 {
 			width: 224px;
 			height: 469px;
-			
 		}
 	}
 	&:after {
@@ -106,7 +105,6 @@
 			padding-top: 100px;
 		}
 		@media @desktop {
-			padding-top: 120px;
 			flex-direction: row;
 		}
 		@media @desktop-xl {
@@ -324,6 +322,10 @@
 	&__list {
 		width: 320px;
 		margin: auto;
+		margin-top: 25px;
+		@media @tablet {
+			width: 360px;
+		}
 		@media @desktop {
 			flex-basis: 460px;
 			width: inherit;
@@ -416,10 +418,13 @@
 		color: #333;
 		width: 280px;
 		@media @tablet {
-			margin: 0;
-			width: inherit;
+			width: 100%;
 		}
 		@media @desktop {
+			margin: 0;
+			padding: 20px 30px 0 70px;
+		}
+		@media @desktop-xl {
 			padding: 20px 70px 20px 70px;
 		}
 	}
