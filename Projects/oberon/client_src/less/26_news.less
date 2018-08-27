@@ -150,10 +150,11 @@
 }
 
 .pagination {
-	&-links {
+	&-links, .nav-links {
 		display: flex;
 		justify-content: center;
 		align-items: center;
+		flex-wrap: wrap;
 		@media @tablet {
 			justify-content: inherit;
 		}
@@ -175,9 +176,16 @@
 		}
 	}
 
-	.page-current {
+	.page-current, .current {
+		font-size: 24px;
+		display: block;
+		padding: 2px 12px;
+		margin-right: 8px;
 		background: @yellow;
 		color: #000;
+		@media @tablet {
+			font-size: 30px;
+		}
 	}
 }
 

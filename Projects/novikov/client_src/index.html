@@ -20,20 +20,10 @@
 	<meta property="og:title" content="">
 
 
-	<link rel="preload" href="./css/remodal.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-	<link rel="preload" href="./css/remodal-default-theme.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-	<link rel="preload" href="./css/fancybox.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-	<link rel="preload" href="./css/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-	<link rel="preload" href="./css/slick-theme.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-	<link rel="preload" href="./css/slick.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+	<link rel="preload" href="./css/plugin.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
 
 	<noscript>
-		<link rel="stylesheet" href="./css/remodal.css">
-		<link rel="stylesheet" href="./css/remodal-default-theme.css">
-		<link rel="stylesheet" href="./css/fancybox.css">
-		<link rel="stylesheet" href="./css/animate.min.css">
-		<link rel="stylesheet" href="./css/slick-theme.css">
-		<link rel="stylesheet" href="./css/slick.css">
+		<link rel="stylesheet" href="./css/plugin.css">
 	</noscript>
 
 	<link rel="stylesheet" href="./css/style.css">
@@ -44,6 +34,7 @@
 	<script defer src="./libs/slick.js"></script>
 	<script defer src="./libs/jquery.validate.min.js"></script>
 	<script defer src="./libs/wow.min.js"></script>
+	<script defer src="./libs/jquery-modal-video.min.js"></script>
 	<script defer src="./libs/cssrelpreload.js"></script>
 	<!-- END DEFER SCRIPT -->
 
@@ -635,6 +626,55 @@
 			</div>
 			<button class="btn" data-remodal-target="partner">Хочу сотрудничать</button>
 
+		</div>
+	</section>
+
+
+	<section class="gallery">
+		<div class="container">
+			<h2 class="gallery__title section__title">Фото рабочего процесса</h2>
+
+			<div class="gallery__box">
+				<div class="gallery__small">
+					<a data-fancybox="gallery" href="images/gallery/gallery1.jpg">
+						<img class="big__img b-lazy" data-src="images/gallery/sm/gallery1.jpg" alt="Фото рабочего процесса" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+					</a>
+					<a data-fancybox="gallery" href="images/gallery/gallery2.jpg">
+						<img class="big__img b-lazy" data-src="images/gallery/sm/gallery2.jpg" alt="Фото рабочего процесса" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+					</a>
+					<a data-fancybox="gallery" href="images/gallery/gallery3.jpg">
+						<img class="big__img b-lazy" data-src="images/gallery/sm/gallery3.jpg" alt="Фото рабочего процесса" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+					</a>
+					<a data-fancybox="gallery" href="images/gallery/gallery4.jpg">
+						<img class="big__img b-lazy" data-src="images/gallery/sm/gallery4.jpg" alt="Фото рабочего процесса" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+					</a>
+					<!-- ADDED and HIDDEN FANCY-GALLERY -->
+					<div class="hidden">
+						<a data-fancybox="gallery" href="images/gallery/gallery5.jpg">
+						</a>
+						<a data-fancybox="gallery" href="images/gallery/gallery6.jpg">
+						</a>
+						<a data-fancybox="gallery" href="images/gallery/gallery7.jpg">
+						</a>
+						<a data-fancybox="gallery" href="images/gallery/gallery8.jpg">
+						</a>
+						<a data-fancybox="gallery" href="images/gallery/gallery9.jpg">
+						</a>
+						<a data-fancybox="gallery" href="images/gallery/gallery10.jpg">
+						</a>
+						<a data-fancybox="gallery" href="images/gallery/gallery11.jpg">
+						</a>
+						<!-- END ADDED and HIDDEN FANCY-GALLERY -->
+					</div>
+				</div>
+
+				<div class="gallery__big">
+					<div class="videoTour__video">
+						<img class="big__img b-lazy" data-src="images/gallery/gallery-video.jpg" alt="Видеотур по магазину">
+						<a class="videoTour__link js-video-button" data-video-id='hJNuPioiM4Y' src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></a>
+					</div>
+				</div>
+			</div>
 		</div>
 	</section>
 

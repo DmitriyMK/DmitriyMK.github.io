@@ -3501,7 +3501,7 @@ label {
         margin-left: 50px;
     }
 }
-.pagination-links {
+.pagination-links, .pagination .nav-links {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -3511,9 +3511,11 @@ label {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
 }
 @media only screen and (min-width: 768px) {
-    .pagination-links {
+    .pagination-links, .pagination .nav-links {
         -webkit-box-pack: inherit;
         -ms-flex-pack: inherit;
         justify-content: inherit;
@@ -3541,9 +3543,18 @@ label {
     -webkit-box-shadow: none;
             box-shadow: none;
 }
-.pagination .page-current {
+.pagination .page-current, .pagination .current {
+    font-size: 24px;
+    display: block;
+    padding: 2px 12px;
+    margin-right: 8px;
     background: #fff200;
     color: #000;
+}
+@media only screen and (min-width: 768px) {
+    .pagination .page-current, .pagination .current {
+        font-size: 30px;
+    }
 }
 .footerInner {
     background: #000;
