@@ -1569,7 +1569,7 @@ section {
 }
 .product__info {
     margin-top: 50px;
-    max-height: 70px;
+    height: 70px;
     overflow: hidden;
 }
 .product__price {

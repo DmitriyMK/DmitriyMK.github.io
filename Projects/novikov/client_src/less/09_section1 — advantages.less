@@ -81,7 +81,10 @@
 	}
 
 	.imgWrap {
-		height: 250px;
+		height: 220px;
+		@media @tablet {
+			height: 250px;
+		}
 		@media @desktop {
 			height: 260px;
 		}
@@ -97,10 +100,14 @@
 			top: 33px;
 			left: 50%;
 			transform: translateX(-55%);
-			width: 180px;
-			height: 180px;
+			width: 150px;
+			height: 150px;
 			border-radius: 50%;
 			box-shadow: 0 17px 16.74px 1.26px rgba(0, 0, 0, 0.4);
+			@media @tablet {
+				width: 180px;
+				height: 180px;
+			}
 		}
 	}
 
@@ -108,9 +115,12 @@
 		position: relative;
 		z-index: 10;
 		display: block;
-		max-width: 100%;
+		max-width: 200px;
 		height: auto;
 		margin: auto;
+		@media @tablet {
+			max-width: 100%;
+		}
 	}
 
 	&__titles {
