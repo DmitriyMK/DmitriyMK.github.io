@@ -1882,6 +1882,7 @@ section {
                 transform: rotateZ(-6deg);
         font-size: 36px;
         text-align: inherit;
+        background: none;
     }
 }
 @media only screen and (min-width: 992px) {
