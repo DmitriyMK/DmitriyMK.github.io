@@ -38,12 +38,12 @@ $(document).ready(function() {
     $('#tabs-' + tabID).addClass('tabs__content-active').siblings().removeClass('tabs__content-active');
   });
 
-  $('.tabs__content').each(function() {
+  $('.tabs__content ').each(function() {
     slideNumber = 0;
     $(this).find('.product__slide').each(function() {
       slideNumber++;
     })
-    if (slideNumber > 3) {
+    if (slideNumber > 2) {
 
       $(this).find('.product__slider').slick({
         slidesToShow: 3,

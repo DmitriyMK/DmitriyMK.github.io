@@ -1559,7 +1559,7 @@ section {
 .product__img {
     display: block;
     max-width: 180px;
-    height: auto;
+    height: 200px;
     margin: auto;
 }
 @media only screen and (min-width: 768px) {
@@ -1569,7 +1569,7 @@ section {
 }
 .product__info {
     margin-top: 50px;
-    height: 70px;
+    height: 60px;
     overflow: hidden;
 }
 .product__price {
@@ -1588,6 +1588,10 @@ section {
     -webkit-transition: all 0.3s linear;
          -o-transition: all 0.3s linear;
             transition: all 0.3s linear;
+}
+.product__slider-color img {
+    max-height: 200px;
+    overflow: hidden;
 }
 .product__slider-color .slick-dots li {
     margin: 7px;
