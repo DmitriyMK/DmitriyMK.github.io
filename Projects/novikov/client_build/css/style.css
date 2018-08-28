@@ -4337,7 +4337,7 @@ label {
 }
 /* ONLY FOR IE11 */
 @media all and (-ms-high-contrast: none) {
-    body {
+    header, main, footer {
         overflow: hidden;
     }
 }
