@@ -77,7 +77,6 @@ $(document).ready(function() {
 
 
   $('.leather').slick({
-
     dots: false,
     arrow: true,
     slidesToShow: 3,
@@ -87,7 +86,6 @@ $(document).ready(function() {
   });
 
   $('.alcantara').slick({
-
     dots: false,
     arrow: true,
     slidesToShow: 3,
@@ -103,16 +101,12 @@ $(document).ready(function() {
     fade: true,
   });
 
-
-
 });
 
 
-
-$(window).on('resize orientationchange', function() {
-  $('.slider').slick('resize');
-});
-
+// $(window).on('resize orientationchange', function() {
+//   $('.slider').slick('resize');
+// });
 
 
 $(".form").submit(function() {

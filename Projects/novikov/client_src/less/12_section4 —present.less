@@ -164,15 +164,24 @@
 	strong {
 		font-weight: 700;
 	}
-
 	&__form {
+		width: 310px;
+		margin: auto;
 		@media @tablet {
 			position: absolute;
 			top: 60px;
 			right: 0;
 			width: 334px;
+			margin: 0;
 		}
-		
+
+		@media @desktop-xl15 {
+			right: -60px;
+		}
+		@media @desktop-xll {
+			right: -200px;
+		}
+
 		&:before {
 			@media @tablet {
 				content: '';
@@ -185,13 +194,6 @@
 				background-size: contain;
 				z-index: 1;
 			}
-		}
-
-		@media @desktop-xl15 {
-			right: -80px;
-		}
-		@media @desktop-xll {
-			right: -200px;
 		}
 
 		.form {
