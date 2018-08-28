@@ -4338,7 +4338,7 @@ label {
 /* ONLY FOR IE11 */
 @media all and (-ms-high-contrast: none) {
     body {
-        overflow-x: hidden;
+        overflow: hidden;
     }
 }
 /* ONLY FOR EDGE */
