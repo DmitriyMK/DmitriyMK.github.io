@@ -2106,7 +2106,8 @@ section {
 }
 .about {
     position: relative;
-    background: url(../images/panel__back.jpg) no-repeat fixed center / cover;
+    background: url(../images/panel__back.jpg) no-repeat center / cover;
+    background-attachment: fixed;
 }
 @media only screen and (min-width: 1200px) {
     .about:before {
