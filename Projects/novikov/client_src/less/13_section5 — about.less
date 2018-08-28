@@ -354,6 +354,7 @@
 		&:before {
 			width: 305px;
 			background: url(../images/line1.png)no-repeat;
+			background-size: contain;
 			@media @tablet {
 				width: 423px;
 			}
@@ -363,6 +364,7 @@
 		&:before {
 			width: 305px;
 			background: url(../images/line2.png)no-repeat;
+			background-size: contain;
 			@media @tablet {
 				width: 361px;
 			}
@@ -372,6 +374,7 @@
 		&:before {
 			width: 305px;
 			background: url(../images/line3.png)no-repeat;
+			background-size: contain;
 			@media @tablet {
 				width: 372px;
 			}
@@ -381,6 +384,7 @@
 		&:before {
 			width: 305px;
 			background: url(../images/line4.png)no-repeat;
+			background-size: contain;
 			@media @tablet {
 				width: 372px;
 			}
@@ -390,6 +394,7 @@
 		&:before {
 			width: 305px;
 			background: url(../images/line5.png)no-repeat;
+			background-size: contain;
 			@media @tablet {
 				width: 372px;
 			}
@@ -401,20 +406,33 @@
 		position: relative;
 		padding-left: 70px;
 		font-size: 15px;
-		line-height: 50px;
+		line-height: 40px;
 		font-weight: 700;
 		font-family: @ff2;
 		color: #000;	
 		@media @mobile-xl {
 			
 		}
+		@media @tablet {
+			font-size: 18px;
+			line-height: 65px;
+		}
 		@media @desktop {
 			font-size: 20px;
 			line-height: 60px;
 		}
 	}
+	.titles1 {
+		line-height: 30px;
+		@media @tablet {
+			line-height: 65px;
+		}
+		@media @desktop {
+			line-height: 60px;
+		}
+	}
 	&__text {
-		margin: 30px 0 25px 15px;
+		margin: 20px 0 20px 15px;
 		color: #333;
 		width: 280px;
 		@media @tablet {

@@ -3330,6 +3330,10 @@ label {
         background: url(../images/decor-left.png);
     }
 }
+.news .container {
+    position: relative;
+    z-index: 11;
+}
 @media only screen and (min-width: 768px) {
     .article {
         -webkit-box-shadow: 8.485px 8.485px 15.81px 1.19px rgba(0, 0, 0, 0.27);
@@ -3555,6 +3559,36 @@ label {
     .pagination .page-current, .pagination .current {
         font-size: 30px;
     }
+}
+.pagination .nav-links .prev, .pagination .nav-links .next {
+    display: block;
+    position: relative;
+    width: 37.52px;
+    height: 32px;
+    background: #000;
+}
+@media only screen and (min-width: 768px) {
+    .pagination .nav-links .prev, .pagination .nav-links .next {
+        width: 40.89px;
+        height: 40px;
+    }
+}
+.pagination .nav-links .prev:before, .pagination .nav-links .next:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    width: 11px;
+    height: 21px;
+}
+.pagination .nav-links .prev:before {
+    background: url(../images/icons/arr-left.png);
+}
+.pagination .nav-links .next:before {
+    background: url(../images/icons/arr-right.png);
 }
 .footerInner {
     background: #000;

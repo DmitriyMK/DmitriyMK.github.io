@@ -2400,6 +2400,7 @@ section {
 .about .about__item:nth-of-type(1):before {
     width: 305px;
     background: url(../images/line1.png) no-repeat;
+    background-size: contain;
 }
 @media only screen and (min-width: 768px) {
     .about .about__item:nth-of-type(1):before {
@@ -2409,6 +2410,7 @@ section {
 .about .about__item:nth-of-type(2):before {
     width: 305px;
     background: url(../images/line2.png) no-repeat;
+    background-size: contain;
 }
 @media only screen and (min-width: 768px) {
     .about .about__item:nth-of-type(2):before {
@@ -2418,6 +2420,7 @@ section {
 .about .about__item:nth-of-type(3):before {
     width: 305px;
     background: url(../images/line3.png) no-repeat;
+    background-size: contain;
 }
 @media only screen and (min-width: 768px) {
     .about .about__item:nth-of-type(3):before {
@@ -2427,6 +2430,7 @@ section {
 .about .about__item:nth-of-type(4):before {
     width: 305px;
     background: url(../images/line4.png) no-repeat;
+    background-size: contain;
 }
 @media only screen and (min-width: 768px) {
     .about .about__item:nth-of-type(4):before {
@@ -2436,6 +2440,7 @@ section {
 .about .about__item:nth-of-type(5):before {
     width: 305px;
     background: url(../images/line5.png) no-repeat;
+    background-size: contain;
 }
 @media only screen and (min-width: 768px) {
     .about .about__item:nth-of-type(5):before {
@@ -2446,10 +2451,16 @@ section {
     position: relative;
     padding-left: 70px;
     font-size: 15px;
-    line-height: 50px;
+    line-height: 40px;
     font-weight: 700;
     font-family: 'Roboto', sans-serif;
     color: #000;
+}
+@media only screen and (min-width: 768px) {
+    .about__titles {
+        font-size: 18px;
+        line-height: 65px;
+    }
 }
 @media only screen and (min-width: 992px) {
     .about__titles {
@@ -2457,8 +2468,21 @@ section {
         line-height: 60px;
     }
 }
+.about .titles1 {
+    line-height: 30px;
+}
+@media only screen and (min-width: 768px) {
+    .about .titles1 {
+        line-height: 65px;
+    }
+}
+@media only screen and (min-width: 992px) {
+    .about .titles1 {
+        line-height: 60px;
+    }
+}
 .about__text {
-    margin: 30px 0 25px 15px;
+    margin: 20px 0 20px 15px;
     color: #333;
     width: 280px;
 }
