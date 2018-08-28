@@ -2017,19 +2017,6 @@ section {
         right: -200px;
     }
 }
-@media only screen and (min-width: 768px) {
-    .present__form:before {
-        content: '';
-        position: absolute;
-        top: -40px;
-        left: -40px;
-        width: 393px;
-        height: 143px;
-        background: url(../images/present__back-form.jpg) no-repeat;
-        background-size: contain;
-        z-index: 1;
-    }
-}
 .present__form .form {
     margin: auto;
     text-align: center;
@@ -2046,7 +2033,6 @@ section {
         padding: 60px 30px 80px 35px;
         min-height: inherit;
         background: url(../images/form-back.jpg) no-repeat;
-        background-size: cover;
     }
 }
 .present__form .form__title {
@@ -3018,19 +3004,6 @@ section {
         right: -200px;
     }
 }
-@media only screen and (min-width: 768px) {
-    .appreciate__form:before {
-        content: '';
-        position: absolute;
-        top: -40px;
-        left: -40px;
-        width: 393px;
-        height: 143px;
-        background: url(../images/present__back-form.jpg) no-repeat;
-        background-size: contain;
-        z-index: 1;
-    }
-}
 .appreciate__form .form {
     margin: auto;
     text-align: center;
@@ -3047,7 +3020,6 @@ section {
         padding: 60px 30px 80px 35px;
         min-height: inherit;
         background: url(../images/form-back.jpg) no-repeat;
-        background-size: cover;
     }
 }
 .appreciate__form .form__title {
@@ -4339,6 +4311,12 @@ label {
 @media all and (-ms-high-contrast: none) {
     body {
         overflow: hidden;
+    }
+    .about__titles {
+        font-size: 16px;
+    }
+    .about__text {
+        padding: 20px 20px 20px 70px;
     }
 }
 /* ONLY FOR EDGE */
