@@ -1306,7 +1306,7 @@ section {
 .materials {
     position: relative;
     padding-bottom: 0;
-    background: url(../images/panel__back.jpg) no-repeat center / cover;
+    background: url(../images/panel__back.jpg) no-repeat fixed center / cover;
 }
 @media only screen and (min-width: 1200px) {
     .materials:before {
