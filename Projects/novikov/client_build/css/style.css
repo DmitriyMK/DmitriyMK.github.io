@@ -580,6 +580,8 @@ section {
     background: url(../images/hero-image-sm.jpg) no-repeat center / cover;
     font-family: 'Roboto', sans-serif;
     overflow: hidden;
+    -webkit-box-shadow: -15.5px 26.847px 101px 0 rgba(46, 52, 65, 0.74);
+            box-shadow: -15.5px 26.847px 101px 0 rgba(46, 52, 65, 0.74);
 }
 @media only screen and (min-width: 768px) {
     .header {
@@ -1004,6 +1006,8 @@ section {
 .project {
     position: relative;
     z-index: 10;
+    -webkit-box-shadow: -15.5px 26.847px 101px 0 rgba(46, 52, 65, 0.74);
+            box-shadow: -15.5px 26.847px 101px 0 rgba(46, 52, 65, 0.74);
 }
 @media only screen and (min-width: 768px) {
     .project:before {
@@ -1824,6 +1828,9 @@ section {
 .present {
     position: relative;
     background: #000;
+    z-index: 10;
+    -webkit-box-shadow: -15.5px 26.847px 101px 0 rgba(46, 52, 65, 0.74);
+            box-shadow: -15.5px 26.847px 101px 0 rgba(46, 52, 65, 0.74);
 }
 @media only screen and (min-width: 768px) {
     .present {
@@ -2651,8 +2658,9 @@ section {
 }
 .step {
     position: relative;
-    -webkit-box-shadow: -10px 26.847px 166px 0 rgba(27, 30, 36, 0.45);
-            box-shadow: -10px 26.847px 166px 0 rgba(27, 30, 36, 0.45);
+    -webkit-box-shadow: -10px 26.847px 101px 0 rgba(46, 52, 65, 0.74);
+            box-shadow: -10px 26.847px 101px 0 rgba(46, 52, 65, 0.74);
+    z-index: 10;
 }
 @media only screen and (min-width: 1200px) {
     .step:before {
@@ -3400,6 +3408,12 @@ section {
 .review .slick-dots {
     left: 0;
 }
+.partner {
+    position: relative;
+    -webkit-box-shadow: -15.5px 26.847px 101px 0 rgba(46, 52, 65, 0.74);
+            box-shadow: -15.5px 26.847px 101px 0 rgba(46, 52, 65, 0.74);
+    z-index: 12;
+}
 .partner .container {
     position: relative;
 }
@@ -4113,6 +4127,10 @@ label {
     background: url('../images/icons/css_sprites.png') -121px -10px;
 }
 .gallery {
+    position: relative;
+    z-index: 11;
+    -webkit-box-shadow: -15.5px 26.847px 101px 0 rgba(46, 52, 65, 0.74);
+            box-shadow: -15.5px 26.847px 101px 0 rgba(46, 52, 65, 0.74);
     background: url(../images/panel__back.jpg) no-repeat fixed center / cover;
 }
 .gallery .container {
