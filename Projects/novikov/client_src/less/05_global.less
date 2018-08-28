@@ -3,13 +3,20 @@
 }
 
 .b-lazy {
-	transition: opacity 500ms ease-in-out;
+	transition: opacity 500ms linear;
 	max-width: 100%;
 	opacity: 0;
 }
 
 .b-lazy.b-loaded {
 	opacity: 1;
+}
+
+main {
+	overflow: hidden;
+	@media @tablet {
+		overflow: visible;
+	}
 }
 
 //  .scrollup {
@@ -26,15 +33,3 @@
 // 		right: 100px;
 // 	}
 // } 
-
-
-
-/* ONLY FOR IE11 */
-@media all and (-ms-high-contrast:none) {
-	::-ms-backdrop  {} 
-}
-
-/* ONLY FOR EDGE */
-@supports (-ms-ime-align:auto) {
-
-}

@@ -38,7 +38,6 @@
 		font-family: @ff2;
 	}
 
-
 	&__content {
 		@media @tablet {
 			position: absolute;
@@ -165,8 +164,20 @@
 		font-weight: 700;
 	}
 	&__form {
+		position: relative;
 		width: 290px;
 		margin: auto;
+		&:before {
+			@media @tablet {
+				content: '';
+				position: absolute;
+				top: -20px;
+				left: -20px;
+				width: 393px;
+				height: 143px;
+				background: url(../images/present__back-form.jpg);
+			}
+		}
 		@media @mobile-xl {
 			width: 342px;
 		}
@@ -190,8 +201,7 @@
 			z-index: 10;
 			padding: 55px 25px;
 			min-height: 460px;
-			background: url(../images/form-back-small.jpg)no-repeat center;
-			background-size: contain;
+			background: url(../images/form-back-small.jpg)no-repeat center/contain;
 			position: relative;
 			z-index: 10;
 			@media @tablet {

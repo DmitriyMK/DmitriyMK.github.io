@@ -414,17 +414,23 @@ template {
             user-select: text;
 }
 .b-lazy {
-    -webkit-transition: opacity 500ms ease-in-out;
-         -o-transition: opacity 500ms ease-in-out;
-            transition: opacity 500ms ease-in-out;
+    -webkit-transition: opacity 500ms linear;
+         -o-transition: opacity 500ms linear;
+            transition: opacity 500ms linear;
     max-width: 100%;
     opacity: 0;
 }
 .b-lazy.b-loaded {
     opacity: 1;
 }
-/* ONLY FOR IE11 */
-/* ONLY FOR EDGE */
+main {
+    overflow: hidden;
+}
+@media only screen and (min-width: 768px) {
+    main {
+        overflow: visible;
+    }
+}
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, main, menu, nav, output, ruby, section, summary, time, mark, audio, video {
     margin: 0;
     padding: 0;
@@ -2025,8 +2031,7 @@ section {
     text-align: center;
     padding: 55px 25px;
     min-height: 460px;
-    background: url(../images/form-back-small.jpg) no-repeat center;
-    background-size: contain;
+    background: url(../images/form-back-small.jpg) no-repeat center / contain;
     position: relative;
     z-index: 10;
 }
@@ -2222,11 +2227,11 @@ section {
     }
 }
 .about .imgWrap {
-    width: 300px;
+    width: 290px;
 }
 @media only screen and (min-width: 360px) {
     .about .imgWrap {
-        width: 350px;
+        width: 330px;
     }
 }
 @media only screen and (min-width: 768px) {
@@ -2523,7 +2528,7 @@ section {
     height: 155px;
 }
 .about .about__item:nth-of-type(1):before {
-    width: 305px;
+    width: 290px;
     background: url(../images/line1.png) no-repeat;
     background-size: contain;
 }
@@ -2533,7 +2538,7 @@ section {
     }
 }
 .about .about__item:nth-of-type(2):before {
-    width: 305px;
+    width: 290px;
     background: url(../images/line2.png) no-repeat;
     background-size: contain;
 }
@@ -2543,7 +2548,7 @@ section {
     }
 }
 .about .about__item:nth-of-type(3):before {
-    width: 305px;
+    width: 290px;
     background: url(../images/line3.png) no-repeat;
     background-size: contain;
 }
@@ -2553,7 +2558,7 @@ section {
     }
 }
 .about .about__item:nth-of-type(4):before {
-    width: 305px;
+    width: 290px;
     background: url(../images/line4.png) no-repeat;
     background-size: contain;
 }
@@ -2563,7 +2568,7 @@ section {
     }
 }
 .about .about__item:nth-of-type(5):before {
-    width: 305px;
+    width: 290px;
     background: url(../images/line5.png) no-repeat;
     background-size: contain;
 }
@@ -2574,12 +2579,17 @@ section {
 }
 .about__titles {
     position: relative;
-    padding-left: 70px;
+    padding-left: 55px;
     font-size: 15px;
     line-height: 40px;
     font-weight: 700;
     font-family: 'Roboto', sans-serif;
     color: #000;
+}
+@media only screen and (min-width: 360px) {
+    .about__titles {
+        padding-left: 70px;
+    }
 }
 @media only screen and (min-width: 768px) {
     .about__titles {
@@ -2839,8 +2849,12 @@ section {
     position: relative;
     padding-top: 50px;
     min-height: 590px;
-    background: url(../images/appreciate__back.jpg) no-repeat center / cover;
-    overflow: hidden;
+    background: #cfad38;
+}
+@media only screen and (min-width: 768px) {
+    .appreciate {
+        background: url(../images/appreciate__back.jpg) no-repeat center / cover;
+    }
 }
 @media only screen and (min-width: 1200px) {
     .appreciate {
@@ -3015,7 +3029,7 @@ section {
     text-align: center;
     padding: 30px 25px;
     min-height: 400px;
-    background: url(../images/form-back-small.jpg) no-repeat center;
+    background: url(../images/form-back-small.jpg) no-repeat center / contain;
     background-size: contain;
     position: relative;
     z-index: 10;

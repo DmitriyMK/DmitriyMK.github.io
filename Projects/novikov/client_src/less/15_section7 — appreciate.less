@@ -21,8 +21,11 @@
 	position: relative;
 	padding-top: 50px;
 	min-height: 590px;
-	background: url(../images/appreciate__back.jpg)no-repeat center/cover;
-	overflow: hidden;
+	background: @yellow;
+
+	@media @tablet {
+		background: url(../images/appreciate__back.jpg)no-repeat center/cover;
+	}
 	@media @desktop-xl {
 		min-height: 560px;
 	}
@@ -168,7 +171,7 @@
 			z-index: 10;
 			padding: 30px 25px;
 			min-height: 400px;
-			background: url(../images/form-back-small.jpg)no-repeat center;
+			background: url(../images/form-back-small.jpg)no-repeat center/contain;
 			background-size: contain;
 			position: relative;
 			z-index: 10;
