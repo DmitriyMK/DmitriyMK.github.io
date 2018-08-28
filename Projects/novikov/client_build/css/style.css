@@ -2034,7 +2034,7 @@ section {
 @media only screen and (min-width: 768px) {
     .present__form .form {
         margin: 0;
-        padding: 60px 20px 80px 20px;
+        padding: 60px 30px 80px 35px;
         min-height: inherit;
         background: url(../images/form-back.jpg) no-repeat;
         background-size: cover;
