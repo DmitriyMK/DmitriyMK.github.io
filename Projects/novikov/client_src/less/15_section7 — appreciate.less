@@ -141,9 +141,21 @@
 	}
 
 	&__form {
+		position: relative;
 		width: 290px;
 		padding-bottom: 40px;
 		margin: auto;
+		&:before {
+			@media @tablet {
+				content: '';
+				position: absolute;
+				top: -40px;
+				left: -30px;
+				width: 393px;
+				height: 143px;
+				background: url(../images/present__back-form.jpg);
+			}
+		}
 		@media @mobile-xl {
 			width: 342px;
 		}
