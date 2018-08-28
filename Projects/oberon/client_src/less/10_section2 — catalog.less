@@ -452,56 +452,8 @@
 		transition: all .3s linear;
 	}
 
-	&__slider{
-		.slick-dots {
-			display: inline-block!important;
-			left: 50%;
-			transform: translateX(-50%);
-			bottom: -40px;
-
-			li {
-				margin: 7px;
-				width: 13px;
-				height: 13px;
-
-				button {
-					background: #000;
-					display: block;
-					height: 5px;
-					width: 5px;
-					font-size: 0px;
-					border-radius: 50%;
-					border: 1px solid transparent;
-					opacity: 0.75;
-					transition: all .3s linear;
-					&:before {
-						font-size: 0;
-						opacity: 0;
-						display: none;
-					}
-
-				}
-				&.slick-active button {
-					opacity: 1;
-					transform: scale(2);
-					border: 1px solid #000;
-					background: transparent;
-				}
-			}
-		}
-
-		.slick-dots li.slick-active button {
-			background: transparent;
-		}
-
-		.slick-current, .slick-slide, .slick-active { 
-			outline: none!important;
-		}
-	}
-
 	&__slider-color {
 		img {
-
 			max-height: 200px;
 			overflow: hidden;
 		}
