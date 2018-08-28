@@ -1413,26 +1413,6 @@ section {
         padding-bottom: 100px;
     }
 }
-@media only screen and (min-width: 1200px) {
-    .materials-alcantara:before {
-        content: '';
-        position: absolute;
-        background: url(../images/decor/triangle-gray-left.png) no-repeat;
-        background-size: contain;
-        z-index: 1;
-        left: 0;
-        top: 720px;
-        width: 119px;
-        height: 250px;
-    }
-}
-@media only screen and (min-width: 1600px) {
-    .materials-alcantara:before {
-        bottom: -100px;
-        width: 224px;
-        height: 469px;
-    }
-}
 @media only screen and (min-width: 768px) {
     .materials-alcantara:after {
         content: '';
@@ -1834,61 +1814,247 @@ section {
 }
 .present {
     position: relative;
-    min-height: 576px;
-    background: url(../images/present__back.jpg) no-repeat center / cover;
+    background: #000;
+}
+@media only screen and (min-width: 768px) {
+    .present {
+        min-height: 576px;
+        background: url(../images/present__back.jpg) no-repeat center / cover;
+    }
 }
 .present .container {
     position: relative;
+    z-index: 10;
 }
 .present__box {
     position: relative;
-    padding: 85px 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
+    padding: 65px 0;
     font-family: 'Roboto', sans-serif;
+}
+@media only screen and (min-width: 768px) {
+    .present__content {
+        position: absolute;
+        top: 150px;
+        left: -20px;
+    }
+}
+@media only screen and (min-width: 992px) {
+    .present__content {
+        top: 210px;
+        left: 0;
+    }
+}
+@media only screen and (min-width: 1200px) {
+    .present__content {
+        top: 230px;
+    }
+}
+@media only screen and (min-width: 1366px) {
+    .present__content {
+        left: -100px;
+    }
+}
+@media only screen and (min-width: 1920px) {
+    .present__content {
+        top: 180px;
+        left: -260px;
+    }
 }
 .present__title {
     position: relative;
-    font-size: 34px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    text-align: center;
     color: #000;
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    background: #cfad38;
+}
+@media only screen and (min-width: 768px) {
+    .present__title {
+        padding-top: 70px;
+        padding-left: 40px;
+        padding-bottom: 0;
+        margin-bottom: 0;
+        -webkit-transform: rotateZ(-6deg);
+            -ms-transform: rotate(-6deg);
+                transform: rotateZ(-6deg);
+        font-size: 36px;
+        text-align: inherit;
+    }
+}
+@media only screen and (min-width: 992px) {
+    .present__title {
+        padding-top: 80px;
+        font-size: 44px;
+    }
+}
+@media only screen and (min-width: 1366px) {
+    .present__title {
+        padding-top: 90px;
+        font-size: 52px;
+    }
+}
+@media only screen and (min-width: 1920px) {
+    .present__title {
+        padding-left: 100px;
+        padding-top: 140px;
+        font-size: 64.07px;
+    }
+}
+@media only screen and (min-width: 768px) {
+    .present__title:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 444px;
+        height: 181px;
+        background: url(../images/present__back-title.jpg) no-repeat;
+        background-size: contain;
+        z-index: -1;
+        -webkit-transform: rotateZ(6deg);
+            -ms-transform: rotate(6deg);
+                transform: rotateZ(6deg);
+    }
+}
+@media only screen and (min-width: 992px) {
+    .present__title:before {
+        width: 512px;
+        height: 210px;
+    }
+}
+@media only screen and (min-width: 1366px) {
+    .present__title:before {
+        width: 598px;
+        height: 245px;
+    }
+}
+@media only screen and (min-width: 1920px) {
+    .present__title:before {
+        width: 853px;
+        height: 349px;
+    }
 }
 .present__text {
-    font-size: 34px;
-    color: #000;
+    padding-bottom: 20px;
+    font-size: 22px;
+    color: #cfad38;
+    text-align: center;
+}
+@media only screen and (min-width: 768px) {
+    .present__text {
+        position: absolute;
+        top: 340px;
+        left: 30px;
+        max-width: 340px;
+        padding-bottom: 0;
+        font-size: 24px;
+        text-align: inherit;
+        color: #000;
+    }
+}
+@media only screen and (min-width: 992px) {
+    .present__text {
+        top: 410px;
+        left: 50px;
+        max-width: 410px;
+        font-size: 25px;
+    }
+}
+@media only screen and (min-width: 1200px) {
+    .present__text {
+        top: 260px;
+        left: inherit;
+        right: 350px;
+        max-width: 300px;
+    }
+}
+@media only screen and (min-width: 1366px) {
+    .present__text {
+        right: 300px;
+        max-width: 350px;
+        font-size: 30px;
+    }
+}
+@media only screen and (min-width: 1920px) {
+    .present__text {
+        top: 250px;
+        right: 160px;
+        max-width: 410px;
+        font-size: 34px;
+    }
 }
 .present strong {
     font-weight: 700;
 }
-.present .form {
-    width: 334px;
-    min-height: 456px;
-    margin-right: -300px;
-    padding: 60px 40px 80px 40px;
-    text-align: center;
-    z-index: 10;
-    background: url(../images/form-back.jpg) no-repeat;
-    background-size: cover;
+@media only screen and (min-width: 768px) {
+    .present__form {
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 334px;
+    }
 }
-.present .form__title {
+@media only screen and (min-width: 768px) {
+    .present__form:before {
+        content: '';
+        position: absolute;
+        top: -40px;
+        left: -40px;
+        width: 393px;
+        height: 143px;
+        background: url(../images/present__back-form.jpg) no-repeat;
+        background-size: contain;
+        z-index: 1;
+    }
+}
+@media only screen and (min-width: 1366px) {
+    .present__form {
+        right: -80px;
+    }
+}
+@media only screen and (min-width: 1920px) {
+    .present__form {
+        right: -200px;
+    }
+}
+.present__form .form {
+    margin: auto;
+    text-align: center;
+    padding: 30px 25px;
+    min-height: 400px;
+    background: url(../images/form-back-small.jpg) no-repeat center;
+    background-size: contain;
+    position: relative;
+    z-index: 10;
+}
+@media only screen and (min-width: 768px) {
+    .present__form .form {
+        margin: 0;
+        padding: 60px 20px 80px 20px;
+        min-height: inherit;
+        background: url(../images/form-back.jpg) no-repeat;
+        background-size: cover;
+    }
+}
+.present__form .form__title {
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
     font-size: 25px;
     color: #cfad38;
 }
-.present .form__text {
+.present__form .form__text {
     padding: 10px 0 20px 0;
     font-size: 15px;
     color: #cfad38;
 }
-.present .form .inputWrap {
+.present__form .inputWrap {
     position: relative;
     margin-bottom: 10px;
 }
-.present .form .inputWrap:before {
+.present__form .inputWrap:before {
     content: '';
     position: absolute;
     top: 50%;
@@ -1897,22 +2063,22 @@ section {
             transform: translateY(-50%);
     left: 30px;
 }
-.present .form .inputWrap:nth-of-type(1):before {
+.present__form .inputWrap:nth-of-type(1):before {
     width: 12px;
     height: 16px;
     background: url('../images/icons/css_sprites.png') -84px -133px;
 }
-.present .form .inputWrap:nth-of-type(2):before {
+.present__form .inputWrap:nth-of-type(2):before {
     width: 15px;
     height: 15px;
     background: url('../images/icons/css_sprites.png') -84px -98px;
 }
-.present .form .inputWrap:nth-of-type(3):before {
+.present__form .inputWrap:nth-of-type(3):before {
     width: 16px;
     height: 11px;
     background: url('../images/icons/css_sprites.png') -232px -141px;
 }
-.present .form .form__line {
+.present__form .form__line {
     padding: 10px 50px;
     width: 235px;
     color: #967f2d;
@@ -1922,10 +2088,15 @@ section {
     -webkit-box-shadow: 0 11px 1px 1.26px rgba(0, 0, 0, 0.27), inset 0 0 10px 0 rgba(59, 49, 64, 0.38);
             box-shadow: 0 11px 1px 1.26px rgba(0, 0, 0, 0.27), inset 0 0 10px 0 rgba(59, 49, 64, 0.38);
 }
-.present .form .btn {
-    margin-top: 25px;
+.present__form .btn {
+    margin-top: 8px;
     width: 235px;
     border: none;
+}
+@media only screen and (min-width: 768px) {
+    .present__form .btn {
+        margin-top: 25px;
+    }
 }
 .about {
     position: relative;
