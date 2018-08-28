@@ -1994,12 +1994,16 @@ section {
     width: 310px;
     margin: auto;
 }
+@media only screen and (min-width: 360px) {
+    .present__form {
+        width: 342px;
+    }
+}
 @media only screen and (min-width: 768px) {
     .present__form {
         position: absolute;
         top: 60px;
         right: 0;
-        width: 334px;
         margin: 0;
     }
 }
@@ -2985,13 +2989,17 @@ section {
     padding-bottom: 40px;
     margin: auto;
 }
+@media only screen and (min-width: 360px) {
+    .appreciate__form {
+        width: 342px;
+    }
+}
 @media only screen and (min-width: 768px) {
     .appreciate__form {
         position: absolute;
         top: 50px;
         right: 0;
         padding-bottom: 40px;
-        width: 334px;
         margin: 0;
     }
 }
