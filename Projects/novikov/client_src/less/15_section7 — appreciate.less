@@ -138,7 +138,7 @@
 	}
 
 	&__form {
-		width: 310px;
+		width: 290px;
 		padding-bottom: 40px;
 		margin: auto;
 		@media @mobile-xl {
@@ -195,13 +195,16 @@
 
 		.inputWrap{
 			position: relative;
-			margin-bottom: 10px;
+			margin-bottom: 15px;
 			&:before {
 				content: '';
 				position: absolute;
 				top: 50%;
 				transform: translateY(-50%);
-				left: 30px;
+				left: 20px;
+				@media @mobile-xl {
+					left: 40px;
+				}
 			}
 		}
 
@@ -237,7 +240,7 @@
 			width: 235px;
 			border: none;
 			@media @tablet {
-				margin-top: 25px;
+				margin-top: 20px;
 			}
 		}
 	}

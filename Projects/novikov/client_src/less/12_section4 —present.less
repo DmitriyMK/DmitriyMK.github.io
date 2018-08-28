@@ -165,7 +165,7 @@
 		font-weight: 700;
 	}
 	&__form {
-		width: 310px;
+		width: 290px;
 		margin: auto;
 		@media @mobile-xl {
 			width: 342px;
@@ -188,16 +188,14 @@
 			margin: auto;
 			text-align: center;
 			z-index: 10;
-			padding: 30px 25px;
-			min-height: 400px;
+			padding: 55px 25px;
+			min-height: 460px;
 			background: url(../images/form-back-small.jpg)no-repeat center;
 			background-size: contain;
 			position: relative;
 			z-index: 10;
 			@media @tablet {
 				margin: 0;
-				padding: 60px 30px 80px 35px;
-				min-height: inherit;
 				background: url(../images/form-back.jpg)no-repeat;
 			}
 		}
@@ -217,13 +215,16 @@
 
 		.inputWrap{
 			position: relative;
-			margin-bottom: 10px;
+			margin-bottom: 15px;
 			&:before {
 				content: '';
 				position: absolute;
 				top: 50%;
 				transform: translateY(-50%);
-				left: 30px;
+				left: 20px;
+				@media @mobile-xl {
+					left: 40px;
+				}
 			}
 		}
 
@@ -259,7 +260,7 @@
 			width: 235px;
 			border: none;
 			@media @tablet {
-				margin-top: 25px;
+				margin-top: 20px;
 			}
 		}
 	}

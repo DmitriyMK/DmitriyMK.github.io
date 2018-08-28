@@ -3418,6 +3418,7 @@ label {
     max-width: 320px;
     width: 100%;
     background: #fff;
+    cursor: auto;
 }
 @media only screen and (min-width: 768px) {
     .post__content {
@@ -3468,6 +3469,7 @@ label {
     padding: 10px 10px 10px 15px;
     overflow: hidden;
     height: 155px;
+    cursor: auto;
 }
 @media only screen and (min-width: 768px) {
     .post__info {

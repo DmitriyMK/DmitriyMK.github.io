@@ -433,6 +433,9 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     font: inherit;
     vertical-align: baseline;
 }
+input {
+    border: none;
+}
 @media only screen and (min-width: 320px) {
     .container {
         padding: 0 10px;
@@ -1991,7 +1994,7 @@ section {
     font-weight: 700;
 }
 .present__form {
-    width: 310px;
+    width: 290px;
     margin: auto;
 }
 @media only screen and (min-width: 360px) {
@@ -2020,8 +2023,8 @@ section {
 .present__form .form {
     margin: auto;
     text-align: center;
-    padding: 30px 25px;
-    min-height: 400px;
+    padding: 55px 25px;
+    min-height: 460px;
     background: url(../images/form-back-small.jpg) no-repeat center;
     background-size: contain;
     position: relative;
@@ -2030,8 +2033,6 @@ section {
 @media only screen and (min-width: 768px) {
     .present__form .form {
         margin: 0;
-        padding: 60px 30px 80px 35px;
-        min-height: inherit;
         background: url(../images/form-back.jpg) no-repeat;
     }
 }
@@ -2048,7 +2049,7 @@ section {
 }
 .present__form .inputWrap {
     position: relative;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 .present__form .inputWrap:before {
     content: '';
@@ -2057,7 +2058,12 @@ section {
     -webkit-transform: translateY(-50%);
         -ms-transform: translateY(-50%);
             transform: translateY(-50%);
-    left: 30px;
+    left: 20px;
+}
+@media only screen and (min-width: 360px) {
+    .present__form .inputWrap:before {
+        left: 40px;
+    }
 }
 .present__form .inputWrap:nth-of-type(1):before {
     width: 12px;
@@ -2091,7 +2097,7 @@ section {
 }
 @media only screen and (min-width: 768px) {
     .present__form .btn {
-        margin-top: 25px;
+        margin-top: 20px;
     }
 }
 .about {
@@ -2970,7 +2976,7 @@ section {
     }
 }
 .appreciate__form {
-    width: 310px;
+    width: 290px;
     padding-bottom: 40px;
     margin: auto;
 }
@@ -3035,7 +3041,7 @@ section {
 }
 .appreciate__form .inputWrap {
     position: relative;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 .appreciate__form .inputWrap:before {
     content: '';
@@ -3044,7 +3050,12 @@ section {
     -webkit-transform: translateY(-50%);
         -ms-transform: translateY(-50%);
             transform: translateY(-50%);
-    left: 30px;
+    left: 20px;
+}
+@media only screen and (min-width: 360px) {
+    .appreciate__form .inputWrap:before {
+        left: 40px;
+    }
 }
 .appreciate__form .inputWrap:nth-of-type(1):before {
     width: 12px;
@@ -3078,7 +3089,7 @@ section {
 }
 @media only screen and (min-width: 768px) {
     .appreciate__form .btn {
-        margin-top: 25px;
+        margin-top: 20px;
     }
 }
 .review {
