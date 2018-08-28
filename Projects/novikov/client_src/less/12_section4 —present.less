@@ -20,20 +20,11 @@
 
 .present {
 	position: relative;
-	background: @yellow;
+	min-height: 576px;
+	background: url(../images/present__back.jpg)no-repeat center/cover;
 
-
-	&:before {
-		content: '';
-		position: absolute;
-		width: 1600px;
-		height: 250px;
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-		border: 6px solid #9e9ea0;
-		box-shadow: 0px 11px 16.74px 1.26px rgba(0, 0, 0, 0.27);
-
+	.container {
+		position: relative;
 	}
 
 	&__box {
@@ -44,69 +35,34 @@
 		font-family: @ff2;
 	}
 
-	&__content{
-		position: relative;
-		width: 460px;
-		color: #000;
 
-		&:before {
-			content: '';
-			position: absolute;
-			left: -170px;
-			top: 50%;
-			transform: translatey(-50%);
-			width: 135px;
-			height: 138px;
-			background: url(../images/pencil.png);
-		}
-
-		&:after {
-			content: '';
-			position: absolute;
-			left: 380px;
-			top: -170px;
-			width: 495px;
-			height: 367px;
-			background: url(../images/mac.png);
-		}
-	}
 
 	&__title {
 		position: relative;
-		padding: 10px 15px;
-		font-size: 45px;
-		&:before {
-			content: '';
-			position: absolute;
-			left: -20px;
-			bottom: 0;
-			width: 100%;
-			height: 1px;
-			background: #000;
-			opacity: 0.25;
-		}
-		
+		font-size: 34px;
+		color: #000;
 	}
 	&__text {
-		padding: 10px 15px;
-		font-size: 24px;
+		font-size: 34px;
+		color: #000;
 	}
 	strong {
 		font-weight: 700;
 	}
 
 	.form {
-		position: absolute;
-		top: -80px;
-		right: -70px;
+		// position: absolute;
+		// top: -80px;
+		// right: -70px;
 		width: 334px;
 		min-height: 456px;
-		margin: auto;
+		margin-right: -300px;
 		padding: 60px 40px 80px 40px;
 		text-align: center;
 		z-index: 10;
 
-		background: url(../images/form-back.jpg)no-repeat center/cover;
+		background: url(../images/form-back.jpg)no-repeat;
+		background-size: cover;
 
 		&__title {
 			font-family: @ff2;
