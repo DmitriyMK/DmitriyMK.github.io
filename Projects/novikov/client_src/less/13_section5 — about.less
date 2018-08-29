@@ -417,12 +417,18 @@
 		margin: 20px 0 20px 15px;
 		width: 280px;
 		color: #000;
+		br {
+			display: none;
+		}
 		@media @tablet {
 			width: 100%;
 		}
 		@media @desktop {
 			margin: 0;
 			padding: 20px 30px 0 70px;
+			br {
+				display: inline;
+			}
 		}
 		@media @desktop-xl {
 			padding: 20px 70px 20px 70px;
