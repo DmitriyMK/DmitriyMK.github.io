@@ -37,6 +37,8 @@ $(document).ready(function() {
     }, t);
   });*/
 
+  // var bLazy = new Blazy();
+
 
 /*  $(".js-video-button").modalVideo({
     youtube: {
