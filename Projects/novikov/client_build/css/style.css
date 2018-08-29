@@ -2870,6 +2870,7 @@ section {
     padding-top: 50px;
     min-height: 590px;
     background: #cfad38;
+    overflow: hidden;
 }
 @media only screen and (min-width: 768px) {
     .appreciate {
