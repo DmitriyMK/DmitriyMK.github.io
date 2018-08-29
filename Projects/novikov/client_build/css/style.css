@@ -1996,7 +1996,7 @@ section {
 }
 @media only screen and (min-width: 360px) {
     .present__form {
-        width: 342px;
+        width: 325px;
     }
 }
 @media only screen and (min-width: 768px) {
@@ -2504,7 +2504,7 @@ section {
     height: 155px;
 }
 .about .about__item:nth-of-type(1):before {
-    width: 290px;
+    width: 325px;
     background: url(../images/line1.png) no-repeat;
     background-size: contain;
 }
