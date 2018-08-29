@@ -65,34 +65,13 @@
 		}
 	}
 
+	&__title {
+		color: #fff;
+	}
+
 	.container {
 		position: relative;
 		z-index: 10;
-	}
-
-	&__title {
-		color: #fff;
-		&:before, &:after {
-			@media @desktop {
-				position: absolute;
-				content: '';
-				top: 50%;
-				transform: translateY(-50%);
-				height: 1px;
-				width: 40px;
-				background: #898989;
-			}
-		}
-		&:before {
-			@media @desktop {
-				left: 25vh;
-			}
-		}
-		&:after {
-			@media @desktop {
-				right: 25vh;
-			}
-		}
 	}
 
 	&__list {
@@ -164,7 +143,7 @@
 
 	&__text {
 		padding: 10px 15px;
-		color: #999;
+		color: #fff;
 		font-family: @ff1;
 		font-weight: 400;
 		@media @desktop-xl {

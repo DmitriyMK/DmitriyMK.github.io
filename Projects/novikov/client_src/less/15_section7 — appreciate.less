@@ -37,29 +37,6 @@
 	strong {
 		font-weight: 700;
 	}
-	&__title {
-		&:before, &:after {
-			@media @desktop-xl15 {
-				position: absolute;
-				content: '';
-				top: 50%;
-				transform: translateY(-50%);
-				height: 1px;
-				width: 40px;
-				background: rgba(0, 0, 0, .7);
-			}
-		}
-		&:before {
-			@media @desktop-xl15 {
-				left: 18vh;
-			}
-		}
-		&:after {
-			@media @desktop-xl15 {
-				right: 18vh;
-			}
-		}
-	}
 
 	&__img {
 		display: none;

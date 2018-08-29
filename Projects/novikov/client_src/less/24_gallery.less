@@ -18,7 +18,7 @@
 	position: relative;
 	z-index: 11;
 	box-shadow: -15.5px 26.847px 101px 0px rgba(46, 52, 65, 0.74);
-	background: url(../images/panel__back.jpg)no-repeat fixed center/cover;
+	background: url(../images/panel__back2.jpg)no-repeat fixed center/cover;
 	.container {
 		position: relative;
 		z-index: 10;
@@ -57,6 +57,7 @@
 		align-items: center;
 		justify-content: space-between;
 		@media @tablet {
+			align-items: inherit;
 			flex-direction: row;
 		}
 
@@ -70,23 +71,18 @@
 
 	&__small {
 		display: flex;
-		align-items: center;
 		flex-wrap: wrap;
 		width: 100%;
 		@media @tablet {
-			width: 50%;
-		}
-
-		@media @desktop-xl {
-			width: 61.5%;
+			width: 53%;
 		}
 		a {
 			display: block;
 			overflow: hidden;
 			margin: auto;
+			max-height: 250px;
 			margin-bottom: 15px;
 			position: relative;
-			width: 330px;
 			box-shadow: 0px 11px 16.74px 1.26px rgba(0, 0, 0, 0.27);
 			@media @tablet {
 				width: 45.5%;
@@ -136,15 +132,12 @@
 		margin-top: 25px;
 		position: relative;
 		@media @tablet {
-			width: 43%;
-			margin-right: 15px;
+			width: 47%;
+			margin-left: 15px;
 			margin-top: 0;
 		}
 		@media @desktop {
 			margin-left: 60px;
-		}
-		@media @desktop-xl {
-			width: 38.5%;
 		}
 		a {
 			position: relative;
@@ -153,6 +146,7 @@
 		img {
 			box-shadow: 0px 11px 16.74px 1.26px rgba(0, 0, 0, 0.27);
 			transition: box-shadow .3s linear;
+			max-height: 514.64px;
 			&:hover {
 				box-shadow: none;
 			}

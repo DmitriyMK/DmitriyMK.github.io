@@ -71,36 +71,9 @@
 		z-index: 10;
 	}
 
-	&__title {
-		&:before, &:after {
-			@media @desktop {
-				position: absolute;
-				content: '';
-				top: 50%;
-				transform: translateY(-50%);
-				height: 1px;
-				width: 40px;
-				background: #898989;
-			}
-		}
-		&:before {
-			@media @desktop {
-				left: 200px;
-			}
-		}
-		&:after {
-			@media @desktop {
-				right: 200px;
-			}
-		}
-	}
-
 	&__box {
 		padding: 40px 0 0 0;
 		
-		@media @tablet {
-
-		}
 		@media @desktop {
 			padding: 80px 0 0 0;
 		}

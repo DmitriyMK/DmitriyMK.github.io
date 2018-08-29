@@ -143,4 +143,26 @@ section {
   @media @desktop-xl-2 {
     font-size: 40px;
   }
+
+  &:before, &:after {
+    @media @desktop {
+      position: absolute;
+      content: '';
+      top: 50%;
+      transform: translateY(-50%);
+      height: 1px;
+      width: 55px;
+      background: #8c939b;
+    }
+  }
+  &:before {
+    @media @desktop {
+      left: 10vh;
+    }
+  }
+  &:after {
+    @media @desktop {
+      right: 10vh;
+    }
+  }
 }

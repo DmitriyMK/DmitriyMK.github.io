@@ -20,40 +20,6 @@
 .advantages {
 	background: url(../images/advantages__back.jpg)no-repeat fixed center/cover;
 
-	@media @tablet {
-
-	}
-
-	&__title {
-		&:before, &:after {
-			@media @desktop {
-				position: absolute;
-				content: '';
-				top: 50%;
-				transform: translateY(-50%);
-				height: 1px;
-				width: 77px;
-				background: #afafaf;
-			}
-		}
-		&:before {
-			@media @desktop {
-				left: 13vh;
-			}
-			@media @desktop-xl {
-				left: 25vh;
-			}
-		}
-		&:after {
-			@media @desktop {
-				right: 13vh;
-			}
-			@media @desktop-xl {
-				right: 25vh;
-			}
-		}
-	}
-
 	&__list {
 		padding-top: 20px;
 		display: flex;
