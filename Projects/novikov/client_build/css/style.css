@@ -414,9 +414,9 @@ template {
             user-select: text;
 }
 .b-lazy {
-    -webkit-transition: opacity 0.3 linear;
-         -o-transition: opacity 0.3 linear;
-            transition: opacity 0.3 linear;
+    -webkit-transition: opacity 0.5s linear;
+         -o-transition: opacity 0.5s linear;
+            transition: opacity 0.5s linear;
     max-width: 100%;
     opacity: 0;
 }
@@ -430,6 +430,12 @@ main {
     main {
         overflow: visible;
     }
+}
+.fancybox-thumbs {
+    background: #000;
+}
+.fancybox-thumbs > ul > li:before {
+    border: 4px solid #cfad38;
 }
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, main, menu, nav, output, ruby, section, summary, time, mark, audio, video {
     margin: 0;
@@ -2126,6 +2132,7 @@ section {
 }
 .about {
     position: relative;
+    overflow: hidden;
     background: url(../images/panel__back.jpg) no-repeat center / cover;
 }
 @media only screen and (min-width: 1200px) {
@@ -2238,11 +2245,6 @@ section {
 @media only screen and (min-width: 1200px) {
     .about__box {
         padding-top: 200px;
-    }
-}
-@media only screen and (min-width: 1600px) {
-    .about__box {
-        padding-top: 230px;
     }
 }
 .about .imgWrap {
@@ -3934,34 +3936,28 @@ label {
 }
 @-webkit-keyframes pulsed {
     0% {
-        /* box-shadow: 0 0 0 0 rgba(204,169,44, 0.4); */
         -webkit-transform: scale(1);
                 transform: scale(1);
     }
     70% {
-        /* box-shadow: 0 0 0 10px rgba(204,169,44, 0); */
         -webkit-transform: scale(1.05);
                 transform: scale(1.05);
     }
     100% {
-        /* box-shadow: 0 0 0 0 rgba(204,169,44, 0); */
         -webkit-transform: scale(1);
                 transform: scale(1);
     }
 }
 @keyframes pulsed {
     0% {
-        /* box-shadow: 0 0 0 0 rgba(204,169,44, 0.4); */
         -webkit-transform: scale(1);
                 transform: scale(1);
     }
     70% {
-        /* box-shadow: 0 0 0 10px rgba(204,169,44, 0); */
         -webkit-transform: scale(1.05);
                 transform: scale(1.05);
     }
     100% {
-        /* box-shadow: 0 0 0 0 rgba(204,169,44, 0); */
         -webkit-transform: scale(1);
                 transform: scale(1);
     }

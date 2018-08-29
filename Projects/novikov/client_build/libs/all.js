@@ -67,11 +67,31 @@ $(document).ready(function() {
 
 
   $('[data-fancybox]').fancybox({
-    arrows: true,
-    dots: true,
-    focusOnSelect: true,
-    infinite: false,
-    fade: true,
+    // arrows: true,
+    // dots: true,
+    // focusOnSelect: true,
+    // infinite: false,
+    // fade: true,
+
+
+    loop: true,
+    animationEffect: "zoom",
+    transitionEffect: "tube",
+    transitionDuration: 366,
+    clickOutside: "close",
+    protect: true,
+
+    modal: false,
+
+    touch: {
+      vertical: true,
+      momentum: true
+    },
+
+    thumbs: {
+      autoStart: true,
+      axis: "y" 
+    },
 
   });
 
