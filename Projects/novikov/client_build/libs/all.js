@@ -3,7 +3,7 @@ $(document).ready(function() {
 
   if (document.documentElement.clientWidth > 1200) {
 
-    // new WOW().init();
+    new WOW().init();
 
     $("body").niceScroll({
       scrollspeed: 70,

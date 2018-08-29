@@ -414,9 +414,9 @@ template {
             user-select: text;
 }
 .b-lazy {
-    -webkit-transition: opacity 500ms linear;
-         -o-transition: opacity 500ms linear;
-            transition: opacity 500ms linear;
+    -webkit-transition: opacity 0.3 linear;
+         -o-transition: opacity 0.3 linear;
+            transition: opacity 0.3 linear;
     max-width: 100%;
     opacity: 0;
 }
