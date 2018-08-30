@@ -77,7 +77,7 @@
 	}
 
 	&__nav {
-		order: 5;
+		order: 4;
 		transition: all .3s cubic-bezier(0,1.56,.5,1.62);
 		@media @desktop {
 			flex-basis: 50%;
@@ -128,17 +128,19 @@
 	}
 
 	&__contact {
+		order: 2;
+		@media @desktop {
+			order: 3;
+		}
 		&-tel {
 			display: block;
 			width: 164px;
+			
 			font-weight: 500;
 			transition: color .3s linear;
 			&:hover {
 				color: @yellow;
 			}
-		}
-		@media @desktop {
-			order: 3;
 		}
 	}
 
@@ -153,7 +155,7 @@
 	}
 
 	&__btn {
-		order: 4;
+		order: 3;
 		position: relative;
 		width: 100px;
 		height: 74px;
