@@ -195,9 +195,9 @@ if (document.documentElement.clientWidth > 991) {
 };
 
 
-$(window).on('resize orientationchange', function() {
-  $('.slider').slick('resize');
-});
+// $(window).on('resize orientationchange', function() {
+//   $('.slider').slick('resize');
+// });
 
 $(window).load(function() {
 
@@ -206,31 +206,60 @@ $(window).load(function() {
     $(this).find('.product__slide').each(function() {
       slideNumber++;
     })
-    if (slideNumber > 2) {
-      $(this).find('.product__slider').slick({
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        infinite: false,
-        arrows: true,
-        dots: true,
-        responsive: [{
-          breakpoint: 992,
-          settings: {
-            slidesToShow: 2,
-          }
-        }, {
-          breakpoint: 767,
-          settings: {
-            slidesToShow: 1,
-            fade: true,
-          }
-        }, ]
 
-      });
+    if (document.documentElement.clientWidth > 991) {
+      if (slideNumber > 2) {
+        $(this).find('.product__slider').slick({
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          infinite: false,
+          arrows: true,
+          dots: true,
+          responsive: [{
+            breakpoint: 992,
+            settings: {
+              slidesToShow: 2,
+            }
+          }, {
+            breakpoint: 767,
+            settings: {
+              slidesToShow: 1,
+              fade: true,
+            }
+          }, ]
 
+        });
+      };
+    };
+
+    if (document.documentElement.clientWidth < 991) {
+      if (slideNumber > 1) {
+        $(this).find('.product__slider').slick({
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: false,
+          arrows: true,
+          dots: true,
+          
+
+          responsive: [{
+            breakpoint: 992,
+            settings: {
+              slidesToShow: 2,
+            }
+          }, {
+            breakpoint: 767,
+            settings: {
+              slidesToShow: 1,
+              fade: true,
+            }
+          }, ]
+
+        });
+      };
     };
   })
-  
+
 });
 
 

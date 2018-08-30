@@ -786,6 +786,29 @@ section {
         width: inherit;
     }
 }
+.header .nav__item-mob-top {
+    margin-top: 15px;
+}
+.header .nav__item-mob {
+    list-style-type: none;
+    font-weight: 500;
+    width: 100%;
+    color: #fff;
+    -webkit-transition: 0.3s linear background-color;
+         -o-transition: 0.3s linear background-color;
+            transition: 0.3s linear background-color;
+}
+.header .nav__item-mob:hover, .header .nav__item-mob-active {
+    color: #000;
+    background: #fff200;
+}
+@media only screen and (min-width: 992px) {
+    .header .nav__item-mob {
+        color: inherit;
+        width: inherit;
+        display: none;
+    }
+}
 .header .nav__link {
     display: block;
     padding: 7px 0 7px 15px;
@@ -806,10 +829,19 @@ section {
         font-size: 19.56px;
     }
 }
-.header__contact {
-    -webkit-box-ordinal-group: 3;
-    -ms-flex-order: 2;
-    order: 2;
+.header .nav__link-tel {
+    display: block;
+    padding: 7px 0 7px 0;
+    font-size: 15px;
+    line-height: 30px;
+    text-align: center;
+}
+@media only screen and (min-width: 768px) {
+    .header__contact {
+        -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+        order: 2;
+    }
 }
 @media only screen and (min-width: 992px) {
     .header__contact {
@@ -819,15 +851,20 @@ section {
     }
 }
 .header__contact-tel {
-    display: block;
-    width: 164px;
-    font-weight: 500;
-    -webkit-transition: color 0.3s linear;
-         -o-transition: color 0.3s linear;
-            transition: color 0.3s linear;
+    display: none;
 }
-.header__contact-tel:hover {
-    color: #fff200;
+@media only screen and (min-width: 768px) {
+    .header__contact-tel {
+        display: block;
+        width: 164px;
+        font-weight: 500;
+        -webkit-transition: color 0.3s linear;
+             -o-transition: color 0.3s linear;
+                transition: color 0.3s linear;
+    }
+    .header__contact-tel:hover {
+        color: #fff200;
+    }
 }
 .header__time {
     display: none;
@@ -3195,9 +3232,9 @@ label {
 }
 /* RESPONSIVE MENU TO 992px*/
 .open {
-    -webkit-transform: translateX(-220px);
-        -ms-transform: translateX(-220px);
-            transform: translateX(-220px);
+    -webkit-transform: translateX(-210px);
+        -ms-transform: translateX(-210px);
+            transform: translateX(-210px);
     -webkit-transition-duration: 0.5s;
          -o-transition-duration: 0.5s;
             transition-duration: 0.5s;
@@ -3211,7 +3248,7 @@ label {
 }
 .overlay {
     position: fixed;
-    width: 150px;
+    width: 190px;
     background: #000;
     height: 100vh;
     top: 74px;

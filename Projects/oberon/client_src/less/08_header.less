@@ -109,6 +109,26 @@
 			width: inherit;
 		}
 	}
+	
+	.nav__item-mob-top {
+		margin-top: 15px;
+	}
+	.nav__item-mob {
+		list-style-type: none;		
+		font-weight: 500;
+		width: 100%;
+		color: #fff;
+		transition: .3s linear background-color;
+		&:hover, &-active {
+			color: #000;
+			background: @yellow;
+		}
+		@media @desktop {
+			color: inherit;
+			width: inherit;
+			display: none;
+		}
+	}
 
 	.nav__link {
 		display: block;
@@ -127,22 +147,36 @@
 		}
 	}
 
+	.nav__link-tel {
+		display: block;
+		padding: 7px 0 7px 0;
+		font-size: 15px;
+		line-height: 30px;
+		text-align: center;
+	}
+
 	&__contact {
-		order: 2;
+		@media @tablet {
+			order: 2;
+		}
 		@media @desktop {
 			order: 3;
 		}
 		&-tel {
-			display: block;
-			width: 164px;
-			
-			font-weight: 500;
-			transition: color .3s linear;
-			&:hover {
-				color: @yellow;
+			display: none;
+			@media @tablet {
+				display: block;
+				width: 164px;
+				font-weight: 500;
+				transition: color .3s linear;
+				&:hover {
+					color: @yellow;
+				}
 			}
 		}
 	}
+
+
 
 	&__time {
 		display: none;
