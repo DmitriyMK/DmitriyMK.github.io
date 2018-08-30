@@ -858,12 +858,6 @@ section {
         display: block;
         width: 164px;
         font-weight: 500;
-        -webkit-transition: color 0.3s linear;
-             -o-transition: color 0.3s linear;
-                transition: color 0.3s linear;
-    }
-    .header__contact-tel:hover {
-        color: #fff200;
     }
 }
 .header__time {
@@ -2988,6 +2982,9 @@ label {
 .slick-prev:before, .slick-next:before {
     -webkit-box-shadow: 0 15px 16.74px 1.26px rgba(0, 0, 0, 0.27);
             box-shadow: 0 15px 16.74px 1.26px rgba(0, 0, 0, 0.27);
+}
+.slick-disabled {
+    opacity: 0.35!important;
 }
 .slick-dots {
     display: inline-block !important;
