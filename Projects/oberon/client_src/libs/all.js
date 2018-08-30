@@ -253,6 +253,7 @@ $(window).load(function() {
           //   breakpoint: 767,
           //   settings: {
             arrows: true,
+            dots: true,
             slidesToShow: 1,
             fade: true,
             swipe: false,
