@@ -257,6 +257,7 @@ $(window).load(function() {
             slidesToShow: 1,
             fade: true,
             swipe: false,
+            infinite: false,
           //   }
           // }, 
           // ]

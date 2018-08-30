@@ -2983,6 +2983,9 @@ label {
     -webkit-box-shadow: 0 15px 16.74px 1.26px rgba(0, 0, 0, 0.27);
             box-shadow: 0 15px 16.74px 1.26px rgba(0, 0, 0, 0.27);
 }
+.slick-prev:focus, .slick-next:focus {
+    opacity: 1;
+}
 .slick-disabled {
     opacity: 0.35!important;
 }
