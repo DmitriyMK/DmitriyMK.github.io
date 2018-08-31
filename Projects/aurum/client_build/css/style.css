@@ -547,6 +547,46 @@ template {
 }
 /* ONLY FOR IE11 */
 /* ONLY FOR EDGE */
+.bg-quoma_end {
+    width: 22px;
+    height: 17px;
+    background: url('../images/icons/css_sprites.png') -178px -103px;
+}
+.bg-arr_all {
+    width: 64px;
+    height: 33px;
+    background: url('../images/icons/css_sprites.png') -10px -103px;
+}
+.bg-arr_big {
+    width: 64px;
+    height: 33px;
+    background: url('../images/icons/css_sprites.png') -94px -103px;
+}
+.bg-arr_small {
+    width: 31px;
+    height: 16px;
+    background: url('../images/icons/css_sprites.png') -88px -60px;
+}
+.bg-arr_smallest {
+    width: 16px;
+    height: 9px;
+    background: url('../images/icons/css_sprites.png') -139px -60px;
+}
+.bg-list_item {
+    width: 58px;
+    height: 73px;
+    background: url('../images/icons/css_sprites.png') -10px -10px;
+}
+.bg-pushka {
+    width: 120px;
+    height: 30px;
+    background: url('../images/icons/css_sprites.png') -88px -10px;
+}
+.bg-quoma {
+    width: 22px;
+    height: 17px;
+    background: url('../images/icons/css_sprites.png') -10px -156px;
+}
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, main, menu, nav, output, ruby, section, summary, time, mark, audio, video {
     margin: 0;
     padding: 0;
@@ -755,21 +795,16 @@ section {
             transform: translateX(-50%);
     width: 96px;
     height: 106px;
-    background: red;
     border: 1px solid #fff;
     border-bottom: none;
 }
-.arrow__box {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-        flex-direction: column;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+.arrow a {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
 }
 /* #fixedTopMenu.fixed{
 	position: fixed;
