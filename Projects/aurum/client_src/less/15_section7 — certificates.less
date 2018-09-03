@@ -1,0 +1,59 @@
+@media @mobile {
+
+}
+@media @tablet {
+
+}
+@media @desktop {
+
+}
+@media @desktop-xl {
+	
+}
+@media @desktop-xl-2 {
+
+}
+@media @desktop-xll {
+	
+}
+
+
+.certificates {
+	position: relative;
+	overflow: hidden;
+
+	.flyLeft-u {
+		position: absolute;
+		left: 170px;
+		top: -380px;
+		width: 524px;
+		height: 718px;
+		background: url(../images/letters/U.png)no-repeat center/contain;
+	}
+	.flyRight-m {
+		position: absolute;
+		right: 150px;
+		bottom: 0;
+		width: 645px;
+		height: 361px;
+		background: url(../images/letters/M.png)no-repeat center/contain;
+	}
+	blockquote {
+		position: relative;
+		&:before {
+			content: '';
+			position: absolute;
+			left: 0;
+			top: -20px;
+			.bg-quoma;
+		}
+		&:after {
+			content: '';
+			position: absolute;
+			right: 0;
+			bottom: -20px;
+			.bg-quoma;
+		}
+	}
+}
+
