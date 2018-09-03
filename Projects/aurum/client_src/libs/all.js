@@ -1,4 +1,3 @@
-
 $(document).ready(function() {
 
   if (document.documentElement.clientWidth > 1200) {
@@ -36,89 +35,91 @@ $(document).ready(function() {
     }, t);
   });
 
-  // var bLazy = new Blazy();
+  var bLazy = new Blazy();
 
 
-/*  $(".js-video-button").modalVideo({
-    youtube: {
-      autoplay: 1,
-      nocookie: false,
-      cc_load_policy: 1,
-      color: null,
-      controls: 1,
-      disablekb: 0,
-      enablejsapi: 0,
-      end: null,
-      fs: 1,
-      h1: null,
-      iv_load_policy: 1,
-      list: null,
-      listType: null,
-      loop: 0,
-      modestbranding: null,
-      origin: null,
-      playlist: null,
-      playsinline: null,
-      rel: 0,
-      showinfo: 1,
-      start: 0,
-      wmode: 'transparent',
-      theme: 'dark'
+  
 
-    }
-  });*/
-
-
-
-/*  $('.slider-for-recipe').slick({
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    arrows: false,
-    dots: false,
-    asNavFor: '.slider-nav-recipe',
-    fade: true,
-    draggable: false,
-    infinite: true,
-
-  });*/
-
-
-/*  $('.slider-nav-recipe').slick({
-    slidesToShow: 4,
-    slidesToScroll: 1,
-    asNavFor: '.slider-for-recipe',
-    arrows: false,
-    dots: false,
-    focusOnSelect: true,
-    infinite: true,
-    centerMode: false,
-
-    responsive: [
-
-    {
-      breakpoint: 992,
-      settings: {
-        slidesToShow: 2,
-        slidesToScroll: 1,
-        arrows: true,
+  /*  $(".js-video-button").modalVideo({
+      youtube: {
+        autoplay: 1,
+        nocookie: false,
+        cc_load_policy: 1,
+        color: null,
+        controls: 1,
+        disablekb: 0,
+        enablejsapi: 0,
+        end: null,
+        fs: 1,
+        h1: null,
+        iv_load_policy: 1,
+        list: null,
+        listType: null,
+        loop: 0,
+        modestbranding: null,
+        origin: null,
+        playlist: null,
+        playsinline: null,
+        rel: 0,
+        showinfo: 1,
+        start: 0,
+        wmode: 'transparent',
+        theme: 'dark'
 
       }
-    },
+    });*/
 
-    {
-      breakpoint: 767,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1,
 
-        arrows: true,
-      }
-    },
 
-    ]
+  /*  $('.slider-for-recipe').slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      arrows: false,
+      dots: false,
+      asNavFor: '.slider-nav-recipe',
+      fade: true,
+      draggable: false,
+      infinite: true,
 
-  });
-*/
+    });*/
+
+
+  /*  $('.slider-nav-recipe').slick({
+      slidesToShow: 4,
+      slidesToScroll: 1,
+      asNavFor: '.slider-for-recipe',
+      arrows: false,
+      dots: false,
+      focusOnSelect: true,
+      infinite: true,
+      centerMode: false,
+
+      responsive: [
+
+      {
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          arrows: true,
+
+        }
+      },
+
+      {
+        breakpoint: 767,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+
+          arrows: true,
+        }
+      },
+
+      ]
+
+    });
+    */
 
 });
 

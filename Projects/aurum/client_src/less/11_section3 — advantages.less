@@ -1,0 +1,61 @@
+@media @mobile {
+
+}
+@media @tablet {
+
+}
+@media @desktop {
+
+}
+@media @desktop-xl {
+	
+}
+@media @desktop-xl-2 {
+
+}
+@media @desktop-xll {
+	
+}
+
+.advantages {
+	position: relative;
+	z-index: 10;
+	&:before {
+		content: '';
+		position: absolute;
+		left: 41.5%;
+		top: -60px;
+		width: 1px;
+		height: 118px;
+		background: @red;
+	}
+	&:after {
+		content: '';
+		position: absolute;
+		right: 41.5%;
+		bottom: -60px;
+		width: 1px;
+		height: 118px;
+		background: @red;
+	}
+	&__list {
+		display: flex;
+		justify-content: space-between;
+		padding: 60px 0;
+	}
+	&__item {
+		width: 23%;
+		text-align: center;
+	}
+	&__titles {
+		padding: 15px 0;
+		font-size: 20px;
+		font-family: @ff2;
+	}
+	&__text {
+		color: #6c6d7d;
+	}
+	img {
+		margin: auto;
+	}
+}
