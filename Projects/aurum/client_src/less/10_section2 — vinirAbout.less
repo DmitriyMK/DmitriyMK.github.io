@@ -1,0 +1,84 @@
+@media @mobile {
+
+}
+@media @tablet {
+
+}
+@media @desktop {
+
+}
+@media @desktop-xl {
+
+}
+@media @desktop-xl-2 {
+
+}
+@media @desktop-xll {
+
+}
+
+.vinirAbout {
+	position: relative;
+	overflow: hidden;
+	background: #f0f4f7;
+	background-image: linear-gradient( 90deg, rgb(245,249,252) 0%, rgb(240,244,247) 100%);
+	.container {
+		position: relative;
+		&:before {
+			content: '';
+			position: absolute;
+			top: 5px;
+			left: 50%;
+			transform: translateX(-50%);
+			width: 1170px;
+			height: 450px;
+			background: url(../images/border.png)no-repeat center/contain;
+		}
+	}
+	&__title {
+		&:before, &:after {
+			display: none;
+		}
+	}
+	&__list {
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		padding: 25px 60px 0 100px;
+		height: 360px;
+	}
+	&__item {
+		margin: 21px auto;
+		width: 370px;
+		counter-increment: li; 
+		position: relative;
+		font-size: 18px;
+		&:before {
+			content: counter(li);
+			position: absolute;
+			left: -40px;
+			top: 50%;
+			transform: translateY(-50%);
+			color: #fff;
+			font-size: 20px;
+			z-index: 1;
+		}
+		&:after {
+			content: '';
+			position: absolute;
+			left: -58px;
+			top: 50%;
+			transform: translateY(-45%);
+			.bg-list_item;
+		}
+	}
+
+	.flyLeft {
+		position: absolute;
+		left: 150px;
+		top: -380px;
+		width: 628px;
+		height: 712px;
+		background: url(../images/letters/A.png)no-repeat center/contain;
+	}
+}

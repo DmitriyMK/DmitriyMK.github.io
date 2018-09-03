@@ -1,0 +1,50 @@
+@media @mobile {
+
+}
+@media @tablet {
+
+}
+@media @desktop {
+
+}
+@media @desktop-xl {
+	
+}
+@media @desktop-xl-2 {
+
+}
+@media @desktop-xll {
+	
+}
+
+
+.vinir {
+	position: relative;
+	z-index: 10;
+	&:after {
+		content: '';
+		position: absolute;
+		right: 41.5%;
+		bottom: -60px;
+		width: 1px;
+		height: 118px;
+		background: @red;
+	}
+	&__box {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding: 0 175px;
+	}
+	strong {
+		color: @red;
+		font-family: @ff2;
+		font-weight: 900;
+	}
+	&__content {
+		margin-left: 40px;
+	}
+	&__text {
+		padding-bottom: 25px;
+	}
+}

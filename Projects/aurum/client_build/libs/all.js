@@ -1,12 +1,11 @@
 
 $(document).ready(function() {
 
-
-/*  if (document.documentElement.clientWidth > 1200) {
+  if (document.documentElement.clientWidth > 1200) {
 
     $(window).enllax();
 
-    new WOW().init();
+    // new WOW().init();
 
     $("body").niceScroll({
       scrollspeed: 70,
@@ -14,7 +13,7 @@ $(document).ready(function() {
       smoothscroll: true,
       cursorwidth: 8,
       cursorborder: 0,
-      cursorcolor: '#ff4200',
+      cursorcolor: '#cd0009',
       cursorborderradius: 2,
       autohidemode: true,
       horizrailenabled: false,
@@ -25,17 +24,17 @@ $(document).ready(function() {
 
     $('html').addClass('no-overflow-y');
 
-  };*/
+  };
 
 
-/*  $('.scrolling__link').on('click', function(e) {
+  $('.scrolling__link').on('click', function(e) {
     e.preventDefault();
     var t = 1500;
     var d = $(this).attr('data-href') ? $(this).attr('data-href') : $(this).attr('href');
     $('html,body').stop().animate({
       scrollTop: $(d).offset().top
     }, t);
-  });*/
+  });
 
   // var bLazy = new Blazy();
 
