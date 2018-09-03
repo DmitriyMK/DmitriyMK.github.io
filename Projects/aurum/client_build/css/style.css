@@ -1327,20 +1327,20 @@ section {
 .doctor__img-left2 {
     position: absolute;
     left: -240px;
-    bottom: -25px;
+    bottom: -50px;
     background-size: contain;
 }
 .doctor__img-right {
     position: absolute;
     right: -380px;
-    bottom: -25px;
+    bottom: -50px;
     background-size: contain;
     z-index: 11;
     overflow: hidden;
 }
 .doctor__img {
     position: absolute;
-    bottom: -25px;
+    bottom: -50px;
     left: 150px;
     max-width: 350px;
 }
@@ -1409,8 +1409,8 @@ section {
     border-radius: 50%;
 }
 .doctor .btn-white {
-    margin-top: 20px;
-    margin-bottom: 25px;
+    margin-top: 30px;
+    margin-bottom: 50px;
 }
 .certificates {
     position: relative;
@@ -1433,13 +1433,17 @@ section {
     background: url(../images/letters/M.png) no-repeat center / contain;
 }
 .certificates blockquote {
+    width: 540px;
+    margin-top: 50px;
+    padding-left: 25px;
+    padding-right: 25px;
     position: relative;
 }
 .certificates blockquote:before {
     content: '';
     position: absolute;
     left: 0;
-    top: -20px;
+    top: -25px;
     width: 22px;
     height: 17px;
     background: url('../images/icons/css_sprites.png') -10px -156px;
@@ -1448,10 +1452,13 @@ section {
     content: '';
     position: absolute;
     right: 0;
-    bottom: -20px;
+    bottom: 0;
     width: 22px;
     height: 17px;
     background: url('../images/icons/css_sprites.png') -10px -156px;
+}
+.certificates blockquote p {
+    padding-bottom: 15px;
 }
 .remodal-first {
     padding-top: 95px;
