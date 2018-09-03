@@ -37,6 +37,7 @@
 	<script defer src="./libs/fancybox.js"></script>
 	<script defer src="./libs/slick.js"></script>
 	<script defer src="./libs/jquery.validate.min.js"></script>
+	<script defer src="./libs/masked-input.js"></script>
 	<script defer src="./libs/wow.min.js"></script>
 	<script defer src="./libs/cssrelpreload.js"></script>
 	<!-- END DEFER SCRIPT -->
@@ -217,38 +218,97 @@
 	</section>
 
 
-	<article class="consult">
-		<div class="consult__img-left">
-			<img class="b-lazy img-responsive" data-src="./images/consult__decor-left.png" alt="Запишитесь на бесплатную консультацию" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
-		</div>
-		<div class="consult__img-right">
-			<img class="b-lazy img-responsive" data-src="./images/consult__decor-right.png" alt="Запишитесь на бесплатную консультацию" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
-		</div>
-		<div class="container">
-			<h2 class="consult__title">Запишитесь <br> на <span>бесплатную</span>консультацию</h2>
-			<p class="consult__text">и получите индивидуальные рекомендации по созданию Вашей идеальной улыбки.</p>
-			<div class="consult__form">
-				<form action="mail.php" method="post" class="form form-validate" name="Receive Catalog">
-					<input type="hidden" name="project_name" value="Aurum">
-					<input type="hidden" name="admin_email" value="dm@push-k.ua">
-					<input type="hidden" name="form_subject" value="Aurum > Бесплатная консультацию">
-					<input type="hidden" name="whatform" value="Aurum > Бесплатная консультацию">
+	<article class="consult">		
+		<div class="consultWrap">
+			<div class="container">
+				<div class="consult__img-left">
+					<img class="b-lazy img-responsive" data-src="./images/consult__decor-left.png" alt="Запишитесь на бесплатную консультацию" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+				</div>
+				<div class="consult__img-right">
+					<img class="b-lazy img-responsive" data-src="./images/consult__decor-right.png" alt="Запишитесь на бесплатную консультацию" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+				</div>
 
-					<p class="form__title">Заполните форму</p>
-					<p class="form__text">и мы свяжемся с Вами для уточнения даты и времени приема.</p>
-
-					<div class="inputWrap">
-						<input class="form__line name" type="text" name="Имя&nbsp;покупателя" placeholder="Ваше имя" required>
+				<div class="consult__box">
+					<div class="consult__content">
+						<h2 class="consult__title">Запишитесь <br> на <strong>бесплатную</strong><br> консультацию</h2>
+						<p class="consult__text">и получите индивидуальные <br> рекомендации по созданию <br> Вашей идеальной улыбки.</p>
 					</div>
-					<div class="inputWrap">
-						<input class="form__line" type="tel" name="Телефон&nbsp;покупателя" placeholder="Ваш телефон" required>
-					</div>			
 
-					<input type="submit" class="btn" value="Записаться на прием"> 
-				</form>
+					<div class="consult__form">
+						<form action="mail.php" method="post" class="form form-validate" name="Receive Catalog">
+							<input type="hidden" name="project_name" value="Aurum">
+							<input type="hidden" name="admin_email" value="dm@push-k.ua">
+							<input type="hidden" name="form_subject" value="Aurum > Бесплатная консультацию">
+							<input type="hidden" name="whatform" value="Aurum > Бесплатная консультацию">
+
+							<p class="form__title">Заполните форму</p>
+							<p class="form__text">и мы свяжемся с Вами для уточнения даты и времени приема.</p>
+
+							<div class="inputWrap">
+								<input class="form__line name" type="text" name="Имя&nbsp;покупателя" placeholder="Ваше имя" required>
+							</div>
+							<div class="inputWrap">
+								<input class="form__line phone-mask" type="tel" name="Телефон&nbsp;покупателя" placeholder="Ваш телефон" required>
+							</div>			
+
+							<input type="submit" class="btn" value="Записаться на прием"> 
+						</form>
+					</div>
+				</div>
 			</div>
 		</div>
 	</article>
+
+
+	<section class="doctor">
+		<div class="container">
+			<div class="doctor__img-left">
+				<img class="b-lazy img-responsive" data-src="./images/doctor__decor-left.png" alt="Ваш доктор" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+			</div>
+			<div class="doctor__img-left2">
+				<img class="b-lazy img-responsive" data-src="./images/doctor__decor-left2.png" alt="Ваш доктор" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+			</div>
+			<div class="doctor__img-right">
+				<img class="b-lazy img-responsive" data-src="./images/doctor__decor-right.png" alt="Ваш доктор" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+			</div>
+			<!-- <div class="doctor__img-right2">
+				<img class="b-lazy img-responsive" data-src="./images/doctor.png" alt="Ваш доктор Александр Юристовский" title="Ваш доктор Александр Юристовский" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+			</div> -->
+			<h2 class="process__title section__title">Ваш доктор</h2>
+
+			<div class="doctor__box">
+
+				<div class="doctor__img">
+					<img class="b-lazy img-responsive" data-src="./images/doctor.png" alt="Ваш доктор Александр Юристовский" title="Ваш доктор Александр Юристовский" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+				</div> 
+				<div class="doctor__content">
+					<h3 class="doctor__name">Александр Юристовский</h3>
+					<ul class="doctor__bio">
+						<li class="doctor__item">
+							<span>2006г.</span> - окончил Днепропетровскую Государственную Медицинскую  Академию.
+						</li>
+						<li class="doctor__item">
+							<span>2011г.</span> - открывает собственную стоматологическую клинику «AUrum», где начинает заниматься частной практикой.
+						</li>
+						<li class="doctor__item">
+							<span>2014-2017гг.</span> - помимо работы в собственной клинике, работал ассистентом кафедры «Хирургической стоматологии, имплантологии и пародонтологии».
+						</li>
+						<li class="doctor__item">
+							В <span>2017г</span> - расставил приоритеты в сторону частной практики и по сегодняшний день работает только в своей клинике «AUrum».
+						</li>
+					</ul>
+
+					<h3 class="doctor__specialization">Специализация:</h3>
+					<li class="doctor__specialization-item">Ортопедическая стоматология</li>
+					<li class="doctor__specialization-item">Имплантация</li>
+					<li class="doctor__specialization-item">Хирургическая стоматология</li>
+				</div>
+			</div>
+			<button class="btn-white" data-remodal-target="appointment">Записаться на прием</button>
+			
+
+		</div>
+	</section>
 
 <!-- 	<section class="contacts">
 		<div class="map" id="map">

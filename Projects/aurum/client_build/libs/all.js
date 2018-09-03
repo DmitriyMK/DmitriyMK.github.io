@@ -37,38 +37,7 @@ $(document).ready(function() {
 
   var bLazy = new Blazy();
 
-
-  
-
-  /*  $(".js-video-button").modalVideo({
-      youtube: {
-        autoplay: 1,
-        nocookie: false,
-        cc_load_policy: 1,
-        color: null,
-        controls: 1,
-        disablekb: 0,
-        enablejsapi: 0,
-        end: null,
-        fs: 1,
-        h1: null,
-        iv_load_policy: 1,
-        list: null,
-        listType: null,
-        loop: 0,
-        modestbranding: null,
-        origin: null,
-        playlist: null,
-        playsinline: null,
-        rel: 0,
-        showinfo: 1,
-        start: 0,
-        wmode: 'transparent',
-        theme: 'dark'
-
-      }
-    });*/
-
+  $('.phone-mask').mask('+38(999)999-99-99');
 
 
   /*  $('.slider-for-recipe').slick({
@@ -121,13 +90,16 @@ $(document).ready(function() {
     });
     */
 
-});
+  });
 
 
 
 $(window).on('resize orientationchange', function() {
   $('.slider').slick('resize');
 });
+
+
+
 
 
 
