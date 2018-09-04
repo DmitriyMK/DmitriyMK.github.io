@@ -3239,9 +3239,7 @@ label {
 }
 /* RESPONSIVE MENU TO 992px*/
 .open {
-    -webkit-transform: translateX(-200px);
-        -ms-transform: translateX(-200px);
-            transform: translateX(-200px);
+    opacity: 0;
     -webkit-transition-duration: 0.5s;
          -o-transition-duration: 0.5s;
             transition-duration: 0.5s;
@@ -3255,12 +3253,11 @@ label {
 }
 .overlay {
     position: fixed;
-    width: 210px;
     background: #000;
     height: 100%;
     height: 100vh;
     top: 74px;
-    right: -210px;
+    opacity: 1;
     overflow-y: scroll;
     -webkit-transition: all 0.3s linear;
          -o-transition: all 0.3s linear;
