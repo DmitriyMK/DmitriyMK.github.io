@@ -952,6 +952,21 @@ section {
     font-family: 'DIN', sans-serif;
     font-weight: 900;
 }
+.vinir__img {
+    position: relative;
+}
+.vinir__img:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 20px;
+    left: -20px;
+    width: 350px;
+    height: 303px;
+    background: url(../images/vinir-lines.png);
+    -webkit-animation: scaled 3s infinite;
+            animation: scaled 3s infinite;
+}
 .vinir__content {
     margin-left: 40px;
 }
@@ -2176,6 +2191,34 @@ label {
     }
     100% {
         opacity: 0;
+    }
+}
+@-webkit-keyframes scaled {
+    0% {
+        -webkit-transform: scale(1);
+                transform: scale(1);
+    }
+    50% {
+        -webkit-transform: scale(1.06);
+                transform: scale(1.06);
+    }
+    100% {
+        -webkit-transform: scale(1);
+                transform: scale(1);
+    }
+}
+@keyframes scaled {
+    0% {
+        -webkit-transform: scale(1);
+                transform: scale(1);
+    }
+    50% {
+        -webkit-transform: scale(1.06);
+                transform: scale(1.06);
+    }
+    100% {
+        -webkit-transform: scale(1);
+                transform: scale(1);
     }
 }
 .slick-current, .slick-slide, .slick-active {

@@ -41,6 +41,20 @@
 		font-family: @ff2;
 		font-weight: 900;
 	}
+	&__img {
+		position: relative;
+		&:before {
+			content: '';
+			display: block;
+			position: absolute;
+			top: 20px;
+			left: -20px;
+			width: 350px;
+			height: 303px;
+			background: url(../images/vinir-lines.png);
+			animation: scaled 3s infinite;
+		}
+	}
 	&__content {
 		margin-left: 40px;
 	}
