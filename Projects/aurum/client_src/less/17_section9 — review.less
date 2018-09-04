@@ -17,3 +17,104 @@
 	
 }
 
+
+.review {
+	position: relative;
+	background: rgb(245, 249, 250);
+
+	&__img-left {
+		position: absolute;
+		left: 0;
+		top: 80px;
+		background-size: contain; 
+	}
+	&__img-right {
+		position: absolute;
+		right: 0;
+		bottom: 0px;
+		background-size: contain; 
+	}
+
+	&__slider-nav {
+		padding: 50px 140px 30px 140px;
+		text-align: center;
+		img {
+			display: block;
+			margin: auto;			
+		}
+		.review__slide {
+			padding-bottom: 15px;
+			transition: all .3s linear;
+		}
+		.review__name {
+			padding-top: 15px;
+			padding-left: 55px;
+			font-size: 20px;
+			font-weight: 700;
+			color: @red;
+		}
+
+		.slick-prev,
+		.slick-next {
+			width: 25px;
+			height: 25px;
+
+			top: 30%;
+			opacity: 1;
+			transition: opacity .3s linear;
+			background: transparent!important;
+			z-index: 10;
+			&:after {
+				content: '';
+				position: absolute;
+				top: 36%;
+				left: -55%;
+
+				width: 36px;
+				height: 34px;
+				background: url(../images/icons/borders.png);
+			}
+			&:hover {
+				&:before {
+					color: #d6d6d6;
+				}
+			}
+		}
+
+		.slick-prev {
+			left: 42%;
+		}
+		.slick-next {
+			right: 36%;
+		}
+
+		.slick-prev:before,
+		.slick-next:before {
+			display: block;
+			padding-top: 2.5px;
+			position: absolute;
+			background: transparent;
+			font-family: "fontello";
+			font-size: 20px;
+			color: @red;
+			transition: all .3s linear;
+		}
+
+		.slick-prev:before {
+			content: '\e805';
+		}
+		.slick-next:before {
+			content: '\e806';
+		}
+		.slick-current {
+			transform: scale(1.1);
+		}
+	}
+
+	&__slider-for {
+		padding-left: 100px;
+		padding-right: 100px;
+		text-align: center;
+	}
+
+}

@@ -66,10 +66,10 @@
     color: #fff !important;
     font-weight: 900;
     @media @mobile {
-       width: 10px !important;
-       height: 16px !important;
-   }
-   @media @tablet { 
+     width: 10px !important;
+     height: 16px !important;
+ }
+ @media @tablet { 
     width: 35px !important;
     height: 30px !important;
 }
@@ -170,42 +170,71 @@ label {
 
 .formBox {
     position: relative;
-    background: #fff;
+    background: @red;
     padding: 30px 15px;
-    max-width: 400px;
+    max-width: 340px;
     margin: 20px auto;
     text-align: center;
-    &__title {
-        
-    }
-    &__text {
-        
-    }
+    box-shadow: -20px 20px 145px 0px rgba(0,0,0,0.4);
+    
+    .form {
+        padding: 30px;
+        margin: auto;
 
-    .form__line {
-        width: 100%;
-        padding-left: 15px;
-        padding-bottom: 7px;
-        border: none!important;     
-        outline: none;
-        font-size: 18px;
-    }
-    .btn {
-        margin: 15px 0 5px 0;
-        color: #fff;
-        &:hover {
-            color: #000;
+    
+        &__title {
+            padding-bottom: 10px;
+            text-align: center;
+            font-size: 25px;
+            font-weight: 700;
+            color: #fff;
         }
-    } 
-}
-
-.video {
-    max-width: 780px;
-    iframe {
-        border: none;
-        width: 100%;
-        height: 100%;
+        &__text {
+            padding-bottom: 30px;
+            font-size: 14px;
+            color: #fff;
+            text-align: center;
+        }
+        &__line {
+            padding: 5px 15px 5px 45px;
+            margin-bottom: 20px;
+            width: 247px;
+            height: 49px;
+            background: #a20002;
+            box-shadow: inset -3.857px 4.596px 6px 0px rgba(59, 49, 64, 0.38);
+            outline: none;
+            border: none;
+            color: #fff;
+        }
+        .inputWrap {
+            position: relative;
+        }
+        .inputWrap-name:before {
+            content: '\e803';
+            position: absolute;
+            left: 20px;
+            top: 50%;
+            transform: translateY(-100%);
+            font-family: 'fontello';
+            color: #fff;
+            font-size: 16px;
+        }   
+        .inputWrap-phone:before {
+            content: '\e804';
+            position: absolute;
+            left: 20px;
+            top: 50%;
+            transform: translateY(-100%);
+            font-family: 'fontello';
+            color: #fff;
+            font-size: 16px;
+        }
+        .btn {
+            width: 247px;
+            margin: auto;
+        }
     }
+
 }
 
 .thanks__title {
@@ -222,11 +251,3 @@ label {
     font-size: 18px;
     color: #000;
 }
-
-
-
-
-
-
-
-

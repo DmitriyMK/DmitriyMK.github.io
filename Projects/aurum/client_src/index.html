@@ -294,9 +294,12 @@
 					</ul>
 
 					<h3 class="doctor__specialization">Специализация:</h3>
-					<li class="doctor__specialization-item">Ортопедическая стоматология</li>
-					<li class="doctor__specialization-item">Имплантация</li>
-					<li class="doctor__specialization-item">Хирургическая стоматология</li>
+					<ul>
+						<li class="doctor__specialization-item">Ортопедическая стоматология</li>
+						<li class="doctor__specialization-item">Имплантация</li>
+						<li class="doctor__specialization-item">Хирургическая стоматология</li>
+					</ul>
+					
 				</div>
 			</div>
 			<button class="btn-white" data-remodal-target="appointment">Записаться на прием</button>
@@ -472,7 +475,64 @@
 	</section>
 
 
-<!-- 	<section class="contacts">
+	<section class="review">
+		<div class="container">
+			<h2 class="photo__title section__title">Отзывы наших пациентов</h2>
+
+			<div class="review__img-left">
+				<img class="b-lazy img-responsive" data-src="./images/review-left.png" alt="Ваш доктор" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+			</div>
+			<div class="review__img-right">
+				<img class="b-lazy img-responsive" data-src="./images/review-right.png" alt="Ваш доктор" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+			</div>
+
+			<ul class="review__slider-nav slider">
+				<li class="review__slide">
+					<div class="review__img">
+						<img src="images/review1.png" alt="Отзывы наших пациентов">
+					</div>
+					<h3 class="review__name">Анна Шатова</h3>
+				</li>
+				<li class="review__slide">
+					<div class="review__img">
+						<img src="images/review1.png" alt="Отзывы наших пациентов">
+					</div>
+					<h3 class="review__name">Анна Шатова</h3>
+				</li>
+				<li class="review__slide">
+					<div class="review__img">
+						<img src="images/review1.png" alt="Отзывы наших пациентов">
+					</div>
+					<h3 class="review__name">Анна Шатова</h3>
+				</li>
+				<li class="review__slide">
+					<div class="review__img">
+						<img src="images/review1.png" alt="Отзывы наших пациентов">
+					</div>
+					<h3 class="review__name">Анна Шатова</h3>
+				</li>
+			</ul>
+
+
+			<ul class="review__slider-for slider">
+				<li class="review__slide">
+					<p class="review__text">"111Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+				</li>
+				<li class="review__slide">
+					<p class="review__text">"222Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+				</li>
+				<li class="review__slide">
+					<p class="review__text">"333Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+				</li>
+				<li class="review__slide">
+					<p class="review__text">"444Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+				</li>
+			</ul>
+		</div>
+	</section>
+
+
+	<section class="contacts" id="contacts">
 		<div class="map" id="map">
 		</div>
 
@@ -480,39 +540,50 @@
 			<div class="contacts__box">
 				<h2 class="box__title">Контакты:</h2>
 				<ul class="contacts__list">
-					<li class="contacts__item address"><address></address></li>
+					<li class="contacts__item address"><address>Украина, г. Днепр <br> ул.  Шолохова, 7.</address></li>
 
-					<li class="contacts__item tel"><a class="contact__link" href="tel:+"></a></li>
+					<li class="contacts__time">
+						<p class="accent">График работы:</p>
+						<p>Пн-Пт 09:00-19:00</p>
+						<p>Сб-Вс 09:00-14:00</p>
+					</li>
 
-					<li class="contacts__item mail"><a class="contact__link" href="mailto:"></a></li>
+					<li class="contacts__item tel"><strong class="accent">Консультация:</strong><br>
+						<a class="contact__link" href="tel:+380979330333">+38(097) 933-03-33</a>
+					</li>
+					<li class="contacts__item tel"><strong class="accent">Запись на прием:</strong><br>
+						<a class="contact__link" href="tel:+380981540851">+38(098) 154-08-51</a>
+					</li>
+
+					<li class="contacts__item mail"><a class="contact__link" href="mailto:alex.yuristovskii@gmail.com"><strong>alex.yuristovskii@gmail.com</strong></a></li>
 				</ul>
 
 				<p class="ask">Остались вопросы?</p>
-				<p class="text">Мы Вам перезвоним, чтобы <br> ответить на них в течение 10 минут.</p>
-				<button class="btn" data-remodal-target="callback">Заказать звонок</button>
+				<p class="text">Мы Вам перезвоним, чтобы <br> ответить на них</p>
+
+				<button class="btn" data-remodal-target="appointment">Записаться на прием</button>
 			</div>
 		</div>
-	</section> -->
+	</section>
 
 
-<!-- 
 	<footer class="footer">
 		<div class="container">
 			<div class="footer__box">
 				<div class="footer__logo">
-					<a href="index.html">
-						<img src="" alt="" title="">
+					<a class="footer__logo-img" href="index.html">
+						<img class="img-responsive" src="./images/logo.png" alt="Стоматологическая клиника в Днепре" title="Стоматологическая клиника в Днепре">
 					</a>
-					<p class="footer__desc"></p>
+					<p class="footer__desc">Стоматологическая <br> клиника в Днепре</p>
 				</div>
 				<div class="footer__agency">
 					<a class="agency" href="http://landingpage.push-k.ua/" target="_blank" rel="noopener noreferrer">Создание сайтов <br>
-						<img src="images/push-k.png" alt="push-k solutions">
+						<div class="bg-pushka"></div>
 					</a> 
 				</div>
 			</div>
 		</div>
-	</footer> -->
+	</footer>
 
 
 
@@ -524,6 +595,31 @@
 	</div>
 
 
+	<div class="remodal formBox" data-remodal-id="appointment"> 
+		<button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
+		<form class="form form-validate" name="services">
+			<!-- Hidden Required Fields -->
+			<input type="hidden" name="project_name" value="Aurum">
+			<input type="hidden" name="admin_email" value="dm@push-k.ua">
+			<input type="hidden" name="form_subject" value="Заказ">
+			<input type="hidden" name="whatform" value="Aurum > Заказ">
+			<input type="hidden" name="whatform2" value="">
+			<!-- END Hidden Required Fields -->
+			<p class="form__title">Заполните форму</p>
+			<p class="form__text">и мы свяжемся с Вами для уточнения даты и времени приема.</p>
+
+			<div class="inputWrap inputWrap-name">
+				<input class="form__line name" type="text" name="Имя&nbsp;покупателя" placeholder="Ваше имя" required>
+			</div>
+			<div class="inputWrap inputWrap-phone">
+				<input class="form__line phone-mask" type="tel" name="Телефон&nbsp;покупателя" placeholder="Ваш телефон" required>
+			</div>	
+
+			<input type="submit" class="btn" value="Записаться на прием"> 
+		</form>
+	</div>  
+
+
 
 	<!-- Load Scripts -->
 	<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
@@ -532,8 +628,8 @@
 	<script src="./libs/jquery.enllax.min.js"></script>
 	<script src="./libs/blazy.js"></script>  
 	<script src="./libs/all.js"></script>
-<!-- 	<script src="./libs/map.js"></script>  
-	<script async defer src="https://maps.googleapis.com/maps/api/js?callback=initMap&key=AIzaSyANY39pap8l5_ndmHjwHGhuWmw07CdBVRE"></script>   -->
+	<script src="./libs/map.js"></script>  
+	<script async defer src="https://maps.googleapis.com/maps/api/js?callback=initMap&key=AIzaSyANY39pap8l5_ndmHjwHGhuWmw07CdBVRE"></script>  
 
 
 </body>

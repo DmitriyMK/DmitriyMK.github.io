@@ -68,8 +68,8 @@ $(document).ready(function() {
       //   }
       // }
 
-      ]
-    });
+    ]
+  });
 
   $('.photo__slider').slick({
     slidesToShow: 3,
@@ -77,6 +77,41 @@ $(document).ready(function() {
     arrows: true,
     dots: false
   });
+
+  $('.review__slider-for').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    dots: true,
+    fade: true,
+    asNavFor: '.review__slider-nav'
+  });
+
+  $('.review__slider-nav').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    asNavFor: '.review__slider-for',
+    arrows: true,
+    dots: false,
+    focusOnSelect: true,
+    centerMode: true,
+    centerPadding: "20px",
+    responsive: [
+
+      // {
+      //   breakpoint: 576,
+      //   settings: {
+      //     slidesToShow: 2,
+      //     slidesToScroll: 2,
+      //     dots: true,
+      //   }
+      // }
+
+    ]
+  });
+
+
+  
 
 
   $('[data-fancybox]').fancybox({
