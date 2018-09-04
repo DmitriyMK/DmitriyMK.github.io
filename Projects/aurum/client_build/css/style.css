@@ -1600,8 +1600,8 @@ section {
             transition: all 0.3s linear;
 }
 .photo__slide:hover {
-    -webkit-filter: saturate(20%);
-            filter: saturate(20%);
+    -webkit-filter: saturate(15%);
+            filter: saturate(15%);
 }
 .photo__slide img {
     width: 615px;
