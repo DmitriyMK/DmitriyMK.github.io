@@ -15,13 +15,14 @@
 .overlay {
 	position: fixed;
 	width: 190px;
-	background: #000;
+	background: #000!important;
 	height: 100%; 
 	height: 100vh; 
 	top: 74px;
 	right: -220px;
 	overflow-y: scroll;
 	transition: all .3s linear;
+	z-index: 99;
 
 	@media @desktop {
 		position: inherit;
