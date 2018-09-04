@@ -13,23 +13,23 @@
 }
 
 .overlay {
-	position: fixed;
-	width: 210px;
+	position: fixed!important;
+	width: 210px!important;
 	background: #000!important;
-	height: 100%; 
-	height: 100vh; 
+	height: 100%!important; 
+	height: 100vh!important; 
 	top: 74px;
 	right: -210px;
-	overflow-y: scroll;
+	overflow-y: scroll!important;
 	transition: all .3s linear;
 	z-index: 100;
 
 	@media @desktop {
-		position: inherit;
-		width: inherit;
-		height: inherit;
+		position: inherit!important;
+		width: inherit!important;
+		height: inherit!important;
 		background: inherit!important;
-		overflow-y: inherit;
+		overflow-y: inherit!important;
 	}
 }
 
