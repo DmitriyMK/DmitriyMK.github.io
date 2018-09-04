@@ -35,71 +35,72 @@ $(document).ready(function() {
     }, t);
   });
 
+
   var bLazy = new Blazy();
+
 
   $('.phone-mask').mask('+38(999)999-99-99');
 
 
-  /*  $('.slider-for-recipe').slick({
-      slidesToShow: 1,
-      slidesToScroll: 1,
-      arrows: false,
-      dots: false,
-      asNavFor: '.slider-nav-recipe',
-      fade: true,
-      draggable: false,
-      infinite: true,
+  $('.slider-for').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    dots: false,
+    fade: true,
+    asNavFor: '.slider-nav'
+  });
 
-    });*/
+  $('.slider-nav').slick({
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    asNavFor: '.slider-for',
+    dots: false,
+    focusOnSelect: true,
+    responsive: [
 
-
-  /*  $('.slider-nav-recipe').slick({
-      slidesToShow: 4,
-      slidesToScroll: 1,
-      asNavFor: '.slider-for-recipe',
-      arrows: false,
-      dots: false,
-      focusOnSelect: true,
-      infinite: true,
-      centerMode: false,
-
-      responsive: [
-
-      {
-        breakpoint: 992,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1,
-          arrows: true,
-
-        }
-      },
-
-      {
-        breakpoint: 767,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-
-          arrows: true,
-        }
-      },
+      // {
+      //   breakpoint: 576,
+      //   settings: {
+      //     slidesToShow: 2,
+      //     slidesToScroll: 2,
+      //     dots: true,
+      //   }
+      // }
 
       ]
-
     });
-    */
 
+  $('.photo__slider').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    arrows: true,
+    dots: false
   });
+
+
+  $('[data-fancybox]').fancybox({
+    loop: true,
+    animationEffect: "zoom",
+    transitionEffect: "tube",
+    transitionDuration: 600,
+    clickOutside: "close",
+    protect: true,
+    modal: false,
+
+    touch: {
+      vertical: true,
+      momentum: true
+    },
+  });
+
+});
 
 
 
 $(window).on('resize orientationchange', function() {
   $('.slider').slick('resize');
 });
-
-
-
 
 
 

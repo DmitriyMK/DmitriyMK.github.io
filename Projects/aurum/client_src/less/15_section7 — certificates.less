@@ -19,9 +19,35 @@
 
 
 .certificates {
+	padding: 0;
 	position: relative;
-	overflow: hidden;
-
+	background-image: linear-gradient( 90deg, rgb(245,249,251) 0%, rgb(240,244,247) 100%);
+	&:before {
+		content: '';
+		position: absolute;
+		left: 28%;
+		top: -60px;
+		width: 1px;
+		height: 118px;
+		background: @red;
+	}
+	&:after {
+		content: '';
+		position: absolute;
+		right: 41.5%;
+		bottom: -60px;
+		width: 1px;
+		height: 118px;
+		background: @red;
+	}
+	&__wrap {
+		position: relative;
+		overflow: hidden;
+		padding: 60px 0;
+		@media @desktop-xl {
+			padding: 95px 0;
+		}
+	}
 	.flyLeft-u {
 		position: absolute;
 		left: 170px;
@@ -33,16 +59,20 @@
 	.flyRight-m {
 		position: absolute;
 		right: 150px;
-		bottom: 0;
+		bottom: -170px;
 		width: 645px;
 		height: 361px;
 		background: url(../images/letters/M.png)no-repeat center/contain;
 	}
+
+	
+
 	blockquote {
 		width: 540px;
 		margin-top: 50px;
 		padding-left: 25px;
 		padding-right: 25px;
+		margin-bottom: 25px;
 		position: relative;
 		&:before {
 			content: '';
@@ -62,5 +92,94 @@
 			padding-bottom: 15px;
 		}
 	}
-}
 
+	&__box {
+		padding-top: 35px;
+
+		&-left {
+			display: inline-block;
+			width: 60%;
+
+
+		}
+		&-right {
+			float: right;
+			width: 35%;
+		}
+	}
+	
+	img {
+
+	}
+
+	&__slide-nav {
+		margin-left: 15px;
+		margin-right: 15px;
+		div {
+			box-sizing: border-box;
+			padding: 12px;
+			border-image: url(../images/border-certificat-sm.png)25;
+		}	
+	}
+	&__slide-nav-for {	
+
+	}
+	&__link {
+		cursor: pointer;
+	}
+
+
+	.slick-prev,
+	.slick-next {
+		width: 25px;
+		height: 25px;
+
+		bottom: -40px;
+		opacity: 1;
+		transition: opacity .3s linear;
+		background: transparent!important;
+		z-index: 10;
+		&:after {
+			content: '';
+			position: absolute;
+			top: 36%;
+			left: -55%;
+
+			width: 36px;
+			height: 34px;
+			background: url(../images/icons/borders.png);
+		}
+		&:hover {
+			&:before {
+				color: #d6d6d6;
+			}
+		}
+	}
+
+	.slick-prev {
+		left: 45%;
+	}
+	.slick-next {
+		right: 45%;
+	}
+
+	.slick-prev:before,
+	.slick-next:before {
+		display: block;
+		padding-top: 2.5px;
+		position: absolute;
+		background: transparent;
+		font-family: "fontello";
+		font-size: 20px;
+		z-index: 11;
+		color: @red;
+		transition: all .3s linear;
+	}
+
+	.slick-prev:before {
+		content: '\e805';
+	}
+	.slick-next:before {
+		content: '\e806';
+	}
+}

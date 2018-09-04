@@ -655,7 +655,6 @@ section {
     }
 }
 .header {
-    overflow: hidden;
     position: fixed;
     top: 0;
     left: 0;
@@ -3239,7 +3238,9 @@ label {
 }
 /* RESPONSIVE MENU TO 992px*/
 .open {
-    opacity: 0;
+    -webkit-transform: translateX(-200px);
+        -ms-transform: translateX(-200px);
+            transform: translateX(-200px);
     -webkit-transition-duration: 0.5s;
          -o-transition-duration: 0.5s;
             transition-duration: 0.5s;
@@ -3253,16 +3254,15 @@ label {
 }
 .overlay {
     position: fixed;
-    background: #000;
-    height: 100%;
-    height: 100vh;
+    width: 210px;
     top: 74px;
-    opacity: 1;
+    right: -210px;
+    background: #000;
+    height: 100vh;
     overflow-y: scroll;
     -webkit-transition: all 0.3s linear;
          -o-transition: all 0.3s linear;
             transition: all 0.3s linear;
-    z-index: 1000;
 }
 @media only screen and (min-width: 992px) {
     .overlay {

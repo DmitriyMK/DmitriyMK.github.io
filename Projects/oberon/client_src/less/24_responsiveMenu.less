@@ -2,10 +2,7 @@
 
 
 .open {
-	// transform: translateX(-200px);
-	opacity: 0;
-	
-
+	transform: translateX(-200px);
 	transition-duration: 0.5s;
 	position: relative;
 	z-index: 100;
@@ -17,17 +14,13 @@
 
 .overlay {
 	position: fixed;
-	
-	background: #000;
-	height: 100%; 
-	height: 100vh; 
+	width: 210px;
 	top: 74px;
-	// right: -210px;
-	// width: 210px;
-	opacity: 1;
+	right: -210px;
+	background: #000;
+	height: 100vh; 
 	overflow-y: scroll;
 	transition: all .3s linear;
-	z-index: 1000;
 
 	@media @desktop {
 		position: inherit;

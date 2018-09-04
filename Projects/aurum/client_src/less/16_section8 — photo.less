@@ -1,0 +1,84 @@
+@media @mobile {
+
+}
+@media @tablet {
+
+}
+@media @desktop {
+
+}
+@media @desktop-xl {
+	
+}
+@media @desktop-xl-2 {
+
+}
+@media @desktop-xll {
+	
+}
+
+.photo {
+	&__slider {
+		padding-top: 50px;
+		width: 100%;
+		margin: auto;
+
+	}
+
+	&__slide {
+		display: block;
+		margin: auto;
+		img {
+			width: 615px;
+			margin: auto;
+		}
+	}
+
+	.slick-prev,
+	.slick-next {
+		position: absolute;
+		width: 100px;
+		height: 100px;
+		opacity: 1;
+		transition: all .3s linear;
+		z-index: 10;
+		background: rgba(162, 0, 2, .5);		
+	}
+
+	.slick-prev {
+		top: 50%;
+		left: 30%;
+		transform: translate(-50%, -50%);
+		&:before {
+			content: '';
+			display: block;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			width: 33px;
+			height: 64px;
+			background: url(../images/icons/arr-all-left.png)no-repeat;
+		}
+
+	}
+
+	.slick-next {
+		top: 50%;
+		left: 70%;
+		transform: translate(-50%, -50%);
+		&:before {
+			content: '';
+			display: block;
+			position: absolute;
+			width: 33px;
+			height: 64px;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			background: url(../images/icons/arr-all-rightt.png)no-repeat;
+		}
+	}
+
+}
+
