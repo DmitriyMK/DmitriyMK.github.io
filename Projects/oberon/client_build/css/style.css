@@ -933,7 +933,7 @@ section {
 .headerMain {
     padding-top: 180px;
     padding-bottom: 190px;
-    background: url(../images/hero__back-mob.jpg) no-repeat top / cover;
+    background: url(../images/hero__back-mob.jpg) no-repeat center / cover;
     text-align: center;
     font-weight: 700;
     color: #fff;
@@ -3240,9 +3240,9 @@ label {
 }
 /* RESPONSIVE MENU TO 992px*/
 .open {
-    -webkit-transform: translateX(-210px);
-        -ms-transform: translateX(-210px);
-            transform: translateX(-210px);
+    -webkit-transform: translateX(-200px);
+        -ms-transform: translateX(-200px);
+            transform: translateX(-200px);
     -webkit-transition-duration: 0.5s;
          -o-transition-duration: 0.5s;
             transition-duration: 0.5s;
@@ -3256,24 +3256,24 @@ label {
 }
 .overlay {
     position: fixed;
-    width: 190px;
+    width: 210px;
     background: #000!important;
     height: 100%;
     height: 100vh;
     top: 74px;
-    right: -220px;
+    right: -210px;
     overflow-y: scroll;
     -webkit-transition: all 0.3s linear;
          -o-transition: all 0.3s linear;
             transition: all 0.3s linear;
-    z-index: 99;
+    z-index: 100;
 }
 @media only screen and (min-width: 992px) {
     .overlay {
         position: inherit;
         width: inherit;
         height: inherit;
-        background: inherit;
+        background: inherit!important;
         overflow-y: inherit;
     }
 }
