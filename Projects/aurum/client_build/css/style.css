@@ -1635,7 +1635,7 @@ section {
 }
 .photo .slick-prev {
     top: 55%;
-    left: 30%;
+    left: 30.2%;
     -webkit-transform: translate(-50%, -50%);
         -ms-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
@@ -1711,7 +1711,6 @@ section {
 }
 .review__slider-nav .review__name {
     padding-top: 15px;
-    padding-left: 55px;
     font-size: 20px;
     font-weight: 700;
     color: #cd0009;
@@ -1740,7 +1739,7 @@ section {
     color: #d6d6d6;
 }
 .review__slider-nav .slick-prev {
-    left: 42%;
+    left: 38%;
 }
 .review__slider-nav .slick-next {
     right: 36%;
@@ -1764,9 +1763,12 @@ section {
     content: '\e806';
 }
 .review__slider-nav .slick-current {
-    -webkit-transform: scale(1.1);
-        -ms-transform: scale(1.1);
-            transform: scale(1.1);
+    -webkit-transform: scale(1.15);
+        -ms-transform: scale(1.15);
+            transform: scale(1.15);
+    -webkit-transition: all 0.3s linear;
+         -o-transition: all 0.3s linear;
+            transition: all 0.3s linear;
 }
 .review__slider-for {
     padding-left: 100px;
@@ -2237,7 +2239,7 @@ label {
         -ms-transform: translateX(-50%);
             transform: translateX(-50%);
     bottom: -60px;
-    width: 170px;
+    width: 190px;
     border: 1px solid #d6d6d6;
 }
 .slick-dots li {
