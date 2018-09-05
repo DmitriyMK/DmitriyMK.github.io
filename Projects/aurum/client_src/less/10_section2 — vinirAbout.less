@@ -28,14 +28,16 @@
 	.container {
 		position: relative;
 		&:before {
-			content: '';
-			position: absolute;
-			top: 5px;
-			left: 50%;
-			transform: translateX(-50%);
-			width: 1170px;
-			height: 450px;
-			background: url(../images/border.png)no-repeat center/contain;
+			@media @desktop-xl {
+				content: '';
+				position: absolute;
+				top: 5px;
+				left: 50%;
+				transform: translateX(-50%);
+				width: 1170px;
+				height: 450px;
+				background: url(../images/border.png)no-repeat center/contain;
+			}
 		}
 	}
 	&__title {
@@ -47,32 +49,66 @@
 		display: flex;
 		flex-direction: column;
 		flex-wrap: wrap;
-		padding: 25px 60px 0 100px;
-		height: 360px;
+		padding-top: 50px;
+
+		@media @desktop {
+			padding: 25px 0 0 100px;
+			height: 370px;
+		}
+		@media @desktop-xl {
+			padding: 25px 60px 0 100px;
+		}
+
 	}
 	&__item {
-		margin: 21px auto;
-		width: 370px;
-		counter-increment: li; 
 		position: relative;
+		margin: 35px auto;
+		padding-top: 8px;
+		text-align: center;
+		counter-increment: li; 
 		font-size: 18px;
+
+		@media @tablet {
+			width: 400px;
+			padding-top: 0;
+			margin: 21px auto;
+			text-align: inherit;
+		}
+		@media @desktop {
+			padding-right: 30px;
+		}
+		@media @desktop-xl {
+			width: 400px;
+			padding-right: 30px;
+		}
+
 		&:before {
 			content: counter(li);
 			position: absolute;
-			left: -40px;
-			top: 50%;
-			transform: translateY(-50%);
+			left: 49%;
+			top: -40px;
+			transform: translateX(-50%);
 			color: #fff;
 			font-size: 20px;
 			z-index: 1;
+			@media @tablet {
+				left: -40px;
+				top: 50%;
+				transform: translateY(-50%);
+			}
 		}
 		&:after {
 			content: '';
 			position: absolute;
-			left: -58px;
-			top: 50%;
-			transform: translateY(-45%);
+			left: 50%;
+			top: -60px;
+			transform: translateX(-50%);
 			.bg-list_item;
+			@media @tablet {
+				left: -58px;
+				top: 50%;
+				transform: translateY(-45%);
+			}
 		}
 	}
 
@@ -83,5 +119,15 @@
 		width: 628px;
 		height: 712px;
 		background: url(../images/letters/A.png)no-repeat center/contain;
+		@media @tablet {
+
+		}
+		@media @desktop {
+
+		}
+		@media @desktop-xl {
+
+		}
+
 	}
 }

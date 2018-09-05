@@ -23,6 +23,7 @@
 .header {
 	position: relative;
 	height: 100vh;
+	min-height: 420px;
 	max-height: 736px;
 	background: url(../images/hero__back-sm.jpg)no-repeat left/cover;
 	color: #fff;
@@ -49,8 +50,8 @@
 		align-items: center;
 		flex: 1;
 		img {
-			margin-top: -7px;
-			max-width: 140px;
+			margin-top: -5px;
+			max-width: 125px;
 			@media @tablet {
 				margin-top: 0;
 				max-width: 160px;
@@ -98,7 +99,7 @@
 
 	&__center {
 		text-align: center;
-		padding-top: 15vh;
+		padding-top: 17vh;
 		@media @tablet {
 			padding-top: 17vh;
 		}
@@ -125,6 +126,9 @@
 		br {
 			display: none;
 		}
+		@media @mobile-xl {
+			font-size: 37px;
+		}
 		@media @tablet {
 			font-size: 42px;
 			br {
@@ -141,17 +145,17 @@
 	}
 	&__text {
 		padding-top: 25px;
-		padding-bottom: 50px;
+		padding-bottom: 35px;
 		font-size: 27px;	
 		font-weight: 300;
 		br {
 			display: none;
 		}
-		@media @tablet {
-
+		@media @mobile-xl {
+			font-size: 32px;
 		}
 		@media @desktop {
-			font-size: 32px;	
+			padding-bottom: 50px;
 		}
 
 		@media @desktop-xl-2 {

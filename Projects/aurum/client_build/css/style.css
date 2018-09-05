@@ -805,27 +805,38 @@ section {
     display: table;
     position: relative;
     margin: auto;
-    font-size: 40px;
+    font-size: 27px;
     font-weight: 900;
     font-family: 'DIN', sans-serif;
     color: #cd0009;
+    text-align: center;
 }
-.section__title:before, .section__title:after {
-    content: '';
-    position: absolute;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-        -ms-transform: translateY(-50%);
-            transform: translateY(-50%);
-    width: 45px;
-    height: 1px;
-    background: #cd0009;
+@media only screen and (min-width: 768px) {
+    .section__title {
+        font-size: 36px;
+    }
+    .section__title:before, .section__title:after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+                transform: translateY(-50%);
+        width: 45px;
+        height: 1px;
+        background: #cd0009;
+    }
+    .section__title:before {
+        left: -60px;
+    }
+    .section__title:after {
+        right: -60px;
+    }
 }
-.section__title:before {
-    left: -60px;
-}
-.section__title:after {
-    right: -60px;
+@media only screen and (min-width: 1200px) {
+    .section__title {
+        font-size: 40px;
+    }
 }
 ::-webkit-input-placeholder {
     font-size: 16px;
@@ -846,6 +857,7 @@ section {
 .header {
     position: relative;
     height: 100vh;
+    min-height: 420px;
     max-height: 736px;
     background: url(../images/hero__back-sm.jpg) no-repeat left / cover;
     color: #fff;
@@ -886,8 +898,8 @@ section {
         flex: 1;
 }
 .header__logo img {
-    margin-top: -7px;
-    max-width: 140px;
+    margin-top: -5px;
+    max-width: 125px;
 }
 @media only screen and (min-width: 768px) {
     .header__logo img {
@@ -949,7 +961,7 @@ section {
 }
 .header__center {
     text-align: center;
-    padding-top: 15vh;
+    padding-top: 17vh;
 }
 @media only screen and (min-width: 768px) {
     .header__center {
@@ -986,6 +998,11 @@ section {
 .header__title br {
     display: none;
 }
+@media only screen and (min-width: 360px) {
+    .header__title {
+        font-size: 37px;
+    }
+}
 @media only screen and (min-width: 768px) {
     .header__title {
         font-size: 42px;
@@ -1006,16 +1023,21 @@ section {
 }
 .header__text {
     padding-top: 25px;
-    padding-bottom: 50px;
+    padding-bottom: 35px;
     font-size: 27px;
     font-weight: 300;
 }
 .header__text br {
     display: none;
 }
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 360px) {
     .header__text {
         font-size: 32px;
+    }
+}
+@media only screen and (min-width: 992px) {
+    .header__text {
+        padding-bottom: 50px;
     }
 }
 @media only screen and (min-width: 1600px) {
@@ -1065,15 +1087,29 @@ section {
 .vinir {
     position: relative;
     z-index: 10;
+    overflow: hidden;
 }
-.vinir:after {
-    content: '';
-    position: absolute;
-    right: 41.5%;
-    bottom: -60px;
-    width: 1px;
-    height: 118px;
-    background: #cd0009;
+@media only screen and (min-width: 768px) {
+    .vinir {
+        overflow: visible;
+    }
+}
+@media only screen and (min-width: 992px) {
+    .vinir:after {
+        content: '';
+        position: absolute;
+        right: 41.5%;
+        bottom: -30px;
+        width: 1px;
+        height: 68px;
+        background: #cd0009;
+    }
+}
+@media only screen and (min-width: 1200px) {
+    .vinir:after {
+        height: 118px;
+        bottom: -60px;
+    }
 }
 .vinir__box {
     display: -webkit-box;
@@ -1082,10 +1118,31 @@ section {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+        flex-direction: column;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    padding: 0 175px;
+}
+@media only screen and (min-width: 768px) {
+    .vinir__box {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    }
+}
+@media only screen and (min-width: 992px) {
+    .vinir__box {
+        padding: 0 70px 0 30px;
+    }
+}
+@media only screen and (min-width: 1200px) {
+    .vinir__box {
+        padding: 0 175px;
+    }
 }
 .vinir strong {
     color: #cd0009;
@@ -1099,19 +1156,39 @@ section {
     content: '';
     display: block;
     position: absolute;
-    top: 20px;
-    left: -20px;
-    width: 350px;
-    height: 303px;
+    top: 40px;
+    left: -1px;
+    width: 300px;
+    height: 259px;
     background: url(../images/vinir-lines.png);
-    -webkit-animation: scaled 3s infinite;
-            animation: scaled 3s infinite;
+    background-size: contain;
 }
-.vinir__content {
-    margin-left: 40px;
+@media only screen and (min-width: 360px) {
+    .vinir__img:before {
+        width: 350px;
+        height: 303px;
+        top: 20px;
+        left: -20px;
+    }
+}
+@media only screen and (min-width: 992px) {
+    .vinir__img:before {
+        -webkit-animation: scaled 3s infinite;
+                animation: scaled 3s infinite;
+    }
+}
+@media only screen and (min-width: 768px) {
+    .vinir__content {
+        margin-left: 40px;
+    }
 }
 .vinir__text {
-    padding-bottom: 25px;
+    padding-bottom: 15px;
+}
+@media only screen and (min-width: 992px) {
+    .vinir__text {
+        padding-bottom: 25px;
+    }
 }
 .vinirAbout {
     position: relative;
@@ -1125,17 +1202,19 @@ section {
 .vinirAbout .container {
     position: relative;
 }
-.vinirAbout .container:before {
-    content: '';
-    position: absolute;
-    top: 5px;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-        -ms-transform: translateX(-50%);
-            transform: translateX(-50%);
-    width: 1170px;
-    height: 450px;
-    background: url(../images/border.png) no-repeat center / contain;
+@media only screen and (min-width: 1200px) {
+    .vinirAbout .container:before {
+        content: '';
+        position: absolute;
+        top: 5px;
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+            -ms-transform: translateX(-50%);
+                transform: translateX(-50%);
+        width: 1170px;
+        height: 450px;
+        background: url(../images/border.png) no-repeat center / contain;
+    }
 }
 .vinirAbout__title:before, .vinirAbout__title:after {
     display: none;
@@ -1150,39 +1229,87 @@ section {
         flex-direction: column;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    padding: 25px 60px 0 100px;
-    height: 360px;
+    padding-top: 50px;
+}
+@media only screen and (min-width: 992px) {
+    .vinirAbout__list {
+        padding: 25px 0 0 100px;
+        height: 370px;
+    }
+}
+@media only screen and (min-width: 1200px) {
+    .vinirAbout__list {
+        padding: 25px 60px 0 100px;
+    }
 }
 .vinirAbout__item {
-    margin: 21px auto;
-    width: 370px;
-    counter-increment: li;
     position: relative;
+    margin: 35px auto;
+    padding-top: 8px;
+    text-align: center;
+    counter-increment: li;
     font-size: 18px;
+}
+@media only screen and (min-width: 768px) {
+    .vinirAbout__item {
+        width: 400px;
+        padding-top: 0;
+        margin: 21px auto;
+        text-align: inherit;
+    }
+}
+@media only screen and (min-width: 992px) {
+    .vinirAbout__item {
+        padding-right: 30px;
+    }
+}
+@media only screen and (min-width: 1200px) {
+    .vinirAbout__item {
+        width: 400px;
+        padding-right: 30px;
+    }
 }
 .vinirAbout__item:before {
     content: counter(li);
     position: absolute;
-    left: -40px;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-        -ms-transform: translateY(-50%);
-            transform: translateY(-50%);
+    left: 49%;
+    top: -40px;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
     color: #fff;
     font-size: 20px;
     z-index: 1;
 }
+@media only screen and (min-width: 768px) {
+    .vinirAbout__item:before {
+        left: -40px;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+                transform: translateY(-50%);
+    }
+}
 .vinirAbout__item:after {
     content: '';
     position: absolute;
-    left: -58px;
-    top: 50%;
-    -webkit-transform: translateY(-45%);
-        -ms-transform: translateY(-45%);
-            transform: translateY(-45%);
+    left: 50%;
+    top: -60px;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
     width: 58px;
     height: 73px;
     background: url('../images/icons/css_sprites.png') -10px -10px;
+}
+@media only screen and (min-width: 768px) {
+    .vinirAbout__item:after {
+        left: -58px;
+        top: 50%;
+        -webkit-transform: translateY(-45%);
+            -ms-transform: translateY(-45%);
+                transform: translateY(-45%);
+    }
 }
 .vinirAbout .flyLeft {
     position: absolute;
@@ -1196,23 +1323,39 @@ section {
     position: relative;
     z-index: 10;
 }
-.advantages:before {
-    content: '';
-    position: absolute;
-    left: 41.5%;
-    top: -60px;
-    width: 1px;
-    height: 118px;
-    background: #cd0009;
+@media only screen and (min-width: 992px) {
+    .advantages:before {
+        content: '';
+        position: absolute;
+        left: 41.5%;
+        top: -30px;
+        width: 1px;
+        height: 68px;
+        background: #cd0009;
+    }
 }
-.advantages:after {
-    content: '';
-    position: absolute;
-    right: 41.5%;
-    bottom: -60px;
-    width: 1px;
-    height: 118px;
-    background: #cd0009;
+@media only screen and (min-width: 1200px) {
+    .advantages:before {
+        height: 118px;
+        top: -60px;
+    }
+}
+@media only screen and (min-width: 992px) {
+    .advantages:after {
+        content: '';
+        position: absolute;
+        right: 41.5%;
+        bottom: -30px;
+        width: 1px;
+        height: 68px;
+        background: #cd0009;
+    }
+}
+@media only screen and (min-width: 1200px) {
+    .advantages:after {
+        bottom: -60px;
+        height: 118px;
+    }
 }
 .advantages__list {
     display: -webkit-box;
@@ -2200,16 +2343,27 @@ label {
 .formBox {
     position: relative;
     background: #cd0009;
-    padding: 30px 15px;
-    max-width: 340px;
+    padding: 0;
+    max-width: 300px;
     margin: 20px auto;
     text-align: center;
     -webkit-box-shadow: -20px 20px 145px 0 rgba(0, 0, 0, 0.4);
             box-shadow: -20px 20px 145px 0 rgba(0, 0, 0, 0.4);
 }
+@media only screen and (min-width: 768px) {
+    .formBox {
+        padding: 30px 15px;
+        max-width: 340px;
+    }
+}
 .formBox .form {
-    padding: 30px;
     margin: auto;
+    padding: 30px;
+}
+@media only screen and (min-width: 768px) {
+    .formBox .form {
+        padding: 30px;
+    }
 }
 .formBox .form__title {
     padding-bottom: 10px;

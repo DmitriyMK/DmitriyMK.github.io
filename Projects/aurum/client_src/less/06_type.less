@@ -141,7 +141,7 @@ button {
     &:hover {
         box-shadow: none;
         background: @red;
-         color: #fff;
+        color: #fff;
         &:before, &:after {
             width: 100%;
             height: 100%;
@@ -173,48 +173,36 @@ section {
 }
 
 
-
-
-
 .section__title {
     display: table;
     position: relative;
     margin: auto;
-    font-size: 40px;
+    font-size: 27px;
     font-weight: 900;
     font-family: @ff2;
     color: @red;
-    &:before, &:after {
-        content: '';
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        width: 45px;
-        height: 1px;
-        background: @red;
-    }
-    &:before {
-        left: -60px;
-    }
-    &:after {
-        right: -60px;
-    }
-    @media @mobile {
+    text-align: center;
 
-    }
     @media @tablet {
-
+        font-size: 36px;
+        &:before, &:after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 45px;
+            height: 1px;
+            background: @red;
+        }
+        &:before {
+            left: -60px;
+        }
+        &:after {
+            right: -60px;
+        }
     }
-    @media @desktop {
 
-    }
     @media @desktop-xl {
-
-    }
-    @media @desktop-xl-2 {
-
-    }
-    @media @desktop-xll {
-
+        font-size: 40px;
     }
 }

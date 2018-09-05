@@ -21,20 +21,39 @@
 .vinir {
 	position: relative;
 	z-index: 10;
+	overflow: hidden;
+	@media @tablet {
+		overflow: visible;
+	}
 	&:after {
-		content: '';
-		position: absolute;
-		right: 41.5%;
-		bottom: -60px;
-		width: 1px;
-		height: 118px;
-		background: @red;
+		@media @desktop {
+			content: '';
+			position: absolute;
+			right: 41.5%;
+			bottom: -30px;
+			width: 1px;
+			height: 68px;
+			background: @red;
+		}
+		@media @desktop-xl {
+			height: 118px;
+			bottom: -60px;
+		}
 	}
 	&__box {
 		display: flex;
 		align-items: center;
+		flex-direction: column;
 		justify-content: space-between;
-		padding: 0 175px;
+		@media @tablet {
+			flex-direction: row;
+		}
+		@media @desktop {
+			padding: 0 70px 0 30px;
+		}
+		@media @desktop-xl {
+			padding: 0 175px;
+		}
 	}
 	strong {
 		color: @red;
@@ -47,18 +66,33 @@
 			content: '';
 			display: block;
 			position: absolute;
-			top: 20px;
-			left: -20px;
-			width: 350px;
-			height: 303px;
+			top: 40px;
+			left: -1px;
+			width: 300px;
+			height: 259px;
 			background: url(../images/vinir-lines.png);
-			animation: scaled 3s infinite;
+			background-size: contain;
+			@media @mobile-xl {
+				width: 350px;
+				height: 303px;
+				top: 20px;
+				left: -20px;
+			}
+			@media @desktop {
+				animation: scaled 3s infinite;
+			}
+
 		}
 	}
 	&__content {
-		margin-left: 40px;
+		@media @tablet {
+			margin-left: 40px;
+		}
 	}
 	&__text {
-		padding-bottom: 25px;
+		padding-bottom: 15px;
+		@media @desktop {
+			padding-bottom: 25px;
+		}
 	}
 }

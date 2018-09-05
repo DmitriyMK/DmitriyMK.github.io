@@ -24,22 +24,34 @@
 	position: relative;
 	z-index: 10;
 	&:before {
-		content: '';
-		position: absolute;
-		left: 41.5%;
-		top: -60px;
-		width: 1px;
-		height: 118px;
-		background: @red;
+		@media @desktop {
+			content: '';
+			position: absolute;
+			left: 41.5%;
+			top: -30px;
+			width: 1px;
+			height: 68px;
+			background: @red;
+		}
+		@media @desktop-xl {
+			height: 118px;
+			top: -60px;
+		}
 	}
 	&:after {
-		content: '';
-		position: absolute;
-		right: 41.5%;
-		bottom: -60px;
-		width: 1px;
-		height: 118px;
-		background: @red;
+		@media @desktop {
+			content: '';
+			position: absolute;
+			right: 41.5%;
+			bottom: -30px;
+			width: 1px;
+			height: 68px;
+			background: @red;
+		}
+		@media @desktop-xl {
+			bottom: -60px;
+			height: 118px;
+		}
 	}
 	&__list {
 		display: flex;

@@ -136,18 +136,6 @@
 }
 
 
-input:focus:required:invalid,
-textarea:focus:required:invalid {
-  // border: solid 0px rgba(222,78,0,.51) !important;
-  // border-bottom: 1px solid #909091;
-  
-}
-input:required:valid,
-textarea:required:valid {
-  // border: solid 0px rgba(222,78,0,.51) !important;
-  // border-bottom: 1px solid #909091;
-  
-}
 #name-error {
     font-size: 0 !important;
 }
@@ -171,17 +159,21 @@ label {
 .formBox {
     position: relative;
     background: @red;
-    padding: 30px 15px;
-    max-width: 340px;
+    padding: 0;
+    max-width: 300px;
     margin: 20px auto;
     text-align: center;
     box-shadow: -20px 20px 145px 0px rgba(0,0,0,0.4);
-    
+    @media @tablet {
+        padding: 30px 15px;
+        max-width: 340px;
+    }
     .form {
-        padding: 30px;
         margin: auto;
-
-    
+        padding: 30px;
+        @media @tablet {
+            padding: 30px;
+        }
         &__title {
             padding-bottom: 10px;
             text-align: center;
