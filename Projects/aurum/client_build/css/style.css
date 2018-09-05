@@ -986,7 +986,7 @@ section {
 }
 @media only screen and (min-width: 1600px) {
     .header__center {
-        padding-top: 205px;
+        padding-top: 24vh;
     }
 }
 .header__center .btn {
