@@ -114,8 +114,9 @@ $(document).ready(function() {
     dots: false,
     focusOnSelect: true,
     centerMode: true,
+    centerPadding: '20px',
     responsive: [
-    
+
       {
         breakpoint: 768,
         settings: {
