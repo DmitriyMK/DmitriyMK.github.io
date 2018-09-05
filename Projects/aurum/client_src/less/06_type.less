@@ -177,12 +177,15 @@ section {
     display: table;
     position: relative;
     margin: auto;
-    font-size: 27px;
+    font-size: 23px;
     font-weight: 900;
     font-family: @ff2;
     color: @red;
     text-align: center;
-
+    
+    @media @mobile-xl {
+        font-size: 26px;
+    }
     @media @tablet {
         font-size: 36px;
         &:before, &:after {

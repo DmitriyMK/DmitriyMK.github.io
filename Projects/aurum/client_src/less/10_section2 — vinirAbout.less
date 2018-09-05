@@ -49,7 +49,7 @@
 		display: flex;
 		flex-direction: column;
 		flex-wrap: wrap;
-		padding-top: 50px;
+		padding: 25px 0;
 
 		@media @desktop {
 			padding: 25px 0 0 100px;
@@ -62,17 +62,16 @@
 	}
 	&__item {
 		position: relative;
-		margin: 35px auto;
-		padding-top: 8px;
-		text-align: center;
+		width: 250px;
+		padding-left: 25px;
+		margin: 21px auto;
 		counter-increment: li; 
 		font-size: 18px;
 
 		@media @tablet {
 			width: 400px;
-			padding-top: 0;
+			padding-left: 0;
 			margin: 21px auto;
-			text-align: inherit;
 		}
 		@media @desktop {
 			padding-right: 30px;
@@ -85,49 +84,39 @@
 		&:before {
 			content: counter(li);
 			position: absolute;
-			left: 49%;
-			top: -40px;
-			transform: translateX(-50%);
+			left: -17px;
+			top: 50%;
+			transform: translateY(-50%);
 			color: #fff;
 			font-size: 20px;
 			z-index: 1;
 			@media @tablet {
 				left: -40px;
-				top: 50%;
-				transform: translateY(-50%);
 			}
 		}
 		&:after {
 			content: '';
 			position: absolute;
-			left: 50%;
-			top: -60px;
-			transform: translateX(-50%);
+			left: -35px;
+			top: 50%;
+			transform: translateY(-45%);
 			.bg-list_item;
 			@media @tablet {
-				left: -58px;
-				top: 50%;
-				transform: translateY(-45%);
+				left: -58px
 			}
 		}
 	}
 
 	.flyLeft {
-		position: absolute;
-		left: 150px;
-		top: -380px;
-		width: 628px;
-		height: 712px;
-		background: url(../images/letters/A.png)no-repeat center/contain;
-		@media @tablet {
-
-		}
-		@media @desktop {
-
-		}
+		display: none;
 		@media @desktop-xl {
-
+			display: block;
+			position: absolute;
+			left: 150px;
+			top: -380px;
+			width: 628px;
+			height: 712px;
+			background: url(../images/letters/A.png)no-repeat center/contain;
 		}
-
 	}
 }
