@@ -23,26 +23,47 @@
 	background: rgb(245, 249, 250);
 
 	&__img-left {
-		position: absolute;
-		left: 0;
-		top: 80px;
-		background-size: contain; 
+		display: none;
+		@media @desktop-xl {
+			display: block;
+			position: absolute;
+			left: -40px;
+			bottom: 0px;
+			width: 600px;
+		}
+		@media @desktop-xll {
+			left: 0px;
+			width: 640px;
+		}
 	}
 	&__img-right {
-		position: absolute;
-		right: 0;
-		bottom: 0px;
-		background-size: contain; 
+		display: none;
+		@media @desktop-xl {
+			display: block;
+			position: absolute;
+			right: 0;
+			bottom: 0px;
+		}
 	}
 
 	&__slider-nav {
-		padding: 50px 140px 30px 140px;
+		padding-top: 30px;
 		text-align: center;
+		@media @tablet {
+			padding: 30px 0;
+		}
+		@media @desktop {
+			padding: 50px 60px 30px 60px;
+		}
+		@media @desktop-xl {
+			padding: 50px 140px 30px 140px;
+		}
 		img {
 			display: block;
 			margin: auto;			
 		}
 		.review__slide {
+			position: relative;
 			padding-bottom: 15px;
 			transition: all .3s linear;
 		}
@@ -58,17 +79,22 @@
 			width: 25px;
 			height: 25px;
 
-			top: 30%;
+			top: 85%;
 			opacity: 1;
 			transition: opacity .3s linear;
 			background: transparent!important;
 			z-index: 10;
+			@media @tablet {
+				top: 80%;
+			}
+			@media @desktop {
+				top: 40%;
+			}
 			&:after {
 				content: '';
 				position: absolute;
 				top: 36%;
 				left: -55%;
-
 				width: 36px;
 				height: 34px;
 				background: url(../images/icons/borders.png);
@@ -81,10 +107,16 @@
 		}
 
 		.slick-prev {
-			left: 38%;
+			left: 20%;
+			@media @tablet {
+				left: 38%;
+			}
 		}
 		.slick-next {
-			right: 36%;
+			right: 19%;
+			@media @tablet {
+				right: 35%;
+			}
 		}
 
 		.slick-prev:before,
@@ -105,16 +137,23 @@
 		.slick-next:before {
 			content: '\e806';
 		}
-		.slick-current {
-			transform: scale(1.15);
-			transition: all .3s linear;
+		.slick-current {	
+			@media @tablet {
+				transform: scale(1.15);
+				transition: all .3s linear;
+			}
 		}
 	}
 
 	&__slider-for {
-		padding-left: 100px;
-		padding-right: 100px;
 		text-align: center;
+		@media @tablet {
+			padding-left: 50px;
+			padding-right: 50px;
+		}
+		@media @desktop-xl {
+			padding-left: 100px;
+			padding-right: 100px;
+		}
 	}
-
 }

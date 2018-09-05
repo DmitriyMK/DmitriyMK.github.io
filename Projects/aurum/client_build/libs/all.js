@@ -59,14 +59,17 @@ $(document).ready(function() {
     focusOnSelect: true,
     responsive: [
 
-      // {
-      //   breakpoint: 576,
-      //   settings: {
-      //     slidesToShow: 2,
-      //     slidesToScroll: 2,
-      //     dots: true,
-      //   }
-      // }
+      {
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 3,
+        }
+      }, {
+        breakpoint: 500,
+        settings: {
+          slidesToShow: 2,
+        }
+      },
 
     ]
   });
@@ -75,7 +78,23 @@ $(document).ready(function() {
     slidesToShow: 3,
     slidesToScroll: 1,
     arrows: true,
-    dots: false
+    dots: false,
+    responsive: [
+
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 2,
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          dots: true
+        }
+      }
+    ]
   });
 
   $('.review__slider-for').slick({
@@ -95,23 +114,19 @@ $(document).ready(function() {
     dots: false,
     focusOnSelect: true,
     centerMode: true,
-    centerPadding: "20px",
     responsive: [
-
-      // {
-      //   breakpoint: 576,
-      //   settings: {
-      //     slidesToShow: 2,
-      //     slidesToScroll: 2,
-      //     dots: true,
-      //   }
-      // }
+    
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          fade: true
+        }
+      }
 
     ]
   });
 
-
-  
 
 
   $('[data-fancybox]').fancybox({
