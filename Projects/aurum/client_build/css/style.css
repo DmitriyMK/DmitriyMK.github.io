@@ -982,6 +982,10 @@ section {
 @media only screen and (min-width: 1200px) {
     .header__center {
         padding-top: 100px;
+        -webkit-perspective: 800px;
+                perspective: 800px;
+        -webkit-transform-style: preserve-3d;
+                transform-style: preserve-3d;
     }
 }
 @media only screen and (min-width: 1600px) {
@@ -1019,7 +1023,12 @@ section {
 }
 @media only screen and (min-width: 1200px) {
     .header__title {
+        display: inline-block;
         font-size: 47px;
+        -webkit-transform: rotateY(15deg);
+                transform: rotateY(15deg);
+        -webkit-transform-style: preserve-3d;
+                transform-style: preserve-3d;
     }
 }
 @media only screen and (min-width: 1600px) {
