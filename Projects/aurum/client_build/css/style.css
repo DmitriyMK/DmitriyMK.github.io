@@ -981,15 +981,12 @@ section {
 }
 @media only screen and (min-width: 1200px) {
     .header__center {
-        -webkit-perspective: 800px;
-                perspective: 800px;
-        -webkit-transform-style: preserve-3d;
-                transform-style: preserve-3d;
+        padding-top: 120px;
     }
 }
 @media only screen and (min-width: 1600px) {
     .header__center {
-        padding-top: 24vh;
+        padding-top: 180px;
     }
 }
 .header__center .btn {
@@ -1023,10 +1020,6 @@ section {
 @media only screen and (min-width: 1200px) {
     .header__title {
         font-size: 47px;
-        -webkit-transform: rotateY(15deg);
-                transform: rotateY(15deg);
-        -webkit-transform-style: preserve-3d;
-                transform-style: preserve-3d;
     }
 }
 @media only screen and (min-width: 1600px) {
