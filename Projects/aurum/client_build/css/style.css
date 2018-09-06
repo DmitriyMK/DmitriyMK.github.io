@@ -981,7 +981,6 @@ section {
 }
 @media only screen and (min-width: 1200px) {
     .header__center {
-        padding-top: 100px;
         -webkit-perspective: 800px;
                 perspective: 800px;
         -webkit-transform-style: preserve-3d;
