@@ -2685,7 +2685,7 @@ section {
     }
 }
 .review__slider-nav .slick-next {
-    right: 19%;
+    right: 15%;
 }
 @media only screen and (min-width: 768px) {
     .review__slider-nav .slick-next {
