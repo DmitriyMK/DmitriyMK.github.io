@@ -1023,7 +1023,6 @@ section {
 }
 @media only screen and (min-width: 1200px) {
     .header__title {
-        display: inline-block;
         font-size: 47px;
         -webkit-transform: rotateY(15deg);
                 transform: rotateY(15deg);
