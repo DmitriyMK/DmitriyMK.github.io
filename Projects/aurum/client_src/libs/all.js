@@ -4,7 +4,7 @@ $(document).ready(function() {
 
     $(window).enllax();
 
-    // new WOW().init();
+    new WOW().init();
 
     $("body").niceScroll({
       scrollspeed: 70,
