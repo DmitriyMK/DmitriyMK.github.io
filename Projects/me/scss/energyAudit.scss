@@ -1,0 +1,317 @@
+@import "main.scss";
+
+.energyAuditHeader {
+	padding: 165px 0;
+	background: url(../img/energoAudit/hero-img.jpg)no-repeat top/cover;
+	&__title {
+		font-size: rem(46);
+		font-weight: 700;
+		text-transform: uppercase;
+		color: #fff;
+	}
+	&__text {
+		padding-top: 20px;
+		font-size: rem(36);
+		font-weight: 500;
+		color: #88fa2e;
+	}
+}
+
+.energyAuditAbout {
+	position: relative;
+	overflow: hidden;
+	&:before {
+		content: '';
+		position: absolute;
+		top: -5px;
+		left: 0;
+		width: 100%;
+		box-shadow: 0px 10px 20px 2px rgba(0, 0, 0, 1);
+	}
+	&:after {
+		content: '';
+		position: absolute;
+		bottom: 5px;
+		left: 0;
+		width: 100%;
+		box-shadow: 8.485px 8.485px 25px 1.19px rgba(0, 0, 0, 1);
+	}
+
+	strong {
+		font-weight: inherit;
+	}
+	&__text {
+		padding: 30px 0;
+		font-size: rem(20);
+	}
+
+	&__list {
+		padding-top: 195px;
+		padding-bottom: 80px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		flex-wrap: wrap;
+	}
+	&__item {
+		position: relative;
+		width: 320px;
+		height: 170px;
+		border: 2px solid #87bc54;
+		counter-increment: li; 
+	}
+	.itemTop {
+		margin-bottom: 270px;
+	}
+	&__content {
+		position: relative;
+		width: 100%;
+		height: 100%;
+		background: #fff;
+		&:before {
+			content: counter(li);
+			position: absolute;
+			display: block;
+			left: -20px;
+			bottom: -20px;
+			width: 100px;
+			height: 100px;
+			background: #fff;
+			font-size: rem(100);
+			font-weight: 500;
+			text-shadow: 3px 3px 2px rgba(135, 188, 84, 1);
+			color: #c8e2af;
+			z-index: 10;
+		}
+	}
+
+	.reverse {
+		&:before {
+			top: -30px;
+			left: -30px;
+			bottom: inherit;
+			height: 120px;
+		}
+	}
+
+	&__titles {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		font-size: rem(22);
+		font-weight: 400;
+		text-transform: uppercase;
+		text-align: center;
+		z-index: 10;
+	}
+	&__img {
+		position: absolute;
+		top: -180px;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+
+	.decorLeft, .decorLeft-bottom, .decorRight, .decorRight-bottom {
+		position: relative;
+		&:before {
+			position: absolute;
+			content: '';
+			top: -20px;
+			background: #87bc54;
+			width: 4px;
+			height: 80px;
+		}
+		&:after {
+			position: absolute;
+			content: '';
+			top: -20px;
+			background: #87bc54;
+			width: 80px;
+			height: 4px;
+		}
+	}
+	.decorLeft {
+		&:before {
+			left: -20px;
+		}
+		&:after {
+			left: -20px;
+		}
+	}
+	.decorRight {
+		&:before {
+			right: -20px;
+		}
+		&:after {
+			right: -20px;
+		}
+	}
+	.decorLeft-bottom {
+		&:before {
+			top: inherit;
+			bottom: -20px;
+			left: -20px;
+		}
+		&:after {
+			top: inherit;
+			bottom: -20px;
+			left: -20px;
+		}
+	}
+	.decorRight-bottom {
+		&:before {
+			top: inherit;
+			bottom: -20px;
+			right: -20px;
+		}
+		&:after {
+			top: inherit;
+			bottom: -20px;
+			right: -20px;
+		}
+	}
+}
+
+.energyAuditServices {
+	overflow: hidden;
+	background: #f9f9f9;
+	&__list {
+		padding: 60px 0;
+	}
+	&__item {
+		margin-bottom: 160px;
+		position: relative;
+		list-style-type: none;
+		counter-increment: li; 
+		&:before {
+			content: '';
+			position: absolute;
+			top: 25px;
+			left: -25px;
+			width: 770px;
+			height: 100%;
+			border: 3px solid #87bb54;
+			z-index: -1;
+		}
+	}
+	&__content {
+		position: relative;
+		padding: 25px 20px 40px 40px;
+		max-width: 700px;
+		background: #fff;
+		box-shadow: 0px 0px 9px 1px rgba(0, 0, 0, 0.1);
+		z-index: 10;
+	}
+	&__img {
+		position: absolute;
+		top: 80px;
+		right: -200px;
+		box-shadow: -1.118px 1.658px 10px 0px rgba(0, 0, 0, 0.19);
+		img {
+			display: block;
+			max-width: 100%;
+			height: auto;
+		}
+	}
+	&__titles {
+		display: block;
+		position: relative;
+		padding: 30px 40px;
+		text-transform: uppercase;
+		font-size: rem(25);
+		font-weight: 500;
+		&:before {
+			position: absolute;
+			content: counter(li);
+			top: 50%;
+			left: -10px;
+			transform: translateY(-50%);
+			font-size: rem(70);
+			font-weight: 700;
+			color: #87bc54;
+		}
+	}
+	&__text {
+		padding-bottom: 10px;
+	}
+
+	.itemFull {
+		position: relative;
+		margin-bottom: 730px;
+		&:before {
+			width: 100%;
+		}
+		.energyAuditServices__content {
+			max-width: 100%;
+		}
+		.energyAuditServices__img {
+			margin-top: -25px;
+			top: inherit;
+			right: inherit;
+			left: 60px;
+			z-index: 10;
+			width: 90%;
+		}
+	}
+	.itemFull2 {
+		margin-bottom: 680px;
+	}
+	.itemReorder {
+		margin-right: 30px;
+		margin-bottom: 30px;
+		&:before {
+			right: -25px;
+			height: 210px;
+			left: inherit;
+
+		}
+		.energyAuditServices__content {
+			float: right;
+		}
+		.energyAuditServices__img {
+			right: inherit;
+			left: -200px;
+			top: -60px;
+			img {
+				height: 50%;
+			}
+		}
+	}
+
+	&__box {
+		display: flex;
+		justify-content: space-between;
+	}
+	&__subtitles {
+		padding-bottom: 10px;
+		padding-bottom: 5px;
+		font-size: rem(18);
+		text-decoration: underline;
+		text-decoration-color: #868686; 
+	}
+	&__sublist {
+		padding-top: 15px;
+		padding-right: 50px;
+	}
+	&__subitem {
+		position: relative;
+		padding-left: 30px;
+		margin-bottom: 10px;
+		&:before {
+			content: '';
+			position: absolute;
+			top: 50%;
+			left: 0;
+			transform: translateY(-50%);
+			width: 10px;
+			height: 10px;
+			border-radius: 50%;
+			background: $green;
+		}
+	}
+}
+
+.energyAuditStep {
+	overflow: hidden;
+}
