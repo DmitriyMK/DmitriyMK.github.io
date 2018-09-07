@@ -32,7 +32,7 @@ gulp.task('sass', function() {
             suffix: '.min',
             prefix: ''
         }))
-        .pipe(autoprefixer(['last 15 versions', '> 1%'], {
+        .pipe(autoprefixer(['last 5 versions', '> 1%', 'ie 8'], {
             cascade: true
         }))
         .pipe(cleancss({

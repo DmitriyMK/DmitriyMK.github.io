@@ -2,7 +2,7 @@
 @import "_03_mixin and function.scss";
 
 body {
-    min-width: 320px;
+    min-height: 100vh;
     padding-right: 0 !important;
     font-family: $f1;
     font-size: $fs;
@@ -36,6 +36,18 @@ button {
 
 .hide {
     display: none;
+}
+
+// titles for semantics and structure HTML
+.offscreen {
+    position: absolute;
+    clip: rect(1px 1px 1px 1px); /* for Internet Explorer */
+    clip: rect(1px, 1px, 1px, 1px);
+    padding: 0;
+    border: 0;
+    height: 1px;
+    width: 1px;
+    overflow: hidden; 
 }
 
 .section {
