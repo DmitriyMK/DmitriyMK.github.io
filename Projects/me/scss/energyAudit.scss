@@ -924,6 +924,7 @@
 	label {
 		cursor: pointer;
 		color: #fff;
+		
 	}
 	.odd {
 		display: block;
@@ -948,10 +949,14 @@
 		label {
 			display: flex;
 			align-items: center;
+			justify-content: center;
 			height: 100%;
+			width: 100%;
+			margin: auto;
 		}
 	}
 	&__titles {
+		display: block;
 		position: absolute;
 		top: 50%;
 		left: 50%;
