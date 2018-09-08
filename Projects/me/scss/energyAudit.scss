@@ -1,21 +1,64 @@
+@import "header.scss";
 @import "main.scss";
 
 .energyAuditHeader {
 	padding: 165px 0;
 	background: url(../img/energoAudit/hero-img.jpg)no-repeat top/cover;
+
+	@media only screen and (max-width: 1199.98px) { 
+		padding: 120px 0;
+	}
+
+	@media only screen and (max-width: 575.98px) { 
+		text-align: center;
+		br {
+			display: none;
+		}
+	}
+
 	&__title {
 		font-size: rem(46);
 		font-weight: 700;
 		text-transform: uppercase;
 		color: #fff;
+
+		@media only screen and (max-width: 1199.98px) { 
+			font-size: rem(38);
+		}
+
+		@media only screen and (max-width: 767.98px) { 
+			font-size: rem(30);
+			line-height: 1.5;
+		}
+
+		@media only screen and (max-width: 575.98px) { 
+			font-size: rem(24);
+			font-weight: 500;
+		}
 	}
 	&__text {
 		padding-top: 20px;
 		font-size: rem(36);
 		font-weight: 500;
 		color: #88fa2e;
+
+		@media only screen and (max-width: 1199.98px) { 
+			font-size: rem(30);
+		}
+
+		@media only screen and (max-width: 767.98px) {
+			line-height: 1.5;
+			color: #fff;
+		} 
+
+		@media only screen and (max-width: 575.98px) { 
+			padding-top: 30px;
+			font-size: rem(22);
+			text-transform: uppercase;
+		}
 	}
 }
+
 
 .energyAuditAbout {
 	position: relative;
@@ -36,13 +79,18 @@
 		width: 100%;
 		box-shadow: 8.485px 8.485px 25px 1.19px rgba(0, 0, 0, 1);
 	}
-
 	strong {
 		font-weight: inherit;
 	}
 	&__text {
-		padding: 30px 0;
+		padding: 45px 0;
 		font-size: rem(20);
+
+		@media only screen and (max-width: 575.98px) { 
+			padding-bottom: 25px;
+			font-size: rem(18);
+			text-align: center;
+		}
 	}
 
 	&__list {
@@ -50,8 +98,14 @@
 		padding-bottom: 80px;
 		display: flex;
 		justify-content: space-between;
-		align-items: center;
 		flex-wrap: wrap;
+		@media only screen and (max-width: 1199.98px) { 
+			padding-top: 150px;
+			justify-content: space-around;
+		}
+		@media only screen and (max-width: 575.98px) {
+			padding-bottom: 30px;
+		}
 	}
 	&__item {
 		position: relative;
@@ -59,9 +113,32 @@
 		height: 170px;
 		border: 2px solid #87bc54;
 		counter-increment: li; 
+		@media only screen and (max-width: 1199.98px) { 
+			width: 350px;
+			height: 140px;
+		}
+
+		@media only screen and (max-width: 991.98px) { 
+			width: 320px;
+		}
+		@media only screen and (max-width: 767.98px) { 
+			margin-bottom: 180px;
+			&-last {
+				margin-bottom: 30px;
+			}
+		}
+		@media only screen and (max-width: 575.98px) { 
+			width: 280px;
+		}
 	}
 	.itemTop {
 		margin-bottom: 270px;
+		@media only screen and (max-width: 1199.98px) { 
+			margin-bottom: 200px;
+		}
+		@media only screen and (max-width: 767.98px) { 
+			margin-bottom: 180px;
+		}
 	}
 	&__content {
 		position: relative;
@@ -82,6 +159,15 @@
 			text-shadow: 3px 3px 2px rgba(135, 188, 84, 1);
 			color: #c8e2af;
 			z-index: 10;
+
+			@media only screen and (max-width: 1199.98px) { 
+			}
+
+			@media only screen and (max-width: 991.98px) { 
+				font-size: rem(80);
+				width: 80px;
+				height: 80px;
+			}
 		}
 	}
 
@@ -91,9 +177,18 @@
 			left: -30px;
 			bottom: inherit;
 			height: 120px;
+			@media only screen and (max-width: 1199.98px) { 
+				top: inherit;
+				left: -20px;
+				bottom: -20px;
+				width: 100px;
+				height: 100px;
+			}
+			@media only screen and (max-width: 767.98px) { 
+				bottom: -40px;
+			}
 		}
 	}
-
 	&__titles {
 		position: absolute;
 		top: 50%;
@@ -104,12 +199,32 @@
 		text-transform: uppercase;
 		text-align: center;
 		z-index: 10;
+
+		@media only screen and (max-width: 1199.98px) { 
+			width: 250px;
+		}
+		@media only screen and (max-width: 991.98px) { 
+			font-size: rem(20);
+		}
+		@media only screen and (max-width: 575.98px) { 
+			font-size: rem(18);
+		}
 	}
 	&__img {
 		position: absolute;
 		top: -180px;
 		left: 50%;
 		transform: translateX(-50%);
+
+		@media only screen and (max-width: 1199.98px) { 
+			top: -150px;
+		}
+
+		img {
+			@media only screen and (max-width: 1199.98px) { 
+				max-width: 220px;
+			}
+		}
 	}
 
 	.decorLeft, .decorLeft-bottom, .decorRight, .decorRight-bottom {
@@ -142,9 +257,15 @@
 	.decorRight {
 		&:before {
 			right: -20px;
+			@media only screen and (max-width: 1199.98px) { 
+				display: none;
+			}
 		}
 		&:after {
 			right: -20px;
+			@media only screen and (max-width: 1199.98px) { 
+				display: none;
+			}
 		}
 	}
 	.decorLeft-bottom {
@@ -152,11 +273,17 @@
 			top: inherit;
 			bottom: -20px;
 			left: -20px;
+			@media only screen and (max-width: 1199.98px) { 
+				display: none;
+			}
 		}
 		&:after {
 			top: inherit;
 			bottom: -20px;
 			left: -20px;
+			@media only screen and (max-width: 1199.98px) { 
+				display: none;
+			}
 		}
 	}
 	.decorRight-bottom {
@@ -173,12 +300,19 @@
 	}
 }
 
+
 .energyAuditServices {
 	overflow: hidden;
 	background: #f9f9f9;
 	&__list {
 		padding: 60px 0;
+		@media only screen and (max-width: 991.98px) {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		} 
 	}
+
 	&__item {
 		position: relative;
 		margin-bottom: 160px;
@@ -186,6 +320,14 @@
 		list-style-type: none;
 		counter-increment: li; 
 		z-index: 10;
+		@media only screen and (max-width: 1199.98px) { 
+			margin-bottom: 120px;
+		}
+
+		@media only screen and (max-width: 991.98px) { 
+			margin-bottom: 40px;
+		}
+
 		&:before {
 			content: '';
 			position: absolute;
@@ -195,8 +337,12 @@
 			height: 100%;
 			border: 3px solid #87bb54;
 			z-index: -1;
+			@media only screen and (max-width: 991.98px) { 
+				display: none;
+			}
 		}
 	}
+
 	&__content {
 		position: relative;
 		padding: 25px 20px 40px 40px;
@@ -204,18 +350,45 @@
 		background: #fff;
 		box-shadow: 0px 0px 9px 1px rgba(0, 0, 0, 0.1);
 		z-index: 10;
+		@media only screen and (max-width: 1199.98px) { 
+			max-width: 700px;
+		}
+		@media only screen and (max-width: 991.98px) { 
+			padding-bottom: 50px;
+		}
+
+		@media only screen and (max-width: 575.98px) { 
+			padding: 25px 15px 50px 15px;
+			line-height: 1.5;
+		}
 	}
+
 	&__img {
 		position: absolute;
 		top: 80px;
 		right: -200px;
-		box-shadow: -1.118px 1.658px 10px 0px rgba(0, 0, 0, 0.19);
+		
+		@media only screen and (max-width: 1199.98px) { 
+			top: 60px;
+		}
+		@media only screen and (max-width: 991.98px) { 
+			position: inherit;
+			top: inherit;
+			right: inherit;
+			margin-top: -20px;
+			z-index: 10;
+		}
 		img {
 			display: block;
 			max-width: 100%;
 			height: auto;
+			box-shadow: -5px -5px 30px 3px rgba(0, 0, 0, 0.4);
+			@media only screen and (max-width: 991.98px) { 
+				margin: auto;
+			}
 		}
 	}
+
 	&__titles {
 		display: block;
 		position: relative;
@@ -223,6 +396,21 @@
 		text-transform: uppercase;
 		font-size: rem(25);
 		font-weight: 500;
+
+		@media only screen and (max-width: 1199.98px) { 
+			font-size: rem(23);
+		}
+		@media only screen and (max-width: 991.98px) { 
+			display: table;
+			padding: 20px 10px 20px 40px;
+			margin: auto;
+			font-size: rem(20);
+		}
+
+		@media only screen and (max-width: 767.98px) { 
+			font-size: rem(19);
+		}
+
 		&:before {
 			position: absolute;
 			content: counter(li);
@@ -234,6 +422,7 @@
 			color: #87bc54;
 		}
 	}
+
 	&__text {
 		padding-bottom: 10px;
 	}
@@ -241,6 +430,14 @@
 	.itemFull {
 		position: relative;
 		margin-bottom: 730px;
+		@media only screen and (max-width: 1199.98px) { 
+			margin-bottom: 620px;
+		}
+
+		@media only screen and (max-width: 991.98px) { 
+			margin-bottom: 40px;
+		}
+
 		&:before {
 			width: 100%;
 		}
@@ -254,29 +451,62 @@
 			left: 60px;
 			z-index: 10;
 			width: 90%;
+
+			@media only screen and (max-width: 991.98px) { 
+				left: 50%;
+				transform: translateX(-50%);
+			}
+
+			@media only screen and (max-width: 575.98px) { 
+				width: 300px;
+			}
 		}
 	}
 	.itemFull2 {
 		margin-bottom: 680px;
+		@media only screen and (max-width: 1199.98px) { 
+			margin-bottom: 600px;
+		}
+
+		@media only screen and (max-width: 991.98px) { 
+			margin-bottom: 40px;
+		}
 	}
+
 	.itemReorder {
 		margin-right: 30px;
 		margin-bottom: 30px;
+
+		@media only screen and (max-width: 991.98px) { 
+			margin-right: inherit;
+			margin-bottom: 0;
+		}
+
 		&:before {
 			right: -25px;
 			height: 210px;
 			left: inherit;
-
 		}
 		.energyAuditServices__content {
 			float: right;
+			@media only screen and (max-width: 991.98px) { 
+				float: none;
+			}
 		}
 		.energyAuditServices__img {
 			right: inherit;
 			left: -200px;
 			top: -60px;
+			@media only screen and (max-width: 991.98px) {
+				left: inherit;
+				top: inherit; 
+			}
+
 			img {
 				height: 50%;
+				@media only screen and (max-width: 575.98px) { 
+					height: auto;
+				}
 			}
 		}
 	}
@@ -284,6 +514,13 @@
 	&__box {
 		display: flex;
 		justify-content: space-between;
+		@media only screen and (max-width: 1199.98px) { 
+		}
+
+		@media only screen and (max-width: 991.98px) { 
+			flex-direction: column;
+			align-items: center;
+		}
 	}
 	&__subtitles {
 		padding-bottom: 10px;
@@ -291,10 +528,25 @@
 		font-size: rem(18);
 		text-decoration: underline;
 		text-decoration-color: #868686; 
+		@media only screen and (max-width: 991.98px) {
+			padding-top: 15px;
+			text-align: center;
+			text-decoration: none;
+			font-size: rem(20);
+		}
 	}
 	&__sublist {
 		padding-top: 15px;
 		padding-right: 50px;
+
+		@media only screen and (max-width: 991.98px) { 
+			max-width: 450px;
+			padding-right: 0;
+		}
+
+		@media only screen and (max-width: 575.98px) { 
+
+		}
 	}
 	&__subitem {
 		position: relative;
@@ -314,9 +566,11 @@
 	}
 }
 
+
 .energyAuditStep {
 	overflow: hidden;
 	position: relative;
+
 	&:before {
 		content: '';
 		position: absolute;
@@ -338,8 +592,16 @@
 		padding: 40px 0 20px 0;
 		display: flex;
 		margin: auto;
+
+		@media only screen and (max-width: 767.98px) { 
+			display: none;
+		}
+
 		&__box {
 			min-height: 511px;
+			@media only screen and (max-width: 767.98px) {
+				min-height: inherit;
+			}
 		}
 		&__link {
 			position: relative;
@@ -350,6 +612,12 @@
 			color: #979797;
 			cursor: pointer;
 			transition: all .3s linear;
+			@media only screen and (max-width: 767.98px) { 
+			}
+
+			@media only screen and (max-width: 575.98px) { 
+			}
+
 			&:not(:last-child):before {
 				content: '\e809';
 				position: absolute;
@@ -384,13 +652,15 @@
 			animation: fadeInUPS .4s linear forwards;
 			transition: all .3s linear;
 			opacity: 0;
+			@media only screen and (max-width: 767.98px) { 
+				display: block;
+			}
 			&-active {
 				display: block;
 				opacity: 1;
 			}
 		}		
 	}
-
 	.stepInfo {
 		margin-top: 30px;
 		padding: 25px 15px 25px 30px;
@@ -399,19 +669,46 @@
 		justify-content: space-between;
 		box-shadow: 8.485px 8.485px 25px 1.19px rgba(0, 0, 0, .2);
 
+		@media only screen and (max-width: 767.98px) { 
+			flex-direction: column;
+			margin-top: 60px;
+		}
+
+		@media only screen and (max-width: 575.98px) { 
+			padding: 25px 10px 25px 13px;
+		}
+
 		&__content {
 			flex-basis: 60%;
 			margin-right: 25px;
+
+			@media only screen and (max-width: 767.98px) { 
+				flex-basis: inherit;
+				margin-right: 0;
+			}
 		}
 
 		&__titles {
 			font-size: rem(26);
 			font-weight: 500;
 			padding-bottom: 30px;
+			@media only screen and (max-width: 767.98px) { 
+			}
+
+			@media only screen and (max-width: 575.98px) { 
+				font-size: rem(20);
+				text-align: center;
+				padding-bottom: 20px;
+			}
 		}
 		span {
 			margin-right: 10px;
 			color: $green;
+			@media only screen and (max-width: 575.98px) {
+				display: block;
+				margin: auto;
+				margin-bottom: 10px;
+			}
 		}
 		&__item {
 			position: relative;
@@ -433,6 +730,14 @@
 
 		&__img {
 			flex-basis: 40%;
+			@media only screen and (max-width: 767.98px) { 
+				margin-top: 30px;
+				flex-basis: inherit;
+			}
+
+			@media only screen and (max-width: 575.98px) { 
+
+			}
 			img {
 				display: block;
 				max-width: 100%;
@@ -441,6 +746,7 @@
 		}
 	}
 }
+
 
 @keyframes fadeInUPS {
 	0% {
@@ -469,9 +775,16 @@
 	&__title {
 		&:before {
 			left: 360px;
+			@media only screen and (max-width: 575.98px) {
+				left: 50%;
+				transform: translateX(-50%);
+			}
 		}
 		&:after {
 			left: 360px;
+			@media only screen and (max-width: 575.98px) {
+				display: none;
+			}
 		}
 	}
 
@@ -480,17 +793,45 @@
 		display: flex;
 		justify-content: space-between;
 		text-align: center;
+
+		@media only screen and (max-width: 767.98px) { 
+			flex-wrap: wrap;
+			justify-content: space-around;
+		}
+
 	}
 	&__item {
 		width: 20%;
+
+		@media only screen and (max-width: 991.98px) { 
+			width: 24%;
+		}
+
+		@media only screen and (max-width: 767.98px) { 
+			width: 40%;
+			margin-bottom: 25px;
+		}
+
+		@media only screen and (max-width: 575.98px) { 
+			width: 100%;
+		}
 	}
 
 	&__img {
 		padding-top: 15px;
 		height: 140px;
 		background: #fff;
-		box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.08);
-
+		box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.2);
+		
+		@media only screen and (max-width: 575.98px) { 
+			background: transparent;
+			box-shadow: none;
+			height: auto;
+			img {
+				max-width: 60px;
+				padding-bottom: 15px;
+			}
+		}
 	}
 
 	&__titles {
@@ -499,11 +840,18 @@
 		font-size: rem(26);
 		font-weight: 500;
 		color: $green;
+		@media only screen and (max-width: 575.98px) { 
+			padding-top: 0;
+		}
 	}
 	&__text {
 		padding-top: 5px;
 		font-size: rem(20);
 		text-transform: uppercase;
+
+		@media only screen and (max-width: 991.98px) { 
+			font-size: rem(18);
+		}
 	}
 }
 
@@ -533,8 +881,14 @@
 		font-weight: 500;
 		text-transform: uppercase;
 		text-align: center;
-		@media only screen and (max-width: 575.98px) { 
+		@media only screen and (max-width: 991.98px) {
 			font-size: rem(24);
+			br {
+				display: none;
+			} 
+		}
+		@media only screen and (max-width: 575.98px) { 
+			font-size: rem(18);
 		}
 	}
 
@@ -546,9 +900,25 @@
 		text-align: center;
 		box-shadow: 0px 0px 8.73px 0.27px rgba(0, 0, 0, 0.3);
 
+		@media only screen and (max-width: 991.98px) { 
+			justify-content: center;
+			flex-wrap: wrap;
+		}
+
 		> div {
 			width: 12.5%;
 			border: 1px solid transparent;
+
+			@media only screen and (max-width: 991.98px) { 
+				width: 25%;
+			}
+
+			@media only screen and (max-width: 767.98px) { 
+			}
+
+			@media only screen and (max-width: 575.98px) { 
+				width: 50%;
+			}
 		}
 	}
 	label {

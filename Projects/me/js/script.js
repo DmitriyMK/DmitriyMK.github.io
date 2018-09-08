@@ -30,19 +30,25 @@ $(document).ready(function() {
     };
 
     /*RESPONSIVER BURGER MENU*/
-    $(".burger").click(function() {
-        $(this).toggleClass('active');
-    })
 
-    $('.burger').on('click', function() {
+    var $menu = $('.nav');
+
+    $('.burger').click(function() {
+        $(this).toggleClass('active');
         $('.overlay').toggleClass('open').show;
     });
 
-    $(window).resize(function() {
-        if ($(window).width() > 768) {
-            $('.nav__list').removeAttr('style');
+
+    $(document).mouseup(function(e) {
+        if (!$menu.is(e.target) // if the target of the click isn't the container...
+            &&
+            $menu.has(e.target).length === 0) // ... nor a descendant of the container
+        {
+
+            $('.overlay').removeClass('open');
+            $(".burger").removeClass('active');
         }
-    })
+    });
 
 
     $('.scrolling__link').on('click', function(e) {
@@ -77,8 +83,6 @@ $(document).ready(function() {
         slidesToShow: 1,
         speed: 500,
     });
-
-
 });
 
 

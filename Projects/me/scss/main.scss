@@ -59,8 +59,7 @@
 		padding: 50px 15px;
 		font-size: rem(18);
 		@media only screen and (max-width: 575.98px) {
-			padding-left: 0;
-			padding-right: 0;
+			padding: 50px 0px 10px 0px;
 			text-align: center;
 		}
 	}
@@ -426,10 +425,27 @@
 
 .knowMore {
 	position: relative;
-	min-height: 670px;
+	min-height: 650px;
 	padding-bottom: 30px;
 	background: url(../img/energoAudit/form__bacl.jpg)no-repeat center/cover;
 
+
+	@media only screen and (max-width: 575.98px) { 
+		background: url(../img/energoAudit/form__bacl.jpg)no-repeat 28%/cover;
+	}
+
+	&:before {
+		content: '';
+		position: absolute;
+		bottom: 5px;
+		left: 0;
+		width: 100%;
+		box-shadow: 8.485px 8.485px 25px 1.19px rgba(0, 0, 0, 1);
+	}
+
+	@media only screen and (max-width: 1199.98px) {
+		min-height: 570px;
+	}
 
 	&__box {
 		position: relative;
@@ -447,7 +463,7 @@
 
 	.content__title {
 		padding-top: 80px;
-		padding-bottom: 40px;
+		padding-bottom: 30px;
 		margin: 0;
 		margin-right: 60px;
 		font-size: rem(40);
@@ -455,13 +471,23 @@
 		color: #86ff00;
 		text-transform: uppercase;
 
+		@media only screen and (max-width: 1199.98px) { 
+			font-size: rem(30);
+		}
+
 		@media only screen and (max-width: 991.98px) { 
 			margin-right: 0;
+		}
+
+		@media only screen and (max-width: 767.98px) { 
+			font-size: rem(20);
 			text-align: center;
+			color: #fff;
 		}
 
 		@media only screen and (max-width: 575.98px) { 
-			font-size: rem(30);
+			font-size: rem(21);
+			line-height: 1.5;
 		}
 	} 
 	.content__text {
@@ -470,24 +496,33 @@
 		font-weight: 500;
 		color: #fff;
 
+		@media only screen and (max-width: 1199.98px) { 
+			font-size: rem(28);
+		}
 		@media only screen and (max-width: 991.98px) { 
 			margin-right: 0;
+		}
+		@media only screen and (max-width: 767.98px) { 
 			text-align: center;
 		}
 		@media only screen and (max-width: 575.98px) { 
-			font-size: rem(24);
+			font-size: rem(26);
 		}
 
 		&-accent {
 			padding-top: 15px;
 			font-size: rem(30);
+			@media only screen and (max-width: 575.98px) { 
+				font-size: rem(26);
+			}
 		}
 	}
 	&__form {
 		margin-top: 80px;
-		padding: 45px 30px;
+		padding: 45px 30px 30px 30px;
 		background: #fff;
 		box-shadow: 0px 0px 8.55px 0.45px rgba(0, 0, 0, 0.3);
+		max-width: 350px;
 
 		@media only screen and (max-width: 991.98px) { 
 			margin-right: 15px;
@@ -813,12 +848,12 @@
 // 		@media only screen and (max-width: 575.98px) { 
 // 			float: none;
 // 			width: 90%;
-			
+
 // 		}
 // 	}
 // 	&__content {
 // 		float: left;
-		
+
 // 		display: block;
 // 		width: 70%;
 // 		height: auto;

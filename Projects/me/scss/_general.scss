@@ -43,7 +43,6 @@ section {
 	overflow: hidden;
 }
 .section__title {
-	display: table;
 	position: relative;
 	font-size: rem(36);
 	font-weight: 500;
@@ -51,7 +50,7 @@ section {
 	z-index: 10;
 	@media only screen and (max-width: 575.98px) { 
 		text-align: center;
-		font-size: rem(30);
+		font-size: rem(24);
 	}
 	&:before {
 		content: '';
