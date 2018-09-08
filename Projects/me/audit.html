@@ -29,12 +29,14 @@
 	<link rel="stylesheet" href="./css/header.css">
 
 	<!-- DEFER -->
-	<script defer src="./js/libs/masked-input.js"></script>
-	<script defer src="./js/libs/jquery.validate.min.js"></script>
-	<script defer src="./js/libs/wow.min.js"></script>
 	<script defer src="./js/libs/remodal.min.js"></script>
 	<script defer src="./js/libs/jquery.nicescroll.min.js"></script> 
 	<script defer src="./js/libs/slick.min.js"></script> 
+	<script defer src="./js/libs/masked-input.js"></script>
+	<script defer src="./js/libs/jquery.validate.min.js"></script>
+	<script defer src="./js/libs/waypoints.min.js"></script>
+	<script defer src="./js/libs/jquery.counterup.min.js"></script>
+	<script defer src="./js/libs/wow.min.js"></script>
 	<!-- END DEFER -->
 </head>
 <body>
@@ -244,15 +246,274 @@
 	<section class="energyAuditStep">
 		<div class="wrapper">
 			<h2 class="section__title  energyAuditStep__title">Основні етапи <br> ЕНЕРГЕТИЧНОГО АУДИТУ</h2>
+
+			<ul class="tabs">
+				<li class="tabs__link tabs__link-active" data-tabs="1">Етап 1</li>
+				<li class="tabs__link" data-tabs="2">Етап 2</li>
+				<li class="tabs__link" data-tabs="3">Етап 3</li>
+				<li class="tabs__link" data-tabs="4">Етап 4</li>
+				<li class="tabs__link" data-tabs="5">Етап 5</li>
+				<li class="tabs__link" data-tabs="6">Етап 6</li>
+			</ul>
+
+			<div class="tabs__box">
+				<div id="tabs-1" class="tabs__content tabs__content-active">
+					<div class="stepInfo">
+						<div class="stepInfo__content">
+							<h3 class="stepInfo__titles"><span>Етап #1:</span>«Ознайомчий»</h3>
+							<ul class="stepInfo__list">
+								<li class="stepInfo__item">Отримання початкових даних (складання опитувального листа);</li>
+								<li class="stepInfo__item">Ознайомчий виїзд на об'єкт, візуальне обстеження об’єкту;</li>
+								<li class="stepInfo__item">Зустріч з керівництвом ОСББ/ЖБК та з персоналом інженерно-технічних служб, обслуговуючих організацій;</li>
+								<li class="stepInfo__item">Узгодження обсягів та пунктів інструментального обстеження;</li>
+								<li class="stepInfo__item">Виконання обмірів огороджувальних конструкцій (при необхідності).</li>
+							</ul>
+						</div>
+						<div class="stepInfo__img">
+							<img src="./img/energoAudit/step1.jpg" alt="Основні етапи ЕНЕРГЕТИЧНОГО АУДИТУ">
+						</div>
+					</div>
+				</div>
+				<div id="tabs-2" class="tabs__content">
+					<div class="stepInfo">
+						<div class="stepInfo__content">
+							<h3 class="stepInfo__titles"><span>Етап #2:</span>«Загальний енергоаудит»</h3>
+							<ul class="stepInfo__list">
+								<li class="stepInfo__item">Аналіз теплопровідності огороджувальних конструкцій <br> (стін, вікон, дверей);</li>
+								<li class="stepInfo__item">Аналіз теплопровідності перекриття <br> (стель, даху, підвального приміщення);</li>
+								<li class="stepInfo__item">Збираємо дані та аналізуємо ефективність інженерних систем (вентиляція, опалення, кондиціювання, водопостачання, водовідведення, електропостачання);</li>
+								<li class="stepInfo__item">Збираємо інформацію про кліматичні умови та аналізуємо;</li>
+								<li class="stepInfo__item">Аналіз обсягів споживання енергоресурсів;</li>
+								<li class="stepInfo__item">Технічне обстеження систем обліку енергоресурсів;</li>
+								<li class="stepInfo__item">Оцінка технічного стану внутрішніх мереж,  електро та теплового обладнання;</li>
+								<li class="stepInfo__item">Визначення режимів роботи основних споживачів;</li>
+								<li class="stepInfo__item">Розрахунок нормативних показників енергоспоживання;</li>
+								<li class="stepInfo__item">Формування балансів енергоспоживання.</li>
+							</ul>
+						</div>
+						<div class="stepInfo__img">
+							<img src="./img/energoAudit/step2.jpg" alt="Основні етапи ЕНЕРГЕТИЧНОГО АУДИТУ">
+						</div>
+					</div>
+				</div>
+				<div id="tabs-3" class="tabs__content">
+					<div class="stepInfo">
+						<div class="stepInfo__content">
+							<h3 class="stepInfo__titles"><span>Етап #3:</span>«Інструментальне обстеження» <br>  (тепловізійна діагностика)</h3>
+							<ul class="stepInfo__list">
+								<li class="stepInfo__item">Системи електропостачання - контроль параметрів, режимів роботи мереж та груп електричного обладнання;</li>
+								<li class="stepInfo__item">Системи теплопостачання - контроль параметрів й режимів роботи теплових пунктів та теплових мереж, ізоляції трубопроводів та запірної арматури;</li>
+								<li class="stepInfo__item">Зовнішні огороджувальні конструкції – контроль температуро – вологих режимів, якість теплоізоляції та ін.</li>
+							</ul>
+						</div>
+						<div class="stepInfo__img">
+							<img src="./img/energoAudit/step3.jpg" alt="Основні етапи ЕНЕРГЕТИЧНОГО АУДИТУ">
+						</div>
+					</div>
+				</div>
+				<div id="tabs-4" class="tabs__content">
+					<div class="stepInfo">
+						<div class="stepInfo__content">
+							<h3 class="stepInfo__titles"><span>Етап #4:</span>«Заходи та технічні пропозиції»</h3>
+							<ul class="stepInfo__list">
+								<li class="stepInfo__item">Маловитратні організаційно-технічні заходи;</li>
+								<li class="stepInfo__item">Заходи в системах обліку ТЕП спрямовані на вдосконалення систем комерційного та технічного обліку, організації автоматизованих систем контролю та обліку енергоресурсів;</li>
+								<li class="stepInfo__item">Технічні заходи для підвищення енергетичної ефективності існуючого обладнання;</li>
+								<li class="stepInfo__item">Пропозиції щодо вдосконалення теплотехнічних характеристик будівель та споруд;</li>
+								<li class="stepInfo__item">Пропозиції щодо використання відновлюваних енергоресурсів.</li>
+							</ul>
+						</div>
+						<div class="stepInfo__img">
+							<img src="./img/energoAudit/step4.jpg" alt="Основні етапи ЕНЕРГЕТИЧНОГО АУДИТУ">
+						</div>
+					</div>
+				</div>
+				<div id="tabs-5" class="tabs__content">
+					<div class="stepInfo">
+						<div class="stepInfo__content">
+							<h3 class="stepInfo__titles"><span>Етап #5:</span>«Розробка звітної документації»</h3>
+							<ul class="stepInfo__list">
+								<li class="stepInfo__item">Звіт за результатами енергетичного обстеження, з обґрунтуванням необхідності впровадження енергоефективного обладнання, матеріалів, технологій та реалізації програми енергозбереження в цілому;</li>
+								<li class="stepInfo__item">Енергетичне обстеження проводиться відповідно до міжнародного стандарту ISO 50002 «Енергетичні аудити. Вимоги інструкції із застосування» ISO 50002:2014 Energyaudits – Requirementswithguidanceforuse.</li>
+								<li class="stepInfo__item">Підготовка вихідних пропозицій, згідно з звітом енергоаудиту, для участі у програмах компенсацій та співфінансування (Держенергоефективності України, обласні та міські програми). </li>
+								<li class="stepInfo__item">Супровід заявки до отримання результату.</li>
+							</ul>
+						</div>
+						<div class="stepInfo__img">
+							<img src="./img/energoAudit/step5.jpg" alt="Основні етапи ЕНЕРГЕТИЧНОГО АУДИТУ">
+						</div>
+					</div>
+				</div>
+				<div id="tabs-6" class="tabs__content">
+					<div class="stepInfo stepInfo-list">
+						<div class="stepInfo__content">
+							<h3 class="stepInfo__titles"><span>Етап #6:</span>«Презентація звіту про енергоаудит»</h3>
+							<ul class="stepInfo__list">
+								<li class="stepInfo__item">Презентація звіту про енергоаудит Замовнику.</li>
+							</ul>
+						</div>
+						<div class="stepInfo__img">
+							<img src="./img/energoAudit/step6.jpg" alt="Основні етапи ЕНЕРГЕТИЧНОГО АУДИТУ">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	
+	<section class="energyAuditProgress">
+		<div class="wrapper">
+			<h2 class="section__title  energyAuditProgress__title">Наші досягнення</h2>
+			
+			<ul class="energyAuditProgress__list">
+				<li class="energyAuditProgress__item">
+					<div class="energyAuditProgress__img">
+						<img src="./img/energoAudit/icon1.png" alt="5 років на ринку" title="5 років на ринку">
+					</div>
+					<p class="energyAuditProgress__titles counter">5</p>
+					<p class="energyAuditProgress__text">років на ринку</p>
+				</li>
+				<li class="energyAuditProgress__item">
+					<div class="energyAuditProgress__img">
+						<img src="./img/energoAudit/icon2.png" alt="50 виконаних енергоаудитів" title="50 виконаних енергоаудитів">
+					</div>
+					<p class="energyAuditProgress__titles counter">50</p>
+					<p class="energyAuditProgress__text">виконаних <br> енергоаудитів</p>
+				</li>
+				<li class="energyAuditProgress__item">
+					<div class="energyAuditProgress__img">
+						<img src="./img/energoAudit/icon3.png" alt="134 тепловізійних обстежень" title="134 тепловізійних обстежень">
+					</div>
+					<p class="energyAuditProgress__titles counter">134</p>
+					<p class="energyAuditProgress__text">тепловізійних <br> обстежень</p>
+				</li>
+				<li class="energyAuditProgress__item">
+					<div class="energyAuditProgress__img">
+						<img src="./img/energoAudit/icon4.png" alt="16  енергоефективних котелень" title="16  енергоефективних котелень">
+					</div>
+					<p class="energyAuditProgress__titles counter">16</p>
+					<p class="energyAuditProgress__text">енергоефективних <br> котелень</p>
+				</li>
+			</ul>
+
+			
 		</div>
 	</section>
 
 
+	<article class="calculator">
+		<div class="wrapper">
+			<h2 class="calculator__title">РОЗРАХУНОК ОРІЄНТОВНОЇ ЕКОНОМІЇ СПОЖИВАННЯ ТЕПЛОВОЇ ЕНЕРГІЇ,<br> при ВСТАНОВЛЕННІ ІНДИВІДУАЛЬНОГО теплового пунктУ</h2>
+
+			<div class="calculator__box">
+				<div>
+					<div class="calculator__content odd">
+						<label class="calculator__titles" for="item1">Споживання тепла за останній рік</label>
+					</div>
+					<label class="calculator__num odd" for="item1">Гкал</label>
+			
+					<input type="number" name="item1" id="item1" placeholder="00">
+				</div>
+
+				<div>
+					<div class="calculator__content even">
+						<label class="calculator__titles" for="item2">Тариф</label>
+					</div>
+					<label class="calculator__num even" for="item2">грн/Гкал</label>
+					
+					<input type="number" name="item2" id="item2" placeholder="00">
+				</div>
+
+				<div>
+					<div class="calculator__content odd">
+						<label class="calculator__titles" for="item3">Опалювальна  площа будинку</label>
+					</div>
+					<label class="calculator__num odd" for="item3">м <sup>2</sup></label>
+					
+					<input type="number" name="item3" id="item3" placeholder="00">
+				</div>
+
+				<div>
+					<div class="calculator__content even">
+						<label class="calculator__titles" for="item4">Площа квартири</label>
+					</div>
+					<label class="calculator__num even" for="item4">м <sup>2</sup></label>
+					
+					<input type="number" name="item4" id="item4" placeholder="00">
+				</div>
+
+				<div>
+					<div class="calculator__content odd">
+						<label class="calculator__titles" for="item5">Економія споживання тепла після впровадження ІТП</label>
+					</div>
+					<label class="calculator__num odd" for="item5">Гкал</label>
+					
+					<input type="number" name="item5" id="item5" placeholder="00">
+				</div>
+
+				<div>
+					<div class="calculator__content even">
+						<label class="calculator__titles" for="item6">Економія споживання тепла  після  впровадження ІТП</label>
+					</div>
+					<label class="calculator__num even" for="item6">грн</label>
+					<input type="number" name="item6" id="item6" placeholder="00">
+				</div>
+
+				<div>
+					<div class="calculator__content odd">
+						<label class="calculator__titles" for="item7">Економія споживання тепла  після  впровадження ІТП</label>
+					</div>
+					<label class="calculator__num odd" for="item7">грн / м <sup>2</sup></label>
+					
+					<input type="number" name="item7" id="item7" placeholder="00">
+				</div>
+				<div>
+					<div class="calculator__content even">
+						<label class="calculator__titles" for="item8">Економія споживання тепла  після  впровадження ІТП квартирою</label>
+					</div>
+					<label class="calculator__num even" for="item8">м <sup>2</sup></label>
+					
+					<input type="number" name="item8" id="item8" placeholder="00">
+				</div>
+
+				
+			</div>
+			<a class="btn-green" data-remodal-target="callback" href="#callback">Заказать звонок</a>
+		</div>
+	</article>	
+	
+
+	<article class="knowMore">
+		<div class="wrapper">
+			<div class="knowMore__box">
+				<div class="knowMore__content">
+					<h4 class="content__title">Бажаєте дізнатися вартість проведення Енергоаудиту, чи залишилися питання?</h4>
+					<p class="content__text">Заповніть форму</p>
+					<p class="content__text content__text-accent">Наш менеджер обов’язково <br> зв’яжеться з Вами</p>
+				</div>
+
+				<div class="knowMore__form">
+					<form action="mail.php" method="post" class="form white-popup form-validate" id="modal-recieve-form" name="main-form">
+						<!-- Hidden Required Fields -->
+						<input type="hidden" name="project_name" value="">
+						<input type="hidden" name="admin_email" value="">
+						<input type="hidden" name="form_subject" value="">
+						<!-- END Hidden Required Fields -->
+						<input class="form__line name" type="text" name="Имя&nbsp;покупателя" placeholder="Ваше имя" required>
+						<input class="form__line phone__mask" type="tel" name="Телефон&nbsp;покупателя" placeholder="Ваш телефон" required>
+
+						<input type="submit" class="btn-green form__btn" value="Отправить"> 
+					</form>
+				</div>
+			</div>
+		</div>
+	</article>	
 
 
 	<section class="contact" id="contact">
 		<div class="map" id="google-map">
-			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3020.4456234360164!2d30.45356280115977!3d50.46192390639657!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cc2d3b90f775%3A0x4a1eef7919afdf1e!2zMjVBLCDRg9C7LiDQlNC10LPRgtGP0YDRkdCy0YHQutCw0Y8sIDI10JAsINCa0LjQtdCyLCAwMjAwMA!5e0!3m2!1sru!2sua!4v1522696033618" allowfullscreen></iframe>
+			<!-- 				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3020.4456234360164!2d30.45356280115977!3d50.46192390639657!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cc2d3b90f775%3A0x4a1eef7919afdf1e!2zMjVBLCDRg9C7LiDQlNC10LPRgtGP0YDRkdCy0YHQutCw0Y8sIDI10JAsINCa0LjQtdCyLCAwMjAwMA!5e0!3m2!1sru!2sua!4v1522696033618" allowfullscreen></iframe> -->
 		</div>
 		<div class="wrapper">
 			<div class="contact__box fadeIn wow" data-wow-delay="0.6s">
@@ -280,11 +541,11 @@
 			<div class="footer__box">
 				<div class="box__left">
 					<a href="index.html"><img src="img/logo_end.png" alt="Внедрение энергосберегающих мероприятий"></a>
-					<p>Внедрение энергосберегающих мероприятий <br> для дома и бизнеса «под ключ»</p>
+					<p>Внедрение энергосберегающих мероприятий <br> для дома и бизнеса</p>
 				</div>
 				<div class="box__right">
 					<p>Разработка сайта</p>
-					<p class="name"><strong>Dmitriy Moskvichov</strong></p>
+					<p class="name"><strong><a href="https://www.facebook.com/profile.php?id=100009929681094" target="_blank" rel="noopener noreferrer">Dmitriy Moskvichov</a></strong></p>
 				</div>
 			</div>
 		</div>
@@ -303,7 +564,7 @@
 			<!-- END Hidden Required Fields -->
 
 			<p class="formBox__title">Заполните форму</p>
-			<p class="formBox__text">И наш менеджер свяжется с Вами в <br> течение 10 минут.</p>
+			<p class="formBox__text">И мы обязательно свяжемся с Вами, <br> в ближайшее время</p>
 
 			<input class="form__line name" type="text" name="Имя&nbsp;покупателя" placeholder="Ваше имя" required>
 			<input class="form__line phone__mask" type="tel" name="Телефон&nbsp;покупателя" placeholder="Ваш телефон" required>
@@ -324,6 +585,8 @@
 	<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
 	<script src="./js/libs/jquery.enllax.min.js"></script>
 	<script src="./js/script.js"></script> 
+
+	<!-- <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js?ver=3.9.2'></script> -->
 
 <!-- 	<script>
 		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

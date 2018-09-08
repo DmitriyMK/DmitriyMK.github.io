@@ -381,6 +381,12 @@ button {
   .top-header .header__item-btn {
     display: inline-block;
     margin-left: 40px; }
+  .top-header .btn-green {
+    font-size: 16px;
+    padding: 8px 25px;
+    -webkit-border-radius: 10px;
+            border-radius: 10px;
+    width: inherit; }
 
 .nav {
   position: relative;
@@ -579,10 +585,8 @@ button {
       display: block;
       width: 290px;
       margin: auto;
-      margin-top: -15px;
-      padding: 15px 5px;
-      -webkit-border-radius: 25px;
-              border-radius: 25px; }
+      font-style: 1.25rem;
+      margin-top: -15px; }
       @media only screen and (max-width: 991.98px) {
         .center-header-box .btn-green {
           margin-bottom: 30px; } }

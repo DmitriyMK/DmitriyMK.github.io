@@ -128,6 +128,12 @@
 		display: inline-block;
 		margin-left: 40px;
 	}
+	.btn-green {
+		font-size: rem(16px);
+		padding: 8px 25px;
+		border-radius: 10px;
+		width: inherit;
+	}
 }
 
 .nav { 
@@ -310,10 +316,8 @@
 			display: block;
 			width: 290px;
 			margin: auto;
-			
+			font-style: rem(20);
 			margin-top: -15px;
-			padding: 15px 5px;
-			border-radius: 25px;
 			@media only screen and (max-width: 991.98px) { 
 				margin-bottom: 30px;
 			}

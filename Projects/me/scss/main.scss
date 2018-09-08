@@ -140,7 +140,7 @@
 		bottom: 5px;
 		left: 0;
 		width: 100%;
-		box-shadow: 8.485px 8.485px 25px 1.19px rgba(0, 0, 0, 1);
+		box-shadow: 8.485px 8.485px 15px 1.19px rgba(0, 0, 0, 1);
 	}
 
 	.flyLeft {
@@ -207,6 +207,16 @@
 
 
 .work {
+	position: relative;
+	&:after {
+		content: '';
+		position: absolute;
+		bottom: 5px;
+		left: 0;
+		width: 100%;
+		box-shadow: 8.485px 8.485px 15px 1.19px rgba(0, 0, 0, 1);
+	}
+
 	&__title:before,  &__title:after{
 		left: 360px;
 		@media only screen and (max-width: 575.98px) { 
@@ -416,19 +426,10 @@
 
 .knowMore {
 	position: relative;
-	margin-top: 110px;
-	padding-top: 60px;
+	min-height: 670px;
 	padding-bottom: 30px;
-	background: url(../img/form__backgrounds.jpg)no-repeat center/cover;
-	&:before {
-		content: '';
-		position: absolute;
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 100%;
-		background: rgba(0,0,0, .85);
-	}
+	background: url(../img/energoAudit/form__bacl.jpg)no-repeat center/cover;
+
 
 	&__box {
 		position: relative;
@@ -442,21 +443,16 @@
 		@media only screen and (max-width: 767.98px) { 
 			flex-wrap: wrap;
 		}
-
-		@media only screen and (max-width: 575.98px) { 
-
-		}
-
 	} 
 
 	.content__title {
-		padding-top: 40px;
+		padding-top: 80px;
 		padding-bottom: 40px;
 		margin: 0;
 		margin-right: 60px;
-		font-size: rem(36);
-		font-weight: 500;
-		color: #fff;
+		font-size: rem(40);
+		font-weight: 700;
+		color: #86ff00;
 		text-transform: uppercase;
 
 		@media only screen and (max-width: 991.98px) { 
@@ -470,8 +466,9 @@
 	} 
 	.content__text {
 		margin-right: 60px;
-		font-size: rem(30);
-		color: #f1f1f1;
+		font-size: rem(40);
+		font-weight: 500;
+		color: #fff;
 
 		@media only screen and (max-width: 991.98px) { 
 			margin-right: 0;
@@ -483,11 +480,11 @@
 
 		&-accent {
 			padding-top: 15px;
-			font-size: rem(24);
+			font-size: rem(30);
 		}
 	}
 	&__form {
-		margin-top: -40px;
+		margin-top: 80px;
 		padding: 45px 30px;
 		background: #fff;
 		box-shadow: 0px 0px 8.55px 0.45px rgba(0, 0, 0, 0.3);
@@ -495,47 +492,27 @@
 		@media only screen and (max-width: 991.98px) { 
 			margin-right: 15px;
 		}
-
 		@media only screen and (max-width: 767.98px) { 
 			width: 95%;
 			margin-right: 0;
 			margin: 30px auto;
-
 		}
-
 		@media only screen and (max-width: 575.98px) { 
 			padding-left: 5px;
 			padding-right: 5px;
-
 		}
-
-		
 	} 
 	.form {
 		display: flex;
 		flex-direction: column;
-		width: 350px;
+		align-items: center;
+		width: 300px;
 
 		@media only screen and (max-width: 991.98px) { 
 			width: 100%;
 			margin: auto;	
 		}
 	} 
-
-	.formBox__title {
-		font-size: rem(26);
-		line-height: 42px;
-		font-family: $fontFamily;
-		text-transform: uppercase;
-		color: #000;
-		text-align: center;
-	}
-	.formBox__text {
-		padding: 30px 15px;
-		font-size: rem(18);
-		color: #5d5e5e;
-		text-align: center;
-	}
 
 	.form__line {
 		position: relative;
@@ -556,7 +533,7 @@
 
 	}
 	.form__btn {
-		margin: 20px 0;
+		margin-top: 20px;
 		color: #fff;
 		&:hover {
 			color: #000;
@@ -569,6 +546,15 @@
 	position: relative;
 	background: #f8f8f8;
 	overflow: visible;
+	&:before {
+		content: '';
+		position: absolute;
+		top: -5px;
+		left: 0;
+		width: 100%;
+		box-shadow: 0px 10px 20px 2px rgba(0, 0, 0, 1);
+	}
+
 	.flyLeft {
 		position: absolute;
 		left: -200px;
@@ -805,70 +791,68 @@
 }
 
 
-.review {
-	background: #f8f8f8;
+// .review {
+// 	background: #f8f8f8;
 
-	&__slide {
-		margin: 80px auto;
-		padding: 60px 0;
+// 	&__slide {
+// 		margin: 80px auto;
+// 		padding: 60px 0;
+// 		@media only screen and (max-width: 575.98px) {
+// 			padding-top: 0; 
+// 		}
+// 	}
+// 	&__img {
+// 		display: block;
+// 		width: 30%;
+// 		margin: 0 auto;
+// 		height: 240px;
+// 		background-repeat: no-repeat;
+// 		background-position: center;
+// 		float: left;
 
-		@media only screen and (max-width: 575.98px) {
-			padding-top: 0; 
-		}
-		
-	}
-	&__img {
-		display: block;
-		width: 30%;
-		margin: 0 auto;
-		height: 240px;
-		background-repeat: no-repeat;
-		background-position: center;
-		float: left;
-
-		@media only screen and (max-width: 575.98px) { 
-			float: none;
-			width: 90%;
+// 		@media only screen and (max-width: 575.98px) { 
+// 			float: none;
+// 			width: 90%;
 			
-		}
-	}
-	&__content {
-		float: left;
+// 		}
+// 	}
+// 	&__content {
+// 		float: left;
 		
-		display: block;
-		width: 70%;
-		height: auto;
-		padding: 0 50px;
+// 		display: block;
+// 		width: 70%;
+// 		height: auto;
+// 		padding: 0 50px;
 
-		@media only screen and (max-width: 991.98px) { 
+// 		@media only screen and (max-width: 991.98px) { 
 
-		}
+// 		}
 
-		@media only screen and (max-width: 767.98px) { 
-			padding: 0;
-			padding-left: 30px;
-		}
+// 		@media only screen and (max-width: 767.98px) { 
+// 			padding: 0;
+// 			padding-left: 30px;
+// 		}
 
-		@media only screen and (max-width: 575.98px) { 
-			float: none;
-			width: 290px;
-			margin: auto;
-			text-align: center;
-			padding: 0;
-		}
-	}
-	&__name {
-		font-size: rem(24);
-		font-weight: 700;
-		@media only screen and (max-width: 575.98px) { 
-			margin-top: 15px;
-		}
-	}
-	&__text {
-		padding-top: 30px;
-		font-size: rem(18);
-	}
-}
+// 		@media only screen and (max-width: 575.98px) { 
+// 			float: none;
+// 			width: 290px;
+// 			margin: auto;
+// 			text-align: center;
+// 			padding: 0;
+// 		}
+// 	}
+// 	&__name {
+// 		font-size: rem(24);
+// 		font-weight: 700;
+// 		@media only screen and (max-width: 575.98px) { 
+// 			margin-top: 15px;
+// 		}
+// 	}
+// 	&__text {
+// 		padding-top: 30px;
+// 		font-size: rem(18);
+// 	}
+// }
 
 
 .contact {
@@ -876,21 +860,17 @@
 	padding: 0;
 	box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.51);
 	.map {
-		min-height: 700px;
+		min-height: 650px;
 		width: 100%;
 		@media only screen and (max-width: 767.98px) {
 			min-height: 500px;
 		}
 	}
-	iframe {
-		frameborder: 0;
-		border: 0;
-	}
 
 	&__box {
 		position: absolute;	
 		width: 400px;
-		top: -700px;
+		top: -650px;
 		right: 0;
 		padding: 50px;
 		background: #fff;
@@ -1052,9 +1032,3 @@
 		font-size: rem(14);
 	}
 }
-
-
-
-
-
-/* @import "media.scss"; */
