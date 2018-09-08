@@ -139,10 +139,10 @@ function initMap() {
         mapTypeId: google.maps.MapTypeId.ROADMAP,
         styles:
 
-            [
+        [
 
 
-            ]
+        ]
 
 
 

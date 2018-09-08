@@ -1033,3 +1033,29 @@
 		text-align: center;
 	}
 }
+
+
+.pricePage {
+	overflow: hidden;
+	min-height: 100vh;
+	padding-top: 70px;
+
+	&__title {
+		&:before, &:after {
+			@media only screen and (max-width: 767.98px) {
+				display: none;
+			} 
+		}
+		padding-bottom: 30px;
+	}
+
+	@media only screen and (max-width: 767.98px) { 
+		overflow: visible;
+	}
+
+	.wpapper {
+		@media only screen and (max-width: 767.98px) { 
+			width: 100%;
+		}
+	}
+}
