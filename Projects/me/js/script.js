@@ -77,20 +77,24 @@ $(document).ready(function() {
     });
 
 
-    $('.slider').slick({
+    // $('.review__slider').slick({
+    //     arrows: true,
+    //     infinite: true,
+    //     slidesToShow: 1,
+    //     speed: 500,
+    // });
+
+    $('.centerHeader__slider').slick({
         arrows: true,
+        fade: true,
+        dots: true,
+        autoplay: true,
+        pauseOnHover: true,
         infinite: true,
         slidesToShow: 1,
-        speed: 500,
+        speed: 1000,
     });
 });
-
-
-
-$(window).on('resize orientationchange', function() {
-    $('.slider').slick('resize');
-});
-
 
 
 $(".form").submit(function() {
