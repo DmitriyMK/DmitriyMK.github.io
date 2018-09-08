@@ -855,6 +855,7 @@ html.remodal-is-locked {
     bottom: -100px; } }
 
 body {
+  position: relative;
   min-width: 320px;
   padding-right: 0 !important;
   font-family: "Roboto", sans-serif;
@@ -876,18 +877,6 @@ a {
   max-width: 1130px;
   margin: 0 auto;
   padding: 0 15px; }
-  @media only screen and (max-width: 1199.98px) {
-    .wrapper {
-      width: 1130px; } }
-  @media only screen and (max-width: 991.98px) {
-    .wrapper {
-      width: 945px; } }
-  @media only screen and (max-width: 767.98px) {
-    .wrapper {
-      width: 725px; } }
-  @media only screen and (max-width: 575.98px) {
-    .wrapper {
-      width: 100%; } }
 
 .hide {
   display: none; }
