@@ -1,5 +1,3 @@
-$(window).enllax();
-
 $(document).ready(function() {
 
     $("body").niceScroll({
@@ -25,8 +23,8 @@ $(document).ready(function() {
 $(document).ready(function() {
 
     if (document.documentElement.clientWidth > 1200) {
+        $(window).enllax();
         new WOW().init();
-
     };
 
     /*RESPONSIVER BURGER MENU*/
@@ -127,7 +125,7 @@ function initMap() {
             lat: 50.461100,
             lng: 30.4527605
         },
-        mapTypeControl: true,
+        mapTypeControl: false,
         mapTypeControlOptions: {
             style: google.maps.MapTypeControlStyle.DROPDOWN_MENU
         },
