@@ -1755,7 +1755,7 @@ section {
 }
 @media only screen and (min-width: 1600px) {
     .consult__img-right {
-        right: -380px;
+        right: -376px;
     }
 }
 .consult__box {
@@ -1863,7 +1863,7 @@ section {
 }
 .consult__form .form {
     padding: 40px 30px 60px 30px;
-    max-width: 315px;
+    max-width: 310px;
     background: #cd0009;
     -webkit-box-shadow: -20px 20px 145px 0 rgba(0, 0, 0, 0.4);
             box-shadow: -20px 20px 145px 0 rgba(0, 0, 0, 0.4);
@@ -1926,7 +1926,7 @@ section {
     font-size: 16px;
 }
 .consult__form .form .btn {
-    width: 247px;
+    width: 233px;
     margin: auto;
 }
 .doctor {
