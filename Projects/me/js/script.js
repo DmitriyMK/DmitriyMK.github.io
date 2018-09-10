@@ -4,7 +4,7 @@ $(document).ready(function() {
         scrollspeed: 60,
         mousescrollstep: 60,
         smoothscroll: true,
-        cursorwidth: 10,
+        cursorwidth: 7,
         cursorborder: 0,
         cursorcolor: '#55c202',
         cursorborderradius: 2,
@@ -27,7 +27,7 @@ $(document).ready(function() {
         new WOW().init();
     };
 
-    /*RESPONSIVER BURGER MENU*/
+    /*RESPONSIVE BURGER MENU*/
 
     var $menu = $('.nav');
 
@@ -167,5 +167,4 @@ function initMap() {
 /*PRELOADER*/
 $(window).load(function() {
     $('#preloader').delay(100).fadeOut('slow');
-
 });

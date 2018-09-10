@@ -169,6 +169,9 @@
 				width: 80px;
 				height: 80px;
 			}
+			@media only screen and (max-width: 767.98px) {
+				z-index: inherit;
+			}
 		}
 	}
 
@@ -327,6 +330,7 @@
 
 		@media only screen and (max-width: 991.98px) { 
 			margin-bottom: 40px;
+			z-index: inherit;
 		}
 
 		&:before {
@@ -356,6 +360,7 @@
 		}
 		@media only screen and (max-width: 991.98px) { 
 			padding-bottom: 50px;
+			z-index: inherit;
 		}
 
 		@media only screen and (max-width: 575.98px) { 
@@ -377,7 +382,7 @@
 			top: inherit;
 			right: inherit;
 			margin-top: -20px;
-			z-index: 10;
+			// z-index: inherit;
 		}
 		img {
 			display: block;
