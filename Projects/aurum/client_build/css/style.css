@@ -702,7 +702,7 @@ button {
     -webkit-transform: translate(-50%, -50%);
         -ms-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
-    width: 120%;
+    width: 110%;
     height: 100%;
     border: 1px solid #fff;
     z-index: -1;
@@ -761,7 +761,7 @@ button {
     -webkit-transform: translate(-50%, -50%);
         -ms-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
-    width: 120%;
+    width: 110%;
     height: 100%;
     border: 1px solid #cd0009;
     z-index: -1;
