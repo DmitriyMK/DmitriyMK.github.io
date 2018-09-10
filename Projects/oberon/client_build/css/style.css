@@ -935,6 +935,8 @@ section {
     text-align: center;
     font-weight: 700;
     color: #fff;
+    -webkit-box-shadow: 8.485px 8.485px 15.81px 1.19px #000;
+            box-shadow: 8.485px 8.485px 15.81px 1.19px #000;
 }
 @media only screen and (min-width: 768px) {
     .headerMain {
@@ -1527,24 +1529,6 @@ section {
 .tabs__link-active .tabs__title:before {
     opacity: 0;
 }
-.tabs__link-big {
-    width: 50%;
-}
-@media only screen and (min-width: 992px) {
-    .tabs__link-big {
-        width: 660px;
-        padding-left: 30px;
-        text-align: left;
-    }
-}
-.tabs__link-small {
-    width: 50%;
-}
-@media only screen and (min-width: 992px) {
-    .tabs__link-small {
-        width: 330px;
-    }
-}
 .tabs__title {
     position: relative;
     padding-left: 0;
@@ -1619,6 +1603,7 @@ section {
     padding-bottom: 15px;
     font-size: 21px;
     font-weight: 500;
+    height: 60px;
 }
 .product__link {
     display: block;

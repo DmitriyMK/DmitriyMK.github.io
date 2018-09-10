@@ -42,6 +42,10 @@ $(document).ready(function() {
     }, t);
   });*/
 
+  // var bLazy = new Blazy();
+
+  // $('.phone-mask').mask('+38(999)999-99-99');
+
 
 /*  $(".js-video-button").modalVideo({
     youtube: {
