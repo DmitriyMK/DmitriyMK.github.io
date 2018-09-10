@@ -137,12 +137,10 @@ function initMap() {
         mapTypeId: google.maps.MapTypeId.ROADMAP,
         styles:
 
-        [
+            [
 
 
-        ]
-
-
+            ]
 
     };
 
@@ -163,8 +161,31 @@ function initMap() {
 };
 
 
+    document.getElementById('calculateForm').onsubmit = function() {
+
+        event.preventDefault();
+
+        var num1 = document.getElementById("item1").value;
+        var num2 = document.getElementById("item2").value;
+        var num3 = document.getElementById("item3").value;
+        var num4 = document.getElementById("item4").value;
+
+        var num5 = num4 * 0.85;
+        document.getElementById("item5").value = num5.toFixed(3);
+
+        var num6 = num5 * 2;
+        document.getElementById("item6").value = num6.toFixed(3);
+
+        var num7 = num6 / 3;
+        document.getElementById("item7").value = num7.toFixed(3);
+
+        var num8 = num7 * 4;
+        document.getElementById("item8").value = num8.toFixed(3);
+    };
+
+
 
 /*PRELOADER*/
-$(window).load(function() {
-    $('#preloader').delay(100).fadeOut('slow');
-});
+// $(window).load(function() {
+//     $('#preloader').delay(100).fadeOut('slow');
+// });

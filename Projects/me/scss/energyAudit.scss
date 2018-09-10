@@ -978,6 +978,12 @@
 	.btn-green {
 		display: table;
 		margin: 50px auto 0 auto;
+		width: 230px;
+		color: #fff;
+		border: 2px solid $green;
+		&:hover {
+			color: #000;
+		}
 	}
 
 
