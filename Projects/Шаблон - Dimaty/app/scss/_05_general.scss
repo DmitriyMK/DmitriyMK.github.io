@@ -2,7 +2,6 @@
 @import "_03_mixin and function.scss";
 
 body {
-    min-height: 100vh;
     padding-right: 0 !important;
     font-family: $f1;
     font-size: $fs;
@@ -28,9 +27,14 @@ button {
 }
 
 .wrapper {
+    // width: 1170px;
+    // margin: 0 auto;
+    // padding: 0 15px;
     width: 1170px;
-    margin: 0 auto;
-    padding: 0 15px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 2px;
+    padding-right: 3px;
 
     @media only screen and (max-width: 991.98px) {
         width: 945px;
