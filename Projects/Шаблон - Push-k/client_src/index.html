@@ -61,7 +61,7 @@
 	</header>
 
 
-<!-- <img class="b-lazy" data-src="./" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt=""> -->
+	<!-- <img class="b-lazy" data-src="./" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt=""> -->
 
 
 <!-- 	<section class="">
@@ -115,23 +115,49 @@
 
 
 
-<!-- THANKS -->
-<div class="remodal remodal-common"  data-remodal-id="modal-thanks" >
-	<button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
-	<p class="thanks__title">Благодарим Вас!</p>
-	<p class="thanks__text">Мы свяжемся с Вами <br>в ближайшее время.</p>
-</div>
+	<!-- THANKS -->
+	<div class="remodal remodal-common"  data-remodal-id="modal-thanks" >
+		<button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
+		<p class="thanks__title">Благодарим Вас!</p>
+		<p class="thanks__text">Мы свяжемся с Вами <br>в ближайшее время.</p>
+	</div>
+
+	<!-- MODALS -->
+	<div class="remodal formBox" data-remodal-id="appointment"> 
+		<button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
+		<form class="form form-validate" name="services">
+			<!-- Hidden Required Fields -->
+			<input type="hidden" name="project_name" value="Aurum">
+			<input type="hidden" name="admin_email" value="dm@push-k.ua">
+			<input type="hidden" name="form_subject" value="Заказ">
+			<input type="hidden" name="whatform" value="Aurum > Заказ">
+			<input type="hidden" name="whatform2" value="">
+			<!-- END Hidden Required Fields -->
+			<p class="form__title">Заполните форму</p>
+			<p class="form__text">и мы свяжемся с Вами для уточнения даты и времени приема.</p>
+
+			<div class="inputWrap inputWrap-name">
+				<input class="form__line name" type="text" name="Имя&nbsp;покупателя" placeholder="Ваше имя" required>
+			</div>
+			<div class="inputWrap inputWrap-phone">
+				<input class="form__line phone-mask" type="tel" name="Телефон&nbsp;покупателя" placeholder="Ваш телефон" required>
+			</div>	
+
+			<input type="submit" class="btn" value="Записаться на прием"> 
+		</form>
+	</div>  
 
 
 
-<!-- Load Scripts -->
-<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
-<script src="./libs/jquery.nicescroll.min.js"></script>
-<script src="./libs/blazy.js"></script>  
-<script src="./libs/all.js"></script>
+	<!-- Load Scripts -->
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+	<script src="./libs/jquery.nicescroll.min.js"></script>
+	<script src="./libs/blazy.js"></script>  
+	<script src="./libs/all.js"></script>
 
-<script src="./libs/map.js"></script>  
-<script async defer src="https://maps.googleapis.com/maps/api/js?callback=initMap&key=AIzaSyANY39pap8l5_ndmHjwHGhuWmw07CdBVRE"></script> 
+
+<!-- 	<script src="./libs/map.js"></script>  
+	<script async defer src="https://maps.googleapis.com/maps/api/js?callback=initMap&key=AIzaSyANY39pap8l5_ndmHjwHGhuWmw07CdBVRE"></script>  -->
 
 
 </body>

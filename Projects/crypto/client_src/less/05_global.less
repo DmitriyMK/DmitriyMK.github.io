@@ -1,0 +1,102 @@
+// .slider {
+// 	user-select: text;
+// }
+
+.b-lazy {
+	transition: opacity .5s linear;
+	max-width: 100%;
+	opacity: 0;
+}
+
+.b-lazy.b-loaded {
+	opacity: 1;
+}
+
+// titles for semantics and structure HTML
+.offscreen {
+	position: absolute;
+	clip: rect(1px 1px 1px 1px); /* for Internet Explorer */
+	clip: rect(1px, 1px, 1px, 1px);
+	padding: 0;
+	border: 0;
+	height: 1px;
+	width: 1px;
+	overflow: hidden; 
+}
+
+//  .scrollup {
+// 	width: 37px;
+// 	height: 84px;
+// 	position: fixed;
+// 	bottom: 50px;
+// 	right: 15px;
+// 	display: none;
+// 	text-indent: -9999px;
+// 	background: url('../images/arrow-top.png') no-repeat;
+// 	z-index: 100;
+// 	@media @tablet {
+// 		right: 100px;
+// 	}
+// } 
+
+
+
+/* ONLY FOR IE11 */
+@media all and (-ms-high-contrast:none) {
+	
+}
+
+/* ONLY FOR EDGE */
+@supports (-ms-ime-align:auto) {
+
+}
+
+
+.spritebox(@left, @top, @height, @width) {
+  background-image: url(../images/icons/spritebox-sprite.png);
+  background-repeat: no-repeat;
+  background-position: @left @top;
+  height: @height;
+  width: @width
+}
+
+.ico_arr-right {
+  .spritebox(-0px, -0px, 62px, 74px)
+}
+
+.ico_arr-left {
+  .spritebox(-74px, -0px, 62px, 74px)
+}
+
+.ico_agency {
+  .spritebox(-148px, -0px, 39px, 156px)
+}
+
+.ico_tg {
+  .spritebox(-0px, -62px, 29px, 29px)
+}
+
+.ico_fb {
+  .spritebox(-148px, -39px, 16px, 16px)
+}
+
+.ico_vk {
+  .spritebox(-164px, -39px, 16px, 16px)
+}
+
+.ico_list-dots {
+  .spritebox(-180px, -39px, 13px, 19px)
+}
+
+.ico_title__line {
+  .spritebox(-199px, -39px, 7px, 81px)
+}
+
+.ico_lines-right {
+  .spritebox(-304px, -0px, 5px, 468px)
+}
+
+.ico_lines-left {
+  .spritebox(-304px, -5px, 5px, 200px)
+}
+

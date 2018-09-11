@@ -1,0 +1,92 @@
+@media @mobile {
+
+}
+@media @tablet {
+
+}
+@media @desktop {
+
+}
+@media @desktop-xl {
+	
+}
+@media @desktop-xl-2 {
+
+}
+@media @desktop-xll {
+	
+}
+
+
+.header {
+	&__top {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding: 30px 10px 15px 0;
+	}
+	&__logo {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		&-img {
+			margin-right: 15px;
+		}
+	}
+	&__link {
+		margin-right: 50px;
+			// display: inline-block;
+			position: relative;
+			&:after {
+				content: '';
+				position: absolute;
+				margin-bottom: -10px;
+				bottom: 0;
+				left: 0;
+				width: 0%;
+				border-bottom: 1px solid #fff;
+				transition: 0.4s;
+			}
+			&:hover:after {
+				width: 100%;
+			}
+		}
+		&__center {
+			padding: 70px 0;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+		}
+		&__img {
+			margin-left: -20px;
+		}
+		&__title {
+			font-size: 55px;
+			font-weight: 300;
+		}
+		&__text {
+			padding-top: 20px;
+			font-size: 30px;
+			color: @orange;
+		}
+	}
+
+
+
+
+/* #fixedTopMenu.fixed{
+	position: fixed;
+	padding: 0 15px;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background: #131313;
+	z-index: 3000;
+	animation: smoothScroll 1s forwards;
+	&:after {
+		display: none;
+	}
+}
+*/
+
+
