@@ -170,7 +170,7 @@ function initMap() {
         var num3 = document.getElementById("item3").value;
         var num4 = document.getElementById("item4").value;
 
-        var num5 = num4 * 0.85;
+        var num5 = num1 * 0.85;
         document.getElementById("item5").value = num5.toFixed(3);
 
         var num6 = num5 * num2;
