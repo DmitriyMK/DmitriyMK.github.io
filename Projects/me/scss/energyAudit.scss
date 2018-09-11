@@ -60,7 +60,6 @@
 	}
 }
 
-
 .energyAuditAbout {
 	position: relative;
 	overflow: hidden;
@@ -861,7 +860,7 @@
 	}
 }
 
-// END PAGE ENERGOAUDIT
+
 
 .calculator {
 	position: relative;
@@ -903,153 +902,147 @@
 		margin-top: 60px;
 		margin-bottom: 40px;
 		display: flex;
-		justify-content: space-between;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
 		text-align: center;
-		box-shadow: 0px 0px 8.73px 0.27px rgba(0, 0, 0, 0.3);
-
-		@media only screen and (max-width: 991.98px) { 
-			justify-content: center;
-			flex-wrap: wrap;
-		}
-
-		> div {
-			width: 12.5%;
-			border: 1px solid transparent;
-
-			@media only screen and (max-width: 991.98px) { 
-				width: 25%;
-			}
-
-			@media only screen and (max-width: 767.98px) { 
-			}
+	}
+	&__row {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		&-line {
+			> div {
+			width: 25%;
+			border: 1px solid $green;
 
 			@media only screen and (max-width: 575.98px) { 
 				width: 50%;
 			}
 		}
 	}
+}
+label {
+	cursor: pointer;
+	color: #fff;
+
+}
+.odd {
+	display: block;
+	background: #5f9209;
+	background: -moz-linear-gradient(top, #5f9209 0%, #8cb30e 100%);
+	background: -webkit-linear-gradient(top, #5f9209 0%,#8cb30e 100%);
+	background: linear-gradient(to bottom, #5f9209 0%,#8cb30e 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5f9209', endColorstr='#8cb30e',GradientType=0 );
+}
+.even {
+	display: block;
+	background: #8fb252;
+	background: -moz-linear-gradient(top, #8fb252 0%, #aeca55 100%);
+	background: -webkit-linear-gradient(top, #8fb252 0%,#aeca55 100%);
+	background: linear-gradient(to bottom, #8fb252 0%,#aeca55 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8fb252', endColorstr='#aeca55',GradientType=0 );
+}
+&__content {
+	position: relative;
+	min-height: 130px;
+	border: 1px solid #fff;
 	label {
-		cursor: pointer;
-		color: #fff;
-		
-	}
-	.odd {
-		display: block;
-		background: #5f9209;
-		background: -moz-linear-gradient(top, #5f9209 0%, #8cb30e 100%);
-		background: -webkit-linear-gradient(top, #5f9209 0%,#8cb30e 100%);
-		background: linear-gradient(to bottom, #5f9209 0%,#8cb30e 100%);
-		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5f9209', endColorstr='#8cb30e',GradientType=0 );
-	}
-	.even {
-		display: block;
-		background: #8fb252;
-		background: -moz-linear-gradient(top, #8fb252 0%, #aeca55 100%);
-		background: -webkit-linear-gradient(top, #8fb252 0%,#aeca55 100%);
-		background: linear-gradient(to bottom, #8fb252 0%,#aeca55 100%);
-		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8fb252', endColorstr='#aeca55',GradientType=0 );
-	}
-	&__content {
-		position: relative;
-		min-height: 130px;
-		border: 1px solid #fff;
-		label {
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			height: 100%;
-			width: 100%;
-			margin: auto;
-		}
-	}
-	&__titles {
-		display: block;
-		position: absolute;
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-	}
-	&__num {
-		padding-top: 7px;
-		padding-bottom: 7px;
-		border: 1px solid #fff;
-	}
-
-	.btn-green {
-		display: table;
-		margin: 50px auto 0 auto;
-		width: 230px;
-		color: #fff;
-		border: 2px solid $green;
-		&:hover {
-			color: #000;
-		}
-	}
-
-
-	sup {
-		font-size: 0.5em;
-	}
-
-	input {
-		display: block;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		height: 100%;
 		width: 100%;
-		padding: 10px 0;
-		border: none;
-		font-family: $fontFamily;
-		font-size: rem(18);
-		font-weight: 400;
-		color: #000;
+		margin: auto;
 	}
-	input[type=number] { 
-		text-align:center;
-		-moz-appearance:textfield;
-	}
+}
+&__titles {
+	display: block;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+&__num {
+	padding-top: 7px;
+	padding-bottom: 7px;
+	border: 1px solid #fff;
+}
 
-	input[type="number"]:hover,
-	input[type="number"]:focus {
-		-moz-appearance: number-input;
-	}
-	
-	input::-webkit-outer-spin-button,
-	input::-webkit-inner-spin-button {
-		-webkit-appearance: none;
-		margin: 0; 
-	}
-
-	::-webkit-input-placeholder { 
-		font-family: $fontFamily;
-		font-size: rem(18);
-		font-weight: 400;
+.btn-green {
+	display: table;
+	margin: 50px auto;
+	width: 230px;
+	color: #fff;
+	border: 2px solid $green;
+	&:hover {
 		color: #000;
-		text-align: center;
-	}
-	::-moz-placeholder { 
-		font-family: $fontFamily;
-		font-size: rem(18);
-		font-weight: 400;
-		color: #000;
-		text-align: center;
-	}
-	:-ms-input-placeholder { 
-		font-family: $fontFamily;
-		font-size: rem(18);
-		font-weight: 400;
-		color: #000;
-		text-align: center;
-	}
-	:-moz-placeholder {
-		font-family: $fontFamily;
-		font-size: rem(18);
-		font-weight: 400;
-		color: #000;
-		text-align: center;
 	}
 }
 
+
+sup {
+	font-size: 0.5em;
+}
+
+input {
+	display: block;
+	width: 100%;
+	padding: 10px 0;
+	border: none;
+	font-family: $fontFamily;
+	font-size: rem(18);
+	font-weight: 400;
+	color: #000;
+}
+input[type=number] { 
+	text-align:center;
+	-moz-appearance:textfield;
+}
+
+input[type="number"]:hover,
+input[type="number"]:focus {
+	-moz-appearance: number-input;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0; 
+}
+
+::-webkit-input-placeholder { 
+	font-family: $fontFamily;
+	font-size: rem(18);
+	font-weight: 400;
+	color: #000;
+	text-align: center;
+}
+::-moz-placeholder { 
+	font-family: $fontFamily;
+	font-size: rem(18);
+	font-weight: 400;
+	color: #000;
+	text-align: center;
+}
+:-ms-input-placeholder { 
+	font-family: $fontFamily;
+	font-size: rem(18);
+	font-weight: 400;
+	color: #000;
+	text-align: center;
+}
+:-moz-placeholder {
+	font-family: $fontFamily;
+	font-size: rem(18);
+	font-weight: 400;
+	color: #000;
+	text-align: center;
+}
+}
+
+
 // END PAGE ENERGOAUDIT
-
-
 // PAGE PRICE
 .pricePage {
 	overflow: hidden;

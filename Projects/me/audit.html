@@ -406,79 +406,87 @@
 			
 			<form id="calculateForm">
 				<div class="calculator__box">
-					<div>
-						<div class="calculator__content odd">
-							<label class="calculator__titles" for="item1">Споживання тепла за останній рік</label>
-						</div>
-						<label class="calculator__num odd" for="item1">Гкал</label>
+					<div class="calculator__row calculator__row-line">
+						<div>
+							<div class="calculator__content odd">
+								<label class="calculator__titles" for="item1">Споживання тепла за останній рік</label>
+							</div>
+							<label class="calculator__num odd" for="item1">Гкал</label>
 
-						<input type="number" name="item1" id="item1" placeholder="00" required>
+							<input type="number" name="item1" id="item1" placeholder="00" required>
+						</div>
+
+						<div>
+							<div class="calculator__content even">
+								<label class="calculator__titles" for="item2">Тариф</label>
+							</div>
+
+							<label class="calculator__num even" for="item2">грн/Гкал</label>
+
+							<input type="number" name="item2" id="item2" placeholder="00" required>
+						</div>
+
+						<div>
+							<div class="calculator__content odd">
+								<label class="calculator__titles" for="item3">Опалювальна  площа будинку</label>
+							</div>
+							<label class="calculator__num odd" for="item3">м <sup>2</sup></label>
+
+							<input type="number" name="item3" id="item3" placeholder="00" required>
+						</div>
+
+						<div>
+							<div class="calculator__content even">
+								<label class="calculator__titles" for="item4">Площа квартири</label>
+							</div>
+							<label class="calculator__num even" for="item4">м <sup>2</sup></label>
+
+							<input type="number" name="item4" id="item4" placeholder="00" required>
+						</div>
 					</div>
-
-					<div>
-						<div class="calculator__content even">
-							<label class="calculator__titles" for="item2">Тариф</label>
-						</div>
-
-						<label class="calculator__num even" for="item2">грн/Гкал</label>
-
-						<input type="number" name="item2" id="item2" placeholder="00" required>
+					
+					<div class="calculator__row">
+						<input type="submit" class="btn-green btn-disabled form__btn" id="calculateIt" value="Розрахувати"> 
 					</div>
+					
+					<div class="calculator__row calculator__row-line">
+						<div>
+							<div class="calculator__content odd">
+								<label class="calculator__titles" for="item5">Економія споживання тепла після впровадження ІТП</label>
+							</div>
+							<label class="calculator__num odd" for="item5">Гкал</label>
 
-					<div>
-						<div class="calculator__content odd">
-							<label class="calculator__titles" for="item3">Опалювальна  площа будинку</label>
+							<input type="number" name="item5" id="item5" placeholder="00" disabled>
 						</div>
-						<label class="calculator__num odd" for="item3">м <sup>2</sup></label>
 
-						<input type="number" name="item3" id="item3" placeholder="00" required>
-					</div>
-
-					<div>
-						<div class="calculator__content even">
-							<label class="calculator__titles" for="item4">Площа квартири</label>
+						<div>
+							<div class="calculator__content even">
+								<label class="calculator__titles" for="item6">Економія споживання тепла  після  впровадження ІТП</label>
+							</div>
+							<label class="calculator__num even" for="item6">грн</label>
+							<input type="number" name="item6" id="item6" placeholder="00" disabled>
 						</div>
-						<label class="calculator__num even" for="item4">м <sup>2</sup></label>
 
-						<input type="number" name="item4" id="item4" placeholder="00" required>
-					</div>
+						<div>
+							<div class="calculator__content odd">
+								<label class="calculator__titles" for="item7">Економія споживання тепла  після  впровадження ІТП</label>
+							</div>
+							<label class="calculator__num odd" for="item7">грн / м <sup>2</sup></label>
 
-					<div>
-						<div class="calculator__content odd">
-							<label class="calculator__titles" for="item5">Економія споживання тепла після впровадження ІТП</label>
+							<input type="number" name="item7" id="item7" placeholder="00" disabled>
 						</div>
-						<label class="calculator__num odd" for="item5">Гкал</label>
+						<div>
+							<div class="calculator__content even">
+								<label class="calculator__titles" for="item8">Економія споживання тепла  після  впровадження ІТП квартирою</label>
+							</div>
+							<label class="calculator__num even" for="item8">м <sup>2</sup></label>
 
-						<input type="number" name="item5" id="item5" placeholder="00" disabled>
-					</div>
-
-					<div>
-						<div class="calculator__content even">
-							<label class="calculator__titles" for="item6">Економія споживання тепла  після  впровадження ІТП</label>
+							<input type="number" name="item8" id="item8" placeholder="00" disabled>
 						</div>
-						<label class="calculator__num even" for="item6">грн</label>
-						<input type="number" name="item6" id="item6" placeholder="00" disabled>
-					</div>
-
-					<div>
-						<div class="calculator__content odd">
-							<label class="calculator__titles" for="item7">Економія споживання тепла  після  впровадження ІТП</label>
-						</div>
-						<label class="calculator__num odd" for="item7">грн / м <sup>2</sup></label>
-
-						<input type="number" name="item7" id="item7" placeholder="00" disabled>
-					</div>
-					<div>
-						<div class="calculator__content even">
-							<label class="calculator__titles" for="item8">Економія споживання тепла  після  впровадження ІТП квартирою</label>
-						</div>
-						<label class="calculator__num even" for="item8">м <sup>2</sup></label>
-
-						<input type="number" name="item8" id="item8" placeholder="00" disabled>
 					</div>
 				</div>
 
-				<input type="submit" class="btn-green btn-disabled form__btn" id="calculateIt" value="Розрахувати"> 
+				
 			</form>
 		</div>
 	</article>	
