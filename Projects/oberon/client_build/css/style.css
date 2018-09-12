@@ -3101,125 +3101,82 @@ label {
     background: url('../images/icons/css_sprites.png') -295px -49px;
 }
 /* sprite for brand */
-.bg-gumi {
-    width: 160px;
+.ico_meister {
+    background-image: url(../images/brandFlag/spritebox-sprite.png);
+    background-repeat: no-repeat;
+    background-position: 0 0;
     height: 90px;
-    background: url('../images/brandFlag/css_sprites.png') -160px 0;
+    width: 160px;
 }
-.bg-home4u {
-    width: 160px;
+.ico_bolex {
+    background-image: url(../images/brandFlag/spritebox-sprite.png);
+    background-repeat: no-repeat;
+    background-position: -160px 0;
     height: 90px;
-    background: url('../images/brandFlag/css_sprites.png') 0 -360px;
+    width: 160px;
 }
-.bg-kronoswiss {
-    width: 160px;
+.ico_kronotex {
+    background-image: url(../images/brandFlag/spritebox-sprite.png);
+    background-repeat: no-repeat;
+    background-position: 0 -90px;
     height: 90px;
-    background: url('../images/brandFlag/css_sprites.png') 0 -90px;
+    width: 160px;
 }
-.bg-kronotex {
-    width: 160px;
+.ico_lesnayakrona {
+    background-image: url(../images/brandFlag/spritebox-sprite.png);
+    background-repeat: no-repeat;
+    background-position: -160px -90px;
     height: 90px;
-    background: url('../images/brandFlag/css_sprites.png') -160px -90px;
+    width: 160px;
 }
-.bg-lesnayakrona {
-    width: 160px;
+.ico_gumi {
+    background-image: url(../images/brandFlag/spritebox-sprite.png);
+    background-repeat: no-repeat;
+    background-position: 0 -180px;
     height: 90px;
-    background: url('../images/brandFlag/css_sprites.png') 0 -180px;
+    width: 160px;
 }
-.bg-mazonetto {
-    width: 160px;
+.ico_granorte {
+    background-image: url(../images/brandFlag/spritebox-sprite.png);
+    background-repeat: no-repeat;
+    background-position: -160px -180px;
     height: 90px;
-    background: url('../images/brandFlag/css_sprites.png') -160px -180px;
+    width: 160px;
 }
-.bg-meister {
-    width: 160px;
+.ico_myfloor {
+    background-image: url(../images/brandFlag/spritebox-sprite.png);
+    background-repeat: no-repeat;
+    background-position: -320px 0;
     height: 90px;
-    background: url('../images/brandFlag/css_sprites.png') -320px 0;
+    width: 160px;
 }
-.bg-miradex {
-    width: 160px;
+.ico_panaget {
+    background-image: url(../images/brandFlag/spritebox-sprite.png);
+    background-repeat: no-repeat;
+    background-position: -320px -90px;
     height: 90px;
-    background: url('../images/brandFlag/css_sprites.png') -320px -90px;
+    width: 160px;
 }
-.bg-myfloor {
-    width: 160px;
+.ico_stepFloor {
+    background-image: url(../images/brandFlag/spritebox-sprite.png);
+    background-repeat: no-repeat;
+    background-position: -320px -180px;
     height: 90px;
-    background: url('../images/brandFlag/css_sprites.png') -320px -180px;
+    width: 160px;
 }
-.bg-panaget {
-    width: 160px;
+.ico_tavolini {
+    background-image: url(../images/brandFlag/spritebox-sprite.png);
+    background-repeat: no-repeat;
+    background-position: 0 -270px;
     height: 90px;
-    background: url('../images/brandFlag/css_sprites.png') 0 -270px;
+    width: 160px;
 }
-.bg-rehau {
-    width: 160px;
+.ico_waldkrone {
+    background-image: url(../images/brandFlag/spritebox-sprite.png);
+    background-repeat: no-repeat;
+    background-position: -160px -270px;
     height: 90px;
-    background: url('../images/brandFlag/css_sprites.png') -160px -270px;
-}
-.bg-stepFloor {
     width: 160px;
-    height: 90px;
-    background: url('../images/brandFlag/css_sprites.png') -320px -270px;
-}
-.bg-swisskrono {
-    width: 160px;
-    height: 90px;
-    background: url('../images/brandFlag/css_sprites.png') 0 0;
-}
-.bg-tavolini {
-    width: 160px;
-    height: 90px;
-    background: url('../images/brandFlag/css_sprites.png') -160px -360px;
-}
-.bg-waldkrone {
-    width: 160px;
-    height: 90px;
-    background: url('../images/brandFlag/css_sprites.png') -320px -360px;
-}
-.bg-berthold {
-    width: 160px;
-    height: 90px;
-    background: url('../images/brandFlag/css_sprites.png') -480px 0;
-}
-.bg-aquastep {
-    width: 160px;
-    height: 90px;
-    background: url('../images/brandFlag/css_sprites.png') -480px -90px;
-}
-.bg-bolex {
-    width: 160px;
-    height: 90px;
-    background: url('../images/brandFlag/css_sprites.png') -480px -180px;
-}
-.bg-bruggan {
-    width: 160px;
-    height: 90px;
-    background: url('../images/brandFlag/css_sprites.png') -480px -270px;
-}
-.bg-callisto {
-    width: 160px;
-    height: 90px;
-    background: url('../images/brandFlag/css_sprites.png') -480px -360px;
-}
-.bg-chenedel {
-    width: 160px;
-    height: 90px;
-    background: url('../images/brandFlag/css_sprites.png') 0 -450px;
-}
-.bg-eglo {
-    width: 160px;
-    height: 90px;
-    background: url('../images/brandFlag/css_sprites.png') -160px -450px;
-}
-.bg-gazzotti {
-    width: 160px;
-    height: 90px;
-    background: url('../images/brandFlag/css_sprites.png') -320px -450px;
-}
-.bg-granorte {
-    width: 160px;
-    height: 90px;
-    background: url('../images/brandFlag/css_sprites.png') -480px -450px;
 }
 /* RESPONSIVE MENU TO 992px*/
 .open {
