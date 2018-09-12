@@ -793,9 +793,9 @@ section {
     counter-increment: li;
 }
 .advantages__item svg {
+    display: block;
     position: absolute;
     top: -60px;
-    left: -130px;
     width: 130px;
     height: 130px;
 }
@@ -813,8 +813,14 @@ section {
 .advantages__item:nth-of-type(odd):before {
     left: -80px;
 }
+.advantages__item:nth-of-type(odd) svg {
+    left: -130px;
+}
 .advantages__item:nth-of-type(even):before {
     right: -80px;
+}
+.advantages__item:nth-of-type(even) svg {
+    right: -130px;
 }
 .remodal-first {
     padding-top: 95px;

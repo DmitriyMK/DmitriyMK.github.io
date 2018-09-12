@@ -36,14 +36,17 @@
 		font-size: 21px;
 		font-weight: 300;
 		counter-increment: li; 
+		
 
 		svg {
+			display: block;
 			position: absolute;
 			top: -60px;
-			left: -130px;
+
 			width: 130px;
 			height: 130px;
 		}
+		
 		
 
 		&:hover {
@@ -65,36 +68,20 @@
 			&:before {
 				left: -80px;
 			}
+			svg {
+				left: -130px;
+			}
 		}
 		&:nth-of-type(even) {
 			&:before {
 				right: -80px;
 			}
+			svg {
+				right: -130px;
+			}
 		}
-		// &:nth-of-type(1) {
-		// 	&:before {
-		// 		background-image: linear-gradient(0deg, #fab915 0%, #373a3c 20%, #373a3c 100%);
-		// 	}
-		// }
-		// &:nth-of-type(2) {
-		// 	&:before {
-		// 		background-image: linear-gradient(0deg, #fab915 0%, #373a3c 40%, #373a3c 100%);
-		// 	}
-		// }
-		// &:nth-of-type(3) {
-		// 	&:before {
-		// 		background-image: linear-gradient(0deg, #fab915 0%, #373a3c 60%, #373a3c 100%);
-		// 	}
-		// }
-		// &:nth-of-type(4) {
-		// 	&:before {
-		// 		background-image: linear-gradient(0deg, #fab915 0%, #373a3c 80%, #373a3c 100%);
-		// 	}
-		// }
-		// &:nth-of-type(5) {
-		// 	&:before {
-		// 		background-image: linear-gradient(0deg, #fab915 100%);
-		// 	}
-		// }
 	}
+
+
+	
 }
