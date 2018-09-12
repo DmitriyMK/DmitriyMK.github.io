@@ -811,16 +811,16 @@ section {
     z-index: 10;
 }
 .advantages__item:nth-of-type(odd):before {
-    left: -80px;
+    left: -100px;
 }
 .advantages__item:nth-of-type(odd) svg {
-    left: -130px;
+    left: -150px;
 }
 .advantages__item:nth-of-type(even):before {
-    right: -80px;
+    right: -100px;
 }
 .advantages__item:nth-of-type(even) svg {
-    right: -130px;
+    right: -150px;
 }
 .remodal-first {
     padding-top: 95px;
