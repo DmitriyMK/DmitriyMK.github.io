@@ -97,6 +97,7 @@ $(document).ready(function() {
     ]
   });
 
+
   $('.review__slider-for').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -105,6 +106,7 @@ $(document).ready(function() {
     fade: true,
     asNavFor: '.review__slider-nav'
   });
+
 
   $('.review__slider-nav').slick({
     slidesToShow: 3,
