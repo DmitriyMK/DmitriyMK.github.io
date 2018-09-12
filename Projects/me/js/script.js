@@ -171,16 +171,16 @@ function initMap() {
         var num4 = document.getElementById("item4").value;
 
         var num5 = num1 * 0.85;
-        document.getElementById("item5").value = num5.toFixed(3);
+        document.getElementById("item5").value = num5.toFixed(2);
 
-        var num6 = num5 * num2;
-        document.getElementById("item6").value = num6.toFixed(3);
+        var num6 = num1 * 0.15 * num2;
+        document.getElementById("item6").value = num6.toFixed(2);
 
         var num7 = num6 / num3;
-        document.getElementById("item7").value = num7.toFixed(3);
+        document.getElementById("item7").value = num7.toFixed(2);
 
         var num8 = num7 * num4;
-        document.getElementById("item8").value = num8.toFixed(3);
+        document.getElementById("item8").value = num8.toFixed(2);
     };
 
 
