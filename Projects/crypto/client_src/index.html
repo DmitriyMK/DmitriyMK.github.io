@@ -34,6 +34,7 @@
 	<!-- DEFER SCRIPT -->
 	<script defer src="./libs/remodal.min.js"></script>
 	<script defer src="./libs/slick.js"></script>
+	<script defer src="./libs/masked-input.js"></script>
 <!-- 	<script defer src="./libs/jquery.validate.min.js"></script>
 	<script defer src="./libs/wow.min.js"></script> -->
 	<script defer src="./libs/cssrelpreload.js"></script>
@@ -42,12 +43,11 @@
 </head>
 <body>
 
-
 	<header class="header">	
 		<div class="container">
 			<div class="header__top">
 				<div class="header__logo">
-					<img class="img-responsive header__logo-img" src="./images/logo.png" alt="Crypto Hamster" title="Crypto Hamster - криптовалютные торговые сигналы">
+					<a href="./index.html"><img class="img-responsive header__logo-img" src="./images/logo.png" alt="Crypto Hamster" title="Crypto Hamster - криптовалютные торговые сигналы"></a>
 					<h1 class="header__desc">Криптовалютные <br> торговые сигналы</h1>
 				</div>
 
@@ -122,31 +122,101 @@
 		</div>
 	</article>
 
+
 	<section class="advantages" id="advantages">
 		<div class="container">
 			<h2 class="section__title advantages__title">Почему выбирают нас?</h2>
 
 			<ul class="advantages__list">
 				<li class="advantages__item">
-					Эффективность своей работы мы доказали еще в первой половине 2018г., когда все прогнозы на @thecryptohamster были бесплатными.  Вы легко можете их проверить в ленте канала.
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+						<linearGradient id="item1" x1="0.5" y1="1" x2="0.5" y2="0">
+							<stop offset="0%" stop-opacity="1" stop-color="#fab915"/>
+							<stop offset="20%" stop-opacity="1" stop-color="#fab915"/>
+							<stop offset="20%" stop-opacity="0" stop-color="#fab915"/>
+							<stop offset="100%" stop-opacity="0" stop-color="#fab915"/>
+						</linearGradient>
+						<circle cx="50" cy="50" r="45" fill="url(#item1)" stroke="#333638" stroke-width="1"/>
+					</svg>
+					Эффективность своей работы мы доказали еще в первой половине 2018г., когда все прогнозы на <a class="link__accent" href="https://t.me/thecryptohamster">@thecryptohamster</a> были бесплатными.  Вы легко можете их проверить в ленте канала.
 				</li>
-				<li class="advantages__item reorder">
+				<li class="advantages__item">
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+						<linearGradient id="item2" x1="0.5" y1="1" x2="0.5" y2="0">
+							<stop offset="0%" stop-opacity="1" stop-color="#fab915"/>
+							<stop offset="30%" stop-opacity="1" stop-color="#fab915"/>
+							<stop offset="30%" stop-opacity="0" stop-color="#fab915"/>
+							<stop offset="100%" stop-opacity="0" stop-color="#fab915"/>
+						</linearGradient>
+						<circle cx="50" cy="50" r="45" fill="url(#item2)" stroke="#333638" stroke-width="1"/>
+					</svg>
 					Наша торговая система включает в себя, как классический технический анализ, так и нашу авторскую методику актуальную для рынка криптовалют, в частности - «событий анализ» альткоинов. Таким образом, независимо от того, растет рынок или падает – мы зарабатываем.
 				</li>
-				<li class="advantages__item reorder">
+				<li class="advantages__item">
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+						<linearGradient id="item3" x1="0.5" y1="1" x2="0.5" y2="0">
+							<stop offset="0%" stop-opacity="1" stop-color="#fab915"/>
+							<stop offset="50%" stop-opacity="1" stop-color="#fab915"/>
+							<stop offset="50%" stop-opacity="0" stop-color="#fab915"/>
+							<stop offset="100%" stop-opacity="0" stop-color="#fab915"/>
+						</linearGradient>
+						<circle cx="50" cy="50" r="45" fill="url(#item3)" stroke="#333638" stroke-width="1"/>
+					</svg>
 					Наши прогнозы основываются на собственных сделках. Канал – это лишь отображение наших действий.
 				</li>
-				<li class="advantages__item reorder">
+				<li class="advantages__item">
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+						<linearGradient id="item4" x1="0.5" y1="1" x2="0.5" y2="0">
+							<stop offset="0%" stop-opacity="1" stop-color="#fab915"/>
+							<stop offset="60%" stop-opacity="1" stop-color="#fab915"/>
+							<stop offset="60%" stop-opacity="0" stop-color="#fab915"/>
+							<stop offset="100%" stop-opacity="0" stop-color="#fab915"/>
+						</linearGradient>
+						<circle cx="50" cy="50" r="45" fill="url(#item4)" stroke="#333638" stroke-width="1"/>
+					</svg>
 					Большинство каналов дают сигналы без каких-либо объяснений. Мы подробно описываем свои действия - вы учитесь.
 				</li>
-				<li class="advantages__item reorder">
+				<li class="advantages__item">
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+						<linearGradient id="item5" x1="0.5" y1="1" x2="0.5" y2="0">
+							<stop offset="0%" stop-opacity="1" stop-color="#fab915"/>
+							<stop offset="100%" stop-opacity="1" stop-color="#fab915"/>
+							<stop offset="100%" stop-opacity="0" stop-color="#fab915"/>
+							<stop offset="100%" stop-opacity="0" stop-color="#fab915"/>
+						</linearGradient>
+						<circle cx="50" cy="50" r="45" fill="url(#item5)" stroke="#333638" stroke-width="1"/>
+					</svg>
 					Ориентированность на клиента. Всегда рады помочь нашему клиенту, готовы пойти навстречу!
 				</li>
 			</ul>
 		</div>
 	</section>
 
-	<!-- <img class="b-lazy" data-src="./" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt=""> -->
+
+	<section class="efficiency white">
+		<div class="container">
+			<h2 class="section__title advantages__title">Эффективность</h2>
+
+			<div class="efficiency__box">
+				<div class="efficiency__box-left">
+					<div class="efficiency__img">
+						<img class="b-lazy" data-src="./images/mobile-up.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="на растущем рынке">
+					</div>
+					<h3 class="efficiency__title">На растущем рынке</h3>
+					<p class="efficiency__text">Сочетая тех. анализ по биткоину, а также событийный анализ по альктоинам, нам удается заработать на 50% - 100% больше от средневзвешенного роста рынка!</p>
+				</div>
+				<div class="efficiency__box-right">
+					<div class="efficiency__img">
+						<img class="b-lazy" data-src="./images/mobile-down.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="на падающем рынке">
+					</div>
+					<h3 class="efficiency__title">На падающем рынке</h3>
+					<p class="efficiency__text">С маржинальной торговлей на BitMEX делаем в среднем +30% - 60% к депозиту в месяц. С каждым месяцем депозит растет и прибыль, соответственно, тоже.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- <img class="b-lazy" data-src="./" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt=""> 
 
 
 <!-- 	<section class="" id="">

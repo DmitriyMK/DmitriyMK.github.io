@@ -24,9 +24,58 @@
 		}
 	}
 	&__list {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
 		margin: 100px 0;
 	}
 	&__item {
-		max-width: 720px;
+		position: relative;
+		max-width: 660px;
+		margin-bottom: 60px;
+		font-size: 21px;
+		font-weight: 300;
+		counter-increment: li; 
+		
+
+		svg {
+			display: block;
+			position: absolute;
+			top: -60px;
+			width: 130px;
+			height: 130px;
+		}
+		
+	
+		&:before {
+			content: counter(li);
+			position: absolute;
+			top: 0;
+			transform: translateY(-50%);
+			color: #fff;
+			font-size: 54px;
+			z-index: 10;
+		}
+
+		
+		&:nth-of-type(odd) {
+			&:before {
+				left: -100px;
+			}
+			svg {
+				left: -150px;
+			}
+		}
+		&:nth-of-type(even) {
+			&:before {
+				right: -100px;
+			}
+			svg {
+				right: -150px;
+			}
+		}
 	}
+
+
+	
 }

@@ -868,8 +868,16 @@ section {
     height: 100vh;
     min-height: 420px;
     max-height: 736px;
-    background: url(../images/hero__back-sm.jpg) no-repeat left / cover;
+    background: url(../images/hero__back-landsacpe.jpg) no-repeat center / cover;
+    background-size: cover;
     color: #fff;
+    /* Smartphones (landscape) ———– */
+}
+@media only screen and (max-device-width: 480px) {
+    .header {
+        background: url(../images/hero__back-sm.jpg) no-repeat;
+        background-size: cover;
+    }
 }
 @media only screen and (min-width: 992px) {
     .header {
