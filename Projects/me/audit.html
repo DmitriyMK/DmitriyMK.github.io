@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Misto Energy - внедрение энергосберегающих мероприятий для дома и бизнеса</title>
+	<title>Misto Energy - зроби свій житловий будинок або офіс Енергоефективним</title>
 
 	<meta name="description" content="Misto Energy - впровадження енергозберігаючих заходів для дому та бізнесу. Для Вас ми можемо запропонувати такі послуги як: енергетичний аудит, впровадження поквартирного обліку тепла, розробку проектної документації та монтаж систем опалення та багато іншого. Тел. +38 (095) 566-79-68"/>
 
@@ -41,9 +41,6 @@
 	<!-- END DEFER -->
 </head>
 <body>
-<!-- 	<div id="preloader">
-		<i></i>
-	</div> -->
 
 	<header class="header">
 		<div class="top-header">
@@ -62,7 +59,7 @@
 			</div>
 		</div>
 		<nav class="nav">
-			<h1 class="offscreen">Навігаційне меню</h1>
+			<h2 class="offscreen">Навігаційне меню</h2>
 			<button class="burger">
 				<i></i>
 			</button>
@@ -73,13 +70,13 @@
 							<a class="nav__link" href="index.html">Головна</a>
 						</li>
 						<li class="nav__item">
-							<a class="nav__link scrolling__link" href="#services">Наші послуги</a>
+							<a class="nav__link scrolling__link" href="#services">Послуги</a>
 						</li>
 						<li class="nav__item">
 							<a class="nav__link" href="price.html">Ціни</a>
 						</li>
 						<li class="nav__item">
-							<a class="nav__link" href="news.html">Новини </a>
+							<a class="nav__link" href="news.html">Новини</a>
 						</li>
 						<li class="nav__item">
 							<a class="nav__link scrolling__link" href="#contact">Контакти</a>
@@ -504,9 +501,9 @@
 				<div class="knowMore__form">
 					<form action="mail.php" method="post" class="form white-popup form-validate" id="modal-recieve-form" name="main-form">
 						<!-- Hidden Required Fields -->
-						<input type="hidden" name="project_name" value="">
-						<input type="hidden" name="admin_email" value="">
-						<input type="hidden" name="form_subject" value="">
+						<input type="hidden" name="project_name" value="Misto Energy">
+						<input type="hidden" name="admin_email" value="info@mistoenergy.com.ua">
+						<input type="hidden" name="form_subject" value="Заказ обратного звонка">
 						<!-- END Hidden Required Fields -->
 						<input class="form__line name" type="text" name="Имя &nbsp;покупателя" placeholder="Ваше ім'я" required>
 						<input class="form__line phone__mask" type="tel" name="Телефон&nbsp;покупателя" placeholder="Ваш телефон" required>
@@ -548,7 +545,7 @@
 			<div class="footer__box">
 				<div class="box__left">
 					<a href="index.html"><img src="img/logo_end.png" alt="Внедрение энергосберегающих мероприятий"></a>
-					<p>Внедрение энергосберегающих мероприятий <br> для дома и бизнеса</p>
+					<p>Ми допоможемо зробити Ваш <br> житловий будинок або офіс Енергоефективним! </p>
 				</div>
 				<div class="box__right">
 					<p>Розробка сайту</p>
@@ -566,7 +563,7 @@
 		<form class="form form-validate" id="modal-recieve" name="main-form">
 			<!-- Hidden Required Fields -->
 			<input type="hidden" name="project_name" value="Misto Energy">
-			<input type="hidden" name="admin_email" value="alchimic@ua.fm">
+			<input type="hidden" name="admin_email" value="info@mistoenergy.com.ua">
 			<input type="hidden" name="form_subject" value="Заказ обратного звонка">
 			<!-- END Hidden Required Fields -->
 
@@ -588,6 +585,29 @@
 
 	<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
 	<script src="./js/libs/jquery.enllax.min.js"></script>
+	<script>
+		document.getElementById('calculateForm').onsubmit = function() {
+
+        event.preventDefault();
+
+        var num1 = document.getElementById("item1").value;
+        var num2 = document.getElementById("item2").value;
+        var num3 = document.getElementById("item3").value;
+        var num4 = document.getElementById("item4").value;
+
+        var num5 = num1 * 0.85;
+        document.getElementById("item5").value = num5.toFixed(2);
+
+        var num6 = num1 * 0.15 * num2;
+        document.getElementById("item6").value = num6.toFixed(2);
+
+        var num7 = num6 / num3;
+        document.getElementById("item7").value = num7.toFixed(2);
+
+        var num8 = num7 * num4;
+        document.getElementById("item8").value = num8.toFixed(2);
+    };
+	</script>
 	<script src="./js/script.js"></script> 
 
 <!-- 	<script>
