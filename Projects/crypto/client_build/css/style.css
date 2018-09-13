@@ -603,6 +603,7 @@ section {
     z-index: 10;
 }
 .header__top {
+    position: relative;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -613,6 +614,7 @@ section {
     -ms-flex-pack: justify;
     justify-content: space-between;
     padding: 30px 10px 15px 0;
+    z-index: 10;
 }
 .header__logo {
     display: -webkit-box;
