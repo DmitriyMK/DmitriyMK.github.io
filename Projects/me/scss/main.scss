@@ -334,6 +334,15 @@
 			display: none;	
 		}
 	}
+	&__img-lt2 {
+		position: absolute;
+		top: 50%;
+		transform: translateY(-0%);
+		right: -215px;
+		@media only screen and (max-width: 1199.98px) { 
+			display: none;	
+		}
+	}
 	&__img-rt {
 		position: absolute;
 		top: 50%;
@@ -347,6 +356,15 @@
 		position: absolute;
 		top: 50%;
 		transform: translateY(-170%);
+		left: -175px;
+		@media only screen and (max-width: 1199.98px) { 
+			display: none;	
+		}	
+	}
+	&__img-rt3 {
+		position: absolute;
+		top: 50%;
+		transform: translateY(-120%);
 		left: -175px;
 		@media only screen and (max-width: 1199.98px) { 
 			display: none;	
