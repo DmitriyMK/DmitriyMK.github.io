@@ -1,0 +1,134 @@
+@media @mobile {
+
+}
+@media @tablet {
+
+}
+@media @desktop {
+
+}
+@media @desktop-xl {
+	
+}
+@media @desktop-xl-2 {
+
+}
+@media @desktop-xll {
+	
+}
+
+.price {
+	&__box {
+		display: flex;
+		justify-content: space-between;
+	}	
+	&__item {
+		flex-basis: 30%;
+		box-shadow: 0px 11px 16.74px 1.26px rgba(0, 0, 0, 0.27);
+		background: #e1e1e1;
+		&-active {
+			margin-top: -10px;
+			transform: scale(1.05);
+			box-shadow: 0px 11px 16.74px 1.26px rgba(0, 0, 0, 0.27);
+		}
+	}
+	&__titles {
+		position: relative;
+		padding: 15px 0;
+		background: #ebebeb;
+		text-align: center;
+		font-size: 24px;
+		font-weight: 700;
+		z-index: 10;
+		&:before {
+			content: '';
+			position: absolute;
+			top: 0;
+			right: 0;
+			border: 30px solid transparent;	
+			border-top: 30px solid #fab915; 
+			border-right: 30px solid #fab915;
+		}
+	}
+	&__sum {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+
+		height: 275px;
+		background-image: -moz-linear-gradient( 180deg, rgb(225,225,225) 0%, rgb(255,255,255) 100%);
+		background-image: -webkit-linear-gradient( 180deg, rgb(225,225,225) 0%, rgb(255,255,255) 100%);
+		background-image: -ms-linear-gradient( 180deg, rgb(225,225,225) 0%, rgb(255,255,255) 100%);
+		box-shadow: 0px 11px 16.74px 1.26px rgba(0, 0, 0, 0.27);
+		text-align: center;
+	}
+
+	&__period {
+		padding-bottom: 15px;
+		font-size: 20px;
+	}
+	&__price {
+		font-size: 60px;
+		&-old {
+			font-size: 18px;
+			font-weight: 700;
+			text-decoration: line-through;
+		}
+	}
+	&__details {
+		padding-top: 10px;
+		padding-bottom: 10px;
+		background: #e1e1e1;
+	}
+	
+	&__list {
+		min-height: 80px;
+	}
+
+	&__items {
+		position: relative;
+		padding-left: 30px;
+		margin-bottom: 10px;
+		&:before {
+			content: '';
+			position: absolute;
+			top: 50%;
+			left: 6px;
+			transform: translateY(-50%);
+			.ico_list-dots
+		}
+	}
+	blockquote {
+		padding-top: 15px;
+		font-size: 10px;
+		text-align: center;
+		span {
+			font-size: 20px;
+			line-height: 0;
+			font-weight: 700;
+		}
+	}
+	&__btn {
+		display: table;
+		margin: auto;
+		padding-top: 15px;
+		width: 241px;
+		height: 55px;
+		font-size: 18px;
+		color: #fff;
+		font-weight: 400;
+		background: url(../images/btn.png)no-repeat center/contain;
+		text-align: center;
+		transition: transform .3s linear;
+		&:hover {
+			transform: scale(1.03);
+		}
+	}
+
+	.item3 {
+		.price__period {
+			margin-top: 55px;
+		}
+	}
+}

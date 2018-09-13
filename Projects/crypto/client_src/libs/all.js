@@ -35,45 +35,29 @@ $(document).ready(function() {
 
   var bLazy = new Blazy();
 
-  $('.phone-mask').mask('+38(999)999-99-99');
 
 
-
-  /*  $('.slider-nav-recipe').slick({
-      slidesToShow: 4,
+    $('.review__slider').slick({
+      slidesToShow: 2,
       slidesToScroll: 1,
-      arrows: false,
-      dots: false,
-      focusOnSelect: true,
-      infinite: true,
-      centerMode: false,
+      arrows: true,
+      dots: true,
+      infinite: false,
+      lazyLoad: 'ondemand',
 
       responsive: [
-
-      {
-        breakpoint: 992,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1,
-          arrows: true,
-
-        }
-      },
 
       {
         breakpoint: 767,
         settings: {
           slidesToShow: 1,
-          slidesToScroll: 1,
-
-          arrows: true,
         }
       },
 
       ]
 
     });
-  */
+  
 
 });
 
@@ -81,24 +65,4 @@ $(document).ready(function() {
 
 $(window).on('resize orientationchange', function() {
   $('.slider').slick('resize');
-});
-
-
-
-$(".form").submit(function() {
-  var th = $(this);
-  $.ajax({
-    type: "POST",
-    url: "mail.php",
-    data: th.serialize()
-  }).done(function() {
-
-    var inst = $('[data-remodal-id=modal-thanks]').remodal();
-    inst.open();
-
-    setTimeout(function() {
-      th.trigger("reset");
-    }, 1000);
-  });
-  return false;
 });

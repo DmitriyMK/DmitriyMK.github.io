@@ -37,9 +37,11 @@
 .slick-next:hover,
 .slick-next:focus
 {
-    color: transparent;
+    /*color: transparent;*/
     outline: none;
-    background: transparent;
+    opacity: 0.25;
+    transition: opacity .3s linear;
+    /*background: transparent;*/
 }
 .slick-prev:hover:before,
 .slick-prev:focus:before,
@@ -57,8 +59,6 @@
 .slick-prev:before,
 .slick-next:before
 {
-    /* font-family: 'slick'; */
-    /* font-family: 'fontello'; */
     font-size: 30px;
     line-height: 1;
 
