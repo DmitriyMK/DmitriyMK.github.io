@@ -690,10 +690,6 @@ section {
     bottom: 0;
     left: 0;
 }
-.system {
-    position: relative;
-    z-index: 11;
-}
 .system__box {
     padding: 40px 0;
     display: -webkit-box;

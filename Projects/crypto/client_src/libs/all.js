@@ -2,8 +2,6 @@ $(document).ready(function() {
 
   if (document.documentElement.clientWidth > 1200) {
 
-    // new WOW().init();
-
     $("body").niceScroll({
       scrollspeed: 70,
       mousescrollstep: 60,
@@ -47,16 +45,25 @@ $(document).ready(function() {
 
     responsive: [
 
-      {
-        breakpoint: 767,
-        settings: {
-          slidesToShow: 1,
-        }
-      },
+    {
+      breakpoint: 767,
+      settings: {
+        slidesToShow: 1,
+      }
+    },
 
     ]
 
   });
+
+  var cardWrap = document.getElementsByClassName('header__img');
+  document.body.addEventListener('mousemove', cursorPositionHandler);
+
+  function cursorPositionHandler(e) {
+    var decimalX = e.clientX / window.innerWidth - 0.5;
+    var decimalY = e.clientY / window.innerHeight - 0.5;
+    TweenMax.to(cardWrap, 0.5, { rotationY: 20 * decimalX, rotationX: 20 * decimalY, ease: Quad.easeOut, transformPerspective: 700, transformOrigin: "center" });
+  }
 
 
 });
