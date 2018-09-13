@@ -509,6 +509,7 @@ address {
 body {
     position: relative;
     margin: 0;
+    width: 100%;
     min-height: 100vh;
     padding-right: 0 !important;
     color: #fff;
@@ -517,6 +518,7 @@ body {
     font-weight: 400;
     font-family: 'Roboto', sans-serif;
     background: #000;
+    overflow: hidden;
 }
 .fancybox-margin {
     margin-right: 0 !important;
@@ -593,6 +595,13 @@ section {
 :-moz-placeholder {
     font-size: 16px;
 }
+.header {
+    position: relative;
+    height: 100vh;
+    min-height: 700px;
+    max-height: 1200px;
+    z-index: 10;
+}
 .header__top {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -639,6 +648,7 @@ section {
     width: 100%;
 }
 .header__center {
+    position: relative;
     padding: 70px 0;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -649,6 +659,7 @@ section {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
+    z-index: 10;
 }
 .header__img {
     margin-left: -20px;
@@ -662,20 +673,27 @@ section {
     font-size: 30px;
     color: #ed901a;
 }
-/* #fixedTopMenu.fixed{
-	position: fixed;
-	padding: 0 15px;
-	top: 0;
-	left: 0;
-	width: 100%;
-	background: #131313;
-	z-index: 3000;
-	animation: smoothScroll 1s forwards;
-	&:after {
-		display: none;
-	}
+.header__animation {
+    position: absolute;
+    width: 100%;
+    height: 80%;
+    left: 0;
+    bottom: -35vh;
 }
-*/
+.header__animation img {
+    display: none;
+}
+.header #canvas {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.system {
+    position: relative;
+    z-index: 11;
+}
 .system__box {
     padding: 40px 0;
     display: -webkit-box;

@@ -37,15 +37,15 @@ $(document).ready(function() {
 
 
 
-    $('.review__slider').slick({
-      slidesToShow: 2,
-      slidesToScroll: 1,
-      arrows: true,
-      dots: true,
-      infinite: false,
-      lazyLoad: 'ondemand',
+  $('.review__slider').slick({
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    arrows: true,
+    dots: true,
+    infinite: false,
+    lazyLoad: 'ondemand',
 
-      responsive: [
+    responsive: [
 
       {
         breakpoint: 767,
@@ -54,10 +54,10 @@ $(document).ready(function() {
         }
       },
 
-      ]
+    ]
 
-    });
-  
+  });
+
 
 });
 
@@ -66,3 +66,38 @@ $(document).ready(function() {
 $(window).on('resize orientationchange', function() {
   $('.slider').slick('resize');
 });
+
+
+window.onload = function() {
+  // get our canvas wrapper
+  var canvasContainer = document.getElementById("canvas");
+
+  // set up our WebGL context and append the canvas to our wrapper
+  var webGLCurtain = new Curtains("canvas");
+
+  // get our plane element
+  var planeElement = document.getElementsByClassName("dancingDots")[0];
+
+  // set our initial parameters (basic uniforms)
+  var params = {
+    vertexShaderID: "plane-vs", // our vertex shader ID
+    fragmentShaderID: "plane-fs", // our framgent shader ID
+
+    uniforms: {
+      time: {
+        name: "uTime", // uniform name that will be passed to our shaders
+        type: "1f", // this means our uniform is a float
+        value: 0,
+      },
+    }
+  }
+
+  // create our plane mesh
+  var plane = webGLCurtain.addPlane(planeElement, params);
+
+  // set up our basic methods
+  plane.onRender(function() { // fired at each requestAnimationFrame call
+    plane.uniforms.time.value++; // update our time uniform value
+  });
+
+}
