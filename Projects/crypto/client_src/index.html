@@ -45,9 +45,8 @@
 
 </head>
 <body>
-	<header class="header">
-		
 
+	<header class="header">
 		<div class="container">
 			<div class="header__top">
 				<div class="header__logo">
@@ -74,26 +73,24 @@
 			</div>
 		</div>
 
-
 		<div id="canvas"></div>
 		<div class="header__animation dancingDots ">
-			<img class="img-responsive" src="images/decor-perlin.png" alt="animations">
+			<img class="img-responsive" src="./images/decor-perlin.png" alt="animations">
 		</div>	
-
+		
 		<div class="wave">
 			<svg viewBox="0 0 500 150">				
 				<path d="M-.5,10.74 C149.99,148.00 399.85,-49.98 500.00,49.98 L700.00,150.00 L0.00,150.00 Z"></path>
 			</svg>
 		</div>
-
-		
 		<img class="lines" src="./images/line-dots.png" alt="animations">
 	</header>
 	
 
 	<section class="system white" id="system">
 
-		
+		<img class="system__back b-lazy" data-src="./images/back__about.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="">
+
 		<div class="container">
 			<h2 class="section__title system__title">Торговая система</h2>
 			<p class="section__undertitle system__undertitle">Наша торговая система включает в себя заработок с продуктивной <br> отдачей, как на растущем, так и на падающем рынке.</p>
@@ -118,7 +115,7 @@
 				<div class="system__box-img">
 					<img class="b-lazy img-responsive" data-src="./images/about__right.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Нисходящий тренд">
 				</div>
-				<div class="system__box-content">
+				<div class="system__box-content system__box-content-last">
 					<h3 class="system__titles">Когда нисходящий тренд:</h3>
 					<strong class="system__accent">За счет кредитного плеча, торговля на BitMEX дает возможность удвоить сумму сделки только от 10%го движения биткоина.</strong>
 					<ul class="system__list">
@@ -130,98 +127,100 @@
 			</article>
 		</div>
 	</section>
+
 	
-
-	<article class="ask">
-		<div class="container">
-			<div class="ask__box">
-				<h2 class="ask__title">Не умеете торговать на <strong>BitMEX?</strong></h2>
-				<strong class="ask__accent">Не беда, мы вас научим!</strong>
-				<p class="ask__text">Вы потратите 1-2 дня, но зато потом будете зарабатывать <br> на падающем рынке точно так же, как и на растущем!</p>
-				<img class="img-responsive b-lazy ask__img" data-src="./images/coins.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Учим торговать на BitMEX">
+	<div class="curveWrap">
+		<article class="ask">
+			<div class="container">
+				<div class="ask__box">
+					<h2 class="ask__title">Не умеете торговать на <strong>BitMEX?</strong></h2>
+					<strong class="ask__accent">Не беда, мы вас научим!</strong>
+					<p class="ask__text">Вы потратите 1-2 дня, но зато потом будете зарабатывать <br> на падающем рынке точно так же, как и на растущем!</p>
+					<img class="img-responsive b-lazy ask__img" data-src="./images/coins.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Учим торговать на BitMEX">
+				</div>
 			</div>
-		</div>
-	</article>
+		</article>
 
 
-	<section class="advantages" id="advantages">
-		<div class="container">
-			<h2 class="section__title advantages__title">Почему выбирают нас?</h2>
+		<section class="advantages" id="advantages">
+			<div class="container">
+				<h2 class="section__title advantages__title">Почему выбирают нас?</h2>
 
-			<ul class="advantages__list">
-				<li class="advantages__item">
-					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
-						<linearGradient id="item1" x1="0.5" y1="1" x2="0.5" y2="0">
-							<stop offset="0%" stop-opacity="1" stop-color="#fab915"/>
-							<stop offset="20%" stop-opacity="1" stop-color="#fab915"/>
-							<stop offset="20%" stop-opacity="0" stop-color="#fab915"/>
-							<stop offset="100%" stop-opacity="0" stop-color="#fab915"/>
-						</linearGradient>
-						<circle cx="50" cy="50" r="45" fill="url(#item1)" stroke="#333638" stroke-width="1"/>
-					</svg>
-					Эффективность своей работы мы доказали еще в первой половине 2018г., когда все прогнозы на <a class="link__accent" href="https://t.me/thecryptohamster">@thecryptohamster</a> были бесплатными. Вы легко можете их проверить в ленте канала. 
-					<div class="ico_lines-left"></div>
-				</li>
-				<li class="advantages__item">
-					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
-						<linearGradient id="item2" x1="0.5" y1="1" x2="0.5" y2="0">
-							<stop offset="0%" stop-opacity="1" stop-color="#fab915"/>
-							<stop offset="30%" stop-opacity="1" stop-color="#fab915"/>
-							<stop offset="30%" stop-opacity="0" stop-color="#fab915"/>
-							<stop offset="100%" stop-opacity="0" stop-color="#fab915"/>
-						</linearGradient>
-						<circle cx="50" cy="50" r="45" fill="url(#item2)" stroke="#333638" stroke-width="1"/>
-					</svg>
-					Наша торговая система включает в себя, как классический технический анализ, так и нашу авторскую методику актуальную для рынка криптовалют, в частности - «событий анализ» альткоинов. Таким образом, независимо от того, растет рынок или падает – мы зарабатываем.
-					<div class="ico_lines-right"></div>
-				</li>
-				<li class="advantages__item">
-					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
-						<linearGradient id="item3" x1="0.5" y1="1" x2="0.5" y2="0">
-							<stop offset="0%" stop-opacity="1" stop-color="#fab915"/>
-							<stop offset="50%" stop-opacity="1" stop-color="#fab915"/>
-							<stop offset="50%" stop-opacity="0" stop-color="#fab915"/>
-							<stop offset="100%" stop-opacity="0" stop-color="#fab915"/>
-						</linearGradient>
-						<circle cx="50" cy="50" r="45" fill="url(#item3)" stroke="#333638" stroke-width="1"/>
-					</svg>
-					Наши прогнозы основываются на собственных <br> сделках. Канал – это лишь отображение наших <br> действий.
-					<div class="ico_lines-left"></div>
-				</li>
-				<li class="advantages__item">
-					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
-						<linearGradient id="item4" x1="0.5" y1="1" x2="0.5" y2="0">
-							<stop offset="0%" stop-opacity="1" stop-color="#fab915"/>
-							<stop offset="60%" stop-opacity="1" stop-color="#fab915"/>
-							<stop offset="60%" stop-opacity="0" stop-color="#fab915"/>
-							<stop offset="100%" stop-opacity="0" stop-color="#fab915"/>
-						</linearGradient>
-						<circle cx="50" cy="50" r="45" fill="url(#item4)" stroke="#333638" stroke-width="1"/>
-					</svg>
-					Большинство каналов дают сигналы без каких-либо объяснений. Мы подробно описываем свои действия - Вы учитесь.
-					<div class="ico_lines-right"></div>
-				</li>
-				<li class="advantages__item">
-					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
-						<linearGradient id="item5" x1="0.5" y1="1" x2="0.5" y2="0">
-							<stop offset="0%" stop-opacity="1" stop-color="#fab915"/>
-							<stop offset="100%" stop-opacity="1" stop-color="#fab915"/>
-							<stop offset="100%" stop-opacity="0" stop-color="#fab915"/>
-							<stop offset="100%" stop-opacity="0" stop-color="#fab915"/>
-						</linearGradient>
-						<circle cx="50" cy="50" r="45" fill="url(#item5)" stroke="#333638" stroke-width="1"/>
-					</svg>
-					Ориентированность на клиента. Всегда рады <br> помочь нашему клиенту, готовы пойти <br> навстречу!
-					<div class="ico_lines-left"></div>
-				</li>
-			</ul>
-		</div>
-	</section>
+				<ul class="advantages__list">
+					<li class="advantages__item">
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+							<linearGradient id="item1" x1="0.5" y1="1" x2="0.5" y2="0">
+								<stop offset="0%" stop-opacity="1" stop-color="#fab915"/>
+								<stop offset="20%" stop-opacity="1" stop-color="#fab915"/>
+								<stop offset="20%" stop-opacity="0" stop-color="#fab915"/>
+								<stop offset="100%" stop-opacity="0" stop-color="#fab915"/>
+							</linearGradient>
+							<circle cx="50" cy="50" r="45" fill="url(#item1)" stroke="#333638" stroke-width="1"/>
+						</svg>
+						Эффективность своей работы мы доказали еще в первой половине 2018г., когда все прогнозы на <a class="link__accent" href="https://t.me/thecryptohamster">@thecryptohamster</a> были бесплатными. Вы легко можете их проверить в ленте канала. 
+						<div class="ico_lines-left"></div>
+					</li>
+					<li class="advantages__item">
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+							<linearGradient id="item2" x1="0.5" y1="1" x2="0.5" y2="0">
+								<stop offset="0%" stop-opacity="1" stop-color="#fab915"/>
+								<stop offset="30%" stop-opacity="1" stop-color="#fab915"/>
+								<stop offset="30%" stop-opacity="0" stop-color="#fab915"/>
+								<stop offset="100%" stop-opacity="0" stop-color="#fab915"/>
+							</linearGradient>
+							<circle cx="50" cy="50" r="45" fill="url(#item2)" stroke="#333638" stroke-width="1"/>
+						</svg>
+						Наша торговая система включает в себя, как классический технический анализ, так и нашу авторскую методику актуальную для рынка криптовалют, в частности - «событий анализ» альткоинов. Таким образом, независимо от того, растет рынок или падает – мы зарабатываем.
+						<div class="ico_lines-right"></div>
+					</li>
+					<li class="advantages__item">
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+							<linearGradient id="item3" x1="0.5" y1="1" x2="0.5" y2="0">
+								<stop offset="0%" stop-opacity="1" stop-color="#fab915"/>
+								<stop offset="50%" stop-opacity="1" stop-color="#fab915"/>
+								<stop offset="50%" stop-opacity="0" stop-color="#fab915"/>
+								<stop offset="100%" stop-opacity="0" stop-color="#fab915"/>
+							</linearGradient>
+							<circle cx="50" cy="50" r="45" fill="url(#item3)" stroke="#333638" stroke-width="1"/>
+						</svg>
+						Наши прогнозы основываются на собственных <br> сделках. Канал – это лишь отображение наших <br> действий.
+						<div class="ico_lines-left"></div>
+					</li>
+					<li class="advantages__item">
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+							<linearGradient id="item4" x1="0.5" y1="1" x2="0.5" y2="0">
+								<stop offset="0%" stop-opacity="1" stop-color="#fab915"/>
+								<stop offset="60%" stop-opacity="1" stop-color="#fab915"/>
+								<stop offset="60%" stop-opacity="0" stop-color="#fab915"/>
+								<stop offset="100%" stop-opacity="0" stop-color="#fab915"/>
+							</linearGradient>
+							<circle cx="50" cy="50" r="45" fill="url(#item4)" stroke="#333638" stroke-width="1"/>
+						</svg>
+						Большинство каналов дают сигналы без каких-либо объяснений. Мы подробно описываем свои действия - Вы учитесь.
+						<div class="ico_lines-right"></div>
+					</li>
+					<li class="advantages__item">
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+							<linearGradient id="item5" x1="0.5" y1="1" x2="0.5" y2="0">
+								<stop offset="0%" stop-opacity="1" stop-color="#fab915"/>
+								<stop offset="100%" stop-opacity="1" stop-color="#fab915"/>
+								<stop offset="100%" stop-opacity="0" stop-color="#fab915"/>
+								<stop offset="100%" stop-opacity="0" stop-color="#fab915"/>
+							</linearGradient>
+							<circle cx="50" cy="50" r="45" fill="url(#item5)" stroke="#333638" stroke-width="1"/>
+						</svg>
+						Ориентированность на клиента. Всегда рады <br> помочь нашему клиенту, готовы пойти <br> навстречу!
+						<div class="ico_lines-left"></div>
+					</li>
+				</ul>
+			</div>
+		</section>
+	</div>
 
 
 	<section class="efficiency white">
 		<div class="container">
-			<h2 class="section__title advantages__title">Эффективность</h2>
+			<h2 class="section__title efficiency__title">Эффективность</h2>
 
 			<div class="efficiency__box">
 				<div class="efficiency__box-left efficiency__box-side">
@@ -307,6 +306,11 @@
 
 
 	<section class="team">
+
+		<div class="team__animation dancingDots ">
+			<img class="img-responsive" src="./images/decor-perlin.png" alt="animations">
+		</div>	
+
 		<div class="container">
 			<h2 class="section__title team__title">Команда Crypto Hamster</h2>
 
@@ -475,33 +479,33 @@
 			<ul class="review__slider">
 				<li class="review__slide">
 					<div class="review__img">
-						<img class="b-lazy" data-lazy="images/review1.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Отзывы подписчиков">
+						<img class="b-lazy" data-lazy="./images/review1.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Отзывы подписчиков">
 					</div>
 				</li>
 				<li class="review__slide">
 					<div class="review__img">
-						<img class="b-lazy" data-lazy="images/review2.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Отзывы подписчиков">
+						<img class="b-lazy" data-lazy="./images/review2.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Отзывы подписчиков">
 					</div>
 				</li>
 
 				<li class="review__slide">
 					<div class="review__img">
-						<img class="b-lazy" data-lazy="images/review1.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Отзывы подписчиков">
+						<img class="b-lazy" data-lazy="./images/review1.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Отзывы подписчиков">
 					</div>
 				</li>
 				<li class="review__slide">
 					<div class="review__img">
-						<img class="b-lazy" data-lazy="images/review2.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Отзывы подписчиков">
+						<img class="b-lazy" data-lazy="./images/review2.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Отзывы подписчиков">
 					</div>
 				</li>
 				<li class="review__slide">
 					<div class="review__img">
-						<img class="b-lazy" data-lazy="images/review1.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Отзывы подписчиков">
+						<img class="b-lazy" data-lazy="./images/review1.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Отзывы подписчиков">
 					</div>
 				</li>
 				<li class="review__slide">
 					<div class="review__img">
-						<img class="b-lazy" data-lazy="images/review2.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Отзывы подписчиков">
+						<img class="b-lazy" data-lazy="./images/review2.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Отзывы подписчиков">
 					</div>
 				</li>
 			</ul>

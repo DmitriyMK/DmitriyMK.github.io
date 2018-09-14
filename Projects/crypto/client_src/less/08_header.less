@@ -20,11 +20,9 @@
 
 .header {
 	position: relative;
-	height: 105vh;
-	min-height: 800px;
-	max-height: 1200px;
-	z-index: 15;
-
+	height: 1140px;
+	background: #000;
+	
 	&__top {
 		position: relative;
 		display: flex;
@@ -60,14 +58,15 @@
 	}
 	&__center {
 		position: relative;
-		padding: 70px 0;
+		padding: 80px 0;
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
-		z-index: 15;
+		z-index: 20;
 	}
 	&__img {
 		margin-left: -20px;
+		transition: all .3s linear;
 	}
 	&__title {
 		font-size: 55px;
@@ -83,9 +82,10 @@
 	&__animation {
 		position: absolute;
 		width: 100%;
-		height: 80%;
+		height: 75%;
 		left: 0;
-		bottom: -25vh;
+		bottom: -5vh;
+		// z-index: 10;
 
 		img {
 			display: none;
@@ -101,7 +101,7 @@
 	}
 	.wave {
 		position: relative;
-		z-index: 11;
+		// z-index: 11;
 	}
 	svg {
 		stroke: none; 
@@ -112,16 +112,8 @@
 		position: absolute;
 		left: 50%;
 		transform: translateX(-50%);
-		bottom: 0px;
+		bottom: 145px;
 		width: 100%;
 		z-index: 12;
 	}
-	.dots {
-		position: absolute;
-		left: 20vh;
-		bottom: 130px;
-
-		z-index: 12;
-	}
-
 }
