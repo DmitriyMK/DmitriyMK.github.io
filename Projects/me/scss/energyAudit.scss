@@ -1154,11 +1154,13 @@
 			}
 		}
 		&__info {
+			padding-top: 15px;
 			height: 190px;
 			overflow: hidden; 
 			cursor: auto;
+			font-size: rem(18);
 			@media only screen and (max-width: 991.98px) {
-				padding-top: 15px;
+				padding-top: 35px;
 				height: inherit;
 			} 
 			p {
@@ -1216,6 +1218,25 @@
 		overflow: hidden;
 	}
 
+	.postGallery {
+		padding-bottom: 15px;
+		display: flex;
+		justify-content: space-between;
+		@media only screen and (max-width: 575.98px) {
+			flex-direction: column;
+			align-items: center;
+			padding-bottom: 0;
+		}
+		div {
+			width: 49%;
+			@media only screen and (max-width: 575.98px) {
+				width: inherit;
+				max-width: 320px;
+				margin-bottom: 15px;
+			} 
+		}
+	}
+
 	img {
 		display: block;
 		max-width: 100%;
@@ -1232,7 +1253,8 @@
 
 	p {
 		padding-bottom: 15px;
-		font-size: 17px;
+		font-size: 19px;
+		line-height: 1.5;
 	}
 	ul {
 		padding-bottom: 15px;
@@ -1271,7 +1293,6 @@
 
 .share {
 	p {
-		padding-top: 50px;
 		font-size: 20px;
 		font-weight: 700;
 	}

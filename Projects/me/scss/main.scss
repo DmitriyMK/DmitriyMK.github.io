@@ -775,6 +775,7 @@
 			height: 300px;
 			background: no-repeat center/cover;
 			transition: .3s filter linear;
+			overflow: hidden;
 			&:hover {
 				filter: sepia(50%);
 			}
@@ -794,8 +795,8 @@
 			}
 		}
 		&__right {
-			width: 50%;
-			padding: 0 25px;
+			width: 55%;
+			padding: 0 10px;
 			@media only screen and (max-width: 991.98px) { 
 				margin-top: 30px;
 				padding: 0;
@@ -805,9 +806,8 @@
 		}
 		&__title {
 			padding: 10px;
-			font-size: rem(24);
+			font-size: rem(18);
 			font-weight: 400;
-			text-align: center;
 			text-transform: uppercase;
 			border: 1px solid $green;
 			color: $green;
