@@ -1271,6 +1271,8 @@ section {
 }
 .proposal__img {
     margin-top: -50px;
+    max-width: 100%;
+    height: 425px;
 }
 .footer {
     background: #121221;
