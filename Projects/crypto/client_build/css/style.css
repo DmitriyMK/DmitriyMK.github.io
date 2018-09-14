@@ -597,7 +597,7 @@ section {
 }
 .header {
     position: relative;
-    height: 100vh;
+    height: 105vh;
     min-height: 800px;
     max-height: 1200px;
     z-index: 15;
@@ -718,7 +718,7 @@ section {
 }
 .system {
     position: relative;
-    z-index: 11;
+    z-index: 16;
 }
 .system__box {
     padding: 40px 0;
