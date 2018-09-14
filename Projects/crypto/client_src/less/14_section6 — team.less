@@ -19,11 +19,24 @@
 
 
 .team {
+	position: relative;
+	margin-top: -368px;
+	padding-top: 380px;
+
+	background: url(../images/back__team.png);
+	height: 1481px;
+	&__title {
+		&:after {
+			.ico_title__line-white
+		}
+	}
 	&__list {
-		padding: 120px 0;
+		position: relative;
+		padding: 100px 0;
 		display: flex;
 		justify-content: space-between;
 		flex-wrap: wrap;
+		z-index: 10;
 	}
 	&__item {
 		flex-basis: 23%;
@@ -44,7 +57,6 @@
 	}
 	&__text {
 		padding: 10px 0;
-		min-height: 85px;
 		font-size: 14px;
 	}
 	&__contact {
@@ -60,6 +72,12 @@
 			font-weight: 700;
 			color: #f7941d;
 		}
+	}
+	
+	&__animation {
+		position: absolute;
+		left: 0;
+		top: 170px;
 	}
 }
 

@@ -19,24 +19,39 @@
 
 
 .efficiency {
+	padding-top: 62px;
+	padding-bottom: 62px;
+	margin-top: -520px;
+	&__title {
+		position: relative;
+		z-index: 16;
+		color: #fff;
+		&:after {
+			.ico_title__line-white
+		}
+	}
 	&__box {
-		padding: 50px 50px;
+		position: relative;
+		padding: 50px 50px 0 50px;
 		display: flex;
 		justify-content: space-between;
 		text-align: center;
+		z-index: 16;
 		&-side {
 			flex-basis: 45%;
 		}
 	}
-	&__titles {
-		padding-bottom: 15px;
-		font-size: 26px;
-		font-weight: 700;
-	}
-
 	&__img {
 		max-width: 436px;
 		height: 255px;
 	}
-	
+	&__titles {
+		padding-top: 27px;
+		padding-bottom: 27px;
+		font-size: 26px;
+		font-weight: 700;
+	}
+	&__text {
+		font-size: 20px;
+	}
 }

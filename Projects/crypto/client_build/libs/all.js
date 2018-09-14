@@ -18,6 +18,8 @@ $(document).ready(function() {
     });
 
     $('html').addClass('no-overflow-y');
+
+    new WOW().init();
   };
 
 
@@ -34,7 +36,6 @@ $(document).ready(function() {
   var bLazy = new Blazy();
 
 
-
   $('.review__slider').slick({
     slidesToShow: 2,
     slidesToScroll: 1,
@@ -45,12 +46,12 @@ $(document).ready(function() {
 
     responsive: [
 
-    {
-      breakpoint: 767,
-      settings: {
-        slidesToShow: 1,
-      }
-    },
+      {
+        breakpoint: 767,
+        settings: {
+          slidesToShow: 1,
+        }
+      },
 
     ]
 
@@ -62,9 +63,32 @@ $(document).ready(function() {
   function cursorPositionHandler(e) {
     var decimalX = e.clientX / window.innerWidth - 0.5;
     var decimalY = e.clientY / window.innerHeight - 0.5;
-    TweenMax.to(cardWrap, 0.5, { rotationY: 20 * decimalX, rotationX: 20 * decimalY, ease: Quad.easeOut, transformPerspective: 700, transformOrigin: "center" });
+    TweenMax.to(cardWrap, 0.5, {
+      rotationY: 20 * decimalX,
+      rotationX: -20 * decimalY,
+      ease: Quad.easeOut,
+      transformPerspective: 700,
+      transformOrigin: "center"
+    });
   }
 
+
+  // $(function() {
+  //   controller = new ScrollMagic.Controller();
+
+
+  //   var scene1 = new ScrollMagic.Scene({
+  //     triggerElement: '#advantages',
+  //     duration: 180
+  //   })
+
+  //   .setPin('#inside__img2', {
+  //     pushFollowers: false
+  //   })
+
+  //   .addTo(controller)
+
+  // });
 
 });
 
@@ -106,5 +130,4 @@ window.onload = function() {
   plane.onRender(function() { // fired at each requestAnimationFrame call
     plane.uniforms.time.value++; // update our time uniform value
   });
-
 }

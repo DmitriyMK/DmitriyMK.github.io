@@ -18,11 +18,22 @@
 }
 
 .advantages {
+	position: relative;
+	z-index: 11;
 	&__title {
 		&:after {
 			.ico_title__line-white
 		}
 	}
+
+	&__back {
+		display: block;
+		position: absolute;
+		top: 170px;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+
 	&__list {
 		display: flex;
 		flex-direction: column;
