@@ -62,10 +62,8 @@ $(document).ready(function() {
   function cursorPositionHandler(e) {
     var decimalX = e.clientX / window.innerWidth - 0.5;
     var decimalY = e.clientY / window.innerHeight - 0.5;
-    TweenMax.to(cardWrap, 0.5, { rotationY: 20 * decimalX, rotationX: 20 * decimalY, ease: Quad.easeOut, transformPerspective: 700, transformOrigin: "center" });
+    TweenMax.to(cardWrap, 0.5, { rotationY: 20 * decimalX, rotationX: -20 * decimalY, ease: Quad.easeOut, transformPerspective: 700, transformOrigin: "center" });
   }
-
-
 });
 
 
