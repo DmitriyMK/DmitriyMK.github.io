@@ -45,7 +45,9 @@
 
 </head>
 <body>
-	<header class="header">	
+	<header class="header">
+		
+
 		<div class="container">
 			<div class="header__top">
 				<div class="header__logo">
@@ -71,16 +73,27 @@
 				</div>
 			</div>
 		</div>
-		
-		<div id="canvas"></div>
 
+
+		<div id="canvas"></div>
 		<div class="header__animation dancingDots ">
 			<img class="img-responsive" src="images/decor-perlin.png" alt="animations">
-		</div>
-	</header>
+		</div>	
 
+		<div class="wave">
+			<svg viewBox="0 0 500 150">				
+				<path d="M-.5,10.74 C149.99,148.00 399.85,-49.98 500.00,49.98 L700.00,150.00 L0.00,150.00 Z"></path>
+			</svg>
+		</div>
+
+		
+		<img class="lines" src="./images/line-dots.png" alt="animations">
+	</header>
+	
 
 	<section class="system white" id="system">
+
+		
 		<div class="container">
 			<h2 class="section__title system__title">Торговая система</h2>
 			<p class="section__undertitle system__undertitle">Наша торговая система включает в себя заработок с продуктивной <br> отдачей, как на растущем, так и на падающем рынке.</p>
@@ -618,10 +631,10 @@
 			) * 0.0035;
 
 		gl_FragColor = texture2D(uSampler0, textureCoord);
-		}
-	</script>
+	}
+</script>
 
-	<script src="./libs/all.js"></script>
+<script src="./libs/all.js"></script>
 
 </body>
 </html>
