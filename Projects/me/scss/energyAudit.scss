@@ -1012,6 +1012,10 @@
 		margin: 0; 
 	}
 
+	input[type="number"]:hover,
+	input[type="number"]:focus {
+    -moz-appearance: number-input;}
+
 	::-webkit-input-placeholder { 
 		font-family: $fontFamily;
 		font-size: rem(18);

@@ -108,3 +108,7 @@ button {
   clear: both;
   visibility: hidden;
 }
+
+input[type=number] {
+   -moz-appearance: textfield !important;
+}
