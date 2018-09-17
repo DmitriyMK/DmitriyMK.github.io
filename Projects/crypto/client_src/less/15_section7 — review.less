@@ -20,11 +20,32 @@
 .review {
 	padding: 0;
 	&__slider {
-		padding: 80px 0;
+		padding: 60px 0;
+		@media @desktop {
+			padding: 60px 80px;
+		}
+		@media @desktop-xl {
+			padding: 80px 0;
+		}
 	}
 	&__slide {
 		img {
+			display: block;
+			max-width: 100%;
+			height: auto;
 			margin: auto;
+		}
+	}
+	&__img {
+		@media @tablet {
+
+		}
+		@media @desktop {
+			max-width: 350px;
+			margin: auto;
+		}
+		@media @desktop-xl {
+			max-width: inherit;
 		}
 	}
 }

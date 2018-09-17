@@ -43,37 +43,18 @@ $(document).ready(function() {
     arrows: true,
     dots: true,
     infinite: false,
-    lazyLoad: 'ondemand',
-
     responsive: [
-
       {
-        breakpoint: 767,
+        breakpoint: 769,
         settings: {
           slidesToShow: 1,
         }
       },
-
     ]
-
   });
 
 
-  var cardWrap = document.getElementsByClassName('header__img');
-  document.body.addEventListener('mousemove', cursorPositionHandler);
-
-  function cursorPositionHandler(e) {
-    var decimalX = e.clientX / window.innerWidth - 0.5;
-    var decimalY = e.clientY / window.innerHeight - 0.5;
-
-    TweenMax.to(cardWrap, 0.5, {
-      rotationY: 20 * decimalX,
-      rotationX: -20 * decimalY,
-      ease: Quad.easeOut,
-      transformPerspective: 700,
-      transformOrigin: "center"
-    });
-  }
+  
 
 
   // $(function() {
@@ -98,7 +79,7 @@ $(document).ready(function() {
 
 
 $(window).on('resize orientationchange', function() {
-  $('.slider').slick('resize');
+  $('.review__slider').slick('resize');
 });
 
 
@@ -134,5 +115,22 @@ window.onload = function() {
     plane.onRender(function() { // fired at each requestAnimationFrame call
       plane.uniforms.time.value++; // update our time uniform value
     });
+  };
+};
+
+
+var cardWrap = document.getElementsByClassName('header__img');
+  document.body.addEventListener('mousemove', cursorPositionHandler);
+
+  function cursorPositionHandler(e) {
+    var decimalX = e.clientX / window.innerWidth - 0.5;
+    var decimalY = e.clientY / window.innerHeight - 0.5;
+
+    TweenMax.to(cardWrap, 0.5, {
+      rotationY: 20 * decimalX,
+      rotationX: -20 * decimalY,
+      ease: Quad.easeOut,
+      transformPerspective: 700,
+      transformOrigin: "center"
+    });
   }
-}

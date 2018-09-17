@@ -20,20 +20,51 @@
 .price {
 	padding-top: 0px;
 	&__box {
+		padding-top: 30px;
 		position: relative;
 		display: flex;
-		justify-content: space-between;
+		flex-direction: column;
+		align-items: center;
 		z-index: 20;
+
+		@media @tablet {
+			flex-direction: row;
+			justify-content: space-around;
+			flex-wrap: wrap;
+			align-items: inherit;
+		}
+		@media @desktop {
+			flex-wrap: nowrap;
+			justify-content: space-between;
+		}
 	}	
 	&__item {
-		flex-basis: 31%;
-		height: 460px;
+		flex-basis: 300px;
+		margin-bottom: 30px;
 		box-shadow: 0px 11px 16.74px 1.26px rgba(0, 0, 0, 0.27);
 		background: #e1e1e1;
+
+		@media @mobile-xl{
+			flex-basis: 340px;
+		}
+
+		@media @tablet {
+			flex-basis: 45%;
+		}
+		@media @desktop {
+			flex-basis: 32%;
+			height: 460px;
+			margin-bottom: inherit;
+		}
+		@media @desktop-xl {
+			flex-basis: 31%;
+		}
 		&-active {
-			margin-top: -10px;
-			transform: scale(1.05);
-			box-shadow: 0px 11px 16.74px 1.26px rgba(0, 0, 0, 0.27);
+			@media @desktop {
+				margin-top: -10px;
+				transform: scale(1.05);
+				box-shadow: 0px 11px 16.74px 1.26px rgba(0, 0, 0, 0.27);
+			}
 		}
 	}
 	&__titles {
@@ -60,14 +91,12 @@
 		align-items: center;
 		justify-content: center;
 		padding: 25px 0;
-		// height: 27px;
 		background-image: -moz-linear-gradient( 180deg, rgb(225,225,225) 0%, rgb(255,255,255) 100%);
 		background-image: -webkit-linear-gradient( 180deg, rgb(225,225,225) 0%, rgb(255,255,255) 100%);
 		background-image: -ms-linear-gradient( 180deg, rgb(225,225,225) 0%, rgb(255,255,255) 100%);
 		box-shadow: 0px 11px 16.74px 1.26px rgba(0, 0, 0, 0.27);
 		text-align: center;
 	}
-
 	&__period {
 		padding-bottom: 15px;
 		font-size: 20px;
@@ -85,15 +114,24 @@
 		padding-bottom: 10px;
 		background: #e1e1e1;
 	}
-	
 	&__list {
 		min-height: 80px;
 	}
-
 	&__items {
 		position: relative;
-		padding-left: 30px;
+		padding-left: 25px;
+		padding-right: 15px;
 		margin-bottom: 10px;
+		font-size: 15px;
+
+		@media @desktop {
+			padding-right: inherit;
+			font-size: 14px;
+		}
+		@media @desktop-xl {
+			padding-left: 30px;
+			font-size: inherit;
+		}
 		&:before {
 			content: '';
 			position: absolute;
@@ -103,6 +141,7 @@
 			.ico_list-dots
 		}
 	}
+
 	blockquote {
 		padding-top: 12px;
 		font-size: 10px;
@@ -113,6 +152,7 @@
 			font-weight: 700;
 		}
 	}
+
 	&__btn {
 		display: table;
 		margin: auto;
@@ -148,7 +188,10 @@
 	}
 	.item3 {
 		.price__period {
-			padding-bottom: 18px;
+			padding-bottom: 14px;
+			@media @desktop-xl {
+				padding-bottom: 18px;
+			}
 		}
 		.price__sum {
 			padding: 30px 0 9px 0;
@@ -160,7 +203,11 @@
 			margin-bottom: 5px;
 		}
 		.price__btn {
-			margin-top: -12px;
+			margin-top: 15px;	
+
+			@media @desktop {
+				margin-top: -12px;
+			}
 		}
 	}
 }
