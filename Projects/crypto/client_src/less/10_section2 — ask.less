@@ -18,25 +18,25 @@
 }
 
 .curveWrap {
-	margin-top: -185px;
-	padding-top: 400px;
-	background: url(../images/back__advantages.png)no-repeat;
-	background-size: cover; 
-	height: 2181px;
+	background: #000;
 	position: relative;
 	z-index: 12;
+	overflow: hidden;
 
 	@media @tablet {
-
+		margin-top: -330px;
+		padding-top: 360px;
+		height: 2181px;
+		background: url(../images/back__advantages.png)no-repeat;
+		background-size: cover; 
 	}
 	@media @desktop {
 
 	}
 	@media @desktop-xl {
-
-	}
-	@media @desktop-xl-2 {
-
+		margin-top: -185px;
+		padding-top: 400px;
+		height: 2181px;
 	}
 }
 
@@ -44,31 +44,83 @@
 .ask {
 	position: relative;
 	z-index: 11;
-	padding: 52px 0 60px 190px;
-	background: url(../images/back__small.jpg)no-repeat center/cover;
+	padding: 40px 0;
+	background: @orange;
 	color: #000;
+
+	@media @tablet {
+		background: url(../images/back__small.jpg)no-repeat center/cover;
+	}
+
+	@media @desktop {
+		padding: 52px 0 60px 190px;
+	}
 
 	&__box {
 		position: relative;
+		text-align: center;
+		@media @tablet {
+			text-align: inherit;
+		}
 	}
 	&__title {
-		font-size: 38px;
+		font-size: 28px;
 		font-weight: 700;
+		@media @desktop {
+			font-size: 30px;
+		}
+		@media @desktop-xl {
+			font-size: 38px;
+		}
 	}
 	&__accent {
 		display: inline-block;
 		padding: 5px 0;
-		font-size: 28px;
+		font-size: 24px;
 		font-weight: 700;
+
+		@media @desktop {
+			font-size: 28px;
+		}
 	}
 	&__text {
-		padding-top: 10px;
-		font-size: 22px;
+		max-width: 300px;
+		padding: 15px 0;
+		font-size: 20px;
+		margin: auto;
+		@media @tablet {
+			max-width: 420px;
+			padding-bottom: 0;
+			font-size: 22px;
+			margin: inherit;
+		}
+		@media @desktop {
+			max-width: 650px;
+		}
 	}
 	&__img {
-		position: absolute;
-		top: -200px;
-		right: -60px;
+		max-width: 220px;
+		margin: auto;
+		@media @tablet {
+			position: absolute;
+			top: -25px;
+			right: 0;
+			max-width: 380px;
+			margin: inherit;
+		}
+		@media @desktop {
+			top: -50px;
+			right: 0;
+			max-width: 410px;
+		}
+		@media @desktop-xl {
+			top: -200px;
+			right: -30px;
+			max-width: inherit;
+		}
+		@media @desktop-xl-2 {
+			right: -60px;
+		}
 	}
 }
 

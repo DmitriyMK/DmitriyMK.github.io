@@ -21,37 +21,91 @@
 .efficiency {
 	padding-top: 62px;
 	padding-bottom: 62px;
-	margin-top: -520px;
+	
+	@media @tablet {
+		margin-top: -500px;
+	}
+	@media @desktop-xl {
+		margin-top: -320px;
+	}
+
+	@media @desktop-xll {
+		margin-top: -520px;
+	}
 	&__title {
 		position: relative;
 		z-index: 16;
-		color: #fff;
+		
+		@media @desktop-xll {
+			color: #fff;
+		}
 		&:after {
-			.ico_title__line-white
+			@media @desktop-xll {
+				.ico_title__line-white
+			}
 		}
 	}
 	&__box {
 		position: relative;
-		padding: 50px 50px 0 50px;
+		padding: 50px 0;
 		display: flex;
+		flex-direction: column;
 		justify-content: space-between;
 		text-align: center;
 		z-index: 16;
+		@media @tablet {
+			flex-direction: row;
+		}
+		@media @desktop {
+			padding: 50px 50px 0 50px;
+		}
 		&-side {
-			flex-basis: 45%;
+			flex-basis: 290px;
+			@media @mobile-xl{
+				flex-basis: 320px;
+			}
+			@media @tablet {
+				flex-basis: 48%;
+			}
+			@media @desktop {
+				flex-basis: 45%;
+			}
 		}
 	}
 	&__img {
-		max-width: 436px;
-		height: 255px;
+		padding: 20px 0;
+		max-width: 320px;
+		height: 191px;
+		@media @tablet {
+			padding: 0;
+		}
+		@media @desktop {
+			max-width: 436px;
+			height: 255px;
+		}
 	}
 	&__titles {
-		padding-top: 27px;
-		padding-bottom: 27px;
-		font-size: 26px;
+		padding-top: 17px;
+		padding-bottom: 17px;
+		font-size: 23px;
 		font-weight: 700;
+		@media @tablet {
+			padding-top: 27px;
+			padding-bottom: 27px;
+			font-size: 26px;
+		}
 	}
 	&__text {
-		font-size: 20px;
+		font-size: 17px;
+		@media @tablet {
+			font-size: 20px;
+		}
+	}
+
+	br {
+		display: none;
+		@media @desktop {
+			display: inline-block;
+		}
 	}
 }
