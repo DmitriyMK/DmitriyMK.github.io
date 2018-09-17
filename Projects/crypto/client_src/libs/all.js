@@ -44,17 +44,18 @@ $(document).ready(function() {
     dots: true,
     infinite: false,
     responsive: [
+
       {
-        breakpoint: 769,
+        breakpoint: 768,
         settings: {
           slidesToShow: 1,
+          fade: true
         }
-      },
+      }
+
     ]
   });
 
-
-  
 
 
   // $(function() {
@@ -83,8 +84,32 @@ $(window).on('resize orientationchange', function() {
 });
 
 
+$(document).ready(function() {
+
+  if (document.documentElement.clientWidth > 768) {
+
+    var cardWrap = document.getElementsByClassName('header__img');
+    document.body.addEventListener('mousemove', cursorPositionHandler);
+
+    function cursorPositionHandler(e) {
+      var decimalX = e.clientX / window.innerWidth - 0.5;
+      var decimalY = e.clientY / window.innerHeight - 0.5;
+
+      TweenMax.to(cardWrap, 0.5, {
+        rotationY: 20 * decimalX,
+        rotationX: -20 * decimalY,
+        ease: Quad.easeOut,
+        transformPerspective: 700,
+        transformOrigin: "center"
+      });
+    }
+
+  };
+});
+
+
 window.onload = function() {
-  if (document.documentElement.clientWidth > 1200) {
+  if (document.documentElement.clientWidth > 768) {
     // get our canvas wrapper
     var canvasContainer = document.getElementById("canvas");
 
@@ -117,20 +142,3 @@ window.onload = function() {
     });
   };
 };
-
-
-var cardWrap = document.getElementsByClassName('header__img');
-  document.body.addEventListener('mousemove', cursorPositionHandler);
-
-  function cursorPositionHandler(e) {
-    var decimalX = e.clientX / window.innerWidth - 0.5;
-    var decimalY = e.clientY / window.innerHeight - 0.5;
-
-    TweenMax.to(cardWrap, 0.5, {
-      rotationY: 20 * decimalX,
-      rotationX: -20 * decimalY,
-      ease: Quad.easeOut,
-      transformPerspective: 700,
-      transformOrigin: "center"
-    });
-  }

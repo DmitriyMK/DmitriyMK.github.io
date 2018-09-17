@@ -2,11 +2,14 @@
 .slick-next {
 	width: 50px;
 	height: 100%;
-	top: 50%;
-	transform: translateY(-50%);
+	bottom: -25px;
 	opacity: 1;
 	transition: opacity .3s linear;
 	z-index: 10;
+	@media @desktop {
+		top: 50%;
+		transform: translateY(-50%);
+	}
 }
 
 
