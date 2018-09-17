@@ -2656,7 +2656,7 @@ label {
 .slick-prev, .slick-next {
     width: 50px;
     height: 100%;
-    bottom: -25px;
+    bottom: -28px;
     opacity: 1;
     -webkit-transition: opacity 0.3s linear;
          -o-transition: opacity 0.3s linear;
