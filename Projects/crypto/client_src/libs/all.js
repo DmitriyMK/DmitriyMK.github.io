@@ -20,6 +20,7 @@ $(document).ready(function() {
     $('html').addClass('no-overflow-y');
 
     new WOW().init();
+
   };
 
 
@@ -46,16 +47,17 @@ $(document).ready(function() {
 
     responsive: [
 
-      {
-        breakpoint: 767,
-        settings: {
-          slidesToShow: 1,
-        }
-      },
+    {
+      breakpoint: 767,
+      settings: {
+        slidesToShow: 1,
+      }
+    },
 
     ]
 
   });
+
 
   var cardWrap = document.getElementsByClassName('header__img');
   document.body.addEventListener('mousemove', cursorPositionHandler);
@@ -63,6 +65,7 @@ $(document).ready(function() {
   function cursorPositionHandler(e) {
     var decimalX = e.clientX / window.innerWidth - 0.5;
     var decimalY = e.clientY / window.innerHeight - 0.5;
+    
     TweenMax.to(cardWrap, 0.5, {
       rotationY: 20 * decimalX,
       rotationX: -20 * decimalY,

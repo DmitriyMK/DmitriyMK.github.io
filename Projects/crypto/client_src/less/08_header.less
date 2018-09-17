@@ -27,22 +27,8 @@
 .header {
 	position: relative;
 	background: #000;
+	overflow: hidden;
 
-	@media @mobile-xl{
-
-	}
-	@media @mobile-land {
-
-	}
-	@media @tablet {
-
-	}
-	@media @desktop {
-
-	}
-	@media @desktop-xl {
-
-	}
 	@media @desktop-xl-2 {
 		height: 1140px;
 	}
@@ -51,8 +37,8 @@
 		position: relative;
 		display: flex;
 		align-items: center;
-		justify-content: space-between;
-		padding: 30px 10px 15px 0;
+		justify-content: center;
+		padding: 30px 0 15px 0;
 		z-index: 10;
 
 		@media @mobile-xl{
@@ -62,13 +48,10 @@
 
 		}
 		@media @tablet {
-
+			justify-content: space-between;
 		}
 		@media @desktop {
-
-		}
-		@media @desktop-xl {
-
+			padding: 30px 10px 15px 0;
 		}
 	}
 	&__logo {
@@ -77,22 +60,24 @@
 		justify-content: space-between;
 		&-img {
 			margin-right: 15px;
+			max-width: 140px;
+
+			@media @desktop {
+				max-width: inherit;
+			}
 		}
 	}
+
 	&__link {
-		margin-right: 30px;
-		position: relative;
-		@media @mobile-xl{
+		display: none;
 
-		}
-		@media @mobile-land {
-
-		}
 		@media @tablet {
-
+			display: inline-block;
+			margin-right: 8px;
+			position: relative;
 		}
 		@media @desktop {
-
+			margin-right: 30px;
 		}
 		@media @desktop-xl {
 			margin-right: 50px;
@@ -111,24 +96,25 @@
 			width: 100%;
 		}
 	}
+
 	&__center {
 		position: relative;
-		padding: 80px 0;
+		padding: 8vh 0 15vh 0;
 		display: flex;
+		flex-direction: column;
 		align-items: center;
 		justify-content: space-between;
 		z-index: 20;
-		@media @mobile-xl{
 
-		}
 		@media @mobile-land {
-
+			flex-direction: row;
 		}
-		@media @tablet {
 
+		@media @tablet {
+			padding: 30px 0;
 		}
 		@media @desktop {
-			padding: 30px 30px 30px 0;
+			padding: 30px 60px 30px 0;
 		}
 		@media @desktop-xl {
 			padding: 30px 150px 30px 0;
@@ -139,17 +125,16 @@
 	}
 	&__img {
 		transition: all .3s linear;
-		@media @mobile-xl{
+		max-width: 200px;
 
-		}
 		@media @mobile-land {
-
+			max-width: 230px;
 		}
 		@media @tablet {
-
+			max-width: 300px;
 		}
 		@media @desktop {
-			max-width: 350px;
+			max-width: 330px;
 		}
 		@media @desktop-xl {
 			max-width: 420px;
@@ -159,20 +144,55 @@
 			margin-left: -20px;
 		}
 	}
-	&__title {
-		font-size: 42px;
-		font-weight: 300;
-		@media @mobile-xl{
-
+	&__content {
+		max-width: 336px;
+		padding-top: 15px;
+		text-align: center;
+		br {
+			display: none;
 		}
+
 		@media @mobile-land {
-
+			padding-left: 30px;
+			flex-basis: 65%;
+			text-align: inherit;
+			padding-top: inherit;
+			max-width: inherit;
 		}
-		@media @tablet {
 
+		@media @tablet {
+			flex-basis: 60%;
+			margin-top: 0;
 		}
 		@media @desktop {
-			font-size: 42px;
+			padding-left: inherit;
+			flex-basis: inherit;
+			br {
+				display: inline-block;
+			}
+		}
+	}
+	&__title {
+		font-size: 28px;
+		font-weight: 300;
+		strong {
+			display: block;
+		}
+		@media @mobile-xl{
+			font-size: 32px;
+		}
+		@media @mobile-land {
+			font-size: 26px;
+			strong {
+				display: inline;
+			}
+		}
+
+		@media @tablet {
+			font-size: 32px;
+		}
+		@media @desktop {
+			font-size: 38px;
 		}
 		@media @desktop-xl {
 			font-size: 48px;
@@ -183,22 +203,23 @@
 	}
 	&__text {
 		padding-top: 20px;
-		font-size: 28px;
+		font-size: 20px;
 		color: @orange;
 		@media @mobile-xl{
-
+			font-size: 22px;
 		}
 		@media @mobile-land {
-
+			font-size: 19px;
 		}
 		@media @tablet {
-
+			font-size: 22px;
 		}
 		@media @desktop {
-			font-size: 28px;
+			font-size: 25px;
 		}
 		@media @desktop-xl {
 			max-width: 560px;
+			font-size: 28px;
 		}
 		@media @desktop-xl-2 {
 			max-width: inherit;
@@ -208,60 +229,46 @@
 	
 	// STYLE FOR CANVASIK
 	&__animation {
-		position: absolute;
-		width: 100%;
-		height: 75%;
-		left: 0;
-		bottom: -5vh;
-
-		@media @mobile-xl{
-
-		}
-		@media @mobile-land {
-
-		}
 		@media @tablet {
-
-		}
-		@media @desktop {
-
+			position: absolute;
+			width: 100%;
+			height: 66%;
+			left: 0;
+			bottom: 0;
 		}
 		@media @desktop-xl {
-
+			height: 75%;
+			bottom: -5vh;
 		}
 		img {
 			display: none;
-
-			@media @mobile-xl{
-
-			}
-			@media @mobile-land {
-
-			}
-			@media @tablet {
-
-			}
-			@media @desktop {
-
-			}
 		}
 	}
 
 	#canvas {
-		position: absolute;
-		top: 0;
-		right: 0;
-		bottom: 0;
-		left: 0;
+		display: none;
+		@media @tablet {
+			display: block;
+			position: absolute;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+		}
 	}
 
 	// STYLE FOR WAVE ON HEADER
 	.wave {
 		position: relative;
+		z-index: 1;
 	}
 	svg {
-		stroke: none; 
-		fill: #fff;
+		display: none;
+		@media @tablet {
+			display: block;
+			stroke: none; 
+			fill: #fff;
+		}
 	}
 
 	// STYLE FOR CURVE LINES

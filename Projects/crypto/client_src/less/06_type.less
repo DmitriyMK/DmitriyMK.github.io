@@ -66,7 +66,7 @@ body {
     font-weight: 400;
     font-family: @ff1;
 
-    overflow: hidden;
+    // overflow: hidden;
 }
 
 .fancybox-margin {
@@ -74,7 +74,6 @@ body {
 }
 
 section {
-    /*     overflow: hidden; */
     padding: 60px 0;
     @media @desktop-xl {
         padding: 80px 0;
@@ -101,47 +100,55 @@ section {
     display: table;
     position: relative;
     margin: auto;
-    font-size: 36px;
+    font-size: 26px;
     font-weight: 700;
 
     &:before {
-        content: '';
-        position: absolute;
-        height: 2px;
-        width: 77px;
-        top: 50%;
-        transform: translateY(-50%);
-        left: -110px;
-        background: #b0b0b0;
+        @media @tablet {
+            content: '';
+            position: absolute;
+            height: 2px;
+            width: 77px;
+            top: 50%;
+            transform: translateY(-50%);
+            left: -110px;
+            background: #b0b0b0;
+        }
     }
     &:after {
-        content: '';
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        right: -110px;
-        .ico_title__line
+        @media @tablet {
+            content: '';
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            right: -110px;
+            .ico_title__line
+        }
     }
-
+    
     @media @tablet {
-
-    }
-    @media @desktop {
-
+        font-size: 28px;
     }
     @media @desktop-xl {
-
-    }
-    @media @desktop-xl-2 {
-
-    }
-    @media @desktop-xll {
-
+        font-size: 36px;
     }
 }
 
 .section__undertitle { 
-    padding: 60px 0;
-    font-size: 21px;
+    padding: 20px 0;
+    font-size: 18px;
     text-align: center;
+    @media @mobile-xl{
+        font-size: 19px;
+    }
+    @media @tablet {
+
+    }
+    @media @desktop {
+        font-size: 21px;
+        padding: 30px 0;
+    }
+    @media @desktop-xl-2 {
+        padding: 60px 0;
+    }
 }
