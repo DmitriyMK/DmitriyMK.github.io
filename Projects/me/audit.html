@@ -49,7 +49,7 @@
 					<a class="logo" href="index.html"><img src="img/logo.png" alt="Misto Energy" title="Misto Energy"></a>
 					<div class="box__nav">
 						<ul class="header__list">
-							<li class="header__item hide__mob-sm"><a class="header__link link-address" href="#">м.Київ, вул. Дегтярівська, 25 А</a></li>
+							<li class="header__item hide__mob-sm"><span class="header__link link-address">м.Київ, вул. Дегтярівська, 25 А</span></li>
 							<li class="header__item "><a class="header__link link-phone" href="tel:+380955667968"><i class="icon-phone"></i><span>+38(095)566-79-68</span></a></li>
 							<li class="header__item hide__mob"><a class="header__link link-mail" href="mailto:support@mistoenergy.com.ua">support@mistoenergy.com.ua</a></li>
 							<li class="header__item-btn hide__mob"><a class=" btn-green" data-remodal-target="callback" href="#callback">Замовити дзвінок</a></li>	
@@ -443,7 +443,7 @@
 					</div>
 					
 					<div class="calculator__row">
-						<input type="submit" class="btn-green btn-disabled form__btn" id="calculateIt" value="Розрахувати"> 
+						<input type="submit" class="btn-green btn-disabled form__btn calculClick" id="calculateIt" value="Розрахувати"> 
 					</div>
 					
 					<div class="calculator__row calculator__row-line">
@@ -586,31 +586,54 @@
 	<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
 	<script src="./js/libs/jquery.enllax.min.js"></script>
 	<script>
-		document.getElementById('calculateForm').onsubmit = function() {
 
-        event.preventDefault();
+		$("#calculateIt").click(function(event){
+			event.preventDefault();
 
-        var num1 = document.getElementById("item1").value;
-        var num2 = document.getElementById("item2").value;
-        var num3 = document.getElementById("item3").value;
-        var num4 = document.getElementById("item4").value;
+			var num1 = document.getElementById("item1").value;
+			var num2 = document.getElementById("item2").value;
+			var num3 = document.getElementById("item3").value;
+			var num4 = document.getElementById("item4").value;
 
-        var num5 = num1 * 0.85;
-        document.getElementById("item5").value = num5.toFixed(2);
+			var num5 = num1 * 0.85;
+			document.getElementById("item5").value = num5.toFixed(2);
 
-        var num6 = num1 * 0.15 * num2;
-        document.getElementById("item6").value = num6.toFixed(2);
+			var num6 = num1 * 0.15 * num2;
+			document.getElementById("item6").value = num6.toFixed(2);
 
-        var num7 = num6 / num3;
-        document.getElementById("item7").value = num7.toFixed(2);
+			var num7 = num6 / num3;
+			document.getElementById("item7").value = num7.toFixed(2);
 
-        var num8 = num7 * num4;
-        document.getElementById("item8").value = num8.toFixed(2);
-    };
+			var num8 = num7 * num4;
+			document.getElementById("item8").value = num8.toFixed(2);
+		});
+
+		// document.getElementById('calculateForm').onsubmit = function() {
+
+		// 	event.preventDefault();
+
+		// 	var num1 = document.getElementById("item1").value;
+		// 	var num2 = document.getElementById("item2").value;
+		// 	var num3 = document.getElementById("item3").value;
+		// 	var num4 = document.getElementById("item4").value;
+
+		// 	var num5 = num1 * 0.85;
+		// 	document.getElementById("item5").value = num5.toFixed(2);
+
+		// 	var num6 = num1 * 0.15 * num2;
+		// 	document.getElementById("item6").value = num6.toFixed(2);
+
+		// 	var num7 = num6 / num3;
+		// 	document.getElementById("item7").value = num7.toFixed(2);
+
+		// 	var num8 = num7 * num4;
+		// 	document.getElementById("item8").value = num8.toFixed(2);
+
+		// };
 	</script>
 	<script src="./js/script.js"></script> 
 
-<!-- 	<script>
+	<script>
 		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
 			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -618,8 +641,7 @@
 
 		ga('create', 'UA-96584494-1', 'auto');
 		ga('send', 'pageview');
-	</script> -->
-
+	</script>
 
 	<script async defer src="https://maps.googleapis.com/maps/api/js?callback=initMap&key=AIzaSyANY39pap8l5_ndmHjwHGhuWmw07CdBVRE"></script>
 
