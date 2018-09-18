@@ -84,9 +84,6 @@
 			margin-left: inherit;
 			margin-right: inherit;
 		}
-		@media @desktop-xl {
-
-		}
 	}
 	&__name {
 		padding-top: 10px;
@@ -99,7 +96,11 @@
 	}
 	&__text {
 		padding: 10px 0;
+		min-height: 82px;
 		font-size: 14px;
+		@media @tablet {
+			min-height: 82px;
+		}
 	}
 	&__contact {
 		display: flex;

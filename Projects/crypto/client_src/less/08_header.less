@@ -27,7 +27,6 @@
 .header {
 	position: relative;
 	background: #000;
-	overflow: hidden;
 
 	@media @desktop-xl-2 {
 		height: 1140px;
@@ -40,6 +39,7 @@
 		justify-content: center;
 		padding: 30px 0 15px 0;
 		z-index: 10;
+		transition: all .3s cubic-bezier(0,1.56,.5,1.62);
 
 		@media @tablet {
 			justify-content: space-between;
@@ -52,10 +52,11 @@
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
+		transition: all .3s cubic-bezier(0,1.56,.5,1.62);
 		&-img {
 			margin-right: 15px;
 			max-width: 140px;
-
+			transition: all .3s cubic-bezier(0,1.56,.5,1.62);
 			@media @desktop {
 				max-width: inherit;
 			}
@@ -99,7 +100,7 @@
 
 	&__center {
 		position: relative;
-		padding: 10vh 0 15vh 0;
+		padding: 20vh 0 15vh 0;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
@@ -107,21 +108,21 @@
 		z-index: 20;
 
 		@media @mobile-land {
-			padding: 3vh 0 20vh 0;
+			padding: 30vh 0 10vh 0;
 			flex-direction: row;
 		}
 
 		@media @tablet {
-			padding: 30px 0;
+			padding: 120px 0 30px 0;
 		}
 		@media @desktop {
-			padding: 30px 60px 30px 0;
+			padding: 140px 60px 30px 0;
 		}
 		@media @desktop-xl {
-			padding: 30px 150px 30px 0;
+			padding: 120px 150px 0px 0;
 		}
 		@media @desktop-xl-2 {
-			padding: 80px 0;
+			padding: 190px 0 80px 0;
 		}
 	}
 	&__img {
@@ -294,4 +295,37 @@
 			bottom: 145px;
 		}
 	}
+}
+
+
+
+.headerTop {
+	position: fixed;
+	background: #000;
+	width: 100%;
+	z-index: 200;
+	transform: translateY(0);
+	transform: translate3d(0,0,0);
+	transition: .25s transform;
+	backface-visibility: hidden;
+	transition: all .3s cubic-bezier(0,1.56,.5,1.62);
+}
+
+.fixedMenu {
+	// transform: translateY(0);
+	// transform: translate3d(0,0,0);
+	transition: all .3s cubic-bezier(0,1.56,.5,1.62);
+	.header__top {
+		padding: 15px 0;
+	}
+	.header__logo {
+		&-img {
+			max-width: 140px;
+		}
+	}
+}
+
+.fixedMenuUps {
+	transform: translateY(-6rem);
+	transform: translate3d(0,-6rem,0);
 }

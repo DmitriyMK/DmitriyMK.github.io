@@ -403,117 +403,85 @@ template {
         overflow-x: hidden;
     }
 }
-.ico_arr-right {
-    background-image: url(../images/icons/spritebox-sprite.png);
-    background-repeat: no-repeat;
-    background-position: 0 0;
-    height: 62px;
-    width: 74px;
+.ico_agency {
+    width: 156px;
+    height: 39px;
+    background: url('../images/icons/css_sprites.png') -4px -4px;
 }
 .ico_arr-left {
-    background-image: url(../images/icons/spritebox-sprite.png);
-    background-repeat: no-repeat;
-    background-position: -74px 0;
-    height: 62px;
     width: 74px;
+    height: 62px;
+    background: url('../images/icons/css_sprites.png') -4px -51px;
 }
 .ico_arr-left-sm {
-    background-image: url(../images/icons/spritebox-sprite.png);
-    background-repeat: no-repeat;
-    background-position: 0 -62px;
-    height: 42px;
     width: 50px;
+    height: 42px;
+    background: url('../images/icons/css_sprites.png') -168px -51px;
+}
+.ico_arr-right {
+    width: 74px;
+    height: 62px;
+    background: url('../images/icons/css_sprites.png') -86px -51px;
 }
 .ico_arr-right-sm {
-    background-image: url(../images/icons/spritebox-sprite.png);
-    background-repeat: no-repeat;
-    background-position: -50px -62px;
-    height: 42px;
     width: 50px;
-}
-.ico_agency {
-    background-image: url(../images/icons/spritebox-sprite.png);
-    background-repeat: no-repeat;
-    background-position: -148px 0;
-    height: 39px;
-    width: 156px;
-}
-.ico_tg {
-    background-image: url(../images/icons/spritebox-sprite.png);
-    background-repeat: no-repeat;
-    background-position: -148px -39px;
-    height: 29px;
-    width: 29px;
-}
-.ico_fb-big {
-    background-image: url(../images/icons/spritebox-sprite.png);
-    background-repeat: no-repeat;
-    background-position: -177px -39px;
-    height: 22px;
-    width: 22px;
-}
-.ico_vk-big {
-    background-image: url(../images/icons/spritebox-sprite.png);
-    background-repeat: no-repeat;
-    background-position: -199px -39px;
-    height: 22px;
-    width: 22px;
-}
-.ico_tg-big {
-    background-image: url(../images/icons/spritebox-sprite.png);
-    background-repeat: no-repeat;
-    background-position: -221px -39px;
-    height: 22px;
-    width: 22px;
+    height: 42px;
+    background: url('../images/icons/css_sprites.png') -226px -51px;
 }
 .ico_fb {
-    background-image: url(../images/icons/spritebox-sprite.png);
-    background-repeat: no-repeat;
-    background-position: -243px -39px;
-    height: 16px;
     width: 16px;
-}
-.ico_vk {
-    background-image: url(../images/icons/spritebox-sprite.png);
-    background-repeat: no-repeat;
-    background-position: -259px -39px;
     height: 16px;
-    width: 16px;
+    background: url('../images/icons/css_sprites.png') -417px -51px;
 }
-.ico_list-dots {
-    background-image: url(../images/icons/spritebox-sprite.png);
-    background-repeat: no-repeat;
-    background-position: -275px -39px;
-    height: 13px;
-    width: 19px;
-}
-.ico_title__line-white {
-    background-image: url(../images/icons/spritebox-sprite.png);
-    background-repeat: no-repeat;
-    background-position: -177px -61px;
-    height: 7px;
-    width: 98px;
-}
-.ico_title__line {
-    background-image: url(../images/icons/spritebox-sprite.png);
-    background-repeat: no-repeat;
-    background-position: -148px -68px;
-    height: 7px;
-    width: 81px;
-}
-.ico_lines-right {
-    background-image: url(../images/icons/spritebox-sprite.png);
-    background-repeat: no-repeat;
-    background-position: -304px 0;
-    height: 5px;
-    width: 468px;
+.ico_fb-big {
+    width: 24px;
+    height: 24px;
+    background: url('../images/icons/facebook.svg');
 }
 .ico_lines-left {
-    background-image: url(../images/icons/spritebox-sprite.png);
-    background-repeat: no-repeat;
-    background-position: -304px -5px;
-    height: 5px;
     width: 200px;
+    height: 5px;
+    background: url('../images/icons/css_sprites.png') -168px -17px;
+}
+.ico_lines-right {
+    width: 468px;
+    height: 5px;
+    background: url('../images/icons/css_sprites.png') -168px -4px;
+}
+.ico_list-dots {
+    width: 19px;
+    height: 13px;
+    background: url('../images/icons/css_sprites.png') -465px -51px;
+}
+.ico_tg {
+    width: 24px;
+    height: 24px;
+    background: url('../images/icons/telegram.svg');
+}
+.ico_tg-big {
+    width: 24px;
+    height: 24px;
+    background: url('../images/icons/telegram.svg');
+}
+.ico_title__line {
+    width: 81px;
+    height: 7px;
+    background: url('../images/icons/css_sprites.png') -274px -30px;
+}
+.ico_title__line-white {
+    width: 98px;
+    height: 7px;
+    background: url('../images/icons/css_sprites.png') -168px -30px;
+}
+.ico_vk {
+    width: 16px;
+    height: 16px;
+    background: url('../images/icons/css_sprites.png') -441px -51px;
+}
+.ico_vk-big {
+    width: 24px;
+    height: 24px;
+    background: url('../images/icons/vk.svg');
 }
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, strike, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, main, menu, nav, output, ruby, section, summary, time, mark, audio, video {
     margin: 0;
@@ -620,11 +588,9 @@ section {
             -ms-transform: translateY(-50%);
                 transform: translateY(-50%);
         right: -110px;
-        background-image: url(../images/icons/spritebox-sprite.png);
-        background-repeat: no-repeat;
-        background-position: -148px -68px;
-        height: 7px;
         width: 81px;
+        height: 7px;
+        background: url('../images/icons/css_sprites.png') -274px -30px;
     }
 }
 @media only screen and (min-width: 768px) {
@@ -673,7 +639,6 @@ section {
 .header {
     position: relative;
     background: #000;
-    overflow: hidden;
 }
 @media only screen and (min-width: 1600px) {
     .header {
@@ -693,6 +658,9 @@ section {
     justify-content: center;
     padding: 30px 0 15px 0;
     z-index: 10;
+    -webkit-transition: all 0.3s cubic-bezier(0, 1.56, 0.5, 1.62);
+         -o-transition: all 0.3s cubic-bezier(0, 1.56, 0.5, 1.62);
+            transition: all 0.3s cubic-bezier(0, 1.56, 0.5, 1.62);
 }
 @media only screen and (min-width: 768px) {
     .header__top {
@@ -716,10 +684,16 @@ section {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
+    -webkit-transition: all 0.3s cubic-bezier(0, 1.56, 0.5, 1.62);
+         -o-transition: all 0.3s cubic-bezier(0, 1.56, 0.5, 1.62);
+            transition: all 0.3s cubic-bezier(0, 1.56, 0.5, 1.62);
 }
 .header__logo-img {
     margin-right: 15px;
     max-width: 140px;
+    -webkit-transition: all 0.3s cubic-bezier(0, 1.56, 0.5, 1.62);
+         -o-transition: all 0.3s cubic-bezier(0, 1.56, 0.5, 1.62);
+            transition: all 0.3s cubic-bezier(0, 1.56, 0.5, 1.62);
 }
 @media only screen and (min-width: 992px) {
     .header__logo-img {
@@ -771,7 +745,7 @@ section {
 }
 .header__center {
     position: relative;
-    padding: 10vh 0 15vh 0;
+    padding: 20vh 0 15vh 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -789,7 +763,7 @@ section {
 }
 @media only screen and (min-width: 480px) {
     .header__center {
-        padding: 3vh 0 20vh 0;
+        padding: 30vh 0 10vh 0;
         -webkit-box-orient: horizontal;
         -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -798,22 +772,22 @@ section {
 }
 @media only screen and (min-width: 768px) {
     .header__center {
-        padding: 30px 0;
+        padding: 120px 0 30px 0;
     }
 }
 @media only screen and (min-width: 992px) {
     .header__center {
-        padding: 30px 60px 30px 0;
+        padding: 140px 60px 30px 0;
     }
 }
 @media only screen and (min-width: 1200px) {
     .header__center {
-        padding: 30px 150px 30px 0;
+        padding: 120px 150px 0 0;
     }
 }
 @media only screen and (min-width: 1600px) {
     .header__center {
-        padding: 80px 0;
+        padding: 190px 0 80px 0;
     }
 }
 .header__img {
@@ -1035,6 +1009,43 @@ section {
         bottom: 145px;
     }
 }
+.headerTop {
+    position: fixed;
+    background: #000;
+    width: 100%;
+    z-index: 200;
+    -webkit-transform: translateY(0);
+        -ms-transform: translateY(0);
+            transform: translateY(0);
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+    -webkit-transition: 0.25s transform;
+         -o-transition: 0.25s transform;
+            transition: 0.25s transform;
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+    -webkit-transition: all 0.3s cubic-bezier(0, 1.56, 0.5, 1.62);
+         -o-transition: all 0.3s cubic-bezier(0, 1.56, 0.5, 1.62);
+            transition: all 0.3s cubic-bezier(0, 1.56, 0.5, 1.62);
+}
+.fixedMenu {
+    -webkit-transition: all 0.3s cubic-bezier(0, 1.56, 0.5, 1.62);
+         -o-transition: all 0.3s cubic-bezier(0, 1.56, 0.5, 1.62);
+            transition: all 0.3s cubic-bezier(0, 1.56, 0.5, 1.62);
+}
+.fixedMenu .header__top {
+    padding: 15px 0;
+}
+.fixedMenu .header__logo-img {
+    max-width: 140px;
+}
+.fixedMenuUps {
+    -webkit-transform: translateY(-6rem);
+        -ms-transform: translateY(-6rem);
+            transform: translateY(-6rem);
+    -webkit-transform: translate3d(0, -6rem, 0);
+            transform: translate3d(0, -6rem, 0);
+}
 .system {
     position: relative;
 }
@@ -1231,11 +1242,9 @@ section {
     -webkit-transform: translateY(-50%);
         -ms-transform: translateY(-50%);
             transform: translateY(-50%);
-    background-image: url(../images/icons/spritebox-sprite.png);
-    background-repeat: no-repeat;
-    background-position: -275px -39px;
-    height: 13px;
     width: 19px;
+    height: 13px;
+    background: url('../images/icons/css_sprites.png') -465px -51px;
 }
 @media only screen and (min-width: 768px) {
     .system .reorder .system__box-content {
@@ -1400,11 +1409,9 @@ section {
     }
 }
 .advantages__title:after {
-    background-image: url(../images/icons/spritebox-sprite.png);
-    background-repeat: no-repeat;
-    background-position: -177px -61px;
-    height: 7px;
     width: 98px;
+    height: 7px;
+    background: url('../images/icons/css_sprites.png') -168px -30px;
 }
 .advantages__back {
     display: block;
@@ -1744,11 +1751,9 @@ section {
 }
 @media only screen and (min-width: 1920px) {
     .efficiency__title:after {
-        background-image: url(../images/icons/spritebox-sprite.png);
-        background-repeat: no-repeat;
-        background-position: -177px -61px;
-        height: 7px;
         width: 98px;
+        height: 7px;
+        background: url('../images/icons/css_sprites.png') -168px -30px;
     }
 }
 .efficiency__box {
@@ -2026,11 +2031,9 @@ section {
     -webkit-transform: translateY(-50%);
         -ms-transform: translateY(-50%);
             transform: translateY(-50%);
-    background-image: url(../images/icons/spritebox-sprite.png);
-    background-repeat: no-repeat;
-    background-position: -275px -39px;
-    height: 13px;
     width: 19px;
+    height: 13px;
+    background: url('../images/icons/css_sprites.png') -465px -51px;
 }
 .price blockquote {
     padding-top: 12px;
@@ -2076,16 +2079,8 @@ section {
 .price .item2 .price__btn {
     margin-top: 18px;
 }
-.price .item3 .price__period {
-    padding-bottom: 14px;
-}
-@media only screen and (min-width: 1200px) {
-    .price .item3 .price__period {
-        padding-bottom: 18px;
-    }
-}
 .price .item3 .price__sum {
-    padding: 30px 0 9px 0;
+    padding: 30px 0 18px 0;
 }
 .price .item3 .price__list {
     padding-top: 0;
@@ -2098,7 +2093,7 @@ section {
 }
 @media only screen and (min-width: 992px) {
     .price .item3 .price__btn {
-        margin-top: -12px;
+        margin-top: 18px;
     }
 }
 .team {
@@ -2125,11 +2120,9 @@ section {
     text-align: center;
 }
 .team__title:after {
-    background-image: url(../images/icons/spritebox-sprite.png);
-    background-repeat: no-repeat;
-    background-position: -177px -61px;
-    height: 7px;
     width: 98px;
+    height: 7px;
+    background: url('../images/icons/css_sprites.png') -168px -30px;
 }
 .team__list {
     position: relative;
@@ -2198,7 +2191,13 @@ section {
 }
 .team__text {
     padding: 10px 0;
+    min-height: 82px;
     font-size: 14px;
+}
+@media only screen and (min-width: 768px) {
+    .team__text {
+        min-height: 82px;
+    }
 }
 .team__contact {
     display: -webkit-box;
@@ -2783,38 +2782,50 @@ label {
 }
 .slick-prev {
     left: 0;
-    background-image: url(../images/icons/spritebox-sprite.png);
-    background-repeat: no-repeat;
-    background-position: 0 -62px;
-    height: 42px;
     width: 50px;
+    height: 42px;
+    background: url('../images/icons/css_sprites.png') -168px -51px;
+}
+@media only screen and (min-width: 480px) {
+    .slick-prev {
+        left: 30vh;
+    }
+}
+@media only screen and (min-width: 768px) {
+    .slick-prev {
+        left: 20vh;
+    }
 }
 @media only screen and (min-width: 992px) {
     .slick-prev {
         left: -10px;
-        background-image: url(../images/icons/spritebox-sprite.png);
-        background-repeat: no-repeat;
-        background-position: -74px 0;
-        height: 62px;
         width: 74px;
+        height: 62px;
+        background: url('../images/icons/css_sprites.png') -4px -51px;
     }
 }
 .slick-next {
     right: 0;
-    background-image: url(../images/icons/spritebox-sprite.png);
-    background-repeat: no-repeat;
-    background-position: -50px -62px;
-    height: 42px;
     width: 50px;
+    height: 42px;
+    background: url('../images/icons/css_sprites.png') -226px -51px;
+}
+@media only screen and (min-width: 480px) {
+    .slick-next {
+        right: 30vh;
+    }
+}
+@media only screen and (min-width: 768px) {
+    .slick-next {
+        right: 20vh;
+    }
 }
 @media only screen and (min-width: 992px) {
     .slick-next {
         right: -10px;
-        background-image: url(../images/icons/spritebox-sprite.png);
-        background-repeat: no-repeat;
-        background-position: 0 0;
-        height: 62px;
         width: 74px;
+        height: 62px;
+        background: url('../images/icons/css_sprites.png') -86px -51px;
     }
 }
 .slick-prev:before, .slick-next:before {

@@ -68,74 +68,89 @@
 }
 
 
-.spritebox(@left, @top, @height, @width) {
-  background-image: url(../images/icons/spritebox-sprite.png);
-  background-repeat: no-repeat;
-  background-position: @left @top;
-  height: @height;
-  width: @width
-}
 
-.ico_arr-right {
-  .spritebox(-0px, -0px, 62px, 74px)
+// SPRITES
+
+.ico_agency {
+    width: 156px; height: 39px;
+    background: url('../images/icons/css_sprites.png') -4px -4px;
 }
 
 .ico_arr-left {
-  .spritebox(-74px, -0px, 62px, 74px)
+    width: 74px; height: 62px;
+    background: url('../images/icons/css_sprites.png') -4px -51px;
 }
 
 .ico_arr-left-sm {
-  .spritebox(-0px, -62px, 42px, 50px)
+    width: 50px; height: 42px;
+    background: url('../images/icons/css_sprites.png') -168px -51px;
+}
+
+.ico_arr-right {
+    width: 74px; height: 62px;
+    background: url('../images/icons/css_sprites.png') -86px -51px;
 }
 
 .ico_arr-right-sm {
-  .spritebox(-50px, -62px, 42px, 50px)
-}
-
-.ico_agency {
-  .spritebox(-148px, -0px, 39px, 156px)
-}
-
-.ico_tg {
-  .spritebox(-148px, -39px, 29px, 29px)
-}
-
-.ico_fb-big {
-  .spritebox(-177px, -39px, 22px, 22px)
-}
-
-.ico_vk-big {
-  .spritebox(-199px, -39px, 22px, 22px)
-}
-
-.ico_tg-big {
-  .spritebox(-221px, -39px, 22px, 22px)
+    width: 50px; height: 42px;
+    background: url('../images/icons/css_sprites.png') -226px -51px;
 }
 
 .ico_fb {
-  .spritebox(-243px, -39px, 16px, 16px)
+    width: 16px; height: 16px;
+    background: url('../images/icons/css_sprites.png') -417px -51px;
 }
 
-.ico_vk {
-  .spritebox(-259px, -39px, 16px, 16px)
-}
-
-.ico_list-dots {
-  .spritebox(-275px, -39px, 13px, 19px)
-}
-
-.ico_title__line-white {
-  .spritebox(-177px, -61px, 7px, 98px)
-}
-
-.ico_title__line {
-  .spritebox(-148px, -68px, 7px, 81px)
-}
-
-.ico_lines-right {
-  .spritebox(-304px, -0px, 5px, 468px)
+.ico_fb-big {
+    width: 24px; height: 24px;
+    // background: url('../images/icons/css_sprites.png') -321px -51px;
+    background: url('../images/icons/facebook.svg');
 }
 
 .ico_lines-left {
-  .spritebox(-304px, -5px, 5px, 200px)
+    width: 200px; height: 5px;
+    background: url('../images/icons/css_sprites.png') -168px -17px;
+}
+
+.ico_lines-right {
+    width: 468px; height: 5px;
+    background: url('../images/icons/css_sprites.png') -168px -4px;
+}
+
+.ico_list-dots {
+    width: 19px; height: 13px;
+    background: url('../images/icons/css_sprites.png') -465px -51px;
+}
+
+.ico_tg {
+    width: 24px; height: 24px;
+    // background: url('../images/icons/css_sprites.png') -284px -51px;
+    background: url('../images/icons/telegram.svg');
+}
+
+.ico_tg-big {
+    width: 24px; height: 24px;
+    // background: url('../images/icons/css_sprites.png') -353px -51px;
+    background: url('../images/icons/telegram.svg');
+}
+
+.ico_title__line {
+    width: 81px; height: 7px;
+    background: url('../images/icons/css_sprites.png') -274px -30px;
+}
+
+.ico_title__line-white {
+    width: 98px; height: 7px;
+    background: url('../images/icons/css_sprites.png') -168px -30px;
+}
+
+.ico_vk {
+    width: 16px; height: 16px;
+    background: url('../images/icons/css_sprites.png') -441px -51px;
+}
+
+.ico_vk-big {
+    width: 24px; height: 24px;
+    // background: url('../images/icons/css_sprites.png') -385px -51px;
+    background: url('../images/icons/vk.svg');
 }
