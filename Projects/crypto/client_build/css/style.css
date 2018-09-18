@@ -990,13 +990,14 @@ section {
     display: none;
 }
 .header #canvas {
+    display: block;
     position: absolute;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
-    -webkit-animation: growMove 2s forwards;
-            animation: growMove 2s forwards;
+    -webkit-animation: growMove 4s forwards;
+            animation: growMove 4s forwards;
 }
 .header .wave {
     position: relative;
