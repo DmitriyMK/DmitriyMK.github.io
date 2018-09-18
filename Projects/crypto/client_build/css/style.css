@@ -2356,9 +2356,6 @@ section {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
@@ -2370,12 +2367,17 @@ section {
         -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
     }
 }
 .footer__logo {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
@@ -2386,8 +2388,6 @@ section {
 }
 @media only screen and (min-width: 768px) {
     .footer__logo {
-        -ms-flex-wrap: wrap;
-            flex-wrap: wrap;
         margin-bottom: 0;
     }
 }
@@ -2397,8 +2397,21 @@ section {
             flex-wrap: nowrap;
     }
 }
+.footer__logo a {
+    margin: auto;
+}
+@media only screen and (min-width: 768px) {
+    .footer__logo a {
+        margin: 0;
+    }
+}
 .footer__logo img {
-    max-width: 140px;
+    max-width: inherit;
+}
+@media only screen and (min-width: 768px) {
+    .footer__logo img {
+        max-width: 140px;
+    }
 }
 @media only screen and (min-width: 992px) {
     .footer__logo img {
@@ -2406,11 +2419,18 @@ section {
     }
 }
 .footer__desc {
-    margin-left: 15px;
+    padding-top: 15px;
+    margin: auto;
+}
+.footer__desc br {
+    display: none;
 }
 @media only screen and (min-width: 768px) {
     .footer__desc {
-        margin-left: 0;
+        margin: 0;
+    }
+    .footer__desc br {
+        display: inline-block;
     }
 }
 @media only screen and (min-width: 1200px) {
@@ -2419,7 +2439,7 @@ section {
     }
 }
 .footer__list {
-    margin-bottom: 30px;
+    margin-bottom: 35px;
 }
 @media only screen and (min-width: 768px) {
     .footer__list {
