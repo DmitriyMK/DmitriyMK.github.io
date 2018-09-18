@@ -120,8 +120,3 @@ window.onload = function() {
       plane.uniforms.time.value++; // update our time uniform value
     });
 };
-
-
-$(window).on('load', function() {
-    $("#canvas").fadeIn(2000);
-})
