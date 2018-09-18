@@ -123,5 +123,5 @@ window.onload = function() {
 
 
 $(window).on('load', function() {
-    $("#canvas").fadeIn(3000);
+    $("#canvas").fadeIn(2000);
 })
