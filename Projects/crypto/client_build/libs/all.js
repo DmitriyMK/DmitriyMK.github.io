@@ -50,7 +50,8 @@ $(document).ready(function() {
         breakpoint: 768,
         settings: {
           slidesToShow: 1,
-          fade: true
+          fade: true,
+          lazyLoad: 'ondemand'
         }
       }
 

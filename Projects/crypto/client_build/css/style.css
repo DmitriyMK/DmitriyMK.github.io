@@ -745,7 +745,7 @@ section {
 }
 .header__center {
     position: relative;
-    padding: 20vh 0 15vh 0;
+    padding: 19vh 0 15vh 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2477,10 +2477,15 @@ section {
 @media only screen and (min-width: 480px) {
     .footer__desc {
         padding: 0;
-        margin: 0;
+        margin-left: 15px;
     }
     .footer__desc br {
         display: inline-block;
+    }
+}
+@media only screen and (min-width: 768px) {
+    .footer__desc {
+        margin-left: 0;
     }
 }
 @media only screen and (min-width: 1200px) {
