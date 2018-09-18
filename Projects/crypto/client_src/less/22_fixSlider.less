@@ -2,7 +2,7 @@
 .slick-next {
 	width: 50px;
 	height: 100%;
-	bottom: -28px;
+	bottom: -8px;
 	opacity: 1;
 	transition: opacity .3s linear;
 	z-index: 10;
@@ -14,13 +14,21 @@
 
 
 .slick-prev {
-	left: -10px;
-	.ico_arr-left;
+	left: 0;
+	.ico_arr-left-sm;
+	@media @desktop {
+		left: -10px;
+		.ico_arr-left;
+	}
 }
 
 .slick-next {
-	right: -10px;
-	.ico_arr-right;
+	right: 0;
+	.ico_arr-right-sm;
+	@media @desktop {
+		right: -10px;
+		.ico_arr-right;
+	}
 }
 
 

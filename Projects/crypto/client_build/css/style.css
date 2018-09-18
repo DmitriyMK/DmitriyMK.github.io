@@ -397,6 +397,20 @@ template {
     height: 62px;
     width: 74px;
 }
+.ico_arr-left-sm {
+    background-image: url(../images/icons/spritebox-sprite.png);
+    background-repeat: no-repeat;
+    background-position: 0 -62px;
+    height: 42px;
+    width: 50px;
+}
+.ico_arr-right-sm {
+    background-image: url(../images/icons/spritebox-sprite.png);
+    background-repeat: no-repeat;
+    background-position: -50px -62px;
+    height: 42px;
+    width: 50px;
+}
 .ico_agency {
     background-image: url(../images/icons/spritebox-sprite.png);
     background-repeat: no-repeat;
@@ -407,63 +421,63 @@ template {
 .ico_tg {
     background-image: url(../images/icons/spritebox-sprite.png);
     background-repeat: no-repeat;
-    background-position: 0 -62px;
+    background-position: -148px -39px;
     height: 29px;
     width: 29px;
+}
+.ico_fb-big {
+    background-image: url(../images/icons/spritebox-sprite.png);
+    background-repeat: no-repeat;
+    background-position: -177px -39px;
+    height: 22px;
+    width: 22px;
 }
 .ico_vk-big {
     background-image: url(../images/icons/spritebox-sprite.png);
     background-repeat: no-repeat;
-    background-position: -148px -39px;
+    background-position: -199px -39px;
     height: 22px;
     width: 22px;
 }
 .ico_tg-big {
     background-image: url(../images/icons/spritebox-sprite.png);
     background-repeat: no-repeat;
-    background-position: -170px -39px;
-    height: 22px;
-    width: 22px;
-}
-.ico_fb-big {
-    background-image: url(../images/icons/spritebox-sprite.png);
-    background-repeat: no-repeat;
-    background-position: -192px -39px;
+    background-position: -221px -39px;
     height: 22px;
     width: 22px;
 }
 .ico_fb {
     background-image: url(../images/icons/spritebox-sprite.png);
     background-repeat: no-repeat;
-    background-position: -214px -39px;
+    background-position: -243px -39px;
     height: 16px;
     width: 16px;
 }
 .ico_vk {
     background-image: url(../images/icons/spritebox-sprite.png);
     background-repeat: no-repeat;
-    background-position: -230px -39px;
+    background-position: -259px -39px;
     height: 16px;
     width: 16px;
 }
 .ico_list-dots {
     background-image: url(../images/icons/spritebox-sprite.png);
     background-repeat: no-repeat;
-    background-position: -246px -39px;
+    background-position: -275px -39px;
     height: 13px;
     width: 19px;
 }
 .ico_title__line-white {
     background-image: url(../images/icons/spritebox-sprite.png);
     background-repeat: no-repeat;
-    background-position: -29px -62px;
+    background-position: -177px -61px;
     height: 7px;
     width: 98px;
 }
 .ico_title__line {
     background-image: url(../images/icons/spritebox-sprite.png);
     background-repeat: no-repeat;
-    background-position: -127px -62px;
+    background-position: -148px -68px;
     height: 7px;
     width: 81px;
 }
@@ -588,7 +602,7 @@ section {
         right: -110px;
         background-image: url(../images/icons/spritebox-sprite.png);
         background-repeat: no-repeat;
-        background-position: -127px -62px;
+        background-position: -148px -68px;
         height: 7px;
         width: 81px;
     }
@@ -1191,7 +1205,7 @@ section {
             transform: translateY(-50%);
     background-image: url(../images/icons/spritebox-sprite.png);
     background-repeat: no-repeat;
-    background-position: -246px -39px;
+    background-position: -275px -39px;
     height: 13px;
     width: 19px;
 }
@@ -1360,7 +1374,7 @@ section {
 .advantages__title:after {
     background-image: url(../images/icons/spritebox-sprite.png);
     background-repeat: no-repeat;
-    background-position: -29px -62px;
+    background-position: -177px -61px;
     height: 7px;
     width: 98px;
 }
@@ -1704,7 +1718,7 @@ section {
     .efficiency__title:after {
         background-image: url(../images/icons/spritebox-sprite.png);
         background-repeat: no-repeat;
-        background-position: -29px -62px;
+        background-position: -177px -61px;
         height: 7px;
         width: 98px;
     }
@@ -1986,7 +2000,7 @@ section {
             transform: translateY(-50%);
     background-image: url(../images/icons/spritebox-sprite.png);
     background-repeat: no-repeat;
-    background-position: -246px -39px;
+    background-position: -275px -39px;
     height: 13px;
     width: 19px;
 }
@@ -2085,7 +2099,7 @@ section {
 .team__title:after {
     background-image: url(../images/icons/spritebox-sprite.png);
     background-repeat: no-repeat;
-    background-position: -29px -62px;
+    background-position: -177px -61px;
     height: 7px;
     width: 98px;
 }
@@ -2699,7 +2713,7 @@ label {
 .slick-prev, .slick-next {
     width: 50px;
     height: 100%;
-    bottom: -28px;
+    bottom: -8px;
     opacity: 1;
     -webkit-transition: opacity 0.3s linear;
          -o-transition: opacity 0.3s linear;
@@ -2715,20 +2729,40 @@ label {
     }
 }
 .slick-prev {
-    left: -10px;
+    left: 0;
     background-image: url(../images/icons/spritebox-sprite.png);
     background-repeat: no-repeat;
-    background-position: 0 0;
-    height: 62px;
-    width: 74px;
+    background-position: 0 -62px;
+    height: 42px;
+    width: 50px;
+}
+@media only screen and (min-width: 992px) {
+    .slick-prev {
+        left: -10px;
+        background-image: url(../images/icons/spritebox-sprite.png);
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        height: 62px;
+        width: 74px;
+    }
 }
 .slick-next {
-    right: -10px;
+    right: 0;
     background-image: url(../images/icons/spritebox-sprite.png);
     background-repeat: no-repeat;
-    background-position: -74px 0;
-    height: 62px;
-    width: 74px;
+    background-position: -50px -62px;
+    height: 42px;
+    width: 50px;
+}
+@media only screen and (min-width: 992px) {
+    .slick-next {
+        right: -10px;
+        background-image: url(../images/icons/spritebox-sprite.png);
+        background-repeat: no-repeat;
+        background-position: -74px 0;
+        height: 62px;
+        width: 74px;
+    }
 }
 .slick-prev:before, .slick-next:before {
     width: 0;
