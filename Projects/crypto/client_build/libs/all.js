@@ -109,7 +109,7 @@ $(document).ready(function() {
 
 
 window.onload = function() {
-  if (document.documentElement.clientWidth > 768) {
+  // if (document.documentElement.clientWidth > 768) {
     // get our canvas wrapper
     var canvasContainer = document.getElementById("canvas");
 
@@ -140,5 +140,5 @@ window.onload = function() {
     plane.onRender(function() { // fired at each requestAnimationFrame call
       plane.uniforms.time.value++; // update our time uniform value
     });
-  };
+  // };
 };

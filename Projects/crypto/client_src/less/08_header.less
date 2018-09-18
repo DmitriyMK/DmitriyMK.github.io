@@ -99,7 +99,7 @@
 
 	&__center {
 		position: relative;
-		padding: 8vh 0 15vh 0;
+		padding: 10vh 0 15vh 0;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
@@ -107,6 +107,7 @@
 		z-index: 20;
 
 		@media @mobile-land {
+			padding: 3vh 0 20vh 0;
 			flex-direction: row;
 		}
 
@@ -204,7 +205,7 @@
 	}
 	&__text {
 		padding-top: 20px;
-		font-size: 20px;
+		font-size: 19px;
 		color: @orange;
 		@media @mobile-xl{
 			font-size: 22px;
@@ -230,11 +231,17 @@
 	
 	// STYLE FOR CANVASIK
 	&__animation {
+		position: absolute;
+		width: 100%;
+		height: 66%;
+		left: 0;
+		top: 8vh;
+		@media @mobile-land {
+			top: inherit;
+			bottom: -30vh;
+		}
 		@media @tablet {
-			position: absolute;
-			width: 100%;
-			height: 66%;
-			left: 0;
+			top: inherit;
 			bottom: 0;
 		}
 		@media @desktop-xl {
@@ -247,14 +254,12 @@
 	}
 
 	#canvas {
-		display: none;
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
 		@media @tablet {
-			display: block;
-			position: absolute;
-			top: 0;
-			right: 0;
-			bottom: 0;
-			left: 0;
 		}
 	}
 

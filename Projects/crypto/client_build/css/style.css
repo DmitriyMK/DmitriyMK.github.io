@@ -751,7 +751,7 @@ section {
 }
 .header__center {
     position: relative;
-    padding: 8vh 0 15vh 0;
+    padding: 10vh 0 15vh 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -769,6 +769,7 @@ section {
 }
 @media only screen and (min-width: 480px) {
     .header__center {
+        padding: 3vh 0 20vh 0;
         -webkit-box-orient: horizontal;
         -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -905,7 +906,7 @@ section {
 }
 .header__text {
     padding-top: 20px;
-    font-size: 20px;
+    font-size: 19px;
     color: #ed901a;
 }
 @media only screen and (min-width: 360px) {
@@ -940,12 +941,22 @@ section {
         font-size: 30px;
     }
 }
+.header__animation {
+    position: absolute;
+    width: 100%;
+    height: 66%;
+    left: 0;
+    top: 8vh;
+}
+@media only screen and (min-width: 480px) {
+    .header__animation {
+        top: inherit;
+        bottom: -30vh;
+    }
+}
 @media only screen and (min-width: 768px) {
     .header__animation {
-        position: absolute;
-        width: 100%;
-        height: 66%;
-        left: 0;
+        top: inherit;
         bottom: 0;
     }
 }
@@ -959,17 +970,11 @@ section {
     display: none;
 }
 .header #canvas {
-    display: none;
-}
-@media only screen and (min-width: 768px) {
-    .header #canvas {
-        display: block;
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-    }
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
 }
 .header .wave {
     position: relative;
