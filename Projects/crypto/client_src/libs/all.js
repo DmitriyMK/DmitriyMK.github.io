@@ -119,6 +119,9 @@ window.onload = function() {
     plane.onRender(function() { // fired at each requestAnimationFrame call
       plane.uniforms.time.value++; // update our time uniform value
     });
-
-    canvas.fadeIn(3000);
 };
+
+
+$(window).on('load', function() {
+    $("#canvas").fadeIn(3000);
+})
