@@ -2395,14 +2395,17 @@ section {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     margin-bottom: 30px;
 }
 @media only screen and (min-width: 768px) {
     .footer__logo {
         margin-bottom: 0;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
     }
 }
 @media only screen and (min-width: 1200px) {
@@ -2441,6 +2444,7 @@ section {
 }
 @media only screen and (min-width: 768px) {
     .footer__desc {
+        padding: 0;
         margin: 0;
     }
     .footer__desc br {
