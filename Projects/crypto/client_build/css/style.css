@@ -383,14 +383,14 @@ template {
 }
 /* ONLY FOR IE11 */
 /* ONLY FOR EDGE */
-.ico_arr-right {
+.ico_arr-left {
     background-image: url(../images/icons/spritebox-sprite.png);
     background-repeat: no-repeat;
     background-position: 0 0;
     height: 62px;
     width: 74px;
 }
-.ico_arr-left {
+.ico_arr-right {
     background-image: url(../images/icons/spritebox-sprite.png);
     background-repeat: no-repeat;
     background-position: -74px 0;
@@ -411,45 +411,59 @@ template {
     height: 29px;
     width: 29px;
 }
-.ico_fb {
+.ico_vk-big {
     background-image: url(../images/icons/spritebox-sprite.png);
     background-repeat: no-repeat;
     background-position: -148px -39px;
+    height: 22px;
+    width: 22px;
+}
+.ico_tg-big {
+    background-image: url(../images/icons/spritebox-sprite.png);
+    background-repeat: no-repeat;
+    background-position: -170px -39px;
+    height: 22px;
+    width: 22px;
+}
+.ico_fb-big {
+    background-image: url(../images/icons/spritebox-sprite.png);
+    background-repeat: no-repeat;
+    background-position: -192px -39px;
+    height: 22px;
+    width: 22px;
+}
+.ico_fb {
+    background-image: url(../images/icons/spritebox-sprite.png);
+    background-repeat: no-repeat;
+    background-position: -214px -39px;
     height: 16px;
     width: 16px;
 }
 .ico_vk {
     background-image: url(../images/icons/spritebox-sprite.png);
     background-repeat: no-repeat;
-    background-position: -164px -39px;
+    background-position: -230px -39px;
     height: 16px;
     width: 16px;
-}
-.ico_tg-small {
-    background-image: url(../images/icons/spritebox-sprite.png);
-    background-repeat: no-repeat;
-    background-position: -180px -39px;
-    height: 15px;
-    width: 15px;
 }
 .ico_list-dots {
     background-image: url(../images/icons/spritebox-sprite.png);
     background-repeat: no-repeat;
-    background-position: -195px -39px;
+    background-position: -246px -39px;
     height: 13px;
     width: 19px;
 }
 .ico_title__line-white {
     background-image: url(../images/icons/spritebox-sprite.png);
     background-repeat: no-repeat;
-    background-position: -148px -55px;
+    background-position: -29px -62px;
     height: 7px;
     width: 98px;
 }
 .ico_title__line {
     background-image: url(../images/icons/spritebox-sprite.png);
     background-repeat: no-repeat;
-    background-position: -214px -39px;
+    background-position: -127px -62px;
     height: 7px;
     width: 81px;
 }
@@ -574,7 +588,7 @@ section {
         right: -110px;
         background-image: url(../images/icons/spritebox-sprite.png);
         background-repeat: no-repeat;
-        background-position: -214px -39px;
+        background-position: -127px -62px;
         height: 7px;
         width: 81px;
     }
@@ -713,6 +727,14 @@ section {
 .header__link:hover:after {
     width: 100%;
 }
+.header__link-hide {
+    display: none;
+}
+@media only screen and (min-width: 1200px) {
+    .header__link-hide {
+        display: inline-block;
+    }
+}
 .header__center {
     position: relative;
     padding: 8vh 0 15vh 0;
@@ -805,7 +827,7 @@ section {
         -ms-flex-preferred-size: 65%;
         flex-basis: 65%;
         text-align: inherit;
-        padding-top: inherit;
+        padding-top: 0;
         max-width: inherit;
     }
 }
@@ -818,6 +840,7 @@ section {
 }
 @media only screen and (min-width: 992px) {
     .header__content {
+        margin-top: -20px;
         padding-left: inherit;
         -ms-flex-preferred-size: inherit;
         flex-basis: inherit;
@@ -1168,7 +1191,7 @@ section {
             transform: translateY(-50%);
     background-image: url(../images/icons/spritebox-sprite.png);
     background-repeat: no-repeat;
-    background-position: -195px -39px;
+    background-position: -246px -39px;
     height: 13px;
     width: 19px;
 }
@@ -1337,7 +1360,7 @@ section {
 .advantages__title:after {
     background-image: url(../images/icons/spritebox-sprite.png);
     background-repeat: no-repeat;
-    background-position: -148px -55px;
+    background-position: -29px -62px;
     height: 7px;
     width: 98px;
 }
@@ -1681,7 +1704,7 @@ section {
     .efficiency__title:after {
         background-image: url(../images/icons/spritebox-sprite.png);
         background-repeat: no-repeat;
-        background-position: -148px -55px;
+        background-position: -29px -62px;
         height: 7px;
         width: 98px;
     }
@@ -1963,7 +1986,7 @@ section {
             transform: translateY(-50%);
     background-image: url(../images/icons/spritebox-sprite.png);
     background-repeat: no-repeat;
-    background-position: -195px -39px;
+    background-position: -246px -39px;
     height: 13px;
     width: 19px;
 }
@@ -2062,7 +2085,7 @@ section {
 .team__title:after {
     background-image: url(../images/icons/spritebox-sprite.png);
     background-repeat: no-repeat;
-    background-position: -148px -55px;
+    background-position: -29px -62px;
     height: 7px;
     width: 98px;
 }
@@ -2422,19 +2445,19 @@ section {
     color: #009dd9;
     font-weight: 700;
 }
-.footer .agency {
+.footer__agency {
     text-align: center;
     font-size: 14px;
     color: #8e939b;
 }
-.footer .agency div {
-    margin-top: 10px;
-}
 @media only screen and (min-width: 768px) {
-    .footer .agency {
+    .footer__agency {
         text-align: inherit;
         font-size: 16px;
     }
+}
+.footer .agency div {
+    margin-top: 10px;
 }
 .remodal-first {
     padding-top: 95px;
@@ -2675,7 +2698,7 @@ label {
     left: -10px;
     background-image: url(../images/icons/spritebox-sprite.png);
     background-repeat: no-repeat;
-    background-position: -74px 0;
+    background-position: 0 0;
     height: 62px;
     width: 74px;
 }
@@ -2683,7 +2706,7 @@ label {
     right: -10px;
     background-image: url(../images/icons/spritebox-sprite.png);
     background-repeat: no-repeat;
-    background-position: 0 0;
+    background-position: -74px 0;
     height: 62px;
     width: 74px;
 }
