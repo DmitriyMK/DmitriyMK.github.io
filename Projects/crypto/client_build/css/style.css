@@ -527,7 +527,7 @@ body {
     margin: 0;
     width: 100%;
     min-height: 100vh;
-    padding-right: 0 !important;
+    padding-right: 0!important;
     color: #fff;
     font-size: 16px;
     line-height: 1.2;
@@ -2066,6 +2066,7 @@ section {
     -webkit-transform: scale(1.03);
         -ms-transform: scale(1.03);
             transform: scale(1.03);
+    cursor: pointer;
 }
 .price .item1 .price__sum {
     padding: 50px 0 57px 0;

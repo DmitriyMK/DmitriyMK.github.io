@@ -27,11 +27,15 @@
 	
 	<link rel="preload" href="./css/slick-theme.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
 	<link rel="preload" href="./css/slick.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+	<link rel="preload" href="./css/remodal-default-theme.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+	<link rel="preload" href="./css/remodal.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
 	<link rel="preload" href="./css/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
 
 	<noscript>
 		<link rel="stylesheet" href="./css/slick-theme.css">
 		<link rel="stylesheet" href="./css/slick.css">
+		<link rel="stylesheet" href="./css/remodal-default-theme.css">
+		<link rel="stylesheet" href="./css/remodal.css">
 		<link rel="stylesheet" href="./css/animate.min.css">
 	</noscript>
 
@@ -39,6 +43,7 @@
 
 
 	<!-- DEFER SCRIPT -->
+	
 	<script defer src="./libs/slick.js"></script>
 	<script defer src="./libs/cssrelpreload.js"></script>
 	<!-- END DEFER SCRIPT -->
@@ -272,7 +277,7 @@
 							<li class="price__items">Доступ к каналу с сигналами на 1 месяц</li>
 							<li class="price__items">Видео-инструкция по торговле на BitMEX</li>
 						</ul>
-						<a class="price__btn" href="tg://resolve?domain=CryptoHamsterCreator" target="_blank" rel="noopener noreferrer">Выбрать</a>
+						<a class="price__btn" data-remodal-target="priceChoice">Выбрать</a>
 					</div>
 				</div>
 
@@ -289,7 +294,7 @@
 							<li class="price__items">Подключение на 4 месяца</li>
 							<li class="price__items">Видео-инструкция по торговле на BitMEX</li>
 						</ul>
-						<a class="price__btn" href="tg://resolve?domain=CryptoHamsterCreator" target="_blank" rel="noopener noreferrer">Выбрать</a>
+						<a class="price__btn" data-remodal-target="priceChoice">Выбрать</a>
 					</div>
 				</div>
 
@@ -307,7 +312,7 @@
 							<li class="price__items">Видео-инструкция по торговле на BitMEX</li>
 							<li class="price__items">Ежедневная помощь менеджера</li>
 						</ul>
-						<a class="price__btn" href="tg://resolve?domain=CryptoHamsterCreator" target="_blank" rel="noopener noreferrer">Выбрать</a>
+						<a class="price__btn" data-remodal-target="priceChoice">Выбрать</a>
 					</div>
 				</div>
 			</div>
@@ -603,13 +608,19 @@
 		</div>
 	</footer>
 
+	<!-- MODALS -->
+	<div class="remodal remodal-common formBox"  data-remodal-id="priceChoice" >
+		<button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
+		<p class="thanks__text">Подписка происходит в нашем телеграм боте @CryptoHamsterBot</p>
+		<a class="price__btn" href="tg://resolve?domain=CryptoHamsterBot" target="_blank" rel="noopener noreferrer">Перейти</a>
+	</div> 
 
 	<!-- Load Scripts -->
 	<script src="//code.jquery.com/jquery-2.2.4.min.js"></script>
 	<script src="./libs/jquery.nicescroll.min.js"></script>
 	<script src="./libs/blazy.js"></script>  
 	<script src="./libs/wow.min.js"></script>  
-
+	<script src="./libs/remodal.min.js"></script>
 	<script src="//cdn.rawgit.com/martinlaxenaire/curtainsjs/master/build/curtains.min.js"></script>
 	<script src="//cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
 
