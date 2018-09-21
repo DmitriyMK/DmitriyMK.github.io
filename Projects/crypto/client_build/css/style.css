@@ -491,6 +491,9 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     font: inherit;
     vertical-align: baseline;
 }
+main {
+    overflow: hidden;
+}
 @media only screen and (min-width: 320px) {
     .container {
         padding: 0 10px;
@@ -1276,13 +1279,11 @@ section {
     background: #000;
     position: relative;
     z-index: 12;
-    overflow: hidden;
 }
 @media only screen and (min-width: 768px) {
     .curveWrap {
         margin-top: -330px;
         padding-top: 360px;
-        height: 2181px;
         background: url(../images/back__advantages.png) no-repeat;
         background-size: cover;
     }
@@ -1291,7 +1292,7 @@ section {
     .curveWrap {
         margin-top: -185px;
         padding-top: 400px;
-        height: 2181px;
+        min-height: 2181px;
     }
 }
 .ask {
@@ -1722,13 +1723,9 @@ section {
     }
 }
 .efficiency {
-    padding-top: 62px;
-    padding-bottom: 62px;
+    color: #000;
 }
 @media only screen and (min-width: 768px) {
-    .efficiency {
-        margin-top: -420px;
-    }
 }
 @media only screen and (min-width: 1200px) {
     .efficiency {
@@ -1737,7 +1734,7 @@ section {
 }
 @media only screen and (min-width: 1920px) {
     .efficiency {
-        margin-top: -520px;
+        margin-top: -560px;
     }
 }
 .efficiency__title {
@@ -1783,7 +1780,7 @@ section {
 }
 @media only screen and (min-width: 992px) {
     .efficiency__box {
-        padding: 50px 50px 0 50px;
+        padding: 70px 50px 0 50px;
     }
 }
 .efficiency__box-side {
@@ -1810,7 +1807,7 @@ section {
 }
 .efficiency__img {
     padding: 20px 0;
-    margin: auto;
+    margin: 3vh auto;
     max-width: 320px;
     height: 191px;
 }
@@ -2046,9 +2043,8 @@ section {
     font-weight: 700;
 }
 .price__btn {
-    display: table;
+    display: block;
     margin: auto;
-    padding-top: 15px;
     width: 241px;
     height: 55px;
     font-size: 18px;
@@ -2113,7 +2109,7 @@ section {
         margin-top: -368px;
         padding-top: 380px;
         height: 1481px;
-        background: url(../images/back__team.png);
+        background: url(../images/back__team-full.png) no-repeat center / cover;
         background-color: inherit;
     }
 }
@@ -2229,17 +2225,6 @@ section {
     font-size: 14px;
     font-weight: 700;
     color: #f7941d;
-}
-.team__animation {
-    display: none;
-}
-@media only screen and (min-width: 768px) {
-    .team__animation {
-        display: block;
-        position: absolute;
-        left: 0;
-        top: 170px;
-    }
 }
 .review {
     padding: 30px 0;
