@@ -14,7 +14,7 @@ $(document).ready(function() {
     new WOW().init();
 
     $("body").niceScroll({
-      scrollspeed: 70,
+      scrollspeed: 60,
       mousescrollstep: 60,
       smoothscroll: true,
       cursorwidth: 8,

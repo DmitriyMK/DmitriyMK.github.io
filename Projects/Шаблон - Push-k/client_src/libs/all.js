@@ -8,7 +8,7 @@ $(document).ready(function() {
       new WOW().init();
 
       $("body").niceScroll({
-        scrollspeed: 70,
+        scrollspeed: 60,
         mousescrollstep: 60,
         smoothscroll: true,
         cursorwidth: 8,
@@ -38,7 +38,7 @@ $(document).ready(function() {
 
 
   // var bLazy = new Blazy();
-  
+
   // $('.phone-mask').mask('+38(999)999-99-99');
 
 
@@ -121,7 +121,7 @@ $(document).ready(function() {
       ]
 
     });
-  */
+    */
 
   // $('[data-fancybox]').fancybox({
   //   loop: true,
