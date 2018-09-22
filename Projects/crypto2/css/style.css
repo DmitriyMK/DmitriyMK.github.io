@@ -1861,6 +1861,8 @@ section {
 }
 .price__box {
     padding-top: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
     position: relative;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1887,6 +1889,8 @@ section {
         -webkit-box-align: inherit;
         -ms-flex-align: inherit;
         align-items: inherit;
+        padding-left: 0px;
+        padding-right: 0px;
     }
 }
 @media only screen and (min-width: 992px) {
