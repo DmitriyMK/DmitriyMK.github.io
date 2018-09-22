@@ -1904,8 +1904,8 @@ section {
     -webkit-box-shadow: 0 11px 16.74px 1.26px rgba(0, 0, 0, 0.27);
             box-shadow: 0 11px 16.74px 1.26px rgba(0, 0, 0, 0.27);
     background: #e1e1e1;
-/*}
-@media only screen and (min-width: 360px) {
+}
+/*@media only screen and (min-width: 360px) {
     .price__item {
         -ms-flex-preferred-size: 340px;
         flex-basis: 340px;
