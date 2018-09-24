@@ -83,7 +83,7 @@
 				</div>
 			</div>
 			<div id="canvas"></div>
-			<div class="header__animation dancingDots ">
+			<div class="header__animation dancingDots" id="noise">
 				<img class="img-responsive" src="./images/decor-perlin.png" alt="animations">
 			</div>	
 			
@@ -616,8 +616,9 @@
 	<script src="./libs/blazy.js"></script>  
 	<script src="./libs/wow.min.js"></script>  
 	<script src="./libs/remodal.min.js"></script>
-	<script src="//cdn.rawgit.com/martinlaxenaire/curtainsjs/master/build/curtains.min.js"></script>
 	<script src="//cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
+	<script src="//cdn.rawgit.com/martinlaxenaire/curtainsjs/master/build/curtains.min.js"></script>
+	
 
 
 	<script id="plane-vs" type="x-shader/x-vertex">
@@ -685,7 +686,7 @@
 			) * 0.0035;
 
 		gl_FragColor = texture2D(uSampler0, textureCoord);
-	}
+		}
 	</script>
 
 <script src="./libs/all.js"></script>
