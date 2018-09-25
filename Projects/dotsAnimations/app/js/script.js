@@ -67,6 +67,7 @@ loadImages(images, function(loadedImages) {
     loadedImages.forEach(function(el, index) {
         gallery.push(getArrayFromImage(loadedImages[index]));
     });
+    // console.log(gallery);
 
     var camera, controls, scene, renderer, geometry;
 
@@ -128,6 +129,7 @@ loadImages(images, function(loadedImages) {
         // Конец сцены
 
         window.addEventListener('resize', onWindowResize, false);
+
     }
 
     function onWindowResize() {
