@@ -7,8 +7,7 @@ canvas.classList.add('tempcanvas');
 document.body.appendChild(canvas);
 
 
-
-
+// DRAW SVG
 function loadImages(paths, whenLoaded) {
     var imgs = [];
     paths.forEach(function(path) {
@@ -38,6 +37,7 @@ function shuffle(a) {
     return a;
 }
 
+// COLOR FOR DOTS
 function getArrayFromImage(img) {
     let imageCoords = [];
     ctx.clearRect(0, 0, size, size);
@@ -67,7 +67,6 @@ loadImages(images, function(loadedImages) {
     loadedImages.forEach(function(el, index) {
         gallery.push(getArrayFromImage(loadedImages[index]));
     });
-    console.log(gallery);
 
     var camera, controls, scene, renderer, geometry;
 
@@ -76,7 +75,7 @@ loadImages(images, function(loadedImages) {
 
         scene = new THREE.Scene();
         scene.background = new THREE.Color(0x000000);
-        // scene.fog = new THREE.FogExp2(0xcccccc, 0.002);
+        // scene.fog = new THREE.FogExp2(0xcccccc, 0.015);
 
         renderer = new THREE.WebGLRenderer();
         renderer.setPixelRatio(window.devicePixelRatio);
@@ -93,11 +92,11 @@ loadImages(images, function(loadedImages) {
 
 
         // ЧТО ЕСТЬ НА СЦЕНЕ
-        var texture = (new THREE.TextureLoader).load("../img/particle.png");
+        // var texture = (new THREE.TextureLoader).load("../img/particle.png");
         var material = new THREE.PointCloudMaterial({
             size: 6,
             vertexColors: THREE.VertexColors,
-            map: texture,
+            // map: texture,
             alphaTest: 0.75
         });
 
@@ -119,7 +118,9 @@ loadImages(images, function(loadedImages) {
             // geometry.vertices.push(new THREE.Vector3(el[0], el[1], Math.random() * 100));
 
             geometry.vertices.push(new THREE.Vector3(el[0], el[1], Math.random()));
-            geometry.colors.push(new THREE.Color(Math.random(), Math.random(), Math.random()));
+            // geometry.colors.push(new THREE.Color(Math.random(), Math.random(), Math.random()));
+
+            geometry.colors.push(new THREE.Color(253, 106, 2));
         });
 
         var pointCloud = new THREE.PointCloud(geometry, material);
@@ -127,7 +128,6 @@ loadImages(images, function(loadedImages) {
         // Конец сцены
 
         window.addEventListener('resize', onWindowResize, false);
-
     }
 
     function onWindowResize() {
@@ -137,14 +137,11 @@ loadImages(images, function(loadedImages) {
     }
 
 
-
-
     var i = 0;
 
     function animate() {
         i++;
         requestAnimationFrame(animate);
-
 
         geometry.vertices.forEach(function(particle, index) {
             var dX, dY, dZ;
