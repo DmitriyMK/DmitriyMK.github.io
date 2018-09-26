@@ -36,6 +36,16 @@ $(document).ready(function() {
       }, t);
     });*/
 
+  // var position = $("#works").offset();
+  // $(document).scroll(function() {
+  //   var y = $(this).scrollTop();
+  //   if (y >= position.top) {
+  //     $("#scroll-block").fadeIn(300);
+  //   } else {
+  //     $("#scroll-block").fadeOut(300);
+  //   }
+  // });
+
 
   // var bLazy = new Blazy();
 
