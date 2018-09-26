@@ -3,8 +3,9 @@ let canvas = document.createElement('canvas');
 let ctx = canvas.getContext('2d');
 canvas.width = size;
 canvas.height = size;
-canvas.classList.add('tempcanvas');
-document.body.appendChild(canvas);
+
+// canvas.classList.add('tempcanvas');
+// document.body.appendChild(canvas);
 
 
 // DRAW SVG
@@ -29,6 +30,7 @@ function fillUp(array, max) {
     return array;
 }
 
+// Видимость хаотичности
 function shuffle(a) {
     for (let i = a.length; i; i--) {
         let j = Math.floor(Math.random() * i);
@@ -37,7 +39,7 @@ function shuffle(a) {
     return a;
 }
 
-// COLOR FOR DOTS
+// Координаты точек из SVG в canvas
 function getArrayFromImage(img) {
     let imageCoords = [];
     ctx.clearRect(0, 0, size, size);
@@ -60,14 +62,14 @@ function getArrayFromImage(img) {
     return shuffle(fillUp(imageCoords, 1500));
 }
 
-
-let images = ['../img/like.svg', '../img/snowflake.svg', '../img/close.svg'];
+// Картинки SVG
+let images = ['../img/like.svg', '../img/snowflake.svg', '../img/close.svg', '../img/advantages4.png'];
 loadImages(images, function(loadedImages) {
+
     var gallery = [];
     loadedImages.forEach(function(el, index) {
         gallery.push(getArrayFromImage(loadedImages[index]));
     });
-    // console.log(gallery);
 
     var camera, controls, scene, renderer, geometry;
 
@@ -91,11 +93,10 @@ loadImages(images, function(loadedImages) {
         controls = new THREE.OrbitControls(camera, renderer.domElement);
 
 
-
         // ЧТО ЕСТЬ НА СЦЕНЕ
         // var texture = (new THREE.TextureLoader).load("../img/particle.png");
         var material = new THREE.PointCloudMaterial({
-            size: 6,
+            size: 5,
             vertexColors: THREE.VertexColors,
             // map: texture,
             alphaTest: 0.75
@@ -138,6 +139,7 @@ loadImages(images, function(loadedImages) {
         renderer.setSize(window.innerWidth, window.innerHeight);
     }
 
+    // Движение точек по осям X,Y,Z
 
     var i = 0;
 
@@ -147,7 +149,8 @@ loadImages(images, function(loadedImages) {
 
         geometry.vertices.forEach(function(particle, index) {
             var dX, dY, dZ;
-            dX = Math.sin(i / 10 + index / 2) / 10;
+            // dX = Math.sin(i / 10 + index / 2) / 10;
+            dX = 0;
             dY = 0;
             dZ = 0;
             particle.add(new THREE.Vector3(dX, dY, dZ));
