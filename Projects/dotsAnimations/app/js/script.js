@@ -63,7 +63,7 @@ function getArrayFromImage(img) {
 }
 
 // Картинки SVG
-let images = ['../img/like.svg', '../img/snowflake.svg', '../img/close.svg', '../img/advantages4.png'];
+let images = ['./img/like.svg', './img/snowflake.svg', './img/close.svg', './img/advantages4.png'];
 loadImages(images, function(loadedImages) {
 
     var gallery = [];
