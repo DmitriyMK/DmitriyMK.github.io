@@ -24,7 +24,7 @@
 	<link rel="stylesheet" href="./css/remodal-default-theme.css">
 	<link rel="stylesheet" href="./css/component.css">
 	<link rel="stylesheet" href="./css/slicknav.css" />
-	<!-- <link rel="stylesheet" href="css/animate.min.css"> -->
+	<link rel="stylesheet" href="./css/animate.min.css">
 
 	<link rel="stylesheet" href="./css/style.css">
 
@@ -61,6 +61,7 @@
 			padding: 1px;
 			z-index: 13;
 		}
+
 		@media only screen and (min-width: 640px) {
 			.js .slicknav_menu {
 				top: 97px;
@@ -71,6 +72,7 @@
 				top: 63px;
 			}
 		}
+
 		.slicknav_menu .slicknav_menutxt {
 			display:none;
 		}
@@ -83,6 +85,7 @@
 		}
 		.slicknav_nav {
 			padding: 100px 20px 127px;
+			/*background: #00528c;*/
 			background-image: -webkit-linear-gradient(right, #0f7fde, #1e65ce);
 			background-image: -moz-linear-gradient(right, #0f7fde, #1e65ce);
 			background-image: -o-linear-gradient(right, #0f7fde, #1e65ce);
@@ -122,14 +125,15 @@
 <body>
 
 	<a href="#header" class="up" id="up"><img src="images/up.png" alt="up" ></a>
+	
 
-	<div class="header__top" id="fixedMenu">
+	<header class="header__top" id="fixedMenu">
 		<div class="container">
 			<a href="index.html" title="Создание лендинг-пейдж с уникальным дизайном"><img src="images/logo.png" alt="Лендинг пейдж" class="logo"></a>
 			<p class="descript">Создание лендинг-пейдж <br>с уникальным дизайном</p>
 
 			<ul class="language">
-				<li><a href="en.html" class="">EN</a></li><!-- href="index-en.html" -->
+				<li><a href="en.html" class="">EN</a></li>
 				<li class="line"></li>
 				<li><a  class="active">RU</a></li>
 			</ul>
@@ -155,10 +159,17 @@
 			</div>
 
 		</div> 
-	</div>
+	</header>
+
 
 	<main>
 		<section class="news">
+			
+			<div class="slideshow" id="slideshow">
+				<ol class="slides">				
+				</ol>
+			</div>
+
 			<img class="news__decor1" src="images/blog/blog__decor1.png" alt="decor">
 			<img class="news__decor2" src="images/blog/blog__decor2.png" alt="decor">
 			<img class="news__decor3" src="images/blog/blog__decor3.png" alt="decor">

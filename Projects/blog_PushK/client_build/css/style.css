@@ -123,19 +123,23 @@ body {
     position: fixed;
     z-index: 100;
 }
+.slicknav_menu .slicknav_icon-bar {
+    background-color: #ff8334!important;
+}
 .news {
-    padding: 120px 0;
+    padding: 30px 0;
     position: relative;
     min-height: 93vh;
     overflow: hidden;
 }
-@media only screen and (min-width: 992px) {
-    .news {
-        padding: 100px 0;
-    }
-}
 .news h1 {
     color: inherit;
+}
+.news .slides {
+    height: 0;
+    width: 0;
+    overflow: hidden;
+    background: inherit;
 }
 .news__decor1 {
     top: 30px;
@@ -241,7 +245,7 @@ body {
     }
 }
 .article {
-    max-width: 320px;
+    max-width: 350px;
     margin: auto;
     -webkit-box-shadow: 7.625px 11.741px 20px 2px rgba(65, 77, 86, 0.13);
             box-shadow: 7.625px 11.741px 20px 2px rgba(65, 77, 86, 0.13);
@@ -287,12 +291,10 @@ body {
     }
 }
 .post__img {
-    max-width: 320px;
     max-height: 240px;
 }
 @media only screen and (min-width: 768px) {
     .post__img {
-        max-width: inherit;
         -ms-flex-preferred-size: 50%;
         flex-basis: 50%;
     }
@@ -315,14 +317,12 @@ body {
     height: auto;
 }
 .post__content {
-    max-width: 320px;
     width: 100%;
     background: #fff;
     cursor: auto;
 }
 @media only screen and (min-width: 768px) {
     .post__content {
-        max-width: inherit;
         -ms-flex-preferred-size: 50%;
         flex-basis: 50%;
     }
@@ -342,7 +342,6 @@ body {
 .post__title {
     position: relative;
     padding: 15px 0 25px 15px;
-    max-width: 320px;
     margin: auto;
     font-size: 20px;
     font-weight: 700;
@@ -352,7 +351,6 @@ body {
 }
 @media only screen and (min-width: 768px) {
     .post__title {
-        max-width: inherit;
         margin: 0;
     }
 }
@@ -395,10 +393,10 @@ body {
 .post .btn {
     display: block;
     width: 210px;
-    margin: 20px auto;
+    margin: 15px auto;
     text-align: center;
-    -webkit-box-shadow: -1px 21px 28px -12px rgba(254, 138, 89, 0.7);
-            box-shadow: -1px 21px 28px -12px rgba(254, 138, 89, 0.7);
+    -webkit-box-shadow: -1px 17px 28px -12px rgba(254, 138, 89, 0.7);
+            box-shadow: -1px 17px 28px -12px rgba(254, 138, 89, 0.7);
     color: #fff;
     font-size: 20px;
     font-weight: 700;
