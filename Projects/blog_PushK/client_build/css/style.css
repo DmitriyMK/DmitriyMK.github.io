@@ -242,17 +242,10 @@ body {
 }
 @media only screen and (min-width: 768px) {
     .article {
-        -webkit-box-shadow: 7.625px 11.741px 20px 2px rgba(65, 77, 86, 0.045);
-                box-shadow: 7.625px 11.741px 20px 2px rgba(65, 77, 86, 0.045);
-        -webkit-transition: -webkit-box-shadow 0.3s linear;
-                transition: -webkit-box-shadow 0.3s linear;
-             -o-transition:         box-shadow 0.3s linear;
-                transition:         box-shadow 0.3s linear;
-                transition:         box-shadow 0.3s linear, -webkit-box-shadow 0.3s linear;
+        -webkit-box-shadow: 7.625px 11.741px 20px 2px rgba(65, 77, 86, 0.13);
+                box-shadow: 7.625px 11.741px 20px 2px rgba(65, 77, 86, 0.13);
     }
     .article:hover {
-        -webkit-box-shadow: none;
-                box-shadow: none;
         cursor: pointer;
     }
 }
@@ -528,8 +521,8 @@ body {
 }
 .postFull .container {
     background: #fff;
-    -webkit-box-shadow: 8.485px 8.485px 15.81px 1.19px rgba(0, 0, 0, 0.27);
-            box-shadow: 8.485px 8.485px 15.81px 1.19px rgba(0, 0, 0, 0.27);
+    -webkit-box-shadow: 4px 4px 20px 1.19px rgba(0, 0, 0, 0.4);
+            box-shadow: 4px 4px 20px 1.19px rgba(0, 0, 0, 0.4);
 }
 .postFull__box {
     padding: 25px 10px;
