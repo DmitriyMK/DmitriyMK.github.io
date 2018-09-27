@@ -291,12 +291,14 @@ body {
     }
 }
 .post__img {
-    max-height: 240px;
+    max-height: 280px;
+    overflow: hidden;
 }
 @media only screen and (min-width: 768px) {
     .post__img {
         -ms-flex-preferred-size: 50%;
         flex-basis: 50%;
+        max-height: 240px;
     }
 }
 @media only screen and (min-width: 992px) {
