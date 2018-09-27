@@ -16,7 +16,15 @@
 @media @desktop-xll {
 	
 }
-
+.wrapper {
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+	min-height: 100vh;
+}
+main {
+	flex: 1 0 0;
+}
 .header__top .descript {
 	padding-right: 0;
 	padding-left: 15px;
@@ -66,7 +74,6 @@
 .news {
 	padding: 30px 0;
 	position: relative;
-	min-height: 93vh;
 	overflow: hidden;
 
 	h1 {
@@ -393,7 +400,6 @@
 
 
 .postFull {
-	padding-top: 50px;
 	position: relative;
 	z-index: 10;
 	font-family: @ff2;
