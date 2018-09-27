@@ -65,7 +65,10 @@ gulp.task('browser-sync', function() {
 gulp.task('scripts', function() {
     return gulp.src([
 
+<<<<<<< HEAD
            
+=======
+>>>>>>> d6fe2ea102b83c39ae3065728bd32aecee0fe280
 
         ])
         .pipe(concat('script.min.js'))
