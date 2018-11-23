@@ -1,27 +1,29 @@
-@import "_02_vars.scss";
-@import "_03_mixin and function.scss";
+@import "_reset";
+@import "_fonts";
+@import "_vars";
+@import "_mixin and function";
+@import "_forms.scss";
 
 
 /* PLUGINS */
-@import "_plugin_fancybox.scss";
-@import "_plugin__animate.min.scss";
-@import "_plugin__slick.scss";
-@import "_plugin__slick-theme.scss";
-@import "_plugin_remodal.scss";
-@import "_plugin_remodal-default-theme.scss";
-@import "_plugin_modal-video.min.scss";
-
+@import "_bootstrap-grid.min";
+@import "_animate.min";
+@import "_remodal";
+@import "_remodal-default-theme";
+@import "_slick";
+@import "_slick-theme";
+/* @import "_simplelightbox.scss"; */
 
 /* MAIN STYLE */
-@import "_fixed-slickSliderPlugin.scss";
-
-
-section {
-	height: 20vh;
-	background: yellow; 
-}
-
-/* SECTION STYLE */
+@import "_fixed-slickSliderPlugin";
+@import "_general";
+/* @import "_02-section1 -.scss"; */
+/* @import "header"; */
 
 
 
+
+
+
+
+/* @import "media.scss"; */
