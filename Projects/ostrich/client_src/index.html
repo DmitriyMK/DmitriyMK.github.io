@@ -78,9 +78,8 @@
 	<main class="main">
 		<div class="details">
 			<div class="container">
-
 				<div class="accordions"> 
-					<div class="accordion active">
+					<div class="accordion active ">
 						<a href="#" class="accordion__header">
 							<h3 class="accordion__link">Экскурсия на Страусиную Ферму и Зоопарк</h3>
 						</a>
@@ -101,23 +100,23 @@
 								<div class="accordion__line accordion__line-middle">
 									<div class="accordion__col-left">
 										<div class="accordion__line accordion__line-calc">
-											<div class="accordion__col-btn">
+											<div class="accordion__col-btn accordion__col-btn1">
 												<div class="accordion__col-text">
 													<p>Билет для взрослого</p>
 													<i>От 15 лет</i>
 												</div>
 												<div class="accordion__col-price">
-													<p data-price="100"><span class="price priceAdult">100</span> грн.</p>
+													<p><span class="price priceAdult">100</span> грн.</p>
 												</div>
 											</div>
 
 											<div class="accordion__col accordion__col-calc">
 												<div class="accordion__line">
-													<button>
+													<button class="btn__minus">
 														<img src="./images/icons/minus-green.png" alt="minus">
 													</button>
-													<input class="accordion__num" type="text" value="6" name="amountTicketsAdults">
-													<button>
+													<input class="accordion__num amountTicketsAdults" type="text" value="6" name="amountTicketsAdults">
+													<button class="btn__plus">
 														<img src="./images/icons/plus-green.png" alt="plus">
 													</button>
 													<img class="accordion__x" src="./images/icons/X.png" alt="x">
@@ -125,24 +124,24 @@
 											</div>
 										</div>
 
-										<div class="accordion__line">
-											<div class="accordion__col-btn">
+										<div class="accordion__line accordion__line-calc">
+											<div class="accordion__col-btn accordion__col-btn1">
 												<div class="accordion__col-text">
 													<p>Билет для ребенка</p>
 													<i>От 1 до 14 лет</i>
 												</div>
 												<div class="accordion__col-price">
-													<p data-price="50"><span class="price priceChildren">50</span> грн.</p>
+													<p><span class="price priceChildren">50</span> грн.</p>
 												</div>
 											</div>
 
 											<div class="accordion__col col__calc">
 												<div class="accordion__line">
-													<button>
+													<button class="btn__minus">
 														<img src="./images/icons/minus-green.png" alt="minus">
 													</button>
-													<input class="accordion__num" type="text" value="0" name="amountTicketsChildren">
-													<button>
+													<input class="accordion__num amountTicketsChildren" type="text" value="0" name="amountTicketsChildren">
+													<button class="btn__plus">
 														<img src="./images/icons/plus-green.png" alt="plus">
 													</button>
 													<img class="accordion__x" src="./images/icons/X.png" alt="x">
@@ -162,94 +161,219 @@
 							</p>
 						</div>
 					</div> 
+
+					<div class="accordion">
+						<a href="#" class="accordion__header">
+							<h3 class="accordion__link">Вход на територию <span>(при покупке экскурсии вход не оплачивается)</span></h3>
+						</a>
+
+						<div class="accordion__body">
+							<div class="accordion__block">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi autem dignissimos eius, tenetur amet ipsum dolor quos illo quae, suscipit aliquid optio! Saepe repudiandae, nemo minus nesciunt, vel quas similique.
+							</div>
+						</div>
+					</div> 
+
+					<div class="accordion active ">
+						<a href="#" class="accordion__header">
+							<h3 class="accordion__link">Бронирование места для банкета или пикника</h3>
+						</a>
+
+						<div class="accordion__body">
+							<div class="accordion__block">
+								<div class="accordion__line accordion__line-top accordion__line-top-bron">
+									<div class="accordion__col">
+										<img class="accordion__img" src="./images/icons/calendar.png" alt="Date">
+										<p class="accordion__text">Дата посещения</p>
+									</div>
+									<div class="accordion__col">
+										<img class="accordion__img" src="./images/icons/ok.png" alt="Date">
+										<p class="accordion__date">2018 12 18</p>
+									</div>
+								</div>
+
+
+								<div class="accordion__line accordion__line-calc accordion__line-bron">
+									<div class="accordion__col-btn accordion__col-btn1">
+										<div class="accordion__col-text">
+											<p>Банкетный зал</p>
+											<i>Цена указана за 5 часов</i>
+										</div>
+										<div class="accordion__col-price">
+											<p><span class="price priceBanket">12000</span> грн.</p>
+										</div>
+									</div>
+
+									<div class="accordion__col accordion__col-calc">
+										<div class="accordion__line">
+											<button class="btn__minus">
+												<img src="./images/icons/minus-green.png" alt="minus">
+											</button>
+											<input class="accordion__num amountBanket" type="text" value="0" name="amountBanket">
+											<button class="btn__plus">
+												<img src="./images/icons/plus-green.png" alt="plus">
+											</button>
+											<img class="accordion__x" src="./images/icons/X.png" alt="x">
+										</div>
+									</div>
+								</div>
+
+								<div class="accordion__line accordion__line-calc accordion__line-bron">
+									<div class="accordion__col-btn accordion__col-btn1">
+										<div class="accordion__col-text">
+											<p>Терасса</p>
+											<i>Цена указана за 5 часов</i>
+										</div>
+										<div class="accordion__col-price">
+											<p><span class="price priceTerrace">5000</span> грн.</p>
+										</div>
+									</div>
+
+									<div class="accordion__col col__calc">
+										<div class="accordion__line">
+											<button class="btn__minus">
+												<img src="./images/icons/minus-green.png" alt="minus">
+											</button>
+											<input class="accordion__num amountTerrace" type="text" value="0" name="amountTerrace">
+											<button class="btn__plus">
+												<img src="./images/icons/plus-green.png" alt="plus">
+											</button>
+											<img class="accordion__x" src="./images/icons/X.png" alt="x">
+										</div>
+									</div>
+								</div>	
+
+								<div class="accordion__line accordion__line-calc accordion__line-bron">
+									<div class="accordion__col-btn accordion__col-btn1">
+										<div class="accordion__col-text">
+											<p>Гриль-зона</p>
+											<i>Цена указана за день</i>
+										</div>
+										<div class="accordion__col-price">
+											<p><span class="price priceGrill">500</span> грн.</p>
+										</div>
+									</div>
+
+									<div class="accordion__col accordion__col-calc4">
+										<div class="accordion__line">
+											<button class="btn__minus">
+												<img src="./images/icons/minus-green.png" alt="minus">
+											</button>
+											<input class="accordion__num amountGrill" type="text" value="0" name="amountGrill">
+											<button class="btn__plus">
+												<img src="./images/icons/plus-green.png" alt="plus">
+											</button>
+											<img class="accordion__x" src="./images/icons/X.png" alt="x">
+										</div>
+									</div>
+								</div>
+
+								<div class="accordion__line accordion__line-calc accordion__line-bron">
+									<div class="accordion__col-btn accordion__col-btn1">
+										<div class="accordion__col-text">
+											<p>Беседка</p>
+											<i>Цена указана за час</i>
+										</div>
+										<div class="accordion__col-price">
+											<p><span class="price priceBesedka">100</span> грн.</p>
+										</div>
+									</div>
+
+									<div class="accordion__col col__calc6">
+										<div class="accordion__line">
+											<button class="btn__minus">
+												<img src="./images/icons/minus-green.png" alt="minus">
+											</button>
+											<input class="accordion__num amountBesedka" type="text" value="0" name="amountBesedka">
+											<button class="btn__plus">
+												<img src="./images/icons/plus-green.png" alt="plus">
+											</button>
+											<img class="accordion__x" src="./images/icons/X.png" alt="x">
+										</div>
+									</div>
+								</div>	
+
+								<div class="accordion__line accordion__line-calc accordion__line-bron">
+									<div class="accordion__col-btn accordion__col-btn1">
+										<div class="accordion__col-text">
+											<p>Столы</p>
+											<i>Цена указана за час</i>
+										</div>
+										<div class="accordion__col-price">
+											<p><span class="price priceTable">50</span> грн.</p>
+										</div>
+									</div>
+
+									<div class="accordion__col accordion__col-calc">
+										<div class="accordion__line">
+											<button class="btn__minus">
+												<img src="./images/icons/minus-green.png" alt="minus">
+											</button>
+											<input class="accordion__num amountTable" type="text" value="0" name="amountTable">
+											<button class="btn__plus">
+												<img src="./images/icons/plus-green.png" alt="plus">
+											</button>
+											<img class="accordion__x" src="./images/icons/X.png" alt="x">
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div> 
 				</div>
 			</div>
 		</div>
+
+		<div class="summary">
+			<div class="wrapper">
+				<p class="summary__text">Итого: <span class="sumPriceTotal">600</span> <span>грн</span></p>
+			</div>
+		</div>
+
+
+		<div class="formBlock">
+			<div class="container">
+				<p class="formBlock__text"><strong>Введите свои контактные данные</strong> (билеты будут отправлены на ваш e-mail)</p>
+
+				<form id="formOrder"  class="form form-validate" name="Order" novalidate="novalidate">
+					<div class="formBlock__line">
+						<div class="inputWrap">
+							<span>Имя</span>
+							<input class="form__line name" id="name" type="text" name="name" placeholder="Имя" minlength="2" required aria-required="true" >
+						</div>
+
+						<div class="inputWrap">
+							<span>E-mail</span>
+							<input class="form__line" type="email" id="email" name="email" placeholder="E-mail" required aria-required="true">
+						</div>	
+
+						<div class="inputWrap">
+							<input class="form__line-phone phone-mask" id="phone" type="phone" name="phone" placeholder="Phone" minlength="10" required aria-required="true">
+						</div>
+					</div>
+					
+					
+					<input class="btn" type="submit" value="ЗАКАЗАТЬ"> 
+				</form>
+			</div>
+		</div>
+
 	</main>
 
-
-	<!-- <img class="b-lazy" data-src="./" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt=""> -->
-
-
-<!-- 	<section class="">
-		<div class="container">
-			<h2 class="__title section__title"></h2>
-		</div>
-	</section> -->
-
-
-<!-- 	<section class="contacts">
-		<div class="map" id="map">
-		</div>
-
-		<div class="container">
-			<div class="contacts__box">
-				<h2 class="box__title">Контакты:</h2>
-				<ul class="contacts__list">
-					<li class="contacts__item address"><address></address></li>
-
-					<li class="contacts__item tel"><a class="contact__link" href="tel:+"></a></li>
-
-					<li class="contacts__item mail"><a class="contact__link" href="mailto:"></a></li>
-				</ul>
-
-				<p class="ask">Остались вопросы?</p>
-				<p class="text">Мы Вам перезвоним, чтобы <br> ответить на них в течение 10 минут.</p>
-				<button class="btn" data-remodal-target="callback">Заказать звонок</button>
-			</div>
-		</div>
-	</section> -->
-
-
-
-	<footer class="footer">
-		<div class="container">
-			<div class="footer__box">
-				<div class="footer__logo">
-					<a href="index.html">
-						<img src="" alt="" title="">
-					</a>
-					<p class="footer__desc"></p>
-				</div>
-				<div class="footer__agency">
-					<a class="agency" href="http://landingpage.push-k.ua/" target="_blank" rel="noopener noreferrer">
-					</a> 
-				</div>
-			</div>
-		</div>
-	</footer>
-
-
-
-	<!-- THANKS -->
-	<div class="remodal remodal-common"  data-remodal-id="modal-thanks" >
-		<button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
-		<p class="thanks__title">Благодарим Вас!</p>
-		<p class="thanks__text">Мы свяжемся с Вами <br>в ближайшее время.</p>
-	</div>
 
 	<!-- MODALS -->
 	<div class="remodal formBox" data-remodal-id="appointment"> 
 		<button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
 		<form class="form form-validate" name="services">
-			<!-- Hidden Required Fields -->
-			<input type="hidden" name="project_name" value="Aurum">
-			<input type="hidden" name="admin_email" value="dm@push-k.ua">
-			<input type="hidden" name="form_subject" value="Заказ">
-			<input type="hidden" name="whatform" value="Aurum > Заказ">
-			<input type="hidden" name="whatform2" value="">
-			<!-- END Hidden Required Fields -->
 			<p class="form__title">Заполните форму</p>
 			<p class="form__text">и мы свяжемся с Вами для уточнения даты и времени приема.</p>
-
 			<div class="inputWrap inputWrap-name">
 				<input class="form__line name" type="text" name="Имя&nbsp;покупателя" placeholder="Ваше имя" required>
 			</div>
 			<div class="inputWrap inputWrap-phone">
 				<input class="form__line phone-mask" type="tel" name="Телефон&nbsp;покупателя" placeholder="Ваш телефон" required>
 			</div>	
-
-			<input type="submit" class="btn" value="Записаться на прием"> 
+			<input type="submit" class="btn" value=""> 
 		</form>
 	</div>  
 
@@ -259,6 +383,7 @@
 	<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
 	<script src="./libs/remodal.min.js"></script>
 	<script src="./libs/jquery.validate.min.js"></script>
+	<script src="./libs/masked-input.js"></script>
 	<script src="./libs/cssrelpreload.js"></script>
 	<script src="./libs/all.js"></script>
 </body>
