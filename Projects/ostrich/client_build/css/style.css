@@ -800,7 +800,7 @@ section {
 .datepicker-panel > ul > li {
     height: 40px;
     width: 40px;
-    font-size: 20px;
+    font-size: 18px;
 }
 .datepicker-panel > ul > li[data-view='month current'], .datepicker-panel > ul > li[data-view='year current'], .datepicker-panel > ul > li[data-view='years current'] {
     width: 200px;
