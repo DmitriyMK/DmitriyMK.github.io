@@ -13,12 +13,9 @@
 	<meta name="theme-color" content="#181c25"> -->
 
 
-	<link rel="preload" href="./css/plugin.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
 
-	<noscript>
-		<link rel="stylesheet" href="./css/plugin.css">
-	</noscript>
-
+	<link rel="stylesheet" href="./css/remodal-default-theme.css">
+	<link rel="stylesheet" href="./css/datepicker.min.css">
 	<link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
@@ -188,7 +185,7 @@
 									</div>
 									<div class="accordion__col">
 										<img class="accordion__img" src="./images/icons/ok.png" alt="Date">
-										<p class="accordion__date">2018 12 18</p>
+										<p class="accordion__date"><input class="formPick" data-toggle="datepicker"></p>
 									</div>
 								</div>
 
@@ -357,34 +354,19 @@
 				</form>
 			</div>
 		</div>
-
 	</main>
 
 
-	<!-- MODALS -->
-	<div class="remodal formBox" data-remodal-id="appointment"> 
-		<button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
-		<form class="form form-validate" name="services">
-			<p class="form__title">Заполните форму</p>
-			<p class="form__text">и мы свяжемся с Вами для уточнения даты и времени приема.</p>
-			<div class="inputWrap inputWrap-name">
-				<input class="form__line name" type="text" name="Имя&nbsp;покупателя" placeholder="Ваше имя" required>
-			</div>
-			<div class="inputWrap inputWrap-phone">
-				<input class="form__line phone-mask" type="tel" name="Телефон&nbsp;покупателя" placeholder="Ваш телефон" required>
-			</div>	
-			<input type="submit" class="btn" value=""> 
-		</form>
-	</div>  
 
 
 
 	<!-- Load Scripts -->
 	<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
 	<script src="./libs/remodal.min.js"></script>
+	<script src="./libs/datepicker.min.js"></script>
+	<script src="./libs/datepicker.ru.js"></script>
 	<script src="./libs/jquery.validate.min.js"></script>
 	<script src="./libs/masked-input.js"></script>
-	<script src="./libs/cssrelpreload.js"></script>
 	<script src="./libs/all.js"></script>
 </body>
 </html>

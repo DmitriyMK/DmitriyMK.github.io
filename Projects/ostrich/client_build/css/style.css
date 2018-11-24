@@ -783,6 +783,28 @@ section {
         -ms-transform: scale(0.97);
             transform: scale(0.97);
 }
+.formPick {
+    padding: 2px 20px;
+    background: #f7faf9;
+    border: 1px solid #c7c7c7;
+}
+.datepicker-container {
+    width: 280px;
+}
+.datepicker-top-left:after, .datepicker-top-left:before, .datepicker-top-right:after, .datepicker-top-right:before {
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+}
+.datepicker-panel > ul > li {
+    height: 40px;
+    width: 40px;
+    font-size: 20px;
+}
+.datepicker-panel > ul > li[data-view='month current'], .datepicker-panel > ul > li[data-view='year current'], .datepicker-panel > ul > li[data-view='years current'] {
+    width: 200px;
+}
 .remodal-first {
     padding-top: 95px;
     text-align: center;
