@@ -926,12 +926,17 @@ section {
 }
 .formBlock {
     padding-top: 80px;
-    padding-bottom: 80px;
+    padding-bottom: 180px;
 }
 .formBlock__text {
-    font-size: 20px;
+    font-size: 18px;
     color: #9a9a9a;
     text-align: center;
+}
+@media only screen and (min-width: 768px) {
+    .formBlock__text {
+        font-size: 20px;
+    }
 }
 @media only screen and (min-width: 992px) {
     .formBlock__text {
@@ -939,9 +944,15 @@ section {
     }
 }
 .formBlock__text strong {
+    font-size: 17px;
     display: block;
     color: #000;
     font-weight: 900;
+}
+@media only screen and (min-width: 768px) {
+    .formBlock__text strong {
+        font-size: inherit;
+    }
 }
 @media only screen and (min-width: 992px) {
     .formBlock__text strong {
