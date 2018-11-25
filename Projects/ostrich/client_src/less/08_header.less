@@ -11,13 +11,13 @@
 
 }
 @media @desktop-xl {
-	
+
 }
 @media @desktop-xl-2 {
 
 }
 @media @desktop-xll {
-	
+
 }
 
 
@@ -26,16 +26,39 @@
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
-		padding: 8px 22px;
-
+		padding: 15px 22px;
 		font-size: 13px;
 		font-weight: 700;
+		@media @desktop-xl {
+			padding: 8px 22px;
+		}
 	}
+
 	&__logo {
-		flex-basis: 33%;
+		flex: 1;
+		img {
+			margin-left: 8px;
+			max-width: 200px;
+			@media @tablet {
+				margin: 0;
+				max-width: inherit;
+			}
+		}
+		
+		@media @desktop-xl {
+			flex: inherit;
+			flex-basis: 23%;
+		}
+		@media @desktop-xl-2 {
+			flex-basis: 33%;
+		}
 	}
 	&__nav {
-		flex-basis: 45%;
+		display: none;
+		@media @desktop-xl {
+			display: block;
+			flex-basis: 45%;
+		}
 	}
 	&__list {
 		display: flex;
@@ -44,7 +67,6 @@
 	&__link {
 		display: block;
 		margin-right: 30px;
-
 		transition: all .3s linear;
 		text-transform: uppercase;
 		&:hover {
@@ -54,9 +76,13 @@
 
 	&__btn {
 		position: relative;
-		padding-right: 35px;
-		font-size: 16px;
+		font-size: 0;
 		text-transform: uppercase;
+		@media @tablet {
+			font-size: 16px;
+			padding-right: 35px;
+		}
+
 		&:after {
 			content: "";
 			position: absolute;
