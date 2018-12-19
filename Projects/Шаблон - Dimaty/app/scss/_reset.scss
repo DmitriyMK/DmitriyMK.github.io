@@ -46,8 +46,6 @@ input,
 textarea {
   outline: none;
   border-radius: 0;
-  -moz-border-radius: 0;
-  -webkit-border-radius: 0;
   -webkit-appearance: none;
 }
 
@@ -55,6 +53,15 @@ input[type="button"],
 input[type="submit"],
 button {
   cursor: pointer
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td, th {
+  padding: 0;
 }
 
 td {
@@ -87,21 +94,15 @@ button {
 }
 
 * {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
 *:before,
 *:after {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-.clearfix:after,
-.wrapper:after,
-.row:after{
+.clearfix:after {
   content: ".";
   display: block;
   height: 0;
