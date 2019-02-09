@@ -1,0 +1,52 @@
+@import "./helpers/_vars";
+@import "./helpers/_mixins";
+
+body {
+	position: relative; 
+	height: 100%;
+	margin: 0;
+	padding-right: 0 !important;
+
+	font-family: $fontFamily;
+	font-size: $fontSize;
+	font-weight: 500;
+	line-height: 1.2;
+	background: #fff;
+	color: #000;
+	box-sizing: border-box; 
+	overflow-x: hidden;
+	overflow-y: auto;
+	-webkit-overflow-scrolling: touch;
+
+    // &::-webkit-scrollbar-track {
+    //     -webkit-box-shadow: inset 0 0 2px rgba(0,0,0,0.3);
+    //     background-color: #F5F5F5;
+    // }
+    // &::-webkit-scrollbar {
+    //     width: 2px;
+    // }
+    // &::-webkit-scrollbar-thumb {
+    //     -webkit-box-shadow: inset 0 0 2px rgba(0,0,0,.3);
+    //     background-color: blue;
+    // }
+}
+
+*::selection {
+    background-color: #6b6c70;
+    color: #fff;
+}
+
+
+
+.b-lazy {
+	transition: opacity .5s linear;
+	max-width: 100%;
+	opacity: 0;
+}
+.b-lazy.b-loaded {
+	opacity: 1;
+}
+
+// ol, ul {
+// 	list-style: none;
+// }
